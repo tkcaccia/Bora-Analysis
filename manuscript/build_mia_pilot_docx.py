@@ -79,7 +79,9 @@ def main() -> None:
         if column_count == 2:
             widths = (1.15, 5.65)
         elif column_count == 5:
-            widths = (1.10, 1.85, 2.25, .65, .95)
+            widths = ((1.10, 1.75, 2.05, 1.05, .85)
+                      if table_rows[0][0] == 'Benchmark' else
+                      (1.10, 1.85, 2.25, .65, .95))
         elif column_count == 8:
             widths = ((1.10, .64, .60, .82, .82, .57, 1.10, 1.15)
                       if table_rows[0][0] == 'Source' else

@@ -74,7 +74,9 @@ def flush_table():
     if count == 2:
         widths = [105, 390]
     elif count == 5:
-        widths = [85, 125, 160, 55, 70]
+        widths = ([75, 125, 160, 80, 55]
+                  if table_rows[0][0] == 'Benchmark' else
+                  [85, 125, 160, 55, 70])
     elif count == 8:
         widths = ([70, 46, 43, 62, 62, 42, 85, 85]
                   if table_rows[0][0] == 'Source' else
