@@ -21,13 +21,12 @@ python -m benchmark.prepare bcss
 python -m benchmark.prepare tiger
 python -m benchmark.download wsss4luad
 python -m benchmark.prepare_additional wsss4luad
-python -m benchmark.download rings --extract
 python -m benchmark.prepare_additional rings
 python -m benchmark.download camelyon16-subset
 python -m benchmark.prepare_requested camelyon16-subset
 ```
 
-The complete RINGS publisher archives contain both gland and tumour files. The preparation code indexes only tumour masks; the original archives are kept intact because the tumour data share those source files. `--verify-only` checks existing pinned files without changing them. Source hashes and URLs are in `sources.lock.json`. Never add downloaded archives, images, masks, or derived results to Git.
+RINGS tumour images and masks are prepared from the existing local tissue-only extraction. The [publisher's RINGS dataset](https://data.mendeley.com/datasets/h8bdwrtnr5/1) distributes tumour and gland annotations together, so this repository does not provide an archive downloader for RINGS. The mixed archives and extracted gland files were removed from the local data root. `--verify-only` checks existing pinned files without changing them. Source hashes and URLs for downloadable tissue-only datasets are in `sources.lock.json`. Never add downloaded archives, images, masks, or derived results to Git.
 
 ## Evaluation and figures
 

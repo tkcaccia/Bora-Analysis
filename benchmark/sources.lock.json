@@ -107,27 +107,6 @@
       }
     ]
   },
-  "rings": {
-    "access": "https",
-    "canonical_source": "https://data.mendeley.com/datasets/h8bdwrtnr5/1",
-    "doi": "10.17632/h8bdwrtnr5.1",
-    "license": "CC BY 4.0",
-    "files": [
-      {
-        "path": "TRAIN.zip",
-        "size": 3509562215,
-        "url": "https://data.mendeley.com/public-files/datasets/h8bdwrtnr5/files/8416eb6b-d1c8-4a8c-96fd-2f36a2768e46/file_downloaded",
-        "sha256": "af426249bd96d36e2c5e0110d42ceb67a8ebb79d94e2b2c15f4e727ebca38329"
-      },
-      {
-        "path": "TEST.zip",
-        "size": 1769772627,
-        "url": "https://data.mendeley.com/public-files/datasets/h8bdwrtnr5/files/5846b131-09fa-44c5-afa8-8fbc52adbd88/file_downloaded",
-        "sha256": "f8134f01ce4cbcfd703bf96a8501e6267fe87a66301e15749dac463742f8958d"
-      }
-    ],
-    "integrity_note": "SHA256 measured after acquisition on 2026-10-15; not a checksum supplied by the original publisher. Both original archives and safe extraction retained."
-  },
   "cocahis": {
     "access": "manual",
     "canonical_source": "https://cocahis.irb.hr/",
