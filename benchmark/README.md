@@ -1,0 +1,51 @@
+# Bora tissue-mask benchmark
+
+This package downloads and inventories pathology images with **tissue-region** masks, builds reference-derived tile masks, runs Bora, and scores its raster and GeoJSON outputs. Acquisition code is in `download.py`; dataset preparation is in `prepare.py`, `prepare_additional.py`, and `prepare_requested.py`.
+
+The primary multiclass study uses BCSS (breast), TIGER (breast), and WSSS4LUAD (lung). Separate tissue-region analyses use RINGS **tumour** masks (prostate) and native CAMELYON16 tumour windows (lymph node). The processed CoCaHis-VISTA subset and SICAPv2 are catalogued as potential tissue-region sources, but their mask semantics are not yet verified for manuscript scoring. PAIP2019 and DigestPath2019 require provider-approved acquisitions. This repository does not acquire or evaluate cell or gland-instance datasets.
+
+Original files and SHA256 inventories are stored outside Git at `/mnt/sata_ssd/Bora-benchmark`. Each record in `prepared/*.jsonl` gives the paired paths relative to that data root. Read `labels.json` and `resolution.json` before interpreting an annotation. Zero is ignored in BCSS and TIGER but denotes tumour in WSSS4LUAD; the benchmark normalizes these source IDs before making tile masks.
+
+## Acquisition
+
+From the Bora-extra repository root:
+
+```bash
+python -m pip install -r benchmark/requirements.txt
+python -m benchmark.download --list-datasets
+python -m benchmark.download bcss --plan
+python -m benchmark.download tiger --verify-only
+python -m benchmark.download bcss
+python -m benchmark.download tiger --extract --workers 8
+python -m benchmark.prepare bcss
+python -m benchmark.prepare tiger
+python -m benchmark.download wsss4luad
+python -m benchmark.prepare_additional wsss4luad
+python -m benchmark.download rings --extract
+python -m benchmark.prepare_additional rings
+python -m benchmark.download camelyon16-subset
+python -m benchmark.prepare_requested camelyon16-subset
+```
+
+The complete RINGS publisher archives contain both gland and tumour files. The preparation code indexes only tumour masks; the original archives are kept intact because the tumour data share those source files. `--verify-only` checks existing pinned files without changing them. Source hashes and URLs are in `sources.lock.json`. Never add downloaded archives, images, masks, or derived results to Git.
+
+## Evaluation and figures
+
+Bora is installed separately from [tkcaccia/Bora](https://github.com/tkcaccia/Bora). Set `BORA_ROOT` when it is not a sibling checkout of Bora-extra.
+
+```bash
+export BORA_ROOT=/path/to/Bora
+PYTHONPATH=. python -m benchmark.run_bora_pilot
+PYTHONPATH=. python -m benchmark.run_tiger_expansion
+PYTHONPATH=. python -m benchmark.run_bcss_expansion
+PYTHONPATH=. python -m benchmark.run_additional_datasets --dataset rings-tumor
+PYTHONPATH=. python -m benchmark.run_camelyon_extension
+PYTHONPATH=. python -m manuscript.build_mask_comparison
+PYTHONPATH=. python -m manuscript.build_additional_mask_atlas
+PYTHONPATH=. python -m manuscript.build_mia_pilot_docx
+PYTHONPATH=. python -m manuscript.build_mia_working_preview
+```
+
+The principal manuscript analysis comprises 63 distinct ROIs: 12 BCSS, 15 TIGER, and 36 WSSS4LUAD. The separate RINGS and CAMELYON16 experiments use three images each and are not pooled with the primary multiclass endpoint. The figure generator shows reference, tile and refined masks over identical H&E coordinates with 42% opacity. The GeoJSON audit rasterizes unsimplified polygons back to pixels and repeats conversion to check deterministic bytes.
+
+The manuscript and generated images remain in the Bora checkout under `docs/` and `output/pdf/`; only their generation code lives here.
