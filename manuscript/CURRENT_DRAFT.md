@@ -23,6 +23,9 @@ uncompleted and the article is a development-cohort report.
 The separate [source-to-target tile pilot](../docs/TILE_TRANSFER_PILOT.md)
 reports only frozen coarse-map predictions; it is not included as a Bora
 performance result.
+An [official held-out BEETLE ROI cohort](../benchmark/BEETLE_HELDOUT_ACQUISITION.md)
+has been acquired for a future patient-disjoint external experiment. Its
+evaluation annotations are sequestered; it contributes no score to this draft.
 Its methods distinguish the reported source-identity training targets from the
 new user training path based on semantic TIFF or GeoJSON annotations. Its data
 availability section points to the exact [349-field manuscript source
