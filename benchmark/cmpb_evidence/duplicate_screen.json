@@ -1,0 +1,13 @@
+{
+  "summary": {
+    "training_images": 349,
+    "evaluation_images": 116,
+    "pairs_screened": 40484,
+    "exact_image_duplicate_pairs": 0,
+    "perceptual_hash_candidates_at_distance_4": 0,
+    "limitation": "Global perceptual hashes miss overlapping crops, rotations, rescans and slide-level relatedness; source-group IDs are not all verified patients."
+  },
+  "exact_pairs": [],
+  "candidate_pairs": [],
+  "provenance": "CPU screening of the 116 selected evaluation fields against 349 training fields in the frozen calibrated registry; original-image SHA256 verified against registry; 32x32 grayscale DCT perceptual hash, 63 non-DC median bits, Hamming threshold 4."
+}

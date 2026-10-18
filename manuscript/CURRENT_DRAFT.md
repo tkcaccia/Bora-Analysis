@@ -20,6 +20,9 @@ whole-group controls. A native-resolution tumor–stroma interface audit, a
 representative 50-µm-scale crop, and polygon-fitting fidelity audit are also
 included. The independent predicted-input experiment remains
 uncompleted and the article is a development-cohort report.
+The separate [source-to-target tile pilot](../docs/TILE_TRANSFER_PILOT.md)
+reports only frozen coarse-map predictions; it is not included as a Bora
+performance result.
 Its methods distinguish the reported source-identity training targets from the
 new user training path based on semantic TIFF or GeoJSON annotations. Its data
 availability section points to the exact [349-field manuscript source
@@ -35,6 +38,7 @@ python manuscript/build_cmpb_manuscript.py \
   --classifier-controls benchmark/cmpb_evidence/classifier_controls.json \
   --boundaries benchmark/cmpb_evidence/boundaries.json \
   --vector-fidelity benchmark/cmpb_evidence/vector_fidelity.json \
+  --duplicate-screen benchmark/cmpb_evidence/duplicate_screen.json \
   --boundary-figure /path/to/native_boundary_figure.png \
   --output /path/to/manuscript-output
 ```

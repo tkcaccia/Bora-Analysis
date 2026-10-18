@@ -13,6 +13,8 @@ method summaries contain per-case IoU, group correctness and cached timings.
 same frozen descriptor matrix. `boundaries.json` gives native-resolution
 tumor–stroma interface scores for each image. `vector_fidelity.json` gives
 polygon-fitting diagnostics relative to the **preceding predicted geometry**.
+`duplicate_screen.json` records a cross-split exact-image and global
+perceptual-hash screen of 40,484 image pairs.
 None of these JSON files contains raw WSI pixels, spatial-token tensors or
 gated model weights. Obtain original archives under each provider's terms as
 described in [the acquisition guide](MANUSCRIPT_MODEL_DATA.md).
@@ -37,6 +39,9 @@ Those larger inputs are retained outside Git because of provider and checkpoint
 terms. The first script uses only the CPU; the other two read saved outputs and
 perform no encoder or segmentation inference. The public summaries make the
 reported arithmetic independently inspectable even without those inputs.
+`benchmark/analyze_cmpb_duplicates.py` verifies original-image SHA256s against
+the registry and screens whole-image perceptual hashes at Hamming distance ≤4.
+This global screen cannot find every overlapping crop or shared slide.
 
 Tumor–stroma F1 uses a direct four-neighbor interface, physical 8 µm matching
 radius and annotated pixels only. A missing predicted interface receives F1

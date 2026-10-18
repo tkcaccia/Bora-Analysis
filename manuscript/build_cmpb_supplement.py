@@ -11,11 +11,12 @@ from docx.shared import Inches, Pt
 from build_cmpb_manuscript import configure, paragraph, table
 
 
-def build(reanalysis: Path, classifier_controls: Path, boundaries: Path, vector_fidelity: Path, output: Path) -> None:
+def build(reanalysis: Path, classifier_controls: Path, boundaries: Path, vector_fidelity: Path, duplicate_screen: Path, output: Path) -> None:
     evidence = json.loads(reanalysis.read_text())
     group_only = json.loads(classifier_controls.read_text())['results']
     boundary = json.loads(boundaries.read_text())['summary']
     vector = json.loads(vector_fidelity.read_text())['summary']
+    duplicates = json.loads(duplicate_screen.read_text())['summary']
     doc = Document(); configure(doc)
     for section in doc.sections:
         section.top_margin = section.bottom_margin = Inches(0.82)
@@ -25,6 +26,7 @@ def build(reanalysis: Path, classifier_controls: Path, boundaries: Path, vector_
     paragraph(doc, 'This supplement documents the fixed cohort and descriptive reanalysis accompanying the article on conditional tissue refinement. All figures come from previously inspected development images; intervals describe variation within that cohort and do not validate generalization to new patients.')
     doc.add_heading('Cohort and statistical unit', 1)
     paragraph(doc, 'The registry contains 533 calibrated fields: 349 train, 72 validation and 112 test. Eligibility and the exclusion of PUMA from evaluation leave 116 images across BCSS, TIGER, GCSS and IGNITE. The 116 images map to 108 known source-group identifiers. No identifier is shared with training, and validation and test identifiers do not overlap. Provider linkage is incomplete, so an identifier is not always a verified patient. The original split labels are retained for descriptive reporting, although both subsets were inspected during method development.')
+    paragraph(doc, f"Exact-image SHA256 verification and a 63-bit whole-image grayscale perceptual-hash screen of {duplicates['pairs_screened']:,} training–evaluation pairs found {duplicates['exact_image_duplicate_pairs']} exact duplicate pairs and {duplicates['perceptual_hash_candidates_at_distance_4']} pairs at Hamming distance ≤4. This global screen can miss overlapping crops and rescans; it does not establish patient independence.")
     paragraph(doc, 'For each stratum we report the equal-image mean of per-image macro IoU. A 95% interval was formed from 10,000 bootstrap resamples of source-group identifiers with replacement (seed 19017), carrying all images within each selected identifier. These are descriptive intervals, and cross-provider patient overlap may remain unresolved. Unassigned-reference fraction divides annotated pixels mapped to final label zero by all valid annotated pixels.')
     c=evidence['cohort']
     table(doc, 'Table S1 Cohort-specific final mask scores and source-group bootstrap intervals.',
@@ -74,6 +76,7 @@ if __name__ == '__main__':
     parser.add_argument('--classifier-controls', type=Path, required=True)
     parser.add_argument('--boundaries', type=Path, required=True)
     parser.add_argument('--vector-fidelity', type=Path, required=True)
+    parser.add_argument('--duplicate-screen', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
-    build(args.reanalysis, args.classifier_controls, args.boundaries, args.vector_fidelity, args.output)
+    build(args.reanalysis, args.classifier_controls, args.boundaries, args.vector_fidelity, args.duplicate_screen, args.output)
