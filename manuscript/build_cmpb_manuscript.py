@@ -143,8 +143,9 @@ def equation(doc, text):
     run(m,text[cursor:]);p._p.append(m)
 
 
-def table(doc, caption, headers, rows, widths):
+def table(doc, caption, headers, rows, widths, new_page=False):
     p=paragraph(doc,caption,'Caption');p.paragraph_format.keep_with_next=True
+    p.paragraph_format.page_break_before=new_page
     t=doc.add_table(rows=1,cols=len(headers));t.autofit=False;t.alignment=WD_TABLE_ALIGNMENT.CENTER
     for col,w in zip(t.columns,widths):col.width=Inches(w)
     for c,h in zip(t.rows[0].cells,headers):c.text=h
@@ -229,13 +230,12 @@ def build(site,source_doc,output):
             if heading=='Neighbor context tissue identification' and i==1:equation(doc,'x_g = [ μ_g , μ_g − ν_g ]')
     doc.add_heading('References',1)
     for i,text in enumerate(REFERENCES,1):paragraph(doc,f'[{i}] {text}')
-    doc.add_page_break()
     table(doc,'Table 1 Matched conditional refinement on 39 regions. Times exclude encoder inference, evidence construction and loading.',
           ['Method','Mean macro IoU','Mean refinement s'],[
               ['Coarse input tiles','0.5862','0.0010'],
               ['H&E graph-label diffusion','0.6061','0.0434'],
               ['Bilateral reference notebook','0.6435','0.4569'],
-              ['Bora appearance fields','0.6628','0.1676']],[3.3,1.5,1.7])
+              ['Bora appearance fields','0.6628','0.1676']],[3.3,1.5,1.7],new_page=True)
     rows=[]
     for ds in ['bcss','tiger','gcss','ignite']:
         cs=[c for c in data['cases'] if c['dataset']==ds]
