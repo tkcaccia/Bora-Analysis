@@ -11,9 +11,9 @@ viewer as numerical evidence and the retained author manuscript for author and
 affiliation text. It never runs model inference or submits a paper.
 
 The current revised document is stored locally at
-`/Users/stefano/Documents/ChatGPT/Bora/benchmark/manuscript/cmpb-2026-10-19-v6/Bora_CMPB_manuscript.docx`.
+`/Users/stefano/Documents/ChatGPT/Bora/benchmark/manuscript/cmpb-2026-10-19-v7/Bora_CMPB_manuscript.docx`.
 Its companion supplement is
-`/Users/stefano/Documents/ChatGPT/Bora/benchmark/manuscript/cmpb-2026-10-19-v6/Bora_CMPB_supplement.docx`.
+`/Users/stefano/Documents/ChatGPT/Bora/benchmark/manuscript/cmpb-2026-10-19-v7/Bora_CMPB_supplement.docx`.
 The article reports the original test and validation subsets separately,
 source-group bootstrap intervals, per-role performance and four matched
 whole-group controls. A native-resolution tumor–stroma interface audit, a

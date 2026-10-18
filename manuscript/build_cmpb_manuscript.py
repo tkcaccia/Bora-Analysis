@@ -240,9 +240,14 @@ def build(site,source_doc,output,reanalysis,classifier_controls,boundaries,vecto
     doc.add_paragraph(TITLE,'Title')
     source=Document(source_doc)
     for p in source.paragraphs:
-        if p.text.startswith('Authors:') or p.text.startswith('¹ Bioinformatics'):
-            paragraph(doc,p.text)
-    doc.add_page_break();doc.add_heading('Abstract',1)
+        if p.text.startswith('Authors:'):
+            assert 'Giulia Canarutto⁴;' in p.text
+            paragraph(doc,p.text.replace('Giulia Canarutto⁴;','Giulia Canarutto⁴,¹¹;'))
+        elif p.text.startswith('¹ Bioinformatics'):
+            assert '⁴ Computational Biology Group, International Centre for Genetic Engineering and Biotechnology, Trieste, Italy.' in p.text
+            paragraph(doc,p.text+'\n¹¹ Life Science Department (DSV), University of Trieste, Trieste, Italy.')
+    abstract_heading=doc.add_heading('Abstract',1)
+    abstract_heading.paragraph_format.page_break_before=True
     for heading,text in ABSTRACT:
         p=paragraph(doc,'');p.add_run(heading+' ').bold=True;p.add_run(text)
     paragraph(doc,'Keywords: computational pathology; tissue segmentation; spatial context; partial least squares; physical calibration; GeoJSON')
