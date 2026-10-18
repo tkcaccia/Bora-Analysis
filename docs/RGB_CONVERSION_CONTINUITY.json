@@ -1,0 +1,22 @@
+{
+  "ok": true,
+  "fixtures": [
+    {
+      "seed": 19,
+      "selected_coordinates_identical": true,
+      "rgb_bitwise_identical": true
+    },
+    {
+      "seed": 101,
+      "selected_coordinates_identical": true,
+      "rgb_bitwise_identical": true
+    },
+    {
+      "seed": 314159,
+      "selected_coordinates_identical": true,
+      "rgb_bitwise_identical": true
+    }
+  ],
+  "encoder_extraction_performed": false,
+  "gpu_work_performed": false
+}

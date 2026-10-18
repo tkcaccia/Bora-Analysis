@@ -1,0 +1,41 @@
+{
+  "ok": true,
+  "training_shape": [
+    967,
+    2560
+  ],
+  "dtype": "float64",
+  "training_classes": 25,
+  "components": 24,
+  "fit_seconds": 1.8890339639037848,
+  "fastpls_version": "0.3.0",
+  "vendored_module": "bora._vendor.fastpls",
+  "evaluation_images": 116,
+  "predictions_identical_for_all_images": true,
+  "roundtrip_predictions_identical": true,
+  "physical_context_checks": [
+    {
+      "case": "tiger_01",
+      "dataset": "tiger",
+      "descriptor_bitwise_identical": true
+    },
+    {
+      "case": "bcss_05",
+      "dataset": "bcss",
+      "descriptor_bitwise_identical": true
+    },
+    {
+      "case": "ignite_02",
+      "dataset": "ignite",
+      "descriptor_bitwise_identical": true
+    },
+    {
+      "case": "gcss_07",
+      "dataset": "gcss",
+      "descriptor_bitwise_identical": true
+    }
+  ],
+  "encoder_extraction_performed": false,
+  "gpu_work_performed": false,
+  "source_registry_sha256": "65d389247b0692c7e232e0caa011724466c531b81d42b95291db6ab192cbc8c2"
+}
