@@ -1,0 +1,396 @@
+{
+  "provenance": {
+    "images": 116,
+    "registry_version": "bora-supervised-tissues-v1",
+    "resampling": "10000 source-group bootstrap draws, equal image mean, seed 19017",
+    "interpretation": "descriptive development-cohort interval, not external generalization"
+  },
+  "cohort": {
+    "all": {
+      "images": 116,
+      "source_groups": 108,
+      "mean_final_iou": 0.5866799179633934,
+      "source_group_bootstrap_95": [
+        0.5435405145296152,
+        0.6280334665497997
+      ],
+      "annotated_unassigned_fraction": 0.0028745203193472307
+    },
+    "test": {
+      "images": 78,
+      "source_groups": 72,
+      "mean_final_iou": 0.5966952620205997,
+      "source_group_bootstrap_95": [
+        0.5410670577072428,
+        0.6505115449434178
+      ],
+      "annotated_unassigned_fraction": 0.0025684230183250184
+    },
+    "validation": {
+      "images": 38,
+      "source_groups": 36,
+      "mean_final_iou": 0.5661221064775488,
+      "source_group_bootstrap_95": [
+        0.5034096437712656,
+        0.6289961258626189
+      ],
+      "annotated_unassigned_fraction": 0.0034495947681285498
+    },
+    "bcss": {
+      "images": 42,
+      "source_groups": 42,
+      "mean_final_iou": 0.4962768018843084,
+      "source_group_bootstrap_95": [
+        0.4493448867344202,
+        0.5444361618601876
+      ]
+    },
+    "gcss": {
+      "images": 24,
+      "source_groups": 24,
+      "mean_final_iou": 0.7178371618335931,
+      "source_group_bootstrap_95": [
+        0.6267345105595232,
+        0.7969904261819478
+      ]
+    },
+    "ignite": {
+      "images": 24,
+      "source_groups": 24,
+      "mean_final_iou": 0.4803034747625416,
+      "source_group_bootstrap_95": [
+        0.4065652324620126,
+        0.5550687011749706
+      ]
+    },
+    "tiger": {
+      "images": 26,
+      "source_groups": 18,
+      "mean_final_iou": 0.7098411356271324,
+      "source_group_bootstrap_95": [
+        0.6119996196914255,
+        0.8003649454461127
+      ]
+    }
+  },
+  "comparators": {
+    "neighbor": {
+      "groups": 398,
+      "group_correct": 350,
+      "group_accuracy": 0.8793969849246231,
+      "balanced_group_accuracy": 0.6834934433537169,
+      "mean_final_iou": 0.5866799179633934,
+      "mean_cached_deployment_seconds": 2.071327129242428,
+      "mean_warm_head_ms": 0.2834850295992761
+    },
+    "mean": {
+      "groups": 398,
+      "group_correct": 340,
+      "group_accuracy": 0.8542713567839196,
+      "balanced_group_accuracy": 0.6445898156857612,
+      "mean_final_iou": 0.560569610220587,
+      "mean_cached_deployment_seconds": 2.030600192498994,
+      "mean_warm_head_ms": 0.20266418216814255,
+      "neighbor_minus_control_iou": 0.02611030774280645,
+      "source_group_bootstrap_95": [
+        -0.0002408421749615215,
+        0.05792003898142765
+      ]
+    },
+    "spatial": {
+      "groups": 398,
+      "group_correct": 341,
+      "group_accuracy": 0.8567839195979899,
+      "balanced_group_accuracy": 0.651793991818676,
+      "mean_final_iou": 0.5596274465620695,
+      "mean_cached_deployment_seconds": 2.1528090300953724,
+      "mean_warm_head_ms": 0.20681748744742623,
+      "neighbor_minus_control_iou": 0.02705247140132392,
+      "source_group_bootstrap_95": [
+        -0.0008660481145387766,
+        0.0593382033500521
+      ]
+    }
+  },
+  "per_role": {
+    "1": {
+      "name": "tumor",
+      "annotated_images": 107,
+      "total_truth_pixels": 111093185,
+      "mean_iou_on_annotated_images": 0.7668351910982669,
+      "source_group_bootstrap_95": [
+        0.7206237142856193,
+        0.8100567412425936
+      ]
+    },
+    "2": {
+      "name": "in_situ_tumor",
+      "annotated_images": 7,
+      "total_truth_pixels": 3750640,
+      "mean_iou_on_annotated_images": 0.6779138055547547,
+      "source_group_bootstrap_95": [
+        0.31040067351968664,
+        0.9556904979540224
+      ]
+    },
+    "3": {
+      "name": "stroma",
+      "annotated_images": 110,
+      "total_truth_pixels": 118636758,
+      "mean_iou_on_annotated_images": 0.7043732382834771,
+      "source_group_bootstrap_95": [
+        0.6599182926660339,
+        0.744422485748042
+      ]
+    },
+    "4": {
+      "name": "inflamed_stroma",
+      "annotated_images": 23,
+      "total_truth_pixels": 3629493,
+      "mean_iou_on_annotated_images": 0.6376813594181426,
+      "source_group_bootstrap_95": [
+        0.4971004500633115,
+        0.7575895323198581
+      ]
+    },
+    "5": {
+      "name": "necrosis",
+      "annotated_images": 48,
+      "total_truth_pixels": 19951716,
+      "mean_iou_on_annotated_images": 0.609242304088304,
+      "source_group_bootstrap_95": [
+        0.505816322778224,
+        0.7057028138173836
+      ]
+    },
+    "6": {
+      "name": "normal_glandular_epithelium",
+      "annotated_images": 12,
+      "total_truth_pixels": 823689,
+      "mean_iou_on_annotated_images": 0.4119461935148722,
+      "source_group_bootstrap_95": [
+        0.2395124453873102,
+        0.5855977103881425
+      ]
+    },
+    "7": {
+      "name": "epithelial_tissue",
+      "annotated_images": 1,
+      "total_truth_pixels": 224349,
+      "mean_iou_on_annotated_images": 0.6869627186436631,
+      "source_group_bootstrap_95": [
+        0.6869627186436631,
+        0.6869627186436631
+      ]
+    },
+    "8": {
+      "name": "blood",
+      "annotated_images": 32,
+      "total_truth_pixels": 808122,
+      "mean_iou_on_annotated_images": 0.04543259316511838,
+      "source_group_bootstrap_95": [
+        0.0,
+        0.10418082419669354
+      ]
+    },
+    "9": {
+      "name": "blood_vessel",
+      "annotated_images": 24,
+      "total_truth_pixels": 1979596,
+      "mean_iou_on_annotated_images": 0.11668178745832865,
+      "source_group_bootstrap_95": [
+        0.036568724128700374,
+        0.21124371090092411
+      ]
+    },
+    "11": {
+      "name": "adipose",
+      "annotated_images": 10,
+      "total_truth_pixels": 3275910,
+      "mean_iou_on_annotated_images": 0.3697135345079265,
+      "source_group_bootstrap_95": [
+        0.19589194950559827,
+        0.5354622128442589
+      ]
+    },
+    "12": {
+      "name": "glandular_secretions",
+      "annotated_images": 5,
+      "total_truth_pixels": 312464,
+      "mean_iou_on_annotated_images": 0.09878880148862387,
+      "source_group_bootstrap_95": [
+        0.0,
+        0.2963664044658716
+      ]
+    },
+    "13": {
+      "name": "lymphocytic_infiltrate",
+      "annotated_images": 34,
+      "total_truth_pixels": 31837953,
+      "mean_iou_on_annotated_images": 0.5707825137936527,
+      "source_group_bootstrap_95": [
+        0.4814634101991935,
+        0.6518182503648364
+      ]
+    },
+    "14": {
+      "name": "other_immune_infiltrate",
+      "annotated_images": 3,
+      "total_truth_pixels": 2764128,
+      "mean_iou_on_annotated_images": 0.0,
+      "source_group_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    "15": {
+      "name": "plasma_cells",
+      "annotated_images": 9,
+      "total_truth_pixels": 9588306,
+      "mean_iou_on_annotated_images": 0.3511606255197163,
+      "source_group_bootstrap_95": [
+        0.13760944706442235,
+        0.5681214259267576
+      ]
+    },
+    "17": {
+      "name": "mucoid_material",
+      "annotated_images": 1,
+      "total_truth_pixels": 61615,
+      "mean_iou_on_annotated_images": 0.0,
+      "source_group_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    "19": {
+      "name": "alveolar_tissue",
+      "annotated_images": 2,
+      "total_truth_pixels": 255138,
+      "mean_iou_on_annotated_images": 0.4070370961552166,
+      "source_group_bootstrap_95": [
+        0.014384595835015173,
+        0.799689596475418
+      ]
+    },
+    "20": {
+      "name": "bronchial_epithelium",
+      "annotated_images": 2,
+      "total_truth_pixels": 485936,
+      "mean_iou_on_annotated_images": 0.47249885462130164,
+      "source_group_bootstrap_95": [
+        0.0,
+        0.9449977092426033
+      ]
+    },
+    "21": {
+      "name": "cartilage_or_bone",
+      "annotated_images": 1,
+      "total_truth_pixels": 437471,
+      "mean_iou_on_annotated_images": 0.9948776868208148,
+      "source_group_bootstrap_95": [
+        0.9948776868208148,
+        0.9948776868208148
+      ]
+    },
+    "22": {
+      "name": "inflammatory_infiltrate",
+      "annotated_images": 9,
+      "total_truth_pixels": 1069739,
+      "mean_iou_on_annotated_images": 0.1660810910416292,
+      "source_group_bootstrap_95": [
+        0.0,
+        0.4149710709721473
+      ]
+    },
+    "23": {
+      "name": "liver_tissue",
+      "annotated_images": 2,
+      "total_truth_pixels": 2691876,
+      "mean_iou_on_annotated_images": 0.9665795757314267,
+      "source_group_bootstrap_95": [
+        0.957776435590258,
+        0.9753827158725954
+      ]
+    },
+    "24": {
+      "name": "macrophages",
+      "annotated_images": 10,
+      "total_truth_pixels": 267999,
+      "mean_iou_on_annotated_images": 0.16578386958743824,
+      "source_group_bootstrap_95": [
+        0.0,
+        0.3924321135659783
+      ]
+    },
+    "25": {
+      "name": "mucus_plasma_or_fluids",
+      "annotated_images": 1,
+      "total_truth_pixels": 9220,
+      "mean_iou_on_annotated_images": 0.0,
+      "source_group_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    "26": {
+      "name": "muscle",
+      "annotated_images": 11,
+      "total_truth_pixels": 2489766,
+      "mean_iou_on_annotated_images": 0.7009122432970233,
+      "source_group_bootstrap_95": [
+        0.4729823399903324,
+        0.878831560263249
+      ]
+    },
+    "28": {
+      "name": "keratinized_tissue",
+      "annotated_images": 1,
+      "total_truth_pixels": 18862,
+      "mean_iou_on_annotated_images": 0.0,
+      "source_group_bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "failure_cases": [
+    {
+      "case": "gcss_12",
+      "dataset": "gcss",
+      "mean_final_iou": 0.10639108314848682,
+      "unassigned_fraction": 0.00011315523955907175
+    },
+    {
+      "case": "ignite_e_11",
+      "dataset": "ignite",
+      "mean_final_iou": 0.13992112654016184,
+      "unassigned_fraction": 0.001704464659741198
+    },
+    {
+      "case": "bcss_17",
+      "dataset": "bcss",
+      "mean_final_iou": 0.16423154284099656,
+      "unassigned_fraction": 0.002942479532747604
+    },
+    {
+      "case": "tiger_12",
+      "dataset": "tiger",
+      "mean_final_iou": 0.18174063321502226,
+      "unassigned_fraction": 0.0017199780580154397
+    },
+    {
+      "case": "ignite_e_24",
+      "dataset": "ignite",
+      "mean_final_iou": 0.19155528711805161,
+      "unassigned_fraction": 0.0002728271484375
+    }
+  ],
+  "source_group_audit": {
+    "registry_train_groups": 326,
+    "registry_validation_groups": 65,
+    "registry_test_groups": 103,
+    "known_group_overlap_train_evaluation": 0,
+    "patient_linkage_complete": false
+  }
+}

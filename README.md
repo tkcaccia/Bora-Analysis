@@ -25,6 +25,9 @@ To train a tissue classifier for new images, use the
 The [manuscript model data guide](docs/MANUSCRIPT_MODEL_DATA.md) lists the
 exact 349 annotated source fields, provider download routes, native crop
 coordinates and checksums used for the reported 967 training groups.
+The [manuscript reanalysis note](docs/CMPB_REANALYSIS.md) provides the
+descriptive cohort, classifier-control, boundary and vector-fidelity evidence
+with commands and limitations.
 
 ## Repository organization
 

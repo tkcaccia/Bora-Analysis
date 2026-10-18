@@ -1,0 +1,2224 @@
+{
+  "summary": {
+    "cases": 116,
+    "cases_with_reference_interface": 106,
+    "cases_with_missing_predicted_interface": 9,
+    "mean_f1_8um": 0.5709103220670217,
+    "median_f1_8um": 0.637509902170448,
+    "mean_assd_um_when_both_present": 21.50752284868421,
+    "definition": "Direct 4-neighbor tumor (role 1) versus stroma or inflamed stroma (roles 3,4), evaluated on annotated pixels; 8 um physical tolerance.",
+    "expert_decoded_coarse_mean_f1_8um": 0.35449607829021584,
+    "final_minus_expert_decoded_coarse_mean_f1_8um": 0.2164142437768059,
+    "coarse_comparison_caveat": "Coarse tile identities were decoded from the expert-origin permutation; this is a privileged diagnostic, not a deployable class predictor.",
+    "final_minus_coarse_source_group_bootstrap_95": [
+      0.17468702873047406,
+      0.25642315663846244
+    ]
+  },
+  "records": [
+    {
+      "case": "tiger_01",
+      "dataset": "tiger",
+      "source_group": "tiger:198",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 46744,
+      "reference_boundary_pixels": 24480,
+      "f1_8um": 0.5925871726921144,
+      "assd_um": 11.899529454751335,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 18618,
+        "reference_boundary_pixels": 24480,
+        "f1_8um": 0.36531891492781826,
+        "assd_um": 16.491583234372648
+      }
+    },
+    {
+      "case": "tiger_06",
+      "dataset": "tiger",
+      "source_group": "tiger:242",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 7487,
+      "reference_boundary_pixels": 472,
+      "f1_8um": 0.3693170798670633,
+      "assd_um": 25.900649016194247,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 9417,
+        "reference_boundary_pixels": 472,
+        "f1_8um": 0.2389051241439311,
+        "assd_um": 25.943000220908353
+      }
+    },
+    {
+      "case": "tiger_10",
+      "dataset": "tiger",
+      "source_group": "tiger:250",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 8188,
+      "reference_boundary_pixels": 3330,
+      "f1_8um": 0.495780732975334,
+      "assd_um": 13.66128065198817,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 7744,
+        "reference_boundary_pixels": 3330,
+        "f1_8um": 0.3561052974162214,
+        "assd_um": 15.957237231986674
+      }
+    },
+    {
+      "case": "tiger_12",
+      "dataset": "tiger",
+      "source_group": "tiger:TC_S01_P000015",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 0,
+      "reference_boundary_pixels": 2078,
+      "f1_8um": 0.0,
+      "assd_um": null,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 1241,
+        "reference_boundary_pixels": 2078,
+        "f1_8um": 0.35626949631460253,
+        "assd_um": 14.323231434002505
+      }
+    },
+    {
+      "case": "tiger_15",
+      "dataset": "tiger",
+      "source_group": "tiger:TC_S01_P000158",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 25964,
+      "reference_boundary_pixels": 33639,
+      "f1_8um": 0.8202839028146175,
+      "assd_um": 5.2720474129795205,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 18883,
+        "reference_boundary_pixels": 33639,
+        "f1_8um": 0.4090207702632784,
+        "assd_um": 14.829836259720661
+      }
+    },
+    {
+      "case": "tiger_16",
+      "dataset": "tiger",
+      "source_group": "tiger:TC_S01_P000039",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 0,
+      "reference_boundary_pixels": 1542,
+      "f1_8um": 0.0,
+      "assd_um": null,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 0,
+        "reference_boundary_pixels": 1542,
+        "f1_8um": 0.0,
+        "assd_um": null
+      }
+    },
+    {
+      "case": "bcss_05",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-A2-A04P",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 17001,
+      "reference_boundary_pixels": 28037,
+      "f1_8um": 0.6449178125653541,
+      "assd_um": 16.07571157679103,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 17654,
+        "reference_boundary_pixels": 28037,
+        "f1_8um": 0.29634666058675474,
+        "assd_um": 21.506498919272317
+      }
+    },
+    {
+      "case": "bcss_06",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-C8-A26Y",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 0,
+      "reference_boundary_pixels": 5576,
+      "f1_8um": 0.0,
+      "assd_um": null,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 2517,
+        "reference_boundary_pixels": 5576,
+        "f1_8um": 0.2669136360049953,
+        "assd_um": 59.00548374357899
+      }
+    },
+    {
+      "case": "bcss_12",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-AC-A2QH",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 79849,
+      "reference_boundary_pixels": 124283,
+      "f1_8um": 0.5465020157239314,
+      "assd_um": 12.614235258627513,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 16124,
+        "reference_boundary_pixels": 124283,
+        "f1_8um": 0.21651616536413165,
+        "assd_um": 52.240388449079774
+      }
+    },
+    {
+      "case": "bcss_13",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-LL-A441",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 22929,
+      "reference_boundary_pixels": 27884,
+      "f1_8um": 0.6312055539850793,
+      "assd_um": 14.874799475889063,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 10806,
+        "reference_boundary_pixels": 27884,
+        "f1_8um": 0.36612231245737764,
+        "assd_um": 40.80463163687921
+      }
+    },
+    {
+      "case": "tiger_21",
+      "dataset": "tiger",
+      "source_group": "tiger:225",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 20859,
+      "reference_boundary_pixels": 14574,
+      "f1_8um": 0.7543778734098364,
+      "assd_um": 7.854630683827417,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 20616,
+        "reference_boundary_pixels": 14574,
+        "f1_8um": 0.39999553671755916,
+        "assd_um": 12.855406236609923
+      }
+    },
+    {
+      "case": "tiger_26",
+      "dataset": "tiger",
+      "source_group": "tiger:TC_S01_P000071",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 18757,
+      "reference_boundary_pixels": 8734,
+      "f1_8um": 0.4411645487704733,
+      "assd_um": 24.3411015116566,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 6628,
+        "reference_boundary_pixels": 8734,
+        "f1_8um": 0.3720588218181766,
+        "assd_um": 15.034281626659268
+      }
+    },
+    {
+      "case": "tiger_29",
+      "dataset": "tiger",
+      "source_group": "tiger:TC_S01_P000135",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 17465,
+      "reference_boundary_pixels": 19334,
+      "f1_8um": 0.8828902120015638,
+      "assd_um": 4.48700084817945,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 19744,
+        "reference_boundary_pixels": 19334,
+        "f1_8um": 0.46012490696955266,
+        "assd_um": 10.868564537885579
+      }
+    },
+    {
+      "case": "tiger_30",
+      "dataset": "tiger",
+      "source_group": "tiger:134",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 12249,
+      "reference_boundary_pixels": 10834,
+      "f1_8um": 0.877790716886968,
+      "assd_um": 8.488600733252426,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 11957,
+        "reference_boundary_pixels": 10834,
+        "f1_8um": 0.40672450961713774,
+        "assd_um": 13.490896182334643
+      }
+    },
+    {
+      "case": "tiger_32",
+      "dataset": "tiger",
+      "source_group": "tiger:181",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 29041,
+      "reference_boundary_pixels": 25229,
+      "f1_8um": 0.7380756899564382,
+      "assd_um": 6.981563149563952,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 8212,
+        "reference_boundary_pixels": 25229,
+        "f1_8um": 0.2772838220758921,
+        "assd_um": 36.359956774790575
+      }
+    },
+    {
+      "case": "tiger_34",
+      "dataset": "tiger",
+      "source_group": "tiger:TC_S01_P000005",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 24617,
+      "reference_boundary_pixels": 24702,
+      "f1_8um": 0.81944212156253,
+      "assd_um": 5.9269840236013485,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 16970,
+        "reference_boundary_pixels": 24702,
+        "f1_8um": 0.42135712387184354,
+        "assd_um": 13.88468609644417
+      }
+    },
+    {
+      "case": "tiger_37",
+      "dataset": "tiger",
+      "source_group": "tiger:154",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 17603,
+      "reference_boundary_pixels": 14040,
+      "f1_8um": 0.6122644496234781,
+      "assd_um": 15.38296209664711,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 8056,
+        "reference_boundary_pixels": 14040,
+        "f1_8um": 0.39491983645918405,
+        "assd_um": 31.737272731911013
+      }
+    },
+    {
+      "case": "tiger_38",
+      "dataset": "tiger",
+      "source_group": "tiger:TC_S01_P000030",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 0,
+      "reference_boundary_pixels": 0,
+      "f1_8um": null,
+      "assd_um": null,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 0,
+        "reference_boundary_pixels": 0,
+        "f1_8um": null,
+        "assd_um": null
+      }
+    },
+    {
+      "case": "bcss_17",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-A8-A07O",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 96857,
+      "reference_boundary_pixels": 158031,
+      "f1_8um": 0.7094996846888342,
+      "assd_um": 7.306613527332966,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 41091,
+        "reference_boundary_pixels": 158031,
+        "f1_8um": 0.4507608352891786,
+        "assd_um": 15.031371787454175
+      }
+    },
+    {
+      "case": "bcss_20",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-AR-A1AI",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 1521,
+      "reference_boundary_pixels": 3195,
+      "f1_8um": 0.12506831401022758,
+      "assd_um": 47.44703293504832,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 2317,
+        "reference_boundary_pixels": 3195,
+        "f1_8um": 0.3604588774664406,
+        "assd_um": 39.26431453441626
+      }
+    },
+    {
+      "case": "bcss_22",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-AR-A2LH",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 0,
+      "reference_boundary_pixels": 20528,
+      "f1_8um": 0.0,
+      "assd_um": null,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 7710,
+        "reference_boundary_pixels": 20528,
+        "f1_8um": 0.32895584716220905,
+        "assd_um": 36.255855980691315
+      }
+    },
+    {
+      "case": "bcss_23",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-D8-A147",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 10399,
+      "reference_boundary_pixels": 30856,
+      "f1_8um": 0.4514602421018484,
+      "assd_um": 25.561221234250358,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 6313,
+        "reference_boundary_pixels": 30856,
+        "f1_8um": 0.22189113416218356,
+        "assd_um": 48.110163834438644
+      }
+    },
+    {
+      "case": "bcss_26",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-A2-A3XY",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 13355,
+      "reference_boundary_pixels": 16142,
+      "f1_8um": 0.6883061360431912,
+      "assd_um": 10.022742447528634,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 9783,
+        "reference_boundary_pixels": 16142,
+        "f1_8um": 0.3640682391969766,
+        "assd_um": 17.611944623449535
+      }
+    },
+    {
+      "case": "bcss_28",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-AO-A129",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 25798,
+      "reference_boundary_pixels": 34550,
+      "f1_8um": 0.58445757571678,
+      "assd_um": 23.372461522654604,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 9172,
+        "reference_boundary_pixels": 34550,
+        "f1_8um": 0.23087996863087498,
+        "assd_um": 68.12461788431085
+      }
+    },
+    {
+      "case": "bcss_31",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-D8-A13Z",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 9042,
+      "reference_boundary_pixels": 19861,
+      "f1_8um": 0.4682004920476149,
+      "assd_um": 21.93200927221423,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 9023,
+        "reference_boundary_pixels": 19861,
+        "f1_8um": 0.26858972076475657,
+        "assd_um": 31.561254511792647
+      }
+    },
+    {
+      "case": "bcss_34",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-LL-A5YO",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 11780,
+      "reference_boundary_pixels": 45456,
+      "f1_8um": 0.3835030102009147,
+      "assd_um": 36.332392475004724,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 8936,
+        "reference_boundary_pixels": 45456,
+        "f1_8um": 0.2307907029736812,
+        "assd_um": 50.15518177842997
+      }
+    },
+    {
+      "case": "bcss_38",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-A2-A0ST",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 2030,
+      "reference_boundary_pixels": 6029,
+      "f1_8um": 0.43419664063024366,
+      "assd_um": 23.23220130400842,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 2599,
+        "reference_boundary_pixels": 6029,
+        "f1_8um": 0.2659925399083825,
+        "assd_um": 28.4197550810838
+      }
+    },
+    {
+      "case": "bcss_39",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-E2-A14R",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 10014,
+      "reference_boundary_pixels": 31310,
+      "f1_8um": 0.40724717127042803,
+      "assd_um": 34.39233707553028,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 9341,
+        "reference_boundary_pixels": 31310,
+        "f1_8um": 0.24923360908408837,
+        "assd_um": 50.871828770818084
+      }
+    },
+    {
+      "case": "bcss_43",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-A7-A0DA",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 45481,
+      "reference_boundary_pixels": 51285,
+      "f1_8um": 0.679690813948162,
+      "assd_um": 9.68075942667673,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 28435,
+        "reference_boundary_pixels": 51285,
+        "f1_8um": 0.3848586012983193,
+        "assd_um": 19.436582545914426
+      }
+    },
+    {
+      "case": "bcss_44",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-AC-A7VC",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 53652,
+      "reference_boundary_pixels": 28422,
+      "f1_8um": 0.3916933575474457,
+      "assd_um": 36.52591037341774,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 15898,
+        "reference_boundary_pixels": 28422,
+        "f1_8um": 0.2727838635300479,
+        "assd_um": 26.183001466500365
+      }
+    },
+    {
+      "case": "bcss_46",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-OL-A66P",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 4417,
+      "reference_boundary_pixels": 14800,
+      "f1_8um": 0.3936596959632921,
+      "assd_um": 28.81554740915598,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 4231,
+        "reference_boundary_pixels": 14800,
+        "f1_8um": 0.2712607811676633,
+        "assd_um": 36.62104222616206
+      }
+    },
+    {
+      "case": "bcss_48",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-C8-A3M7",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 68858,
+      "reference_boundary_pixels": 71005,
+      "f1_8um": 0.7217965717803612,
+      "assd_um": 7.557284598439536,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 28217,
+        "reference_boundary_pixels": 71005,
+        "f1_8um": 0.45891064138553206,
+        "assd_um": 14.478039970104838
+      }
+    },
+    {
+      "case": "bcss_56",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-AN-A0AT",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 30782,
+      "reference_boundary_pixels": 46699,
+      "f1_8um": 0.6825913217996752,
+      "assd_um": 9.478145513340383,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 22161,
+        "reference_boundary_pixels": 46699,
+        "f1_8um": 0.43660432922973347,
+        "assd_um": 14.21607410096127
+      }
+    },
+    {
+      "case": "bcss_57",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-AR-A1AY",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 32690,
+      "reference_boundary_pixels": 56966,
+      "f1_8um": 0.715035668365641,
+      "assd_um": 11.033077513731735,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 29411,
+        "reference_boundary_pixels": 56966,
+        "f1_8um": 0.3753617081887233,
+        "assd_um": 17.42657458063033
+      }
+    },
+    {
+      "case": "bcss_59",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-AR-A0TU",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 27828,
+      "reference_boundary_pixels": 82656,
+      "f1_8um": 0.5730330204442573,
+      "assd_um": 17.871410748288234,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 20108,
+        "reference_boundary_pixels": 82656,
+        "f1_8um": 0.3417844212196474,
+        "assd_um": 24.813427589686064
+      }
+    },
+    {
+      "case": "bcss_62",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-C8-A131",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 3298,
+      "reference_boundary_pixels": 13905,
+      "f1_8um": 0.22163932833213523,
+      "assd_um": 61.73180487107529,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 2877,
+        "reference_boundary_pixels": 13905,
+        "f1_8um": 0.19507269732758478,
+        "assd_um": 101.22372164376239
+      }
+    },
+    {
+      "case": "bcss_63",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-D8-A1XK",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 7995,
+      "reference_boundary_pixels": 16389,
+      "f1_8um": 0.4746399017618095,
+      "assd_um": 38.54217692473508,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 9581,
+        "reference_boundary_pixels": 16389,
+        "f1_8um": 0.3179549808382559,
+        "assd_um": 37.05965982001927
+      }
+    },
+    {
+      "case": "bcss_64",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-AR-A0U4",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 0,
+      "reference_boundary_pixels": 16681,
+      "f1_8um": 0.0,
+      "assd_um": null,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 0,
+        "reference_boundary_pixels": 16681,
+        "f1_8um": 0.0,
+        "assd_um": null
+      }
+    },
+    {
+      "case": "bcss_70",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-A8-A07C",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 57861,
+      "reference_boundary_pixels": 77364,
+      "f1_8um": 0.7505930730609935,
+      "assd_um": 7.776615732449242,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 41784,
+        "reference_boundary_pixels": 77364,
+        "f1_8um": 0.49175033651058675,
+        "assd_um": 11.861041789760243
+      }
+    },
+    {
+      "case": "bcss_71",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-D8-A1JL",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 2675,
+      "reference_boundary_pixels": 2911,
+      "f1_8um": 0.30042152108079734,
+      "assd_um": 26.792679876475688,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 1080,
+        "reference_boundary_pixels": 2911,
+        "f1_8um": 0.12620263915121244,
+        "assd_um": 37.28384864789432
+      }
+    },
+    {
+      "case": "bcss_78",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-AN-A0XU",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 41141,
+      "reference_boundary_pixels": 51982,
+      "f1_8um": 0.6926186145347418,
+      "assd_um": 12.266484389730836,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 22055,
+        "reference_boundary_pixels": 51982,
+        "f1_8um": 0.375249728945325,
+        "assd_um": 28.376698513873347
+      }
+    },
+    {
+      "case": "bcss_80",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-D8-A1JF",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 16894,
+      "reference_boundary_pixels": 27100,
+      "f1_8um": 0.6598743729286817,
+      "assd_um": 9.58667255708354,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 12220,
+        "reference_boundary_pixels": 27100,
+        "f1_8um": 0.3836912893184167,
+        "assd_um": 19.01016859408519
+      }
+    },
+    {
+      "case": "bcss_82",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-S3-AA15",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 19495,
+      "reference_boundary_pixels": 45177,
+      "f1_8um": 0.6701039566618916,
+      "assd_um": 10.783672317591476,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 14311,
+        "reference_boundary_pixels": 45177,
+        "f1_8um": 0.35601711616917187,
+        "assd_um": 20.00542656580442
+      }
+    },
+    {
+      "case": "bcss_86",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-BH-A0AV",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 17666,
+      "reference_boundary_pixels": 28739,
+      "f1_8um": 0.5797994635365568,
+      "assd_um": 35.398036067218555,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 12283,
+        "reference_boundary_pixels": 28739,
+        "f1_8um": 0.3312383714776148,
+        "assd_um": 26.863828769022977
+      }
+    },
+    {
+      "case": "bcss_87",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-AN-A0AR",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 3332,
+      "reference_boundary_pixels": 10389,
+      "f1_8um": 0.38420254309801105,
+      "assd_um": 78.33939644585357,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 3036,
+        "reference_boundary_pixels": 10389,
+        "f1_8um": 0.17628073263296848,
+        "assd_um": 79.56440682197075
+      }
+    },
+    {
+      "case": "bcss_93",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-GM-A2DB",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 10781,
+      "reference_boundary_pixels": 16030,
+      "f1_8um": 0.6370422939927236,
+      "assd_um": 28.206969561464167,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 11519,
+        "reference_boundary_pixels": 16030,
+        "f1_8um": 0.3401984308718001,
+        "assd_um": 29.768920130756875
+      }
+    },
+    {
+      "case": "bcss_94",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-D8-A143",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 6403,
+      "reference_boundary_pixels": 30533,
+      "f1_8um": 0.3043845118262764,
+      "assd_um": 111.79136282756787,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 8067,
+        "reference_boundary_pixels": 30533,
+        "f1_8um": 0.257724887246799,
+        "assd_um": 100.6746239653012
+      }
+    },
+    {
+      "case": "bcss_95",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-AO-A0J4",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 5422,
+      "reference_boundary_pixels": 9013,
+      "f1_8um": 0.7672155864733762,
+      "assd_um": 13.564464062150007,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 5828,
+        "reference_boundary_pixels": 9013,
+        "f1_8um": 0.4883009319068427,
+        "assd_um": 30.219444510797125
+      }
+    },
+    {
+      "case": "bcss_97",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-AO-A128",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 8979,
+      "reference_boundary_pixels": 12870,
+      "f1_8um": 0.3680238866135045,
+      "assd_um": 61.296957389013514,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 9062,
+        "reference_boundary_pixels": 12870,
+        "f1_8um": 0.36264452786446244,
+        "assd_um": 61.05064737892902
+      }
+    },
+    {
+      "case": "bcss_102",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-BH-A18V",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 19971,
+      "reference_boundary_pixels": 26285,
+      "f1_8um": 0.48964069930110066,
+      "assd_um": 19.508186984192967,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 17642,
+        "reference_boundary_pixels": 26285,
+        "f1_8um": 0.36191353390686276,
+        "assd_um": 24.818647167441497
+      }
+    },
+    {
+      "case": "bcss_103",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-AR-A1AQ",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 1070,
+      "reference_boundary_pixels": 21119,
+      "f1_8um": 0.1184109374986149,
+      "assd_um": 153.9198884968638,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 1298,
+        "reference_boundary_pixels": 21119,
+        "f1_8um": 0.07254615925577604,
+        "assd_um": 179.9323102074467
+      }
+    },
+    {
+      "case": "bcss_106",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-E2-A158",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 49846,
+      "reference_boundary_pixels": 69027,
+      "f1_8um": 0.8519031837071542,
+      "assd_um": 6.604882880388402,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 18021,
+        "reference_boundary_pixels": 69027,
+        "f1_8um": 0.32829235661646106,
+        "assd_um": 32.34335104530071
+      }
+    },
+    {
+      "case": "bcss_113",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-BH-A0WA",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 4743,
+      "reference_boundary_pixels": 11294,
+      "f1_8um": 0.5602329730348072,
+      "assd_um": 52.75902110170766,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 5354,
+        "reference_boundary_pixels": 11294,
+        "f1_8um": 0.34295670712394,
+        "assd_um": 52.3159988019634
+      }
+    },
+    {
+      "case": "bcss_114",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-BH-A0RX",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 5466,
+      "reference_boundary_pixels": 17123,
+      "f1_8um": 0.34445396254328237,
+      "assd_um": 48.886673359113765,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 4889,
+        "reference_boundary_pixels": 17123,
+        "f1_8um": 0.1589934875752018,
+        "assd_um": 54.36939191403032
+      }
+    },
+    {
+      "case": "bcss_129",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-A2-A0T2",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 55086,
+      "reference_boundary_pixels": 73661,
+      "f1_8um": 0.7401021588261909,
+      "assd_um": 8.963214188882215,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 27560,
+        "reference_boundary_pixels": 73661,
+        "f1_8um": 0.46103965591459944,
+        "assd_um": 20.533082079385284
+      }
+    },
+    {
+      "case": "bcss_130",
+      "dataset": "bcss",
+      "source_group": "TCGA:TCGA-OL-A5D6",
+      "mpp_xy": [
+        0.25,
+        0.25
+      ],
+      "predicted_boundary_pixels": 40954,
+      "reference_boundary_pixels": 51702,
+      "f1_8um": 0.6365490795206443,
+      "assd_um": 16.532046188344403,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 23674,
+        "reference_boundary_pixels": 51702,
+        "f1_8um": 0.34585326142599904,
+        "assd_um": 27.673173153212165
+      }
+    },
+    {
+      "case": "tiger_44",
+      "dataset": "tiger",
+      "source_group": "tiger:242",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 8258,
+      "reference_boundary_pixels": 2123,
+      "f1_8um": 0.45508268930282436,
+      "assd_um": 16.321530457123973,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 10384,
+        "reference_boundary_pixels": 2123,
+        "f1_8um": 0.2529318024454071,
+        "assd_um": 19.486438060580074
+      }
+    },
+    {
+      "case": "tiger_45",
+      "dataset": "tiger",
+      "source_group": "tiger:136",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 31618,
+      "reference_boundary_pixels": 25577,
+      "f1_8um": 0.7960275130224379,
+      "assd_um": 5.782826218404122,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 22028,
+        "reference_boundary_pixels": 25577,
+        "f1_8um": 0.41246799506276594,
+        "assd_um": 13.316429429739351
+      }
+    },
+    {
+      "case": "tiger_48",
+      "dataset": "tiger",
+      "source_group": "tiger:201",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 6666,
+      "reference_boundary_pixels": 1314,
+      "f1_8um": 0.35865191178008515,
+      "assd_um": 21.627693790665365,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 9304,
+        "reference_boundary_pixels": 1314,
+        "f1_8um": 0.21000036393948898,
+        "assd_um": 24.403839546001194
+      }
+    },
+    {
+      "case": "tiger_62",
+      "dataset": "tiger",
+      "source_group": "tiger:TC_S01_P000135",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 0,
+      "reference_boundary_pixels": 0,
+      "f1_8um": null,
+      "assd_um": null,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 0,
+        "reference_boundary_pixels": 0,
+        "f1_8um": null,
+        "assd_um": null
+      }
+    },
+    {
+      "case": "tiger_64",
+      "dataset": "tiger",
+      "source_group": "tiger:TC_S01_P000115",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 3048,
+      "reference_boundary_pixels": 4638,
+      "f1_8um": 0.39897498343496324,
+      "assd_um": 12.297364947606697,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 5182,
+        "reference_boundary_pixels": 4638,
+        "f1_8um": 0.4586452847796897,
+        "assd_um": 9.990820071424993
+      }
+    },
+    {
+      "case": "tiger_65",
+      "dataset": "tiger",
+      "source_group": "tiger:100",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 8859,
+      "reference_boundary_pixels": 7614,
+      "f1_8um": 0.2554653621076651,
+      "assd_um": 41.457583891353146,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 8794,
+        "reference_boundary_pixels": 7614,
+        "f1_8um": 0.17227703259092172,
+        "assd_um": 51.71503120579832
+      }
+    },
+    {
+      "case": "tiger_67",
+      "dataset": "tiger",
+      "source_group": "tiger:181",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 15228,
+      "reference_boundary_pixels": 13836,
+      "f1_8um": 0.4581835191295622,
+      "assd_um": 28.76709845779074,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 4636,
+        "reference_boundary_pixels": 13836,
+        "f1_8um": 0.21078761739230809,
+        "assd_um": 63.0548530545164
+      }
+    },
+    {
+      "case": "tiger_68",
+      "dataset": "tiger",
+      "source_group": "tiger:TC_S01_P000015",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 24805,
+      "reference_boundary_pixels": 14210,
+      "f1_8um": 0.5546894783345683,
+      "assd_um": 11.436842012205197,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 9922,
+        "reference_boundary_pixels": 14210,
+        "f1_8um": 0.3621229131073161,
+        "assd_um": 18.187712969621163
+      }
+    },
+    {
+      "case": "tiger_71",
+      "dataset": "tiger",
+      "source_group": "tiger:TC_S01_P000071",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 10529,
+      "reference_boundary_pixels": 9395,
+      "f1_8um": 0.5462949610746004,
+      "assd_um": 9.572937087039096,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 9178,
+        "reference_boundary_pixels": 9395,
+        "f1_8um": 0.47930387696366056,
+        "assd_um": 12.731049801111576
+      }
+    },
+    {
+      "case": "tiger_73",
+      "dataset": "tiger",
+      "source_group": "tiger:TC_S01_P000039",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 20574,
+      "reference_boundary_pixels": 21710,
+      "f1_8um": 0.7589963537405451,
+      "assd_um": 8.350391057024428,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 12593,
+        "reference_boundary_pixels": 21710,
+        "f1_8um": 0.40449248835068513,
+        "assd_um": 17.567117894388037
+      }
+    },
+    {
+      "case": "tiger_76",
+      "dataset": "tiger",
+      "source_group": "tiger:TC_S01_P000030",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 23748,
+      "reference_boundary_pixels": 19538,
+      "f1_8um": 0.7250135305880456,
+      "assd_um": 7.228508569427122,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 14329,
+        "reference_boundary_pixels": 19538,
+        "f1_8um": 0.38603994098165745,
+        "assd_um": 15.06917037525578
+      }
+    },
+    {
+      "case": "tiger_78",
+      "dataset": "tiger",
+      "source_group": "tiger:250",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 22556,
+      "reference_boundary_pixels": 21519,
+      "f1_8um": 0.8277107010795342,
+      "assd_um": 4.743667613999337,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 16305,
+        "reference_boundary_pixels": 21519,
+        "f1_8um": 0.41236729015312573,
+        "assd_um": 15.36302697595078
+      }
+    },
+    {
+      "case": "ignite_02",
+      "dataset": "ignite",
+      "source_group": "ignite:ignite-patient-2",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 0,
+      "reference_boundary_pixels": 0,
+      "f1_8um": null,
+      "assd_um": null,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 0,
+        "reference_boundary_pixels": 0,
+        "f1_8um": null,
+        "assd_um": null
+      }
+    },
+    {
+      "case": "ignite_03",
+      "dataset": "ignite",
+      "source_group": "ignite:ignite-patient-3",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 26174,
+      "reference_boundary_pixels": 40609,
+      "f1_8um": 0.7610526968477567,
+      "assd_um": 6.915988952099467,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 15812,
+        "reference_boundary_pixels": 40609,
+        "f1_8um": 0.4117031772718816,
+        "assd_um": 15.352479772807152
+      }
+    },
+    {
+      "case": "ignite_09",
+      "dataset": "ignite",
+      "source_group": "ignite:ignite-patient-9",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 12612,
+      "reference_boundary_pixels": 12642,
+      "f1_8um": 0.8507771779329715,
+      "assd_um": 5.235392327209583,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 7556,
+        "reference_boundary_pixels": 12642,
+        "f1_8um": 0.3435300382568071,
+        "assd_um": 23.214429366654006
+      }
+    },
+    {
+      "case": "ignite_11",
+      "dataset": "ignite",
+      "source_group": "ignite:ignite-patient-11",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 0,
+      "reference_boundary_pixels": 0,
+      "f1_8um": null,
+      "assd_um": null,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 0,
+        "reference_boundary_pixels": 0,
+        "f1_8um": null,
+        "assd_um": null
+      }
+    },
+    {
+      "case": "ignite_16",
+      "dataset": "ignite",
+      "source_group": "ignite:ignite-patient-16",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 6056,
+      "reference_boundary_pixels": 6872,
+      "f1_8um": 0.9165624550680612,
+      "assd_um": 5.2821397101742855,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 7300,
+        "reference_boundary_pixels": 6872,
+        "f1_8um": 0.438136382321348,
+        "assd_um": 11.667754949976773
+      }
+    },
+    {
+      "case": "ignite_35",
+      "dataset": "ignite",
+      "source_group": "ignite:ignite-patient-57",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 14643,
+      "reference_boundary_pixels": 15997,
+      "f1_8um": 0.6768917254369506,
+      "assd_um": 10.823531501398561,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 11620,
+        "reference_boundary_pixels": 15997,
+        "f1_8um": 0.4517002977445029,
+        "assd_um": 15.470931972751009
+      }
+    },
+    {
+      "case": "gcss_07",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-VQ-A8P2",
+      "mpp_xy": [
+        1.010315625,
+        1.0105338266384778
+      ],
+      "predicted_boundary_pixels": 0,
+      "reference_boundary_pixels": 2314,
+      "f1_8um": 0.0,
+      "assd_um": null,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 2473,
+        "reference_boundary_pixels": 2314,
+        "f1_8um": 0.3541731352529919,
+        "assd_um": 27.860701365700326
+      }
+    },
+    {
+      "case": "gcss_09",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-VQ-A91Z",
+      "mpp_xy": [
+        1.01,
+        1.010449288256228
+      ],
+      "predicted_boundary_pixels": 11109,
+      "reference_boundary_pixels": 10191,
+      "f1_8um": 0.7315165148372539,
+      "assd_um": 9.753272629859069,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 8346,
+        "reference_boundary_pixels": 10191,
+        "f1_8um": 0.44275643470138154,
+        "assd_um": 15.90272989309532
+      }
+    },
+    {
+      "case": "gcss_12",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-JY-A938",
+      "mpp_xy": [
+        1.0071373994638069,
+        1.0073491636363636
+      ],
+      "predicted_boundary_pixels": 0,
+      "reference_boundary_pixels": 3798,
+      "f1_8um": 0.0,
+      "assd_um": null,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 4524,
+        "reference_boundary_pixels": 3798,
+        "f1_8um": 0.4656461758591831,
+        "assd_um": 10.416859898653135
+      }
+    },
+    {
+      "case": "gcss_13",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-BR-8369",
+      "mpp_xy": [
+        1.0083541813070975,
+        1.0084282073067121
+      ],
+      "predicted_boundary_pixels": 230,
+      "reference_boundary_pixels": 343,
+      "f1_8um": 0.7370146981319904,
+      "assd_um": 7.441201473213673,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 269,
+        "reference_boundary_pixels": 343,
+        "f1_8um": 0.38277433392175375,
+        "assd_um": 14.83182354971545
+      }
+    },
+    {
+      "case": "gcss_16",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-VQ-A8PB",
+      "mpp_xy": [
+        1.01,
+        1.01
+      ],
+      "predicted_boundary_pixels": 0,
+      "reference_boundary_pixels": 0,
+      "f1_8um": null,
+      "assd_um": null,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 0,
+        "reference_boundary_pixels": 0,
+        "f1_8um": null,
+        "assd_um": null
+      }
+    },
+    {
+      "case": "gcss_20",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-BR-7716",
+      "mpp_xy": [
+        1.0085828835774866,
+        1.008
+      ],
+      "predicted_boundary_pixels": 9863,
+      "reference_boundary_pixels": 9447,
+      "f1_8um": 0.5485335887386554,
+      "assd_um": 16.812904489860824,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 8023,
+        "reference_boundary_pixels": 9447,
+        "f1_8um": 0.4420167954586581,
+        "assd_um": 16.72219995775175
+      }
+    },
+    {
+      "case": "gcss_22",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-D7-5578",
+      "mpp_xy": [
+        0.9943828967642527,
+        0.9944093904448105
+      ],
+      "predicted_boundary_pixels": 10000,
+      "reference_boundary_pixels": 11895,
+      "f1_8um": 0.714622617262515,
+      "assd_um": 8.534992523327332,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 9018,
+        "reference_boundary_pixels": 11895,
+        "f1_8um": 0.4746265639436259,
+        "assd_um": 12.514093110298656
+      }
+    },
+    {
+      "case": "gcss_24",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-BR-A4PF",
+      "mpp_xy": [
+        0.9922046204620462,
+        0.992450909090909
+      ],
+      "predicted_boundary_pixels": 1228,
+      "reference_boundary_pixels": 1323,
+      "f1_8um": 0.5688870185065081,
+      "assd_um": 9.131103890231609,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 813,
+        "reference_boundary_pixels": 1323,
+        "f1_8um": 0.2273008980710527,
+        "assd_um": 30.68979938446488
+      }
+    },
+    {
+      "case": "gcss_26",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-VQ-A8PE",
+      "mpp_xy": [
+        1.0104360967184802,
+        1.0103863810252487
+      ],
+      "predicted_boundary_pixels": 6926,
+      "reference_boundary_pixels": 6341,
+      "f1_8um": 0.654130602042364,
+      "assd_um": 8.589829574624922,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 8221,
+        "reference_boundary_pixels": 6341,
+        "f1_8um": 0.4673319766281794,
+        "assd_um": 10.228740910155254
+      }
+    },
+    {
+      "case": "gcss_27",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-BR-8483",
+      "mpp_xy": [
+        1.0081689008042896,
+        1.008615635179153
+      ],
+      "predicted_boundary_pixels": 0,
+      "reference_boundary_pixels": 4486,
+      "f1_8um": 0.0,
+      "assd_um": null,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 5411,
+        "reference_boundary_pixels": 4486,
+        "f1_8um": 0.5146829939097324,
+        "assd_um": 9.155764369209813
+      }
+    },
+    {
+      "case": "gcss_29",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-D7-5577",
+      "mpp_xy": [
+        1.0081970289288507,
+        1.0084235294117647
+      ],
+      "predicted_boundary_pixels": 10939,
+      "reference_boundary_pixels": 11008,
+      "f1_8um": 0.6801914715732026,
+      "assd_um": 15.084461433033576,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 9369,
+        "reference_boundary_pixels": 11008,
+        "f1_8um": 0.4347668938509384,
+        "assd_um": 13.853980686908198
+      }
+    },
+    {
+      "case": "gcss_31",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-D7-A74B",
+      "mpp_xy": [
+        1.0114375946173253,
+        1.0112398607484767
+      ],
+      "predicted_boundary_pixels": 0,
+      "reference_boundary_pixels": 0,
+      "f1_8um": null,
+      "assd_um": null,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 0,
+        "reference_boundary_pixels": 0,
+        "f1_8um": null,
+        "assd_um": null
+      }
+    },
+    {
+      "case": "gcss_e_01",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-BR-8295",
+      "mpp_xy": [
+        1.008,
+        1.008
+      ],
+      "predicted_boundary_pixels": 7378,
+      "reference_boundary_pixels": 7827,
+      "f1_8um": 0.7915327338775539,
+      "assd_um": 5.346232340400034,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 8800,
+        "reference_boundary_pixels": 7827,
+        "f1_8um": 0.453829907101076,
+        "assd_um": 9.295275060265054
+      }
+    },
+    {
+      "case": "gcss_e_02",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-D7-A74A",
+      "mpp_xy": [
+        1.011021084864392,
+        1.0108
+      ],
+      "predicted_boundary_pixels": 12130,
+      "reference_boundary_pixels": 14948,
+      "f1_8um": 0.7552412351828796,
+      "assd_um": 7.111382810616139,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 8983,
+        "reference_boundary_pixels": 14948,
+        "f1_8um": 0.42001251400799283,
+        "assd_um": 15.06877479981844
+      }
+    },
+    {
+      "case": "gcss_e_05",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-VQ-A91Q",
+      "mpp_xy": [
+        1.0101917236142748,
+        1.0102226631393298
+      ],
+      "predicted_boundary_pixels": 5076,
+      "reference_boundary_pixels": 5586,
+      "f1_8um": 0.7312110117479287,
+      "assd_um": 6.751051060590468,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 5732,
+        "reference_boundary_pixels": 5586,
+        "f1_8um": 0.39326108743077665,
+        "assd_um": 13.753137319330243
+      }
+    },
+    {
+      "case": "gcss_e_13",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-VQ-A8P5",
+      "mpp_xy": [
+        1.01,
+        1.0105716981132076
+      ],
+      "predicted_boundary_pixels": 8273,
+      "reference_boundary_pixels": 3483,
+      "f1_8um": 0.38387917395602855,
+      "assd_um": 88.05993777840655,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 4498,
+        "reference_boundary_pixels": 3483,
+        "f1_8um": 0.4910238669959018,
+        "assd_um": 12.763625811554828
+      }
+    },
+    {
+      "case": "gcss_e_14",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-BR-8380",
+      "mpp_xy": [
+        1.008435233160622,
+        1.008495575221239
+      ],
+      "predicted_boundary_pixels": 5842,
+      "reference_boundary_pixels": 7387,
+      "f1_8um": 0.6124947692919236,
+      "assd_um": 26.814088880278117,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 3321,
+        "reference_boundary_pixels": 7387,
+        "f1_8um": 0.3575535239103167,
+        "assd_um": 34.55406599321354
+      }
+    },
+    {
+      "case": "gcss_e_15",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-FP-7829",
+      "mpp_xy": [
+        1.0086702127659575,
+        1.008250248262165
+      ],
+      "predicted_boundary_pixels": 15270,
+      "reference_boundary_pixels": 15985,
+      "f1_8um": 0.8038143900312658,
+      "assd_um": 5.9007374927237635,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 13739,
+        "reference_boundary_pixels": 15985,
+        "f1_8um": 0.4115416051991547,
+        "assd_um": 15.032199140176784
+      }
+    },
+    {
+      "case": "gcss_e_22",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-D7-A4YX",
+      "mpp_xy": [
+        0.9862037190082644,
+        0.9862390882638216
+      ],
+      "predicted_boundary_pixels": 5204,
+      "reference_boundary_pixels": 5814,
+      "f1_8um": 0.6636079361554439,
+      "assd_um": 8.741522538835747,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 4913,
+        "reference_boundary_pixels": 5814,
+        "f1_8um": 0.42906294179429494,
+        "assd_um": 13.133664342743261
+      }
+    },
+    {
+      "case": "gcss_e_31",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-VQ-A8P3",
+      "mpp_xy": [
+        1.0107269673704415,
+        1.01
+      ],
+      "predicted_boundary_pixels": 2760,
+      "reference_boundary_pixels": 3197,
+      "f1_8um": 0.6056504996023513,
+      "assd_um": 7.7568648340309325,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 3646,
+        "reference_boundary_pixels": 3197,
+        "f1_8um": 0.45862608436860286,
+        "assd_um": 9.51870054896537
+      }
+    },
+    {
+      "case": "gcss_e_32",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-BR-8286",
+      "mpp_xy": [
+        1.0081876396128073,
+        1.008642310960068
+      ],
+      "predicted_boundary_pixels": 4876,
+      "reference_boundary_pixels": 5068,
+      "f1_8um": 0.8081777189739411,
+      "assd_um": 6.914970993212758,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 6202,
+        "reference_boundary_pixels": 5068,
+        "f1_8um": 0.5025076694452802,
+        "assd_um": 10.69652387270121
+      }
+    },
+    {
+      "case": "gcss_e_34",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-BR-6801",
+      "mpp_xy": [
+        1.008,
+        1.008
+      ],
+      "predicted_boundary_pixels": 9423,
+      "reference_boundary_pixels": 13141,
+      "f1_8um": 0.7630472930375048,
+      "assd_um": 11.764951872225971,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 10136,
+        "reference_boundary_pixels": 13141,
+        "f1_8um": 0.4071263962831388,
+        "assd_um": 17.235185555405977
+      }
+    },
+    {
+      "case": "gcss_e_35",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-D7-A4YY",
+      "mpp_xy": [
+        0.9863670886075949,
+        0.986
+      ],
+      "predicted_boundary_pixels": 5795,
+      "reference_boundary_pixels": 8041,
+      "f1_8um": 0.6379775103481723,
+      "assd_um": 11.840782479543972,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 5054,
+        "reference_boundary_pixels": 8041,
+        "f1_8um": 0.40418262364204394,
+        "assd_um": 18.091360251042097
+      }
+    },
+    {
+      "case": "gcss_e_38",
+      "dataset": "gcss",
+      "source_group": "TCGA:TCGA-FP-8211",
+      "mpp_xy": [
+        1.008671403197158,
+        1.0082563580874873
+      ],
+      "predicted_boundary_pixels": 10991,
+      "reference_boundary_pixels": 10136,
+      "f1_8um": 0.6010202277823251,
+      "assd_um": 12.041054038187976,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 9886,
+        "reference_boundary_pixels": 10136,
+        "f1_8um": 0.41288618679994404,
+        "assd_um": 15.49684646914292
+      }
+    },
+    {
+      "case": "ignite_e_06",
+      "dataset": "ignite",
+      "source_group": "ignite:ignite-patient-68",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 0,
+      "reference_boundary_pixels": 0,
+      "f1_8um": null,
+      "assd_um": null,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 0,
+        "reference_boundary_pixels": 0,
+        "f1_8um": null,
+        "assd_um": null
+      }
+    },
+    {
+      "case": "ignite_e_08",
+      "dataset": "ignite",
+      "source_group": "TCGA:TCGA-22-1012",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 8784,
+      "reference_boundary_pixels": 9140,
+      "f1_8um": 0.9304600288877194,
+      "assd_um": 3.594556769209969,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 10856,
+        "reference_boundary_pixels": 9140,
+        "f1_8um": 0.4690203096159165,
+        "assd_um": 9.911746041413348
+      }
+    },
+    {
+      "case": "ignite_e_09",
+      "dataset": "ignite",
+      "source_group": "TCGA:TCGA-50-5931",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 6867,
+      "reference_boundary_pixels": 7612,
+      "f1_8um": 0.8511588249379678,
+      "assd_um": 4.589701479740538,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 3326,
+        "reference_boundary_pixels": 7612,
+        "f1_8um": 0.3096879086437136,
+        "assd_um": 32.75178395525255
+      }
+    },
+    {
+      "case": "ignite_e_10",
+      "dataset": "ignite",
+      "source_group": "TCGA:TCGA-50-6673",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 0,
+      "reference_boundary_pixels": 0,
+      "f1_8um": null,
+      "assd_um": null,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 0,
+        "reference_boundary_pixels": 0,
+        "f1_8um": null,
+        "assd_um": null
+      }
+    },
+    {
+      "case": "ignite_e_11",
+      "dataset": "ignite",
+      "source_group": "TCGA:TCGA-55-7728",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 0,
+      "reference_boundary_pixels": 5816,
+      "f1_8um": 0.0,
+      "assd_um": null,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 4559,
+        "reference_boundary_pixels": 5816,
+        "f1_8um": 0.3215691351949741,
+        "assd_um": 11.976142855870378
+      }
+    },
+    {
+      "case": "ignite_e_12",
+      "dataset": "ignite",
+      "source_group": "TCGA:TCGA-55-8089",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 17258,
+      "reference_boundary_pixels": 19940,
+      "f1_8um": 0.8816758196647551,
+      "assd_um": 4.4386512206498905,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 13783,
+        "reference_boundary_pixels": 19940,
+        "f1_8um": 0.40096091493683195,
+        "assd_um": 13.329324875423984
+      }
+    },
+    {
+      "case": "ignite_e_13",
+      "dataset": "ignite",
+      "source_group": "TCGA:TCGA-56-8504",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 2987,
+      "reference_boundary_pixels": 2810,
+      "f1_8um": 0.6703395402681483,
+      "assd_um": 10.110161383565694,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 2510,
+        "reference_boundary_pixels": 2810,
+        "f1_8um": 0.3959412759142273,
+        "assd_um": 11.541020736791232
+      }
+    },
+    {
+      "case": "ignite_e_14",
+      "dataset": "ignite",
+      "source_group": "TCGA:TCGA-62-A46O",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 4883,
+      "reference_boundary_pixels": 10139,
+      "f1_8um": 0.6676904728596439,
+      "assd_um": 23.781155575044743,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 3400,
+        "reference_boundary_pixels": 10139,
+        "f1_8um": 0.4126171392646077,
+        "assd_um": 54.3083827767045
+      }
+    },
+    {
+      "case": "ignite_e_15",
+      "dataset": "ignite",
+      "source_group": "TCGA:TCGA-77-A5GB",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 11020,
+      "reference_boundary_pixels": 12827,
+      "f1_8um": 0.8169601053479802,
+      "assd_um": 7.198656160883977,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 10235,
+        "reference_boundary_pixels": 12827,
+        "f1_8um": 0.4250744402711563,
+        "assd_um": 16.103986941190342
+      }
+    },
+    {
+      "case": "ignite_e_16",
+      "dataset": "ignite",
+      "source_group": "TCGA:TCGA-86-8280",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 16876,
+      "reference_boundary_pixels": 17894,
+      "f1_8um": 0.693048887210272,
+      "assd_um": 9.63650632799027,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 9281,
+        "reference_boundary_pixels": 17894,
+        "f1_8um": 0.2188942373688456,
+        "assd_um": 27.843715191484936
+      }
+    },
+    {
+      "case": "ignite_e_17",
+      "dataset": "ignite",
+      "source_group": "TCGA:TCGA-97-7938",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 25685,
+      "reference_boundary_pixels": 26290,
+      "f1_8um": 0.8902081977968246,
+      "assd_um": 3.83530656855004,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 14517,
+        "reference_boundary_pixels": 26290,
+        "f1_8um": 0.42015902590790444,
+        "assd_um": 14.72857937119618
+      }
+    },
+    {
+      "case": "ignite_e_18",
+      "dataset": "ignite",
+      "source_group": "TCGA:TCGA-98-A53D",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 6757,
+      "reference_boundary_pixels": 6919,
+      "f1_8um": 0.9219529243418023,
+      "assd_um": 7.148129507411944,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 7644,
+        "reference_boundary_pixels": 6919,
+        "f1_8um": 0.4280397892078225,
+        "assd_um": 11.18569552867622
+      }
+    },
+    {
+      "case": "ignite_e_19",
+      "dataset": "ignite",
+      "source_group": "TCGA:TCGA-J1-A4AH",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 8150,
+      "reference_boundary_pixels": 7636,
+      "f1_8um": 0.9368660579188799,
+      "assd_um": 3.883773173327556,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 7311,
+        "reference_boundary_pixels": 7636,
+        "f1_8um": 0.5252920774347833,
+        "assd_um": 11.697824757306417
+      }
+    },
+    {
+      "case": "ignite_e_20",
+      "dataset": "ignite",
+      "source_group": "TCGA:TCGA-MF-A522",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 6492,
+      "reference_boundary_pixels": 6048,
+      "f1_8um": 0.8039983134849605,
+      "assd_um": 11.287907414736326,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 4329,
+        "reference_boundary_pixels": 6048,
+        "f1_8um": 0.3644137659308373,
+        "assd_um": 17.5624871060616
+      }
+    },
+    {
+      "case": "ignite_e_21",
+      "dataset": "ignite",
+      "source_group": "TCGA:TCGA-NC-A5HF",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 9152,
+      "reference_boundary_pixels": 11355,
+      "f1_8um": 0.8615149092694423,
+      "assd_um": 8.367355756793206,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 6941,
+        "reference_boundary_pixels": 11355,
+        "f1_8um": 0.4414951265483787,
+        "assd_um": 25.27801178491144
+      }
+    },
+    {
+      "case": "ignite_e_22",
+      "dataset": "ignite",
+      "source_group": "ignite:ignite-patient-44",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 3038,
+      "reference_boundary_pixels": 491,
+      "f1_8um": 0.2698023394285358,
+      "assd_um": 190.54956576526544,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 2000,
+        "reference_boundary_pixels": 491,
+        "f1_8um": 0.2981314548385171,
+        "assd_um": 18.88899189114901
+      }
+    },
+    {
+      "case": "ignite_e_23",
+      "dataset": "ignite",
+      "source_group": "ignite:ignite-patient-45",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 0,
+      "reference_boundary_pixels": 0,
+      "f1_8um": null,
+      "assd_um": null,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 0,
+        "reference_boundary_pixels": 0,
+        "f1_8um": null,
+        "assd_um": null
+      }
+    },
+    {
+      "case": "ignite_e_24",
+      "dataset": "ignite",
+      "source_group": "ignite:ignite-patient-46",
+      "mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "predicted_boundary_pixels": 0,
+      "reference_boundary_pixels": 0,
+      "f1_8um": null,
+      "assd_um": null,
+      "expert_decoded_coarse": {
+        "predicted_boundary_pixels": 0,
+        "reference_boundary_pixels": 0,
+        "f1_8um": null,
+        "assd_um": null
+      }
+    }
+  ]
+}

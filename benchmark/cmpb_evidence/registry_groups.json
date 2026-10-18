@@ -1,0 +1,3203 @@
+{
+  "version": "bora-supervised-tissues-v1",
+  "cases": [
+    {
+      "case": "tiger_01",
+      "dataset": "tiger",
+      "group": "tiger:198",
+      "split": "validation"
+    },
+    {
+      "case": "tiger_02",
+      "dataset": "tiger",
+      "group": "tiger:234",
+      "split": "train"
+    },
+    {
+      "case": "tiger_03",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000057",
+      "split": "train"
+    },
+    {
+      "case": "tiger_04",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000016",
+      "split": "train"
+    },
+    {
+      "case": "tiger_05",
+      "dataset": "tiger",
+      "group": "tiger:133",
+      "split": "train"
+    },
+    {
+      "case": "tiger_06",
+      "dataset": "tiger",
+      "group": "tiger:242",
+      "split": "test"
+    },
+    {
+      "case": "tiger_07",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000054",
+      "split": "train"
+    },
+    {
+      "case": "tiger_08",
+      "dataset": "tiger",
+      "group": "tiger:100",
+      "split": "validation"
+    },
+    {
+      "case": "tiger_09",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000024",
+      "split": "train"
+    },
+    {
+      "case": "tiger_10",
+      "dataset": "tiger",
+      "group": "tiger:250",
+      "split": "test"
+    },
+    {
+      "case": "tiger_11",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000130",
+      "split": "train"
+    },
+    {
+      "case": "tiger_12",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000015",
+      "split": "test"
+    },
+    {
+      "case": "tiger_13",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000013",
+      "split": "train"
+    },
+    {
+      "case": "tiger_14",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000147",
+      "split": "train"
+    },
+    {
+      "case": "tiger_15",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000158",
+      "split": "test"
+    },
+    {
+      "case": "tiger_16",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000039",
+      "split": "test"
+    },
+    {
+      "case": "bcss_01",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-BH-A1EW",
+      "split": "train"
+    },
+    {
+      "case": "bcss_02",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A2-A0D2",
+      "split": "train"
+    },
+    {
+      "case": "bcss_03",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-E2-A1LH",
+      "split": "train"
+    },
+    {
+      "case": "bcss_04",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A1-A0SK",
+      "split": "train"
+    },
+    {
+      "case": "bcss_05",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A2-A04P",
+      "split": "validation"
+    },
+    {
+      "case": "bcss_06",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-C8-A26Y",
+      "split": "test"
+    },
+    {
+      "case": "bcss_07",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AN-A0AL",
+      "split": "train"
+    },
+    {
+      "case": "bcss_08",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A7-A5ZV",
+      "split": "train"
+    },
+    {
+      "case": "bcss_09",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-EW-A1PB",
+      "split": "train"
+    },
+    {
+      "case": "bcss_10",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A2-A04T",
+      "split": "train"
+    },
+    {
+      "case": "bcss_11",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-S3-AA10",
+      "split": "train"
+    },
+    {
+      "case": "bcss_12",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AC-A2QH",
+      "split": "test"
+    },
+    {
+      "case": "bcss_13",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-LL-A441",
+      "split": "validation"
+    },
+    {
+      "case": "bcss_14",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AC-A2QJ",
+      "split": "train"
+    },
+    {
+      "case": "bcss_15",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-E2-A159",
+      "split": "train"
+    },
+    {
+      "case": "bcss_16",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-GM-A3XL",
+      "split": "train"
+    },
+    {
+      "case": "camelyon16-subset_01",
+      "dataset": "camelyon16-subset",
+      "group": "camelyon16-subset:tumor_058",
+      "split": "test"
+    },
+    {
+      "case": "camelyon16-subset_02",
+      "dataset": "camelyon16-subset",
+      "group": "camelyon16-subset:tumor_091",
+      "split": "train"
+    },
+    {
+      "case": "camelyon16-subset_03",
+      "dataset": "camelyon16-subset",
+      "group": "camelyon16-subset:tumor_075",
+      "split": "test"
+    },
+    {
+      "case": "camelyon16-subset_04",
+      "dataset": "camelyon16-subset",
+      "group": "camelyon16-subset:tumor_107",
+      "split": "train"
+    },
+    {
+      "case": "camelyon16-subset_05",
+      "dataset": "camelyon16-subset",
+      "group": "camelyon16-subset:tumor_084",
+      "split": "train"
+    },
+    {
+      "case": "camelyon16-subset_06",
+      "dataset": "camelyon16-subset",
+      "group": "camelyon16-subset:tumor_087",
+      "split": "train"
+    },
+    {
+      "case": "camelyon16-subset_07",
+      "dataset": "camelyon16-subset",
+      "group": "camelyon16-subset:tumor_081",
+      "split": "train"
+    },
+    {
+      "case": "beetle_01",
+      "dataset": "beetle",
+      "group": "beetle:patient166",
+      "split": "train"
+    },
+    {
+      "case": "beetle_02",
+      "dataset": "beetle",
+      "group": "beetle:patient170",
+      "split": "validation"
+    },
+    {
+      "case": "beetle_03",
+      "dataset": "beetle",
+      "group": "beetle:patient196",
+      "split": "train"
+    },
+    {
+      "case": "beetle_04",
+      "dataset": "beetle",
+      "group": "beetle:patient216",
+      "split": "test"
+    },
+    {
+      "case": "beetle_05",
+      "dataset": "beetle",
+      "group": "beetle:patient188",
+      "split": "train"
+    },
+    {
+      "case": "beetle_06",
+      "dataset": "beetle",
+      "group": "beetle:patient163",
+      "split": "train"
+    },
+    {
+      "case": "beetle_07",
+      "dataset": "beetle",
+      "group": "beetle:patient155",
+      "split": "validation"
+    },
+    {
+      "case": "beetle_08",
+      "dataset": "beetle",
+      "group": "beetle:patient175",
+      "split": "train"
+    },
+    {
+      "case": "beetle_09",
+      "dataset": "beetle",
+      "group": "beetle:patient187",
+      "split": "train"
+    },
+    {
+      "case": "beetle_10",
+      "dataset": "beetle",
+      "group": "beetle:patient172",
+      "split": "train"
+    },
+    {
+      "case": "tiger_17",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000159",
+      "split": "train"
+    },
+    {
+      "case": "tiger_18",
+      "dataset": "tiger",
+      "group": "tiger:196",
+      "split": "train"
+    },
+    {
+      "case": "tiger_19",
+      "dataset": "tiger",
+      "group": "tiger:207",
+      "split": "train"
+    },
+    {
+      "case": "tiger_20",
+      "dataset": "tiger",
+      "group": "tiger:201",
+      "split": "validation"
+    },
+    {
+      "case": "tiger_21",
+      "dataset": "tiger",
+      "group": "tiger:225",
+      "split": "test"
+    },
+    {
+      "case": "tiger_22",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000046",
+      "split": "train"
+    },
+    {
+      "case": "tiger_23",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000113",
+      "split": "train"
+    },
+    {
+      "case": "tiger_24",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000078",
+      "split": "train"
+    },
+    {
+      "case": "tiger_25",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000007",
+      "split": "train"
+    },
+    {
+      "case": "tiger_26",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000071",
+      "split": "validation"
+    },
+    {
+      "case": "tiger_27",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000060",
+      "split": "train"
+    },
+    {
+      "case": "tiger_28",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000115",
+      "split": "test"
+    },
+    {
+      "case": "tiger_29",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000135",
+      "split": "test"
+    },
+    {
+      "case": "tiger_30",
+      "dataset": "tiger",
+      "group": "tiger:134",
+      "split": "test"
+    },
+    {
+      "case": "tiger_31",
+      "dataset": "tiger",
+      "group": "tiger:240",
+      "split": "train"
+    },
+    {
+      "case": "tiger_32",
+      "dataset": "tiger",
+      "group": "tiger:181",
+      "split": "validation"
+    },
+    {
+      "case": "tiger_33",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000183",
+      "split": "train"
+    },
+    {
+      "case": "tiger_34",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000005",
+      "split": "validation"
+    },
+    {
+      "case": "tiger_35",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000145",
+      "split": "train"
+    },
+    {
+      "case": "tiger_36",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000010",
+      "split": "train"
+    },
+    {
+      "case": "tiger_37",
+      "dataset": "tiger",
+      "group": "tiger:154",
+      "split": "validation"
+    },
+    {
+      "case": "tiger_38",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000030",
+      "split": "test"
+    },
+    {
+      "case": "tiger_39",
+      "dataset": "tiger",
+      "group": "tiger:136",
+      "split": "validation"
+    },
+    {
+      "case": "tiger_40",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000003",
+      "split": "train"
+    },
+    {
+      "case": "bcss_17",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A8-A07O",
+      "split": "test"
+    },
+    {
+      "case": "bcss_18",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AO-A0J2",
+      "split": "train"
+    },
+    {
+      "case": "bcss_19",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AR-A5QQ",
+      "split": "train"
+    },
+    {
+      "case": "bcss_20",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AR-A1AI",
+      "split": "validation"
+    },
+    {
+      "case": "bcss_21",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-E2-A14N",
+      "split": "train"
+    },
+    {
+      "case": "bcss_22",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AR-A2LH",
+      "split": "validation"
+    },
+    {
+      "case": "bcss_23",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-D8-A147",
+      "split": "test"
+    },
+    {
+      "case": "bcss_24",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-C8-A27B",
+      "split": "train"
+    },
+    {
+      "case": "bcss_25",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-OL-A66I",
+      "split": "train"
+    },
+    {
+      "case": "bcss_26",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A2-A3XY",
+      "split": "test"
+    },
+    {
+      "case": "bcss_27",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AO-A1KR",
+      "split": "train"
+    },
+    {
+      "case": "bcss_28",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AO-A129",
+      "split": "test"
+    },
+    {
+      "case": "bcss_29",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-E2-A14X",
+      "split": "train"
+    },
+    {
+      "case": "bcss_30",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AC-A6IW",
+      "split": "train"
+    },
+    {
+      "case": "bcss_31",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-D8-A13Z",
+      "split": "test"
+    },
+    {
+      "case": "bcss_32",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-LL-A740",
+      "split": "train"
+    },
+    {
+      "case": "bcss_33",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AQ-A54N",
+      "split": "train"
+    },
+    {
+      "case": "bcss_34",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-LL-A5YO",
+      "split": "test"
+    },
+    {
+      "case": "bcss_35",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-GM-A2DD",
+      "split": "train"
+    },
+    {
+      "case": "bcss_36",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-D8-A1XQ",
+      "split": "train"
+    },
+    {
+      "case": "bcss_37",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A7-A26F",
+      "split": "train"
+    },
+    {
+      "case": "bcss_38",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A2-A0ST",
+      "split": "test"
+    },
+    {
+      "case": "bcss_39",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-E2-A14R",
+      "split": "test"
+    },
+    {
+      "case": "bcss_40",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-E2-A574",
+      "split": "train"
+    },
+    {
+      "case": "bcss_41",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AR-A1AR",
+      "split": "train"
+    },
+    {
+      "case": "bcss_42",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A2-A3XT",
+      "split": "train"
+    },
+    {
+      "case": "bcss_43",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A7-A0DA",
+      "split": "test"
+    },
+    {
+      "case": "bcss_44",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AC-A7VC",
+      "split": "test"
+    },
+    {
+      "case": "bcss_45",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-EW-A1OV",
+      "split": "train"
+    },
+    {
+      "case": "bcss_46",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-OL-A66P",
+      "split": "validation"
+    },
+    {
+      "case": "bcss_47",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A8-A08R",
+      "split": "train"
+    },
+    {
+      "case": "bcss_48",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-C8-A3M7",
+      "split": "test"
+    },
+    {
+      "case": "bcss_49",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A2-A0SX",
+      "split": "train"
+    },
+    {
+      "case": "bcss_50",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AO-A12F",
+      "split": "train"
+    },
+    {
+      "case": "bcss_51",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-E2-A573",
+      "split": "train"
+    },
+    {
+      "case": "bcss_52",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-BH-A0B9",
+      "split": "train"
+    },
+    {
+      "case": "bcss_53",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-BH-A1F6",
+      "split": "train"
+    },
+    {
+      "case": "bcss_54",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-E2-A1AZ",
+      "split": "train"
+    },
+    {
+      "case": "bcss_55",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A7-A6VW",
+      "split": "train"
+    },
+    {
+      "case": "bcss_56",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AN-A0AT",
+      "split": "test"
+    },
+    {
+      "case": "bcss_57",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AR-A1AY",
+      "split": "validation"
+    },
+    {
+      "case": "bcss_58",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-EW-A1P1",
+      "split": "train"
+    },
+    {
+      "case": "bcss_59",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AR-A0TU",
+      "split": "validation"
+    },
+    {
+      "case": "bcss_60",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-EW-A1P8",
+      "split": "train"
+    },
+    {
+      "case": "bcss_61",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-OL-A5D7",
+      "split": "train"
+    },
+    {
+      "case": "bcss_62",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-C8-A131",
+      "split": "test"
+    },
+    {
+      "case": "bcss_63",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-D8-A1XK",
+      "split": "test"
+    },
+    {
+      "case": "bcss_64",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AR-A0U4",
+      "split": "test"
+    },
+    {
+      "case": "bcss_65",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-E2-A1LK",
+      "split": "train"
+    },
+    {
+      "case": "bcss_66",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-BH-A0E6",
+      "split": "train"
+    },
+    {
+      "case": "bcss_67",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-D8-A27F",
+      "split": "train"
+    },
+    {
+      "case": "bcss_68",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A2-A0YE",
+      "split": "train"
+    },
+    {
+      "case": "bcss_69",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AQ-A04J",
+      "split": "train"
+    },
+    {
+      "case": "bcss_70",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A8-A07C",
+      "split": "validation"
+    },
+    {
+      "case": "bcss_71",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-D8-A1JL",
+      "split": "test"
+    },
+    {
+      "case": "bcss_72",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A2-A1G6",
+      "split": "train"
+    },
+    {
+      "case": "bcss_73",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A2-A04Q",
+      "split": "train"
+    },
+    {
+      "case": "bcss_74",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-EW-A1PH",
+      "split": "train"
+    },
+    {
+      "case": "bcss_75",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-E2-A1LL",
+      "split": "train"
+    },
+    {
+      "case": "bcss_76",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-D8-A142",
+      "split": "train"
+    },
+    {
+      "case": "bcss_77",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-BH-A0BW",
+      "split": "train"
+    },
+    {
+      "case": "bcss_78",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AN-A0XU",
+      "split": "test"
+    },
+    {
+      "case": "bcss_79",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AO-A0J6",
+      "split": "train"
+    },
+    {
+      "case": "bcss_80",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-D8-A1JF",
+      "split": "test"
+    },
+    {
+      "case": "bcss_81",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A7-A6VY",
+      "split": "train"
+    },
+    {
+      "case": "bcss_82",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-S3-AA15",
+      "split": "test"
+    },
+    {
+      "case": "bcss_83",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A7-A4SD",
+      "split": "train"
+    },
+    {
+      "case": "bcss_84",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-EW-A1P4",
+      "split": "train"
+    },
+    {
+      "case": "bcss_85",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AN-A0G0",
+      "split": "train"
+    },
+    {
+      "case": "bcss_86",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-BH-A0AV",
+      "split": "validation"
+    },
+    {
+      "case": "bcss_87",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AN-A0AR",
+      "split": "test"
+    },
+    {
+      "case": "bcss_88",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-EW-A1P7",
+      "split": "train"
+    },
+    {
+      "case": "bcss_89",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AO-A03U",
+      "split": "train"
+    },
+    {
+      "case": "bcss_90",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AR-A0TS",
+      "split": "train"
+    },
+    {
+      "case": "bcss_91",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A7-A0CE",
+      "split": "train"
+    },
+    {
+      "case": "bcss_92",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-E2-A1B6",
+      "split": "train"
+    },
+    {
+      "case": "bcss_93",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-GM-A2DB",
+      "split": "validation"
+    },
+    {
+      "case": "bcss_94",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-D8-A143",
+      "split": "test"
+    },
+    {
+      "case": "bcss_95",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AO-A0J4",
+      "split": "validation"
+    },
+    {
+      "case": "bcss_96",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-BH-A0E0",
+      "split": "train"
+    },
+    {
+      "case": "bcss_97",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AO-A128",
+      "split": "validation"
+    },
+    {
+      "case": "bcss_98",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-BH-A0B3",
+      "split": "train"
+    },
+    {
+      "case": "bcss_99",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-GM-A2DF",
+      "split": "train"
+    },
+    {
+      "case": "bcss_100",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-GI-A2C9",
+      "split": "train"
+    },
+    {
+      "case": "bcss_101",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-E9-A5FL",
+      "split": "train"
+    },
+    {
+      "case": "bcss_102",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-BH-A18V",
+      "split": "test"
+    },
+    {
+      "case": "bcss_103",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AR-A1AQ",
+      "split": "validation"
+    },
+    {
+      "case": "bcss_104",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AR-A2LR",
+      "split": "train"
+    },
+    {
+      "case": "bcss_105",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-BH-A0BL",
+      "split": "train"
+    },
+    {
+      "case": "bcss_106",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-E2-A158",
+      "split": "validation"
+    },
+    {
+      "case": "bcss_107",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-OL-A6VO",
+      "split": "train"
+    },
+    {
+      "case": "bcss_108",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A2-A0T0",
+      "split": "train"
+    },
+    {
+      "case": "bcss_109",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AR-A256",
+      "split": "train"
+    },
+    {
+      "case": "bcss_110",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-OL-A97C",
+      "split": "train"
+    },
+    {
+      "case": "bcss_111",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-C8-A12V",
+      "split": "train"
+    },
+    {
+      "case": "bcss_112",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-BH-A1FC",
+      "split": "train"
+    },
+    {
+      "case": "bcss_113",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-BH-A0WA",
+      "split": "test"
+    },
+    {
+      "case": "bcss_114",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-BH-A0RX",
+      "split": "test"
+    },
+    {
+      "case": "bcss_115",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-D8-A1JG",
+      "split": "train"
+    },
+    {
+      "case": "bcss_116",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AR-A0U1",
+      "split": "train"
+    },
+    {
+      "case": "bcss_117",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-D8-A27M",
+      "split": "train"
+    },
+    {
+      "case": "bcss_118",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-EW-A1OW",
+      "split": "train"
+    },
+    {
+      "case": "bcss_119",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-E2-A1LS",
+      "split": "train"
+    },
+    {
+      "case": "bcss_120",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A2-A0YM",
+      "split": "train"
+    },
+    {
+      "case": "bcss_121",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A7-A26I",
+      "split": "train"
+    },
+    {
+      "case": "bcss_122",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-AC-A2BK",
+      "split": "train"
+    },
+    {
+      "case": "bcss_123",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-C8-A1HJ",
+      "split": "train"
+    },
+    {
+      "case": "bcss_124",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A1-A0SP",
+      "split": "train"
+    },
+    {
+      "case": "bcss_125",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-C8-A26X",
+      "split": "train"
+    },
+    {
+      "case": "bcss_126",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-E2-A150",
+      "split": "train"
+    },
+    {
+      "case": "bcss_127",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-E2-A1LI",
+      "split": "train"
+    },
+    {
+      "case": "bcss_128",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A2-A0CM",
+      "split": "train"
+    },
+    {
+      "case": "bcss_129",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A2-A0T2",
+      "split": "test"
+    },
+    {
+      "case": "bcss_130",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-OL-A5D6",
+      "split": "validation"
+    },
+    {
+      "case": "bcss_131",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-A2-A3XX",
+      "split": "train"
+    },
+    {
+      "case": "bcss_132",
+      "dataset": "bcss",
+      "group": "TCGA:TCGA-BH-A0BG",
+      "split": "train"
+    },
+    {
+      "case": "tiger_41",
+      "dataset": "tiger",
+      "group": "tiger:122",
+      "split": "train"
+    },
+    {
+      "case": "tiger_42",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000080",
+      "split": "train"
+    },
+    {
+      "case": "tiger_43",
+      "dataset": "tiger",
+      "group": "tiger:231",
+      "split": "train"
+    },
+    {
+      "case": "tiger_44",
+      "dataset": "tiger",
+      "group": "tiger:242",
+      "split": "test"
+    },
+    {
+      "case": "tiger_45",
+      "dataset": "tiger",
+      "group": "tiger:136",
+      "split": "validation"
+    },
+    {
+      "case": "tiger_46",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000054",
+      "split": "train"
+    },
+    {
+      "case": "tiger_47",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000145",
+      "split": "train"
+    },
+    {
+      "case": "tiger_48",
+      "dataset": "tiger",
+      "group": "tiger:201",
+      "split": "validation"
+    },
+    {
+      "case": "tiger_49",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000013",
+      "split": "train"
+    },
+    {
+      "case": "tiger_50",
+      "dataset": "tiger",
+      "group": "tiger:240",
+      "split": "train"
+    },
+    {
+      "case": "tiger_51",
+      "dataset": "tiger",
+      "group": "tiger:154",
+      "split": "validation"
+    },
+    {
+      "case": "tiger_52",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000159",
+      "split": "train"
+    },
+    {
+      "case": "tiger_53",
+      "dataset": "tiger",
+      "group": "tiger:225",
+      "split": "test"
+    },
+    {
+      "case": "tiger_54",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000147",
+      "split": "train"
+    },
+    {
+      "case": "tiger_55",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000057",
+      "split": "train"
+    },
+    {
+      "case": "tiger_56",
+      "dataset": "tiger",
+      "group": "tiger:207",
+      "split": "train"
+    },
+    {
+      "case": "tiger_57",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000024",
+      "split": "train"
+    },
+    {
+      "case": "tiger_58",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000060",
+      "split": "train"
+    },
+    {
+      "case": "tiger_59",
+      "dataset": "tiger",
+      "group": "tiger:198",
+      "split": "validation"
+    },
+    {
+      "case": "tiger_60",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000016",
+      "split": "train"
+    },
+    {
+      "case": "tiger_61",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000130",
+      "split": "train"
+    },
+    {
+      "case": "tiger_62",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000135",
+      "split": "test"
+    },
+    {
+      "case": "tiger_63",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000078",
+      "split": "train"
+    },
+    {
+      "case": "tiger_64",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000115",
+      "split": "test"
+    },
+    {
+      "case": "tiger_65",
+      "dataset": "tiger",
+      "group": "tiger:100",
+      "split": "validation"
+    },
+    {
+      "case": "tiger_66",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000113",
+      "split": "train"
+    },
+    {
+      "case": "tiger_67",
+      "dataset": "tiger",
+      "group": "tiger:181",
+      "split": "validation"
+    },
+    {
+      "case": "tiger_68",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000015",
+      "split": "test"
+    },
+    {
+      "case": "tiger_69",
+      "dataset": "tiger",
+      "group": "tiger:234",
+      "split": "train"
+    },
+    {
+      "case": "tiger_70",
+      "dataset": "tiger",
+      "group": "tiger:133",
+      "split": "train"
+    },
+    {
+      "case": "tiger_71",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000071",
+      "split": "validation"
+    },
+    {
+      "case": "tiger_72",
+      "dataset": "tiger",
+      "group": "tiger:196",
+      "split": "train"
+    },
+    {
+      "case": "tiger_73",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000039",
+      "split": "test"
+    },
+    {
+      "case": "tiger_74",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000183",
+      "split": "train"
+    },
+    {
+      "case": "tiger_75",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000046",
+      "split": "train"
+    },
+    {
+      "case": "tiger_76",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000030",
+      "split": "test"
+    },
+    {
+      "case": "tiger_77",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000007",
+      "split": "train"
+    },
+    {
+      "case": "tiger_78",
+      "dataset": "tiger",
+      "group": "tiger:250",
+      "split": "test"
+    },
+    {
+      "case": "tiger_79",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000010",
+      "split": "train"
+    },
+    {
+      "case": "tiger_80",
+      "dataset": "tiger",
+      "group": "tiger:TC_S01_P000158",
+      "split": "test"
+    },
+    {
+      "case": "ocelot_01",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-2F-A9KP",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_02",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-G2-A2EC",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_03",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-AX-A1CC",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_04",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-NP-A5H1",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_05",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-NP-A5H5",
+      "split": "test"
+    },
+    {
+      "case": "ocelot_06",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-NP-A5GZ",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_07",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-D7-8572",
+      "split": "test"
+    },
+    {
+      "case": "ocelot_08",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-BK-A0CB",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_09",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-XK-AAK1",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_10",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-AX-A1C5",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_11",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-D7-6519",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_12",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-G9-A9S4",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_13",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-4E-A92E",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_14",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-WW-A8ZI",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_15",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-G2-A2EL",
+      "split": "validation"
+    },
+    {
+      "case": "ocelot_16",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-D6-6827",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_17",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-D6-6824",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_18",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-BG-A0MH",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_19",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-BL-A13J",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_20",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-QK-A6IF",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_21",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-Y6-A8TL",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_22",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-BP-4995",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_23",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-QK-A8Z8",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_24",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-AX-A063",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_25",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-KM-A7QK",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_26",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-D7-6528",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_27",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-D7-6525",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_28",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-FJ-A871",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_29",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-2F-A9KW",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_30",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-D7-8575",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_31",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-D7-6822",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_32",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-D7-5579",
+      "split": "validation"
+    },
+    {
+      "case": "ocelot_33",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-BG-A221",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_34",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-Y6-A9XI",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_35",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-J7-8537",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_36",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-UW-A72H",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_37",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-D6-6515",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_38",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-QK-A64Z",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_39",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-G2-A2EJ",
+      "split": "train"
+    },
+    {
+      "case": "ocelot_40",
+      "dataset": "ocelot",
+      "group": "TCGA:TCGA-HC-7741",
+      "split": "train"
+    },
+    {
+      "case": "ignite_01",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-1",
+      "split": "train"
+    },
+    {
+      "case": "ignite_02",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-2",
+      "split": "test"
+    },
+    {
+      "case": "ignite_03",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-3",
+      "split": "test"
+    },
+    {
+      "case": "ignite_04",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-4",
+      "split": "train"
+    },
+    {
+      "case": "ignite_05",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-5",
+      "split": "train"
+    },
+    {
+      "case": "ignite_06",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-6",
+      "split": "train"
+    },
+    {
+      "case": "ignite_07",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-7",
+      "split": "train"
+    },
+    {
+      "case": "ignite_08",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-8",
+      "split": "train"
+    },
+    {
+      "case": "ignite_09",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-9",
+      "split": "validation"
+    },
+    {
+      "case": "ignite_10",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-10",
+      "split": "train"
+    },
+    {
+      "case": "ignite_11",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-11",
+      "split": "validation"
+    },
+    {
+      "case": "ignite_12",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-12",
+      "split": "train"
+    },
+    {
+      "case": "ignite_13",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-13",
+      "split": "train"
+    },
+    {
+      "case": "ignite_14",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-14",
+      "split": "train"
+    },
+    {
+      "case": "ignite_15",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-15",
+      "split": "train"
+    },
+    {
+      "case": "ignite_16",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-16",
+      "split": "test"
+    },
+    {
+      "case": "ignite_17",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-17",
+      "split": "train"
+    },
+    {
+      "case": "ignite_18",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-18",
+      "split": "train"
+    },
+    {
+      "case": "ignite_19",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-19",
+      "split": "train"
+    },
+    {
+      "case": "ignite_20",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-20",
+      "split": "train"
+    },
+    {
+      "case": "ignite_21",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-35",
+      "split": "train"
+    },
+    {
+      "case": "ignite_22",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-36",
+      "split": "train"
+    },
+    {
+      "case": "ignite_23",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-37",
+      "split": "train"
+    },
+    {
+      "case": "ignite_24",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-38",
+      "split": "train"
+    },
+    {
+      "case": "ignite_25",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-39",
+      "split": "train"
+    },
+    {
+      "case": "ignite_26",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-40",
+      "split": "train"
+    },
+    {
+      "case": "ignite_27",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-41",
+      "split": "train"
+    },
+    {
+      "case": "ignite_28",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-42",
+      "split": "train"
+    },
+    {
+      "case": "ignite_29",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-43",
+      "split": "train"
+    },
+    {
+      "case": "ignite_30",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-51",
+      "split": "train"
+    },
+    {
+      "case": "ignite_31",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-52",
+      "split": "train"
+    },
+    {
+      "case": "ignite_32",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-54",
+      "split": "train"
+    },
+    {
+      "case": "ignite_33",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-55",
+      "split": "train"
+    },
+    {
+      "case": "ignite_34",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-56",
+      "split": "train"
+    },
+    {
+      "case": "ignite_35",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-57",
+      "split": "validation"
+    },
+    {
+      "case": "ignite_36",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-58",
+      "split": "train"
+    },
+    {
+      "case": "ignite_37",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-59",
+      "split": "train"
+    },
+    {
+      "case": "ignite_38",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-60",
+      "split": "train"
+    },
+    {
+      "case": "ignite_39",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-61",
+      "split": "train"
+    },
+    {
+      "case": "ignite_40",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-62",
+      "split": "train"
+    },
+    {
+      "case": "peso_01",
+      "dataset": "peso",
+      "group": "peso:peso-slide-1",
+      "split": "train"
+    },
+    {
+      "case": "peso_02",
+      "dataset": "peso",
+      "group": "peso:peso-slide-5",
+      "split": "validation"
+    },
+    {
+      "case": "peso_03",
+      "dataset": "peso",
+      "group": "peso:peso-slide-7",
+      "split": "test"
+    },
+    {
+      "case": "peso_04",
+      "dataset": "peso",
+      "group": "peso:peso-slide-9",
+      "split": "train"
+    },
+    {
+      "case": "peso_05",
+      "dataset": "peso",
+      "group": "peso:peso-slide-13",
+      "split": "train"
+    },
+    {
+      "case": "peso_06",
+      "dataset": "peso",
+      "group": "peso:peso-slide-15",
+      "split": "train"
+    },
+    {
+      "case": "peso_07",
+      "dataset": "peso",
+      "group": "peso:peso-slide-16",
+      "split": "train"
+    },
+    {
+      "case": "peso_08",
+      "dataset": "peso",
+      "group": "peso:peso-slide-17",
+      "split": "train"
+    },
+    {
+      "case": "peso_09",
+      "dataset": "peso",
+      "group": "peso:peso-slide-18",
+      "split": "test"
+    },
+    {
+      "case": "peso_10",
+      "dataset": "peso",
+      "group": "peso:peso-slide-19",
+      "split": "validation"
+    },
+    {
+      "case": "peso_11",
+      "dataset": "peso",
+      "group": "peso:peso-slide-20",
+      "split": "train"
+    },
+    {
+      "case": "peso_12",
+      "dataset": "peso",
+      "group": "peso:peso-slide-21",
+      "split": "validation"
+    },
+    {
+      "case": "peso_13",
+      "dataset": "peso",
+      "group": "peso:peso-slide-23",
+      "split": "train"
+    },
+    {
+      "case": "peso_14",
+      "dataset": "peso",
+      "group": "peso:peso-slide-25",
+      "split": "train"
+    },
+    {
+      "case": "peso_15",
+      "dataset": "peso",
+      "group": "peso:peso-slide-45",
+      "split": "train"
+    },
+    {
+      "case": "peso_16",
+      "dataset": "peso",
+      "group": "peso:peso-slide-47",
+      "split": "train"
+    },
+    {
+      "case": "peso_17",
+      "dataset": "peso",
+      "group": "peso:peso-slide-48",
+      "split": "train"
+    },
+    {
+      "case": "peso_18",
+      "dataset": "peso",
+      "group": "peso:peso-slide-49",
+      "split": "train"
+    },
+    {
+      "case": "peso_19",
+      "dataset": "peso",
+      "group": "peso:peso-slide-50",
+      "split": "train"
+    },
+    {
+      "case": "peso_20",
+      "dataset": "peso",
+      "group": "peso:peso-slide-51",
+      "split": "train"
+    },
+    {
+      "case": "peso_21",
+      "dataset": "peso",
+      "group": "peso:peso-slide-52",
+      "split": "train"
+    },
+    {
+      "case": "peso_22",
+      "dataset": "peso",
+      "group": "peso:peso-slide-53",
+      "split": "validation"
+    },
+    {
+      "case": "peso_23",
+      "dataset": "peso",
+      "group": "peso:peso-slide-61",
+      "split": "test"
+    },
+    {
+      "case": "peso_24",
+      "dataset": "peso",
+      "group": "peso:peso-slide-62",
+      "split": "train"
+    },
+    {
+      "case": "peso_25",
+      "dataset": "peso",
+      "group": "peso:peso-slide-63",
+      "split": "validation"
+    },
+    {
+      "case": "peso_26",
+      "dataset": "peso",
+      "group": "peso:peso-slide-66",
+      "split": "train"
+    },
+    {
+      "case": "peso_27",
+      "dataset": "peso",
+      "group": "peso:peso-slide-67",
+      "split": "validation"
+    },
+    {
+      "case": "peso_28",
+      "dataset": "peso",
+      "group": "peso:peso-slide-68",
+      "split": "train"
+    },
+    {
+      "case": "peso_29",
+      "dataset": "peso",
+      "group": "peso:peso-slide-75",
+      "split": "validation"
+    },
+    {
+      "case": "peso_30",
+      "dataset": "peso",
+      "group": "peso:peso-slide-82",
+      "split": "train"
+    },
+    {
+      "case": "peso_31",
+      "dataset": "peso",
+      "group": "peso:peso-slide-83",
+      "split": "test"
+    },
+    {
+      "case": "peso_32",
+      "dataset": "peso",
+      "group": "peso:peso-slide-84",
+      "split": "train"
+    },
+    {
+      "case": "peso_33",
+      "dataset": "peso",
+      "group": "peso:peso-slide-85",
+      "split": "test"
+    },
+    {
+      "case": "peso_34",
+      "dataset": "peso",
+      "group": "peso:peso-slide-86",
+      "split": "test"
+    },
+    {
+      "case": "peso_35",
+      "dataset": "peso",
+      "group": "peso:peso-slide-87",
+      "split": "test"
+    },
+    {
+      "case": "peso_36",
+      "dataset": "peso",
+      "group": "peso:peso-slide-89",
+      "split": "train"
+    },
+    {
+      "case": "peso_37",
+      "dataset": "peso",
+      "group": "peso:peso-slide-90",
+      "split": "train"
+    },
+    {
+      "case": "peso_38",
+      "dataset": "peso",
+      "group": "peso:peso-slide-92",
+      "split": "validation"
+    },
+    {
+      "case": "peso_39",
+      "dataset": "peso",
+      "group": "peso:peso-slide-94",
+      "split": "validation"
+    },
+    {
+      "case": "peso_40",
+      "dataset": "peso",
+      "group": "peso:peso-slide-95",
+      "split": "train"
+    },
+    {
+      "case": "gcss_01",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-8588",
+      "split": "train"
+    },
+    {
+      "case": "gcss_02",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-D7-6815",
+      "split": "train"
+    },
+    {
+      "case": "gcss_03",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-FP-A9TM",
+      "split": "train"
+    },
+    {
+      "case": "gcss_04",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-VQ-A8E2",
+      "split": "train"
+    },
+    {
+      "case": "gcss_05",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-D7-A6EY",
+      "split": "train"
+    },
+    {
+      "case": "gcss_06",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-A4IU",
+      "split": "train"
+    },
+    {
+      "case": "gcss_07",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-VQ-A8P2",
+      "split": "validation"
+    },
+    {
+      "case": "gcss_08",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-8367",
+      "split": "train"
+    },
+    {
+      "case": "gcss_09",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-VQ-A91Z",
+      "split": "test"
+    },
+    {
+      "case": "gcss_10",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-CD-A4MG",
+      "split": "train"
+    },
+    {
+      "case": "gcss_11",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-VQ-A8PU",
+      "split": "train"
+    },
+    {
+      "case": "gcss_12",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-JY-A938",
+      "split": "validation"
+    },
+    {
+      "case": "gcss_13",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-8369",
+      "split": "validation"
+    },
+    {
+      "case": "gcss_14",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-CD-8535",
+      "split": "train"
+    },
+    {
+      "case": "gcss_15",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-VQ-AA6I",
+      "split": "train"
+    },
+    {
+      "case": "gcss_16",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-VQ-A8PB",
+      "split": "test"
+    },
+    {
+      "case": "gcss_17",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-6706",
+      "split": "train"
+    },
+    {
+      "case": "gcss_18",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-A4J1",
+      "split": "train"
+    },
+    {
+      "case": "gcss_19",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-D7-6520",
+      "split": "train"
+    },
+    {
+      "case": "gcss_20",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-7716",
+      "split": "test"
+    },
+    {
+      "case": "gcss_21",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-D7-6818",
+      "split": "train"
+    },
+    {
+      "case": "gcss_22",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-D7-5578",
+      "split": "validation"
+    },
+    {
+      "case": "gcss_23",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-8058",
+      "split": "train"
+    },
+    {
+      "case": "gcss_24",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-A4PF",
+      "split": "test"
+    },
+    {
+      "case": "gcss_25",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-D7-8578",
+      "split": "train"
+    },
+    {
+      "case": "gcss_26",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-VQ-A8PE",
+      "split": "test"
+    },
+    {
+      "case": "gcss_27",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-8483",
+      "split": "validation"
+    },
+    {
+      "case": "gcss_28",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-CD-8524",
+      "split": "train"
+    },
+    {
+      "case": "gcss_29",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-D7-5577",
+      "split": "validation"
+    },
+    {
+      "case": "gcss_30",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-D7-8579",
+      "split": "train"
+    },
+    {
+      "case": "gcss_31",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-D7-A74B",
+      "split": "validation"
+    },
+    {
+      "case": "gcss_32",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-7715",
+      "split": "train"
+    },
+    {
+      "case": "gcss_33",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-A453",
+      "split": "train"
+    },
+    {
+      "case": "gcss_34",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-D7-6518",
+      "split": "train"
+    },
+    {
+      "case": "gcss_35",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-VQ-A91X",
+      "split": "train"
+    },
+    {
+      "case": "gcss_36",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-VQ-AA6J",
+      "split": "train"
+    },
+    {
+      "case": "gcss_37",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-D7-6527",
+      "split": "train"
+    },
+    {
+      "case": "gcss_38",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-8368",
+      "split": "train"
+    },
+    {
+      "case": "gcss_39",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-D7-6519",
+      "split": "train"
+    },
+    {
+      "case": "gcss_40",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-8484",
+      "split": "train"
+    },
+    {
+      "case": "puma_01",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_001",
+      "split": "validation"
+    },
+    {
+      "case": "puma_02",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_002",
+      "split": "train"
+    },
+    {
+      "case": "puma_03",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_003",
+      "split": "test"
+    },
+    {
+      "case": "puma_04",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_004",
+      "split": "train"
+    },
+    {
+      "case": "puma_05",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_005",
+      "split": "test"
+    },
+    {
+      "case": "puma_06",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_metastatic_roi_005",
+      "split": "test"
+    },
+    {
+      "case": "puma_07",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_006",
+      "split": "train"
+    },
+    {
+      "case": "puma_08",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_metastatic_roi_006",
+      "split": "train"
+    },
+    {
+      "case": "puma_09",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_007",
+      "split": "test"
+    },
+    {
+      "case": "puma_10",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_metastatic_roi_007",
+      "split": "train"
+    },
+    {
+      "case": "puma_11",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_metastatic_roi_008",
+      "split": "train"
+    },
+    {
+      "case": "puma_12",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_010",
+      "split": "train"
+    },
+    {
+      "case": "puma_13",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_metastatic_roi_010",
+      "split": "train"
+    },
+    {
+      "case": "puma_14",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_011",
+      "split": "validation"
+    },
+    {
+      "case": "puma_15",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_012",
+      "split": "train"
+    },
+    {
+      "case": "puma_16",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_013",
+      "split": "test"
+    },
+    {
+      "case": "puma_17",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_014",
+      "split": "test"
+    },
+    {
+      "case": "puma_18",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_015",
+      "split": "test"
+    },
+    {
+      "case": "puma_19",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_016",
+      "split": "train"
+    },
+    {
+      "case": "puma_20",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_metastatic_roi_016",
+      "split": "train"
+    },
+    {
+      "case": "puma_21",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_017",
+      "split": "train"
+    },
+    {
+      "case": "puma_22",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_018",
+      "split": "train"
+    },
+    {
+      "case": "puma_23",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_019",
+      "split": "train"
+    },
+    {
+      "case": "puma_24",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_020",
+      "split": "train"
+    },
+    {
+      "case": "puma_25",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_metastatic_roi_020",
+      "split": "validation"
+    },
+    {
+      "case": "puma_26",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_022",
+      "split": "test"
+    },
+    {
+      "case": "puma_27",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_023",
+      "split": "validation"
+    },
+    {
+      "case": "puma_28",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_024",
+      "split": "train"
+    },
+    {
+      "case": "puma_29",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_metastatic_roi_024",
+      "split": "train"
+    },
+    {
+      "case": "puma_30",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_025",
+      "split": "train"
+    },
+    {
+      "case": "puma_31",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_metastatic_roi_025",
+      "split": "train"
+    },
+    {
+      "case": "puma_32",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_026",
+      "split": "train"
+    },
+    {
+      "case": "puma_33",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_metastatic_roi_026",
+      "split": "test"
+    },
+    {
+      "case": "puma_34",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_027",
+      "split": "test"
+    },
+    {
+      "case": "puma_35",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_metastatic_roi_027",
+      "split": "train"
+    },
+    {
+      "case": "puma_36",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_029",
+      "split": "train"
+    },
+    {
+      "case": "puma_37",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_030",
+      "split": "test"
+    },
+    {
+      "case": "puma_38",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_031",
+      "split": "train"
+    },
+    {
+      "case": "puma_39",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_primary_roi_032",
+      "split": "train"
+    },
+    {
+      "case": "puma_40",
+      "dataset": "puma",
+      "group": "puma:puma-roi-training_set_metastatic_roi_032",
+      "split": "train"
+    },
+    {
+      "case": "gleasonxai_01",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1001_A1",
+      "split": "train"
+    },
+    {
+      "case": "gleasonxai_02",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1001_B3",
+      "split": "train"
+    },
+    {
+      "case": "gleasonxai_03",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1001_B4",
+      "split": "test"
+    },
+    {
+      "case": "gleasonxai_04",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1001_C1",
+      "split": "train"
+    },
+    {
+      "case": "gleasonxai_05",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1001_C2",
+      "split": "validation"
+    },
+    {
+      "case": "gleasonxai_06",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1001_C3",
+      "split": "validation"
+    },
+    {
+      "case": "gleasonxai_07",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1001_C7",
+      "split": "validation"
+    },
+    {
+      "case": "gleasonxai_08",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1001_D3",
+      "split": "train"
+    },
+    {
+      "case": "gleasonxai_09",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1001_D5",
+      "split": "train"
+    },
+    {
+      "case": "gleasonxai_10",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1001_D9",
+      "split": "train"
+    },
+    {
+      "case": "gleasonxai_11",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1001_E10",
+      "split": "train"
+    },
+    {
+      "case": "gleasonxai_12",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1001_E3",
+      "split": "test"
+    },
+    {
+      "case": "gleasonxai_13",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1001_F8",
+      "split": "test"
+    },
+    {
+      "case": "gleasonxai_14",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1001_G10",
+      "split": "validation"
+    },
+    {
+      "case": "gleasonxai_15",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1001_G3",
+      "split": "validation"
+    },
+    {
+      "case": "gleasonxai_16",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1001_H1",
+      "split": "train"
+    },
+    {
+      "case": "gleasonxai_17",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1001_H3",
+      "split": "train"
+    },
+    {
+      "case": "gleasonxai_18",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1001_H4",
+      "split": "train"
+    },
+    {
+      "case": "gleasonxai_19",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1001_H8",
+      "split": "validation"
+    },
+    {
+      "case": "gleasonxai_20",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1001_I10",
+      "split": "test"
+    },
+    {
+      "case": "gleasonxai_21",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1001_J8",
+      "split": "train"
+    },
+    {
+      "case": "gleasonxai_22",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1921b_A1",
+      "split": "train"
+    },
+    {
+      "case": "gleasonxai_23",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1921b_A12",
+      "split": "train"
+    },
+    {
+      "case": "gleasonxai_24",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1921b_A13",
+      "split": "validation"
+    },
+    {
+      "case": "gleasonxai_25",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1921b_A15",
+      "split": "test"
+    },
+    {
+      "case": "gleasonxai_26",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1921b_A16",
+      "split": "train"
+    },
+    {
+      "case": "gleasonxai_27",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1921b_A5",
+      "split": "train"
+    },
+    {
+      "case": "gleasonxai_28",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1921b_A6",
+      "split": "train"
+    },
+    {
+      "case": "gleasonxai_29",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1921b_B1",
+      "split": "train"
+    },
+    {
+      "case": "gleasonxai_30",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1921b_B10",
+      "split": "validation"
+    },
+    {
+      "case": "gleasonxai_31",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1921b_B11",
+      "split": "train"
+    },
+    {
+      "case": "gleasonxai_32",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1921b_B12",
+      "split": "validation"
+    },
+    {
+      "case": "gleasonxai_33",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1921b_B15",
+      "split": "test"
+    },
+    {
+      "case": "gleasonxai_34",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1921b_B16",
+      "split": "test"
+    },
+    {
+      "case": "gleasonxai_35",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1921b_B2",
+      "split": "test"
+    },
+    {
+      "case": "gleasonxai_36",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1921b_C1",
+      "split": "train"
+    },
+    {
+      "case": "gleasonxai_37",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1921b_C11",
+      "split": "validation"
+    },
+    {
+      "case": "gleasonxai_38",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1921b_C13",
+      "split": "validation"
+    },
+    {
+      "case": "gleasonxai_39",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1921b_C15",
+      "split": "train"
+    },
+    {
+      "case": "gleasonxai_40",
+      "dataset": "gleasonxai",
+      "group": "gleasonxai:gleasonxai-core-PR1921b_C16",
+      "split": "validation"
+    },
+    {
+      "case": "gcss_e_01",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-8295",
+      "split": "test"
+    },
+    {
+      "case": "gcss_e_02",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-D7-A74A",
+      "split": "validation"
+    },
+    {
+      "case": "gcss_e_03",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-D7-6526",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_04",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-VQ-AA69",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_05",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-VQ-A91Q",
+      "split": "validation"
+    },
+    {
+      "case": "gcss_e_06",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-A452",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_07",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-A4QI",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_08",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-VQ-A924",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_09",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-VQ-A8E3",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_10",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-CD-A4MH",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_11",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-VQ-A922",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_12",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-D7-6524",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_13",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-VQ-A8P5",
+      "split": "validation"
+    },
+    {
+      "case": "gcss_e_14",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-8380",
+      "split": "test"
+    },
+    {
+      "case": "gcss_e_15",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-FP-7829",
+      "split": "test"
+    },
+    {
+      "case": "gcss_e_16",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-6456",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_17",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-7958",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_18",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-6453",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_19",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-A44T",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_20",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-8362",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_21",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-D7-A4YT",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_22",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-D7-A4YX",
+      "split": "test"
+    },
+    {
+      "case": "gcss_e_23",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-VQ-A8E0",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_24",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-D7-8573",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_25",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-8372",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_26",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-D7-6822",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_27",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-8060",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_28",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-6454",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_29",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-8381",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_30",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-VQ-A8DZ",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_31",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-VQ-A8P3",
+      "split": "test"
+    },
+    {
+      "case": "gcss_e_32",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-8286",
+      "split": "test"
+    },
+    {
+      "case": "gcss_e_33",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-8078",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_34",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-6801",
+      "split": "test"
+    },
+    {
+      "case": "gcss_e_35",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-D7-A4YY",
+      "split": "test"
+    },
+    {
+      "case": "gcss_e_36",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-BR-A4QL",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_37",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-VQ-A91S",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_38",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-FP-8211",
+      "split": "test"
+    },
+    {
+      "case": "gcss_e_39",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-3M-AB46",
+      "split": "train"
+    },
+    {
+      "case": "gcss_e_40",
+      "dataset": "gcss",
+      "group": "TCGA:TCGA-VQ-A8PJ",
+      "split": "train"
+    },
+    {
+      "case": "ignite_e_01",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-63",
+      "split": "train"
+    },
+    {
+      "case": "ignite_e_02",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-64",
+      "split": "train"
+    },
+    {
+      "case": "ignite_e_03",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-65",
+      "split": "train"
+    },
+    {
+      "case": "ignite_e_04",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-66",
+      "split": "train"
+    },
+    {
+      "case": "ignite_e_05",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-67",
+      "split": "train"
+    },
+    {
+      "case": "ignite_e_06",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-68",
+      "split": "test"
+    },
+    {
+      "case": "ignite_e_07",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-69",
+      "split": "train"
+    },
+    {
+      "case": "ignite_e_08",
+      "dataset": "ignite",
+      "group": "TCGA:TCGA-22-1012",
+      "split": "test"
+    },
+    {
+      "case": "ignite_e_09",
+      "dataset": "ignite",
+      "group": "TCGA:TCGA-50-5931",
+      "split": "test"
+    },
+    {
+      "case": "ignite_e_10",
+      "dataset": "ignite",
+      "group": "TCGA:TCGA-50-6673",
+      "split": "test"
+    },
+    {
+      "case": "ignite_e_11",
+      "dataset": "ignite",
+      "group": "TCGA:TCGA-55-7728",
+      "split": "test"
+    },
+    {
+      "case": "ignite_e_12",
+      "dataset": "ignite",
+      "group": "TCGA:TCGA-55-8089",
+      "split": "test"
+    },
+    {
+      "case": "ignite_e_13",
+      "dataset": "ignite",
+      "group": "TCGA:TCGA-56-8504",
+      "split": "test"
+    },
+    {
+      "case": "ignite_e_14",
+      "dataset": "ignite",
+      "group": "TCGA:TCGA-62-A46O",
+      "split": "test"
+    },
+    {
+      "case": "ignite_e_15",
+      "dataset": "ignite",
+      "group": "TCGA:TCGA-77-A5GB",
+      "split": "test"
+    },
+    {
+      "case": "ignite_e_16",
+      "dataset": "ignite",
+      "group": "TCGA:TCGA-86-8280",
+      "split": "test"
+    },
+    {
+      "case": "ignite_e_17",
+      "dataset": "ignite",
+      "group": "TCGA:TCGA-97-7938",
+      "split": "test"
+    },
+    {
+      "case": "ignite_e_18",
+      "dataset": "ignite",
+      "group": "TCGA:TCGA-98-A53D",
+      "split": "test"
+    },
+    {
+      "case": "ignite_e_19",
+      "dataset": "ignite",
+      "group": "TCGA:TCGA-J1-A4AH",
+      "split": "test"
+    },
+    {
+      "case": "ignite_e_20",
+      "dataset": "ignite",
+      "group": "TCGA:TCGA-MF-A522",
+      "split": "test"
+    },
+    {
+      "case": "ignite_e_21",
+      "dataset": "ignite",
+      "group": "TCGA:TCGA-NC-A5HF",
+      "split": "test"
+    },
+    {
+      "case": "ignite_e_22",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-44",
+      "split": "test"
+    },
+    {
+      "case": "ignite_e_23",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-45",
+      "split": "test"
+    },
+    {
+      "case": "ignite_e_24",
+      "dataset": "ignite",
+      "group": "ignite:ignite-patient-46",
+      "split": "test"
+    }
+  ]
+}
