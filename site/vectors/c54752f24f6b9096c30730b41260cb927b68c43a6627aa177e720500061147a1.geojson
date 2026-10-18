@@ -1,0 +1,205 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              672.0
+            ],
+            [
+              6.999999999999999,
+              668.0
+            ],
+            [
+              8.0,
+              678.0000000000001
+            ],
+            [
+              6.999999999999999,
+              683.0
+            ],
+            [
+              0.0,
+              684.0
+            ],
+            [
+              0.0,
+              896.0
+            ],
+            [
+              895.9999999999999,
+              896.0
+            ],
+            [
+              895.9999999999999,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "value": 3,
+        "classification": {
+          "name": "stroma",
+          "color": "#b0f254"
+        },
+        "predicted_tissue_id": 3,
+        "predicted_tissue": "stroma",
+        "name": "stroma",
+        "objectType": "annotation",
+        "area_pixels": 802713.9999999999,
+        "area_um2": 814384.6725055978,
+        "tissue_identity_source": "Supervised prediction after Bora"
+      }
+    }
+  ],
+  "native_shape_yx": [
+    896,
+    896
+  ],
+  "native_mpp_xy": [
+    1.0071373994638069,
+    1.0073491636363636
+  ],
+  "coordinate_space": "native_ROI_image_pixel_edges",
+  "origin": "top_left",
+  "coordinates_are_roi_local": true,
+  "converter": "bora.multicpu_geojson.convert",
+  "profile": "accurate",
+  "minimum_component_area_pixels": 500.0,
+  "simplification_tolerance_pixels": 2.0,
+  "pixel_exact": false,
+  "note": "Bora coverage-aware simplification and per-label dissolution. Image coordinates, not geographic coordinates.",
+  "small_region_cleanup": {
+    "minimum_region_area_pixels": 20,
+    "strictly_less_than_threshold": true,
+    "filled_regions": 0,
+    "filled_pixels": 0,
+    "isolated_regions_filled_with_background": 0,
+    "filled_holes": 0,
+    "hole_pixels": 0,
+    "exterior_background_unchanged": true,
+    "connectivity": 8
+  },
+  "small_polygon_part_cleanup": {
+    "minimum_area_native_pixels": 20,
+    "strictly_less_than_threshold": true,
+    "removed_parts": 0,
+    "removed_area_pixels": 0.0,
+    "adjacent_tissue_filled": true,
+    "isolated_parts_removed_to_background": true,
+    "iterations": 1
+  },
+  "small_vector_hole_cleanup": {
+    "minimum_hole_area_pixels": 20,
+    "filled_holes": 0,
+    "filled_area_pixels": 0.0,
+    "exterior_rings_unchanged": true,
+    "other_predicted_tissue_not_overwritten": true
+  },
+  "final_native_pixel_region_cleanup": {
+    "minimum_region_area_pixels": 20,
+    "strictly_less_than_threshold": true,
+    "filled_regions": 0,
+    "filled_pixels": 0,
+    "isolated_regions_filled_with_background": 0,
+    "filled_holes": 0,
+    "hole_pixels": 0,
+    "exterior_background_unchanged": true,
+    "connectivity": 8,
+    "final_vector_raster_pixels_changed": 0,
+    "numerical_boundary_tie_repair_pixels": 0,
+    "repair_passes": 0,
+    "all_boundaries_outside_local_repairs_unchanged": true,
+    "continuous_polygon_area_checked": true,
+    "positive_polygon_parts_below_threshold": 0,
+    "polygon_holes_below_threshold": 0
+  },
+  "boundary_fitting": {
+    "method": "shared-rdp",
+    "tolerance_um": 3.0,
+    "native_mpp_xy": [
+      1.0071373994638069,
+      1.0073491636363636
+    ],
+    "junctions_fixed": true,
+    "shared_arcs_fitted_once": true,
+    "polygon_faces_partitioned": true,
+    "source": "Published Bora coverage converter followed by calibrated shared-boundary fitting"
+  },
+  "compact_boundary_report": {
+    "requested_tolerance_um": 3.0,
+    "selected_tolerance_um": 3.0,
+    "before": {
+      "boundary_segments": 10,
+      "vertices": 11,
+      "polygon_parts": 1,
+      "short_stair_corners": 0,
+      "axis_aligned_stair_corners": 4,
+      "diagonal_segments": 4,
+      "diagonal_length_fraction": 0.007406875551247733
+    },
+    "after": {
+      "boundary_segments": 9,
+      "vertices": 10,
+      "polygon_parts": 1,
+      "short_stair_corners": 0,
+      "axis_aligned_stair_corners": 4,
+      "diagonal_segments": 4,
+      "diagonal_length_fraction": 0.00840639873270015
+    },
+    "agreement": {
+      "minimum_class_iou": 0.9999875422628729,
+      "per_class_iou": {
+        "3": 0.9999875422628729
+      },
+      "changed_tissue_area_fraction": 1.2457892324072112e-05,
+      "all_classes_preserved": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "all_polygons_valid": true
+    },
+    "attempts": [
+      {
+        "tolerance_um": 3.0,
+        "admissible": true,
+        "agreement": {
+          "minimum_class_iou": 0.9999875422628729,
+          "per_class_iou": {
+            "3": 0.9999875422628729
+          },
+          "changed_tissue_area_fraction": 1.2457892324072112e-05,
+          "all_classes_preserved": true,
+          "interclass_overlap_area_pixels": 0.0,
+          "all_polygons_valid": true
+        },
+        "after": {
+          "boundary_segments": 9,
+          "vertices": 10,
+          "polygon_parts": 1,
+          "short_stair_corners": 0,
+          "axis_aligned_stair_corners": 4,
+          "diagonal_segments": 4,
+          "diagonal_length_fraction": 0.00840639873270015
+        }
+      }
+    ],
+    "runtime_seconds": 0.04834479000419378,
+    "expert_annotations_read": false,
+    "minimum_class_iou_guard": 0.97,
+    "maximum_change_fraction_guard": 0.015,
+    "original_export_fallback": false
+  }
+}

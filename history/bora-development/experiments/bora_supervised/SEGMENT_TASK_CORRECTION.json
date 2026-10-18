@@ -1,0 +1,11 @@
+{
+  "status": "User clarified the primary inference unit on 2026-10-18",
+  "primary_unit": "A connected tissue segment after Bora refinement, not a tile or an H&E superpixel",
+  "required_output": "One top-1 tissue identity and a ranked top-5 tissue shortlist for each frozen Bora region",
+  "role_of_tiles": "Create a coarse grouping and supply evidence that may be combined within a refined segment",
+  "existing_cycles": "Preserved as tile and superpixel controls; they do not complete the segment-identification task",
+  "next_study": "Bora region geometry generated without fine annotations, followed by train-only fitting of region classifiers and comparison with tile-evidence aggregation",
+  "geometry_policy": "Freeze the region boundaries before semantic classification. Keep native region IDs separately from tissue identity IDs.",
+  "test_reuse_disclosure": "The earlier tissue-head test cohort has already been scored. Follow-up segment experiments can preserve its training separation but must disclose repeated test use and cannot call it an untouched final test. Choose variants on validation only.",
+  "manuscript_status": "Authoring awaits corrected segment-level results; original Chiamaka manuscript and historical controls are preserved"
+}

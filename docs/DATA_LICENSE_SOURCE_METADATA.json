@@ -1,0 +1,116 @@
+{
+  "gcss": {
+    "record_id": 8176354,
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "record_url": "https://zenodo.org/records/8176354",
+    "creators": [
+      {
+        "name": "Jiangbo Shi",
+        "affiliation": "Xi'an Jiaotong University"
+      }
+    ],
+    "retrieved_on": "2026-10-18"
+  },
+  "ignite": {
+    "record_id": 17735903,
+    "license": {
+      "id": "cc-by-nc-sa-4.0"
+    },
+    "record_url": "https://zenodo.org/records/17735903",
+    "creators": [
+      {
+        "name": "Spronck, Joey Matheus Antonius",
+        "affiliation": "Radboud University Medical Center",
+        "orcid": "0000-0001-9653-9542"
+      },
+      {
+        "name": "van Eekelen, Leander",
+        "affiliation": "Radboud University Medical Center",
+        "orcid": "0000-0002-6728-6352"
+      },
+      {
+        "name": "van Midden, Dominique",
+        "affiliation": "Radboud University Medical Center",
+        "orcid": "0000-0002-6607-8092"
+      },
+      {
+        "name": "Bogaerts, Joep",
+        "affiliation": "Radboud University Medical Center",
+        "orcid": "0000-0003-0772-6712"
+      },
+      {
+        "name": "Tessier, Leslie",
+        "affiliation": "Radboud University Medical Center",
+        "orcid": "0000-0001-9046-9862"
+      },
+      {
+        "name": "Dechering, Valerie",
+        "affiliation": "Radboud University Medical Center"
+      },
+      {
+        "name": "Demirel-Andishmand, Muradije",
+        "affiliation": "Radboud University Medical Center"
+      },
+      {
+        "name": "Silva de Souza, Gabriel",
+        "affiliation": "Radboud University Medical Center"
+      },
+      {
+        "name": "Nemeth, Roland",
+        "affiliation": "Radboud University Medical Center"
+      },
+      {
+        "name": "Munari, Enrico",
+        "affiliation": "Ospedale Sacro Cuore Don Calabria",
+        "orcid": "0000-0002-3867-6685"
+      },
+      {
+        "name": "Bogina, Giuseppe",
+        "affiliation": "Ospedale Sacro Cuore Don Calabria",
+        "orcid": "0000-0002-0311-2708"
+      },
+      {
+        "name": "Girolami, Ilaria",
+        "affiliation": "Ospedale di Bolzano",
+        "orcid": "0000-0003-3537-4929"
+      },
+      {
+        "name": "Eccher, Albino",
+        "affiliation": "University and Hospital Trust of Verona",
+        "orcid": "0000-0002-9992-5550"
+      },
+      {
+        "name": "Acs, Balazs",
+        "affiliation": "Karolinska Institutet",
+        "orcid": "0000-0002-0972-4633"
+      },
+      {
+        "name": "Boyaci, Ceren",
+        "affiliation": "Karolinska Institutet",
+        "orcid": "0000-0001-5598-0243"
+      },
+      {
+        "name": "Klub\u00ed\u010dkov\u00e1, Nat\u00e1lie",
+        "affiliation": "Biopticka Laborator (Czechia)",
+        "orcid": "0000-0002-4407-5544"
+      },
+      {
+        "name": "Looijen-Salamon, Monika",
+        "affiliation": "Radboud University Medical Center"
+      },
+      {
+        "name": "Vos, Shoko",
+        "affiliation": "Radboud University Medical Center",
+        "orcid": "0000-0001-9012-5146"
+      },
+      {
+        "name": "Ciompi, Francesco",
+        "affiliation": "Radboud University Medical Center",
+        "orcid": "0000-0001-8327-9606"
+      }
+    ],
+    "retrieved_on": "2026-10-18"
+  }
+}

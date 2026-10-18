@@ -1,0 +1,843 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              225.0,
+              424.0
+            ],
+            [
+              291.0,
+              426.0
+            ],
+            [
+              335.0,
+              440.0
+            ],
+            [
+              453.0,
+              500.0
+            ],
+            [
+              495.0,
+              512.0
+            ],
+            [
+              565.0,
+              556.0
+            ],
+            [
+              617.0,
+              606.0
+            ],
+            [
+              693.0,
+              652.0
+            ],
+            [
+              737.0,
+              712.0
+            ],
+            [
+              807.0,
+              760.0
+            ],
+            [
+              867.0,
+              856.0
+            ],
+            [
+              878.0,
+              815.0
+            ],
+            [
+              917.0,
+              838.0
+            ],
+            [
+              921.0,
+              860.0
+            ],
+            [
+              975.0,
+              940.0
+            ],
+            [
+              1004.0,
+              1022.0
+            ],
+            [
+              1004.0,
+              1048.0
+            ],
+            [
+              1065.0,
+              1048.0
+            ],
+            [
+              1065.0,
+              552.0
+            ],
+            [
+              1023.0,
+              534.0
+            ],
+            [
+              975.0,
+              488.0
+            ],
+            [
+              959.0,
+              456.0
+            ],
+            [
+              931.0,
+              442.0
+            ],
+            [
+              907.0,
+              366.0
+            ],
+            [
+              911.0,
+              308.0
+            ],
+            [
+              955.0,
+              230.0
+            ],
+            [
+              1023.0,
+              172.0
+            ],
+            [
+              1065.0,
+              158.0
+            ],
+            [
+              1065.0,
+              0.0
+            ],
+            [
+              927.0,
+              0.0
+            ],
+            [
+              927.0,
+              22.0
+            ],
+            [
+              877.0,
+              58.0
+            ],
+            [
+              801.0,
+              162.0
+            ],
+            [
+              773.0,
+              192.0
+            ],
+            [
+              745.0,
+              206.0
+            ],
+            [
+              711.0,
+              210.0
+            ],
+            [
+              649.0,
+              194.0
+            ],
+            [
+              619.0,
+              224.0
+            ],
+            [
+              551.0,
+              232.0
+            ],
+            [
+              509.0,
+              256.0
+            ],
+            [
+              281.0,
+              264.0
+            ],
+            [
+              215.0,
+              192.0
+            ],
+            [
+              215.0,
+              174.0
+            ],
+            [
+              267.0,
+              114.0
+            ],
+            [
+              331.0,
+              84.0
+            ],
+            [
+              369.0,
+              40.0
+            ],
+            [
+              399.0,
+              22.0
+            ],
+            [
+              409.0,
+              0.0
+            ],
+            [
+              380.0,
+              29.0
+            ],
+            [
+              371.0,
+              23.0
+            ],
+            [
+              392.0,
+              0.0
+            ],
+            [
+              229.0,
+              0.0
+            ],
+            [
+              226.0,
+              19.0
+            ],
+            [
+              201.0,
+              40.0
+            ],
+            [
+              180.0,
+              43.0
+            ],
+            [
+              79.0,
+              106.0
+            ],
+            [
+              71.0,
+              106.0
+            ],
+            [
+              74.0,
+              94.0
+            ],
+            [
+              120.0,
+              45.0
+            ],
+            [
+              151.0,
+              33.0
+            ],
+            [
+              169.0,
+              13.0
+            ],
+            [
+              178.0,
+              17.0
+            ],
+            [
+              173.0,
+              34.0
+            ],
+            [
+              185.0,
+              32.0
+            ],
+            [
+              194.0,
+              14.0
+            ],
+            [
+              211.0,
+              15.0
+            ],
+            [
+              219.0,
+              0.0
+            ],
+            [
+              186.0,
+              10.0
+            ],
+            [
+              179.0,
+              10.0
+            ],
+            [
+              181.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              131.0
+            ],
+            [
+              19.0,
+              120.0
+            ],
+            [
+              56.0,
+              124.0
+            ],
+            [
+              40.0,
+              128.0
+            ],
+            [
+              28.0,
+              154.0
+            ],
+            [
+              17.0,
+              147.0
+            ],
+            [
+              0.0,
+              153.0
+            ],
+            [
+              8.0,
+              164.0
+            ],
+            [
+              0.0,
+              169.0
+            ],
+            [
+              0.0,
+              358.0
+            ],
+            [
+              114.0,
+              381.0
+            ],
+            [
+              225.0,
+              424.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "value": 3,
+        "classification": {
+          "name": "stroma",
+          "color": "#b0f254"
+        },
+        "predicted_tissue_id": 3,
+        "predicted_tissue": "stroma",
+        "name": "stroma",
+        "objectType": "annotation",
+        "area_pixels": 463139.5,
+        "area_um2": 115784.875,
+        "tissue_identity_source": "Supervised prediction after Bora"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                409.0,
+                0.0
+              ],
+              [
+                399.0,
+                22.0
+              ],
+              [
+                369.0,
+                40.0
+              ],
+              [
+                331.0,
+                84.0
+              ],
+              [
+                267.0,
+                114.0
+              ],
+              [
+                215.0,
+                174.0
+              ],
+              [
+                215.0,
+                192.0
+              ],
+              [
+                281.0,
+                264.0
+              ],
+              [
+                509.0,
+                256.0
+              ],
+              [
+                551.0,
+                232.0
+              ],
+              [
+                619.0,
+                224.0
+              ],
+              [
+                649.0,
+                194.0
+              ],
+              [
+                711.0,
+                210.0
+              ],
+              [
+                745.0,
+                206.0
+              ],
+              [
+                773.0,
+                192.0
+              ],
+              [
+                801.0,
+                162.0
+              ],
+              [
+                877.0,
+                58.0
+              ],
+              [
+                927.0,
+                22.0
+              ],
+              [
+                927.0,
+                0.0
+              ],
+              [
+                409.0,
+                0.0
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                1065.0,
+                469.0
+              ],
+              [
+                1044.0,
+                473.0
+              ],
+              [
+                1026.0,
+                446.0
+              ],
+              [
+                1012.0,
+                447.0
+              ],
+              [
+                997.0,
+                407.0
+              ],
+              [
+                979.0,
+                389.0
+              ],
+              [
+                988.0,
+                386.0
+              ],
+              [
+                988.0,
+                348.0
+              ],
+              [
+                1046.0,
+                284.0
+              ],
+              [
+                1055.0,
+                261.0
+              ],
+              [
+                1065.0,
+                260.0
+              ],
+              [
+                1065.0,
+                158.0
+              ],
+              [
+                1023.0,
+                172.0
+              ],
+              [
+                955.0,
+                230.0
+              ],
+              [
+                911.0,
+                308.0
+              ],
+              [
+                907.0,
+                366.0
+              ],
+              [
+                931.0,
+                442.0
+              ],
+              [
+                959.0,
+                456.0
+              ],
+              [
+                975.0,
+                488.0
+              ],
+              [
+                1023.0,
+                534.0
+              ],
+              [
+                1065.0,
+                552.0
+              ],
+              [
+                1065.0,
+                469.0
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "value": 6,
+        "classification": {
+          "name": "normal glandular epithelium",
+          "color": "#f2a954"
+        },
+        "predicted_tissue_id": 6,
+        "predicted_tissue": "normal glandular epithelium",
+        "name": "normal glandular epithelium",
+        "objectType": "annotation",
+        "area_pixels": 161877.0,
+        "area_um2": 40469.25,
+        "tissue_identity_source": "Supervised prediction after Bora"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              867.0,
+              856.0
+            ],
+            [
+              807.0,
+              760.0
+            ],
+            [
+              737.0,
+              712.0
+            ],
+            [
+              693.0,
+              652.0
+            ],
+            [
+              617.0,
+              606.0
+            ],
+            [
+              565.0,
+              556.0
+            ],
+            [
+              495.0,
+              512.0
+            ],
+            [
+              453.0,
+              500.0
+            ],
+            [
+              335.0,
+              440.0
+            ],
+            [
+              291.0,
+              426.0
+            ],
+            [
+              225.0,
+              424.0
+            ],
+            [
+              295.0,
+              436.0
+            ],
+            [
+              309.0,
+              454.0
+            ],
+            [
+              216.0,
+              445.0
+            ],
+            [
+              174.0,
+              425.0
+            ],
+            [
+              85.0,
+              412.0
+            ],
+            [
+              26.0,
+              389.0
+            ],
+            [
+              0.0,
+              394.0
+            ],
+            [
+              0.0,
+              1048.0
+            ],
+            [
+              803.0,
+              1048.0
+            ],
+            [
+              803.0,
+              1033.0
+            ],
+            [
+              829.0,
+              1019.0
+            ],
+            [
+              842.0,
+              1023.0
+            ],
+            [
+              843.0,
+              1034.0
+            ],
+            [
+              820.0,
+              1033.0
+            ],
+            [
+              819.0,
+              1048.0
+            ],
+            [
+              946.0,
+              1048.0
+            ],
+            [
+              919.0,
+              942.0
+            ],
+            [
+              868.0,
+              872.0
+            ],
+            [
+              867.0,
+              856.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "value": 21,
+        "classification": {
+          "name": "cartilage or bone",
+          "color": "#54f26e"
+        },
+        "predicted_tissue_id": 21,
+        "predicted_tissue": "cartilage or bone",
+        "name": "cartilage or bone",
+        "objectType": "annotation",
+        "area_pixels": 452804.0,
+        "area_um2": 113201.0,
+        "tissue_identity_source": "Supervised prediction after Bora"
+      }
+    }
+  ],
+  "native_shape_yx": [
+    1048,
+    1065
+  ],
+  "native_mpp_xy": [
+    0.5,
+    0.5
+  ],
+  "coordinate_space": "native_ROI_image_pixel_edges",
+  "origin": "top_left",
+  "coordinates_are_roi_local": true,
+  "converter": "bora.multicpu_geojson.convert",
+  "profile": "accurate",
+  "minimum_component_area_pixels": 500.0,
+  "simplification_tolerance_pixels": 2.0,
+  "pixel_exact": false,
+  "note": "Bora coverage-aware simplification and per-label dissolution. Image coordinates, not geographic coordinates.",
+  "small_region_cleanup": {
+    "minimum_region_area_pixels": 20,
+    "strictly_less_than_threshold": true,
+    "filled_regions": 2,
+    "filled_pixels": 11,
+    "isolated_regions_filled_with_background": 0,
+    "filled_holes": 0,
+    "hole_pixels": 0,
+    "exterior_background_unchanged": true,
+    "connectivity": 8
+  },
+  "small_polygon_part_cleanup": {
+    "minimum_area_native_pixels": 20,
+    "strictly_less_than_threshold": true,
+    "removed_parts": 0,
+    "removed_area_pixels": 0.0,
+    "adjacent_tissue_filled": true,
+    "isolated_parts_removed_to_background": true,
+    "iterations": 1
+  },
+  "small_vector_hole_cleanup": {
+    "minimum_hole_area_pixels": 20,
+    "filled_holes": 0,
+    "filled_area_pixels": 0.0,
+    "exterior_rings_unchanged": true,
+    "other_predicted_tissue_not_overwritten": true
+  },
+  "final_native_pixel_region_cleanup": {
+    "minimum_region_area_pixels": 20,
+    "strictly_less_than_threshold": true,
+    "filled_regions": 0,
+    "filled_pixels": 0,
+    "isolated_regions_filled_with_background": 0,
+    "filled_holes": 0,
+    "hole_pixels": 0,
+    "exterior_background_unchanged": true,
+    "connectivity": 8,
+    "final_vector_raster_pixels_changed": 0,
+    "numerical_boundary_tie_repair_pixels": 0,
+    "repair_passes": 0,
+    "all_boundaries_outside_local_repairs_unchanged": true,
+    "continuous_polygon_area_checked": true,
+    "positive_polygon_parts_below_threshold": 0,
+    "polygon_holes_below_threshold": 0
+  },
+  "boundary_fitting": {
+    "method": "shared-rdp",
+    "tolerance_um": 3.0,
+    "native_mpp_xy": [
+      0.5,
+      0.5
+    ],
+    "junctions_fixed": true,
+    "shared_arcs_fitted_once": true,
+    "polygon_faces_partitioned": true,
+    "source": "Published Bora coverage converter followed by calibrated shared-boundary fitting"
+  },
+  "compact_boundary_report": {
+    "requested_tolerance_um": 3.0,
+    "selected_tolerance_um": 3.0,
+    "before": {
+      "boundary_segments": 1162,
+      "vertices": 1166,
+      "polygon_parts": 4,
+      "short_stair_corners": 0,
+      "axis_aligned_stair_corners": 257,
+      "diagonal_segments": 629,
+      "diagonal_length_fraction": 0.3974929082588048
+    },
+    "after": {
+      "boundary_segments": 151,
+      "vertices": 155,
+      "polygon_parts": 4,
+      "short_stair_corners": 0,
+      "axis_aligned_stair_corners": 8,
+      "diagonal_segments": 128,
+      "diagonal_length_fraction": 0.6422507758824578
+    },
+    "agreement": {
+      "minimum_class_iou": 0.9824789072996888,
+      "per_class_iou": {
+        "3": 0.9878128601729634,
+        "6": 0.9824789072996888,
+        "21": 0.9947925002658301
+      },
+      "changed_tissue_area_fraction": 0.006667918123628995,
+      "all_classes_preserved": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "all_polygons_valid": true
+    },
+    "attempts": [
+      {
+        "tolerance_um": 3.0,
+        "admissible": true,
+        "agreement": {
+          "minimum_class_iou": 0.9824789072996888,
+          "per_class_iou": {
+            "3": 0.9878128601729634,
+            "6": 0.9824789072996888,
+            "21": 0.9947925002658301
+          },
+          "changed_tissue_area_fraction": 0.006667918123628995,
+          "all_classes_preserved": true,
+          "interclass_overlap_area_pixels": 0.0,
+          "all_polygons_valid": true
+        },
+        "after": {
+          "boundary_segments": 151,
+          "vertices": 155,
+          "polygon_parts": 4,
+          "short_stair_corners": 0,
+          "axis_aligned_stair_corners": 8,
+          "diagonal_segments": 128,
+          "diagonal_length_fraction": 0.6422507758824578
+        }
+      }
+    ],
+    "runtime_seconds": 0.0917043425142765,
+    "expert_annotations_read": false,
+    "minimum_class_iou_guard": 0.97,
+    "maximum_change_fraction_guard": 0.015,
+    "original_export_fallback": false
+  }
+}

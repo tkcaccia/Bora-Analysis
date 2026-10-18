@@ -1,0 +1,7 @@
+= TIGER training data license / ROI level annotations =
+
+All training data annotations (for TCGA-BRCA, RUMC, and JB slides) are released under a CC BY-NC 4.0 license.
+Training images from RUMC and JB are also released under a CC BY-NC 4.0 license.
+
+Training images from TCGA-BRCA are shared in the same format as images from RUMC and JB (i.e., cropped regions of interest from multiresolution TIF files at 0.5 um/px maximum resolution).
+The same rights applicable to original TCGA-BRCA slides apply to the shared TCGA-BRCA images in this set. 

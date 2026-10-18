@@ -1,0 +1,472 @@
+{
+  "generation": 3,
+  "candidates": [
+    {
+      "id": "P04",
+      "name": "Shared interface context",
+      "description": "Native PLS-LDA sees a group mean and its contrast to physically shared-boundary-weighted neighbors.",
+      "view": "neighbor",
+      "engine": "lda",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    },
+    {
+      "id": "P12",
+      "name": "Orthogonal nuisance separation",
+      "description": "Native OPLS removes predictor variation orthogonal to the supervised response before class discrimination.",
+      "view": "mean",
+      "engine": "opls",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    },
+    {
+      "id": "P02",
+      "name": "Covariance geometry",
+      "description": "Log-Euclidean covariance of training-only label-free token coordinates, combined with group mean. Models correlated within-group heterogeneity rather than only channel SD.",
+      "view": "covariance",
+      "engine": "lda",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    },
+    {
+      "id": "P16",
+      "name": "Distribution quantile profiles",
+      "description": "Weighted quantiles of training-only label-free token projections describe multimodal tissue groups; a native PLS head learns their identity.",
+      "view": "quantile",
+      "engine": "lda",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    },
+    {
+      "id": "C02-41",
+      "name": "P16: latent density fusion",
+      "description": "Fuse parent class evidence with shrinkage densities in supervised native PLS coordinates.",
+      "operator": "latent_density_fusion",
+      "parent_recipe": {
+        "id": "P16",
+        "name": "Distribution quantile profiles",
+        "description": "Weighted quantiles of training-only label-free token projections describe multimodal tissue groups; a native PLS head learns their identity.",
+        "view": "quantile",
+        "engine": "lda",
+        "parents": [],
+        "generation": 1,
+        "native_backend": "fastPLS C++ CPU"
+      },
+      "parents": [
+        "P16"
+      ],
+      "generation": 2,
+      "engine": "evolved_native_pls",
+      "view": "mean",
+      "native_backend": "fastPLS C++ CPU",
+      "depth": 1
+    },
+    {
+      "id": "C03-11",
+      "name": "P04: verification decoder",
+      "description": "Use a native PLS pair verifier to adjudicate parent tissue alternatives.",
+      "operator": "verification_decoder",
+      "parent_recipe": {
+        "id": "P04",
+        "name": "Shared interface context",
+        "description": "Native PLS-LDA sees a group mean and its contrast to physically shared-boundary-weighted neighbors.",
+        "view": "neighbor",
+        "engine": "lda",
+        "parents": [],
+        "generation": 1,
+        "native_backend": "fastPLS C++ CPU"
+      },
+      "parents": [
+        "P04"
+      ],
+      "generation": 3,
+      "engine": "evolved_native_pls",
+      "view": "mean",
+      "native_backend": "fastPLS C++ CPU",
+      "depth": 1
+    },
+    {
+      "id": "C03-12",
+      "name": "P04: coded residual",
+      "description": "Fit redundant error-correcting class-code residuals through a native PLS stage.",
+      "operator": "coded_residual",
+      "parent_recipe": {
+        "id": "P04",
+        "name": "Shared interface context",
+        "description": "Native PLS-LDA sees a group mean and its contrast to physically shared-boundary-weighted neighbors.",
+        "view": "neighbor",
+        "engine": "lda",
+        "parents": [],
+        "generation": 1,
+        "native_backend": "fastPLS C++ CPU"
+      },
+      "parents": [
+        "P04"
+      ],
+      "generation": 3,
+      "engine": "evolved_native_pls",
+      "view": "mean",
+      "native_backend": "fastPLS C++ CPU",
+      "depth": 1
+    },
+    {
+      "id": "C03-13",
+      "name": "P04: local residual",
+      "description": "Learn parent residuals within training-only feature neighborhoods using native PLS experts.",
+      "operator": "local_residual",
+      "parent_recipe": {
+        "id": "P04",
+        "name": "Shared interface context",
+        "description": "Native PLS-LDA sees a group mean and its contrast to physically shared-boundary-weighted neighbors.",
+        "view": "neighbor",
+        "engine": "lda",
+        "parents": [],
+        "generation": 1,
+        "native_backend": "fastPLS C++ CPU"
+      },
+      "parents": [
+        "P04"
+      ],
+      "generation": 3,
+      "engine": "evolved_native_pls",
+      "view": "mean",
+      "native_backend": "fastPLS C++ CPU",
+      "depth": 1
+    },
+    {
+      "id": "C03-21",
+      "name": "P12: source bagged student",
+      "description": "Distill source-group bagged parent evidence to a compact native PLS student.",
+      "operator": "source_bagged_student",
+      "parent_recipe": {
+        "id": "P12",
+        "name": "Orthogonal nuisance separation",
+        "description": "Native OPLS removes predictor variation orthogonal to the supervised response before class discrimination.",
+        "view": "mean",
+        "engine": "opls",
+        "parents": [],
+        "generation": 1,
+        "native_backend": "fastPLS C++ CPU"
+      },
+      "parents": [
+        "P12"
+      ],
+      "generation": 3,
+      "engine": "evolved_native_pls",
+      "view": "mean",
+      "native_backend": "fastPLS C++ CPU",
+      "depth": 1
+    },
+    {
+      "id": "C03-22",
+      "name": "P12: latent density fusion",
+      "description": "Fuse parent class evidence with shrinkage densities in supervised native PLS coordinates.",
+      "operator": "latent_density_fusion",
+      "parent_recipe": {
+        "id": "P12",
+        "name": "Orthogonal nuisance separation",
+        "description": "Native OPLS removes predictor variation orthogonal to the supervised response before class discrimination.",
+        "view": "mean",
+        "engine": "opls",
+        "parents": [],
+        "generation": 1,
+        "native_backend": "fastPLS C++ CPU"
+      },
+      "parents": [
+        "P12"
+      ],
+      "generation": 3,
+      "engine": "evolved_native_pls",
+      "view": "mean",
+      "native_backend": "fastPLS C++ CPU",
+      "depth": 1
+    },
+    {
+      "id": "C03-23",
+      "name": "P12: orthogonal student",
+      "description": "Use native OPLS to isolate class-relevant variation while distilling parent responses.",
+      "operator": "orthogonal_student",
+      "parent_recipe": {
+        "id": "P12",
+        "name": "Orthogonal nuisance separation",
+        "description": "Native OPLS removes predictor variation orthogonal to the supervised response before class discrimination.",
+        "view": "mean",
+        "engine": "opls",
+        "parents": [],
+        "generation": 1,
+        "native_backend": "fastPLS C++ CPU"
+      },
+      "parents": [
+        "P12"
+      ],
+      "generation": 3,
+      "engine": "evolved_native_pls",
+      "view": "mean",
+      "native_backend": "fastPLS C++ CPU",
+      "depth": 1
+    },
+    {
+      "id": "C03-31",
+      "name": "P02: spatial expert",
+      "description": "Add physically pooled within-group spatial evidence through a native PLS expert.",
+      "operator": "spatial_expert",
+      "parent_recipe": {
+        "id": "P02",
+        "name": "Covariance geometry",
+        "description": "Log-Euclidean covariance of training-only label-free token coordinates, combined with group mean. Models correlated within-group heterogeneity rather than only channel SD.",
+        "view": "covariance",
+        "engine": "lda",
+        "parents": [],
+        "generation": 1,
+        "native_backend": "fastPLS C++ CPU"
+      },
+      "parents": [
+        "P02"
+      ],
+      "generation": 3,
+      "engine": "evolved_native_pls",
+      "view": "mean",
+      "native_backend": "fastPLS C++ CPU",
+      "depth": 1
+    },
+    {
+      "id": "C03-32",
+      "name": "P02: distillation",
+      "description": "Compress a parent response surface into a native PLS student using training-only cross-fitted teacher evidence.",
+      "operator": "distillation",
+      "parent_recipe": {
+        "id": "P02",
+        "name": "Covariance geometry",
+        "description": "Log-Euclidean covariance of training-only label-free token coordinates, combined with group mean. Models correlated within-group heterogeneity rather than only channel SD.",
+        "view": "covariance",
+        "engine": "lda",
+        "parents": [],
+        "generation": 1,
+        "native_backend": "fastPLS C++ CPU"
+      },
+      "parents": [
+        "P02"
+      ],
+      "generation": 3,
+      "engine": "evolved_native_pls",
+      "view": "mean",
+      "native_backend": "fastPLS C++ CPU",
+      "depth": 1
+    },
+    {
+      "id": "C03-33",
+      "name": "P02: residual specialist",
+      "description": "Add a native PLS residual expert for training-only cross-fitted confusions, rather than changing component count.",
+      "operator": "residual_specialist",
+      "parent_recipe": {
+        "id": "P02",
+        "name": "Covariance geometry",
+        "description": "Log-Euclidean covariance of training-only label-free token coordinates, combined with group mean. Models correlated within-group heterogeneity rather than only channel SD.",
+        "view": "covariance",
+        "engine": "lda",
+        "parents": [],
+        "generation": 1,
+        "native_backend": "fastPLS C++ CPU"
+      },
+      "parents": [
+        "P02"
+      ],
+      "generation": 3,
+      "engine": "evolved_native_pls",
+      "view": "mean",
+      "native_backend": "fastPLS C++ CPU",
+      "depth": 1
+    },
+    {
+      "id": "C03-41",
+      "name": "P16: context transport",
+      "description": "Couple parent group evidence to an independently fitted native PLS image-composition prior.",
+      "operator": "context_transport",
+      "parent_recipe": {
+        "id": "P16",
+        "name": "Distribution quantile profiles",
+        "description": "Weighted quantiles of training-only label-free token projections describe multimodal tissue groups; a native PLS head learns their identity.",
+        "view": "quantile",
+        "engine": "lda",
+        "parents": [],
+        "generation": 1,
+        "native_backend": "fastPLS C++ CPU"
+      },
+      "parents": [
+        "P16"
+      ],
+      "generation": 3,
+      "engine": "evolved_native_pls",
+      "view": "mean",
+      "native_backend": "fastPLS C++ CPU",
+      "depth": 1
+    },
+    {
+      "id": "C03-42",
+      "name": "P16: distribution expert",
+      "description": "Fuse parent evidence with a native PLS distribution-profile expert; the new source of evidence is token heterogeneity.",
+      "operator": "distribution_expert",
+      "parent_recipe": {
+        "id": "P16",
+        "name": "Distribution quantile profiles",
+        "description": "Weighted quantiles of training-only label-free token projections describe multimodal tissue groups; a native PLS head learns their identity.",
+        "view": "quantile",
+        "engine": "lda",
+        "parents": [],
+        "generation": 1,
+        "native_backend": "fastPLS C++ CPU"
+      },
+      "parents": [
+        "P16"
+      ],
+      "generation": 3,
+      "engine": "evolved_native_pls",
+      "view": "mean",
+      "native_backend": "fastPLS C++ CPU",
+      "depth": 1
+    },
+    {
+      "id": "C03-43",
+      "name": "P16: hierarchical decoder",
+      "description": "Replace flat response decoding with native PLS class-tree routing.",
+      "operator": "hierarchical_decoder",
+      "parent_recipe": {
+        "id": "P16",
+        "name": "Distribution quantile profiles",
+        "description": "Weighted quantiles of training-only label-free token projections describe multimodal tissue groups; a native PLS head learns their identity.",
+        "view": "quantile",
+        "engine": "lda",
+        "parents": [],
+        "generation": 1,
+        "native_backend": "fastPLS C++ CPU"
+      },
+      "parents": [
+        "P16"
+      ],
+      "generation": 3,
+      "engine": "evolved_native_pls",
+      "view": "mean",
+      "native_backend": "fastPLS C++ CPU",
+      "depth": 1
+    },
+    {
+      "id": "C03-51",
+      "name": "C02-41: verification decoder",
+      "description": "Use a native PLS pair verifier to adjudicate parent tissue alternatives.",
+      "operator": "verification_decoder",
+      "parent_recipe": {
+        "id": "C02-41",
+        "name": "P16: latent density fusion",
+        "description": "Fuse parent class evidence with shrinkage densities in supervised native PLS coordinates.",
+        "operator": "latent_density_fusion",
+        "parent_recipe": {
+          "id": "P16",
+          "name": "Distribution quantile profiles",
+          "description": "Weighted quantiles of training-only label-free token projections describe multimodal tissue groups; a native PLS head learns their identity.",
+          "view": "quantile",
+          "engine": "lda",
+          "parents": [],
+          "generation": 1,
+          "native_backend": "fastPLS C++ CPU"
+        },
+        "parents": [
+          "P16"
+        ],
+        "generation": 2,
+        "engine": "evolved_native_pls",
+        "view": "mean",
+        "native_backend": "fastPLS C++ CPU",
+        "depth": 1
+      },
+      "parents": [
+        "C02-41"
+      ],
+      "generation": 3,
+      "engine": "evolved_native_pls",
+      "view": "mean",
+      "native_backend": "fastPLS C++ CPU",
+      "depth": 2
+    },
+    {
+      "id": "C03-52",
+      "name": "C02-41: coded residual",
+      "description": "Fit redundant error-correcting class-code residuals through a native PLS stage.",
+      "operator": "coded_residual",
+      "parent_recipe": {
+        "id": "C02-41",
+        "name": "P16: latent density fusion",
+        "description": "Fuse parent class evidence with shrinkage densities in supervised native PLS coordinates.",
+        "operator": "latent_density_fusion",
+        "parent_recipe": {
+          "id": "P16",
+          "name": "Distribution quantile profiles",
+          "description": "Weighted quantiles of training-only label-free token projections describe multimodal tissue groups; a native PLS head learns their identity.",
+          "view": "quantile",
+          "engine": "lda",
+          "parents": [],
+          "generation": 1,
+          "native_backend": "fastPLS C++ CPU"
+        },
+        "parents": [
+          "P16"
+        ],
+        "generation": 2,
+        "engine": "evolved_native_pls",
+        "view": "mean",
+        "native_backend": "fastPLS C++ CPU",
+        "depth": 1
+      },
+      "parents": [
+        "C02-41"
+      ],
+      "generation": 3,
+      "engine": "evolved_native_pls",
+      "view": "mean",
+      "native_backend": "fastPLS C++ CPU",
+      "depth": 2
+    },
+    {
+      "id": "C03-53",
+      "name": "C02-41: local residual",
+      "description": "Learn parent residuals within training-only feature neighborhoods using native PLS experts.",
+      "operator": "local_residual",
+      "parent_recipe": {
+        "id": "C02-41",
+        "name": "P16: latent density fusion",
+        "description": "Fuse parent class evidence with shrinkage densities in supervised native PLS coordinates.",
+        "operator": "latent_density_fusion",
+        "parent_recipe": {
+          "id": "P16",
+          "name": "Distribution quantile profiles",
+          "description": "Weighted quantiles of training-only label-free token projections describe multimodal tissue groups; a native PLS head learns their identity.",
+          "view": "quantile",
+          "engine": "lda",
+          "parents": [],
+          "generation": 1,
+          "native_backend": "fastPLS C++ CPU"
+        },
+        "parents": [
+          "P16"
+        ],
+        "generation": 2,
+        "engine": "evolved_native_pls",
+        "view": "mean",
+        "native_backend": "fastPLS C++ CPU",
+        "depth": 1
+      },
+      "parents": [
+        "C02-41"
+      ],
+      "generation": 3,
+      "engine": "evolved_native_pls",
+      "view": "mean",
+      "native_backend": "fastPLS C++ CPU",
+      "depth": 2
+    }
+  ],
+  "retained_parents": 5
+}

@@ -1,0 +1,395 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1226.0,
+              1030.0
+            ],
+            [
+              1226.0,
+              0.0
+            ],
+            [
+              460.0,
+              0.0
+            ],
+            [
+              438.0,
+              100.0
+            ],
+            [
+              436.0,
+              152.0
+            ],
+            [
+              422.0,
+              182.0
+            ],
+            [
+              422.0,
+              386.0
+            ],
+            [
+              446.0,
+              440.0
+            ],
+            [
+              452.0,
+              554.0
+            ],
+            [
+              484.0,
+              602.0
+            ],
+            [
+              604.0,
+              738.0
+            ],
+            [
+              642.0,
+              762.0
+            ],
+            [
+              660.0,
+              806.0
+            ],
+            [
+              784.0,
+              936.0
+            ],
+            [
+              824.0,
+              1046.0
+            ],
+            [
+              844.0,
+              1080.0
+            ],
+            [
+              876.0,
+              1102.0
+            ],
+            [
+              996.0,
+              1106.0
+            ],
+            [
+              1034.0,
+              1094.0
+            ],
+            [
+              1076.0,
+              1066.0
+            ],
+            [
+              1126.0,
+              1056.0
+            ],
+            [
+              1162.0,
+              1060.0
+            ],
+            [
+              1226.0,
+              1030.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "value": 2,
+        "classification": {
+          "name": "in situ tumor",
+          "color": "#5482f2"
+        },
+        "predicted_tissue_id": 2,
+        "predicted_tissue": "in situ tumor",
+        "name": "in situ tumor",
+        "objectType": "annotation",
+        "area_pixels": 732186.0,
+        "area_um2": 183046.5,
+        "tissue_identity_source": "Supervised prediction after Bora"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1226.0,
+              1030.0
+            ],
+            [
+              1162.0,
+              1060.0
+            ],
+            [
+              1126.0,
+              1056.0
+            ],
+            [
+              1076.0,
+              1066.0
+            ],
+            [
+              1034.0,
+              1094.0
+            ],
+            [
+              996.0,
+              1106.0
+            ],
+            [
+              876.0,
+              1102.0
+            ],
+            [
+              844.0,
+              1080.0
+            ],
+            [
+              824.0,
+              1046.0
+            ],
+            [
+              784.0,
+              936.0
+            ],
+            [
+              660.0,
+              806.0
+            ],
+            [
+              642.0,
+              762.0
+            ],
+            [
+              604.0,
+              738.0
+            ],
+            [
+              484.0,
+              602.0
+            ],
+            [
+              452.0,
+              554.0
+            ],
+            [
+              446.0,
+              440.0
+            ],
+            [
+              422.0,
+              386.0
+            ],
+            [
+              422.0,
+              182.0
+            ],
+            [
+              436.0,
+              152.0
+            ],
+            [
+              438.0,
+              100.0
+            ],
+            [
+              460.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1195.0
+            ],
+            [
+              523.0,
+              1195.0
+            ],
+            [
+              532.0,
+              1184.0
+            ],
+            [
+              532.0,
+              1195.0
+            ],
+            [
+              1226.0,
+              1195.0
+            ],
+            [
+              1226.0,
+              1030.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "value": 3,
+        "classification": {
+          "name": "stroma",
+          "color": "#b0f254"
+        },
+        "predicted_tissue_id": 3,
+        "predicted_tissue": "stroma",
+        "name": "stroma",
+        "objectType": "annotation",
+        "area_pixels": 732834.5,
+        "area_um2": 183208.625,
+        "tissue_identity_source": "Supervised prediction after Bora"
+      }
+    }
+  ],
+  "native_shape_yx": [
+    1195,
+    1226
+  ],
+  "native_mpp_xy": [
+    0.5,
+    0.5
+  ],
+  "coordinate_space": "native_ROI_image_pixel_edges",
+  "origin": "top_left",
+  "coordinates_are_roi_local": true,
+  "converter": "bora.multicpu_geojson.convert",
+  "profile": "accurate",
+  "minimum_component_area_pixels": 500.0,
+  "simplification_tolerance_pixels": 2.0,
+  "pixel_exact": false,
+  "note": "Bora coverage-aware simplification and per-label dissolution. Image coordinates, not geographic coordinates.",
+  "small_region_cleanup": {
+    "minimum_region_area_pixels": 20,
+    "strictly_less_than_threshold": true,
+    "filled_regions": 0,
+    "filled_pixels": 0,
+    "isolated_regions_filled_with_background": 0,
+    "filled_holes": 0,
+    "hole_pixels": 0,
+    "exterior_background_unchanged": true,
+    "connectivity": 8
+  },
+  "small_polygon_part_cleanup": {
+    "minimum_area_native_pixels": 20,
+    "strictly_less_than_threshold": true,
+    "removed_parts": 0,
+    "removed_area_pixels": 0.0,
+    "adjacent_tissue_filled": true,
+    "isolated_parts_removed_to_background": true,
+    "iterations": 1
+  },
+  "small_vector_hole_cleanup": {
+    "minimum_hole_area_pixels": 20,
+    "filled_holes": 0,
+    "filled_area_pixels": 0.0,
+    "exterior_rings_unchanged": true,
+    "other_predicted_tissue_not_overwritten": true
+  },
+  "final_native_pixel_region_cleanup": {
+    "minimum_region_area_pixels": 20,
+    "strictly_less_than_threshold": true,
+    "filled_regions": 0,
+    "filled_pixels": 0,
+    "isolated_regions_filled_with_background": 0,
+    "filled_holes": 0,
+    "hole_pixels": 0,
+    "exterior_background_unchanged": true,
+    "connectivity": 8,
+    "final_vector_raster_pixels_changed": 0,
+    "numerical_boundary_tie_repair_pixels": 0,
+    "repair_passes": 0,
+    "all_boundaries_outside_local_repairs_unchanged": true,
+    "continuous_polygon_area_checked": true,
+    "positive_polygon_parts_below_threshold": 0,
+    "polygon_holes_below_threshold": 0
+  },
+  "boundary_fitting": {
+    "method": "shared-rdp",
+    "tolerance_um": 3.0,
+    "native_mpp_xy": [
+      0.5,
+      0.5
+    ],
+    "junctions_fixed": true,
+    "shared_arcs_fitted_once": true,
+    "polygon_faces_partitioned": true,
+    "source": "Published Bora coverage converter followed by calibrated shared-boundary fitting"
+  },
+  "compact_boundary_report": {
+    "requested_tolerance_um": 3.0,
+    "selected_tolerance_um": 3.0,
+    "before": {
+      "boundary_segments": 502,
+      "vertices": 504,
+      "polygon_parts": 2,
+      "short_stair_corners": 0,
+      "axis_aligned_stair_corners": 234,
+      "diagonal_segments": 162,
+      "diagonal_length_fraction": 0.15603774324997596
+    },
+    "after": {
+      "boundary_segments": 49,
+      "vertices": 51,
+      "polygon_parts": 2,
+      "short_stair_corners": 0,
+      "axis_aligned_stair_corners": 5,
+      "diagonal_segments": 39,
+      "diagonal_length_fraction": 0.3545862426869225
+    },
+    "agreement": {
+      "minimum_class_iou": 0.9968023920366059,
+      "per_class_iou": {
+        "2": 0.996876146174304,
+        "3": 0.9968023920366059
+      },
+      "changed_tissue_area_fraction": 0.0016025366086444422,
+      "all_classes_preserved": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "all_polygons_valid": true
+    },
+    "attempts": [
+      {
+        "tolerance_um": 3.0,
+        "admissible": true,
+        "agreement": {
+          "minimum_class_iou": 0.9968023920366059,
+          "per_class_iou": {
+            "2": 0.996876146174304,
+            "3": 0.9968023920366059
+          },
+          "changed_tissue_area_fraction": 0.0016025366086444422,
+          "all_classes_preserved": true,
+          "interclass_overlap_area_pixels": 0.0,
+          "all_polygons_valid": true
+        },
+        "after": {
+          "boundary_segments": 49,
+          "vertices": 51,
+          "polygon_parts": 2,
+          "short_stair_corners": 0,
+          "axis_aligned_stair_corners": 5,
+          "diagonal_segments": 39,
+          "diagonal_length_fraction": 0.3545862426869225
+        }
+      }
+    ],
+    "runtime_seconds": 0.08766813017427921,
+    "expert_annotations_read": false,
+    "minimum_class_iou_guard": 0.97,
+    "maximum_change_fraction_guard": 0.015,
+    "original_export_fallback": false
+  }
+}

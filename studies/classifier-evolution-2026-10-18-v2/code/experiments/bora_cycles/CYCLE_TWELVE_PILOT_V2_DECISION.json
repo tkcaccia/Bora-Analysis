@@ -1,0 +1,43 @@
+{
+  "cycle": 12,
+  "pilot": true,
+  "pilot_version": 2,
+  "decision": "release_unchanged_corrected_source_to_full469",
+  "release_to_full": true,
+  "completed_cycles": 11,
+  "complete_goal": false,
+  "actual_overview_reviews": 24,
+  "actual_native_reviews": 8,
+  "preflight_tests": 123,
+  "revision_gate_tests": 6,
+  "prediction_source": "0bb07bf",
+  "required_full_cases": 469,
+  "required_candidates": 20,
+  "controls": 3,
+  "primary_conversion": "ensemble: fixed equal09+19",
+  "evidence_sha256": {
+    "PROTOCOL.json": "49c66f406d4002fca57be92885bb512775b5b0dcd29fd7e58ff513acc97ba70d",
+    "RESULTS.json": "02d27d8afa228c50136edf5e1b3db7dbc3bed38b940e330d2e9afa735fae466c",
+    "ALL_PREDICTIONS_FROZEN.json": "12966ad3d4d7e127c134b13ee79cc6e1dd055c783c06390f60fff2d45fb4c665",
+    "POSTHOC_COMPLETE.json": "9e0f0b49b5b1b6e384bc30a577640e8820689cadc718fec9c21db1aa281f313f",
+    "FULL_AUDIT.json": "82c1f0192a964a9824efb89b56937d44635b5e77bdf1086405b27145e08b4271",
+    "PAIRED_ANALYSIS.json": "44bfdd850a20805354f877347146899bd6d497a46800683fe9a1608c292b32c2",
+    "NUMERICAL_STATUS.json": "21ae55fae10bbb267f103e641ca53187e02f3ec951940ae55c2f5a13028ab5ee",
+    "PILOT_REVISION_PARITY.json": "87065eaad8a8ca872e3a981ed6b38402d35838b1b3a8ee50ddbd91d3b394c9e4",
+    "VISUAL_MANIFEST.json": "91c94d4ce197178a3b9485025c4d68933e90e1e83fc6af57ec349a60d7f5e503",
+    "VISUAL_REVIEW.json": "cafcf0a1621a8c5322a4101eb27099d1b1994a563a54057876eef48104495989",
+    "NATIVE_PILOT_REVIEW.json": "3f360e9e1895dc9f6b816e9bee88138c5ea387da663a02ac7bd12d419d6073ea",
+    "ENGINEERING_TESTS.xml": "a3a4788fec1e81eadc576155cda1e155e216e6a2cb116bb25056f7f348aef943"
+  },
+  "implementation_repair": "Q12 unseeded4um cells retain parent evidence; native PUMA11 false lowest-ID red fringe absent. This is not a guaranteed accuracy gain.",
+  "remaining_limitations": [
+    "Gray-glass support variants can overfill physical glass; broad semantic reference polygons sometimes reward this.",
+    "Q06 and Q12 can lose thin epithelial structures and valid small regions.",
+    "Q14 has6 finite nonstationary pilot outputs; score and report them without claiming optimality.",
+    "Q15 still costs mean4.458s on these24 pilot cases; full ranking retains the one-second excess penalty. Paired timing is not an isolated causal speedup.",
+    "BCSS75 native three small reference islands remain fully missed by every method; missing coarse classes cannot be semantically discovered by these closed-class models."
+  ],
+  "selection_created": false,
+  "next_action": "Run all20 candidates plus3 controls on unchanged469 frozen calibrated inputs, then all469 actual overviews and32 planned native crops before selection.",
+  "decided_at_utc": "2026-10-18T13:56:50.829382+00:00"
+}

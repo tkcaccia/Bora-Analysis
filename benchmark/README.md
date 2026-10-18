@@ -1,5 +1,14 @@
 # Bora tissue-mask benchmark
 
+The current public result set is the 116-image P04 study (BCSS 42, TIGER 26,
+GCSS 24, IGNITE 24); see the [public viewer](https://tkcaccia.github.io/Bora-Analysis/)
+and [current organization guide](../docs/benchmark_organization.md). This
+directory also preserves the earlier acquisition and controlled-refinement
+experiments described below. Those older cohort sizes and results must not be
+substituted for the current classifier evaluation. Experimental Virchow2,
+conversion, classifier and geometry code is preserved under
+`history/bora-development/experiments/`.
+
 This package downloads and inventories pathology images with **tissue-region** masks, builds reference-derived tile masks, runs Bora, and scores its raster and GeoJSON outputs. Acquisition code is in `download.py`; dataset preparation is in `prepare.py`, `prepare_additional.py`, and `prepare_requested.py`.
 
 The primary multiclass study uses BCSS (breast), TIGER (breast), and WSSS4LUAD (lung). Separate tissue-region analyses use RINGS **tumour** masks (prostate) and native CAMELYON16 tumour windows (lymph node). The processed CoCaHis-VISTA subset and SICAPv2 are catalogued as potential tissue-region sources, but their mask semantics are not yet verified for manuscript scoring. PAIP2019 and DigestPath2019 require provider-approved acquisitions. This repository does not acquire or evaluate cell or gland-instance datasets.
@@ -8,7 +17,7 @@ Original files and SHA256 inventories are stored outside Git at `/mnt/sata_ssd/B
 
 ## Acquisition
 
-From the Bora-extra repository root:
+From the Bora-Analysis repository root:
 
 ```bash
 python -m pip install -r benchmark/requirements.txt
@@ -26,11 +35,11 @@ python -m benchmark.download camelyon16-subset
 python -m benchmark.prepare_requested camelyon16-subset
 ```
 
-RINGS tumour images and masks are prepared from the existing local tissue-only extraction. The [publisher's RINGS dataset](https://data.mendeley.com/datasets/h8bdwrtnr5/1) distributes tumour and gland annotations together, so this repository does not provide an archive downloader for RINGS. The mixed archives and extracted gland files were removed from the local data root. `--verify-only` checks existing pinned files without changing them. Source hashes and URLs for downloadable tissue-only datasets are in `sources.lock.json`. Never add downloaded archives, images, masks, or derived results to Git.
+RINGS tumour images and masks are prepared from the existing local tissue-only extraction. The [publisher's RINGS dataset](https://data.mendeley.com/datasets/h8bdwrtnr5/1) distributes tumour and gland annotations together, so this repository does not provide an archive downloader for RINGS. The mixed archives and extracted gland files were removed from the local data root. `--verify-only` checks existing pinned files without changing them. Source hashes and URLs for downloadable tissue-only datasets are in `sources.lock.json`. Raw archives and full-resolution data remain outside Git. Only the explicitly packaged, attributed viewer previews and GeoJSONs are published in `site/`.
 
 ## Evaluation and figures
 
-Bora is installed separately from [tkcaccia/Bora](https://github.com/tkcaccia/Bora). Set `BORA_ROOT` when it is not a sibling checkout of Bora-extra.
+Bora is installed separately from [tkcaccia/Bora](https://github.com/tkcaccia/Bora). Set `BORA_ROOT` when it is not a sibling checkout of Bora-Analysis. The commands below are historical experiments requiring their original pinned Bora runtime; current Bora uses the P04-only pipeline.
 
 ```bash
 export BORA_ROOT=/path/to/Bora

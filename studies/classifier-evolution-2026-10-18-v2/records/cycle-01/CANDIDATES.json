@@ -1,0 +1,206 @@
+{
+  "generation": 1,
+  "candidates": [
+    {
+      "id": "P01",
+      "name": "Whole group discriminant",
+      "description": "Native PLS-LDA on the full 1280-channel group mean. Accepted reference classifier.",
+      "view": "mean",
+      "engine": "lda",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    },
+    {
+      "id": "P02",
+      "name": "Covariance geometry",
+      "description": "Log-Euclidean covariance of training-only label-free token coordinates, combined with group mean. Models correlated within-group heterogeneity rather than only channel SD.",
+      "view": "covariance",
+      "engine": "lda",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    },
+    {
+      "id": "P03",
+      "name": "Tissue composition",
+      "description": "Native multiresponse PLS predicts annotated training tissue fractions; response ordering identifies each whole group.",
+      "view": "mean",
+      "engine": "composition",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    },
+    {
+      "id": "P04",
+      "name": "Shared interface context",
+      "description": "Native PLS-LDA sees a group mean and its contrast to physically shared-boundary-weighted neighbors.",
+      "view": "neighbor",
+      "engine": "lda",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    },
+    {
+      "id": "P05",
+      "name": "Tile rank consensus",
+      "description": "Native tile PLS-LDA rankings are pooled with exact tile-to-group area weights using Borda consensus.",
+      "view": "tiles",
+      "engine": "tile_vote",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    },
+    {
+      "id": "P06",
+      "name": "Multiple instance attention",
+      "description": "A native PLS instance head determines confidence-weighted attention within each group before its tissue evidence is aggregated.",
+      "view": "tiles",
+      "engine": "attention",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    },
+    {
+      "id": "P07",
+      "name": "Hierarchical routing",
+      "description": "Training class prototypes define a binary class tree. Native binary PLS heads provide soft path evidence to every leaf.",
+      "view": "mean",
+      "engine": "tree",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    },
+    {
+      "id": "P08",
+      "name": "Pairwise tournament",
+      "description": "A native binary PLS model distinguishes each training class pair. Pairwise margins are coupled to a multiclass ranking.",
+      "view": "mean",
+      "engine": "pairwise",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    },
+    {
+      "id": "P09",
+      "name": "Error correcting codes",
+      "description": "A native multiresponse PLS predicts a deterministic redundant class code. Decoding uses distance to valid codewords.",
+      "view": "mean",
+      "engine": "ecoc",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    },
+    {
+      "id": "P10",
+      "name": "Relational tissue embedding",
+      "description": "Native PLS regresses a low-dimensional class-prototype embedding; tissue identity is decoded by proximity in that learned label space.",
+      "view": "mean",
+      "engine": "embedding",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    },
+    {
+      "id": "P11",
+      "name": "Nonlinear kernel PLS",
+      "description": "The native fastPLS kernelpls RBF route models nonlinear similarity to training groups before LDA. Kernel scale is estimated on training only.",
+      "view": "mean",
+      "engine": "kernel",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    },
+    {
+      "id": "P12",
+      "name": "Orthogonal nuisance separation",
+      "description": "Native OPLS removes predictor variation orthogonal to the supervised response before class discrimination.",
+      "view": "mean",
+      "engine": "opls",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    },
+    {
+      "id": "P13",
+      "name": "Residual response boosting",
+      "description": "Sequential native PLS regressors fit residual class responses; stages form an additive discriminant.",
+      "view": "mean",
+      "engine": "boost",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    },
+    {
+      "id": "P14",
+      "name": "Source bagged subspaces",
+      "description": "Multiple native PLS heads use source-group bootstrap samples and different feature subspaces; ranks are aggregated across models.",
+      "view": "mean",
+      "engine": "bag",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    },
+    {
+      "id": "P15",
+      "name": "Local expert mixture",
+      "description": "Training-only feature clusters gate specialized native PLS heads, with a global head for sparse or unseen neighborhoods.",
+      "view": "mean",
+      "engine": "experts",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    },
+    {
+      "id": "P16",
+      "name": "Distribution quantile profiles",
+      "description": "Weighted quantiles of training-only label-free token projections describe multimodal tissue groups; a native PLS head learns their identity.",
+      "view": "quantile",
+      "engine": "lda",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    },
+    {
+      "id": "P17",
+      "name": "Spatial tissue pooling",
+      "description": "Physically defined interior and interface feature summaries, with spatial moments, feed a native PLS group head.",
+      "view": "spatial",
+      "engine": "lda",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    },
+    {
+      "id": "P18",
+      "name": "Image composition transport",
+      "description": "A group PLS head and a separate image-composition PLS head are reconciled by soft transport over the image groups. Allows repeated tissue roles.",
+      "view": "mean",
+      "engine": "transport",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    },
+    {
+      "id": "P19",
+      "name": "Latent class densities",
+      "description": "Native PLS supplies the supervised latent coordinates; shrinkage class-specific Gaussian densities yield a generative tissue ranking.",
+      "view": "mean",
+      "engine": "density",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    },
+    {
+      "id": "P20",
+      "name": "Tissue verification metric",
+      "description": "A native PLS verifier learns same-tissue versus different-tissue relations from training pairs, then ranks training-derived tissue prototypes.",
+      "view": "mean",
+      "engine": "verification",
+      "parents": [],
+      "generation": 1,
+      "native_backend": "fastPLS C++ CPU"
+    }
+  ],
+  "retained_parents": 0
+}

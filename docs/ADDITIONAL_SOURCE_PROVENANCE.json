@@ -1,0 +1,53 @@
+{
+  "source": "Bora benchmark development checkout; existing canonical scripts retained",
+  "copied_files": [
+    {
+      "file": "benchmark/ACQUISITION.md",
+      "sha256": "e425ca2c1e3b73fd85d9b50aba6a384ba1ef3624c3a868b4a1cbc38af1e80e4d"
+    },
+    {
+      "file": "benchmark/ADDITIONAL_DATASETS.md",
+      "sha256": "9e3c049e4104fcaf843707c33541a0a2739c215a56219745072a9ec77bd1b97a"
+    },
+    {
+      "file": "benchmark/ANNOTATIONS.md",
+      "sha256": "0bd47c763c170253fc030950990a2c4bbfc1120085f91aa855b2f2884f7f591c"
+    },
+    {
+      "file": "benchmark/BENCHMARK_NAVIGATION.md",
+      "sha256": "2b11e7317eb290e15414a25552aae46964a539e3d9b8751720253637cb143626"
+    },
+    {
+      "file": "benchmark/DATASETS.md",
+      "sha256": "9489804c2ca862e39834bc39f3060c79e2c9173414b9e059d16d3c8accaf38ab"
+    },
+    {
+      "file": "benchmark/EXTENDED_BENCHMARK.md",
+      "sha256": "733a9ba53206a649ac90924923d5771df58ed5b1e3ec310aaa6db033c0da53cd"
+    },
+    {
+      "file": "benchmark/IMAGE_TYPES.md",
+      "sha256": "7e87305fa153acae6db62b65eb90830e322a60ed9a3bdb0ed7d1636632d3b16d"
+    },
+    {
+      "file": "benchmark/REQUESTED_DATASETS.md",
+      "sha256": "8ec25a006dc3234c07821f2d8e50c58f3a4eb634b0982af27df4c9292823a9b4"
+    },
+    {
+      "file": "benchmark/TISSUE_DATASET_EXPANSION.md",
+      "sha256": "933123d450b9bc3afbca5c390dc8f620a5a496895b2a6e6083e02a4092f5e11c"
+    },
+    {
+      "file": "benchmark/segpath_subset.py",
+      "sha256": "fc035e08791a5e0cc89fdbd14df5e1bfc5d7c004b254012f9b746bd7b51e801f"
+    },
+    {
+      "file": "manuscript/studies/neighbor-context-2026-10-18-v1/build_manuscript.py",
+      "sha256": "8bcefc0e47e436f543a9aa2683feb0825caeb976bbb09d0f6fcda9f37ebac5d9"
+    },
+    {
+      "file": "manuscript/studies/appearance-fields-2026-10-18/build_manuscript.py",
+      "sha256": "d6bdd7cf599153c30d9b4e8c08777bef14893f2a171e5c8d67be2235efccbc45"
+    }
+  ]
+}

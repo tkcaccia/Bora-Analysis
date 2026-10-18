@@ -18,3 +18,5 @@ output/
 *.jpeg
 *.pdf
 *.docx
+!site/**
+.site-build-*/
