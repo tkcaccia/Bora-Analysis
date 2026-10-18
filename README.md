@@ -20,6 +20,12 @@ The [classifier comparison](https://tkcaccia.github.io/Bora-Analysis/comparison/
 shows named methods on the same images. The current Bora application uses
 Neighbor context.
 
+To train a tissue classifier for new images, use the
+[Bora training and inference guide](https://github.com/tkcaccia/Bora/blob/codex/virchow2-twenty-ideas/docs/WORKFLOW.md).
+The [manuscript model data guide](docs/MANUSCRIPT_MODEL_DATA.md) lists the
+exact 349 annotated source fields, provider download routes, native crop
+coordinates and checksums used for the reported 967 training groups.
+
 ## Repository organization
 
 | Location | Contents |
@@ -30,7 +36,7 @@ Neighbor context.
 | `web/` | Human-editable static viewer HTML, JavaScript, CSS and data attribution |
 | `tools/` | CPU-only static-site packaging and exhaustive publication checks |
 | `site/` | Published viewer assets, per-image scores, metadata, GeoJSON and asset hashes |
-| `docs/` | Benchmark navigation, provenance and reproduction notes |
+| `docs/` | Benchmark navigation, model-source manifest, provenance and reproduction notes |
 
 This repository was renamed from **Bora-extra**; its Git history is preserved.
 The segmentation application remains in **tkcaccia/Bora**. Large raw archives,

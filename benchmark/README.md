@@ -1,6 +1,6 @@
 # Bora tissue-mask benchmark
 
-The current public result set is the 116-image P04 study (BCSS 42, TIGER 26,
+The current public result set is the 116-image Neighbor context study (BCSS 42, TIGER 26,
 GCSS 24, IGNITE 24); see the [public viewer](https://tkcaccia.github.io/Bora-Analysis/)
 and [current organization guide](../docs/benchmark_organization.md). This
 directory also preserves the earlier acquisition and controlled-refinement
@@ -8,6 +8,8 @@ experiments described below. Those older cohort sizes and results must not be
 substituted for the current classifier evaluation. Experimental Virchow2,
 conversion, classifier and geometry code is preserved under
 `history/bora-development/experiments/`.
+The images that trained the manuscript fastPLS model are listed in
+[the model-source guide](../docs/MANUSCRIPT_MODEL_DATA.md).
 
 This package downloads and inventories pathology images with **tissue-region** masks, builds reference-derived tile masks, runs Bora, and scores its raster and GeoJSON outputs. Acquisition code is in `download.py`; dataset preparation is in `prepare.py`, `prepare_additional.py`, and `prepare_requested.py`.
 
@@ -39,7 +41,7 @@ RINGS tumour images and masks are prepared from the existing local tissue-only e
 
 ## Evaluation and figures
 
-Bora is installed separately from [tkcaccia/Bora](https://github.com/tkcaccia/Bora). Set `BORA_ROOT` when it is not a sibling checkout of Bora-Analysis. The commands below are historical experiments requiring their original pinned Bora runtime; current Bora uses the P04-only pipeline.
+Bora is installed separately from [tkcaccia/Bora](https://github.com/tkcaccia/Bora). Set `BORA_ROOT` when it is not a sibling checkout of Bora-Analysis. The commands below are historical experiments requiring their original pinned Bora runtime; current Bora uses the Neighbor context pipeline.
 
 ```bash
 export BORA_ROOT=/path/to/Bora

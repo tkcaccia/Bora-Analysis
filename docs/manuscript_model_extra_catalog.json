@@ -1,0 +1,31 @@
+{
+  "version": "manuscript-training-sources-v1",
+  "datasets": {
+    "gleasonxai": {
+      "record": "https://doi.org/10.6084/m9.figshare.27301845.v1",
+      "files": [
+        {
+          "name": "final_filtered_explanations_df.csv",
+          "url": "https://ndownloader.figshare.com/files/49987890",
+          "bytes": 29947948,
+          "md5": "0b8df8458572c9e05a574fb656a61a38",
+          "extract": false
+        },
+        {
+          "name": "label_remapping.json",
+          "url": "https://ndownloader.figshare.com/files/49987893",
+          "bytes": 3195,
+          "md5": "2929f25d4357c7fa039374c46196c173",
+          "extract": false
+        },
+        {
+          "name": "tissuearray_com_data.zip",
+          "url": "https://ndownloader.figshare.com/files/49988307",
+          "bytes": 640769362,
+          "md5": "ee56818fba3466a757d94815e565b53d",
+          "extract": true
+        }
+      ]
+    }
+  }
+}

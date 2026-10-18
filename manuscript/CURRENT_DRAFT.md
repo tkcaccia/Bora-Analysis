@@ -10,6 +10,15 @@ The builder is `build_cmpb_manuscript.py`. It reads the completed selected
 viewer as numerical evidence and the retained author manuscript for author and
 affiliation text. It never runs model inference or submits a paper.
 
+The current revised document is stored locally at
+`/Users/stefano/Documents/ChatGPT/Bora/benchmark/manuscript/cmpb-2026-10-18-v2/Bora_CMPB_manuscript.docx`.
+Its methods distinguish the reported source-identity training targets from the
+new user training path based on semantic TIFF or GeoJSON annotations. Its data
+availability section points to the exact [349-field manuscript source
+manifest](../docs/manuscript_model_training_sources.json) and the
+[provider acquisition guide](../docs/MANUSCRIPT_MODEL_DATA.md). The reported
+evaluation numbers have not been recomputed for this documentation change.
+
 ```bash
 python manuscript/build_cmpb_manuscript.py \
   --site site \
