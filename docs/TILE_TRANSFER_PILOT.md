@@ -30,8 +30,9 @@ CPU-only Bora refinement then used the fixed RGB conversion and appearance
 field on this **predicted** tile map. Each resulting whole tissue group received
 the area-majority source-trained fastPLS tile class within its refined pixels.
 This is an exploratory tile-to-segment readout, **not** the main Neighbor
-context group classifier. The target annotation was opened only after the
-final mask and GeoJSON had been saved. On 1,402,860 annotated target pixels,
+context group classifier. Bora inference did not read the target annotation,
+but frozen tile scores on this target had already been inspected before the
+Bora run. On 1,402,860 annotated target pixels,
 the frozen coarse map had macro IoU **0.602691**, while the final vector-derived
 mask had macro IoU **0.770969** (difference **0.168277**). Tumor and stroma
 final IoUs were 0.791065 and 0.750872. Independent rasterization of both

@@ -30,7 +30,7 @@
   <nav aria-label="Project"><a href="../">Main benchmark</a><a href="../visium-hd-colon/">Whole-slide scale test</a><a href="https://github.com/tkcaccia/Bora-Analysis/blob/main/docs/TILE_TRANSFER_PILOT.md">Method and caveats</a><a href="../attribution.html">Attribution</a></nav>
 </header>
 <main>
-  <p class="notice">This is one selected, previously inspected, two-role <strong>ROI</strong>. The source and target identifiers differ, but patient independence is unverified. The target annotation was opened only after prediction and export. Group identity here is an area-majority readout of source-trained tile classes; it is distinct from Bora’s main Neighbor context group classifier. These scores do not establish independent accuracy or WSI-to-WSI transfer.</p>
+  <p class="notice">This is one selected, previously inspected, two-role <strong>ROI</strong>. The source and target identifiers differ, but patient independence is unverified. Bora inference did not read target annotation; frozen tile scores on this target had already been inspected before the Bora run. Group identity here is an area-majority readout of source-trained tile classes; it is distinct from Bora’s main Neighbor context group classifier. These scores do not establish independent accuracy or WSI-to-WSI transfer.</p>
   <div class="scores" aria-label="Annotated-pixel scores">
     <div class="score"><strong>0.603</strong><span>Predicted tile macro IoU</span></div>
     <div class="score"><strong>0.771</strong><span>Final Bora macro IoU</span></div>
