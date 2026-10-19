@@ -15,15 +15,42 @@ The CPU-only preparation and scoring scripts are:
 - [`prepare_cmpb_transfer_feature_plan.py`](../benchmark/prepare_cmpb_transfer_feature_plan.py)
 - [`score_cmpb_transfer_tiles.py`](../benchmark/score_cmpb_transfer_tiles.py)
 
-The full Bora path is **not complete**. The isolated, single-case multiscale
-feature extraction stopped before model loading because the selected Python
-environment lacked `timm`. No feature checkpoint was written. The owned
-process and compute context were absent on bounded post-exit checks. The
-project's `hpc-gpu-policy.md`
-requires failing the whole bundle on an abnormal exit; no GPU retry or next
-case was launched. A separately approved Chiamaka scope with a validated
-environment is required before generating RGB evidence from predicted groups
-and running Bora. UCT HPC GPU work remains paused.
+After separate user approval, **one** corrected, bounded Chiamaka encoder case
+completed for `tiger_15` in an isolated Python environment. The input tile
+SHA256 was `7471377ae10a33f745afda75bd0ed2a88ac590191994819943b62ac400873e9a`;
+the Virchow2 checkpoint SHA256 was
+`8d6cea947eb2418c3b0dff48cfb9b238e47744ab0dfca21b2b0637b140769b4b`.
+The 0.5-µm/pixel RGB ROI measured 1135 × 1236 pixels. Three feature scales
+were checkpointed, and their complete marker recorded 2.33 seconds of encoding
+after model loading. The process group exited cleanly; a bounded post-exit
+check found neither an owned descendant nor an active GPU compute context.
+No second target was encoded.
 
-The pilot must not be cited as a WSI experiment, a final segmentation score or
-proof of independent generalization.
+CPU-only Bora refinement then used the fixed RGB conversion and appearance
+field on this **predicted** tile map. Each resulting whole tissue group received
+the area-majority source-trained fastPLS tile class within its refined pixels.
+This is an exploratory tile-to-segment readout, **not** the main Neighbor
+context group classifier. The target annotation was opened only after the
+final mask and GeoJSON had been saved. On 1,402,860 annotated target pixels,
+the frozen coarse map had macro IoU **0.602691**, while the final vector-derived
+mask had macro IoU **0.770969** (difference **0.168277**). Tumor and stroma
+final IoUs were 0.791065 and 0.750872. Independent rasterization of both
+GeoJSON features exactly matched the final native mask. Its 26 polygon parts
+and 28 enclosed holes had no continuous area below 20 native pixels. The
+six-panel figure and machine-readable scores are linked below.
+The shared exporter initially wrote a Neighbor context identity-source string;
+the pilot GeoJSON now correctly records its area-majority tile readout.
+The two geometries and scored raster were unchanged, and the original vector
+file is preserved in the local study record.
+
+- [Frozen one-case score](../benchmark/cmpb_evidence/transfer_roi_tiger_15.json)
+- [Vector/raster visual audit](../benchmark/cmpb_evidence/transfer_roi_tiger_15_visual_audit.json)
+- [Bounded encoder script](../benchmark/pilots/one_case_transfer_encoder.py)
+- [CPU Bora/refinement script](../benchmark/pilots/transfer_refine_cpu.py)
+- [Post-prediction scoring script](../benchmark/pilots/score_transfer_refinement.py)
+
+This selected, previously inspected, two-role **ROI** is not a source-WSI to
+target-WSI experiment or a patient-independent performance estimate. Source
+identifiers differ, but patient linkage is not verified. The prior failed
+environment attempt and its logs remain preserved; this approval did not
+authorize any further GPU target. UCT HPC GPU work remains paused.

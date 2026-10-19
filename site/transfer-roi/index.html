@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bora · source-to-target TIGER ROI</title>
+  <meta name="description" content="One exploratory source-trained fastPLS tile map refined by Bora, with the original TIGER ROI, expert labels, RGB evidence, final mask and GeoJSON.">
+  <style>
+    :root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#21312e;background:#f5f7f5}
+    *{box-sizing:border-box} body{margin:0} header,main,footer{max-width:1500px;margin:auto;padding:1.2rem clamp(1rem,3vw,3rem)}
+    header{padding-top:2.3rem} .eyebrow{font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:#496a61;font-weight:750}
+    h1{font-size:clamp(2rem,3.4vw,3.5rem);line-height:1.08;margin:.35rem 0 .8rem} h2{margin-top:2rem}
+    p{line-height:1.55;max-width:90ch} a{color:#075d55} nav{display:flex;gap:1.1rem;flex-wrap:wrap;margin:1rem 0}
+    .notice{border-left:4px solid #cb7960;background:#fff7f3;padding:.9rem 1.1rem}
+    .scores{display:flex;gap:.8rem;flex-wrap:wrap;margin:1.5rem 0}.score{background:white;border:1px solid #dbe4df;border-radius:12px;padding:1rem 1.25rem;min-width:180px}
+    .score strong{display:block;font-size:1.8rem;color:#145f53}.score span{font-size:.87rem;color:#465751}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+    figure{margin:0;background:white;border:1px solid #dbe4df;border-radius:12px;overflow:hidden}
+    figure a{display:block} figure img{display:block;width:100%;height:auto;aspect-ratio:1236/1135;object-fit:contain}
+    figcaption{padding:.65rem .8rem;font-weight:650} .legend{display:flex;gap:1rem;flex-wrap:wrap}
+    .swatch{display:inline-block;width:.85rem;height:.85rem;border-radius:2px;margin-right:.4rem}
+    footer{color:#52625d;font-size:.9rem;padding-bottom:2rem} @media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header>
+  <p class="eyebrow">Bora · exploratory transfer pilot</p>
+  <h1>From predicted tiles to tissue contours</h1>
+  <p>One annotated TIGER ROI trained a frozen fastPLS tile classifier. Its 45-µm predictions on a different TIGER ROI supplied Bora with anonymous coarse groups. The six panels show the complete target field at 0.5 µm/pixel. Select a panel to inspect it at full display resolution.</p>
+  <nav aria-label="Project"><a href="../">Main benchmark</a><a href="../visium-hd-colon/">Whole-slide scale test</a><a href="https://github.com/tkcaccia/Bora-Analysis/blob/main/docs/TILE_TRANSFER_PILOT.md">Method and caveats</a><a href="../attribution.html">Attribution</a></nav>
+</header>
+<main>
+  <p class="notice">This is one selected, previously inspected, two-role <strong>ROI</strong>. The source and target identifiers differ, but patient independence is unverified. The target annotation was opened only after prediction and export. Group identity here is an area-majority readout of source-trained tile classes; it is distinct from Bora’s main Neighbor context group classifier. These scores do not establish independent accuracy or WSI-to-WSI transfer.</p>
+  <div class="scores" aria-label="Annotated-pixel scores">
+    <div class="score"><strong>0.603</strong><span>Predicted tile macro IoU</span></div>
+    <div class="score"><strong>0.771</strong><span>Final Bora macro IoU</span></div>
+    <div class="score"><strong>+0.168</strong><span>Within-image difference</span></div>
+    <div class="score"><strong>1.40 M</strong><span>Annotated pixels scored</span></div>
+  </div>
+  <p class="legend"><span><i class="swatch" style="background:#e63a52"></i>Tumor</span><span><i class="swatch" style="background:#2aaa6d"></i>Stroma</span> Masks are semitransparent overlays on the original H&amp;E.</p>
+  <div class="grid">
+    <figure><a href="original.webp"><img src="original.webp" alt="Original breast-cancer H and E ROI" loading="eager"></a><figcaption>Original H&amp;E</figcaption></figure>
+    <figure><a href="expert.webp"><img src="expert.webp" alt="Expert tumor and stroma annotation over H and E" loading="eager"></a><figcaption>Expert tissue annotation</figcaption></figure>
+    <figure><a href="predicted-tiles.webp"><img src="predicted-tiles.webp" alt="Coarse source-trained fastPLS tile predictions" loading="eager"></a><figcaption>Predicted input tiles</figcaption></figure>
+    <figure><a href="converted-rgb.webp"><img src="converted-rgb.webp" alt="Fixed RGB9 plus 19 computational evidence image" loading="lazy"></a><figcaption>Fixed RGB conversion</figcaption></figure>
+    <figure><a href="bora-mask.webp"><img src="bora-mask.webp" alt="Final Bora tumor and stroma mask over H and E" loading="lazy"></a><figcaption>Final Bora mask</figcaption></figure>
+    <figure><a href="geojson-contours.webp"><img src="geojson-contours.webp" alt="Simplified GeoJSON tumor and stroma contours over H and E" loading="lazy"></a><figcaption>Compact GeoJSON contours</figcaption></figure>
+  </div>
+  <h2>Output and interpretation</h2>
+  <p>The native raster is an exact rasterization of the two-feature <a href="mask.geojson" download>classified GeoJSON</a>. The export contains 26 polygon parts and 28 enclosed holes; none is smaller than 20 native pixels. Tumor and stroma IoUs are 0.791 and 0.751 on annotated pixels. The RGB panel is computational evidence, not a measured microscopy channel.</p>
+  <p>Original image and expert labels: <a href="https://doi.org/10.5281/zenodo.6014422">TIGER ROI-level annotations of the WSIROIS subset</a>, van Rijthoven et al. TIGER annotations and non-TCGA training images are licensed <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>. This figure is a research adaptation with overlays, conversion, segmentation and simplified contours. Dataset rights are separate from the repository’s software license. No provider endorsement is implied.</p>
+</main>
+<footer><a href="../">Return to all benchmark images</a></footer>
+</body>
+</html>

@@ -50,8 +50,10 @@ python manuscript/build_cmpb_manuscript.py \
   --output /path/to/manuscript-output
 ```
 
-The supplement builder also takes `--wsi-scale benchmark/cmpb_evidence/wsi_scale.json`
-and `--wsi-images /path/to/visium-hd-colon-wsi/viewer`. The public
+The supplement builder also takes `--wsi-scale benchmark/cmpb_evidence/wsi_scale.json`,
+`--wsi-images /path/to/visium-hd-colon-wsi/viewer`,
+`--transfer-scores benchmark/cmpb_evidence/transfer_roi_tiger_15.json`, and
+`--transfer-figure /path/to/transfer-pilot-six-panel.png`. The public
 [whole-slide study](../studies/visium-hd-colon-wsi-2026-10-19/README.md)
 documents how to obtain those attributed preview images. The numerical WSI
 summary is regenerated from saved outputs by
@@ -62,7 +64,8 @@ inspect every page before delivery. The generated Word article and highlights
 are retained in the local manuscript store; the public website provides the
 benchmark, not an automatically submitted or approved paper. Author declarations
 and institutional requirements must be confirmed by the authors before
-submission. Previously inspected data are reported as exploratory evaluation,
-and the proposed source-to-target WSI transfer is not presented as completed.
+submission. Previously inspected data are reported as exploratory evaluation.
+One completed source-to-target **ROI** pilot is presented separately from the
+116-image controlled benchmark and from the incomplete WSI-to-WSI transfer.
 The numerical reanalysis and its limitations are documented in
 [the reproduction note](../docs/CMPB_REANALYSIS.md).

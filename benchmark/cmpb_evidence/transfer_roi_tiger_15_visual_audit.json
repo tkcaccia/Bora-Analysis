@@ -1,0 +1,15 @@
+{
+  "case": "tiger_15",
+  "source_case": "tiger_42",
+  "polygon_features": 2,
+  "polygon_parts": 26,
+  "holes": 28,
+  "vertices": 1452,
+  "min_part_area_pixels": 486.0,
+  "min_hole_area_pixels": 20.0,
+  "geojson_exact_native_raster_match": true,
+  "small_parts_or_holes_below_20": 0,
+  "macro_iou_coarse": 0.6026912035504952,
+  "macro_iou_bora": 0.7709685473225609,
+  "delta_macro_iou": 0.1682773437720657
+}

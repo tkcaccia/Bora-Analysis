@@ -1,0 +1,39 @@
+{
+  "case": "tiger_15",
+  "source_training_case": "tiger_42",
+  "source_training_group": "tiger:TC_S01_P000080",
+  "target_group": "tiger:TC_S01_P000158",
+  "annotated_pixels": 1402860,
+  "coarse": {
+    "macro_iou": 0.6026912035504952,
+    "macro_dice": 0.7516460421139619,
+    "accuracy": 0.7539227007684302,
+    "by_role": {
+      "1": {
+        "iou": 0.6332190812946109,
+        "dice": 0.7754245447495928
+      },
+      "3": {
+        "iou": 0.5721633258063796,
+        "dice": 0.727867539478331
+      }
+    }
+  },
+  "bora": {
+    "macro_iou": 0.7709685473225609,
+    "macro_dice": 0.8705290201716778,
+    "accuracy": 0.8691964985814693,
+    "by_role": {
+      "1": {
+        "iou": 0.7910652257588366,
+        "dice": 0.883346082969903
+      },
+      "3": {
+        "iou": 0.7508718688862852,
+        "dice": 0.8577119573734524
+      }
+    }
+  },
+  "delta_macro_iou": 0.1682773437720657,
+  "scope": "One exploratory target ROI; source-trained tile head plus Bora geometry and area-majority segment readout; not independent validation."
+}
