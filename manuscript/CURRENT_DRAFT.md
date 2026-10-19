@@ -11,9 +11,14 @@ viewer as numerical evidence and the draft [author block](author_block.json)
 for names and affiliations. It never runs model inference or submits a paper.
 
 The current revised document is stored locally at
-`/Users/stefano/Documents/ChatGPT/Bora/benchmark/manuscript/cmpb-2026-10-19-v8/Bora_CMPB_manuscript.docx`.
+`/Users/stefano/Documents/ChatGPT/Bora/benchmark/manuscript/cmpb-2026-10-19-v13-cellphenotyper/Bora_CMPB_manuscript.docx`.
 Its companion supplement is
-`/Users/stefano/Documents/ChatGPT/Bora/benchmark/manuscript/cmpb-2026-10-19-v8/Bora_CMPB_supplement.docx`.
+`/Users/stefano/Documents/ChatGPT/Bora/benchmark/manuscript/cmpb-2026-10-19-v12-visium-zooms/Bora_CMPB_supplement.docx`.
+The Methods describe CellPhenotyper's calibrated Virchow2 tile-embedding
+production and its spatial-token handoff to Bora. The controlled benchmark's
+expert-derived coarse masks are explicitly distinguished from that deployable
+CellPhenotyper route. The implementation is in the draft
+[CellPhenotyper integration PR](https://github.com/tkcaccia/CellPhenotyper/pull/7).
 The article reports the original test and validation subsets separately,
 source-group bootstrap intervals, per-role performance and four matched
 whole-group controls. A native-resolution tumor–stroma interface audit, a
