@@ -1,0 +1,49 @@
+{
+  "scope": "one exploratory, partially annotated whole slide; exported readout chosen on this reference",
+  "image_shape_yx": [
+    48740,
+    75250
+  ],
+  "native_mpp_xy": [
+    0.2738121503969019,
+    0.2738132569747595
+  ],
+  "native_pixels": 3667685000,
+  "annotated_scored_pixels": 298529005,
+  "scored_fraction": 0.0813943959200422,
+  "windows": 228,
+  "macro_dice": 0.4861086045237317,
+  "macro_iou": 0.37465413264581676,
+  "roles": {
+    "tumor": {
+      "reference_pixels": 110217441,
+      "dice": 0.7669899671122433,
+      "iou": 0.6220468176693774
+    },
+    "stroma": {
+      "reference_pixels": 89279594,
+      "dice": 0.7666584833536683,
+      "iou": 0.6216108620411521
+    },
+    "normal_gland": {
+      "reference_pixels": 29547206,
+      "dice": 0.0,
+      "iou": 0.0
+    },
+    "blood_vessel": {
+      "reference_pixels": 2430551,
+      "dice": 0.23120886767214743,
+      "iou": 0.13071575464529858
+    },
+    "muscle": {
+      "reference_pixels": 67054213,
+      "dice": 0.6656857044805995,
+      "iou": 0.4988972288732558
+    }
+  },
+  "vector_seconds": 1407.4375485796481,
+  "vector_features": 2886,
+  "vector_segments": 11107958,
+  "native_raster_vector_mismatch_pixels": 0,
+  "minimum_polygon_area_native_pixels": 20
+}

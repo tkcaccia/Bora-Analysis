@@ -10,6 +10,10 @@ conversion, classifier and geometry code is preserved under
 `history/bora-development/experiments/`.
 The images that trained the manuscript fastPLS model are listed in
 [the model-source guide](../docs/MANUSCRIPT_MODEL_DATA.md).
+The separate [Visium HD colon whole-slide test](../studies/visium-hd-colon-wsi-2026-10-19/README.md)
+reports complete-slide scale and native raster/vector fidelity alongside a
+documented normal-gland classification failure. Its single, partially annotated
+slide is not part of the 116-image cohort estimate.
 
 This package downloads and inventories pathology images with **tissue-region** masks, builds reference-derived tile masks, runs Bora, and scores its raster and GeoJSON outputs. Acquisition code is in `download.py`; dataset preparation is in `prepare.py`, `prepare_additional.py`, and `prepare_requested.py`.
 
@@ -39,7 +43,7 @@ python -m benchmark.prepare_requested camelyon16-subset
 
 RINGS tumour images and masks are prepared from the existing local tissue-only extraction. The [publisher's RINGS dataset](https://data.mendeley.com/datasets/h8bdwrtnr5/1) distributes tumour and gland annotations together, so this repository does not provide an archive downloader for RINGS. The mixed archives and extracted gland files were removed from the local data root. `--verify-only` checks existing pinned files without changing them. Source hashes and URLs for downloadable tissue-only datasets are in `sources.lock.json`. Raw archives and full-resolution data remain outside Git. Only the explicitly packaged, attributed viewer previews and GeoJSONs are published in `site/`.
 
-## Evaluation and figures
+## Earlier evaluation and figures
 
 Bora is installed separately from [tkcaccia/Bora](https://github.com/tkcaccia/Bora). Set `BORA_ROOT` when it is not a sibling checkout of Bora-Analysis. The commands below are historical experiments requiring their original pinned Bora runtime; current Bora uses the Neighbor context pipeline.
 
@@ -56,6 +60,6 @@ PYTHONPATH=. python -m manuscript.build_mia_pilot_docx
 PYTHONPATH=. python -m manuscript.build_mia_working_preview
 ```
 
-The principal manuscript analysis comprises 63 distinct ROIs: 12 BCSS, 15 TIGER, and 36 WSSS4LUAD. The separate RINGS and CAMELYON16 experiments use three images each and are not pooled with the primary multiclass endpoint. The figure generator shows reference, tile and refined masks over identical H&E coordinates with 42% opacity. The GeoJSON audit rasterizes unsimplified polygons back to pixels and repeats conversion to check deterministic bytes.
+This earlier pilot comprises 63 distinct ROIs: 12 BCSS, 15 TIGER, and 36 WSSS4LUAD. It is not the current 116-image manuscript analysis. The separate RINGS and CAMELYON16 experiments use three images each and are not pooled with the current multiclass endpoint. The figure generator shows reference, tile and refined masks over identical H&E coordinates with 42% opacity. The GeoJSON audit rasterizes unsimplified polygons back to pixels and repeats conversion to check deterministic bytes.
 
-The manuscript and generated images remain in the Bora checkout under `docs/` and `output/pdf/`; only their generation code lives here.
+The earlier pilot's manuscript and generated images remain in the historical Bora checkout. The current article builder and sanitized numerical evidence live in this repository's `manuscript/` and `benchmark/cmpb_evidence/` directories.

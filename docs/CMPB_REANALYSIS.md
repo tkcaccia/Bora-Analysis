@@ -55,8 +55,19 @@ The article and supplement are built from these summaries with
 [`manuscript/build_cmpb_manuscript.py`](../manuscript/build_cmpb_manuscript.py)
 and [`manuscript/build_cmpb_supplement.py`](../manuscript/build_cmpb_supplement.py).
 See [`manuscript/CURRENT_DRAFT.md`](../manuscript/CURRENT_DRAFT.md) for exact
-arguments. Author names and affiliations come from the retained author draft.
+arguments. Draft author names and affiliations are saved in
+[`manuscript/author_block.json`](../manuscript/author_block.json), pending
+confirmation by the named people.
 The generated DOCX and private figure source masks are kept outside Git.
+
+A separate, single-slide scale analysis is documented in the
+[Visium HD colon study](../studies/visium-hd-colon-wsi-2026-10-19/README.md).
+`benchmark/analyze_cmpb_wsi_scale.py` checks the saved final score, export
+record and all 228 raster/vector windows and generates
+[`wsi_scale.json`](../benchmark/cmpb_evidence/wsi_scale.json). It performs no
+inference. That annotation covers 8.14% of the slide, and the selected
+window-local group readout was chosen on the same reference. Its result is a
+descriptive scale and failure analysis, not a new independent test cohort.
 
 These results cannot establish patient-independent performance on a genuinely
 new institution, because the development images were inspected. A separate

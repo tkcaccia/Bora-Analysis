@@ -7,16 +7,20 @@ from pathlib import Path
 
 from docx import Document
 from docx.shared import Inches, Pt
+from PIL import Image, ImageDraw, ImageFont
 
 from build_cmpb_manuscript import configure, paragraph, table
 
 
-def build(reanalysis: Path, classifier_controls: Path, boundaries: Path, vector_fidelity: Path, duplicate_screen: Path, output: Path) -> None:
+def build(reanalysis: Path, classifier_controls: Path, boundaries: Path, vector_fidelity: Path, duplicate_screen: Path, wsi_scale: Path, wsi_images: Path, output: Path) -> None:
     evidence = json.loads(reanalysis.read_text())
     group_only = json.loads(classifier_controls.read_text())['results']
     boundary = json.loads(boundaries.read_text())['summary']
     vector = json.loads(vector_fidelity.read_text())['summary']
     duplicates = json.loads(duplicate_screen.read_text())['summary']
+    wsi = json.loads(wsi_scale.read_text())
+    assert wsi['windows'] == 228 and wsi['native_raster_vector_mismatch_pixels'] == 0
+    assert wsi['roles']['normal_gland']['dice'] == 0
     doc = Document(); configure(doc)
     for section in doc.sections:
         section.top_margin = section.bottom_margin = Inches(0.82)
@@ -61,9 +65,34 @@ def build(reanalysis: Path, classifier_controls: Path, boundaries: Path, vector_
     doc.add_heading('Tumor–stroma interface and vector fidelity', 1)
     paragraph(doc, f"A direct four-neighbor tumor versus stroma/inflamed-stroma interface was present in {boundary['cases_with_reference_interface']} expert masks. With an 8-µm physical tolerance, final-mask mean F1 was {boundary['mean_f1_8um']:.3f} (median {boundary['median_f1_8um']:.3f}); {boundary['cases_with_missing_predicted_interface']} images had no predicted interface and received F1 zero. Mean symmetric surface distance was {boundary['mean_assd_um_when_both_present']:.1f} µm only where both interfaces existed. Decoding coarse-tile identity from the expert-origin key gave mean F1 {boundary['expert_decoded_coarse_mean_f1_8um']:.3f}; final-minus-coarse paired difference was {boundary['final_minus_expert_decoded_coarse_mean_f1_8um']:.3f} (95% source-group bootstrap interval {boundary['final_minus_coarse_source_group_bootstrap_95'][0]:.3f}–{boundary['final_minus_coarse_source_group_bootstrap_95'][1]:.3f}). The coarse comparison is a privileged geometry diagnostic, not an independent predictor.")
     paragraph(doc, f"Against each image's own pre-fitting predicted geometry, shared-boundary fitting had mean minimum per-class IoU {vector['mean_minimum_class_iou_vs_prefit_prediction']:.3f} (minimum {vector['minimum_class_iou_vs_prefit_prediction']:.3f}) and mean changed tissue area {100*vector['mean_changed_tissue_area_fraction']:.2f}% (maximum {100*vector['maximum_changed_tissue_area_fraction']:.2f}%). Polygon parts changed from {vector['parts_before']} to {vector['parts_after']}, with loss in {vector['images_with_lost_parts']} images; no export fell back to the prior geometry. These safeguards compare predicted shapes, not expert contours. Twenty native pixels correspond to approximately 1.25–20.46 µm² across the evaluated image spacings.")
+    doc.add_heading('Exploratory whole-slide scale test', 1)
+    paragraph(doc, f"One public 10x Genomics colon-cancer H&E whole slide measured {wsi['image_shape_yx'][1]:,} × {wsi['image_shape_yx'][0]:,} native pixels at {wsi['native_mpp_xy'][0]:.6f} × {wsi['native_mpp_xy'][1]:.6f} µm/pixel. Annotation-independent coarse clusters were processed in {wsi['windows']} bounded windows. The partial expert GeoJSON was not read by clustering, encoding, refinement, classification or export. The final window-local group readout was selected with this same slide's reference, so its score is descriptive and cannot be combined with the 116-image cohort estimate.")
+    paragraph(doc, f"Scoring covered {wsi['annotated_scored_pixels']:,} singly mapped expert pixels ({100*wsi['scored_fraction']:.2f}% of the full slide). Final macro Dice was {wsi['macro_dice']:.3f} and macro IoU {wsi['macro_iou']:.3f}. The 25-class pretrained head predicted no normal-gland pixels (Dice 0); this is a substantial tissue-identity failure despite successful whole-slide processing. The exported GeoJSON contained {wsi['vector_features']:,} class-labelled features and {wsi['vector_segments']:,} contour segments. All {wsi['windows']} exported windows exactly matched their final native raster, with {wsi['native_raster_vector_mismatch_pixels']} differing pixels and no parts or enclosed holes below 20 native pixels. The separately timed vector pass took {wsi['vector_seconds']:.1f} s. The encoder/refinement pass took 3005.8 s, excluding earlier checkpointed work; these partial stages do not establish cold end-to-end latency or peak memory.")
+    panels = [('Original H&E', 'carcinoma-stroma-original.jpg'),
+              ('Partial expert annotation', 'carcinoma-stroma-expert.jpg'),
+              ('Anonymous refined groups', 'carcinoma-stroma-groups.jpg'),
+              ('Final classified mask', 'carcinoma-stroma-bora.jpg')]
+    canvas = Image.new('RGB', (1500, 1580), 'white')
+    draw = ImageDraw.Draw(canvas)
+    font = ImageFont.truetype('/System/Library/Fonts/Supplemental/Arial.ttf', 25)
+    for i, (label, filename) in enumerate(panels):
+        x, y = (i % 2) * 750, (i // 2) * 790
+        im = Image.open(wsi_images / filename).convert('RGB').resize((720, 720), Image.Resampling.LANCZOS)
+        canvas.paste(im, (x + 15, y + 45))
+        draw.text((x + 16, y + 10), label, fill='black', font=font)
+        bar = round(50 / wsi['native_mpp_xy'][0] * 720 / 1024)
+        draw.rectangle((x + 40, y + 725, x + 40 + bar, y + 731), fill='white', outline='black')
+        draw.text((x + 46 + bar, y + 710), '50 µm', fill='white', stroke_width=2, stroke_fill='black', font=font)
+    figure_path = output.parent / 'figure-s1-colon-wsi.jpg'
+    figure_path.parent.mkdir(parents=True, exist_ok=True)
+    canvas.save(figure_path, quality=92)
+    p = doc.add_paragraph()
+    pic = p.add_run().add_picture(str(figure_path), width=Inches(6.3))
+    pic._inline.docPr.set('descr', 'Four panels of one annotated native-scale colon-cancer field: source H&E, partial expert annotations, anonymous refined groups and final classified mask. Normal gland is absent from the final prediction.')
+    paragraph(doc, 'Figure S1 Exploratory colon whole-slide scale test, one native field. The reference annotation covers only part of the image and was used for evaluation, not inference. The final tissue identity is imperfect; normal gland is missed. Scale bars are 50 µm. H&E source: 10x Genomics Visium HD Human Colorectal Cancer, CC BY 4.0.', 'Caption')
     doc.add_heading('Reproducibility and unresolved measurements', 1)
     paragraph(doc, 'The public Bora-Analysis repository supplies the exact 349-field training-source manifest, acquisition instructions, ontology and processing code. The Bora application supplies a small-data tutorial for creating a model from an expert semantic TIFF or GeoJSON and applying it to another image. Large image archives and gated encoder weights remain with their original providers. The compact public viewer exposes all 116 evaluated images and vectors.')
-    paragraph(doc, 'A patient-independent donor-to-target experiment with predicted or clustered coarse inputs, final masks for the contrast-only and non-PLS controls, expert-reviewed topology and downstream morphometry, and cold end-to-end encoder runtime and peak memory remain unmeasured. These measurements are needed before claims of generalization or whole-slide efficiency are made.')
+    paragraph(doc, 'A patient-independent donor-to-target experiment with final masks, expert-reviewed topology, downstream morphometry, cold end-to-end encoder runtime and peak memory remain unmeasured. The single-slide scale test does not replace these measurements or support generalization claims.')
     output.parent.mkdir(parents=True, exist_ok=True)
     doc.core_properties.title = 'Bora supplementary methods and exploratory results'
     doc.core_properties.author = 'Bora research team'
@@ -77,6 +106,8 @@ if __name__ == '__main__':
     parser.add_argument('--boundaries', type=Path, required=True)
     parser.add_argument('--vector-fidelity', type=Path, required=True)
     parser.add_argument('--duplicate-screen', type=Path, required=True)
+    parser.add_argument('--wsi-scale', type=Path, required=True)
+    parser.add_argument('--wsi-images', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
-    build(args.reanalysis, args.classifier_controls, args.boundaries, args.vector_fidelity, args.duplicate_screen, args.output)
+    build(args.reanalysis, args.classifier_controls, args.boundaries, args.vector_fidelity, args.duplicate_screen, args.wsi_scale, args.wsi_images, args.output)
