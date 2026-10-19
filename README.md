@@ -20,6 +20,12 @@ The [classifier comparison](https://tkcaccia.github.io/Bora-Analysis/comparison/
 shows named methods on the same images. The current Bora application uses
 Neighbor context.
 
+The [full-slide Visium HD colon viewer](https://tkcaccia.github.io/Bora-Analysis/visium-hd-colon/)
+shows Bora on a 75,250 × 48,740-pixel H&E image with the supplied partial
+expert annotation. The [study code and audits](studies/visium-hd-colon-wsi-2026-10-19/)
+document physical calibration, 228 bounded processing windows, native mask and
+GeoJSON export, and the limits of the externally trained tissue classifier.
+
 To train a tissue classifier for new images, use the
 [Bora training and inference guide](https://github.com/tkcaccia/Bora/blob/codex/virchow2-twenty-ideas/docs/WORKFLOW.md).
 The [manuscript model data guide](docs/MANUSCRIPT_MODEL_DATA.md) lists the
@@ -40,6 +46,7 @@ with commands and limitations.
 | `tools/` | CPU-only static-site packaging and exhaustive publication checks |
 | `site/` | Published viewer assets, per-image scores, metadata, GeoJSON and asset hashes |
 | `docs/` | Benchmark navigation, model-source manifest, provenance and reproduction notes |
+| `studies/visium-hd-colon-wsi-2026-10-19/` | Full-slide calibrated processing code, reference-restricted scores and all-window geometry audit |
 
 This repository was renamed from **Bora-extra**; its Git history is preserved.
 The segmentation application remains in **tkcaccia/Bora**. Large raw archives,

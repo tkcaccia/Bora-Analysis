@@ -110,7 +110,7 @@ def verify(site):
                 raise ValueError('Internal development history or algorithm code in public site: ' + str(path))
     print(json.dumps(dict(ok=True, cases=provenance['case_count'], copied_assets=len(provenance['source_asset_sha256']),
                          unique_vectors=len(vector_paths), polygon_parts=parts, holes=holes,
-                         native_area_threshold=20, pages=3)))
+                         native_area_threshold=20, pages=sum(1 for _ in site.rglob('*.html')))))
 
 
 if __name__ == '__main__':
