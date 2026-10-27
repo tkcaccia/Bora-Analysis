@@ -45,6 +45,15 @@ The original H&E sections are from the public 10x Genomics Visium releases for [
 
 The saved 116-image mean of 2.071 seconds used cached Virchow2 features and preceded the corrected ROI exporter. A four-ROI fresh-process pilot measured a 1.666-second median post-import time and 491-MB median peak resident memory, again using cached features. Neither is a cold encoder-inclusive time. Cold ROI and whole-slide timing and whole-slide peak memory require new runs.
 
+| ROI | Native size (MP) | Median post-import time (s) | Median vector export (s) | Maximum process RSS (MB) |
+| --- | ---: | ---: | ---: | ---: |
+| TIGER 22 | 1.275 | 1.203 | 0.607 | 530.3 |
+| TIGER 24 | 1.551 | 2.349 | 1.617 | 570.2 |
+| TIGER 33 | 1.551 | 2.081 | 1.338 | 487.2 |
+| TIGER 36 | 1.346 | 1.102 | 0.476 | 463.0 |
+
+The ROIs cover too narrow a size range to fit a reliable scaling curve. Even at the same pixel count, the vector-export cost varies with predicted boundary complexity.
+
 The four-ROI pilot measured these median stage times (seconds): input loading 0.088, model loading/refit 0.019, RGB construction 0.238, appearance refinement 0.101, group pooling/context 0.114, fastPLS prediction 0.00009, GeoJSON export 0.979, and other run work 0.125. The full per-case measurements and timing contract are in [the resource record](../benchmark/cmpb_evidence/pipeline_resource_tiger_four.json). This post-import profile is not an end-to-end encoder benchmark.
 
 The pending cold audit will measure one representative calibrated TIGER ROI and the colorectal WSI from process launch through final verified mask and vector. It will include image loading/resampling, Virchow2 checkpoint load and spatial inference, evidence construction, fastPLS startup fit, Bora refinement and vector export. A process-tree memory sampler will record peak host resident memory and GPU memory; results will be identified as hardware-specific. The Chiamaka GPU is currently occupied by the authorized Visium and multiscale feature queues, so this audit has not yet run.
