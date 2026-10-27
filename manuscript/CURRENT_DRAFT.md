@@ -6,9 +6,8 @@ development analysis; they are not results of the later full rerun.
 
 The current document uses Neighbor context as Bora's sole tissue classifier.
 It does not report classifier-control methods or the selected ROI pilot whose
-final tissue names came from a different readout. Its source file is
-`benchmark/manuscript/cmpb-2026-10-27-submission-edit/Bora_CMPB_manuscript_neighbor_context_only.docx`
-in the local Bora workspace.
+final tissue names came from a different readout. The current Word draft is
+maintained outside Git in the project's manuscript workspace.
 
 The article cites Bora 0.2.1 on GitHub main. Dataset landing pages belong in
 Data availability, not in the numbered scientific references. Four additional
