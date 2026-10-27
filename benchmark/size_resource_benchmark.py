@@ -176,7 +176,10 @@ def run_case(case: dict, log_dir: Path, gpu_allowed: bool,
                     break
                 if time.monotonic() - start > case["timeout_seconds"]:
                     raise TimeoutError(f"{case['id']} exceeded bounded time")
-                time.sleep(sample_seconds)
+                try:
+                    process.wait(timeout=sample_seconds)
+                except subprocess.TimeoutExpired:
+                    pass
         except BaseException as exc:
             failure = f"{type(exc).__name__}: {exc}"
             if process.poll() is None:
