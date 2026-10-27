@@ -26,7 +26,7 @@ evaluation patient IDs in the official overview. This does **not** establish
 that Virchow2's pretraining data exclude those slides.
 
 The reproducible downloader is `python -m benchmark.download_beetle_evaluation
-/mnt/sata_ssd/Bora-benchmark/raw/beetle-evaluation-v1` from the repository
+$BORA_DATA_ROOT/raw/beetle-evaluation-v1` from the repository
 root. It obtains only the 170 original evaluation ROI members by HTTP byte
 ranges from the pinned 147-GB image ZIP, without downloading the development or
 evaluation WSIs. It verifies the publisher's overview MD5, archive size, every
@@ -37,7 +37,7 @@ verified from selected members. Original ROI bytes are kept unchanged; no
 annotations, predictions, resized images or scores are created here.
 
 **Completed acquisition, 19 October 2026:** all 170 ROI files were verified on
-Chiamaka at `/mnt/sata_ssd/Bora-benchmark/raw/beetle-evaluation-v1/rois`.
+`$BORA_DATA_ROOT/raw/beetle-evaluation-v1/rois`.
 They total 1,103,405,377 bytes, measure 1536–2560 pixels along each axis, and
 map to 54 distinct patients: 18 each from `biopticka`, `scdc` and
 `uwmedicine`. None of the seven patient IDs in the exact Bora BEETLE training

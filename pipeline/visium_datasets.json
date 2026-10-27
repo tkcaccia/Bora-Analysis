@@ -1,0 +1,29 @@
+{
+  "breast_giotto": {
+    "sample": "CytAssist_FFPE_Human_Breast_Cancer",
+    "tissue": "breast cancer",
+    "stain": "H&E",
+    "dimensions_wh": [19505, 21571],
+    "source_page": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Breast_Cancer/CytAssist_FFPE_Human_Breast_Cancer_web_summary.html",
+    "files": ["filtered_feature_bc_matrix.h5", "filtered_feature_bc_matrix.tar.gz", "spatial.tar.gz", "tissue_image.tif"],
+    "base_url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Breast_Cancer/"
+  },
+  "colorectal_seurat": {
+    "sample": "CytAssist_11mm_FFPE_Human_Colorectal_Cancer",
+    "tissue": "colorectal cancer",
+    "stain": "H&E",
+    "dimensions_wh": [51996, 44403],
+    "source_page": "https://www.10xgenomics.com/datasets/human-colorectal-cancer-11-mm-capture-area-ffpe-2-standard",
+    "files": ["filtered_feature_bc_matrix.h5", "spatial.tar.gz", "tissue_image.tif"],
+    "base_url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Colorectal_Cancer/"
+  },
+  "tonsil_spatialexperiment": {
+    "sample": "CytAssist_FFPE_Protein_Expression_Human_Tonsil_AddOns",
+    "tissue": "tonsil",
+    "stain": "H&E",
+    "dimensions_wh": [32933, 37803],
+    "source_page": "https://www.10xgenomics.com/datasets/visium-cytassist-gene-and-protein-expression-library-of-human-tonsil-with-add-on-antibodies-h-e-6-5-mm-ffpe-2-standard",
+    "files": ["filtered_feature_bc_matrix.h5", "spatial.tar.gz", "tissue_image.btf"],
+    "base_url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Protein_Expression_Human_Tonsil_AddOns/"
+  }
+}

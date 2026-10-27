@@ -78,7 +78,7 @@ def verify(site):
         with (directory / 'scores.csv').open() as f:
             assert len(list(csv.DictReader(f))) == count * expected
         payload = (directory / 'data.json').read_text()
-        assert not any(p in payload for p in ('/Users/', '/home/', '/mnt/', '127.0.0.1', 'localhost:'))
+        assert not any(p in payload for p in ('/Users/', '/home/', '/mnt/', '/media/', '127.0.0.1', 'localhost:'))
     parts = holes = 0
     for path in vector_paths:
         g = json.loads(path.read_text())

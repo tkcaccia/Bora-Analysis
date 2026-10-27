@@ -1,7 +1,7 @@
 # Status of the eight requested datasets
 
-Checked and acquired on 15 October 2026. Storage root on Chiamaka:
-`/mnt/sata_ssd/Bora-benchmark`. Bora has not been run.
+Checked and acquired on 15 October 2026. Set the storage root for your installation:
+`$BORA_DATA_ROOT`. Bora has not been run.
 
 ## Recommended roles and acquisition status
 
@@ -175,8 +175,8 @@ python -m benchmark.prepare_requested camelyon16-subset
 python -m benchmark.segpath_subset --pairs-per-target 3 --max-prefix-gib 2
 python -m benchmark.prepare_requested segpath-subset
 
-python -m benchmark.examples --destination /mnt/sata_ssd/Bora-benchmark/examples --count 3
-python -m benchmark.describe --examples /mnt/sata_ssd/Bora-benchmark/examples
+python -m benchmark.examples --destination $BORA_DATA_ROOT/examples --count 3
+python -m benchmark.describe --examples $BORA_DATA_ROOT/examples
 python -m pytest -q benchmark/tests
 ```
 

@@ -5,6 +5,13 @@ builders for [Bora](https://github.com/tkcaccia/Bora).
 
 **[Open the public benchmark viewer](https://tkcaccia.github.io/Bora-Analysis/)**
 
+The 27 October 2026 full rerun is in progress. Its frozen protocol and
+reproduction code are documented in [the pipeline guide](pipeline/README.md)
+and [the manuscript integration note](manuscript/FULL_RERUN_INTEGRATION_2026-10-27.md).
+The public viewer and Word article below still report the earlier inspected
+development cohort. New scores and figures will replace them only after all
+designated cases and their output checksums are complete.
+
 The main viewer shows **Neighbor context**, the selected tissue-group
 classifier, on **116 calibrated multiclass images**: BCSS 42, TIGER 26,
 GCSS 24 and IGNITE 24. Each image includes the original H&E, expert mask and
@@ -21,13 +28,22 @@ shows named methods on the same images. The current Bora application uses
 Neighbor context.
 
 The [full-slide Visium HD colon viewer](https://tkcaccia.github.io/Bora-Analysis/visium-hd-colon/)
-shows Bora on a 75,250 × 48,740-pixel H&E image with the supplied partial
-expert annotation. The [study code and audits](studies/visium-hd-colon-wsi-2026-10-19/)
-document physical calibration, 228 bounded processing windows, native mask and
-GeoJSON export, and the limits of the externally trained tissue classifier.
+shows Bora on a 75,250 × 48,740-pixel H&E image with a supplied partial
+annotation. The [study summary](studies/visium-hd-colon-wsi-2026-10-19/)
+records its source and limitations; the [pipeline guide](pipeline/README.md)
+explains the reusable acquisition, calibration, encoding and Bora workflow.
+
+The [standard Visium workflows](pipeline/visium_clustering/) provide Seurat,
+Giotto and SpatialExperiment clustering for colorectal, breast and tonsil
+sections, respectively. Their spot coordinates are passed to calibrated
+Virchow2 tile plans and then Bora. The local exploratory study directory is
+excluded from this repository; it contains research code and large private
+checkpoints. The public sections do not include independent pixel-level tissue
+annotations, so these results are descriptive.
 
 To train a tissue classifier for new images, use the
-[Bora training and inference guide](https://github.com/tkcaccia/Bora/blob/codex/virchow2-twenty-ideas/docs/WORKFLOW.md).
+[Bora training and inference guide](https://github.com/tkcaccia/Bora/blob/main/docs/WORKFLOW.md)
+and the [dataset-to-Bora pipeline guide](pipeline/README.md).
 The [manuscript model data guide](docs/MANUSCRIPT_MODEL_DATA.md) lists the
 exact 349 annotated source fields, provider download routes, native crop
 coordinates and checksums used for the reported 967 training groups.
@@ -40,13 +56,15 @@ with commands and limitations.
 | Location | Contents |
 | --- | --- |
 | `benchmark/` | Dataset acquisition, paired-image preparation, calibration/annotation metadata, scoring and audit code |
-| `history/bora-development/` | Preserved experimental algorithms, research runners, tests, legacy runtime and historical reports |
+| `pipeline/` | Download, organize, physically calibrate, encode Virchow2 and run the fixed Bora workflow |
+| `integrations/wsiTools/` | Proposed calibrated tile-plan and in-memory tile functions for the wsiTools R package |
 | `manuscript/` | Figure and document generation code |
 | `web/` | Human-editable static viewer HTML, JavaScript, CSS and data attribution |
-| `tools/` | CPU-only static-site packaging and exhaustive publication checks |
+| `tools/` | Portability and published-site checks |
 | `site/` | Published viewer assets, per-image scores, metadata, GeoJSON and asset hashes |
 | `docs/` | Benchmark navigation, model-source manifest, provenance and reproduction notes |
-| `studies/visium-hd-colon-wsi-2026-10-19/` | Full-slide calibrated processing code, reference-restricted scores and all-window geometry audit |
+| `studies/visium-hd-colon-wsi-2026-10-19/` | Full-slide source and interpretation notes |
+| `pipeline/visium_clustering/` | Three 10x Visium expression-clustering workflows and calibrated wsiTools spot plans |
 
 This repository was renamed from **Bora-extra**; its Git history is preserved.
 The segmentation application remains in **tkcaccia/Bora**. Large raw archives,
@@ -56,25 +74,23 @@ vectors needed to inspect these completed results. Dataset rights are retained;
 see [attribution](https://tkcaccia.github.io/Bora-Analysis/attribution.html) and
 [the data reuse notice](web/DATA_LICENSES.md).
 
-## Rebuild the website from completed results
+## Validate the published website
 
-Python 3.10+ and the standard library are sufficient; no GPU, scientific package,
-training or model inference is used by these commands.
+The checked-in `site/` is a frozen archive of the earlier completed cohort.
+The current full-rerun pipeline builds a new viewer only after all case and
+checksum receipts are complete; see [the pipeline guide](pipeline/README.md).
+To validate and inspect the existing published archive locally:
 
 ```bash
-python tools/build_public_viewer.py --source /path/to/completed/viewer
+python tools/check_portability.py
 python tools/verify_public_viewer.py --site site
 python -m http.server 8000 --directory site
 ```
 
-The source viewer's relative shared assets and vector cache must be present.
-The builder copies exact images and GeoJSONs, preserves native coordinates,
-deduplicates vectors, and records source SHA256s in `site/BUILD_PROVENANCE.json`.
-The verifier checks every image, vector, internal HTML link, case count,
+The site verifier checks every image, vector, internal HTML link, case count,
 aggregate IoU, copied-asset hash and continuous polygon/hole area threshold.
 GitHub Actions validates and deploys `site/` to GitHub Pages on changes to main.
 
-For data acquisition and earlier experiments, see [benchmark/README.md](benchmark/README.md)
-and [the organization guide](docs/benchmark_organization.md). Archived runner
-commands require their original Bora implementation and environment. They do
-not authorize restarting experiments or paused HPC work.
+For data acquisition and the current workflow, see
+[the pipeline guide](pipeline/README.md), [benchmark/README.md](benchmark/README.md),
+and [the organization guide](docs/benchmark_organization.md).

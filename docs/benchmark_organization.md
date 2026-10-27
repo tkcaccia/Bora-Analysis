@@ -1,84 +1,62 @@
 # Benchmark organization and reproduction
 
-The application is maintained in https://github.com/tkcaccia/Bora . This
-repository, formerly Bora-extra, preserves acquisition, research and viewer
-code. Renaming retained the existing Git history.
+[Bora](https://github.com/tkcaccia/Bora) contains the released tissue
+refinement and Neighbor context classifier. This repository contains public
+dataset acquisition, preprocessing, scoring, figures and the viewer. The
+[pipeline guide](../pipeline/README.md) gives the runnable sequence.
 
-## Published classifier study
+## Evaluation data
 
-The public site packages completed cycle-03 of the revised classifier study,
-`bora-classifier-evolution-2026-10-18-v2`. It includes all 116 eligible multiclass
-evaluation images: BCSS 42, TIGER 26, GCSS 24 and IGNITE 24. PUMA is excluded from
-both evaluation splits. The original split names (78 test and 38 validation)
-are metadata, not a claim of untouched testing: both were reused adaptively.
+The public viewer has 116 calibrated, multiclass tissue images: BCSS 42,
+TIGER 26, GCSS 24 and IGNITE 24. Its 78 test and 38 validation labels were
+reused during development, so its scores are exploratory rather than a new
+independent confirmation. PUMA is excluded from those two evaluation splits.
+The tissue classifier was trained on 967 refined whole-group examples from
+349 annotated source fields; the exact source IDs are in
+[the model source manifest](manuscript_model_training_sources.json).
 
-The main page selects P04 Neighbor context; the archive preserves the previous
-five-method comparison on the exact same images. No scientific results are
-recomputed when the website is built. Images and geometry are copied exactly,
-and source hashes are recorded in `site/BUILD_PROVENANCE.json`.
+The coarse tile mask in the public viewer is derived from the expert tissue
+annotation and anonymized before refinement. That benchmark measures
+geometry and tissue-group identity under a controlled coarse input; it does
+not establish that the pipeline can discover a correct tile clustering from
+H&E alone. Score only pixels covered by a valid expert annotation. Source
+code zero has dataset-specific meaning and must be mapped explicitly.
 
-The fixed study inputs are expert-derived anonymous coarse groups, calibrated
-Virchow2 features, RGB9+19 conversion and Bora-AF geometry. The classifier
-identifies whole refined tissue groups. P04 combines each group's 1280-dimensional
-feature mean with its 1280-dimensional contrast to physical shared-boundary-
-weighted neighboring groups, and fits one fastPLS SIMPLS-LDA head. The benchmark
-uses 25 represented training classes and 24 components. The independent
-training partition contains 967 groups; it is not part of
-the 116-image evaluation viewer. There are 28 mapped ontology roles, and some
-evaluation roles have no represented training examples.
+The whole-slide section uses five Visium HD image/GeoJSON pairs. The original
+colorectal annotation is user supplied; the other four GeoJSON files have
+unresolved provenance or tissue-label semantics and are not independent
+accuracy references. The three Visium gene-expression datasets are breast,
+colorectal and tonsil H&E sections with spot-cluster inputs, a separate use
+case from the annotated histopathology endpoint.
 
-All tissue can contribute to image processing, while unannotated/unmapped
-reference pixels are excluded from scores. Zero source codes cannot be assumed
-to mean background: read each dataset's label mapping. The displayed expert
-legend retains source annotation names and flags excluded labels.
+## Data layout
 
-Final vectors preserve ROI-local native pixel coordinates and per-axis µm/px.
-Browser JPEGs are display previews, not calibrated model inputs. Polygon parts
-and enclosed holes strictly below 20 native pixels of area are removed or
-filled, while exactly 20 is retained. The continuous-area and native-raster
-audits are preserved with each export. Shared-boundary straight-line fitting
-uses at most 3 µm tolerance and the study's predicted-shape agreement and area
-guards. It does not fit against expert target boundaries.
+After running `python pipeline/organize_data.py --root "$BORA_DATA_ROOT"`,
+start at `$BORA_DATA_ROOT/BENCHMARKS/README.md`:
 
-`scores.csv` and `data.json` are downloadable from each viewer. The mean is
-computed over all 116 images. Cached deployment times include the recorded
-geometry, cleanup and fitting costs, but exclude encoder extraction, cold
-loading and training. They are not whole-slide end-to-end times.
+1. `01_public_tissue_fields/` indexes calibrated image/tissue-mask pairs.
+2. `02_whole_slide_images/` indexes full-slide images and GeoJSONs.
+3. `03_visium_gene_clustering/` holds the three expression datasets.
+4. `04_private_development/` is excluded from the public manuscript.
 
-## Research source locations
+The numbered folders are links to original source directories; source paths
+in download and preprocessing receipts remain valid. Feature checkpoints are
+under `preprocessing/`. Virchow2 crops are calibrated by the source's
+µm/pixel and resized to 224 × 224 RGB at about 0.5 µm/pixel. No tile image
+files are retained by the current encoder.
 
-* `benchmark/`: original acquisition and paired-image preparation; source URLs,
-  hashes, annotation semantics, microscopy calibration, image-type records and
-  earlier controlled-refinement scoring.
-* `history/bora-development/experiments/bora_evolution/`: classifier candidates,
-  group descriptors, training, evaluation, evolution, revised-cohort preparation,
-  geometry postprocessing and original viewer generator.
-* Other `history/bora-development/experiments/` directories: Virchow2 RGB
-  conversions, calibrated eligibility, tissue acquisition and prior Bora
-  strategies. The historical tests and legacy application runtime are preserved
-  alongside them. These are not installed into the current Bora application.
-* `manuscript/`: earlier figure/document builders. Historical manuscripts and
-  their cohort-specific results are not descriptions of the selected release.
-* `tools/build_public_viewer.py`: packages the completed results without training.
-  `tools/verify_public_viewer.py` checks the complete publication artifact.
+## Published outputs
 
-Old experimental modules import the original `experiments` and `bora`
-namespaces. For historical reproduction, use the frozen source/environment from
-that study or its matching original Bora revision; do not silently run them
-against the cleaned P04 application. Files under `history/` are provenance and
-contain no instruction or authorization to launch more work.
+The website packages the completed raster and GeoJSON outputs. Its preview
+JPEGs are not calibrated model inputs. Final vectors use ROI-local native
+pixel coordinates and preserve the per-axis source spacing. Small polygon
+parts and enclosed holes under 20 native pixels are removed or filled; exact
+20-pixel features remain. Reported Bora deployment times exclude upstream
+Virchow2 extraction and model training. Source-image model training and
+held-out evaluation remain separate operations.
 
-## Data retained outside Git
-
-On Chiamaka, downloaded datasets are organized below
-`/mnt/sata_ssd/Bora-benchmark`; compute studies and feature caches are below
-`/home/chiamaka/Bora-benchmark-compute`. On the development Mac, mirrored viewer
-results are below `Bora/benchmark/results`. Acquisition inventories, raw image
-and mask files, large features and gated checkpoint weights remain in those
-local data stores, outside this repository. The website publishes attributed
-previews and predicted vectors only. Follow the original provider's access and
-reuse terms when obtaining full data.
-
-The evolution study was explicitly stopped by the user. Do not restart any
-archived controller. UCT HPC GPU execution remains paused under the project's
-coordination policy; this website deployment performs no GPU work.
+The checked-in archive is checked by `tools/verify_public_viewer.py`. A new
+viewer is generated from complete full-rerun receipts by
+`pipeline/build_full_rerun_viewer.py`, as described in the pipeline guide.
+Large source images, model weights and token caches are outside Git. Respect
+each provider's data-use terms.

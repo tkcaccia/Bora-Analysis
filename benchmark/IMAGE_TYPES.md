@@ -15,9 +15,9 @@ These categories do not imply independent patients or slides. In particular,
 the CAMELYON example ROIs and their full parent WSIs come from the same slides.
 An image's file extension or pixel dimensions cannot establish that it is a WSI.
 
-## Acquired image categories on Chiamaka
+## Acquired image categories
 
-Status on 15 October 2026; root `/mnt/sata_ssd/Bora-benchmark`.
+Status on 15 October 2026; root `$BORA_DATA_ROOT`.
 
 | Acquired dataset / representation | Category | Number of image references | Explanation |
 |---|---|---:|---|
@@ -53,18 +53,18 @@ contributes images to these acquired-image counts.
 
 ## Per-image metadata and local examples
 
-The canonical classification files on Chiamaka are:
+The canonical classification files under the selected data root are:
 
 ```text
-/mnt/sata_ssd/Bora-benchmark/metadata/image-types.csv
-/mnt/sata_ssd/Bora-benchmark/metadata/image-types-summary.json
+$BORA_DATA_ROOT/metadata/image-types.csv
+$BORA_DATA_ROOT/metadata/image-types-summary.json
 ```
 
 They are also copied to the local examples folder:
 
 ```text
-/Users/stefano/Documents/ChatGPT/Bora/benchmark/examples/image-types.csv
-/Users/stefano/Documents/ChatGPT/Bora/benchmark/examples/image-types-summary.json
+<PROJECT_ROOT>/benchmark/examples/image-types.csv
+<PROJECT_ROOT>/benchmark/examples/image-types-summary.json
 ```
 
 Each record contains `image_type` (`WSI` or `ROI`), `image_subtype`, the
@@ -78,10 +78,10 @@ assets rather than additional RGB benchmark images.
 table and each `01-metadata.json` / `02-metadata.json` / `03-metadata.json`
 display the category. CAMELYON examples identify the parent WSI path and crop
 coordinates; `camelyon16-subset/whole-slide-information.json` separately
-describes the three complete WSIs, which remain on Chiamaka at:
+describes the three complete WSIs, which remain under the selected data root at:
 
 ```text
-/mnt/sata_ssd/Bora-benchmark/raw/camelyon16-subset/images/
+$BORA_DATA_ROOT/raw/camelyon16-subset/images/
 ```
 
 The resolution/annotation CSV `metadata/image-information.csv` (copied locally
@@ -94,9 +94,9 @@ complete WSIs and images outside that paired inventory.
 From the repository root, with the acquisition environment active:
 
 ```bash
-python -m benchmark.image_types --examples /mnt/sata_ssd/Bora-benchmark/examples
-python -m benchmark.examples --destination /mnt/sata_ssd/Bora-benchmark/examples --count 3
-python -m benchmark.describe --examples /mnt/sata_ssd/Bora-benchmark/examples
+python -m benchmark.image_types --examples $BORA_DATA_ROOT/examples
+python -m benchmark.examples --destination $BORA_DATA_ROOT/examples --count 3
+python -m benchmark.describe --examples $BORA_DATA_ROOT/examples
 ```
 
 The standalone classification command reads existing inventories only. The

@@ -1,21 +1,27 @@
-# Visium HD colon whole-slide scale test
+# Visium HD colon whole-slide demonstration
 
-[Open the whole-slide image viewer](https://tkcaccia.github.io/Bora-Analysis/visium-hd-colon/). It shows the source H&E, partial expert annotation, anonymous refined groups, classified mask and compact GeoJSON contours at five native fields, plus a downsampled slide overview.
+[Open the whole-slide viewer](https://tkcaccia.github.io/Bora-Analysis/visium-hd-colon/).
+The source is a publicly released [10x Genomics Visium HD human colorectal
+cancer H&E image](https://www.10xgenomics.com/datasets/visium-hd-cytassist-gene-expression-libraries-of-human-crc-v4).
+It measures 75,250 × 48,740 native pixels. Its OME pixel spacing is
+0.27381215 µm in X and 0.27381326 µm in Y; the scanner objective is 20×.
+The 11,098,424,743-byte source image has SHA-256
+`beae7ecf17befbc8291c7228151674c858be8d6227333f25e08f5ef6868d93ab`.
+The [download script](../../pipeline/download_colon_wsi.sh) verifies the
+provider image. A writable data root is supplied by the user; no local machine
+path is assumed.
 
-This study exercises Bora on the complete public 10x Genomics Visium HD human colon cancer H&E BTF, rather than a cropped ROI. The source is 75,250 × 48,740 native RGB pixels (3,667,685,000 pixels), 20×, with OME physical sampling of 0.27381215039690188 µm/pixel in X and 0.2738132569747595 µm/pixel in Y. The [provider file](https://cf.10xgenomics.com/samples/spatial-exp/4.0.1/Visium_HD_Human_Colon_Cancer/Visium_HD_Human_Colon_Cancer_tissue_image.btf) is 11,098,424,743 bytes, SHA-256 `beae7ecf17befbc8291c7228151674c858be8d6227333f25e08f5ef6868d93ab`; `code/download_image.sh` verifies both. The [provider dataset page](https://www.10xgenomics.com/datasets/visium-hd-cytassist-gene-expression-libraries-of-human-crc-v4) lists this dataset under CC BY 4.0.
+The historical demonstration processed the entire image in 228 bounded
+windows and exported a native mask and GeoJSON. A separately supplied,
+partial GeoJSON annotation was withheld from image encoding and inference and
+used for restricted scoring only. Its 382 features do not cover the whole
+slide. The source and target choice had been inspected during development,
+so this demonstration is exploratory and cannot establish independent
+whole-slide accuracy.
 
-The supplied expert GeoJSON was held out of image reading, Virchow2 encoding, global tile clustering, RGB9+19 conversion, Bora-AF geometry, Neighbor context classification and vector fitting. It has 382 features (359 polygons or multipolygons, 23 lines) and covers only part of the WSI. Its pixel coordinates were checked against native crops. The reference SHA-256 is `18fa709a555d856cdf45838a00c4499cc80571994b4e53a864608cfd5ba4b735`. Raw annotation data and the 11 GB source BTF are not copied into this repository.
-
-`code/fit_wsi_clusters.py` samples 300 spatially separated tissue regions and freezes a slide-wide six-cluster tile model without annotation labels. `code/run_wsi_geometry.py` processes 228 non-overlapping 4096-native-pixel cores with 512-pixel context halos, using the measured OME spacing to resample to approximately 0.5 µm/pixel for Virchow2. It records every window and writes one disk-backed anonymous-group raster. Twenty-three locally homogeneous or undersized windows use the explicitly recorded coarse-palette RGB fallback because a local RGB9+19 statistical fit is not identifiable there; the other windows use the fixed conversion. The exact executed Virchow2 encoder dependencies are snapshotted under `code/feature_source/` and hashed in `code/FEATURE_SOURCE_LOCK.json`.
-
-Two uses of the **same** Neighbor context fastPLS tissue head are compared after this frozen geometry: one class per WSI-wide anonymous cluster, and one class per cluster within a bounded native window. The latter lets disconnected parts of a global cluster receive different tissue identities. The provided annotation is opened only by `code/evaluate_wsi.py` after both readouts have finished. Scores exclude unannotated pixels, unmapped labels, overlaps with unmapped polygons and ambiguous mapped overlaps. This is an exploratory, single-slide scale comparison, not an independent test-set estimate.
-
-The corrected, previously trained 25-class head used for this WSI has SHA-256 `5b6b01459c9c0d419c3ef91d22ac36b2bc5ee1a0a22c5aa4bdbff0a6044f4e8f`; it was not trained on this colon reference. Its output has an evident domain mismatch on this slide, including no predicted normal-gland pixels. The study therefore demonstrates scale handling and exposes a semantic generalization limit rather than establishing deployment accuracy.
-
-The final window-local mask scores macro Dice **0.486109** and macro IoU **0.374654** on 298,529,005 singly mapped expert pixels (8.14% of the WSI). Per-class Dice is tumor 0.7670, stroma 0.7667, normal gland 0.0000, blood vessel 0.2312 and muscle 0.6657. Global whole-slide group classification scored raw macro Dice 0.3066, while window-local group classification scored raw macro Dice 0.4864; this comparison selected the window-local readout on the same reference and remains exploratory. The low-stain block rule removed another 2,453,004 pixels, including all 49,362 false labels in the displayed scanner-strip field, without meaningful change in the annotated-pixel macro score.
-
-The final native OME mask is 24,808,471 bytes (SHA-256 `a212fee3f8c501a40fc4cd6b537b15afa0b59039443d8b63e98b1876c4db2734`); the GeoJSON is 202,959,745 bytes (SHA-256 `c81fdb678057c658f7b847d53238f6c777b5bf4721f39a79ec87fd61dc1470d6`). Every one of the 228 vector windows was independently rasterized against the final OME source mask with zero differing pixels. All retained polygon parts and enclosed holes have area at least 20 native pixels. The export has 2,886 class-labelled window features and 11,107,958 contour segments, 877,472 diagonal. The Virchow2/Bora geometry pass took 3,005.8 seconds; the final CPU vector resume took 1,407.4 seconds, plus approximately 6.5 minutes of earlier checkpointed CPU work. Dense polygon fitting is a current whole-slide speed bottleneck. These large native outputs remain on Chiamaka and in the local benchmark results, rather than Git; the public site carries attributed preview images.
-
-The selected readout is cleaned and exported in native coordinates. A bright, nearly neutral scanner strip crosses the glass in the source WSI; the original brightness-only support admits it. `code/remove_background_wsi.py` excludes such pixels **after** encoding and Bora using an explicit stain-free rule (HSV saturation ≤10/255, minimum RGB >210), without consulting the annotation. `code/refine_background_support_wsi.py` further excludes predictions in calibrated 140.2-µm blocks with less than 1% H&E-stained pixels (HSV saturation >20/255 and minimum RGB <220). This removes sparse residual scanner-strip predictions while retaining stained tissue; the rule was chosen by inspecting source image and predictions, without reading the expert GeoJSON. Bora's `wsi_export.py` fits each window as a planar polygon coverage with at most 0.75-native-pixel tolerance, at least 97% per-class shape agreement and at most 1.5% tissue-area change. Published final-vector cleanup removes polygon parts and fills enclosed holes strictly below 20 native pixels. Every fitted window is rasterized into the final OME BigTIFF, so its GeoJSON and mask agree at native resolution. The vector export never constructs one whole-slide polygon in memory.
-
-The checkpointed Virchow2 GPU run was confined to Chiamaka and completed all 228 windows. UCT HPC GPU work remains paused under the project's execution policy; these scripts do not authorize an HPC submission or retry. Large input images, model weights, feature caches and native masks remain outside Git. The final viewer contains attributed, downsampled previews and native-crop comparisons.
+The [generic pipeline guide](../../pipeline/README.md) documents image
+acquisition, calibrated Virchow2 tile planning, feature extraction and Bora
+inference. The public viewer contains attributed display previews. Large
+source images, encoder weights, feature caches and native-resolution output
+files remain outside Git. The viewer's previews are not calibrated model
+inputs.

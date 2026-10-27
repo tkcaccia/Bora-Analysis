@@ -1,7 +1,7 @@
 # Additional datasets identified from the attached PathSegmentor paper
 
-Acquisition date: 15 October 2026. Data are on Chiamaka at
-`/mnt/sata_ssd/Bora-benchmark`. This work downloads and inventories data only;
+Acquisition date: 15 October 2026. Data are stored under
+`$BORA_DATA_ROOT`. This work downloads and inventories data only;
 Bora, PathSegmentor and VISTA-PATH were not run. No evaluation scores or coarse
 input labels were generated.
 
@@ -23,7 +23,7 @@ and colorectal gland data.
 
 The available CoCaHis derivative must not be described as acquisition of all 82
 original images, seven annotators, 19 patients, or an independent test cohort.
-The original provider server was unreachable from both the Mac and Chiamaka.
+The original provider server was unreachable from the two acquisition hosts used in that audit.
 The derivative was released by the VISTA-PATH authors, with source-dataset terms
 retained, and explicitly contains training data. No upstream processing script
 was executed.
@@ -226,8 +226,8 @@ python -m benchmark.prepare_additional wsss4luad
 python -m benchmark.prepare_additional rings
 python -m benchmark.prepare_additional cocahis-vista
 python -m benchmark.audit_additional
-python -m benchmark.examples --destination /mnt/sata_ssd/Bora-benchmark/examples --count 3
-python -m benchmark.describe --examples /mnt/sata_ssd/Bora-benchmark/examples
+python -m benchmark.examples --destination $BORA_DATA_ROOT/examples --count 3
+python -m benchmark.describe --examples $BORA_DATA_ROOT/examples
 python -m pytest -q benchmark/tests
 ```
 

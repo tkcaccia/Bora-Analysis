@@ -72,7 +72,7 @@ separate masks, rather than the BCSS/TIGER tissue ontology.
 ## Per-image files and examples
 
 All 24,711 currently prepared image/mask annotation-target records are described in
-`/mnt/sata_ssd/Bora-benchmark/metadata/image-information.csv`. Each row records
+`$BORA_DATA_ROOT/metadata/image-information.csv`. Each row records
 WSI/ROI type, pixel dimensions, reported spacing, confidence/source, annotation provenance
 and the names of the mask values present. The original acquisition inventories
 and their recorded SHA256 identities are preserved; the description layer
@@ -103,8 +103,8 @@ only convenience examples; all downloaded ROIs remain available.
 To regenerate descriptions and the local viewer without running Bora:
 
 ```bash
-python -m benchmark.examples --destination /mnt/sata_ssd/Bora-benchmark/examples --count 3 --replace-changed
-python -m benchmark.describe --examples /mnt/sata_ssd/Bora-benchmark/examples
+python -m benchmark.examples --destination $BORA_DATA_ROOT/examples --count 3 --replace-changed
+python -m benchmark.describe --examples $BORA_DATA_ROOT/examples
 ```
 
 ## Additional datasets from the PathSegmentor paper

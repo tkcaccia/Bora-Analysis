@@ -1,0 +1,105 @@
+{
+  "format": "bora-full-rerun-protocol-v1",
+  "date": "2026-10-27",
+  "bora_release_commit": "6c9d7b05f2cd5d52a7694490fdafb074aa7eb81b",
+  "bora_release_version": "0.2.1",
+  "virchow2_revision": "3158645804b69e3f3bc4439d4116edddf0840a72",
+  "virchow2_checkpoint_sha256": "8d6cea947eb2418c3b0dff48cfb9b238e47744ab0dfca21b2b0637b140769b4b",
+  "compute_host": "user-authorized GPU compute host",
+  "storage_host": "user-selected data root",
+  "catalog_fields": {
+    "bcss": 148,
+    "tiger": 151,
+    "ignite": 355,
+    "ocelot": 512
+  },
+  "primary_split_before_coarse_eligibility": {
+    "bcss": {
+      "train": 109,
+      "test": 20,
+      "reserved_related_source": 19
+    },
+    "tiger": {
+      "train": 111,
+      "test": 20,
+      "reserved_related_source": 20
+    },
+    "ignite": {
+      "train": 268,
+      "test": 20,
+      "reserved_related_source": 67
+    }
+  },
+  "coarse_eligibility": {
+    "minimum_usable_tiles": 16,
+    "minimum_anonymous_groups": 2,
+    "tile_width_working_pixels": 90,
+    "tile_width_um_approximate": 45,
+    "prespecified_training_exclusions": 12,
+    "eligible_training_fields": 476,
+    "eligible_test_fields": 60,
+    "excluded_test_fields": 0
+  },
+  "external_secondary": {
+    "dataset": "OCELOT",
+    "candidate_fields": 512,
+    "expert_positive_code": 2,
+    "weak_automatic_negative_code": 1,
+    "endpoint": "expert tumor recall; weak-negative tumor fraction separately",
+    "no_multiclass_iou_claim": true,
+    "source_pixels_coarser_than_virchow2_target": true
+  },
+  "breast_secondary_beetle": {
+    "source": "BEETLE development set, Zenodo record 16812932; not the sequestered Grand Challenge evaluation set",
+    "capped_source_wsi_pairs": 20,
+    "eligible_fixed_rois": 20,
+    "distinct_source_slides": 12,
+    "distinct_patients": 12,
+    "selected_source_centers": {"sch": 6, "nki": 4, "rumc": 2},
+    "selected_source_metadata_sha256": "a063a5456959cb92f3dc007844cb14208a71336d8157d006304539066d86f81b",
+    "selected_source_overlap_with_tcga_or_tiger": false,
+    "native_roi_shape_yx": [3072, 3072],
+    "embedded_source_mpp_range": [0.484, 0.525],
+    "roi_selection_uses_expert_mask": true,
+    "source_label_2": "non-invasive epithelium; no exact cross-dataset training role, excluded from semantic accuracy",
+    "source_label_3": "invasive epithelium; tumor",
+    "source_label_4": "necrosis",
+    "source_label_1": "broad other; ignored for expert tissue accuracy",
+    "status": "calibrated ROI images and masks extracted and SHA256 verified; Virchow2 inference and Bora scoring pending",
+    "independent_test_claim": false
+  },
+  "encoder_inputs": {
+    "base_mpp": 0.5,
+    "context_mpp": [
+      1.0,
+      2.0
+    ],
+    "tile_width_pixels": 224,
+    "tile_overlap_pixels": 0,
+    "edge_padding": "white to 224 pixels",
+    "tokens_per_tile": [
+      16,
+      16,
+      1280
+    ],
+    "tile_images_saved": false
+  },
+  "controlled_input": "Expert tissue masks are coarsened to a 90-pixel grid and their identities permuted independently per image. The fine mask is absent from Bora predictor manifests.",
+  "classifier": "Released Neighbor context fastPLS only",
+  "primary_endpoints": [
+    "equal-image mean annotated-pixel macro intersection-over-union",
+    "whole-group classification accuracy with class-balanced accuracy",
+    "tumor-stroma boundary F1 at 8 micrometres where an expert interface exists",
+    "whole-group accuracy by input tile count",
+    "per-image pipeline time excluding Virchow2 extraction and cold model load"
+  ],
+  "comparison": "Expert-decoded coarse tile identity is a privileged geometry diagnostic, not an inference comparator.",
+  "large_image_examples": "Five WSI images and three Visium sections are processed separately with bounded windows/tiles. Only independently verified expert tissue regions are scored; other images are descriptive.",
+  "analysis_status": "preprocessing and fixed-protocol implementation in progress; no final rerun scores yet",
+  "independent_final_test_claim": false,
+  "publication_gate": "Replace all manuscript tables, figures and public viewer scores only after complete receipt and provenance audit.",
+  "frozen_split_sha256": "8d3b5edd69241dec4f48ba855204543890b0e85d5932a9d3c7ad70a609d192c5",
+  "frozen_preflight_exclusions_sha256": "2ccfdee0e2bdbdfcb4e9fc514dd92c6bb0cafb57cdd2a16df30edaebc4b4c84b",
+  "frozen_label_map_sha256": "23270c62d7bd4dae2987b8ffe9ffdf4e6c0a5e730f89f1afd39fb4c4f2804e5a",
+  "frozen_multiscale_queue_v2_sha256": "3f8b9afff76ab31b065462ab14bf8271cc9045fdccc8ce504d16380842aa3cc4"
+}

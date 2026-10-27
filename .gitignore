@@ -1,4 +1,8 @@
 __pycache__/
+.data/
+.results/
+pipeline/RERUN_STATUS_*.md
+studies/visium-spot-benchmark/
 .pytest_cache/
 *.py[cod]
 .venv/

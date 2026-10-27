@@ -5,6 +5,7 @@ import argparse
 from concurrent.futures import ThreadPoolExecutor
 import hashlib
 import json
+import os
 import shutil
 import stat
 import subprocess
@@ -16,7 +17,7 @@ import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 
-DEFAULT_ROOT = Path("/mnt/sata_ssd/Bora-benchmark")
+DEFAULT_ROOT = Path(os.environ.get("BORA_DATA_ROOT", ".data"))
 LOCK = Path(__file__).with_name("sources.lock.json")
 
 
@@ -56,7 +57,7 @@ def fetch(entry, destination, reserve_gib=20):
                 partial.replace(destination)
                 result["path"] = str(destination.resolve())
                 return result
-            headers = {"User-Agent": "Bora-benchmark/0.1"}
+            headers = {"User-Agent": "Bora-benchmark/0.2"}
             if start:
                 headers["Range"] = f"bytes={start}-"
             request = urllib.request.Request(entry["url"], headers=headers)
@@ -116,7 +117,7 @@ def ranged_fetch(entry, destination, workers):
         for attempt in range(3):
             try:
                 request = urllib.request.Request(entry["url"], headers={
-                    "User-Agent": "Bora-benchmark/0.1", "Range": f"bytes={lo}-{hi}"})
+                    "User-Agent": "Bora-benchmark/0.2", "Range": f"bytes={lo}-{hi}"})
                 with urllib.request.urlopen(request, timeout=120) as response:
                     expected = f"bytes {lo}-{hi}/{size}"
                     if response.status != 206 or response.headers.get("Content-Range") != expected:

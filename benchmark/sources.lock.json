@@ -110,7 +110,7 @@
   "cocahis": {
     "access": "manual",
     "canonical_source": "https://cocahis.irb.hr/",
-    "instructions": "Original provider host is currently unreachable from both the Mac and Chiamaka. Original file URL: http://cocahis.irb.hr/wp-content/uploads/2020/12/CoCaHis.hdf5; provider MD5 08fb7f767824de2aed8dd174d4b15ed7. Recheck only after connectivity changes; processed derivatives are separate datasets."
+    "instructions": "The original provider host was unreachable during the acquisition audit. Original file URL: http://cocahis.irb.hr/wp-content/uploads/2020/12/CoCaHis.hdf5; provider MD5 08fb7f767824de2aed8dd174d4b15ed7. Recheck only after connectivity changes; processed derivatives are separate datasets."
   },
   "digestpath2019": {
     "access": "manual",

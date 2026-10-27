@@ -3,7 +3,7 @@
 This record describes downloads and image/mask validation only. **Bora was not run.**
 The complete machine-readable provenance is in [acquisition-2026-10-15.json](acquisition-2026-10-15.json).
 
-Data root on Chiamaka: `/mnt/sata_ssd/Bora-benchmark`.
+Set `BORA_DATA_ROOT` to the dataset directory selected for this installation.
 
 | Data staged | Verified pairs | Source partitions | Status |
 |---|---:|---|---|

@@ -7,6 +7,14 @@ ROIs from 54 patients at three centres have been acquired and byte-verified as
 described in [the acquisition record](../benchmark/BEETLE_HELDOUT_ACQUISITION.md).
 Their reference masks are sequestered by the challenge.
 
+The separate 27 October 2026 capped BEETLE **development** subset contains
+20 annotated fields from 12 patients at three clinical centers. Its prepared
+ROIs and source metadata are described in the
+[full-rerun protocol](../pipeline/full_benchmark_protocol.json). It is a
+secondary development analysis and is not the confirmatory 54-patient
+evaluation proposed here. No development-subset result may be presented as a
+Grand Challenge held-out score.
+
 ## Freeze before evaluation
 
 1. Use only the official BEETLE development patients for model fitting and

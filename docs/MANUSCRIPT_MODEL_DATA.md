@@ -31,8 +31,8 @@ needed to reproduce the exact selected fields. For GCSS, source-slide
 calibration was checked against public GDC metadata and provider ROI bounds;
 do not assign the WSI's µm/px directly to its distributed PNG. For PESO,
 original mask and image grids have a documented factor-of-two relationship.
-The historical extraction and calibration implementation is preserved in
-[`studies/classifier-evolution-2026-10-18-v2/code/experiments/bora_extension/`](../studies/classifier-evolution-2026-10-18-v2/code/experiments/bora_extension/).
+The exact crop and spacing records remain in the source manifest. The current
+public data workflow is described in [`pipeline/`](../pipeline/README.md).
 
 ## List or export the exact source IDs
 
@@ -69,31 +69,23 @@ python -m benchmark.prepare_requested camelyon16-subset --root "$DATA"
 The exact selected fields are the rows in the manuscript source manifest,
 not every item in these provider releases.
 
-The archived checksum-aware source downloader covers GCSS, PESO, the small
-IGNITE metadata/annotation files and PUMA tissue GeoJSON. It uses two bounded
-download workers, retains partial files and verifies the pinned file
-identities. The separate small catalogue downloads only the three
-GleasonXAI source files used here:
+The checksum-aware source downloader covers GCSS, PESO, IGNITE
+metadata/annotations, PUMA tissue GeoJSON and a small GleasonXAI source
+catalogue. It retains partial transfers and verifies pinned file identities:
 
 ```bash
-RESEARCH=studies/classifier-evolution-2026-10-18-v2/code
-PYTHONPATH="$RESEARCH" python -m experiments.bora_extension.acquire_tissue_catalog \
-  --root "$DATA" --catalog "$RESEARCH/experiments/bora_extension/TISSUE_CATALOG_2026_10_18.json"
-PYTHONPATH="$RESEARCH" python -m experiments.bora_extension.acquire_tissue_catalog \
-  --root "$DATA" --catalog docs/manuscript_model_extra_catalog.json \
+python pipeline/download_catalog.py --root "$DATA" \
+  --catalog pipeline/tissue_sources.lock.json
+python pipeline/download_catalog.py --root "$DATA" \
+  --catalog docs/manuscript_model_extra_catalog.json \
   --receipt-name manuscript-gleasonxai-acquisition.json
-PYTHONPATH="$RESEARCH" python -m experiments.bora_extension.acquire_ocelot \
-  --data-root "$DATA"
+python pipeline/download_ocelot.py --data-root "$DATA"
 ```
 
-The large IGNITE image archive and PUMA TIFF ROI/context archives are separate
-from those small catalog entries. They are available on their Zenodo records.
-The historical [`bootstrap_tissue_sources.py`](../studies/classifier-evolution-2026-10-18-v2/code/experiments/bora_extension/bootstrap_tissue_sources.py)
-indexes their ZIP members over HTTPS ranges, and
-[`prepare_tissue_catalog.py`](../studies/classifier-evolution-2026-10-18-v2/code/experiments/bora_extension/prepare_tissue_catalog.py)
-selects only the original IGNITE members needed for annotated fields.
-[`prepare_puma.py`](../studies/classifier-evolution-2026-10-18-v2/code/experiments/bora_extension/prepare_puma.py)
-uses the original PUMA ROI/context TIFFs with the tissue GeoJSON. BEETLE's
+The larger IGNITE, PUMA and BEETLE archives are provider releases and require
+space and access checks before acquisition. The source manifest identifies
+the exact image/annotation members required for model reproduction.
+BEETLE's
 development WSI and annotation archives should be obtained from its pinned
 Zenodo v1 record; the public evaluation masks are sequestered and were **not**
 used to train this model. The exact seven BEETLE WSI source IDs are in the
@@ -103,8 +95,9 @@ These commands fetch original releases. Recreating the **exact manuscript
 model** also requires applying the recorded crop/calibration/ontology rules,
 extracting the pinned Virchow2 spatial tokens, supplying the anonymous tile
 clusters, then running the current Bora `prepare` and `train` commands. The
-historical preparation code and frozen source hashes are preserved here; the
-large derived token caches and the training model are not redistributed.
+frozen source hashes are preserved here. Large derived token caches and the
+training model are not redistributed; the exact historical model cannot be
+recreated from the small source catalogue alone.
 The Virchow2 checkpoint used for feature extraction was
 [`paige-ai/Virchow2`](https://huggingface.co/paige-ai/Virchow2) at revision
 `3158645804b69e3f3bc4439d4116edddf0840a72`, with checkpoint SHA256
@@ -112,7 +105,7 @@ The Virchow2 checkpoint used for feature extraction was
 Access to that checkpoint follows its provider terms.
 
 For a **new user's own model**, no manuscript dataset is required. Follow the
-[Bora training guide](https://github.com/tkcaccia/Bora/blob/codex/virchow2-twenty-ideas/docs/WORKFLOW.md):
+[Bora training guide](https://github.com/tkcaccia/Bora/blob/main/docs/WORKFLOW.md):
 prepare each calibrated image and its tile clusters/tokens; in a training
 manifest supply the corresponding expert TIFF mask or native-coordinate
 GeoJSON and map source annotation values to tissue class IDs; run `bora train`;
