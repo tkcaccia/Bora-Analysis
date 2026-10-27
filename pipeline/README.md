@@ -207,3 +207,9 @@ The target case contains no expert mask. Bora writes the final native tissue
 mask and GeoJSON with the predicted tissue class for each refined group. The
 workflow checks that training source groups are absent from targets. A held-out
 dataset and patient-disjoint fields must be fixed before reporting accuracy.
+
+An [annotation-free coarse-map example](NONSPATIAL_WSI_KODAMA.md) clusters
+Virchow2 tile features with KODAMA without slide coordinates, projects the
+anonymous groups to a colorectal whole-slide image, and tests one registered
+window with Bora. It is an exploratory same-slide pilot; its tissue-name model
+was not selected independently of the target slide.
