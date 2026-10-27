@@ -62,3 +62,17 @@ expert-derived coarse tile input. Do not interpret this as independent
 annotation-free segmentation accuracy. For any new benchmark, lock patient
 and parent-slide disjoint training/test partitions, harmonize tissue classes,
 and regenerate all figures and tables from the new completed receipts.
+
+## Cross-method resource benchmark
+
+The [size-aware protocol](size_resource_protocol.md) specifies a cold,
+native-resolution comparison of Bora, VISTA-PATH, the compatible TIAToolbox
+BCSS model, a fitted 2D nnU-Net, and the distilled student if its exact
+checkpoint becomes available. The generic
+[`size_resource_benchmark.py`](size_resource_benchmark.py) records per-image
+wall time, native and tissue megapixels, physical tissue area, process-tree
+peak resident memory and owned GPU memory. It stops on the first failed or
+unclean case. [`summarize_size_resources.py`](summarize_size_resources.py)
+generates per-image and image-size-band tables. Existing cached-feature Bora
+timings are labeled separately; no cross-method cold results have been
+collected yet.
