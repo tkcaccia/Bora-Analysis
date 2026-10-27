@@ -1,0 +1,1090 @@
+{
+  "scope": "Four saved TIGER pre-export tissue predictions; resource comparison only, not expert benchmark accuracy",
+  "methods": {
+    "rasterio_lossless": "Rasterio polygonization and same-label union; no Bora cleanup or simplification",
+    "coverage_2px": "Bora initial coverage polygonizer at min_area=20 and simplify=2, one worker",
+    "bora_complete": "Current Bora cleanup, coverage converter, calibrated compact fitting, final region checks and OME mask write"
+  },
+  "timing_contract": "Fresh process per run; wall time excludes imports and metric calculation; peak RSS includes imports; methods were run serially",
+  "python": "3.12.4 (v3.12.4:8e8a4baf65, Jun  6 2024, 17:33:18) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "platform": "macOS-14.5-arm64-arm-64bit",
+  "repeats_per_image_method": 3,
+  "summary": {
+    "rasterio_lossless": {
+      "runs": 12,
+      "median_wall_seconds": 0.07736025000122027,
+      "median_peak_rss_mb": 210.7578125,
+      "largest_peak_rss_mb": 216.578125,
+      "median_geojson_bytes": 209583.5,
+      "median_segments": 12824.0,
+      "largest_changed_pixels": 0,
+      "lowest_class_iou_vs_input_mask": 1.0
+    },
+    "coverage_2px": {
+      "runs": 12,
+      "median_wall_seconds": 0.10194887549732812,
+      "median_peak_rss_mb": 221.0546875,
+      "largest_peak_rss_mb": 234.296875,
+      "median_geojson_bytes": 89163.0,
+      "median_segments": 5376.0,
+      "largest_changed_pixels": 6931,
+      "lowest_class_iou_vs_input_mask": 0.9855877001259703
+    },
+    "bora_complete": {
+      "runs": 12,
+      "median_wall_seconds": 0.9740430415004084,
+      "median_peak_rss_mb": 272.9140625,
+      "largest_peak_rss_mb": 285.4375,
+      "median_geojson_bytes": 161276.5,
+      "median_segments": 1854.0,
+      "largest_changed_pixels": 19769,
+      "lowest_class_iou_vs_input_mask": 0.9729633148452479
+    }
+  },
+  "records": [
+    {
+      "method": "rasterio_lossless",
+      "image": "tiger_22",
+      "shape_yx": [
+        1096,
+        1163
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.07825962499919115,
+      "rss_after_import_mb": 192.515625,
+      "peak_rss_mb": 201.609375,
+      "additional_peak_rss_mb": 9.09375,
+      "geojson_bytes": 161113,
+      "features": 2,
+      "segments": 9874,
+      "changed_pixels_vs_input_mask": 0,
+      "minimum_class_iou_vs_input_mask": 1.0,
+      "per_class_iou_vs_input_mask": {
+        "1": 1.0,
+        "2": 1.0
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 1
+    },
+    {
+      "method": "rasterio_lossless",
+      "image": "tiger_22",
+      "shape_yx": [
+        1096,
+        1163
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.04354879199672723,
+      "rss_after_import_mb": 200.109375,
+      "peak_rss_mb": 208.84375,
+      "additional_peak_rss_mb": 8.734375,
+      "geojson_bytes": 161113,
+      "features": 2,
+      "segments": 9874,
+      "changed_pixels_vs_input_mask": 0,
+      "minimum_class_iou_vs_input_mask": 1.0,
+      "per_class_iou_vs_input_mask": {
+        "1": 1.0,
+        "2": 1.0
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 2
+    },
+    {
+      "method": "rasterio_lossless",
+      "image": "tiger_22",
+      "shape_yx": [
+        1096,
+        1163
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.04417745799582917,
+      "rss_after_import_mb": 200.578125,
+      "peak_rss_mb": 209.328125,
+      "additional_peak_rss_mb": 8.75,
+      "geojson_bytes": 161113,
+      "features": 2,
+      "segments": 9874,
+      "changed_pixels_vs_input_mask": 0,
+      "minimum_class_iou_vs_input_mask": 1.0,
+      "per_class_iou_vs_input_mask": {
+        "1": 1.0,
+        "2": 1.0
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 3
+    },
+    {
+      "method": "coverage_2px",
+      "image": "tiger_22",
+      "shape_yx": [
+        1096,
+        1163
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.06148458299867343,
+      "rss_after_import_mb": 200.484375,
+      "peak_rss_mb": 221.25,
+      "additional_peak_rss_mb": 20.765625,
+      "geojson_bytes": 68885,
+      "features": 2,
+      "segments": 4165,
+      "changed_pixels_vs_input_mask": 3512,
+      "minimum_class_iou_vs_input_mask": 0.9919534220314342,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9958864513184512,
+        "2": 0.9919534220314342
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 1
+    },
+    {
+      "method": "coverage_2px",
+      "image": "tiger_22",
+      "shape_yx": [
+        1096,
+        1163
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.06247495899879141,
+      "rss_after_import_mb": 194.265625,
+      "peak_rss_mb": 214.15625,
+      "additional_peak_rss_mb": 19.890625,
+      "geojson_bytes": 68885,
+      "features": 2,
+      "segments": 4165,
+      "changed_pixels_vs_input_mask": 3512,
+      "minimum_class_iou_vs_input_mask": 0.9919534220314342,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9958864513184512,
+        "2": 0.9919534220314342
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 2
+    },
+    {
+      "method": "coverage_2px",
+      "image": "tiger_22",
+      "shape_yx": [
+        1096,
+        1163
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.06149612500303192,
+      "rss_after_import_mb": 200.125,
+      "peak_rss_mb": 220.859375,
+      "additional_peak_rss_mb": 20.734375,
+      "geojson_bytes": 68885,
+      "features": 2,
+      "segments": 4165,
+      "changed_pixels_vs_input_mask": 3512,
+      "minimum_class_iou_vs_input_mask": 0.9919534220314342,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9958864513184512,
+        "2": 0.9919534220314342
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 3
+    },
+    {
+      "method": "bora_complete",
+      "image": "tiger_22",
+      "shape_yx": [
+        1096,
+        1163
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.6152999580008327,
+      "rss_after_import_mb": 199.921875,
+      "peak_rss_mb": 268.625,
+      "additional_peak_rss_mb": 68.703125,
+      "geojson_bytes": 165811,
+      "features": 2,
+      "segments": 1949,
+      "changed_pixels_vs_input_mask": 7330,
+      "minimum_class_iou_vs_input_mask": 0.983273743475938,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9913719398312572,
+        "2": 0.983273743475938
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 1
+    },
+    {
+      "method": "bora_complete",
+      "image": "tiger_22",
+      "shape_yx": [
+        1096,
+        1163
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.6202197079983307,
+      "rss_after_import_mb": 199.671875,
+      "peak_rss_mb": 271.78125,
+      "additional_peak_rss_mb": 72.109375,
+      "geojson_bytes": 165811,
+      "features": 2,
+      "segments": 1949,
+      "changed_pixels_vs_input_mask": 7330,
+      "minimum_class_iou_vs_input_mask": 0.983273743475938,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9913719398312572,
+        "2": 0.983273743475938
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 2
+    },
+    {
+      "method": "bora_complete",
+      "image": "tiger_22",
+      "shape_yx": [
+        1096,
+        1163
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.6074034579942236,
+      "rss_after_import_mb": 200.578125,
+      "peak_rss_mb": 270.03125,
+      "additional_peak_rss_mb": 69.453125,
+      "geojson_bytes": 165811,
+      "features": 2,
+      "segments": 1949,
+      "changed_pixels_vs_input_mask": 7330,
+      "minimum_class_iou_vs_input_mask": 0.983273743475938,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9913719398312572,
+        "2": 0.983273743475938
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 3
+    },
+    {
+      "method": "rasterio_lossless",
+      "image": "tiger_24",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.10245208400010597,
+      "rss_after_import_mb": 202.25,
+      "peak_rss_mb": 215.984375,
+      "additional_peak_rss_mb": 13.734375,
+      "geojson_bytes": 306886,
+      "features": 2,
+      "segments": 18574,
+      "changed_pixels_vs_input_mask": 0,
+      "minimum_class_iou_vs_input_mask": 1.0,
+      "per_class_iou_vs_input_mask": {
+        "1": 1.0,
+        "2": 1.0
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 1
+    },
+    {
+      "method": "rasterio_lossless",
+      "image": "tiger_24",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.10376529200584628,
+      "rss_after_import_mb": 201.515625,
+      "peak_rss_mb": 216.578125,
+      "additional_peak_rss_mb": 15.0625,
+      "geojson_bytes": 306886,
+      "features": 2,
+      "segments": 18574,
+      "changed_pixels_vs_input_mask": 0,
+      "minimum_class_iou_vs_input_mask": 1.0,
+      "per_class_iou_vs_input_mask": {
+        "1": 1.0,
+        "2": 1.0
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 2
+    },
+    {
+      "method": "rasterio_lossless",
+      "image": "tiger_24",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.10339774999738438,
+      "rss_after_import_mb": 201.453125,
+      "peak_rss_mb": 215.734375,
+      "additional_peak_rss_mb": 14.28125,
+      "geojson_bytes": 306886,
+      "features": 2,
+      "segments": 18574,
+      "changed_pixels_vs_input_mask": 0,
+      "minimum_class_iou_vs_input_mask": 1.0,
+      "per_class_iou_vs_input_mask": {
+        "1": 1.0,
+        "2": 1.0
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 3
+    },
+    {
+      "method": "coverage_2px",
+      "image": "tiger_24",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.14142279199586483,
+      "rss_after_import_mb": 200.734375,
+      "peak_rss_mb": 231.0625,
+      "additional_peak_rss_mb": 30.328125,
+      "geojson_bytes": 129096,
+      "features": 2,
+      "segments": 7628,
+      "changed_pixels_vs_input_mask": 6931,
+      "minimum_class_iou_vs_input_mask": 0.9855877001259703,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9938717255812547,
+        "2": 0.9855877001259703
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 1
+    },
+    {
+      "method": "coverage_2px",
+      "image": "tiger_24",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.14347033399826614,
+      "rss_after_import_mb": 197.375,
+      "peak_rss_mb": 216.09375,
+      "additional_peak_rss_mb": 18.71875,
+      "geojson_bytes": 129096,
+      "features": 2,
+      "segments": 7628,
+      "changed_pixels_vs_input_mask": 6931,
+      "minimum_class_iou_vs_input_mask": 0.9855877001259703,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9938717255812547,
+        "2": 0.9855877001259703
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 2
+    },
+    {
+      "method": "coverage_2px",
+      "image": "tiger_24",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.15101624999806518,
+      "rss_after_import_mb": 201.4375,
+      "peak_rss_mb": 230.53125,
+      "additional_peak_rss_mb": 29.09375,
+      "geojson_bytes": 129096,
+      "features": 2,
+      "segments": 7628,
+      "changed_pixels_vs_input_mask": 6931,
+      "minimum_class_iou_vs_input_mask": 0.9855877001259703,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9938717255812547,
+        "2": 0.9855877001259703
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 3
+    },
+    {
+      "method": "bora_complete",
+      "image": "tiger_24",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 1.674680874995829,
+      "rss_after_import_mb": 201.453125,
+      "peak_rss_mb": 282.859375,
+      "additional_peak_rss_mb": 81.40625,
+      "geojson_bytes": 336920,
+      "features": 2,
+      "segments": 3906,
+      "changed_pixels_vs_input_mask": 13050,
+      "minimum_class_iou_vs_input_mask": 0.9729633148452479,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9883381754115766,
+        "2": 0.9729633148452479
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 1
+    },
+    {
+      "method": "bora_complete",
+      "image": "tiger_24",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 1.6217887500024517,
+      "rss_after_import_mb": 201.125,
+      "peak_rss_mb": 284.71875,
+      "additional_peak_rss_mb": 83.59375,
+      "geojson_bytes": 336921,
+      "features": 2,
+      "segments": 3906,
+      "changed_pixels_vs_input_mask": 13050,
+      "minimum_class_iou_vs_input_mask": 0.9729633148452479,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9883381754115766,
+        "2": 0.9729633148452479
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 2
+    },
+    {
+      "method": "bora_complete",
+      "image": "tiger_24",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 1.6333642499957932,
+      "rss_after_import_mb": 186.546875,
+      "peak_rss_mb": 278.21875,
+      "additional_peak_rss_mb": 91.671875,
+      "geojson_bytes": 336919,
+      "features": 2,
+      "segments": 3906,
+      "changed_pixels_vs_input_mask": 13050,
+      "minimum_class_iou_vs_input_mask": 0.9729633148452479,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9883381754115766,
+        "2": 0.9729633148452479
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 3
+    },
+    {
+      "method": "rasterio_lossless",
+      "image": "tiger_33",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.07931300000200281,
+      "rss_after_import_mb": 200.125,
+      "peak_rss_mb": 211.921875,
+      "additional_peak_rss_mb": 11.796875,
+      "geojson_bytes": 258054,
+      "features": 2,
+      "segments": 15774,
+      "changed_pixels_vs_input_mask": 0,
+      "minimum_class_iou_vs_input_mask": 1.0,
+      "per_class_iou_vs_input_mask": {
+        "1": 1.0,
+        "2": 1.0
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 1
+    },
+    {
+      "method": "rasterio_lossless",
+      "image": "tiger_33",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.07850504100497346,
+      "rss_after_import_mb": 201.375,
+      "peak_rss_mb": 212.765625,
+      "additional_peak_rss_mb": 11.390625,
+      "geojson_bytes": 258054,
+      "features": 2,
+      "segments": 15774,
+      "changed_pixels_vs_input_mask": 0,
+      "minimum_class_iou_vs_input_mask": 1.0,
+      "per_class_iou_vs_input_mask": {
+        "1": 1.0,
+        "2": 1.0
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 2
+    },
+    {
+      "method": "rasterio_lossless",
+      "image": "tiger_33",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.07646087500324938,
+      "rss_after_import_mb": 200.9375,
+      "peak_rss_mb": 215.96875,
+      "additional_peak_rss_mb": 15.03125,
+      "geojson_bytes": 258054,
+      "features": 2,
+      "segments": 15774,
+      "changed_pixels_vs_input_mask": 0,
+      "minimum_class_iou_vs_input_mask": 1.0,
+      "per_class_iou_vs_input_mask": {
+        "1": 1.0,
+        "2": 1.0
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 3
+    },
+    {
+      "method": "coverage_2px",
+      "image": "tiger_33",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.15260670800489606,
+      "rss_after_import_mb": 200.890625,
+      "peak_rss_mb": 234.296875,
+      "additional_peak_rss_mb": 33.40625,
+      "geojson_bytes": 109441,
+      "features": 2,
+      "segments": 6587,
+      "changed_pixels_vs_input_mask": 5890,
+      "minimum_class_iou_vs_input_mask": 0.9922158513331252,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9922158513331252,
+        "2": 0.9927066369976256
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 1
+    },
+    {
+      "method": "coverage_2px",
+      "image": "tiger_33",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.15395908299979055,
+      "rss_after_import_mb": 201.953125,
+      "peak_rss_mb": 231.625,
+      "additional_peak_rss_mb": 29.671875,
+      "geojson_bytes": 109441,
+      "features": 2,
+      "segments": 6587,
+      "changed_pixels_vs_input_mask": 5890,
+      "minimum_class_iou_vs_input_mask": 0.9922158513331252,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9922158513331252,
+        "2": 0.9927066369976256
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 2
+    },
+    {
+      "method": "coverage_2px",
+      "image": "tiger_33",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.15042841699323617,
+      "rss_after_import_mb": 201.109375,
+      "peak_rss_mb": 230.375,
+      "additional_peak_rss_mb": 29.265625,
+      "geojson_bytes": 109441,
+      "features": 2,
+      "segments": 6587,
+      "changed_pixels_vs_input_mask": 5890,
+      "minimum_class_iou_vs_input_mask": 0.9922158513331252,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9922158513331252,
+        "2": 0.9927066369976256
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 3
+    },
+    {
+      "method": "bora_complete",
+      "image": "tiger_33",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 1.3278663750024862,
+      "rss_after_import_mb": 200.953125,
+      "peak_rss_mb": 277.0,
+      "additional_peak_rss_mb": 76.046875,
+      "geojson_bytes": 156742,
+      "features": 2,
+      "segments": 1759,
+      "changed_pixels_vs_input_mask": 19769,
+      "minimum_class_iou_vs_input_mask": 0.9739803177536389,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9739803177536389,
+        "2": 0.9757316862687082
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 1
+    },
+    {
+      "method": "bora_complete",
+      "image": "tiger_33",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 1.3468354579963489,
+      "rss_after_import_mb": 200.953125,
+      "peak_rss_mb": 285.4375,
+      "additional_peak_rss_mb": 84.484375,
+      "geojson_bytes": 156742,
+      "features": 2,
+      "segments": 1759,
+      "changed_pixels_vs_input_mask": 19769,
+      "minimum_class_iou_vs_input_mask": 0.9739803177536389,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9739803177536389,
+        "2": 0.9757316862687082
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 2
+    },
+    {
+      "method": "bora_complete",
+      "image": "tiger_33",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 1.3599662920023547,
+      "rss_after_import_mb": 201.8125,
+      "peak_rss_mb": 274.046875,
+      "additional_peak_rss_mb": 72.234375,
+      "geojson_bytes": 156742,
+      "features": 2,
+      "segments": 1759,
+      "changed_pixels_vs_input_mask": 19769,
+      "minimum_class_iou_vs_input_mask": 0.9739803177536389,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9739803177536389,
+        "2": 0.9757316862687082
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 3
+    },
+    {
+      "method": "rasterio_lossless",
+      "image": "tiger_36",
+      "shape_yx": [
+        1126,
+        1195
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.032396415997936856,
+      "rss_after_import_mb": 199.109375,
+      "peak_rss_mb": 206.953125,
+      "additional_peak_rss_mb": 7.84375,
+      "geojson_bytes": 97656,
+      "features": 2,
+      "segments": 5960,
+      "changed_pixels_vs_input_mask": 0,
+      "minimum_class_iou_vs_input_mask": 1.0,
+      "per_class_iou_vs_input_mask": {
+        "1": 1.0,
+        "2": 1.0
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 1
+    },
+    {
+      "method": "rasterio_lossless",
+      "image": "tiger_36",
+      "shape_yx": [
+        1126,
+        1195
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.03171291600301629,
+      "rss_after_import_mb": 200.734375,
+      "peak_rss_mb": 209.421875,
+      "additional_peak_rss_mb": 8.6875,
+      "geojson_bytes": 97656,
+      "features": 2,
+      "segments": 5960,
+      "changed_pixels_vs_input_mask": 0,
+      "minimum_class_iou_vs_input_mask": 1.0,
+      "per_class_iou_vs_input_mask": {
+        "1": 1.0,
+        "2": 1.0
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 2
+    },
+    {
+      "method": "rasterio_lossless",
+      "image": "tiger_36",
+      "shape_yx": [
+        1126,
+        1195
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.03227945799881127,
+      "rss_after_import_mb": 200.78125,
+      "peak_rss_mb": 209.59375,
+      "additional_peak_rss_mb": 8.8125,
+      "geojson_bytes": 97656,
+      "features": 2,
+      "segments": 5960,
+      "changed_pixels_vs_input_mask": 0,
+      "minimum_class_iou_vs_input_mask": 1.0,
+      "per_class_iou_vs_input_mask": {
+        "1": 1.0,
+        "2": 1.0
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 3
+    },
+    {
+      "method": "coverage_2px",
+      "image": "tiger_36",
+      "shape_yx": [
+        1126,
+        1195
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.03365987500001211,
+      "rss_after_import_mb": 200.8125,
+      "peak_rss_mb": 213.34375,
+      "additional_peak_rss_mb": 12.53125,
+      "geojson_bytes": 41904,
+      "features": 2,
+      "segments": 2497,
+      "changed_pixels_vs_input_mask": 2142,
+      "minimum_class_iou_vs_input_mask": 0.988668253537177,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9981753477057757,
+        "2": 0.988668253537177
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 1
+    },
+    {
+      "method": "coverage_2px",
+      "image": "tiger_36",
+      "shape_yx": [
+        1126,
+        1195
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.033448166999733075,
+      "rss_after_import_mb": 200.625,
+      "peak_rss_mb": 213.421875,
+      "additional_peak_rss_mb": 12.796875,
+      "geojson_bytes": 41904,
+      "features": 2,
+      "segments": 2497,
+      "changed_pixels_vs_input_mask": 2142,
+      "minimum_class_iou_vs_input_mask": 0.988668253537177,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9981753477057757,
+        "2": 0.988668253537177
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 2
+    },
+    {
+      "method": "coverage_2px",
+      "image": "tiger_36",
+      "shape_yx": [
+        1126,
+        1195
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.033519542004796676,
+      "rss_after_import_mb": 199.5625,
+      "peak_rss_mb": 212.390625,
+      "additional_peak_rss_mb": 12.828125,
+      "geojson_bytes": 41904,
+      "features": 2,
+      "segments": 2497,
+      "changed_pixels_vs_input_mask": 2142,
+      "minimum_class_iou_vs_input_mask": 0.988668253537177,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9981753477057757,
+        "2": 0.988668253537177
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 3
+    },
+    {
+      "method": "bora_complete",
+      "image": "tiger_36",
+      "shape_yx": [
+        1126,
+        1195
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.48380279199773213,
+      "rss_after_import_mb": 200.046875,
+      "peak_rss_mb": 270.234375,
+      "additional_peak_rss_mb": 70.1875,
+      "geojson_bytes": 105065,
+      "features": 2,
+      "segments": 1220,
+      "changed_pixels_vs_input_mask": 4333,
+      "minimum_class_iou_vs_input_mask": 0.9771564860209355,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9962678853819625,
+        "2": 0.9771564860209355
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 1
+    },
+    {
+      "method": "bora_complete",
+      "image": "tiger_36",
+      "shape_yx": [
+        1126,
+        1195
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.48649258299701614,
+      "rss_after_import_mb": 201.453125,
+      "peak_rss_mb": 255.515625,
+      "additional_peak_rss_mb": 54.0625,
+      "geojson_bytes": 105064,
+      "features": 2,
+      "segments": 1220,
+      "changed_pixels_vs_input_mask": 4333,
+      "minimum_class_iou_vs_input_mask": 0.9771564860209355,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9962678853819625,
+        "2": 0.9771564860209355
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 2
+    },
+    {
+      "method": "bora_complete",
+      "image": "tiger_36",
+      "shape_yx": [
+        1126,
+        1195
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "wall_seconds": 0.48010187500040047,
+      "rss_after_import_mb": 199.859375,
+      "peak_rss_mb": 269.875,
+      "additional_peak_rss_mb": 70.015625,
+      "geojson_bytes": 105065,
+      "features": 2,
+      "segments": 1220,
+      "changed_pixels_vs_input_mask": 4333,
+      "minimum_class_iou_vs_input_mask": 0.9771564860209355,
+      "per_class_iou_vs_input_mask": {
+        "1": 0.9962678853819625,
+        "2": 0.9771564860209355
+      },
+      "all_classes_preserved": true,
+      "all_geometries_valid": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "repeat": 3
+    }
+  ]
+}

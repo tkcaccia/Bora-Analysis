@@ -1,0 +1,535 @@
+{
+  "scope": "4 ROI cases with cached Virchow2 features and a pretrained Neighbor context model; no new encoder inference",
+  "timing_contract": "Fresh process per case/repeat; load_case and model refit timed separately; run stage timers from Bora report; imports excluded; peak RSS includes imports",
+  "memory_contract": "Peak RSS is the whole process high-water mark; stage-end resident values are observations, not stage-specific peaks",
+  "hardware": "macOS-14.5-arm64-arm-64bit",
+  "repeats_per_case": 3,
+  "summary": {
+    "input_load_seconds": {
+      "median": 0.08844750000207569,
+      "maximum": 0.19405041700520087
+    },
+    "model_load_refit_seconds": {
+      "median": 0.018872020998969674,
+      "maximum": 0.04157879099511774
+    },
+    "rgb_conversion_seconds": {
+      "median": 0.23806262500147568,
+      "maximum": 0.2833238750026794
+    },
+    "appearance_refinement_seconds": {
+      "median": 0.10125904150118004,
+      "maximum": 0.11063254100008635
+    },
+    "group_pooling_context_seconds": {
+      "median": 0.11383997949815239,
+      "maximum": 0.12412887500249781
+    },
+    "fastpls_predict_seconds": {
+      "median": 8.962500214693137e-05,
+      "maximum": 0.0003035829940927215
+    },
+    "geojson_mask_export_seconds": {
+      "median": 0.9791741870030819,
+      "maximum": 1.6178945409992593
+    },
+    "other_run_seconds": {
+      "median": 0.1251445634989068,
+      "maximum": 0.14447487598954467
+    },
+    "run_wall_seconds": {
+      "median": 1.5510715210002672,
+      "maximum": 2.239328708004905
+    },
+    "total_wall_seconds": {
+      "median": 1.665771374500764,
+      "maximum": 2.3544234160071937
+    },
+    "peak_rss_total_mb": {
+      "median": 491.046875,
+      "maximum": 570.171875
+    }
+  },
+  "records": [
+    {
+      "case": "tiger_22.uncached-rgb",
+      "shape_yx": [
+        1096,
+        1163
+      ],
+      "working_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "input_load_seconds": 0.08741829099744791,
+      "model_load_refit_seconds": 0.022981791000347584,
+      "rgb_conversion_seconds": 0.2195117079972988,
+      "appearance_refinement_seconds": 0.08672400000068592,
+      "group_pooling_context_seconds": 0.10105266699974891,
+      "fastpls_predict_seconds": 7.212499622255564e-05,
+      "geojson_mask_export_seconds": 0.6238862910031457,
+      "other_run_seconds": 0.1126031670064549,
+      "run_wall_seconds": 1.1452047499988112,
+      "total_wall_seconds": 1.2556048319966067,
+      "rss_after_import_mb": 183.84375,
+      "rss_after_case_load_mb": 227.984375,
+      "rss_after_model_load_mb": 279.3125,
+      "rss_after_run_mb": 444.953125,
+      "peak_rss_after_case_load_mb": 231.578125,
+      "peak_rss_after_model_load_mb": 279.453125,
+      "peak_rss_total_mb": 494.84375,
+      "model_classes": 2,
+      "group_count": 2,
+      "source_version": "0.2.1",
+      "source_commit": "bfae24aba03b18f77133a7b9d695ad49f8edf22a",
+      "rgb_cache_supplied": false,
+      "gpu_used": false,
+      "virchow2_inference_included": false,
+      "repeat": 1
+    },
+    {
+      "case": "tiger_22.uncached-rgb",
+      "shape_yx": [
+        1096,
+        1163
+      ],
+      "working_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "input_load_seconds": 0.07869912499882048,
+      "model_load_refit_seconds": 0.01644250000390457,
+      "rgb_conversion_seconds": 0.21262866599863628,
+      "appearance_refinement_seconds": 0.08592620799754513,
+      "group_pooling_context_seconds": 0.09771504200034542,
+      "fastpls_predict_seconds": 0.0003035829940927215,
+      "geojson_mask_export_seconds": 0.6071461669998826,
+      "other_run_seconds": 0.10285666801064508,
+      "run_wall_seconds": 1.1081410420010798,
+      "total_wall_seconds": 1.2032826670038048,
+      "rss_after_import_mb": 195.453125,
+      "rss_after_case_load_mb": 252.484375,
+      "rss_after_model_load_mb": 303.703125,
+      "rss_after_run_mb": 501.421875,
+      "peak_rss_after_case_load_mb": 252.484375,
+      "peak_rss_after_model_load_mb": 303.703125,
+      "peak_rss_total_mb": 530.296875,
+      "model_classes": 2,
+      "group_count": 2,
+      "source_version": "0.2.1",
+      "source_commit": "bfae24aba03b18f77133a7b9d695ad49f8edf22a",
+      "rgb_cache_supplied": false,
+      "gpu_used": false,
+      "virchow2_inference_included": false,
+      "repeat": 2
+    },
+    {
+      "case": "tiger_22.uncached-rgb",
+      "shape_yx": [
+        1096,
+        1163
+      ],
+      "working_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "input_load_seconds": 0.07949341600033222,
+      "model_load_refit_seconds": 0.016506958003446925,
+      "rgb_conversion_seconds": 0.2106504999974277,
+      "appearance_refinement_seconds": 0.08575745799316792,
+      "group_pooling_context_seconds": 0.09191287500289036,
+      "fastpls_predict_seconds": 6.354200013447553e-05,
+      "geojson_mask_export_seconds": 0.6044696659955662,
+      "other_run_seconds": 0.1029142510087695,
+      "run_wall_seconds": 1.097081125000841,
+      "total_wall_seconds": 1.1930814990046201,
+      "rss_after_import_mb": 194.921875,
+      "rss_after_case_load_mb": 245.515625,
+      "rss_after_model_load_mb": 297.0,
+      "rss_after_run_mb": 521.125,
+      "peak_rss_after_case_load_mb": 245.515625,
+      "peak_rss_after_model_load_mb": 297.0,
+      "peak_rss_total_mb": 521.125,
+      "model_classes": 2,
+      "group_count": 2,
+      "source_version": "0.2.1",
+      "source_commit": "bfae24aba03b18f77133a7b9d695ad49f8edf22a",
+      "rgb_cache_supplied": false,
+      "gpu_used": false,
+      "virchow2_inference_included": false,
+      "repeat": 3
+    },
+    {
+      "case": "tiger_24.uncached-rgb",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "working_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "input_load_seconds": 0.09019691700086696,
+      "model_load_refit_seconds": 0.019352499999513384,
+      "rgb_conversion_seconds": 0.2538308750008582,
+      "appearance_refinement_seconds": 0.10170916700008092,
+      "group_pooling_context_seconds": 0.1198677080028574,
+      "fastpls_predict_seconds": 0.0001084160030586645,
+      "geojson_mask_export_seconds": 1.6178945409992593,
+      "other_run_seconds": 0.14447487598954467,
+      "run_wall_seconds": 2.239328708004905,
+      "total_wall_seconds": 2.3488781250052853,
+      "rss_after_import_mb": 194.921875,
+      "rss_after_case_load_mb": 264.890625,
+      "rss_after_model_load_mb": 315.875,
+      "rss_after_run_mb": 351.125,
+      "peak_rss_after_case_load_mb": 264.890625,
+      "peak_rss_after_model_load_mb": 315.875,
+      "peak_rss_total_mb": 570.171875,
+      "model_classes": 2,
+      "group_count": 2,
+      "source_version": "0.2.1",
+      "source_commit": "bfae24aba03b18f77133a7b9d695ad49f8edf22a",
+      "rgb_cache_supplied": false,
+      "gpu_used": false,
+      "virchow2_inference_included": false,
+      "repeat": 1
+    },
+    {
+      "case": "tiger_24.uncached-rgb",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "working_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "input_load_seconds": 0.08768662500369828,
+      "model_load_refit_seconds": 0.028440750000299886,
+      "rgb_conversion_seconds": 0.256634874996962,
+      "appearance_refinement_seconds": 0.10124375000305008,
+      "group_pooling_context_seconds": 0.12009875000512693,
+      "fastpls_predict_seconds": 0.00012970799434697255,
+      "geojson_mask_export_seconds": 1.6172245420020772,
+      "other_run_seconds": 0.14128287499625003,
+      "run_wall_seconds": 2.2382960410031956,
+      "total_wall_seconds": 2.3544234160071937,
+      "rss_after_import_mb": 194.4375,
+      "rss_after_case_load_mb": 265.21875,
+      "rss_after_model_load_mb": 316.046875,
+      "rss_after_run_mb": 491.015625,
+      "peak_rss_after_case_load_mb": 265.21875,
+      "peak_rss_after_model_load_mb": 316.046875,
+      "peak_rss_total_mb": 500.734375,
+      "model_classes": 2,
+      "group_count": 2,
+      "source_version": "0.2.1",
+      "source_commit": "bfae24aba03b18f77133a7b9d695ad49f8edf22a",
+      "rgb_cache_supplied": false,
+      "gpu_used": false,
+      "virchow2_inference_included": false,
+      "repeat": 2
+    },
+    {
+      "case": "tiger_24.uncached-rgb",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "working_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "input_load_seconds": 0.0896440829965286,
+      "model_load_refit_seconds": 0.016744791995733976,
+      "rgb_conversion_seconds": 0.2512762920014211,
+      "appearance_refinement_seconds": 0.10127433299930999,
+      "group_pooling_context_seconds": 0.11802637499931734,
+      "fastpls_predict_seconds": 5.787499685538933e-05,
+      "geojson_mask_export_seconds": 1.6056274170041434,
+      "other_run_seconds": 0.1432409999979427,
+      "run_wall_seconds": 2.221404165997228,
+      "total_wall_seconds": 2.3277930409894907,
+      "rss_after_import_mb": 194.921875,
+      "rss_after_case_load_mb": 261.0,
+      "rss_after_model_load_mb": 312.734375,
+      "rss_after_run_mb": 480.25,
+      "peak_rss_after_case_load_mb": 261.0,
+      "peak_rss_after_model_load_mb": 312.734375,
+      "peak_rss_total_mb": 539.9375,
+      "model_classes": 2,
+      "group_count": 2,
+      "source_version": "0.2.1",
+      "source_commit": "bfae24aba03b18f77133a7b9d695ad49f8edf22a",
+      "rgb_cache_supplied": false,
+      "gpu_used": false,
+      "virchow2_inference_included": false,
+      "repeat": 3
+    },
+    {
+      "case": "tiger_33.uncached-rgb",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "working_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "input_load_seconds": 0.09245695799472742,
+      "model_load_refit_seconds": 0.01649770900257863,
+      "rgb_conversion_seconds": 0.25986345799901756,
+      "appearance_refinement_seconds": 0.10197400000470225,
+      "group_pooling_context_seconds": 0.12150858299719403,
+      "fastpls_predict_seconds": 8.708300447324291e-05,
+      "geojson_mask_export_seconds": 1.346313584006566,
+      "other_run_seconds": 0.14043558298726566,
+      "run_wall_seconds": 1.9717890829997486,
+      "total_wall_seconds": 2.0807437499970547,
+      "rss_after_import_mb": 194.375,
+      "rss_after_case_load_mb": 264.046875,
+      "rss_after_model_load_mb": 315.0,
+      "rss_after_run_mb": 487.203125,
+      "peak_rss_after_case_load_mb": 264.046875,
+      "peak_rss_after_model_load_mb": 315.0,
+      "peak_rss_total_mb": 487.25,
+      "model_classes": 2,
+      "group_count": 2,
+      "source_version": "0.2.1",
+      "source_commit": "bfae24aba03b18f77133a7b9d695ad49f8edf22a",
+      "rgb_cache_supplied": false,
+      "gpu_used": false,
+      "virchow2_inference_included": false,
+      "repeat": 1
+    },
+    {
+      "case": "tiger_33.uncached-rgb",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "working_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "input_load_seconds": 0.09430979199532885,
+      "model_load_refit_seconds": 0.01690433400654001,
+      "rgb_conversion_seconds": 0.2833238750026794,
+      "appearance_refinement_seconds": 0.11063254100008635,
+      "group_pooling_context_seconds": 0.12412887500249781,
+      "fastpls_predict_seconds": 0.00013304099411470816,
+      "geojson_mask_export_seconds": 1.334462083003018,
+      "other_run_seconds": 0.13863933499669656,
+      "run_wall_seconds": 1.992963292002969,
+      "total_wall_seconds": 2.104177418004838,
+      "rss_after_import_mb": 195.109375,
+      "rss_after_case_load_mb": 259.9375,
+      "rss_after_model_load_mb": 310.703125,
+      "rss_after_run_mb": 322.0625,
+      "peak_rss_after_case_load_mb": 259.9375,
+      "peak_rss_after_model_load_mb": 310.703125,
+      "peak_rss_total_mb": 455.140625,
+      "model_classes": 2,
+      "group_count": 2,
+      "source_version": "0.2.1",
+      "source_commit": "bfae24aba03b18f77133a7b9d695ad49f8edf22a",
+      "rgb_cache_supplied": false,
+      "gpu_used": false,
+      "virchow2_inference_included": false,
+      "repeat": 2
+    },
+    {
+      "case": "tiger_33.uncached-rgb",
+      "shape_yx": [
+        1212,
+        1280
+      ],
+      "working_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "input_load_seconds": 0.08920837500045309,
+      "model_load_refit_seconds": 0.029791250002745073,
+      "rgb_conversion_seconds": 0.25507883300451795,
+      "appearance_refinement_seconds": 0.10379766600090079,
+      "group_pooling_context_seconds": 0.1208073330053594,
+      "fastpls_predict_seconds": 5.0374997954349965e-05,
+      "geojson_mask_export_seconds": 1.3380444170034025,
+      "other_run_seconds": 0.1376859599913587,
+      "run_wall_seconds": 1.9569382920017233,
+      "total_wall_seconds": 2.0759379170049215,
+      "rss_after_import_mb": 194.875,
+      "rss_after_case_load_mb": 265.203125,
+      "rss_after_model_load_mb": 315.984375,
+      "rss_after_run_mb": 470.078125,
+      "peak_rss_after_case_load_mb": 265.203125,
+      "peak_rss_after_model_load_mb": 315.984375,
+      "peak_rss_total_mb": 470.171875,
+      "model_classes": 2,
+      "group_count": 2,
+      "source_version": "0.2.1",
+      "source_commit": "bfae24aba03b18f77133a7b9d695ad49f8edf22a",
+      "rgb_cache_supplied": false,
+      "gpu_used": false,
+      "virchow2_inference_included": false,
+      "repeat": 3
+    },
+    {
+      "case": "tiger_36.uncached-rgb",
+      "shape_yx": [
+        1126,
+        1195
+      ],
+      "working_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "input_load_seconds": 0.19405041700520087,
+      "model_load_refit_seconds": 0.04157879099511774,
+      "rgb_conversion_seconds": 0.22484895800153026,
+      "appearance_refinement_seconds": 0.10820458399393829,
+      "group_pooling_context_seconds": 0.10892758399859304,
+      "fastpls_predict_seconds": 0.00017108300380641595,
+      "geojson_mask_export_seconds": 0.4729655420014751,
+      "other_run_seconds": 0.10236354100197786,
+      "run_wall_seconds": 1.0185585409999476,
+      "total_wall_seconds": 1.2541877490002662,
+      "rss_after_import_mb": 195.171875,
+      "rss_after_case_load_mb": 184.234375,
+      "rss_after_model_load_mb": 234.546875,
+      "rss_after_run_mb": 357.296875,
+      "peak_rss_after_case_load_mb": 250.75,
+      "peak_rss_after_model_load_mb": 250.75,
+      "peak_rss_total_mb": 409.515625,
+      "model_classes": 2,
+      "group_count": 2,
+      "source_version": "0.2.1",
+      "source_commit": "bfae24aba03b18f77133a7b9d695ad49f8edf22a",
+      "rgb_cache_supplied": false,
+      "gpu_used": false,
+      "virchow2_inference_included": false,
+      "repeat": 1
+    },
+    {
+      "case": "tiger_36.uncached-rgb",
+      "shape_yx": [
+        1126,
+        1195
+      ],
+      "working_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "input_load_seconds": 0.08003433299745666,
+      "model_load_refit_seconds": 0.018391541998425964,
+      "rgb_conversion_seconds": 0.21927083400078118,
+      "appearance_refinement_seconds": 0.0914455829988583,
+      "group_pooling_context_seconds": 0.10965358399698744,
+      "fastpls_predict_seconds": 9.216699982061982e-05,
+      "geojson_mask_export_seconds": 0.47956958299619146,
+      "other_run_seconds": 0.10246791601093719,
+      "run_wall_seconds": 1.0035820830016746,
+      "total_wall_seconds": 1.1020079579975572,
+      "rss_after_import_mb": 195.28125,
+      "rss_after_case_load_mb": 254.15625,
+      "rss_after_model_load_mb": 304.9375,
+      "rss_after_run_mb": 431.375,
+      "peak_rss_after_case_load_mb": 254.15625,
+      "peak_rss_after_model_load_mb": 304.9375,
+      "peak_rss_total_mb": 455.46875,
+      "model_classes": 2,
+      "group_count": 2,
+      "source_version": "0.2.1",
+      "source_commit": "bfae24aba03b18f77133a7b9d695ad49f8edf22a",
+      "rgb_cache_supplied": false,
+      "gpu_used": false,
+      "virchow2_inference_included": false,
+      "repeat": 2
+    },
+    {
+      "case": "tiger_36.uncached-rgb",
+      "shape_yx": [
+        1126,
+        1195
+      ],
+      "working_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "input_load_seconds": 0.0816325420018984,
+      "model_load_refit_seconds": 0.024948042002506554,
+      "rgb_conversion_seconds": 0.22329924999939976,
+      "appearance_refinement_seconds": 0.08939895799994702,
+      "group_pooling_context_seconds": 0.10115879200020572,
+      "fastpls_predict_seconds": 5.0417002057656646e-05,
+      "geojson_mask_export_seconds": 0.476030042002094,
+      "other_run_seconds": 0.10416983300092397,
+      "run_wall_seconds": 0.9956459579989314,
+      "total_wall_seconds": 1.1022265420033364,
+      "rss_after_import_mb": 194.25,
+      "rss_after_case_load_mb": 249.90625,
+      "rss_after_model_load_mb": 300.640625,
+      "rss_after_run_mb": 420.421875,
+      "peak_rss_after_case_load_mb": 249.90625,
+      "peak_rss_after_model_load_mb": 300.640625,
+      "peak_rss_total_mb": 462.96875,
+      "model_classes": 2,
+      "group_count": 2,
+      "source_version": "0.2.1",
+      "source_commit": "bfae24aba03b18f77133a7b9d695ad49f8edf22a",
+      "rgb_cache_supplied": false,
+      "gpu_used": false,
+      "virchow2_inference_included": false,
+      "repeat": 3
+    }
+  ]
+}

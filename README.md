@@ -50,6 +50,10 @@ coordinates and checksums used for the reported 967 training groups.
 The [manuscript reanalysis note](docs/CMPB_REANALYSIS.md) provides the
 descriptive cohort, boundary and vector-fidelity evidence
 with commands and limitations.
+The [pipeline resource pilot](docs/PIPELINE_RESOURCE_BENCHMARK.md) reports
+stage times and whole-process peak memory on four TIGER regions with cached
+Virchow2 features. The [GeoJSON resource pilot](docs/GEOJSON_RESOURCE_BENCHMARK.md)
+compares three exporters on identical predicted masks.
 
 ## Repository organization
 
