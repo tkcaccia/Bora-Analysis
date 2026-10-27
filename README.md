@@ -23,9 +23,9 @@ The original split labels are preserved (78 test, 38 validation). These are
 **exploratory benchmark results**, not independent final validation. The coarse input is derived from expert annotations;
 this experiment does not establish annotation-free segmentation.
 
-The [classifier comparison](https://tkcaccia.github.io/Bora-Analysis/comparison/)
-shows named methods on the same images. The current Bora application uses
-Neighbor context.
+The benchmark and Bora application use Neighbor context as the sole tissue
+classifier. Upstream clustering or tile prediction supplies anonymous groups;
+Neighbor context assigns tissue identities after refinement.
 
 The [full-slide Visium HD colon viewer](https://tkcaccia.github.io/Bora-Analysis/visium-hd-colon/)
 shows Bora on a 75,250 × 48,740-pixel H&E image with a supplied partial
@@ -48,7 +48,7 @@ The [manuscript model data guide](docs/MANUSCRIPT_MODEL_DATA.md) lists the
 exact 349 annotated source fields, provider download routes, native crop
 coordinates and checksums used for the reported 967 training groups.
 The [manuscript reanalysis note](docs/CMPB_REANALYSIS.md) provides the
-descriptive cohort, classifier-control, boundary and vector-fidelity evidence
+descriptive cohort, boundary and vector-fidelity evidence
 with commands and limitations.
 
 ## Repository organization

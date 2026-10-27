@@ -1,5 +1,5 @@
 'use strict';
-let data, shown = [], idx = 0, model, box, drag, token = 0;
+let data, shown = [], idx = 0, box, drag, token = 0;
 const el = id => document.getElementById(id);
 const ns = 'http://www.w3.org/2000/svg';
 const pc = x => x == null ? 'n/a' : (100 * x).toFixed(1) + '%';
@@ -15,25 +15,23 @@ function fail(error) {
 }
 async function init() {
   data = await json('data.json');
-  const archive = data.page_kind === 'comparison';
-  document.body.classList.add(archive ? 'archive' : 'selected');
-  document.title = archive ? 'Bora · classifier comparison' : 'Bora · Neighbor context benchmark';
-  el('title').textContent = archive ? 'Classifier comparison' : 'Neighbor context';
-  el('mask-title').textContent = archive ? 'Final classified masks, side by side' : 'Final classified tissue mask · Neighbor context';
-  el('intro').textContent = archive
-    ? 'Compare tissue identification methods on the same images and fixed segmentation geometry. The main Bora workflow uses Neighbor context.'
-    : 'A complete visual record of Bora refinement and tissue-group identification on 116 calibrated histopathology images.';
-  const chosen = data.models.find(m => m.id === 'neighbor-context');
+  if (data.models.length !== 1 || data.models[0].id !== 'neighbor-context' ||
+      data.cases.some(c => c.models.length !== 1 || c.models[0].id !== 'neighbor-context')) {
+    throw new Error('Expected only the Neighbor context tissue classifier');
+  }
+  document.body.classList.add('selected');
+  document.title = 'Bora · Neighbor context benchmark';
+  el('title').textContent = 'Neighbor context';
+  el('mask-title').textContent = 'Final classified tissue mask · Neighbor context';
+  el('intro').textContent = 'A complete visual record of Bora refinement and tissue-group identification on 116 calibrated histopathology images.';
+  const chosen = data.models[0];
   el('metrics').innerHTML = `<div class="metric"><small>Mean final GeoJSON IoU</small><strong>${chosen.mean_final_geojson_iou.toFixed(3)}</strong><small>Mean across all ${data.cohort_cases} images</small></div><div class="metric"><small>Whole-group accuracy</small><strong>${pc(chosen.top1)}</strong><small>Balanced accuracy ${pc(chosen.balanced_accuracy)}</small></div><div class="metric"><small>Mean cached deployment</small><strong>${chosen.mean_cached_deployment_seconds.toFixed(2)} s</strong><small>Includes recorded cleanup and fitting; encoder excluded</small></div>`;
   el('scope').textContent = `${data.cohort_cases} multiclass images: BCSS ${data.dataset_counts.bcss}, TIGER ${data.dataset_counts.tiger}, GCSS ${data.dataset_counts.gcss}, IGNITE ${data.dataset_counts.ignite}. Original split labels are retained (${data.split_counts.test} test, ${data.split_counts.validation} validation). This exploratory benchmark is not an independent final validation. PUMA is excluded from evaluation.`;
   el('status').textContent = `Loaded ${data.cohort_cases} images. Choose a dataset or image below.`;
-  el('score-label').textContent = archive ? 'Aggregate classifier scores' : 'Aggregate scores for Neighbor context';
+  el('score-label').textContent = 'Aggregate scores for Neighbor context';
   el('score').innerHTML = '<tr><th>Classifier</th><th>Final IoU</th><th>Group accuracy</th><th>Balanced accuracy</th><th>Cached s/image</th></tr>' + data.models.map(m => `<tr><td>${esc(m.name)}</td><td>${m.mean_final_geojson_iou.toFixed(3)}</td><td>${pc(m.top1)}</td><td>${pc(m.balanced_accuracy)}</td><td>${m.mean_cached_deployment_seconds.toFixed(3)}</td></tr>`).join('');
   el('mechanisms').innerHTML = '<tr><th>Classifier</th><th>Mechanism</th></tr>' + data.mechanisms.map(m => `<tr><td>${esc(m.name)}</td><td>${esc(m.description)}</td></tr>`).join('');
   el('dataset').innerHTML = '<option value="">All datasets</option>' + [...new Set(data.cases.map(c => c.dataset))].sort().map(s => `<option value="${esc(s)}">${esc(s.toUpperCase())}</option>`).join('');
-  model = data.models[0].id;
-  el('method').innerHTML = data.models.map(m => `<option value="${esc(m.id)}">${esc(m.name)}</option>`).join('');
-  el('method').onchange = () => { model = el('method').value; draw().catch(fail); };
   el('dataset').onchange = () => filter();
   el('case').onchange = () => select(+el('case').value);
   el('prev').onclick = () => select((idx - 1 + shown.length) % shown.length);
@@ -67,16 +65,12 @@ function select(i) {
   el('info').textContent = `${i + 1}/${shown.length} · original split: ${c.split} · ${c.native_shape_yx[1]} × ${c.native_shape_yx[0]} native pixels · x/y: ${c.native_mpp_xy.join(' × ')} µm/px`;
   const panels = [['Original H&E', 'original'], ['Expert tissue annotation', 'expert'], ['Input tiles: anonymous expert-derived groups', 'tiles'], ['Fixed Virchow2 RGB conversion', 'converted'], ['Bora-AF anonymous tissue groups', 'bora']];
   el('context').innerHTML = panels.map(([label, file]) => `<figure><figcaption>${label}</figcaption><a target="_blank" rel="noopener" href="${c.asset}/${file}.jpg"><img loading="lazy" src="${c.asset}/${file}.jpg" alt="${esc(c.case + ': ' + label)}"></a>${file === 'expert' ? expertKey(c) : ''}</figure>`).join('');
-  el('methods').innerHTML = c.models.map(m => `<figure data-model="${esc(m.id)}"><figcaption>${esc(m.name)}</figcaption><p><small>Final IoU ${m.iou.toFixed(3)} · raw IoU ${m.raw_iou.toFixed(3)}<br>Group accuracy ${pc(m.group_top1)} · ${m.seconds.toFixed(3)} cached s/image<br>Boundary segments ${m.boundary_segments_before.toLocaleString()} → ${m.boundary_segments_after.toLocaleString()}<br>Filled ${m.cleanup.filled_regions} small regions and ${m.cleanup.filled_holes} enclosed holes</small></p><a target="_blank" rel="noopener" href="${m.preview}"><img loading="lazy" src="${m.preview}" alt="${esc(c.case + ': ' + m.name + ' final classified mask')}"></a><button type="button" data-select="${esc(m.id)}">Inspect GeoJSON</button></figure>`).join('');
-  document.querySelectorAll('[data-select]').forEach(b => b.onclick = () => { model = b.dataset.select; draw().catch(fail); });
+  el('methods').innerHTML = c.models.map(m => `<figure><figcaption>${esc(m.name)}</figcaption><p><small>Final IoU ${m.iou.toFixed(3)} · raw IoU ${m.raw_iou.toFixed(3)}<br>Group accuracy ${pc(m.group_top1)} · ${m.seconds.toFixed(3)} cached s/image<br>Boundary segments ${m.boundary_segments_before.toLocaleString()} → ${m.boundary_segments_after.toLocaleString()}<br>Filled ${m.cleanup.filled_regions} small regions and ${m.cleanup.filled_holes} enclosed holes</small></p><a target="_blank" rel="noopener" href="${m.preview}"><img loading="lazy" src="${m.preview}" alt="${esc(c.case + ': ' + m.name + ' final classified mask')}"></a></figure>`).join('');
   el('legend').innerHTML = data.roles.map((r, j) => `<span><i class="swatch" style="background:rgb(${data.colours[j + 1]})"></i>${esc(r.replaceAll('_', ' '))}</span>`).join(' ');
   draw().catch(fail);
 }
 async function draw() {
-  const c = shown[idx], m = c.models.find(m => m.id === model) || c.models[0];
-  model = m.id;
-  el('method').value = model;
-  document.querySelectorAll('[data-model]').forEach(f => f.classList.toggle('active', f.dataset.model === model));
+  const c = shown[idx], m = c.models[0];
   el('download').href = m.vector;
   el('download').download = `${c.case}-${m.id}.geojson`;
   el('vector-info').textContent = 'Loading native ROI polygons…';

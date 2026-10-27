@@ -45,11 +45,12 @@ def verify(site):
         if hashlib.sha256(p.read_bytes()).hexdigest() != digest:
             raise ValueError('Copied scientific asset differs: ' + rel)
     vector_paths = set()
-    for directory, expected in [(site, 1), (site / 'comparison', 5)]:
+    for directory, expected in [(site, 1)]:
         data = json.loads((directory / 'data.json').read_text())
         count = data['cohort_cases']
         assert len(data['cases']) == count == provenance['case_count']
         assert len(data['models']) == expected
+        assert data['models'][0]['id'] == 'neighbor-context'
         assert Counter(c['dataset'] for c in data['cases']) == data['dataset_counts']
         assert Counter(c['split'] for c in data['cases']) == data['split_counts']
         assert data['evaluation_policy']['development_evaluation'] is True
@@ -58,6 +59,7 @@ def verify(site):
         assert len({c['case'] for c in data['cases']}) == count
         for c in data['cases']:
             assert len(c['models']) == expected
+            assert c['models'][0]['id'] == 'neighbor-context'
             assert len(c['native_mpp_xy']) == 2 and all(math.isfinite(m) and m > 0 for m in c['native_mpp_xy'])
             assert len(c['native_shape_yx']) == 2 and min(c['native_shape_yx']) >= 224
             assert c['expert_legend']

@@ -73,44 +73,15 @@
       ]
     }
   },
-  "comparators": {
-    "neighbor": {
-      "groups": 398,
-      "group_correct": 350,
-      "group_accuracy": 0.8793969849246231,
-      "balanced_group_accuracy": 0.6834934433537169,
-      "mean_final_iou": 0.5866799179633934,
-      "mean_cached_deployment_seconds": 2.071327129242428,
-      "mean_warm_head_ms": 0.2834850295992761
-    },
-    "mean": {
-      "groups": 398,
-      "group_correct": 340,
-      "group_accuracy": 0.8542713567839196,
-      "balanced_group_accuracy": 0.6445898156857612,
-      "mean_final_iou": 0.560569610220587,
-      "mean_cached_deployment_seconds": 2.030600192498994,
-      "mean_warm_head_ms": 0.20266418216814255,
-      "neighbor_minus_control_iou": 0.02611030774280645,
-      "source_group_bootstrap_95": [
-        -0.0002408421749615215,
-        0.05792003898142765
-      ]
-    },
-    "spatial": {
-      "groups": 398,
-      "group_correct": 341,
-      "group_accuracy": 0.8567839195979899,
-      "balanced_group_accuracy": 0.651793991818676,
-      "mean_final_iou": 0.5596274465620695,
-      "mean_cached_deployment_seconds": 2.1528090300953724,
-      "mean_warm_head_ms": 0.20681748744742623,
-      "neighbor_minus_control_iou": 0.02705247140132392,
-      "source_group_bootstrap_95": [
-        -0.0008660481145387766,
-        0.0593382033500521
-      ]
-    }
+  "classifier": {
+    "name": "Neighbor context",
+    "groups": 398,
+    "group_correct": 350,
+    "group_accuracy": 0.8793969849246231,
+    "balanced_group_accuracy": 0.6834934433537169,
+    "mean_final_iou": 0.5866799179633934,
+    "mean_cached_deployment_seconds": 2.071327129242428,
+    "mean_warm_head_ms": 0.2834850295992761
   },
   "per_role": {
     "1": {

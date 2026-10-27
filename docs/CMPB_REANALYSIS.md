@@ -7,10 +7,9 @@ retained to describe the source registry; neither split is an untouched test.
 
 The repository records sanitized numerical inputs and outputs in
 [`benchmark/cmpb_evidence`](../benchmark/cmpb_evidence). `registry_groups.json`
-contains case IDs, dataset/split and known source-group identifiers. The three
-method summaries contain per-case IoU, group correctness and cached timings.
-`classifier_controls.json` gives matched whole-group controls trained from the
-same frozen descriptor matrix. `boundaries.json` gives native-resolution
+contains case IDs, dataset/split and known source-group identifiers.
+`neighbor_summary.json` contains per-case IoU, whole-group correctness and cached timings
+for Bora's Neighbor context classifier. `boundaries.json` gives native-resolution
 tumor–stroma interface scores for each image. `vector_fidelity.json` gives
 polygon-fitting diagnostics relative to the **preceding predicted geometry**.
 `duplicate_screen.json` records a cross-split exact-image and global
@@ -26,17 +25,14 @@ python benchmark/analyze_cmpb_cohort.py \
   --viewer site/data.json \
   --registry benchmark/cmpb_evidence/registry_groups.json \
   --neighbor benchmark/cmpb_evidence/neighbor_summary.json \
-  --mean benchmark/cmpb_evidence/mean_summary.json \
-  --spatial benchmark/cmpb_evidence/spatial_summary.json \
   --output /tmp/bora-reanalysis.json
 ```
 
-The scripts `benchmark/analyze_cmpb_classifier_controls.py`,
-`benchmark/analyze_cmpb_boundaries.py` and
+The scripts `benchmark/analyze_cmpb_boundaries.py` and
 `benchmark/analyze_cmpb_vector_fidelity.py` reproduce their respective JSONs
 from the frozen group descriptors, provider masks and saved output geometry.
 Those larger inputs are retained outside Git because of provider and checkpoint
-terms. The first script uses only the CPU; the other two read saved outputs and
+terms. These scripts read saved outputs and
 perform no encoder or segmentation inference. The public summaries make the
 reported arithmetic independently inspectable even without those inputs.
 `benchmark/analyze_cmpb_duplicates.py` verifies original-image SHA256s against

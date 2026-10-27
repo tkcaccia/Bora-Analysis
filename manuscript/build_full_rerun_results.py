@@ -42,7 +42,7 @@ def build(root: Path, run: Path) -> str:
     iou = overall["macro_iou"]
     lines.append(f"| Equal-image overall | 60 | {f(iou['mean'])} | {f(iou['oracle_expert_decoded_coarse_mean'])} | {f(iou['paired_mean_difference'])} | {f(overall['whole_group_accuracy'])} |")
     lines += ["", f"Source-group bootstrap 95% interval for the equal-image mean macro intersection-over-union: {f(summary['source_group_bootstrap']['mean_macro_iou_95pct'][0])}–{f(summary['source_group_bootstrap']['mean_macro_iou_95pct'][1])} ({summary['source_group_bootstrap']['source_groups']} known source groups).",
-        "", "The expert-decoded coarse score uses the hidden annotation-origin class key and is a privileged geometry diagnostic. It cannot be used as a deployable classifier comparison.",
+        "", "The expert-decoded coarse score uses the hidden annotation-origin class key and is a privileged geometry diagnostic. It does not estimate deployable tissue identification accuracy.",
         "", "## Tissue identity and interface outcomes", "",
         f"Whole-group accuracy was {f(overall['whole_group_accuracy'])} across {overall['whole_group_count']} eligible groups; class-balanced accuracy was {f(overall['whole_group_balanced_accuracy'])}. The mean tumor–stroma boundary F1 at 8 µm was {f(overall['tumor_stroma_boundary_f1_at_8um']['mean'])} across {overall['tumor_stroma_boundary_f1_at_8um']['images']} images with a defined expert interface.",
         "", "| Input tiles in refined group | Eligible groups | Whole-group accuracy |",
