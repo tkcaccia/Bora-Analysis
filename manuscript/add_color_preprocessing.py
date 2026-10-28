@@ -15,7 +15,7 @@ METHODS = (
  'Bright, weakly colored glass connected to the slide edge was identified on a thumbnail and separated from stained tissue by a safety margin. '
  'Median red, green and blue (RGB) intensities were sampled in a 24 × 24 grid, and a robust plane was fitted separately to each channel in slide coordinates. '
  'At least 48 glass cells, coverage of 75% of each slide axis and eight cells in each spatial quadrant were required. '
- 'A channel was corrected only when its predicted spatial variation reached 1.5%, its median absolute prediction error on held-out spatial quadrants was reduced by at least 25% relative to a constant model, and its required gains remained within ±5%. '
+ 'A channel was corrected only when spatial variation of at least 1.5% was predicted, its median absolute prediction error on held-out spatial quadrants was reduced by at least 25% relative to a constant model, and gains within ±5% were sufficient. '
  'Slides with more than 5% clipped glass pixels were excluded from correction.'
 )
 METHODS_2 = (
@@ -71,7 +71,7 @@ def apply(source,output,qc_path,rerun_path=None):
     availability=find(doc,'The authors provide Bora 0.2.1')
     availability.text=availability.text.replace(
         'The authors provide Bora 0.2.1 on GitHub main at commit bfae24aba03b18f77133a7b9d695ad49f8edf22a (https://github.com/tkcaccia/Bora).',
-        'The earlier quantitative benchmark used Bora 0.2.1 at commit bfae24aba03b18f77133a7b9d695ad49f8edf22a (https://github.com/tkcaccia/Bora). The current whole-slide implementation is frozen as Bora 0.2.2 at commit def3b76f88c7666417c8e7938f9a86ed72568e08.')
+        'The earlier quantitative benchmark used Bora 0.2.1 at commit bfae24aba03b18f77133a7b9d695ad49f8edf22a (https://github.com/tkcaccia/Bora). The current release provides the frozen whole-slide implementation as Bora 0.2.2 at commit def3b76f88c7666417c8e7938f9a86ed72568e08.')
     availability.add_run(' The optional color-drift stage is provided in Bora-Analysis at pipeline/wsi_color_preprocess.py, with commands and validation criteria in docs/WSI_COLOR_PREPROCESSING.md. Corrected images require new Virchow2 features and downstream fits; original-image caches are not reused.')
     data=find(doc,'The team staged four further Visium HD')
     data.add_run(' The color-preprocessing pilot used the Visium HD CytAssist 11-mm human pancreas release (https://www.10xgenomics.com/datasets/visium-hd-cytassist-11mm-human-pancreas).')
