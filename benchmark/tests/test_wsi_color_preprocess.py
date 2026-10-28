@@ -76,3 +76,19 @@ def test_encoder_rejects_original_cache_and_changed_spacing(tmp_path):
     for bad in ([.5,.5],[],[float('nan'),.28]):
         value['mpp_xy']=bad;receipt.write_text(json.dumps(value))
         with pytest.raises(ValueError):encoder.checked_preprocessing(receipt,image,'a'*64,plan)
+
+
+def test_encoder_binds_global_resampling_to_corrected_native_image(tmp_path):
+    spec=importlib.util.spec_from_file_location('color_encoder',module.with_name('encode_virchow2.py'))
+    encoder=importlib.util.module_from_spec(spec);spec.loader.exec_module(encoder)
+    native=tmp_path/'native-corrected.tif';resampled=tmp_path/'resampled.tif'
+    color=tmp_path/'COLOR_COMPLETE.json';cal=tmp_path/'CALIBRATED_COMPLETE.json'
+    color.write_text(json.dumps(dict(format=wsi.VERSION,status='COMPLETE',output_image=str(native),
+        output_sha256='a'*64,source_sha256='b'*64,shape_yx=[2000,3000],mpp_xy=[.25,.25],decision='APPLY',correction_written=True)))
+    value=dict(status='COMPLETE',source_image=str(native),source_sha256='a'*64,
+        target_image=str(resampled),target_sha256='c'*64,target_shape_yxc=[1000,1500,3],effective_mpp_xy=[.5,.5])
+    cal.write_text(json.dumps(value));plan=dict(image_size_wh=[1500,1000],source_mpp_xy=[.5,.5])
+    proof=encoder.checked_preprocessing(color,resampled,'c'*64,plan,cal)
+    assert proof['corrected_native_image_sha256']=='a'*64 and proof['output_image_sha256']=='c'*64
+    value['source_sha256']='b'*64;cal.write_text(json.dumps(value))
+    with pytest.raises(ValueError):encoder.checked_preprocessing(color,resampled,'c'*64,plan,cal)

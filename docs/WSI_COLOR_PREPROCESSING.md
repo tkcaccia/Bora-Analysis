@@ -59,6 +59,14 @@ The encoder checks the receipt, original planned-image path, output checksum,
 dimensions and physical spacing before loading the model, and records the
 preprocessing identity alongside the new features.
 
+If the corrected native WSI is resampled globally before tiling, make the
+new tile plan on that calibrated image and also pass `--calibration-receipt`.
+Its completed receipt must bind `source_image`/`source_sha256` to the corrected
+native WSI and record `target_image`, `target_sha256`, `target_shape_yxc` and
+`effective_mpp_xy`. The encoder verifies the complete original → corrected →
+calibrated image chain. Passing original-image features or a calibration made
+from the original image is rejected.
+
 For an applied correction, new feature outputs and all subsequent KODAMA
 and Bora fits are required. Never combine corrected H&E with Virchow2
 features extracted from the original image, reuse a completed queue, or

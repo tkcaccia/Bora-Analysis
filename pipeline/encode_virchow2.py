@@ -94,25 +94,40 @@ def load_model(model_dir: Path):
 
 
 def checked_preprocessing(receipt_path: Path | None, source_image: Path,
-                          image_sha256: str, plan: dict) -> dict | None:
+                          image_sha256: str, plan: dict,
+                          calibration_receipt: Path | None = None) -> dict | None:
     """Bind optional color preprocessing before admitting any model inference."""
     if receipt_path is None:
         return None
     receipt = json.loads(receipt_path.read_text())
-    spacing = receipt.get("mpp_xy")
-    output = receipt.get("output_image")
+    spacing = receipt.get("mpp_xy"); output = receipt.get("output_image")
+    shape_yx = receipt.get("shape_yx"); output_sha = receipt.get("output_sha256")
+    calibration_sha = None
+    if calibration_receipt is not None:
+        cal = json.loads(calibration_receipt.read_text())
+        if (cal.get("status") != "COMPLETE" or
+                cal.get("source_sha256") != output_sha or
+                not isinstance(output, str) or
+                Path(cal.get("source_image", "")).resolve() != Path(output).resolve()):
+            raise ValueError("Calibration is not derived from the corrected WSI")
+        spacing = cal.get("effective_mpp_xy"); output = cal.get("target_image")
+        shape_yx = cal.get("target_shape_yxc", [])[:2]
+        output_sha = cal.get("target_sha256")
+        calibration_sha = digest(calibration_receipt)
     if (receipt.get("format") != "bora-glass-plane-v1" or
             receipt.get("status") != "COMPLETE" or
-            receipt.get("output_sha256") != image_sha256 or
+            output_sha != image_sha256 or
             not isinstance(output, str) or Path(output).resolve() != source_image.resolve() or
-            receipt.get("shape_yx") != list(reversed(plan["image_size_wh"])) or
+            shape_yx != list(reversed(plan["image_size_wh"])) or
             not isinstance(spacing, list) or len(spacing) != 2 or
             any(not math.isfinite(a) or abs(a-b) > 1e-12
                 for a,b in zip(spacing, plan["source_mpp_xy"]))):
         raise ValueError("Color-preprocessing receipt differs from the planned image")
     return dict(receipt_sha256=digest(receipt_path),
                 original_image_sha256=receipt["source_sha256"],
-                output_image_sha256=receipt["output_sha256"],
+                corrected_native_image_sha256=receipt["output_sha256"],
+                output_image_sha256=output_sha,
+                calibration_receipt_sha256=calibration_sha,
                 decision=receipt["decision"],
                 correction_written=receipt["correction_written"])
 
@@ -166,7 +181,8 @@ def run(args: argparse.Namespace) -> dict:
     if [image.width, image.height] != meta["image_size_wh"]:
         raise ValueError("Source image dimensions changed from the wsiTools plan")
     preprocessing = checked_preprocessing(getattr(args, "preprocessing_receipt", None),
-                                          source_image, image_hash, meta)
+                                          source_image, image_hash, meta,
+                                          getattr(args, "calibration_receipt", None))
     torch.set_num_threads(args.threads)
     torch.cuda.set_per_process_memory_fraction(0.6)
     model = load_model(args.model_dir)
@@ -252,6 +268,8 @@ def main() -> None:
     p.add_argument("--image-sha256", required=True)
     p.add_argument("--preprocessing-receipt", type=Path,
                    help="Bind optional completed WSI color preprocessing to this new feature run")
+    p.add_argument("--calibration-receipt", type=Path,
+                   help="Bind a subsequent global resampling of the corrected native WSI")
     p.add_argument("--chunk-size", type=int, default=32)
     p.add_argument("--threads", type=int, default=4)
     p.add_argument("--max-tiles", type=int, default=25000)
