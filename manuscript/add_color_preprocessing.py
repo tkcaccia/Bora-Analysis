@@ -6,14 +6,17 @@ output paths are supplied by the caller; no private benchmark path is stored.
 """
 from pathlib import Path
 import argparse,json,hashlib,re
+from copy import deepcopy
 from docx import Document
 from docx.oxml import OxmlElement
 from docx.text.paragraph import Paragraph
+from docx.table import _Row
+from docx.shared import RGBColor
 
 METHODS = (
- 'An optional color-drift correction was evaluated on the pancreas WSI, with the above-bar colorectal image and brain WSI used as technical controls. '
+ 'An optional color-drift correction was evaluated on the pancreas WSI, with the cropped colorectal image and brain WSI used as technical controls. '
  'Bright, weakly colored glass connected to the slide edge was identified on a thumbnail and separated from stained tissue by a safety margin. '
- 'Median red, green and blue (RGB) intensities were sampled in a 24 × 24 grid, and a robust plane was fitted separately to each channel in slide coordinates. '
+ 'Median red, green and blue (RGB) intensities were sampled in a 24 × 24 grid, and a robust linear surface was fitted separately to each channel in slide coordinates. '
  'At least 48 glass cells, coverage of 75% of each slide axis and eight cells in each spatial quadrant were required. '
  'A channel was corrected only when spatial variation of at least 1.5% was predicted, its median absolute prediction error on held-out spatial quadrants was reduced by at least 25% relative to a constant model, and gains within ±5% were sufficient. '
  'Slides with more than 5% clipped glass pixels were excluded from correction.'
@@ -28,7 +31,7 @@ METHODS_2 = (
 )
 RERUN_METHODS = (
  'For the corrected pancreas reanalysis, the same 6,925 tissue-containing tile locations were retained at approximately 0.5 µm/pixel. '
- 'Virchow2 tile and spatial features were extracted anew. Tile vectors were standardized, 50 principal components were computed, and KODAMA was fitted with 100 repetitions and four CPU cores. '
+ 'Virchow2 tile and spatial features were extracted anew. Tile vectors were standardized, 50 principal components were computed, and KODAMA was fitted with 100 repetitions and four processor cores. '
  'A graph with 15 neighbors was partitioned into four anonymous groups by Leiden clustering at resolution 0.095. '
  'Multiscale spatial tokens and group-response models were regenerated from the corrected image. '
  'All group responses were refined jointly over the complete slide using the frozen Bora 0.2.2 implementation with the same H&E-guided refinement settings. '
@@ -54,6 +57,13 @@ def apply(source,output,qc_path,rerun_path=None):
         rerun=json.loads(rerun_path.read_text())
         assert rerun['status']=='COMPLETE' and rerun['all_features_regenerated_from_corrected_WSI'] and rerun['all_nine_crops_verified']
     doc=Document(source)
+    doc.styles['Heading 3'].font.color.rgb=RGBColor(0,0,0)
+    background=find(doc,'Background and Objective')
+    background.text=background.text.replace('calibrated H&E images',
+        'calibrated hematoxylin and eosin (H&E) images')
+    abstract_methods=find(doc,'Methods Borders')
+    abstract_methods.text=abstract_methods.text.replace(
+        'hematoxylin and eosin (H&E) image','H&E image')
     if any(p.text=='Optional color drift correction' for p in doc.paragraphs):raise ValueError('Color preprocessing already described')
     anchor=find(doc,'Virchow2 evidence conversion')
     insert_before(anchor,'Optional color drift correction','Heading 2');insert_before(anchor,METHODS);insert_before(anchor,METHODS_2)
@@ -74,7 +84,17 @@ def apply(source,output,qc_path,rerun_path=None):
         'The authors provide the archived Bora 0.2.1 source at commit bfae24aba03b18f77133a7b9d695ad49f8edf22a (https://github.com/tkcaccia/Bora). The current release provides the frozen whole-slide implementation as Bora 0.2.2 at commit def3b76f88c7666417c8e7938f9a86ed72568e08.')
     availability.add_run(' The optional color-drift stage is provided in Bora-Analysis at pipeline/wsi_color_preprocess.py, with commands and validation criteria in docs/WSI_COLOR_PREPROCESSING.md. Corrected images require new Virchow2 features and downstream fits; original-image caches are not reused.')
     data=find(doc,'The team staged four further Visium HD')
-    data.add_run(' The color-preprocessing pilot used the Visium HD CytAssist 11-mm human pancreas release (https://www.10xgenomics.com/datasets/visium-hd-cytassist-11mm-human-pancreas).')
+    data.add_run(' The color-preprocessing sources are the 10x pancreas release (https://www.10xgenomics.com/datasets/visium-hd-cytassist-11mm-human-pancreas) and brain cancer release (https://www.10xgenomics.com/datasets/visium-hd-cytassist-6p5mm-human-brain-cancer).')
+    table=doc.tables[0]
+    extra=[('10x pancreas WSI','Pancreas (healthy tissue)','One WSI from one donor in the sample release','One color-correction and whole-slide reanalysis case'),
+           ('10x brain WSI','Brain (anaplastic oligodendroglioma, grade III)','One WSI from one donor in the sample release','One color-correction technical control')]
+    templates=list(table.rows[-2:])
+    for template,values in zip(templates,extra):
+        element=deepcopy(template._tr);table._tbl.append(element);row=_Row(element,table)
+        for cell,text in zip(row.cells,values):
+            props=deepcopy(cell.paragraphs[0].runs[0]._r.rPr)
+            cell.text=text
+            if props is not None:cell.paragraphs[0].runs[0]._r.insert(0,props)
     refs=[p for p in doc.paragraphs if re.match(r'^\[\d+\]',p.text)];assert len(refs)==22
     e=OxmlElement('w:p');refs[-1]._p.addnext(e);ref=Paragraph(e,refs[-1]._parent);ref.style=refs[-1].style;ref.add_run('[23] Peng T, Thorn K, Schroeder T, et al. A BaSiC tool for background and shading correction of optical microscopy images. Nat Commun. 2017;8:14836. https://doi.org/10.1038/ncomms14836')
     # Preserve the existing first mention of TIFF in the classifier description;
