@@ -1,0 +1,35 @@
+name: WSI color preprocessing controls
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - pipeline/wsi_color_preprocess.py
+      - pipeline/encode_virchow2.py
+      - benchmark/tests/test_wsi_color_preprocess.py
+      - .github/workflows/color-preprocessing.yml
+  pull_request:
+    paths:
+      - pipeline/wsi_color_preprocess.py
+      - pipeline/encode_virchow2.py
+      - benchmark/tests/test_wsi_color_preprocess.py
+      - .github/workflows/color-preprocessing.yml
+
+permissions:
+  contents: read
+
+jobs:
+  technical-controls:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      OPENBLAS_NUM_THREADS: '4'
+      OMP_NUM_THREADS: '4'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install numpy scipy scikit-learn Pillow pytest
+      - run: python -m pytest -q benchmark/tests/test_wsi_color_preprocess.py
+      - run: python tools/check_portability.py

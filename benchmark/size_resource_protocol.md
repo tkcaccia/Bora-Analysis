@@ -36,7 +36,7 @@ from crops. Report methods' supported class sets and abstentions explicitly.
 
 ## Measurement
 
-Run methods sequentially on the same Chiamaka hardware after the existing GPU
+Run methods sequentially on the same configured GPU workstation after the existing GPU
 queue has fully completed and cleanup/admission are verified. UCT HPC GPU is
 paused. Fix software revisions, model hashes, image hashes, physical spacing,
 output format and thread counts. Use a fresh process and empty output path for

@@ -33,6 +33,13 @@ are checked.
 
 ## Physical calibration and tile handling
 
+Before calibration, an optional glass-supported color-drift check can be
+run with `wsi_color_preprocess.py`. It writes a separate corrected WSI only
+when fixed spatial-validation and gain gates pass. See
+[the preprocessing guide](../docs/WSI_COLOR_PREPROCESSING.md) for commands,
+lossless export checks and cache invalidation. New Virchow2 features must be
+generated for a corrected image; completed frozen queues are not modified.
+
 Virchow2 expects 224 × 224 RGB pixels representing approximately 112 × 112
 µm, or 0.5 µm per output pixel. The wsiTools additions staged under
 `../integrations/wsiTools/` provide:

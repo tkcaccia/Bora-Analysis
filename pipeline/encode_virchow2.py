@@ -93,6 +93,30 @@ def load_model(model_dir: Path):
     return model.to("cuda").eval().requires_grad_(False)
 
 
+def checked_preprocessing(receipt_path: Path | None, source_image: Path,
+                          image_sha256: str, plan: dict) -> dict | None:
+    """Bind optional color preprocessing before admitting any model inference."""
+    if receipt_path is None:
+        return None
+    receipt = json.loads(receipt_path.read_text())
+    spacing = receipt.get("mpp_xy")
+    output = receipt.get("output_image")
+    if (receipt.get("format") != "bora-glass-plane-v1" or
+            receipt.get("status") != "COMPLETE" or
+            receipt.get("output_sha256") != image_sha256 or
+            not isinstance(output, str) or Path(output).resolve() != source_image.resolve() or
+            receipt.get("shape_yx") != list(reversed(plan["image_size_wh"])) or
+            not isinstance(spacing, list) or len(spacing) != 2 or
+            any(not math.isfinite(a) or abs(a-b) > 1e-12
+                for a,b in zip(spacing, plan["source_mpp_xy"]))):
+        raise ValueError("Color-preprocessing receipt differs from the planned image")
+    return dict(receipt_sha256=digest(receipt_path),
+                original_image_sha256=receipt["source_sha256"],
+                output_image_sha256=receipt["output_sha256"],
+                decision=receipt["decision"],
+                correction_written=receipt["correction_written"])
+
+
 def crop(image, r: dict):
     import numpy as np
     from PIL import Image
@@ -141,6 +165,8 @@ def run(args: argparse.Namespace) -> dict:
         raise ValueError("Expected scanner RGB or RGBA uint8 image")
     if [image.width, image.height] != meta["image_size_wh"]:
         raise ValueError("Source image dimensions changed from the wsiTools plan")
+    preprocessing = checked_preprocessing(getattr(args, "preprocessing_receipt", None),
+                                          source_image, image_hash, meta)
     torch.set_num_threads(args.threads)
     torch.cuda.set_per_process_memory_fraction(0.6)
     model = load_model(args.model_dir)
@@ -149,7 +175,7 @@ def run(args: argparse.Namespace) -> dict:
     args.output.mkdir(parents=True)
     identity = dict(format="bora-virchow2-wsi-features-v1",
                     source_image=str(source_image), staged_image=str(image_path),
-                    image_sha256=image_hash,
+                    image_sha256=image_hash, color_preprocessing=preprocessing,
                     plan_sha256=digest(args.plan / "PLAN_COMPLETE.json"),
                     tile_table_sha256=digest(args.plan / meta["tile_table"]),
                     encoder_revision=REVISION, encoder_sha256=WEIGHTS_SHA256,
@@ -171,7 +197,9 @@ def run(args: argparse.Namespace) -> dict:
         for r in selected:
             pixels = crop(image, r)
             stain_fraction = float(np.mean(np.any(pixels < 250, axis=2)))
-            if stain_fraction < .002:
+            # Retain minimally stained tiles; only an entirely near-white tile
+            # is skipped here. Slide-level tissue support is handled upstream.
+            if stain_fraction == 0:
                 continue
             tensor = torch.from_numpy(pixels.transpose(2, 0, 1).copy())[None].to("cuda").float() / 255
             with torch.inference_mode(), torch.autocast("cuda", dtype=torch.float16):
@@ -222,6 +250,8 @@ def main() -> None:
     p.add_argument("--model-dir", type=Path, required=True)
     p.add_argument("--output", type=Path, required=True)
     p.add_argument("--image-sha256", required=True)
+    p.add_argument("--preprocessing-receipt", type=Path,
+                   help="Bind optional completed WSI color preprocessing to this new feature run")
     p.add_argument("--chunk-size", type=int, default=32)
     p.add_argument("--threads", type=int, default=4)
     p.add_argument("--max-tiles", type=int, default=25000)
