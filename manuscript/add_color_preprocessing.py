@@ -11,7 +11,7 @@ from docx.oxml import OxmlElement
 from docx.text.paragraph import Paragraph
 
 METHODS = (
- 'An optional color-drift correction was evaluated on the pancreas WSI, with colorectal and brain WSIs used as technical controls. '
+ 'An optional color-drift correction was evaluated on the pancreas WSI, with the above-bar colorectal image and brain WSI used as technical controls. '
  'Bright, weakly colored glass connected to the slide edge was identified on a thumbnail and separated from stained tissue by a safety margin. '
  'Median red, green and blue (RGB) intensities were sampled in a 24 × 24 grid, and a robust plane was fitted separately to each channel in slide coordinates. '
  'At least 48 glass cells, coverage of 75% of each slide axis and eight cells in each spatial quadrant were required. '
@@ -23,7 +23,7 @@ METHODS_2 = (
  'One smooth correction field was applied across the slide; tissue histograms were not used for fitting. '
  'The original image was retained, and a separate losslessly compressed image was exported with unchanged dimensions, pixel spacing and annotation coordinates. '
  'The export was checked against an independent implementation at 15 fixed windows and 12 native-resolution tissue tiles. '
- 'Glass lightness was measured on a perceptual 0–100 scale. '
+ 'Glass lightness was computed from decoded RGB values on the L* scale (0–100), assuming standard RGB (sRGB) encoding. '
  'Dark-field calibration was unavailable, so the fitted plane was treated as an empirical correction of decoded RGB values.'
 )
 RERUN_METHODS = (
@@ -56,7 +56,7 @@ def apply(source,output,qc_path,rerun_path=None):
     doc=Document(source)
     if any(p.text=='Optional color drift correction' for p in doc.paragraphs):raise ValueError('Color preprocessing already described')
     anchor=find(doc,'Virchow2 evidence conversion')
-    insert_before(anchor,'Optional color drift correction','Heading 3');insert_before(anchor,METHODS);insert_before(anchor,METHODS_2)
+    insert_before(anchor,'Optional color drift correction','Heading 2');insert_before(anchor,METHODS);insert_before(anchor,METHODS_2)
     if rerun:insert_before(anchor,RERUN_METHODS)
     anchor=find(doc,'Discussion')
     insert_before(anchor,'Color drift correction','Heading 2')
@@ -71,7 +71,7 @@ def apply(source,output,qc_path,rerun_path=None):
     availability=find(doc,'The authors provide Bora 0.2.1')
     availability.text=availability.text.replace(
         'The authors provide Bora 0.2.1 on GitHub main at commit bfae24aba03b18f77133a7b9d695ad49f8edf22a (https://github.com/tkcaccia/Bora).',
-        'The earlier quantitative benchmark used Bora 0.2.1 at commit bfae24aba03b18f77133a7b9d695ad49f8edf22a (https://github.com/tkcaccia/Bora). The current release provides the frozen whole-slide implementation as Bora 0.2.2 at commit def3b76f88c7666417c8e7938f9a86ed72568e08.')
+        'The authors provide the archived Bora 0.2.1 source at commit bfae24aba03b18f77133a7b9d695ad49f8edf22a (https://github.com/tkcaccia/Bora). The current release provides the frozen whole-slide implementation as Bora 0.2.2 at commit def3b76f88c7666417c8e7938f9a86ed72568e08.')
     availability.add_run(' The optional color-drift stage is provided in Bora-Analysis at pipeline/wsi_color_preprocess.py, with commands and validation criteria in docs/WSI_COLOR_PREPROCESSING.md. Corrected images require new Virchow2 features and downstream fits; original-image caches are not reused.')
     data=find(doc,'The team staged four further Visium HD')
     data.add_run(' The color-preprocessing pilot used the Visium HD CytAssist 11-mm human pancreas release (https://www.10xgenomics.com/datasets/visium-hd-cytassist-11mm-human-pancreas).')
