@@ -1,0 +1,1321 @@
+{
+  "whole_slide_receipt_sha256": "beda4ba67ec62c28df7e0205fe53df5ca3bb45da2fae3e60cafda5058a0f0de2",
+  "whole_slide_tissues": [
+    "colon",
+    "pancreas",
+    "lymph",
+    "tonsil"
+  ],
+  "whole_slide_assets": {
+    "colon/BORA_FULL_SLIDE.wsi.geojson": {
+      "source_sha256": "05e2efb6b175c8f3c759a41ed95cc31f0280e949e440580bc9c91e01e9c83a26",
+      "display_sha256": "05e2efb6b175c8f3c759a41ed95cc31f0280e949e440580bc9c91e01e9c83a26",
+      "reencoded_for_display": false
+    },
+    "colon/field-01/coarse-over-he.jpg": {
+      "source_sha256": "ff3f57b2883c17318f3ec582949aafbc33e64cc8f831c96abe36d95c782acf7a",
+      "display_sha256": "a708b5cce1ef69781eda78b167a4a84cf04d4dd3083ea6648e76cfd69fb20eaf",
+      "reencoded_for_display": true
+    },
+    "colon/field-01/expert-over-he.jpg": {
+      "source_sha256": "30f86f45e84fd11fe2a16242ef46f6eb078bce291bec0746d332750c20a29695",
+      "display_sha256": "42ebb13ec0586c19414cb7c5af94ba54af65a898fb9cb737c90c7da0860b8e68",
+      "reencoded_for_display": true
+    },
+    "colon/field-01/global-rgb.jpg": {
+      "source_sha256": "0e1cdf71fdea539ef4eea1d03d6504cdffebac35e07a138c56f4ed87ccbcc09d",
+      "display_sha256": "2e6ee69d395026a9d7146846fc38b46678b536ef54dacbe5a71f78d0d3d5202d",
+      "reencoded_for_display": true
+    },
+    "colon/field-01/group-01.jpg": {
+      "source_sha256": "0b22be6ba4a7c0bb66f0b4db03a71aa1f7aa06f3e7a43e6e34759e9dca364aa4",
+      "display_sha256": "9967764dc8669418ea1e928a772c866fc29ae03c7380d2ee1e798822ab26e052",
+      "reencoded_for_display": true
+    },
+    "colon/field-01/he.jpg": {
+      "source_sha256": "d4381cbc69a45ea625bdd4332e138ceb27348949870025b92f427eba1c35f659",
+      "display_sha256": "49b05c65fe04e10d9ec3b09027cf5992cfdfac87dc688eafca675b4a6f6b6c14",
+      "reencoded_for_display": true
+    },
+    "colon/field-01/output-mask-with-geojson.jpg": {
+      "source_sha256": "8432e4c759dc708019a7695f776055eed24767fad1085bde086e65824689f9a3",
+      "display_sha256": "ad8abd47c64838afc6511294515eb6f040192b39a9e7c42d2a92d5fec7fd69cb",
+      "reencoded_for_display": true
+    },
+    "colon/field-03/coarse-over-he.jpg": {
+      "source_sha256": "1b2f0037c62cf3b507b51d78c4a47645a8411511cc362b3f9a623365af177aae",
+      "display_sha256": "78dc8646019a616bae3e220a56d153eb4eb9bab9902497060f0848d1dbd7619f",
+      "reencoded_for_display": true
+    },
+    "colon/field-03/expert-over-he.jpg": {
+      "source_sha256": "985cedc0c1791ed8d8ac2d53d2494fc0b7a903ca450812c966dd67fbeeaf568c",
+      "display_sha256": "62a369b6712bb0e5101af7538b04f7c2ed515a84d748d940daf7c3cc6e58780a",
+      "reencoded_for_display": true
+    },
+    "colon/field-03/global-rgb.jpg": {
+      "source_sha256": "13b581126870177f5eb1c0f9a04dc3f452b197e58ede5da088a99a637eaf3afb",
+      "display_sha256": "69385088ce22b25e509e5b5e4047550b0592c20d16500a4ca76c94dfa07c2187",
+      "reencoded_for_display": true
+    },
+    "colon/field-03/group-01.jpg": {
+      "source_sha256": "89eaa7ef23c1e917f490c84d036bf5c84243dd3a1761158c980b133213402f40",
+      "display_sha256": "10db6c136d311449da0c6724038730a89d0e84b584b3a279429b4d760067d0f0",
+      "reencoded_for_display": true
+    },
+    "colon/field-03/he.jpg": {
+      "source_sha256": "ae55aea3fda144615c06be4beb878e6d85a2af872df00fcf551a9059384a849f",
+      "display_sha256": "4716c650c49d350d99936f281e567b636017e155c7de98821e956ab89730c46d",
+      "reencoded_for_display": true
+    },
+    "colon/field-03/output-mask-with-geojson.jpg": {
+      "source_sha256": "d9909d3ae38bdb6c4976f75c26109d1ca514fed9b43ce01bd8c9a576d0b08723",
+      "display_sha256": "98c9842a81c479b2e35785d9d3d82ad54295dc3919ca7ca0b7b6e1f8ff3e28a0",
+      "reencoded_for_display": true
+    },
+    "colon/field-04/coarse-over-he.jpg": {
+      "source_sha256": "5c6de9f18fcfc0a29de1bfc36d26670340762c7b023d8813085cab549c388756",
+      "display_sha256": "2c2cbc4e029e3b9db0cea9ffbdadaa79e69642130c511a1faaeb9495256d7bde",
+      "reencoded_for_display": true
+    },
+    "colon/field-04/expert-over-he.jpg": {
+      "source_sha256": "554f1fa04faa21f7f2ffbd7cc871ff2e65b78f623595ea98b5b543f0671646c5",
+      "display_sha256": "ef5dbb3a19fac51d8110d8614efbd113b48a2ecab7a48345fcf843133296f3d6",
+      "reencoded_for_display": true
+    },
+    "colon/field-04/global-rgb.jpg": {
+      "source_sha256": "fcf5bd126d4fe27450fbba40c16e01c57fe719bf2259dd18cef9202732e50d34",
+      "display_sha256": "ccf8ad214262979da7a5a353ab1367f28c41bd93c0e78741a4b241e9d8ce7624",
+      "reencoded_for_display": true
+    },
+    "colon/field-04/group-01.jpg": {
+      "source_sha256": "5868a73554773fd6986f08668b88dda7dcda23441aaa88ea7b1e716408388d9c",
+      "display_sha256": "84dfa7009646cf150e3c53d5ba0c2bbadbcfe4dda33f0687075d3d9ca949976b",
+      "reencoded_for_display": true
+    },
+    "colon/field-04/he.jpg": {
+      "source_sha256": "2218de5f0b7e674213c311ee763c53fbc68b5c8cb7c761b90b4b9fbf01d1c3e1",
+      "display_sha256": "6a58f1c31ee47057372e280c0a02c268722274334f9e2464d3fb7555921126aa",
+      "reencoded_for_display": true
+    },
+    "colon/field-04/output-mask-with-geojson.jpg": {
+      "source_sha256": "5a50ece96307b0b7bbf156157fb2c02cd74a40bc1283c065b1690197828c5e6a",
+      "display_sha256": "dc0752b397b6eec4ff74695dc2a685a704ec1a247bf79b1afcd77e63478e2780",
+      "reencoded_for_display": true
+    },
+    "colon/full-output-mask-with-geojson.jpg": {
+      "source_sha256": "09d79ea0dac8a84840a79c4a804fa6bc5c979e39a1d968d0b72750d4c00641a8",
+      "display_sha256": "59946329b3453017be4c3302545af2b3fc6facd867debc1254b1108568e69570",
+      "reencoded_for_display": true
+    },
+    "colon/global-rgb-overview.jpg": {
+      "source_sha256": "327f4e2e0fb732d4c26a80b63337d582f4a0ce45661c3a8f385c258a13a58c62",
+      "display_sha256": "4a4434cadffb931f16f7274216e75aa0ad065b35efd391af649ab92e6fdb5c57",
+      "reencoded_for_display": true
+    },
+    "colon/group-01.jpg": {
+      "source_sha256": "1aedddc12508fe2730e35bd99e71296b531127f19affc3f1503fa5f98cd7eed5",
+      "display_sha256": "55ffb9d5036bc4d0b3dfda198c62252d8419b1d295a9690bd43e56a454931673",
+      "reencoded_for_display": true
+    },
+    "colon/group-02.jpg": {
+      "source_sha256": "a26e88198de9ec051bb1cf672d7031761b709d7a58a2b1ebc057613f806b8a3e",
+      "display_sha256": "d2fca4a3929fac76441a09fde48d1e565cf7bb5db50c2f9bfefa66005a749ea0",
+      "reencoded_for_display": true
+    },
+    "colon/group-03.jpg": {
+      "source_sha256": "b6c9e175210d7f544472260ff9f0a3d5237bdafd0c41a8354c853f0968b3b1fb",
+      "display_sha256": "851a6842cf3ca14cf7a76bf545937c796c74c70e6045a0fbacb003a93d2c674c",
+      "reencoded_for_display": true
+    },
+    "colon/group-04.jpg": {
+      "source_sha256": "a36043378c1139701f7a0713857847d03da610bc7d12323a41017729be4cd438",
+      "display_sha256": "3152b8a74836be3ae26165fbcd50c5443cc9f91aed7fb83aeeb983c4ac66b833",
+      "reencoded_for_display": true
+    },
+    "colon/group-05.jpg": {
+      "source_sha256": "28f581109a3f45e96d24223e3080268bf2b8d5f4629c7214cf0ce60997abc164",
+      "display_sha256": "59c59b0f2fa6445dd814eb9ce77c22fdbb8c605568e335fac4a43c9426886891",
+      "reencoded_for_display": true
+    },
+    "colon/group-06.jpg": {
+      "source_sha256": "d40a8cdf33540c252c9d9106d0eadab92b598a989227c0ae291b2ce6349f1b9d",
+      "display_sha256": "a3623ba2a63b23a2aeca9297480fdab04140d9c4314b87afe5928b98d517da7d",
+      "reencoded_for_display": true
+    },
+    "colon/group-07.jpg": {
+      "source_sha256": "f092875bd2356929ac35702bdc053098e2fc8bbbb1042b8df9ef1c378155d600",
+      "display_sha256": "98ef18672b5044bbd735ef258741f7915ecb513b3ca8425e887942c90e013a14",
+      "reencoded_for_display": true
+    },
+    "colon/group-08.jpg": {
+      "source_sha256": "3157351f6b367b0b5f5fde239b07ae850dfc2a0c49d1bce282427eab5195bb15",
+      "display_sha256": "e96066788fbc70f75a80e476c3f43be4771851238b3a54885a8e60498b6c7c63",
+      "reencoded_for_display": true
+    },
+    "colon/group-09.jpg": {
+      "source_sha256": "90e2eded33cf72ad8ac875500c7f25bbadef32e0ba07c9fc13cfffd778f7e9e0",
+      "display_sha256": "01b13610847327066832d63780ff0c887a8c3737a40845daf57db15ba587491f",
+      "reencoded_for_display": true
+    },
+    "colon/group-10.jpg": {
+      "source_sha256": "4ab7cbc3fcd527c04de6038f236181f8eaa22773974a355c65cdcfe31a6de5a5",
+      "display_sha256": "1621bfb61c00f56686f9b1987ed5d99e9be46162daf0badf4b34bfa231c8bc72",
+      "reencoded_for_display": true
+    },
+    "colon/group-11.jpg": {
+      "source_sha256": "183da187e24dc0bb115e117ddd9a5953e6007f46bdec1b352df2434f1701bb95",
+      "display_sha256": "5bf1bdf83556bc527d655d19c0882f3fe88005666d7ec9e399edc87eabced52a",
+      "reencoded_for_display": true
+    },
+    "colon/group-12.jpg": {
+      "source_sha256": "a5864144fe77f260ed7c1a1d759a97c1feef53e15a562a9d4089c69c25804244",
+      "display_sha256": "a3e6c7896fa92f4c08947bc10d2962460c44a66a37c8bc2ac27e5d4e850a08cb",
+      "reencoded_for_display": true
+    },
+    "colon/group-13.jpg": {
+      "source_sha256": "bcd8a86fbbe92c0c3ba63cda09b3f41a29fefce50bb3de4368b8b9633314ca86",
+      "display_sha256": "87034aa9ff5b72d913f0f6b4f865a52b54b6223f9063607f2231f0607d93e64c",
+      "reencoded_for_display": true
+    },
+    "colon/group-14.jpg": {
+      "source_sha256": "0fb14f1b3e83548cd9a4005dc59fc3cf018e1a248671d5ff25b02819a677ad97",
+      "display_sha256": "9d0efec657015f632f91b949661f80a37001553260731010318b14b2656d805d",
+      "reencoded_for_display": true
+    },
+    "colon/group-15.jpg": {
+      "source_sha256": "04f36afa0f4d5d798b58f338104c2df03c13631db03914b092975e21eb380c97",
+      "display_sha256": "8c9c61d95c3f3aa757ed9a20bc18b03a8458a6f576221834a7eedb8b786d93fd",
+      "reencoded_for_display": true
+    },
+    "colon/group-16.jpg": {
+      "source_sha256": "2ebeb8bfcee4f7dd5492fdca56bc9ae1a18f0a118eda57c7d920a6ee31a6756b",
+      "display_sha256": "3db0bd15f885e47c11a3cf3aba0156b7dc023c81f82eef7e421a8092a28e3256",
+      "reencoded_for_display": true
+    },
+    "colon/he-overview.jpg": {
+      "source_sha256": "15df66059ada5b45293a0cd5a5394aff911aabbb211602af9ed38788f01d6827",
+      "display_sha256": "3a5abeb00e27fc7a437ed3006a33743b10e90d221ca6150143b1da65647c4c0c",
+      "reencoded_for_display": true
+    },
+    "colon/kodama-groups.png": {
+      "source_sha256": "8bac1984638de2de83e58370d5c98fe2d41e797187304b045a34cfc79909250b",
+      "display_sha256": "8bac1984638de2de83e58370d5c98fe2d41e797187304b045a34cfc79909250b",
+      "reencoded_for_display": false
+    },
+    "colon/large-01/coarse-over-he.jpg": {
+      "source_sha256": "dc95a6459394ec790fe90bc7be46682d650ae015c27160c7af5d42ad388642e7",
+      "display_sha256": "1a15f92fa46e7db00dceb089613a5d6012afe56c92807b5e2a0e695f953e34b6",
+      "reencoded_for_display": true
+    },
+    "colon/large-01/expert-over-he.jpg": {
+      "source_sha256": "1be922ed2880c1b7f22b607e518825947556cf375cf5f3e576b1f4c69f0f8148",
+      "display_sha256": "c091213e0e7a72292c395bfb0ab4be22b1251f20dc6c76c1c5dc28a4103c43e1",
+      "reencoded_for_display": true
+    },
+    "colon/large-01/global-rgb.jpg": {
+      "source_sha256": "0aeb72aaa73efb3557bc978039f6ad3a3e44abf18c6b6b2174b958c24860c3fe",
+      "display_sha256": "a31676616674b7f10258285ef31525f83136e0f578aded37b1b1285e64bb26cf",
+      "reencoded_for_display": true
+    },
+    "colon/large-01/group-01.jpg": {
+      "source_sha256": "b0d09a8b40540ef15b1d716da4cc05929c82388d032dbec385ba20a3976f6332",
+      "display_sha256": "763f8ca19e103c9b2adc132d7dc0c8654f504fc1a97448ab11ac9257cf63d624",
+      "reencoded_for_display": true
+    },
+    "colon/large-01/he.jpg": {
+      "source_sha256": "41de7f59485b74925c8190214fd57cefe1ec33cb2d7f672c979c144a95332a7a",
+      "display_sha256": "227ae12da8ccc75298b5b473f622af3fc317ad4d7c4f67aa23da746ffac176f5",
+      "reencoded_for_display": true
+    },
+    "colon/large-01/output-mask-with-geojson.jpg": {
+      "source_sha256": "b154c7ab129ba10611956515c7f09fa6fd40644af1df892f6a4219dd915d6925",
+      "display_sha256": "f79ca16b96c81528ca07c71ce3c541c631924a3c2fa7f97ee128817d8a92fc34",
+      "reencoded_for_display": true
+    },
+    "colon/large-03/coarse-over-he.jpg": {
+      "source_sha256": "419e317269e1c41ca32e93c17deb8e7829f3040ec75697d32de9066935c14202",
+      "display_sha256": "3582d43af73ed9fdbed3b72c994cb8ff4e298725a0eec598c0666961ae1017a2",
+      "reencoded_for_display": true
+    },
+    "colon/large-03/expert-over-he.jpg": {
+      "source_sha256": "ac12d1840ab7c3a74988795a730a3293d25ca87448ab2b54f512b2c2e8f1e221",
+      "display_sha256": "80755a8dc51fcea86593d8bb6f351bbc29ec72ed850ef19a4ee2f49e8915194d",
+      "reencoded_for_display": true
+    },
+    "colon/large-03/global-rgb.jpg": {
+      "source_sha256": "67f68275b5438b3a94a6d84fe269e444693ec16d5bcef24db646009df7dfe825",
+      "display_sha256": "118ee98092f19b9f58b79717923520ff15049f76a2ba4a10ae311acd89e1fa73",
+      "reencoded_for_display": true
+    },
+    "colon/large-03/group-01.jpg": {
+      "source_sha256": "9a848099ba7b589addd3aeac9b54a9d2f74993340890de35abb256d0ab8d1146",
+      "display_sha256": "2065cb2bc167345cbc0d3db580c970cc64f841260fb198c419fcec8ab5d367ce",
+      "reencoded_for_display": true
+    },
+    "colon/large-03/he.jpg": {
+      "source_sha256": "10faa506bfc257ebb3fb04b480fe0a2e70709c67be12fce5d761c22fe549959d",
+      "display_sha256": "20173e7dd831227740beb7d8d5eeb1467d6b2bd147bb9153258ca92f9cd6ac22",
+      "reencoded_for_display": true
+    },
+    "colon/large-03/output-mask-with-geojson.jpg": {
+      "source_sha256": "48a9c11450f27a63d74ccd124d7c9acd0ca7818aea57b31e7b1b3f41a76131f7",
+      "display_sha256": "e9ece6cb4e84a7bc60e915bc23f95a274edac2caf7db107a7351342334f360f9",
+      "reencoded_for_display": true
+    },
+    "colon/large-04/coarse-over-he.jpg": {
+      "source_sha256": "a4ea153d79d1af82edcb3943b0f80b7d1cdc281139fe39bd304526e7377e3a6a",
+      "display_sha256": "677366604f2247a80f14cdee9dc64388b8f60623378c301a0023e4602e4b920b",
+      "reencoded_for_display": true
+    },
+    "colon/large-04/expert-over-he.jpg": {
+      "source_sha256": "4ffc580795f42be112799a81be22d5b513c6180da9f31d5b58e7e6c3d91f2791",
+      "display_sha256": "83b48b667a1f6f7610859cfd040d66f9e72d69c8d47f4e6e4a8e1c4449d6fb7e",
+      "reencoded_for_display": true
+    },
+    "colon/large-04/global-rgb.jpg": {
+      "source_sha256": "af6d4fd6008c5b09b267b35dfd4a4139cba05e96abd717ebc20e88382605ce2d",
+      "display_sha256": "62ccc359f06e2c5b961f2f6a481cb5a7f0866d2324a244351fc11a61a41e6df7",
+      "reencoded_for_display": true
+    },
+    "colon/large-04/group-01.jpg": {
+      "source_sha256": "ed5ab9b7f8e86494aeada91c6cba6c822cb968e4bddb57389a7ae3aac49654aa",
+      "display_sha256": "b27bce2e5d971f5ee9c181f3f3a6229eac1d95d4d68dcb08351c174f33dd0446",
+      "reencoded_for_display": true
+    },
+    "colon/large-04/he.jpg": {
+      "source_sha256": "26444fa9f1ec43dd049e628d7cd0ad999f30d7d624ec08fe6131af7fde157946",
+      "display_sha256": "5966e5eaa728f2727adc40cbba15658278e95314eec88e7cd5e33e8fa5ceb6dd",
+      "reencoded_for_display": true
+    },
+    "colon/large-04/output-mask-with-geojson.jpg": {
+      "source_sha256": "ba5be81435a598c1997a8cee0e3e07b0e1f6841305a472f0c12558747911b399",
+      "display_sha256": "28cc3ed8a6f2b29babd8b95fdfd8786d8d889004e81bb845549d09c49b20a766",
+      "reencoded_for_display": true
+    },
+    "colon/wide-03/coarse-over-he.jpg": {
+      "source_sha256": "3e6cb4dd3f958c589dd2e55b3e147cd0a003e019dd9917c033b6813fc2d06c2f",
+      "display_sha256": "e2a1420f2b4d29cbd8b45ef602e0528fcf47070d1d4175dd13266021b8d5c278",
+      "reencoded_for_display": true
+    },
+    "colon/wide-03/expert-over-he.jpg": {
+      "source_sha256": "a6a0d0fddfeb97740d2f8d99e211ac59fb95d4166ebd70dee0baeee5b259c0a2",
+      "display_sha256": "6b5179b0e56130980ed8928fb8fe0de04bf0adc4df1554b90fe72088be60f203",
+      "reencoded_for_display": true
+    },
+    "colon/wide-03/global-rgb.jpg": {
+      "source_sha256": "51058f77dda5dd47c7bb1d517d7f0fb5dae0a184ac0cedd7c82e3a7d9588f1cd",
+      "display_sha256": "6fff4a1d1887a5069f6c7db29cce0e7ca225f6e7ff1c815499af64eb33c1da8a",
+      "reencoded_for_display": true
+    },
+    "colon/wide-03/group-01.jpg": {
+      "source_sha256": "175c047f21dff3ace9f076ed368cfecc74510594f8e39c7c547f3f2175f5d54a",
+      "display_sha256": "aeb1b4cb28713d1f90b8584697dd9f56a28d856b5232934a5ac03b32c5e8397d",
+      "reencoded_for_display": true
+    },
+    "colon/wide-03/he.jpg": {
+      "source_sha256": "63dcfa7caf99eedb233060bfde0516707356cc02e9c563c43a30b698cb4e1646",
+      "display_sha256": "54fb5dc043c1aff9ed71ed5566af99833f23d8df61c5dd3c7f8efe45c77f3200",
+      "reencoded_for_display": true
+    },
+    "colon/wide-03/output-mask-with-geojson.jpg": {
+      "source_sha256": "e47c456ad6420380f36ac56399fa7985993391128963c14d613cf7c05b24af11",
+      "display_sha256": "35235b75c78033d30dc23f347462eb8dc02e1045e12a9bbfc5483ab97855c782",
+      "reencoded_for_display": true
+    },
+    "colon/wide-04/coarse-over-he.jpg": {
+      "source_sha256": "598537aaaade3e018fc334d11e0527ed00426b9b003cc1e719721cf747e1fc9f",
+      "display_sha256": "a8eede355a1172fc1424787d9b0c37cb08197ca73962e99e6bbef517583f8ecc",
+      "reencoded_for_display": true
+    },
+    "colon/wide-04/expert-over-he.jpg": {
+      "source_sha256": "023b3302ad1e2725fdcdb06346c0cbbe6e69f5f96c2b8a13f287b2f8b905c01a",
+      "display_sha256": "eaebffa6107fff14d2573671011ea5b2a0359e1b8c92763411ea7a30b011a602",
+      "reencoded_for_display": true
+    },
+    "colon/wide-04/global-rgb.jpg": {
+      "source_sha256": "007cdbaf28091b0471bb35f2bebed82936ab14b311b3e6c7d2ef558d0effce74",
+      "display_sha256": "7a93e1d63d02d4a02add5b80cb36603724a693f3d387bd342aa6311c318cea0a",
+      "reencoded_for_display": true
+    },
+    "colon/wide-04/group-01.jpg": {
+      "source_sha256": "1ea27dae4efc593a52c7a8cbb11b3cdd2b31986b24a77afb4e66bc1d0287c183",
+      "display_sha256": "74b468e6c30af981d0ea07696058c2a5e57764ac847c19e104198157769911a8",
+      "reencoded_for_display": true
+    },
+    "colon/wide-04/he.jpg": {
+      "source_sha256": "ca602b30b9378ea74efe44d05685cc256d9453efd24c739e828eb8c1c8c6bf92",
+      "display_sha256": "8d5c47828fb20169a4f730b7fe9689362d096540c6fe68131876caf0d7f81624",
+      "reencoded_for_display": true
+    },
+    "colon/wide-04/output-mask-with-geojson.jpg": {
+      "source_sha256": "4cf5cae83f62b1a67ebd884734ccc73e6450a703db9ecb530c8afa6ec5bc5b55",
+      "display_sha256": "000aa803214cfbe4114c55d4c013abc929d9f452d2aba1d6336572a6c809ae06",
+      "reencoded_for_display": true
+    },
+    "colon/wide-06/coarse-over-he.jpg": {
+      "source_sha256": "7c0170d324960158770b7441ac3e75592daefd07bf0c35d0395a1a8fc2543586",
+      "display_sha256": "061a4a8e10abfa2ad517083914b8be2b86b5033e83e06ab76eb972c4c7f14f07",
+      "reencoded_for_display": true
+    },
+    "colon/wide-06/expert-over-he.jpg": {
+      "source_sha256": "8206f35541134542c1537caff0441d6c7dba06896ff4aa2cbbb41e29df21acda",
+      "display_sha256": "3bc039acb9d1a9d6e5d5493d75323b31819da1e0d50e50ee784eb82cd95bd966",
+      "reencoded_for_display": true
+    },
+    "colon/wide-06/global-rgb.jpg": {
+      "source_sha256": "0eb9fa8ca76b5e12cc40eee24ca03418d12ded1627933c110cbe696da719768e",
+      "display_sha256": "ba7c6a2bc623beeb5614992ea3f8deadb21a6864187502126bf45087bc121ce1",
+      "reencoded_for_display": true
+    },
+    "colon/wide-06/group-01.jpg": {
+      "source_sha256": "24811ec50d7327bac120a7a1dbb4114bf311654e5dc761d292c3aa7a54e23988",
+      "display_sha256": "d80cc4047502d2e6808ebba79926732d825b99c176a96e5d2574d7cffe898116",
+      "reencoded_for_display": true
+    },
+    "colon/wide-06/he.jpg": {
+      "source_sha256": "04f708c2dccbc131ea5e27da8131acbef089b1eab9fb9c80a01e95c4f50bb2fe",
+      "display_sha256": "b63d08962d758a7d06043c779858fe2d4ec3463b354097b48e641d66fbaf0072",
+      "reencoded_for_display": true
+    },
+    "colon/wide-06/output-mask-with-geojson.jpg": {
+      "source_sha256": "b6cced2c502a8b95e105d281e25e1e4c28ed23bef6984a33050ecf8cfd082728",
+      "display_sha256": "412f9f9bf533bdd74cd8d12cd0c466c795befd5075a561e0e02f070c17cff952",
+      "reencoded_for_display": true
+    },
+    "pancreas/BORA_FULL_SLIDE.wsi.geojson": {
+      "source_sha256": "b300ae24af8aea2fb02d970e4a254ab51f0523823119d8700c2647c0ab3ab9c0",
+      "display_sha256": "b300ae24af8aea2fb02d970e4a254ab51f0523823119d8700c2647c0ab3ab9c0",
+      "reencoded_for_display": false
+    },
+    "pancreas/field-01/coarse-over-he.jpg": {
+      "source_sha256": "75fb00a931d312d079ab91fe9001cf7f1897774012a405795375a695d9ffcf55",
+      "display_sha256": "98fb29e955bb56b3e6a680f766d2794fa7105c0cef7dd3de47289988a8823663",
+      "reencoded_for_display": true
+    },
+    "pancreas/field-01/global-rgb.jpg": {
+      "source_sha256": "aa597f3eaacdffad7613ce71e6abbb4584f7cce22a6196dc13fc58d266110209",
+      "display_sha256": "5defc0a5514e2ba88f47596c9598652d418731da0fcfca9c6dfe5ec792bc48ed",
+      "reencoded_for_display": true
+    },
+    "pancreas/field-01/group-01.jpg": {
+      "source_sha256": "8cdd7557a0a2c79992597a2cdd0bb884fdd5512364c8450a4431f10ab53d48b9",
+      "display_sha256": "b6200782e55866b0da5e9b23569759fa47d2a3a4a4c64446df40b466bf19302e",
+      "reencoded_for_display": true
+    },
+    "pancreas/field-01/he-corrected.jpg": {
+      "source_sha256": "0d317baa21e52afb767f3cfb4d6036b738c4e0efffd2a31703e98a6c999b3309",
+      "display_sha256": "175c2d150e5092e7ce185cb4869e5ebb31d9332a94b6faa88e886fd6a3f8d445",
+      "reencoded_for_display": true
+    },
+    "pancreas/field-01/he.jpg": {
+      "source_sha256": "fd9980751f577ac57667272c654ddae34dc38cf2290a5c35cc0a9d5d60cb8db0",
+      "display_sha256": "79fa8bf5c001ece909092eb3b8a4fff2a8fbaa8772bfeb4e60209618eda6d0cf",
+      "reencoded_for_display": true
+    },
+    "pancreas/field-01/output-mask-with-geojson.jpg": {
+      "source_sha256": "212dc3c320c4bf32d0ba900e0d0b9b7dd53acc4f7583e5b53d205e1d4acfee09",
+      "display_sha256": "f580e98bd608334819d37b106cd01f823e0beae23df9e572484594e10247b265",
+      "reencoded_for_display": true
+    },
+    "pancreas/field-02/coarse-over-he.jpg": {
+      "source_sha256": "02d33e8ef1038ce90435d935d33149b1e96b293a1c21d07e98f4457d23b94bb0",
+      "display_sha256": "1c829bfcf90d353733d8159f1ed9e357c1a46634807ce71912d1d1b2c26404f4",
+      "reencoded_for_display": true
+    },
+    "pancreas/field-02/global-rgb.jpg": {
+      "source_sha256": "440544c669b15571c742690649db027377cd6e05dca2f14059f6e4e5f584cbfe",
+      "display_sha256": "41307654898742cd3c8e29dee001aab0932640014308329ffefa2c958c4a9dab",
+      "reencoded_for_display": true
+    },
+    "pancreas/field-02/group-01.jpg": {
+      "source_sha256": "a341a09507f52799b37aa26cf26044ef4ceabcda33532ca78147f2ac0b745ba5",
+      "display_sha256": "d8315387685490ffc04f570aa333c08a03503f354f6ff1c064fa509fbc7d4336",
+      "reencoded_for_display": true
+    },
+    "pancreas/field-02/he-corrected.jpg": {
+      "source_sha256": "e20bbeffd61eddda144f3d06150c3c75f109e7105f6a46fba6fb2bfaf7f1cec0",
+      "display_sha256": "d76d6a3918d2a7ac8b8c4064c8e44bfe2731afdfe1073e7211ae2e7119e3ec3d",
+      "reencoded_for_display": true
+    },
+    "pancreas/field-02/he.jpg": {
+      "source_sha256": "83f2d5de2d7afa0dd062cde89aa8826894a1fd80fc048dfcddb6b3006fdf4ef7",
+      "display_sha256": "c16374190fb5ec12eb6a81c2f414184ecd8e68adb85d9eb510f1b704b0464719",
+      "reencoded_for_display": true
+    },
+    "pancreas/field-02/output-mask-with-geojson.jpg": {
+      "source_sha256": "ac8ab901c50486f3661fe276e1857fe4dc70a3bdfba935b03350342cb4f8572b",
+      "display_sha256": "befa2cdc79e9fe072a23a86f3e7ab0b5b6274fd568b8b5382384add8532f67ef",
+      "reencoded_for_display": true
+    },
+    "pancreas/field-03/coarse-over-he.jpg": {
+      "source_sha256": "07994de015e7aa781867fada67708dbf055a98f0f30820867809a25c2c4587aa",
+      "display_sha256": "35ed5426f238bf3427b2ceeb41c60aad938745e8a7a11b0ccc024584981c3c31",
+      "reencoded_for_display": true
+    },
+    "pancreas/field-03/global-rgb.jpg": {
+      "source_sha256": "d461ba8120a33e04d67536947fa020ce71344f8b25d72dc0f88f86b72f85c168",
+      "display_sha256": "cd0f841b8ba119cd2d8dc5dc2cf5b4787f68f6cbb5c1f509b41e8eddca350006",
+      "reencoded_for_display": true
+    },
+    "pancreas/field-03/group-01.jpg": {
+      "source_sha256": "bc4cd9466af9cc1fac670e4e2bee32fb96e19b929bf3905a7e8a962b9b31a85a",
+      "display_sha256": "3a3ecb7df797d989dd7a72c17d6b730a3909e4ba1b1fde1d70b38e9bddfdf266",
+      "reencoded_for_display": true
+    },
+    "pancreas/field-03/he-corrected.jpg": {
+      "source_sha256": "4b4c0e9cd05c9fa76e4fd76dfb86d0322dafaa8ff1b7b62a9cac6acd9539e4b4",
+      "display_sha256": "33bee236b0b653c5ad39e939721238c98b117cac92c08645deb1a2e3da6b5eb7",
+      "reencoded_for_display": true
+    },
+    "pancreas/field-03/he.jpg": {
+      "source_sha256": "081948be63e52803edb06385caa791d878d45d0a3a86c05913c1b0384dc392ae",
+      "display_sha256": "c2ba2e379f386d89a2043ed607804335a84d3fdf1bef210897d79da663eb6e77",
+      "reencoded_for_display": true
+    },
+    "pancreas/field-03/output-mask-with-geojson.jpg": {
+      "source_sha256": "f5aed8dd29324932a85f48d84f68612072cf3b4b1c6d3f78a4e4b8376e9967f5",
+      "display_sha256": "1bf26493637f087189d764e066cd209fd14ba35533788bc726fe36622b5855ef",
+      "reencoded_for_display": true
+    },
+    "pancreas/full-output-mask-with-geojson.jpg": {
+      "source_sha256": "60255f3d71fe54736f1c5f2f4c0faa540ee624f018724cf8289327e8ecf323ad",
+      "display_sha256": "a62a462426473067ccc3da2cbfab4c80f38073eb500f48626c89a35671474da1",
+      "reencoded_for_display": true
+    },
+    "pancreas/global-rgb-overview.jpg": {
+      "source_sha256": "485080076239448c48537f1d752d1d616a989e07d5480978362a104b5e462fca",
+      "display_sha256": "d4ce8fd8541212dd4beb5e3418ef5c9214bda8c8f6d62dfb56744ff71f1d1979",
+      "reencoded_for_display": true
+    },
+    "pancreas/group-01.jpg": {
+      "source_sha256": "cb5761497e918f130cc09166ba22fd3f993a697f12230f06821f4a983f08cb6f",
+      "display_sha256": "2eb6d8851f47c9256e022cd2318f8f7cbe5169732de5d507f1cb2702ba018d8e",
+      "reencoded_for_display": true
+    },
+    "pancreas/group-02.jpg": {
+      "source_sha256": "fda68d8aa2912bf4490b4862c9cda7ad76c9c7d553a39b6c6aa5cd3d82bf68f4",
+      "display_sha256": "ff06850300c489da7b45fc24fdba7a39ce4323899c8fcb28d198bb329e864540",
+      "reencoded_for_display": true
+    },
+    "pancreas/group-03.jpg": {
+      "source_sha256": "6d63871b26f93f99dbe9498463d52086b025868a4d97576bcea341dacabe8eca",
+      "display_sha256": "9f2aeb633a98a0302df092b6baaf0b3935acbe54c185f10382d16463cdd8cda7",
+      "reencoded_for_display": true
+    },
+    "pancreas/group-04.jpg": {
+      "source_sha256": "eb2eeeccafaacad78c35d7f6d0aeaf78c0d3ed8833360c9b1842f3c072eb494c",
+      "display_sha256": "eed8a405b6dfa46402113e85d8106617da91c1807f97eddae561fc25108e612d",
+      "reencoded_for_display": true
+    },
+    "pancreas/he-overview.jpg": {
+      "source_sha256": "c3cc4788ae4df1b7911a3ec89f4ad7bf2d5fe6ed63ab53c19159abce25ff7f04",
+      "display_sha256": "5f25e025b5146cf2d91e88e6e588c06b015447c882314f9206a2c06e06de0b10",
+      "reencoded_for_display": true
+    },
+    "pancreas/kodama-groups.png": {
+      "source_sha256": "309bcb854ca0bf6955f3d79dee33031adf71d555f1927c44161d5646cffde0d8",
+      "display_sha256": "309bcb854ca0bf6955f3d79dee33031adf71d555f1927c44161d5646cffde0d8",
+      "reencoded_for_display": false
+    },
+    "pancreas/large-01/coarse-over-he.jpg": {
+      "source_sha256": "b32bacfc4a0135ab347e26e88627f0c1eb0f48561fb394515ec902086e058e08",
+      "display_sha256": "f8b0d2d57a1446b563c3d30387b7e7bcdd4660c98db3e4396a6ea674878325e3",
+      "reencoded_for_display": true
+    },
+    "pancreas/large-01/global-rgb.jpg": {
+      "source_sha256": "800d6d8677d806d04a36265be1a7eb8b6474bbacd40fec0438cec16acce4c7e2",
+      "display_sha256": "fca5c103e4060716dbb84bb963586fbf2ed9163e43f6c5171b5c1e43d9559c66",
+      "reencoded_for_display": true
+    },
+    "pancreas/large-01/group-01.jpg": {
+      "source_sha256": "df4a62e837ab9bd5f6e1725f78d54be82542724379aa9040f92fde3baff99e85",
+      "display_sha256": "88dd88267dbd9aef8752f548b82fa359f3e1f19c155e3264429fb6b42c890da8",
+      "reencoded_for_display": true
+    },
+    "pancreas/large-01/he-corrected.jpg": {
+      "source_sha256": "4d3e3edf21307e4aebf328608ea9dec3022bad7b8b0a2045d342c67a2c7a89e7",
+      "display_sha256": "f608b1377abdb3143145e5123fe4724e8f5b173374417f2de872741276ff7e70",
+      "reencoded_for_display": true
+    },
+    "pancreas/large-01/he.jpg": {
+      "source_sha256": "5d57471e1315d6fca28b6dcf10c97516c4ad7748ae26ed66ccf94f1a921c6261",
+      "display_sha256": "6173d4cd96454007809cbba0ff49f27684defac201a538abe7360c90b7b94cc7",
+      "reencoded_for_display": true
+    },
+    "pancreas/large-01/output-mask-with-geojson.jpg": {
+      "source_sha256": "3d673388b372c821b349d8746b99ddc15a8b03607ab1a1ea5a861ce5de351d8a",
+      "display_sha256": "6da11eabe43ffcdddab2124ab98c3f4e0158ec0394cd329a0a1637ea1fa7f275",
+      "reencoded_for_display": true
+    },
+    "pancreas/large-02/coarse-over-he.jpg": {
+      "source_sha256": "d69d690d77b9b08d4a4bb502f78b23cfe47812f8eee3c0be680696b238070251",
+      "display_sha256": "d2984b197f05cabc08880235b86bbb66971c456a5d33d21f56e05ee940a34832",
+      "reencoded_for_display": true
+    },
+    "pancreas/large-02/global-rgb.jpg": {
+      "source_sha256": "8a77494a179b2b95fd31d6d7d2ef0e81d09453c08604463cad0ce7ebcef53bd3",
+      "display_sha256": "03dae4a7c556d44c2b6fc7dca85ca0626367bc77375d08ec16f2e58620366594",
+      "reencoded_for_display": true
+    },
+    "pancreas/large-02/group-01.jpg": {
+      "source_sha256": "304be101cd8ef13cd966b1ee7b36ba22969c0731e237802af3eb232496a22169",
+      "display_sha256": "10ecd5399cc234ff92592937cc6b9ca41ec90651a947020b4ed149775026ac49",
+      "reencoded_for_display": true
+    },
+    "pancreas/large-02/he-corrected.jpg": {
+      "source_sha256": "9012ca03cacfbe307a523c6808e4089b7236ec60a3ce155f6a671dad0867cf1b",
+      "display_sha256": "404e9aa0d721ddf280cc361eb603e5f89cc12cffe4b201caa0e20bd9f2b59250",
+      "reencoded_for_display": true
+    },
+    "pancreas/large-02/he.jpg": {
+      "source_sha256": "125ac71022c623744e2fbb4f9ebed7e4060b0ea23153c47bdd75a45f9a8f8ae1",
+      "display_sha256": "bf11237ee54ad623db3926e4c999bece480c7ce4a5786969821cf5c935ee90ec",
+      "reencoded_for_display": true
+    },
+    "pancreas/large-02/output-mask-with-geojson.jpg": {
+      "source_sha256": "60427453655039d2560791f8267cae2d4cc3c27e4c451ea843f4c08d581a1e23",
+      "display_sha256": "39fac0f4173a40a7f81bd2040f96f93edcf922ec5f3f9397ec41a27218b96dee",
+      "reencoded_for_display": true
+    },
+    "pancreas/large-03/coarse-over-he.jpg": {
+      "source_sha256": "fa756713e824b0774960195f5b2aedb43837e7f3dda451a99ee324df1af20ff2",
+      "display_sha256": "1dffa52279e6e3ac85e9e7e54cbaa7bd74b8d2d40930d487fb0ac6e37833a1c2",
+      "reencoded_for_display": true
+    },
+    "pancreas/large-03/global-rgb.jpg": {
+      "source_sha256": "dee5dc4629ff6df7994f4c1c74e69c28ac422e558602387ae576c280faabc611",
+      "display_sha256": "57d2f418f0f72b8c66e66ed048bb7dfecad72f1ee3118b925c07ee038aab4a01",
+      "reencoded_for_display": true
+    },
+    "pancreas/large-03/group-01.jpg": {
+      "source_sha256": "59d8f94bbca2163629821cc8fd6e392aa668adbe70f371ec8a5e84c1c68aef21",
+      "display_sha256": "aae0d77652b76d8830964cfd93cabccc3e3f798ba0b4062891ea9abdc251e741",
+      "reencoded_for_display": true
+    },
+    "pancreas/large-03/he-corrected.jpg": {
+      "source_sha256": "844e7186c4969a009dd97ba837642f03d8dbf79335c06aa6d75570528ef0adf4",
+      "display_sha256": "0e6b5b94dff56b65b48e67d98c9e2309ba83a529c6356d7d0e8ab37d17413531",
+      "reencoded_for_display": true
+    },
+    "pancreas/large-03/he.jpg": {
+      "source_sha256": "59aa1f7b22bda63305014b79bc2aee1a7d83c9ebc3be8a95d63c3347517ee585",
+      "display_sha256": "cfd81799ad2115131a75e954f8c5670aac73c61230768ebcdab840e71d1d8ba5",
+      "reencoded_for_display": true
+    },
+    "pancreas/large-03/output-mask-with-geojson.jpg": {
+      "source_sha256": "bdcc6a0d3441f7f4ccd69ec098f75a458cb19c960f1deb653ee49bbfad242ea3",
+      "display_sha256": "3b0b537a04f3abd1d19f3a78ef4b6c340f1469af04d9aa6d363267f3fc4f05f3",
+      "reencoded_for_display": true
+    },
+    "pancreas/tile-groups-over-he.jpg": {
+      "source_sha256": "f39f13c05577e73b849dd8d4d0b594d2d0e0afaf045946b8a7e53762d707a55e",
+      "display_sha256": "bae9e01dc6bdca2347c19f6c8c0fb7edfb8d415748c6cd55ab06feba28c5d20f",
+      "reencoded_for_display": true
+    },
+    "pancreas/wide-01/coarse-over-he.jpg": {
+      "source_sha256": "569176ea74da31caf10d3aee0eced7ba4d4c4dc5cc51e63873df41b10024e46a",
+      "display_sha256": "c95dee518e41ebcbc79bf66021a42e3595fe2bbc3a7e5565a04a473d11c4db7c",
+      "reencoded_for_display": true
+    },
+    "pancreas/wide-01/global-rgb.jpg": {
+      "source_sha256": "c7463d768d136c242917dba89fe8ad13e08420656a1988374cdcd5e1fa835bab",
+      "display_sha256": "bb0a93904d3cd135c078ffd7336fffba02cddc2138a25fb453cc66cfbac66e6e",
+      "reencoded_for_display": true
+    },
+    "pancreas/wide-01/group-01.jpg": {
+      "source_sha256": "e2b301515b034e11c1597b440ed7ef924c6dbe16cd14c36fc561415c94bee0e6",
+      "display_sha256": "e5c308388ee9a2f9a1ff2b74af2b22d6f2092e52527cefd140f6c78cce69ce6d",
+      "reencoded_for_display": true
+    },
+    "pancreas/wide-01/he-corrected.jpg": {
+      "source_sha256": "363c82a8f09174a469dd5eed8d9d25747e5c66284fce0bf782899d2e0443e725",
+      "display_sha256": "9191c435c4cf2f03fb7e22eb5b39a6ed706e4bd882ab1c53715f54cf52652715",
+      "reencoded_for_display": true
+    },
+    "pancreas/wide-01/he.jpg": {
+      "source_sha256": "fc24979b71a965cf069aea62386730d856f558241a13b7da4a2bcf7145f05856",
+      "display_sha256": "13259b83d6b73bb55b1c4e8dc560d2080a5456d0e941c39330ba45173c8a943a",
+      "reencoded_for_display": true
+    },
+    "pancreas/wide-01/output-mask-with-geojson.jpg": {
+      "source_sha256": "dc886e8e047fc99cf3dc73cca5dfc3c4bdb51d501865eb0aed1f6d1939f15717",
+      "display_sha256": "83c15cecaf6c2c0db508108614658846f2e86dcb89b240de46a5a1b259b96025",
+      "reencoded_for_display": true
+    },
+    "pancreas/wide-02/coarse-over-he.jpg": {
+      "source_sha256": "f313760634deb5198c513e241da059d57a23b549f2fe987008fa6700c988aa16",
+      "display_sha256": "34a94471ab0ce84a000e32eeb676ed843db16acc5736123c21d529205d5d9d7a",
+      "reencoded_for_display": true
+    },
+    "pancreas/wide-02/global-rgb.jpg": {
+      "source_sha256": "e888ec0fc709d4a2a7d13637a42ded687cfc2010de58f4248480ab6f7173eb8d",
+      "display_sha256": "4fe0f9f9ad8153f8ee454e71fbd59bc3d345036a21f14745d1e4f76a0da4124a",
+      "reencoded_for_display": true
+    },
+    "pancreas/wide-02/group-01.jpg": {
+      "source_sha256": "bc25b1d78726bbf108f8d6c71e1f511879fdc36b9c5df4d6199a8eaf5b783b3c",
+      "display_sha256": "e2ca84178ad10a3170e1a1b6df341ddadf380564a6751cf33a93563f532f2bf3",
+      "reencoded_for_display": true
+    },
+    "pancreas/wide-02/he-corrected.jpg": {
+      "source_sha256": "885b6e0a301746b27be6799712342c65aba0933fdd5afe129e1939bbca066f04",
+      "display_sha256": "4a5ad3ef7d854842c20144f3e0096d533ea0d272df9d93b79224c3ec0b3643f9",
+      "reencoded_for_display": true
+    },
+    "pancreas/wide-02/he.jpg": {
+      "source_sha256": "7799f8afa6a8cf3ceedfa73d0c9913956fa2f96fcb80ee2872e8080d170ed44b",
+      "display_sha256": "dc9d8cf1fb5114605175b4310ad97c633df7b3d90e86d4e669a0df2d2f13e55d",
+      "reencoded_for_display": true
+    },
+    "pancreas/wide-02/output-mask-with-geojson.jpg": {
+      "source_sha256": "5dd2381e0b1405af964f9cbe6f3df0113771e6592df6d10476f760517d6e7970",
+      "display_sha256": "b679d44ceaa507954e2bfceec5e999da66ab67087f250a6905ef51f72118ab36",
+      "reencoded_for_display": true
+    },
+    "pancreas/wide-03/coarse-over-he.jpg": {
+      "source_sha256": "fdae37a5cf685230b0d38f4c1c1bf4f6c851deaa5b643cb74a0dd953b009568f",
+      "display_sha256": "1b0cf0ef779cb4abf69f84738e7590669500119ece2a8a8d722dba77aeea4ef5",
+      "reencoded_for_display": true
+    },
+    "pancreas/wide-03/global-rgb.jpg": {
+      "source_sha256": "f8c2110e9a7e989c57496868e746796a2d898b7d5567a050155789c6b78ed058",
+      "display_sha256": "dcd46fe3aed6aefd88e02a77bb93c8bfefb6ee2aca75d38c9033a4e4296aaa01",
+      "reencoded_for_display": true
+    },
+    "pancreas/wide-03/group-01.jpg": {
+      "source_sha256": "cdca8fa551d88ae5537582fd85cb4727ef0c0ea879e9c8e384e94c91c03a7fbe",
+      "display_sha256": "6c08bb32eddd601b080c1840ad7df274561cdd54333528893604e7891919011d",
+      "reencoded_for_display": true
+    },
+    "pancreas/wide-03/he-corrected.jpg": {
+      "source_sha256": "ada026d9c939b34279064109f35131aa52efa3d9589e3ae7f585fc650cc226cd",
+      "display_sha256": "b1fa0c8769a9f40d763bf45488960ca10d2abbc978b8773a0a21a9e3fbd2180e",
+      "reencoded_for_display": true
+    },
+    "pancreas/wide-03/he.jpg": {
+      "source_sha256": "0adaad583b3660a8fa2d6f4d40bb0fd1eb8b140fe94ec1cac0098b3335f3e3ec",
+      "display_sha256": "a01e21af75226801f223c54e15c9fc6a6948d51a05e967cea41b6fd3656b6429",
+      "reencoded_for_display": true
+    },
+    "pancreas/wide-03/output-mask-with-geojson.jpg": {
+      "source_sha256": "198cd080f1fbd0b246237be97642a53daec30c3e700ab2b076730fa087ca0330",
+      "display_sha256": "0a1f91183bc2cb69f0610c945befff916bb13265f978feeaf1fa965b286f171b",
+      "reencoded_for_display": true
+    },
+    "lymph/BORA_FULL_SLIDE.wsi.geojson": {
+      "source_sha256": "c2235f76d79c1625bbd51262cb181257e2534091a4baf7db0807c4f020cca941",
+      "display_sha256": "c2235f76d79c1625bbd51262cb181257e2534091a4baf7db0807c4f020cca941",
+      "reencoded_for_display": false
+    },
+    "lymph/field-01/coarse-over-he.jpg": {
+      "source_sha256": "15c00fcbc993871922cd2f2f7a0912397aa2f941ef03d8727f8f9997a7503efe",
+      "display_sha256": "91f745f91360783473d59c06cde485957d9b24f8dfb3bcdc4a13df0686afee30",
+      "reencoded_for_display": true
+    },
+    "lymph/field-01/global-rgb.jpg": {
+      "source_sha256": "1abec729d6c7e0962e44437b41a29b8588675c6ae762d8afab721104e590fd55",
+      "display_sha256": "886d02be0acbd1e2b904948876c0348c72140ab3a8e876e9e43f756db461c2de",
+      "reencoded_for_display": true
+    },
+    "lymph/field-01/group-01.jpg": {
+      "source_sha256": "1d5afa1455440a28e880073ee0c62df4ccfcd5f4132719ce33b4c6111b043ed5",
+      "display_sha256": "ccddc500f422b5c62cd2b600fd6082e24161b8e10eb54e759c3e28b34282f395",
+      "reencoded_for_display": true
+    },
+    "lymph/field-01/he.jpg": {
+      "source_sha256": "888b4c9aea5ecbcc7c002ee7e44702621febfe225c4a5a120334da5b3729eaf9",
+      "display_sha256": "5bd218ac29db60abeb02cc30406bd22b2309a9a9c9052ad48cc4aa7b027865ee",
+      "reencoded_for_display": true
+    },
+    "lymph/field-01/output-mask-with-geojson.jpg": {
+      "source_sha256": "0cfab4a6ecda3481f76761b2d01c6b744d1de6010bed57321b9cff8202151042",
+      "display_sha256": "d7f2731a17af289817730e5e301c79238df4f7de35d384d3552efa401e551cf6",
+      "reencoded_for_display": true
+    },
+    "lymph/field-02/coarse-over-he.jpg": {
+      "source_sha256": "f859ad28f03fc14a84ccf221221c7cde3f5665779febf2cab3fc4c1208579c4b",
+      "display_sha256": "584654f7b620a7ef51271d40a798f82f85abb9f6f04667b518ef887464901c08",
+      "reencoded_for_display": true
+    },
+    "lymph/field-02/global-rgb.jpg": {
+      "source_sha256": "114e5abb6f590c4365e650d2474e1922535101704b4cd52175371b7b2a766e1c",
+      "display_sha256": "96901ae8ec4fc4c0e5e332bec230d202a2713729c200317a991f8678bb3efd76",
+      "reencoded_for_display": true
+    },
+    "lymph/field-02/group-01.jpg": {
+      "source_sha256": "18d814992815b2cadf92161d4956c5fc59761c77f29021a89283079e59c4a7bf",
+      "display_sha256": "e2c1ef83a8cdcd274fbcdc1425e67ff1a46c065fa5507bdd1addb83e06a1292c",
+      "reencoded_for_display": true
+    },
+    "lymph/field-02/he.jpg": {
+      "source_sha256": "94aea89c0f8ef97cc138be7310961eb16e90c77224c0cbc89d3b25f07ce8e425",
+      "display_sha256": "2ed3c356dc90629bacbd69f9a8286487cd159fc813f6b939ccc0e5f7db5ceb90",
+      "reencoded_for_display": true
+    },
+    "lymph/field-02/output-mask-with-geojson.jpg": {
+      "source_sha256": "bfc7311ed58e025bc00a5cf72bef42c45d6c8634773bd7c324f9834f2e1625f6",
+      "display_sha256": "9c38c3444e5a3633cf14169a907d8740e3b6398dd0a1d0b1912caef90011cca4",
+      "reencoded_for_display": true
+    },
+    "lymph/field-03/coarse-over-he.jpg": {
+      "source_sha256": "bec0e5a53561553fbf890722318d358dbd0bf9d79b38e065e2529ceea031911b",
+      "display_sha256": "46ee986848198c9436e4642ddcbceed468f8dcb239ceae5980fb303ab37bbf27",
+      "reencoded_for_display": true
+    },
+    "lymph/field-03/global-rgb.jpg": {
+      "source_sha256": "02ec790c326b7ed28297430ca7d9e527b2b4c23a77a085da31a341757ab4e9ba",
+      "display_sha256": "cd54ad9ae1f69a0e8e0300150e56f6a22f46f57b037ef143ad3144ee85ca2171",
+      "reencoded_for_display": true
+    },
+    "lymph/field-03/group-01.jpg": {
+      "source_sha256": "8dc0fbb53dc9c5592c2987b0f0bf09486926ee2097b31bc21d1b41bdfbca2512",
+      "display_sha256": "349f8ee0584d5f1da85971184f5f6869b8041cbc6ab7b2c92b9ed734cc1a264d",
+      "reencoded_for_display": true
+    },
+    "lymph/field-03/he.jpg": {
+      "source_sha256": "cea93b7ff0d647e12672a60b1ce1569932da8196946fe7cc38b67e4ce1d88b34",
+      "display_sha256": "744dc927ee27eb5c246fd8f7e52510b70b9c5e507aceaaaf7e3736a68fbd8555",
+      "reencoded_for_display": true
+    },
+    "lymph/field-03/output-mask-with-geojson.jpg": {
+      "source_sha256": "114dd7f9610b848e2381e304445303c881c807e32973a433fbc1bef73cf680b8",
+      "display_sha256": "7fe6b2a666535563b3e0a49e4176e785c5b4e245d30b7d2ac89e65054377cadc",
+      "reencoded_for_display": true
+    },
+    "lymph/full-output-mask-with-geojson.jpg": {
+      "source_sha256": "fdd4866aca3c0426d66817882fd7cc0a5e4075ac1a98f9b82a995142eeeb16d8",
+      "display_sha256": "74a75958fdddb78d2e26dc4fb93098b1e7cd9c74a77bf83b8d5732a4f71c4de2",
+      "reencoded_for_display": true
+    },
+    "lymph/global-rgb-overview.jpg": {
+      "source_sha256": "17b29efdb9a7e2e6f1d136f18fded48c01ac9290ba0ab528a18d249be89e93a9",
+      "display_sha256": "f9bf98b184d49eea93d96c6df949a336313a211abff10baac77797bff019f204",
+      "reencoded_for_display": true
+    },
+    "lymph/group-01.jpg": {
+      "source_sha256": "65fea0a8f89075cc26014695f89ff2582728873b5324e6d23c263d0211e32108",
+      "display_sha256": "1a6352cbbf1880904971955167c7fe59c9bbf2306372eb879c818e6fd981a7f8",
+      "reencoded_for_display": true
+    },
+    "lymph/group-02.jpg": {
+      "source_sha256": "eb1ad5023d73ebdf2704a165037c06bd2c59b1789bb1abd105156f1e8ebae89c",
+      "display_sha256": "803f9f4d0b58f6d645f383c1451a470635cdd13732bc4a858962a14d09c07278",
+      "reencoded_for_display": true
+    },
+    "lymph/group-03.jpg": {
+      "source_sha256": "e09b80431ead5e03668de3c49fffe94d760551f68244797241a3ccf9fb282017",
+      "display_sha256": "51003ade63e999e29038122f98a9a2b18a5a06bd1b5903f836fbadd59868baa5",
+      "reencoded_for_display": true
+    },
+    "lymph/group-04.jpg": {
+      "source_sha256": "bfd9b68e013ed04fc4c25e05fc30f8d26bf815a8be16c70e9549ed30017c19c9",
+      "display_sha256": "2e151aebc1d3fc8941ea64ece78c755d32a00db6e8baf70de3026a3f67dc0793",
+      "reencoded_for_display": true
+    },
+    "lymph/group-05.jpg": {
+      "source_sha256": "a700a66b83333e8cfa3b47d84ac2a2d2f0ccb9eb1ad90009879401f2c0727752",
+      "display_sha256": "85daf94e478c880339e07b804366c32a70e45f25ba18e5151c6fd6226c9bae78",
+      "reencoded_for_display": true
+    },
+    "lymph/group-06.jpg": {
+      "source_sha256": "659570c4541f7b6850b6f444afde5f00bdcec8604c5d44e1840489d24e4af5a2",
+      "display_sha256": "39901a42471223d37ca966522b3a2a7544f9decadd07cb75d2494e1e6c870c71",
+      "reencoded_for_display": true
+    },
+    "lymph/group-07.jpg": {
+      "source_sha256": "8166a1545e64c0c02cbf36062474e26da87370c4822599502b09e897a698a230",
+      "display_sha256": "e193da90face60effd1d491e87947b5b17b21eeb37784361acd044415b2e9137",
+      "reencoded_for_display": true
+    },
+    "lymph/group-08.jpg": {
+      "source_sha256": "b1030aa3f9efd5d5690eb17ef6f051ee54b5785634e369ef5082b3052aed6bb4",
+      "display_sha256": "b06058930c43dc3a4209732b3ef0360af49cbb4577c38d041f3718e6c4e4e2d9",
+      "reencoded_for_display": true
+    },
+    "lymph/group-09.jpg": {
+      "source_sha256": "7e8beee19374e226cfcd37153232c5cbe76e30712bedbf1ff7a99e6a9a63779c",
+      "display_sha256": "6c3ea9a31a782d6620e3daa440d72df83054403a6f43d71ad3212e613b3af2c4",
+      "reencoded_for_display": true
+    },
+    "lymph/he-overview.jpg": {
+      "source_sha256": "6675ec89441d0b4cceb67f4dabb4467c7f365af631c12974a868a6ae9d4ee826",
+      "display_sha256": "d99f8096b077d6a54f1cbb19e40937cfb4e7c7608d78a3dd016d66ed05d31356",
+      "reencoded_for_display": true
+    },
+    "lymph/kodama-groups.png": {
+      "source_sha256": "ada2913d6c12af0dd723d084f5e2e17e1f19072aec2f2c2ae5e6c0c12c8b51b8",
+      "display_sha256": "ada2913d6c12af0dd723d084f5e2e17e1f19072aec2f2c2ae5e6c0c12c8b51b8",
+      "reencoded_for_display": false
+    },
+    "lymph/large-01/coarse-over-he.jpg": {
+      "source_sha256": "88d986f027e16d41151c147a1fb43ec443ec4ed55b98b236fd559e4cbb860124",
+      "display_sha256": "0b66b3092b0cdef8137c07d897f33444bcc1d501d6d44ef2b3d283be878601a3",
+      "reencoded_for_display": true
+    },
+    "lymph/large-01/global-rgb.jpg": {
+      "source_sha256": "a9fae9f2b91d2416e2f158b9089d49598bf9861f98e689f27ca96e82f4bdd4c8",
+      "display_sha256": "f996a0ac6eea0b3fdd125d7dd7e7e7ae32033bf51c40e0b338d130d8f34cd8e5",
+      "reencoded_for_display": true
+    },
+    "lymph/large-01/group-01.jpg": {
+      "source_sha256": "cc577efe42dd242cd5da61b8429dbc10712b04e7ecd9c68be187a2c5fa2f41ac",
+      "display_sha256": "b75fbdff53de059f790c6cb47c2ec33ede87879519bdab1ecc86bf5d0510b903",
+      "reencoded_for_display": true
+    },
+    "lymph/large-01/he.jpg": {
+      "source_sha256": "d20dd9792735f13e5d5712859da8a96e54e7273810270678edc4a19f1005482e",
+      "display_sha256": "e3795a200ae3405dbc4d12b1323ce9c39882cea520bcda9877d18076e1acb5ce",
+      "reencoded_for_display": true
+    },
+    "lymph/large-01/output-mask-with-geojson.jpg": {
+      "source_sha256": "33ef59a5a26ea63c344e477a3cc5d9a5163bb7a7b1bf0bde91dcb9f72cb4f7d5",
+      "display_sha256": "87512e38f0653f147ccb6d9046e26848c1046dd5b16814ffa1a363bbbb7312a1",
+      "reencoded_for_display": true
+    },
+    "lymph/large-02/coarse-over-he.jpg": {
+      "source_sha256": "1dc4649c567bdd7d81c9d992d2be4e9967f19ff9c320e5f92c64724ab31cb56a",
+      "display_sha256": "60035260ef8f1c58047b35180a13f50cdf520951c0b26df1edc2be41f90c65a1",
+      "reencoded_for_display": true
+    },
+    "lymph/large-02/global-rgb.jpg": {
+      "source_sha256": "83c37c85d63857d0f97a14301a27b7915006c1cb8534aa54537e4e5673b8a87f",
+      "display_sha256": "3239e98c2cad68ac466fcf200e36036e3e63a6572260a9790cd09850ab14f1f5",
+      "reencoded_for_display": true
+    },
+    "lymph/large-02/group-01.jpg": {
+      "source_sha256": "7b5fccd325c88ee82a6cfd157a6fc5f568320bfeff41da3ff07fa6ba74f2751f",
+      "display_sha256": "2529394984a4fc669cf71890c6fb220a181ab834b1a22ca5e41c38fad81344ae",
+      "reencoded_for_display": true
+    },
+    "lymph/large-02/he.jpg": {
+      "source_sha256": "729caf6b5b5c9cf6bb238d1bc5ca3a46e9bf8e44b9565420b517e4c062d59572",
+      "display_sha256": "074956d54e07cfa27cbed31589a64634676dc473ed8d49858905f0d45f755193",
+      "reencoded_for_display": true
+    },
+    "lymph/large-02/output-mask-with-geojson.jpg": {
+      "source_sha256": "b8a0d700e5f6b0480a996b517b7093e5523e274304051f03b8da99ac191275cb",
+      "display_sha256": "ff1791905fc53279eff9195a964efeb7fd9e62a6b5abda021124822696331a9d",
+      "reencoded_for_display": true
+    },
+    "lymph/large-03/coarse-over-he.jpg": {
+      "source_sha256": "90ba7e426879d814901a0cc3f56aef3f66e00f48cb996d5518b220942f00cf08",
+      "display_sha256": "339364a48b779e2a47857a376c8fdf65b8d1c4b2b72278c61c04510ef5484752",
+      "reencoded_for_display": true
+    },
+    "lymph/large-03/global-rgb.jpg": {
+      "source_sha256": "d717b8e48561c4a9bba08efc13d9038fc341d3d8758fb6ad477d2df06dbb57f3",
+      "display_sha256": "1256eb2ba57c3c9b96dde695b068b340ef988ee0c194f0eabf0dd978b1b38420",
+      "reencoded_for_display": true
+    },
+    "lymph/large-03/group-01.jpg": {
+      "source_sha256": "03ef32023ea78a51ffa85dea01c49b9ec987937e9dfc983f37ccd7d5b33acb71",
+      "display_sha256": "42c6d973a312bb0d6a7729d505dfff921704eff03dbe3e8113da4094afc56bf8",
+      "reencoded_for_display": true
+    },
+    "lymph/large-03/he.jpg": {
+      "source_sha256": "10de654f7bac9e31272c6b990c3b9cfa693b42c55da69536d6c9967948c08f05",
+      "display_sha256": "c58c8f31f5df5af467e963ccbe1bb24471571cecb9ae94befb7e87f2fc7040d7",
+      "reencoded_for_display": true
+    },
+    "lymph/large-03/output-mask-with-geojson.jpg": {
+      "source_sha256": "179042cfd9f1a9a55d25053954d5fa6a9bab6222f146a08952064afaf26d854b",
+      "display_sha256": "2a892349d8c10c640614dadbede5b7f83da491c975845ffd24fa86546441b6b1",
+      "reencoded_for_display": true
+    },
+    "lymph/tile-groups-over-he.jpg": {
+      "source_sha256": "6c7e0ab104a470a13e5e0af0807dc51342e537121ad3a2377583c8f189bb3f35",
+      "display_sha256": "ed644e84b9619ec0465a766c6be0717b36f93e33ffb245dbfd72d6533a64f8d7",
+      "reencoded_for_display": true
+    },
+    "lymph/wide-01/coarse-over-he.jpg": {
+      "source_sha256": "dd464541401f847ea1a54f2b40c48d359e0fbec16f1fc59af555fd0697a568c0",
+      "display_sha256": "ba315b52a11e9036eb82d0f184966495a18d450042dfdf8d51c50bfaefee27e0",
+      "reencoded_for_display": true
+    },
+    "lymph/wide-01/global-rgb.jpg": {
+      "source_sha256": "733b48e78271871835c8f9f88e7bab57b7136d669186ad1d921cbf979fbfe01c",
+      "display_sha256": "3c5fa17e90c13b2b1eb156d8b2703f40d508c5d969ef5119948aacfa3c074f3a",
+      "reencoded_for_display": true
+    },
+    "lymph/wide-01/group-01.jpg": {
+      "source_sha256": "b14b51cc5d5c6f7bdb61cc9a79459226ab5aee4d544add64bd730285fe39e8d4",
+      "display_sha256": "abb829c2189890001522e52d8ccb4090f2a98ba4c542203c3e65f42d96f49dfd",
+      "reencoded_for_display": true
+    },
+    "lymph/wide-01/he.jpg": {
+      "source_sha256": "f68f73418c0a9f1c6a36d7a11e52bdadc46f0a267202cc5db14f0b4c495af1e6",
+      "display_sha256": "d0ced5dd7d76f2c83f3576c6f41f3fa6853e2acc1acf53cdaf7b147bee8d1944",
+      "reencoded_for_display": true
+    },
+    "lymph/wide-01/output-mask-with-geojson.jpg": {
+      "source_sha256": "2334b68555d37d21a18274b494524976185ff5a72a26fbaf2f45ff3e134ce5c9",
+      "display_sha256": "4f58151b3b2b55dc4f47d1b70faa4390d9f0a4b0a768da5368ff183fbfeb2b04",
+      "reencoded_for_display": true
+    },
+    "lymph/wide-02/coarse-over-he.jpg": {
+      "source_sha256": "67e78a2112ca0910366554842aa2cb7039af5991b2f65e0f3c46450b391a4893",
+      "display_sha256": "dad701d67576b8b380a72d00000d66cfbc2946439231f3ceccc2b69e30be5378",
+      "reencoded_for_display": true
+    },
+    "lymph/wide-02/global-rgb.jpg": {
+      "source_sha256": "4f19345b45180fd65090843ba0a2b1791780cf5191b376c85a9229ef81fa7c8a",
+      "display_sha256": "847d7289ab284b77dedd141dab5c6a4b3bc0683d16c3cbf182d99c3901b85b3e",
+      "reencoded_for_display": true
+    },
+    "lymph/wide-02/group-01.jpg": {
+      "source_sha256": "dd5163f9f5fe41e9a72a015cb2774406348401cb396f65ec50a8c0a64f5ed9cc",
+      "display_sha256": "9417fc4bd343b1ee513f7027a9ae6a1ffc97414019c80d949c11364460d56e86",
+      "reencoded_for_display": true
+    },
+    "lymph/wide-02/he.jpg": {
+      "source_sha256": "22a21951e0ddb4d963942915d63026d1a94e6505505a762fbc86ac2928ad8974",
+      "display_sha256": "9c101a62860a7befa21ac758b5120aa7be0951229cd8306c56595741aec63ba0",
+      "reencoded_for_display": true
+    },
+    "lymph/wide-02/output-mask-with-geojson.jpg": {
+      "source_sha256": "76da18a53b771f6b32017950d54194182c35b06df51f3bbb0810986c50fcc62e",
+      "display_sha256": "1d22278ebf452d7c0978f20354b331cf599802381cb8ce2e1003203c37db6121",
+      "reencoded_for_display": true
+    },
+    "lymph/wide-03/coarse-over-he.jpg": {
+      "source_sha256": "2594041e77cb858056e8256abb8075d116d6e692f4b76b7a8170171e549e15f0",
+      "display_sha256": "8d512b61fef3f24a4535003fcf38fdb46447e6f1c5400524f967b6676efd8cb4",
+      "reencoded_for_display": true
+    },
+    "lymph/wide-03/global-rgb.jpg": {
+      "source_sha256": "f29a1769fd047d609f96fbf2b7e982e111db817800ef01f3ca170b5f9d7dc695",
+      "display_sha256": "9b49b7deb50dbff6e756a7c18100a600ff3acb0f8f8fb07e26e5ba9426b7c95d",
+      "reencoded_for_display": true
+    },
+    "lymph/wide-03/group-01.jpg": {
+      "source_sha256": "b52a41e8a26685c61c4c5111b12864e788c9c6403790e3ae5195e886e84b1d89",
+      "display_sha256": "18d44a28e187997bd2117a37414ee2a04cd6daec8ab178899009396ba2a8dc67",
+      "reencoded_for_display": true
+    },
+    "lymph/wide-03/he.jpg": {
+      "source_sha256": "d75193dd26a73de370c27e4a88b82b91ba78141770e3bff556197fe0cbe3994d",
+      "display_sha256": "0b2ecdebf4c7155419096212807cd059fe1ac21e9dd3e5212574874f5a83d075",
+      "reencoded_for_display": true
+    },
+    "lymph/wide-03/output-mask-with-geojson.jpg": {
+      "source_sha256": "b93763c70ffd023150263caf24ee8fc9d299b9dd8a0da7a8b6090abc0b15a9f1",
+      "display_sha256": "e0a6399bc857ce6457ec2957da9aae4acda6402e67da7da36282f597a17bd287",
+      "reencoded_for_display": true
+    },
+    "tonsil/BORA_FULL_SLIDE.wsi.geojson": {
+      "source_sha256": "c860726322ccd201e59a54690216f00d3792726cefdec0d834365e275748e094",
+      "display_sha256": "c860726322ccd201e59a54690216f00d3792726cefdec0d834365e275748e094",
+      "reencoded_for_display": false
+    },
+    "tonsil/field-01/coarse-over-he.jpg": {
+      "source_sha256": "2e23bd4316cbe755b6d20a400d5858e77698fd60bf23cf0b7e92013aa84fb147",
+      "display_sha256": "be27ee16800bdf2f194de3b6c0dc39629bc8964a19f6db810cd6349c6bef6022",
+      "reencoded_for_display": true
+    },
+    "tonsil/field-01/global-rgb.jpg": {
+      "source_sha256": "366c40a08796ed2e9e897e74a90ab0cc73dd3d12da4e3c3702b35f680c375a13",
+      "display_sha256": "5165c74733d66b79f43f8b7665914be6a64e16815e684704ab593be699255004",
+      "reencoded_for_display": true
+    },
+    "tonsil/field-01/group-01.jpg": {
+      "source_sha256": "fca89a23f7e6cac7b5b6b274d3324f7e813fc1c20510adcea76177b770de2d77",
+      "display_sha256": "dd193b32403148baf95845faa7721f6bd0ad41503a1d56cce21ece1b55d01bff",
+      "reencoded_for_display": true
+    },
+    "tonsil/field-01/he.jpg": {
+      "source_sha256": "64a6fcb79ae0aceaba95f7a929c7c72aa17d104aca30fa109b26824c8d3c7f03",
+      "display_sha256": "65d75539b2d5b8fca952d16afbafc81714b85af1effa0b4605f85c98f85a9646",
+      "reencoded_for_display": true
+    },
+    "tonsil/field-01/output-mask-with-geojson.jpg": {
+      "source_sha256": "3b3030c9490085ec08c43c25b1cba83ee9a6fd408e0776ebd4f579123b6052fe",
+      "display_sha256": "df08b772699f2b0b0c7cf6f4704f81f3c728d3d49d7e1606adcade66efe8f612",
+      "reencoded_for_display": true
+    },
+    "tonsil/field-02/coarse-over-he.jpg": {
+      "source_sha256": "945c750ea28a99eafeee9a8635f3d3d9a91f5388295618a60cfcb96ba87e6251",
+      "display_sha256": "71d2a990645bf11f25639e7fdef9d545b30c776a8c0b202ea262faad385e4784",
+      "reencoded_for_display": true
+    },
+    "tonsil/field-02/global-rgb.jpg": {
+      "source_sha256": "377abae34712d1da2317d306ba428eeebbea0b3c2336b1a4f3e6ba03d80a86b5",
+      "display_sha256": "7124efa502335e8fc2e8a855e14c53beee4899c448f41c9b211ddb6a2998dbb5",
+      "reencoded_for_display": true
+    },
+    "tonsil/field-02/group-01.jpg": {
+      "source_sha256": "b8a9fde18229ff65e02dd5015e6b321b2f868de62416ae17b89a8e599c77aec4",
+      "display_sha256": "ec071985b9e1cab02eb93422cc22db4adf768d4b8d5c0f34f0d4b008c0b0abcf",
+      "reencoded_for_display": true
+    },
+    "tonsil/field-02/he.jpg": {
+      "source_sha256": "09f662f2bf92cf829051b70f895482195e761debd78e069513b913c453447e9b",
+      "display_sha256": "cea28e3118e244ce34233b34c4ffe78dc9e5108f1d25e7ca26da0b433fc99869",
+      "reencoded_for_display": true
+    },
+    "tonsil/field-02/output-mask-with-geojson.jpg": {
+      "source_sha256": "c30acd9e75793b68757ed8391eff3f9301fd3a4a163917163eb8a9766cb296de",
+      "display_sha256": "450566dd862ce10199f445feed3d69dcda80ead88a2f986d5d6fc26a0e6474dc",
+      "reencoded_for_display": true
+    },
+    "tonsil/field-03/coarse-over-he.jpg": {
+      "source_sha256": "76a397a4c1c176bf9d15457be7d964d0d76190e89ee7c5d154722690756ca7c7",
+      "display_sha256": "0c8b041e123ec6ea7d2d8fd0b3f811c3323e733a2ee58739d79ae53498b5100d",
+      "reencoded_for_display": true
+    },
+    "tonsil/field-03/global-rgb.jpg": {
+      "source_sha256": "e1770df4cc74468e2368afb76c21a0ee85998c171b36e5b497c83063dd79860f",
+      "display_sha256": "ee95e6b86a0b4adf048d65eaf78000d5d09a7fd90f2b5f1e9c295a979ac71f16",
+      "reencoded_for_display": true
+    },
+    "tonsil/field-03/group-01.jpg": {
+      "source_sha256": "23dd84e175312915a7dfa9ba9f20d90fec02a8d36ebe7d97bbc5a91f1f6d0d68",
+      "display_sha256": "87a0fb1e36bdba9c048ab12674733b67fd8c8c46b959c414afe14d643148ed3b",
+      "reencoded_for_display": true
+    },
+    "tonsil/field-03/he.jpg": {
+      "source_sha256": "3cc4faa564f523b404d54d1103ee1316770d9db0514ee39ea7a91033815280b9",
+      "display_sha256": "7858de5b6a8595ec31349fef5e57b4e6b681ebfdb2d062191e9f21482bdf0699",
+      "reencoded_for_display": true
+    },
+    "tonsil/field-03/output-mask-with-geojson.jpg": {
+      "source_sha256": "a409793e6fc2b3a6236874e9fef1b2b1ffed4831ae61be0861f756f24dd8c0df",
+      "display_sha256": "239481f4f74b2745cebdd925c574e58285f59a87b285fdb3b2a29d2306193d85",
+      "reencoded_for_display": true
+    },
+    "tonsil/full-output-mask-with-geojson.jpg": {
+      "source_sha256": "6f34733b78a8568909422e62b6fd2b251114abd9719857f79f0793d2d76e33bd",
+      "display_sha256": "c9ecfbf417fdca9ece52f3d8dfaad66eee35c30c8ef232ae1df29326c5bee4ab",
+      "reencoded_for_display": true
+    },
+    "tonsil/global-rgb-overview.jpg": {
+      "source_sha256": "2b12ff53060e33c4874eca632e7c2b0f7da2a9ecf3cf2e68effd94583311a875",
+      "display_sha256": "37043fb2dba4d2088c705efe79fb380d868f986f1f123fb0a12165e27588d9fa",
+      "reencoded_for_display": true
+    },
+    "tonsil/group-01.jpg": {
+      "source_sha256": "ff0b23d0371c1038dc13aae495eb5792a0ce66be19ddddb4fe4c5f342d605c2b",
+      "display_sha256": "327899e809c3c88b846624cdea87135bf5f6496f481e7a265af88fca503104ae",
+      "reencoded_for_display": true
+    },
+    "tonsil/group-02.jpg": {
+      "source_sha256": "4b960f29b941d8d0df6e70ffeec33a961053ada5366c3fbb54db457d45a29ff7",
+      "display_sha256": "addda365422a94681cdaf0c9a2e6a24882633687252b3cac613b2a79fd4be8d7",
+      "reencoded_for_display": true
+    },
+    "tonsil/group-03.jpg": {
+      "source_sha256": "a91d69dbff015872ef8666fc2589e087663f029d51998e8ff0a2c37a16a51356",
+      "display_sha256": "14c83e548ea73ee083f8d94ac2f02a96f76af8d09a0d0475ad07d99d4feeb9eb",
+      "reencoded_for_display": true
+    },
+    "tonsil/group-04.jpg": {
+      "source_sha256": "ed3b9769a50dedc964bef74bff488c3f043ee61cba21b21ea15ec94bf4212dfc",
+      "display_sha256": "6ff2e2fab1517e5aeff52cf20b115d330ea5b1666a39e3a6a7a01086172ac663",
+      "reencoded_for_display": true
+    },
+    "tonsil/group-05.jpg": {
+      "source_sha256": "a38c8330134f2247ebc90f9ae3044d9efeb10396780fd0177837172b60651d07",
+      "display_sha256": "e95923d6a08ef4f0044707645453e4cd7b40c15d3a114889c484b4dc7be3e5dc",
+      "reencoded_for_display": true
+    },
+    "tonsil/group-06.jpg": {
+      "source_sha256": "66db53620609087a60b6b82925848bd6866ec126ff53dfb1e99dc2ffd4cd2ea2",
+      "display_sha256": "dcf9c35bbf37489d2e4e52d8d99f2d766c24319efbcf07ee8ba9740a7040c377",
+      "reencoded_for_display": true
+    },
+    "tonsil/group-07.jpg": {
+      "source_sha256": "b41aab264b16d9ba8039f539d15c316cb05b90ec34711ee0c5cd18c923127c68",
+      "display_sha256": "1e6325eea09b66f43dc6ecc915816abd02c5798b1145b8693f873b41a65df38c",
+      "reencoded_for_display": true
+    },
+    "tonsil/group-08.jpg": {
+      "source_sha256": "ee3a19f03040788f1f9bb95456815a74b94b810393b31c1e320511af010b24e2",
+      "display_sha256": "12d0f12bc2c6608cb8a438f9d14e1c98145746c0d8a93e1089f94468ba291ef1",
+      "reencoded_for_display": true
+    },
+    "tonsil/group-09.jpg": {
+      "source_sha256": "af4f6573c4ba23ad9c9c0631079aff5acfdf709cfc5c2f22ab7536ff504ebf2a",
+      "display_sha256": "1dda68b2f196263346b589d6ce5af89f931c8299654b14da1fc1d4d2e3dcf634",
+      "reencoded_for_display": true
+    },
+    "tonsil/group-10.jpg": {
+      "source_sha256": "234ea9549126463e3632749e665d03034578a71053ab38292cc9db625a3202e1",
+      "display_sha256": "c21a97bf0099546360b9c8eddb0f3aa8e5e19a0dbd6a9f90b0b8ca868ebf09dd",
+      "reencoded_for_display": true
+    },
+    "tonsil/he-overview.jpg": {
+      "source_sha256": "43463fea6eb538dcb57dc83246e8b5d3d253ed89a375b6a438a8c2604d911c71",
+      "display_sha256": "0dc13acd547a6c9be544e36619eb9a9a986bd59fdedd0c58c26f1bcbc404cc29",
+      "reencoded_for_display": true
+    },
+    "tonsil/kodama-groups.png": {
+      "source_sha256": "e0a8d698c6b93f2a7bc9098f4d33dbc51665b47ca3d65e77f05d8fb072a46b8c",
+      "display_sha256": "e0a8d698c6b93f2a7bc9098f4d33dbc51665b47ca3d65e77f05d8fb072a46b8c",
+      "reencoded_for_display": false
+    },
+    "tonsil/large-01/coarse-over-he.jpg": {
+      "source_sha256": "79484a0d97b2a3e561f3da957b2da3cc3c41123c7c8ee6a1a397ac346058a3e0",
+      "display_sha256": "dc2742da5f7c97fbcf13bb79f3038389c908a61478eef00ba512148b1db5673e",
+      "reencoded_for_display": true
+    },
+    "tonsil/large-01/global-rgb.jpg": {
+      "source_sha256": "ee8703608dad7dde76590254e866e2854efef99ffa34ab1f902e5b869bbb8a62",
+      "display_sha256": "ccb70de138ee041fdb91fe3a9aaa5e7d4f7944f06a5fd69629b7f3fff68d1021",
+      "reencoded_for_display": true
+    },
+    "tonsil/large-01/group-01.jpg": {
+      "source_sha256": "ae76008972746ad7642cc34c99418d66f925b1870c376dfdd995a0fee12d82b9",
+      "display_sha256": "747c92d198c686ab5da1b9e7553bb754030af366785a16e6a76e5739345843be",
+      "reencoded_for_display": true
+    },
+    "tonsil/large-01/he.jpg": {
+      "source_sha256": "6d5540eb1e72b7e68b69d25da9d02fe272f51b9b853f12a7b8d0002e5c613c09",
+      "display_sha256": "32a5cf7df1c62e5bf4da23d7d7fb682133f9fcf5ea7d918692e90395d93e887c",
+      "reencoded_for_display": true
+    },
+    "tonsil/large-01/output-mask-with-geojson.jpg": {
+      "source_sha256": "8145ab524b811728d4d038b6de7393c6ee5b11824183d6693e1eea5003295286",
+      "display_sha256": "ee0cc6fefda3c166c56b7550a81d8feabc1366b75a45e6ecf9bbe472cd780b63",
+      "reencoded_for_display": true
+    },
+    "tonsil/large-02/coarse-over-he.jpg": {
+      "source_sha256": "da381480fef7bb4f38be3c42921831e1536f0f821246212c0eed5483b0f1da84",
+      "display_sha256": "b633dfe7844a920688afcef91a9b19826b3f49704dca7a98f88a1865ce3be38f",
+      "reencoded_for_display": true
+    },
+    "tonsil/large-02/global-rgb.jpg": {
+      "source_sha256": "5231ec766ddcc901bb826a28edaf1918dd950a354286c2334a1e6208c9077a96",
+      "display_sha256": "166f4d06d84995721563a9390ca8afb78baed512cdb40fcfca11dcc8c23daa79",
+      "reencoded_for_display": true
+    },
+    "tonsil/large-02/group-01.jpg": {
+      "source_sha256": "32a37a0cc997f9768da0eb3945daad26e73732f1979457f3de72e35836cd6c6b",
+      "display_sha256": "bccbe97e6df31f4a170ba99b51d446a9f7f427d23a8bae4608c6830380eedcf1",
+      "reencoded_for_display": true
+    },
+    "tonsil/large-02/he.jpg": {
+      "source_sha256": "14397a9f04c18f9c8ceed6b3da25fe2a799b55107238833c06b4ef392ec6731c",
+      "display_sha256": "5e3e11861df83eb8e3c6e27fadade62bd63343eec5f9ec227e957ea3620fe38a",
+      "reencoded_for_display": true
+    },
+    "tonsil/large-02/output-mask-with-geojson.jpg": {
+      "source_sha256": "f63967bd4674514de2e5342169798d52989ad8b5c37a24b2219d93718c857b8d",
+      "display_sha256": "7651025bcd483c7988972c60f2caf95413048c7bb7ad5eb6161212ec2664ac16",
+      "reencoded_for_display": true
+    },
+    "tonsil/large-03/coarse-over-he.jpg": {
+      "source_sha256": "89861e4091dbb1d93c93e9313cc173e6e12c403d8ceb3377405149809dd986de",
+      "display_sha256": "6c97b0eacf4c8c3b9c697d807f895de50cac0f398842cfab6cea86475a93ebf9",
+      "reencoded_for_display": true
+    },
+    "tonsil/large-03/global-rgb.jpg": {
+      "source_sha256": "e019f1d225523b4d0437d3d27ba6b1ecba511944cbe803b686c5e49f5e02956e",
+      "display_sha256": "13865228c58d3290c9f8f303a5a6b6dfd92ae57fe9ad6443c07b1ff9fb8ca57b",
+      "reencoded_for_display": true
+    },
+    "tonsil/large-03/group-01.jpg": {
+      "source_sha256": "e025c44d3c29bdf78f134a931c10e7e2804efec9ca9b2bb5c21218a111976ef7",
+      "display_sha256": "707a2b0e473df3163f8b3e7f5220586339deafe5de8d22d3c7296ece3282b613",
+      "reencoded_for_display": true
+    },
+    "tonsil/large-03/he.jpg": {
+      "source_sha256": "1767ba5518592a9456e3786cf816fd0492e88f7505bcbfabd84446766e4d9b1c",
+      "display_sha256": "872b31f13b47a0629a25f5f1b3714c94b1b1fa749e65ce09196d62cccbe36dee",
+      "reencoded_for_display": true
+    },
+    "tonsil/large-03/output-mask-with-geojson.jpg": {
+      "source_sha256": "0676078158095abfac9228fd2c767e1b38a00dc293e881b1813473b7f71495ca",
+      "display_sha256": "17ce659967e2c0446ab75f9a380b9f125c380f2138a21467dd82407207e4dae9",
+      "reencoded_for_display": true
+    },
+    "tonsil/tile-groups-over-he.jpg": {
+      "source_sha256": "b5b3ccccb7aa0f6612f3fe3805cd41f685e911bb41d0b3818114f0934497c672",
+      "display_sha256": "64118d7d14f95a7fc52654b09307a2e39c988c75fefa3932d5f41d3f9945fc0c",
+      "reencoded_for_display": true
+    },
+    "tonsil/wide-01/coarse-over-he.jpg": {
+      "source_sha256": "8c83f2eee6feb18c6546152acccba6c6de025263ccb53b55da15158950b6c3a7",
+      "display_sha256": "a205dcb5dfafbd3906f5b79f3462fdff77e7dedafc7ae4327f0db4b9efc404b0",
+      "reencoded_for_display": true
+    },
+    "tonsil/wide-01/global-rgb.jpg": {
+      "source_sha256": "1af9ad944f664662b0b5ee5ccad7f4794a5cb85ed45696c0af419728825671a8",
+      "display_sha256": "26ff2629cbb09771d9b237f9cc618caaedc163d35c2ef05ae6d2a31fc4d599ee",
+      "reencoded_for_display": true
+    },
+    "tonsil/wide-01/group-01.jpg": {
+      "source_sha256": "cafed3dabb9abd8b8cfeca10f65bfd5e63c2522ca512db22f520c43de1f07829",
+      "display_sha256": "eb0b56cfb7b066a117c4ba43e99157836738f081251075a0ae904145db78f118",
+      "reencoded_for_display": true
+    },
+    "tonsil/wide-01/he.jpg": {
+      "source_sha256": "36c2f9feff33b6572247f9aeefe09be0c102bdec69b63110b6b24fe691b07737",
+      "display_sha256": "0ce6ace36f1213453d1908a15e17252a98b9e66d71ebf619af27089b8b003820",
+      "reencoded_for_display": true
+    },
+    "tonsil/wide-01/output-mask-with-geojson.jpg": {
+      "source_sha256": "14d1598cec6e0ab0f04d3dc9eb1afbced06c293f001e8756afbf16a7d0ce0b3e",
+      "display_sha256": "22566faeb5d41ced04499fc787c908d12a67422d42c5c34ed00ca6cf6d22b6d5",
+      "reencoded_for_display": true
+    },
+    "tonsil/wide-02/coarse-over-he.jpg": {
+      "source_sha256": "6595bfc3df2de0b0bdd17bfebb833484fdf1b4375b539dfc45e01e9a970284a1",
+      "display_sha256": "a90dbd8adf4a1a5b535f988507306e3570ff4ffd4d49592caae58bfad3a84c6d",
+      "reencoded_for_display": true
+    },
+    "tonsil/wide-02/global-rgb.jpg": {
+      "source_sha256": "baf1f931502b3a3170b1913662c7ef4182e44ac9941ce942caa7d59eb58a43dd",
+      "display_sha256": "731e1f68b7ec40a8f8304118b32cdae4da571046983dff23fcd22be03432f4c8",
+      "reencoded_for_display": true
+    },
+    "tonsil/wide-02/group-01.jpg": {
+      "source_sha256": "455217841eb58c373515f23add6375e8da148ebdeb26823fd378092a9bdcac96",
+      "display_sha256": "2f16ebee377fdad55683a65d55b8caf5b310228820276384d04a5c5816e103fb",
+      "reencoded_for_display": true
+    },
+    "tonsil/wide-02/he.jpg": {
+      "source_sha256": "b66881ab944a3870db02d94895816aff1c70cec29e8b775bd2d3321af81935a1",
+      "display_sha256": "d6dd91f126c25904145e7ef067f0dea44d01577d0c800dba4e3bc7862ebffa27",
+      "reencoded_for_display": true
+    },
+    "tonsil/wide-02/output-mask-with-geojson.jpg": {
+      "source_sha256": "887fe2f2e5913b1af4ab7332f5ce8a85ba812320b256f8745b4d2eafe6fda023",
+      "display_sha256": "55e454357471d4f526c40e96098091503918b74120467ee03395ca301381f25f",
+      "reencoded_for_display": true
+    },
+    "tonsil/wide-03/coarse-over-he.jpg": {
+      "source_sha256": "fedca93a70abed619d317c8e8cec0942b215c4ac037e85263501e1bac6d45495",
+      "display_sha256": "1283b71dddbe48b0c019518d4005e78a5d044dc948139167a76bc9e4001dee99",
+      "reencoded_for_display": true
+    },
+    "tonsil/wide-03/global-rgb.jpg": {
+      "source_sha256": "d106e48b423c44cb0ed98fe39fa5f77ef31c7dcf4f15ad9ceb3e491f65130e50",
+      "display_sha256": "c84f683fef6c4b03a22042b73dc06d1f073baa7abdb17e00fd166ab2fdb94607",
+      "reencoded_for_display": true
+    },
+    "tonsil/wide-03/group-01.jpg": {
+      "source_sha256": "9fefb0ec7cd3398de527be9ef3bed9b137f0520fa0c6de3d8f668fdbc2a8f4de",
+      "display_sha256": "e6ab510b6f8c03625345ccdd77b0d8fd48d0558e71929b42153f6274479bdce5",
+      "reencoded_for_display": true
+    },
+    "tonsil/wide-03/he.jpg": {
+      "source_sha256": "3c6153559f68c8a2f0b557562a7e1a5b1f2761e732b72378e23ed4f02d2c2636",
+      "display_sha256": "b28e8fa7647d61e29cd0762b6f32bfc400cdb1271fe2a42767338df91fdcd147",
+      "reencoded_for_display": true
+    },
+    "tonsil/wide-03/output-mask-with-geojson.jpg": {
+      "source_sha256": "1e76bd9b1ff077a444985ab10983a7d3d31fb8e9f4ba496df127e028ffb54e07",
+      "display_sha256": "768b171d2033e59a27635177d8b197fe590bb4c07cf9d2665663b556e5210452",
+      "reencoded_for_display": true
+    }
+  },
+  "visium_figures_sha256": {
+    "breast_clustering_kodama_zoom.png": "2bbff50cfe0dcd151d83ce60f8ffb63f23a5642bf478780535d46600d20f3dff",
+    "breast_bora_field_5groups.png": "845f0c68868899305b4d3ad01850b4a3160a135546724d88f930229a707f5672",
+    "colorectal_clustering_kodama_zoom.png": "6755ebf227d6e6f3c5c511c49b8c493067860f738b3e42728c498722b6b69454",
+    "colorectal_bora_field_4groups.png": "f95ba3e4c59306cca8671f59aed1f8f2311f54758c36add9fd205cb0a9c7e06e",
+    "tonsil_clustering_kodama.png": "7d1795cfcd0b74e851ad6f59a5c3993df318e970f15edab65f7268bf62d4d370",
+    "tonsil_bora_field_v3.png": "4cce7f59bfb450f47b3ab3dfcd64e718a6ec24cf6a1d16a35b29059e75e60218"
+  },
+  "display_max_dimension_px": 1800,
+  "native_geojson_unchanged": true
+}

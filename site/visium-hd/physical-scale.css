@@ -1,0 +1,12 @@
+
+.image-frame{display:block;position:relative;overflow:hidden;background:#edf3f5}
+.image-frame img{display:block;position:absolute;left:0;top:0;max-width:none}
+.scale-bar{position:absolute;left:16px;bottom:15px;display:block;color:#fff;background:rgba(8,20,27,.80);box-shadow:0 0 0 7px rgba(8,20,27,.80);font:600 clamp(10px,.9vw,13px)/1.25 system-ui,sans-serif;text-align:center;pointer-events:none;z-index:1}
+.scale-bar .scale-label{display:block;white-space:nowrap;margin:0 0 5px}
+.scale-bar .scale-rule{display:block;width:100%;height:7px;border:0 solid white;border-width:0 2px 3px}
+figcaption .physical-dimensions{margin-top:4px;color:#254d5b;font-variant-numeric:tabular-nums}
+.tissue .physical-dimensions{display:block;font-weight:400;color:#55707a;font-size:.9rem}
+.field h3 small{font-weight:400;color:#55707a;font-size:.88rem}
+.links a{overflow-wrap:anywhere}
+@media(max-width:500px){.scale-bar{left:13px;bottom:13px}}
+@media print{.scale-bar{print-color-adjust:exact;-webkit-print-color-adjust:exact}}

@@ -3,24 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bora · tissue segmentation benchmark</title>
-  <meta name="description" content="Inspect Bora tissue segmentation: original H&E, expert annotations, anonymous input tile masks, RGB conversion, final tissue masks and simplified GeoJSON.">
-  <link rel="stylesheet" href="{{ROOT}}viewer.css">
-  <script src="{{ROOT}}viewer.js" defer></script>
+  <title>Bora · three benchmark collections</title>
+  <meta name="description" content="Explore Bora on annotated public histology datasets, Visium HD whole slides, and Visium gene-expression clustering examples.">
+  <link rel="stylesheet" href="viewer.css">
+  <script src="viewer.js" defer></script>
 </head>
-<body data-root="{{ROOT}}">
+<body data-root="">
 <header>
   <p class="eyebrow">BORA · HISTOPATHOLOGY</p>
-  <h1 id="title">Tissue segmentation benchmark</h1>
-  <p id="intro">Inspect the original image, expert annotations, anonymous input tiles, fixed Virchow2 RGB conversion, and refined tissue masks.</p>
+  <h1>Bora benchmark viewer</h1>
+  <p>Choose a benchmark collection. The three collections have different inputs and reference annotations.</p>
+  <nav class="benchmark-sections" aria-label="Benchmark collections">
+    <a href="index.html" aria-current="page"><strong>1 · Public datasets and masks</strong><span>BCSS, TIGER, GCSS, IGNITE · expert tissue masks</span></a>
+    <a href="visium-hd/"><strong>2 · Visium HD whole slides</strong><span>Colorectal cancer, pancreas, lymph node, tonsil</span></a>
+    <a href="visium/"><strong>3 · Visium gene clusters</strong><span>Giotto, Seurat, SpatialExperiment · spot labels refined with H&amp;E</span></a>
+  </nav>
   <nav class="links" aria-label="Project">
-    <a href="{{ROOT}}index.html">Neighbor context</a>
     <a href="https://github.com/tkcaccia/Bora-Analysis">Benchmark code</a>
     <a href="https://github.com/tkcaccia/Bora">Bora application</a>
-    <a href="{{ROOT}}attribution.html">Datasets and attribution</a>
+    <a href="attribution.html">Datasets and attribution</a>
   </nav>
 </header>
 <main>
+<section id="public-datasets" aria-labelledby="title">
+<h2 id="title">Public histology datasets with expert masks</h2>
+<p id="intro">Inspect the original H&amp;E image, expert tissue annotation, coarse input tile groups, Virchow2 projection, and Bora’s refined tissue mask for each image.</p>
 <p id="status" role="status">Loading benchmark…</p>
 <div id="metrics" class="metrics"></div>
 <p id="scope" class="notice"></p>
@@ -55,7 +62,8 @@
 </div>
 <p id="vector-info" aria-live="polite"></p>
 <svg id="geo" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Interactive tissue polygons over original H&E; drag to pan"></svg>
+</section>
 </main>
-<footer><p>Exploratory benchmark evaluation · PUMA excluded from evaluation · Data providers retain their rights. <a href="{{ROOT}}attribution.html">Attribution and reuse terms</a> · <a href="{{ROOT}}BUILD_PROVENANCE.json">Build provenance</a></p></footer>
+<footer><p>Exploratory benchmark evaluation · PUMA excluded from evaluation · Data providers retain their rights. <a href="attribution.html">Attribution and reuse terms</a> · <a href="BUILD_PROVENANCE.json">Build provenance</a></p></footer>
 </body>
 </html>

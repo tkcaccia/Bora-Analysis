@@ -3,7 +3,13 @@
 Benchmark acquisition, scoring, research workflows, figures and manuscript
 builders for [Bora](https://github.com/tkcaccia/Bora).
 
-**[Open the public benchmark viewer](https://tkcaccia.github.io/Bora-Analysis/)**
+**[Open the three-section benchmark viewer](https://tkcaccia.github.io/Bora-Analysis/)**
+
+The viewer separates three distinct evaluations:
+
+1. [Public histology datasets with expert masks](https://tkcaccia.github.io/Bora-Analysis/) — BCSS, TIGER, GCSS and IGNITE.
+2. [Visium HD whole-slide images](https://tkcaccia.github.io/Bora-Analysis/visium-hd/) — colorectal cancer, pancreas, lymph node and tonsil. Each tissue page shows the full-slide mask, its GeoJSON, slide-wide group responses, and nine exact crops of the saved result. The groups are anonymous and do not establish tissue-class accuracy.
+3. [Visium gene-expression clustering](https://tkcaccia.github.io/Bora-Analysis/visium/) — breast/Giotto, colorectal/Seurat and tonsil/SpatialExperiment spot clusters with selected Bora refinement fields. These examples have no expert pixel-level tissue mask.
 
 The 27 October 2026 full rerun is in progress. Its frozen protocol and
 reproduction code are documented in [the pipeline guide](pipeline/README.md)
@@ -27,11 +33,9 @@ The benchmark and Bora application use Neighbor context as the sole tissue
 classifier. Upstream clustering or tile prediction supplies anonymous groups;
 Neighbor context assigns tissue identities after refinement.
 
-The [full-slide Visium HD colon viewer](https://tkcaccia.github.io/Bora-Analysis/visium-hd-colon/)
-shows Bora on a 75,250 × 48,740-pixel H&E image with a supplied partial
-annotation. The [study summary](studies/visium-hd-colon-wsi-2026-10-19/)
-records its source and limitations; the [pipeline guide](pipeline/README.md)
-explains the reusable acquisition, calibration, encoding and Bora workflow.
+The earlier [colon WSI study](studies/visium-hd-colon-wsi-2026-10-19/)
+is retained for provenance. The current Visium HD viewer above presents the
+four whole-slide examples separately from the public-mask cohort.
 
 The [standard Visium workflows](pipeline/visium_clustering/) provide Seurat,
 Giotto and SpatialExperiment clustering for colorectal, breast and tonsil
@@ -64,7 +68,7 @@ compares three exporters on identical predicted masks.
 | `integrations/wsiTools/` | Proposed calibrated tile-plan and in-memory tile functions for the wsiTools R package |
 | `manuscript/` | Figure and document generation code |
 | `web/` | Human-editable static viewer HTML, JavaScript, CSS and data attribution |
-| `tools/` | Portability and published-site checks |
+| `tools/` | Viewer-asset assembly, portability and published-site checks |
 | `site/` | Published viewer assets, per-image scores, metadata, GeoJSON and asset hashes |
 | `docs/` | Benchmark navigation, model-source manifest, provenance and reproduction notes |
 | `studies/visium-hd-colon-wsi-2026-10-19/` | Full-slide source and interpretation notes |
@@ -93,6 +97,9 @@ python -m http.server 8000 --directory site
 
 The site verifier checks every image, vector, internal HTML link, case count,
 aggregate IoU, copied-asset hash and continuous polygon/hole area threshold.
+The new whole-slide and Visium display images are tied to their verified source
+figures in `site/BENCHMARK_SECTIONS_PROVENANCE.json`. Large images are resized
+for the browser; whole-slide GeoJSON coordinates are unchanged.
 GitHub Actions validates and deploys `site/` to GitHub Pages on changes to main.
 
 For data acquisition and the current workflow, see

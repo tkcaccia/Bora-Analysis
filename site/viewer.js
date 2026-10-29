@@ -20,10 +20,9 @@ async function init() {
     throw new Error('Expected only the Neighbor context tissue classifier');
   }
   document.body.classList.add('selected');
-  document.title = 'Bora · Neighbor context benchmark';
-  el('title').textContent = 'Neighbor context';
+  document.title = 'Bora · public tissue-mask benchmark';
   el('mask-title').textContent = 'Final classified tissue mask · Neighbor context';
-  el('intro').textContent = 'A complete visual record of Bora refinement and tissue-group identification on 116 calibrated histopathology images.';
+  el('intro').textContent = 'Bora refinement and tissue-group identification on 116 calibrated histopathology images, compared with expert tissue masks.';
   const chosen = data.models[0];
   el('metrics').innerHTML = `<div class="metric"><small>Mean final GeoJSON IoU</small><strong>${chosen.mean_final_geojson_iou.toFixed(3)}</strong><small>Mean across all ${data.cohort_cases} images</small></div><div class="metric"><small>Whole-group accuracy</small><strong>${pc(chosen.top1)}</strong><small>Balanced accuracy ${pc(chosen.balanced_accuracy)}</small></div><div class="metric"><small>Mean cached deployment</small><strong>${chosen.mean_cached_deployment_seconds.toFixed(2)} s</strong><small>Includes recorded cleanup and fitting; encoder excluded</small></div>`;
   el('scope').textContent = `${data.cohort_cases} multiclass images: BCSS ${data.dataset_counts.bcss}, TIGER ${data.dataset_counts.tiger}, GCSS ${data.dataset_counts.gcss}, IGNITE ${data.dataset_counts.ignite}. Original split labels are retained (${data.split_counts.test} test, ${data.split_counts.validation} validation). This exploratory benchmark is not an independent final validation. PUMA is excluded from evaluation.`;

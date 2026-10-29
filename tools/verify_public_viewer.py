@@ -40,6 +40,29 @@ class Links(HTMLParser):
 def verify(site):
     site = site.resolve()
     provenance = json.loads((site / 'BUILD_PROVENANCE.json').read_text())
+    sections = json.loads((site / 'BENCHMARK_SECTIONS_PROVENANCE.json').read_text())
+    expected_tissues = {'colon', 'pancreas', 'lymph', 'tonsil'}
+    assert set(sections['whole_slide_tissues']) == expected_tissues
+    assert sections['native_geojson_unchanged'] is True
+    for rel, record in sections['whole_slide_assets'].items():
+        asset = checked_path(site / 'visium-hd', rel, site)
+        if hashlib.sha256(asset.read_bytes()).hexdigest() != record['display_sha256']:
+            raise ValueError('Whole-slide display asset differs: ' + rel)
+        if rel.endswith('.geojson') and record['source_sha256'] != record['display_sha256']:
+            raise ValueError('Native whole-slide GeoJSON was altered: ' + rel)
+    assert len(sections['visium_figures_sha256']) == 6
+    for rel, digest in sections['visium_figures_sha256'].items():
+        asset = checked_path(site / 'visium', rel, site)
+        if hashlib.sha256(asset.read_bytes()).hexdigest() != digest:
+            raise ValueError('Visium figure differs: ' + rel)
+    root_html = (site / 'index.html').read_text()
+    for link in ('visium-hd/', 'visium/', 'id="public-datasets"'):
+        assert link in root_html
+    for tissue in expected_tissues:
+        html = (site / 'visium-hd' / (tissue + '.html')).read_text()
+        assert html.count('class="field"') == 9
+        assert f'{tissue}/BORA_FULL_SLIDE.wsi.geojson' in html
+        assert 'brain.html' not in html
     for rel, digest in provenance['source_asset_sha256'].items():
         p = checked_path(site, rel, site)
         if hashlib.sha256(p.read_bytes()).hexdigest() != digest:
