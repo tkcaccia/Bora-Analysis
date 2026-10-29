@@ -32,8 +32,10 @@ class Links(HTMLParser):
     def __init__(self):
         super().__init__()
         self.links = []
+        self.nodes = []
 
     def handle_starttag(self, tag, attrs):
+        self.nodes.append((tag, dict(attrs)))
         for key, value in attrs:
             if key in ('src', 'href', 'data-src') and value:
                 self.links.append(value)
@@ -162,6 +164,55 @@ def verify_inspectors(site, sections):
     return len(expected)
 
 
+def verify_template(site):
+    pages = [('index.html', 'public', None), ('visium-hd/index.html', 'visium-hd', None),
+             ('visium/index.html', 'visium', None)]
+    pages += [(f'visium-hd/{name}.html', 'visium-hd', name) for name in ('colon', 'pancreas', 'lymph', 'tonsil')]
+    pages += [(f'visium/{name}.html', 'visium', name) for name in ('breast', 'colorectal', 'tonsil')]
+    titles = ['Public datasets and masks', 'Visium HD whole slides', 'Visium gene clusters']
+    for relative, collection, tissue in pages:
+        content = (site / relative).read_text()
+        parsed = Links()
+        parsed.feed(content)
+        tags = lambda name: [attrs for tag, attrs in parsed.nodes if tag == name]
+        body, = tags('body')
+        assert 'benchmark-page' in body['class'].split() and body['data-collection'] == collection
+        main, = tags('main')
+        assert main['id'] == 'main-content'
+        header, = tags('header')
+        assert header['class'] == 'site-header'
+        footer, = tags('footer')
+        assert footer['class'] == 'site-footer'
+        assert not tags('style'), 'Page-local styles must not override the shared template'
+        assert len(tags('h1')) == 1
+        prefix = '' if collection == 'public' else '../'
+        styles = [node['href'] for node in tags('link') if node.get('rel') == 'stylesheet']
+        assert styles[0] == prefix + 'viewer.css'
+        assert styles[-1] == prefix + 'benchmark-template.css'
+        assert any(node.get('class') == 'skip-link' and node.get('href') == '#main-content' for node in tags('a'))
+        nav = re.search(r'<nav class="benchmark-sections"[^>]*>(.*?)</nav>', content, re.S).group(1)
+        assert all(f'{i} · {title}' in nav for i, title in enumerate(titles, 1))
+        navigation = Links()
+        navigation.feed(nav)
+        current = [attrs for tag, attrs in navigation.nodes if tag == 'a' and attrs.get('aria-current') == 'page']
+        assert len(current) == 1
+        assert current[0]['href'] == prefix + {'public': 'index.html', 'visium-hd': 'visium-hd/', 'visium': 'visium/'}[collection]
+        if collection != 'public':
+            local = re.search(r'<nav class="tissue-nav"[^>]*>(.*?)</nav>', content, re.S).group(1)
+            local_parser = Links()
+            local_parser.feed(local)
+            active = [attrs for tag, attrs in local_parser.nodes if tag == 'a' and attrs.get('aria-current') == 'page']
+            assert len(active) == 1 and active[0]['href'] == (tissue + '.html' if tissue else 'index.html')
+        if collection == 'visium':
+            assert sum(node.get('src') == 'geojson-download.js' for node in tags('script')) == 1
+        if relative == 'visium/index.html':
+            assert sum(node.get('class') == 'tissue-card' for node in tags('article')) == 3
+            assert 'Coverage limitation:' in re.sub(r'<details\b.*?</details>', '', content, flags=re.S)
+        if relative == 'visium-hd/index.html':
+            assert sum(node.get('class') == 'tissue-card' for node in tags('article')) == 4
+    return len(pages)
+
+
 def verify(site):
     site = site.resolve()
     provenance = json.loads((site / 'BUILD_PROVENANCE.json').read_text())
@@ -178,6 +229,7 @@ def verify(site):
     visium_samples = verify_visium(site, sections)
     additional_samples = verify_additional_wsi(site)
     inspectors = verify_inspectors(site, sections)
+    template_pages = verify_template(site)
     root_html = (site / 'index.html').read_text()
     for link in ('visium-hd/', 'visium/', 'id="public-datasets"'):
         assert link in root_html
@@ -261,6 +313,7 @@ def verify(site):
                          native_area_threshold=20, visium_whole_section_downloads=visium_samples,
                          visium_minimum_area_um2=400, additional_whole_slides=additional_samples,
                          whole_slide_and_expression_inspectors=inspectors,
+                         shared_template_pages=template_pages,
                          pages=sum(1 for _ in site.rglob('*.html')))))
 
 

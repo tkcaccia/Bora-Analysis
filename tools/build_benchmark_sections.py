@@ -20,6 +20,8 @@ import shutil
 
 from PIL import Image
 from build_visium_fullsection import main as build_visium_fullsection
+from add_geojson_inspectors import attach as attach_geojson_inspectors
+from apply_benchmark_template import apply as apply_benchmark_template
 
 
 TISSUES = ("colon", "pancreas", "lymph", "tonsil")
@@ -125,6 +127,8 @@ def main():
         "native_geojson_unchanged": True,
     }
     (site / "BENCHMARK_SECTIONS_PROVENANCE.json").write_text(json.dumps(provenance, indent=2) + "\n")
+    attach_geojson_inspectors(site)
+    apply_benchmark_template(site)
     print(json.dumps({"tissues": len(TISSUES), "wsi_assets": len(copied),
                       "visium_whole_section_samples": 3}))
 
