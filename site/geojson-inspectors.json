@@ -1,0 +1,700 @@
+{
+  "format": "bora-geojson-inspectors-v1",
+  "coordinate_policy": "Native image pixel edges; preview uses the exact analysis bounds.",
+  "geometry_policy": "Saved polygons are displayed without changing coordinates or topology.",
+  "public_dataset_images": 116,
+  "records": [
+    {
+      "id": "visium-hd-colon",
+      "title": "Colorectal cancer",
+      "section": "visium-hd",
+      "page": "visium-hd/colon.html#inspect-geojson",
+      "geometry": "visium-hd/colon/BORA_FULL_SLIDE.wsi.geojson",
+      "image": "visium-hd/colon/he-overview.jpg",
+      "image_sha256": "3a5abeb00e27fc7a437ed3006a33743b10e90d221ca6150143b1da65647c4c0c",
+      "image_bounds_xywh": [
+        0,
+        0,
+        75250,
+        40900
+      ],
+      "native_shape_yx": [
+        48740,
+        75250
+      ],
+      "native_mpp_xy": [
+        0.2738121503969019,
+        0.2738132569747595
+      ],
+      "source_feature_count": 16,
+      "geojson_bytes": 77342587,
+      "stored_geojson_sha256": "05e2efb6b175c8f3c759a41ed95cc31f0280e949e440580bc9c91e01e9c83a26",
+      "decoded_geojson_sha256": "05e2efb6b175c8f3c759a41ed95cc31f0280e949e440580bc9c91e01e9c83a26",
+      "label_source": "Anonymous image-derived KODAMA group",
+      "label_description": "These polygons retain Bora\u2019s numbered image-derived groups. A fastPLS tissue-name assignment is not available for this saved result.",
+      "fastpls_tissue_names_available": false,
+      "groups": [
+        {
+          "value": 1,
+          "name": "Group 01",
+          "color": "#e64949",
+          "area_um2": 50807.86897605164
+        },
+        {
+          "value": 2,
+          "name": "Group 02",
+          "color": "#4977e6",
+          "area_um2": 38771.88994799161
+        },
+        {
+          "value": 3,
+          "name": "Group 03",
+          "color": "#a5e649",
+          "area_um2": 10872655.366946775
+        },
+        {
+          "value": 4,
+          "name": "Group 04",
+          "color": "#e649d2",
+          "area_um2": 4487804.4766703965
+        },
+        {
+          "value": 5,
+          "name": "Group 05",
+          "color": "#49e6cb",
+          "area_um2": 4542417.829376401
+        },
+        {
+          "value": 6,
+          "name": "Group 06",
+          "color": "#e69e49",
+          "area_um2": 16228405.67202973
+        },
+        {
+          "value": 7,
+          "name": "Group 07",
+          "color": "#7049e6",
+          "area_um2": 7907768.147671105
+        },
+        {
+          "value": 8,
+          "name": "Group 08",
+          "color": "#50e649",
+          "area_um2": 16345144.284946203
+        },
+        {
+          "value": 9,
+          "name": "Group 09",
+          "color": "#e6497e",
+          "area_um2": 5362803.102737134
+        },
+        {
+          "value": 10,
+          "name": "Group 10",
+          "color": "#49abe6",
+          "area_um2": 9908575.529257158
+        },
+        {
+          "value": 11,
+          "name": "Group 11",
+          "color": "#d9e649",
+          "area_um2": 10074395.65208663
+        },
+        {
+          "value": 12,
+          "name": "Group 12",
+          "color": "#c549e6",
+          "area_um2": 5784819.14964361
+        },
+        {
+          "value": 13,
+          "name": "Group 13",
+          "color": "#49e697",
+          "area_um2": 6099730.374377893
+        },
+        {
+          "value": 14,
+          "name": "Group 14",
+          "color": "#e66a49",
+          "area_um2": 4626387.548222126
+        },
+        {
+          "value": 15,
+          "name": "Group 15",
+          "color": "#4957e6",
+          "area_um2": 9729823.595251786
+        },
+        {
+          "value": 16,
+          "name": "Group 16",
+          "color": "#84e649",
+          "area_um2": 1438962.5097167983
+        }
+      ]
+    },
+    {
+      "id": "visium-hd-pancreas",
+      "title": "Pancreas",
+      "section": "visium-hd",
+      "page": "visium-hd/pancreas.html#inspect-geojson",
+      "geometry": "visium-hd/pancreas/BORA_FULL_SLIDE.wsi.geojson",
+      "image": "visium-hd/pancreas/he-overview.jpg",
+      "image_sha256": "5f25e025b5146cf2d91e88e6e588c06b015447c882314f9206a2c06e06de0b10",
+      "image_bounds_xywh": [
+        0,
+        0,
+        33007,
+        46391
+      ],
+      "native_shape_yx": [
+        46391,
+        33007
+      ],
+      "native_mpp_xy": [
+        0.27377520066933136,
+        0.27377443025950576
+      ],
+      "source_feature_count": 4,
+      "geojson_bytes": 11450193,
+      "stored_geojson_sha256": "b300ae24af8aea2fb02d970e4a254ab51f0523823119d8700c2647c0ab3ab9c0",
+      "decoded_geojson_sha256": "b300ae24af8aea2fb02d970e4a254ab51f0523823119d8700c2647c0ab3ab9c0",
+      "label_source": "Anonymous image-derived KODAMA group",
+      "label_description": "These polygons retain Bora\u2019s numbered image-derived groups. A fastPLS tissue-name assignment is not available for this saved result.",
+      "fastpls_tissue_names_available": false,
+      "groups": [
+        {
+          "value": 1,
+          "name": "Group 01",
+          "color": "#e64949",
+          "area_um2": 7381339.818433767
+        },
+        {
+          "value": 2,
+          "name": "Group 02",
+          "color": "#4977e6",
+          "area_um2": 21184803.28528723
+        },
+        {
+          "value": 3,
+          "name": "Group 03",
+          "color": "#a5e649",
+          "area_um2": 38487348.91409441
+        },
+        {
+          "value": 4,
+          "name": "Group 04",
+          "color": "#e649d2",
+          "area_um2": 13545210.93579823
+        }
+      ]
+    },
+    {
+      "id": "visium-hd-lymph",
+      "title": "Lymph node",
+      "section": "visium-hd",
+      "page": "visium-hd/lymph.html#inspect-geojson",
+      "geometry": "visium-hd/lymph/BORA_FULL_SLIDE.wsi.geojson",
+      "image": "visium-hd/lymph/he-overview.jpg",
+      "image_sha256": "d99f8096b077d6a54f1cbb19e40937cfb4e7c7608d78a3dd016d66ed05d31356",
+      "image_bounds_xywh": [
+        0,
+        0,
+        30966,
+        39421
+      ],
+      "native_shape_yx": [
+        39421,
+        30966
+      ],
+      "native_mpp_xy": [
+        0.27377381382151356,
+        0.273773729659084
+      ],
+      "source_feature_count": 9,
+      "geojson_bytes": 26116630,
+      "stored_geojson_sha256": "c2235f76d79c1625bbd51262cb181257e2534091a4baf7db0807c4f020cca941",
+      "decoded_geojson_sha256": "c2235f76d79c1625bbd51262cb181257e2534091a4baf7db0807c4f020cca941",
+      "label_source": "Anonymous image-derived KODAMA group",
+      "label_description": "These polygons retain Bora\u2019s numbered image-derived groups. A fastPLS tissue-name assignment is not available for this saved result.",
+      "fastpls_tissue_names_available": false,
+      "groups": [
+        {
+          "value": 1,
+          "name": "Group 01",
+          "color": "#e64949",
+          "area_um2": 321571.36945265986
+        },
+        {
+          "value": 2,
+          "name": "Group 02",
+          "color": "#4977e6",
+          "area_um2": 1449782.997977792
+        },
+        {
+          "value": 3,
+          "name": "Group 03",
+          "color": "#a5e649",
+          "area_um2": 4049924.978181785
+        },
+        {
+          "value": 4,
+          "name": "Group 04",
+          "color": "#e649d2",
+          "area_um2": 5053951.798209785
+        },
+        {
+          "value": 5,
+          "name": "Group 05",
+          "color": "#49e6cb",
+          "area_um2": 5456825.504744802
+        },
+        {
+          "value": 6,
+          "name": "Group 06",
+          "color": "#e69e49",
+          "area_um2": 5852005.263813362
+        },
+        {
+          "value": 7,
+          "name": "Group 07",
+          "color": "#7049e6",
+          "area_um2": 6087355.450723306
+        },
+        {
+          "value": 8,
+          "name": "Group 08",
+          "color": "#50e649",
+          "area_um2": 2111254.5684001865
+        },
+        {
+          "value": 9,
+          "name": "Group 09",
+          "color": "#e6497e",
+          "area_um2": 836317.3307048953
+        }
+      ]
+    },
+    {
+      "id": "visium-hd-tonsil",
+      "title": "Tonsil",
+      "section": "visium-hd",
+      "page": "visium-hd/tonsil.html#inspect-geojson",
+      "geometry": "visium-hd/tonsil/BORA_FULL_SLIDE.wsi.geojson",
+      "image": "visium-hd/tonsil/he-overview.jpg",
+      "image_sha256": "0dc13acd547a6c9be544e36619eb9a9a986bd59fdedd0c58c26f1bcbc404cc29",
+      "image_bounds_xywh": [
+        0,
+        0,
+        29473,
+        41910
+      ],
+      "native_shape_yx": [
+        41910,
+        29473
+      ],
+      "native_mpp_xy": [
+        0.27376882585368173,
+        0.2737758730321103
+      ],
+      "source_feature_count": 10,
+      "geojson_bytes": 30088367,
+      "stored_geojson_sha256": "c860726322ccd201e59a54690216f00d3792726cefdec0d834365e275748e094",
+      "decoded_geojson_sha256": "c860726322ccd201e59a54690216f00d3792726cefdec0d834365e275748e094",
+      "label_source": "Anonymous image-derived KODAMA group",
+      "label_description": "These polygons retain Bora\u2019s numbered image-derived groups. A fastPLS tissue-name assignment is not available for this saved result.",
+      "fastpls_tissue_names_available": false,
+      "groups": [
+        {
+          "value": 1,
+          "name": "Group 01",
+          "color": "#e64949",
+          "area_um2": 67293.70378549106
+        },
+        {
+          "value": 2,
+          "name": "Group 02",
+          "color": "#4977e6",
+          "area_um2": 2370690.853555845
+        },
+        {
+          "value": 3,
+          "name": "Group 03",
+          "color": "#a5e649",
+          "area_um2": 5371821.458258404
+        },
+        {
+          "value": 4,
+          "name": "Group 04",
+          "color": "#e649d2",
+          "area_um2": 2074585.7882411995
+        },
+        {
+          "value": 5,
+          "name": "Group 05",
+          "color": "#49e6cb",
+          "area_um2": 5381718.245116797
+        },
+        {
+          "value": 6,
+          "name": "Group 06",
+          "color": "#e69e49",
+          "area_um2": 6090499.29694003
+        },
+        {
+          "value": 7,
+          "name": "Group 07",
+          "color": "#7049e6",
+          "area_um2": 2979604.3135271203
+        },
+        {
+          "value": 8,
+          "name": "Group 08",
+          "color": "#50e649",
+          "area_um2": 7418825.712642137
+        },
+        {
+          "value": 9,
+          "name": "Group 09",
+          "color": "#e6497e",
+          "area_um2": 8101755.3534904625
+        },
+        {
+          "value": 10,
+          "name": "Group 10",
+          "color": "#49abe6",
+          "area_um2": 5973229.413672948
+        }
+      ]
+    },
+    {
+      "id": "visium-breast",
+      "title": "Breast cancer \u00b7 Giotto",
+      "section": "visium",
+      "page": "visium/breast.html#inspect-geojson",
+      "geometry": "visium/fullsection/breast/breast-Visium-Bora-final.geojson.gz",
+      "image": "visium/fullsection/breast/he-overview.jpg",
+      "image_sha256": "7723798c983ee50a0bf3e0a0418f3aa533b25748f9fa585cad1589c73e114646",
+      "image_bounds_xywh": [
+        0,
+        0,
+        19505,
+        21571
+      ],
+      "native_shape_yx": [
+        21571,
+        19505
+      ],
+      "native_mpp_xy": [
+        0.5475859960287621,
+        0.5476093521857933
+      ],
+      "source_feature_count": 13,
+      "geojson_bytes": 8139296,
+      "stored_geojson_sha256": "acfe19ee4cdc439b570b0b1c4f81696ec92a6c3be894fdd6df25bad8296e1a8d",
+      "decoded_geojson_sha256": "a37050fd93ca96452e1bbe7e19590d1559418b7cc9a870dd67988343be28ff41",
+      "label_source": "Anonymous gene-expression group",
+      "label_description": "These polygons retain the gene-expression group identifiers refined by Bora. A fastPLS tissue-name assignment is not available for this saved result. Output beyond the measured spot footprint is image-only extrapolation.",
+      "fastpls_tissue_names_available": false,
+      "groups": [
+        {
+          "value": 1,
+          "name": "Group 01",
+          "color": "#e64949",
+          "area_um2": 2770804.513585065
+        },
+        {
+          "value": 2,
+          "name": "Group 02",
+          "color": "#4977e6",
+          "area_um2": 3785891.932241285
+        },
+        {
+          "value": 3,
+          "name": "Group 03",
+          "color": "#a5e649",
+          "area_um2": 2514385.822870273
+        },
+        {
+          "value": 4,
+          "name": "Group 04",
+          "color": "#e649d2",
+          "area_um2": 5598385.857776046
+        },
+        {
+          "value": 5,
+          "name": "Group 05",
+          "color": "#49e6cb",
+          "area_um2": 4471780.5542184645
+        },
+        {
+          "value": 6,
+          "name": "Group 06",
+          "color": "#e69e49",
+          "area_um2": 5246330.351909425
+        },
+        {
+          "value": 7,
+          "name": "Group 07",
+          "color": "#7049e6",
+          "area_um2": 4319492.347242847
+        },
+        {
+          "value": 8,
+          "name": "Group 08",
+          "color": "#50e649",
+          "area_um2": 2333563.2506426577
+        },
+        {
+          "value": 9,
+          "name": "Group 09",
+          "color": "#e6497e",
+          "area_um2": 1823728.8277320445
+        },
+        {
+          "value": 10,
+          "name": "Group 10",
+          "color": "#49abe6",
+          "area_um2": 3808363.3292200333
+        },
+        {
+          "value": 11,
+          "name": "Group 11",
+          "color": "#d9e649",
+          "area_um2": 3321066.802529018
+        },
+        {
+          "value": 12,
+          "name": "Group 12",
+          "color": "#c549e6",
+          "area_um2": 3213989.1031511007
+        },
+        {
+          "value": 13,
+          "name": "Group 13",
+          "color": "#49e697",
+          "area_um2": 1267271.816562717
+        }
+      ]
+    },
+    {
+      "id": "visium-colorectal",
+      "title": "Colorectal cancer \u00b7 Seurat",
+      "section": "visium",
+      "page": "visium/colorectal.html#inspect-geojson",
+      "geometry": "visium/fullsection/colorectal/colorectal-Visium-Bora-final.geojson.gz",
+      "image": "visium/fullsection/colorectal/he-overview.jpg",
+      "image_sha256": "78851e6c9041064f5499dbb079eab61bcca0c314df0cf288e4904d52ff2cc6d1",
+      "image_bounds_xywh": [
+        0,
+        0,
+        51996,
+        44403
+      ],
+      "native_shape_yx": [
+        44403,
+        51996
+      ],
+      "native_mpp_xy": [
+        0.27381448993623964,
+        0.27381182542863
+      ],
+      "source_feature_count": 19,
+      "geojson_bytes": 12347031,
+      "stored_geojson_sha256": "da8fc07d928c3dcc1304fad3dede276e770949f36683b702ac8e3e2b48416437",
+      "decoded_geojson_sha256": "98b328015362c3f06e3de8f2ef90e78c887ab3c59a49be8e9601b680170f1e0b",
+      "label_source": "Anonymous gene-expression group",
+      "label_description": "These polygons retain the gene-expression group identifiers refined by Bora. A fastPLS tissue-name assignment is not available for this saved result. Output beyond the measured spot footprint is image-only extrapolation.",
+      "fastpls_tissue_names_available": false,
+      "groups": [
+        {
+          "value": 1,
+          "name": "Group 01",
+          "color": "#e64949",
+          "area_um2": 8412124.169033669
+        },
+        {
+          "value": 2,
+          "name": "Group 02",
+          "color": "#4977e6",
+          "area_um2": 8037607.467275291
+        },
+        {
+          "value": 3,
+          "name": "Group 03",
+          "color": "#a5e649",
+          "area_um2": 6474408.395644844
+        },
+        {
+          "value": 4,
+          "name": "Group 04",
+          "color": "#e649d2",
+          "area_um2": 4797678.686557696
+        },
+        {
+          "value": 5,
+          "name": "Group 05",
+          "color": "#49e6cb",
+          "area_um2": 4002064.323991813
+        },
+        {
+          "value": 6,
+          "name": "Group 06",
+          "color": "#e69e49",
+          "area_um2": 5005039.550485045
+        },
+        {
+          "value": 7,
+          "name": "Group 07",
+          "color": "#7049e6",
+          "area_um2": 4471777.4182926025
+        },
+        {
+          "value": 8,
+          "name": "Group 08",
+          "color": "#50e649",
+          "area_um2": 5265772.381183505
+        },
+        {
+          "value": 9,
+          "name": "Group 09",
+          "color": "#e6497e",
+          "area_um2": 4033419.4972983287
+        },
+        {
+          "value": 10,
+          "name": "Group 10",
+          "color": "#49abe6",
+          "area_um2": 5708833.399288223
+        },
+        {
+          "value": 11,
+          "name": "Group 11",
+          "color": "#d9e649",
+          "area_um2": 4541587.347716975
+        },
+        {
+          "value": 12,
+          "name": "Group 12",
+          "color": "#c549e6",
+          "area_um2": 5160317.997353959
+        },
+        {
+          "value": 13,
+          "name": "Group 13",
+          "color": "#49e697",
+          "area_um2": 2848823.1990667055
+        },
+        {
+          "value": 14,
+          "name": "Group 14",
+          "color": "#e66a49",
+          "area_um2": 2839812.6778125237
+        },
+        {
+          "value": 15,
+          "name": "Group 15",
+          "color": "#4957e6",
+          "area_um2": 2716792.7192463255
+        },
+        {
+          "value": 16,
+          "name": "Group 16",
+          "color": "#84e649",
+          "area_um2": 1760815.2582821548
+        },
+        {
+          "value": 17,
+          "name": "Group 17",
+          "color": "#e649b2",
+          "area_um2": 1987384.3675473095
+        },
+        {
+          "value": 18,
+          "name": "Group 18",
+          "color": "#49dfe6",
+          "area_um2": 1002765.190419496
+        },
+        {
+          "value": 19,
+          "name": "Group 19",
+          "color": "#e6be49",
+          "area_um2": 499416.1247958452
+        }
+      ]
+    },
+    {
+      "id": "visium-tonsil",
+      "title": "Tonsil \u00b7 SpatialExperiment",
+      "section": "visium",
+      "page": "visium/tonsil.html#inspect-geojson",
+      "geometry": "visium/fullsection/tonsil/tonsil-Visium-Bora-final.geojson.gz",
+      "image": "visium/fullsection/tonsil/he-overview.jpg",
+      "image_sha256": "d960a583e54ec8f43234d686daffb3a07ba3e6d90281c69dd27176c0123069b5",
+      "image_bounds_xywh": [
+        0,
+        0,
+        32933,
+        37803
+      ],
+      "native_shape_yx": [
+        37803,
+        32933
+      ],
+      "native_mpp_xy": [
+        0.27377276574621023,
+        0.27377191331173495
+      ],
+      "source_feature_count": 7,
+      "geojson_bytes": 3167125,
+      "stored_geojson_sha256": "3f7cead0b822434c84d8dcdd67ccd4c36d0bdc0888ae92715b178d890a21633d",
+      "decoded_geojson_sha256": "c8e893c619930a82226a19a9a1719d64e03ae0384f59e8f0ac3e573277a909b1",
+      "label_source": "Anonymous gene-expression group",
+      "label_description": "These polygons retain the gene-expression group identifiers refined by Bora. A fastPLS tissue-name assignment is not available for this saved result. Output beyond the measured spot footprint is image-only extrapolation.",
+      "fastpls_tissue_names_available": false,
+      "groups": [
+        {
+          "value": 1,
+          "name": "Group 01",
+          "color": "#e64949",
+          "area_um2": 6617696.716251979
+        },
+        {
+          "value": 2,
+          "name": "Group 02",
+          "color": "#4977e6",
+          "area_um2": 9543317.920005282
+        },
+        {
+          "value": 3,
+          "name": "Group 03",
+          "color": "#a5e649",
+          "area_um2": 18803925.025322363
+        },
+        {
+          "value": 4,
+          "name": "Group 04",
+          "color": "#e649d2",
+          "area_um2": 5820007.838772914
+        },
+        {
+          "value": 5,
+          "name": "Group 05",
+          "color": "#49e6cb",
+          "area_um2": 6475469.3730299035
+        },
+        {
+          "value": 6,
+          "name": "Group 06",
+          "color": "#e69e49",
+          "area_um2": 8067501.665607163
+        },
+        {
+          "value": 7,
+          "name": "Group 07",
+          "color": "#7049e6",
+          "area_um2": 4874403.449337734
+        }
+      ]
+    }
+  ]
+}

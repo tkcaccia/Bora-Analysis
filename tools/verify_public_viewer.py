@@ -1,6 +1,7 @@
 """Validate the complete static viewer without scientific or GPU dependencies."""
 import argparse
 from collections import Counter
+import colorsys
 import csv
 import gzip
 import hashlib
@@ -72,6 +73,95 @@ def verify_visium(site, sections):
     return len(records)
 
 
+def verify_additional_wsi(site):
+    base = site / 'visium-hd'
+    manifest = base / 'ADDITIONAL_WSI_PROVENANCE.json'
+    if not manifest.exists():
+        assert 'ADDITIONAL_WSI_2026_10_29' not in (base / 'index.html').read_text()
+        return 0
+    records = json.loads(manifest.read_text())
+    assert set(records) == {'f0065', 'f0085', 'pm049', 'scanned-image-2'}
+    for sample, record in records.items():
+        assert record['confirmed_visium_hd'] is False
+        assert record['expert_masks_available'] is False
+        assert record['development_demonstration'] is True
+        assert record['minimum_polygon_and_hole_um2'] == 400
+        page = (base / (sample + '.html')).read_text()
+        assert 'Visium HD acquisition has not been established' in page
+        for kind in ('wide', 'large', 'field'):
+            for index in range(1, 4):
+                assert f'{kind}-{index:02d}/output-mask-with-geojson.jpg' in record['assets_sha256']
+        for rel, digest in record['assets_sha256'].items():
+            asset = checked_path(base / sample, rel, site)
+            assert hashlib.sha256(asset.read_bytes()).hexdigest() == digest, asset
+        archive = checked_path(base / sample, sample + '-Bora-final.geojson.gz', site)
+        assert hashlib.sha256(archive.read_bytes()).hexdigest() == record['compressed_sha256']
+        with gzip.open(archive, 'rb') as stream:
+            payload = stream.read()
+        assert len(payload) == record['decoded_bytes']
+        assert hashlib.sha256(payload).hexdigest() == record['global_geojson_sha256']
+        vector = json.loads(payload)
+        assert vector['type'] == 'FeatureCollection'
+        assert vector['minimum_component_and_hole_um2'] == 400
+        assert 0 < len(vector['features']) <= record['groups']
+        area_scale = math.prod(record['source_mpp_xy'])
+        for feature in vector['features']:
+            geometry = feature['geometry']
+            assert geometry['type'] in ('Polygon', 'MultiPolygon')
+            polygons = [geometry['coordinates']] if geometry['type'] == 'Polygon' else geometry['coordinates']
+            for polygon in polygons:
+                areas = [ring_area(ring) * area_scale for ring in polygon]
+                assert areas[0] - sum(areas[1:]) >= 400 - 1e-3, sample
+                assert all(area >= 400 - 1e-3 for area in areas[1:]), sample
+    return len(records)
+
+
+def verify_inspectors(site, sections):
+    """All published tissues must link to a registered, correctly aligned inspector."""
+    manifest = json.loads((site / 'geojson-inspectors.json').read_text())
+    assert manifest['format'] == 'bora-geojson-inspectors-v1'
+    expected = {'visium-hd-' + tissue for tissue in sections['whole_slide_tissues']}
+    expected |= {'visium-breast', 'visium-colorectal', 'visium-tonsil'}
+    assert {row['id'] for row in manifest['records']} == expected
+    assert len(manifest['records']) == len(expected)
+    assert manifest['public_dataset_images'] == 116
+    root = (site / 'index.html').read_text()
+    assert 'id="inspect-geojson"' in root
+    for record in manifest['records']:
+        page = checked_path(site, record['page'].split('#')[0], site)
+        content = page.read_text()
+        assert content.count('class="geojson-inspector"') == 1
+        assert 'id="inspect-geojson"' in content
+        assert f'data-record="{record["id"]}"' in content
+        assert 'data-manifest="../geojson-inspectors.json"' in content
+        assert '../geojson-inspector.js' in content and '../geojson-inspector.css' in content
+        assert record['page'] in root
+        assert record['fastpls_tissue_names_available'] is False
+        assert 'fastPLS tissue-name assignment is not available' in record['label_description']
+        image = checked_path(site, record['image'], site)
+        assert hashlib.sha256(image.read_bytes()).hexdigest() == record['image_sha256']
+        geometry = checked_path(site, record['geometry'], site)
+        stored = geometry.read_bytes()
+        assert len(stored) == record['geojson_bytes']
+        assert hashlib.sha256(stored).hexdigest() == record['stored_geojson_sha256']
+        decoded = gzip.decompress(stored) if geometry.suffix == '.gz' else stored
+        assert hashlib.sha256(decoded).hexdigest() == record['decoded_geojson_sha256']
+        vector = json.loads(decoded)
+        assert record['native_shape_yx'] == vector['native_shape_yx']
+        assert record['native_mpp_xy'] == vector['native_mpp_xy']
+        x0, y0, x1, y1 = vector['full_slide_input_identity']['analysis_bounds_native_xyxy']
+        assert record['image_bounds_xywh'] == [x0, y0, x1-x0, y1-y0]
+        assert len(vector['features']) == record['source_feature_count'] == len(record['groups'])
+        for feature, group in zip(vector['features'], record['groups']):
+            props = feature['properties']
+            assert group['value'] == props['value']
+            assert props['classification'] == f'group_{group["value"]}'
+            assert group['area_um2'] == props.get('area_um2')
+            rgb = colorsys.hsv_to_rgb(((group['value']-1)*.61803398875) % 1, .68, .9)
+            assert group['color'] == '#' + ''.join(f'{round(255*c):02x}' for c in rgb)
+    return len(expected)
+
+
 def verify(site):
     site = site.resolve()
     provenance = json.loads((site / 'BUILD_PROVENANCE.json').read_text())
@@ -86,6 +176,8 @@ def verify(site):
         if rel.endswith('.geojson') and record['source_sha256'] != record['display_sha256']:
             raise ValueError('Native whole-slide GeoJSON was altered: ' + rel)
     visium_samples = verify_visium(site, sections)
+    additional_samples = verify_additional_wsi(site)
+    inspectors = verify_inspectors(site, sections)
     root_html = (site / 'index.html').read_text()
     for link in ('visium-hd/', 'visium/', 'id="public-datasets"'):
         assert link in root_html
@@ -167,7 +259,9 @@ def verify(site):
     print(json.dumps(dict(ok=True, cases=provenance['case_count'], copied_assets=len(provenance['source_asset_sha256']),
                          unique_vectors=len(vector_paths), polygon_parts=parts, holes=holes,
                          native_area_threshold=20, visium_whole_section_downloads=visium_samples,
-                         visium_minimum_area_um2=400, pages=sum(1 for _ in site.rglob('*.html')))))
+                         visium_minimum_area_um2=400, additional_whole_slides=additional_samples,
+                         whole_slide_and_expression_inspectors=inspectors,
+                         pages=sum(1 for _ in site.rglob('*.html')))))
 
 
 if __name__ == '__main__':
