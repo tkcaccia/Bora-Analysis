@@ -2,6 +2,7 @@
 import argparse
 from collections import Counter
 import csv
+import gzip
 import hashlib
 from html.parser import HTMLParser
 import json
@@ -33,8 +34,42 @@ class Links(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
         for key, value in attrs:
-            if key in ('src', 'href') and value:
+            if key in ('src', 'href', 'data-src') and value:
                 self.links.append(value)
+
+
+def verify_visium(site, sections):
+    base = site / 'visium'
+    manifest = checked_path(base, sections['visium_fullsection_provenance'], site)
+    records = json.loads(manifest.read_text())
+    assert set(records) == {'breast_giotto', 'colorectal_seurat', 'tonsil_spatialexperiment'}
+    for sample, record in records.items():
+        assert record['crop_count'] == 9
+        assert record['minimum_polygon_and_hole_um2'] == 400
+        for rel, digest in record['assets_sha256'].items():
+            asset = checked_path(base, rel, site)
+            assert hashlib.sha256(asset.read_bytes()).hexdigest() == digest, asset
+        archive = checked_path(base, record['download'], site)
+        assert hashlib.sha256(archive.read_bytes()).hexdigest() == record['compressed_sha256']
+        with gzip.open(archive, 'rb') as stream:
+            payload = stream.read()
+        assert len(payload) == record['geojson_bytes']
+        assert hashlib.sha256(payload).hexdigest() == record['global_geojson_sha256']
+        vector = json.loads(payload)
+        del payload
+        assert vector['type'] == 'FeatureCollection'
+        assert vector['minimum_component_and_hole_um2'] == 400
+        assert len(vector['features']) == record['group_count']
+        area_scale = math.prod(record['native_mpp_xy'])
+        for feature in vector['features']:
+            geometry = feature['geometry']
+            assert geometry['type'] in ('Polygon', 'MultiPolygon')
+            polys = [geometry['coordinates']] if geometry['type'] == 'Polygon' else geometry['coordinates']
+            for polygon in polys:
+                areas = [ring_area(ring) * area_scale for ring in polygon]
+                assert areas[0] - sum(areas[1:]) >= 400 - 1e-4, sample
+                assert all(a >= 400 - 1e-4 for a in areas[1:]), sample
+    return len(records)
 
 
 def verify(site):
@@ -50,11 +85,7 @@ def verify(site):
             raise ValueError('Whole-slide display asset differs: ' + rel)
         if rel.endswith('.geojson') and record['source_sha256'] != record['display_sha256']:
             raise ValueError('Native whole-slide GeoJSON was altered: ' + rel)
-    assert len(sections['visium_figures_sha256']) == 6
-    for rel, digest in sections['visium_figures_sha256'].items():
-        asset = checked_path(site / 'visium', rel, site)
-        if hashlib.sha256(asset.read_bytes()).hexdigest() != digest:
-            raise ValueError('Visium figure differs: ' + rel)
+    visium_samples = verify_visium(site, sections)
     root_html = (site / 'index.html').read_text()
     for link in ('visium-hd/', 'visium/', 'id="public-datasets"'):
         assert link in root_html
@@ -135,7 +166,8 @@ def verify(site):
                 raise ValueError('Internal development history or algorithm code in public site: ' + str(path))
     print(json.dumps(dict(ok=True, cases=provenance['case_count'], copied_assets=len(provenance['source_asset_sha256']),
                          unique_vectors=len(vector_paths), polygon_parts=parts, holes=holes,
-                         native_area_threshold=20, pages=sum(1 for _ in site.rglob('*.html')))))
+                         native_area_threshold=20, visium_whole_section_downloads=visium_samples,
+                         visium_minimum_area_um2=400, pages=sum(1 for _ in site.rglob('*.html')))))
 
 
 if __name__ == '__main__':

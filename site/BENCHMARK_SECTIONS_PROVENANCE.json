@@ -1308,14 +1308,7 @@
       "reencoded_for_display": true
     }
   },
-  "visium_figures_sha256": {
-    "breast_clustering_kodama_zoom.png": "2bbff50cfe0dcd151d83ce60f8ffb63f23a5642bf478780535d46600d20f3dff",
-    "breast_bora_field_5groups.png": "845f0c68868899305b4d3ad01850b4a3160a135546724d88f930229a707f5672",
-    "colorectal_clustering_kodama_zoom.png": "6755ebf227d6e6f3c5c511c49b8c493067860f738b3e42728c498722b6b69454",
-    "colorectal_bora_field_4groups.png": "f95ba3e4c59306cca8671f59aed1f8f2311f54758c36add9fd205cb0a9c7e06e",
-    "tonsil_clustering_kodama.png": "7d1795cfcd0b74e851ad6f59a5c3993df318e970f15edab65f7268bf62d4d370",
-    "tonsil_bora_field_v3.png": "4cce7f59bfb450f47b3ab3dfcd64e718a6ec24cf6a1d16a35b29059e75e60218"
-  },
   "display_max_dimension_px": 1800,
-  "native_geojson_unchanged": true
+  "native_geojson_unchanged": true,
+  "visium_fullsection_provenance": "FULLSECTION_PROVENANCE.json"
 }

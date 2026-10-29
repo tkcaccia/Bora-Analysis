@@ -1,51 +1,29 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bora · Visium gene-expression clustering</title>
-  <meta name="description" content="Three Visium gene-expression clustering examples refined with Bora using matched H&E images.">
-  <link rel="stylesheet" href="../viewer.css">
-  <style>
-    main{max-width:1900px}.example{padding:26px 0;border-top:2px solid #cbd8dd}.example:first-of-type{border-top:0}.example figure{margin:16px 0}.example img{margin:0}.example figcaption{padding:10px 0}.note{border-left:4px solid #006d80;background:white;padding:12px 18px}.jump{display:flex;gap:18px;flex-wrap:wrap}
-  </style>
-</head>
-<body>
-<header>
-  <p class="eyebrow">BORA · BENCHMARK 3</p>
-  <h1>Visium gene-expression clustering</h1>
-  <p>Spot clusters from three analysis workflows are placed on their matched H&amp;E images. Bora refines selected fields using the histology and Virchow2 features.</p>
-  <nav class="benchmark-sections" aria-label="Benchmark collections">
-    <a href="../index.html"><strong>1 · Public datasets and masks</strong><span>Expert-annotated histology images</span></a>
-    <a href="../visium-hd/"><strong>2 · Visium HD whole slides</strong><span>Four full-slide results</span></a>
-    <a href="index.html" aria-current="page"><strong>3 · Visium gene clusters</strong><span>Breast, colorectal, and tonsil examples</span></a>
-  </nav>
-</header>
-<main>
-  <p class="note">These are selected visual examples. The input groups come from gene-expression spots, and the Bora figures show selected H&amp;E fields. No expert pixel-level tissue mask was provided for these three examples, so the panels do not establish segmentation accuracy. They are separate from the Visium HD whole-slide benchmark.</p>
-  <nav class="jump" aria-label="Examples"><a href="#breast">Breast · Giotto</a><a href="#colorectal">Colorectal · Seurat</a><a href="#tonsil">Tonsil · SpatialExperiment</a></nav>
-  <section class="example" id="breast">
-    <h2>Breast cancer · Giotto</h2>
-    <p>Expression-derived clusters are shown on the breast H&amp;E section and in the KODAMA embedding. The lower figure compares the spot map with Bora’s refined map in one selected field.</p>
-    <figure><a href="breast_clustering_kodama_zoom.png"><img loading="lazy" src="breast_clustering_kodama_zoom.png" alt="Breast H&E, gene-expression spot clusters, and KODAMA embedding"></a><figcaption>Gene-expression clustering and matched H&amp;E field.</figcaption></figure>
-    <figure><a href="breast_bora_field_5groups.png"><img loading="lazy" src="breast_bora_field_5groups.png" alt="Breast original H&E, input spot labels, and Bora-refined map"></a><figcaption>Selected field: original H&amp;E, input spot map, and Bora refinement.</figcaption></figure>
-    <p><a href="https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Breast_Cancer/CytAssist_FFPE_Human_Breast_Cancer_web_summary.html">10x Genomics breast sample</a></p>
-  </section>
-  <section class="example" id="colorectal">
-    <h2>Colorectal cancer · Seurat</h2>
-    <p>The input groups were calculated from gene-expression spots. Bora used the matched H&amp;E field to refine their boundaries.</p>
-    <figure><a href="colorectal_clustering_kodama_zoom.png"><img loading="lazy" src="colorectal_clustering_kodama_zoom.png" alt="Colorectal H&E, gene-expression spot clusters, and KODAMA embedding"></a><figcaption>Gene-expression clustering and matched H&amp;E field.</figcaption></figure>
-    <figure><a href="colorectal_bora_field_4groups.png"><img loading="lazy" src="colorectal_bora_field_4groups.png" alt="Colorectal original H&E, input spot labels, and Bora-refined map"></a><figcaption>Selected field: original H&amp;E, input spot map, and Bora refinement.</figcaption></figure>
-    <p><a href="https://www.10xgenomics.com/datasets/human-colorectal-cancer-11-mm-capture-area-ffpe-2-standard">10x Genomics colorectal sample</a></p>
-  </section>
-  <section class="example" id="tonsil">
-    <h2>Tonsil · SpatialExperiment</h2>
-    <p>Expression-derived clusters cover the measured spot region. The Bora panel shows refinement on one matched H&amp;E field.</p>
-    <figure><a href="tonsil_clustering_kodama.png"><img loading="lazy" src="tonsil_clustering_kodama.png" alt="Tonsil H&E, gene-expression spot clusters, and KODAMA embedding"></a><figcaption>Gene-expression clustering on the tonsil section.</figcaption></figure>
-    <figure><a href="tonsil_bora_field_v3.png"><img loading="lazy" src="tonsil_bora_field_v3.png" alt="Tonsil original H&E, input spot labels, and Bora-refined map"></a><figcaption>Selected field: original H&amp;E, input spot map, and Bora refinement.</figcaption></figure>
-    <p><a href="https://www.10xgenomics.com/datasets/visium-cytassist-gene-and-protein-expression-library-of-human-tonsil-with-add-on-antibodies-h-e-6-5-mm-ffpe-2-standard">10x Genomics tonsil sample</a></p>
-  </section>
-  <p><a href="https://github.com/tkcaccia/Bora-extra/tree/main/pipeline/visium_clustering">Reproduce the Visium clustering workflows</a> · <a href="../BENCHMARK_SECTIONS_PROVENANCE.json">Image provenance</a></p>
-</main>
-</body>
-</html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bora · Visium gene-expression clustering</title><link rel="stylesheet" href="../viewer.css"><style>
+main{max-width:1900px}.tissue{padding:24px 0;border-top:2px solid #cbd8dd}.overview{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.overview figure,.gray figure{min-width:0}.embedding{max-width:1150px}.gray{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.note{border-left:4px solid #006d80;background:white;padding:12px 18px;max-width:none}.jump{display:flex;gap:18px;flex-wrap:wrap}.download{display:inline-block;background:#006d80;color:white;padding:10px 14px;border:0;border-radius:6px;text-decoration:none;font:inherit;font-weight:700;cursor:pointer}.download:hover,.download:focus{background:#004b5a}.download:disabled{opacity:.65;cursor:wait}h4{margin:24px 0 8px}@media(max-width:900px){.overview,.gray{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.overview,.gray{grid-template-columns:1fr}}
+.sample-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.sample-grid .tissue{min-width:0}.sample-grid .download{max-width:100%}@media(max-width:1000px){.sample-grid{grid-template-columns:1fr}}</style></head><body><header><p class="eyebrow">BORA · BENCHMARK 3</p><h1>Visium gene-expression clustering</h1><p>Whole-section Bora refinement of spot clusters from three expression-analysis workflows.</p><nav class="benchmark-sections" aria-label="Benchmark collections"><a href="../index.html"><strong>1 · Public datasets and masks</strong><span>Expert-annotated histology images</span></a><a href="../visium-hd/"><strong>2 · Visium HD whole slides</strong><span>Whole-slide tissue examples</span></a><a href="index.html" aria-current="page"><strong>3 · Visium gene clusters</strong><span>Breast, colorectal, and tonsil examples</span></a></nav></header><main>
+<p class="note">Each mask was generated over the complete H&E section with one fixed fit. The nine fields per tissue are exact crops of that output. No expert pixel-level mask is available for these examples, so they demonstrate registered refinement, not segmentation accuracy.</p>
+<nav class="jump"><a href="index.html">All samples</a><a href="breast.html">Breast · Giotto</a><a href="colorectal.html">Colorectal · Seurat</a><a href="tonsil.html">Tonsil · SpatialExperiment</a></nav>
+<div class="sample-grid"><section id="breast" class="tissue">
+<h2>Breast cancer · Giotto</h2>
+<p>The measured spot clusters were frozen before image refinement. Bora used one whole-section fit and all 13 response maps. Output outside the measured spot footprint is image-only extrapolation.</p>
+<p><a href="https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Breast_Cancer/CytAssist_FFPE_Human_Breast_Cancer_web_summary.html">10x Genomics source sample</a></p>
+<p><button type="button" class="download geojson-download" data-src="fullsection/breast/breast-Visium-Bora-final.geojson.gz" data-filename="breast-Visium-Bora-final.geojson" aria-describedby="download-status-breast">Download final whole-section GeoJSON (61.4 MB)</button> · <a href="fullsection/breast/breast-Visium-Bora-final.geojson.gz" download="breast-Visium-Bora-final.geojson.gz">Compressed copy (8.1 MB)</a> <span id="download-status-breast" aria-live="polite"></span></p>
+<p>The GeoJSON uses the original full-resolution H&amp;E image pixel coordinates and retains the anonymous expression-group identifiers shown here.</p>
+<p class="note">Coverage limitation: the tissue-support rule excludes part of the pale breast tissue, most clearly in Wide 02 and Large 03. Those uncolored regions are an output failure, not evidence of background or absence of tissue.</p>
+<figure><a href="fullsection/breast/full-output-mask-with-geojson.jpg"><img loading="lazy" src="fullsection/breast/full-output-mask-with-geojson.jpg" alt="Whole-section output and GeoJSON boundaries · 10.68 × 11.81 mm"></a><figcaption>Whole-section output and GeoJSON boundaries · 10.68 × 11.81 mm</figcaption></figure><p><a href="breast.html">View the complete result and all nine zooms →</a></p></section><section id="colorectal" class="tissue">
+<h2>Colorectal cancer · Seurat</h2>
+<p>The measured spot clusters were frozen before image refinement. Bora used one whole-section fit and all 19 response maps. Output outside the measured spot footprint is image-only extrapolation.</p>
+<p><a href="https://www.10xgenomics.com/datasets/human-colorectal-cancer-11-mm-capture-area-ffpe-2-standard">10x Genomics source sample</a></p>
+<p><button type="button" class="download geojson-download" data-src="fullsection/colorectal/colorectal-Visium-Bora-final.geojson.gz" data-filename="colorectal-Visium-Bora-final.geojson" aria-describedby="download-status-colorectal">Download final whole-section GeoJSON (86.5 MB)</button> · <a href="fullsection/colorectal/colorectal-Visium-Bora-final.geojson.gz" download="colorectal-Visium-Bora-final.geojson.gz">Compressed copy (12.3 MB)</a> <span id="download-status-colorectal" aria-live="polite"></span></p>
+<p>The GeoJSON uses the original full-resolution H&amp;E image pixel coordinates and retains the anonymous expression-group identifiers shown here.</p>
+
+<figure><a href="fullsection/colorectal/full-output-mask-with-geojson.jpg"><img loading="lazy" src="fullsection/colorectal/full-output-mask-with-geojson.jpg" alt="Whole-section output and GeoJSON boundaries · 14.24 × 12.16 mm"></a><figcaption>Whole-section output and GeoJSON boundaries · 14.24 × 12.16 mm</figcaption></figure><p><a href="colorectal.html">View the complete result and all nine zooms →</a></p></section><section id="tonsil" class="tissue">
+<h2>Tonsil · SpatialExperiment</h2>
+<p>The measured spot clusters were frozen before image refinement. Bora used one whole-section fit and all 7 response maps. Output outside the measured spot footprint is image-only extrapolation.</p>
+<p><a href="https://www.10xgenomics.com/datasets/visium-cytassist-gene-and-protein-expression-library-of-human-tonsil-with-add-on-antibodies-h-e-6-5-mm-ffpe-2-standard">10x Genomics source sample</a></p>
+<p><button type="button" class="download geojson-download" data-src="fullsection/tonsil/tonsil-Visium-Bora-final.geojson.gz" data-filename="tonsil-Visium-Bora-final.geojson" aria-describedby="download-status-tonsil">Download final whole-section GeoJSON (19.6 MB)</button> · <a href="fullsection/tonsil/tonsil-Visium-Bora-final.geojson.gz" download="tonsil-Visium-Bora-final.geojson.gz">Compressed copy (3.2 MB)</a> <span id="download-status-tonsil" aria-live="polite"></span></p>
+<p>The GeoJSON uses the original full-resolution H&amp;E image pixel coordinates and retains the anonymous expression-group identifiers shown here.</p>
+
+<figure><a href="fullsection/tonsil/full-output-mask-with-geojson.jpg"><img loading="lazy" src="fullsection/tonsil/full-output-mask-with-geojson.jpg" alt="Whole-section output and GeoJSON boundaries · 9.02 × 10.35 mm"></a><figcaption>Whole-section output and GeoJSON boundaries · 9.02 × 10.35 mm</figcaption></figure><p><a href="tonsil.html">View the complete result and all nine zooms →</a></p></section></div>
+<p><a href="https://github.com/tkcaccia/Bora-Analysis/tree/main/pipeline/visium_clustering">Reproduce the expression clustering</a> · <a href="FULLSECTION_PROVENANCE.json">Output provenance</a></p>
+</main><script src="geojson-download.js" defer></script></body></html>

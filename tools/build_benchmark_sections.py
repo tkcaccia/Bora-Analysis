@@ -2,7 +2,8 @@
 
 Example:
   python tools/build_benchmark_sections.py --wsi-viewer /path/to/verified/viewer \
-      --visium-figures /path/to/verified/figures
+      --visium-render-root /path/to/verified/whole-section/renders \
+      --visium-study-root /path/to/verified/whole-section/outputs
 
 The WSI HTML and images are display copies of a completed whole-slide viewer.
 Source files are never changed. Large raster views are resized for web display;
@@ -18,14 +19,10 @@ import re
 import shutil
 
 from PIL import Image
+from build_visium_fullsection import main as build_visium_fullsection
 
 
 TISSUES = ("colon", "pancreas", "lymph", "tonsil")
-VISIUM_FIGURES = {
-    "breast": ("breast_clustering_kodama_zoom.png", "breast_bora_field_5groups.png"),
-    "colorectal": ("colorectal_clustering_kodama_zoom.png", "colorectal_bora_field_4groups.png"),
-    "tonsil": ("tonsil_clustering_kodama.png", "tonsil_bora_field_v3.png"),
-}
 
 
 class References(HTMLParser):
@@ -61,11 +58,11 @@ def display_copy(source, destination):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--wsi-viewer", type=Path, required=True)
-    parser.add_argument("--visium-figures", type=Path, required=True)
+    parser.add_argument("--visium-render-root", type=Path, required=True)
+    parser.add_argument("--visium-study-root", type=Path, required=True)
     parser.add_argument("--site", type=Path, default=Path(__file__).resolve().parents[1] / "site")
     args = parser.parse_args()
     wsi = args.wsi_viewer.resolve()
-    figures = args.visium_figures.resolve()
     site = args.site.resolve()
     receipt = json.loads((wsi / "VIEWER_COMPLETE.json").read_text())
     if receipt.get("status") != "COMPLETE" or not receipt.get("five_full_slide_pages"):
@@ -118,27 +115,18 @@ def main():
     (output / "index.html").write_text(index)
     shutil.copy2(wsi / "physical-scale.css", output / "physical-scale.css")
 
-    dest = site / "visium"
-    dest.mkdir(exist_ok=True)
-    figure_hashes = {}
-    for pair in VISIUM_FIGURES.values():
-        for name in pair:
-            source = figures / name
-            if not source.is_file():
-                raise ValueError(f"Missing Visium figure: {source}")
-            shutil.copy2(source, dest / name)
-            figure_hashes[name] = sha(source)
+    build_visium_fullsection(args.visium_render_root.resolve(), args.visium_study_root.resolve(), site)
     provenance = {
         "whole_slide_receipt_sha256": sha(wsi / "VIEWER_COMPLETE.json"),
         "whole_slide_tissues": list(TISSUES),
         "whole_slide_assets": copied,
-        "visium_figures_sha256": figure_hashes,
+        "visium_fullsection_provenance": "FULLSECTION_PROVENANCE.json",
         "display_max_dimension_px": 1800,
         "native_geojson_unchanged": True,
     }
     (site / "BENCHMARK_SECTIONS_PROVENANCE.json").write_text(json.dumps(provenance, indent=2) + "\n")
     print(json.dumps({"tissues": len(TISSUES), "wsi_assets": len(copied),
-                      "visium_figures": len(figure_hashes)}))
+                      "visium_whole_section_samples": 3}))
 
 
 if __name__ == "__main__":
