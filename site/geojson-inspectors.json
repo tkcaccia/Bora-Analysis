@@ -589,6 +589,104 @@
       ]
     },
     {
+      "id": "visium-hd-scanned-image-2",
+      "title": "Scanned Image 2",
+      "section": "visium-hd",
+      "page": "visium-hd/scanned-image-2.html#inspect-geojson",
+      "geometry": "visium-hd/scanned-image-2/scanned-image-2-Bora-final.geojson.gz",
+      "image": "visium-hd/scanned-image-2/he-overview.jpg",
+      "image_sha256": "58723a479ee3a5ebe80aef99cf9cc12fe8594e26ce9b1a91100433d864ac79f7",
+      "image_bounds_xywh": [
+        0,
+        0,
+        24576,
+        20480
+      ],
+      "native_shape_yx": [
+        20480,
+        24576
+      ],
+      "native_mpp_xy": [
+        0.250552,
+        0.250552
+      ],
+      "source_feature_count": 11,
+      "geojson_bytes": 187460,
+      "stored_geojson_sha256": "5e0eeda4a617920940bc60a6ded5b196e73729562a88f85bb1e0ed8be3bf3b3b",
+      "decoded_geojson_sha256": "5089e3c2c06d3fe57b6af1f94f3a4348be80451ca43517618d9eda22618c6e63",
+      "label_source": "Anonymous image-derived KODAMA group",
+      "label_description": "These polygons retain Bora\u2019s numbered image-derived groups. A fastPLS tissue-name assignment is not available for this saved result.",
+      "fastpls_tissue_names_available": false,
+      "groups": [
+        {
+          "value": 1,
+          "name": "Group 01",
+          "color": "#e64949",
+          "area_um2": 2799516.45186409
+        },
+        {
+          "value": 2,
+          "name": "Group 02",
+          "color": "#4977e6",
+          "area_um2": 3312346.077286368
+        },
+        {
+          "value": 3,
+          "name": "Group 03",
+          "color": "#a5e649",
+          "area_um2": 929203.6339566765
+        },
+        {
+          "value": 4,
+          "name": "Group 04",
+          "color": "#e649d2",
+          "area_um2": 3965713.9911972554
+        },
+        {
+          "value": 5,
+          "name": "Group 05",
+          "color": "#49e6cb",
+          "area_um2": 5638043.088801185
+        },
+        {
+          "value": 6,
+          "name": "Group 06",
+          "color": "#e69e49",
+          "area_um2": 2029377.1006606396
+        },
+        {
+          "value": 7,
+          "name": "Group 07",
+          "color": "#7049e6",
+          "area_um2": 4130999.3541231337
+        },
+        {
+          "value": 8,
+          "name": "Group 08",
+          "color": "#50e649",
+          "area_um2": 687724.4760217076
+        },
+        {
+          "value": 9,
+          "name": "Group 09",
+          "color": "#e6497e",
+          "area_um2": 1061827.638494894
+        },
+        {
+          "value": 10,
+          "name": "Group 10",
+          "color": "#49abe6",
+          "area_um2": 414215.3174638431
+        },
+        {
+          "value": 11,
+          "name": "Group 11",
+          "color": "#d9e649",
+          "area_um2": 846080.7781018738
+        }
+      ]
+    },
+    {
       "id": "visium-breast",
       "title": "Breast cancer \u00b7 Giotto",
       "section": "visium",
