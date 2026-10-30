@@ -22,6 +22,16 @@ TISSUES = {
 }
 
 
+def include_additional_wsi(site):
+    manifest = site / 'visium-hd/ADDITIONAL_WSI_PROVENANCE.json'
+    if manifest.exists():
+        additions = json.loads(manifest.read_text())
+        for slug, record in additions.items():
+            if slug in TISSUES['visium-hd']:
+                raise ValueError('Additional WSI duplicates a core tissue: ' + slug)
+            TISSUES['visium-hd'][slug] = record['title']
+
+
 def sha256(payload):
     return hashlib.sha256(payload).hexdigest()
 
@@ -32,11 +42,13 @@ def color(value):
 
 
 def attach(site):
+    include_additional_wsi(site)
     records = []
     for section, tissues in TISSUES.items():
         for tissue, title in tissues.items():
             page = site / section / (tissue + '.html')
-            relative = (f'{tissue}/BORA_FULL_SLIDE.wsi.geojson' if section == 'visium-hd' else
+            relative = (f'{tissue}/BORA_FULL_SLIDE.wsi.geojson' if section == 'visium-hd' and tissue in ('colon','pancreas','lymph','tonsil') else
+                        f'{tissue}/{tissue}-Bora-final.geojson.gz' if section == 'visium-hd' else
                         f'fullsection/{tissue}/{tissue}-Visium-Bora-final.geojson.gz')
             geometry = site / section / relative
             stored = geometry.read_bytes()

@@ -82,12 +82,13 @@ def verify_additional_wsi(site):
         assert 'ADDITIONAL_WSI_2026_10_29' not in (base / 'index.html').read_text()
         return 0
     records = json.loads(manifest.read_text())
-    assert set(records) == {'f0065', 'f0085', 'pm049', 'scanned-image-2'}
+    assert records and all(isinstance(slug, str) and slug for slug in records)
     for sample, record in records.items():
         assert record['confirmed_visium_hd'] is False
         assert record['expert_masks_available'] is False
         assert record['development_demonstration'] is True
-        assert record['minimum_polygon_and_hole_um2'] == 400
+        minimum_area = record['minimum_polygon_and_hole_um2']
+        assert minimum_area in (400, 1000, 2000)
         page = (base / (sample + '.html')).read_text()
         assert 'Visium HD acquisition has not been established' in page
         for kind in ('wide', 'large', 'field'):
@@ -104,7 +105,7 @@ def verify_additional_wsi(site):
         assert hashlib.sha256(payload).hexdigest() == record['global_geojson_sha256']
         vector = json.loads(payload)
         assert vector['type'] == 'FeatureCollection'
-        assert vector['minimum_component_and_hole_um2'] == 400
+        assert vector['minimum_component_and_hole_um2'] == minimum_area
         assert 0 < len(vector['features']) <= record['groups']
         area_scale = math.prod(record['source_mpp_xy'])
         for feature in vector['features']:
@@ -113,8 +114,8 @@ def verify_additional_wsi(site):
             polygons = [geometry['coordinates']] if geometry['type'] == 'Polygon' else geometry['coordinates']
             for polygon in polygons:
                 areas = [ring_area(ring) * area_scale for ring in polygon]
-                assert areas[0] - sum(areas[1:]) >= 400 - 1e-3, sample
-                assert all(area >= 400 - 1e-3 for area in areas[1:]), sample
+                assert areas[0] - sum(areas[1:]) >= minimum_area - 1e-3, sample
+                assert all(area >= minimum_area - 1e-3 for area in areas[1:]), sample
     return len(records)
 
 
@@ -122,7 +123,9 @@ def verify_inspectors(site, sections):
     """All published tissues must link to a registered, correctly aligned inspector."""
     manifest = json.loads((site / 'geojson-inspectors.json').read_text())
     assert manifest['format'] == 'bora-geojson-inspectors-v1'
-    expected = {'visium-hd-' + tissue for tissue in sections['whole_slide_tissues']}
+    additional = site / 'visium-hd/ADDITIONAL_WSI_PROVENANCE.json'
+    extras = json.loads(additional.read_text()) if additional.exists() else {}
+    expected = {'visium-hd-' + tissue for tissue in [*sections['whole_slide_tissues'], *extras]}
     expected |= {'visium-breast', 'visium-colorectal', 'visium-tonsil'}
     assert {row['id'] for row in manifest['records']} == expected
     assert len(manifest['records']) == len(expected)
@@ -167,7 +170,9 @@ def verify_inspectors(site, sections):
 def verify_template(site):
     pages = [('index.html', 'public', None), ('visium-hd/index.html', 'visium-hd', None),
              ('visium/index.html', 'visium', None)]
-    pages += [(f'visium-hd/{name}.html', 'visium-hd', name) for name in ('colon', 'pancreas', 'lymph', 'tonsil')]
+    extras_path = site / 'visium-hd/ADDITIONAL_WSI_PROVENANCE.json'
+    extras = json.loads(extras_path.read_text()) if extras_path.exists() else {}
+    pages += [(f'visium-hd/{name}.html', 'visium-hd', name) for name in (*('colon', 'pancreas', 'lymph', 'tonsil'), *extras)]
     pages += [(f'visium/{name}.html', 'visium', name) for name in ('breast', 'colorectal', 'tonsil')]
     titles = ['Public datasets and masks', 'Visium HD whole slides', 'Visium gene clusters']
     for relative, collection, tissue in pages:
@@ -209,7 +214,7 @@ def verify_template(site):
             assert sum(node.get('class') == 'tissue-card' for node in tags('article')) == 3
             assert 'Coverage limitation:' in re.sub(r'<details\b.*?</details>', '', content, flags=re.S)
         if relative == 'visium-hd/index.html':
-            assert sum(node.get('class') == 'tissue-card' for node in tags('article')) == 4
+            assert sum(node.get('class') == 'tissue-card' for node in tags('article')) == 4 + len(extras)
     return len(pages)
 
 

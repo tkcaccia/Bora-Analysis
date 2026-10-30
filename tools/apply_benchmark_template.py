@@ -25,6 +25,16 @@ TISSUES = {
 }
 
 
+def include_additional_wsi(site):
+    manifest = site / 'visium-hd/ADDITIONAL_WSI_PROVENANCE.json'
+    if manifest.exists():
+        additions = json.loads(manifest.read_text())
+        for slug, record in additions.items():
+            if slug in TISSUES['visium-hd']:
+                raise ValueError('Additional WSI duplicates a core tissue: ' + slug)
+            TISSUES['visium-hd'][slug] = record['title']
+
+
 def header(collection, prefix):
     paths = {'public': prefix + 'index.html', 'visium-hd': prefix + 'visium-hd/', 'visium': prefix + 'visium/'}
     links = []
@@ -105,6 +115,7 @@ def landing_cards(content, collection, records):
 
 
 def apply(site):
+    include_additional_wsi(site)
     records = json.loads((site / 'geojson-inspectors.json').read_text())['records']
     pages = [('public', None, site / 'index.html')]
     for section, tissues in TISSUES.items():
