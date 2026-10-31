@@ -1,0 +1,35 @@
+{
+  "dataset_id": "xenium-03",
+  "platform": "Xenium",
+  "scope": "2 field-of-view demonstration",
+  "source_url": "https://cf.10xgenomics.com/samples/xenium/2.0.0/Xenium_V1_human_Breast_2fov/Xenium_V1_human_Breast_2fov_outs.zip",
+  "source_sha256": "cc1e987b06aa748a6b24d3d6f51fc0d6765daa4836c483f14ec4f1bd18b1779b",
+  "native_cells": 7275,
+  "analyzed_cells": 7273,
+  "genes": 280,
+  "groups": 6,
+  "group_sizes": [
+    2216,
+    2101,
+    839,
+    775,
+    500,
+    842
+  ],
+  "coordinate_units": "micrometres, source Xenium cell centroids",
+  "classification": "anonymous exploratory gene-expression groups",
+  "morphology_or_HE_used": false,
+  "spatial_coordinates_used_for_clustering": false,
+  "independent_audit_sha256": "67b396fac4d2c0418b1e138076f89e15117fce7c5d01fd91aa50ff13fe6d52df",
+  "assets_sha256": {
+    "native-spatial-groups.png": "1753ffc73fa9b2fc65ffa1a45a86e7db1c6db3b81e5bf7144e6f57a260165543",
+    "kodama-embedding.png": "28f8ce922ef39467912d3f42d7d289a369a722bf492e696aebad6235573781ec",
+    "group-01-spatial.png": "92790484c66eb5c080aeb9e966b46f37f65085a57b2eeafa550992c62860044a",
+    "group-02-spatial.png": "14eee85d2407e454fc9a0dabafbeb1cafe313589fd2f3d25e32a08f5d0ef6150",
+    "group-03-spatial.png": "2dcdc4117988af3516dc1b1cb18ab0432d1ca744e14bbe1d36d6d7b21300fd86",
+    "group-04-spatial.png": "730cbe3a00abbb51ac3b22d51005c630b93184b7ef262ec2f4b68691cf82ebbe",
+    "group-05-spatial.png": "d8cada221e009927888fb9f1b4e86945ba054e4b84f4df7f1feb3836bf0039e0",
+    "group-06-spatial.png": "16a9f46257f6727942a380594fcb2609c3f591a785cb9cc0778e5a3b372a761a",
+    "cell-groups.csv": "0db3c6f006e7f354f1be9f704ec96f32a62448b4006b32ead1f3196a1c2e5407"
+  }
+}

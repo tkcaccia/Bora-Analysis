@@ -119,6 +119,30 @@ def verify_additional_wsi(site):
     return len(records)
 
 
+def verify_spatial_expression(site):
+    base = site / 'spatial-expression/xenium-breast-2fov'
+    record = json.loads((base / 'PROVENANCE.json').read_text())
+    assert record['dataset_id'] == 'xenium-03'
+    assert record['platform'] == 'Xenium'
+    assert record['native_cells'] == 7275
+    assert record['analyzed_cells'] == 7273
+    assert record['genes'] == 280
+    assert record['groups'] == 6
+    assert sum(record['group_sizes']) == record['analyzed_cells']
+    assert record['morphology_or_HE_used'] is False
+    assert record['spatial_coordinates_used_for_clustering'] is False
+    for rel, digest in record['assets_sha256'].items():
+        asset = checked_path(base, rel, site)
+        assert hashlib.sha256(asset.read_bytes()).hexdigest() == digest, asset
+    with (base / 'cell-groups.csv').open() as stream:
+        rows = list(csv.DictReader(stream))
+    assert len(rows) == record['analyzed_cells']
+    assert len({row['cell_id'] for row in rows}) == len(rows)
+    assert Counter(int(row['group']) for row in rows) == dict(enumerate(record['group_sizes'], 1))
+    assert all(math.isfinite(float(row['x_centroid_um'])) and math.isfinite(float(row['y_centroid_um'])) for row in rows)
+    return 1
+
+
 def verify_inspectors(site, sections):
     """All published tissues must link to a registered, correctly aligned inspector."""
     manifest = json.loads((site / 'geojson-inspectors.json').read_text())
@@ -169,12 +193,14 @@ def verify_inspectors(site, sections):
 
 def verify_template(site):
     pages = [('index.html', 'public', None), ('visium-hd/index.html', 'visium-hd', None),
-             ('visium/index.html', 'visium', None)]
+             ('visium/index.html', 'visium', None),
+             ('spatial-expression/index.html', 'spatial-expression', None),
+             ('spatial-expression/xenium-breast-2fov.html', 'spatial-expression', 'xenium-breast-2fov')]
     extras_path = site / 'visium-hd/ADDITIONAL_WSI_PROVENANCE.json'
     extras = json.loads(extras_path.read_text()) if extras_path.exists() else {}
     pages += [(f'visium-hd/{name}.html', 'visium-hd', name) for name in (*('colon', 'pancreas', 'lymph', 'tonsil'), *extras)]
     pages += [(f'visium/{name}.html', 'visium', name) for name in ('breast', 'colorectal', 'tonsil')]
-    titles = ['Public datasets and masks', 'Whole Slide Images', 'Visium gene clusters']
+    titles = ['Public datasets and masks', 'Whole Slide Images', 'Visium gene clusters', 'Spatial expression']
     for relative, collection, tissue in pages:
         content = (site / relative).read_text()
         parsed = Links()
@@ -201,7 +227,8 @@ def verify_template(site):
         navigation.feed(nav)
         current = [attrs for tag, attrs in navigation.nodes if tag == 'a' and attrs.get('aria-current') == 'page']
         assert len(current) == 1
-        assert current[0]['href'] == prefix + {'public': 'index.html', 'visium-hd': 'visium-hd/', 'visium': 'visium/'}[collection]
+        assert current[0]['href'] == prefix + {'public': 'index.html', 'visium-hd': 'visium-hd/', 'visium': 'visium/',
+                                                'spatial-expression': 'spatial-expression/'}[collection]
         if collection != 'public':
             local = re.search(r'<nav class="tissue-nav"[^>]*>(.*?)</nav>', content, re.S).group(1)
             local_parser = Links()
@@ -233,6 +260,7 @@ def verify(site):
             raise ValueError('Native whole-slide GeoJSON was altered: ' + rel)
     visium_samples = verify_visium(site, sections)
     additional_samples = verify_additional_wsi(site)
+    spatial_expression_samples = verify_spatial_expression(site)
     inspectors = verify_inspectors(site, sections)
     template_pages = verify_template(site)
     root_html = (site / 'index.html').read_text()
@@ -317,6 +345,7 @@ def verify(site):
                          unique_vectors=len(vector_paths), polygon_parts=parts, holes=holes,
                          native_area_threshold=20, visium_whole_section_downloads=visium_samples,
                          visium_minimum_area_um2=400, additional_whole_slides=additional_samples,
+                         spatial_expression_samples=spatial_expression_samples,
                          whole_slide_and_expression_inspectors=inspectors,
                          shared_template_pages=template_pages,
                          pages=sum(1 for _ in site.rglob('*.html')))))

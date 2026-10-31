@@ -1,4 +1,4 @@
-/* Shared presentation for all three benchmark collections and their tissue pages. */
+/* Shared presentation for all benchmark collections and their tissue pages. */
 .benchmark-page{--ink:#193545;--accent:#006d80;--line:#cbd8dd;background:#f1f5f6;color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;margin:0}
 .benchmark-page header,.benchmark-page main,.benchmark-page footer{width:100%;max-width:1700px;margin:0 auto;padding:28px}
 .benchmark-page .site-header{padding-top:32px;padding-bottom:18px;background:transparent;color:var(--ink)}
@@ -7,7 +7,7 @@
 .benchmark-page .site-intro{max-width:1050px;margin:0;color:#526b75;min-height:48px}
 .benchmark-page h2{font-size:22px;line-height:1.3;margin:32px 0 14px}.benchmark-page h3{font-size:19px;line-height:1.35;margin:26px 0 12px}.benchmark-page h4{font-size:17px;margin:22px 0 10px}
 .benchmark-page p{max-width:1100px}.benchmark-page a{color:var(--accent);text-underline-offset:3px}
-.benchmark-page .benchmark-sections{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:24px 0 18px}
+.benchmark-page .benchmark-sections{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:24px 0 18px}
 .benchmark-page .benchmark-sections a{display:flex;flex-direction:column;gap:6px;min-height:106px;padding:16px 18px;border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--ink);text-decoration:none}
 .benchmark-page .benchmark-sections strong{font-size:16px}.benchmark-page .benchmark-sections span{font-size:13px;color:#526b75}
 .benchmark-page .benchmark-sections a:hover,.benchmark-page .benchmark-sections a[aria-current=page]{border-color:var(--accent);box-shadow:0 0 0 2px #006d8025}
