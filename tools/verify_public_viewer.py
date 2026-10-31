@@ -120,27 +120,30 @@ def verify_additional_wsi(site):
 
 
 def verify_spatial_expression(site):
-    base = site / 'spatial-expression/xenium-breast-2fov'
-    record = json.loads((base / 'PROVENANCE.json').read_text())
-    assert record['dataset_id'] == 'xenium-03'
-    assert record['platform'] == 'Xenium'
-    assert record['native_cells'] == 7275
-    assert record['analyzed_cells'] == 7273
-    assert record['genes'] == 280
-    assert record['groups'] == 6
-    assert sum(record['group_sizes']) == record['analyzed_cells']
-    assert record['morphology_or_HE_used'] is False
-    assert record['spatial_coordinates_used_for_clustering'] is False
-    for rel, digest in record['assets_sha256'].items():
-        asset = checked_path(base, rel, site)
-        assert hashlib.sha256(asset.read_bytes()).hexdigest() == digest, asset
-    with (base / 'cell-groups.csv').open() as stream:
-        rows = list(csv.DictReader(stream))
-    assert len(rows) == record['analyzed_cells']
-    assert len({row['cell_id'] for row in rows}) == len(rows)
-    assert Counter(int(row['group']) for row in rows) == dict(enumerate(record['group_sizes'], 1))
-    assert all(math.isfinite(float(row['x_centroid_um'])) and math.isfinite(float(row['y_centroid_um'])) for row in rows)
-    return 1
+    expected = {'xenium-breast-2fov': ('xenium-03', 7275, 7273, 280, 6),
+                'xenium-ovary-multimodal-tiny': ('xenium-08', 623, 623, 403, 4)}
+    for slug, (dataset_id, native, admitted, genes, groups) in expected.items():
+        base = site / 'spatial-expression' / slug
+        record = json.loads((base / 'PROVENANCE.json').read_text())
+        assert record['dataset_id'] == dataset_id
+        assert record['platform'] == 'Xenium'
+        assert record['native_cells'] == native
+        assert record['analyzed_cells'] == admitted
+        assert record['genes'] == genes
+        assert record['groups'] == groups
+        assert sum(record['group_sizes']) == admitted
+        assert record['morphology_or_HE_used'] is False
+        assert record['spatial_coordinates_used_for_clustering'] is False
+        for rel, digest in record['assets_sha256'].items():
+            asset = checked_path(base, rel, site)
+            assert hashlib.sha256(asset.read_bytes()).hexdigest() == digest, asset
+        with (base / 'cell-groups.csv').open() as stream:
+            rows = list(csv.DictReader(stream))
+        assert len(rows) == admitted
+        assert len({row['cell_id'] for row in rows}) == len(rows)
+        assert Counter(int(row['group']) for row in rows) == dict(enumerate(record['group_sizes'], 1))
+        assert all(math.isfinite(float(row['x_centroid_um'])) and math.isfinite(float(row['y_centroid_um'])) for row in rows)
+    return len(expected)
 
 
 def verify_inspectors(site, sections):
@@ -195,7 +198,8 @@ def verify_template(site):
     pages = [('index.html', 'public', None), ('visium-hd/index.html', 'visium-hd', None),
              ('visium/index.html', 'visium', None),
              ('spatial-expression/index.html', 'spatial-expression', None),
-             ('spatial-expression/xenium-breast-2fov.html', 'spatial-expression', 'xenium-breast-2fov')]
+             ('spatial-expression/xenium-breast-2fov.html', 'spatial-expression', 'xenium-breast-2fov'),
+             ('spatial-expression/xenium-ovary-multimodal-tiny.html', 'spatial-expression', 'xenium-ovary-multimodal-tiny')]
     extras_path = site / 'visium-hd/ADDITIONAL_WSI_PROVENANCE.json'
     extras = json.loads(extras_path.read_text()) if extras_path.exists() else {}
     pages += [(f'visium-hd/{name}.html', 'visium-hd', name) for name in (*('colon', 'pancreas', 'lymph', 'tonsil'), *extras)]

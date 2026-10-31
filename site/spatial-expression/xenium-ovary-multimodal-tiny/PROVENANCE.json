@@ -1,0 +1,31 @@
+{
+  "dataset_id": "xenium-08",
+  "platform": "Xenium",
+  "scope": "tiny demonstration subset",
+  "source_url": "https://cf.10xgenomics.com/samples/xenium/4.0.0/Xenium_V1_MultiCellSeg_Human_Ovary_tiny/Xenium_V1_MultiCellSeg_Human_Ovary_tiny_outs.zip",
+  "source_sha256": "9b154a3c08360fe690c83e0e6a6710d0c5656ec93a6e3ff969b3950d291479b0",
+  "native_cells": 623,
+  "analyzed_cells": 623,
+  "genes": 403,
+  "groups": 4,
+  "group_sizes": [
+    428,
+    117,
+    57,
+    21
+  ],
+  "coordinate_units": "micrometres, source Xenium cell centroids",
+  "classification": "anonymous exploratory gene-expression groups",
+  "morphology_or_HE_used": false,
+  "spatial_coordinates_used_for_clustering": false,
+  "independent_audit_sha256": "f59d971dd143586211716ea55ab827377aee511bb26c62c4c7cc978e207c3578",
+  "assets_sha256": {
+    "native-spatial-groups.png": "d5c358589f9b1b2bac8c138d0e7be6a4929ce2ffb52fccf93d95346af2cbc1c8",
+    "kodama-embedding.png": "9f2567f7e645860be724a67ee5b3319fb7d190987587366d96f10a47d999cfb6",
+    "group-01-spatial.png": "eb36b792abdf603ae62ea798c1205780ae725645c67ca8653aa3ac3ab18e1cc1",
+    "group-02-spatial.png": "ae1ee3a9c438c2bc887e05ba588b2393994ac6e08bf859c54cc1915d64c618d8",
+    "group-03-spatial.png": "8e262a48a3fa7ce28fd154d812313187dd42564a8deaf1c75e50ff293bb41778",
+    "group-04-spatial.png": "26971401b26a3293a24029ffbe8afef06864565d31c92813f04d299051c4b5c6",
+    "cell-groups.csv": "cbfb025762da7822e524f84f07034442e2f85e73dba50f0441e7048d4f6716dc"
+  }
+}
