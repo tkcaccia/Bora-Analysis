@@ -1,0 +1,75 @@
+{
+  "dataset_id": "xenium-06",
+  "platform": "Xenium",
+  "source_url": "https://www.10xgenomics.com/datasets/preview-data-ffpe-human-lung-cancer-with-xenium-multimodal-cell-segmentation-1-standard",
+  "source_sample_id": "Xenium_V1_humanLung_Cancer_FFPE",
+  "scope": "complete official human lung adenocarcinoma preview sample",
+  "source_panel_status": "preliminary preview gene panel",
+  "source_license": "CC BY 4.0",
+  "native_cells": 162254,
+  "analyzed_cells": 161894,
+  "excluded_zero_gene_cells": 360,
+  "genes": 377,
+  "groups": 7,
+  "group_sizes": [
+    23491,
+    66271,
+    25330,
+    13313,
+    23263,
+    7779,
+    2447
+  ],
+  "classification": "anonymous exploratory gene-expression groups",
+  "coordinate_units": "micrometres, native Xenium cell centroids",
+  "morphology_or_HE_used": false,
+  "spatial_coordinates_used_for_clustering": false,
+  "source_files_sha256": {
+    "SOURCE_DOWNLOAD_COMPLETE.json": "3914dca3363d720685e4e7f498e480c9532fb8415634f124a3f078368aabf854",
+    "SOURCE_VERIFIED.json": "7a817d36f34855b17d39734dce4165a80336b7078e3bf45caf085c813438076e",
+    "analysis_summary.html": "5dfe8390b62d70a406289c8cb0365f3435ae70f23d105288ec3cf4a59f1a4ab1",
+    "cell_feature_matrix.h5": "f95e1d2f15444d3685b0b544da55b7ab5a2286edc3bbb49966098b2c44e766c4",
+    "cells.csv.gz": "495fab22ba033ada5617a2d1bd006747a1d6b246fd0b55c1a2471cad14b5aabd",
+    "experiment.xenium": "28d47605da8f2be53612bbe03390db29cdb40774db4641f44ff0f25aa94641f4",
+    "gene_panel.json": "1fc806282753d0ffdb04b8ad6176085088703b3ee4f45c7b64e6bf96e40f6203"
+  },
+  "input_files_sha256": {
+    "PREPARE_COMPLETE.json": "b3868d54b793e9d37d38217d95e40047a5a62dde74786208552ee3aadf307de0",
+    "admitted-cell-indices.npy": "6440cc7ef7580a715b298f4f0a5065da8ebad3750475403b0df704d1e579ac60",
+    "barcodes.tsv": "76badd42d81df8a26c29f0f9aca028e701a10c8165abf7ffde5d04b606c7411d",
+    "cell-coordinates-um.csv": "a69b8202aa96ed76353cfe54dac5a19a11ca0948bf930a1d018d866d92d38cc5",
+    "features.tsv": "286f7a8f9d93ae10bbeee0f3de79ec824025adedb1ecbb0d9b3f707faf77b62c",
+    "gene-feature-indices.npy": "bcff82a4627fe8a45c1d2ae1bf40c2dca1dc46bf16d7503bdf832964a6c4bac6",
+    "native-gene-counts.csr.npz": "f42648ecf6b707d882a52b3150c70e5aa4cbb197b9624c70d392c7973f18035e",
+    "pca30-f32le.bin": "8233935718bd9426dbd4f95ca8e866acf581654818a727bd9e4b66b0d2c807f9",
+    "svd-model.npz": "76931c4006dbb51d5c01d9841267c5c7b8ab28aa42a2437862ec900e962fc5cc",
+    "INDEPENDENT_INPUT_AUDIT.json": "7832317062d8fac44e4a91290853c9d43e9d0217bbef9033f1b4b32df1fe2b54"
+  },
+  "fit_files_sha256": {
+    "FIT_CHECKPOINT.json": "48855dcc23225d8bf833355a2efacac322ff02596362ad458b7a1cfd4d4ebd31",
+    "KODAMA_COMPLETE.json": "66d62cf385cfd6bcab445e012a22fc9c237bda2423c1f4bd4ed2d47de829714f",
+    "clusters.csv": "67cc34b7fba0f5d4f4acaca3399ba3356ceaa66939c5ba63f0b1bd9b5132c549",
+    "embedding.csv": "0a32b1905fd3eb5f14b33ce197d49dd0394b4fb7602188d1fa17cc127a011047",
+    "kodama-graph.rds": "87a1adb4e8c086a0709778d77a0dcc5cd2182ab370a90c664b469b8955c3a764"
+  },
+  "assets_sha256": {
+    "native-spatial-groups.png": "b34b12d55da1b45769fadfdb35a4f735cf84b5b4bff1621032c777347ab20d78",
+    "kodama-embedding.png": "a5471f86d0162c15015359557293cb2a1bf7745d40116bc6624d39950d0d2951",
+    "group-01-spatial.png": "3258bb2e51f7b47d0d703bf6b3c4e1eebe060ab905093142d4f7d0e07ed7b573",
+    "group-02-spatial.png": "6ab20550980572098dad527c1957313d08bfb6a694def8389129b3608ffa5166",
+    "group-03-spatial.png": "416a58396e0fab36aeaf6fc156227c5b3a3a7e27b56ad1bd65fedb2dfc77fe26",
+    "group-04-spatial.png": "94bc513b4016e9d82b3fd41c1316b17d05300763f952f01372a41dda3d1c11c0",
+    "group-05-spatial.png": "f34e2988792aace3a075264f014439a170c2517075d9ec85683695c16a9d851a",
+    "group-06-spatial.png": "862f04329345f5b472091bef2c1d4fe8b32f7792587d0701acdbefe5d58c0e9f",
+    "group-07-spatial.png": "8b3e1762021ab8f3101b0277641b632dcd82a8728619a4c4de548c70c455091a",
+    "cell-groups.csv.gz": "59feb02276590f745367154ef59a65be046a71d3d1c8a169c54fb9eab32e76a7"
+  },
+  "receipts_sha256": {
+    "SOURCE_LOCALLY_FROZEN.json": "b1f052d425d300ac33e7f5a5e573e11ae8f9fdcbaba65a8fa871ba2c80a90d1c",
+    "INPUTS_V2_LOCALLY_FROZEN.json": "d20710248f15a11fcd932ebca4f7c1a8ede008732d890fcf664bd9df3cf927fb",
+    "lung/INDEPENDENT_RESULT_AUDIT.json": "e2facb17ae663e3ed2943fcd933ff6a07cc9033c5dce559a0185a7d7e0add6b1",
+    "lung/VISUAL_REVIEW_ACCEPTED.json": "1a11c29c181fce99de1515c4ff2d46249f27a5182e2f171643293f06e74b907f",
+    "lung/LOCAL_RESULT_FROZEN.json": "28b5c4f34a5a538058585b2a2f094793e706589e5e20bfd7f2252bd070e889f0",
+    "lung/REVIEW_LOCALLY_FROZEN.json": "ddba832fe4e27d253ed94de70c0fa65c5dbad75a149cedabb8b7496812935c8f"
+  }
+}
