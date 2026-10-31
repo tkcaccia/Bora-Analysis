@@ -174,7 +174,7 @@ def verify_template(site):
     extras = json.loads(extras_path.read_text()) if extras_path.exists() else {}
     pages += [(f'visium-hd/{name}.html', 'visium-hd', name) for name in (*('colon', 'pancreas', 'lymph', 'tonsil'), *extras)]
     pages += [(f'visium/{name}.html', 'visium', name) for name in ('breast', 'colorectal', 'tonsil')]
-    titles = ['Public datasets and masks', 'Visium HD whole slides', 'Visium gene clusters']
+    titles = ['Public datasets and masks', 'Whole Slide Images', 'Visium gene clusters']
     for relative, collection, tissue in pages:
         content = (site / relative).read_text()
         parsed = Links()

@@ -14,7 +14,7 @@ import re
 COLLECTIONS = {
     'public': ('Public datasets and masks', 'BCSS, TIGER, GCSS, IGNITE · expert tissue masks',
                'Bora refinement and tissue-group identification on public histology images with expert annotations.'),
-    'visium-hd': ('Visium HD whole slides', 'Colorectal cancer, pancreas, lymph node, tonsil',
+    'visium-hd': ('Whole Slide Images', 'Colorectal cancer, pancreas, lymph node, tonsil',
                   'Explore complete whole-slide Bora results. All nine zooms per tissue are crops of one saved global output.'),
     'visium': ('Visium gene clusters', 'Giotto, Seurat, SpatialExperiment · expression spot groups',
                'Explore whole-section Bora refinement of gene-expression spot groups from three analysis workflows.'),

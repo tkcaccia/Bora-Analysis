@@ -112,8 +112,8 @@ def main():
     index = re.sub(r'<a href="brain\.html"[^>]*>.*?</a>', '', index)
     index = re.sub(r'<a class="tissue" href="brain\.html">.*?</a>', '', index)
     index = index.replace("<nav>", '<nav><a href="../index.html">Public datasets</a><a href="../visium/index.html">Visium gene clusters</a>')
-    index = index.replace("Select a tissue", "Visium HD whole-slide benchmark")
-    index = index.replace("Bora · select a tissue", "Bora · Visium HD whole slides")
+    index = index.replace("Select a tissue", "Whole Slide Images benchmark")
+    index = index.replace("Bora · select a tissue", "Bora · Whole Slide Images")
     (output / "index.html").write_text(index)
     shutil.copy2(wsi / "physical-scale.css", output / "physical-scale.css")
 

@@ -8,7 +8,7 @@ builders for [Bora](https://github.com/tkcaccia/Bora).
 The viewer separates three distinct evaluations:
 
 1. [Public histology datasets with expert masks](https://tkcaccia.github.io/Bora-Analysis/) — BCSS, TIGER, GCSS and IGNITE.
-2. [Visium HD whole-slide images](https://tkcaccia.github.io/Bora-Analysis/visium-hd/) — colorectal cancer, pancreas, lymph node and tonsil. Each tissue page shows the full-slide mask, its GeoJSON, slide-wide group responses, and nine exact crops of the saved result. The groups are anonymous and do not establish tissue-class accuracy.
+2. [Whole Slide Images](https://tkcaccia.github.io/Bora-Analysis/visium-hd/) — colorectal cancer, pancreas, lymph node and tonsil. Each tissue page shows the full-slide mask, its GeoJSON, slide-wide group responses, and nine exact crops of the saved result. The groups are anonymous and do not establish tissue-class accuracy.
 3. [Visium gene-expression clustering](https://tkcaccia.github.io/Bora-Analysis/visium/) — breast/Giotto, colorectal/Seurat and tonsil/SpatialExperiment spot clusters with selected Bora refinement fields. These examples have no expert pixel-level tissue mask.
 
 The 27 October 2026 full rerun is in progress. Its frozen protocol and

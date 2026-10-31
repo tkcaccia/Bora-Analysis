@@ -126,7 +126,7 @@ def attach(site):
     content = re.sub(r'<!-- BEGIN INSPECTOR LINKS -->.*?<!-- END INSPECTOR LINKS -->', '', page.read_text(), flags=re.S)
     content = content.replace('<h2>Inspect the simplified GeoJSON</h2>', '<h2 id="inspect-geojson">Inspect the simplified GeoJSON</h2>')
     block = '<!-- BEGIN INSPECTOR LINKS --><details><summary>Inspect tissues in the other benchmarks</summary>'
-    for section, label in [('visium-hd', 'Visium HD whole slides'), ('visium', 'Visium gene clusters')]:
+    for section, label in [('visium-hd', 'Whole Slide Images'), ('visium', 'Visium gene clusters')]:
         links = ' · '.join(f'<a href="{row["page"]}">{html.escape(row["title"])}</a>'
                            for row in records if row['section'] == section)
         block += f'<p><strong>{label}</strong><br>{links}</p>'
