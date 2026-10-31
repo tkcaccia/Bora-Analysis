@@ -121,7 +121,8 @@ def verify_additional_wsi(site):
 
 def verify_spatial_expression(site):
     expected = {'xenium-breast-2fov': ('xenium-03', 7275, 7273, 280, 6),
-                'xenium-ovary-multimodal-tiny': ('xenium-08', 623, 623, 403, 4)}
+                'xenium-ovary-multimodal-tiny': ('xenium-08', 623, 623, 403, 4),
+                'xenium-ovary-nuclear-expansion-tiny': ('xenium-09', 632, 632, 403, 4)}
     for slug, (dataset_id, native, admitted, genes, groups) in expected.items():
         base = site / 'spatial-expression' / slug
         record = json.loads((base / 'PROVENANCE.json').read_text())
@@ -199,7 +200,8 @@ def verify_template(site):
              ('visium/index.html', 'visium', None),
              ('spatial-expression/index.html', 'spatial-expression', None),
              ('spatial-expression/xenium-breast-2fov.html', 'spatial-expression', 'xenium-breast-2fov'),
-             ('spatial-expression/xenium-ovary-multimodal-tiny.html', 'spatial-expression', 'xenium-ovary-multimodal-tiny')]
+             ('spatial-expression/xenium-ovary-multimodal-tiny.html', 'spatial-expression', 'xenium-ovary-multimodal-tiny'),
+             ('spatial-expression/xenium-ovary-nuclear-expansion-tiny.html', 'spatial-expression', 'xenium-ovary-nuclear-expansion-tiny')]
     extras_path = site / 'visium-hd/ADDITIONAL_WSI_PROVENANCE.json'
     extras = json.loads(extras_path.read_text()) if extras_path.exists() else {}
     pages += [(f'visium-hd/{name}.html', 'visium-hd', name) for name in (*('colon', 'pancreas', 'lymph', 'tonsil'), *extras)]
