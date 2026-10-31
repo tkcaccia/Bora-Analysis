@@ -835,6 +835,80 @@
       ]
     },
     {
+      "id": "visium-hd-brendon-ap-gy-26-02-he",
+      "title": "Brendon AP-GY-26-02 HE",
+      "section": "visium-hd",
+      "page": "visium-hd/brendon-ap-gy-26-02-he.html#inspect-geojson",
+      "geometry": "visium-hd/brendon-ap-gy-26-02-he/brendon-ap-gy-26-02-he-Bora-final.geojson.gz",
+      "image": "visium-hd/brendon-ap-gy-26-02-he/he-overview.jpg",
+      "image_sha256": "0eee6f9027064526538f62388d8b0723b40d20b3f3d80cc081f3bfa7ce6eab75",
+      "image_bounds_xywh": [
+        0,
+        0,
+        51200,
+        72960
+      ],
+      "native_shape_yx": [
+        72960,
+        51200
+      ],
+      "native_mpp_xy": [
+        0.464998,
+        0.464998
+      ],
+      "source_feature_count": 7,
+      "geojson_bytes": 2603766,
+      "stored_geojson_sha256": "de42097533aa9821d5695a51581d9a1729b12c900261d71bfd4f459a37c71785",
+      "decoded_geojson_sha256": "4f9ff6ce29993c00abab1d2741bd54e5c931135d0c9d6eb5acb2c7eac0b31dd6",
+      "label_source": "Anonymous image-derived KODAMA group",
+      "label_description": "These polygons retain Bora\u2019s numbered image-derived groups. A fastPLS tissue-name assignment is not available for this saved result.",
+      "fastpls_tissue_names_available": false,
+      "groups": [
+        {
+          "value": 1,
+          "name": "Group 01",
+          "color": "#e64949",
+          "area_um2": 31381935.923638947
+        },
+        {
+          "value": 2,
+          "name": "Group 02",
+          "color": "#4977e6",
+          "area_um2": 67914369.71858306
+        },
+        {
+          "value": 3,
+          "name": "Group 03",
+          "color": "#a5e649",
+          "area_um2": 56339520.90790603
+        },
+        {
+          "value": 4,
+          "name": "Group 04",
+          "color": "#e649d2",
+          "area_um2": 58970452.95444961
+        },
+        {
+          "value": 5,
+          "name": "Group 05",
+          "color": "#49e6cb",
+          "area_um2": 34542184.531476505
+        },
+        {
+          "value": 6,
+          "name": "Group 06",
+          "color": "#e69e49",
+          "area_um2": 29337186.099076055
+        },
+        {
+          "value": 7,
+          "name": "Group 07",
+          "color": "#7049e6",
+          "area_um2": 48046425.21925079
+        }
+      ]
+    },
+    {
       "id": "visium-breast",
       "title": "Breast cancer \u00b7 Giotto",
       "section": "visium",
