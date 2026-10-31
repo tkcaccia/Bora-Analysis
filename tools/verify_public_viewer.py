@@ -162,7 +162,27 @@ def verify_spatial_expression(site):
     assert len(rows) == 4169 and len({row['barcode'] for row in rows}) == 4169
     assert Counter(int(row['group']) for row in rows) == dict(enumerate(record['group_sizes'], 1))
     assert sum(float(row['x_fullres_px']) < 0 for row in rows) == 4
-    return len(expected) + 1
+    base = site / 'spatial-expression/merfish-mouse-hypothalamus'
+    record = json.loads((base / 'PROVENANCE.json').read_text())
+    assert record['dataset_id'] == 'merfish-11' and record['platform'] == 'MERFISH'
+    assert record['source_cell_count'] == 73655 and record['analyzed_cells'] == 73642
+    assert record['measured_digital_smfish_genes'] == 135
+    assert record['analog_features_preserved'] == 21 and record['blank_controls_preserved'] == 5
+    assert record['sections'] == 12 and record['groups'] == 12
+    assert sum(record['group_sizes']) == 73642
+    assert record['morphology_or_HE_used'] is False
+    assert record['expert_annotations_used_to_fit'] is False
+    assert record['source_expression_preserved_as_fractional_double'] is True
+    for rel, digest in record['assets_sha256'].items():
+        asset = checked_path(base, rel, site)
+        assert hashlib.sha256(asset.read_bytes()).hexdigest() == digest, asset
+    with (base / 'cell-groups.csv').open() as stream:
+        rows = list(csv.DictReader(stream))
+    assert len(rows) == 73642 and len({row['cell_id'] for row in rows}) == 73642
+    assert len({row['z_bregma'] for row in rows}) == 12
+    assert Counter(int(row['group']) for row in rows) == dict(enumerate(record['group_sizes'], 1))
+    assert all(math.isfinite(float(row['x_native'])) and math.isfinite(float(row['y_native'])) for row in rows)
+    return len(expected) + 2
 
 
 def verify_inspectors(site, sections):
@@ -220,7 +240,8 @@ def verify_template(site):
              ('spatial-expression/xenium-breast-2fov.html', 'spatial-expression', 'xenium-breast-2fov'),
              ('spatial-expression/xenium-ovary-multimodal-tiny.html', 'spatial-expression', 'xenium-ovary-multimodal-tiny'),
              ('spatial-expression/xenium-ovary-nuclear-expansion-tiny.html', 'spatial-expression', 'xenium-ovary-nuclear-expansion-tiny'),
-             ('spatial-expression/visium-breast-if.html', 'spatial-expression', 'visium-breast-if')]
+             ('spatial-expression/visium-breast-if.html', 'spatial-expression', 'visium-breast-if'),
+             ('spatial-expression/merfish-mouse-hypothalamus.html', 'spatial-expression', 'merfish-mouse-hypothalamus')]
     extras_path = site / 'visium-hd/ADDITIONAL_WSI_PROVENANCE.json'
     extras = json.loads(extras_path.read_text()) if extras_path.exists() else {}
     pages += [(f'visium-hd/{name}.html', 'visium-hd', name) for name in (*('colon', 'pancreas', 'lymph', 'tonsil'), *extras)]
