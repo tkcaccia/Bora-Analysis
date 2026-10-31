@@ -182,7 +182,28 @@ def verify_spatial_expression(site):
     assert len({row['z_bregma'] for row in rows}) == 12
     assert Counter(int(row['group']) for row in rows) == dict(enumerate(record['group_sizes'], 1))
     assert all(math.isfinite(float(row['x_native'])) and math.isfinite(float(row['y_native'])) for row in rows)
-    return len(expected) + 2
+    base = site / 'spatial-expression/xenium-prime-ovarian-cancer'
+    record = json.loads((base / 'PROVENANCE.json').read_text())
+    assert record['dataset_id'] == 'xenium-01' and record['platform'] == 'Xenium Prime 5K'
+    assert record['native_cells'] == 407124 and record['analyzed_cells'] == 406611
+    assert record['excluded_zero_gene_cells'] == 513 and record['genes'] == 5101
+    assert record['groups'] == 10 and sum(record['group_sizes']) == 406611
+    assert record['morphology_or_HE_used'] is False
+    assert record['spatial_coordinates_used_for_clustering'] is False
+    assert record['expert_annotations_used_to_fit'] is False
+    assert 'Groups 04, 08 and 10' in record['low_count_group_caution']
+    for rel, digest in record['assets_sha256'].items():
+        asset = checked_path(base, rel, site)
+        assert hashlib.sha256(asset.read_bytes()).hexdigest() == digest, asset
+    with gzip.open(base / 'cell-groups.csv.gz', 'rt') as stream:
+        rows = list(csv.DictReader(stream))
+    assert len(rows) == 406611 and len({row['cell_id'] for row in rows}) == 406611
+    assert Counter(int(row['group']) for row in rows) == dict(enumerate(record['group_sizes'], 1))
+    assert all(math.isfinite(float(row['x_centroid_um'])) and math.isfinite(float(row['y_centroid_um'])) for row in rows)
+    page = (site / 'spatial-expression/xenium-prime-ovarian-cancer.html').read_text()
+    assert 'Groups 04, 08 and 10 have low median gene counts' in page
+    assert 'xenium-prime-ovarian-cancer.html' in (site / 'spatial-expression/index.html').read_text()
+    return len(expected) + 3
 
 
 def verify_inspectors(site, sections):
@@ -241,7 +262,8 @@ def verify_template(site):
              ('spatial-expression/xenium-ovary-multimodal-tiny.html', 'spatial-expression', 'xenium-ovary-multimodal-tiny'),
              ('spatial-expression/xenium-ovary-nuclear-expansion-tiny.html', 'spatial-expression', 'xenium-ovary-nuclear-expansion-tiny'),
              ('spatial-expression/visium-breast-if.html', 'spatial-expression', 'visium-breast-if'),
-             ('spatial-expression/merfish-mouse-hypothalamus.html', 'spatial-expression', 'merfish-mouse-hypothalamus')]
+             ('spatial-expression/merfish-mouse-hypothalamus.html', 'spatial-expression', 'merfish-mouse-hypothalamus'),
+             ('spatial-expression/xenium-prime-ovarian-cancer.html', 'spatial-expression', 'xenium-prime-ovarian-cancer')]
     extras_path = site / 'visium-hd/ADDITIONAL_WSI_PROVENANCE.json'
     extras = json.loads(extras_path.read_text()) if extras_path.exists() else {}
     pages += [(f'visium-hd/{name}.html', 'visium-hd', name) for name in (*('colon', 'pancreas', 'lymph', 'tonsil'), *extras)]
