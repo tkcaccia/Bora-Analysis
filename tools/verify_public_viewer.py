@@ -144,7 +144,25 @@ def verify_spatial_expression(site):
         assert len({row['cell_id'] for row in rows}) == len(rows)
         assert Counter(int(row['group']) for row in rows) == dict(enumerate(record['group_sizes'], 1))
         assert all(math.isfinite(float(row['x_centroid_um'])) and math.isfinite(float(row['y_centroid_um'])) for row in rows)
-    return len(expected)
+    base = site / 'spatial-expression/visium-breast-if'
+    record = json.loads((base / 'PROVENANCE.json').read_text())
+    assert record['dataset_id'] == 'cytassist_ffpe_protein_expression_human_breast_cancer'
+    assert record['stain'] == 'immunofluorescence'
+    assert record['native_filtered_spots'] == record['analyzed_spots'] == 4169
+    assert record['gene_expression_features'] == 18085
+    assert record['antibody_capture_features_preserved_in_source'] == 35
+    assert record['groups'] == 13 and sum(record['group_sizes']) == 4169
+    assert record['Bora_image_refinement_complete'] is False
+    assert record['HE_Virchow2_used'] is False
+    for rel, digest in record['assets_sha256'].items():
+        asset = checked_path(base, rel, site)
+        assert hashlib.sha256(asset.read_bytes()).hexdigest() == digest, asset
+    with (base / 'spot-groups.csv').open() as stream:
+        rows = list(csv.DictReader(stream))
+    assert len(rows) == 4169 and len({row['barcode'] for row in rows}) == 4169
+    assert Counter(int(row['group']) for row in rows) == dict(enumerate(record['group_sizes'], 1))
+    assert sum(float(row['x_fullres_px']) < 0 for row in rows) == 4
+    return len(expected) + 1
 
 
 def verify_inspectors(site, sections):
@@ -201,7 +219,8 @@ def verify_template(site):
              ('spatial-expression/index.html', 'spatial-expression', None),
              ('spatial-expression/xenium-breast-2fov.html', 'spatial-expression', 'xenium-breast-2fov'),
              ('spatial-expression/xenium-ovary-multimodal-tiny.html', 'spatial-expression', 'xenium-ovary-multimodal-tiny'),
-             ('spatial-expression/xenium-ovary-nuclear-expansion-tiny.html', 'spatial-expression', 'xenium-ovary-nuclear-expansion-tiny')]
+             ('spatial-expression/xenium-ovary-nuclear-expansion-tiny.html', 'spatial-expression', 'xenium-ovary-nuclear-expansion-tiny'),
+             ('spatial-expression/visium-breast-if.html', 'spatial-expression', 'visium-breast-if')]
     extras_path = site / 'visium-hd/ADDITIONAL_WSI_PROVENANCE.json'
     extras = json.loads(extras_path.read_text()) if extras_path.exists() else {}
     pages += [(f'visium-hd/{name}.html', 'visium-hd', name) for name in (*('colon', 'pancreas', 'lymph', 'tonsil'), *extras)]
