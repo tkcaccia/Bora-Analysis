@@ -29,7 +29,7 @@ def sha(path):
 
 site = Path(sys.argv[1]).resolve()
 receipt = json.loads((site / "PUBLIC_RELEASE_VERIFIED.json").read_text())
-assert receipt["format"] == "bora-public-site-v1" and receipt["public_wsi_count"] == 10
+assert receipt["format"] == "bora-public-site-v1" and receipt["public_wsi_count"] == 13
 files = {str(p.relative_to(site)): p for p in site.rglob("*") if p.is_file() and p.name != "PUBLIC_RELEASE_VERIFIED.json"}
 assert set(files) == set(receipt["file_sha256"]), "Asset set changed after verification"
 assert sum(p.stat().st_size for p in files.values()) == receipt["size_bytes"]
@@ -50,6 +50,6 @@ for rel, path in files.items():
                 if local:
                     target = (path.parent / local).resolve()
                     assert target.is_relative_to(site) and target.exists(), (rel, link)
-assert len(list((site / "visium-hd").glob("*.html"))) == 11
+assert len(list((site / "visium-hd").glob("*.html"))) == 14
 assert all((site / section / "index.html").is_file() for section in ("visium", "visium-hd"))
 print(f"Verified public-only Pages artifact: {len(files)} files, {receipt['size_bytes']/1e6:.1f} MB")
