@@ -1,5 +1,5 @@
 {
-  "status": "AUDITED_PUBLIC_BENCHMARK1_COMPARATOR_VISUALS",
+  "status": "AUDITED_PUBLIC_BENCHMARK1_COMPARATOR_VISUALS_WITH_BORA_PIPELINE",
   "cohort": "106 expert-group-admitted development evaluation images",
   "untouched_test": false,
   "comparison_roles_are_task_specific": true,
@@ -18,8 +18,8 @@
       "dataset": "bcss",
       "source_group": "TCGA-A2-A04P",
       "image": "case-001.webp",
-      "image_sha256": "c7166fbe9556455ce2a2e4eb0af004759ab9da32ea36f297517b5615101505b1",
-      "preview_bytes": 332076,
+      "image_sha256": "913003c85423ac0e6aa3b8653bd029df0a913f0a5ba0eabcdf0b17d5cacbf054",
+      "preview_bytes": 422110,
       "source_sha256": {
         "he": "b99739bd369bf3b7dd4eb5a593c583cf3d0796513e6772fc162632c0583c067b",
         "expert": "f64fed1cdce03dcf05bee002ec8999599869c88ef82cb10d725ffc4113af18bc",
@@ -62,6 +62,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 48,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          30,
+          18
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-001.webp",
+        "kodama_plot_sha256": "de50f6288faa0fe22b0e5a6d262731423e754f76dc6d06787cddf40e403d55e8",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "33bbaba00942efd3e2f9089c08df65ad3e6266f3fd41fae4277f21211d916c7a",
+          "grouping": "553bf547b5eda9fd9db2fe3593ee3ad418c18e4e87e1a569a616a8c69def4a6f",
+          "clusters": "5d0e90e597326a33a439eaf73756db95d278df6f3c25ee507fda6ebd3d7118ae",
+          "embedding": "8a7dd83cefa25c2b84aaf90050a69b46fd55261f8325c99b29201cc987874509",
+          "strict_score": "c50523aba2ab8201d75493a364f075f7271e80ef61c6b550aedff8a5544b7355"
+        }
       }
     },
     {
@@ -70,8 +91,8 @@
       "dataset": "bcss",
       "source_group": "TCGA-A2-A0D2",
       "image": "case-002.webp",
-      "image_sha256": "1724f9ec1fd4fa3777e4bf593dad5614c50b010cf48259bb5a8f72c097a8a02f",
-      "preview_bytes": 266910,
+      "image_sha256": "fe49905fd9745e313c6d521a04d03bd652e841506a77410927a7d10d00fa188a",
+      "preview_bytes": 341922,
       "source_sha256": {
         "he": "3233311ef9e86bbdf43c6bfa9d3a4e97b8b4b6e490a72ce95604a47ebf079dac",
         "expert": "7da1b51a2ff4dce56ac2b97cacabe2ab6902db3f00c74b04d530728d553f1f36",
@@ -108,6 +129,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 35,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          35
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-002.webp",
+        "kodama_plot_sha256": "0494f3f7ed695350b8aeed8866ac8a0c5ef282af59631caf08e3c7215e599123",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "89ec77387031b94dd512c5435d2fd13b0f21e97236082e42b67746350e155ae1",
+          "grouping": "8e63c12eb7d0b883dc63d8ac5d325448912022b7424e645c180fff6842fc233c",
+          "clusters": "163c96ab4302454ab82229b9105ab93c5253e992d9b466dc0725561f9b193e07",
+          "embedding": "4736a52237b1eed5dcdb2edc6f5fcc0a4466084d1ec46389d0f963c8e53a075e",
+          "strict_score": "9537ae257b226d0c57cd580362f7913e31ba67514e443c0d5dc2d6c476f75c5c"
+        }
       }
     },
     {
@@ -116,8 +157,8 @@
       "dataset": "bcss",
       "source_group": "TCGA-A2-A0ST",
       "image": "case-003.webp",
-      "image_sha256": "9a69c3362559f404a8d5cf6eb2eadbdf72f06964b3802011a3b820611840eaee",
-      "preview_bytes": 290636,
+      "image_sha256": "a3e7afcdd359d9989f24daddfd9ccaeedf308df9b617f8272aca8f69284ebaf5",
+      "preview_bytes": 377672,
       "source_sha256": {
         "he": "6a07dcf1d6070d65673b50a43e97be429924ca57ebf2a6bf6ccdf989eaa43552",
         "expert": "37994df9c21e6d760467e3f4b1cb58ac7c092831cc0cccee6f637ebf66867bbc",
@@ -155,6 +196,29 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 120,
+        "clusters": 4,
+        "tile_counts_by_group": [
+          38,
+          32,
+          30,
+          20
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-003.webp",
+        "kodama_plot_sha256": "456e3e099c14884d1c1abc2ba3887043223ffd7dbd9ab4a9a9bcb180aa5cdf4e",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "009484a11b84351eab935335d275cbfcb8c7fe7106590fa9d0b37482ccf381cc",
+          "grouping": "fe1211eaa41357c99aa5bfa31570ec289d3f0b36a89ac1a0970293134e666d21",
+          "clusters": "0bdae85622a4bfa6d74b6e46946878febb67e4787bf9241354e903a0413e18fe",
+          "embedding": "794ab5fe84628b4a557e4c9c248725563bf2677b18e7b58ba0096d6d17277978",
+          "strict_score": "c032bfff467e14ba098aca605c4cb6c704305cc497996a65dee0fca3967c0fec"
+        }
       }
     },
     {
@@ -163,8 +227,8 @@
       "dataset": "bcss",
       "source_group": "TCGA-AO-A0J2",
       "image": "case-004.webp",
-      "image_sha256": "d8de26fbca22d6d6d512678ad4bc946ef5db33e5e920cd135dcd0495cb27af99",
-      "preview_bytes": 295686,
+      "image_sha256": "e55b676c7b05150b917e83acb27e9178f525499a23868081d9a1d17e91ab5d55",
+      "preview_bytes": 381644,
       "source_sha256": {
         "he": "9c8c4febceaa24500b380ff3831443b24cd0a99878e322715f2ee1b40fbefbf5",
         "expert": "c3e978b6698ec21829f92bbc70f84278e9add224478bf5ad69844f6c4fafa818",
@@ -198,6 +262,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 22,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          17,
+          5
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "e273dcd149a4c35557988cfac1bd3edabef4e28a07cf5ffeb4ea3a010ff6a073",
+          "grouping": "c1e4c5abf18a983a4bd31c35bab07c8fe53833fe7bee6021c7f7cd78539c9b7d",
+          "clusters": "8a62a56218b24363e613eec37e0364e2adaf71c95230b222bf249d6459ae3d5f",
+          "embedding": null,
+          "strict_score": "ba8365d8ebe23ba6d73e44e5b8517e299618eae281f7b7e44756e183664026a0"
+        }
       }
     },
     {
@@ -206,8 +291,8 @@
       "dataset": "bcss",
       "source_group": "TCGA-AR-A1AY",
       "image": "case-005.webp",
-      "image_sha256": "e726bf4d9fd4d59958625a1e7c9f248ff98430c72cff2c41c52b01ef9fc23dfb",
-      "preview_bytes": 284256,
+      "image_sha256": "3ef5627a6964a8cc4fc22351429a1bad07e4c41a0102f05aee2a2a686be605a9",
+      "preview_bytes": 370514,
       "source_sha256": {
         "he": "1853397d711b9c3d94dd1be6f906a5aeef1db54f1a9ddc1e4dd29ad16578fec2",
         "expert": "04204f783fb60196121ebfd7e88ab79eea48e914691b3eeb8bcad98fff70ca0b",
@@ -244,6 +329,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 19,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          11,
+          8
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "5252f6bc1d43befed1a0da7fd0b53f7e73ab4c0b236b91a1887c3f4bb94619fd",
+          "grouping": "1239f569911a50abafb1688d48d35221e07086dc7435cc183499370988501129",
+          "clusters": "7070189056ca687f1732830ab02fb8b76f0116cd6b5095a0c9549723a46b475b",
+          "embedding": null,
+          "strict_score": "c2f339f46adabb0268c6ddb727f4837e9f9a862dfd980b2ced7d31df907740b9"
+        }
       }
     },
     {
@@ -252,8 +358,8 @@
       "dataset": "bcss",
       "source_group": "TCGA-C8-A1HJ",
       "image": "case-006.webp",
-      "image_sha256": "7d647ec9e705280c25ebbfc0255ae24cacea525afce51555c2a3dcaa27ba6868",
-      "preview_bytes": 325888,
+      "image_sha256": "7d71f4ab397d65be66934a68362329437a4fa8ed434f5296cff478f0ecafa4fb",
+      "preview_bytes": 416180,
       "source_sha256": {
         "he": "0fadab2a9420ad7f53ea6e1fa405d3e24bddf59d4a04662aaa3761cb74598aae",
         "expert": "1f186da391937e6984b1c8afab510f7998399acd9fd22ca09ae27c9541a5af8e",
@@ -296,6 +402,28 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 59,
+        "clusters": 3,
+        "tile_counts_by_group": [
+          23,
+          23,
+          13
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-006.webp",
+        "kodama_plot_sha256": "67a2cb74336910dc9a28c2ffebf08231a4326a1551d3cb91fff464791931540f",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "c153eddc8b5362e5f56cd76bd05ae88caebc5a8b2c766fd24e3fa76fc26d37ef",
+          "grouping": "f6c069123a0874870f887794b83386409b67382e0df3b8e096b79c1005720268",
+          "clusters": "1d98c78e383121ac301698676b8483fb5d162aeead8ad13e9edd610602299004",
+          "embedding": "9174237ad1479727e0fb44207902761e25cb433f07b1189714b93bdcb6d12c5e",
+          "strict_score": "f551707a253107431dd5c57fd98432ac3f72521c1e2fd43467ffc0ea45f77962"
+        }
       }
     },
     {
@@ -304,8 +432,8 @@
       "dataset": "bcss",
       "source_group": "TCGA-E2-A14X",
       "image": "case-007.webp",
-      "image_sha256": "ea05bf54ee1648816099fb26959ce0855d4787f922be25e606705f60670e4b57",
-      "preview_bytes": 195320,
+      "image_sha256": "5342146a31860485d9fee530e8294689f538047fec534d7d79511b75cde20e18",
+      "preview_bytes": 268412,
       "source_sha256": {
         "he": "71eaa1c30dfda214d7488ba951902e78bf36266ed78a6af31b6c733821a2e3f2",
         "expert": "a69ecb81d165e03868a51192e96bf64316333fde9c253326402b1f60fda95703",
@@ -350,6 +478,28 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 81,
+        "clusters": 3,
+        "tile_counts_by_group": [
+          36,
+          28,
+          17
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-007.webp",
+        "kodama_plot_sha256": "85a923c47a7cd94f8227ba6b7c6db5c6f4c18933aae0e154629e637d9f1243bb",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "933dc5165216a916568a3762916a595ad5d11e103015c59b7b6a451d840bb0ff",
+          "grouping": "c8e234997b7dd62666c786c16d46ade33f94a6a06e20ce4bcaa97685a9e064a0",
+          "clusters": "3072a06c46344a23d2d9782c6bbad79fecd99ad5aad2fa692316b6714cfa0f56",
+          "embedding": "514c9e88eef90b983dd3a293a15556733986930444f4574ea760ebbf88ad8ced",
+          "strict_score": "62f040bf05d65aac1224d90cdf0a29c9e4be1574fc570506c7433c7a8ea09ab3"
+        }
       }
     },
     {
@@ -358,8 +508,8 @@
       "dataset": "bcss",
       "source_group": "TCGA-E2-A1B6",
       "image": "case-008.webp",
-      "image_sha256": "8eb2a7738cd13a5f0966f3d8bc861751f4799e77ff345645c5f61deef7ba4387",
-      "preview_bytes": 241044,
+      "image_sha256": "9dd632d9f1f2bb92126127d30a7f79f22e410d8127c54f0a7253f5ec47c47a55",
+      "preview_bytes": 318862,
       "source_sha256": {
         "he": "1aae54e5c33f0888eb305ee8c89f4df42b900550cd9332d81a7e8ea386c72e29",
         "expert": "92e82391236f5819eb850ca6df34d1133a03e063a4da0f84601ba7b0b7cf93ae",
@@ -404,6 +554,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 120,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          68,
+          52
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-008.webp",
+        "kodama_plot_sha256": "b56ac635444ff4298a6cd2b57610864f2d52cbd75bf64232f111fcef242b198b",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "725fe5467b603f41cc04e7f60d46e92ee762f612aa60699971882e4cd03749e4",
+          "grouping": "d44c22eb6bec5b6a435186b8555af1d3874f9a5e3dbd8e39c4edf89b79ec3a99",
+          "clusters": "782d7e81d4763a96f38057ec30f6e464fb8b8bd983f086bc93e7431b339fff0f",
+          "embedding": "a3b9d59f1c142d7179e62fd08d7f81e3dd03000d013f09bba86ccfb2ded4551b",
+          "strict_score": "47c3e7fc79f876a0dbb828f5ce28770240d4fde32ee5eb24c9ad96434ee0e212"
+        }
       }
     },
     {
@@ -412,8 +583,8 @@
       "dataset": "bcss",
       "source_group": "TCGA-E2-A1LI",
       "image": "case-009.webp",
-      "image_sha256": "ae547ffb4b3cb283773d111800fde96a5f8244f754730cebb841a361db2028a4",
-      "preview_bytes": 258404,
+      "image_sha256": "4a5ae28993db9ffedab72fa938fc8b00d673d09a1b827ff6380cdde8adf1dc5a",
+      "preview_bytes": 334116,
       "source_sha256": {
         "he": "8608d1832361f58a5e72cbdc241b20aa16159be63d48aea5a9c1c485381a9e39",
         "expert": "1eddc2e82d363ca300a27aaaa0c69f926ceb281d1cdf1aadfa26a93977b0e39d",
@@ -462,6 +633,28 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 142,
+        "clusters": 3,
+        "tile_counts_by_group": [
+          65,
+          46,
+          31
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-009.webp",
+        "kodama_plot_sha256": "292f159bfd6085ec3720cae4b21a8624fc0b912b6c658a3035a72c1559abaecd",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "a10b99d5a5c6658da7915e4c7c063c8f803ba81aaee6ba5c66562c4247727533",
+          "grouping": "cbcfa243889eeae887f2a9d363d9e2d9ef21ead42b704f070fc52499a1f6b6ca",
+          "clusters": "0ca328ebfb9e33473e4dac811e06ff367829d58f2dc617c2c772486b68d2179d",
+          "embedding": "8011e33e126f6401c68e5d6f18581cd5d724bec04fa1036bcf0ec9c425ea3bfa",
+          "strict_score": "06ea45e883feb11888ee260059c58207ee691a943ff53b237d3a10c0010a09f5"
+        }
       }
     },
     {
@@ -470,8 +663,8 @@
       "dataset": "bcss",
       "source_group": "TCGA-EW-A1P1",
       "image": "case-010.webp",
-      "image_sha256": "98d132e1057a245d10bac539a3b0afc9a0f63fa06390ecb348d739d9157aaf42",
-      "preview_bytes": 250014,
+      "image_sha256": "00fac542c6f87d685cdfd20754010259241d8cf58f1765ba1ae1abff7dd9c44e",
+      "preview_bytes": 327196,
       "source_sha256": {
         "he": "faaf0b5e7864a92b3cd196d63dbac79d17731d25fa2d3a0ac3434b48ca2a4b89",
         "expert": "72f344d86dacbfc78f6167723dda98dc61d7a488638729314d8cbcbdca2baf80",
@@ -516,6 +709,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 71,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          40,
+          31
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-010.webp",
+        "kodama_plot_sha256": "e875202cf50e4cd2880c6c66b8c72d0d60de2766c81e02d6be23e2f8a5c4c964",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "063dfbc34c861c38023979a99947635b02b2cc79548fcd21204fb38e432761f6",
+          "grouping": "420dcd92c8d65fd2f43f47379a532bb00315370a50dfa78ff1698b2f015c2711",
+          "clusters": "3a346764e9f1ed1e1ec147452379e8467348cbf719d7a5ff2fb9a68ce4e1acdf",
+          "embedding": "93a199ec445d0566abba81202dae4f06cec25aa4063e4e9d38ebef6eb9b1c397",
+          "strict_score": "ff031386810c84a75ddf86470eee9415730c06da260420f90ae28481a82a5688"
+        }
       }
     },
     {
@@ -524,8 +738,8 @@
       "dataset": "bcss",
       "source_group": "TCGA-EW-A1P8",
       "image": "case-011.webp",
-      "image_sha256": "d2276c5d4b0c71282c3f248ca4c3c6510f6b53b23a7b3b8b4f4e50e36736a779",
-      "preview_bytes": 230440,
+      "image_sha256": "4b1332089445b28e888bfeb8dfb4685e7703dcc773061847f770e4fcc63ccf0e",
+      "preview_bytes": 305274,
       "source_sha256": {
         "he": "9b340f63f395a25b9c74ae903b59fdf9c9b11d94d48af30c361f16730e7cc6c2",
         "expert": "10ec4693ca7aee95e037cc599c4dae5c91f6a777ec3fcf24cfb1109e111ba7cb",
@@ -566,6 +780,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 56,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          56
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-011.webp",
+        "kodama_plot_sha256": "28fdad02f17f77b386f531659c5f26ad775158cdfd8d23cbf0f7840652107204",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "6b676fda819d5d4bc36be661eaa23e6a21c04c8820c6f7863c2eddd91308ab01",
+          "grouping": "d0b1761b44eb8ca349e8dce45725178e80e0b3ba56de832a48b21d84971ed4c8",
+          "clusters": "04d81e56faef9d8dd8d59934c0b1d1ca620982616867680f05f7c1c4658c048a",
+          "embedding": "e5051c850cfff95b4d5108112a43bb426d2d24602eaafe8c0483147aede40f0f",
+          "strict_score": "1b2a268aee96ec387eea3c3afb14f641fc55cfc356dc278d73b63c83be744acb"
+        }
       }
     },
     {
@@ -574,8 +808,8 @@
       "dataset": "bcss",
       "source_group": "TCGA-EW-A6SB",
       "image": "case-012.webp",
-      "image_sha256": "33b2e08aeb3f01b17b10acf0b652b6b4524af217f95a6cfd962ee03a5fad4b4b",
-      "preview_bytes": 202712,
+      "image_sha256": "31bbe9f545669f1bbf55ce237feedb9e23e7c683cbad042a925788274d6ebe7b",
+      "preview_bytes": 277444,
       "source_sha256": {
         "he": "83ba7b26281c4ba7cc8c15970051f29fbc3629d6da7ca43606c5f770648c2076",
         "expert": "7e8ba823c98eae0124f61bed9c306238cd30585d95cacb1282cea45e4b08c88f",
@@ -621,6 +855,28 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 126,
+        "clusters": 3,
+        "tile_counts_by_group": [
+          68,
+          32,
+          26
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-012.webp",
+        "kodama_plot_sha256": "ccd9177c51b0c49bc267b16d9b0cd9c220ea167640c8221249757500f62f3e91",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "96dae34ec931aa8eb5870c9212d476383ee834766655e7c6952c8c3b3a553f13",
+          "grouping": "d46bf510ed2449e9619087a1426a12850f702dda908b71af2f376c0a14963f64",
+          "clusters": "5685366c386af1e39c93dd48d71b11c9cc86e9e7641fd32c162789ecd96e4381",
+          "embedding": "9637ed8d97bd74c3715e28b3669fb4edf9e6c9c4875f756897332b591870720a",
+          "strict_score": "de1a470c7093572e5edd11df82f05c87bd00f03e135c9e822e0c4c3c85032793"
+        }
       }
     },
     {
@@ -629,8 +885,8 @@
       "dataset": "bcss",
       "source_group": "TCGA-GM-A2DH",
       "image": "case-013.webp",
-      "image_sha256": "c22d92b46ae8d541df65638012394a70c87a91b8841f1892293389cb3c6b3d96",
-      "preview_bytes": 379410,
+      "image_sha256": "ffe5d6a1f2f3ba66f8192e3fa6ec0bc90dbc0f32b1a2a6fd18df86eaf0a49ea1",
+      "preview_bytes": 476028,
       "source_sha256": {
         "he": "85cc819876aa7ec43f668f8d2bee96cd095854a3f6515a800bd376072a7d4396",
         "expert": "1fc0fb335b98cdd5688f5c8f25a6f776af820ed5e4e23d9615efd76dcfc353fb",
@@ -671,6 +927,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 74,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          40,
+          34
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-013.webp",
+        "kodama_plot_sha256": "702fb025660ac4d3df3a654a44afd8967065519f268254bcbcb861830003dff8",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "7a0c6935e37de19ae6ba6dcfa8cf6cb380f4b19af47d07f9e59cf6343ba8f29e",
+          "grouping": "d46de9d4ca12cf4f0937f73efb815fc335e7d21cc5f4879b781c65d2ed952d87",
+          "clusters": "d1b0ff888e1235686dc598c6f9e81d476f56117161841edad4f50f4736773017",
+          "embedding": "1341206377adbccd0a17f904a69f1fb4125d8acf334df9b7f9fe7ae23751ad2c",
+          "strict_score": "d57602fb6128a2e9ac9545c92a6b10a26949ab79b945aee8e3f3683c68b4ded8"
+        }
       }
     },
     {
@@ -679,8 +956,8 @@
       "dataset": "bcss",
       "source_group": "TCGA-LL-A740",
       "image": "case-014.webp",
-      "image_sha256": "5bc15fe89bc815f124061baacbbc36d6d456cf599643b3cc6bd9c4267c578cde",
-      "preview_bytes": 228800,
+      "image_sha256": "f20b7d02f6aee96edbe450f79e66984b87b258e33df82df7bde2778927cab4e9",
+      "preview_bytes": 303484,
       "source_sha256": {
         "he": "55b005c7173bf389f1d534044548345bfb198dbc46481a196281a174174a28f6",
         "expert": "6788ed8936e195030923f0f8a501f492957b98fd2cbfffba16790ac2bd773402",
@@ -718,6 +995,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 34,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          19,
+          15
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-014.webp",
+        "kodama_plot_sha256": "caf8dbc62d2ba3074a0d57d0c67b377c804c16bccc0eadbed12a612bb41ce015",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "de115bb51a83cdd14b1e0083b65ea0bfc88c1f982b235de25c216f1f2db2cbdf",
+          "grouping": "74e227a99cf4064a2c7a6cc5af10e4eb0da73bd9c2a9f86892983d30e4ede21f",
+          "clusters": "2d77d53724cf2dd5657074a5d893bd82d8be2da39ab14467c4f6def5954a7d7b",
+          "embedding": "e772300f96d4fbeda10dc7d0bafe812c02ae26bee90fcffbd44a34ff9b325104",
+          "strict_score": "e8458ff3042c80f15f68db28c6ee573256c5054df0a0ef6a5fd0eb9901805260"
+        }
       }
     },
     {
@@ -726,8 +1024,8 @@
       "dataset": "bcss",
       "source_group": "TCGA-OL-A5D7",
       "image": "case-015.webp",
-      "image_sha256": "4853bc62b6c785a066059a894bb2f8fc9e5721b3357a0bbc49bea18a60823c14",
-      "preview_bytes": 199232,
+      "image_sha256": "7be0239c1dd49dd427db03ce5aae988c5823b8665b9cf1e9e53c455fca6fa63d",
+      "preview_bytes": 272328,
       "source_sha256": {
         "he": "084573cadb49f1c723b476f04c7bca40fd1c0042da1700e3468f7f3e5d667128",
         "expert": "09021003fde18fd912ea3b847f8dcfbca5586341051f571ecb221cc40ed4f756",
@@ -768,6 +1066,28 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 168,
+        "clusters": 3,
+        "tile_counts_by_group": [
+          78,
+          49,
+          41
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-015.webp",
+        "kodama_plot_sha256": "761f2ebc00fe4ad63d0056e6d8da346d3b96c2d6e0ac060bc093b7bd9b408003",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "a182393806117f374c36fefda2dd9250adb016a087301d97a830ebdac3dba6a9",
+          "grouping": "71938791f5b2125a996f46e8e8e437e9802620547715dccf5faa7fb320b367b1",
+          "clusters": "85e1d056ab6d40b09c5431aec95a34ee04f072b6168b9dea5fd2561d61381028",
+          "embedding": "b46a32ace7f87d4ba8377d6ad4653996188e840a6ce8ac2108ce6049c8ba0605",
+          "strict_score": "4ed4991ac706ef9555bfa9c18e6ee328d10f17caf2d4d57074ef33cabd9872a3"
+        }
       }
     },
     {
@@ -776,8 +1096,8 @@
       "dataset": "tiger",
       "source_group": "TCGA-A2-A0T2",
       "image": "case-016.webp",
-      "image_sha256": "691486d96600cc4c8757108e74a3820b50ad63beb982e2ff6a9468738d384710",
-      "preview_bytes": 285936,
+      "image_sha256": "836cac3348b4e40b0f9cd8dda4e1eb316ec1ffe4c3101dce985ac562ee782eca",
+      "preview_bytes": 368394,
       "source_sha256": {
         "he": "a3ca01d5ae64f171e4c8bff23e026372f48962c35c2169dfb55934dc9dc884aa",
         "expert": "26c364b76c5eab424c09ca610d2ba71069967dc9134249d0eff9630344b7ed04",
@@ -816,6 +1136,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 41,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          23,
+          18
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-016.webp",
+        "kodama_plot_sha256": "1292318709017f32e8cbd8ba878b1a3fbc583a804bc337fa8e6f5f6bfc8be5e4",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "2ee7f5a5c70cbc8acd36e631b6209aad947f7b3b3c21b1dcc782faccf1135220",
+          "grouping": "471b4d1dde987e1f87f15da2fa3303e03875eaad0cff4686ca27293293e4a1de",
+          "clusters": "ccbaf21970f075a0861837daba87bb59eb5e3f29b27e58cb1015dbea43871ad5",
+          "embedding": "406a8ff1f79e1dcc8c204f73070ff4e62733904c7175c5e2485faac3e86e5891",
+          "strict_score": "d41fcc89c6c4abfaa4e293839607107c434026cd42931172c7cce820705d13ea"
+        }
       }
     },
     {
@@ -824,8 +1165,8 @@
       "dataset": "tiger",
       "source_group": "TCGA-A7-A6VY",
       "image": "case-017.webp",
-      "image_sha256": "04126f88f39391e2690521f95bde0d4f6f9ef1f904ec431532f6901fd39b1320",
-      "preview_bytes": 275274,
+      "image_sha256": "fedbf5b3d2f124285fbcbd8f56a8ffa320fad7718144ada702c91849abecc1de",
+      "preview_bytes": 357790,
       "source_sha256": {
         "he": "0f295666dec08437c9bdd464044923c844ba5f37f7720fd5b8db20422080c099",
         "expert": "96d6c9abc2738df1de3d3245c050fd5eebaceb27ca296f8ff167fbd4f3d9e450",
@@ -862,6 +1203,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 42,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          42
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-017.webp",
+        "kodama_plot_sha256": "f60be4ac71dab278d724815263d4b12fe2d68572c8f01a09baf7c74ecd98f621",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "382b8273c4002bc12e74417732adff91321b6d3bd5b300bb7fdbc526224f52d4",
+          "grouping": "adf0c541f721c4d7edd6623d2faa60db6d8cd39a4fcc6f29c005ce518ea3aa8c",
+          "clusters": "34aae4417e87e60b6f401373d5408116f5e45cb7d8010719e6cbd7296e1050d1",
+          "embedding": "f090e2faa775fdf3546c69b54527bfd8c41d1cc52e9977d07102a5e1f08c0c2b",
+          "strict_score": "3e1adc359e63f4676957e46e4b37f5bce167369110bc8e2161264da4a9ea812e"
+        }
       }
     },
     {
@@ -870,8 +1231,8 @@
       "dataset": "tiger",
       "source_group": "TCGA-AC-A2BK",
       "image": "case-018.webp",
-      "image_sha256": "8119b7c62fbc3db5d62b833b375554f81960be3c49e66e5a7f46d77c1ecfdcb7",
-      "preview_bytes": 285904,
+      "image_sha256": "50109f9b28cad6a3b8ae21d180dbec0e114b94468485aee185fe34f040c7d8f8",
+      "preview_bytes": 375526,
       "source_sha256": {
         "he": "3ed9d4b660a7566ca03ab94d5b3bb2e70f535091342c42386664a52ce401e579",
         "expert": "3332219c9869982c4e9cffafdd66b12c71d52d3d9456e5605db627f888b46367",
@@ -909,6 +1270,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 46,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          28,
+          18
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-018.webp",
+        "kodama_plot_sha256": "1cc39c32df171ebf812bcf5804e157d620c924728b41f4094851c5fce800d60a",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "7c57605d5e0c6a5aba2c305ddb9a79b43dde4e83103e6a43dc8f034134f3c023",
+          "grouping": "40a497684d38cb40daf2829acfd7c3e5f8f623f3d5a6f454182fa2293f98f33f",
+          "clusters": "02d10e963638a283c3116fa53467f57aae2a101d09af1f9e2618dcdd22f4ce34",
+          "embedding": "e571ab39fa1ed61af3ce64e79efab7da506b1f7f75c3c691b0732e6eb56ab424",
+          "strict_score": "87530da376d8df014cdff70eeb92822e200db9db72ac95f7d5746d4bf7083f7e"
+        }
       }
     },
     {
@@ -917,8 +1299,8 @@
       "dataset": "tiger",
       "source_group": "TCGA-AR-A256",
       "image": "case-019.webp",
-      "image_sha256": "240484c0738f37ab627da830b5e7eadf5010e1e626320b631f75e618c59e51ec",
-      "preview_bytes": 265222,
+      "image_sha256": "b6ad106d1d43955a3b3c47a48cdf4068d38a5da39a7a3e083bb11f64b1e9bae6",
+      "preview_bytes": 343456,
       "source_sha256": {
         "he": "ca0216133dcfbf1b5f3cf7cdfc60c2e610c8663cb91ab08a17788cd4998acea0",
         "expert": "22f37e5962284239cbdb42489f0b4bf03bf1b902918c8b3cfd6b9b21dd549c59",
@@ -956,6 +1338,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 20,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          13,
+          7
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "584614e3ce8516a9bca1bb0db0314fe07f2340446ac88a9419106ef1dcb15fff",
+          "grouping": "8b305beff4eb0968595066189f587b03c3c70e34dff1d2b883fbdbaedc685c12",
+          "clusters": "d423861505e540af4ce109d19a9e88d6bcda1ecb647d85503c1456b9a1f3d49c",
+          "embedding": null,
+          "strict_score": "bf8445df9481602d992b355902451508f1b011e2938bb31f8ef5e42fc989a0ea"
+        }
       }
     },
     {
@@ -964,8 +1367,8 @@
       "dataset": "tiger",
       "source_group": "TCGA-BH-A18V",
       "image": "case-020.webp",
-      "image_sha256": "36bc1da8a2343824e1902710609aa48ee9fcef246bb68dcf40203d9200c6b00f",
-      "preview_bytes": 266270,
+      "image_sha256": "afa8cf667e6b8008ffa49c83499889320490016d0f955eec3c1785a4a41d3900",
+      "preview_bytes": 352504,
       "source_sha256": {
         "he": "7804776e4a38783b1b3163121aa9c7a41bf21aa832aa15c95564d1ae82870112",
         "expert": "346f4e7524d1e92947d171ccacc6b471bdbdf9af925af762dbc1111b0a94e1b9",
@@ -1003,6 +1406,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 180,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          109,
+          71
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-020.webp",
+        "kodama_plot_sha256": "296bcd450da573f9703eba2a3f1f7cb7979d53e4cc1e57561cacf269c38d5f0b",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "6a7c7f6db5fc0b1bb32d3832f261fa4f2dc88535c82b139ab52548fa75a00d68",
+          "grouping": "05bc41769bbc35062cc04995a815c4217b629ef76ae620db2d9512e971f88708",
+          "clusters": "248642e3ec01fbcd852a279ed85dbe1a255ee0050446014b9a03aa315b18559a",
+          "embedding": "b51e29408d8b1c0c49a374ccdc983c794325004df1798b1c979664d38a36fd4d",
+          "strict_score": "f7d78cfef0acab96952e0982b461259c62196dd7a4fe75d2ed3c370d7c51a2f7"
+        }
       }
     },
     {
@@ -1011,8 +1435,8 @@
       "dataset": "tiger",
       "source_group": "TCGA-D8-A1JF",
       "image": "case-021.webp",
-      "image_sha256": "860d8518858640efc132489b0e62abca17fd3b300557eaf83a16de95f9772308",
-      "preview_bytes": 242782,
+      "image_sha256": "3af3fd833a6348962ca0a56b2998373e9355cc2f8384ecf983fe4035ea993244",
+      "preview_bytes": 318192,
       "source_sha256": {
         "he": "7365e291b1e890355431175c068f109c7340b7d4af6015f79713770f63793528",
         "expert": "5030f6d21b7994abf3dea3c57873f1c30a63a62604733c2edcec7d0f98c76ef4",
@@ -1047,6 +1471,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 44,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          33,
+          11
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-021.webp",
+        "kodama_plot_sha256": "9624c7f7766ded65b85d5920264c8c42dea9b7819b300b94f72ca36f1a26c806",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "87d4459a400be5db795aba3e8a73a4f4ed520ba644cb37db34ef0c3b9897f894",
+          "grouping": "e41c4351b9159708dcaa9ee2091bbd38dfaa7156ce909b876c4147cc9f1b2e80",
+          "clusters": "30be534af43464d362a4fef2d9965597c13172d67d1ec8d19668cc69b8491443",
+          "embedding": "dcecc419301758f9d77e5112c3b747863d0b514d1d315a77cd3d3e00a3f7d63e",
+          "strict_score": "cc7b0a1f181d6f832a9cadc25f1a713f4adc431fe94131f7e350772726cb631c"
+        }
       }
     },
     {
@@ -1055,8 +1500,8 @@
       "dataset": "tiger",
       "source_group": "TCGA-E2-A14R",
       "image": "case-022.webp",
-      "image_sha256": "948e4855b2aa552e67aaff57d551e360cd9d4cffa6c996da8c293a5ccc816ac1",
-      "preview_bytes": 222832,
+      "image_sha256": "15fc9b08b6be2d424d8ff345c6e17093a40a698e7d3e8c68d3505eabce9b1911",
+      "preview_bytes": 296414,
       "source_sha256": {
         "he": "e374469f7fd220fff7d728b2063c38a2fcdeb8c2039982b2662f9bc4c88eb187",
         "expert": "f38f69eb3625787c4ed1746b13dc62b0993f5d031b771812c6f3ce70fa6dcd10",
@@ -1091,6 +1536,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 33,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          17,
+          16
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-022.webp",
+        "kodama_plot_sha256": "a0b96f7cb5490924a226137b6348fd33fdb3732b8e854c00dfdf794c61bac72b",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "5ab65de18308957c7c6a64e25d41fc24d9a1422fece5a973878d0919d67dfa4e",
+          "grouping": "26b41406ff78ae62714661dfb03a99151341530f53545d63db189c0b7641fd8d",
+          "clusters": "d4c3bb24075a8dde0bdae0f37f06e47f8e160fd7485b188b7407762bca6c0973",
+          "embedding": "cd6fc1536500324445073b1ec449b6a98f4125cdd058ff1dea8c8261051203b6",
+          "strict_score": "0c4fcf2c2854c22ce49312ec5a931a250e74c4a95452e16fa8eb32b64a3578e7"
+        }
       }
     },
     {
@@ -1099,8 +1565,8 @@
       "dataset": "tiger",
       "source_group": "TCGA-E2-A1LL",
       "image": "case-023.webp",
-      "image_sha256": "cd12c9e5069a83108f84abcbb39390519ff70a611838d1d2b7daa193b6ad6587",
-      "preview_bytes": 197330,
+      "image_sha256": "7d1b14bb9f4e78a937281115fb7e01338d09e6fd0d135404fbb160cb9f8abace",
+      "preview_bytes": 267344,
       "source_sha256": {
         "he": "887b4f338616603e7162aaafea2de969853f06c297c5c0e03e53d88d48d1222f",
         "expert": "f192bff46f30b98c42f491f22e5d2892c8bd83817f201f0b04225cb7cff2193f",
@@ -1138,6 +1604,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 69,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          41,
+          28
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-023.webp",
+        "kodama_plot_sha256": "2f50b9be984a27c24515bce9ee4779394e24570503f226ec104dacd5e6f48d9d",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "6373385368655ee4a6fee87c3310fcddc34b98253e9910ed693a26a693578c2c",
+          "grouping": "706ee2c1df1c8e78295d9a5fc8a04063396670c6ab3e0060e0834cbd54d22c42",
+          "clusters": "2fcb8763295b373dcf3792e3282831b09f4267552c5834c8c0207589202ea910",
+          "embedding": "4a0059e2cb51f004815027b0d90ceb1c9e2bb4dc9d346c59d2504c725c5ababe",
+          "strict_score": "767e4c815143186778db1920ea73b0ad46ef4c3fbbc43bce53825e2e5f594206"
+        }
       }
     },
     {
@@ -1146,8 +1633,8 @@
       "dataset": "tiger",
       "source_group": "TCGA-EW-A1OV",
       "image": "case-024.webp",
-      "image_sha256": "db4b2ee35f2720afa13bec9e831e71615314d256ce25a40e6dadc1e44a353aa2",
-      "preview_bytes": 171474,
+      "image_sha256": "1381dd92af6579f46216ae0186b99d5752756e9225a62b417b9706a61f2595ac",
+      "preview_bytes": 232646,
       "source_sha256": {
         "he": "6eaaf27a392533493605e9c8659a9a1baf419f7f55c4294daa9a57e48c176fec",
         "expert": "f3c51b3529962a2055f6fd0a3cb57b880e5f2d18f4663f2bfbf3266eda427002",
@@ -1183,6 +1670,30 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 248,
+        "clusters": 5,
+        "tile_counts_by_group": [
+          76,
+          61,
+          59,
+          30,
+          22
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-024.webp",
+        "kodama_plot_sha256": "852fed2079d01df248f3dd66bc91fdf67840203c857e90179c895fc445b0087b",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "f5379215014fe601bc30f222ece7eb9fbfe17793ad628ba5227a95bd92926ac2",
+          "grouping": "a36f4f9fbc99571e935281a385473568dbe95dcd23757cc92322ff3b1172a351",
+          "clusters": "b03c6f8316d37211eef58bbf3350f74d9340d5998e17b36869e08c58f46b9d81",
+          "embedding": "53d9dd96e1c0dfef55a31bbd02ba2b47893cfa352a23c6212d964f794e19b959",
+          "strict_score": "76d97f14cec58a24398c0adaf391dd109eada120fc0fd024dd5d98d002e600fe"
+        }
       }
     },
     {
@@ -1191,8 +1702,8 @@
       "dataset": "tiger",
       "source_group": "TCGA-EW-A1P7",
       "image": "case-025.webp",
-      "image_sha256": "5a0072a1254ddadbd8076cef1a0283cf85d54013a47c7459fd81982977d3ff61",
-      "preview_bytes": 194882,
+      "image_sha256": "4ecf8b5adc94def8681648c9207180b2e82d9dc5fcc94c693bd7af264ca9cfab",
+      "preview_bytes": 266558,
       "source_sha256": {
         "he": "edd3520148134af63b47f5e228b092686b31ee2fdc2938676d2da0f3af8481c3",
         "expert": "a46cb5fda74e334ccc117f4c9e4b5cdc68b313fcf45cd88c4979719be4627923",
@@ -1228,6 +1739,28 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 78,
+        "clusters": 3,
+        "tile_counts_by_group": [
+          35,
+          22,
+          21
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-025.webp",
+        "kodama_plot_sha256": "5b93f4e8bbd77b750601893485eb0dacb4910cf67f08021f38aae832f531d92e",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "4965bb2ba62d516830b41d50ee6adbb77816eb52926bf36283df13d1a5ab1855",
+          "grouping": "ace97c2518a5f7e90f8a3b88b28c07e74770c82264c6547e7a68351a57ec4a8a",
+          "clusters": "4994416949a80d1b437622ba2ae5fad27e442a04ea0ba66285d8ba8e25f993ba",
+          "embedding": "cc8a70fd47480539b90bcdde9122d0a7b561b4ef477cb258b6b94fce7cb1c614",
+          "strict_score": "b8dab8e6250f6f180bb5ba511903148e7bd41db206be4967d5d58fcbfbb9fa6e"
+        }
       }
     },
     {
@@ -1236,8 +1769,8 @@
       "dataset": "tiger",
       "source_group": "TCGA-GM-A2DD",
       "image": "case-026.webp",
-      "image_sha256": "f4fcfc2f905610900f3d4e9f7cd523fbeee1a9e5d00599adb71c83234edd3b90",
-      "preview_bytes": 222768,
+      "image_sha256": "ecd7f3978305b557755ed01a59c6c3a293b77322b14722a79366b5744348cbbe",
+      "preview_bytes": 298476,
       "source_sha256": {
         "he": "b528a742eb4bbf62c1fcfcc52b4ffded58bb5e2e53c356611d2357cc8c409ee0",
         "expert": "64d79133d5ef57f803072a70deb7a3eeea3c5634ef2f96ed6c730d1b0986f1e3",
@@ -1276,6 +1809,29 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 150,
+        "clusters": 4,
+        "tile_counts_by_group": [
+          52,
+          52,
+          24,
+          22
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-026.webp",
+        "kodama_plot_sha256": "9253a8d49a47ff0295a19c67e5d39a509749a7b3c806f1ff7b413162a09caa5e",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "158010f471b973f350b1849dc17f342ad50738e074a3ff5703b84f3167dd84ef",
+          "grouping": "ade741c278339a4d0278bf7dac2fc2eedcdca920dfa56367aa8ddba23d6e80ce",
+          "clusters": "02cb0e08b8c8c06ac404d6ac09af65f8786e156178705cf4bc5eee10c6daf864",
+          "embedding": "ce51474d82ea7076fe7eeafd017dbd7976ce400b00d874ed88957082bd39c3ff",
+          "strict_score": "d8d76084f270e34d4a900cb12295310245a56df06fdbffbb423d17d4eb09625d"
+        }
       }
     },
     {
@@ -1284,8 +1840,8 @@
       "dataset": "tiger",
       "source_group": "TCGA-LL-A5YO",
       "image": "case-027.webp",
-      "image_sha256": "e91c48a38f9b88f08071db23471a8a4181e9f69cd441ac97f608c99f8d78a267",
-      "preview_bytes": 375036,
+      "image_sha256": "95daa09072e0cc5b60a50ca1d1c7193074bb48e31552ab5ebda8081c45fa04f1",
+      "preview_bytes": 468926,
       "source_sha256": {
         "he": "fcdc2ef49909d81267782699def3cb47659bbd029606668679aedaba8ea6f236",
         "expert": "f2d0600c3736419a4e29706ea33d5c69309d02a7ea8e78776abd32f3b022803c",
@@ -1320,6 +1876,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 40,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          23,
+          17
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-027.webp",
+        "kodama_plot_sha256": "924041e732995937b322429ea876c552fa20734b6e8c82b046b11a16e28223eb",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "0ab063222ca206166178343b5bd20b5b04dfc87b215a8784297ad1e0cf898608",
+          "grouping": "d39ceb9764d36e8f633b64c85080dd975a4c3fb6c73a94f90d87e1a0267c7115",
+          "clusters": "21f59d65096160766dc0d5e30efee2f9f29260d9b50397c112b4f987e8c1cc8e",
+          "embedding": "aeac8f269f17149c30ba4e824b1d0940aca192db6960b31ba67f5f52274775f0",
+          "strict_score": "6ac295bb7b981e78aca67f5238f2ad08517285e5ae7c8acd50d6e405fa1b4fb7"
+        }
       }
     },
     {
@@ -1328,8 +1905,8 @@
       "dataset": "tiger",
       "source_group": "TCGA-LL-A73Y",
       "image": "case-028.webp",
-      "image_sha256": "c7104112d487f2640327c14f91abb5fd4f7c6e289ea7baeb3815f29a08b41fd5",
-      "preview_bytes": 301314,
+      "image_sha256": "ec0c3fd6dcf567e706bd42065216c430f9886a4373db9d0a0e6d1674662a1b07",
+      "preview_bytes": 388456,
       "source_sha256": {
         "he": "380171712c6edca21a8159b993222def19cf3ae9ede5319bb1f2b19a59b28c4d",
         "expert": "5d7100e3cc97dd84677bec9fdcd9d320046753c64d0c9a8f3b56efd6d36b9945",
@@ -1364,6 +1941,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 19,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          10,
+          9
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "c3abe332fae2134f04d9dbc4541bbc804a34da6d5dcaf1e85a7dd17cb4678b1f",
+          "grouping": "690d38908ea4eeb702e352862ea0be9a10777611563de8c758df8f69d7a4867c",
+          "clusters": "0f7a51d2609a7bfb2f160f0848ffa0b734ea3279c719823dd804db5cb21d3e8d",
+          "embedding": null,
+          "strict_score": "b56a24c7906d6155a8105a37da699a2971edee49bce842bf00191bd8d231d2de"
+        }
       }
     },
     {
@@ -1372,8 +1970,8 @@
       "dataset": "tiger",
       "source_group": "TCGA-OL-A5RW",
       "image": "case-029.webp",
-      "image_sha256": "f245225c9f2056ea5b78fbfd439a74b4048ba63a4eb10ea32218f7263ff19ee2",
-      "preview_bytes": 217696,
+      "image_sha256": "68b93202b144e27a3d01ed9460fe86ac2942143a760974a1df7757392b4a449a",
+      "preview_bytes": 288076,
       "source_sha256": {
         "he": "c9ea371a23536db0fd9f438843a31efa66de02adb71145e2af2cf56ae457067a",
         "expert": "1ccd2bff7145e5e291a478756ee7fd9f6db811ce1ac7e091500c71931ffefb57",
@@ -1410,6 +2008,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 20,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          11,
+          9
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "6bf37bcc75b39e977fc36adf1d2aa083a9eaa43765a8bb866aec27f96ecf8d65",
+          "grouping": "7278a89205dd6bd35a3bc17de70674e56a17c89964513e596f63f06a7d27e8b1",
+          "clusters": "8186882b752d871af2850e48ca32f6bef4ba465a0ffe056fc0691f1966057e1e",
+          "embedding": null,
+          "strict_score": "6d6e709a03cfc7cb8185ff092484ee7fad2acf2c44ce86aa09a9ee6533be3b32"
+        }
       }
     },
     {
@@ -1418,8 +2037,8 @@
       "dataset": "tiger",
       "source_group": "TCGA-OL-A66I",
       "image": "case-030.webp",
-      "image_sha256": "fde48017d0aa7be29dd0ca24ccce5f5e1e9a1cf643debd79710226a0db850535",
-      "preview_bytes": 280934,
+      "image_sha256": "b8d7975bf0f03bbf37cb97888e2c3dfb0775e730871ec6d2f09c2a811e14e2e9",
+      "preview_bytes": 361376,
       "source_sha256": {
         "he": "853ea67360c5a8bd2ba028ed2d1912a11409f656e52f6a4a6b12e009b853be3a",
         "expert": "aa96c2e60df0445814317a46b202fd272a7a58a2458996994725da7a38c10192",
@@ -1454,6 +2073,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 29,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          29
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "b1736a269053a3f9ec0747ada9fd00f68333374b04e0e56fd82cd1ed1e476569",
+          "grouping": "3072e0bcca6ed92f4885f7b3a93af46c090ff67c13edd2cdaabeac204aa2edb4",
+          "clusters": "c97e0ab20f84072415190f49777ff23cfaa27b1d5d77a9ed5ade9055cee0c04a",
+          "embedding": null,
+          "strict_score": "9f82edc98b0fb24f7c498e53a99075fca7d57ce2126015c52362b5c45f430240"
+        }
       }
     },
     {
@@ -1462,8 +2101,8 @@
       "dataset": "tiger",
       "source_group": "TCGA-OL-A66P",
       "image": "case-031.webp",
-      "image_sha256": "d8b29a5c7cfded29c5d1de572c5011eb8ef68a5f0629e2b8417551f0701dc34b",
-      "preview_bytes": 308910,
+      "image_sha256": "84a329a0ba48323345b7bce9079e0c171cf85f5baa0dfd02a24044d4ba402952",
+      "preview_bytes": 402010,
       "source_sha256": {
         "he": "8b89ba5bc79a4a8cb6ead95e5bc9d697d71e49f704b3ffb1fbe73ed2e964aab6",
         "expert": "e49e6f3ffc31fb1b39db4becded03f0d1c91825601cd279d158d1a2e18a0d876",
@@ -1498,6 +2137,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 80,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          47,
+          33
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-031.webp",
+        "kodama_plot_sha256": "2288d318db0977c2b2ef56278db7348bbe55b45f64585a4ae70d2378d82d7af4",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "2f38ab9753e6639807dce4e608c8640d38f1def9ae25160b62b4338f2d96e51e",
+          "grouping": "ec43fd80810def8da5d9d1aa4aba01e76d7216124ab7f07b40501696d09a1c17",
+          "clusters": "f8b1141f9676ee036e6997c69e0ffbd3fd93ee0ec929601c51283640e700164e",
+          "embedding": "357202d0379b5c354acfdd8211956ea7a6b1ddde7fb333a951de080622de8648",
+          "strict_score": "1f02b0bf41a183b4b66a8bacc8de6cc1f1fa0a2c18f0a58ca9874e9bce3cc8cb"
+        }
       }
     },
     {
@@ -1506,8 +2166,8 @@
       "dataset": "tiger",
       "source_group": "TCGA-S3-AA15",
       "image": "case-032.webp",
-      "image_sha256": "fb112bb4696914ba2852444cb591bc45d41fe7286707ef1f7c22736afdf7b969",
-      "preview_bytes": 185346,
+      "image_sha256": "b134ff592700d18a4cc082a1578e0599534b51a486a008d24e6b194611a950b0",
+      "preview_bytes": 254082,
       "source_sha256": {
         "he": "4cbf004614562c6bf8fb879e4a1c827dbb102347c10597aa445ac71cf519cf4e",
         "expert": "26c5c627bf689dd807d542e99e32c2b8370e617aa86d8f5060f871af16904e5d",
@@ -1542,6 +2202,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 22,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          12,
+          10
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "646490ad7a37beee39bcd80d20b23640ae9a4c0007bab12fd314933e6830e4c9",
+          "grouping": "4c41c48dcbeb30c47ae6b91002f9fdd520948a778aba78829fd592a201004efc",
+          "clusters": "5503828f0b1d1853dce1507d345746e019be142e9911219b12b288a60c0cfc60",
+          "embedding": null,
+          "strict_score": "3f4c93c66df68da9248c8a29bf16adad15a8f3c551033bb6cc0f5581e26ae6ff"
+        }
       }
     },
     {
@@ -1550,8 +2231,8 @@
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-28",
       "image": "case-033.webp",
-      "image_sha256": "88efa6da45fda5fc987a73c2ddb9255956b7578491631952adfbec4ed2ae8156",
-      "preview_bytes": 216966,
+      "image_sha256": "3d1c6444ec2d2657926c32f1eafd3de3085afdc2060d81974310ac97f32d334a",
+      "preview_bytes": 291090,
       "source_sha256": {
         "he": "5c1d77ba04fac8621357958d0f5595e8bd17425cb6e781a7d51efd6a948f28a3",
         "expert": "fe546d1ed5fb37345ba6d9f0a9b71582f7bd9f0561bcbf1b03d7909ba1fedd29",
@@ -1585,6 +2266,27 @@
         "tumor": 1,
         "stroma": 1,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 16,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          12,
+          4
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "dc8ac6fdb3a00fefc3dbb450f223525c3dd70625135965442e20437dbc186b12",
+          "grouping": "97a1272fda3862dec1bad51c1eda885713fab7eba7a49d707c0858d5cca34280",
+          "clusters": "9433cfbb78b654c296007b87a12a89380213a5711ccec06c528df2f4406e0e49",
+          "embedding": null,
+          "strict_score": "8bf822f4074b48d179d97436e07fc59f7b5a6e57e3221535110079077655ee58"
+        }
       }
     },
     {
@@ -1593,8 +2295,8 @@
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-32",
       "image": "case-034.webp",
-      "image_sha256": "5ebf47ff0628d1c65eb0133a6e4f554b7f3fffbd432ca7f06f1c2464a9dfe1a9",
-      "preview_bytes": 238858,
+      "image_sha256": "70819bd2011f8e9458a61aa47702b30083ec05b39600980cabfc0fbcfb04cabc",
+      "preview_bytes": 315820,
       "source_sha256": {
         "he": "e9b2b55d05ffd58b1ae5ee833cca821cab95edf256b4fca5872178b8649b8a99",
         "expert": "f883a4b6bead188eaea68bb3069150bbb9881dc42c2ddd8ebdb71028c1184294",
@@ -1635,6 +2337,26 @@
         "tumor": 4,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 16,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          16
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "9e1bfd424dbf0c20f82d3c276c7175de80f59fef43ee01d525e59f4c65462f3e",
+          "grouping": "0ed38a58da2c20f201acfe211aaa041440544b30f91768f237abc1da358f75cd",
+          "clusters": "351f7e1a1b77ddc7bc87ae06f21d03d45e3ef1e7009d3a72f0cfda7d66239f52",
+          "embedding": null,
+          "strict_score": "a8d207f7b951adbcdf877242d2da8cb6ef37391db46fbb5985f262967a7f2aaf"
+        }
       }
     },
     {
@@ -1643,8 +2365,8 @@
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-36",
       "image": "case-035.webp",
-      "image_sha256": "34d8264f8c7642662df2be89fc74fe530b2e1042ff5e538079e5243e8c09f851",
-      "preview_bytes": 201260,
+      "image_sha256": "f9931bc2ec379a0db6ad4ca7623d9916c9223f96218cd6a820fe6437d38a6a0d",
+      "preview_bytes": 269424,
       "source_sha256": {
         "he": "941eb5d9a45e10b5340ad5d44164f0eb7fe00956261e1a95dbee4e2fb048179c",
         "expert": "69cace2c2c1f3bcab3ed53f00435692013fe7695ceb17193cf8cd899afb5210e",
@@ -1680,6 +2402,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 9,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          9
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "6304a714103c11913a242c1e99cd03ba38455ae1bc0a4aae6585da0427a15cf5",
+          "grouping": "7881c953c8818440b10940f239ea8ab991961c588a7b3428e9e0867443f9f59c",
+          "clusters": "f2dc3583e22d1801d0042a42d751f5bf0af366a98aef9f72ec6e66aab6fa651b",
+          "embedding": null,
+          "strict_score": "2044f92687c41801e3984d1a4055ff96eb6a257a6f0827717da40c3e0160e8ac"
+        }
       }
     },
     {
@@ -1688,8 +2430,8 @@
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-37",
       "image": "case-036.webp",
-      "image_sha256": "db7ac66a9fef178378c3647a4e8521a5f404c631075be152dbe3a2f44ea85b02",
-      "preview_bytes": 201750,
+      "image_sha256": "46c9f73fa5091cf044e0ea9a48d3296557e8843ea02640f0652876ac613ffff2",
+      "preview_bytes": 270912,
       "source_sha256": {
         "he": "8fa5c8d6547f27b259b3ffecbee0455cad590874373d2e504dd42b3c72eed4a5",
         "expert": "259c149dbf1121688a3174cee904e2de9641d9655d0e0fe5b490bedd5fd8c001",
@@ -1728,6 +2470,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 12,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          12
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "c1b1f1a097deaf7dc5d4057e589c0690e2a267eaaae3611ebd987ef08cb7ee6a",
+          "grouping": "027aa6635b21d5bbd12e2ea7159e81f640c451eb2896cbffd92da2f94d0fd98a",
+          "clusters": "eade342688cbe361d26eb575dfba7bf279f58678172cd86befadc2b4dc24464f",
+          "embedding": null,
+          "strict_score": "560a1e36c2e7949f51cca760f77e34e008c56730a09e9e197df46a8aa787c825"
+        }
       }
     },
     {
@@ -1736,8 +2498,8 @@
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-3",
       "image": "case-037.webp",
-      "image_sha256": "70f913ea39c84c231b18fd49309e46e3d7c036644003ccd50471b2852f1e9f27",
-      "preview_bytes": 195222,
+      "image_sha256": "3ed046c2f10a5a646ea80261f6e9d93c325e4a153d3632e74a46788fa428e004",
+      "preview_bytes": 261808,
       "source_sha256": {
         "he": "2edc494b3ba4142442e063962946b1e86ce0d1359e42cd4508be8b4d9738883b",
         "expert": "33ace6ceffa88d46838985cbc77f4bb80aa9b9b6b7b86feea062a89656a3d965",
@@ -1778,6 +2540,26 @@
         "tumor": 2,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 10,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          10
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "d2b91d6663738600a23802032edf28792b029d1191dd822d6036640fb9d2a41e",
+          "grouping": "fafab0556827936c70a4f678b8c17b0ec4d05b658bcdbaf3e139222cf9eb8c8d",
+          "clusters": "9c1dc2377198ee5024cb83fce6287e0a634c4213336dcbe8c5113d888e866dfb",
+          "embedding": null,
+          "strict_score": "d62d72286a2232d9b8ccd5d052632f53f36c4018713052a2c3517c10ee23d2de"
+        }
       }
     },
     {
@@ -1786,8 +2568,8 @@
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-40",
       "image": "case-038.webp",
-      "image_sha256": "d762e35d47f98f98d7f999dc92b68a534f1f66d458f712b92406a56d11e9cb72",
-      "preview_bytes": 177010,
+      "image_sha256": "62f82b0673ebf63259b9451b8a1b424706da5408d434902d9cab352a330fb50a",
+      "preview_bytes": 245796,
       "source_sha256": {
         "he": "f06c6a8cb440629f3846bd7e854889b44c08190603cc9b150384dab4810a892c",
         "expert": "2ff5d3ef9e851c2ead0f749ef9f037ff0976ac0684572c5881fb08af3cffd75f",
@@ -1822,6 +2604,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 15,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          15
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "0146b4d250d737631c519e6169d73cd5482fac4a89bee72df76ac7a14ac49221",
+          "grouping": "bdf46a5d72c809542ff3a3ef80447d9c563bf32ca31509ca380069c80e457dab",
+          "clusters": "cceb8a68c36e24a5d50c3d5749b12a7b0d1535a847be0c675735fb0696185b21",
+          "embedding": null,
+          "strict_score": "933288ae12ad987421873c8baa22fcdb5cff634e3886f44dee83e3d43df0ff57"
+        }
       }
     },
     {
@@ -1830,8 +2632,8 @@
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-43",
       "image": "case-039.webp",
-      "image_sha256": "c20edab71463a30f1b82e7a96c8bc560873beb7ca9773791f91e17d910f7336b",
-      "preview_bytes": 194110,
+      "image_sha256": "72b7badac0ec5d833272b4c005fdef8f77d58c2744aa6c8b146b3bd9fb00f7b6",
+      "preview_bytes": 262338,
       "source_sha256": {
         "he": "72544439c39612a9adc4c5168e9eb992aeda8048e48b32ea85303b7efc161dfa",
         "expert": "c43137078e7ec48c993b15c4d987f1b836e3c702133b3c107cd9682686e00468",
@@ -1871,6 +2673,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 6,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          6
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "ad9c3c08508b66fae5b6bb6b9e220785951f6d4d8dd3b183ef3d458554996241",
+          "grouping": "0cdf863677414236a605c042d326a0cb16b486d749a33079cb96807cb069b124",
+          "clusters": "e5588394a38ae8307d3cccf741d51e3be18e4d222c7d1131411b1a731f7baaae",
+          "embedding": null,
+          "strict_score": "ae48098ed3483c455d72cbb217caf6fd920676537e6e789565592974742a8516"
+        }
       }
     },
     {
@@ -1879,8 +2701,8 @@
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-46",
       "image": "case-040.webp",
-      "image_sha256": "0e3f4875c02579c5bfe253769310b25fffcdbd729b763be9110d8d1709bfaef6",
-      "preview_bytes": 191312,
+      "image_sha256": "b1c078771c406ed286df88a21a0ed2957da2d141ad4894941bbaa2ade2c82282",
+      "preview_bytes": 258458,
       "source_sha256": {
         "he": "e0d74a36f83933572ef91f81b1c72c3536fb3a019c14fec75ccdcca1bc3cd68e",
         "expert": "8f965ce3c5edf6630d143e99faa4deda6204a785995b67338f75b20d7b1e0f57",
@@ -1914,6 +2736,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 25,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          14,
+          11
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "95ef8775d5d13fadb525a4132a88243aa8792cb9c69f34aebb4bb0fde7a5e09e",
+          "grouping": "78517c7085b7e460fb9ae9298126b61c98068da8ac86a52040eeace877d204ce",
+          "clusters": "e38b2e9d4a22e531448cbc4ab11c9664e25ac4ae675c974440fa5f0c72fdfdfc",
+          "embedding": null,
+          "strict_score": "be70bc6ba6f7a421302e4d2d8f8add62bb7fdeee3bbb9c4767e3da6bbfb7ac49"
+        }
       }
     },
     {
@@ -1922,8 +2765,8 @@
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-4",
       "image": "case-041.webp",
-      "image_sha256": "7c1be4f9f2d950bbbd72e4c30f3e50d3a5928092fb2b5275e92127a6f3c6f0ab",
-      "preview_bytes": 187666,
+      "image_sha256": "55e5f18cdc91a18e95d682362d21f382088b0411c1a7fdd5466af5b3ddf4fa43",
+      "preview_bytes": 256342,
       "source_sha256": {
         "he": "0be5284607f9a494d9d224dda68a4af96bee1757ee1048b8abcdb47620b52ef1",
         "expert": "9c0e76cddc163e28c928c6a38765b2a4d61adf44563a0bdbc3b8a3224d4da2bf",
@@ -1959,6 +2802,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 20,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          13,
+          7
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "a351276b7bb4239b564eb6ced2d7bbbf4861fb52eeb774a51a7a1078c3c2d1fb",
+          "grouping": "a2bd9c587fca7c62f3a5dbb4fe0679b48880f4f4b00e4200b97b6881e6244469",
+          "clusters": "8c75ba198694d66eb7fcff0751822ba0b71b32991ada233562699642f5080560",
+          "embedding": null,
+          "strict_score": "d0dcdb2db14816f5dcfe6e593140902ddb59d89096919276660ca1ae788b2f92"
+        }
       }
     },
     {
@@ -1967,8 +2831,8 @@
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-57",
       "image": "case-042.webp",
-      "image_sha256": "e7ed00dc7c4932469f51f89929536774b6b13366f3180f5260b48ebd05a1aeb2",
-      "preview_bytes": 224022,
+      "image_sha256": "23afbba581956c91163de44d80bde3a6c924d965bd939e9da03b79cb82a245c9",
+      "preview_bytes": 295332,
       "source_sha256": {
         "he": "a4a31cca140ec22c79002cf904b4c03073ae9bf7e275a2e7227be0ee0acf5e28",
         "expert": "09a7adb2b2a98ec9e4763856b5b0800720004b2aa8cd7e0fc033b02379f7daea",
@@ -2002,6 +2866,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 18,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          18
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "251a94b613d6330bdc5608e434768f39bd6f277ea24b797e9d3e6eb16998d152",
+          "grouping": "905dd2446c980a94d9ec9d99c614f135419207a24dc235878f6a02f4bf45e6c1",
+          "clusters": "07088b4c0d89d721225f79f941bbc7afe0638323de38f6eca0792101849ec38e",
+          "embedding": null,
+          "strict_score": "146484bc1bf5fa9d0e6f4d97f339df9623fc6f7af7831968ddf57c4ec5ea596c"
+        }
       }
     },
     {
@@ -2010,8 +2894,8 @@
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-60",
       "image": "case-043.webp",
-      "image_sha256": "25c7c1374367a06952aa5368320f7998eef9b6cb27c737df7df150197f3c49e8",
-      "preview_bytes": 307446,
+      "image_sha256": "9d6e55677935fd056d3e4424527e21526bb3af3186abb8803bf0a572cbc6a34b",
+      "preview_bytes": 398716,
       "source_sha256": {
         "he": "439db13c568ab928601e77c1bfa48a03465b220533b55a751a899ad88fa536f0",
         "expert": "4a42b3909baacb75c739bbee4d2f51d7cf70fcbca05d31c41447561a564dc93f",
@@ -2052,6 +2936,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 88,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          52,
+          36
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-043.webp",
+        "kodama_plot_sha256": "f3ec2c74e2422d6441147d1f0fc9f3c7e8b8ccdec60a9d8e466b756ef7a25226",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "c230dfc5f5d1494aa54e4604b66cf68e75a4e5d2b67c5a98ca34ac7c92ab1b89",
+          "grouping": "eba5b536fcad0af457894b41675c4c4442509bbcf79dbfeb1b0359b3befb8a5f",
+          "clusters": "aa9d98778cbce8812a95bd45dd36e5354d8c41e8f56580bbdb73e36538656701",
+          "embedding": "fa8b285119d57a6519ff297849eae7d3a28b56b27134aefce10069821f16842a",
+          "strict_score": "cda3aa3b473a8ad6efb000b45f297ea4e29311ba0d27918d1b69c3472a591651"
+        }
       }
     },
     {
@@ -2060,8 +2965,8 @@
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-64",
       "image": "case-044.webp",
-      "image_sha256": "6f2eb124b6f9a6d60afcd26018f374568a85df00d17a505a75e6b0f3d01b7101",
-      "preview_bytes": 210656,
+      "image_sha256": "48d7945a6a08d81eecfcaa3cc66b4fc62440710625d2e71fb91cf67b81897bd3",
+      "preview_bytes": 281346,
       "source_sha256": {
         "he": "0fa60215fefefa35952433de3a08c0b8c37ea0b2bf88f4901150ac653f46c8b3",
         "expert": "a8e3821032790eb6106212b6c1bab62c986b75b81e66e6ab81357b51a0d3ff86",
@@ -2097,6 +3002,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 14,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          14
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "324d17a0dafa4d3b0cae33a4ed8da8ebc782f58f785a19aeaba1a7e6d3615290",
+          "grouping": "89b253aa7a3d9ac6878d96628ff85f10a1afc54fd9a951a90e41bb4001076cad",
+          "clusters": "4b3234d8b8fa873f0d7094892c0dcae9ad664c823d118e52fa6ec4d400f4a7f6",
+          "embedding": null,
+          "strict_score": "ec44a9bc610fa2afb485ce90a212fa0de40bcb635f1c14c0b975b4f96ca61678"
+        }
       }
     },
     {
@@ -2105,8 +3030,8 @@
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-73",
       "image": "case-045.webp",
-      "image_sha256": "606aa73617be5caa22e1bacafc91ef779d39dba4ee4a2cbd22ebdf5b2c3a7d2c",
-      "preview_bytes": 169416,
+      "image_sha256": "eb62bd8454a0a5b1bcdd72d56302f36795e5f63c450794550f0ffa4a56d51c93",
+      "preview_bytes": 230356,
       "source_sha256": {
         "he": "8ee0233182a0ab97d21f25da1794d2a15b50041ba2da4ec39239c3b6e531f49e",
         "expert": "61668f05c7d3b3881c318ceb7744c5c3a3980c24d102b83639b1e2edb7aacbd0",
@@ -2143,6 +3068,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 13,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          13
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "adcc88c4f23747b7f56ef3d08da9f6456486e8f5dbae71a61aefa6b3c362295b",
+          "grouping": "a8167ec22fcde855b8774010f9e2e397496e32f4aebe8fba15f46cf580438eb4",
+          "clusters": "5c4bff56667788494124cd6dcf44e40a9ba84d12abd5f2ac602f9871d2aed968",
+          "embedding": null,
+          "strict_score": "af14cce4aba9f5d0307d318b5caa17d9a00d66f63a1e47f542476c28e82a13ac"
+        }
       }
     },
     {
@@ -2151,8 +3096,8 @@
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-78",
       "image": "case-046.webp",
-      "image_sha256": "47e575c133029356ea8092f6e82c09e160b199644c64effb20542834c14f2592",
-      "preview_bytes": 201464,
+      "image_sha256": "1b04539bb07c3c8657294b6fa2f86149d7101647be82ff120bf6283b634eff2e",
+      "preview_bytes": 272276,
       "source_sha256": {
         "he": "4cf79f0b3a81066aee803494ffdf190f7d86b697b60e45efca61d9147e1e6471",
         "expert": "1cdf9b0aa56f6d857ad50ce6c55f89549d590cb3f7b23e0fbe53aaf9cd4f3782",
@@ -2194,6 +3139,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 37,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          37
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-046.webp",
+        "kodama_plot_sha256": "b04b908381c69261c9aab62e0f8f3f162384280633ebc058263d3c246d71e620",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "6a6fde3dcd0200d1f574cc068636eeeb8fd087aa8d7724072b4358e1ce6fb362",
+          "grouping": "ebdce4c4a63b3285496cce5374b99ccbf1c69c79d7f307c32b10baa459d5c02b",
+          "clusters": "4e44ee03827221b742bb96b2ba101adba5528c7c4a7ac1c479de395fbdcc00c1",
+          "embedding": "98bb453f38218680f378f980730a1c6baa32099c27fee0b7596b64b8170d2753",
+          "strict_score": "4bf48d6677931d9c0d04a4c1e5672c4917276a07e5805009fff2c789c29de247"
+        }
       }
     },
     {
@@ -2202,8 +3167,8 @@
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-7",
       "image": "case-047.webp",
-      "image_sha256": "8bcb6bd57bcc0229e844d22dc40c7236fa798a0eec06be1185a3c4433e8e2a4e",
-      "preview_bytes": 222544,
+      "image_sha256": "c8f3437bd1778d32f40ab0af39c1814357390a180fb074a110b78822cf200584",
+      "preview_bytes": 294934,
       "source_sha256": {
         "he": "6d3cf1748437e99b2649103948e5ef46a40775430e9e95145d49cfed6beed5a1",
         "expert": "fcbe04f2560a1df3f2f194525ba2ee0c22306b3e400bfc1b50daa2b6ba9464af",
@@ -2239,6 +3204,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 8,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          8
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "8bf230958037b24680c3707f6b25355739ac33baa3a2670b5c4c7af0008fc04a",
+          "grouping": "d1775f71cb7aeb4cefc7c379663fab2afbf2c4f6f4bbec2d8649c9b4bcce2c51",
+          "clusters": "e4e32c0f930dc43be11e7d66ca888d3ce72684d50b2b48a9dce22bec3cf6b252",
+          "embedding": null,
+          "strict_score": "0761a54a50d92674b5fa2ee85204c80e7054ee83c6ff7cfcce53debaecc1661f"
+        }
       }
     },
     {
@@ -2247,8 +3232,8 @@
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-8",
       "image": "case-048.webp",
-      "image_sha256": "da1b52adb7878f10505f6fb3f19fedb711706e9cf30fbec80f27a34ef5bbc6b9",
-      "preview_bytes": 220708,
+      "image_sha256": "21943e3fcda93c952e658e9dd713cf728414951c53b884bebcb93047501485f7",
+      "preview_bytes": 292498,
       "source_sha256": {
         "he": "62fa490be4efe3e171140c6ca6edfa56682bea4306bfaeceff996aa6eaeb1b98",
         "expert": "8ee6b8ceb222a6fa312f56019bfc138fceb37a294b3db564ee9928f0e59e615a",
@@ -2288,6 +3273,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 16,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          16
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "f1a4d409648e051a122830c8e0a9e90ad7083dc4051bd7ca3f3b3fbadea1dfa9",
+          "grouping": "8de1f359d5ef6465021816e608cba2439e3dafba8365c37c4c39876d3d811a0f",
+          "clusters": "351f7e1a1b77ddc7bc87ae06f21d03d45e3ef1e7009d3a72f0cfda7d66239f52",
+          "embedding": null,
+          "strict_score": "2c178421cb3df7da13799ed9289ec46de2ade3ce0eff0aeadce4a2de4a19be3f"
+        }
       }
     },
     {
@@ -2296,8 +3301,8 @@
       "dataset": "gcss",
       "source_group": "TCGA-BR-8588",
       "image": "case-049.webp",
-      "image_sha256": "6cac27cfc229348e1ed72607b33f72b8db057590fae0934d88f232fc494044e9",
-      "preview_bytes": 237936,
+      "image_sha256": "fa8143cf05fcb32968411be66bd575cc47fbd5aa60052c52611be407b2bfd894",
+      "preview_bytes": 314596,
       "source_sha256": {
         "he": "3503967663a227bc476423c6073371138d45eeaf39e555f38fb8249d034e86b2",
         "expert": "8636e0491354488c938dd25634481b7a2d4f4eaf4a1cc5735b7a5f551a2c2478",
@@ -2332,6 +3337,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 64,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          45,
+          19
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-049.webp",
+        "kodama_plot_sha256": "f281b2b79735d267281fe5312fe5a015856ce02da0e7ae3a69817f7370d1d774",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "f4d1b415e3968b7fae4dd79f048efd745dfd828f96b8b8ab3a132eaa30fa3738",
+          "grouping": "addd189e505bc0ceb9d3ee45ee2aead3bcf94768fbb96bf4b6badc76f5a6244f",
+          "clusters": "17ca3cdd8084adc552405ca78ac6c95f0e246343d05faa777d334ba4ac1450c8",
+          "embedding": "b6812b80d72614d6fb5724a448840150e242044237b717b29ee33e7f59129ad4",
+          "strict_score": "add7e4234b049b034bbc86bdf54bf8e9640331173730f4f6620ab6967baa8798"
+        }
       }
     },
     {
@@ -2340,8 +3366,8 @@
       "dataset": "gcss",
       "source_group": "TCGA-VQ-A8E2",
       "image": "case-050.webp",
-      "image_sha256": "4517d44a207a3128e36d72757b37fdeb0bed82d845b1b74fd2c84e5e49b4b801",
-      "preview_bytes": 262494,
+      "image_sha256": "afc8560c358bc897dcefc911618f3e47561d7813d91a4aee2ee5460fcdbd3f1e",
+      "preview_bytes": 341354,
       "source_sha256": {
         "he": "6c87f90b64de27dcde37195f78e01c037007d0fe6719c7cae30c6fa67cd3c3ff",
         "expert": "2859b3b2400eb5422fbffe34be2a478d9669152ddb64fe4e26ed988f9a3cf69c",
@@ -2380,6 +3406,28 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 52,
+        "clusters": 3,
+        "tile_counts_by_group": [
+          22,
+          18,
+          12
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-050.webp",
+        "kodama_plot_sha256": "0cb9e6c3407db80b6f7990d9d3665a42a1b457848a23bbcbc02fde08e65d44f6",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "f14fabfa69f3c80bc7a9810062ecaef79e265fae9501686bae3c14efde3d9bc2",
+          "grouping": "b52eff34929123988b0124e85232a3148c3e7a36b3d0a1c782682a6785f4f918",
+          "clusters": "9ed4f2d3a28e064dadab10be89b15daccb4b351970045748c433271af161ac9b",
+          "embedding": "01d90c9cbfda1ba3bf6351aa5ba8ab4e02dab0ee1c917d65596ad77932fb0658",
+          "strict_score": "6d6b6d2c81444ac4d8a05d428d6e6579e2cc45408f953df3be0efe7d81e7c7f4"
+        }
       }
     },
     {
@@ -2388,8 +3436,8 @@
       "dataset": "gcss",
       "source_group": "TCGA-D7-A6EY",
       "image": "case-051.webp",
-      "image_sha256": "717588b05479ced49e26678c076cbd3774c6b8ed2dfe24a141247133a8a1a2d4",
-      "preview_bytes": 252184,
+      "image_sha256": "525179e000a6a0f4ecb4fa38a726fe9ee5ed7eed45593afa194ae7ebb2ebf1fd",
+      "preview_bytes": 329260,
       "source_sha256": {
         "he": "484b80a7d8faae08c04d9d87e9ccc9098c7a5b4d90f17f35697893e72bfa7a4d",
         "expert": "216ee120cde659c258288ad6ec3c8709cec81e540b6aa1ee658adec3444c8e00",
@@ -2425,6 +3473,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 64,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          41,
+          23
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-051.webp",
+        "kodama_plot_sha256": "caba807ee9954a0912dc655a44a54968c316616949468353b6ccb33bc9cc2fbd",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "a1cc5cb1144577777f4e6863ca6cb3a9c396f5a2ce79d3a07245e1a343f67181",
+          "grouping": "069aa7106175db9b39f88139f106c64eaddacd85b230779b502ef9316c1d4747",
+          "clusters": "c2700f4d6fdda9f6a654c89dbfaa801c5f1d5c77c7b804d6cf67523d7c86f6fd",
+          "embedding": "f9b445f01d15cf0bbd6fdd4868d7391c35fa58c62363fb5c20394e0b5e938a8e",
+          "strict_score": "c2629e4c4573540ba4d3d264bdc6f70c59fae3dde5e75f118d7c49197e538c0d"
+        }
       }
     },
     {
@@ -2433,8 +3502,8 @@
       "dataset": "gcss",
       "source_group": "TCGA-VQ-A8P2",
       "image": "case-052.webp",
-      "image_sha256": "59e4256561f1f332d43101f9e84ee787b6a9396128b15f04bb7c8a90f615394b",
-      "preview_bytes": 251796,
+      "image_sha256": "301d0d44aa943f820538440f7324ed432a43288daf514fedbf373c03f1e51da1",
+      "preview_bytes": 329914,
       "source_sha256": {
         "he": "883734bce7bb56a71e661b38dbc7b7b41eb3e15d11e8f42bacbf825181df7b47",
         "expert": "6c8d681c64db8644c380b96bd3d97976f9bb49d72d1b5e5ced03da73600b9fe0",
@@ -2469,6 +3538,27 @@
         "tumor": 6,
         "stroma": 2,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 60,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          39,
+          21
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-052.webp",
+        "kodama_plot_sha256": "06f409f4f701575229f384eecab981231c08a0f4d3400d335db8f2f30aa0ac4e",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "8bc4e8ce740df677033cf09e146f4f783cdf01c837ea3ac594bec10a050a5ecf",
+          "grouping": "cea017a28cfc11a9c6831cc93380bf72967dda8affedf1245421f46955c3765d",
+          "clusters": "541806dccd0ff10f00f15cef280b18cf6e5ca3026e9721be75ab3b3ccab27eda",
+          "embedding": "91e2db727d4b6c21d60de720f2d0181736b70c8275d348a47118df2dcb6c9c98",
+          "strict_score": "e16d10e926b73a76b8e6b797d64a814348d92f06dd9f1c0ba3824094bbd8a4cc"
+        }
       }
     },
     {
@@ -2477,8 +3567,8 @@
       "dataset": "gcss",
       "source_group": "TCGA-VQ-A91Z",
       "image": "case-053.webp",
-      "image_sha256": "b35129d6a6a5c11771c665759cc04f022c561c9b31c968c7df3c8537a7f9d8c5",
-      "preview_bytes": 249510,
+      "image_sha256": "aa8b87d96b00e486e3f9408a19e15464fbe197d3753b66ce2236cbcdfa8c3de7",
+      "preview_bytes": 327106,
       "source_sha256": {
         "he": "8a185901a926adf3dccb19edc80f90543732afa7269c483b4f939eb456450732",
         "expert": "034aabc61822009e855b538f9fed769b954c6a80db9cd6e1a0c68024c1f8aeb5",
@@ -2513,6 +3603,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 58,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          42,
+          16
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-053.webp",
+        "kodama_plot_sha256": "1032675fa0d965ac4bb107371f8e5a0f5789f4f18a193c5eeefc13f7018f0bd8",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "af3210e873a2ef5ba1f31cfa3fd8a27b936c5e9c147a99891a8d0d59852f634c",
+          "grouping": "63a92add8befc50609c04f27d62b5407722b182ad92cd530d1384d90a827e384",
+          "clusters": "20cfc4cd4a8300386e1bb7c495c2b1d6d6ccab3f07f3b3da5f6aafbf46e129e8",
+          "embedding": "fc670c40028cab96b3f1aa496a50f6e134d24aac6e1216cce4139e91a97ee752",
+          "strict_score": "cf04ab141d7110c2a92bbc5047b242f452118bfefadf3b3eece5be320b71e177"
+        }
       }
     },
     {
@@ -2521,8 +3632,8 @@
       "dataset": "gcss",
       "source_group": "TCGA-CD-A4MG",
       "image": "case-054.webp",
-      "image_sha256": "dc95b0a6f7ef0678a528276c61aade88818a46c72f1f623792682a806ea485a0",
-      "preview_bytes": 263620,
+      "image_sha256": "a01e853f68d6d8f4fc0c8766dd947593641fd7072931304383cdca2efdd4b159",
+      "preview_bytes": 343264,
       "source_sha256": {
         "he": "59b60b17c8c185e52a1d28d52724ad7429a3908fc60fd804a0523e1572c95f07",
         "expert": "466774bdc52ccf6fa49fbb72d50439758e31b131b39ee6ad57bc4cbe352d269d",
@@ -2558,6 +3669,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 58,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          33,
+          25
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-054.webp",
+        "kodama_plot_sha256": "b882b6cb59667f4274709152c7a91d8ffa995ecab45b9772558c1ec908c556fc",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "b7d46f82cfb7e2fc5839085984caa481bf5e4a931019dfe6f5be9541663855f5",
+          "grouping": "df28a062861dc542a602c0be68231e02d8ab5795fcd039a82381f505c5137e3b",
+          "clusters": "74ce75c844294b8cbf1512a36641e7ea61c0b06c63d4907d1a240d4eee59ea8a",
+          "embedding": "f901d9c98da123c19befe0cf904ef20ac7aa667d9f03f83d61ffc8367bd42fdb",
+          "strict_score": "ed87081fc820edc7942138034a2d0176c0c676b0e7d92cd3a3d9d05e3913b664"
+        }
       }
     },
     {
@@ -2566,8 +3698,8 @@
       "dataset": "gcss",
       "source_group": "TCGA-BR-8369",
       "image": "case-055.webp",
-      "image_sha256": "36042ea1042b2512f83bea4c77ccea954034415a55c50c99fcd5b1ff71379a5d",
-      "preview_bytes": 196498,
+      "image_sha256": "5ced41f54a7fa8fc6a649ba6519a77f31ab0df4744dce63e17b5c54855f82e2b",
+      "preview_bytes": 266248,
       "source_sha256": {
         "he": "e39882371566a807d982ce435cd641870b6c6cd0f85c5d5ad82b6d0c32ef3983",
         "expert": "844f08174d812c17c30859e933daa86404b4296f0540c3eb1c728d1105217ce8",
@@ -2603,6 +3735,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 25,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          16,
+          9
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "0d2539276570acc59a847416356d2716d376264e5a0852705799eb17cd7b3372",
+          "grouping": "5141956e2b7923fdfd6877c33545813c133269b778ec2b5558be8d52edf41114",
+          "clusters": "c71efff1ea212356d756b3454a2b24c1ec8110e2f08927174975f58ed2cc3091",
+          "embedding": null,
+          "strict_score": "f073a5e214b2e160e60d31cafb2081434fe3955d8fc8e0e91118e9510bbcd2de"
+        }
       }
     },
     {
@@ -2611,8 +3764,8 @@
       "dataset": "gcss",
       "source_group": "TCGA-CD-8535",
       "image": "case-056.webp",
-      "image_sha256": "d80a695d4cae310d3e44604d07ed7326bf53742009410f1d8de0d3285a425923",
-      "preview_bytes": 257540,
+      "image_sha256": "0a4da6f89e850d6ed25ab194239e22e07a223858326ced57a9e14633b760dec6",
+      "preview_bytes": 336972,
       "source_sha256": {
         "he": "13fec8836e4e691dc770c57125b7339cbc95a40265161d471052423fa3889d79",
         "expert": "57f834e87ecc37bb789599cf5f6a3fcac0084a75ba9e61172fe47dbbe5109dde",
@@ -2647,6 +3800,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 64,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          64
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-056.webp",
+        "kodama_plot_sha256": "b79ecc1cce4cdec707c4d6acd329eeb34a766c6664e01e0bce598d850404cf9b",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "b4a6c3a320c469c6bf01c525e9bf9c031ef1440e91e8048c2bb0a0789327f17c",
+          "grouping": "d310bd2c5513d159fea4841af77c2da2063e7465eff07a46f33965e4e1f749dc",
+          "clusters": "a3e98bc4298feb0568638c39f74583a0a57d7ea485763dd3660545fa9549c5c4",
+          "embedding": "cae79c24b09ce7799046a4cb99db6c9f64a9204e7ff5252f7a7e4bae685e9b06",
+          "strict_score": "845344196db1e1b154010f77ef9135ed709157ef33e86b28ce76b5da34abad01"
+        }
       }
     },
     {
@@ -2655,8 +3828,8 @@
       "dataset": "gcss",
       "source_group": "TCGA-VQ-AA6I",
       "image": "case-057.webp",
-      "image_sha256": "b7e046d549199870daaf869f3bcc1af429d4bf1690df457e19dce01dc82f8a60",
-      "preview_bytes": 247960,
+      "image_sha256": "ceb278ce87d34f2137339c1b71a75eb236daaf02fe4311a0c1d8aeca2c099e44",
+      "preview_bytes": 325848,
       "source_sha256": {
         "he": "94bb7841cc58dbf39bd50455d646323728b3bf9e0879ffeffc9c19c97e3c391a",
         "expert": "52455d0640bfec224d22783f377a9fc1f85ad67c76dc093aeacefcd3e7f838b4",
@@ -2691,6 +3864,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 56,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          32,
+          24
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-057.webp",
+        "kodama_plot_sha256": "a7810008bac711db1576c7dabf397dd5cbadc0866bb584db7692e004ac93ab5e",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "d068e82ca4e7773421a4fbcc69095fc01d91900756c26854bfad5a1ef38f1322",
+          "grouping": "946163777024906fd4cf7fffe42452cc3d5e4a8c905b43986f99727f32ef5579",
+          "clusters": "e76ebc51f1a6fc0c8e786b206e7e247f910199ab4e976815a71d1470b422ade0",
+          "embedding": "8f24138653f6dffc76628d3de8051d36a582729b6c59a014ae8df25cd7d8e611",
+          "strict_score": "6276c9f13bd858785c3ff2dae92cc94bba113675e73f620bfb9fefadf74b4a5a"
+        }
       }
     },
     {
@@ -2699,8 +3893,8 @@
       "dataset": "gcss",
       "source_group": "TCGA-BR-6706",
       "image": "case-058.webp",
-      "image_sha256": "48e140b22a1b047514cf5d58a403f4c44eefa6d8ed392fcda75097efdc21abc2",
-      "preview_bytes": 204484,
+      "image_sha256": "5987b810e7bb0a22ed6b5cde9f547d9079f2925ec09e4f1a934fa5c5d4fc9543",
+      "preview_bytes": 275572,
       "source_sha256": {
         "he": "2a07b84b15aef82faa25dec67809122fe6ae1572713e3f6c320bc8c29ce896a4",
         "expert": "ff764818f77f06733a2ec7d55f9e47b731b1010a9ffc23791e38730feb1ce1c2",
@@ -2735,6 +3929,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 57,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          32,
+          25
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-058.webp",
+        "kodama_plot_sha256": "85aae68f8024593bf0eced79fb1e652a32dff90bfb177b0832734748557ee660",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "e213593b21e61530603f2bd71b7d277a0067e3906d308245812314be2e05bc12",
+          "grouping": "10e856ff071b797829db959fd2e1cce3e91891e37b8baa961b363148242384e9",
+          "clusters": "0e71691019aabbcedb00dda29f4074053276f9be56e804791ceb065274011330",
+          "embedding": "bffabedc59c053cbd0c5f82baa7cc0539874730e9cf0d62e7b9a00f3c3fe3058",
+          "strict_score": "9a36981baaa61d8387a8c5325ff03a93c11e995eedc0dfc1da9ff92f30323ae6"
+        }
       }
     },
     {
@@ -2743,8 +3958,8 @@
       "dataset": "gcss",
       "source_group": "TCGA-D7-6520",
       "image": "case-059.webp",
-      "image_sha256": "cbd41aa5c8d3e9ea6ff080fd4a0d3bbed6581f633f6628ca4ea9602cdc139c02",
-      "preview_bytes": 246584,
+      "image_sha256": "f05c2666ebebadd99fe22c5b82144bc1b545efc71299116726e2603e2813d32f",
+      "preview_bytes": 324176,
       "source_sha256": {
         "he": "e5cb90dc5803f099f2de2bed1116a118dd2f607dda4cf171ca96a8d3cdd8f73f",
         "expert": "49417bf5231a317d469bb6b303a66c1a920e10820dfa18827886dc820627d554",
@@ -2779,6 +3994,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 5,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          5
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "f67e919a693984cb746a8d0e009bed0a36e34042e40a2e9a668c45a872e43d0b",
+          "grouping": "943b4a96d79cd3d74a7fdcfb4b517912ea7903b109e5256989a76bc2d77c2262",
+          "clusters": "9c1edb42042cd92a018911b433590438465f81a4569d48f132a931b4cdd423b9",
+          "embedding": null,
+          "strict_score": "d2cd452baafa9c7975113f4da5497a566d5d6e039a4fef11e40dd9eac9f8374f"
+        }
       }
     },
     {
@@ -2787,8 +4022,8 @@
       "dataset": "gcss",
       "source_group": "TCGA-D7-6818",
       "image": "case-060.webp",
-      "image_sha256": "482a7520ab79d2102a6beadf424b67279672d349d39a2f9465b11ec795e00a25",
-      "preview_bytes": 283444,
+      "image_sha256": "78c87a4778666afd454bc6226d763e18a417272205d8f0480397ce7e5f5a6e29",
+      "preview_bytes": 364420,
       "source_sha256": {
         "he": "2572708b691d7907e5d8c199516c7eea55e1876a967788e6c90d3b04a4bf90ee",
         "expert": "32bf3d3abd75ee40a653ff7cca4b97210806ced89dd51d8b461e14c8e588e0c7",
@@ -2823,6 +4058,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 1,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          1
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "df993d1df37f391a2a4599fac62ec40309ebf73973ea22f5dd7cbfcd941be2f2",
+          "grouping": "216ea974f01d741ebf9ee27825e685bd7f3f99cdb7e0df36997a114330c7855e",
+          "clusters": "029a6e5cf2c46859bacfdd0ffdbf634d7941a019f328f813776bfc3e7a9f5f1b",
+          "embedding": null,
+          "strict_score": "5d2ddfcfcc5e7859efaba0b4c06079de06a679b0acd807775a297cd7f1e0ee84"
+        }
       }
     },
     {
@@ -2831,8 +4086,8 @@
       "dataset": "gcss",
       "source_group": "TCGA-D7-5578",
       "image": "case-061.webp",
-      "image_sha256": "d7ae0c8d6f797e97ff1281f716978d59d4e896d0450820334d7763a52b1bff35",
-      "preview_bytes": 266756,
+      "image_sha256": "79fcf16eab80678cd2db1e9f76df2a3e3fd5fa4ae33586f58f904290842ddf8a",
+      "preview_bytes": 345060,
       "source_sha256": {
         "he": "e894853a44462d25859e001f18f150293c8ef6c0edd68dadb8d9d7d03852ec44",
         "expert": "d71c9fa8cbc485f591d1cabb69e24d0a92a6ca9f05288b9465948e2f0428c762",
@@ -2868,6 +4123,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 5,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          5
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "a5dc28f98d27fec4f8e7050f0f7fb298ed78c748095188de87e9e7d6c0a244c8",
+          "grouping": "c2cfeb74d973371be42fc83a5ee38f1f5a061886290b47930de05b9d99053401",
+          "clusters": "9c1edb42042cd92a018911b433590438465f81a4569d48f132a931b4cdd423b9",
+          "embedding": null,
+          "strict_score": "5a1e2f3a30adc9741ee384455afb191e5db075a1006fc9d8807bba37c63fbefe"
+        }
       }
     },
     {
@@ -2876,8 +4151,8 @@
       "dataset": "gcss",
       "source_group": "TCGA-BR-A4PF",
       "image": "case-062.webp",
-      "image_sha256": "29604668a98d637601e99c7dc3896288cb3abc8a6229a07dcdd62bf062e5d653",
-      "preview_bytes": 233938,
+      "image_sha256": "08cdf76dde8aac43e7b0e4ee3aea1f2f9dcd312222c49da8473ee310abd68f91",
+      "preview_bytes": 309050,
       "source_sha256": {
         "he": "35d7b7aef08b006c4507be5d85efbb14c37ff966c7e6bd0ca3e07d2015457257",
         "expert": "6a532745613cec2aae2bf184c78fa70a52dd66bbebcbad920c0c5e8ac997bc53",
@@ -2913,6 +4188,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 57,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          41,
+          16
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-062.webp",
+        "kodama_plot_sha256": "fe9d6b182b6b3e8d6fadd116266623f71534663016b36b580f8e6849438a8020",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "178f10235ca19eb1607f62a30cb954e37a4a83ecaefbed13a2e16711f47ec89c",
+          "grouping": "4735e332fbaffd0e98e9f3e5fb690654ef32e9c05aae3810292c1c55a22c3365",
+          "clusters": "fa65259f4e715edf714387bad7cf82c8b7e5ef659271976f6dba871f966c7d43",
+          "embedding": "c4653e27e0b967a2e73a6561b60862fdbde1cfe94fe881caab9de849ac14d373",
+          "strict_score": "1fe55c7cabe7b6ee42006f8937bfb9f142133bbfcd95b21cfb58c84032fdc9e1"
+        }
       }
     },
     {
@@ -2921,8 +4217,8 @@
       "dataset": "gcss",
       "source_group": "TCGA-D7-8578",
       "image": "case-063.webp",
-      "image_sha256": "57db5697b63a97cb79ff6fa2c5e40074a80660b06a42125930cf18fca5c6ca7f",
-      "preview_bytes": 183242,
+      "image_sha256": "9e6985142a699d1cc8f29006d338bb50eaabc272b0cde41106166a227b0b1b24",
+      "preview_bytes": 251678,
       "source_sha256": {
         "he": "5c0f0bbf0c92155e2b0b5674c02a596defb125f0cdf4b401e9f327f1f66ecec4",
         "expert": "64cef9d018cd5a8a74a0f6b6e73e95c513f70fd4e45f49923f04df67311b3ece",
@@ -2957,6 +4253,27 @@
         "tumor": 6,
         "stroma": 5,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 38,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          26,
+          12
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-063.webp",
+        "kodama_plot_sha256": "60b11e686356c4e408751c2da457427f886634bc77cdf5ffbb51aca3800a71d2",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "e42aa6fb65c5f5eacc00bb47162214e3147fee866870ac0a18aaf0cb12d14ef2",
+          "grouping": "65501f6fd3f1c4863e4f60581a9f6f7349b9cfb125e32e50cb579c1075ba338c",
+          "clusters": "f5d20005165a6d34dcdc175b29bd9389099ba3734d44bbb3193dccdd35568e5e",
+          "embedding": "59475ba8fcf91663e1a46820a1354b7819f82d40bc28987f8d46d815e07f637b",
+          "strict_score": "f17729aaf7138396a97f3c0335ab2600ae5132ea040c941b7c49b9de03bbc65f"
+        }
       }
     },
     {
@@ -2965,8 +4282,8 @@
       "dataset": "gcss",
       "source_group": "TCGA-BR-8483",
       "image": "case-064.webp",
-      "image_sha256": "5496056f0204171a03318ee2cd28c0b78b38525ac4854a855d4cb8c47ac24145",
-      "preview_bytes": 220034,
+      "image_sha256": "a80252d6f36de8c7074e1029f36e4a9ad282f25834d16653e3bf13b79cfcc2e9",
+      "preview_bytes": 293766,
       "source_sha256": {
         "he": "9c1cbac2cd892464e9ec3a6d37fece2b91c9b1aa341390de99169bf3a23110c9",
         "expert": "80d84d50c0f0b3fd9ab3b5a791390a16de7f91f7d4f123c7410a7693ff9d3845",
@@ -3001,6 +4318,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 36,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          29,
+          7
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-064.webp",
+        "kodama_plot_sha256": "f52d963bbf20aa1fed377c10f0a54f15623b688495f8ae0bf9c981636b48d679",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "d0b261dcd2f390def1e76f0ddb7bd2bfb74cef6fb18758dfb75a97f598807b95",
+          "grouping": "b73ec5d5642508c77c6b10319d631ac13ba2a7ea049ac002c9884561ce6a6704",
+          "clusters": "126a774eecda21a0981196438f3812c364099c7b0b785132ab3b09d6d5dc4989",
+          "embedding": "f4d7d4d67e5465cbfded7e0421277614907d30b8d118a6cec27a07aba4e53c14",
+          "strict_score": "97587de9ea19ca695b97a56558be2f33902a638696de07c09fdc2d79dba83dae"
+        }
       }
     },
     {
@@ -3009,8 +4347,8 @@
       "dataset": "gcss",
       "source_group": "TCGA-D7-8579",
       "image": "case-065.webp",
-      "image_sha256": "68d9d4e2e748d1887ec9f84b30c649c2782811e34663562d2187cc0536dd0676",
-      "preview_bytes": 212596,
+      "image_sha256": "ec91ad9e9385576d2aeaf8597fcfe52ed232c1b496919ba75089a8f0db43a448",
+      "preview_bytes": 285738,
       "source_sha256": {
         "he": "dd31a3ab81670c7386bb4f94a769fb82e31cc4848aaf12ae1ecbb4b9a38f3a44",
         "expert": "854a6b107285193fc237d0c5ccc1f1798cf9ba724ca87c2b61316d87f7a610d2",
@@ -3045,6 +4383,27 @@
         "tumor": 6,
         "stroma": 4,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 22,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          15,
+          7
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "c0a60b1fdb5b479bcd57b32e0a68a554ad9c74e1c0bbad948dbf6e2c68e05681",
+          "grouping": "1a57decd465eaf3717035f17488faca638f798e12e1fa98e7a18391e475d872e",
+          "clusters": "22e38eb2b701b60b5564fbe146e2a41c2c8a6c1c63ac9d102795289e48c6ce77",
+          "embedding": null,
+          "strict_score": "859ffc3b29280d570f5ae4e769eb6ab252ad7e9a6988fdb365dc8d8a4ddce20e"
+        }
       }
     },
     {
@@ -3053,8 +4412,8 @@
       "dataset": "gcss",
       "source_group": "TCGA-D7-6518",
       "image": "case-066.webp",
-      "image_sha256": "db6d2c7c3d753a02c7bd0b552d70fb15ac6192a74c96bd6cc61673f55002710e",
-      "preview_bytes": 169116,
+      "image_sha256": "945f5dddd17bc1d36fbd5eba53048225b5858dfef48675e54976e6870b7ae32d",
+      "preview_bytes": 233678,
       "source_sha256": {
         "he": "7ca6a7330ace0ff27da75dde78dbfde48d43b17a6e5d9c4702b17e911004aec7",
         "expert": "08bdcff587470e51b686b85eb92a2e425c37396d0a2f1f8f1cf7406fb7a7ac64",
@@ -3086,6 +4445,27 @@
         "tumor": 6,
         "stroma": 1,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 58,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          35,
+          23
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-066.webp",
+        "kodama_plot_sha256": "0c5f6dd2d3192d3a7129b095a1bb4b04849735379e17915148ae853521972f29",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "fa65cb8cd09b3eb91514b0493e3d1f9ab79b3b3133b0aeea672f496b9726e476",
+          "grouping": "1eb863f602fb684b0011e6af75998b56c7f314ee4082c9d0fc6d2a078fe958a9",
+          "clusters": "0f6f3ea1a3d678f337195064c3b90fbeef8fe74427fe2912ee75cef76b7b20d6",
+          "embedding": "a3348e2e8142a99457461c25831d088477a038d28f603b3348228a77e8dd839b",
+          "strict_score": "1c8d55c59ae90a8717d658e6934d4824dc39e1088f860550f8165cc78a618c15"
+        }
       }
     },
     {
@@ -3094,8 +4474,8 @@
       "dataset": "gcss",
       "source_group": "TCGA-VQ-A91X",
       "image": "case-067.webp",
-      "image_sha256": "dbefa122abe19369353815ad412a193df4f9d2e70076a631d86c6717377c732a",
-      "preview_bytes": 260706,
+      "image_sha256": "666b063270fd03f5fbf169c253075cf6e6c095302d3b8bb4470c854ca79a663d",
+      "preview_bytes": 339046,
       "source_sha256": {
         "he": "5ae716276dc330d5804b76be91020060b5ef6bac4e048fdedd1c4722d0795328",
         "expert": "9249fe1922ea77523dfdd1bb1725944b6916599a7e811ff56dcdc2c538142e9f",
@@ -3131,6 +4511,27 @@
         "tumor": 6,
         "stroma": 5,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 63,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          41,
+          22
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-067.webp",
+        "kodama_plot_sha256": "87cc16559ef8729ce3f2659ef1d21ae0a17781454c3ca34d42e6c2616599a0f9",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "97bb95baaf8fd9dea3e8903b02d1478d21b95ef4db1f48d911399560dbd5e54a",
+          "grouping": "0353d652f57daf37766198f3ae733b585564187b720653e8d2adf14502cdcea4",
+          "clusters": "92ff6b6ece3e20a9964f8f3e9101806043ed39c0c145e049a77f21b31d69bd71",
+          "embedding": "5c076dfb1a127c67f14618ded78200bee9bde08499874785cb08315cd0ef1ad1",
+          "strict_score": "054153c3ab8b4e291951b78099648673ed0128b6f8e9bd39e7b5314926c18234"
+        }
       }
     },
     {
@@ -3139,8 +4540,8 @@
       "dataset": "gcss",
       "source_group": "TCGA-BR-8484",
       "image": "case-068.webp",
-      "image_sha256": "282d259b051b5c73cf73e8a32b689a7b8a9c14319c5fd6975b7fbb38500e8f77",
-      "preview_bytes": 266774,
+      "image_sha256": "4602ed408a726b142cb6acfeef1bd0ae7cbc155987ab507fb43d12b344567555",
+      "preview_bytes": 346796,
       "source_sha256": {
         "he": "c5300d63e9009ad5787a6d39d6bc557fb27d017aed0dc1c6010bb894f70408fc",
         "expert": "011aa5380b90731394077d59f7b3082a0abba17e6003f8f6a87b44ea2daec385",
@@ -3179,6 +4580,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 64,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          42,
+          22
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-068.webp",
+        "kodama_plot_sha256": "01733f7182c23776afe721f8d23db30fbbd2fa2cd7fa2356588cba9254ce34f8",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "4e0b847a97e7a3a80519130258542989b947cf7fca725998185ade02af9dbecd",
+          "grouping": "bdc4d10443b389934611a0ed678b47af46df6bdf5e9caf5472e5d8c5d4573669",
+          "clusters": "b64378cf957adcd010720c436528c9d6fbe6562637457bc04fc0f6777e69448f",
+          "embedding": "adc28f96f59b34aa65afb383fbea6ad701f9704f11c778b7978c6a811f91afad",
+          "strict_score": "9f9768a766df6f5459411f62e42b1f3c75b88da5469b31da5697b7295ec3aa9e"
+        }
       }
     },
     {
@@ -3187,8 +4609,8 @@
       "dataset": "peso",
       "source_group": "peso-slide-16",
       "image": "case-069.webp",
-      "image_sha256": "7632a75c58be7291af87b070f48ff1919561788fae55685576fb3b23d294ac5b",
-      "preview_bytes": 188894,
+      "image_sha256": "f70fbc1cc1571d61a8681a7466009d1e2a38b99d9b41cabb32bd3f0b60554fac",
+      "preview_bytes": 256020,
       "source_sha256": {
         "he": "1092e038d16d0ab2e3d430737911e7bf5ddf41d693c29286783e63c8f3f0b94d",
         "expert": "1d595741763152ca9f1348c449915c99b21f259787149b4c139af0c574c12736",
@@ -3215,6 +4637,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 5,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          5
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "c450c1fe112b9295b425157d227bce94c63b9b83fa87a751c3eaa33bbadce1d5",
+          "grouping": "a7c3f5eb10b0270e8dc56a882386939639ef9ad22ee9fcb4b0d73fd6be9c1cc7",
+          "clusters": "9c1edb42042cd92a018911b433590438465f81a4569d48f132a931b4cdd423b9",
+          "embedding": null,
+          "strict_score": "e7728e106ca01c7e2535188c098b68617001c887448d9cb2122f74adc5e32c66"
+        }
       }
     },
     {
@@ -3223,8 +4665,8 @@
       "dataset": "peso",
       "source_group": "peso-slide-17",
       "image": "case-070.webp",
-      "image_sha256": "4211fed47924c8d2a46e2e84b34d98a163c399c8b3c90e99073268aedfc24f2f",
-      "preview_bytes": 210750,
+      "image_sha256": "434a89259f170d1b9859671dbec1ad80d79d3265e96deefc43888aa4493123fc",
+      "preview_bytes": 281494,
       "source_sha256": {
         "he": "7453d747b50562552c80dbf459c35f783928c7776e023a4b80e62b74bd6d0b42",
         "expert": "a5afee072d8929d6e8fb53f42f8a63c8be17b4f01cbe1f88d0399172ffa60aa0",
@@ -3251,6 +4693,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 18,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          10,
+          8
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "8d4a59b5a5c879f61bcf6bcf41065681465d8c9718a463f0eb80d576f9bdf62b",
+          "grouping": "cd906907e7968475dd0e96b9cd74836d6399fa05f106884a9d36a2e699149456",
+          "clusters": "3c636bde0b9c0ba9fa11a32e1e77ace739c24cc7d3bcab29c58214f8ba0719f7",
+          "embedding": null,
+          "strict_score": "c92d4530d5031e182410c3a65a334e976003b4569d4f0ce16c22a2e605c63ec7"
+        }
       }
     },
     {
@@ -3259,8 +4722,8 @@
       "dataset": "peso",
       "source_group": "peso-slide-20",
       "image": "case-071.webp",
-      "image_sha256": "4efb8d222be3a98f8283d6efc3c0ae12904bbfb66bc8a32900ab48ad580f893c",
-      "preview_bytes": 212546,
+      "image_sha256": "fe2e1a94ba02cc7abcb3ed6fc4db89c9ab30190b24d60b2299c8694fb8fa0153",
+      "preview_bytes": 283318,
       "source_sha256": {
         "he": "73394ae7f8a148fd9a41fe9e09ba4048295ad7dfa347542932440589fe3bbced",
         "expert": "2baf3760c52d6e5402a79653a0526bec7ee24bc33468eb435603b458ef7a4261",
@@ -3287,6 +4750,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 9,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          9
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "c2948a09ecfc23218a7d3f24abea2090e7d6b3674bfb1fc53e897bf80df092ae",
+          "grouping": "5e1006a8af6e538f6f4bb97bb8eb9fd554128495df4ac6d6314b64b9b7620501",
+          "clusters": "f2dc3583e22d1801d0042a42d751f5bf0af366a98aef9f72ec6e66aab6fa651b",
+          "embedding": null,
+          "strict_score": "61b37cf8496641bd15b4499293dde3ddc42c9cd73b22e5ccb7f4176de4506f2e"
+        }
       }
     },
     {
@@ -3295,8 +4778,8 @@
       "dataset": "peso",
       "source_group": "peso-slide-21",
       "image": "case-072.webp",
-      "image_sha256": "26d58b7874d348d7161dcb4054867976bef39b409d163a190cd2ca03fceadb05",
-      "preview_bytes": 166422,
+      "image_sha256": "a0f56e01851de1a468b50e65d7638868f7434de2bf12bb62f1df196045956d0a",
+      "preview_bytes": 227778,
       "source_sha256": {
         "he": "7a9fb4a6ce725245e8eee06351cfc7d7fa76b955b69bbb63f1cfe87ead05158e",
         "expert": "9568960dcb43152d09caf13d75f0a55540cff0af818602305bc429dacd711ad2",
@@ -3323,6 +4806,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 8,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          8
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "ff2de38818a47d86d64bde459811fcc519a8662f97fd65f5cf9dd769b8e67bf9",
+          "grouping": "6486b94cd68ced631044c81e5fdce0dc2f9c2234451db3f17fb170f92a2e1909",
+          "clusters": "e4e32c0f930dc43be11e7d66ca888d3ce72684d50b2b48a9dce22bec3cf6b252",
+          "embedding": null,
+          "strict_score": "5ebf8ea9ee6a7661097c708d680dd5fdb6bc58a385d7a9fb7e6604ed081269da"
+        }
       }
     },
     {
@@ -3331,8 +4834,8 @@
       "dataset": "peso",
       "source_group": "peso-slide-25",
       "image": "case-073.webp",
-      "image_sha256": "05e3ffe129ca79e99094faf012ce899e995454ab06a7c1cee28936e731abb488",
-      "preview_bytes": 209060,
+      "image_sha256": "3bbd1633eaf1e01cc248a48a9f2e13c1dd2f61782716a8a7b19406c843208284",
+      "preview_bytes": 279284,
       "source_sha256": {
         "he": "7975cbe2b9a7d126f7a552e3da6280e3fc043ca925466a0c3a668ffbca48c5c2",
         "expert": "ee8467ac30d2dded6c1e050ee8997e09a9230c711b08c14abda149554778fb6c",
@@ -3359,6 +4862,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 8,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          8
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "5d51d1ad0d4c79e5771055b48bd34dada60fee61a47ad2e1a4babb578042c20f",
+          "grouping": "d683d7f204739226bbe1933ffa3b308d5fb37187a13a2e4518ef43cdcdc89216",
+          "clusters": "e4e32c0f930dc43be11e7d66ca888d3ce72684d50b2b48a9dce22bec3cf6b252",
+          "embedding": null,
+          "strict_score": "57b00e8c0c16ae4587a994f58bc261cd02a6ae9a3e828b2e583b2065396e6d08"
+        }
       }
     },
     {
@@ -3367,8 +4890,8 @@
       "dataset": "peso",
       "source_group": "peso-slide-47",
       "image": "case-074.webp",
-      "image_sha256": "d270df84f6edbcc15e0e4a74ed8269d4b3d91ff6c12fe3bffdf155924ffb5056",
-      "preview_bytes": 236072,
+      "image_sha256": "b8357d8228b0822f013fb4ca5827512b0eb1c0200b1ea0cb661f688cffee5ed9",
+      "preview_bytes": 310100,
       "source_sha256": {
         "he": "08f9e7a8797cd76ba4028d7f14452558526e537842b0325c113ebc5691043261",
         "expert": "966bc43c6a28f2b234ad670adc2cb2e9681b1b5b45a2d9735041a00220707a58",
@@ -3395,6 +4918,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 14,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          14
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "50683157f680d499ccc6bdbd187ca20c9c9b0b6832101bfd25294f60b5087cc9",
+          "grouping": "cf176ff333b562cd28d2e7756e3c7f6a30478bad451520ff35065f63fc21cc97",
+          "clusters": "4b3234d8b8fa873f0d7094892c0dcae9ad664c823d118e52fa6ec4d400f4a7f6",
+          "embedding": null,
+          "strict_score": "86b74b8cf43368cb9b9e878b05a9290e22639850be7a1fb5cfe1347da363c29d"
+        }
       }
     },
     {
@@ -3403,8 +4946,8 @@
       "dataset": "peso",
       "source_group": "peso-slide-49",
       "image": "case-075.webp",
-      "image_sha256": "dfc03dd08a8429104cb4e41d3b5959da5d1a738d651541a6422c0bd4b83a90b8",
-      "preview_bytes": 172452,
+      "image_sha256": "0a1c4c5cf5629de09c76c96c377fdfdd3b5be83e088fdadd47132067d82085f9",
+      "preview_bytes": 235906,
       "source_sha256": {
         "he": "e36ee7ac233753a6195d856521c96d235e81b486129884230c6f38e4e2911da0",
         "expert": "a929c7623a1753d443472d1ecbc8eef47862a2475bb53cc873db5181b8db33b0",
@@ -3431,6 +4974,28 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 16,
+        "clusters": 3,
+        "tile_counts_by_group": [
+          8,
+          5,
+          3
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "90c06fe93272bcd653cd290a107a42d0a55ff7943fbcd2e660fa60fdd612339e",
+          "grouping": "89710c9afc7882e715cd8b7ae77514d4be4e0886f9d3a56ba89044a1db728d7d",
+          "clusters": "b90a547f661258c73fa6c1ecebad568866b31f23e05eaf535c4c1418cb2ce4d4",
+          "embedding": null,
+          "strict_score": "eab13c1001b1ccab7570cf717e13d6a34114fbe27ecf6577808391591ca387c6"
+        }
       }
     },
     {
@@ -3439,8 +5004,8 @@
       "dataset": "peso",
       "source_group": "peso-slide-51",
       "image": "case-076.webp",
-      "image_sha256": "e2bfdfaf791b08dad8fcaa8a93d16dedd56162079a8c6d937f9e4e583241d9e1",
-      "preview_bytes": 235988,
+      "image_sha256": "2e03440258979908e4bbe73ceb10125ea09ea530b96ed9691d9ec8ee052823d1",
+      "preview_bytes": 308964,
       "source_sha256": {
         "he": "1476eef6ab973d8d2ab27d16d26e36ef8d90fd2dddd7cb25763ce9c001819264",
         "expert": "f649025256d187c4d4ab9166e8bc73bd22d5fcf632bf026f98683346dddc6bde",
@@ -3467,6 +5032,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 19,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          12,
+          7
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "61a8f9bfc30c97cfddb0fa96b713dd5514229197c00dd2d8f8823eb6153179e5",
+          "grouping": "ba35def19b14d9186f0f9dcaded17c51a75d52c7219af185b674395719e36241",
+          "clusters": "748c9b0b9a9f2ee0381ce07743c6672b2d544e23777e18f8ba4b6b1066a763fd",
+          "embedding": null,
+          "strict_score": "3fd630fe7efb3f78fad901867747828e4da439f7af50a3ecad0e531ddf0a3f84"
+        }
       }
     },
     {
@@ -3475,8 +5061,8 @@
       "dataset": "peso",
       "source_group": "peso-slide-52",
       "image": "case-077.webp",
-      "image_sha256": "d67d54ad356ea248340a49b8e245be44c357887eef97df01e56765ebd1c544c9",
-      "preview_bytes": 189398,
+      "image_sha256": "0e67eaefa9d6ee7620198644bb689165a97c50675810d8082a88c5f3b0157936",
+      "preview_bytes": 255544,
       "source_sha256": {
         "he": "43187982c478bfc09820bd3eabd2d1848326b327070ae7e15db184b06950772b",
         "expert": "0f1331bc824315619cfc8a264fa52023a11f3e5b29977ae6902ea08a6d43cda3",
@@ -3503,6 +5089,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 12,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          12
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "ad41a54658073327268df49b2a311e0dd8ff22bb8bec8e87680d7c0a084ca3b5",
+          "grouping": "bd8829745d4b148773815ea3a6b13f82f897b9d17f3eb26b603f5762d5be5e35",
+          "clusters": "eade342688cbe361d26eb575dfba7bf279f58678172cd86befadc2b4dc24464f",
+          "embedding": null,
+          "strict_score": "35e01ac3db5a2bd3a65e816017d305811808c0e23551699f9e4271e3679b5ac8"
+        }
       }
     },
     {
@@ -3511,8 +5117,8 @@
       "dataset": "peso",
       "source_group": "peso-slide-53",
       "image": "case-078.webp",
-      "image_sha256": "320b46ec682a4404e7c8c403726a4787fc5899b9409665ff90cb236b47a3e337",
-      "preview_bytes": 231938,
+      "image_sha256": "e66ae7384c05318a103e5551e74face216ae9679d51bebd082ba20138f5b3bba",
+      "preview_bytes": 303660,
       "source_sha256": {
         "he": "5611a7df5f441bcbe269ca484be2ba338b2d828db77203d03207cfb70fc0bfce",
         "expert": "370f95bf13b94eb6b4f5f5cfd90f606eb00f84baf5a57716c6ec62ae0e6c955b",
@@ -3539,6 +5145,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 19,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          10,
+          9
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "664dc0b1f22581f5cd051d4cbc039a357588f3eb396c6fdf059cd7e0bbbf6adf",
+          "grouping": "ae9ba13bd4c49636dd4b4605c1f053568f3d15837944f32c2abf74988625ed9c",
+          "clusters": "a444e51276cc2a9162c21f49e228eca65eb51010c77608af3b3d496ebe05ddfc",
+          "embedding": null,
+          "strict_score": "7f603ebd27c6881357bc3d92d9f9cbd1c21abea65ca147d520c85b8766dc06ed"
+        }
       }
     },
     {
@@ -3547,8 +5174,8 @@
       "dataset": "peso",
       "source_group": "peso-slide-61",
       "image": "case-079.webp",
-      "image_sha256": "d6a6ae85f98b8581cd4edeaa7e567ec28b3e269ac3deb6ec7818a489468bd08f",
-      "preview_bytes": 216616,
+      "image_sha256": "11f7ce4a3aa19db655dc8beb76f1902865da6f6a952dfc793ea9db1180a18e00",
+      "preview_bytes": 288226,
       "source_sha256": {
         "he": "e752fe0dd561e783b2b20e47df31242c99ef485cd05a56e6f5b60d75c7b73074",
         "expert": "33b7438563bbab6f54274329ea419886ff5dfdf81aa2648e91ce24fed8faedc8",
@@ -3575,6 +5202,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 11,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          11
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "4115097ddd72ba99875db115597e125eea3936948bc6ba5c8e85944c4f3a3f18",
+          "grouping": "eeef2cd5d54c1c7437ee305fa8eaf27c0b9bb1a36e369fb38b76421aaa42447e",
+          "clusters": "89acb6bb7d0e866f3dc82370b5748ab581e55665469fd8baf3479b0b26448d64",
+          "embedding": null,
+          "strict_score": "eda2380d1aeb679d5ade68a6311eea478f218d3424dfec57525f3d9e5e138550"
+        }
       }
     },
     {
@@ -3583,8 +5230,8 @@
       "dataset": "peso",
       "source_group": "peso-slide-63",
       "image": "case-080.webp",
-      "image_sha256": "c04c553d0f0316d6cee247c84fbba8fb46087ddc5ef51a09f539c7d0244e801a",
-      "preview_bytes": 202584,
+      "image_sha256": "c3a9c6708120737462afbed147191be6e7b7e6261e409bf5e2bb73a59108e1b5",
+      "preview_bytes": 271746,
       "source_sha256": {
         "he": "c0c6c224892301966b237bd24f0247908d023091ec341a6d1fa27f809f4621f5",
         "expert": "f15d8141063faed27053e503b54c4bb8ee0a6a66db788d3fada0444acf3615b4",
@@ -3611,6 +5258,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 7,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          7
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "975fd2279ea6ee3130256b86713c77aacbabfebc02a1307e44a907f97abc0e08",
+          "grouping": "ba1fe38299f0b6c8d8b56be7ed36aa4237d06ce6b5c7045cdc0d1cf52311c912",
+          "clusters": "56e85f37c8b3479c8ad3139cbe9a084618f671272f315cb376a6d66bb6695870",
+          "embedding": null,
+          "strict_score": "32a5aae719357a26b3d16e624a2ce296b9543759046f03b54f96181d3d554fc1"
+        }
       }
     },
     {
@@ -3619,8 +5286,8 @@
       "dataset": "peso",
       "source_group": "peso-slide-66",
       "image": "case-081.webp",
-      "image_sha256": "4de028dac12948db6c70f2e35c090d4f433810004ebadfba4fcef34a4ec07f4f",
-      "preview_bytes": 126082,
+      "image_sha256": "c90f951c44b4383395a542266347823ca1ad6e0ca700f68f964af08b5bba19ee",
+      "preview_bytes": 178982,
       "source_sha256": {
         "he": "28d76cd6098bfec7c7ff1b983e30f6536314a566eb8972eb6cf4b5929e9bb52a",
         "expert": "d4aec134b87a04c7195589275bbb255d2d33cf07f6f7acdeef76f95cc20a4188",
@@ -3647,6 +5314,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 1,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          1
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "e0bb9f6d189ff55bececedb5b105cc0ec6c90036373215ac6302c21f576f62e3",
+          "grouping": "3798bb91cde129b66a43b811afdf15391a0f9b899b0ec058afe674293b36352c",
+          "clusters": "029a6e5cf2c46859bacfdd0ffdbf634d7941a019f328f813776bfc3e7a9f5f1b",
+          "embedding": null,
+          "strict_score": "0539b0fff50ae2355febe2b901da4a460ba4de439e7e002ae87a07e83f5de345"
+        }
       }
     },
     {
@@ -3655,8 +5342,8 @@
       "dataset": "peso",
       "source_group": "peso-slide-75",
       "image": "case-082.webp",
-      "image_sha256": "9bc1395f0631d4ae648f25426900a2a7c2ea125c407e06677d6b3776735aaa9f",
-      "preview_bytes": 196044,
+      "image_sha256": "9cdf27f9928e26d3995c7f0c401e8ca344e26e7b22eb9c7aa051a04ac8e127e4",
+      "preview_bytes": 265476,
       "source_sha256": {
         "he": "0e940a1a2d09f0d1254d4afc235af3d0a925de836d3a4b88f24354af7dc13d11",
         "expert": "a2055ea8e30808fa67500b19ba656731021afa9874f5a547acc505d853000f66",
@@ -3683,6 +5370,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 13,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          13
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "1a1533bff1eb05cf58ce54e0ab94e89f87aa8fcdd2f68c04e70f021e8a85b981",
+          "grouping": "a971e42c2f4801c33d7d15b91a0c863489226d80f3c44ca1c66d29b0350862e4",
+          "clusters": "5c4bff56667788494124cd6dcf44e40a9ba84d12abd5f2ac602f9871d2aed968",
+          "embedding": null,
+          "strict_score": "0025efeaa3b1ea9cb5b18459f23c2bca76810979f1a056ba71f46c01acc1a2c2"
+        }
       }
     },
     {
@@ -3691,8 +5398,8 @@
       "dataset": "peso",
       "source_group": "peso-slide-86",
       "image": "case-083.webp",
-      "image_sha256": "6b3bfccd18d51e6d4d0c41337909d3362e1b42a3d3378ccdc4b8b8364d8af7e6",
-      "preview_bytes": 200752,
+      "image_sha256": "aa6d879072476c4f049b476e14412581ffd61c8ba7590bdb2904c74a8c8bac15",
+      "preview_bytes": 270384,
       "source_sha256": {
         "he": "921841f2587856e0ad3fd79df93b0878f848668642bf9b5d61f6ad36fa34789e",
         "expert": "9aa56a9cb339fecc46e203ff5ad83ac9d479f730a040f0af317cc5ccff9d86e8",
@@ -3719,6 +5426,26 @@
         "tumor": 5,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 9,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          9
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "a43b8c367dd0146b4bcad66b7c836a4c9c85e880610c6ddc0cddcd13c14a096d",
+          "grouping": "50b2190d74310248bf7a2ca7a6cd134b1924abef98637be1ca0f0a32e589b3f4",
+          "clusters": "f2dc3583e22d1801d0042a42d751f5bf0af366a98aef9f72ec6e66aab6fa651b",
+          "embedding": null,
+          "strict_score": "c5cf9352b8eb60923bce5dd499646aec95fe1f71512c461afbf69a760cdeef15"
+        }
       }
     },
     {
@@ -3727,8 +5454,8 @@
       "dataset": "peso",
       "source_group": "peso-slide-87",
       "image": "case-084.webp",
-      "image_sha256": "68667567d48203d9e5b6d1c2936b52179d57b7a33e3955c849c0ece1bbfef433",
-      "preview_bytes": 157128,
+      "image_sha256": "debc1133294ae47d05b63d8b2c7b04a2727916c4ded3beabbbc743524f40e32a",
+      "preview_bytes": 214664,
       "source_sha256": {
         "he": "84a713386ea14a7d4c78d73efff5370534de7df4f4cf701a744a7a8432f029c1",
         "expert": "6d68a32a291843934c50034b69275476d6376076331c8045d95e37c9c8e55f12",
@@ -3755,6 +5482,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 3,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          3
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "bf5d8116e2fb8317ef1a1ca4b16db3e69c33a8a8daed0c8b6fbd9af76c26d148",
+          "grouping": "489174c4b0af675f0519e02cbe4137c74e4417d23280c949a6afaff95652ee04",
+          "clusters": "71ad0e90d8be369d9db52b37196932aa68e842679978af082a008a2430a3dee7",
+          "embedding": null,
+          "strict_score": "c6d8ba5c08c62388bb42360d93768056944581a2ecc17184c79ac1e5e3c95468"
+        }
       }
     },
     {
@@ -3763,8 +5510,8 @@
       "dataset": "peso",
       "source_group": "peso-slide-89",
       "image": "case-085.webp",
-      "image_sha256": "79f1c9a893dcb6472fc22a570f83d6c00137ad5d4d1a539b0e506ab3336a55d8",
-      "preview_bytes": 190016,
+      "image_sha256": "89598122ec36cd5c203c0b3117d970b6b09195eebfab09063ad464c29222aec8",
+      "preview_bytes": 257436,
       "source_sha256": {
         "he": "ef16d5cfe7f35f790cf217ca788bc00c998ab33c49accc6182d7b9e9bdd44d5d",
         "expert": "ece7c499507f6db522ea275fe97d692c479e94ad4b305248d38dca745a8d3e07",
@@ -3791,6 +5538,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 2,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          2
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "dac6448316255d5709ac99a8ea76941e976a96bd41dbe159d0db5a7c41a528b8",
+          "grouping": "f476d923fd5a3ffbc45f848625c5acc40e6f65a544d521b421596250ef0e7d44",
+          "clusters": "7c519f67bb8c94fb8fade1e3c602d783696072be2809fefb74b5dd9c9c404f3b",
+          "embedding": null,
+          "strict_score": "d2f595ebe989ccba6bfb036146d83fbd038b7b20d9ff1c717090b8ca51354a01"
+        }
       }
     },
     {
@@ -3799,8 +5566,8 @@
       "dataset": "peso",
       "source_group": "peso-slide-92",
       "image": "case-086.webp",
-      "image_sha256": "d6ddd7c6b48dfe4ea8536d7bb662b309caf6bd035c385a217df12fd8ec96f3d6",
-      "preview_bytes": 143018,
+      "image_sha256": "aa8d06f08e2f8748a546a16323be5c66ad085aa9a161d030465459a72da19eba",
+      "preview_bytes": 198198,
       "source_sha256": {
         "he": "cf62b322bfe0d1ff93730b289b4b54489f1fcc91a40f2e6789951e9059dc6807",
         "expert": "edac61945409fd0b67963e6f7bae12ad9f51acada498a38d52ab2d341c1bb1d6",
@@ -3827,6 +5594,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 1,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          1
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "d50355c3475b75075bbdc97ece9ccc4fb23f3f5269cd185a010dc1491827aeb6",
+          "grouping": "ebc94e1b3565e124e30119d7406b50e03fca947596368b7210f4a4b9a0ad2669",
+          "clusters": "029a6e5cf2c46859bacfdd0ffdbf634d7941a019f328f813776bfc3e7a9f5f1b",
+          "embedding": null,
+          "strict_score": "ea5e6c3c5022dc5047e2b37a54ab457de7a26c637553a8a9122d70ec8d3e765b"
+        }
       }
     },
     {
@@ -3835,8 +5622,8 @@
       "dataset": "peso",
       "source_group": "peso-slide-94",
       "image": "case-087.webp",
-      "image_sha256": "69662a55a6be2a3bc088d08d05022b271bfe2d5e82add7bf47090db70d18fec1",
-      "preview_bytes": 214034,
+      "image_sha256": "d8f2a775fd28b9bbd76a888aba2f278dd565e328d50626986d93a40d85637b18",
+      "preview_bytes": 285448,
       "source_sha256": {
         "he": "723c7d963c775aa11b06f97524a820d13c18b1967d8dfbd07593e9062e744a7a",
         "expert": "475c5bb9da14192ff52d8e949bfcadeb1cd3b0803cc4ef5c6d0fd974fb895499",
@@ -3863,6 +5650,28 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 19,
+        "clusters": 3,
+        "tile_counts_by_group": [
+          10,
+          5,
+          4
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "68049e12adb7f09cad2cc16f539de8785e8a9f121be5bc257c1165db2f6ec92c",
+          "grouping": "8dec65a6cd85d9f67c43f68d20f2a72226c49608a5f2f9eb12abcc056b49e780",
+          "clusters": "92868ff71acbe2396a269b0bc5d8daa720ad56bf8542d33e30829c3b0cccf851",
+          "embedding": null,
+          "strict_score": "83b9539f696c825ee0b2a9dd2b13e0029b4abda6fd3c159351fadd3a5fa1704d"
+        }
       }
     },
     {
@@ -3871,8 +5680,8 @@
       "dataset": "beetle",
       "source_group": "patient173_wsi1",
       "image": "case-088.webp",
-      "image_sha256": "fea834ce00d6ec56afb3c271064d5b36cf795e64c5d7fb585e715cbb447962db",
-      "preview_bytes": 155836,
+      "image_sha256": "30c078a4f7aacbab5574125ae76aff4f9a061c83bbc9417a77331c9cb9bb6a38",
+      "preview_bytes": 214520,
       "source_sha256": {
         "he": "6ff0c34c1a8c357ba8f128673d8f5cfe2e5239116cf56473b367ab45e9e55278",
         "expert": "b9ecb9776eb5922b615c19d55868716fb6618d37aec41239f447634c107cb5bf",
@@ -3903,6 +5712,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 53,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          35,
+          18
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-088.webp",
+        "kodama_plot_sha256": "5551b94d79196023a5ef78b9f8b1604b12acfa3ef75b2aa843658c1ef99dc5d3",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "14741dfdab93ba3ff8e46dcc881a4decd0bcff32f52f98bdf727e412f18a2556",
+          "grouping": "e535222edc351340c3d4ad335252f520b30483ce1e634c04ef95b2d04885c531",
+          "clusters": "c2cc0066f0f9e1acfd56fb8a877d17df9d22375b05844ad0d82191e6578ff759",
+          "embedding": "968bcb0593729bfdeea19cfad7584c69d09a4e2ac498c6899f8d67124c995373",
+          "strict_score": "4210c9e8740b99e3c8e6b673551f532f365f99f939c0b3680108c4985b9b6701"
+        }
       }
     },
     {
@@ -3911,8 +5741,8 @@
       "dataset": "beetle",
       "source_group": "patient199_wsi1",
       "image": "case-089.webp",
-      "image_sha256": "c9af59b8c1e99f745779bda443063cbc64cc12460dbe20f6704637d67da25ba6",
-      "preview_bytes": 211344,
+      "image_sha256": "d50c1947a8b9bb3e1003457e4dee83e26ae0a8a06637be7b6da63241cce2915e",
+      "preview_bytes": 286878,
       "source_sha256": {
         "he": "1fcef805ca4df7f7643d7d6cea68514753a89840083e769ad6b8b0ae41fec6f5",
         "expert": "28159b2959b94cfc35cb43a7729ef45e43d9d65fe063278d64c3e51c985d6917",
@@ -3943,6 +5773,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 87,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          58,
+          29
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-089.webp",
+        "kodama_plot_sha256": "e7ecac64d835cb3d69502ad5091a7b6f32a38a62c909f52036c223eaa2d751d9",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "8a16e04c7185b8dfddd0adbf4ed494476c4f6eadecc40bd4f80b55503f7ec26d",
+          "grouping": "58d1a0b0b15cded7a85a163e6caca2187ce3e7a1250c125c55112a20ada8be51",
+          "clusters": "26b56e586ecfb40d8b55167717f930083ae309d8e4cde113f46d24bd79c2747d",
+          "embedding": "3828ca5212dc573153dccad42e26788d140bfb93cfcab1b18ce4c5c2d5b96e53",
+          "strict_score": "d88b6f06b5dda312e07a03d37b99ab7d7bbdc1e2745f5f746b241b6a13872358"
+        }
       }
     },
     {
@@ -3951,8 +5802,8 @@
       "dataset": "beetle",
       "source_group": "patient216_wsi1",
       "image": "case-090.webp",
-      "image_sha256": "ebc2190cdfce7262eddf70c2660bd156eab0e79fac5cd8315e9de01c8744a6be",
-      "preview_bytes": 215990,
+      "image_sha256": "d971ef99b87b0e94b856032ea0bf97249f8c50ce469057011af2c2c9bfad708c",
+      "preview_bytes": 290184,
       "source_sha256": {
         "he": "a0805ad611c587d94a96dc66a804bd1ae5d3d2635a88af4f04ccefd4d70a7bc9",
         "expert": "8421871a53b7f757f8263672851e6867cf309067986c471feb92ed38aa7a904a",
@@ -3983,6 +5834,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 108,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          62,
+          46
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-090.webp",
+        "kodama_plot_sha256": "ec8bac38b3623c52b7e8b0509d2bf9063fab30d0f5cecd792fbd0acc509d5673",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "a6f1341e320ee6ed4c8cff03fa87cc5daf625764c81f2d63dd4e9c1e76b3b77e",
+          "grouping": "dc4fb67c40b5b6dd8cab512f1119f5b4ff798c5322900b43c0aafaf34a53f594",
+          "clusters": "b7c5463f690ff1eb0e1d85573370168c220032228d8648a5f2a291c67f36aa75",
+          "embedding": "c3b6e49f32879144f86c51db07f9056592010947705139b9840a5dff825147bc",
+          "strict_score": "f8dcfc7fd445c329f7842eb6fd3689ce6e7ffb3d559b84c180938288ee3b05ba"
+        }
       }
     },
     {
@@ -3991,8 +5863,8 @@
       "dataset": "beetle",
       "source_group": "patient217_wsi1",
       "image": "case-091.webp",
-      "image_sha256": "323aaf75e09a3733bafa1f0cc50ae0c6f79a121e588e0f418d3667ece489e5df",
-      "preview_bytes": 114320,
+      "image_sha256": "0246f1b0436517fcdd51d49266940ff35097d551ffa83199390d7736c531c7d4",
+      "preview_bytes": 168202,
       "source_sha256": {
         "he": "ae7e65620ae1f4ad45d2f25fa8523c69932ba26a1a0708c0eff996b624d45de7",
         "expert": "d7f8056fedcf044af77636c4cace50b68b5b3d62fcaa170cd2adba7507b8f696",
@@ -4026,6 +5898,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 23,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          13,
+          10
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "ca2fc4e5645e6347231b6e505057793a1852e45499ac85daca30674dd4f0fcf9",
+          "grouping": "2b0c44fc4d6225d85ce2259daa9d4f149c427214bde642a7bfd1b729d239b442",
+          "clusters": "3df2e63deab5f31f0e28441ee69616d125eba77919eab1398d329088aaa44073",
+          "embedding": null,
+          "strict_score": "1e92f4ceba8e875484f1493507a26c13e1191db394e3f30789aef2281de71895"
+        }
       }
     },
     {
@@ -4034,8 +5927,8 @@
       "dataset": "beetle",
       "source_group": "patient289_wsi1",
       "image": "case-092.webp",
-      "image_sha256": "2c50cd06df9264104eab6bf9f627103a6d43bc905e555d7c575d5d0ffbb6818f",
-      "preview_bytes": 198566,
+      "image_sha256": "85ea96ee38fc5fc36dd44add35bdcddf11432514e621c2c8374458004e8295f6",
+      "preview_bytes": 267876,
       "source_sha256": {
         "he": "acb0de5004a2bf1ef371705e246323b607b4617b4497db18c657d8dc417e32df",
         "expert": "ef30fd32ea0d4473862ab7013fc3e82f2f91e0723021c9a3750f80af1916d7cf",
@@ -4066,6 +5959,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 37,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          21,
+          16
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-092.webp",
+        "kodama_plot_sha256": "a5cc28181382df35fef76b949beec4811f7ca342e925079d6d15e15aa717e1b9",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "be1194afb7f3bbaabb9b85d2c487d0a4be99cf443627175538b0bcad6b54457c",
+          "grouping": "fd391b5c5d4eebbc696aa8402dba786c48873021cb6d2a2b8c93233688925f71",
+          "clusters": "811407660763e295f4e0b01cca8a44b3cbb1abd2f000166a551a520bf88d4c29",
+          "embedding": "a166e1583335853d4753efcf452b9f7d593dcbbb082e9544bc950b3ffa7ae2f2",
+          "strict_score": "7aabc576e5d8d35c2a7889153d57cb075cbe2c25f811db15b917ea1aa3d69c47"
+        }
       }
     },
     {
@@ -4074,8 +5988,8 @@
       "dataset": "beetle",
       "source_group": "patient31_wsi1",
       "image": "case-093.webp",
-      "image_sha256": "76dc9141514c600bc7f262727e207a28bd929bcc7b094171aabfbee7838240f8",
-      "preview_bytes": 274830,
+      "image_sha256": "5be4f68bcbb52004efbdad64c2da17ef83820a0e235a2c00f44811f07059aae2",
+      "preview_bytes": 352556,
       "source_sha256": {
         "he": "e0fd3e7e9081dd66676b1ec3506304af8e1c3ff81392fe141e83c2e1ec881c43",
         "expert": "1b597eee0f64a3f4abb90c626b3c89d761612a9696a1696e9db7fdd2b2795837",
@@ -4109,6 +6023,28 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 149,
+        "clusters": 3,
+        "tile_counts_by_group": [
+          65,
+          42,
+          42
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-093.webp",
+        "kodama_plot_sha256": "6c8967eb98bed07f0a814e1754418bd15101ccfa6dda3a00f0d2ab70db95b5e8",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "af9358cd97a86d0acd5de5c20ab89f36844ad4c6e8ac1cc368c9162af74dfd49",
+          "grouping": "7114e6ba2c79ce90539e5f473c1c11f21e3f364bca3e350d6304bf45895e4dad",
+          "clusters": "98cecfba639cead07060e649e3eec6f0d6a18b114dd510ab436241ae5ee0803e",
+          "embedding": "f4a5237ef0f6e6c82a785be1ab3d4b5b71d36b0c3a9fd8fd9051f0b4ce5785db",
+          "strict_score": "42858a551e0088f73cfe026f1ffc723fbbdb19600ac481f92eb0a4ab7161f46b"
+        }
       }
     },
     {
@@ -4117,8 +6053,8 @@
       "dataset": "beetle",
       "source_group": "patient34_wsi1",
       "image": "case-094.webp",
-      "image_sha256": "ec263ee90b012920bbc575bfa81d75fe093348651b145dfbe61c36818c10f9b8",
-      "preview_bytes": 277054,
+      "image_sha256": "757051935523192265c64a4ca47e2b280fd0aa4804893b2a9313cbbd2b256d91",
+      "preview_bytes": 359928,
       "source_sha256": {
         "he": "216d3441a1c307c60b1fd5779300e5e21949cc2af3a762b398a67c635680ea8a",
         "expert": "17dd3534d3764e0da3e64334fa216db8cb6743cce5252339763e2fabbac32bab",
@@ -4149,6 +6085,29 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 152,
+        "clusters": 4,
+        "tile_counts_by_group": [
+          48,
+          43,
+          31,
+          30
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-094.webp",
+        "kodama_plot_sha256": "a7de6d430c7abcd0de12c2c3caa7ea4620209cea8930196c4e74c6ccf2526f2b",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "bca3f7052c15a1fa05e7d1fca2a1240e1241631f90e91517e6511d9760e7a2b1",
+          "grouping": "037cb9814b5d6dc1b99a08632a1c9ae08e8cc488c519a3792c31c35e7cd05bac",
+          "clusters": "9caf7a9878783ef67dbf629dc3430f6a54d2753b855100a3110b9f070eb881dc",
+          "embedding": "66f042b295aab564bab107001061bc0fdc1db9cd87f2047646b41aa3d2bef6e0",
+          "strict_score": "f60db84b021d49afe3f465951329b2e4b6bacf33b97344aa9390f8fedb6d9e84"
+        }
       }
     },
     {
@@ -4157,8 +6116,8 @@
       "dataset": "beetle",
       "source_group": "patient39_wsi1",
       "image": "case-095.webp",
-      "image_sha256": "4d229e46c02447b431642300a9d8cd867420ec564026ebdb4f1b4c075054bf96",
-      "preview_bytes": 282794,
+      "image_sha256": "e659ac7564736f3fc8f9f23aeffdb81519300c37bdb340041903749419f8adf1",
+      "preview_bytes": 364484,
       "source_sha256": {
         "he": "a07d9a773375647ed4492b283e015b3f5b0c4e832da93de70ec425d151f3bfbb",
         "expert": "f6bc52e2d95b352e7cd07fc1cf16ed6ca7dbb4dd168f99c4063db037b7122488",
@@ -4189,6 +6148,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 87,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          57,
+          30
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-095.webp",
+        "kodama_plot_sha256": "f7b815b3cb1160c20188920d7ab7b55cccdb182efdc1d13c32659779de4d6778",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "e73d72e909aa66df24581f1baef66175d20b52de4574fbec5217f76f48def5c4",
+          "grouping": "6ce7d4d3b2e808d9344040a51a1bc013fa78bc12a4d1c40ac636cd71b7c9eaa6",
+          "clusters": "4ea51995615e5ce204e168d794b39fb163b705dd654e1fa1a3a995efece2f194",
+          "embedding": "ad5bffa7f5750eb51427a8a9260ad3438ccd1f2e9c9aac72bdc781d583974226",
+          "strict_score": "a765a2fecf29651aa45aea82cde50934fe6d247b532f8d5d1ca003c4fc2063a2"
+        }
       }
     },
     {
@@ -4197,8 +6177,8 @@
       "dataset": "beetle",
       "source_group": "patient43_wsi1",
       "image": "case-096.webp",
-      "image_sha256": "e9e398deadc18cae7054c66e3e1554197b4f0dd575df1cb4c19e3c3b14d50494",
-      "preview_bytes": 292440,
+      "image_sha256": "db0cb4ee7c141a8b330111ffb82b87bf117ae16268f3b3e2f9054093e9577e39",
+      "preview_bytes": 379616,
       "source_sha256": {
         "he": "722eb7e3c4c352b9668bc943e0ebeb3960e654611355dcadfa6f170150faf3bf",
         "expert": "d2616ab4743a223d56106402814693f7d4b9ba4d8d6228962e5a91e2a5849555",
@@ -4229,6 +6209,28 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 132,
+        "clusters": 3,
+        "tile_counts_by_group": [
+          60,
+          44,
+          28
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-096.webp",
+        "kodama_plot_sha256": "9fa5f5ea17dfd677170806b70657d8c130e288ddc217bf21eb3126a289b4e905",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "ae9a2a818d93dee4b41b4ed5f654bcde5b67c3e00b0ca888dcb30ecb3f16e5ec",
+          "grouping": "6372b096578e1f8e507d91efbbc873e3aaa45941d1a313459ef93c94613d62db",
+          "clusters": "23647ea4f5c292fd9c012ead3ac0fc5b0f659de0744fa0ec24464d4d9694dae5",
+          "embedding": "d987e84c755ba3ea4974883a446266fa9c5f966f9ff8215ba0f83f3c9c525e61",
+          "strict_score": "624c611cd48b1715866d31a78638f993f4f8d9cd9a2fcbc19edde43e095b1cf1"
+        }
       }
     },
     {
@@ -4237,8 +6239,8 @@
       "dataset": "beetle",
       "source_group": "patient47_wsi1",
       "image": "case-097.webp",
-      "image_sha256": "91a52b13b90791eb780cb449c8810c986cf266c9fbf5236aa5a1c94f281d7488",
-      "preview_bytes": 264334,
+      "image_sha256": "9413e059ec94f625aa079be226283eb5a92fa69bb5cd82cac0a646ece4c1900c",
+      "preview_bytes": 341346,
       "source_sha256": {
         "he": "83a27f78a157e865aec02502c1f191a75fccf612bf5c6626709cff406d1d1eb4",
         "expert": "2dbca43f63973091fb6fe184b37f551547a59112bff23b7cf2c7d1a15506bd4b",
@@ -4272,6 +6274,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 1
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 74,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          49,
+          25
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-097.webp",
+        "kodama_plot_sha256": "8c5f2f0fe521e0835ba998943f64b4518a3861909a42d41d8ea5391d351820ac",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "a6249eda85d4e61c12b46f2d1b215c4a841094449cc9345cee5bbeae79c52621",
+          "grouping": "c86ba3433a6597f4a7ab7159ffd893e97546d9e404228d561cab794881ef4359",
+          "clusters": "2e6988c9811e2612fc29142a01886241ce4cd217b97a63342c7dd2e78068e76e",
+          "embedding": "e36f2fd736c57d0124cc747401ea646488e0a7ec16e9409d26c0974e6cd9f4d6",
+          "strict_score": "57d27aaeca8e299e6dc0734ed5a4b9f5bdadf297bb297f8ca011596302160386"
+        }
       }
     },
     {
@@ -4280,8 +6303,8 @@
       "dataset": "beetle",
       "source_group": "patient60_wsi1",
       "image": "case-098.webp",
-      "image_sha256": "f7eeb215f0980581babe6f7760999b52971531161d85f85b233ec73bad31f32d",
-      "preview_bytes": 165458,
+      "image_sha256": "e3d9f27b5a0c7e0c3001f048fc621f752030db027a4e6e0bac2ae33cf18f8e77",
+      "preview_bytes": 228684,
       "source_sha256": {
         "he": "2b55a3c212b6956e6735518eb62e1c2dda6a016da5518acc0e891f9a1ccac596",
         "expert": "f7a2c66940871d2de5102035273a6c192abee62b9fad6a68b70c0cbf4c842778",
@@ -4312,6 +6335,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 28,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          18,
+          10
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "d9d12ced23e253c63927194bf3b3caa4ff00b99daea88724ed7d4d68caec8bfd",
+          "grouping": "bbced3b7aee23bea3862e2ccc1ad6ae568e13bd4fcd05f6d4865a529f6bbe8fe",
+          "clusters": "7d49c40a976029118e77359b77431abfd3dcf886f6b1ee01918f5512054e5fb6",
+          "embedding": null,
+          "strict_score": "316d2a83c77a9d76fba381e22454b5c76af992dd7673bfe1d4c7379a2e089a61"
+        }
       }
     },
     {
@@ -4320,8 +6364,8 @@
       "dataset": "beetle",
       "source_group": "patient47_wsi1",
       "image": "case-099.webp",
-      "image_sha256": "48330384482a9d6288c414f83f50e4cb5f67845c7d9698cfee6f485b67f51c32",
-      "preview_bytes": 239018,
+      "image_sha256": "b65c09030da149797ce9da34dbe88744cec0e781a58805e2dd9f75199416914c",
+      "preview_bytes": 312648,
       "source_sha256": {
         "he": "8a3d3f0ea6bb1d9e2f0bc211707bc177b31ab0c1cd296e2a51f4110be877aa98",
         "expert": "2e155501e9854e87c5713e64dcf053321491ec5514ce6b8e463146dbbf39af2f",
@@ -4355,6 +6399,29 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 163,
+        "clusters": 4,
+        "tile_counts_by_group": [
+          45,
+          45,
+          38,
+          35
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-099.webp",
+        "kodama_plot_sha256": "7d9cdd7ed3c3ae1d234264bb628e574897fb835e0ec7448ad62bb39713373599",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "9485d9553842bcef8e8e199b6f61d013f5eeda91daee5d1175c9f0fb83eacf3b",
+          "grouping": "3aaf3fbe87905d94b634d1edbe827c6e42be5f2cf183d0489aaa018b326cdd57",
+          "clusters": "eb854428a52f5fa6c51517430be61504a8fe9172559bc3de41b4470af8bcc592",
+          "embedding": "db33c8e3c57e6a52c2e7b62180cfc494840b30f89d7af1d3c70f37b07f0ac53a",
+          "strict_score": "610e9a3f2575d901ea806957eb72312806ac5cd14587d907c45eb89395c1ab77"
+        }
       }
     },
     {
@@ -4363,8 +6430,8 @@
       "dataset": "beetle",
       "source_group": "patient47_wsi1",
       "image": "case-100.webp",
-      "image_sha256": "ddfdbc6d884b82f7926ece94588687f2c65234fdbe6ad0c695c4b200a22d064f",
-      "preview_bytes": 272514,
+      "image_sha256": "99602558d85ac31449392152c5897bb6bd13cbf85751d733ec832f5538aa0ee9",
+      "preview_bytes": 350820,
       "source_sha256": {
         "he": "fb0730badc42177cc93bdcaaf70fe451d2a639f125bf08e1839fa1e50073717d",
         "expert": "9fb03f9adb79c8da10e181819b01f46c371050a20f54a6879cde4faac59d2e05",
@@ -4395,6 +6462,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 92,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          53,
+          39
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-100.webp",
+        "kodama_plot_sha256": "62435c9cc76ff6cf4cb452962c59ac9c92b5ffe628ce93fc1348d9db622347bd",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "effa2d9b0242033ec96e9b44c7735bd05eed3c3813821937b72b4864e89a812f",
+          "grouping": "ba8c4824b6720eb5063be2e09098e5268480244b01b499bc8f3621b37d8e4d38",
+          "clusters": "42d90a2d2a1f96d8df548dccaaa6fc8fa962e390e291e3ed5f242165f5a962a4",
+          "embedding": "1dd5aaaa32458817d43bdbe214094a5d432e69471dd5d4e887d1192782b972c5",
+          "strict_score": "9b991a7b87fae87eb423f7aeced8a43e50fe0e7fc7a57f501f369f28ae38f4a4"
+        }
       }
     },
     {
@@ -4403,8 +6491,8 @@
       "dataset": "beetle",
       "source_group": "patient39_wsi1",
       "image": "case-101.webp",
-      "image_sha256": "a66f37ccf4e77781e930c1a85cbf6051f230c88544c5d52773286e2d7f8970cc",
-      "preview_bytes": 225550,
+      "image_sha256": "2122e3aa368e1a6c6a5005bfe7cd461b809793a855041e50901ffb964e4fb618",
+      "preview_bytes": 297836,
       "source_sha256": {
         "he": "1ef7ac5f8f7191a6f5c6c2918b6020a248acc477ecbd73ed5a9eacd1aa94138f",
         "expert": "c08a3693ab8235a9f7caea0bd1b9cc0dc9cd0905c903597a3a6fd8c622ea567d",
@@ -4435,6 +6523,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 79,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          42,
+          37
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-101.webp",
+        "kodama_plot_sha256": "029a453078eacf664ca7b426e7164953d65c107946c59d371390d1f29df6e305",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "5dbe40ec3852974924fa11dd885cfbe211a30a6c2f7e51f5f9e0a35f6bbcb5d7",
+          "grouping": "5a7e888e767b5cffa3bbe8323b141defdada535f5b20685f5a66a32fe858cb2e",
+          "clusters": "5d637616715bccef1d8e4e7f3e947f563aeb4b077a581826d6b079d321f947a3",
+          "embedding": "ff4c7293c1474b03ff907cc1cd4d157b8782a924ee8ceab91904a6fb66fa164b",
+          "strict_score": "b8c5fce57c349175812c68556360accd2545af0bd62062792c03d9c3c4e17688"
+        }
       }
     },
     {
@@ -4443,8 +6552,8 @@
       "dataset": "beetle",
       "source_group": "patient43_wsi1",
       "image": "case-102.webp",
-      "image_sha256": "2833d3630b1b3d4ef5e2be682cde9ab500e9bb8a2df2a7fb501ac2ccc33f5efe",
-      "preview_bytes": 323202,
+      "image_sha256": "fb86b1fbf865186569f5859d060851ed8f2b6509781e23f37831f7f9caabe1a1",
+      "preview_bytes": 413216,
       "source_sha256": {
         "he": "a68b8735cc906eab3a5b8c25b688e060810f8466160b702d96826a4adb5c9ba1",
         "expert": "605ef9d9e4bffbde9a005f66f4ee1b67fc6670423191fb071766056cb320a80d",
@@ -4475,6 +6584,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 139,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          84,
+          55
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-102.webp",
+        "kodama_plot_sha256": "5c20d3fe55fbc248faf171d1c6f48e20c3d206ed89ad812408d26229df4814f0",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "5f165f592d8f4c8cd786a4057718aafca403bc263885681639d3e802e98df463",
+          "grouping": "556d6304a1e244cd3e71a125b5aad9b1969c3c5383de65f1952cf834a122d489",
+          "clusters": "6402ebf9a22118f999d65688aa37180a12e26e1f483b711c855a7491585f9869",
+          "embedding": "86a9528817325ddd99d77f909ba31f306ebc2d526176febba829110433f72db7",
+          "strict_score": "ccd882344300f7bfcd3850cd2af5035d1dbdde8ba80dfcf3218eadb82c96d914"
+        }
       }
     },
     {
@@ -4483,8 +6613,8 @@
       "dataset": "beetle",
       "source_group": "patient43_wsi1",
       "image": "case-103.webp",
-      "image_sha256": "3ac295b6cb7116c116a7f58a936654a56dc8820f14491e31ad8433c13dc45356",
-      "preview_bytes": 283694,
+      "image_sha256": "f532294cc910a9189610455bce08247d2be79376dc3fe6438fcf2c186640a543",
+      "preview_bytes": 365638,
       "source_sha256": {
         "he": "81983e730f642336225b317b639b5246fc5855be4ef0713cbada8411cdb5a129",
         "expert": "9df9875f080b5fa09326c5dd6c4d2889541dfd11a967935a1d9f25ac5b6addd4",
@@ -4515,6 +6645,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 65,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          34,
+          31
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-103.webp",
+        "kodama_plot_sha256": "395733a7e86ffa1b40bdb5d1b758a0c17b3624718f3c0c096fb2002005079829",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "b2ee44e19690e3382fc78a2b96876107fc164208e291f31c1cb2425ce8de8eb1",
+          "grouping": "23029de798bc3bbaa13095526b431e50fd846a8db65fa5c550bae0ce2db80f87",
+          "clusters": "bfb6707bcf957e178efa2d89b840f9c4552cdd248ac5fe043b87dda4f2d4e510",
+          "embedding": "214630fe1be580c5398f1e3b9427032770f4e594df5bcd91a44da0458cb4ad8d",
+          "strict_score": "17fd030f715e1979a166d31d40e5a0cdfe7fd299728cdf0d2a64ca2b5ef53c69"
+        }
       }
     },
     {
@@ -4523,8 +6674,8 @@
       "dataset": "beetle",
       "source_group": "patient289_wsi1",
       "image": "case-104.webp",
-      "image_sha256": "dd8ddee2106f92652aca772bc7f647a780f9bb23cba1932f448e78df72012eb9",
-      "preview_bytes": 171090,
+      "image_sha256": "bc247f249f855797681f8b8b4a57ef0318864e38123d9038b28b1c0fe0f7385b",
+      "preview_bytes": 235748,
       "source_sha256": {
         "he": "9ac4797117a7179f51b7264c6223909111c9b9a50ef46963a6ebc9a27547c724",
         "expert": "9b31c6d3843944f5e1ac4683d5dfceb68f36b55bcee48ca34e815bac1843f5ed",
@@ -4555,6 +6706,27 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 22,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          18,
+          4
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "6eecf7e71791fcde51079312612c2ab9539a9cd2f3d01881681490df2fc2c24d",
+          "grouping": "bf10a6bd3a7fdf23bb6d2b619aba559773afda9d928d59dac31cad70ad0b2e14",
+          "clusters": "99e5cf4dffe275735e97690e8dcda966864f59a981848df8b50cb0b05b4e38c6",
+          "embedding": null,
+          "strict_score": "884d44fe67ec2e06dda8af8d6a9960882898235d3991f5995c1de31ac092242f"
+        }
       }
     },
     {
@@ -4563,8 +6735,8 @@
       "dataset": "beetle",
       "source_group": "patient217_wsi1",
       "image": "case-105.webp",
-      "image_sha256": "a15235acafc36b99d2479d7de6c14e8f1e346ab171fcf82bc03e8e5b17e9f673",
-      "preview_bytes": 155042,
+      "image_sha256": "2f9b4aeb42504248e6e095f411e208617001b48eeedb9a78d2c68e4d4d97d4ae",
+      "preview_bytes": 214090,
       "source_sha256": {
         "he": "a332a7056819375267605892a04682c4905517ec0ee396af75a57782a5980693",
         "expert": "6541c12cc813cbe6013c8bedc5d3c463dd3e03a071618c7f19ba1a3f9f7a9e4a",
@@ -4598,6 +6770,26 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 3,
+        "clusters": 1,
+        "tile_counts_by_group": [
+          3
+        ],
+        "grouping_route": "small_roi_coverage",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": null,
+        "kodama_plot_sha256": null,
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "fewer than 30 eligible tiles; plot omitted",
+        "evidence_sha256": {
+          "prepare": "2e3df22bae4c419bd785edd900de19c943d968992d3acc0a12063be608c29090",
+          "grouping": "8e654a620e07a88392bf6e0a593a8e1fc25f79281639993c408afbed55450d29",
+          "clusters": "71ad0e90d8be369d9db52b37196932aa68e842679978af082a008a2430a3dee7",
+          "embedding": null,
+          "strict_score": "260d7653dc7524f844f356b1fb519165d02e8dd41150c153a1d1b0c4473657a2"
+        }
       }
     },
     {
@@ -4606,8 +6798,8 @@
       "dataset": "beetle",
       "source_group": "patient173_wsi1",
       "image": "case-106.webp",
-      "image_sha256": "63ccde731641a43fed00912c798749143cf56dbba0128812d99276f2aa3854ed",
-      "preview_bytes": 128816,
+      "image_sha256": "82fc7e5398ff185116e7310caa6a7dbcd3ba1b9a033e16751c622e18aa410ae7",
+      "preview_bytes": 187750,
       "source_sha256": {
         "he": "98663f8e3ff96084a6907c354b4413818e8d0e6441cd0e834b79d9b9aa518fb6",
         "expert": "7c24d062859f861b91b5c92a9abc76b03c6cf0d49fea28b0e2cbb1cec9ace83e",
@@ -4638,7 +6830,30 @@
         "tumor": 6,
         "stroma": 6,
         "necrosis": 0
+      },
+      "bora_pipeline": {
+        "eligible_tiles": 35,
+        "clusters": 2,
+        "tile_counts_by_group": [
+          24,
+          11
+        ],
+        "grouping_route": "kodama_consensus_projection",
+        "tile_rule": "strictly less than 10% background including padding",
+        "kodama_plot": "kodama-106.webp",
+        "kodama_plot_sha256": "501d27cb60c78df9dfda15790c6c6a7e0cd0d2854701c0dba8bbbaa922b43b53",
+        "kodama_plot_threshold_tiles": 30,
+        "kodama_status": "saved fit shown",
+        "evidence_sha256": {
+          "prepare": "a906156cb982d860fe196e2174f47037d7c6305db6be68b66b4d798d7184ed5a",
+          "grouping": "9073bf0339ab94dd4910c8d1b724212dc279f6e537273ad3100017913266c66c",
+          "clusters": "02c79eddb411ae7c0d83cdbc1c674d2934887a298cea94793d1e07aeba1f9810",
+          "embedding": "691e33771929cb421ce3b042591160ecb13a7f33dcb1343511dbbcdaba3e57f6",
+          "strict_score": "0f0aaca33cb9477809966f399d5f23e1d9b41adb4a2f55ffa1f8e3c8412a3bf4"
+        }
       }
     }
-  ]
+  ],
+  "kodama_plot_minimum_tiles": 30,
+  "kodama_plots": 57
 }

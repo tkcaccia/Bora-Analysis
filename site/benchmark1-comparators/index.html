@@ -20,6 +20,10 @@
     .meta strong{display:block;margin-bottom:4px}
     .small{font-size:.9rem;color:#415b62}
     .error{color:#8d2323}
+    #kodama-figure{margin:18px 0;background:#fff;border:1px solid #d5e0e3;padding:14px;max-width:760px}
+    #kodama-image{display:block;width:100%;height:auto}
+    #kodama-caption{line-height:1.5;color:#415b62}
+    #pipeline-summary article{min-width:0}
   </style>
 </head>
 <body>
@@ -39,8 +43,18 @@
   </div>
   <p id="case-title"></p>
   <a id="full-image" href="#"><img id="case-image" alt="Seven aligned image panels"></a>
-  <p class="small">Select the figure to open it at full size. Uncolored regions in a model panel are not necessarily blank tissue; they may be unmatched classes or absent predictions.</p>
+  <p class="small">Select the figure to open it at full size. The tissue-class color legend is printed on every figure. Uncolored regions in a model panel are not necessarily blank tissue; they may be unmatched classes or absent predictions.</p>
   <div id="scores" class="meta"></div>
+  <section aria-labelledby="pipeline-heading">
+    <h2 id="pipeline-heading">Bora pipeline for this image</h2>
+    <div id="pipeline-summary" class="meta"></div>
+    <figure id="kodama-figure" hidden>
+      <img id="kodama-image" alt="Image-only KODAMA scatter plot with tile counts for each anonymous group">
+      <figcaption id="kodama-caption"></figcaption>
+    </figure>
+    <p id="kodama-unavailable" class="small" hidden></p>
+    <p class="small">Eligible tiles have strictly less than 10% background, counting padding. The cluster count and tile counts describe image-only Bora inputs; tissue names are later fastPLS predictions. KODAMA plots are displayed from the saved fit when at least 30 eligible tiles are available. Plot colors identify anonymous groups and use a separate key from the tissue-class colors in the comparison figure.</p>
+  </section>
   <h2>How to read the panels</h2>
   <div class="meta">
     <article><strong>Bora</strong>Image-derived groups followed by fastPLS class predictions. The classifier was trained under a different tile rule from this revised mask run.</article>
