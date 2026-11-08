@@ -26,10 +26,11 @@
 <header>
   <p><a href="../index.html">← Benchmark 1</a></p>
   <h1>Benchmark 1: side-by-side model outputs</h1>
-  <p>For each of 106 development evaluation images, compare the original H&amp;E, expert annotation, Bora, U-Net, VISTA-PATH and MedSAM in the same image frame.</p>
+  <p>For each of 106 development evaluation images, compare the original H&amp;E, expert annotation, Bora, U-Net, DeepLabV3+, VISTA-PATH and MedSAM in the same image frame.</p>
 </header>
 <main>
   <p class="notice"><strong>Development evidence.</strong> These images were inspected during method development, so this gallery is not an untouched test. Scores below use different class sets for different tools and must not be read as one overall ranking. The older 116-image interactive display on the home page is a separate historical benchmark.</p>
+  <p>On the same 106 images and expert-present tissue classes, mean intersection over union was <strong>0.204 for DeepLabV3+</strong>, <strong>0.495 for the class-aware U-Net</strong>, and <strong>0.164 for Bora</strong>. DeepLabV3+ and U-Net used the same 397 expert-masked training images; Bora used image-derived groups and a previously fitted tissue classifier. The paired DeepLabV3+ minus Bora difference was 0.040 (source-group bootstrap 95% interval −0.012 to 0.094). These figures are exploratory because the evaluation images had been inspected during Bora development.</p>
   <div class="controls">
     <label for="dataset">Dataset</label><select id="dataset"><option value="">All datasets</option></select>
     <label for="case">Image</label><select id="case"></select>
@@ -37,17 +38,19 @@
     <span id="position" aria-live="polite"></span>
   </div>
   <p id="case-title"></p>
-  <a id="full-image" href="#"><img id="case-image" alt="Six aligned image panels"></a>
+  <a id="full-image" href="#"><img id="case-image" alt="Seven aligned image panels"></a>
   <p class="small">Select the figure to open it at full size. Uncolored regions in a model panel are not necessarily blank tissue; they may be unmatched classes or absent predictions.</p>
   <div id="scores" class="meta"></div>
   <h2>How to read the panels</h2>
   <div class="meta">
     <article><strong>Bora</strong>Image-derived groups followed by fastPLS class predictions. The classifier was trained under a different tile rule from this revised mask run.</article>
     <article><strong>Class-aware U-Net</strong>Supervised on the 397 training images with expert masks; no inference prompt.</article>
+    <article><strong>DeepLabV3+</strong>Supervised on the same frozen 397 training images and expert masks as U-Net; no inference prompt. Randomly initialized ResNet-50 backbone.</article>
     <article><strong>VISTA-PATH</strong>Externally pretrained. Only predeclared matched tissue classes are colored; unmatched classes are left uncolored. Source overlap cannot be fully excluded.</article>
     <article><strong>MedSAM</strong>Prompt-guided masks for tumor, stroma and necrosis only. Its boxes came from an earlier U-Net, not the expert or the U-Net panel shown here. Some cases received no box for a role.</article>
   </div>
   <p class="small">Scores are image-level mean intersection over union on the explicitly named expert-present or mapped roles. A missing score means the corresponding comparison was not defined for that image.</p>
+  <p class="small">Download the audited <a href="per-case-106.csv">106-image score table</a> and <a href="per-class-24.csv">24-class denominators and scores</a>.</p>
 </main>
 <footer><a href="../attribution.html">Attribution and reuse terms</a></footer>
 <script src="gallery.js" defer></script>

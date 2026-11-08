@@ -11,11 +11,12 @@ function show(id){
   caseSelect.value=row.id;history.replaceState(null,"","#"+row.id);
   position.textContent=`${visible.indexOf(row)+1} of ${visible.length}`;
   title.textContent=`${row.dataset.toUpperCase()} · ${row.source_group} · ${row.id}`;
-  image.src=row.image;image.alt=`Six aligned H&E and model output panels for ${row.dataset} ${row.source_group}`;
+  image.src=row.image;image.alt=`Seven aligned H&E and model output panels for ${row.dataset} ${row.source_group}`;
   fullImage.href=row.image;
   const roles=row.expert_present_roles.join(", ")||"No mapped expert role";
   scores.innerHTML=card("Bora",row.bora_same_unet_roles,roles,"Same expert-present roles as U-Net")+
-    card("Class-aware U-Net",row.unet_score,roles,"Same expert-present roles as Bora")+
+    card("Class-aware U-Net",row.unet_score,roles,"Same expert-present roles as Bora and DeepLabV3+")+
+    card("DeepLabV3+",row.deeplab_score,roles,"Same expert-present roles as Bora and U-Net. Inference: "+row.deeplab_inference_seconds.toFixed(1)+" s")+
     card("VISTA-PATH",row.vista_score,row.vista_matched_roles.join(", ")||"No matched role","Bora on these roles: "+pct(row.bora_same_vista_roles))+
     card("MedSAM",row.medsam_score,row.medsam_reference_roles.join(", ")||"No eligible role",
       "Automatic boxes: tumor "+row.medsam_box_counts.tumor+", stroma "+row.medsam_box_counts.stroma+", necrosis "+row.medsam_box_counts.necrosis+". Bora on these roles: "+pct(row.bora_same_medsam_roles));
