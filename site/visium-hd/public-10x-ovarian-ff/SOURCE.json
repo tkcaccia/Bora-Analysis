@@ -1,0 +1,7 @@
+{
+  "title": "10x ovarian cancer, fresh frozen",
+  "source_directory": "public-10x-ovarian-ff-v2",
+  "source_credits": "10x Genomics public example H&E",
+  "visuals_are_downsampled": true,
+  "result_status": "exploratory"
+}

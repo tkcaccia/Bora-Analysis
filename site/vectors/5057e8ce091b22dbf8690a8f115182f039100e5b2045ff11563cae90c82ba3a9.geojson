@@ -1,0 +1,869 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                856.0,
+                0.0
+              ],
+              [
+                856.0,
+                8.0
+              ],
+              [
+                838.0,
+                14.0
+              ],
+              [
+                788.0,
+                16.0
+              ],
+              [
+                738.0,
+                46.0
+              ],
+              [
+                606.0,
+                98.0
+              ],
+              [
+                464.0,
+                206.0
+              ],
+              [
+                434.0,
+                274.0
+              ],
+              [
+                412.0,
+                298.0
+              ],
+              [
+                410.0,
+                372.0
+              ],
+              [
+                428.0,
+                416.0
+              ],
+              [
+                500.0,
+                488.0
+              ],
+              [
+                424.0,
+                502.0
+              ],
+              [
+                402.0,
+                476.0
+              ],
+              [
+                370.0,
+                474.0
+              ],
+              [
+                348.0,
+                484.0
+              ],
+              [
+                294.0,
+                536.0
+              ],
+              [
+                268.0,
+                584.0
+              ],
+              [
+                210.0,
+                650.0
+              ],
+              [
+                196.0,
+                690.0
+              ],
+              [
+                188.0,
+                820.0
+              ],
+              [
+                224.0,
+                920.0
+              ],
+              [
+                306.0,
+                1004.0
+              ],
+              [
+                382.0,
+                1034.0
+              ],
+              [
+                492.0,
+                1052.0
+              ],
+              [
+                518.0,
+                1064.0
+              ],
+              [
+                664.0,
+                1070.0
+              ],
+              [
+                792.0,
+                1088.0
+              ],
+              [
+                850.0,
+                1080.0
+              ],
+              [
+                874.0,
+                1056.0
+              ],
+              [
+                890.0,
+                1058.0
+              ],
+              [
+                902.0,
+                1022.0
+              ],
+              [
+                956.0,
+                982.0
+              ],
+              [
+                978.0,
+                946.0
+              ],
+              [
+                976.0,
+                912.0
+              ],
+              [
+                946.0,
+                884.0
+              ],
+              [
+                900.0,
+                870.0
+              ],
+              [
+                844.0,
+                798.0
+              ],
+              [
+                818.0,
+                778.0
+              ],
+              [
+                798.0,
+                742.0
+              ],
+              [
+                728.0,
+                686.0
+              ],
+              [
+                658.0,
+                652.0
+              ],
+              [
+                650.0,
+                636.0
+              ],
+              [
+                638.0,
+                636.0
+              ],
+              [
+                610.0,
+                612.0
+              ],
+              [
+                594.0,
+                580.0
+              ],
+              [
+                506.0,
+                526.0
+              ],
+              [
+                534.0,
+                496.0
+              ],
+              [
+                584.0,
+                506.0
+              ],
+              [
+                598.0,
+                518.0
+              ],
+              [
+                640.0,
+                518.0
+              ],
+              [
+                734.0,
+                560.0
+              ],
+              [
+                770.0,
+                562.0
+              ],
+              [
+                848.0,
+                628.0
+              ],
+              [
+                878.0,
+                634.0
+              ],
+              [
+                936.0,
+                618.0
+              ],
+              [
+                1006.0,
+                540.0
+              ],
+              [
+                1008.0,
+                504.0
+              ],
+              [
+                1048.0,
+                448.0
+              ],
+              [
+                1054.0,
+                398.0
+              ],
+              [
+                1072.0,
+                372.0
+              ],
+              [
+                1090.0,
+                300.0
+              ],
+              [
+                1090.0,
+                212.0
+              ],
+              [
+                1068.0,
+                126.0
+              ],
+              [
+                1050.0,
+                98.0
+              ],
+              [
+                996.0,
+                42.0
+              ],
+              [
+                970.0,
+                40.0
+              ],
+              [
+                914.0,
+                12.0
+              ],
+              [
+                912.0,
+                0.0
+              ],
+              [
+                856.0,
+                0.0
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                344.0,
+                1166.0
+              ],
+              [
+                380.0,
+                1172.0
+              ],
+              [
+                400.0,
+                1170.0
+              ],
+              [
+                420.0,
+                1152.0
+              ],
+              [
+                416.0,
+                1140.0
+              ],
+              [
+                392.0,
+                1130.0
+              ],
+              [
+                348.0,
+                1136.0
+              ],
+              [
+                328.0,
+                1150.0
+              ],
+              [
+                344.0,
+                1166.0
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "value": 2,
+        "classification": {
+          "name": "in situ tumor",
+          "color": "#5482f2"
+        },
+        "predicted_tissue_id": 2,
+        "predicted_tissue": "in situ tumor",
+        "name": "in situ tumor",
+        "objectType": "annotation",
+        "area_pixels": 612250.0,
+        "area_um2": 153062.5,
+        "tissue_identity_source": "Supervised prediction after Bora"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              912.0,
+              0.0
+            ],
+            [
+              914.0,
+              12.0
+            ],
+            [
+              970.0,
+              40.0
+            ],
+            [
+              996.0,
+              42.0
+            ],
+            [
+              1050.0,
+              98.0
+            ],
+            [
+              1068.0,
+              126.0
+            ],
+            [
+              1090.0,
+              212.0
+            ],
+            [
+              1090.0,
+              300.0
+            ],
+            [
+              1072.0,
+              372.0
+            ],
+            [
+              1054.0,
+              398.0
+            ],
+            [
+              1048.0,
+              448.0
+            ],
+            [
+              1008.0,
+              504.0
+            ],
+            [
+              1006.0,
+              540.0
+            ],
+            [
+              936.0,
+              618.0
+            ],
+            [
+              878.0,
+              634.0
+            ],
+            [
+              848.0,
+              628.0
+            ],
+            [
+              770.0,
+              562.0
+            ],
+            [
+              734.0,
+              560.0
+            ],
+            [
+              640.0,
+              518.0
+            ],
+            [
+              598.0,
+              518.0
+            ],
+            [
+              584.0,
+              506.0
+            ],
+            [
+              534.0,
+              496.0
+            ],
+            [
+              506.0,
+              526.0
+            ],
+            [
+              594.0,
+              580.0
+            ],
+            [
+              610.0,
+              612.0
+            ],
+            [
+              638.0,
+              636.0
+            ],
+            [
+              650.0,
+              636.0
+            ],
+            [
+              658.0,
+              652.0
+            ],
+            [
+              728.0,
+              686.0
+            ],
+            [
+              798.0,
+              742.0
+            ],
+            [
+              818.0,
+              778.0
+            ],
+            [
+              844.0,
+              798.0
+            ],
+            [
+              900.0,
+              870.0
+            ],
+            [
+              946.0,
+              884.0
+            ],
+            [
+              976.0,
+              912.0
+            ],
+            [
+              978.0,
+              946.0
+            ],
+            [
+              956.0,
+              982.0
+            ],
+            [
+              902.0,
+              1022.0
+            ],
+            [
+              890.0,
+              1058.0
+            ],
+            [
+              874.0,
+              1056.0
+            ],
+            [
+              850.0,
+              1080.0
+            ],
+            [
+              792.0,
+              1088.0
+            ],
+            [
+              664.0,
+              1070.0
+            ],
+            [
+              518.0,
+              1064.0
+            ],
+            [
+              492.0,
+              1052.0
+            ],
+            [
+              382.0,
+              1034.0
+            ],
+            [
+              306.0,
+              1004.0
+            ],
+            [
+              224.0,
+              920.0
+            ],
+            [
+              188.0,
+              820.0
+            ],
+            [
+              196.0,
+              690.0
+            ],
+            [
+              210.0,
+              650.0
+            ],
+            [
+              268.0,
+              584.0
+            ],
+            [
+              294.0,
+              536.0
+            ],
+            [
+              348.0,
+              484.0
+            ],
+            [
+              370.0,
+              474.0
+            ],
+            [
+              402.0,
+              476.0
+            ],
+            [
+              424.0,
+              502.0
+            ],
+            [
+              500.0,
+              488.0
+            ],
+            [
+              428.0,
+              416.0
+            ],
+            [
+              410.0,
+              372.0
+            ],
+            [
+              412.0,
+              298.0
+            ],
+            [
+              434.0,
+              274.0
+            ],
+            [
+              464.0,
+              206.0
+            ],
+            [
+              606.0,
+              98.0
+            ],
+            [
+              738.0,
+              46.0
+            ],
+            [
+              788.0,
+              16.0
+            ],
+            [
+              838.0,
+              14.0
+            ],
+            [
+              856.0,
+              8.0
+            ],
+            [
+              856.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1188.0
+            ],
+            [
+              1268.0,
+              1188.0
+            ],
+            [
+              1268.0,
+              0.0
+            ],
+            [
+              912.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              186.0,
+              1082.0
+            ],
+            [
+              200.0,
+              1084.0
+            ],
+            [
+              198.0,
+              1090.0
+            ],
+            [
+              188.0,
+              1092.0
+            ],
+            [
+              186.0,
+              1082.0
+            ]
+          ],
+          [
+            [
+              328.0,
+              1150.0
+            ],
+            [
+              348.0,
+              1136.0
+            ],
+            [
+              392.0,
+              1130.0
+            ],
+            [
+              416.0,
+              1140.0
+            ],
+            [
+              420.0,
+              1152.0
+            ],
+            [
+              400.0,
+              1170.0
+            ],
+            [
+              380.0,
+              1172.0
+            ],
+            [
+              344.0,
+              1166.0
+            ],
+            [
+              328.0,
+              1150.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "value": 3,
+        "classification": {
+          "name": "stroma",
+          "color": "#b0f254"
+        },
+        "predicted_tissue_id": 3,
+        "predicted_tissue": "stroma",
+        "name": "stroma",
+        "objectType": "annotation",
+        "area_pixels": 894038.0,
+        "area_um2": 223509.5,
+        "tissue_identity_source": "Supervised prediction after Bora"
+      }
+    }
+  ],
+  "native_shape_yx": [
+    1188,
+    1268
+  ],
+  "native_mpp_xy": [
+    0.5,
+    0.5
+  ],
+  "coordinate_space": "native_ROI_image_pixel_edges",
+  "origin": "top_left",
+  "coordinates_are_roi_local": true,
+  "converter": "bora.multicpu_geojson.convert",
+  "profile": "accurate",
+  "minimum_component_area_pixels": 500.0,
+  "simplification_tolerance_pixels": 2.0,
+  "pixel_exact": false,
+  "note": "Bora coverage-aware simplification and per-label dissolution. Image coordinates, not geographic coordinates.",
+  "small_region_cleanup": {
+    "minimum_region_area_pixels": 20,
+    "strictly_less_than_threshold": true,
+    "filled_regions": 0,
+    "filled_pixels": 0,
+    "isolated_regions_filled_with_background": 0,
+    "filled_holes": 0,
+    "hole_pixels": 0,
+    "exterior_background_unchanged": true,
+    "connectivity": 8
+  },
+  "small_polygon_part_cleanup": {
+    "minimum_area_native_pixels": 20,
+    "strictly_less_than_threshold": true,
+    "removed_parts": 0,
+    "removed_area_pixels": 0.0,
+    "adjacent_tissue_filled": true,
+    "isolated_parts_removed_to_background": true,
+    "iterations": 1
+  },
+  "small_vector_hole_cleanup": {
+    "minimum_hole_area_pixels": 20,
+    "filled_holes": 0,
+    "filled_area_pixels": 0.0,
+    "exterior_rings_unchanged": true,
+    "other_predicted_tissue_not_overwritten": true
+  },
+  "final_native_pixel_region_cleanup": {
+    "minimum_region_area_pixels": 20,
+    "strictly_less_than_threshold": true,
+    "filled_regions": 0,
+    "filled_pixels": 0,
+    "isolated_regions_filled_with_background": 0,
+    "filled_holes": 0,
+    "hole_pixels": 0,
+    "exterior_background_unchanged": true,
+    "connectivity": 8,
+    "final_vector_raster_pixels_changed": 0,
+    "numerical_boundary_tie_repair_pixels": 0,
+    "repair_passes": 0,
+    "all_boundaries_outside_local_repairs_unchanged": true,
+    "continuous_polygon_area_checked": true,
+    "positive_polygon_parts_below_threshold": 0,
+    "polygon_holes_below_threshold": 0
+  },
+  "boundary_fitting": {
+    "method": "shared-rdp",
+    "tolerance_um": 3.0,
+    "native_mpp_xy": [
+      0.5,
+      0.5
+    ],
+    "junctions_fixed": true,
+    "shared_arcs_fitted_once": true,
+    "polygon_faces_partitioned": true,
+    "source": "Published Bora coverage converter followed by calibrated shared-boundary fitting"
+  },
+  "compact_boundary_report": {
+    "requested_tolerance_um": 3.0,
+    "selected_tolerance_um": 3.0,
+    "before": {
+      "boundary_segments": 1304,
+      "vertices": 1309,
+      "polygon_parts": 3,
+      "short_stair_corners": 0,
+      "axis_aligned_stair_corners": 515,
+      "diagonal_segments": 489,
+      "diagonal_length_fraction": 0.2954831027534474
+    },
+    "after": {
+      "boundary_segments": 162,
+      "vertices": 167,
+      "polygon_parts": 3,
+      "short_stair_corners": 0,
+      "axis_aligned_stair_corners": 6,
+      "diagonal_segments": 148,
+      "diagonal_length_fraction": 0.6229173942532524
+    },
+    "agreement": {
+      "minimum_class_iou": 0.9891301134639767,
+      "per_class_iou": {
+        "2": 0.9891301134639767,
+        "3": 0.9925116631704906
+      },
+      "changed_tissue_area_fraction": 0.0044593269717271835,
+      "all_classes_preserved": true,
+      "interclass_overlap_area_pixels": 0.0,
+      "all_polygons_valid": true
+    },
+    "attempts": [
+      {
+        "tolerance_um": 3.0,
+        "admissible": true,
+        "agreement": {
+          "minimum_class_iou": 0.9891301134639767,
+          "per_class_iou": {
+            "2": 0.9891301134639767,
+            "3": 0.9925116631704906
+          },
+          "changed_tissue_area_fraction": 0.0044593269717271835,
+          "all_classes_preserved": true,
+          "interclass_overlap_area_pixels": 0.0,
+          "all_polygons_valid": true
+        },
+        "after": {
+          "boundary_segments": 162,
+          "vertices": 167,
+          "polygon_parts": 3,
+          "short_stair_corners": 0,
+          "axis_aligned_stair_corners": 6,
+          "diagonal_segments": 148,
+          "diagonal_length_fraction": 0.6229173942532524
+        }
+      }
+    ],
+    "runtime_seconds": 0.1399947488680482,
+    "expert_annotations_read": false,
+    "minimum_class_iou_guard": 0.97,
+    "maximum_change_fraction_guard": 0.015,
+    "original_export_fallback": false
+  }
+}

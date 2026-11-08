@@ -1,0 +1,7 @@
+{
+  "title": "10x pancreatic cancer",
+  "source_directory": "public-10x-pancreatic-cancer-fresh-frozen-v1",
+  "source_credits": "10x Genomics public example H&E",
+  "visuals_are_downsampled": true,
+  "result_status": "exploratory"
+}
