@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Benchmark 1 · Model outputs · Bora</title>
+  <link rel="stylesheet" href="../viewer.css">
+  <style>
+    body{margin:0;background:#f5f8f8;color:#17343d;font-family:system-ui,sans-serif}
+    header,main,footer{max-width:1280px;margin:auto;padding:22px}
+    header{background:#fff;border-bottom:1px solid #d5e0e3}
+    h1{margin:.2em 0}p{line-height:1.55}
+    .notice{background:#eaf2f4;padding:14px;border-left:4px solid #238499}
+    .controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:22px 0}
+    select,button{font:inherit;padding:8px 12px;border:1px solid #acc1c7;background:#fff;border-radius:5px}
+    button{cursor:pointer}select{max-width:min(100%,680px)}
+    #case-image{display:block;width:100%;height:auto;border:1px solid #c4d3d7;background:#fff}
+    .meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+    .meta article{background:#fff;padding:14px;border:1px solid #d5e0e3}
+    .meta strong{display:block;margin-bottom:4px}
+    .small{font-size:.9rem;color:#415b62}
+    .error{color:#8d2323}
+  </style>
+</head>
+<body>
+<header>
+  <p><a href="../index.html">← Benchmark 1</a></p>
+  <h1>Benchmark 1: side-by-side model outputs</h1>
+  <p>For each of 106 development evaluation images, compare the original H&amp;E, expert annotation, Bora, U-Net, VISTA-PATH and MedSAM in the same image frame.</p>
+</header>
+<main>
+  <p class="notice"><strong>Development evidence.</strong> These images were inspected during method development, so this gallery is not an untouched test. Scores below use different class sets for different tools and must not be read as one overall ranking. The older 116-image interactive display on the home page is a separate historical benchmark.</p>
+  <div class="controls">
+    <label for="dataset">Dataset</label><select id="dataset"><option value="">All datasets</option></select>
+    <label for="case">Image</label><select id="case"></select>
+    <button id="previous" type="button">Previous</button><button id="next" type="button">Next</button>
+    <span id="position" aria-live="polite"></span>
+  </div>
+  <p id="case-title"></p>
+  <a id="full-image" href="#"><img id="case-image" alt="Six aligned image panels"></a>
+  <p class="small">Select the figure to open it at full size. Uncolored regions in a model panel are not necessarily blank tissue; they may be unmatched classes or absent predictions.</p>
+  <div id="scores" class="meta"></div>
+  <h2>How to read the panels</h2>
+  <div class="meta">
+    <article><strong>Bora</strong>Image-derived groups followed by fastPLS class predictions. The classifier was trained under a different tile rule from this revised mask run.</article>
+    <article><strong>Class-aware U-Net</strong>Supervised on the 397 training images with expert masks; no inference prompt.</article>
+    <article><strong>VISTA-PATH</strong>Externally pretrained. Only predeclared matched tissue classes are colored; unmatched classes are left uncolored. Source overlap cannot be fully excluded.</article>
+    <article><strong>MedSAM</strong>Prompt-guided masks for tumor, stroma and necrosis only. Its boxes came from an earlier U-Net, not the expert or the U-Net panel shown here. Some cases received no box for a role.</article>
+  </div>
+  <p class="small">Scores are image-level mean intersection over union on the explicitly named expert-present or mapped roles. A missing score means the corresponding comparison was not defined for that image.</p>
+</main>
+<footer><a href="../attribution.html">Attribution and reuse terms</a></footer>
+<script src="gallery.js" defer></script>
+</body>
+</html>
