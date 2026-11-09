@@ -79,7 +79,7 @@ function showResponses(row){
   const grid=document.getElementById("response-grid");
   const items=[];
   for(let cls=1;cls<=24;cls++){
-    const path=`bw-responses/${row.id}/class-${String(cls).padStart(2,"0")}.webp`;
+    const path=`bw-responses-v2/${row.id}/class-${String(cls).padStart(2,"0")}.webp`;
     const figure=document.createElement("figure");
     const link=document.createElement("a");link.href=path;
     const map=document.createElement("img");map.src=path;map.loading="lazy";

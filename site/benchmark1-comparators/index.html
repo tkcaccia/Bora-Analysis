@@ -115,7 +115,7 @@
   </section>
   <section aria-labelledby="response-heading" id="class-responses">
     <h2 id="response-heading">Black-and-white response maps for every tissue classification</h2>
-    <p>For this selected image, the 24 maps below show the frozen class-aware U-Net response for each tissue class. The model was fitted on the 397 training images and expert masks. Each map uses the same scale: black means probability 0 and white means probability 1. Responses are model predictions; they are not expert annotations, Bora group responses, or accuracy scores. Display copies are at most 640 pixels on the long edge.</p>
+    <p>For this selected image, the 24 maps below show the frozen class-aware U-Net response for each tissue class. The model was fitted on the 397 training images and expert masks. Overlapping predictions are blended with tapered tile edges to avoid visible stitching lines. Each map uses the same scale: black means probability 0 and white means probability 1. Responses are model predictions; they are not expert annotations, Bora group responses, or accuracy scores. Display copies are at most 640 pixels on the long edge.</p>
     <div id="response-grid" class="response-grid" aria-live="polite"></div>
   </section>
   <section aria-labelledby="pipeline-heading">
@@ -140,6 +140,6 @@
   <p class="small">Download the audited <a href="per-case-106.csv">106-image score table</a> and <a href="per-class-24.csv">24-class denominators and scores</a>.</p>
 </main>
 <footer><a href="../attribution.html">Attribution and reuse terms</a></footer>
-<script src="gallery.js?v=bw106-v1" defer></script>
+<script src="gallery.js?v=bw106-v2" defer></script>
 </body>
 </html>
