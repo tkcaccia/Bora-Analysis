@@ -151,7 +151,7 @@ def assemble():
     root = (SITE / "index.html").read_text()
     root = re.sub(r'<details><summary>Inspect tissues in the other benchmarks</summary>.*?</details>', "", root, flags=re.S)
     root = re.sub(r'<!-- BENCHMARK 1 RERUN STATUS[^>]*--><aside.*?</aside>',
-        '<aside role="status" class="notice"><strong>Development evaluation.</strong> The 503-image full-channel rerun is complete. <a href="benchmark1-comparators/">Compare Bora, expert annotations, U-Net, VISTA-PATH and MedSAM on all 106 development evaluation images</a>. The images were inspected during development, and model scores use different matched class sets. <a href="benchmark1-failures/">View the 58 images without a scored result in the earlier image-only Bora run</a>. The interactive gallery below is an older controlled display.</aside>', root, flags=re.S)
+        '<aside role="status" class="notice"><strong>Development evaluation.</strong> The 503-image full-channel rerun is complete. <a href="benchmark1-comparators/">Compare Bora, expert annotations, U-Net, VISTA-PATH and MedSAM on all 87 development evaluation images</a>. The images were inspected during development, and model scores use different matched class sets. <a href="benchmark1-failures/">View the 56 images without a scored result in the earlier image-only Bora run</a>. The interactive gallery below is an older controlled display.</aside>', root, flags=re.S)
     (OUTPUT / "index.html").write_text(root)
     shutil.copytree(PREPARED, OUTPUT / "visium-hd")
     cards = "".join(f'<article class="tissue-card"><a class="card-preview" href="{slug}.html"><img loading="lazy" src="{slug}/he-overview.jpg" alt="{escape(title)} H&amp;E overview"></a><div class="card-body"><h2>{escape(title)}</h2><p>Exploratory H&amp;E result · KODAMA plot · nine paired fields</p><a href="{slug}.html">View result →</a></div></article>' for slug, (title, _) in CASES.items())
@@ -178,9 +178,9 @@ def verify():
     comparator = OUTPUT / "benchmark1-comparators"
     manifest = json.loads((comparator / "cases.json").read_text())
     assert manifest["status"] == "AUDITED_PUBLIC_BENCHMARK1_COMPARATOR_VISUALS"
-    assert manifest["case_count"] == 106 == len(manifest["cases"])
+    assert manifest["case_count"] == 87 == len(manifest["cases"])
     assert not manifest["untouched_test"]
-    assert len(list(comparator.glob("case-*.webp"))) == 106
+    assert len(list(comparator.glob("case-*.webp"))) == 87
     for row in manifest["cases"]:
         assert re.fullmatch(r"case-\d{3}\.webp", row["image"])
         path = comparator / row["image"]
