@@ -33,7 +33,7 @@ assert receipt["format"] == "bora-public-site-v1" and receipt["public_wsi_count"
 files = {str(p.relative_to(site)): p for p in site.rglob("*") if p.is_file() and p.name != "PUBLIC_RELEASE_VERIFIED.json"}
 assert set(files) == set(receipt["file_sha256"]), "Asset set changed after verification"
 assert sum(p.stat().st_size for p in files.values()) == receipt["size_bytes"]
-assert receipt["size_bytes"] < 900_000_000
+assert receipt["size_bytes"] < 950_000_000
 for rel, path in files.items():
     assert path.stat().st_size < 100_000_000, rel
     assert not any(term in rel.lower() for term in FORBIDDEN), rel
@@ -51,5 +51,10 @@ for rel, path in files.items():
                     target = (path.parent / local).resolve()
                     assert target.is_relative_to(site) and target.exists(), (rel, link)
 assert len(list((site / "visium-hd").glob("*.html"))) == 14
+assert receipt["grayscale_group_map_count"] == 143
+assert len(list((site / "visium-hd").glob("*/group-*.webp"))) == 143
+for page in (site / "visium-hd").glob("*.html"):
+    if page.name != "index.html":
+        assert '<section id="groups">' in page.read_text(), page
 assert all((site / section / "index.html").is_file() for section in ("visium", "visium-hd"))
 print(f"Verified public-only Pages artifact: {len(files)} files, {receipt['size_bytes']/1e6:.1f} MB")

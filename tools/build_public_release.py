@@ -58,6 +58,15 @@ def resized(source, target, limit=1500):
         image.save(target, "JPEG", quality=84, optimize=True, progressive=True)
 
 
+def resized_grayscale(source, target):
+    from PIL import Image
+    with Image.open(source) as image:
+        assert image.mode == "L", source
+        image.thumbnail((1200, 1200), getattr(Image, "Resampling", Image).LANCZOS)
+        target.parent.mkdir(parents=True, exist_ok=True)
+        image.save(target, "WEBP", quality=82, method=6)
+
+
 def prepare():
     PREPARED.mkdir(exist_ok=True)
     for slug, (title, source_dir) in CASES.items():
@@ -89,18 +98,38 @@ def prepare():
         (target / "SOURCE.json").write_text(json.dumps({"title": title, "source_directory": source_dir,
             "source_credits": "10x Genomics public example H&E" if slug.startswith("public-10x") else "NCI GDC open-access TCGA-ACC H&E",
             "visuals_are_downsampled": True, "result_status": "exploratory"}, indent=2) + "\n")
+    for slug, (_, source_dir) in CASES.items():
+        source = SITE / "visium-hd" / source_dir
+        target = PREPARED / slug
+        groups = sorted(source.glob("group-*.jpg"))
+        assert groups, source
+        assert [p.name for p in groups] == [f"group-{i:02d}.jpg" for i in range(1, len(groups) + 1)]
+        for group in groups:
+            output = target / (group.stem + ".webp")
+            if not output.exists():
+                resized_grayscale(group, output)
     print(f"Prepared {len(CASES)} public WSI previews")
 
 
 def page(slug, title):
     case = PREPARED / slug
     geo = f'<p><a href="{slug}/Bora-GeoJSON.gz" download>Download compressed Bora GeoJSON</a></p>' if (case / "Bora-GeoJSON.gz").exists() else ""
+    group_files = sorted(case.glob("group-*.webp"))
+    assert group_files and [p.name for p in group_files] == [f"group-{i:02d}.webp" for i in range(1, len(group_files) + 1)]
+    groups = ('<section id="groups"><h2>Grayscale group responses across the full slide</h2>'
+              '<p class="note">These black-and-white maps show each anonymous group relative to its '
+              'strongest competing group. They are diagnostic displays, not expert tissue labels.</p>'
+              '<div class="group-grid">' + ''.join(
+                  f'<figure><img loading="lazy" src="{slug}/{p.name}" '
+                  f'alt="Grayscale response for anonymous Bora group {i:02d}">'
+                  f'<figcaption>Group {i:02d} versus strongest competing group</figcaption></figure>'
+                  for i, p in enumerate(group_files, 1)) + '</div></section>')
     zooms = "".join(f'<section class="zoom-pair"><h3>{kind.title()} {n:02d}</h3><div class="overview">'
         f'<figure><img loading="lazy" src="{slug}/{kind}-{n:02d}-he.jpg" alt="H&amp;E field"><figcaption>H&amp;E</figcaption></figure>'
         f'<figure><img loading="lazy" src="{slug}/{kind}-{n:02d}-mask.jpg" alt="Bora mask on the same field"><figcaption>Bora mask</figcaption></figure>'
         '</div></section>' for kind in ("wide", "large", "field") for n in (1, 2, 3))
     credit = "10x Genomics public example data" if slug.startswith("public-10x") else "NCI GDC open-access slide image"
-    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(title)} · Bora</title><link rel="stylesheet" href="../viewer.css"><link rel="stylesheet" href="../benchmark-template.css"></head><body class="benchmark-page" data-collection="visium-hd"><a class="skip-link" href="#main-content">Skip to result</a><header class="site-header"><p class="eyebrow">BORA · BENCHMARK VIEWER</p><h1>{escape(title)}</h1><p class="site-intro">Exploratory H&amp;E whole-slide result. Source: {escape(credit)}.</p><nav class="benchmark-sections"><a href="../index.html">1 · Public datasets and masks</a><a href="index.html">2 · Whole Slide Images</a><a href="../visium/">3 · Visium gene clusters</a></nav></header><main id="main-content"><p><a href="index.html">← All public whole-slide examples</a></p><p class="note">Images here are downsampled for web review. Anonymous groups and model-predicted tissue names are exploratory, not expert-validated diagnoses.</p><section id="overview"><h2>Full-slide overview</h2><div class="overview"><figure><img src="{slug}/he-overview.jpg" alt="Original H&amp;E overview"><figcaption>H&amp;E overview</figcaption></figure><figure><img src="{slug}/mask-overview.jpg" alt="Bora result on H&amp;E"><figcaption>Bora output and contours</figcaption></figure></div></section><section id="kodama"><h2>KODAMA embedding</h2><figure><img src="{slug}/kodama-groups.png" alt="KODAMA plot with Bora groups"><figcaption>KODAMA groups</figcaption></figure></section>{geo}<section id="zooms"><h2>Nine H&amp;E and Bora mask fields</h2>{zooms}</section></main><footer class="site-footer">Research preview · {escape(credit)} · <a href="../attribution.html">Attribution and reuse terms</a></footer></body></html>'''
+    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(title)} · Bora</title><link rel="stylesheet" href="../viewer.css"><link rel="stylesheet" href="../benchmark-template.css"></head><body class="benchmark-page" data-collection="visium-hd"><a class="skip-link" href="#main-content">Skip to result</a><header class="site-header"><p class="eyebrow">BORA · BENCHMARK VIEWER</p><h1>{escape(title)}</h1><p class="site-intro">Exploratory H&amp;E whole-slide result. Source: {escape(credit)}.</p><nav class="benchmark-sections"><a href="../index.html">1 · Public datasets and masks</a><a href="index.html">2 · Whole Slide Images</a><a href="../visium/">3 · Visium gene clusters</a></nav></header><main id="main-content"><p><a href="index.html">← All public whole-slide examples</a></p><p class="note">Images here are downsampled for web review. Anonymous groups and model-predicted tissue names are exploratory, not expert-validated diagnoses.</p><section id="overview"><h2>Full-slide overview</h2><div class="overview"><figure><img src="{slug}/he-overview.jpg" alt="Original H&amp;E overview"><figcaption>H&amp;E overview</figcaption></figure><figure><img src="{slug}/mask-overview.jpg" alt="Bora result on H&amp;E"><figcaption>Bora output and contours</figcaption></figure></div></section><section id="kodama"><h2>KODAMA embedding</h2><figure><img src="{slug}/kodama-groups.png" alt="KODAMA plot with Bora groups"><figcaption>KODAMA groups</figcaption></figure></section>{groups}{geo}<section id="zooms"><h2>Nine H&amp;E and Bora mask fields</h2>{zooms}</section></main><footer class="site-footer">Research preview · {escape(credit)} · <a href="../attribution.html">Attribution and reuse terms</a></footer></body></html>'''
 
 
 def assemble():
@@ -143,7 +172,7 @@ class LocalLinks(HTMLParser):
 def verify():
     files = [p for p in OUTPUT.rglob("*") if p.is_file()]
     total = sum(p.stat().st_size for p in files)
-    assert total < 900_000_000, total
+    assert total < 950_000_000, total
     assert max(p.stat().st_size for p in files) < 100_000_000
     assert len([p for p in (OUTPUT / "visium-hd").glob("*.html")]) == len(CASES) + 1
     comparator = OUTPUT / "benchmark1-comparators"
