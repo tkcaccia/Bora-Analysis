@@ -1,5 +1,5 @@
 {
-  "status": "AUDITED_BENCHMARK1_TWO_STAGE_COMPARISON_DEVELOPMENT_ONLY",
+  "status": "AUDITED_BENCHMARK1_TWO_STAGE_RGB_COMPARISON_DEVELOPMENT_ONLY",
   "cohort": "106 expert-group-admitted development evaluation images",
   "untouched_test": false,
   "comparison_roles_are_task_specific": true,
@@ -150,7 +150,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.21566810341791584
+        "identification_end_to_end_macro_iou_expert_present": 0.21566810341791584,
+        "rgb_image": "clusters-rgb-001.webp",
+        "rgb_image_sha256": "fcc721efefb7cc8a41c79cf9bb6427ee1b2c416c713c47eb19aa86180771a835",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -261,7 +264,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.1663746127765446
+        "identification_end_to_end_macro_iou_expert_present": 0.1663746127765446,
+        "rgb_image": "clusters-rgb-002.webp",
+        "rgb_image_sha256": "728eab54676cf474c5427d9cae2f4edcc7e4d07673fc1d5154d47309ce683fb2",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -423,7 +429,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.26758773465780483
+        "identification_end_to_end_macro_iou_expert_present": 0.26758773465780483,
+        "rgb_image": "clusters-rgb-003.webp",
+        "rgb_image_sha256": "7ff9c0ea1b036f3348784cf8132c7cd95176659a96f19bf9d5ea75946ac4a29c",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -543,7 +552,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.5690597176902291
+        "identification_end_to_end_macro_iou_expert_present": 0.5690597176902291,
+        "rgb_image": "clusters-rgb-004.webp",
+        "rgb_image_sha256": "03fb3258fe7f62edeed6964eaf2f5ba31cb7754654ef80d96f38803b06267280",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -669,7 +681,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.3805135169001439
+        "identification_end_to_end_macro_iou_expert_present": 0.3805135169001439,
+        "rgb_image": "clusters-rgb-005.webp",
+        "rgb_image_sha256": "40b58945c43e0d459ecfdd401ce066e701ce2c4650921e6e2bd6a88c5dc5331a",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -828,7 +843,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.2854046193176882
+        "identification_end_to_end_macro_iou_expert_present": 0.2854046193176882,
+        "rgb_image": "clusters-rgb-006.webp",
+        "rgb_image_sha256": "6e0058aafab62284d85016e4aac793640f4665f09f27fc328bf719b828892ebc",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -993,7 +1011,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.19154012775228924
+        "identification_end_to_end_macro_iou_expert_present": 0.19154012775228924,
+        "rgb_image": "clusters-rgb-007.webp",
+        "rgb_image_sha256": "a7bb2a9e43dbc568c7de3ba9946b06054e8f1d3b6e3b11e0c5877e037b52bae5",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -1139,7 +1160,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.14779639582332108
+        "identification_end_to_end_macro_iou_expert_present": 0.14779639582332108,
+        "rgb_image": "clusters-rgb-008.webp",
+        "rgb_image_sha256": "baa1eea4d1f48ca4256c432ab0f65e61167a6c471f17945cbbf6a2150d1ef4ce",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -1316,7 +1340,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.13786809353130472
+        "identification_end_to_end_macro_iou_expert_present": 0.13786809353130472,
+        "rgb_image": "clusters-rgb-009.webp",
+        "rgb_image_sha256": "ecc10963e0587baf05c663a69853caac33ebf7d010d3f53cc2d0d543668e7171",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -1462,7 +1489,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.17753368472992032
+        "identification_end_to_end_macro_iou_expert_present": 0.17753368472992032,
+        "rgb_image": "clusters-rgb-010.webp",
+        "rgb_image_sha256": "360fa79b868bbabd9b8c3b5ca28dc51f935f0b3173e5aa283de50bee228df9fd",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -1581,7 +1611,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.10204837381967105
+        "identification_end_to_end_macro_iou_expert_present": 0.10204837381967105,
+        "rgb_image": "clusters-rgb-011.webp",
+        "rgb_image_sha256": "6b3c4dd7379267ab908563ebf64d58a027c4ec08410e37b8fb2f91751425f5fa",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -1751,7 +1784,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.22879373861906005
+        "identification_end_to_end_macro_iou_expert_present": 0.22879373861906005,
+        "rgb_image": "clusters-rgb-012.webp",
+        "rgb_image_sha256": "07664be1d2aca624c86a6c2550ec2f74fbea3ecd95a82df3cd8d503f32b1a485",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -1887,7 +1923,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.28608854341354634
+        "identification_end_to_end_macro_iou_expert_present": 0.28608854341354634,
+        "rgb_image": "clusters-rgb-013.webp",
+        "rgb_image_sha256": "b430452af1b31f7b3ecedfe7e183eb3f6de39c1c4aa3c00e5778e89f241594a8",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -2017,7 +2056,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.24728023910739272
+        "identification_end_to_end_macro_iou_expert_present": 0.24728023910739272,
+        "rgb_image": "clusters-rgb-014.webp",
+        "rgb_image_sha256": "8fdcc11783da3b3d7bf1e08d01ff23f7873455f1bba18e5f0e4646a3368728e4",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -2170,7 +2212,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.21753763666165513
+        "identification_end_to_end_macro_iou_expert_present": 0.21753763666165513,
+        "rgb_image": "clusters-rgb-015.webp",
+        "rgb_image_sha256": "e71759635ab3e5631124707fa8dc2b87e32b8ea58a151de83bcd10427a7f2ba7",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -2304,7 +2349,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.15399805537089278
+        "identification_end_to_end_macro_iou_expert_present": 0.15399805537089278,
+        "rgb_image": "clusters-rgb-016.webp",
+        "rgb_image_sha256": "3a96d7eb5b61dec5c052dea0808485db3c3dfac739ca7895394e3d9808df5f73",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -2415,7 +2463,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.15470132450634708
+        "identification_end_to_end_macro_iou_expert_present": 0.15470132450634708,
+        "rgb_image": "clusters-rgb-017.webp",
+        "rgb_image_sha256": "6eaf97f4449bc13b31986e2e5ec4804a475772e71cc43a8e8fad3590f3e902cb",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -2545,7 +2596,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.2857467368408849
+        "identification_end_to_end_macro_iou_expert_present": 0.2857467368408849,
+        "rgb_image": "clusters-rgb-018.webp",
+        "rgb_image_sha256": "75905227c0dcd458c33092eb82ec94b589a5ed6c5266b5103da04585f3887d36",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -2675,7 +2729,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.24049787177671356
+        "identification_end_to_end_macro_iou_expert_present": 0.24049787177671356,
+        "rgb_image": "clusters-rgb-019.webp",
+        "rgb_image_sha256": "474115c85235a45030d205f98e060f3c97dc8f7e687137c4072fde141560850e",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -2805,7 +2862,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.3219765289862133
+        "identification_end_to_end_macro_iou_expert_present": 0.3219765289862133,
+        "rgb_image": "clusters-rgb-020.webp",
+        "rgb_image_sha256": "8df0ac4826be7ad93106f280d3e8615e51ad67018cdc613a1cfdb7aaf9778bf1",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -2929,7 +2989,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.32328938417518366
+        "identification_end_to_end_macro_iou_expert_present": 0.32328938417518366,
+        "rgb_image": "clusters-rgb-021.webp",
+        "rgb_image_sha256": "b373b211cdb3b23fad21f726b5c96465ecccbea06838fb6d1ebbf9e84a859894",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -3053,7 +3116,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.3284616291891109
+        "identification_end_to_end_macro_iou_expert_present": 0.3284616291891109,
+        "rgb_image": "clusters-rgb-022.webp",
+        "rgb_image_sha256": "3d3eb87d8b7eb78c32df14fe057d022cec6e22bddc6c473bca5c0f70d51d923b",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -3183,7 +3249,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.22316181991318704
+        "identification_end_to_end_macro_iou_expert_present": 0.22316181991318704,
+        "rgb_image": "clusters-rgb-023.webp",
+        "rgb_image_sha256": "a69936ce8c1bf7e5e5fc099df6a8dde07195a0ce07d79fefcb77f966eca32f16",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -3359,7 +3428,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.34861039516838865
+        "identification_end_to_end_macro_iou_expert_present": 0.34861039516838865,
+        "rgb_image": "clusters-rgb-024.webp",
+        "rgb_image_sha256": "a81f7e9036ea74c3877c472a789d1f99aa45d5a77d74dd45a433e61ccde0dde4",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -3503,7 +3575,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.12986201386391755
+        "identification_end_to_end_macro_iou_expert_present": 0.12986201386391755,
+        "rgb_image": "clusters-rgb-025.webp",
+        "rgb_image_sha256": "30df2661f2a783d9ce3e2ecf085cbf3552215118e9721a14ac43edfddce3ebc9",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -3671,7 +3746,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.3243898971950735
+        "identification_end_to_end_macro_iou_expert_present": 0.3243898971950735,
+        "rgb_image": "clusters-rgb-026.webp",
+        "rgb_image_sha256": "5568a8f9bd60bfaed1b85207ff32269cd7697aa91af35e17a9cf920a81a59abd",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -3795,7 +3873,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.2885849188397756
+        "identification_end_to_end_macro_iou_expert_present": 0.2885849188397756,
+        "rgb_image": "clusters-rgb-027.webp",
+        "rgb_image_sha256": "9b4f77335fc8ef2c126994826bb250473a8ff4021372d830d32144b667a99785",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -3919,7 +4000,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.35928810520056564
+        "identification_end_to_end_macro_iou_expert_present": 0.35928810520056564,
+        "rgb_image": "clusters-rgb-028.webp",
+        "rgb_image_sha256": "ded08b3d2b1f694f18ee9a40a748e8292ec9e5f76620b9c98c1fda6636cb0f8c",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -4045,7 +4129,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.4056415160708313
+        "identification_end_to_end_macro_iou_expert_present": 0.4056415160708313,
+        "rgb_image": "clusters-rgb-029.webp",
+        "rgb_image_sha256": "2a24a7238a0401a258f4cd65bb7ee494554633d706dbfae76d1fe5ee737c647a",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -4154,7 +4241,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.16863104766986836
+        "identification_end_to_end_macro_iou_expert_present": 0.16863104766986836,
+        "rgb_image": "clusters-rgb-030.webp",
+        "rgb_image_sha256": "5c590aa3f8eaf3d67d12fcbb5d894bae0cd60a85bb59e87ee0114714012d3436",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -4278,7 +4368,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.4152044400194635
+        "identification_end_to_end_macro_iou_expert_present": 0.4152044400194635,
+        "rgb_image": "clusters-rgb-031.webp",
+        "rgb_image_sha256": "9b52531bb4b6053916bc50730075cb34d6fa9866a6a5648060a4d81a34a3e1ce",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -4402,7 +4495,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.42972796195236906
+        "identification_end_to_end_macro_iou_expert_present": 0.42972796195236906,
+        "rgb_image": "clusters-rgb-032.webp",
+        "rgb_image_sha256": "42a5df5fac02c5c3ba9fea83c0aafded8bfa4237f4573d21b33ccaf99b46694e",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -4525,7 +4621,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.038362224082228454
+        "identification_end_to_end_macro_iou_expert_present": 0.038362224082228454,
+        "rgb_image": "clusters-rgb-033.webp",
+        "rgb_image_sha256": "42d42d77e3e37a23e66e503ccb8902d96e7f21c28a27d283608f6969baa0d46d",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -4646,7 +4745,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.12619013251556416
+        "identification_end_to_end_macro_iou_expert_present": 0.12619013251556416,
+        "rgb_image": "clusters-rgb-034.webp",
+        "rgb_image_sha256": "484fe2893c5713c11cd6b4a1bb9336bacbf1d6b0c3c1414eddaef9550bf86be2",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -4756,7 +4858,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.20140311528680419
+        "identification_end_to_end_macro_iou_expert_present": 0.20140311528680419,
+        "rgb_image": "clusters-rgb-035.webp",
+        "rgb_image_sha256": "a6bf807502605e07d9b59651c72d48dff9d4261c40a48d27c1b30996bb8edd15",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -4871,7 +4976,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.11937576283839013
+        "identification_end_to_end_macro_iou_expert_present": 0.11937576283839013,
+        "rgb_image": "clusters-rgb-036.webp",
+        "rgb_image_sha256": "8bcf9cee2424d7a3ae55b6f8fa47c5b80bb967ddbd7f277890fbb3a65cbd32fd",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -4992,7 +5100,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0844874740616478
+        "identification_end_to_end_macro_iou_expert_present": 0.0844874740616478,
+        "rgb_image": "clusters-rgb-037.webp",
+        "rgb_image_sha256": "9207596566ef4e2ddca1f07290a1ced8ef574755e2873460b9805cc51cf1db94",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -5101,7 +5212,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.13947023212189189
+        "identification_end_to_end_macro_iou_expert_present": 0.13947023212189189,
+        "rgb_image": "clusters-rgb-038.webp",
+        "rgb_image_sha256": "a96aa3a3335f946b16f19f42d549b169f279e9b399318a75ab769a99e02325dc",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -5217,7 +5331,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.05155335004602518
+        "identification_end_to_end_macro_iou_expert_present": 0.05155335004602518,
+        "rgb_image": "clusters-rgb-039.webp",
+        "rgb_image_sha256": "b77c340f706907f197bcb92479dac1856e497b2d7104aa662ed74443461a3118",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -5337,7 +5454,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.409132802375136
+        "identification_end_to_end_macro_iou_expert_present": 0.409132802375136,
+        "rgb_image": "clusters-rgb-040.webp",
+        "rgb_image_sha256": "6972c23f2f799b4b6a97a262f7a200c334f212d978efbe8b4b255c6d345970f7",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -5462,7 +5582,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.46145435056777667
+        "identification_end_to_end_macro_iou_expert_present": 0.46145435056777667,
+        "rgb_image": "clusters-rgb-041.webp",
+        "rgb_image_sha256": "ca195c1ac5a980aed20d8c8cef75ac8122e1df5f84a55a3c188968418f5f5347",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -5568,7 +5691,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.3122444898201701
+        "identification_end_to_end_macro_iou_expert_present": 0.3122444898201701,
+        "rgb_image": "clusters-rgb-042.webp",
+        "rgb_image_sha256": "adc04a2ed857c861c22bc9567c9b5c2c187af90887220a4dffa918d70c3a06c0",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -5707,7 +5833,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.1231479271157589
+        "identification_end_to_end_macro_iou_expert_present": 0.1231479271157589,
+        "rgb_image": "clusters-rgb-043.webp",
+        "rgb_image_sha256": "688c5d9cbb6345baca5658b332284ac3acffea00adb9f6252a6d67a324dc1be9",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -5821,7 +5950,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.14504047666710446
+        "identification_end_to_end_macro_iou_expert_present": 0.14504047666710446,
+        "rgb_image": "clusters-rgb-044.webp",
+        "rgb_image_sha256": "8271a007ae63d210becc2e5949e081992f8d9dcf8642860a8e7b245cf8ead19a",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -5934,7 +6066,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.18702084664810206
+        "identification_end_to_end_macro_iou_expert_present": 0.18702084664810206,
+        "rgb_image": "clusters-rgb-045.webp",
+        "rgb_image_sha256": "5076d7875fd7e293747861fae9bd2ab42b805396daed42c0a0584fc68c3c9981",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -6058,7 +6193,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.04604325201808983
+        "identification_end_to_end_macro_iou_expert_present": 0.04604325201808983,
+        "rgb_image": "clusters-rgb-046.webp",
+        "rgb_image_sha256": "84bc51e95607dd82c4801703699a758b4ce70dfaf36932fd1b0417396113dac2",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -6168,7 +6306,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.2256948982298738
+        "identification_end_to_end_macro_iou_expert_present": 0.2256948982298738,
+        "rgb_image": "clusters-rgb-047.webp",
+        "rgb_image_sha256": "867c5d1a26ccded24160ae590a078b485d83f6d232c283793c85776c8835b6ed",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -6286,7 +6427,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.11482057755365682
+        "identification_end_to_end_macro_iou_expert_present": 0.11482057755365682,
+        "rgb_image": "clusters-rgb-048.webp",
+        "rgb_image_sha256": "ef43cde806a21e9ed40f9e98eb61cd3ffdda74ffc17c21066035122d6b58dfe3",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -6410,7 +6554,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.23111768644828343
+        "identification_end_to_end_macro_iou_expert_present": 0.23111768644828343,
+        "rgb_image": "clusters-rgb-049.webp",
+        "rgb_image_sha256": "33785162b373a51d36c10c4412a00509d08e269822e26cc64512b76bcbbadc8e",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -6561,7 +6708,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.32399291754798487
+        "identification_end_to_end_macro_iou_expert_present": 0.32399291754798487,
+        "rgb_image": "clusters-rgb-050.webp",
+        "rgb_image_sha256": "43016bb705867fd920cad87ff7f52b884bac5b7a2d45b078e1113264463de856",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -6689,7 +6839,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.10840876942158267
+        "identification_end_to_end_macro_iou_expert_present": 0.10840876942158267,
+        "rgb_image": "clusters-rgb-051.webp",
+        "rgb_image_sha256": "181f9a67ad89f50b749f0368f8444e13a35ddc3a6b873f330abee2c37e4e46cc",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -6813,7 +6966,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.18827593602549175
+        "identification_end_to_end_macro_iou_expert_present": 0.18827593602549175,
+        "rgb_image": "clusters-rgb-052.webp",
+        "rgb_image_sha256": "029c9e0a700d10f1427bf55863db6296a686a395c97e9ff65f838067ee8cf5b2",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -6937,7 +7093,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.25485465177529815
+        "identification_end_to_end_macro_iou_expert_present": 0.25485465177529815,
+        "rgb_image": "clusters-rgb-053.webp",
+        "rgb_image_sha256": "a4f0c3ab97090e843118eb76764bf4d12f6c06455d03e38217bca6d46e78e404",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -7065,7 +7224,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.10822335256667753
+        "identification_end_to_end_macro_iou_expert_present": 0.10822335256667753,
+        "rgb_image": "clusters-rgb-054.webp",
+        "rgb_image_sha256": "e184e659f85164da674fc03624b42fd1aeafbc40d4368cb6d7443589a77499dd",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -7193,7 +7355,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.07688718623782413
+        "identification_end_to_end_macro_iou_expert_present": 0.07688718623782413,
+        "rgb_image": "clusters-rgb-055.webp",
+        "rgb_image_sha256": "8dc3691f0753249136ee5580672971e6c9974bedf28bba08a1a7d03da341bb00",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -7302,7 +7467,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.10996912779163394
+        "identification_end_to_end_macro_iou_expert_present": 0.10996912779163394,
+        "rgb_image": "clusters-rgb-056.webp",
+        "rgb_image_sha256": "6d96822651c7b9fc2d6de91a80815fc9ea736072fe6fb232db2847ecd46550ad",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -7426,7 +7594,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.31232097201093895
+        "identification_end_to_end_macro_iou_expert_present": 0.31232097201093895,
+        "rgb_image": "clusters-rgb-057.webp",
+        "rgb_image_sha256": "9858c45527d967e50fb211e95afadf8ed99211f0a603937860fa2a6801d02cf1",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -7550,7 +7721,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.16796548496480002
+        "identification_end_to_end_macro_iou_expert_present": 0.16796548496480002,
+        "rgb_image": "clusters-rgb-058.webp",
+        "rgb_image_sha256": "f594f24ac743992e01f0deaf6761ad093c76d24270d2e41b0dfa84f96c1a5a48",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -7659,7 +7833,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.20389363644838218
+        "identification_end_to_end_macro_iou_expert_present": 0.20389363644838218,
+        "rgb_image": "clusters-rgb-059.webp",
+        "rgb_image_sha256": "81cddb122b271e821ebe500bd0162d9847d34ab29fc8fd61fd322bb4dd2a0e5e",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -7768,7 +7945,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.15815138129356057
+        "identification_end_to_end_macro_iou_expert_present": 0.15815138129356057,
+        "rgb_image": "clusters-rgb-060.webp",
+        "rgb_image_sha256": "eb7d1a0653ca2e1f956bf44e3a287d3c1e272edc6c24cd1f43107cf6bc35c3ce",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -7880,7 +8060,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.006321261889289301
+        "identification_end_to_end_macro_iou_expert_present": 0.006321261889289301,
+        "rgb_image": "clusters-rgb-061.webp",
+        "rgb_image_sha256": "3fac5a2a0988cbd03924524e27a40f18effcd91882999f47df6bfa7fe6343fbe",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -8008,7 +8191,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.21429648357812472
+        "identification_end_to_end_macro_iou_expert_present": 0.21429648357812472,
+        "rgb_image": "clusters-rgb-062.webp",
+        "rgb_image_sha256": "da785a9b8ca4c93971c7fdd33706c59b8c242ce0832de5a5e4d8be63e1188857",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -8132,7 +8318,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-063.webp",
+        "rgb_image_sha256": "db3fcf6ddfec1c5e5f9db6fa4ce530ddf854b602239290447d172b89fd03b55d",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -8256,7 +8445,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0630817316218052
+        "identification_end_to_end_macro_iou_expert_present": 0.0630817316218052,
+        "rgb_image": "clusters-rgb-064.webp",
+        "rgb_image_sha256": "387cfd78f3aa3604b18a16eb8f75b2327ce03fe629c7342a4228d2d6942892e7",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -8380,7 +8572,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.1278053941608781
+        "identification_end_to_end_macro_iou_expert_present": 0.1278053941608781,
+        "rgb_image": "clusters-rgb-065.webp",
+        "rgb_image_sha256": "14a1e837c512ebca9bcf95c6b9c84e88c36ce00538717880a7ea9d8e029d4bd5",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -8498,7 +8693,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-066.webp",
+        "rgb_image_sha256": "b9fcb6eb3ae68ab922978f5ff52dde859bd30239210ff2995dc8cb0c5b36a19f",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -8626,7 +8824,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.24509995333026888
+        "identification_end_to_end_macro_iou_expert_present": 0.24509995333026888,
+        "rgb_image": "clusters-rgb-067.webp",
+        "rgb_image_sha256": "a4cf0186da5b227d31a20d261006ab54ffad8a8025ae6dd35b792fa9328b763b",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -8760,7 +8961,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.12309329531875143
+        "identification_end_to_end_macro_iou_expert_present": 0.12309329531875143,
+        "rgb_image": "clusters-rgb-068.webp",
+        "rgb_image_sha256": "d8e6d36ee04a798d30645ac32f43be8a9791390777188b99bcaf6b43cb188ace",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -8857,7 +9061,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.950627184029753
+        "identification_end_to_end_macro_iou_expert_present": 0.950627184029753,
+        "rgb_image": "clusters-rgb-069.webp",
+        "rgb_image_sha256": "9f5df63983efb161d17e1796faf0f3f955f688b49085cbdf0e63bdfe25b36028",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -8967,7 +9174,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-070.webp",
+        "rgb_image_sha256": "ae422c720ddb0cb8e9149be83c739d924e39d3e3797693872a8549d716a4c691",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -9064,7 +9274,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-071.webp",
+        "rgb_image_sha256": "d6c710fd5b233f146d3b0ffca6f58fc66bd2032b0d8ad1b8b505f3add5813589",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -9161,7 +9374,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-072.webp",
+        "rgb_image_sha256": "d620907c01e7a402d0348de2077937eb2dd32d6bbbf5e705e0cf05da2d87ef01",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -9258,7 +9474,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-073.webp",
+        "rgb_image_sha256": "ef8d3ea39d6ece81fc1e7293e8ccc7d31bcb4384c8fc46e1f926e849d984d90c",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -9355,7 +9574,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-074.webp",
+        "rgb_image_sha256": "20f615cac00df028aaec1b1d7a13f3728ca9e71936425a3731187bf77596dee0",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -9467,7 +9689,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-075.webp",
+        "rgb_image_sha256": "f91130a0e3f15befb7e3824a4d87363b0bce93da8a464cef96a96a6aaa371637",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -9577,7 +9802,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.7549542887563688
+        "identification_end_to_end_macro_iou_expert_present": 0.7549542887563688,
+        "rgb_image": "clusters-rgb-076.webp",
+        "rgb_image_sha256": "3c291e84f5f5783f5939701aeddd6c93538e958ff7e89c2e3c606d69152ab825",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -9674,7 +9902,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-077.webp",
+        "rgb_image_sha256": "99f3df5d373334541fdde2753d9a219ea432ace32d3db06caa91b730b75530b3",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -9784,7 +10015,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-078.webp",
+        "rgb_image_sha256": "8977e3313db1c347e0faa4408c22e65983eee22ff54e2d6a71a2852b9402b5ab",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -9881,7 +10115,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-079.webp",
+        "rgb_image_sha256": "253f701506062ab6baa0b9c633fc24b275c1e98469907ade41175fd493155599",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -9978,7 +10215,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-080.webp",
+        "rgb_image_sha256": "f3d33044b34c1e80a6a85f8dd7f491182a22035a4e01c9edd20c77e98b54972c",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -10075,7 +10315,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-081.webp",
+        "rgb_image_sha256": "420a171c0b724fbe554d14476b9f75cc6df3326ce1ef03e67cf34fa26bfb3f2f",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -10172,7 +10415,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-082.webp",
+        "rgb_image_sha256": "45b28d13118a050040b98f042bfff681c0a2638f07fea03dcc733cbdcfa449a3",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -10269,7 +10515,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-083.webp",
+        "rgb_image_sha256": "2f8e6476b5b165ff61bca6d881458764ce3f8f08bb09e9b48df0c3cbc7305150",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -10366,7 +10615,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-084.webp",
+        "rgb_image_sha256": "0d24a5af2b8ab446cbbd1045d69516d08cbe2018a3e93cfed537498e5d390e8c",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -10463,7 +10715,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-085.webp",
+        "rgb_image_sha256": "2259d476ad1e9bf50bb4cdbce70fd443de2d339cea63f2eb28c93f2a683202b9",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -10560,7 +10815,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-086.webp",
+        "rgb_image_sha256": "006686f88d99fca87f2d89d582599b0ee7b49bdc28d257bd917277d9d4fd4b61",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -10672,7 +10930,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.841759448901756
+        "identification_end_to_end_macro_iou_expert_present": 0.841759448901756,
+        "rgb_image": "clusters-rgb-087.webp",
+        "rgb_image_sha256": "ae53d6c5a359b2f9943b036b004ebf1d6686aa7e078a5c33d702b7b52dbb830a",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -10786,7 +11047,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-088.webp",
+        "rgb_image_sha256": "d0b6fbfec56b93d233dde518c37f679cdade634f263a1579f4cbd0344aa8dbf6",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -10900,7 +11164,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-089.webp",
+        "rgb_image_sha256": "19ed1ce73a2af85c1810bf6624bdf6019868f7bc101c54b6d1ba4258c3796abc",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -11014,7 +11281,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-090.webp",
+        "rgb_image_sha256": "19f292bd5f63ca936635db98e8d58cbbc2be81865b63706a42cc18520bec326d",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -11134,7 +11404,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.41127949330146124
+        "identification_end_to_end_macro_iou_expert_present": 0.41127949330146124,
+        "rgb_image": "clusters-rgb-091.webp",
+        "rgb_image_sha256": "a28f8e7eed3595e909b998cc06ba4dc2a73811b0a6cd226890c1a8d0be5c6035",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -11237,7 +11510,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-092.webp",
+        "rgb_image_sha256": "e5a19665d75d3ced51198e151c2112679f525ecabd640af92907f3d1a6b38252",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -11371,7 +11647,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-093.webp",
+        "rgb_image_sha256": "bea3ba30f9d3401c78b747c2909371a71fceb9c8a6b2b7a7aac80db24271b902",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -11511,7 +11790,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-094.webp",
+        "rgb_image_sha256": "8af4811d3f8a7416c3da653400d9d303cb6e026f26e972a4298b8b3d9a9d91df",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -11625,7 +11907,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-095.webp",
+        "rgb_image_sha256": "ce5b44a3c0484ee9ec796f2b01d791bbac1121b5fa38df786eeb0e35de82e116",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -11741,7 +12026,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-096.webp",
+        "rgb_image_sha256": "f2e4e2971e189be0106aa83c426a455fcf34904ae75a900c62f98483f03337a0",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -11861,7 +12149,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-097.webp",
+        "rgb_image_sha256": "4e71b195b85b016207ba23d3c5612d3717355930fd5ff030764deb67403b99cd",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -11975,7 +12266,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-098.webp",
+        "rgb_image_sha256": "77ded1b692ede7ca3b77b5170db41737e8ec773ad185ce530306325b44c4875b",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -12123,7 +12417,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.059176259165298485
+        "identification_end_to_end_macro_iou_expert_present": 0.059176259165298485,
+        "rgb_image": "clusters-rgb-099.webp",
+        "rgb_image_sha256": "bf6a4f034bd587be3bae2b824c16d71a33c89dcd89ed773d1038e16f81796534",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -12226,7 +12523,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-100.webp",
+        "rgb_image_sha256": "dafdb49b69ecacfc19d338204c4ffff4e016dbfab4a00044f23d2201b03db268",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -12340,7 +12640,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-101.webp",
+        "rgb_image_sha256": "c4d503be70181d6a665cbc0b1b80cbfff4e38cdcc727a6ff902c3c140e83bd2c",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -12443,7 +12746,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-102.webp",
+        "rgb_image_sha256": "ff8a6eb2ad6a8a03715b83431e360c7c3718c8953344384f5cb295d84455da43",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -12557,7 +12863,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-103.webp",
+        "rgb_image_sha256": "6535fb8dadc1b7cf42dd1b3c6cce09f0260f1749d3bffe408201a16a5ad1f9dc",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -12660,7 +12969,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-104.webp",
+        "rgb_image_sha256": "a0ac8192d18ec68c5e404c89082d2db354c4f16cdc5e8f1f5d8834797dd56aaa",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -12766,7 +13078,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-105.webp",
+        "rgb_image_sha256": "2f396b5229701690acafc4efdd6a375772c933fe31090438ff257e7702ce5526",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     },
     {
@@ -12869,7 +13184,10 @@
             ]
           ]
         },
-        "identification_end_to_end_macro_iou_expert_present": 0.0
+        "identification_end_to_end_macro_iou_expert_present": 0.0,
+        "rgb_image": "clusters-rgb-106.webp",
+        "rgb_image_sha256": "43809c0d49c0e2e6042bc52ef02d09f8590cf674e1dac0ddc82694ea666b26f1",
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
       }
     }
   ],

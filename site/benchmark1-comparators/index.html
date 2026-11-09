@@ -24,8 +24,9 @@
     #kodama-image{display:block;width:100%;height:auto}
     #kodama-caption{line-height:1.5;color:#415b62}
     #pipeline-summary article{min-width:0}
-    #cluster-figure{margin:18px 0;background:#fff;border:1px solid #d5e0e3;padding:14px;max-width:900px}
-    #cluster-image{display:block;width:100%;height:auto}
+    .bora-views{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:16px;margin:18px 0}
+    #cluster-figure,#rgb-figure{margin:0;background:#fff;border:1px solid #d5e0e3;padding:14px}
+    #cluster-image,#rgb-image{display:block;width:100%;height:auto}
     #cluster-legend{display:flex;flex-wrap:wrap;gap:10px 18px;margin:12px 0}
     #cluster-legend span{display:inline-flex;align-items:center;gap:7px}
     #cluster-legend i{width:16px;height:16px;border:1px solid #617078;display:inline-block}
@@ -57,13 +58,19 @@
   <div id="scores" class="meta"></div>
   <section aria-labelledby="two-stage-heading">
     <h2 id="two-stage-heading">Bora: segmentation and tissue identification</h2>
-    <p>Anonymous cluster colors show the final Bora geometry before tissue names are applied. The Bora panel above colors that same geometry with fastPLS tissue predictions.</p>
+    <p>Anonymous cluster colors show the final Bora geometry before tissue names are applied. View the groups over the H&amp;E image or as a standalone RGB mask. The Bora panel above colors that same geometry with fastPLS tissue predictions.</p>
     <p>Across these 106 development images, the image-level means were <strong>0.331 adjusted Rand index</strong> and <strong>0.482 optimally matched IoU</strong> for anonymous groups on covered expert pixels. Bora groups reached 93.9% of expert-annotated pixels on average. The fastPLS name matched the expert-majority tissue in 46.8% of groups per image on average. These conditional scores describe different stages; the end-to-end tissue macro IoU on the full expert-present class rule was 0.164.</p>
-    <figure id="cluster-figure">
-      <a id="cluster-full-image" href="#"><img id="cluster-image" alt="Final Bora mask colored by anonymous cluster over H&amp;E"></a>
-      <figcaption id="cluster-caption"></figcaption>
-      <div id="cluster-legend" aria-label="Anonymous cluster color legend"></div>
-    </figure>
+    <div class="bora-views">
+      <figure id="cluster-figure">
+        <a id="cluster-full-image" href="#"><img id="cluster-image" alt="Final Bora mask colored by anonymous cluster over H&amp;E"></a>
+        <figcaption id="cluster-caption"></figcaption>
+      </figure>
+      <figure id="rgb-figure">
+        <a id="rgb-full-image" href="#"><img id="rgb-image" alt="Standalone RGB Bora group mask on white background"></a>
+        <figcaption>Standalone RGB Bora mask: exact group colors, white outside the final mask. Select to open at full size.</figcaption>
+      </figure>
+    </div>
+    <div id="cluster-legend" aria-label="Anonymous cluster color legend"></div>
     <div id="two-stage-scores" class="meta"></div>
     <h3>Names assigned to the anonymous groups</h3>
     <div class="table-scroll"><table id="group-identification"><thead><tr><th>Group</th><th>Eligible tiles</th><th>fastPLS tissue prediction</th><th>Expert majority in scored area</th><th>Agreement</th></tr></thead><tbody></tbody></table></div>

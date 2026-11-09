@@ -7,6 +7,7 @@ const pipeline=document.getElementById("pipeline-summary"),kodamaFigure=document
 const kodamaImage=document.getElementById("kodama-image"),kodamaCaption=document.getElementById("kodama-caption");
 const kodamaUnavailable=document.getElementById("kodama-unavailable");
 const clusterImage=document.getElementById("cluster-image"),clusterFullImage=document.getElementById("cluster-full-image");
+const rgbImage=document.getElementById("rgb-image"),rgbFullImage=document.getElementById("rgb-full-image");
 const clusterCaption=document.getElementById("cluster-caption"),clusterLegend=document.getElementById("cluster-legend");
 const twoStageScores=document.getElementById("two-stage-scores");
 const groupTable=document.querySelector("#group-identification tbody");
@@ -34,6 +35,9 @@ function show(id){
   const m=stage.metrics;
   clusterImage.src=stage.image;
   clusterFullImage.href=stage.image;
+  rgbImage.src=stage.rgb_image;
+  rgbFullImage.href=stage.rgb_image;
+  rgbImage.alt=`Standalone RGB Bora mask for ${p.clusters} anonymous groups on a white background`;
   clusterImage.alt=`Original H&E with the final Bora geometry colored by ${p.clusters} anonymous clusters`;
   clusterCaption.textContent=`Final Bora group mask · ${p.clusters} anonymous clusters · same image frame as the fastPLS-colored Bora panel above`;
   clusterLegend.innerHTML=stage.palette_hex.map((color,index)=>`<span><i style="background:${color}"></i>Group ${index+1} · ${p.tile_counts_by_group[index]} eligible tiles</span>`).join("");
@@ -69,7 +73,7 @@ function filter(){
   show(location.hash.slice(1));
 }
 fetch("cases.json").then(r=>{if(!r.ok)throw Error(`Gallery manifest: HTTP ${r.status}`);return r.json()}).then(data=>{
-  if(data.status!=="AUDITED_BENCHMARK1_TWO_STAGE_COMPARISON_DEVELOPMENT_ONLY"||data.case_count!==106||data.cases.length!==106)throw Error("Gallery audit is incomplete");
+  if(data.status!=="AUDITED_BENCHMARK1_TWO_STAGE_RGB_COMPARISON_DEVELOPMENT_ONLY"||data.case_count!==106||data.cases.length!==106)throw Error("Gallery audit is incomplete");
   all=data.cases;
   [...new Set(all.map(x=>x.dataset))].sort().forEach(x=>datasetSelect.add(new Option(x.toUpperCase(),x)));
   const requested=all.find(x=>x.id===location.hash.slice(1));
