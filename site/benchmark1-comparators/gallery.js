@@ -73,6 +73,21 @@ function show(id){
     kodamaUnavailable.textContent=`KODAMA plot omitted: ${p.eligible_tiles} eligible tiles, below the 30-tile display threshold. ${p.grouping_route==="small_roi_coverage"?"This image used the small-image coverage route instead of KODAMA.":"The saved clustering remains included in the counts above."}`;
   }
   showSelected(row);
+  showResponses(row);
+}
+function showResponses(row){
+  const grid=document.getElementById("response-grid");
+  const items=[];
+  for(let cls=1;cls<=24;cls++){
+    const path=`bw-responses/${row.id}/class-${String(cls).padStart(2,"0")}.webp`;
+    const figure=document.createElement("figure");
+    const link=document.createElement("a");link.href=path;
+    const map=document.createElement("img");map.src=path;map.loading="lazy";
+    map.alt=`Grayscale U-Net response for ${classNames[cls]} on ${row.dataset} ${row.source_group}; black is 0, white is 1`;
+    const caption=document.createElement("figcaption");caption.textContent=`${cls} · ${classNames[cls]}`;
+    link.append(map);figure.append(link,caption);items.push(figure);
+  }
+  grid.replaceChildren(...items);
 }
 function showSelected(row){
   const v=row.bora_training_selected_view,m=v.metrics;
