@@ -1,6 +1,6 @@
 {
   "format": "bora-public-site-v1",
-  "size_bytes": 803001421,
+  "size_bytes": 803001439,
   "file_count": 1928,
   "public_wsi_count": 13,
   "file_sha256": {
@@ -695,8 +695,8 @@
     "benchmark1-comparators/case-105.webp": "2f9b4aeb42504248e6e095f411e208617001b48eeedb9a78d2c68e4d4d97d4ae",
     "benchmark1-comparators/case-106.webp": "82fc7e5398ff185116e7310caa6a7dbcd3ba1b9a033e16751c622e18aa410ae7",
     "benchmark1-comparators/cases.json": "37a270c32541b84dae3cdaa4a7f5ecd5a6c3aa55a044f944272f088dcd3375ef",
-    "benchmark1-comparators/gallery.js": "9955fcc2d410b55aa00e1a8f3e4366a5fbd85fe2f22d2f2775a46a2b670a7a01",
-    "benchmark1-comparators/index.html": "1aa4430ed008ed7faecd8ddf02d9ac189df1d7395a753cf96a70e9a2680a31ce",
+    "benchmark1-comparators/gallery.js": "4496ad7f06ebffa07ae0c7dc79ace21350ee1860fc7ae3f8985c3a270edd83ed",
+    "benchmark1-comparators/index.html": "a3f10537118614def1a1dfae8a3428cac2f603259b738541444e9768aa693642",
     "benchmark1-comparators/kodama-001.webp": "de50f6288faa0fe22b0e5a6d262731423e754f76dc6d06787cddf40e403d55e8",
     "benchmark1-comparators/kodama-002.webp": "0494f3f7ed695350b8aeed8866ac8a0c5ef282af59631caf08e3c7215e599123",
     "benchmark1-comparators/kodama-003.webp": "456e3e099c14884d1c1abc2ba3887043223ffd7dbd9ab4a9a9bcb180aa5cdf4e",
