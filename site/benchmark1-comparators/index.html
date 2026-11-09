@@ -1,11 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Benchmark 1 · Model outputs · Bora</title>
-  <link rel="stylesheet" href="../viewer.css">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Benchmark 1 · Model outputs · Bora</title>
+<link href="../viewer.css" rel="stylesheet"/>
+<style>
     body{margin:0;background:#f5f8f8;color:#17343d;font-family:system-ui,sans-serif}
     header,main,footer{max-width:1280px;margin:auto;padding:22px}
     header{background:#fff;border-bottom:1px solid #d5e0e3}
@@ -49,106 +50,106 @@
 </head>
 <body>
 <header>
-  <p><a href="../index.html">← Benchmark 1</a></p>
-  <h1>Benchmark 1 validation data: 106 images</h1>
-  <p>For each of 106 development evaluation images, compare the original H&amp;E, expert annotation, Bora, U-Net, DeepLabV3+, VISTA-PATH and MedSAM in the same image frame.</p>
-  <nav class="benchmark1-paths" aria-label="Benchmark 1 result sets">
-    <a href="../index.html#public-datasets"><strong>Training data · Public histology datasets with expert masks</strong><span>Historical controlled expert-mask results</span></a>
-    <a href="index.html" aria-current="page"><strong>Validation data · 106 images</strong><span>Development evaluation and black-and-white class responses</span></a>
-  </nav>
+<p><a href="../index.html">← Benchmark 1</a></p>
+<h1>Benchmark 1 validation data: 87 images</h1>
+<p>For each of 87 development evaluation images, compare the original H&amp;E, expert annotation, Bora, U-Net, DeepLabV3+, VISTA-PATH and MedSAM in the same image frame.</p>
+<nav aria-label="Benchmark 1 result sets" class="benchmark1-paths">
+<a href="../index.html#public-datasets"><strong>Training data · Public histology datasets with expert masks</strong><span>Historical controlled expert-mask results</span></a>
+<a aria-current="page" href="index.html"><strong>Validation data · 87 images</strong><span>Development evaluation and black-and-white class responses</span></a>
+</nav>
 </header>
 <main>
-  <p class="notice"><strong>Development evidence.</strong> These images were inspected during method development, so this gallery is not an untouched test. Scores below use different class sets for different tools and must not be read as one overall ranking. The older 116-image interactive display on the home page is a separate historical benchmark.</p>
-  <p>On the same 106 images and expert-present tissue classes, mean intersection over union was <strong>0.204 for DeepLabV3+</strong>, <strong>0.495 for the class-aware U-Net</strong>, and <strong>0.164 for classic Bora</strong>. The training-selected Bora score is shown separately below. DeepLabV3+ and U-Net used the same 397 expert-masked training images; both Bora routes use image-derived groups and a tissue classifier. These figures are exploratory because the evaluation images had been inspected during Bora development.</p>
-  <div class="controls">
-    <label for="dataset">Dataset</label><select id="dataset"><option value="">All datasets</option></select>
-    <label for="case">Image</label><select id="case"></select>
-    <button id="previous" type="button">Previous</button><button id="next" type="button">Next</button>
-    <span id="position" aria-live="polite"></span>
-  </div>
-  <p id="case-title"></p>
-  <div class="table-scroll"><table id="route-comparison"><thead><tr><th>Bora route</th><th>Starting Virchow2 channels</th><th>Eligible tiles</th><th>Clusters</th><th>Matched segmentation IoU</th><th>Group name agreement</th><th>End-to-end tissue IoU</th></tr></thead><tbody></tbody></table></div>
-  <section aria-labelledby="two-stage-heading">
-    <h2 id="two-stage-heading">Classic Bora: all 1,280 Virchow2 channels available at input</h2>
-    <p>The first RGB image shows Bora's anonymous clusters. The second shows the same mask after fastPLS assigns tissue names. The H&amp;E overlay helps inspect the cluster boundaries. All three use the same saved Bora geometry.</p>
-    <p>Across these 106 development images, the image-level means were <strong>0.331 adjusted Rand index</strong> and <strong>0.482 optimally matched IoU</strong> for anonymous groups on covered expert pixels. Bora groups reached 93.9% of expert-annotated pixels on average. The fastPLS name matched the expert-majority tissue in 46.8% of groups per image on average. These conditional scores describe different stages; the end-to-end tissue macro IoU on the full expert-present class rule was 0.164.</p>
-    <div class="bora-views">
-      <figure id="rgb-figure">
-        <a id="rgb-full-image" href="#"><img id="rgb-image" alt="Standalone RGB Bora group mask on white background"></a>
-        <figcaption><strong>1 · Segmentation:</strong> Bora clusters in anonymous colors. White is outside the final mask.</figcaption>
-      </figure>
-      <figure id="prediction-figure">
-        <a id="prediction-full-image" href="#"><img id="prediction-image" alt="Standalone RGB Bora mask colored by fastPLS tissue predictions"></a>
-        <figcaption><strong>2 · Identification:</strong> the same regions colored by their fastPLS tissue predictions.</figcaption>
-      </figure>
-      <figure id="cluster-figure">
-        <a id="cluster-full-image" href="#"><img id="cluster-image" alt="Final Bora clusters over H&amp;E"></a>
-        <figcaption id="cluster-caption"></figcaption>
-      </figure>
-    </div>
-    <p><strong>Cluster colors</strong></p><div id="cluster-legend" aria-label="Anonymous cluster color legend"></div>
-    <p><strong>Predicted tissue colors</strong></p><div id="prediction-legend" aria-label="Predicted tissue color legend"></div>
-    <h3>Segmentation performance</h3>
-    <div id="segmentation-scores" class="meta"></div>
-    <h3>Tissue identification performance</h3>
-    <div id="identification-scores" class="meta"></div>
-    <h3>Names assigned to the anonymous groups</h3>
-    <div class="table-scroll"><table id="group-identification"><thead><tr><th>Group</th><th>Eligible tiles</th><th>fastPLS tissue prediction</th><th>Expert majority in scored area</th><th>Agreement</th></tr></thead><tbody></tbody></table></div>
-    <p class="small">Segmentation scores compare anonymous Bora groups with expert tissue regions without assigning tissue names to the groups. They use expert-annotated pixels reached by a Bora group; the coverage score shows how much annotated tissue was reached. Identification scores compare each fastPLS name with the expert majority within that Bora group. The end-to-end macro IoU also reflects segmentation and missed tissue. These are development images, not an untouched test.</p>
-    <p class="small"><a href="bora-two-stage-per-case.csv">Download the 106-image segmentation and identification table</a>.</p>
-  </section>
-  <section aria-labelledby="selected-heading">
-    <h2 id="selected-heading">Training-selected Bora: start from 256 channels</h2>
-    <p>A single set of 256 original Virchow2 channels was selected using only 397 training images and 1,192 expert-mapped training groups. This route starts with those channels <em>before</em> KODAMA, graph clustering, Bora's within-image 64-channel selection, mask fitting, and fastPLS tissue naming. Its fastPLS head was refitted on the same frozen training set using those channels. No evaluation image or whole slide supplied a feature-selection or classifier target. The historical training-group tile rule differs from this strict evaluation tile rule.</p>
-    <p id="selected-summary" class="notice"></p>
-    <div id="selected-pipeline-summary" class="meta"></div>
-    <div class="bora-views">
-      <figure class="selected-figure"><a id="selected-rgb-full" href="#"><img id="selected-rgb" alt="Training-selected Bora anonymous cluster RGB map"></a><figcaption><strong>1 · Segmentation:</strong> anonymous cluster colors.</figcaption></figure>
-      <figure class="selected-figure"><a id="selected-prediction-full" href="#"><img id="selected-prediction" alt="Training-selected Bora fastPLS tissue prediction RGB map"></a><figcaption><strong>2 · Identification:</strong> same geometry, fastPLS tissue colors.</figcaption></figure>
-      <figure class="selected-figure"><a id="selected-overlay-full" href="#"><img id="selected-overlay" alt="Training-selected Bora clusters over H&E"></a><figcaption>Final training-selected groups over the original H&amp;E.</figcaption></figure>
-    </div>
-    <p><strong>Training-selected cluster colors</strong></p><div id="selected-cluster-legend"></div>
-    <p><strong>Training-selected predicted tissue colors</strong></p><div id="selected-prediction-legend"></div>
-    <h3>Training-selected segmentation</h3><div id="selected-segmentation-scores" class="meta"></div>
-    <h3>Training-selected tissue identification</h3><div id="selected-identification-scores" class="meta"></div>
-    <h3>Names assigned to training-selected groups</h3>
-    <div class="table-scroll"><table id="selected-group-identification"><thead><tr><th>Group</th><th>Eligible tiles</th><th>fastPLS tissue prediction</th><th>Expert majority in scored area</th><th>Agreement</th></tr></thead><tbody></tbody></table></div>
-    <figure id="selected-kodama-figure" hidden><img id="selected-kodama-image" alt="KODAMA plot for the training-selected route"><figcaption id="selected-kodama-caption"></figcaption></figure>
-    <p id="selected-kodama-unavailable" class="small" hidden></p>
-  </section>
-  <section aria-labelledby="comparators-heading">
-    <h2 id="comparators-heading">Bora and external methods on the same H&amp;E image</h2>
-    <a id="full-image" href="#"><img id="case-image" alt="Seven aligned image panels"></a>
-    <p class="small">Select the figure to open it at full size. The tissue-class color legend is printed on every figure. Uncolored regions in a model panel may be unmatched classes or absent predictions.</p>
-    <div id="scores" class="meta"></div>
-  </section>
-  <section aria-labelledby="response-heading" id="class-responses">
-    <h2 id="response-heading">Black-and-white response maps for every tissue classification</h2>
-    <p>For this selected image, the 24 maps below show the frozen class-aware U-Net response for each tissue class. The model was fitted on the 397 training images and expert masks. Overlapping predictions are blended with tapered tile edges to avoid visible stitching lines. Each map uses the same scale: black means probability 0 and white means probability 1. Responses are model predictions; they are not expert annotations, Bora group responses, or accuracy scores. Display copies are at most 640 pixels on the long edge.</p>
-    <div id="response-grid" class="response-grid" aria-live="polite"></div>
-  </section>
-  <section aria-labelledby="pipeline-heading">
-    <h2 id="pipeline-heading">Bora pipeline for this image</h2>
-    <div id="pipeline-summary" class="meta"></div>
-    <figure id="kodama-figure" hidden>
-      <img id="kodama-image" alt="Image-only KODAMA scatter plot with tile counts for each anonymous group">
-      <figcaption id="kodama-caption"></figcaption>
-    </figure>
-    <p id="kodama-unavailable" class="small" hidden></p>
-    <p class="small">Eligible tiles have strictly less than 10% background, counting padding. The cluster count and tile counts describe image-only Bora inputs; tissue names are later fastPLS predictions. KODAMA plots are displayed from the saved fit when at least 30 eligible tiles are available. Plot colors identify anonymous groups and use a separate key from the tissue-class colors in the comparison figure.</p>
-  </section>
-  <h2>How to read the panels</h2>
-  <div class="meta">
-    <article><strong>Bora</strong>Image-derived groups followed by fastPLS class predictions. The classifier was trained under a different tile rule from this revised mask run.</article>
-    <article><strong>Class-aware U-Net</strong>Supervised on the 397 training images with expert masks; no inference prompt.</article>
-    <article><strong>DeepLabV3+</strong>Supervised on the same frozen 397 training images and expert masks as U-Net; no inference prompt. Randomly initialized ResNet-50 backbone.</article>
-    <article><strong>VISTA-PATH</strong>Externally pretrained. Only predeclared matched tissue classes are colored; unmatched classes are left uncolored. Source overlap cannot be fully excluded.</article>
-    <article><strong>MedSAM</strong>Prompt-guided masks for tumor, stroma and necrosis only. Its boxes came from an earlier U-Net, not the expert or the U-Net panel shown here. Some cases received no box for a role.</article>
-  </div>
-  <p class="small">Scores are image-level mean intersection over union on the explicitly named expert-present or mapped roles. A missing score means the corresponding comparison was not defined for that image.</p>
-  <p class="small">Download the audited <a href="per-case-106.csv">106-image score table</a> and <a href="per-class-24.csv">24-class denominators and scores</a>.</p>
+<p class="notice"><strong>Development evidence.</strong> These images were inspected during method development, so this gallery is not an untouched test. Scores below use different class sets for different tools and must not be read as one overall ranking. The older 116-image interactive display on the home page is a separate historical benchmark.</p>
+<p>Across the 87 retained development images, mean expert-present tissue macro IoU was 0.189 for DeepLabV3+, 0.508 for class-aware U-Net, and 0.194 for classic Bora. These exploratory images were inspected during method development; comparator roles differ by method.</p>
+<div class="controls">
+<label for="dataset">Dataset</label><select id="dataset"><option value="">All datasets</option></select>
+<label for="case">Image</label><select id="case"></select>
+<button id="previous" type="button">Previous</button><button id="next" type="button">Next</button>
+<span aria-live="polite" id="position"></span>
+</div>
+<p id="case-title"></p>
+<div class="table-scroll"><table id="route-comparison"><thead><tr><th>Bora route</th><th>Starting Virchow2 channels</th><th>Eligible tiles</th><th>Clusters</th><th>Matched segmentation IoU</th><th>Group name agreement</th><th>End-to-end tissue IoU</th></tr></thead><tbody></tbody></table></div>
+<section aria-labelledby="two-stage-heading">
+<h2 id="two-stage-heading">Classic Bora: all 1,280 Virchow2 channels available at input</h2>
+<p>The first RGB image shows Bora's anonymous clusters. The second shows the same mask after fastPLS assigns tissue names. The H&amp;E overlay helps inspect the cluster boundaries. All three use the same saved Bora geometry.</p>
+<p>Across the 87 retained development images, image-level mean adjusted Rand index was 0.333, optimally matched segmentation IoU was 0.430, annotated coverage was 94.9%, and group-majority tissue-name agreement was 56.1%. End-to-end macro IoU was 0.194.</p>
+<div class="bora-views">
+<figure id="rgb-figure">
+<a href="#" id="rgb-full-image"><img alt="Standalone RGB Bora group mask on white background" id="rgb-image"/></a>
+<figcaption><strong>1 · Segmentation:</strong> Bora clusters in anonymous colors. White is outside the final mask.</figcaption>
+</figure>
+<figure id="prediction-figure">
+<a href="#" id="prediction-full-image"><img alt="Standalone RGB Bora mask colored by fastPLS tissue predictions" id="prediction-image"/></a>
+<figcaption><strong>2 · Identification:</strong> the same regions colored by their fastPLS tissue predictions.</figcaption>
+</figure>
+<figure id="cluster-figure">
+<a href="#" id="cluster-full-image"><img alt="Final Bora clusters over H&amp;E" id="cluster-image"/></a>
+<figcaption id="cluster-caption"></figcaption>
+</figure>
+</div>
+<p><strong>Cluster colors</strong></p><div aria-label="Anonymous cluster color legend" id="cluster-legend"></div>
+<p><strong>Predicted tissue colors</strong></p><div aria-label="Predicted tissue color legend" id="prediction-legend"></div>
+<h3>Segmentation performance</h3>
+<div class="meta" id="segmentation-scores"></div>
+<h3>Tissue identification performance</h3>
+<div class="meta" id="identification-scores"></div>
+<h3>Names assigned to the anonymous groups</h3>
+<div class="table-scroll"><table id="group-identification"><thead><tr><th>Group</th><th>Eligible tiles</th><th>fastPLS tissue prediction</th><th>Expert majority in scored area</th><th>Agreement</th></tr></thead><tbody></tbody></table></div>
+<p class="small">Segmentation scores compare anonymous Bora groups with expert tissue regions without assigning tissue names to the groups. They use expert-annotated pixels reached by a Bora group; the coverage score shows how much annotated tissue was reached. Identification scores compare each fastPLS name with the expert majority within that Bora group. The end-to-end macro IoU also reflects segmentation and missed tissue. These are development images, not an untouched test.</p>
+<p class="small"><a href="bora-two-stage-per-case.csv">Download the 87-image segmentation and identification table</a>.</p>
+</section>
+<section aria-labelledby="selected-heading">
+<h2 id="selected-heading">Training-selected Bora: start from 256 channels</h2>
+<p>A single set of 256 original Virchow2 channels was selected using only 397 training images and 1,192 expert-mapped training groups. This route starts with those channels <em>before</em> KODAMA, graph clustering, Bora's within-image 64-channel selection, mask fitting, and fastPLS tissue naming. Its fastPLS head was refitted on the same frozen training set using those channels. No evaluation image or whole slide supplied a feature-selection or classifier target. The historical training-group tile rule differs from this strict evaluation tile rule.</p>
+<p class="notice" id="selected-summary"></p>
+<div class="meta" id="selected-pipeline-summary"></div>
+<div class="bora-views">
+<figure class="selected-figure"><a href="#" id="selected-rgb-full"><img alt="Training-selected Bora anonymous cluster RGB map" id="selected-rgb"/></a><figcaption><strong>1 · Segmentation:</strong> anonymous cluster colors.</figcaption></figure>
+<figure class="selected-figure"><a href="#" id="selected-prediction-full"><img alt="Training-selected Bora fastPLS tissue prediction RGB map" id="selected-prediction"/></a><figcaption><strong>2 · Identification:</strong> same geometry, fastPLS tissue colors.</figcaption></figure>
+<figure class="selected-figure"><a href="#" id="selected-overlay-full"><img alt="Training-selected Bora clusters over H&amp;E" id="selected-overlay"/></a><figcaption>Final training-selected groups over the original H&amp;E.</figcaption></figure>
+</div>
+<p><strong>Training-selected cluster colors</strong></p><div id="selected-cluster-legend"></div>
+<p><strong>Training-selected predicted tissue colors</strong></p><div id="selected-prediction-legend"></div>
+<h3>Training-selected segmentation</h3><div class="meta" id="selected-segmentation-scores"></div>
+<h3>Training-selected tissue identification</h3><div class="meta" id="selected-identification-scores"></div>
+<h3>Names assigned to training-selected groups</h3>
+<div class="table-scroll"><table id="selected-group-identification"><thead><tr><th>Group</th><th>Eligible tiles</th><th>fastPLS tissue prediction</th><th>Expert majority in scored area</th><th>Agreement</th></tr></thead><tbody></tbody></table></div>
+<figure hidden="" id="selected-kodama-figure"><img alt="KODAMA plot for the training-selected route" id="selected-kodama-image"/><figcaption id="selected-kodama-caption"></figcaption></figure>
+<p class="small" hidden="" id="selected-kodama-unavailable"></p>
+</section>
+<section aria-labelledby="comparators-heading">
+<h2 id="comparators-heading">Bora and external methods on the same H&amp;E image</h2>
+<a href="#" id="full-image"><img alt="Seven aligned image panels" id="case-image"/></a>
+<p class="small">Select the figure to open it at full size. The tissue-class color legend is printed on every figure. Uncolored regions in a model panel may be unmatched classes or absent predictions.</p>
+<div class="meta" id="scores"></div>
+</section>
+<section aria-labelledby="response-heading" id="class-responses">
+<h2 id="response-heading">Black-and-white response maps for every tissue classification</h2>
+<p>For this selected image, the 24 maps below show the frozen class-aware U-Net response for each tissue class. The model was fitted on the 397 training images and expert masks. Overlapping predictions are blended with tapered tile edges to avoid visible stitching lines. Each map uses the same scale: black means probability 0 and white means probability 1. Responses are model predictions; they are not expert annotations, Bora group responses, or accuracy scores. Display copies are at most 640 pixels on the long edge.</p>
+<div aria-live="polite" class="response-grid" id="response-grid"></div>
+</section>
+<section aria-labelledby="pipeline-heading">
+<h2 id="pipeline-heading">Bora pipeline for this image</h2>
+<div class="meta" id="pipeline-summary"></div>
+<figure hidden="" id="kodama-figure">
+<img alt="Image-only KODAMA scatter plot with tile counts for each anonymous group" id="kodama-image"/>
+<figcaption id="kodama-caption"></figcaption>
+</figure>
+<p class="small" hidden="" id="kodama-unavailable"></p>
+<p class="small">Eligible tiles have strictly less than 10% background, counting padding. The cluster count and tile counts describe image-only Bora inputs; tissue names are later fastPLS predictions. KODAMA plots are displayed from the saved fit when at least 30 eligible tiles are available. Plot colors identify anonymous groups and use a separate key from the tissue-class colors in the comparison figure.</p>
+</section>
+<h2>How to read the panels</h2>
+<div class="meta">
+<article><strong>Bora</strong>Image-derived groups followed by fastPLS class predictions. The classifier was trained under a different tile rule from this revised mask run.</article>
+<article><strong>Class-aware U-Net</strong>Supervised on the 397 training images with expert masks; no inference prompt.</article>
+<article><strong>DeepLabV3+</strong>Supervised on the same frozen 397 training images and expert masks as U-Net; no inference prompt. Randomly initialized ResNet-50 backbone.</article>
+<article><strong>VISTA-PATH</strong>Externally pretrained. Only predeclared matched tissue classes are colored; unmatched classes are left uncolored. Source overlap cannot be fully excluded.</article>
+<article><strong>MedSAM</strong>Prompt-guided masks for tumor, stroma and necrosis only. Its boxes came from an earlier U-Net, not the expert or the U-Net panel shown here. Some cases received no box for a role.</article>
+</div>
+<p class="small">Scores are image-level mean intersection over union on the explicitly named expert-present or mapped roles. A missing score means the corresponding comparison was not defined for that image.</p>
+<p class="small">Download the <a href="per-case-87.csv">87-image score table</a>. The former 24-class aggregate table was withdrawn because it included removed cases.</p>
 </main>
 <footer><a href="../attribution.html">Attribution and reuse terms</a></footer>
-<script src="gallery.js?v=bw106-v2" defer></script>
+<script defer="" src="gallery.js?v=bw87-v1"></script>
 </body>
 </html>
