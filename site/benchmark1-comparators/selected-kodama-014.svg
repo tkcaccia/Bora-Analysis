@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="550" viewBox="0 0 900 550">
+<rect width="900" height="550" fill="#fff"/>
+<text x="65" y="30" font-family="sans-serif" font-size="18" fill="#17343d">Training-selected KODAMA · 34 tiles · 1 groups</text>
+<rect x="65" y="65" width="555" height="420" fill="#fff" stroke="#52646a"/>
+<text x="315" y="535" font-family="sans-serif" font-size="15" fill="#17343d">KODAMA 1</text>
+<text x="18" y="300" transform="rotate(-90 18 300)" font-family="sans-serif" font-size="15" fill="#17343d">KODAMA 2</text>
+<circle cx="202.60" cy="101.61" r="2.6" fill="#d95f02"/>
+<circle cx="224.67" cy="65.00" r="2.6" fill="#d95f02"/>
+<circle cx="226.60" cy="348.76" r="2.6" fill="#d95f02"/>
+<circle cx="217.16" cy="307.77" r="2.6" fill="#d95f02"/>
+<circle cx="161.69" cy="296.24" r="2.6" fill="#d95f02"/>
+<circle cx="132.61" cy="385.16" r="2.6" fill="#d95f02"/>
+<circle cx="187.73" cy="126.56" r="2.6" fill="#d95f02"/>
+<circle cx="255.82" cy="132.51" r="2.6" fill="#d95f02"/>
+<circle cx="173.89" cy="238.32" r="2.6" fill="#d95f02"/>
+<circle cx="164.05" cy="189.05" r="2.6" fill="#d95f02"/>
+<circle cx="109.02" cy="263.21" r="2.6" fill="#d95f02"/>
+<circle cx="65.00" cy="369.61" r="2.6" fill="#d95f02"/>
+<circle cx="135.53" cy="435.54" r="2.6" fill="#d95f02"/>
+<circle cx="181.10" cy="461.22" r="2.6" fill="#d95f02"/>
+<circle cx="97.06" cy="418.57" r="2.6" fill="#d95f02"/>
+<circle cx="91.96" cy="469.51" r="2.6" fill="#d95f02"/>
+<circle cx="130.70" cy="485.00" r="2.6" fill="#d95f02"/>
+<circle cx="314.29" cy="349.52" r="2.6" fill="#d95f02"/>
+<circle cx="329.35" cy="226.69" r="2.6" fill="#d95f02"/>
+<circle cx="354.89" cy="240.23" r="2.6" fill="#d95f02"/>
+<circle cx="341.76" cy="284.87" r="2.6" fill="#d95f02"/>
+<circle cx="275.93" cy="258.87" r="2.6" fill="#d95f02"/>
+<circle cx="545.87" cy="140.37" r="2.6" fill="#d95f02"/>
+<circle cx="559.44" cy="205.69" r="2.6" fill="#d95f02"/>
+<circle cx="488.36" cy="160.98" r="2.6" fill="#d95f02"/>
+<circle cx="455.98" cy="91.18" r="2.6" fill="#d95f02"/>
+<circle cx="447.99" cy="137.13" r="2.6" fill="#d95f02"/>
+<circle cx="490.40" cy="217.48" r="2.6" fill="#d95f02"/>
+<circle cx="620.00" cy="242.94" r="2.6" fill="#d95f02"/>
+<circle cx="567.01" cy="242.80" r="2.6" fill="#d95f02"/>
+<circle cx="512.61" cy="109.54" r="2.6" fill="#d95f02"/>
+<circle cx="390.37" cy="109.57" r="2.6" fill="#d95f02"/>
+<circle cx="415.33" cy="71.33" r="2.6" fill="#d95f02"/>
+<circle cx="410.67" cy="171.46" r="2.6" fill="#d95f02"/>
+<circle cx="655" cy="77" r="6" fill="#d95f02"/>
+<text x="670" y="82" font-family="sans-serif" font-size="14" fill="#17343d">Group 1 (34)</text>
+</svg>

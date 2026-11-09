@@ -72,14 +72,52 @@ function show(id){
     kodamaImage.removeAttribute("src");
     kodamaUnavailable.textContent=`KODAMA plot omitted: ${p.eligible_tiles} eligible tiles, below the 30-tile display threshold. ${p.grouping_route==="small_roi_coverage"?"This image used the small-image coverage route instead of KODAMA.":"The saved clustering remains included in the counts above."}`;
   }
+  showSelected(row);
+}
+function showSelected(row){
+  const v=row.bora_training_selected_view,m=v.metrics;
+  const classic=row.bora_cluster_view,cp=row.bora_pipeline;
+  const routeTable=document.querySelector("#route-comparison tbody");
+  routeTable.replaceChildren(...[
+    ["Classic",1280,cp.eligible_tiles,cp.clusters,classic.metrics.segmentation_best_one_to_one_macro_iou_covered,classic.metrics.identification_group_majority_accuracy,classic.identification_end_to_end_macro_iou_expert_present],
+    ["Training-selected",256,v.eligible_tiles,v.clusters,m.segmentation_best_one_to_one_macro_iou_covered,m.identification_group_majority_accuracy,v.end_to_end_macro_iou]
+  ].map(values=>{const tr=document.createElement("tr");values.forEach((value,i)=>{const td=document.createElement("td");td.textContent=i>3?pct(value):value;tr.append(td)});return tr;}));
+  const assets=[["selected-rgb",v.images.cluster_rgb],["selected-prediction",v.images.fastpls_rgb],["selected-overlay",v.images.overlay]];
+  for(const [id,path] of assets){document.getElementById(id).src=path;document.getElementById(id+"-full").href=path;}
+  document.getElementById("selected-pipeline-summary").innerHTML=
+    `<article><strong>Eligible tissue tiles</strong>${v.eligible_tiles}<div class="small">Same strict tile admission rule as classic Bora</div></article>`+
+    `<article><strong>Anonymous clusters</strong>${v.clusters}<div class="small">${v.grouping_route==="small_roi_coverage"?"Small-image coverage route":"KODAMA + consensus/projection graph"}</div></article>`+
+    `<article><strong>Tiles per cluster</strong>${v.tile_counts_by_group.map((n,i)=>`Group ${i+1}: ${n}`).join(" · ")}</article>`;
+  document.getElementById("selected-cluster-legend").innerHTML=v.cluster_palette_hex.map((color,i)=>`<span><i style="background:${color}"></i>Group ${i+1} · ${v.tile_counts_by_group[i]} eligible tiles</span>`).join("");
+  document.getElementById("selected-prediction-legend").innerHTML=Object.entries(v.tissue_palette_hex).map(([cls,color])=>`<span><i style="background:${color}"></i>${classNames[cls]}</span>`).join("");
+  document.getElementById("selected-segmentation-scores").innerHTML=
+    `<article><strong>Adjusted Rand index</strong>${decimal(m.segmentation_adjusted_rand_covered)}<div class="small">Anonymous groups versus expert regions on covered pixels</div></article>`+
+    `<article><strong>Optimally matched IoU</strong>${pct(m.segmentation_best_one_to_one_macro_iou_covered)}<div class="small">One-to-one group matching on covered expert pixels</div></article>`+
+    `<article><strong>Annotated tissue reached</strong>${pct(m.annotated_coverage)}<div class="small">${m.expert_annotated_pixels_with_bora_group.toLocaleString()} of ${m.expert_annotated_pixels.toLocaleString()} pixels</div></article>`;
+  document.getElementById("selected-identification-scores").innerHTML=
+    `<article><strong>fastPLS group names</strong>${pct(m.identification_group_majority_accuracy)}<div class="small">${m.identification_majority_correct_groups} of ${m.identification_scorable_groups} groups match their expert-majority name</div></article>`+
+    `<article><strong>End-to-end tissue macro IoU</strong>${pct(v.end_to_end_macro_iou)}<div class="small">Full expert-present class rule, including missed tissue</div></article>`;
+  const table=document.querySelector("#selected-group-identification tbody");
+  table.replaceChildren(...Object.entries(m.group_details).map(([id,d])=>{
+    const tr=document.createElement("tr");
+    [`Group ${id}`,v.tile_counts_by_group[Number(id)-1],classNames[d.predicted_fastpls_class_id],classNames[d.expert_majority_class_id],d.correct_name?"Matches":"Differs"].forEach(value=>{const td=document.createElement("td");td.textContent=value;tr.append(td)});
+    return tr;
+  }));
+  const figure=document.getElementById("selected-kodama-figure"),unavailable=document.getElementById("selected-kodama-unavailable");
+  figure.hidden=!v.images.kodama;unavailable.hidden=!!v.images.kodama;
+  if(v.images.kodama){document.getElementById("selected-kodama-image").src=v.images.kodama;
+    document.getElementById("selected-kodama-caption").textContent=`Training-selected KODAMA · ${v.eligible_tiles} tiles · ${v.clusters} groups. A 2D separation does not establish tissue identity.`;
+  }else{document.getElementById("selected-kodama-image").removeAttribute("src");
+    unavailable.textContent=`No KODAMA plot for this ${v.eligible_tiles}-tile small-image route.`;}
 }
 function filter(){
   visible=all.filter(x=>!datasetSelect.value||x.dataset===datasetSelect.value);
   caseSelect.replaceChildren(...visible.map(x=>new Option(`${x.dataset.toUpperCase()} · ${x.source_group} · ${x.id}`,x.id)));
   show(location.hash.slice(1));
 }
-fetch("cases.json?v=paired-v3").then(r=>{if(!r.ok)throw Error(`Gallery manifest: HTTP ${r.status}`);return r.json()}).then(data=>{
-  if(data.status!=="AUDITED_BENCHMARK1_PAIRED_BORA_VIEWS_DEVELOPMENT_ONLY"||data.case_count!==106||data.cases.length!==106)throw Error("Gallery audit is incomplete");
+fetch("cases.json?v=training-selected-v6").then(r=>{if(!r.ok)throw Error(`Gallery manifest: HTTP ${r.status}`);return r.json()}).then(data=>{
+  if(data.status!=="AUDITED_BENCHMARK1_FULL_VS_TRAINING_SELECTED_DEVELOPMENT_ONLY"||data.case_count!==106||data.cases.length!==106||data.cases.some(x=>!x.bora_training_selected_view))throw Error("Gallery audit is incomplete");
+  document.getElementById("selected-summary").textContent=`Across 106 development images, training-selected Bora had ${data.training_selected_summary.one_group_cases} one-group outputs. Mean covered-pixel matched segmentation IoU: ${pct(data.training_selected_summary.mean_matched_segmentation_iou_covered)}; mean group-majority name agreement: ${pct(data.training_selected_summary.mean_group_name_accuracy)}; mean end-to-end tissue macro IoU: ${pct(data.training_selected_summary.mean_end_to_end_macro_iou)}. Compare these stage-specific values with classic Bora above; neither route was evaluated on an untouched test cohort.`;
   all=data.cases;
   [...new Set(all.map(x=>x.dataset))].sort().forEach(x=>datasetSelect.add(new Option(x.toUpperCase(),x)));
   const requested=all.find(x=>x.id===location.hash.slice(1));

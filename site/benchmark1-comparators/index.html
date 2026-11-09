@@ -25,16 +25,17 @@
     #kodama-caption{line-height:1.5;color:#415b62}
     #pipeline-summary article{min-width:0}
     .bora-views{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:16px;margin:18px 0}
-    #cluster-figure,#rgb-figure,#prediction-figure{margin:0;background:#fff;border:1px solid #d5e0e3;padding:14px}
-    #cluster-image,#rgb-image,#prediction-image{display:block;width:100%;height:auto}
-    #cluster-legend,#prediction-legend{display:flex;flex-wrap:wrap;gap:10px 18px;margin:12px 0}
-    #cluster-legend span,#prediction-legend span{display:inline-flex;align-items:center;gap:7px}
-    #cluster-legend i,#prediction-legend i{width:16px;height:16px;border:1px solid #617078;display:inline-block}
+    #cluster-figure,#rgb-figure,#prediction-figure,.selected-figure{margin:0;background:#fff;border:1px solid #d5e0e3;padding:14px}
+    #cluster-image,#rgb-image,#prediction-image,.selected-figure img{display:block;width:100%;height:auto}
+    #cluster-legend,#prediction-legend,#selected-cluster-legend,#selected-prediction-legend{display:flex;flex-wrap:wrap;gap:10px 18px;margin:12px 0}
+    #cluster-legend span,#prediction-legend span,#selected-cluster-legend span,#selected-prediction-legend span{display:inline-flex;align-items:center;gap:7px}
+    #cluster-legend i,#prediction-legend i,#selected-cluster-legend i,#selected-prediction-legend i{width:16px;height:16px;border:1px solid #617078;display:inline-block}
     #segmentation-scores article,#identification-scores article{min-width:0}
     .table-scroll{overflow-x:auto;margin:12px 0 20px}
-    #group-identification{border-collapse:collapse;width:100%;min-width:670px;background:#fff}
-    #group-identification th,#group-identification td{text-align:left;padding:8px 10px;border:1px solid #d5e0e3}
-    #group-identification th{background:#eaf2f4}
+    #group-identification,#selected-group-identification,#route-comparison{border-collapse:collapse;width:100%;min-width:670px;background:#fff}
+    #group-identification th,#group-identification td,#selected-group-identification th,#selected-group-identification td,#route-comparison th,#route-comparison td{text-align:left;padding:8px 10px;border:1px solid #d5e0e3}
+    #group-identification th,#selected-group-identification th,#route-comparison th{background:#eaf2f4}
+    #selected-kodama-image{display:block;max-width:760px;width:100%;height:auto}
   </style>
 </head>
 <body>
@@ -45,7 +46,7 @@
 </header>
 <main>
   <p class="notice"><strong>Development evidence.</strong> These images were inspected during method development, so this gallery is not an untouched test. Scores below use different class sets for different tools and must not be read as one overall ranking. The older 116-image interactive display on the home page is a separate historical benchmark.</p>
-  <p>On the same 106 images and expert-present tissue classes, mean intersection over union was <strong>0.204 for DeepLabV3+</strong>, <strong>0.495 for the class-aware U-Net</strong>, and <strong>0.164 for Bora</strong>. DeepLabV3+ and U-Net used the same 397 expert-masked training images; Bora used image-derived groups and a previously fitted tissue classifier. The paired DeepLabV3+ minus Bora difference was 0.040 (source-group bootstrap 95% interval −0.012 to 0.094). These figures are exploratory because the evaluation images had been inspected during Bora development.</p>
+  <p>On the same 106 images and expert-present tissue classes, mean intersection over union was <strong>0.204 for DeepLabV3+</strong>, <strong>0.495 for the class-aware U-Net</strong>, and <strong>0.164 for classic Bora</strong>. The training-selected Bora score is shown separately below. DeepLabV3+ and U-Net used the same 397 expert-masked training images; both Bora routes use image-derived groups and a tissue classifier. These figures are exploratory because the evaluation images had been inspected during Bora development.</p>
   <div class="controls">
     <label for="dataset">Dataset</label><select id="dataset"><option value="">All datasets</option></select>
     <label for="case">Image</label><select id="case"></select>
@@ -53,8 +54,9 @@
     <span id="position" aria-live="polite"></span>
   </div>
   <p id="case-title"></p>
+  <div class="table-scroll"><table id="route-comparison"><thead><tr><th>Bora route</th><th>Starting Virchow2 channels</th><th>Eligible tiles</th><th>Clusters</th><th>Matched segmentation IoU</th><th>Group name agreement</th><th>End-to-end tissue IoU</th></tr></thead><tbody></tbody></table></div>
   <section aria-labelledby="two-stage-heading">
-    <h2 id="two-stage-heading">Bora: clusters and tissue predictions</h2>
+    <h2 id="two-stage-heading">Classic Bora: all 1,280 Virchow2 channels available at input</h2>
     <p>The first RGB image shows Bora's anonymous clusters. The second shows the same mask after fastPLS assigns tissue names. The H&amp;E overlay helps inspect the cluster boundaries. All three use the same saved Bora geometry.</p>
     <p>Across these 106 development images, the image-level means were <strong>0.331 adjusted Rand index</strong> and <strong>0.482 optimally matched IoU</strong> for anonymous groups on covered expert pixels. Bora groups reached 93.9% of expert-annotated pixels on average. The fastPLS name matched the expert-majority tissue in 46.8% of groups per image on average. These conditional scores describe different stages; the end-to-end tissue macro IoU on the full expert-present class rule was 0.164.</p>
     <div class="bora-views">
@@ -81,6 +83,25 @@
     <div class="table-scroll"><table id="group-identification"><thead><tr><th>Group</th><th>Eligible tiles</th><th>fastPLS tissue prediction</th><th>Expert majority in scored area</th><th>Agreement</th></tr></thead><tbody></tbody></table></div>
     <p class="small">Segmentation scores compare anonymous Bora groups with expert tissue regions without assigning tissue names to the groups. They use expert-annotated pixels reached by a Bora group; the coverage score shows how much annotated tissue was reached. Identification scores compare each fastPLS name with the expert majority within that Bora group. The end-to-end macro IoU also reflects segmentation and missed tissue. These are development images, not an untouched test.</p>
     <p class="small"><a href="bora-two-stage-per-case.csv">Download the 106-image segmentation and identification table</a>.</p>
+  </section>
+  <section aria-labelledby="selected-heading">
+    <h2 id="selected-heading">Training-selected Bora: start from 256 channels</h2>
+    <p>A single set of 256 original Virchow2 channels was selected using only 397 training images and 1,192 expert-mapped training groups. This route starts with those channels <em>before</em> KODAMA, graph clustering, Bora's within-image 64-channel selection, mask fitting, and fastPLS tissue naming. Its fastPLS head was refitted on the same frozen training set using those channels. No evaluation image or whole slide supplied a feature-selection or classifier target. The historical training-group tile rule differs from this strict evaluation tile rule.</p>
+    <p id="selected-summary" class="notice"></p>
+    <div id="selected-pipeline-summary" class="meta"></div>
+    <div class="bora-views">
+      <figure class="selected-figure"><a id="selected-rgb-full" href="#"><img id="selected-rgb" alt="Training-selected Bora anonymous cluster RGB map"></a><figcaption><strong>1 · Segmentation:</strong> anonymous cluster colors.</figcaption></figure>
+      <figure class="selected-figure"><a id="selected-prediction-full" href="#"><img id="selected-prediction" alt="Training-selected Bora fastPLS tissue prediction RGB map"></a><figcaption><strong>2 · Identification:</strong> same geometry, fastPLS tissue colors.</figcaption></figure>
+      <figure class="selected-figure"><a id="selected-overlay-full" href="#"><img id="selected-overlay" alt="Training-selected Bora clusters over H&E"></a><figcaption>Final training-selected groups over the original H&amp;E.</figcaption></figure>
+    </div>
+    <p><strong>Training-selected cluster colors</strong></p><div id="selected-cluster-legend"></div>
+    <p><strong>Training-selected predicted tissue colors</strong></p><div id="selected-prediction-legend"></div>
+    <h3>Training-selected segmentation</h3><div id="selected-segmentation-scores" class="meta"></div>
+    <h3>Training-selected tissue identification</h3><div id="selected-identification-scores" class="meta"></div>
+    <h3>Names assigned to training-selected groups</h3>
+    <div class="table-scroll"><table id="selected-group-identification"><thead><tr><th>Group</th><th>Eligible tiles</th><th>fastPLS tissue prediction</th><th>Expert majority in scored area</th><th>Agreement</th></tr></thead><tbody></tbody></table></div>
+    <figure id="selected-kodama-figure" hidden><img id="selected-kodama-image" alt="KODAMA plot for the training-selected route"><figcaption id="selected-kodama-caption"></figcaption></figure>
+    <p id="selected-kodama-unavailable" class="small" hidden></p>
   </section>
   <section aria-labelledby="comparators-heading">
     <h2 id="comparators-heading">Bora and external methods on the same H&amp;E image</h2>
@@ -110,6 +131,6 @@
   <p class="small">Download the audited <a href="per-case-106.csv">106-image score table</a> and <a href="per-class-24.csv">24-class denominators and scores</a>.</p>
 </main>
 <footer><a href="../attribution.html">Attribution and reuse terms</a></footer>
-<script src="gallery.js?v=paired-v3" defer></script>
+<script src="gallery.js?v=training-selected-v6" defer></script>
 </body>
 </html>
