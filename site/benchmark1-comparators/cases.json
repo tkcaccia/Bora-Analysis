@@ -1,5 +1,5 @@
 {
-  "status": "AUDITED_BENCHMARK1_TWO_STAGE_RGB_COMPARISON_DEVELOPMENT_ONLY",
+  "status": "AUDITED_BENCHMARK1_PAIRED_BORA_VIEWS_DEVELOPMENT_ONLY",
   "cohort": "106 expert-group-admitted development evaluation images",
   "untouched_test": false,
   "comparison_roles_are_task_specific": true,
@@ -153,7 +153,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.21566810341791584,
         "rgb_image": "clusters-rgb-001.webp",
         "rgb_image_sha256": "fcc721efefb7cc8a41c79cf9bb6427ee1b2c416c713c47eb19aa86180771a835",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-001.webp",
+        "fastpls_rgb_image_sha256": "38994115da9fb51b8e24eb6fad9fca7c903cde786ade5770a7e8cd5c3a7bbf5b",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "c50523aba2ab8201d75493a364f075f7271e80ef61c6b550aedff8a5544b7355"
       }
     },
     {
@@ -267,7 +274,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.1663746127765446,
         "rgb_image": "clusters-rgb-002.webp",
         "rgb_image_sha256": "728eab54676cf474c5427d9cae2f4edcc7e4d07673fc1d5154d47309ce683fb2",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-002.webp",
+        "fastpls_rgb_image_sha256": "7d9c61f59fc13d3a0376e15088919036566dec5cae9f2d00f02d843ed33c5088",
+        "fastpls_palette_hex": {
+          "1": "#f25454"
+        },
+        "source_prediction_receipt_sha256": "9537ae257b226d0c57cd580362f7913e31ba67514e443c0d5dc2d6c476f75c5c"
       }
     },
     {
@@ -432,7 +445,16 @@
         "identification_end_to_end_macro_iou_expert_present": 0.26758773465780483,
         "rgb_image": "clusters-rgb-003.webp",
         "rgb_image_sha256": "7ff9c0ea1b036f3348784cf8132c7cd95176659a96f19bf9d5ea75946ac4a29c",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-003.webp",
+        "fastpls_rgb_image_sha256": "190ea6e2b491d66e5bff8bdb2b99b7661522ea9051e52d26c888d65984b76ff1",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254",
+          "4": "#f254de",
+          "14": "#f27554"
+        },
+        "source_prediction_receipt_sha256": "c032bfff467e14ba098aca605c4cb6c704305cc497996a65dee0fca3967c0fec"
       }
     },
     {
@@ -555,7 +577,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.5690597176902291,
         "rgb_image": "clusters-rgb-004.webp",
         "rgb_image_sha256": "03fb3258fe7f62edeed6964eaf2f5ba31cb7754654ef80d96f38803b06267280",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-004.webp",
+        "fastpls_rgb_image_sha256": "94e56b37997f5aa7655325d43e962429294cf1a7d5e93136f5cc952c2682bc75",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "ba8365d8ebe23ba6d73e44e5b8517e299618eae281f7b7e44756e183664026a0"
       }
     },
     {
@@ -684,7 +713,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.3805135169001439,
         "rgb_image": "clusters-rgb-005.webp",
         "rgb_image_sha256": "40b58945c43e0d459ecfdd401ce066e701ce2c4650921e6e2bd6a88c5dc5331a",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-005.webp",
+        "fastpls_rgb_image_sha256": "54e5dacec67c94cc3623408e82dce611f895a069bc7c56496d6530873c65c51a",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "c2f339f46adabb0268c6ddb727f4837e9f9a862dfd980b2ced7d31df907740b9"
       }
     },
     {
@@ -846,7 +882,15 @@
         "identification_end_to_end_macro_iou_expert_present": 0.2854046193176882,
         "rgb_image": "clusters-rgb-006.webp",
         "rgb_image_sha256": "6e0058aafab62284d85016e4aac793640f4665f09f27fc328bf719b828892ebc",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-006.webp",
+        "fastpls_rgb_image_sha256": "048053f691152910727373c95635322acccace0b497a9e90a764c99571ea9919",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "5": "#54f2d7",
+          "14": "#f27554"
+        },
+        "source_prediction_receipt_sha256": "f551707a253107431dd5c57fd98432ac3f72521c1e2fd43467ffc0ea45f77962"
       }
     },
     {
@@ -1014,7 +1058,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.19154012775228924,
         "rgb_image": "clusters-rgb-007.webp",
         "rgb_image_sha256": "a7bb2a9e43dbc568c7de3ba9946b06054e8f1d3b6e3b11e0c5877e037b52bae5",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-007.webp",
+        "fastpls_rgb_image_sha256": "08828c4eccb250904f1e561ec6be934faafe5f0a9e72c8838f9275f0b23bdafc",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "62f040bf05d65aac1224d90cdf0a29c9e4be1574fc570506c7433c7a8ea09ab3"
       }
     },
     {
@@ -1163,7 +1214,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.14779639582332108,
         "rgb_image": "clusters-rgb-008.webp",
         "rgb_image_sha256": "baa1eea4d1f48ca4256c432ab0f65e61167a6c471f17945cbbf6a2150d1ef4ce",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-008.webp",
+        "fastpls_rgb_image_sha256": "697fb938990035e581f1d0ac8e34ffbc3ed2b5602c0ca1d3fbd30acceb3ea413",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "47c3e7fc79f876a0dbb828f5ce28770240d4fde32ee5eb24c9ad96434ee0e212"
       }
     },
     {
@@ -1343,7 +1401,15 @@
         "identification_end_to_end_macro_iou_expert_present": 0.13786809353130472,
         "rgb_image": "clusters-rgb-009.webp",
         "rgb_image_sha256": "ecc10963e0587baf05c663a69853caac33ebf7d010d3f53cc2d0d543668e7171",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-009.webp",
+        "fastpls_rgb_image_sha256": "778bbfa7ab6166e095f26f03f7e357b2897aa8ec4701148131c82173b19ae6eb",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254",
+          "13": "#54f2a3"
+        },
+        "source_prediction_receipt_sha256": "06ea45e883feb11888ee260059c58207ee691a943ff53b237d3a10c0010a09f5"
       }
     },
     {
@@ -1492,7 +1558,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.17753368472992032,
         "rgb_image": "clusters-rgb-010.webp",
         "rgb_image_sha256": "360fa79b868bbabd9b8c3b5ca28dc51f935f0b3173e5aa283de50bee228df9fd",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-010.webp",
+        "fastpls_rgb_image_sha256": "a5ff415323c23a17b5807aa82a8c2a0475ae1e8cce94374c426f384b95aef1ad",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "ff031386810c84a75ddf86470eee9415730c06da260420f90ae28481a82a5688"
       }
     },
     {
@@ -1614,7 +1687,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.10204837381967105,
         "rgb_image": "clusters-rgb-011.webp",
         "rgb_image_sha256": "6b3c4dd7379267ab908563ebf64d58a027c4ec08410e37b8fb2f91751425f5fa",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-011.webp",
+        "fastpls_rgb_image_sha256": "efe801bb35bd141e4342d14f05605d6aaeb561304ab10601833f2a44043ff312",
+        "fastpls_palette_hex": {
+          "1": "#f25454"
+        },
+        "source_prediction_receipt_sha256": "1b2a268aee96ec387eea3c3afb14f641fc55cfc356dc278d73b63c83be744acb"
       }
     },
     {
@@ -1787,7 +1866,15 @@
         "identification_end_to_end_macro_iou_expert_present": 0.22879373861906005,
         "rgb_image": "clusters-rgb-012.webp",
         "rgb_image_sha256": "07664be1d2aca624c86a6c2550ec2f74fbea3ecd95a82df3cd8d503f32b1a485",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-012.webp",
+        "fastpls_rgb_image_sha256": "e9aa7032e8822124bae249d91cd0cf282b51fddc18ae5ebe3df1cd569611aa02",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254",
+          "14": "#f27554"
+        },
+        "source_prediction_receipt_sha256": "de1a470c7093572e5edd11df82f05c87bd00f03e135c9e822e0c4c3c85032793"
       }
     },
     {
@@ -1926,7 +2013,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.28608854341354634,
         "rgb_image": "clusters-rgb-013.webp",
         "rgb_image_sha256": "b430452af1b31f7b3ecedfe7e183eb3f6de39c1c4aa3c00e5778e89f241594a8",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-013.webp",
+        "fastpls_rgb_image_sha256": "139d8b9f9095b7b102c15edb81bb11047bb7b0520bc1e49e6220c1cef4de931c",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "d57602fb6128a2e9ac9545c92a6b10a26949ab79b945aee8e3f3683c68b4ded8"
       }
     },
     {
@@ -2059,7 +2153,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.24728023910739272,
         "rgb_image": "clusters-rgb-014.webp",
         "rgb_image_sha256": "8fdcc11783da3b3d7bf1e08d01ff23f7873455f1bba18e5f0e4646a3368728e4",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-014.webp",
+        "fastpls_rgb_image_sha256": "fd7955792a49f2bb300d2b873c7fe889d80dff907ae98d410ce180e611ec6f77",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "e8458ff3042c80f15f68db28c6ee573256c5054df0a0ef6a5fd0eb9901805260"
       }
     },
     {
@@ -2215,7 +2316,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.21753763666165513,
         "rgb_image": "clusters-rgb-015.webp",
         "rgb_image_sha256": "e71759635ab3e5631124707fa8dc2b87e32b8ea58a151de83bcd10427a7f2ba7",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-015.webp",
+        "fastpls_rgb_image_sha256": "1310f420dd1f6b499d555e323c9c70b3a5e344c3edc8870c41345454c197380e",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "4ed4991ac706ef9555bfa9c18e6ee328d10f17caf2d4d57074ef33cabd9872a3"
       }
     },
     {
@@ -2352,7 +2460,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.15399805537089278,
         "rgb_image": "clusters-rgb-016.webp",
         "rgb_image_sha256": "3a96d7eb5b61dec5c052dea0808485db3c3dfac739ca7895394e3d9808df5f73",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-016.webp",
+        "fastpls_rgb_image_sha256": "c32fe6cf333d9eb98253fd28876f0fa4b43f6759284551c8de1363f15e07258b",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "d41fcc89c6c4abfaa4e293839607107c434026cd42931172c7cce820705d13ea"
       }
     },
     {
@@ -2466,7 +2581,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.15470132450634708,
         "rgb_image": "clusters-rgb-017.webp",
         "rgb_image_sha256": "6eaf97f4449bc13b31986e2e5ec4804a475772e71cc43a8e8fad3590f3e902cb",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-017.webp",
+        "fastpls_rgb_image_sha256": "12e6a03c9863a1adadb14f22845242bc3fe773e83da513a67d446529dc7ba77e",
+        "fastpls_palette_hex": {
+          "1": "#f25454"
+        },
+        "source_prediction_receipt_sha256": "3e1adc359e63f4676957e46e4b37f5bce167369110bc8e2161264da4a9ea812e"
       }
     },
     {
@@ -2599,7 +2720,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.2857467368408849,
         "rgb_image": "clusters-rgb-018.webp",
         "rgb_image_sha256": "75905227c0dcd458c33092eb82ec94b589a5ed6c5266b5103da04585f3887d36",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-018.webp",
+        "fastpls_rgb_image_sha256": "5f65546824d5364a58814e1397b9a83fdc242eeff6c575c9b6e7f704454a57ab",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "87530da376d8df014cdff70eeb92822e200db9db72ac95f7d5746d4bf7083f7e"
       }
     },
     {
@@ -2732,7 +2860,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.24049787177671356,
         "rgb_image": "clusters-rgb-019.webp",
         "rgb_image_sha256": "474115c85235a45030d205f98e060f3c97dc8f7e687137c4072fde141560850e",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-019.webp",
+        "fastpls_rgb_image_sha256": "245dd432cf986be3358b1cf4f96e2285ce7974f24a5e76640e8ad6a7846a1713",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "bf8445df9481602d992b355902451508f1b011e2938bb31f8ef5e42fc989a0ea"
       }
     },
     {
@@ -2865,7 +3000,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.3219765289862133,
         "rgb_image": "clusters-rgb-020.webp",
         "rgb_image_sha256": "8df0ac4826be7ad93106f280d3e8615e51ad67018cdc613a1cfdb7aaf9778bf1",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-020.webp",
+        "fastpls_rgb_image_sha256": "c51c89f12335b9b25aaa11dc02c3cb4f008cd3eba9b6afba16de8df3eaea9b88",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "f7d78cfef0acab96952e0982b461259c62196dd7a4fe75d2ed3c370d7c51a2f7"
       }
     },
     {
@@ -2992,7 +3134,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.32328938417518366,
         "rgb_image": "clusters-rgb-021.webp",
         "rgb_image_sha256": "b373b211cdb3b23fad21f726b5c96465ecccbea06838fb6d1ebbf9e84a859894",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-021.webp",
+        "fastpls_rgb_image_sha256": "6f535d7a77cc6633022dea0da0bd84d9246a1d67d3d9049653cf4176288f3f47",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "cc7b0a1f181d6f832a9cadc25f1a713f4adc431fe94131f7e350772726cb631c"
       }
     },
     {
@@ -3119,7 +3268,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.3284616291891109,
         "rgb_image": "clusters-rgb-022.webp",
         "rgb_image_sha256": "3d3eb87d8b7eb78c32df14fe057d022cec6e22bddc6c473bca5c0f70d51d923b",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-022.webp",
+        "fastpls_rgb_image_sha256": "95a301a91c7cf6ae3eec9740b4cd8c03b954957af020f3af6a4eab10a2e26842",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "0c4fcf2c2854c22ce49312ec5a931a250e74c4a95452e16fa8eb32b64a3578e7"
       }
     },
     {
@@ -3252,7 +3408,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.22316181991318704,
         "rgb_image": "clusters-rgb-023.webp",
         "rgb_image_sha256": "a69936ce8c1bf7e5e5fc099df6a8dde07195a0ce07d79fefcb77f966eca32f16",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-023.webp",
+        "fastpls_rgb_image_sha256": "e50fcbf005efd7d3ea7a0526100426e039575d600f83e730eefac05a839ee255",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "767e4c815143186778db1920ea73b0ad46ef4c3fbbc43bce53825e2e5f594206"
       }
     },
     {
@@ -3431,7 +3594,16 @@
         "identification_end_to_end_macro_iou_expert_present": 0.34861039516838865,
         "rgb_image": "clusters-rgb-024.webp",
         "rgb_image_sha256": "a81f7e9036ea74c3877c472a789d1f99aa45d5a77d74dd45a433e61ccde0dde4",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-024.webp",
+        "fastpls_rgb_image_sha256": "7ad5d70929c4b5a694578cd23f3170ce3b49e272d9d163c58d3045cff67cf628",
+        "fastpls_palette_hex": {
+          "2": "#5482f2",
+          "3": "#b0f254",
+          "10": "#54b7f2",
+          "12": "#d154f2"
+        },
+        "source_prediction_receipt_sha256": "76d97f14cec58a24398c0adaf391dd109eada120fc0fd024dd5d98d002e600fe"
       }
     },
     {
@@ -3578,7 +3750,15 @@
         "identification_end_to_end_macro_iou_expert_present": 0.12986201386391755,
         "rgb_image": "clusters-rgb-025.webp",
         "rgb_image_sha256": "30df2661f2a783d9ce3e2ecf085cbf3552215118e9721a14ac43edfddce3ebc9",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-025.webp",
+        "fastpls_rgb_image_sha256": "101cd6793005bacebfee621f402ecd2f4caec95fce7f714a1e663b0fda426ffc",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254",
+          "4": "#f254de"
+        },
+        "source_prediction_receipt_sha256": "b8dab8e6250f6f180bb5ba511903148e7bd41db206be4967d5d58fcbfbb9fa6e"
       }
     },
     {
@@ -3749,7 +3929,15 @@
         "identification_end_to_end_macro_iou_expert_present": 0.3243898971950735,
         "rgb_image": "clusters-rgb-026.webp",
         "rgb_image_sha256": "5568a8f9bd60bfaed1b85207ff32269cd7697aa91af35e17a9cf920a81a59abd",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-026.webp",
+        "fastpls_rgb_image_sha256": "f4715a4478525b7f0645a15467eca86739aef7015a03aa778a98709337ff9cae",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254",
+          "4": "#f254de"
+        },
+        "source_prediction_receipt_sha256": "d8d76084f270e34d4a900cb12295310245a56df06fdbffbb423d17d4eb09625d"
       }
     },
     {
@@ -3876,7 +4064,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.2885849188397756,
         "rgb_image": "clusters-rgb-027.webp",
         "rgb_image_sha256": "9b4f77335fc8ef2c126994826bb250473a8ff4021372d830d32144b667a99785",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-027.webp",
+        "fastpls_rgb_image_sha256": "97d858409b1c9870c1019b9b2686ad86e04b7b62270c79c3d058d1ad905377a5",
+        "fastpls_palette_hex": {
+          "3": "#b0f254",
+          "4": "#f254de"
+        },
+        "source_prediction_receipt_sha256": "6ac295bb7b981e78aca67f5238f2ad08517285e5ae7c8acd50d6e405fa1b4fb7"
       }
     },
     {
@@ -4003,7 +4198,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.35928810520056564,
         "rgb_image": "clusters-rgb-028.webp",
         "rgb_image_sha256": "ded08b3d2b1f694f18ee9a40a748e8292ec9e5f76620b9c98c1fda6636cb0f8c",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-028.webp",
+        "fastpls_rgb_image_sha256": "6abbe62d2d9b0c214cc3d0f4c0e4ed2537a136ff74f02c52773a3fab969a9db4",
+        "fastpls_palette_hex": {
+          "3": "#b0f254",
+          "4": "#f254de"
+        },
+        "source_prediction_receipt_sha256": "b56a24c7906d6155a8105a37da699a2971edee49bce842bf00191bd8d231d2de"
       }
     },
     {
@@ -4132,7 +4334,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.4056415160708313,
         "rgb_image": "clusters-rgb-029.webp",
         "rgb_image_sha256": "2a24a7238a0401a258f4cd65bb7ee494554633d706dbfae76d1fe5ee737c647a",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-029.webp",
+        "fastpls_rgb_image_sha256": "7f7b58305484f9550d1d9d9324b0511008add8fd007fc2b24955c5825cdc5779",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "5": "#54f2d7"
+        },
+        "source_prediction_receipt_sha256": "6d6e709a03cfc7cb8185ff092484ee7fad2acf2c44ce86aa09a9ee6533be3b32"
       }
     },
     {
@@ -4244,7 +4453,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.16863104766986836,
         "rgb_image": "clusters-rgb-030.webp",
         "rgb_image_sha256": "5c590aa3f8eaf3d67d12fcbb5d894bae0cd60a85bb59e87ee0114714012d3436",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-030.webp",
+        "fastpls_rgb_image_sha256": "ed853e13367b352c7caee2d7852900242de6633c3a3090e910c14eb35fc1cbfa",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "9f82edc98b0fb24f7c498e53a99075fca7d57ce2126015c52362b5c45f430240"
       }
     },
     {
@@ -4371,7 +4586,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.4152044400194635,
         "rgb_image": "clusters-rgb-031.webp",
         "rgb_image_sha256": "9b52531bb4b6053916bc50730075cb34d6fa9866a6a5648060a4d81a34a3e1ce",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-031.webp",
+        "fastpls_rgb_image_sha256": "bc22f2e19f3cc3e50d8b4ec9f4195077840614c8cd52473c940d6c998d2dba33",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "1f02b0bf41a183b4b66a8bacc8de6cc1f1fa0a2c18f0a58ca9874e9bce3cc8cb"
       }
     },
     {
@@ -4498,7 +4720,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.42972796195236906,
         "rgb_image": "clusters-rgb-032.webp",
         "rgb_image_sha256": "42a5df5fac02c5c3ba9fea83c0aafded8bfa4237f4573d21b33ccaf99b46694e",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-032.webp",
+        "fastpls_rgb_image_sha256": "32c71658d453945bed43e72e767a7d6fadfbdeaf3c8ba53e645fc503d44bee6f",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "3f4c93c66df68da9248c8a29bf16adad15a8f3c551033bb6cc0f5581e26ae6ff"
       }
     },
     {
@@ -4624,7 +4853,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.038362224082228454,
         "rgb_image": "clusters-rgb-033.webp",
         "rgb_image_sha256": "42d42d77e3e37a23e66e503ccb8902d96e7f21c28a27d283608f6969baa0d46d",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-033.webp",
+        "fastpls_rgb_image_sha256": "eeeea42ecc4c9f772d0b90f0a885050de82c00a838e3e04c5219733ba04da897",
+        "fastpls_palette_hex": {
+          "3": "#b0f254",
+          "4": "#f254de"
+        },
+        "source_prediction_receipt_sha256": "8bf822f4074b48d179d97436e07fc59f7b5a6e57e3221535110079077655ee58"
       }
     },
     {
@@ -4748,7 +4984,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.12619013251556416,
         "rgb_image": "clusters-rgb-034.webp",
         "rgb_image_sha256": "484fe2893c5713c11cd6b4a1bb9336bacbf1d6b0c3c1414eddaef9550bf86be2",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-034.webp",
+        "fastpls_rgb_image_sha256": "7dda41efff8acce07664a21ddf01098ea3f1b7612e7d44f882c65b595a77efb6",
+        "fastpls_palette_hex": {
+          "1": "#f25454"
+        },
+        "source_prediction_receipt_sha256": "a8d207f7b951adbcdf877242d2da8cb6ef37391db46fbb5985f262967a7f2aaf"
       }
     },
     {
@@ -4861,7 +5103,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.20140311528680419,
         "rgb_image": "clusters-rgb-035.webp",
         "rgb_image_sha256": "a6bf807502605e07d9b59651c72d48dff9d4261c40a48d27c1b30996bb8edd15",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-035.webp",
+        "fastpls_rgb_image_sha256": "7e5c0b38f599f9c00bce78ac4c8aed8c6cd4d2d5eddcce7f1aefd080e7e430cf",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "2044f92687c41801e3984d1a4055ff96eb6a257a6f0827717da40c3e0160e8ac"
       }
     },
     {
@@ -4979,7 +5227,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.11937576283839013,
         "rgb_image": "clusters-rgb-036.webp",
         "rgb_image_sha256": "8bcf9cee2424d7a3ae55b6f8fa47c5b80bb967ddbd7f277890fbb3a65cbd32fd",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-036.webp",
+        "fastpls_rgb_image_sha256": "38f6d0327e51a3c884a9d77411fc087c3d143875b5c5facb35f54e0ad6cdf6b2",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "560a1e36c2e7949f51cca760f77e34e008c56730a09e9e197df46a8aa787c825"
       }
     },
     {
@@ -5103,7 +5357,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0844874740616478,
         "rgb_image": "clusters-rgb-037.webp",
         "rgb_image_sha256": "9207596566ef4e2ddca1f07290a1ced8ef574755e2873460b9805cc51cf1db94",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-037.webp",
+        "fastpls_rgb_image_sha256": "d0af188c08050a6ad41f496ea268b2f6ababefa3e4bc1bb289f5967d57b76af7",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "d62d72286a2232d9b8ccd5d052632f53f36c4018713052a2c3517c10ee23d2de"
       }
     },
     {
@@ -5215,7 +5475,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.13947023212189189,
         "rgb_image": "clusters-rgb-038.webp",
         "rgb_image_sha256": "a96aa3a3335f946b16f19f42d549b169f279e9b399318a75ab769a99e02325dc",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-038.webp",
+        "fastpls_rgb_image_sha256": "cb0765576cf5fe59013524ef8b34be12bc81fb9c9b84662a7585a138a264d0e6",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "933288ae12ad987421873c8baa22fcdb5cff634e3886f44dee83e3d43df0ff57"
       }
     },
     {
@@ -5334,7 +5600,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.05155335004602518,
         "rgb_image": "clusters-rgb-039.webp",
         "rgb_image_sha256": "b77c340f706907f197bcb92479dac1856e497b2d7104aa662ed74443461a3118",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-039.webp",
+        "fastpls_rgb_image_sha256": "82a3b30c4b286b25e14d3da88de052329559ace00b4b088333da1036b3c905d0",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "ae48098ed3483c455d72cbb217caf6fd920676537e6e789565592974742a8516"
       }
     },
     {
@@ -5457,7 +5729,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.409132802375136,
         "rgb_image": "clusters-rgb-040.webp",
         "rgb_image_sha256": "6972c23f2f799b4b6a97a262f7a200c334f212d978efbe8b4b255c6d345970f7",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-040.webp",
+        "fastpls_rgb_image_sha256": "aa13cb584d7bba353cf7ba3ed5d4f2cefa70e59f796f2c29dfd4ffe08f209e69",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "be70bc6ba6f7a421302e4d2d8f8add62bb7fdeee3bbb9c4767e3da6bbfb7ac49"
       }
     },
     {
@@ -5585,7 +5864,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.46145435056777667,
         "rgb_image": "clusters-rgb-041.webp",
         "rgb_image_sha256": "ca195c1ac5a980aed20d8c8cef75ac8122e1df5f84a55a3c188968418f5f5347",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-041.webp",
+        "fastpls_rgb_image_sha256": "c713581582409ae83042d663acf0e81ceb5f4099ff73360cbdb2d8ae156730f5",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "d0dcdb2db14816f5dcfe6e593140902ddb59d89096919276660ca1ae788b2f92"
       }
     },
     {
@@ -5694,7 +5980,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.3122444898201701,
         "rgb_image": "clusters-rgb-042.webp",
         "rgb_image_sha256": "adc04a2ed857c861c22bc9567c9b5c2c187af90887220a4dffa918d70c3a06c0",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-042.webp",
+        "fastpls_rgb_image_sha256": "ed1f24219ecf1b3ee59f2eecaa047d9f125a75579d61ddbf364081640c8e09f8",
+        "fastpls_palette_hex": {
+          "1": "#f25454"
+        },
+        "source_prediction_receipt_sha256": "146484bc1bf5fa9d0e6f4d97f339df9623fc6f7af7831968ddf57c4ec5ea596c"
       }
     },
     {
@@ -5836,7 +6128,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.1231479271157589,
         "rgb_image": "clusters-rgb-043.webp",
         "rgb_image_sha256": "688c5d9cbb6345baca5658b332284ac3acffea00adb9f6252a6d67a324dc1be9",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-043.webp",
+        "fastpls_rgb_image_sha256": "bb70bd0e3b93aa3d30426036a004a06597cb74f2b1522b042063ed3496993ac6",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "13": "#54f2a3"
+        },
+        "source_prediction_receipt_sha256": "cda3aa3b473a8ad6efb000b45f297ea4e29311ba0d27918d1b69c3472a591651"
       }
     },
     {
@@ -5953,7 +6252,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.14504047666710446,
         "rgb_image": "clusters-rgb-044.webp",
         "rgb_image_sha256": "8271a007ae63d210becc2e5949e081992f8d9dcf8642860a8e7b245cf8ead19a",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-044.webp",
+        "fastpls_rgb_image_sha256": "fdd7b0ee631502cae31faf0ce8005b4098b82f1a5205077ead7e80e3d717e9d3",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "ec44a9bc610fa2afb485ce90a212fa0de40bcb635f1c14c0b975b4f96ca61678"
       }
     },
     {
@@ -6069,7 +6374,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.18702084664810206,
         "rgb_image": "clusters-rgb-045.webp",
         "rgb_image_sha256": "5076d7875fd7e293747861fae9bd2ab42b805396daed42c0a0584fc68c3c9981",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-045.webp",
+        "fastpls_rgb_image_sha256": "e0ab6ebcf10ce90d9b4a0388f2a2d2c4723cbec85e6d869c78726c897fe4417a",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "af14cce4aba9f5d0307d318b5caa17d9a00d66f63a1e47f542476c28e82a13ac"
       }
     },
     {
@@ -6196,7 +6507,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.04604325201808983,
         "rgb_image": "clusters-rgb-046.webp",
         "rgb_image_sha256": "84bc51e95607dd82c4801703699a758b4ce70dfaf36932fd1b0417396113dac2",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-046.webp",
+        "fastpls_rgb_image_sha256": "3ec314ebf8feddb4c92ee7dc1c15d064b84e6a6bfe8214541019c3d14dd539ac",
+        "fastpls_palette_hex": {
+          "1": "#f25454"
+        },
+        "source_prediction_receipt_sha256": "4bf48d6677931d9c0d04a4c1e5672c4917276a07e5805009fff2c789c29de247"
       }
     },
     {
@@ -6309,7 +6626,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.2256948982298738,
         "rgb_image": "clusters-rgb-047.webp",
         "rgb_image_sha256": "867c5d1a26ccded24160ae590a078b485d83f6d232c283793c85776c8835b6ed",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-047.webp",
+        "fastpls_rgb_image_sha256": "357a0f6477756b8372683cdaf6f8d971b1a478f213fcc22072741f24647f6095",
+        "fastpls_palette_hex": {
+          "1": "#f25454"
+        },
+        "source_prediction_receipt_sha256": "0761a54a50d92674b5fa2ee85204c80e7054ee83c6ff7cfcce53debaecc1661f"
       }
     },
     {
@@ -6430,7 +6753,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.11482057755365682,
         "rgb_image": "clusters-rgb-048.webp",
         "rgb_image_sha256": "ef43cde806a21e9ed40f9e98eb61cd3ffdda74ffc17c21066035122d6b58dfe3",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-048.webp",
+        "fastpls_rgb_image_sha256": "db88f47fadb6ce5a3eb988ff33b15554fda4bdce09a6e246e500f300abea01b6",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "2c178421cb3df7da13799ed9289ec46de2ade3ce0eff0aeadce4a2de4a19be3f"
       }
     },
     {
@@ -6557,7 +6886,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.23111768644828343,
         "rgb_image": "clusters-rgb-049.webp",
         "rgb_image_sha256": "33785162b373a51d36c10c4412a00509d08e269822e26cc64512b76bcbbadc8e",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-049.webp",
+        "fastpls_rgb_image_sha256": "ad4ef99794d68eb8dd403c034f03b508263ed20ed8480483a4c5646cf0657e5e",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "add7e4234b049b034bbc86bdf54bf8e9640331173730f4f6620ab6967baa8798"
       }
     },
     {
@@ -6711,7 +7047,15 @@
         "identification_end_to_end_macro_iou_expert_present": 0.32399291754798487,
         "rgb_image": "clusters-rgb-050.webp",
         "rgb_image_sha256": "43016bb705867fd920cad87ff7f52b884bac5b7a2d45b078e1113264463de856",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-050.webp",
+        "fastpls_rgb_image_sha256": "42beff65ce4837a8f85e78a7b91ac397cc756ea03aedc3842fbed67e85774b38",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254",
+          "5": "#54f2d7"
+        },
+        "source_prediction_receipt_sha256": "6d6b6d2c81444ac4d8a05d428d6e6579e2cc45408f953df3be0efe7d81e7c7f4"
       }
     },
     {
@@ -6842,7 +7186,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.10840876942158267,
         "rgb_image": "clusters-rgb-051.webp",
         "rgb_image_sha256": "181f9a67ad89f50b749f0368f8444e13a35ddc3a6b873f330abee2c37e4e46cc",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-051.webp",
+        "fastpls_rgb_image_sha256": "b3f04f9b80e60d15e530d91f98236e0297e4e1ab8126458c5e62faa8dfb99974",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "c2629e4c4573540ba4d3d264bdc6f70c59fae3dde5e75f118d7c49197e538c0d"
       }
     },
     {
@@ -6969,7 +7320,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.18827593602549175,
         "rgb_image": "clusters-rgb-052.webp",
         "rgb_image_sha256": "029c9e0a700d10f1427bf55863db6296a686a395c97e9ff65f838067ee8cf5b2",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-052.webp",
+        "fastpls_rgb_image_sha256": "7b9b18f8547415ba83b2c48f266ccee3a4b04a70f2103d55ca587d02ef623b6b",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "5": "#54f2d7"
+        },
+        "source_prediction_receipt_sha256": "e16d10e926b73a76b8e6b797d64a814348d92f06dd9f1c0ba3824094bbd8a4cc"
       }
     },
     {
@@ -7096,7 +7454,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.25485465177529815,
         "rgb_image": "clusters-rgb-053.webp",
         "rgb_image_sha256": "a4f0c3ab97090e843118eb76764bf4d12f6c06455d03e38217bca6d46e78e404",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-053.webp",
+        "fastpls_rgb_image_sha256": "bd1eb2e5feba10d03faedb0e768bfd052661cce94c5e1903ef2c9f4478866f00",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "5": "#54f2d7"
+        },
+        "source_prediction_receipt_sha256": "cf04ab141d7110c2a92bbc5047b242f452118bfefadf3b3eece5be320b71e177"
       }
     },
     {
@@ -7227,7 +7592,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.10822335256667753,
         "rgb_image": "clusters-rgb-054.webp",
         "rgb_image_sha256": "e184e659f85164da674fc03624b42fd1aeafbc40d4368cb6d7443589a77499dd",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-054.webp",
+        "fastpls_rgb_image_sha256": "3773ca090e165a5eb881a8cb7837a493bb1601bd57cdb79e94c3007cdd0fc126",
+        "fastpls_palette_hex": {
+          "3": "#b0f254",
+          "4": "#f254de"
+        },
+        "source_prediction_receipt_sha256": "ed87081fc820edc7942138034a2d0176c0c676b0e7d92cd3a3d9d05e3913b664"
       }
     },
     {
@@ -7358,7 +7730,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.07688718623782413,
         "rgb_image": "clusters-rgb-055.webp",
         "rgb_image_sha256": "8dc3691f0753249136ee5580672971e6c9974bedf28bba08a1a7d03da341bb00",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-055.webp",
+        "fastpls_rgb_image_sha256": "839be0a7c39e76bdccf46abdaa79125af2fc02d849f78848a7fcd7643d91904d",
+        "fastpls_palette_hex": {
+          "3": "#b0f254",
+          "23": "#5496f2"
+        },
+        "source_prediction_receipt_sha256": "f073a5e214b2e160e60d31cafb2081434fe3955d8fc8e0e91118e9510bbcd2de"
       }
     },
     {
@@ -7470,7 +7849,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.10996912779163394,
         "rgb_image": "clusters-rgb-056.webp",
         "rgb_image_sha256": "6d96822651c7b9fc2d6de91a80815fc9ea736072fe6fb232db2847ecd46550ad",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-056.webp",
+        "fastpls_rgb_image_sha256": "a5169750792eb68486fe907d88e60d7cb5ccc9d650ff322c4cd151c2c9bed5bd",
+        "fastpls_palette_hex": {
+          "1": "#f25454"
+        },
+        "source_prediction_receipt_sha256": "845344196db1e1b154010f77ef9135ed709157ef33e86b28ce76b5da34abad01"
       }
     },
     {
@@ -7597,7 +7982,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.31232097201093895,
         "rgb_image": "clusters-rgb-057.webp",
         "rgb_image_sha256": "9858c45527d967e50fb211e95afadf8ed99211f0a603937860fa2a6801d02cf1",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-057.webp",
+        "fastpls_rgb_image_sha256": "d9c980ed81dbddba6c4b184d10e56acdcc261a4e90c3c29db9b218e3a8e4e0fb",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "6276c9f13bd858785c3ff2dae92cc94bba113675e73f620bfb9fefadf74b4a5a"
       }
     },
     {
@@ -7724,7 +8116,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.16796548496480002,
         "rgb_image": "clusters-rgb-058.webp",
         "rgb_image_sha256": "f594f24ac743992e01f0deaf6761ad093c76d24270d2e41b0dfa84f96c1a5a48",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-058.webp",
+        "fastpls_rgb_image_sha256": "c58ae58bed7f0d2aa26adc903468aa606e85b3cca603207544b7b35de2633743",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "23": "#5496f2"
+        },
+        "source_prediction_receipt_sha256": "9a36981baaa61d8387a8c5325ff03a93c11e995eedc0dfc1da9ff92f30323ae6"
       }
     },
     {
@@ -7836,7 +8235,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.20389363644838218,
         "rgb_image": "clusters-rgb-059.webp",
         "rgb_image_sha256": "81cddb122b271e821ebe500bd0162d9847d34ab29fc8fd61fd322bb4dd2a0e5e",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-059.webp",
+        "fastpls_rgb_image_sha256": "fb146dfddfe46b763d2f9218269619d85656f2aeade38cfa3006812f79e9533f",
+        "fastpls_palette_hex": {
+          "1": "#f25454"
+        },
+        "source_prediction_receipt_sha256": "d2cd452baafa9c7975113f4da5497a566d5d6e039a4fef11e40dd9eac9f8374f"
       }
     },
     {
@@ -7948,7 +8353,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.15815138129356057,
         "rgb_image": "clusters-rgb-060.webp",
         "rgb_image_sha256": "eb7d1a0653ca2e1f956bf44e3a287d3c1e272edc6c24cd1f43107cf6bc35c3ce",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-060.webp",
+        "fastpls_rgb_image_sha256": "f11de5993ace37e77e280e2653471ad3957f7893e5df44c8334b4066aa8ac33c",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "5d2ddfcfcc5e7859efaba0b4c06079de06a679b0acd807775a297cd7f1e0ee84"
       }
     },
     {
@@ -8063,7 +8474,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.006321261889289301,
         "rgb_image": "clusters-rgb-061.webp",
         "rgb_image_sha256": "3fac5a2a0988cbd03924524e27a40f18effcd91882999f47df6bfa7fe6343fbe",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-061.webp",
+        "fastpls_rgb_image_sha256": "ec290c00a7910e5ab8d0d85102d15153bbc4a0fb996bf8d5ffff9b12475dfe94",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "5a1e2f3a30adc9741ee384455afb191e5db075a1006fc9d8807bba37c63fbefe"
       }
     },
     {
@@ -8194,7 +8611,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.21429648357812472,
         "rgb_image": "clusters-rgb-062.webp",
         "rgb_image_sha256": "da785a9b8ca4c93971c7fdd33706c59b8c242ce0832de5a5e4d8be63e1188857",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-062.webp",
+        "fastpls_rgb_image_sha256": "9ad14c351507f08c095e114f602ad624d35588b82ba5e59b50337f88c84169b9",
+        "fastpls_palette_hex": {
+          "3": "#b0f254",
+          "4": "#f254de"
+        },
+        "source_prediction_receipt_sha256": "1fe55c7cabe7b6ee42006f8937bfb9f142133bbfcd95b21cfb58c84032fdc9e1"
       }
     },
     {
@@ -8321,7 +8745,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-063.webp",
         "rgb_image_sha256": "db3fcf6ddfec1c5e5f9db6fa4ce530ddf854b602239290447d172b89fd03b55d",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-063.webp",
+        "fastpls_rgb_image_sha256": "af7a4883974e78b2c60cb923467c195ffa42b12903dfb612a0a97886498da21e",
+        "fastpls_palette_hex": {
+          "9": "#f25489",
+          "23": "#5496f2"
+        },
+        "source_prediction_receipt_sha256": "f17729aaf7138396a97f3c0335ab2600ae5132ea040c941b7c49b9de03bbc65f"
       }
     },
     {
@@ -8448,7 +8879,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0630817316218052,
         "rgb_image": "clusters-rgb-064.webp",
         "rgb_image_sha256": "387cfd78f3aa3604b18a16eb8f75b2327ce03fe629c7342a4228d2d6942892e7",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-064.webp",
+        "fastpls_rgb_image_sha256": "027e5e7a98d3e31895aa77dbde0fcb6f90cdd53e9dc557a691d58d0090f4cf97",
+        "fastpls_palette_hex": {
+          "3": "#b0f254",
+          "23": "#5496f2"
+        },
+        "source_prediction_receipt_sha256": "97587de9ea19ca695b97a56558be2f33902a638696de07c09fdc2d79dba83dae"
       }
     },
     {
@@ -8575,7 +9013,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.1278053941608781,
         "rgb_image": "clusters-rgb-065.webp",
         "rgb_image_sha256": "14a1e837c512ebca9bcf95c6b9c84e88c36ce00538717880a7ea9d8e029d4bd5",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-065.webp",
+        "fastpls_rgb_image_sha256": "e77674e7f0d7bf7b3f3c3ceb8e0fe328a4ebfe6a5ba37a7dd241e4d4fa206b60",
+        "fastpls_palette_hex": {
+          "4": "#f254de",
+          "23": "#5496f2"
+        },
+        "source_prediction_receipt_sha256": "859ffc3b29280d570f5ae4e769eb6ab252ad7e9a6988fdb365dc8d8a4ddce20e"
       }
     },
     {
@@ -8696,7 +9141,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-066.webp",
         "rgb_image_sha256": "b9fcb6eb3ae68ab922978f5ff52dde859bd30239210ff2995dc8cb0c5b36a19f",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-066.webp",
+        "fastpls_rgb_image_sha256": "60ba65a926723be7f14492865f4e5de1d142afb3a6dce7a07ebcb64aa29d47ae",
+        "fastpls_palette_hex": {
+          "3": "#b0f254",
+          "23": "#5496f2"
+        },
+        "source_prediction_receipt_sha256": "1c8d55c59ae90a8717d658e6934d4824dc39e1088f860550f8165cc78a618c15"
       }
     },
     {
@@ -8827,7 +9279,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.24509995333026888,
         "rgb_image": "clusters-rgb-067.webp",
         "rgb_image_sha256": "a4cf0186da5b227d31a20d261006ab54ffad8a8025ae6dd35b792fa9328b763b",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-067.webp",
+        "fastpls_rgb_image_sha256": "32c3717812ead7a78225806e2c718262eedf74e6b52bc8aadfbdf2c8b4f147cc",
+        "fastpls_palette_hex": {
+          "4": "#f254de",
+          "23": "#5496f2"
+        },
+        "source_prediction_receipt_sha256": "054153c3ab8b4e291951b78099648673ed0128b6f8e9bd39e7b5314926c18234"
       }
     },
     {
@@ -8964,7 +9423,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.12309329531875143,
         "rgb_image": "clusters-rgb-068.webp",
         "rgb_image_sha256": "d8e6d36ee04a798d30645ac32f43be8a9791390777188b99bcaf6b43cb188ace",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-068.webp",
+        "fastpls_rgb_image_sha256": "589947bb5b04f3af181e3deed232b1510f44fb1bc84a1c385d224a79bb094fad",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "9f9768a766df6f5459411f62e42b1f3c75b88da5469b31da5697b7295ec3aa9e"
       }
     },
     {
@@ -9064,7 +9530,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.950627184029753,
         "rgb_image": "clusters-rgb-069.webp",
         "rgb_image_sha256": "9f5df63983efb161d17e1796faf0f3f955f688b49085cbdf0e63bdfe25b36028",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-069.webp",
+        "fastpls_rgb_image_sha256": "3d63e4104f0c13690d9d9df785312d25315784534106a4dfcb1af38412d7afa1",
+        "fastpls_palette_hex": {
+          "7": "#7c54f2"
+        },
+        "source_prediction_receipt_sha256": "e7728e106ca01c7e2535188c098b68617001c887448d9cb2122f74adc5e32c66"
       }
     },
     {
@@ -9177,7 +9649,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-070.webp",
         "rgb_image_sha256": "ae422c720ddb0cb8e9149be83c739d924e39d3e3797693872a8549d716a4c691",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-070.webp",
+        "fastpls_rgb_image_sha256": "0b175bd0338cc26aa33681c06899a31b73d4187493d16927e944415b293d35af",
+        "fastpls_palette_hex": {
+          "3": "#b0f254",
+          "9": "#f25489"
+        },
+        "source_prediction_receipt_sha256": "c92d4530d5031e182410c3a65a334e976003b4569d4f0ce16c22a2e605c63ec7"
       }
     },
     {
@@ -9277,7 +9756,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-071.webp",
         "rgb_image_sha256": "d6c710fd5b233f146d3b0ffca6f58fc66bd2032b0d8ad1b8b505f3add5813589",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-071.webp",
+        "fastpls_rgb_image_sha256": "37f8a85ace0c82879f4be072eca167c74eb3fa79ac50409d9ebf59a149df12a3",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "61b37cf8496641bd15b4499293dde3ddc42c9cd73b22e5ccb7f4176de4506f2e"
       }
     },
     {
@@ -9377,7 +9862,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-072.webp",
         "rgb_image_sha256": "d620907c01e7a402d0348de2077937eb2dd32d6bbbf5e705e0cf05da2d87ef01",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-072.webp",
+        "fastpls_rgb_image_sha256": "8d617be611d6e8f45c3f29584de592750258cf203a8de98b5c02fa1590923b04",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "5ebf8ea9ee6a7661097c708d680dd5fdb6bc58a385d7a9fb7e6604ed081269da"
       }
     },
     {
@@ -9477,7 +9968,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-073.webp",
         "rgb_image_sha256": "ef8d3ea39d6ece81fc1e7293e8ccc7d31bcb4384c8fc46e1f926e849d984d90c",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-073.webp",
+        "fastpls_rgb_image_sha256": "ff0de7a0877476b91c7cc2a6424c31768b94e88bd75523ffb50f7414597c27c8",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "57b00e8c0c16ae4587a994f58bc261cd02a6ae9a3e828b2e583b2065396e6d08"
       }
     },
     {
@@ -9577,7 +10074,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-074.webp",
         "rgb_image_sha256": "20f615cac00df028aaec1b1d7a13f3728ca9e71936425a3731187bf77596dee0",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-074.webp",
+        "fastpls_rgb_image_sha256": "020f19abce2db5b7a3606898e9afda6d30a334d5603d0e2f1d8920b27d578095",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "86b74b8cf43368cb9b9e878b05a9290e22639850be7a1fb5cfe1347da363c29d"
       }
     },
     {
@@ -9692,7 +10195,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-075.webp",
         "rgb_image_sha256": "f91130a0e3f15befb7e3824a4d87363b0bce93da8a464cef96a96a6aaa371637",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-075.webp",
+        "fastpls_rgb_image_sha256": "38bf349a33c47fb1f207961a9ea17187d0c2df43ba15dcc858655122dd6ef621",
+        "fastpls_palette_hex": {
+          "3": "#b0f254",
+          "9": "#f25489"
+        },
+        "source_prediction_receipt_sha256": "eab13c1001b1ccab7570cf717e13d6a34114fbe27ecf6577808391591ca387c6"
       }
     },
     {
@@ -9805,7 +10315,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.7549542887563688,
         "rgb_image": "clusters-rgb-076.webp",
         "rgb_image_sha256": "3c291e84f5f5783f5939701aeddd6c93538e958ff7e89c2e3c606d69152ab825",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-076.webp",
+        "fastpls_rgb_image_sha256": "97affe4f4bb216e7273f0bbaf95ec1978a39afa6b69201a3a79829f1422e2510",
+        "fastpls_palette_hex": {
+          "3": "#b0f254",
+          "7": "#7c54f2"
+        },
+        "source_prediction_receipt_sha256": "3fd630fe7efb3f78fad901867747828e4da439f7af50a3ecad0e531ddf0a3f84"
       }
     },
     {
@@ -9905,7 +10422,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-077.webp",
         "rgb_image_sha256": "99f3df5d373334541fdde2753d9a219ea432ace32d3db06caa91b730b75530b3",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-077.webp",
+        "fastpls_rgb_image_sha256": "6cacc9223419782b0e4b142fecb5f0d460786c2d53806ed90028534439d8641b",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "35e01ac3db5a2bd3a65e816017d305811808c0e23551699f9e4271e3679b5ac8"
       }
     },
     {
@@ -10018,7 +10541,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-078.webp",
         "rgb_image_sha256": "8977e3313db1c347e0faa4408c22e65983eee22ff54e2d6a71a2852b9402b5ab",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-078.webp",
+        "fastpls_rgb_image_sha256": "a21b41c7b1bc45b6d21ea72c0c6149b31d53501928b6bcc198ae1c300a27ca01",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "7f603ebd27c6881357bc3d92d9f9cbd1c21abea65ca147d520c85b8766dc06ed"
       }
     },
     {
@@ -10118,7 +10648,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-079.webp",
         "rgb_image_sha256": "253f701506062ab6baa0b9c633fc24b275c1e98469907ade41175fd493155599",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-079.webp",
+        "fastpls_rgb_image_sha256": "4983a82ce026a3408ca98c2f1734fd10e60a56fba1692547a4d9254759c45e5d",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "eda2380d1aeb679d5ade68a6311eea478f218d3424dfec57525f3d9e5e138550"
       }
     },
     {
@@ -10218,7 +10754,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-080.webp",
         "rgb_image_sha256": "f3d33044b34c1e80a6a85f8dd7f491182a22035a4e01c9edd20c77e98b54972c",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-080.webp",
+        "fastpls_rgb_image_sha256": "581d8702e59437a04d6c5a1fd54888d5bae14b1333aab293811096507e8093e0",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "32a5aae719357a26b3d16e624a2ce296b9543759046f03b54f96181d3d554fc1"
       }
     },
     {
@@ -10318,7 +10860,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-081.webp",
         "rgb_image_sha256": "420a171c0b724fbe554d14476b9f75cc6df3326ce1ef03e67cf34fa26bfb3f2f",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-081.webp",
+        "fastpls_rgb_image_sha256": "890d412d100f95d973d550fd97688cb1d049eac83c1fabee0d87f46dfbf7d33f",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "0539b0fff50ae2355febe2b901da4a460ba4de439e7e002ae87a07e83f5de345"
       }
     },
     {
@@ -10418,7 +10966,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-082.webp",
         "rgb_image_sha256": "45b28d13118a050040b98f042bfff681c0a2638f07fea03dcc733cbdcfa449a3",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-082.webp",
+        "fastpls_rgb_image_sha256": "3271e997447fe9c1766d347b4e787cd651fe4f2e6b6d440b8e56fa86e4cf865d",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "0025efeaa3b1ea9cb5b18459f23c2bca76810979f1a056ba71f46c01acc1a2c2"
       }
     },
     {
@@ -10518,7 +11072,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-083.webp",
         "rgb_image_sha256": "2f8e6476b5b165ff61bca6d881458764ce3f8f08bb09e9b48df0c3cbc7305150",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-083.webp",
+        "fastpls_rgb_image_sha256": "2efdceb14d3edc77da2b472f1d0cd079c7ec5ef4d0806e73d5ddc7ba0d007bcc",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "c5cf9352b8eb60923bce5dd499646aec95fe1f71512c461afbf69a760cdeef15"
       }
     },
     {
@@ -10618,7 +11178,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-084.webp",
         "rgb_image_sha256": "0d24a5af2b8ab446cbbd1045d69516d08cbe2018a3e93cfed537498e5d390e8c",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-084.webp",
+        "fastpls_rgb_image_sha256": "efe1aca87edd53f5b0b1e508f524bbf0b41f676ba37d0f76ba455927a45127f5",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "c6d8ba5c08c62388bb42360d93768056944581a2ecc17184c79ac1e5e3c95468"
       }
     },
     {
@@ -10718,7 +11284,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-085.webp",
         "rgb_image_sha256": "2259d476ad1e9bf50bb4cdbce70fd443de2d339cea63f2eb28c93f2a683202b9",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-085.webp",
+        "fastpls_rgb_image_sha256": "6c0f6462d8d961211f23cd2c61c517fea2406da0a7b51c85df048259c328a3b4",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "d2f595ebe989ccba6bfb036146d83fbd038b7b20d9ff1c717090b8ca51354a01"
       }
     },
     {
@@ -10818,7 +11390,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-086.webp",
         "rgb_image_sha256": "006686f88d99fca87f2d89d582599b0ee7b49bdc28d257bd917277d9d4fd4b61",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-086.webp",
+        "fastpls_rgb_image_sha256": "8f54e2f2425a8e7088b3841a1908b1b7782fb8055702dbfe08264bd3766c9075",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "ea5e6c3c5022dc5047e2b37a54ab457de7a26c637553a8a9122d70ec8d3e765b"
       }
     },
     {
@@ -10933,7 +11511,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.841759448901756,
         "rgb_image": "clusters-rgb-087.webp",
         "rgb_image_sha256": "ae53d6c5a359b2f9943b036b004ebf1d6686aa7e078a5c33d702b7b52dbb830a",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-087.webp",
+        "fastpls_rgb_image_sha256": "c13a9d38133aa44ca2fd09608712589a8ba1d746d50adb2c29e68f4810b29757",
+        "fastpls_palette_hex": {
+          "3": "#b0f254",
+          "7": "#7c54f2"
+        },
+        "source_prediction_receipt_sha256": "83b9539f696c825ee0b2a9dd2b13e0029b4abda6fd3c159351fadd3a5fa1704d"
       }
     },
     {
@@ -11050,7 +11635,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-088.webp",
         "rgb_image_sha256": "d0b6fbfec56b93d233dde518c37f679cdade634f263a1579f4cbd0344aa8dbf6",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-088.webp",
+        "fastpls_rgb_image_sha256": "b40543a5a6f3faecf092bfc278c7711c5a95efb180e2c79eac5b4d9d2e49b229",
+        "fastpls_palette_hex": {
+          "3": "#b0f254",
+          "6": "#f2a954"
+        },
+        "source_prediction_receipt_sha256": "4210c9e8740b99e3c8e6b673551f532f365f99f939c0b3680108c4985b9b6701"
       }
     },
     {
@@ -11167,7 +11759,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-089.webp",
         "rgb_image_sha256": "19ed1ce73a2af85c1810bf6624bdf6019868f7bc101c54b6d1ba4258c3796abc",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-089.webp",
+        "fastpls_rgb_image_sha256": "8ba9849b12658792a9c609d3ee127e7f620d896f3105884525a7fd6290c439de",
+        "fastpls_palette_hex": {
+          "3": "#b0f254",
+          "4": "#f254de"
+        },
+        "source_prediction_receipt_sha256": "d88b6f06b5dda312e07a03d37b99ab7d7bbdc1e2745f5f746b241b6a13872358"
       }
     },
     {
@@ -11284,7 +11883,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-090.webp",
         "rgb_image_sha256": "19f292bd5f63ca936635db98e8d58cbbc2be81865b63706a42cc18520bec326d",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-090.webp",
+        "fastpls_rgb_image_sha256": "8bac4001ea9fc824a78162b7883d70c58ff46293d1dae67edabe9e8b670bc4b8",
+        "fastpls_palette_hex": {
+          "3": "#b0f254",
+          "6": "#f2a954"
+        },
+        "source_prediction_receipt_sha256": "f8dcfc7fd445c329f7842eb6fd3689ce6e7ffb3d559b84c180938288ee3b05ba"
       }
     },
     {
@@ -11407,7 +12013,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.41127949330146124,
         "rgb_image": "clusters-rgb-091.webp",
         "rgb_image_sha256": "a28f8e7eed3595e909b998cc06ba4dc2a73811b0a6cd226890c1a8d0be5c6035",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-091.webp",
+        "fastpls_rgb_image_sha256": "2673e709180bb6883eed7fb659f443c962ab8537f454ec4f03663c7e7adc26c1",
+        "fastpls_palette_hex": {
+          "3": "#b0f254",
+          "5": "#54f2d7"
+        },
+        "source_prediction_receipt_sha256": "1e92f4ceba8e875484f1493507a26c13e1191db394e3f30789aef2281de71895"
       }
     },
     {
@@ -11513,7 +12126,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-092.webp",
         "rgb_image_sha256": "e5a19665d75d3ced51198e151c2112679f525ecabd640af92907f3d1a6b38252",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-092.webp",
+        "fastpls_rgb_image_sha256": "a757d5af4aea8838dec88bce4b6b71097cefc2e2b669e04422d5510c1e0989e6",
+        "fastpls_palette_hex": {
+          "3": "#b0f254",
+          "10": "#54b7f2"
+        },
+        "source_prediction_receipt_sha256": "7aabc576e5d8d35c2a7889153d57cb075cbe2c25f811db15b917ea1aa3d69c47"
       }
     },
     {
@@ -11650,7 +12270,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-093.webp",
         "rgb_image_sha256": "bea3ba30f9d3401c78b747c2909371a71fceb9c8a6b2b7a7aac80db24271b902",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-093.webp",
+        "fastpls_rgb_image_sha256": "fc4770e1f06a99300b15736e1609aa175b1e3c8a25bcea5bc72af3cdba8a8dc3",
+        "fastpls_palette_hex": {
+          "3": "#b0f254",
+          "4": "#f254de"
+        },
+        "source_prediction_receipt_sha256": "42858a551e0088f73cfe026f1ffc723fbbdb19600ac481f92eb0a4ab7161f46b"
       }
     },
     {
@@ -11793,7 +12420,15 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-094.webp",
         "rgb_image_sha256": "8af4811d3f8a7416c3da653400d9d303cb6e026f26e972a4298b8b3d9a9d91df",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-094.webp",
+        "fastpls_rgb_image_sha256": "4431dcf61b76cedd3eccf17e7a880738a1270ccf7f82e7b31b1548d07b1098e9",
+        "fastpls_palette_hex": {
+          "2": "#5482f2",
+          "3": "#b0f254",
+          "4": "#f254de"
+        },
+        "source_prediction_receipt_sha256": "f60db84b021d49afe3f465951329b2e4b6bacf33b97344aa9390f8fedb6d9e84"
       }
     },
     {
@@ -11910,7 +12545,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-095.webp",
         "rgb_image_sha256": "ce5b44a3c0484ee9ec796f2b01d791bbac1121b5fa38df786eeb0e35de82e116",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-095.webp",
+        "fastpls_rgb_image_sha256": "d8d7f12ce0222c616224d758e9cc15783d7c331f8006b8559c3bca4fb4f0a275",
+        "fastpls_palette_hex": {
+          "2": "#5482f2",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "a765a2fecf29651aa45aea82cde50934fe6d247b532f8d5d1ca003c4fc2063a2"
       }
     },
     {
@@ -12029,7 +12671,15 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-096.webp",
         "rgb_image_sha256": "f2e4e2971e189be0106aa83c426a455fcf34904ae75a900c62f98483f03337a0",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-096.webp",
+        "fastpls_rgb_image_sha256": "0aea7dfbe9636b89be1aa5211adb1f44be7d3b9f5fa37fec562f4c620f8f34d9",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "2": "#5482f2",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "624c611cd48b1715866d31a78638f993f4f8d9cd9a2fcbc19edde43e095b1cf1"
       }
     },
     {
@@ -12152,7 +12802,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-097.webp",
         "rgb_image_sha256": "4e71b195b85b016207ba23d3c5612d3717355930fd5ff030764deb67403b99cd",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-097.webp",
+        "fastpls_rgb_image_sha256": "fd932b1077c7722e0e676ece441664825e4d0412f0f6f3649d278cdad5280644",
+        "fastpls_palette_hex": {
+          "2": "#5482f2",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "57d27aaeca8e299e6dc0734ed5a4b9f5bdadf297bb297f8ca011596302160386"
       }
     },
     {
@@ -12269,7 +12926,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-098.webp",
         "rgb_image_sha256": "77ded1b692ede7ca3b77b5170db41737e8ec773ad185ce530306325b44c4875b",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-098.webp",
+        "fastpls_rgb_image_sha256": "524b23d6f9af778845fc71e7c1ac0cfb4b6a67b812a67cca97a1ccfcdb4e9736",
+        "fastpls_palette_hex": {
+          "3": "#b0f254",
+          "6": "#f2a954"
+        },
+        "source_prediction_receipt_sha256": "316d2a83c77a9d76fba381e22454b5c76af992dd7673bfe1d4c7379a2e089a61"
       }
     },
     {
@@ -12420,7 +13084,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.059176259165298485,
         "rgb_image": "clusters-rgb-099.webp",
         "rgb_image_sha256": "bf6a4f034bd587be3bae2b824c16d71a33c89dcd89ed773d1038e16f81796534",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-099.webp",
+        "fastpls_rgb_image_sha256": "5ab15abfb3a047e2dd683afb4987630d2f36394bd9c9e1c13d9de0bb37ae490c",
+        "fastpls_palette_hex": {
+          "1": "#f25454",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "610e9a3f2575d901ea806957eb72312806ac5cd14587d907c45eb89395c1ab77"
       }
     },
     {
@@ -12526,7 +13197,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-100.webp",
         "rgb_image_sha256": "dafdb49b69ecacfc19d338204c4ffff4e016dbfab4a00044f23d2201b03db268",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-100.webp",
+        "fastpls_rgb_image_sha256": "6f9fe25d4fc3c2abd19f9419f57c8c10f3760695456f99fe879e0b80c769340a",
+        "fastpls_palette_hex": {
+          "2": "#5482f2",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "9b991a7b87fae87eb423f7aeced8a43e50fe0e7fc7a57f501f369f28ae38f4a4"
       }
     },
     {
@@ -12643,7 +13321,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-101.webp",
         "rgb_image_sha256": "c4d503be70181d6a665cbc0b1b80cbfff4e38cdcc727a6ff902c3c140e83bd2c",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-101.webp",
+        "fastpls_rgb_image_sha256": "db981bca19f28acde24e34954a9ff83a96b21be067fecd68940ee1aea7b4bc2f",
+        "fastpls_palette_hex": {
+          "3": "#b0f254",
+          "10": "#54b7f2"
+        },
+        "source_prediction_receipt_sha256": "b8c5fce57c349175812c68556360accd2545af0bd62062792c03d9c3c4e17688"
       }
     },
     {
@@ -12749,7 +13434,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-102.webp",
         "rgb_image_sha256": "ff8a6eb2ad6a8a03715b83431e360c7c3718c8953344384f5cb295d84455da43",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-102.webp",
+        "fastpls_rgb_image_sha256": "de08c751846617aaed53a50160f32dc79c868b20f77ee8eef6781db6b61ddedf",
+        "fastpls_palette_hex": {
+          "2": "#5482f2",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "ccd882344300f7bfcd3850cd2af5035d1dbdde8ba80dfcf3218eadb82c96d914"
       }
     },
     {
@@ -12866,7 +13558,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-103.webp",
         "rgb_image_sha256": "6535fb8dadc1b7cf42dd1b3c6cce09f0260f1749d3bffe408201a16a5ad1f9dc",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-103.webp",
+        "fastpls_rgb_image_sha256": "488e990ac76291b231618219adf8a6324908d6f70273fdeea32ac46d1060216f",
+        "fastpls_palette_hex": {
+          "2": "#5482f2",
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "17fd030f715e1979a166d31d40e5a0cdfe7fd299728cdf0d2a64ca2b5ef53c69"
       }
     },
     {
@@ -12972,7 +13671,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-104.webp",
         "rgb_image_sha256": "a0ac8192d18ec68c5e404c89082d2db354c4f16cdc5e8f1f5d8834797dd56aaa",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-104.webp",
+        "fastpls_rgb_image_sha256": "f968e718c3068240c2c15dd15c2bbf4eb4ac5883f9079b49f35cd35874927354",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "884d44fe67ec2e06dda8af8d6a9960882898235d3991f5995c1de31ac092242f"
       }
     },
     {
@@ -13081,7 +13786,13 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-105.webp",
         "rgb_image_sha256": "2f396b5229701690acafc4efdd6a375772c933fe31090438ff257e7702ce5526",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-105.webp",
+        "fastpls_rgb_image_sha256": "f2d5679e45a9217cfe8fb25a16612e964b7bf9329317965110bcf6ea9e7a77ef",
+        "fastpls_palette_hex": {
+          "3": "#b0f254"
+        },
+        "source_prediction_receipt_sha256": "260d7653dc7524f844f356b1fb519165d02e8dd41150c153a1d1b0c4473657a2"
       }
     },
     {
@@ -13187,7 +13898,14 @@
         "identification_end_to_end_macro_iou_expert_present": 0.0,
         "rgb_image": "clusters-rgb-106.webp",
         "rgb_image_sha256": "43809c0d49c0e2e6042bc52ef02d09f8590cf674e1dac0ddc82694ea666b26f1",
-        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E"
+        "rgb_background": "white; group colors are exact RGB palette values, not alpha-blended with H&E",
+        "fastpls_rgb_image": "fastpls-rgb-106.webp",
+        "fastpls_rgb_image_sha256": "002c558ee226c73a29e259407244e3eb3637d2d4ef77e276fc899dfc67038375",
+        "fastpls_palette_hex": {
+          "3": "#b0f254",
+          "6": "#f2a954"
+        },
+        "source_prediction_receipt_sha256": "0f0aaca33cb9477809966f399d5f23e1d9b41adb4a2f55ffa1f8e3c8412a3bf4"
       }
     }
   ],

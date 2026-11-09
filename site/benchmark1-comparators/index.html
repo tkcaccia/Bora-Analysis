@@ -25,12 +25,12 @@
     #kodama-caption{line-height:1.5;color:#415b62}
     #pipeline-summary article{min-width:0}
     .bora-views{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:16px;margin:18px 0}
-    #cluster-figure,#rgb-figure{margin:0;background:#fff;border:1px solid #d5e0e3;padding:14px}
-    #cluster-image,#rgb-image{display:block;width:100%;height:auto}
-    #cluster-legend{display:flex;flex-wrap:wrap;gap:10px 18px;margin:12px 0}
-    #cluster-legend span{display:inline-flex;align-items:center;gap:7px}
-    #cluster-legend i{width:16px;height:16px;border:1px solid #617078;display:inline-block}
-    #two-stage-scores article{min-width:0}
+    #cluster-figure,#rgb-figure,#prediction-figure{margin:0;background:#fff;border:1px solid #d5e0e3;padding:14px}
+    #cluster-image,#rgb-image,#prediction-image{display:block;width:100%;height:auto}
+    #cluster-legend,#prediction-legend{display:flex;flex-wrap:wrap;gap:10px 18px;margin:12px 0}
+    #cluster-legend span,#prediction-legend span{display:inline-flex;align-items:center;gap:7px}
+    #cluster-legend i,#prediction-legend i{width:16px;height:16px;border:1px solid #617078;display:inline-block}
+    #segmentation-scores article,#identification-scores article{min-width:0}
     .table-scroll{overflow-x:auto;margin:12px 0 20px}
     #group-identification{border-collapse:collapse;width:100%;min-width:670px;background:#fff}
     #group-identification th,#group-identification td{text-align:left;padding:8px 10px;border:1px solid #d5e0e3}
@@ -53,29 +53,40 @@
     <span id="position" aria-live="polite"></span>
   </div>
   <p id="case-title"></p>
-  <a id="full-image" href="#"><img id="case-image" alt="Seven aligned image panels"></a>
-  <p class="small">Select the figure to open it at full size. The tissue-class color legend is printed on every figure. Uncolored regions in a model panel are not necessarily blank tissue; they may be unmatched classes or absent predictions.</p>
-  <div id="scores" class="meta"></div>
   <section aria-labelledby="two-stage-heading">
-    <h2 id="two-stage-heading">Bora: segmentation and tissue identification</h2>
-    <p>Anonymous cluster colors show the final Bora geometry before tissue names are applied. View the groups over the H&amp;E image or as a standalone RGB mask. The Bora panel above colors that same geometry with fastPLS tissue predictions.</p>
+    <h2 id="two-stage-heading">Bora: clusters and tissue predictions</h2>
+    <p>The first RGB image shows Bora's anonymous clusters. The second shows the same mask after fastPLS assigns tissue names. The H&amp;E overlay helps inspect the cluster boundaries. All three use the same saved Bora geometry.</p>
     <p>Across these 106 development images, the image-level means were <strong>0.331 adjusted Rand index</strong> and <strong>0.482 optimally matched IoU</strong> for anonymous groups on covered expert pixels. Bora groups reached 93.9% of expert-annotated pixels on average. The fastPLS name matched the expert-majority tissue in 46.8% of groups per image on average. These conditional scores describe different stages; the end-to-end tissue macro IoU on the full expert-present class rule was 0.164.</p>
     <div class="bora-views">
-      <figure id="cluster-figure">
-        <a id="cluster-full-image" href="#"><img id="cluster-image" alt="Final Bora mask colored by anonymous cluster over H&amp;E"></a>
-        <figcaption id="cluster-caption"></figcaption>
-      </figure>
       <figure id="rgb-figure">
         <a id="rgb-full-image" href="#"><img id="rgb-image" alt="Standalone RGB Bora group mask on white background"></a>
-        <figcaption>Standalone RGB Bora mask: exact group colors, white outside the final mask. Select to open at full size.</figcaption>
+        <figcaption><strong>1 · Segmentation:</strong> Bora clusters in anonymous colors. White is outside the final mask.</figcaption>
+      </figure>
+      <figure id="prediction-figure">
+        <a id="prediction-full-image" href="#"><img id="prediction-image" alt="Standalone RGB Bora mask colored by fastPLS tissue predictions"></a>
+        <figcaption><strong>2 · Identification:</strong> the same regions colored by their fastPLS tissue predictions.</figcaption>
+      </figure>
+      <figure id="cluster-figure">
+        <a id="cluster-full-image" href="#"><img id="cluster-image" alt="Final Bora clusters over H&amp;E"></a>
+        <figcaption id="cluster-caption"></figcaption>
       </figure>
     </div>
-    <div id="cluster-legend" aria-label="Anonymous cluster color legend"></div>
-    <div id="two-stage-scores" class="meta"></div>
+    <p><strong>Cluster colors</strong></p><div id="cluster-legend" aria-label="Anonymous cluster color legend"></div>
+    <p><strong>Predicted tissue colors</strong></p><div id="prediction-legend" aria-label="Predicted tissue color legend"></div>
+    <h3>Segmentation performance</h3>
+    <div id="segmentation-scores" class="meta"></div>
+    <h3>Tissue identification performance</h3>
+    <div id="identification-scores" class="meta"></div>
     <h3>Names assigned to the anonymous groups</h3>
     <div class="table-scroll"><table id="group-identification"><thead><tr><th>Group</th><th>Eligible tiles</th><th>fastPLS tissue prediction</th><th>Expert majority in scored area</th><th>Agreement</th></tr></thead><tbody></tbody></table></div>
     <p class="small">Segmentation scores compare anonymous Bora groups with expert tissue regions without assigning tissue names to the groups. They use expert-annotated pixels reached by a Bora group; the coverage score shows how much annotated tissue was reached. Identification scores compare each fastPLS name with the expert majority within that Bora group. The end-to-end macro IoU also reflects segmentation and missed tissue. These are development images, not an untouched test.</p>
     <p class="small"><a href="bora-two-stage-per-case.csv">Download the 106-image segmentation and identification table</a>.</p>
+  </section>
+  <section aria-labelledby="comparators-heading">
+    <h2 id="comparators-heading">Bora and external methods on the same H&amp;E image</h2>
+    <a id="full-image" href="#"><img id="case-image" alt="Seven aligned image panels"></a>
+    <p class="small">Select the figure to open it at full size. The tissue-class color legend is printed on every figure. Uncolored regions in a model panel may be unmatched classes or absent predictions.</p>
+    <div id="scores" class="meta"></div>
   </section>
   <section aria-labelledby="pipeline-heading">
     <h2 id="pipeline-heading">Bora pipeline for this image</h2>
@@ -99,6 +110,6 @@
   <p class="small">Download the audited <a href="per-case-106.csv">106-image score table</a> and <a href="per-class-24.csv">24-class denominators and scores</a>.</p>
 </main>
 <footer><a href="../attribution.html">Attribution and reuse terms</a></footer>
-<script src="gallery.js?v=rgb-v2" defer></script>
+<script src="gallery.js?v=paired-v3" defer></script>
 </body>
 </html>
