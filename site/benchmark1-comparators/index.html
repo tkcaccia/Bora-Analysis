@@ -40,13 +40,22 @@
     .response-grid figure{margin:0;background:#fff;border:1px solid #d5e0e3;padding:10px}
     .response-grid img{display:block;width:100%;height:auto;background:#000}
     .response-grid figcaption{margin-top:8px;font-size:.92rem}
+    .benchmark1-paths{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px;margin:18px 0}
+    .benchmark1-paths a{display:block;padding:14px 16px;border:1px solid #cbd8dd;border-radius:7px;background:#fff;color:#17343d;text-decoration:none}
+    .benchmark1-paths a[aria-current=page]{border-color:#238499;box-shadow:0 0 0 2px #23849925}
+    .benchmark1-paths strong,.benchmark1-paths span{display:block}
+    .benchmark1-paths span{margin-top:5px;color:#415b62;font-size:.9rem}
   </style>
 </head>
 <body>
 <header>
   <p><a href="../index.html">← Benchmark 1</a></p>
-  <h1>Benchmark 1: side-by-side model outputs</h1>
+  <h1>Benchmark 1 validation data: 106 images</h1>
   <p>For each of 106 development evaluation images, compare the original H&amp;E, expert annotation, Bora, U-Net, DeepLabV3+, VISTA-PATH and MedSAM in the same image frame.</p>
+  <nav class="benchmark1-paths" aria-label="Benchmark 1 result sets">
+    <a href="../index.html#public-datasets"><strong>Training data · Public histology datasets with expert masks</strong><span>Historical controlled expert-mask results</span></a>
+    <a href="index.html" aria-current="page"><strong>Validation data · 106 images</strong><span>Development evaluation and black-and-white class responses</span></a>
+  </nav>
 </header>
 <main>
   <p class="notice"><strong>Development evidence.</strong> These images were inspected during method development, so this gallery is not an untouched test. Scores below use different class sets for different tools and must not be read as one overall ranking. The older 116-image interactive display on the home page is a separate historical benchmark.</p>

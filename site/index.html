@@ -3,14 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Public datasets and masks · Bora benchmark viewer</title>
+  <title>Benchmark 1 · Training and validation data · Bora</title>
   <meta name="description" content="Explore Bora on annotated public histology datasets, Whole Slide Images, and Visium gene-expression clustering examples.">
 
   <script src="viewer.js" defer></script>
-<link rel="stylesheet" href="viewer.css"><link rel="stylesheet" href="benchmark-template.css"></head>
+<link rel="stylesheet" href="viewer.css"><link rel="stylesheet" href="benchmark-template.css">
+<style>
+  .benchmark1-paths{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:14px;margin:20px 0}
+  .benchmark1-paths a{display:block;padding:18px 20px;border:1px solid #cbd8dd;border-radius:8px;background:#fff;color:#193545;text-decoration:none}
+  .benchmark1-paths a[aria-current=page]{border-color:#006d80;box-shadow:0 0 0 2px #006d8025}
+  .benchmark1-paths strong,.benchmark1-paths span{display:block}
+  .benchmark1-paths span{margin-top:6px;color:#526b75;font-size:.92rem}
+</style></head>
 <body data-root="" class="benchmark-page" data-collection="public">
-<a class="skip-link" href="#main-content">Skip to results</a><header class="site-header"><p class="eyebrow">BORA · BENCHMARK VIEWER</p><h1>Public datasets and masks</h1><p class="site-intro">Bora refinement and tissue-group identification on public histology images with expert annotations.</p><nav class="benchmark-sections" aria-label="Benchmark collections"><a href="index.html" aria-current="page"><strong>1 · Public datasets and masks</strong><span>BCSS, TIGER, GCSS, IGNITE · expert tissue masks</span></a><a href="visium-hd/"><strong>2 · Whole Slide Images</strong><span>Selected 10x and TCGA H&amp;E whole slides</span></a><a href="visium/"><strong>3 · Visium gene clusters</strong><span>Giotto, Seurat, SpatialExperiment · expression spot groups</span></a></nav><nav class="links" aria-label="Project"><a href="https://github.com/tkcaccia/Bora-Analysis">Benchmark code</a><a href="https://github.com/tkcaccia/Bora">Bora application</a><a href="attribution.html">Datasets and attribution</a></nav></header>
-<main id="main-content"><aside role="status" class="notice"><strong>Development evaluation.</strong> The 503-image full-channel rerun is complete. <a href="benchmark1-comparators/">Compare Bora, expert annotations, U-Net, DeepLabV3+, VISTA-PATH and MedSAM on all 106 development evaluation images, with Bora cluster counts, tile counts and KODAMA plots</a>. The images were inspected during development, and model scores use different matched class sets. <a href="benchmark1-failures/">View the 58 images without a scored result in the earlier image-only Bora run</a>. The interactive gallery below is an older controlled display.</aside>
+<a class="skip-link" href="#main-content">Skip to results</a><header class="site-header"><p class="eyebrow">BORA · BENCHMARK VIEWER</p><h1>Benchmark 1</h1><p class="site-intro">Public histology images with expert masks: browse the controlled training-data display or the 106-image development validation gallery.</p><nav class="benchmark-sections" aria-label="Benchmark collections"><a href="index.html" aria-current="page"><strong>1 · Benchmark 1</strong><span>Training data and 106-image validation</span></a><a href="visium-hd/"><strong>2 · Whole Slide Images</strong><span>Selected 10x and TCGA H&amp;E whole slides</span></a><a href="visium/"><strong>3 · Visium gene clusters</strong><span>Giotto, Seurat, SpatialExperiment · expression spot groups</span></a></nav><nav class="links" aria-label="Project"><a href="https://github.com/tkcaccia/Bora-Analysis">Benchmark code</a><a href="https://github.com/tkcaccia/Bora">Bora application</a><a href="attribution.html">Datasets and attribution</a></nav></header>
+<main id="main-content">
+<section aria-labelledby="benchmark1-choose"><h2 id="benchmark1-choose">Choose a Benchmark 1 result set</h2>
+<nav class="benchmark1-paths" aria-label="Benchmark 1 result sets">
+  <a href="#public-datasets" aria-current="page"><strong>Training data · Public histology datasets with expert masks</strong><span>Historical controlled test with expert-derived coarse input groups; browse the interactive results below.</span></a>
+  <a href="benchmark1-comparators/"><strong>Validation data · 106 images</strong><span>Development evaluation with Bora, expert annotations, U-Net, DeepLabV3+, VISTA-PATH, MedSAM and black-and-white class responses.</span></a>
+</nav>
+<p class="notice"><strong>Interpretation.</strong> The 106 validation images were inspected during method development, so they are not an untouched test. The training-data display below is an older controlled benchmark. The 503-image full-channel rerun is complete. <a href="benchmark1-failures/">Review the 58 images without a scored result in the earlier image-only Bora run</a>.</p>
+</section>
 <section id="public-datasets" aria-labelledby="title">
 <h2 id="title">Public histology datasets with expert masks</h2>
 <p id="intro">Inspect the original H&amp;E image, expert tissue annotation, coarse input tile groups, Virchow2 projection, and Bora’s refined tissue mask for each image.</p>

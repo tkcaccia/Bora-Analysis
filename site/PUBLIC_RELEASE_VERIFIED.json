@@ -1,6 +1,6 @@
 {
   "format": "bora-public-site-v1",
-  "size_bytes": 941801919,
+  "size_bytes": 941803822,
   "file_count": 5097,
   "public_wsi_count": 13,
   "file_sha256": {
@@ -696,7 +696,7 @@
     "benchmark1-comparators/case-106.webp": "82fc7e5398ff185116e7310caa6a7dbcd3ba1b9a033e16751c622e18aa410ae7",
     "benchmark1-comparators/cases.json": "2c0ac1d2bd0002600c635d5971bc20a81d8c2d99d9a8510ecffde5dd2ef1cd77",
     "benchmark1-comparators/gallery.js": "03e3d379bac0917c811f424a0641b57b767a310cb0940b339b87e861421a3dba",
-    "benchmark1-comparators/index.html": "4d8a869e08a2ca8de0719ed75aaba81ec2a411d07be71d3e35705af8238228c3",
+    "benchmark1-comparators/index.html": "2e05cbbd58063dfd97992ac1864650753ed9ea52dd7c576100704265271be500",
     "benchmark1-comparators/kodama-001.webp": "de50f6288faa0fe22b0e5a6d262731423e754f76dc6d06787cddf40e403d55e8",
     "benchmark1-comparators/kodama-002.webp": "0494f3f7ed695350b8aeed8866ac8a0c5ef282af59631caf08e3c7215e599123",
     "benchmark1-comparators/kodama-003.webp": "456e3e099c14884d1c1abc2ba3887043223ffd7dbd9ab4a9a9bcb180aa5cdf4e",
@@ -938,7 +938,7 @@
     "geojson-inspector.css": "32ce52334667c38ff20787166055472ad19cfa150eb8cb0a50341a907b4a3b72",
     "geojson-inspector.js": "77b87fd5139d59b6fa782e184428a03a820116378b50da5fec4d48d65b568adf",
     "geojson-inspectors.json": "a6350c4c74f23029b14225639a3317107c8097c79cccd66deb6abeee3467ec70",
-    "index.html": "13f056905dc21f88a3ed12d372f981f2242fd7517cce68735d3a9f9cb7da64f0",
+    "index.html": "15f761b48dd8f2da8c0babb01c2530b77d03cd3412db0cf9d12890fbf34a81e0",
     "previews/bcss_05/neighbor-context.jpg": "86756ac578efbcb6a3b4e75505bdb18b35c21cf7315703c3636bb9b0edfebf96",
     "previews/bcss_06/neighbor-context.jpg": "3df0c6574d2977c81bee91c8b808d9fbf377fb6ab91990224acaf5684714894d",
     "previews/bcss_102/neighbor-context.jpg": "c6515302c5908c09cae9fda434d99532bed3f464aee8e917e4bd8e47df3d2375",
