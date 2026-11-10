@@ -9,12 +9,13 @@ during development and do not form an untouched confirmatory test.
 Tissue names on whole slides are provisional.
 
 The [Benchmark 2 full-slide comparator gallery](https://tkcaccia.github.io/Bora-Analysis/visium-hd/comparators/)
-currently shows nine verified public-source H&E slides with class-aware
+shows 11 verified public-source H&E slides with class-aware
 U-Net, DeepLabV3+, MedSAM and VISTA-PATH outputs. Those predictions cover
 the complete calibrated slides; the website shows downsampled previews.
 No independent whole-slide expert masks are available, so the gallery
-does not report accuracy scores or a method ranking. The separate 12-slide
-local comparator campaign is still in progress. See the
+does not report accuracy scores or a method ranking. All 12 slides in the
+separate local comparator campaign have checksum-verified full-resolution
+outputs; the user-supplied PM016 slide remains local and unpublished. See the
 [comparator methods and publication record](docs/benchmark2-full-slide-comparators-2026-11-10.md).
 
 No user-supplied Brendon, PM, F-series or Scanned Image slide is included.
