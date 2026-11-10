@@ -130,7 +130,7 @@
 </section>
 <section aria-labelledby="combined-response-heading" id="combined-response-mask">
 <h2 id="combined-response-heading">Combined tissue-class response mask</h2>
-<p>For this validation image, each pixel takes the class with the strongest of the 24 black-and-white U-Net response maps below. Colors use the shared tissue-class key; the legend lists only classes present in this mask. This is a display-resolution prediction made from compressed response maps, not an expert mask, a Bora region mask, or a native-resolution accuracy result. The model has no background class, so it assigns a tissue class even on glass or other non-tissue pixels.</p>
+<p>For this validation image, each pixel takes the class with the strongest of the 24 black-and-white U-Net response maps below. This mask uses distinct display colors; its legend lists only classes present here. Class numbers and names match the comparison figure above, whose display colors may differ. This is a display-resolution prediction made from compressed response maps, not an expert mask, a Bora region mask, or a native-resolution accuracy result. The model has no background class, so it assigns a tissue class even on glass or other non-tissue pixels.</p>
 <figure id="combined-response-figure"><a href="#" id="combined-response-full"><img id="combined-response-image" alt="Combined 24-class U-Net response mask"/></a><figcaption>Strongest response per pixel from the 24 maps below; lowest class ID breaks ties.</figcaption></figure>
 <div id="combined-response-legend" aria-label="Classes present in the combined mask"></div>
 </section>
@@ -161,6 +161,6 @@
 <p class="small">Download the <a href="per-case-87.csv">87-image score table</a>. The former 24-class aggregate table was withdrawn because it included removed cases.</p>
 </main>
 <footer><a href="../attribution.html">Attribution and reuse terms</a></footer>
-<script defer="" src="gallery.js?v=combined-mask-v1"></script>
+<script defer="" src="gallery.js?v=combined-mask-v2"></script>
 </body>
 </html>

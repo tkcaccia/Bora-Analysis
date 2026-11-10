@@ -14,7 +14,7 @@ const predictionLegend=document.getElementById("prediction-legend");
 const segmentationScores=document.getElementById("segmentation-scores"),identificationScores=document.getElementById("identification-scores");
 const groupTable=document.querySelector("#group-identification tbody");
 const classNames={1:"Tumor",2:"In situ tumor",3:"Stroma",4:"Inflamed stroma",5:"Necrosis",6:"Normal glandular epithelium",7:"Epithelial tissue",8:"Blood",9:"Blood vessel",10:"Lymphatic vessel",11:"Adipose",12:"Lymphocytic infiltrate",13:"Other immune infiltrate",14:"Plasma cells",15:"Metaplasia",16:"Alveolar tissue",17:"Bronchial epithelium",18:"Cartilage or bone",19:"Inflammatory infiltrate",20:"Liver tissue",21:"Macrophages",22:"Mucus, plasma or fluids",23:"Muscle",24:"Keratinized tissue"};
-const combinedClassColors={"1":"#f25454","2":"#5482f2","3":"#b0f254","4":"#f254de","5":"#54f2d7","6":"#f2a954","7":"#7c54f2","8":"#5bf254","9":"#f25489","10":"#54b7f2","11":"#e5f254","12":"#d154f2","13":"#54f2a3","14":"#f27554","15":"#5462f2","16":"#90f254","17":"#f254be","18":"#54ecf2","19":"#f2ca54","20":"#9c54f2","21":"#54f26e","22":"#f25468","23":"#5496f2","24":"#c4f254"};
+const combinedClassColors={"1":"#f25454","2":"#5482f2","3":"#145da0","4":"#f254de","5":"#54f2d7","6":"#f2a954","7":"#7c54f2","8":"#8a1538","9":"#f25489","10":"#54b7f2","11":"#e5f254","12":"#d154f2","13":"#54f2a3","14":"#f27554","15":"#5462f2","16":"#6b4e2e","17":"#f254be","18":"#54ecf2","19":"#f2ca54","20":"#9c54f2","21":"#9e5400","22":"#f25468","23":"#5496f2","24":"#52525b"};
 let all=[],visible=[];
 const pct=x=>x===null||x===undefined?"Not defined":(100*x).toFixed(1)+"%";
 const decimal=x=>x===null||x===undefined?"Not defined":Number(x).toFixed(3);
