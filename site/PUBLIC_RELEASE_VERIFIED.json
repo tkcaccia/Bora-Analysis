@@ -1,6 +1,6 @@
 {
   "format": "bora-public-site-v1",
-  "size_bytes": 861282078,
+  "size_bytes": 861282799,
   "file_count": 4642,
   "public_wsi_count": 13,
   "file_sha256": {
@@ -613,7 +613,7 @@
     "benchmark1-comparators/selected-clusters-overlay-023.webp": "cba32153bf8282e5a397a722b34ed391e955ddd5de043e95cd856bb5c1a11c02",
     "benchmark1-comparators/case-084.webp": "dd9c0a48f6d3f23346cc453177ae215bc2ce1dd3bc06a3fd1202b6277d9c7117",
     "benchmark1-comparators/selected-kodama-054.svg": "70237fa87a18dd09be61e2b935ce4d24a17ddc1d8271dcbf2352e4aa16631c3f",
-    "benchmark1-comparators/index.html": "b46907c392a2250c4ed99b2f96c8ffa382cb60fa8ec05e5cdb895eca9ac6fe32",
+    "benchmark1-comparators/index.html": "1b4410366ea41220b9f2e458800a5f34d5d4ff8d28f9739bf4402122b050657c",
     "benchmark1-comparators/case-067.webp": "063f12932f5464114e3cb6359006b97a02aa5fd3798e3ab6be426e56e1b5d493",
     "benchmark1-comparators/selected-fastpls-rgb-046.webp": "e05018f74861db74fa8ecb7942397484e863068cac3de50a40ca9f08d62272cb",
     "benchmark1-comparators/clusters-025.webp": "c3fa33ebfc5063a706d8ebc30eebedfc33ce9b194d0e9c158899e36f62d2b9de",

@@ -19,6 +19,8 @@
     .meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
     .meta article{background:#fff;padding:14px;border:1px solid #d5e0e3}
     .meta strong{display:block;margin-bottom:4px}
+    #panel-guide{display:flex;flex-wrap:wrap;gap:14px;margin:12px 0 18px}
+    #panel-guide article{flex:1 1 220px;min-width:0}
     .small{font-size:.9rem;color:#415b62}
     .error{color:#8d2323}
     #kodama-figure{margin:18px 0;background:#fff;border:1px solid #d5e0e3;padding:14px;max-width:760px}
@@ -124,14 +126,25 @@
 </section>
 <section aria-labelledby="comparators-heading">
 <h2 id="comparators-heading">Bora and external methods on the same H&amp;E image</h2>
+<h3 id="panel-guide-heading">How to read the panels</h3>
+<div aria-labelledby="panel-guide-heading" class="meta" id="panel-guide">
+<article><strong>Bora</strong>Image-derived groups followed by fastPLS class predictions. The classifier was trained under a different tile rule from this revised mask run.</article>
+<article><strong>Class-aware U-Net</strong>This project’s U-Net takes RGB H&amp;E tiles as input and was trained on 397 images paired with expert masks; no inference prompt. The black-and-white maps below are its class responses.</article>
+<article><strong>DeepLabV3+</strong>Supervised on the same frozen 397 training images and expert masks as U-Net; no inference prompt. Randomly initialized ResNet-50 backbone.</article>
+<article><strong>VISTA-PATH</strong>Externally pretrained. Only predeclared matched tissue classes are colored; unmatched classes are left uncolored. Source overlap cannot be fully excluded.</article>
+<article><strong>MedSAM</strong>Prompt-guided masks for tumor, stroma and necrosis only. Its boxes came from an earlier U-Net, not the expert or the U-Net panel shown here. Some cases received no box for a role.</article>
+</div>
 <a href="#" id="full-image"><img alt="Seven aligned image panels" id="case-image"/></a>
 <p class="small">Select the figure to open it at full size. The tissue-class color legend is printed on every figure. Uncolored regions in a model panel may be unmatched classes or absent predictions.</p>
 <div class="meta" id="scores"></div>
+<p class="small">Scores are image-level mean intersection over union on the explicitly named expert-present or mapped roles. A missing score means the corresponding comparison was not defined for that image.</p>
+<p class="small">Download the <a href="per-case-87.csv">87-image score table</a>. The former 24-class aggregate table was withdrawn because it included removed cases.</p>
 </section>
 <section aria-labelledby="combined-response-heading" id="combined-response-mask">
 <h2 id="combined-response-heading">Combined tissue-class response mask</h2>
-<p>For this validation image, each pixel takes the class with the strongest of the 24 black-and-white U-Net response maps below. This mask uses distinct display colors; its legend lists only classes present here. Class numbers and names match the comparison figure above, whose display colors may differ. This is a display-resolution prediction made from compressed response maps, not an expert mask, a Bora region mask, or a native-resolution accuracy result. The model has no background class, so it assigns a tissue class even on glass or other non-tissue pixels.</p>
+<p>This is another view of the class-aware U-Net prediction in the comparison figure above, not an independent model. For this validation image, each pixel takes the class with the strongest of the 24 black-and-white U-Net response maps below. This mask uses distinct display colors; its legend lists only classes present here. Class numbers and names match the comparison figure above, whose display colors may differ. This is a display-resolution prediction made from compressed response maps, not an expert mask, a Bora region mask, or a native-resolution accuracy result. The model has no background class, so it assigns a tissue class even on glass or other non-tissue pixels.</p>
 <figure id="combined-response-figure"><a href="#" id="combined-response-full"><img id="combined-response-image" alt="Combined 24-class U-Net response mask"/></a><figcaption>Strongest response per pixel from the 24 maps below; lowest class ID breaks ties.</figcaption></figure>
+<p class="small">Across the 87 cases, these two U-Net class masks agree at 97.0% of display pixels after resizing the original prediction. The differences reflect their tile blending and display processing. This agreement measures rendering consistency, not accuracy against experts.</p>
 <div id="combined-response-legend" aria-label="Classes present in the combined mask"></div>
 </section>
 <section aria-labelledby="response-heading" id="class-responses">
@@ -149,16 +162,6 @@
 <p class="small" hidden="" id="kodama-unavailable"></p>
 <p class="small">Eligible tiles have strictly less than 10% background, counting padding. The cluster count and tile counts describe image-only Bora inputs; tissue names are later fastPLS predictions. KODAMA plots are displayed from the saved fit when at least 30 eligible tiles are available. Plot colors identify anonymous groups and use a separate key from the tissue-class colors in the comparison figure.</p>
 </section>
-<h2>How to read the panels</h2>
-<div class="meta">
-<article><strong>Bora</strong>Image-derived groups followed by fastPLS class predictions. The classifier was trained under a different tile rule from this revised mask run.</article>
-<article><strong>Class-aware U-Net</strong>Supervised on the 397 training images with expert masks; no inference prompt.</article>
-<article><strong>DeepLabV3+</strong>Supervised on the same frozen 397 training images and expert masks as U-Net; no inference prompt. Randomly initialized ResNet-50 backbone.</article>
-<article><strong>VISTA-PATH</strong>Externally pretrained. Only predeclared matched tissue classes are colored; unmatched classes are left uncolored. Source overlap cannot be fully excluded.</article>
-<article><strong>MedSAM</strong>Prompt-guided masks for tumor, stroma and necrosis only. Its boxes came from an earlier U-Net, not the expert or the U-Net panel shown here. Some cases received no box for a role.</article>
-</div>
-<p class="small">Scores are image-level mean intersection over union on the explicitly named expert-present or mapped roles. A missing score means the corresponding comparison was not defined for that image.</p>
-<p class="small">Download the <a href="per-case-87.csv">87-image score table</a>. The former 24-class aggregate table was withdrawn because it included removed cases.</p>
 </main>
 <footer><a href="../attribution.html">Attribution and reuse terms</a></footer>
 <script defer="" src="gallery.js?v=combined-mask-v3"></script>
