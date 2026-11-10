@@ -105,7 +105,7 @@ function showResponses(row){
   const grid=document.getElementById("response-grid");
   const items=[];
   for(let cls=1;cls<=24;cls++){
-    const path=`bw-responses-virchow2-supervised-v1/${row.id}/class-${String(cls).padStart(2,"0")}.webp`;
+    const path=`https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/bw-responses-virchow2-supervised-v1/${row.id}/class-${String(cls).padStart(2,"0")}.webp`;
     const figure=document.createElement("figure");
     const link=document.createElement("a");link.href=path;
     const map=document.createElement("img");map.src=path;map.loading="lazy";

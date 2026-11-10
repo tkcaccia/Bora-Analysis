@@ -52,7 +52,32 @@ for rel, path in files.items():
                     assert target.is_relative_to(site) and target.exists(), (rel, link)
 assert len(list((site / "visium-hd").glob("*.html"))) == 14
 assert receipt["grayscale_group_map_count"] == 143
-assert len(list((site / "visium-hd").glob("*/group-*.webp"))) == 143
+if receipt.get("public_media_archived_file_count"):
+    archive = site.parent / "archive/public-media-2026-11-10-v3"
+    archived = json.loads((archive / "ARCHIVE_VERIFIED.json").read_text())
+    assert archived["status"] == "PINNED_PUBLIC_MEDIA_ARCHIVED_OUTSIDE_PAGES"
+    assert archived["file_count"] == receipt["public_media_archived_file_count"] == 4086
+    assert archived["bytes"] == receipt["public_media_archived_bytes"]
+    assert archived["raw_prefix"] == (
+        "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/"
+        "b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/"
+    )
+    assert sum(e["bytes"] for e in archived["files"].values()) == archived["bytes"]
+    for rel, entry in archived["files"].items():
+        path = archive / rel
+        assert not (site.parent / rel).exists(), rel
+        assert path.stat().st_size == entry["bytes"], rel
+        assert sha(path) == entry["sha256"], rel
+    assert len([r for r in archived["files"] if r.startswith("site/visium-hd/") and
+                "/group-" in r and r.endswith(".webp")]) == 143
+    assert archived["case_paths_rewritten"] > 400
+    assert archived["training_assets_rewritten"] > 80
+    assert len(archived["wsi_pages_rewritten"]) >= 14
+    assert archived["raw_prefix"] in (site / "data.json").read_text()
+    assert archived["raw_prefix"] in (site / "benchmark1-comparators/cases.json").read_text()
+    assert archived["raw_prefix"] in (site / "benchmark1-comparators/gallery.js").read_text()
+else:
+    assert len(list((site / "visium-hd").glob("*/group-*.webp"))) == 143
 if receipt.get("visium_pinned_raw_asset_count"):
     archive = site.parent / "archive/visium-fullsection-2026-11-10-v1"
     archived = json.loads((archive / "ARCHIVE_VERIFIED.json").read_text())

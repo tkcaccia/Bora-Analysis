@@ -38,7 +38,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/tiger_01",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_01",
       "models": [
         {
           "id": "neighbor-context",
@@ -98,7 +98,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/tiger_06",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_06",
       "models": [
         {
           "id": "neighbor-context",
@@ -164,7 +164,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/tiger_10",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_10",
       "models": [
         {
           "id": "neighbor-context",
@@ -236,7 +236,7 @@
           "scored": false
         }
       ],
-      "asset": "assets/tiger_12",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_12",
       "models": [
         {
           "id": "neighbor-context",
@@ -296,7 +296,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/tiger_15",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_15",
       "models": [
         {
           "id": "neighbor-context",
@@ -362,7 +362,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/tiger_16",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_16",
       "models": [
         {
           "id": "neighbor-context",
@@ -446,7 +446,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_05",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_05",
       "models": [
         {
           "id": "neighbor-context",
@@ -530,7 +530,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_06",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_06",
       "models": [
         {
           "id": "neighbor-context",
@@ -596,7 +596,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_12",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_12",
       "models": [
         {
           "id": "neighbor-context",
@@ -680,7 +680,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_13",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_13",
       "models": [
         {
           "id": "neighbor-context",
@@ -740,7 +740,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/tiger_21",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_21",
       "models": [
         {
           "id": "neighbor-context",
@@ -800,7 +800,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/tiger_26",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_26",
       "models": [
         {
           "id": "neighbor-context",
@@ -860,7 +860,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/tiger_29",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_29",
       "models": [
         {
           "id": "neighbor-context",
@@ -920,7 +920,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/tiger_30",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_30",
       "models": [
         {
           "id": "neighbor-context",
@@ -992,7 +992,7 @@
           "scored": false
         }
       ],
-      "asset": "assets/tiger_32",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_32",
       "models": [
         {
           "id": "neighbor-context",
@@ -1052,7 +1052,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/tiger_34",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_34",
       "models": [
         {
           "id": "neighbor-context",
@@ -1118,7 +1118,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/tiger_37",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_37",
       "models": [
         {
           "id": "neighbor-context",
@@ -1184,7 +1184,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/tiger_38",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_38",
       "models": [
         {
           "id": "neighbor-context",
@@ -1268,7 +1268,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_17",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_17",
       "models": [
         {
           "id": "neighbor-context",
@@ -1370,7 +1370,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_20",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_20",
       "models": [
         {
           "id": "neighbor-context",
@@ -1448,7 +1448,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_22",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_22",
       "models": [
         {
           "id": "neighbor-context",
@@ -1532,7 +1532,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_23",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_23",
       "models": [
         {
           "id": "neighbor-context",
@@ -1622,7 +1622,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_26",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_26",
       "models": [
         {
           "id": "neighbor-context",
@@ -1700,7 +1700,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_28",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_28",
       "models": [
         {
           "id": "neighbor-context",
@@ -1790,7 +1790,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_31",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_31",
       "models": [
         {
           "id": "neighbor-context",
@@ -1862,7 +1862,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_34",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_34",
       "models": [
         {
           "id": "neighbor-context",
@@ -1934,7 +1934,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_38",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_38",
       "models": [
         {
           "id": "neighbor-context",
@@ -2000,7 +2000,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_39",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_39",
       "models": [
         {
           "id": "neighbor-context",
@@ -2072,7 +2072,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_43",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_43",
       "models": [
         {
           "id": "neighbor-context",
@@ -2132,7 +2132,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_44",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_44",
       "models": [
         {
           "id": "neighbor-context",
@@ -2204,7 +2204,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_46",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_46",
       "models": [
         {
           "id": "neighbor-context",
@@ -2282,7 +2282,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_48",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_48",
       "models": [
         {
           "id": "neighbor-context",
@@ -2366,7 +2366,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_56",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_56",
       "models": [
         {
           "id": "neighbor-context",
@@ -2432,7 +2432,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_57",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_57",
       "models": [
         {
           "id": "neighbor-context",
@@ -2510,7 +2510,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_59",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_59",
       "models": [
         {
           "id": "neighbor-context",
@@ -2582,7 +2582,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_62",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_62",
       "models": [
         {
           "id": "neighbor-context",
@@ -2660,7 +2660,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_63",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_63",
       "models": [
         {
           "id": "neighbor-context",
@@ -2744,7 +2744,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_64",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_64",
       "models": [
         {
           "id": "neighbor-context",
@@ -2816,7 +2816,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_70",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_70",
       "models": [
         {
           "id": "neighbor-context",
@@ -2888,7 +2888,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_71",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_71",
       "models": [
         {
           "id": "neighbor-context",
@@ -2960,7 +2960,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_78",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_78",
       "models": [
         {
           "id": "neighbor-context",
@@ -3038,7 +3038,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_80",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_80",
       "models": [
         {
           "id": "neighbor-context",
@@ -3116,7 +3116,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_82",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_82",
       "models": [
         {
           "id": "neighbor-context",
@@ -3194,7 +3194,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_86",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_86",
       "models": [
         {
           "id": "neighbor-context",
@@ -3272,7 +3272,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_87",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_87",
       "models": [
         {
           "id": "neighbor-context",
@@ -3362,7 +3362,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_93",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_93",
       "models": [
         {
           "id": "neighbor-context",
@@ -3452,7 +3452,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_94",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_94",
       "models": [
         {
           "id": "neighbor-context",
@@ -3530,7 +3530,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_95",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_95",
       "models": [
         {
           "id": "neighbor-context",
@@ -3596,7 +3596,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_97",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_97",
       "models": [
         {
           "id": "neighbor-context",
@@ -3662,7 +3662,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_102",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_102",
       "models": [
         {
           "id": "neighbor-context",
@@ -3746,7 +3746,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_103",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_103",
       "models": [
         {
           "id": "neighbor-context",
@@ -3836,7 +3836,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_106",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_106",
       "models": [
         {
           "id": "neighbor-context",
@@ -3920,7 +3920,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_113",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_113",
       "models": [
         {
           "id": "neighbor-context",
@@ -4010,7 +4010,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_114",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_114",
       "models": [
         {
           "id": "neighbor-context",
@@ -4088,7 +4088,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_129",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_129",
       "models": [
         {
           "id": "neighbor-context",
@@ -4172,7 +4172,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/bcss_130",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/bcss_130",
       "models": [
         {
           "id": "neighbor-context",
@@ -4238,7 +4238,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/tiger_44",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_44",
       "models": [
         {
           "id": "neighbor-context",
@@ -4304,7 +4304,7 @@
           "scored": false
         }
       ],
-      "asset": "assets/tiger_45",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_45",
       "models": [
         {
           "id": "neighbor-context",
@@ -4382,7 +4382,7 @@
           "scored": false
         }
       ],
-      "asset": "assets/tiger_48",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_48",
       "models": [
         {
           "id": "neighbor-context",
@@ -4442,7 +4442,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/tiger_62",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_62",
       "models": [
         {
           "id": "neighbor-context",
@@ -4508,7 +4508,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/tiger_64",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_64",
       "models": [
         {
           "id": "neighbor-context",
@@ -4568,7 +4568,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/tiger_65",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_65",
       "models": [
         {
           "id": "neighbor-context",
@@ -4640,7 +4640,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/tiger_67",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_67",
       "models": [
         {
           "id": "neighbor-context",
@@ -4700,7 +4700,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/tiger_68",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_68",
       "models": [
         {
           "id": "neighbor-context",
@@ -4760,7 +4760,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/tiger_71",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_71",
       "models": [
         {
           "id": "neighbor-context",
@@ -4820,7 +4820,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/tiger_73",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_73",
       "models": [
         {
           "id": "neighbor-context",
@@ -4886,7 +4886,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/tiger_76",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_76",
       "models": [
         {
           "id": "neighbor-context",
@@ -4946,7 +4946,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/tiger_78",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/tiger_78",
       "models": [
         {
           "id": "neighbor-context",
@@ -5030,7 +5030,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_02",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_02",
       "models": [
         {
           "id": "neighbor-context",
@@ -5102,7 +5102,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_03",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_03",
       "models": [
         {
           "id": "neighbor-context",
@@ -5174,7 +5174,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_09",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_09",
       "models": [
         {
           "id": "neighbor-context",
@@ -5246,7 +5246,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_11",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_11",
       "models": [
         {
           "id": "neighbor-context",
@@ -5312,7 +5312,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_16",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_16",
       "models": [
         {
           "id": "neighbor-context",
@@ -5384,7 +5384,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_35",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_35",
       "models": [
         {
           "id": "neighbor-context",
@@ -5450,7 +5450,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_07",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_07",
       "models": [
         {
           "id": "neighbor-context",
@@ -5516,7 +5516,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_09",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_09",
       "models": [
         {
           "id": "neighbor-context",
@@ -5582,7 +5582,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_12",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_12",
       "models": [
         {
           "id": "neighbor-context",
@@ -5654,7 +5654,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_13",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_13",
       "models": [
         {
           "id": "neighbor-context",
@@ -5714,7 +5714,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_16",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_16",
       "models": [
         {
           "id": "neighbor-context",
@@ -5786,7 +5786,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_20",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_20",
       "models": [
         {
           "id": "neighbor-context",
@@ -5858,7 +5858,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_22",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_22",
       "models": [
         {
           "id": "neighbor-context",
@@ -5930,7 +5930,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_24",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_24",
       "models": [
         {
           "id": "neighbor-context",
@@ -5996,7 +5996,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_26",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_26",
       "models": [
         {
           "id": "neighbor-context",
@@ -6062,7 +6062,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_27",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_27",
       "models": [
         {
           "id": "neighbor-context",
@@ -6128,7 +6128,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_29",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_29",
       "models": [
         {
           "id": "neighbor-context",
@@ -6188,7 +6188,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_31",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_31",
       "models": [
         {
           "id": "neighbor-context",
@@ -6254,7 +6254,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_e_01",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_e_01",
       "models": [
         {
           "id": "neighbor-context",
@@ -6326,7 +6326,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_e_02",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_e_02",
       "models": [
         {
           "id": "neighbor-context",
@@ -6398,7 +6398,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_e_05",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_e_05",
       "models": [
         {
           "id": "neighbor-context",
@@ -6476,7 +6476,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_e_13",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_e_13",
       "models": [
         {
           "id": "neighbor-context",
@@ -6548,7 +6548,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_e_14",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_e_14",
       "models": [
         {
           "id": "neighbor-context",
@@ -6614,7 +6614,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_e_15",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_e_15",
       "models": [
         {
           "id": "neighbor-context",
@@ -6686,7 +6686,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_e_22",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_e_22",
       "models": [
         {
           "id": "neighbor-context",
@@ -6752,7 +6752,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_e_31",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_e_31",
       "models": [
         {
           "id": "neighbor-context",
@@ -6824,7 +6824,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_e_32",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_e_32",
       "models": [
         {
           "id": "neighbor-context",
@@ -6902,7 +6902,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_e_34",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_e_34",
       "models": [
         {
           "id": "neighbor-context",
@@ -6968,7 +6968,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_e_35",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_e_35",
       "models": [
         {
           "id": "neighbor-context",
@@ -7034,7 +7034,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/gcss_e_38",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/gcss_e_38",
       "models": [
         {
           "id": "neighbor-context",
@@ -7106,7 +7106,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_e_06",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_e_06",
       "models": [
         {
           "id": "neighbor-context",
@@ -7178,7 +7178,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_e_08",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_e_08",
       "models": [
         {
           "id": "neighbor-context",
@@ -7256,7 +7256,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_e_09",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_e_09",
       "models": [
         {
           "id": "neighbor-context",
@@ -7328,7 +7328,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_e_10",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_e_10",
       "models": [
         {
           "id": "neighbor-context",
@@ -7412,7 +7412,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_e_11",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_e_11",
       "models": [
         {
           "id": "neighbor-context",
@@ -7478,7 +7478,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_e_12",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_e_12",
       "models": [
         {
           "id": "neighbor-context",
@@ -7556,7 +7556,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_e_13",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_e_13",
       "models": [
         {
           "id": "neighbor-context",
@@ -7628,7 +7628,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_e_14",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_e_14",
       "models": [
         {
           "id": "neighbor-context",
@@ -7706,7 +7706,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_e_15",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_e_15",
       "models": [
         {
           "id": "neighbor-context",
@@ -7772,7 +7772,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_e_16",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_e_16",
       "models": [
         {
           "id": "neighbor-context",
@@ -7844,7 +7844,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_e_17",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_e_17",
       "models": [
         {
           "id": "neighbor-context",
@@ -7916,7 +7916,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_e_18",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_e_18",
       "models": [
         {
           "id": "neighbor-context",
@@ -8000,7 +8000,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_e_19",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_e_19",
       "models": [
         {
           "id": "neighbor-context",
@@ -8084,7 +8084,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_e_20",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_e_20",
       "models": [
         {
           "id": "neighbor-context",
@@ -8144,7 +8144,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_e_21",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_e_21",
       "models": [
         {
           "id": "neighbor-context",
@@ -8216,7 +8216,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_e_22",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_e_22",
       "models": [
         {
           "id": "neighbor-context",
@@ -8282,7 +8282,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_e_23",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_e_23",
       "models": [
         {
           "id": "neighbor-context",
@@ -8348,7 +8348,7 @@
           "scored": true
         }
       ],
-      "asset": "assets/ignite_e_24",
+      "asset": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/assets/ignite_e_24",
       "models": [
         {
           "id": "neighbor-context",
