@@ -1,6 +1,6 @@
 {
   "format": "bora-public-site-v1",
-  "size_bytes": 893282516,
+  "size_bytes": 893285034,
   "file_count": 4643,
   "public_wsi_count": 13,
   "file_sha256": {
@@ -3200,8 +3200,8 @@
     "benchmark1-comparators/fastpls-rgb-085.webp": "6c0f6462d8d961211f23cd2c61c517fea2406da0a7b51c85df048259c328a3b4",
     "benchmark1-comparators/fastpls-rgb-086.webp": "8f54e2f2425a8e7088b3841a1908b1b7782fb8055702dbfe08264bd3766c9075",
     "benchmark1-comparators/fastpls-rgb-087.webp": "c13a9d38133aa44ca2fd09608712589a8ba1d746d50adb2c29e68f4810b29757",
-    "benchmark1-comparators/gallery.js": "e9d93dc3a221348cf350b8ae000f9ef9da23f838f37e3ca2935f08f3f281786f",
-    "benchmark1-comparators/index.html": "f5fed5644bc4763107b7d0c94b13bcf25df534f1761b193c627515ec1a2a8352",
+    "benchmark1-comparators/gallery.js": "879345e016977c738f5a4a4bc44abc3588f4869d0f2f3315b1add851080d9f2f",
+    "benchmark1-comparators/index.html": "7f85bf1891853ef0b46bc2944e64e23c8f21c7f23d5c3c55e88d5905d24716d7",
     "benchmark1-comparators/kodama-001.webp": "de50f6288faa0fe22b0e5a6d262731423e754f76dc6d06787cddf40e403d55e8",
     "benchmark1-comparators/kodama-002.webp": "0494f3f7ed695350b8aeed8866ac8a0c5ef282af59631caf08e3c7215e599123",
     "benchmark1-comparators/kodama-003.webp": "456e3e099c14884d1c1abc2ba3887043223ffd7dbd9ab4a9a9bcb180aa5cdf4e",
@@ -4655,5 +4655,6 @@
   "benchmark1_combined_response_mask_count": 87,
   "benchmark1_combined_response_mask_source_audit_sha256": "f787322132e644392969666c9c40abd8c5199d2674e432bbe287e3c628ab4527",
   "benchmark1_supervised_virchow2_score_sha256": "35fe6333a11cc1d5d2de1c9c432c8f52e3ad272a640a70f4669d5ef02885d705",
-  "benchmark1_case_tissue_legend_audit_sha256": "b26ce1979904e59bd46244d7955c026d45fb0d6fd85086b6d5a2a77402557f30"
+  "benchmark1_case_tissue_legend_audit_sha256": "b26ce1979904e59bd46244d7955c026d45fb0d6fd85086b6d5a2a77402557f30",
+  "benchmark1_kodama_legend_audit_sha256": "232cb610bf1482e976b43ead1986ef3c1311c40d10027fbf3bcbaed95cfbaf77"
 }

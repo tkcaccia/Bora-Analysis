@@ -28,6 +28,14 @@
     #kodama-figure{margin:18px 0;background:#fff;border:1px solid #d5e0e3;padding:14px;max-width:760px}
     #kodama-image{display:block;width:100%;height:auto}
     #kodama-caption{line-height:1.5;color:#415b62}
+    #selected-kodama-figure{margin:18px 0;background:#fff;border:1px solid #d5e0e3;padding:14px;max-width:760px}
+    .kodama-legend{margin:12px 0;padding:14px 16px;border:2px solid #76939c;border-radius:7px;background:#f3f8f9;color:#17343d}
+    .kodama-legend>strong{display:block;font-size:1.05rem;margin-bottom:10px}
+    .kodama-legend ul{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:10px 16px;list-style:none;padding:0;margin:0}
+    .kodama-legend li{display:flex;align-items:center;gap:10px;padding:7px 9px;border:1px solid #ccdbdf;border-radius:5px;background:#fff}
+    .kodama-legend .marker{display:inline-block;flex:none;width:22px;height:22px;border:2px solid #344e56;border-radius:50%}
+    .kodama-legend .label{font-weight:700;font-size:1rem}
+    .kodama-legend .count{display:block;color:#415b62;font-size:.92rem}
     #pipeline-summary article{min-width:0}
     .bora-views{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:16px;margin:18px 0}
     #cluster-figure,#rgb-figure,#prediction-figure,.selected-figure{margin:0;background:#fff;border:1px solid #d5e0e3;padding:14px}
@@ -142,7 +150,7 @@
 <h3>Training-selected tissue identification</h3><div class="meta" id="selected-identification-scores"></div>
 <h3>Names assigned to training-selected groups</h3>
 <div class="table-scroll"><table id="selected-group-identification"><thead><tr><th>Group</th><th>Eligible tiles</th><th>fastPLS tissue prediction</th><th>Expert majority in scored area</th><th>Agreement</th></tr></thead><tbody></tbody></table></div>
-<figure hidden="" id="selected-kodama-figure"><img alt="KODAMA plot for the training-selected route" id="selected-kodama-image"/><figcaption id="selected-kodama-caption"></figcaption></figure>
+<figure hidden="" id="selected-kodama-figure"><img alt="KODAMA plot for the training-selected route" id="selected-kodama-image"/><div aria-label="Training-selected KODAMA group legend" class="kodama-legend" id="selected-kodama-legend"><strong>Anonymous tile groups</strong><ul></ul></div><figcaption id="selected-kodama-caption"></figcaption></figure>
 <p class="small" hidden="" id="selected-kodama-unavailable"></p>
 </section>
 <section aria-labelledby="response-heading" id="class-responses">
@@ -155,6 +163,7 @@
 <div class="meta" id="pipeline-summary"></div>
 <figure hidden="" id="kodama-figure">
 <img alt="Image-only KODAMA scatter plot with tile counts for each anonymous group" id="kodama-image"/>
+<div aria-label="Classic Bora KODAMA group legend" class="kodama-legend" id="kodama-legend"><strong>Anonymous tile groups</strong><ul></ul></div>
 <figcaption id="kodama-caption"></figcaption>
 </figure>
 <p class="small" hidden="" id="kodama-unavailable"></p>
@@ -162,6 +171,6 @@
 </section>
 </main>
 <footer><a href="../attribution.html">Attribution and reuse terms</a></footer>
-<script defer="" src="gallery.js?v=case-expert-tissue-legends-v1"></script>
+<script defer="" src="gallery.js?v=kodama-visible-legends-v1"></script>
 </body>
 </html>

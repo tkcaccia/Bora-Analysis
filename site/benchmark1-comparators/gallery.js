@@ -17,6 +17,18 @@ const classNames={1:"Tumor",2:"In situ tumor",3:"Stroma",4:"Inflamed stroma",5:"
 let all=[],visible=[];
 const pct=x=>x===null||x===undefined?"Not defined":(100*x).toFixed(1)+"%";
 const decimal=x=>x===null||x===undefined?"Not defined":Number(x).toFixed(3);
+function renderKodamaLegend(id,colors,counts){
+  const list=document.querySelector(`#${id} ul`);
+  if(!Array.isArray(colors)||!Array.isArray(counts)||colors.length!==counts.length||!counts.length)throw Error(`Invalid KODAMA group legend: ${id}`);
+  list.replaceChildren(...colors.map((color,index)=>{
+    if(!/^#[0-9a-fA-F]{6}$/.test(color)||!Number.isInteger(counts[index])||counts[index]<1)throw Error(`Invalid KODAMA group entry: ${id}`);
+    const item=document.createElement("li"),marker=document.createElement("i"),copy=document.createElement("span"),label=document.createElement("span"),count=document.createElement("span");
+    marker.className="marker";marker.style.backgroundColor=color;marker.setAttribute("aria-hidden","true");
+    label.className="label";label.textContent=`Group ${index+1}`;
+    count.className="count";count.textContent=`${counts[index].toLocaleString()} eligible tiles`;
+    copy.append(label,count);item.append(marker,copy);return item;
+  }));
+}
 function card(name,score,roles,detail){return `<article><strong>${name}</strong><div>${pct(score)}</div><div class="small">${roles}</div><div class="small">${detail}</div></article>`}
 function show(id){
   const row=visible.find(x=>x.id===id)||visible[0];if(!row)return;
@@ -67,10 +79,12 @@ function show(id){
   kodamaUnavailable.hidden=!!p.kodama_plot;
   if(p.kodama_plot){
     kodamaImage.src=p.kodama_plot;
+    renderKodamaLegend("kodama-legend",stage.palette_hex,p.tile_counts_by_group);
     kodamaImage.alt=`KODAMA coordinates for ${p.eligible_tiles} eligible tiles in ${p.clusters} anonymous groups`;
-    kodamaCaption.textContent=`Saved image-only KODAMA fit · ${p.eligible_tiles} tiles · ${p.clusters} groups. A 2D separation does not prove different tissue identity.`;
+    kodamaCaption.textContent=`Saved image-only KODAMA fit · ${p.eligible_tiles} tiles · ${p.clusters} ${p.clusters===1?"group":"groups"}. A 2D separation does not prove different tissue identity.`;
   }else{
     kodamaImage.removeAttribute("src");
+    document.querySelector("#kodama-legend ul").replaceChildren();
     kodamaUnavailable.textContent=`KODAMA plot omitted: ${p.eligible_tiles} eligible tiles, below the 30-tile display threshold. ${p.grouping_route==="small_roi_coverage"?"This image used the small-image coverage route instead of KODAMA.":"The saved clustering remains included in the counts above."}`;
   }
   showSelected(row);
@@ -128,8 +142,10 @@ function showSelected(row){
   const figure=document.getElementById("selected-kodama-figure"),unavailable=document.getElementById("selected-kodama-unavailable");
   figure.hidden=!v.images.kodama;unavailable.hidden=!!v.images.kodama;
   if(v.images.kodama){document.getElementById("selected-kodama-image").src=v.images.kodama;
-    document.getElementById("selected-kodama-caption").textContent=`Training-selected KODAMA · ${v.eligible_tiles} tiles · ${v.clusters} groups. A 2D separation does not establish tissue identity.`;
+    renderKodamaLegend("selected-kodama-legend",v.cluster_palette_hex,v.tile_counts_by_group);
+    document.getElementById("selected-kodama-caption").textContent=`Training-selected KODAMA · ${v.eligible_tiles} tiles · ${v.clusters} ${v.clusters===1?"group":"groups"}. A 2D separation does not establish tissue identity.`;
   }else{document.getElementById("selected-kodama-image").removeAttribute("src");
+    document.querySelector("#selected-kodama-legend ul").replaceChildren();
     unavailable.textContent=`No KODAMA plot for this ${v.eligible_tiles}-tile small-image route.`;}
 }
 function filter(){
@@ -137,7 +153,7 @@ function filter(){
   caseSelect.replaceChildren(...visible.map(x=>new Option(`${x.dataset.toUpperCase()} · ${x.source_group} · ${x.id}`,x.id)));
   show(location.hash.slice(1));
 }
-fetch("cases.json?v=case-expert-tissue-legends-v1").then(r=>{if(!r.ok)throw Error(`Gallery manifest: HTTP ${r.status}`);return r.json()}).then(data=>{
+fetch("cases.json?v=kodama-visible-legends-v1").then(r=>{if(!r.ok)throw Error(`Gallery manifest: HTTP ${r.status}`);return r.json()}).then(data=>{
   if(data.status!=="AUDITED_BENCHMARK1_FULL_VS_TRAINING_SELECTED_DEVELOPMENT_ONLY"||data.case_count!==87||data.cases.length!==87||data.cases.some(x=>!x.bora_training_selected_view))throw Error("Gallery audit is incomplete");
   document.getElementById("selected-summary").textContent=`Across 87 development images, training-selected Bora had ${data.training_selected_summary.one_group_cases} one-group outputs. Mean covered-pixel matched segmentation IoU: ${pct(data.training_selected_summary.mean_matched_segmentation_iou_covered)}; mean group-majority name agreement: ${pct(data.training_selected_summary.mean_group_name_accuracy)}; mean end-to-end tissue macro IoU: ${pct(data.training_selected_summary.mean_end_to_end_macro_iou)}. Compare these stage-specific values with classic Bora above; neither route was evaluated on an untouched test cohort.`;
   all=data.cases;
