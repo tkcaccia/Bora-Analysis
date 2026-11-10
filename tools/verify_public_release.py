@@ -53,6 +53,24 @@ for rel, path in files.items():
 assert len(list((site / "visium-hd").glob("*.html"))) == 14
 assert receipt["grayscale_group_map_count"] == 143
 assert len(list((site / "visium-hd").glob("*/group-*.webp"))) == 143
+if receipt.get("visium_pinned_raw_asset_count"):
+    archive = site.parent / "archive/visium-fullsection-2026-11-10-v1"
+    archived = json.loads((archive / "ARCHIVE_VERIFIED.json").read_text())
+    assert archived["format"] == "bora-pinned-visium-assets-v1"
+    assert archived["file_count"] == receipt["visium_pinned_raw_asset_count"] == 192
+    assert not (site / "visium/fullsection").exists()
+    assert len(archived["sha256"]) == 192
+    assert archived["pinned_raw_prefix"].startswith(
+        "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/"
+    )
+    assert sum((archive / rel).stat().st_size for rel in archived["sha256"]) == archived["bytes"]
+    for rel, digest in archived["sha256"].items():
+        assert sha(archive / rel) == digest, rel
+    for page in (site / "visium").glob("*.html"):
+        content = page.read_text()
+        assert archived["pinned_raw_prefix"] in content
+        assert '="fullsection/' not in content
+    assert archived["pinned_raw_prefix"] in (site / "geojson-inspectors.json").read_text()
 for page in (site / "visium-hd").glob("*.html"):
     if page.name != "index.html":
         assert '<section id="groups">' in page.read_text(), page

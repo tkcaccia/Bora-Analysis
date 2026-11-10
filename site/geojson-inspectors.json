@@ -9,8 +9,8 @@
       "title": "Breast cancer \u00b7 Giotto",
       "section": "visium",
       "page": "visium/breast.html#inspect-geojson",
-      "geometry": "visium/fullsection/breast/breast-Visium-Bora-final.geojson.gz",
-      "image": "visium/fullsection/breast/he-overview.jpg",
+      "geometry": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium/fullsection/breast/breast-Visium-Bora-final.geojson.gz",
+      "image": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium/fullsection/breast/he-overview.jpg",
       "image_sha256": "7723798c983ee50a0bf3e0a0418f3aa533b25748f9fa585cad1589c73e114646",
       "image_bounds_xywh": [
         0,
@@ -119,8 +119,8 @@
       "title": "Colorectal cancer \u00b7 Seurat",
       "section": "visium",
       "page": "visium/colorectal.html#inspect-geojson",
-      "geometry": "visium/fullsection/colorectal/colorectal-Visium-Bora-final.geojson.gz",
-      "image": "visium/fullsection/colorectal/he-overview.jpg",
+      "geometry": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium/fullsection/colorectal/colorectal-Visium-Bora-final.geojson.gz",
+      "image": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium/fullsection/colorectal/he-overview.jpg",
       "image_sha256": "78851e6c9041064f5499dbb079eab61bcca0c314df0cf288e4904d52ff2cc6d1",
       "image_bounds_xywh": [
         0,
@@ -265,8 +265,8 @@
       "title": "Tonsil \u00b7 SpatialExperiment",
       "section": "visium",
       "page": "visium/tonsil.html#inspect-geojson",
-      "geometry": "visium/fullsection/tonsil/tonsil-Visium-Bora-final.geojson.gz",
-      "image": "visium/fullsection/tonsil/he-overview.jpg",
+      "geometry": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium/fullsection/tonsil/tonsil-Visium-Bora-final.geojson.gz",
+      "image": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium/fullsection/tonsil/he-overview.jpg",
       "image_sha256": "d960a583e54ec8f43234d686daffb3a07ba3e6d90281c69dd27176c0123069b5",
       "image_bounds_xywh": [
         0,
