@@ -144,8 +144,15 @@ function showSelected(row){
   if(v.images.kodama){document.getElementById("selected-kodama-image").src=v.images.kodama+"?v=kodama-boundary-padding-v1";
     renderKodamaLegend("selected-kodama-legend",v.cluster_palette_hex,v.tile_counts_by_group);
     document.getElementById("selected-kodama-caption").textContent=`Training-selected KODAMA · ${v.eligible_tiles} tiles · ${v.clusters} ${v.clusters===1?"group":"groups"}. A 2D separation does not establish tissue identity.`;
+    const focus=document.getElementById("selected-kodama-focus");
+    focus.hidden=!v.images.kodama_focus;
+    const focusImage=document.getElementById("selected-kodama-focus-image");
+    if(v.images.kodama_focus){focusImage.src=v.images.kodama_focus+"?v=kodama-group-inspection-v1";focusImage.alt=`${v.clusters} KODAMA groups shown in separate panels on shared coordinates`;}
+    else focusImage.removeAttribute("src");
   }else{document.getElementById("selected-kodama-image").removeAttribute("src");
     document.querySelector("#selected-kodama-legend ul").replaceChildren();
+    document.getElementById("selected-kodama-focus").hidden=true;
+    document.getElementById("selected-kodama-focus-image").removeAttribute("src");
     unavailable.textContent=`No KODAMA plot for this ${v.eligible_tiles}-tile small-image route.`;}
 }
 function filter(){
@@ -153,7 +160,7 @@ function filter(){
   caseSelect.replaceChildren(...visible.map(x=>new Option(`${x.dataset.toUpperCase()} · ${x.source_group} · ${x.id}`,x.id)));
   show(location.hash.slice(1));
 }
-fetch("cases.json?v=kodama-boundary-padding-v1").then(r=>{if(!r.ok)throw Error(`Gallery manifest: HTTP ${r.status}`);return r.json()}).then(data=>{
+fetch("cases.json?v=kodama-group-inspection-v1").then(r=>{if(!r.ok)throw Error(`Gallery manifest: HTTP ${r.status}`);return r.json()}).then(data=>{
   if(data.status!=="AUDITED_BENCHMARK1_FULL_VS_TRAINING_SELECTED_DEVELOPMENT_ONLY"||data.case_count!==87||data.cases.length!==87||data.cases.some(x=>!x.bora_training_selected_view))throw Error("Gallery audit is incomplete");
   document.getElementById("selected-summary").textContent=`Across 87 development images, training-selected Bora had ${data.training_selected_summary.one_group_cases} one-group outputs. Mean covered-pixel matched segmentation IoU: ${pct(data.training_selected_summary.mean_matched_segmentation_iou_covered)}; mean group-majority name agreement: ${pct(data.training_selected_summary.mean_group_name_accuracy)}; mean end-to-end tissue macro IoU: ${pct(data.training_selected_summary.mean_end_to_end_macro_iou)}. Compare these stage-specific values with classic Bora above; neither route was evaluated on an untouched test cohort.`;
   all=data.cases;

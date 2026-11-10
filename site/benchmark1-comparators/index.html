@@ -28,6 +28,9 @@
     #kodama-figure{margin:18px 0;background:#fff;border:1px solid #d5e0e3;padding:14px;max-width:760px}
     #kodama-image{display:block;width:100%;height:auto}
     #kodama-caption{line-height:1.5;color:#415b62}
+    #selected-kodama-focus{max-width:760px;margin:12px 0 24px;padding:12px 16px;background:#fff;border:1px solid #b9ced4;border-radius:6px}
+    #selected-kodama-focus summary{cursor:pointer;font-weight:700;font-size:1.05rem}
+    #selected-kodama-focus img{display:block;width:100%;height:auto}
     #selected-kodama-figure{margin:18px 0;background:#fff;border:1px solid #d5e0e3;padding:14px;max-width:760px}
     .kodama-legend{margin:12px 0;padding:14px 16px;border:2px solid #76939c;border-radius:7px;background:#f3f8f9;color:#17343d}
     .kodama-legend>strong{display:block;font-size:1.05rem;margin-bottom:10px}
@@ -150,7 +153,7 @@
 <h3>Training-selected tissue identification</h3><div class="meta" id="selected-identification-scores"></div>
 <h3>Names assigned to training-selected groups</h3>
 <div class="table-scroll"><table id="selected-group-identification"><thead><tr><th>Group</th><th>Eligible tiles</th><th>fastPLS tissue prediction</th><th>Expert majority in scored area</th><th>Agreement</th></tr></thead><tbody></tbody></table></div>
-<figure hidden="" id="selected-kodama-figure"><img alt="KODAMA plot for the training-selected route" id="selected-kodama-image"/><div aria-label="Training-selected KODAMA group legend" class="kodama-legend" id="selected-kodama-legend"><strong>Anonymous tile groups</strong><ul></ul></div><figcaption id="selected-kodama-caption"></figcaption></figure>
+<figure hidden="" id="selected-kodama-figure"><img alt="KODAMA plot for the training-selected route" id="selected-kodama-image"/><div aria-label="Training-selected KODAMA group legend" class="kodama-legend" id="selected-kodama-legend"><strong>Anonymous tile groups</strong><ul></ul></div><figcaption id="selected-kodama-caption"></figcaption></figure><details hidden="" open="" id="selected-kodama-focus"><summary>Inspect each KODAMA group separately</summary><p class="small">Each panel keeps the saved KODAMA coordinates. Grey points show the other groups. This view changes no cluster assignment or score.</p><img alt="KODAMA groups shown separately on shared coordinates" id="selected-kodama-focus-image"/></details>
 <p class="small" hidden="" id="selected-kodama-unavailable"></p>
 </section>
 <section aria-labelledby="response-heading" id="class-responses">
@@ -171,6 +174,6 @@
 </section>
 </main>
 <footer><a href="../attribution.html">Attribution and reuse terms</a></footer>
-<script defer="" src="gallery.js?v=kodama-boundary-padding-v1"></script>
+<script defer="" src="gallery.js?v=kodama-group-inspection-v1"></script>
 </body>
 </html>

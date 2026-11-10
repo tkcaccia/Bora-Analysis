@@ -175,7 +175,8 @@
           "cluster_rgb": "selected-clusters-rgb-001.webp",
           "fastpls_rgb": "selected-fastpls-rgb-001.webp",
           "overlay": "selected-clusters-overlay-001.webp",
-          "kodama": "selected-kodama-001.svg"
+          "kodama": "selected-kodama-001.svg",
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-001.webp": "78cc9dd8c07af7d777f8dafdad729bd2d440122416eb4a1fa68a161d8cd3c87e",
@@ -438,7 +439,8 @@
           "cluster_rgb": "selected-clusters-rgb-002.webp",
           "fastpls_rgb": "selected-fastpls-rgb-002.webp",
           "overlay": "selected-clusters-overlay-002.webp",
-          "kodama": "selected-kodama-002.svg"
+          "kodama": "selected-kodama-002.svg",
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-002.webp": "728eab54676cf474c5427d9cae2f4edcc7e4d07673fc1d5154d47309ce683fb2",
@@ -734,13 +736,15 @@
           "cluster_rgb": "selected-clusters-rgb-003.webp",
           "fastpls_rgb": "selected-fastpls-rgb-003.webp",
           "overlay": "selected-clusters-overlay-003.webp",
-          "kodama": "selected-kodama-003.svg"
+          "kodama": "selected-kodama-003.svg",
+          "kodama_focus": "selected-kodama-groups-003.svg"
         },
         "image_sha256": {
           "selected-clusters-rgb-003.webp": "d6bb27c496d08074351265f3e22c54c9cbd010e398cd07029e7cc47b3f33cc41",
           "selected-fastpls-rgb-003.webp": "3eea36899d53536b68e9443c21821f0d9a4b47abde28856afdc157e946626f4c",
           "selected-clusters-overlay-003.webp": "4ac0dddced9e5ac786d9bcf2a9d8793d2c701a095b8b87b5edab6e9cc968ffa9",
-          "selected-kodama-003.svg": "f4296ba40b9012a42b66169311b8903bbacab8b9a07eb32e330daf1e80a4a94f"
+          "selected-kodama-003.svg": "f4296ba40b9012a42b66169311b8903bbacab8b9a07eb32e330daf1e80a4a94f",
+          "selected-kodama-groups-003.svg": "42751a8ba4aee9c22384d58e0640628ce34eb7392264c4a1430dd4ac9210dde7"
         },
         "cluster_palette_hex": [
           "#d95f02",
@@ -1037,7 +1041,8 @@
           "cluster_rgb": "selected-clusters-rgb-004.webp",
           "fastpls_rgb": "selected-fastpls-rgb-004.webp",
           "overlay": "selected-clusters-overlay-004.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-004.webp": "2eb0108f41db575deb67bd0525bd482315313d88b3ee73db4b9ce398df7540d4",
@@ -1303,7 +1308,8 @@
           "cluster_rgb": "selected-clusters-rgb-005.webp",
           "fastpls_rgb": "selected-fastpls-rgb-005.webp",
           "overlay": "selected-clusters-overlay-005.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-005.webp": "1dc99c0252a9ecdf3e69acb0e2383564f58af1adece5f9fccbb7e78bfe332b24",
@@ -1593,13 +1599,15 @@
           "cluster_rgb": "selected-clusters-rgb-006.webp",
           "fastpls_rgb": "selected-fastpls-rgb-006.webp",
           "overlay": "selected-clusters-overlay-006.webp",
-          "kodama": "selected-kodama-006.svg"
+          "kodama": "selected-kodama-006.svg",
+          "kodama_focus": "selected-kodama-groups-006.svg"
         },
         "image_sha256": {
           "selected-clusters-rgb-006.webp": "a02694ea0910275adbd6df29fa6658784b74626e9919a9a9e154b906abcf1e78",
           "selected-fastpls-rgb-006.webp": "90383abe8c4c515bcea484e3d3743ed37194d155434bbf0fb2abe5894e7dd3ec",
           "selected-clusters-overlay-006.webp": "a7b3b2138e1615525bfef4423c21962faf9aae57909cead49f4d0d07c1cc6bcc",
-          "selected-kodama-006.svg": "1cb531929fa15c2c659bc9be80de23b74a7ed6c46f22b80c1738c9cf812917c0"
+          "selected-kodama-006.svg": "1cb531929fa15c2c659bc9be80de23b74a7ed6c46f22b80c1738c9cf812917c0",
+          "selected-kodama-groups-006.svg": "c69e7a9d2a6a96b1db02f6d678ec59caf3ee22d2e67e0de3ce299b4e68db5700"
         },
         "cluster_palette_hex": [
           "#d95f02",
@@ -1932,13 +1940,15 @@
           "cluster_rgb": "selected-clusters-rgb-007.webp",
           "fastpls_rgb": "selected-fastpls-rgb-007.webp",
           "overlay": "selected-clusters-overlay-007.webp",
-          "kodama": "selected-kodama-007.svg"
+          "kodama": "selected-kodama-007.svg",
+          "kodama_focus": "selected-kodama-groups-007.svg"
         },
         "image_sha256": {
           "selected-clusters-rgb-007.webp": "2c49d1875c45190a11f2e84fd72f17e69295d4c8ff15db64340c8888951d3a4b",
           "selected-fastpls-rgb-007.webp": "d71bd33662ac2eff4f7ba5e4aa997f059c37a47d946b9c1efaf03d6cc4216b99",
           "selected-clusters-overlay-007.webp": "ddd16408a184eb62bca9f3713ae494a90522836438c291c90a2c3ba5c0a96600",
-          "selected-kodama-007.svg": "4c405838b87bf4156a747b46f8f1da52fc567a5cada0e6532048a6399f328e19"
+          "selected-kodama-007.svg": "4c405838b87bf4156a747b46f8f1da52fc567a5cada0e6532048a6399f328e19",
+          "selected-kodama-groups-007.svg": "3bf306422f8cc7b1aa454db97756f9cd43880777c4281f05ab75ea301037fe89"
         },
         "cluster_palette_hex": [
           "#d95f02",
@@ -2257,13 +2267,15 @@
           "cluster_rgb": "selected-clusters-rgb-008.webp",
           "fastpls_rgb": "selected-fastpls-rgb-008.webp",
           "overlay": "selected-clusters-overlay-008.webp",
-          "kodama": "selected-kodama-008.svg"
+          "kodama": "selected-kodama-008.svg",
+          "kodama_focus": "selected-kodama-groups-008.svg"
         },
         "image_sha256": {
           "selected-clusters-rgb-008.webp": "cb5f3194be98b3a209823745ccf6913d319422806d48ca16bde95646ac53f386",
           "selected-fastpls-rgb-008.webp": "5529db33f933d746c21bca3a28f6c1f2b7e13f5e8a4dd38772ddd2f05e70c70f",
           "selected-clusters-overlay-008.webp": "9c36aee9986ede5bfeb6b6a97b015cb29f93d4a0f24901abb421467205c83cfa",
-          "selected-kodama-008.svg": "0bd4653649155d8bbb8537ba56169c366c6aa6774df4d257e612c5ce7fed5607"
+          "selected-kodama-008.svg": "0bd4653649155d8bbb8537ba56169c366c6aa6774df4d257e612c5ce7fed5607",
+          "selected-kodama-groups-008.svg": "acaaf242f9ec1e9339172f550fd141f9616a56390b1dfefb13dcc40298ad6d92"
         },
         "cluster_palette_hex": [
           "#d95f02",
@@ -2608,13 +2620,15 @@
           "cluster_rgb": "selected-clusters-rgb-009.webp",
           "fastpls_rgb": "selected-fastpls-rgb-009.webp",
           "overlay": "selected-clusters-overlay-009.webp",
-          "kodama": "selected-kodama-009.svg"
+          "kodama": "selected-kodama-009.svg",
+          "kodama_focus": "selected-kodama-groups-009.svg"
         },
         "image_sha256": {
           "selected-clusters-rgb-009.webp": "6895f0b7dfa711abb95a52bc6897a3b9afebe0574a2c63af0de48f26af4e15ab",
           "selected-fastpls-rgb-009.webp": "8c7ca371004d892e712d2053b0c5e0db3971758bc146317e6661eedcd9653fea",
           "selected-clusters-overlay-009.webp": "ee7fc7bead723f57fdd4895176d4984c935425abbfe8cda25a025b75f6347fc0",
-          "selected-kodama-009.svg": "ba768e4f0b5b738d94c0f9d096de7b071750222481364a951c6603ce0f4e6765"
+          "selected-kodama-009.svg": "ba768e4f0b5b738d94c0f9d096de7b071750222481364a951c6603ce0f4e6765",
+          "selected-kodama-groups-009.svg": "ea8aee3183a4994904439cde56fa48052c914b4319688b8b9b1655d566f51156"
         },
         "cluster_palette_hex": [
           "#d95f02",
@@ -2967,13 +2981,15 @@
           "cluster_rgb": "selected-clusters-rgb-010.webp",
           "fastpls_rgb": "selected-fastpls-rgb-010.webp",
           "overlay": "selected-clusters-overlay-010.webp",
-          "kodama": "selected-kodama-010.svg"
+          "kodama": "selected-kodama-010.svg",
+          "kodama_focus": "selected-kodama-groups-010.svg"
         },
         "image_sha256": {
           "selected-clusters-rgb-010.webp": "e88507c1bb1c3e56ce400283b1260223d1e22cd07465a7d6677214436dad50b2",
           "selected-fastpls-rgb-010.webp": "63bcdda5512f970277fc888de285056b07bb21634e96ba3a5e71916cea282ebf",
           "selected-clusters-overlay-010.webp": "3a04c0d8f27a3d01ade1d7967ce4c4001b2daed7594cd6101e9be27217fbff1d",
-          "selected-kodama-010.svg": "72673212100409ae1ea038953a59f56bb808f819d2cfb0dfdae6509fd964b302"
+          "selected-kodama-010.svg": "72673212100409ae1ea038953a59f56bb808f819d2cfb0dfdae6509fd964b302",
+          "selected-kodama-groups-010.svg": "b0f231e3762d6e306c3ad0ee50cfa56fef8d74f5c0d0265c5940b770dd540c1d"
         },
         "cluster_palette_hex": [
           "#d95f02",
@@ -3264,7 +3280,8 @@
           "cluster_rgb": "selected-clusters-rgb-011.webp",
           "fastpls_rgb": "selected-fastpls-rgb-011.webp",
           "overlay": "selected-clusters-overlay-011.webp",
-          "kodama": "selected-kodama-011.svg"
+          "kodama": "selected-kodama-011.svg",
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-011.webp": "4829307fd973b7af5658ea5d1a1c0eaefff77f8e954da142b8f74fb13ed685d7",
@@ -3584,13 +3601,15 @@
           "cluster_rgb": "selected-clusters-rgb-012.webp",
           "fastpls_rgb": "selected-fastpls-rgb-012.webp",
           "overlay": "selected-clusters-overlay-012.webp",
-          "kodama": "selected-kodama-012.svg"
+          "kodama": "selected-kodama-012.svg",
+          "kodama_focus": "selected-kodama-groups-012.svg"
         },
         "image_sha256": {
           "selected-clusters-rgb-012.webp": "eda855489c0191dc9ab05b1742df0bbdbe6e001969649db272550165d6f392df",
           "selected-fastpls-rgb-012.webp": "1c6004cacf48038dd08b64520effe830efa1e9fdcfa48fa0c1642ae6e1e31077",
           "selected-clusters-overlay-012.webp": "0027686cbb1a9333204b9dcb6aa9bd7229071c15cd67cc13dd1649037dada7c4",
-          "selected-kodama-012.svg": "bff8b2d1e565b25528c67e4c8ab50f7171af84a7275d286635fa34c1998026bc"
+          "selected-kodama-012.svg": "bff8b2d1e565b25528c67e4c8ab50f7171af84a7275d286635fa34c1998026bc",
+          "selected-kodama-groups-012.svg": "9edef0b35ca20c529b485782f84c2bb253c8d19184e52847e1feaa9f116e5d2f"
         },
         "cluster_palette_hex": [
           "#d95f02",
@@ -3924,13 +3943,15 @@
           "cluster_rgb": "selected-clusters-rgb-013.webp",
           "fastpls_rgb": "selected-fastpls-rgb-013.webp",
           "overlay": "selected-clusters-overlay-013.webp",
-          "kodama": "selected-kodama-013.svg"
+          "kodama": "selected-kodama-013.svg",
+          "kodama_focus": "selected-kodama-groups-013.svg"
         },
         "image_sha256": {
           "selected-clusters-rgb-013.webp": "12f72740ff950a8816393967c4d8d215220d9eb721f7368bd5969f6b311b258c",
           "selected-fastpls-rgb-013.webp": "dfd8cf57d95af0e6edca9e827a3a6d55e783154123fddcd85d317130eb3de273",
           "selected-clusters-overlay-013.webp": "ee13e6937f69ba5cd87695b25e0a81f666e813dc7a0b3ba1f9fe78af5f461330",
-          "selected-kodama-013.svg": "876d9aa376741fed98bba9b0dbb0e68f8db4b5678af9fb4495f88a96588f9a86"
+          "selected-kodama-013.svg": "876d9aa376741fed98bba9b0dbb0e68f8db4b5678af9fb4495f88a96588f9a86",
+          "selected-kodama-groups-013.svg": "14bc2db4c863ad64243d5aa8add9d262630ceb705f1c2aef59fdf3c72e478dd4"
         },
         "cluster_palette_hex": [
           "#d95f02",
@@ -4221,7 +4242,8 @@
           "cluster_rgb": "selected-clusters-rgb-014.webp",
           "fastpls_rgb": "selected-fastpls-rgb-014.webp",
           "overlay": "selected-clusters-overlay-014.webp",
-          "kodama": "selected-kodama-014.svg"
+          "kodama": "selected-kodama-014.svg",
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-014.webp": "69680cf6acee84c38232bee3614cae451a3fdbd561ae0dc8de75bf18c9ecadbe",
@@ -4522,13 +4544,15 @@
           "cluster_rgb": "selected-clusters-rgb-015.webp",
           "fastpls_rgb": "selected-fastpls-rgb-015.webp",
           "overlay": "selected-clusters-overlay-015.webp",
-          "kodama": "selected-kodama-015.svg"
+          "kodama": "selected-kodama-015.svg",
+          "kodama_focus": "selected-kodama-groups-015.svg"
         },
         "image_sha256": {
           "selected-clusters-rgb-015.webp": "c251fd78a64ecbd59be329a2c03cebb9b56da7ca7cd3d6222670701d945c415d",
           "selected-fastpls-rgb-015.webp": "692b6faba8d51a19ca4d81257d0b5c1aafdf175bd5fe3df43a15e2c9885ef348",
           "selected-clusters-overlay-015.webp": "b4a40da9ceadbdf930d2eb30be4e5acddf90bb9f8dead86e090e73e20e061f56",
-          "selected-kodama-015.svg": "08b65606f4483a1485cc99e5b46d24eb042120dda8f438924ace159aad6a1e93"
+          "selected-kodama-015.svg": "08b65606f4483a1485cc99e5b46d24eb042120dda8f438924ace159aad6a1e93",
+          "selected-kodama-groups-015.svg": "9cd2ce8e56980b4739a5f29788f74efe929948863371e3219908a61fa15599dd"
         },
         "cluster_palette_hex": [
           "#d95f02",
@@ -4839,7 +4863,8 @@
           "cluster_rgb": "selected-clusters-rgb-016.webp",
           "fastpls_rgb": "selected-fastpls-rgb-016.webp",
           "overlay": "selected-clusters-overlay-016.webp",
-          "kodama": "selected-kodama-016.svg"
+          "kodama": "selected-kodama-016.svg",
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-016.webp": "32409ab04fa666fcceb5d46f16ace0c9dbc504c3a224f5b409968e8895f8a398",
@@ -5098,7 +5123,8 @@
           "cluster_rgb": "selected-clusters-rgb-017.webp",
           "fastpls_rgb": "selected-fastpls-rgb-017.webp",
           "overlay": "selected-clusters-overlay-017.webp",
-          "kodama": "selected-kodama-017.svg"
+          "kodama": "selected-kodama-017.svg",
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-017.webp": "6eaf97f4449bc13b31986e2e5ec4804a475772e71cc43a8e8fad3590f3e902cb",
@@ -5368,7 +5394,8 @@
           "cluster_rgb": "selected-clusters-rgb-018.webp",
           "fastpls_rgb": "selected-fastpls-rgb-018.webp",
           "overlay": "selected-clusters-overlay-018.webp",
-          "kodama": "selected-kodama-018.svg"
+          "kodama": "selected-kodama-018.svg",
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-018.webp": "fc7588f41ff3fbad501104459e930e191fbc731bbc6767536aa9d5871f49160e",
@@ -5637,7 +5664,8 @@
           "cluster_rgb": "selected-clusters-rgb-019.webp",
           "fastpls_rgb": "selected-fastpls-rgb-019.webp",
           "overlay": "selected-clusters-overlay-019.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-019.webp": "9a8ee5f7a6780feb103bc12891238465fc1d6481ca723aa41159821e628607b8",
@@ -5911,13 +5939,15 @@
           "cluster_rgb": "selected-clusters-rgb-020.webp",
           "fastpls_rgb": "selected-fastpls-rgb-020.webp",
           "overlay": "selected-clusters-overlay-020.webp",
-          "kodama": "selected-kodama-020.svg"
+          "kodama": "selected-kodama-020.svg",
+          "kodama_focus": "selected-kodama-groups-020.svg"
         },
         "image_sha256": {
           "selected-clusters-rgb-020.webp": "da08c90a1d883ef9893fcc6a6ecc6df5d0f7258624c011eba378dc3c9a357c30",
           "selected-fastpls-rgb-020.webp": "895447225339daa8d891af509b929f76d30a14f6706f10bc4da82ee98726fb72",
           "selected-clusters-overlay-020.webp": "7480f7b3b152910e26e4d485c97f671abe1bb75f7a0cab3fa8b7b56f07bb617f",
-          "selected-kodama-020.svg": "0dc4f49a909a211fb2ee70485cece54b6de8a583c3e6459b40e83c1a971264d9"
+          "selected-kodama-020.svg": "0dc4f49a909a211fb2ee70485cece54b6de8a583c3e6459b40e83c1a971264d9",
+          "selected-kodama-groups-020.svg": "6780d73581c3f223564f938636e31a4713aa5eaf296ec768f7a1b2b602bd151b"
         },
         "cluster_palette_hex": [
           "#d95f02",
@@ -6195,7 +6225,8 @@
           "cluster_rgb": "selected-clusters-rgb-021.webp",
           "fastpls_rgb": "selected-fastpls-rgb-021.webp",
           "overlay": "selected-clusters-overlay-021.webp",
-          "kodama": "selected-kodama-021.svg"
+          "kodama": "selected-kodama-021.svg",
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-021.webp": "62a6ffa6ca4bf9fc9c08859e71c1bff6b7bc63572bfac81a81f8b3f1bc03f527",
@@ -6467,7 +6498,8 @@
           "cluster_rgb": "selected-clusters-rgb-022.webp",
           "fastpls_rgb": "selected-fastpls-rgb-022.webp",
           "overlay": "selected-clusters-overlay-022.webp",
-          "kodama": "selected-kodama-022.svg"
+          "kodama": "selected-kodama-022.svg",
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-022.webp": "f9294f03f853b75c70099a71aa54c0f52f9f94fe72852331b9f851d82b60ac51",
@@ -6735,13 +6767,15 @@
           "cluster_rgb": "selected-clusters-rgb-023.webp",
           "fastpls_rgb": "selected-fastpls-rgb-023.webp",
           "overlay": "selected-clusters-overlay-023.webp",
-          "kodama": "selected-kodama-023.svg"
+          "kodama": "selected-kodama-023.svg",
+          "kodama_focus": "selected-kodama-groups-023.svg"
         },
         "image_sha256": {
           "selected-clusters-rgb-023.webp": "f668ff78c758c6b94adb26e0cfcfe6c135e49320f5a7f27ae2bbec1a04a33245",
           "selected-fastpls-rgb-023.webp": "e46b24a28477bf21e7176631f9555c9f09bae5f04cd88f3a71d759a630cbb2a5",
           "selected-clusters-overlay-023.webp": "cba32153bf8282e5a397a722b34ed391e955ddd5de043e95cd856bb5c1a11c02",
-          "selected-kodama-023.svg": "23183449879a2cf5af7d1317c45c46c6dab9d943595b9d29048178f68593a66e"
+          "selected-kodama-023.svg": "23183449879a2cf5af7d1317c45c46c6dab9d943595b9d29048178f68593a66e",
+          "selected-kodama-groups-023.svg": "926763ef5120138e99235aae8a4a2222f28e0a9efe60c729bacb131dfb3c0248"
         },
         "cluster_palette_hex": [
           "#d95f02",
@@ -7071,13 +7105,15 @@
           "cluster_rgb": "selected-clusters-rgb-024.webp",
           "fastpls_rgb": "selected-fastpls-rgb-024.webp",
           "overlay": "selected-clusters-overlay-024.webp",
-          "kodama": "selected-kodama-024.svg"
+          "kodama": "selected-kodama-024.svg",
+          "kodama_focus": "selected-kodama-groups-024.svg"
         },
         "image_sha256": {
           "selected-clusters-rgb-024.webp": "537d932d60bb2a96e0c290b6249739d6052ffa6c5d8fbdc7e9ff73497ebab6df",
           "selected-fastpls-rgb-024.webp": "8a3e1a860b48ebf9365877822c35beace729ca9357e3d98a50ae8984de18c3c3",
           "selected-clusters-overlay-024.webp": "34e480d7bc1fb54343d5bcfeb028c001826a0dbe83eb34dddc089d5dd38281dd",
-          "selected-kodama-024.svg": "7c61a188181df6b16281aa81cffa06b1d70f3ea82c39258a6fa79ada16e57f19"
+          "selected-kodama-024.svg": "7c61a188181df6b16281aa81cffa06b1d70f3ea82c39258a6fa79ada16e57f19",
+          "selected-kodama-groups-024.svg": "1643e4b334a7ce0a849a7c2cd1e669bd889b5577f84c6337a79bd6850ac41bc8"
         },
         "cluster_palette_hex": [
           "#d95f02",
@@ -7436,13 +7472,15 @@
           "cluster_rgb": "selected-clusters-rgb-025.webp",
           "fastpls_rgb": "selected-fastpls-rgb-025.webp",
           "overlay": "selected-clusters-overlay-025.webp",
-          "kodama": "selected-kodama-025.svg"
+          "kodama": "selected-kodama-025.svg",
+          "kodama_focus": "selected-kodama-groups-025.svg"
         },
         "image_sha256": {
           "selected-clusters-rgb-025.webp": "d3b14b80e508503943a5e34a28d3785d559b1016786518206a40b7ed123bb560",
           "selected-fastpls-rgb-025.webp": "b1c6d15fc07db7cafa904aaf72951c2d68996bd95f602ba3173fcc3b2c1a6957",
           "selected-clusters-overlay-025.webp": "558aa46e24c337cef11cf3bc935d0a77376038fd0ec7d6030e4aa8011d21a7ea",
-          "selected-kodama-025.svg": "0f624a82939bf1ead72cbb0901fbcabd85b2485f0504bdc56344cf7a37d39ee0"
+          "selected-kodama-025.svg": "0f624a82939bf1ead72cbb0901fbcabd85b2485f0504bdc56344cf7a37d39ee0",
+          "selected-kodama-groups-025.svg": "883db63ed4057e14dda823a387bd4310c44529d11b271aa1931329637e69d322"
         },
         "cluster_palette_hex": [
           "#d95f02",
@@ -7766,13 +7804,15 @@
           "cluster_rgb": "selected-clusters-rgb-026.webp",
           "fastpls_rgb": "selected-fastpls-rgb-026.webp",
           "overlay": "selected-clusters-overlay-026.webp",
-          "kodama": "selected-kodama-026.svg"
+          "kodama": "selected-kodama-026.svg",
+          "kodama_focus": "selected-kodama-groups-026.svg"
         },
         "image_sha256": {
           "selected-clusters-rgb-026.webp": "254b37e5cf97715d17a82362f856f410f6919a61d99c06390378e625b42c8087",
           "selected-fastpls-rgb-026.webp": "e6cd563ffaf2359d5160f2ec90e416170ff1b311d5cf0fe8444f408845329edb",
           "selected-clusters-overlay-026.webp": "d63d0eef913d243d221a3954b3aa986427f436e9f7d1f88f952bcdabdd9b6a40",
-          "selected-kodama-026.svg": "7c59764d05233de2177107c68cad896ca6516ff5350cea87fff41071c52bab6c"
+          "selected-kodama-026.svg": "7c59764d05233de2177107c68cad896ca6516ff5350cea87fff41071c52bab6c",
+          "selected-kodama-groups-026.svg": "c2a2d1005c2a59adcc82941f2d36dbac95fa86a475b7d791b6e7f7f7e7d2bc8e"
         },
         "cluster_palette_hex": [
           "#d95f02",
@@ -8084,7 +8124,8 @@
           "cluster_rgb": "selected-clusters-rgb-027.webp",
           "fastpls_rgb": "selected-fastpls-rgb-027.webp",
           "overlay": "selected-clusters-overlay-027.webp",
-          "kodama": "selected-kodama-027.svg"
+          "kodama": "selected-kodama-027.svg",
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-027.webp": "25eab1d0ad29ab2692bfb5a7c6641be99ec53e1d678bd56d3068dbb517e43318",
@@ -8350,7 +8391,8 @@
           "cluster_rgb": "selected-clusters-rgb-028.webp",
           "fastpls_rgb": "selected-fastpls-rgb-028.webp",
           "overlay": "selected-clusters-overlay-028.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-028.webp": "615d0f13915be6a0c4ed9e9284e677efba4ab60589f9f7cc3fc9270527f193a9",
@@ -8618,7 +8660,8 @@
           "cluster_rgb": "selected-clusters-rgb-029.webp",
           "fastpls_rgb": "selected-fastpls-rgb-029.webp",
           "overlay": "selected-clusters-overlay-029.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-029.webp": "cda6f34dc6f88a3f22ba3de18a9909f9d5671f19c8b50a2a0bc146a7e13f42bc",
@@ -8862,7 +8905,8 @@
           "cluster_rgb": "selected-clusters-rgb-030.webp",
           "fastpls_rgb": "selected-fastpls-rgb-030.webp",
           "overlay": "selected-clusters-overlay-030.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-030.webp": "5c590aa3f8eaf3d67d12fcbb5d894bae0cd60a85bb59e87ee0114714012d3436",
@@ -9121,13 +9165,15 @@
           "cluster_rgb": "selected-clusters-rgb-031.webp",
           "fastpls_rgb": "selected-fastpls-rgb-031.webp",
           "overlay": "selected-clusters-overlay-031.webp",
-          "kodama": "selected-kodama-031.svg"
+          "kodama": "selected-kodama-031.svg",
+          "kodama_focus": "selected-kodama-groups-031.svg"
         },
         "image_sha256": {
           "selected-clusters-rgb-031.webp": "ded0515fd8deeb57b0805d051701f6cd58a71b889b09207570276ebddd9298b2",
           "selected-fastpls-rgb-031.webp": "bc6643eb7e503dd396b5107c0681e89c3a54f3a6927666bb4a295e9a50c38a4c",
           "selected-clusters-overlay-031.webp": "9931305614813302d59efa1b50d27187423e1892948260f1355b5452f67bdada",
-          "selected-kodama-031.svg": "71a830fb721950163bbe204cca7d6217be2e951b46d4bbd2a24091c16faea745"
+          "selected-kodama-031.svg": "71a830fb721950163bbe204cca7d6217be2e951b46d4bbd2a24091c16faea745",
+          "selected-kodama-groups-031.svg": "ccf3ac04cf5d466d265b27c9b02c6c9ba48e9cbf4668e681fa79b4a97d5989a8"
         },
         "cluster_palette_hex": [
           "#d95f02",
@@ -9407,7 +9453,8 @@
           "cluster_rgb": "selected-clusters-rgb-032.webp",
           "fastpls_rgb": "selected-fastpls-rgb-032.webp",
           "overlay": "selected-clusters-overlay-032.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-032.webp": "34c9c882cdc8a0a93ad5f885e979f3238a56950a6d24752f86850cc8db2394ef",
@@ -9666,7 +9713,8 @@
           "cluster_rgb": "selected-clusters-rgb-033.webp",
           "fastpls_rgb": "selected-fastpls-rgb-033.webp",
           "overlay": "selected-clusters-overlay-033.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-033.webp": "d0cad1ecb1e401b00aa1dd736396d2a9f330a47213f37b0856fbe14b668e5c3d",
@@ -9919,7 +9967,8 @@
           "cluster_rgb": "selected-clusters-rgb-034.webp",
           "fastpls_rgb": "selected-fastpls-rgb-034.webp",
           "overlay": "selected-clusters-overlay-034.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-034.webp": "484fe2893c5713c11cd6b4a1bb9336bacbf1d6b0c3c1414eddaef9550bf86be2",
@@ -10170,7 +10219,8 @@
           "cluster_rgb": "selected-clusters-rgb-035.webp",
           "fastpls_rgb": "selected-fastpls-rgb-035.webp",
           "overlay": "selected-clusters-overlay-035.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-035.webp": "6ed548fa9da1768e966e6955d5ee4356c7cb50440df2e156d3940602aa951d02",
@@ -10427,7 +10477,8 @@
           "cluster_rgb": "selected-clusters-rgb-036.webp",
           "fastpls_rgb": "selected-fastpls-rgb-036.webp",
           "overlay": "selected-clusters-overlay-036.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-036.webp": "8b5630258a7babe679c5974e8f13415dbe65e8c09b5079c74ef0a7b752b4ee70",
@@ -10685,7 +10736,8 @@
           "cluster_rgb": "selected-clusters-rgb-037.webp",
           "fastpls_rgb": "selected-fastpls-rgb-037.webp",
           "overlay": "selected-clusters-overlay-037.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-037.webp": "00c3bc9960e356ce8f8a002c2ecdb35810659f25b88d76bfc165ae61ac6fde3e",
@@ -10946,7 +10998,8 @@
           "cluster_rgb": "selected-clusters-rgb-038.webp",
           "fastpls_rgb": "selected-fastpls-rgb-038.webp",
           "overlay": "selected-clusters-overlay-038.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-038.webp": "c728d4890439361fa1bec65b71bc8b4a89722c250bf30832e5a377224c4ec318",
@@ -11209,7 +11262,8 @@
           "cluster_rgb": "selected-clusters-rgb-039.webp",
           "fastpls_rgb": "selected-fastpls-rgb-039.webp",
           "overlay": "selected-clusters-overlay-039.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-039.webp": "7bb173e8cd45d5a49c93018e03cfc7e724ad1909def09092551c3bf81f1206e7",
@@ -11477,7 +11531,8 @@
           "cluster_rgb": "selected-clusters-rgb-040.webp",
           "fastpls_rgb": "selected-fastpls-rgb-040.webp",
           "overlay": "selected-clusters-overlay-040.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-040.webp": "36492fbf34550b218b4946587d864c11d37eae7ad3b2c65b54b1c6cc95553bbc",
@@ -11738,7 +11793,8 @@
           "cluster_rgb": "selected-clusters-rgb-041.webp",
           "fastpls_rgb": "selected-fastpls-rgb-041.webp",
           "overlay": "selected-clusters-overlay-041.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-041.webp": "bc1b497f4820ae2e35ab316fdcb5d889fcceba715d5010e56e519050f591ab91",
@@ -11975,7 +12031,8 @@
           "cluster_rgb": "selected-clusters-rgb-042.webp",
           "fastpls_rgb": "selected-fastpls-rgb-042.webp",
           "overlay": "selected-clusters-overlay-042.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-042.webp": "4603fed89bd37501e7a2f7f07b5a72e77749b1582af0aabf6cee2167d8336c2e",
@@ -12250,13 +12307,15 @@
           "cluster_rgb": "selected-clusters-rgb-043.webp",
           "fastpls_rgb": "selected-fastpls-rgb-043.webp",
           "overlay": "selected-clusters-overlay-043.webp",
-          "kodama": "selected-kodama-043.svg"
+          "kodama": "selected-kodama-043.svg",
+          "kodama_focus": "selected-kodama-groups-043.svg"
         },
         "image_sha256": {
           "selected-clusters-rgb-043.webp": "ea5283fce8f97becd5d356feef684006c899039884377e86aca2a7006df35b29",
           "selected-fastpls-rgb-043.webp": "27dc63b2b17efb5e90033e1eb25d33bcae1ebc114c674019493aa469541aa089",
           "selected-clusters-overlay-043.webp": "1f74e9382b1fee555181badd5db08c2fbbca07053f02a8c19125ebf835e592ca",
-          "selected-kodama-043.svg": "9cd76e84c7404bd77587fed80664b737ef7699eab2c4b101cc124364e8bac46a"
+          "selected-kodama-043.svg": "9cd76e84c7404bd77587fed80664b737ef7699eab2c4b101cc124364e8bac46a",
+          "selected-kodama-groups-043.svg": "df42d9d74fa68dc9256b172dc70b5850b1fc012d77f55e25a06e912e0ee7ff8d"
         },
         "cluster_palette_hex": [
           "#d95f02",
@@ -12538,7 +12597,8 @@
           "cluster_rgb": "selected-clusters-rgb-044.webp",
           "fastpls_rgb": "selected-fastpls-rgb-044.webp",
           "overlay": "selected-clusters-overlay-044.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-044.webp": "f4c8a2319adcfd3afe6ebc14bf2daed7c7b7487c78e33c1b26e182b332dc9c97",
@@ -12803,7 +12863,8 @@
           "cluster_rgb": "selected-clusters-rgb-045.webp",
           "fastpls_rgb": "selected-fastpls-rgb-045.webp",
           "overlay": "selected-clusters-overlay-045.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-045.webp": "1b34283b01d021c9eda0e7ee009105b0779b584b585c8a92b2ce94d9b7ae6e23",
@@ -13078,7 +13139,8 @@
           "cluster_rgb": "selected-clusters-rgb-046.webp",
           "fastpls_rgb": "selected-fastpls-rgb-046.webp",
           "overlay": "selected-clusters-overlay-046.webp",
-          "kodama": "selected-kodama-046.svg"
+          "kodama": "selected-kodama-046.svg",
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-046.webp": "aeed93a51e967fac3b211f9f5335ea9c9008a571d574163ece906da49c9c206b",
@@ -13348,7 +13410,8 @@
           "cluster_rgb": "selected-clusters-rgb-047.webp",
           "fastpls_rgb": "selected-fastpls-rgb-047.webp",
           "overlay": "selected-clusters-overlay-047.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-047.webp": "19920729bba514b8ac0f04cb2feabd8a62ba227a15872903297e047fca45d434",
@@ -13612,7 +13675,8 @@
           "cluster_rgb": "selected-clusters-rgb-048.webp",
           "fastpls_rgb": "selected-fastpls-rgb-048.webp",
           "overlay": "selected-clusters-overlay-048.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-048.webp": "ef43cde806a21e9ed40f9e98eb61cd3ffdda74ffc17c21066035122d6b58dfe3",
@@ -13880,13 +13944,15 @@
           "cluster_rgb": "selected-clusters-rgb-049.webp",
           "fastpls_rgb": "selected-fastpls-rgb-049.webp",
           "overlay": "selected-clusters-overlay-049.webp",
-          "kodama": "selected-kodama-049.svg"
+          "kodama": "selected-kodama-049.svg",
+          "kodama_focus": "selected-kodama-groups-049.svg"
         },
         "image_sha256": {
           "selected-clusters-rgb-049.webp": "28d13718b29475d7007db35e0884fa8b1fa833f439b76c7981dd799e0231b3c4",
           "selected-fastpls-rgb-049.webp": "7362996cf71b4a7229767625b0748f18c8fe0f2a690861ea3f21b2c9c510d814",
           "selected-clusters-overlay-049.webp": "07f8d4d6177cfe066ec17ebcb78cf9e030508974d65060279a9124b925182f68",
-          "selected-kodama-049.svg": "87dccb2e55f0537661d213dc30092eb9272d0b1e8efd20ff5053d7378cd9fd89"
+          "selected-kodama-049.svg": "87dccb2e55f0537661d213dc30092eb9272d0b1e8efd20ff5053d7378cd9fd89",
+          "selected-kodama-groups-049.svg": "136d6494ecde61dc617358a89bb409c39612615e4f057247cfb77c7a72e13b2f"
         },
         "cluster_palette_hex": [
           "#d95f02",
@@ -14192,7 +14258,8 @@
           "cluster_rgb": "selected-clusters-rgb-050.webp",
           "fastpls_rgb": "selected-fastpls-rgb-050.webp",
           "overlay": "selected-clusters-overlay-050.webp",
-          "kodama": "selected-kodama-050.svg"
+          "kodama": "selected-kodama-050.svg",
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-050.webp": "752727bc80419dfc8966dc103e154fd178a528c5505a2aef9c9eba028e274254",
@@ -14472,13 +14539,15 @@
           "cluster_rgb": "selected-clusters-rgb-051.webp",
           "fastpls_rgb": "selected-fastpls-rgb-051.webp",
           "overlay": "selected-clusters-overlay-051.webp",
-          "kodama": "selected-kodama-051.svg"
+          "kodama": "selected-kodama-051.svg",
+          "kodama_focus": "selected-kodama-groups-051.svg"
         },
         "image_sha256": {
           "selected-clusters-rgb-051.webp": "f1568db846ef2e097bba6bf805d53337b2af77789921f0083d71a66ef8e8e9d0",
           "selected-fastpls-rgb-051.webp": "b843ff7fc3f87461a258259d7225267ba5fd2efee3097cc0709727ce574c9a03",
           "selected-clusters-overlay-051.webp": "98bbc56ceb21212cdd084d531c6b18ce22ae80aa2fe1ba0e04b681da7d6907ac",
-          "selected-kodama-051.svg": "a6bcc22ef52b426fdddefedc055d86462b8afb8b4a6e00313136c2d987178850"
+          "selected-kodama-051.svg": "a6bcc22ef52b426fdddefedc055d86462b8afb8b4a6e00313136c2d987178850",
+          "selected-kodama-groups-051.svg": "f97d05057e96ec38b3d5d245aa2c8f10aa29d06962e7a65db188d05a4904af6c"
         },
         "cluster_palette_hex": [
           "#d95f02",
@@ -14764,13 +14833,15 @@
           "cluster_rgb": "selected-clusters-rgb-052.webp",
           "fastpls_rgb": "selected-fastpls-rgb-052.webp",
           "overlay": "selected-clusters-overlay-052.webp",
-          "kodama": "selected-kodama-052.svg"
+          "kodama": "selected-kodama-052.svg",
+          "kodama_focus": "selected-kodama-groups-052.svg"
         },
         "image_sha256": {
           "selected-clusters-rgb-052.webp": "1bab0680ec34b42a0ea73fd954b68f930d60e1f258e82dafc0bc39b9eb20bc0e",
           "selected-fastpls-rgb-052.webp": "787e0a179c5a88ee0ad924033f5a281d699a6e4567024e343be8d98131f3fcb1",
           "selected-clusters-overlay-052.webp": "c4b9e2eca2aee1f4eb9c7a92d8123fae6975621db8a51d07d16ac02cf8d8e929",
-          "selected-kodama-052.svg": "fb3b89197019348ef13511fc379da16d79c837726d46496f107cfc897ad32401"
+          "selected-kodama-052.svg": "fb3b89197019348ef13511fc379da16d79c837726d46496f107cfc897ad32401",
+          "selected-kodama-groups-052.svg": "1ee02850c866b1ac1307066f62c1d6155d31eacb1225aef748bfbc3fc2d0ec34"
         },
         "cluster_palette_hex": [
           "#d95f02",
@@ -15049,7 +15120,8 @@
           "cluster_rgb": "selected-clusters-rgb-053.webp",
           "fastpls_rgb": "selected-fastpls-rgb-053.webp",
           "overlay": "selected-clusters-overlay-053.webp",
-          "kodama": "selected-kodama-053.svg"
+          "kodama": "selected-kodama-053.svg",
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-053.webp": "6071ca600930504f1ac35b81eaaf7a8f802fce974f62f69a8d1ed91bb27a0c52",
@@ -15319,7 +15391,8 @@
           "cluster_rgb": "selected-clusters-rgb-054.webp",
           "fastpls_rgb": "selected-fastpls-rgb-054.webp",
           "overlay": "selected-clusters-overlay-054.webp",
-          "kodama": "selected-kodama-054.svg"
+          "kodama": "selected-kodama-054.svg",
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-054.webp": "ad4eefe0feadc92f2e8d9e3acf121cf9916b1485ea9c3e9b0d879d982b97d6a4",
@@ -15599,7 +15672,8 @@
           "cluster_rgb": "selected-clusters-rgb-055.webp",
           "fastpls_rgb": "selected-fastpls-rgb-055.webp",
           "overlay": "selected-clusters-overlay-055.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-055.webp": "9518e91613295e9a890c9c771f2a08493aeaf1a3795fd2fbc13fa16dfab1c327",
@@ -15855,7 +15929,8 @@
           "cluster_rgb": "selected-clusters-rgb-056.webp",
           "fastpls_rgb": "selected-fastpls-rgb-056.webp",
           "overlay": "selected-clusters-overlay-056.webp",
-          "kodama": "selected-kodama-056.svg"
+          "kodama": "selected-kodama-056.svg",
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-056.webp": "f3abbc0d0ec867a7fe6eff6fa36cf1d95ddb490d1fdc20aa82f977879b5bbdfe",
@@ -16122,7 +16197,8 @@
           "cluster_rgb": "selected-clusters-rgb-057.webp",
           "fastpls_rgb": "selected-fastpls-rgb-057.webp",
           "overlay": "selected-clusters-overlay-057.webp",
-          "kodama": "selected-kodama-057.svg"
+          "kodama": "selected-kodama-057.svg",
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-057.webp": "03aee1dc1ab5be3b0844eecc241c287eab11fb06a7fa2c7ffcfba8ea235ee7bd",
@@ -16388,13 +16464,15 @@
           "cluster_rgb": "selected-clusters-rgb-058.webp",
           "fastpls_rgb": "selected-fastpls-rgb-058.webp",
           "overlay": "selected-clusters-overlay-058.webp",
-          "kodama": "selected-kodama-058.svg"
+          "kodama": "selected-kodama-058.svg",
+          "kodama_focus": "selected-kodama-groups-058.svg"
         },
         "image_sha256": {
           "selected-clusters-rgb-058.webp": "c9e79f8e697b96eb9759f230ca78940c7cc62601b1e2e8bb2575ecf3deae31b9",
           "selected-fastpls-rgb-058.webp": "4740f4f31bf0f4c893357d01bfa09241a7dda44d01c45e75fd97fbc79d579969",
           "selected-clusters-overlay-058.webp": "2b76142e9f2b2491fcfe621b3dc84bb9545b6cb571481bc075ff702b9cd987eb",
-          "selected-kodama-058.svg": "9a72bd2f9171f4d333a371af4edf3fb0e365ff475f7a0f067f52b1fce0297e95"
+          "selected-kodama-058.svg": "9a72bd2f9171f4d333a371af4edf3fb0e365ff475f7a0f067f52b1fce0297e95",
+          "selected-kodama-groups-058.svg": "85d4fc9e63f46073daded706c1eafdc8ef261e4facd5ad28c6297ec5e03a7448"
         },
         "cluster_palette_hex": [
           "#d95f02",
@@ -16660,7 +16738,8 @@
           "cluster_rgb": "selected-clusters-rgb-059.webp",
           "fastpls_rgb": "selected-fastpls-rgb-059.webp",
           "overlay": "selected-clusters-overlay-059.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-059.webp": "e7e82897317ff58a32b57bf8b52df7f5908a3ea1d4c7696934a42b89775aee74",
@@ -16913,7 +16992,8 @@
           "cluster_rgb": "selected-clusters-rgb-060.webp",
           "fastpls_rgb": "selected-fastpls-rgb-060.webp",
           "overlay": "selected-clusters-overlay-060.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-060.webp": "e92d1b92f4cab422fa76080514d54fd03ceab8a4019b90518492ebd2b705ab2d",
@@ -17162,7 +17242,8 @@
           "cluster_rgb": "selected-clusters-rgb-061.webp",
           "fastpls_rgb": "selected-fastpls-rgb-061.webp",
           "overlay": "selected-clusters-overlay-061.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-061.webp": "47fd2afdc737fa1f6966a41f930c5d63342e88d56cdbc11cc7c7b794825c0634",
@@ -17432,7 +17513,8 @@
           "cluster_rgb": "selected-clusters-rgb-062.webp",
           "fastpls_rgb": "selected-fastpls-rgb-062.webp",
           "overlay": "selected-clusters-overlay-062.webp",
-          "kodama": "selected-kodama-062.svg"
+          "kodama": "selected-kodama-062.svg",
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-062.webp": "8f4f521a61b05fd6ee9b4418e3ceb6939ccc778d2deb7f22576fbdc19ec944b4",
@@ -17709,7 +17791,8 @@
           "cluster_rgb": "selected-clusters-rgb-063.webp",
           "fastpls_rgb": "selected-fastpls-rgb-063.webp",
           "overlay": "selected-clusters-overlay-063.webp",
-          "kodama": "selected-kodama-063.svg"
+          "kodama": "selected-kodama-063.svg",
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-063.webp": "adfb443e59519d2f63fed4598bbd8e6b3163b2d75afcc2c6bb1c5f658dc2b8ce",
@@ -17969,7 +18052,8 @@
           "cluster_rgb": "selected-clusters-rgb-064.webp",
           "fastpls_rgb": "selected-fastpls-rgb-064.webp",
           "overlay": "selected-clusters-overlay-064.webp",
-          "kodama": "selected-kodama-064.svg"
+          "kodama": "selected-kodama-064.svg",
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-064.webp": "5a30b2d71784f67386c9250f0bf294f73e50d45aeb1402961756a3fcc3349d38",
@@ -18237,7 +18321,8 @@
           "cluster_rgb": "selected-clusters-rgb-065.webp",
           "fastpls_rgb": "selected-fastpls-rgb-065.webp",
           "overlay": "selected-clusters-overlay-065.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-065.webp": "a7df4c694f16c09e9bc8d71045792502b1636370d575e20510afaaacab4d9076",
@@ -18498,13 +18583,15 @@
           "cluster_rgb": "selected-clusters-rgb-066.webp",
           "fastpls_rgb": "selected-fastpls-rgb-066.webp",
           "overlay": "selected-clusters-overlay-066.webp",
-          "kodama": "selected-kodama-066.svg"
+          "kodama": "selected-kodama-066.svg",
+          "kodama_focus": "selected-kodama-groups-066.svg"
         },
         "image_sha256": {
           "selected-clusters-rgb-066.webp": "14ec8a6a37d41190f6fdb66a687d5c14df83be50334152a3b5ad676179c22ffb",
           "selected-fastpls-rgb-066.webp": "a0d3c16de4236385ae6860e9c2f9155e317223f572f164e8a2c147a0582d3bad",
           "selected-clusters-overlay-066.webp": "d0c4c54c6e58ab750373a8627afe2fbc3e227e586492f82f5a21f1b83af885d0",
-          "selected-kodama-066.svg": "822f851962a1a71bec362ac53f5b0942b0ed68871516b2e45765212c2241273e"
+          "selected-kodama-066.svg": "822f851962a1a71bec362ac53f5b0942b0ed68871516b2e45765212c2241273e",
+          "selected-kodama-groups-066.svg": "e327750724713f75548298a49cf615914faecfc541693f8ee3a84e14354cea02"
         },
         "cluster_palette_hex": [
           "#d95f02",
@@ -18779,13 +18866,15 @@
           "cluster_rgb": "selected-clusters-rgb-067.webp",
           "fastpls_rgb": "selected-fastpls-rgb-067.webp",
           "overlay": "selected-clusters-overlay-067.webp",
-          "kodama": "selected-kodama-067.svg"
+          "kodama": "selected-kodama-067.svg",
+          "kodama_focus": "selected-kodama-groups-067.svg"
         },
         "image_sha256": {
           "selected-clusters-rgb-067.webp": "f510445ce00281f583243f0ca1dd9c5b4bd59b1c2b40e1cda8baaeb560387c80",
           "selected-fastpls-rgb-067.webp": "2e820f9193812e8488a0e9b76eff85bc91a3118f2e0cce0a2eee76132f3502ce",
           "selected-clusters-overlay-067.webp": "f5ad6def2213ab3e24c03a331d92a1485c0158dc99f3879af3ba788da6e48e3e",
-          "selected-kodama-067.svg": "c8fb57c1ea7682b27e879605b7abc000c97d81fd76938999f193019ba9625c6a"
+          "selected-kodama-067.svg": "c8fb57c1ea7682b27e879605b7abc000c97d81fd76938999f193019ba9625c6a",
+          "selected-kodama-groups-067.svg": "e9c0bbfd18c9e02c6d0fc8e23ed380936b517cfac1b14bd594aafa9c7824b990"
         },
         "cluster_palette_hex": [
           "#d95f02",
@@ -19075,7 +19164,8 @@
           "cluster_rgb": "selected-clusters-rgb-068.webp",
           "fastpls_rgb": "selected-fastpls-rgb-068.webp",
           "overlay": "selected-clusters-overlay-068.webp",
-          "kodama": "selected-kodama-068.svg"
+          "kodama": "selected-kodama-068.svg",
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-068.webp": "b8b7a033413145603ef4a17bd38a2360472870790f389387c3f36440cb39df85",
@@ -19321,7 +19411,8 @@
           "cluster_rgb": "selected-clusters-rgb-069.webp",
           "fastpls_rgb": "selected-fastpls-rgb-069.webp",
           "overlay": "selected-clusters-overlay-069.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-069.webp": "b92395b22bfb9c5729d17033d3269c5df98eddeefbc2839cb01b2542981f02e8",
@@ -19565,7 +19656,8 @@
           "cluster_rgb": "selected-clusters-rgb-070.webp",
           "fastpls_rgb": "selected-fastpls-rgb-070.webp",
           "overlay": "selected-clusters-overlay-070.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-070.webp": "f10ad1cb933778e5b34dff30a7bca5a3fd497bfde51dce6d01db4c54cdc63aed",
@@ -19798,7 +19890,8 @@
           "cluster_rgb": "selected-clusters-rgb-071.webp",
           "fastpls_rgb": "selected-fastpls-rgb-071.webp",
           "overlay": "selected-clusters-overlay-071.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-071.webp": "bc7600c14c94c2153db9c9eb4e3e1f1cb634a690cf478f829b24f903ceed278f",
@@ -20030,7 +20123,8 @@
           "cluster_rgb": "selected-clusters-rgb-072.webp",
           "fastpls_rgb": "selected-fastpls-rgb-072.webp",
           "overlay": "selected-clusters-overlay-072.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-072.webp": "452cf515e6aa2aa51f0a952d5aefc38622612ae342abf9ac9e80fbec02b969a7",
@@ -20268,7 +20362,8 @@
           "cluster_rgb": "selected-clusters-rgb-073.webp",
           "fastpls_rgb": "selected-fastpls-rgb-073.webp",
           "overlay": "selected-clusters-overlay-073.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-073.webp": "27482360c9faf09fdd2e15869952ce203f6f0c57f90be84b0fea4ea65e48599f",
@@ -20503,7 +20598,8 @@
           "cluster_rgb": "selected-clusters-rgb-074.webp",
           "fastpls_rgb": "selected-fastpls-rgb-074.webp",
           "overlay": "selected-clusters-overlay-074.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-074.webp": "352d30ca635273030cbf917dd30a77d8d396d23ad163b63a57af0d60a2bdeaf7",
@@ -20755,7 +20851,8 @@
           "cluster_rgb": "selected-clusters-rgb-075.webp",
           "fastpls_rgb": "selected-fastpls-rgb-075.webp",
           "overlay": "selected-clusters-overlay-075.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-075.webp": "b050762a86f945704b1ee18dc8c4b6b0ea00035daaef6571836926cc271eafdb",
@@ -20998,7 +21095,8 @@
           "cluster_rgb": "selected-clusters-rgb-076.webp",
           "fastpls_rgb": "selected-fastpls-rgb-076.webp",
           "overlay": "selected-clusters-overlay-076.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-076.webp": "258ddbfe9e2bb9abfd5ef57663f0d72bab7ebf146323cf9f6ba793b7b7045133",
@@ -21224,7 +21322,8 @@
           "cluster_rgb": "selected-clusters-rgb-077.webp",
           "fastpls_rgb": "selected-fastpls-rgb-077.webp",
           "overlay": "selected-clusters-overlay-077.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-077.webp": "99f3df5d373334541fdde2753d9a219ea432ace32d3db06caa91b730b75530b3",
@@ -21476,7 +21575,8 @@
           "cluster_rgb": "selected-clusters-rgb-078.webp",
           "fastpls_rgb": "selected-fastpls-rgb-078.webp",
           "overlay": "selected-clusters-overlay-078.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-078.webp": "3e8cd2f0bb7140a5365e03478c564c931db4791800fd02f017297c23d9f18ff6",
@@ -21713,7 +21813,8 @@
           "cluster_rgb": "selected-clusters-rgb-079.webp",
           "fastpls_rgb": "selected-fastpls-rgb-079.webp",
           "overlay": "selected-clusters-overlay-079.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-079.webp": "0bdcbef71421774a56b53d52f7f5d04a455484b1cff174de9fb132613b445947",
@@ -21945,7 +22046,8 @@
           "cluster_rgb": "selected-clusters-rgb-080.webp",
           "fastpls_rgb": "selected-fastpls-rgb-080.webp",
           "overlay": "selected-clusters-overlay-080.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-080.webp": "e42b0d129d5ab264e03cfe4200f0a0383aca985f5e9177745d723917e2e9f5bf",
@@ -22178,7 +22280,8 @@
           "cluster_rgb": "selected-clusters-rgb-081.webp",
           "fastpls_rgb": "selected-fastpls-rgb-081.webp",
           "overlay": "selected-clusters-overlay-081.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-081.webp": "242973299da278110f7bf29e56d6f41cac56aa4804cf532a5837e2eecb1dc22d",
@@ -22413,7 +22516,8 @@
           "cluster_rgb": "selected-clusters-rgb-082.webp",
           "fastpls_rgb": "selected-fastpls-rgb-082.webp",
           "overlay": "selected-clusters-overlay-082.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-082.webp": "329b64af2d7173a0d035b6925daa501c4adc85e6e8d7d4edbdc74f4cef315f61",
@@ -22646,7 +22750,8 @@
           "cluster_rgb": "selected-clusters-rgb-083.webp",
           "fastpls_rgb": "selected-fastpls-rgb-083.webp",
           "overlay": "selected-clusters-overlay-083.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-083.webp": "5a8dd3887c20c0f7aaa7031f2fed9a0f8fe271934b9dde1dafe4f984fc249339",
@@ -22874,7 +22979,8 @@
           "cluster_rgb": "selected-clusters-rgb-084.webp",
           "fastpls_rgb": "selected-fastpls-rgb-084.webp",
           "overlay": "selected-clusters-overlay-084.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-084.webp": "00400a46a2693c2a2aca8e8a6aa6252d91f47038991098ce0d5e0a9fde607d33",
@@ -23106,7 +23212,8 @@
           "cluster_rgb": "selected-clusters-rgb-085.webp",
           "fastpls_rgb": "selected-fastpls-rgb-085.webp",
           "overlay": "selected-clusters-overlay-085.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-085.webp": "4e904021d8fa37a073279e9cda79843cdc648e262c3428be1548f1d4dd3d96d4",
@@ -23337,7 +23444,8 @@
           "cluster_rgb": "selected-clusters-rgb-086.webp",
           "fastpls_rgb": "selected-fastpls-rgb-086.webp",
           "overlay": "selected-clusters-overlay-086.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-086.webp": "d5ad367a93c3e03c061d6c51df923165168b495efe43dacf1230ea2e96d1ed09",
@@ -23591,7 +23699,8 @@
           "cluster_rgb": "selected-clusters-rgb-087.webp",
           "fastpls_rgb": "selected-fastpls-rgb-087.webp",
           "overlay": "selected-clusters-overlay-087.webp",
-          "kodama": null
+          "kodama": null,
+          "kodama_focus": null
         },
         "image_sha256": {
           "selected-clusters-rgb-087.webp": "c95dbce093bdc87eb24e94026325397932c62aab8560fb21c5d83491bd58d862",
