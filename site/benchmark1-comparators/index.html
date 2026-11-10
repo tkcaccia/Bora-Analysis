@@ -37,6 +37,11 @@
     #group-identification th,#group-identification td,#selected-group-identification th,#selected-group-identification td,#route-comparison th,#route-comparison td{text-align:left;padding:8px 10px;border:1px solid #d5e0e3}
     #group-identification th,#selected-group-identification th,#route-comparison th{background:#eaf2f4}
     #selected-kodama-image{display:block;max-width:760px;width:100%;height:auto}
+    #combined-response-figure{margin:16px 0;background:#fff;border:1px solid #d5e0e3;padding:14px;max-width:780px}
+    #combined-response-image{display:block;max-width:100%;height:auto;image-rendering:pixelated}
+    #combined-response-legend{display:flex;flex-wrap:wrap;gap:10px 18px;margin:12px 0}
+    #combined-response-legend span{display:inline-flex;align-items:center;gap:7px}
+    #combined-response-legend i{width:16px;height:16px;border:1px solid #617078;display:inline-block}
     .response-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:14px;margin:16px 0}
     .response-grid figure{margin:0;background:#fff;border:1px solid #d5e0e3;padding:10px}
     .response-grid img{display:block;width:100%;height:auto;background:#000}
@@ -122,6 +127,12 @@
 <a href="#" id="full-image"><img alt="Seven aligned image panels" id="case-image"/></a>
 <p class="small">Select the figure to open it at full size. The tissue-class color legend is printed on every figure. Uncolored regions in a model panel may be unmatched classes or absent predictions.</p>
 <div class="meta" id="scores"></div>
+</section>
+<section aria-labelledby="combined-response-heading" id="combined-response-mask">
+<h2 id="combined-response-heading">Combined tissue-class response mask</h2>
+<p>For this validation image, each pixel takes the class with the strongest of the 24 black-and-white U-Net response maps below. Colors use the shared tissue-class key; the legend lists only classes present in this mask. This is a display-resolution prediction made from compressed response maps, not an expert mask, a Bora region mask, or a native-resolution accuracy result. The model has no background class, so it assigns a tissue class even on glass or other non-tissue pixels.</p>
+<figure id="combined-response-figure"><a href="#" id="combined-response-full"><img id="combined-response-image" alt="Combined 24-class U-Net response mask"/></a><figcaption>Strongest response per pixel from the 24 maps below; lowest class ID breaks ties.</figcaption></figure>
+<div id="combined-response-legend" aria-label="Classes present in the combined mask"></div>
 </section>
 <section aria-labelledby="response-heading" id="class-responses">
 <h2 id="response-heading">Black-and-white response maps for every tissue classification</h2>
