@@ -613,7 +613,7 @@
     "benchmark1-comparators/selected-clusters-overlay-023.webp": "cba32153bf8282e5a397a722b34ed391e955ddd5de043e95cd856bb5c1a11c02",
     "benchmark1-comparators/case-084.webp": "dd9c0a48f6d3f23346cc453177ae215bc2ce1dd3bc06a3fd1202b6277d9c7117",
     "benchmark1-comparators/selected-kodama-054.svg": "70237fa87a18dd09be61e2b935ce4d24a17ddc1d8271dcbf2352e4aa16631c3f",
-    "benchmark1-comparators/index.html": "02fbaf18a4b66e1087bbb334a71b5ff09952c6fa11ff7186ff479d77b6ac815a",
+    "benchmark1-comparators/index.html": "b46907c392a2250c4ed99b2f96c8ffa382cb60fa8ec05e5cdb895eca9ac6fe32",
     "benchmark1-comparators/case-067.webp": "063f12932f5464114e3cb6359006b97a02aa5fd3798e3ab6be426e56e1b5d493",
     "benchmark1-comparators/selected-fastpls-rgb-046.webp": "e05018f74861db74fa8ecb7942397484e863068cac3de50a40ca9f08d62272cb",
     "benchmark1-comparators/clusters-025.webp": "c3fa33ebfc5063a706d8ebc30eebedfc33ce9b194d0e9c158899e36f62d2b9de",
@@ -760,7 +760,7 @@
     "benchmark1-comparators/clusters-rgb-017.webp": "6eaf97f4449bc13b31986e2e5ec4804a475772e71cc43a8e8fad3590f3e902cb",
     "benchmark1-comparators/selected-clusters-overlay-063.webp": "a6173ad676e4a2c4fc7b97ad419484572ac9fb776cd90f60934b444754f19c00",
     "benchmark1-comparators/clusters-039.webp": "56adc2b14542acd4a1b1a70fc3e71659fd89cf4afacb4e9ab88deb3596006eec",
-    "benchmark1-comparators/gallery.js": "63e5a5ae6d686778cd13a96c56d5df38ecd75ccf01130f131d208c3bbea09edd",
+    "benchmark1-comparators/gallery.js": "d16f4c375a9d67c6ee0bdd25f2c990fa68ffd19d986417fec23b5430055ce9d2",
     "benchmark1-comparators/selected-kodama-052.svg": "b7745933b06d36f86df1e8dddfd1ec0ea799559d064856bc7eec6c7a471de825",
     "benchmark1-comparators/selected-clusters-rgb-066.webp": "14ec8a6a37d41190f6fdb66a687d5c14df83be50334152a3b5ad676179c22ffb",
     "benchmark1-comparators/selected-clusters-overlay-086.webp": "3f7e9f8a92a73ea96bcdaec1d9d5098e38e3b5351f3927e91c991b145994bfe8",
@@ -4652,5 +4652,5 @@
   "benchmark1_bw_response_map_count": 2544,
   "benchmark1_bw_manifest_sha256": "66de4b6ad8e1b023d1bf4f00e8a0ecffa6530fb46eea1b9927b060f551503ef5",
   "benchmark1_combined_response_mask_count": 87,
-  "benchmark1_combined_response_mask_source_audit_sha256": "92ca95e1e0c36a3369c0cd7f5c13141458793a96b7ad2c89e7dd6b3ce6018f51"
+  "benchmark1_combined_response_mask_source_audit_sha256": "37c5ff1a7c49c775b48f31488ca9edb2c64f49b7ae36721889c60b15704a68c6"
 }
