@@ -39,11 +39,6 @@
     #group-identification th,#group-identification td,#selected-group-identification th,#selected-group-identification td,#route-comparison th,#route-comparison td{text-align:left;padding:8px 10px;border:1px solid #d5e0e3}
     #group-identification th,#selected-group-identification th,#route-comparison th{background:#eaf2f4}
     #selected-kodama-image{display:block;max-width:760px;width:100%;height:auto}
-    #combined-response-figure{margin:16px 0;background:#fff;border:1px solid #d5e0e3;padding:14px;max-width:780px}
-    #combined-response-image{display:block;max-width:100%;height:auto;image-rendering:pixelated}
-    #combined-response-legend{display:flex;flex-wrap:wrap;gap:10px 18px;margin:12px 0}
-    #combined-response-legend span{display:inline-flex;align-items:center;gap:7px}
-    #combined-response-legend i{width:16px;height:16px;border:1px solid #617078;display:inline-block}
     .response-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:14px;margin:16px 0}
     .response-grid figure{margin:0;background:#fff;border:1px solid #d5e0e3;padding:10px}
     .response-grid img{display:block;width:100%;height:auto;background:#000}
@@ -59,7 +54,7 @@
 <header>
 <p><a href="../index.html">← Benchmark 1</a></p>
 <h1>Benchmark 1 validation data: 87 images</h1>
-<p>For each of 87 development evaluation images, compare the original H&amp;E, expert annotation, Bora, U-Net, DeepLabV3+, VISTA-PATH and MedSAM in the same image frame.</p>
+<p>For each of 87 development evaluation images, compare the original H&amp;E, expert annotation, Bora, U-Net, DeepLabV3+, VISTA-PATH, MedSAM and a combined view of the same U-Net's class responses in the same image frame.</p>
 <nav aria-label="Benchmark 1 result sets" class="benchmark1-paths">
 <a href="../index.html#public-datasets"><strong>Training data · Public histology datasets with expert masks</strong><span>Historical controlled expert-mask results</span></a>
 <a aria-current="page" href="index.html"><strong>Validation data · 87 images</strong><span>Development evaluation and black-and-white class responses</span></a>
@@ -134,18 +129,16 @@
 <article><strong>VISTA-PATH</strong>Externally pretrained. Only predeclared matched tissue classes are colored; unmatched classes are left uncolored. Source overlap cannot be fully excluded.</article>
 <article><strong>MedSAM</strong>Prompt-guided masks for tumor, stroma and necrosis only. Its boxes came from an earlier U-Net, not the expert or the U-Net panel shown here. Some cases received no box for a role.</article>
 </div>
-<a href="#" id="full-image"><img alt="Seven aligned image panels" id="case-image"/></a>
-<p class="small">Select the figure to open it at full size. The tissue-class color legend is printed on every figure. Uncolored regions in a model panel may be unmatched classes or absent predictions.</p>
+<a href="#" id="full-image"><img alt="Eight aligned image panels" id="case-image"/></a>
+<p class="small">Select the figure to open it at full size. The class-colored panels, including the combined mask, share one tissue-class color key; the legend lists only classes shown in this case. Uncolored regions in a model panel may be unmatched classes or absent predictions.</p>
+<div id="combined-response-mask">
+<h3 id="combined-response-heading">Combined tissue-class response mask · lower right</h3>
+<p>This panel comes from the <strong>same class-aware U-Net</strong> shown at the upper right. It is not another model or an independent method. Each display pixel takes the strongest of its 24 black-and-white class responses below. The U-Net panel overlays its original class prediction on H&amp;E; the lower-right panel shows the combined response mask without H&amp;E. Both use the same class-to-color key printed in the figure. The combined mask is a display-resolution prediction made from compressed response maps, not an expert annotation or a native-resolution accuracy result. The model has no background class, so it assigns a tissue class even on glass or other non-tissue pixels. <a href="#" id="combined-response-full">Open this mask alone at full resolution</a>.</p>
+<p class="small">Across the 87 cases, the original and combined U-Net masks agree at 97.0% of display pixels after resizing the original prediction. The differences reflect their tile blending and display processing. This agreement measures rendering consistency, not accuracy against experts.</p>
+</div>
 <div class="meta" id="scores"></div>
 <p class="small">Scores are image-level mean intersection over union on the explicitly named expert-present or mapped roles. A missing score means the corresponding comparison was not defined for that image.</p>
 <p class="small">Download the <a href="per-case-87.csv">87-image score table</a>. The former 24-class aggregate table was withdrawn because it included removed cases.</p>
-</section>
-<section aria-labelledby="combined-response-heading" id="combined-response-mask">
-<h2 id="combined-response-heading">Combined tissue-class response mask</h2>
-<p>This is another view of the class-aware U-Net prediction in the comparison figure above, not an independent model. For this validation image, each pixel takes the class with the strongest of the 24 black-and-white U-Net response maps below. This mask uses distinct display colors; its legend lists only classes present here. Class numbers and names match the comparison figure above, whose display colors may differ. This is a display-resolution prediction made from compressed response maps, not an expert mask, a Bora region mask, or a native-resolution accuracy result. The model has no background class, so it assigns a tissue class even on glass or other non-tissue pixels.</p>
-<figure id="combined-response-figure"><a href="#" id="combined-response-full"><img id="combined-response-image" alt="Combined 24-class U-Net response mask"/></a><figcaption>Strongest response per pixel from the 24 maps below; lowest class ID breaks ties.</figcaption></figure>
-<p class="small">Across the 87 cases, these two U-Net class masks agree at 97.0% of display pixels after resizing the original prediction. The differences reflect their tile blending and display processing. This agreement measures rendering consistency, not accuracy against experts.</p>
-<div id="combined-response-legend" aria-label="Classes present in the combined mask"></div>
 </section>
 <section aria-labelledby="response-heading" id="class-responses">
 <h2 id="response-heading">Black-and-white response maps for every tissue classification</h2>
@@ -164,6 +157,6 @@
 </section>
 </main>
 <footer><a href="../attribution.html">Attribution and reuse terms</a></footer>
-<script defer="" src="gallery.js?v=combined-mask-v3"></script>
+<script defer="" src="gallery.js?v=eight-panel-shared-v1"></script>
 </body>
 </html>

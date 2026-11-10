@@ -14,7 +14,6 @@ const predictionLegend=document.getElementById("prediction-legend");
 const segmentationScores=document.getElementById("segmentation-scores"),identificationScores=document.getElementById("identification-scores");
 const groupTable=document.querySelector("#group-identification tbody");
 const classNames={1:"Tumor",2:"In situ tumor",3:"Stroma",4:"Inflamed stroma",5:"Necrosis",6:"Normal glandular epithelium",7:"Epithelial tissue",8:"Blood",9:"Blood vessel",10:"Lymphatic vessel",11:"Adipose",12:"Lymphocytic infiltrate",13:"Other immune infiltrate",14:"Plasma cells",15:"Metaplasia",16:"Alveolar tissue",17:"Bronchial epithelium",18:"Cartilage or bone",19:"Inflammatory infiltrate",20:"Liver tissue",21:"Macrophages",22:"Mucus, plasma or fluids",23:"Muscle",24:"Keratinized tissue"};
-const combinedClassColors={"1":"#f25454","2":"#5482f2","3":"#145da0","4":"#f254de","5":"#54f2d7","6":"#f2a954","7":"#7c54f2","8":"#8a1538","9":"#f25489","10":"#54b7f2","11":"#e5f254","12":"#d154f2","13":"#54f2a3","14":"#f27554","15":"#5462f2","16":"#6b4e2e","17":"#f254be","18":"#54ecf2","19":"#f2ca54","20":"#9c54f2","21":"#9e5400","22":"#f25468","23":"#5496f2","24":"#52525b"};
 let all=[],visible=[];
 const pct=x=>x===null||x===undefined?"Not defined":(100*x).toFixed(1)+"%";
 const decimal=x=>x===null||x===undefined?"Not defined":Number(x).toFixed(3);
@@ -24,8 +23,8 @@ function show(id){
   caseSelect.value=row.id;history.replaceState(null,"","#"+row.id);
   position.textContent=`${visible.indexOf(row)+1} of ${visible.length}`;
   title.textContent=`${row.dataset.toUpperCase()} · ${row.source_group} · ${row.id}`;
-  image.src=row.image;image.alt=`Seven aligned H&E and model output panels for ${row.dataset} ${row.source_group}`;
-  fullImage.href=row.image;
+  image.src=row.image+"?v=eight-panel-shared-v1";image.alt=`Eight aligned H&E and model output panels, including two views of the same U-Net, for ${row.dataset} ${row.source_group}`;
+  fullImage.href=row.image+"?v=eight-panel-shared-v1";
   const roles=row.expert_present_roles.join(", ")||"No mapped expert role";
   scores.innerHTML=card("Bora",row.bora_same_unet_roles,roles,"Same expert-present roles as U-Net")+
     card("Class-aware U-Net",row.unet_score,roles,"Same expert-present roles as Bora and DeepLabV3+")+
@@ -80,11 +79,7 @@ function show(id){
 function showCombinedResponseMask(row){
   const mask=row.combined_response_mask;
   if(!mask)throw Error(`Combined mask missing for ${row.id}`);
-  const img=document.getElementById("combined-response-image");
-  img.src=mask.image;
-  img.alt=`Combined U-Net tissue-class mask for ${row.dataset} ${row.source_group}; strongest of 24 grayscale responses per display pixel`;
   document.getElementById("combined-response-full").href=mask.image;
-  document.getElementById("combined-response-legend").innerHTML=mask.present_class_ids.map(cls=>`<span><i style="background:${combinedClassColors[cls]}"></i>${cls} · ${classNames[cls]}</span>`).join("");
 }
 function showResponses(row){
   const grid=document.getElementById("response-grid");
@@ -141,7 +136,7 @@ function filter(){
   caseSelect.replaceChildren(...visible.map(x=>new Option(`${x.dataset.toUpperCase()} · ${x.source_group} · ${x.id}`,x.id)));
   show(location.hash.slice(1));
 }
-fetch("cases.json?v=combined-mask-v2").then(r=>{if(!r.ok)throw Error(`Gallery manifest: HTTP ${r.status}`);return r.json()}).then(data=>{
+fetch("cases.json?v=eight-panel-shared-v1").then(r=>{if(!r.ok)throw Error(`Gallery manifest: HTTP ${r.status}`);return r.json()}).then(data=>{
   if(data.status!=="AUDITED_BENCHMARK1_FULL_VS_TRAINING_SELECTED_DEVELOPMENT_ONLY"||data.case_count!==87||data.cases.length!==87||data.cases.some(x=>!x.bora_training_selected_view))throw Error("Gallery audit is incomplete");
   document.getElementById("selected-summary").textContent=`Across 87 development images, training-selected Bora had ${data.training_selected_summary.one_group_cases} one-group outputs. Mean covered-pixel matched segmentation IoU: ${pct(data.training_selected_summary.mean_matched_segmentation_iou_covered)}; mean group-majority name agreement: ${pct(data.training_selected_summary.mean_group_name_accuracy)}; mean end-to-end tissue macro IoU: ${pct(data.training_selected_summary.mean_end_to_end_macro_iou)}. Compare these stage-specific values with classic Bora above; neither route was evaluated on an untouched test cohort.`;
   all=data.cases;
