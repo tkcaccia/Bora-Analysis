@@ -21,6 +21,8 @@
     .meta strong{display:block;margin-bottom:4px}
     #panel-guide{display:flex;flex-wrap:wrap;gap:14px;margin:12px 0 18px}
     #panel-guide article{flex:1 1 220px;min-width:0}
+    .panel-heading h2{margin-bottom:4px}
+    .panel-heading h3{margin:0;color:#415b62;font-size:1rem;font-weight:600}
     .small{font-size:.9rem;color:#415b62}
     .error{color:#8d2323}
     #kodama-figure{margin:18px 0;background:#fff;border:1px solid #d5e0e3;padding:14px;max-width:760px}
@@ -120,8 +122,10 @@
 <p class="small" hidden="" id="selected-kodama-unavailable"></p>
 </section>
 <section aria-labelledby="comparators-heading">
+<div class="panel-heading">
 <h2 id="comparators-heading">Bora and external methods on the same H&amp;E image</h2>
 <h3 id="panel-guide-heading">How to read the panels</h3>
+</div>
 <div aria-labelledby="panel-guide-heading" class="meta" id="panel-guide">
 <article><strong>Bora</strong>Image-derived groups followed by fastPLS class predictions. The classifier was trained under a different tile rule from this revised mask run.</article>
 <article><strong>Class-aware U-Net</strong>This project’s U-Net takes RGB H&amp;E tiles as input and was trained on 397 images paired with expert masks; no inference prompt. Its output is separate from the supervised Virchow2 response maps below.</article>
