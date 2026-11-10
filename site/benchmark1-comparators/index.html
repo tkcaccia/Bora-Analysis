@@ -54,7 +54,7 @@
 <header>
 <p><a href="../index.html">← Benchmark 1</a></p>
 <h1>Benchmark 1 validation data: 87 images</h1>
-<p>For each of 87 development evaluation images, compare the original H&amp;E, expert annotation, Bora, U-Net, DeepLabV3+, VISTA-PATH, MedSAM and a combined view of the same U-Net's class responses in the same image frame.</p>
+<p>For each of 87 development evaluation images, compare the original H&amp;E, expert annotation, Bora, U-Net, DeepLabV3+, VISTA-PATH, MedSAM and a separate supervised Virchow2 response mask in the same image frame.</p>
 <nav aria-label="Benchmark 1 result sets" class="benchmark1-paths">
 <a href="../index.html#public-datasets"><strong>Training data · Public histology datasets with expert masks</strong><span>Historical controlled expert-mask results</span></a>
 <a aria-current="page" href="index.html"><strong>Validation data · 87 images</strong><span>Development evaluation and black-and-white class responses</span></a>
@@ -124,7 +124,7 @@
 <h3 id="panel-guide-heading">How to read the panels</h3>
 <div aria-labelledby="panel-guide-heading" class="meta" id="panel-guide">
 <article><strong>Bora</strong>Image-derived groups followed by fastPLS class predictions. The classifier was trained under a different tile rule from this revised mask run.</article>
-<article><strong>Class-aware U-Net</strong>This project’s U-Net takes RGB H&amp;E tiles as input and was trained on 397 images paired with expert masks; no inference prompt. The black-and-white maps below are its class responses.</article>
+<article><strong>Class-aware U-Net</strong>This project’s U-Net takes RGB H&amp;E tiles as input and was trained on 397 images paired with expert masks; no inference prompt. Its output is separate from the supervised Virchow2 response maps below.</article>
 <article><strong>DeepLabV3+</strong>Supervised on the same frozen 397 training images and expert masks as U-Net; no inference prompt. Randomly initialized ResNet-50 backbone.</article>
 <article><strong>VISTA-PATH</strong>Externally pretrained. Only predeclared matched tissue classes are colored; unmatched classes are left uncolored. Source overlap cannot be fully excluded.</article>
 <article><strong>MedSAM</strong>Prompt-guided masks for tumor, stroma and necrosis only. Its boxes came from an earlier U-Net, not the expert or the U-Net panel shown here. Some cases received no box for a role.</article>
@@ -133,8 +133,8 @@
 <p class="small">Select the figure to open it at full size. The class-colored panels, including the combined mask, share one tissue-class color key; the legend lists only classes shown in this case. Uncolored regions in a model panel may be unmatched classes or absent predictions.</p>
 <div id="combined-response-mask">
 <h3 id="combined-response-heading">Combined tissue-class response mask · lower right</h3>
-<p>This panel comes from the <strong>same class-aware U-Net</strong> shown at the upper right. It is not another model or an independent method. Each display pixel takes the strongest of its 24 black-and-white class responses below. The U-Net panel overlays its original class prediction on H&amp;E; the lower-right panel shows the combined response mask without H&amp;E. Both use the same class-to-color key printed in the figure. The combined mask is a display-resolution prediction made from compressed response maps, not an expert annotation or a native-resolution accuracy result. The model has no background class, so it assigns a tissue class even on glass or other non-tissue pixels. <a href="#" id="combined-response-full">Open this mask alone at full resolution</a>.</p>
-<p class="small">Across the 87 cases, the original and combined U-Net masks agree at 97.0% of display pixels after resizing the original prediction. The differences reflect their tile blending and display processing. This agreement measures rendering consistency, not accuracy against experts.</p>
+<p>The lower-right panel combines 24 <strong>supervised Virchow2 feature responses</strong>. For each tissue class, 32 of the full 1,280 feature channels were selected using only the 397 training images and expert masks, and a regularized linear classifier was fitted on those channels. The 87 validation feature grids were projected through the frozen classifiers. Each pixel takes its strongest class response. The U-Net panel is a separate H&amp;E-based method, not the source of this mask. Both panels use the same class-to-color key. The display mask has no background class and can assign a class on glass. <a href="#" id="combined-response-full">Open this mask alone</a>.</p>
+<p class="small">The combined mask and U-Net are distinct fitted methods. These response maps are exploratory class responses, not expert annotations or accuracy scores. Classes with fewer than 10 supporting training images require particular caution.</p>
 </div>
 <div class="meta" id="scores"></div>
 <p class="small">Scores are image-level mean intersection over union on the explicitly named expert-present or mapped roles. A missing score means the corresponding comparison was not defined for that image.</p>
@@ -142,7 +142,7 @@
 </section>
 <section aria-labelledby="response-heading" id="class-responses">
 <h2 id="response-heading">Black-and-white response maps for every tissue classification</h2>
-<p>For this selected image, the 24 maps below show the frozen class-aware U-Net response for each tissue class. The model was fitted on the 397 training images and expert masks. Overlapping predictions are blended with tapered tile edges to avoid visible stitching lines. Each map uses the same scale: black means probability 0 and white means probability 1. Responses are model predictions; they are not expert annotations, Bora group responses, or accuracy scores. Display copies are at most 640 pixels on the long edge.</p>
+<p>For this image, each of the 24 black-and-white maps shows the response of a training-fitted classifier using only its 32 selected Virchow2 channels. Selection and fitting used the 397 training images and expert masks; validation expert masks and U-Net outputs were not used. Black is low and white is high on a shared 0–1 response scale. These values are not calibrated probabilities or accuracy scores. The feature grids were smoothed and interpolated to avoid visible token seams. Display copies are at most 640 pixels on the long edge. <a href="supervised-virchow2-feature-selection.json">View selected channels and training support for every class</a>.</p>
 <div aria-live="polite" class="response-grid" id="response-grid"></div>
 </section>
 <section aria-labelledby="pipeline-heading">
@@ -157,6 +157,6 @@
 </section>
 </main>
 <footer><a href="../attribution.html">Attribution and reuse terms</a></footer>
-<script defer="" src="gallery.js?v=eight-panel-shared-v1"></script>
+<script defer="" src="gallery.js?v=supervised-virchow2-v1"></script>
 </body>
 </html>
