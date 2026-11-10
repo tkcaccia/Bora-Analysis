@@ -141,7 +141,7 @@ function filter(){
   caseSelect.replaceChildren(...visible.map(x=>new Option(`${x.dataset.toUpperCase()} · ${x.source_group} · ${x.id}`,x.id)));
   show(location.hash.slice(1));
 }
-fetch("cases.json?v=training-selected-v6").then(r=>{if(!r.ok)throw Error(`Gallery manifest: HTTP ${r.status}`);return r.json()}).then(data=>{
+fetch("cases.json?v=combined-mask-v1").then(r=>{if(!r.ok)throw Error(`Gallery manifest: HTTP ${r.status}`);return r.json()}).then(data=>{
   if(data.status!=="AUDITED_BENCHMARK1_FULL_VS_TRAINING_SELECTED_DEVELOPMENT_ONLY"||data.case_count!==87||data.cases.length!==87||data.cases.some(x=>!x.bora_training_selected_view))throw Error("Gallery audit is incomplete");
   document.getElementById("selected-summary").textContent=`Across 87 development images, training-selected Bora had ${data.training_selected_summary.one_group_cases} one-group outputs. Mean covered-pixel matched segmentation IoU: ${pct(data.training_selected_summary.mean_matched_segmentation_iou_covered)}; mean group-majority name agreement: ${pct(data.training_selected_summary.mean_group_name_accuracy)}; mean end-to-end tissue macro IoU: ${pct(data.training_selected_summary.mean_end_to_end_macro_iou)}. Compare these stage-specific values with classic Bora above; neither route was evaluated on an untouched test cohort.`;
   all=data.cases;
