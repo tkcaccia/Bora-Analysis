@@ -1,0 +1,3603 @@
+{
+  "status": "87_SUPERVISED_VIRCHOW2_DISPLAY_MASK_DEVELOPMENT_SCORES",
+  "case_count": 87,
+  "mean_case_macro_iou": 0.36979475289986885,
+  "score_rule": "Mean IoU over expert-present harmonized classes, restricted to scored expert pixels. The existing display-resolution argmax mask is resized to the calibrated expert content frame with nearest-neighbor interpolation.",
+  "source_receipt_sha256": "35fe6333a11cc1d5d2de1c9c432c8f52e3ad272a640a70f4669d5ef02885d705",
+  "cases": [
+    {
+      "id": "case-001",
+      "dataset": "bcss",
+      "scoring_shape_yx": [
+        1460,
+        1897
+      ],
+      "scored_expert_pixels": 2769620,
+      "expert_present_class_ids": [
+        1,
+        3,
+        5,
+        6,
+        9,
+        12
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1114147,
+          "intersection": 890118,
+          "false_positive": 164874,
+          "false_negative": 224029,
+          "iou": 0.6959369705423132
+        },
+        "3": {
+          "expert_pixels": 1073099,
+          "intersection": 488860,
+          "false_positive": 28742,
+          "false_negative": 584239,
+          "iou": 0.4436756301499037
+        },
+        "5": {
+          "expert_pixels": 288801,
+          "intersection": 166739,
+          "false_positive": 113550,
+          "false_negative": 122062,
+          "iou": 0.4144117946767872
+        },
+        "6": {
+          "expert_pixels": 1785,
+          "intersection": 0,
+          "false_positive": 67053,
+          "false_negative": 1785,
+          "iou": 0.0
+        },
+        "9": {
+          "expert_pixels": 8138,
+          "intersection": 5444,
+          "false_positive": 51229,
+          "false_negative": 2694,
+          "iou": 0.09170077652567925
+        },
+        "12": {
+          "expert_pixels": 283650,
+          "intersection": 138214,
+          "false_positive": 157288,
+          "false_negative": 145436,
+          "iou": 0.31345449927200647
+        }
+      },
+      "expert_present_macro_iou": 0.3265299451944483
+    },
+    {
+      "id": "case-002",
+      "dataset": "bcss",
+      "scoring_shape_yx": [
+        1209,
+        1696
+      ],
+      "scored_expert_pixels": 2050030,
+      "expert_present_class_ids": [
+        1,
+        3,
+        5
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1023390,
+          "intersection": 898116,
+          "false_positive": 193919,
+          "false_negative": 125274,
+          "iou": 0.7377880225973849
+        },
+        "3": {
+          "expert_pixels": 591595,
+          "intersection": 387385,
+          "false_positive": 157276,
+          "false_negative": 204210,
+          "iou": 0.5172920302695658
+        },
+        "5": {
+          "expert_pixels": 435045,
+          "intersection": 360625,
+          "false_positive": 45910,
+          "false_negative": 74420,
+          "iou": 0.7498102733103928
+        }
+      },
+      "expert_present_macro_iou": 0.6682967753924478
+    },
+    {
+      "id": "case-003",
+      "dataset": "bcss",
+      "scoring_shape_yx": [
+        2313,
+        2699
+      ],
+      "scored_expert_pixels": 6242787,
+      "expert_present_class_ids": [
+        1,
+        3,
+        9,
+        12
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1908447,
+          "intersection": 1293185,
+          "false_positive": 4743,
+          "false_negative": 615262,
+          "iou": 0.6759312979892221
+        },
+        "3": {
+          "expert_pixels": 2317839,
+          "intersection": 660015,
+          "false_positive": 18270,
+          "false_negative": 1657824,
+          "iou": 0.2825274848048614
+        },
+        "9": {
+          "expert_pixels": 32812,
+          "intersection": 25970,
+          "false_positive": 30311,
+          "false_negative": 6842,
+          "iou": 0.41141897565071367
+        },
+        "12": {
+          "expert_pixels": 1983689,
+          "intersection": 9399,
+          "false_positive": 963,
+          "false_negative": 1974290,
+          "iou": 0.004735842858093006
+        }
+      },
+      "expert_present_macro_iou": 0.34365340032572256
+    },
+    {
+      "id": "case-004",
+      "dataset": "bcss",
+      "scoring_shape_yx": [
+        1406,
+        2047
+      ],
+      "scored_expert_pixels": 2574805,
+      "expert_present_class_ids": [
+        1,
+        3
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1367991,
+          "intersection": 1306233,
+          "false_positive": 160551,
+          "false_negative": 61758,
+          "iou": 0.8545614055747242
+        },
+        "3": {
+          "expert_pixels": 1206814,
+          "intersection": 972773,
+          "false_positive": 39391,
+          "false_negative": 234041,
+          "iou": 0.7805882659755016
+        }
+      },
+      "expert_present_macro_iou": 0.8175748357751129
+    },
+    {
+      "id": "case-005",
+      "dataset": "bcss",
+      "scoring_shape_yx": [
+        903,
+        1312
+      ],
+      "scored_expert_pixels": 1159596,
+      "expert_present_class_ids": [
+        1,
+        3,
+        5
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 607985,
+          "intersection": 524376,
+          "false_positive": 56480,
+          "false_negative": 83609,
+          "iou": 0.7891702347000971
+        },
+        "3": {
+          "expert_pixels": 426408,
+          "intersection": 371469,
+          "false_positive": 73396,
+          "false_negative": 54939,
+          "iou": 0.7432293459035942
+        },
+        "5": {
+          "expert_pixels": 125203,
+          "intersection": 102170,
+          "false_positive": 29786,
+          "false_negative": 23033,
+          "iou": 0.6592080728309752
+        }
+      },
+      "expert_present_macro_iou": 0.730535884478222
+    },
+    {
+      "id": "case-006",
+      "dataset": "bcss",
+      "scoring_shape_yx": [
+        1427,
+        2219
+      ],
+      "scored_expert_pixels": 3144222,
+      "expert_present_class_ids": [
+        1,
+        3,
+        5,
+        8,
+        9,
+        12
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1236991,
+          "intersection": 1099563,
+          "false_positive": 27089,
+          "false_negative": 137428,
+          "iou": 0.8698523827605847
+        },
+        "3": {
+          "expert_pixels": 565701,
+          "intersection": 109591,
+          "false_positive": 47082,
+          "false_negative": 456110,
+          "iou": 0.17884144958329456
+        },
+        "5": {
+          "expert_pixels": 643344,
+          "intersection": 577040,
+          "false_positive": 149893,
+          "false_negative": 66304,
+          "iou": 0.727449677712966
+        },
+        "8": {
+          "expert_pixels": 7372,
+          "intersection": 6130,
+          "false_positive": 22342,
+          "false_negative": 1242,
+          "iou": 0.20630006057750555
+        },
+        "9": {
+          "expert_pixels": 34027,
+          "intersection": 30275,
+          "false_positive": 173201,
+          "false_negative": 3752,
+          "iou": 0.14609512228077287
+        },
+        "12": {
+          "expert_pixels": 656787,
+          "intersection": 170480,
+          "false_positive": 16147,
+          "false_negative": 486307,
+          "iou": 0.25333836602103627
+        }
+      },
+      "expert_present_macro_iou": 0.39697950982269337
+    },
+    {
+      "id": "case-007",
+      "dataset": "bcss",
+      "scoring_shape_yx": [
+        2370,
+        2051
+      ],
+      "scored_expert_pixels": 4841925,
+      "expert_present_class_ids": [
+        1,
+        3,
+        5,
+        8,
+        9,
+        11,
+        12
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 2086503,
+          "intersection": 1957079,
+          "false_positive": 11717,
+          "false_negative": 129424,
+          "iou": 0.9327329831952799
+        },
+        "3": {
+          "expert_pixels": 1414514,
+          "intersection": 970033,
+          "false_positive": 128729,
+          "false_negative": 444481,
+          "iou": 0.6285678924187571
+        },
+        "5": {
+          "expert_pixels": 314174,
+          "intersection": 306515,
+          "false_positive": 55794,
+          "false_negative": 7659,
+          "iou": 0.828490572157592
+        },
+        "8": {
+          "expert_pixels": 94994,
+          "intersection": 45866,
+          "false_positive": 25442,
+          "false_negative": 49128,
+          "iou": 0.38083297352950946
+        },
+        "9": {
+          "expert_pixels": 31205,
+          "intersection": 15792,
+          "false_positive": 122245,
+          "false_negative": 15413,
+          "iou": 0.10291300097751711
+        },
+        "11": {
+          "expert_pixels": 171653,
+          "intersection": 169148,
+          "false_positive": 15413,
+          "false_negative": 2505,
+          "iou": 0.9042156244320186
+        },
+        "12": {
+          "expert_pixels": 728882,
+          "intersection": 32354,
+          "false_positive": 333,
+          "false_negative": 696528,
+          "iou": 0.04436825901825936
+        }
+      },
+      "expert_present_macro_iou": 0.5460173293898476
+    },
+    {
+      "id": "case-008",
+      "dataset": "bcss",
+      "scoring_shape_yx": [
+        2575,
+        2524
+      ],
+      "scored_expert_pixels": 3136072,
+      "expert_present_class_ids": [
+        1,
+        3,
+        5,
+        6,
+        9,
+        11,
+        12
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1580009,
+          "intersection": 1512077,
+          "false_positive": 141081,
+          "false_negative": 67932,
+          "iou": 0.8785577744336438
+        },
+        "3": {
+          "expert_pixels": 736108,
+          "intersection": 466674,
+          "false_positive": 79850,
+          "false_negative": 269434,
+          "iou": 0.5719338495363732
+        },
+        "5": {
+          "expert_pixels": 262172,
+          "intersection": 235602,
+          "false_positive": 17474,
+          "false_negative": 26570,
+          "iou": 0.8425008761076503
+        },
+        "6": {
+          "expert_pixels": 9879,
+          "intersection": 5744,
+          "false_positive": 9959,
+          "false_negative": 4135,
+          "iou": 0.28954531706825287
+        },
+        "9": {
+          "expert_pixels": 5382,
+          "intersection": 4946,
+          "false_positive": 15789,
+          "false_negative": 436,
+          "iou": 0.2336214633224694
+        },
+        "11": {
+          "expert_pixels": 3095,
+          "intersection": 3014,
+          "false_positive": 253,
+          "false_negative": 81,
+          "iou": 0.9002389486260454
+        },
+        "12": {
+          "expert_pixels": 539427,
+          "intersection": 4416,
+          "false_positive": 0,
+          "false_negative": 535011,
+          "iou": 0.008186464526247295
+        }
+      },
+      "expert_present_macro_iou": 0.5320835276600975
+    },
+    {
+      "id": "case-009",
+      "dataset": "bcss",
+      "scoring_shape_yx": [
+        2708,
+        3162
+      ],
+      "scored_expert_pixels": 6033928,
+      "expert_present_class_ids": [
+        1,
+        3,
+        5,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 2133977,
+          "intersection": 1591472,
+          "false_positive": 23257,
+          "false_negative": 542505,
+          "iou": 0.7377373061985858
+        },
+        "3": {
+          "expert_pixels": 1897069,
+          "intersection": 1094641,
+          "false_positive": 354836,
+          "false_negative": 802428,
+          "iou": 0.4860955502119317
+        },
+        "5": {
+          "expert_pixels": 935444,
+          "intersection": 692792,
+          "false_positive": 158571,
+          "false_negative": 242652,
+          "iou": 0.6332563995923274
+        },
+        "9": {
+          "expert_pixels": 60680,
+          "intersection": 38815,
+          "false_positive": 124040,
+          "false_negative": 21865,
+          "iou": 0.21012884365526202
+        },
+        "10": {
+          "expert_pixels": 1925,
+          "intersection": 0,
+          "false_positive": 11591,
+          "false_negative": 1925,
+          "iou": 0.0
+        },
+        "11": {
+          "expert_pixels": 255342,
+          "intersection": 124243,
+          "false_positive": 9629,
+          "false_negative": 131099,
+          "iou": 0.46889282223337647
+        },
+        "12": {
+          "expert_pixels": 568363,
+          "intersection": 123,
+          "false_positive": 1427,
+          "false_negative": 568240,
+          "iou": 0.00021586900437003107
+        },
+        "13": {
+          "expert_pixels": 3120,
+          "intersection": 0,
+          "false_positive": 21392,
+          "false_negative": 3120,
+          "iou": 0.0
+        },
+        "14": {
+          "expert_pixels": 178008,
+          "intersection": 6355,
+          "false_positive": 175781,
+          "false_negative": 171653,
+          "iou": 0.017962683972650367
+        }
+      },
+      "expert_present_macro_iou": 0.283809941652056
+    },
+    {
+      "id": "case-010",
+      "dataset": "bcss",
+      "scoring_shape_yx": [
+        1954,
+        2184
+      ],
+      "scored_expert_pixels": 4056394,
+      "expert_present_class_ids": [
+        1,
+        3,
+        5,
+        6,
+        8,
+        9,
+        12
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1154981,
+          "intersection": 672728,
+          "false_positive": 48745,
+          "false_negative": 482253,
+          "iou": 0.5588713710595269
+        },
+        "3": {
+          "expert_pixels": 2225868,
+          "intersection": 1962273,
+          "false_positive": 386370,
+          "false_negative": 263595,
+          "iou": 0.7511846164093777
+        },
+        "5": {
+          "expert_pixels": 145500,
+          "intersection": 57978,
+          "false_positive": 9464,
+          "false_negative": 87522,
+          "iou": 0.374138509589324
+        },
+        "6": {
+          "expert_pixels": 2554,
+          "intersection": 2554,
+          "false_positive": 23421,
+          "false_negative": 0,
+          "iou": 0.09832531280076998
+        },
+        "8": {
+          "expert_pixels": 86262,
+          "intersection": 48592,
+          "false_positive": 14300,
+          "false_negative": 37670,
+          "iou": 0.48320439132077725
+        },
+        "9": {
+          "expert_pixels": 12998,
+          "intersection": 7223,
+          "false_positive": 65196,
+          "false_negative": 5775,
+          "iou": 0.09237281632861856
+        },
+        "12": {
+          "expert_pixels": 428231,
+          "intersection": 27030,
+          "false_positive": 2117,
+          "false_negative": 401201,
+          "iou": 0.06280963313411472
+        }
+      },
+      "expert_present_macro_iou": 0.3458438072346441
+    },
+    {
+      "id": "case-011",
+      "dataset": "bcss",
+      "scoring_shape_yx": [
+        1961,
+        1914
+      ],
+      "scored_expert_pixels": 1775473,
+      "expert_present_class_ids": [
+        1,
+        3,
+        5,
+        11,
+        12
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 895052,
+          "intersection": 772663,
+          "false_positive": 30800,
+          "false_negative": 122389,
+          "iou": 0.8345426698867637
+        },
+        "3": {
+          "expert_pixels": 364652,
+          "intersection": 160446,
+          "false_positive": 78859,
+          "false_negative": 204206,
+          "iou": 0.3617632933568728
+        },
+        "5": {
+          "expert_pixels": 286611,
+          "intersection": 241079,
+          "false_positive": 37838,
+          "false_negative": 45532,
+          "iou": 0.7430412792149151
+        },
+        "11": {
+          "expert_pixels": 64418,
+          "intersection": 56867,
+          "false_positive": 15708,
+          "false_negative": 7551,
+          "iou": 0.7097196914859097
+        },
+        "12": {
+          "expert_pixels": 164740,
+          "intersection": 9903,
+          "false_positive": 4575,
+          "false_negative": 154837,
+          "iou": 0.058488615893453035
+        }
+      },
+      "expert_present_macro_iou": 0.5415111099675829
+    },
+    {
+      "id": "case-012",
+      "dataset": "bcss",
+      "scoring_shape_yx": [
+        2821,
+        2476
+      ],
+      "scored_expert_pixels": 3436939,
+      "expert_present_class_ids": [
+        1,
+        3,
+        6,
+        8,
+        9,
+        10,
+        11,
+        14
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1441586,
+          "intersection": 1425910,
+          "false_positive": 435672,
+          "false_negative": 15676,
+          "iou": 0.7595706077694169
+        },
+        "3": {
+          "expert_pixels": 956237,
+          "intersection": 223003,
+          "false_positive": 20665,
+          "false_negative": 733234,
+          "iou": 0.22827571240513378
+        },
+        "6": {
+          "expert_pixels": 10539,
+          "intersection": 10269,
+          "false_positive": 11083,
+          "false_negative": 270,
+          "iou": 0.4749329386735732
+        },
+        "8": {
+          "expert_pixels": 1560,
+          "intersection": 1121,
+          "false_positive": 150,
+          "false_negative": 439,
+          "iou": 0.6555555555555556
+        },
+        "9": {
+          "expert_pixels": 3389,
+          "intersection": 2742,
+          "false_positive": 13517,
+          "false_negative": 647,
+          "iou": 0.1621909381284751
+        },
+        "10": {
+          "expert_pixels": 6367,
+          "intersection": 0,
+          "false_positive": 0,
+          "false_negative": 6367,
+          "iou": 0.0
+        },
+        "11": {
+          "expert_pixels": 11380,
+          "intersection": 8875,
+          "false_positive": 3350,
+          "false_negative": 2505,
+          "iou": 0.6025118805159538
+        },
+        "14": {
+          "expert_pixels": 1005881,
+          "intersection": 348629,
+          "false_positive": 52457,
+          "false_negative": 657252,
+          "iou": 0.32941177582209086
+        }
+      },
+      "expert_present_macro_iou": 0.4015561761087749
+    },
+    {
+      "id": "case-013",
+      "dataset": "bcss",
+      "scoring_shape_yx": [
+        1778,
+        2319
+      ],
+      "scored_expert_pixels": 2070557,
+      "expert_present_class_ids": [
+        1,
+        3,
+        5,
+        9,
+        12
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1172329,
+          "intersection": 1140326,
+          "false_positive": 203032,
+          "false_negative": 32003,
+          "iou": 0.8291103208539431
+        },
+        "3": {
+          "expert_pixels": 524664,
+          "intersection": 252971,
+          "false_positive": 18438,
+          "false_negative": 271693,
+          "iou": 0.46578911512018
+        },
+        "5": {
+          "expert_pixels": 217286,
+          "intersection": 23631,
+          "false_positive": 6327,
+          "false_negative": 193655,
+          "iou": 0.10567811352649444
+        },
+        "9": {
+          "expert_pixels": 6849,
+          "intersection": 5008,
+          "false_positive": 10749,
+          "false_negative": 1841,
+          "iou": 0.2845777929310149
+        },
+        "12": {
+          "expert_pixels": 149429,
+          "intersection": 34798,
+          "false_positive": 39171,
+          "false_negative": 114631,
+          "iou": 0.1845068928950159
+        }
+      },
+      "expert_present_macro_iou": 0.3739324470653297
+    },
+    {
+      "id": "case-014",
+      "dataset": "bcss",
+      "scoring_shape_yx": [
+        1409,
+        1413
+      ],
+      "scored_expert_pixels": 1931634,
+      "expert_present_class_ids": [
+        1,
+        3,
+        9,
+        12
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 371541,
+          "intersection": 318877,
+          "false_positive": 14851,
+          "false_negative": 52664,
+          "iou": 0.8252681214931986
+        },
+        "3": {
+          "expert_pixels": 1420202,
+          "intersection": 735033,
+          "false_positive": 40598,
+          "false_negative": 685169,
+          "iou": 0.5031715498357064
+        },
+        "9": {
+          "expert_pixels": 20808,
+          "intersection": 16006,
+          "false_positive": 16175,
+          "false_negative": 4802,
+          "iou": 0.43279344563718464
+        },
+        "12": {
+          "expert_pixels": 119083,
+          "intersection": 12998,
+          "false_positive": 0,
+          "false_negative": 106085,
+          "iou": 0.1091507603940109
+        }
+      },
+      "expert_present_macro_iou": 0.4675959693400252
+    },
+    {
+      "id": "case-015",
+      "dataset": "bcss",
+      "scoring_shape_yx": [
+        3143,
+        2785
+      ],
+      "scored_expert_pixels": 3840109,
+      "expert_present_class_ids": [
+        1,
+        3,
+        5,
+        11,
+        12
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 2693712,
+          "intersection": 2530572,
+          "false_positive": 141982,
+          "false_negative": 163140,
+          "iou": 0.892399532530661
+        },
+        "3": {
+          "expert_pixels": 428488,
+          "intersection": 123092,
+          "false_positive": 64543,
+          "false_negative": 305396,
+          "iou": 0.24966381424291778
+        },
+        "5": {
+          "expert_pixels": 221791,
+          "intersection": 167065,
+          "false_positive": 28619,
+          "false_negative": 54726,
+          "iou": 0.6671658480092648
+        },
+        "11": {
+          "expert_pixels": 5577,
+          "intersection": 3360,
+          "false_positive": 1178,
+          "false_negative": 2217,
+          "iou": 0.49740932642487046
+        },
+        "12": {
+          "expert_pixels": 490541,
+          "intersection": 0,
+          "false_positive": 80,
+          "false_negative": 490541,
+          "iou": 0.0
+        }
+      },
+      "expert_present_macro_iou": 0.4613277042415428
+    },
+    {
+      "id": "case-016",
+      "dataset": "tiger",
+      "scoring_shape_yx": [
+        1909,
+        3099
+      ],
+      "scored_expert_pixels": 5827198,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1744635,
+          "intersection": 1367822,
+          "false_positive": 743409,
+          "false_negative": 376813,
+          "iou": 0.5497579624797633
+        },
+        "3": {
+          "expert_pixels": 2969723,
+          "intersection": 1952493,
+          "false_positive": 643385,
+          "false_negative": 1017230,
+          "iou": 0.5403915410222999
+        },
+        "4": {
+          "expert_pixels": 491429,
+          "intersection": 17171,
+          "false_positive": 7184,
+          "false_negative": 474258,
+          "iou": 0.03443752970740835
+        },
+        "5": {
+          "expert_pixels": 589323,
+          "intersection": 373919,
+          "false_positive": 41933,
+          "false_negative": 215404,
+          "iou": 0.5923413005183317
+        },
+        "6": {
+          "expert_pixels": 32088,
+          "intersection": 31828,
+          "false_positive": 103395,
+          "false_negative": 260,
+          "iou": 0.23492246259678337
+        }
+      },
+      "expert_present_macro_iou": 0.39037015926491736
+    },
+    {
+      "id": "case-017",
+      "dataset": "tiger",
+      "scoring_shape_yx": [
+        1362,
+        1762
+      ],
+      "scored_expert_pixels": 2399782,
+      "expert_present_class_ids": [
+        1,
+        3,
+        5
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1113919,
+          "intersection": 928679,
+          "false_positive": 333695,
+          "false_negative": 185240,
+          "iou": 0.6415239145241757
+        },
+        "3": {
+          "expert_pixels": 869703,
+          "intersection": 491831,
+          "false_positive": 149442,
+          "false_negative": 377872,
+          "iou": 0.48259178036491374
+        },
+        "5": {
+          "expert_pixels": 416160,
+          "intersection": 336651,
+          "false_positive": 50096,
+          "false_negative": 79509,
+          "iou": 0.7220303867403315
+        }
+      },
+      "expert_present_macro_iou": 0.615382027209807
+    },
+    {
+      "id": "case-018",
+      "dataset": "tiger",
+      "scoring_shape_yx": [
+        1533,
+        1953
+      ],
+      "scored_expert_pixels": 2985068,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1937478,
+          "intersection": 1609488,
+          "false_positive": 82697,
+          "false_negative": 327990,
+          "iou": 0.7967072159590135
+        },
+        "3": {
+          "expert_pixels": 914526,
+          "intersection": 560161,
+          "false_positive": 164456,
+          "false_negative": 354365,
+          "iou": 0.5191569460843647
+        },
+        "4": {
+          "expert_pixels": 120470,
+          "intersection": 25478,
+          "false_positive": 26181,
+          "false_negative": 94992,
+          "iou": 0.17373219412073562
+        },
+        "5": {
+          "expert_pixels": 12594,
+          "intersection": 441,
+          "false_positive": 2552,
+          "false_negative": 12153,
+          "iou": 0.029116598441832828
+        }
+      },
+      "expert_present_macro_iou": 0.3796782386514867
+    },
+    {
+      "id": "case-019",
+      "dataset": "tiger",
+      "scoring_shape_yx": [
+        1308,
+        1391
+      ],
+      "scored_expert_pixels": 1778004,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 622700,
+          "intersection": 490660,
+          "false_positive": 61797,
+          "false_negative": 132040,
+          "iou": 0.716818335215494
+        },
+        "3": {
+          "expert_pixels": 706114,
+          "intersection": 551723,
+          "false_positive": 157389,
+          "false_negative": 154391,
+          "iou": 0.6389358230370943
+        },
+        "4": {
+          "expert_pixels": 441221,
+          "intersection": 181476,
+          "false_positive": 16860,
+          "false_negative": 259745,
+          "iou": 0.39616574361302914
+        },
+        "5": {
+          "expert_pixels": 7969,
+          "intersection": 0,
+          "false_positive": 1012,
+          "false_negative": 7969,
+          "iou": 0.0
+        }
+      },
+      "expert_present_macro_iou": 0.4379799754664043
+    },
+    {
+      "id": "case-020",
+      "dataset": "tiger",
+      "scoring_shape_yx": [
+        2817,
+        3491
+      ],
+      "scored_expert_pixels": 6011058,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 3729051,
+          "intersection": 3489258,
+          "false_positive": 315458,
+          "false_negative": 239793,
+          "iou": 0.8627148561172692
+        },
+        "3": {
+          "expert_pixels": 1352747,
+          "intersection": 680712,
+          "false_positive": 159423,
+          "false_negative": 672035,
+          "iou": 0.45015573645820245
+        },
+        "4": {
+          "expert_pixels": 209881,
+          "intersection": 24083,
+          "false_positive": 31189,
+          "false_negative": 185798,
+          "iou": 0.0999004438544821
+        },
+        "5": {
+          "expert_pixels": 719379,
+          "intersection": 488606,
+          "false_positive": 47254,
+          "false_negative": 230773,
+          "iou": 0.6373401614592641
+        }
+      },
+      "expert_present_macro_iou": 0.5125277994723044
+    },
+    {
+      "id": "case-021",
+      "dataset": "tiger",
+      "scoring_shape_yx": [
+        2429,
+        2508
+      ],
+      "scored_expert_pixels": 3794467,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1988580,
+          "intersection": 1201623,
+          "false_positive": 101604,
+          "false_negative": 786957,
+          "iou": 0.574888622245697
+        },
+        "3": {
+          "expert_pixels": 1604816,
+          "intersection": 1053860,
+          "false_positive": 376040,
+          "false_negative": 550956,
+          "iou": 0.5320225195572015
+        },
+        "4": {
+          "expert_pixels": 201071,
+          "intersection": 147241,
+          "false_positive": 185601,
+          "false_negative": 53830,
+          "iou": 0.3807904373732776
+        }
+      },
+      "expert_present_macro_iou": 0.49590052639205867
+    },
+    {
+      "id": "case-022",
+      "dataset": "tiger",
+      "scoring_shape_yx": [
+        1327,
+        1349
+      ],
+      "scored_expert_pixels": 1756698,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1042591,
+          "intersection": 797330,
+          "false_positive": 11987,
+          "false_negative": 245261,
+          "iou": 0.7560654593590991
+        },
+        "3": {
+          "expert_pixels": 360075,
+          "intersection": 46774,
+          "false_positive": 36942,
+          "false_negative": 313301,
+          "iou": 0.11781359488384628
+        },
+        "4": {
+          "expert_pixels": 354032,
+          "intersection": 889,
+          "false_positive": 3935,
+          "false_negative": 353143,
+          "iou": 0.002483469146597312
+        }
+      },
+      "expert_present_macro_iou": 0.29212084112984754
+    },
+    {
+      "id": "case-023",
+      "dataset": "tiger",
+      "scoring_shape_yx": [
+        1998,
+        1940
+      ],
+      "scored_expert_pixels": 3859058,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 558671,
+          "intersection": 488967,
+          "false_positive": 540624,
+          "false_negative": 69704,
+          "iou": 0.4448005312495736
+        },
+        "3": {
+          "expert_pixels": 3089090,
+          "intersection": 2354728,
+          "false_positive": 164067,
+          "false_negative": 734362,
+          "iou": 0.7238285763644361
+        },
+        "4": {
+          "expert_pixels": 209587,
+          "intersection": 1494,
+          "false_positive": 687,
+          "false_negative": 208093,
+          "iou": 0.007105015360910051
+        },
+        "5": {
+          "expert_pixels": 1710,
+          "intersection": 103,
+          "false_positive": 9078,
+          "false_negative": 1607,
+          "iou": 0.009547645532072673
+        }
+      },
+      "expert_present_macro_iou": 0.2963204421267481
+    },
+    {
+      "id": "case-024",
+      "dataset": "tiger",
+      "scoring_shape_yx": [
+        5366,
+        3777
+      ],
+      "scored_expert_pixels": 10430626,
+      "expert_present_class_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 33297,
+          "intersection": 0,
+          "false_positive": 418806,
+          "false_negative": 33297,
+          "iou": 0.0
+        },
+        "2": {
+          "expert_pixels": 2005804,
+          "intersection": 1103270,
+          "false_positive": 91586,
+          "false_negative": 902534,
+          "iou": 0.5260204349214976
+        },
+        "3": {
+          "expert_pixels": 5751522,
+          "intersection": 2164694,
+          "false_positive": 81106,
+          "false_negative": 3586828,
+          "iou": 0.3711352755567473
+        },
+        "4": {
+          "expert_pixels": 2640003,
+          "intersection": 343917,
+          "false_positive": 47599,
+          "false_negative": 2296086,
+          "iou": 0.1279642595890314
+        }
+      },
+      "expert_present_macro_iou": 0.2562799925168191
+    },
+    {
+      "id": "case-025",
+      "dataset": "tiger",
+      "scoring_shape_yx": [
+        2490,
+        1786
+      ],
+      "scored_expert_pixels": 4194833,
+      "expert_present_class_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 131032,
+          "intersection": 76484,
+          "false_positive": 951007,
+          "false_negative": 54548,
+          "iou": 0.07068506772861237
+        },
+        "2": {
+          "expert_pixels": 1330811,
+          "intersection": 15303,
+          "false_positive": 2792,
+          "false_negative": 1315508,
+          "iou": 0.011474929195570195
+        },
+        "3": {
+          "expert_pixels": 1945016,
+          "intersection": 1371105,
+          "false_positive": 20259,
+          "false_negative": 573911,
+          "iou": 0.6976657210822913
+        },
+        "4": {
+          "expert_pixels": 787974,
+          "intersection": 288190,
+          "false_positive": 87793,
+          "false_negative": 499784,
+          "iou": 0.3290715452854469
+        }
+      },
+      "expert_present_macro_iou": 0.2772243158229802
+    },
+    {
+      "id": "case-026",
+      "dataset": "tiger",
+      "scoring_shape_yx": [
+        2193,
+        4207
+      ],
+      "scored_expert_pixels": 8963223,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 2211066,
+          "intersection": 1890139,
+          "false_positive": 128794,
+          "false_negative": 320927,
+          "iou": 0.8078000393185917
+        },
+        "3": {
+          "expert_pixels": 6337354,
+          "intersection": 5423656,
+          "false_positive": 273186,
+          "false_negative": 913698,
+          "iou": 0.8204558175277663
+        },
+        "4": {
+          "expert_pixels": 173903,
+          "intersection": 12366,
+          "false_positive": 20351,
+          "false_negative": 161537,
+          "iou": 0.0636589207944238
+        },
+        "5": {
+          "expert_pixels": 219139,
+          "intersection": 190216,
+          "false_positive": 46306,
+          "false_negative": 28923,
+          "iou": 0.7165928911827308
+        },
+        "6": {
+          "expert_pixels": 21761,
+          "intersection": 20194,
+          "false_positive": 12153,
+          "false_negative": 1567,
+          "iou": 0.595447307896444
+        }
+      },
+      "expert_present_macro_iou": 0.6007909953439914
+    },
+    {
+      "id": "case-027",
+      "dataset": "tiger",
+      "scoring_shape_yx": [
+        1301,
+        1808
+      ],
+      "scored_expert_pixels": 2320259,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 370446,
+          "intersection": 302150,
+          "false_positive": 105848,
+          "false_negative": 68296,
+          "iou": 0.634377086421412
+        },
+        "3": {
+          "expert_pixels": 871021,
+          "intersection": 121378,
+          "false_positive": 33611,
+          "false_negative": 749643,
+          "iou": 0.13417389612571742
+        },
+        "4": {
+          "expert_pixels": 1078792,
+          "intersection": 36101,
+          "false_positive": 24786,
+          "false_negative": 1042691,
+          "iou": 0.03271268546491503
+        }
+      },
+      "expert_present_macro_iou": 0.2670878893373481
+    },
+    {
+      "id": "case-028",
+      "dataset": "tiger",
+      "scoring_shape_yx": [
+        1060,
+        1218
+      ],
+      "scored_expert_pixels": 1243496,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 240391,
+          "intersection": 173186,
+          "false_positive": 39078,
+          "false_negative": 67205,
+          "iou": 0.6196966389832146
+        },
+        "3": {
+          "expert_pixels": 388111,
+          "intersection": 91848,
+          "false_positive": 2231,
+          "false_negative": 296263,
+          "iou": 0.2353013511228615
+        },
+        "4": {
+          "expert_pixels": 614994,
+          "intersection": 201970,
+          "false_positive": 31614,
+          "false_negative": 413024,
+          "iou": 0.3123530794546309
+        }
+      },
+      "expert_present_macro_iou": 0.38911702318690233
+    },
+    {
+      "id": "case-029",
+      "dataset": "tiger",
+      "scoring_shape_yx": [
+        1026,
+        1212
+      ],
+      "scored_expert_pixels": 1233633,
+      "expert_present_class_ids": [
+        1,
+        3,
+        5
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 329057,
+          "intersection": 284595,
+          "false_positive": 41327,
+          "false_negative": 44462,
+          "iou": 0.7683782236813685
+        },
+        "3": {
+          "expert_pixels": 487554,
+          "intersection": 421540,
+          "false_positive": 46265,
+          "false_negative": 66014,
+          "iou": 0.7896684082057777
+        },
+        "5": {
+          "expert_pixels": 417022,
+          "intersection": 401596,
+          "false_positive": 35152,
+          "false_negative": 15426,
+          "iou": 0.8881448292029175
+        }
+      },
+      "expert_present_macro_iou": 0.8153971536966879
+    },
+    {
+      "id": "case-030",
+      "dataset": "tiger",
+      "scoring_shape_yx": [
+        1169,
+        1448
+      ],
+      "scored_expert_pixels": 899520,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 207692,
+          "intersection": 172362,
+          "false_positive": 24352,
+          "false_negative": 35330,
+          "iou": 0.7427987795418111
+        },
+        "3": {
+          "expert_pixels": 455061,
+          "intersection": 207263,
+          "false_positive": 4428,
+          "false_negative": 247798,
+          "iou": 0.4510728222003138
+        },
+        "4": {
+          "expert_pixels": 236767,
+          "intersection": 63797,
+          "false_positive": 37343,
+          "false_negative": 172970,
+          "iou": 0.2327423297216446
+        }
+      },
+      "expert_present_macro_iou": 0.47553797715458984
+    },
+    {
+      "id": "case-031",
+      "dataset": "tiger",
+      "scoring_shape_yx": [
+        1964,
+        2464
+      ],
+      "scored_expert_pixels": 2817375,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1048210,
+          "intersection": 843903,
+          "false_positive": 64777,
+          "false_negative": 204307,
+          "iou": 0.7582325759420371
+        },
+        "3": {
+          "expert_pixels": 946413,
+          "intersection": 521822,
+          "false_positive": 78348,
+          "false_negative": 424591,
+          "iou": 0.5092133677999066
+        },
+        "4": {
+          "expert_pixels": 822752,
+          "intersection": 28190,
+          "false_positive": 59025,
+          "false_negative": 794562,
+          "iou": 0.03196953424732103
+        }
+      },
+      "expert_present_macro_iou": 0.4331384926630882
+    },
+    {
+      "id": "case-032",
+      "dataset": "tiger",
+      "scoring_shape_yx": [
+        1371,
+        1103
+      ],
+      "scored_expert_pixels": 1386099,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 494809,
+          "intersection": 450630,
+          "false_positive": 84096,
+          "false_negative": 44179,
+          "iou": 0.7784178751263161
+        },
+        "3": {
+          "expert_pixels": 761413,
+          "intersection": 492838,
+          "false_positive": 30251,
+          "false_negative": 268575,
+          "iou": 0.6225343074839831
+        },
+        "4": {
+          "expert_pixels": 129877,
+          "intersection": 3060,
+          "false_positive": 3469,
+          "false_negative": 126817,
+          "iou": 0.022947819957104074
+        }
+      },
+      "expert_present_macro_iou": 0.4746333341891344
+    },
+    {
+      "id": "case-033",
+      "dataset": "ignite",
+      "scoring_shape_yx": [
+        1019,
+        1008
+      ],
+      "scored_expert_pixels": 1027152,
+      "expert_present_class_ids": [
+        3,
+        8,
+        19
+      ],
+      "per_present_class_iou": {
+        "3": {
+          "expert_pixels": 115039,
+          "intersection": 12169,
+          "false_positive": 20896,
+          "false_negative": 102870,
+          "iou": 0.08952072681796447
+        },
+        "8": {
+          "expert_pixels": 905276,
+          "intersection": 90301,
+          "false_positive": 1,
+          "false_negative": 814975,
+          "iou": 0.09974957941050087
+        },
+        "19": {
+          "expert_pixels": 6837,
+          "intersection": 271,
+          "false_positive": 51838,
+          "false_negative": 6566,
+          "iou": 0.0046186621218576905
+        }
+      },
+      "expert_present_macro_iou": 0.06462965611677435
+    },
+    {
+      "id": "case-034",
+      "dataset": "ignite",
+      "scoring_shape_yx": [
+        1046,
+        1085
+      ],
+      "scored_expert_pixels": 1130255,
+      "expert_present_class_ids": [
+        1,
+        3,
+        5,
+        8,
+        19,
+        21
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 855199,
+          "intersection": 772869,
+          "false_positive": 24570,
+          "false_negative": 82330,
+          "iou": 0.8784908311158952
+        },
+        "3": {
+          "expert_pixels": 161371,
+          "intersection": 69658,
+          "false_positive": 3601,
+          "false_negative": 91713,
+          "iou": 0.42224135004728075
+        },
+        "5": {
+          "expert_pixels": 7419,
+          "intersection": 47,
+          "false_positive": 9539,
+          "false_negative": 7372,
+          "iou": 0.0027715532492039157
+        },
+        "8": {
+          "expert_pixels": 28908,
+          "intersection": 0,
+          "false_positive": 0,
+          "false_negative": 28908,
+          "iou": 0.0
+        },
+        "19": {
+          "expert_pixels": 64194,
+          "intersection": 56994,
+          "false_positive": 23454,
+          "false_negative": 7200,
+          "iou": 0.6502601314348302
+        },
+        "21": {
+          "expert_pixels": 13164,
+          "intersection": 7249,
+          "false_positive": 4876,
+          "false_negative": 5915,
+          "iou": 0.40182926829268295
+        }
+      },
+      "expert_present_macro_iou": 0.39259885568998215
+    },
+    {
+      "id": "case-035",
+      "dataset": "ignite",
+      "scoring_shape_yx": [
+        1030,
+        1031
+      ],
+      "scored_expert_pixels": 921835,
+      "expert_present_class_ids": [
+        1,
+        3,
+        8
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 352078,
+          "intersection": 121790,
+          "false_positive": 13169,
+          "false_negative": 230288,
+          "iou": 0.33344558613760006
+        },
+        "3": {
+          "expert_pixels": 569140,
+          "intersection": 491029,
+          "false_positive": 40006,
+          "false_negative": 78111,
+          "iou": 0.8060941055182173
+        },
+        "8": {
+          "expert_pixels": 617,
+          "intersection": 0,
+          "false_positive": 0,
+          "false_negative": 617,
+          "iou": 0.0
+        }
+      },
+      "expert_present_macro_iou": 0.37984656388527244
+    },
+    {
+      "id": "case-036",
+      "dataset": "ignite",
+      "scoring_shape_yx": [
+        1030,
+        1031
+      ],
+      "scored_expert_pixels": 948498,
+      "expert_present_class_ids": [
+        1,
+        3,
+        5,
+        8
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 330427,
+          "intersection": 231320,
+          "false_positive": 71214,
+          "false_negative": 99107,
+          "iou": 0.5759372175649399
+        },
+        "3": {
+          "expert_pixels": 466405,
+          "intersection": 357465,
+          "false_positive": 31842,
+          "false_negative": 108940,
+          "iou": 0.7174453634442355
+        },
+        "5": {
+          "expert_pixels": 151495,
+          "intersection": 120970,
+          "false_positive": 121144,
+          "false_negative": 30525,
+          "iou": 0.44370027765653486
+        },
+        "8": {
+          "expert_pixels": 171,
+          "intersection": 0,
+          "false_positive": 0,
+          "false_negative": 171,
+          "iou": 0.0
+        }
+      },
+      "expert_present_macro_iou": 0.4342707146664275
+    },
+    {
+      "id": "case-037",
+      "dataset": "ignite",
+      "scoring_shape_yx": [
+        930,
+        967
+      ],
+      "scored_expert_pixels": 779051,
+      "expert_present_class_ids": [
+        1,
+        3,
+        5,
+        7,
+        8,
+        21
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 319143,
+          "intersection": 195485,
+          "false_positive": 2742,
+          "false_negative": 123658,
+          "iou": 0.6073131708529443
+        },
+        "3": {
+          "expert_pixels": 384009,
+          "intersection": 363757,
+          "false_positive": 38078,
+          "false_negative": 20252,
+          "iou": 0.8618057414703604
+        },
+        "5": {
+          "expert_pixels": 4563,
+          "intersection": 353,
+          "false_positive": 8943,
+          "false_negative": 4210,
+          "iou": 0.02613653191174293
+        },
+        "7": {
+          "expert_pixels": 10979,
+          "intersection": 5250,
+          "false_positive": 14825,
+          "false_negative": 5729,
+          "iou": 0.2034568283986979
+        },
+        "8": {
+          "expert_pixels": 317,
+          "intersection": 26,
+          "false_positive": 374,
+          "false_negative": 291,
+          "iou": 0.03762662807525326
+        },
+        "21": {
+          "expert_pixels": 60040,
+          "intersection": 50753,
+          "false_positive": 8978,
+          "false_negative": 9287,
+          "iou": 0.7353588918832769
+        }
+      },
+      "expert_present_macro_iou": 0.41194963209871266
+    },
+    {
+      "id": "case-038",
+      "dataset": "ignite",
+      "scoring_shape_yx": [
+        1030,
+        1031
+      ],
+      "scored_expert_pixels": 1025320,
+      "expert_present_class_ids": [
+        1,
+        3,
+        7
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 573269,
+          "intersection": 548857,
+          "false_positive": 1136,
+          "false_negative": 24412,
+          "iou": 0.9555226712859394
+        },
+        "3": {
+          "expert_pixels": 443517,
+          "intersection": 331581,
+          "false_positive": 10508,
+          "false_negative": 111936,
+          "iou": 0.7303144099994494
+        },
+        "7": {
+          "expert_pixels": 8534,
+          "intersection": 0,
+          "false_positive": 384,
+          "false_negative": 8534,
+          "iou": 0.0
+        }
+      },
+      "expert_present_macro_iou": 0.5619456937617963
+    },
+    {
+      "id": "case-039",
+      "dataset": "ignite",
+      "scoring_shape_yx": [
+        1030,
+        1030
+      ],
+      "scored_expert_pixels": 844626,
+      "expert_present_class_ids": [
+        1,
+        3,
+        5,
+        8,
+        22
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 613918,
+          "intersection": 476079,
+          "false_positive": 8519,
+          "false_negative": 137839,
+          "iou": 0.7648629499852997
+        },
+        "3": {
+          "expert_pixels": 215306,
+          "intersection": 181564,
+          "false_positive": 42690,
+          "false_negative": 33742,
+          "iou": 0.7037473449200763
+        },
+        "5": {
+          "expert_pixels": 11976,
+          "intersection": 8498,
+          "false_positive": 57308,
+          "false_negative": 3478,
+          "iou": 0.12265458114427573
+        },
+        "8": {
+          "expert_pixels": 588,
+          "intersection": 0,
+          "false_positive": 0,
+          "false_negative": 588,
+          "iou": 0.0
+        },
+        "22": {
+          "expert_pixels": 2838,
+          "intersection": 821,
+          "false_positive": 15257,
+          "false_negative": 2017,
+          "iou": 0.045371649626968776
+        }
+      },
+      "expert_present_macro_iou": 0.3273273051353241
+    },
+    {
+      "id": "case-040",
+      "dataset": "ignite",
+      "scoring_shape_yx": [
+        1262,
+        1563
+      ],
+      "scored_expert_pixels": 1474324,
+      "expert_present_class_ids": [
+        1,
+        3
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1184780,
+          "intersection": 659765,
+          "false_positive": 2,
+          "false_negative": 525015,
+          "iou": 0.5568661576560076
+        },
+        "3": {
+          "expert_pixels": 289544,
+          "intersection": 287360,
+          "false_positive": 515126,
+          "false_negative": 2184,
+          "iou": 0.3571153392073769
+        }
+      },
+      "expert_present_macro_iou": 0.45699074843169224
+    },
+    {
+      "id": "case-041",
+      "dataset": "ignite",
+      "scoring_shape_yx": [
+        1120,
+        1059
+      ],
+      "scored_expert_pixels": 1186080,
+      "expert_present_class_ids": [
+        1,
+        3,
+        8
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 898162,
+          "intersection": 839533,
+          "false_positive": 31260,
+          "false_negative": 58629,
+          "iou": 0.9032850524304352
+        },
+        "3": {
+          "expert_pixels": 287018,
+          "intersection": 245271,
+          "false_positive": 49544,
+          "false_negative": 41747,
+          "iou": 0.7287542859859402
+        },
+        "8": {
+          "expert_pixels": 900,
+          "intersection": 599,
+          "false_positive": 129,
+          "false_negative": 301,
+          "iou": 0.5821185617103984
+        }
+      },
+      "expert_present_macro_iou": 0.7380526333755912
+    },
+    {
+      "id": "case-042",
+      "dataset": "ignite",
+      "scoring_shape_yx": [
+        1431,
+        1245
+      ],
+      "scored_expert_pixels": 1400353,
+      "expert_present_class_ids": [
+        1,
+        3
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 954543,
+          "intersection": 780456,
+          "false_positive": 171366,
+          "false_negative": 174087,
+          "iou": 0.6931785783753394
+        },
+        "3": {
+          "expert_pixels": 445810,
+          "intersection": 132006,
+          "false_positive": 2802,
+          "false_negative": 313804,
+          "iou": 0.29425427763858303
+        }
+      },
+      "expert_present_macro_iou": 0.4937164280069612
+    },
+    {
+      "id": "case-043",
+      "dataset": "ignite",
+      "scoring_shape_yx": [
+        2114,
+        2650
+      ],
+      "scored_expert_pixels": 5356906,
+      "expert_present_class_ids": [
+        1,
+        3,
+        5,
+        8,
+        19,
+        22
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 2534833,
+          "intersection": 2383451,
+          "false_positive": 47987,
+          "false_negative": 151382,
+          "iou": 0.922809564739316
+        },
+        "3": {
+          "expert_pixels": 1373238,
+          "intersection": 478860,
+          "false_positive": 8301,
+          "false_negative": 894378,
+          "iou": 0.3466134506517731
+        },
+        "5": {
+          "expert_pixels": 1270186,
+          "intersection": 1190405,
+          "false_positive": 91115,
+          "false_negative": 79781,
+          "iou": 0.8744612690360177
+        },
+        "8": {
+          "expert_pixels": 11777,
+          "intersection": 9591,
+          "false_positive": 18954,
+          "false_negative": 2186,
+          "iou": 0.31209527838339135
+        },
+        "19": {
+          "expert_pixels": 164651,
+          "intersection": 156556,
+          "false_positive": 412495,
+          "false_negative": 8095,
+          "iou": 0.2712589188870754
+        },
+        "22": {
+          "expert_pixels": 2221,
+          "intersection": 0,
+          "false_positive": 9439,
+          "false_negative": 2221,
+          "iou": 0.0
+        }
+      },
+      "expert_present_macro_iou": 0.45453974694959554
+    },
+    {
+      "id": "case-044",
+      "dataset": "ignite",
+      "scoring_shape_yx": [
+        1185,
+        2098
+      ],
+      "scored_expert_pixels": 1612961,
+      "expert_present_class_ids": [
+        3,
+        7,
+        8,
+        16,
+        21
+      ],
+      "per_present_class_iou": {
+        "3": {
+          "expert_pixels": 1154985,
+          "intersection": 396466,
+          "false_positive": 8,
+          "false_negative": 758519,
+          "iou": 0.3432626864405239
+        },
+        "7": {
+          "expert_pixels": 196069,
+          "intersection": 49999,
+          "false_positive": 36678,
+          "false_negative": 146070,
+          "iou": 0.2148212436680172
+        },
+        "8": {
+          "expert_pixels": 37539,
+          "intersection": 18469,
+          "false_positive": 11774,
+          "false_negative": 19070,
+          "iou": 0.3745259870622351
+        },
+        "16": {
+          "expert_pixels": 152064,
+          "intersection": 147653,
+          "false_positive": 225516,
+          "false_negative": 4411,
+          "iou": 0.3910509031198686
+        },
+        "21": {
+          "expert_pixels": 72304,
+          "intersection": 45728,
+          "false_positive": 1274,
+          "false_negative": 26576,
+          "iou": 0.6214901193291473
+        }
+      },
+      "expert_present_macro_iou": 0.38903018792395844
+    },
+    {
+      "id": "case-045",
+      "dataset": "ignite",
+      "scoring_shape_yx": [
+        1751,
+        1150
+      ],
+      "scored_expert_pixels": 1492190,
+      "expert_present_class_ids": [
+        1,
+        3,
+        8,
+        21
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 199811,
+          "intersection": 140093,
+          "false_positive": 46747,
+          "false_negative": 59718,
+          "iou": 0.568194907486271
+        },
+        "3": {
+          "expert_pixels": 1059881,
+          "intersection": 509816,
+          "false_positive": 6647,
+          "false_negative": 550065,
+          "iou": 0.47801464190344745
+        },
+        "8": {
+          "expert_pixels": 8144,
+          "intersection": 5863,
+          "false_positive": 10347,
+          "false_negative": 2281,
+          "iou": 0.3170731707317073
+        },
+        "21": {
+          "expert_pixels": 224354,
+          "intersection": 196934,
+          "false_positive": 15597,
+          "false_negative": 27420,
+          "iou": 0.8207258982042167
+        }
+      },
+      "expert_present_macro_iou": 0.5460021545814107
+    },
+    {
+      "id": "case-046",
+      "dataset": "ignite",
+      "scoring_shape_yx": [
+        1655,
+        1414
+      ],
+      "scored_expert_pixels": 2239340,
+      "expert_present_class_ids": [
+        1,
+        3,
+        5,
+        8,
+        19,
+        21,
+        24
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 717531,
+          "intersection": 641084,
+          "false_positive": 89005,
+          "false_negative": 76447,
+          "iou": 0.7948609857464515
+        },
+        "3": {
+          "expert_pixels": 872626,
+          "intersection": 479380,
+          "false_positive": 25583,
+          "false_negative": 393246,
+          "iou": 0.5337065204200804
+        },
+        "5": {
+          "expert_pixels": 272059,
+          "intersection": 173028,
+          "false_positive": 9170,
+          "false_negative": 99031,
+          "iou": 0.6152566058265684
+        },
+        "8": {
+          "expert_pixels": 14046,
+          "intersection": 13076,
+          "false_positive": 12916,
+          "false_negative": 970,
+          "iou": 0.484978859135079
+        },
+        "19": {
+          "expert_pixels": 102321,
+          "intersection": 44815,
+          "false_positive": 104568,
+          "false_negative": 57506,
+          "iou": 0.21661373973483367
+        },
+        "21": {
+          "expert_pixels": 18757,
+          "intersection": 7642,
+          "false_positive": 19108,
+          "false_negative": 11115,
+          "iou": 0.2018222633038426
+        },
+        "24": {
+          "expert_pixels": 242000,
+          "intersection": 233581,
+          "false_positive": 197185,
+          "false_negative": 8419,
+          "iou": 0.5318510422714802
+        }
+      },
+      "expert_present_macro_iou": 0.48272714520547655
+    },
+    {
+      "id": "case-047",
+      "dataset": "ignite",
+      "scoring_shape_yx": [
+        1061,
+        1061
+      ],
+      "scored_expert_pixels": 953759,
+      "expert_present_class_ids": [
+        1,
+        5,
+        8
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 643592,
+          "intersection": 559410,
+          "false_positive": 4010,
+          "false_negative": 84182,
+          "iou": 0.8638175916689572
+        },
+        "5": {
+          "expert_pixels": 306316,
+          "intersection": 3167,
+          "false_positive": 363,
+          "false_negative": 303149,
+          "iou": 0.010326758597752048
+        },
+        "8": {
+          "expert_pixels": 3851,
+          "intersection": 1236,
+          "false_positive": 12368,
+          "false_negative": 2615,
+          "iou": 0.0762069178124422
+        }
+      },
+      "expert_present_macro_iou": 0.3167837560263838
+    },
+    {
+      "id": "case-048",
+      "dataset": "ignite",
+      "scoring_shape_yx": [
+        1055,
+        1082
+      ],
+      "scored_expert_pixels": 1083473,
+      "expert_present_class_ids": [
+        1,
+        3,
+        5,
+        8,
+        21
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 421011,
+          "intersection": 380147,
+          "false_positive": 106670,
+          "false_negative": 40864,
+          "iou": 0.7204106268749491
+        },
+        "3": {
+          "expert_pixels": 622172,
+          "intersection": 493383,
+          "false_positive": 28303,
+          "false_negative": 128789,
+          "iou": 0.7584964833390984
+        },
+        "5": {
+          "expert_pixels": 25474,
+          "intersection": 1883,
+          "false_positive": 8812,
+          "false_negative": 23591,
+          "iou": 0.054920375663536136
+        },
+        "8": {
+          "expert_pixels": 12536,
+          "intersection": 5603,
+          "false_positive": 1627,
+          "false_negative": 6933,
+          "iou": 0.39560827508296265
+        },
+        "21": {
+          "expert_pixels": 2280,
+          "intersection": 1088,
+          "false_positive": 5960,
+          "false_negative": 1192,
+          "iou": 0.13203883495145632
+        }
+      },
+      "expert_present_macro_iou": 0.41229491918240047
+    },
+    {
+      "id": "case-049",
+      "dataset": "gcss",
+      "scoring_shape_yx": [
+        1808,
+        1807
+      ],
+      "scored_expert_pixels": 3179881,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 528474,
+          "intersection": 333104,
+          "false_positive": 64147,
+          "false_negative": 195370,
+          "iou": 0.5620860549997384
+        },
+        "3": {
+          "expert_pixels": 1147608,
+          "intersection": 792422,
+          "false_positive": 317432,
+          "false_negative": 355186,
+          "iou": 0.5408876208158139
+        },
+        "4": {
+          "expert_pixels": 1503799,
+          "intersection": 140325,
+          "false_positive": 5690,
+          "false_negative": 1363474,
+          "iou": 0.09296192287588714
+        }
+      },
+      "expert_present_macro_iou": 0.39864519956381317
+    },
+    {
+      "id": "case-050",
+      "dataset": "gcss",
+      "scoring_shape_yx": [
+        1810,
+        1810
+      ],
+      "scored_expert_pixels": 3083389,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4,
+        5,
+        23
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1076314,
+          "intersection": 333222,
+          "false_positive": 8270,
+          "false_negative": 743092,
+          "iou": 0.3072348476466553
+        },
+        "3": {
+          "expert_pixels": 62383,
+          "intersection": 13860,
+          "false_positive": 860545,
+          "false_negative": 48523,
+          "iou": 0.015017422810880155
+        },
+        "4": {
+          "expert_pixels": 224569,
+          "intersection": 15885,
+          "false_positive": 1702,
+          "false_negative": 208684,
+          "iou": 0.07020342863203857
+        },
+        "5": {
+          "expert_pixels": 685239,
+          "intersection": 433292,
+          "false_positive": 46359,
+          "false_negative": 251947,
+          "iou": 0.5922542161132206
+        },
+        "23": {
+          "expert_pixels": 1034884,
+          "intersection": 214034,
+          "false_positive": 23663,
+          "false_negative": 820850,
+          "iou": 0.20219602908515164
+        }
+      },
+      "expert_present_macro_iou": 0.23738118885758924
+    },
+    {
+      "id": "case-051",
+      "dataset": "gcss",
+      "scoring_shape_yx": [
+        1811,
+        1812
+      ],
+      "scored_expert_pixels": 3055065,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4,
+        23
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 696767,
+          "intersection": 448616,
+          "false_positive": 39402,
+          "false_negative": 248151,
+          "iou": 0.6093926802133749
+        },
+        "3": {
+          "expert_pixels": 283331,
+          "intersection": 224000,
+          "false_positive": 392396,
+          "false_negative": 59331,
+          "iou": 0.33149481965349914
+        },
+        "4": {
+          "expert_pixels": 1067900,
+          "intersection": 234670,
+          "false_positive": 6534,
+          "false_negative": 833230,
+          "iou": 0.2184126712296893
+        },
+        "23": {
+          "expert_pixels": 1007067,
+          "intersection": 893064,
+          "false_positive": 133631,
+          "false_negative": 114003,
+          "iou": 0.7829101129308547
+        }
+      },
+      "expert_present_macro_iou": 0.4855525710068545
+    },
+    {
+      "id": "case-052",
+      "dataset": "gcss",
+      "scoring_shape_yx": [
+        1811,
+        1810
+      ],
+      "scored_expert_pixels": 3015916,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 947236,
+          "intersection": 566336,
+          "false_positive": 9262,
+          "false_negative": 380900,
+          "iou": 0.5920932401322324
+        },
+        "3": {
+          "expert_pixels": 1513226,
+          "intersection": 610,
+          "false_positive": 121303,
+          "false_negative": 1512616,
+          "iou": 0.0003731961929093947
+        },
+        "4": {
+          "expert_pixels": 555454,
+          "intersection": 0,
+          "false_positive": 76,
+          "false_negative": 555454,
+          "iou": 0.0
+        }
+      },
+      "expert_present_macro_iou": 0.19748881210838062
+    },
+    {
+      "id": "case-053",
+      "dataset": "gcss",
+      "scoring_shape_yx": [
+        1811,
+        1810
+      ],
+      "scored_expert_pixels": 3180115,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1787547,
+          "intersection": 676741,
+          "false_positive": 22416,
+          "false_negative": 1110806,
+          "iou": 0.37389769846123927
+        },
+        "3": {
+          "expert_pixels": 977053,
+          "intersection": 0,
+          "false_positive": 233246,
+          "false_negative": 977053,
+          "iou": 0.0
+        },
+        "4": {
+          "expert_pixels": 415515,
+          "intersection": 3468,
+          "false_positive": 484,
+          "false_negative": 412047,
+          "iou": 0.008336558501342552
+        }
+      },
+      "expert_present_macro_iou": 0.12741141898752728
+    },
+    {
+      "id": "case-054",
+      "dataset": "gcss",
+      "scoring_shape_yx": [
+        1778,
+        1778
+      ],
+      "scored_expert_pixels": 3039755,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4,
+        23
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 844583,
+          "intersection": 538469,
+          "false_positive": 11229,
+          "false_negative": 306114,
+          "iou": 0.6291907568484667
+        },
+        "3": {
+          "expert_pixels": 441521,
+          "intersection": 216338,
+          "false_positive": 502604,
+          "false_negative": 225183,
+          "iou": 0.22914126837018403
+        },
+        "4": {
+          "expert_pixels": 791490,
+          "intersection": 186044,
+          "false_positive": 122200,
+          "false_negative": 605446,
+          "iou": 0.2036182950453655
+        },
+        "23": {
+          "expert_pixels": 962161,
+          "intersection": 342838,
+          "false_positive": 14445,
+          "false_negative": 619323,
+          "iou": 0.35105047480765017
+        }
+      },
+      "expert_present_macro_iou": 0.3532501987679166
+    },
+    {
+      "id": "case-055",
+      "dataset": "gcss",
+      "scoring_shape_yx": [
+        1807,
+        1807
+      ],
+      "scored_expert_pixels": 2512172,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4,
+        23
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 301749,
+          "intersection": 16706,
+          "false_positive": 7586,
+          "false_negative": 285043,
+          "iou": 0.054006174535697546
+        },
+        "3": {
+          "expert_pixels": 2006516,
+          "intersection": 512325,
+          "false_positive": 87971,
+          "false_negative": 1494191,
+          "iou": 0.24460643584801434
+        },
+        "4": {
+          "expert_pixels": 86092,
+          "intersection": 24563,
+          "false_positive": 3064,
+          "false_negative": 61529,
+          "iou": 0.27550585490600743
+        },
+        "23": {
+          "expert_pixels": 117815,
+          "intersection": 0,
+          "false_positive": 1349045,
+          "false_negative": 117815,
+          "iou": 0.0
+        }
+      },
+      "expert_present_macro_iou": 0.14352961632242983
+    },
+    {
+      "id": "case-056",
+      "dataset": "gcss",
+      "scoring_shape_yx": [
+        1811,
+        1810
+      ],
+      "scored_expert_pixels": 3225339,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1065872,
+          "intersection": 823706,
+          "false_positive": 95806,
+          "false_negative": 242166,
+          "iou": 0.7090656791296728
+        },
+        "3": {
+          "expert_pixels": 881868,
+          "intersection": 8114,
+          "false_positive": 1060291,
+          "false_negative": 873754,
+          "iou": 0.004177824781596152
+        },
+        "4": {
+          "expert_pixels": 1277599,
+          "intersection": 6606,
+          "false_positive": 548,
+          "false_negative": 1270993,
+          "iou": 0.005168419594929222
+        }
+      },
+      "expert_present_macro_iou": 0.2394706411687327
+    },
+    {
+      "id": "case-057",
+      "dataset": "gcss",
+      "scoring_shape_yx": [
+        1810,
+        1811
+      ],
+      "scored_expert_pixels": 3274288,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1007138,
+          "intersection": 740081,
+          "false_positive": 10865,
+          "false_negative": 267057,
+          "iou": 0.7269929459932829
+        },
+        "3": {
+          "expert_pixels": 1246050,
+          "intersection": 416681,
+          "false_positive": 998880,
+          "false_negative": 829369,
+          "iou": 0.18560979629654376
+        },
+        "4": {
+          "expert_pixels": 1021100,
+          "intersection": 24020,
+          "false_positive": 2536,
+          "false_negative": 997080,
+          "iou": 0.023465372456615438
+        }
+      },
+      "expert_present_macro_iou": 0.3120227049154807
+    },
+    {
+      "id": "case-058",
+      "dataset": "gcss",
+      "scoring_shape_yx": [
+        1807,
+        1806
+      ],
+      "scored_expert_pixels": 3207808,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1210894,
+          "intersection": 775184,
+          "false_positive": 122150,
+          "false_negative": 435710,
+          "iou": 0.5815141885789217
+        },
+        "3": {
+          "expert_pixels": 445086,
+          "intersection": 0,
+          "false_positive": 1447258,
+          "false_negative": 445086,
+          "iou": 0.0
+        },
+        "4": {
+          "expert_pixels": 1551828,
+          "intersection": 0,
+          "false_positive": 11686,
+          "false_negative": 1551828,
+          "iou": 0.0
+        }
+      },
+      "expert_present_macro_iou": 0.19383806285964056
+    },
+    {
+      "id": "case-059",
+      "dataset": "gcss",
+      "scoring_shape_yx": [
+        1807,
+        1807
+      ],
+      "scored_expert_pixels": 3146710,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1722156,
+          "intersection": 858783,
+          "false_positive": 1987,
+          "false_negative": 863373,
+          "iou": 0.49809267560753373
+        },
+        "3": {
+          "expert_pixels": 529853,
+          "intersection": 448568,
+          "false_positive": 772349,
+          "false_negative": 81285,
+          "iou": 0.3444688304886646
+        },
+        "4": {
+          "expert_pixels": 894701,
+          "intersection": 207672,
+          "false_positive": 14530,
+          "false_negative": 687029,
+          "iou": 0.22840400294314647
+        }
+      },
+      "expert_present_macro_iou": 0.35698850301311497
+    },
+    {
+      "id": "case-060",
+      "dataset": "gcss",
+      "scoring_shape_yx": [
+        1761,
+        1761
+      ],
+      "scored_expert_pixels": 2899061,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1407791,
+          "intersection": 207782,
+          "false_positive": 4,
+          "false_negative": 1200009,
+          "iou": 0.14759393235520796
+        },
+        "3": {
+          "expert_pixels": 1491116,
+          "intersection": 202377,
+          "false_positive": 147028,
+          "false_negative": 1288739,
+          "iou": 0.1235404213548992
+        },
+        "4": {
+          "expert_pixels": 154,
+          "intersection": 0,
+          "false_positive": 57,
+          "false_negative": 154,
+          "iou": 0.0
+        }
+      },
+      "expert_present_macro_iou": 0.09037811790336907
+    },
+    {
+      "id": "case-061",
+      "dataset": "gcss",
+      "scoring_shape_yx": [
+        1782,
+        1782
+      ],
+      "scored_expert_pixels": 3148535,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4,
+        23
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 523450,
+          "intersection": 335306,
+          "false_positive": 25166,
+          "false_negative": 188144,
+          "iou": 0.6111852370328245
+        },
+        "3": {
+          "expert_pixels": 778275,
+          "intersection": 399277,
+          "false_positive": 350949,
+          "false_negative": 378998,
+          "iou": 0.35358529397178945
+        },
+        "4": {
+          "expert_pixels": 1167519,
+          "intersection": 12016,
+          "false_positive": 6709,
+          "false_negative": 1155503,
+          "iou": 0.01023310634731926
+        },
+        "23": {
+          "expert_pixels": 679291,
+          "intersection": 662978,
+          "false_positive": 436789,
+          "false_negative": 16313,
+          "iou": 0.5940237258977851
+        }
+      },
+      "expert_present_macro_iou": 0.39225684081242956
+    },
+    {
+      "id": "case-062",
+      "dataset": "gcss",
+      "scoring_shape_yx": [
+        1778,
+        1778
+      ],
+      "scored_expert_pixels": 2802517,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4,
+        23
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 296791,
+          "intersection": 176988,
+          "false_positive": 3106,
+          "false_negative": 119803,
+          "iou": 0.5901626225003918
+        },
+        "3": {
+          "expert_pixels": 1066852,
+          "intersection": 422475,
+          "false_positive": 141616,
+          "false_negative": 644377,
+          "iou": 0.3495955209405628
+        },
+        "4": {
+          "expert_pixels": 1325034,
+          "intersection": 57897,
+          "false_positive": 31066,
+          "false_negative": 1267137,
+          "iou": 0.042693754147924194
+        },
+        "23": {
+          "expert_pixels": 113840,
+          "intersection": 0,
+          "false_positive": 433695,
+          "false_negative": 113840,
+          "iou": 0.0
+        }
+      },
+      "expert_present_macro_iou": 0.24561297439721969
+    },
+    {
+      "id": "case-063",
+      "dataset": "gcss",
+      "scoring_shape_yx": [
+        1767,
+        1767
+      ],
+      "scored_expert_pixels": 3053861,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 244040,
+          "intersection": 0,
+          "false_positive": 2592,
+          "false_negative": 244040,
+          "iou": 0.0
+        },
+        "3": {
+          "expert_pixels": 834849,
+          "intersection": 2,
+          "false_positive": 1675381,
+          "false_negative": 834847,
+          "iou": 7.967397409799102e-07
+        },
+        "4": {
+          "expert_pixels": 1974972,
+          "intersection": 0,
+          "false_positive": 13854,
+          "false_negative": 1974972,
+          "iou": 0.0
+        }
+      },
+      "expert_present_macro_iou": 2.6557991365997004e-07
+    },
+    {
+      "id": "case-064",
+      "dataset": "gcss",
+      "scoring_shape_yx": [
+        1807,
+        1807
+      ],
+      "scored_expert_pixels": 3258025,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 654516,
+          "intersection": 31672,
+          "false_positive": 35915,
+          "false_negative": 622844,
+          "iou": 0.0458727953988161
+        },
+        "3": {
+          "expert_pixels": 638046,
+          "intersection": 0,
+          "false_positive": 1691237,
+          "false_negative": 638046,
+          "iou": 0.0
+        },
+        "4": {
+          "expert_pixels": 1965463,
+          "intersection": 29962,
+          "false_positive": 20,
+          "false_negative": 1935501,
+          "iou": 0.015244090129499975
+        }
+      },
+      "expert_present_macro_iou": 0.020372295176105358
+    },
+    {
+      "id": "case-065",
+      "dataset": "gcss",
+      "scoring_shape_yx": [
+        1767,
+        1768
+      ],
+      "scored_expert_pixels": 3104485,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 120345,
+          "intersection": 0,
+          "false_positive": 10225,
+          "false_negative": 120345,
+          "iou": 0.0
+        },
+        "3": {
+          "expert_pixels": 1548925,
+          "intersection": 14003,
+          "false_positive": 516843,
+          "false_negative": 1534922,
+          "iou": 0.006778592755817691
+        },
+        "4": {
+          "expert_pixels": 1435215,
+          "intersection": 17917,
+          "false_positive": 40736,
+          "false_negative": 1417298,
+          "iou": 0.01213929188706129
+        }
+      },
+      "expert_present_macro_iou": 0.006305961547626328
+    },
+    {
+      "id": "case-066",
+      "dataset": "gcss",
+      "scoring_shape_yx": [
+        1807,
+        1807
+      ],
+      "scored_expert_pixels": 3209101,
+      "expert_present_class_ids": [
+        1,
+        4
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1691625,
+          "intersection": 10548,
+          "false_positive": 604,
+          "false_negative": 1681077,
+          "iou": 0.006233198934659553
+        },
+        "4": {
+          "expert_pixels": 1517476,
+          "intersection": 0,
+          "false_positive": 15,
+          "false_negative": 1517476,
+          "iou": 0.0
+        }
+      },
+      "expert_present_macro_iou": 0.0031165994673297763
+    },
+    {
+      "id": "case-067",
+      "dataset": "gcss",
+      "scoring_shape_yx": [
+        1810,
+        1811
+      ],
+      "scored_expert_pixels": 3210958,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4,
+        23
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 1222838,
+          "intersection": 388628,
+          "false_positive": 2011,
+          "false_negative": 834210,
+          "iou": 0.3172864573510694
+        },
+        "3": {
+          "expert_pixels": 272409,
+          "intersection": 214466,
+          "false_positive": 576153,
+          "false_negative": 57943,
+          "iou": 0.25274051866569563
+        },
+        "4": {
+          "expert_pixels": 430157,
+          "intersection": 52798,
+          "false_positive": 26658,
+          "false_negative": 377359,
+          "iou": 0.11557851646727887
+        },
+        "23": {
+          "expert_pixels": 1285554,
+          "intersection": 1170341,
+          "false_positive": 203726,
+          "false_negative": 115213,
+          "iou": 0.7858434948431456
+        }
+      },
+      "expert_present_macro_iou": 0.3678622468317974
+    },
+    {
+      "id": "case-068",
+      "dataset": "gcss",
+      "scoring_shape_yx": [
+        1806,
+        1806
+      ],
+      "scored_expert_pixels": 3180647,
+      "expert_present_class_ids": [
+        1,
+        3,
+        4,
+        5,
+        23
+      ],
+      "per_present_class_iou": {
+        "1": {
+          "expert_pixels": 704317,
+          "intersection": 470776,
+          "false_positive": 48772,
+          "false_negative": 233541,
+          "iou": 0.6251266450578883
+        },
+        "3": {
+          "expert_pixels": 457420,
+          "intersection": 394150,
+          "false_positive": 944248,
+          "false_negative": 63270,
+          "iou": 0.2812006837567812
+        },
+        "4": {
+          "expert_pixels": 1602777,
+          "intersection": 167122,
+          "false_positive": 8316,
+          "false_negative": 1435655,
+          "iou": 0.10373206264318695
+        },
+        "5": {
+          "expert_pixels": 42112,
+          "intersection": 20745,
+          "false_positive": 13135,
+          "false_negative": 21367,
+          "iou": 0.37549550201820914
+        },
+        "23": {
+          "expert_pixels": 374021,
+          "intersection": 56860,
+          "false_positive": 3224,
+          "false_negative": 317161,
+          "iou": 0.15072433034235047
+        }
+      },
+      "expert_present_macro_iou": 0.3072558447636832
+    },
+    {
+      "id": "case-069",
+      "dataset": "peso",
+      "scoring_shape_yx": [
+        1280,
+        1280
+      ],
+      "scored_expert_pixels": 836756,
+      "expert_present_class_ids": [
+        7
+      ],
+      "per_present_class_iou": {
+        "7": {
+          "expert_pixels": 836756,
+          "intersection": 168624,
+          "false_positive": 0,
+          "false_negative": 668132,
+          "iou": 0.20152111248679425
+        }
+      },
+      "expert_present_macro_iou": 0.20152111248679425
+    },
+    {
+      "id": "case-070",
+      "dataset": "peso",
+      "scoring_shape_yx": [
+        1280,
+        1280
+      ],
+      "scored_expert_pixels": 267655,
+      "expert_present_class_ids": [
+        7
+      ],
+      "per_present_class_iou": {
+        "7": {
+          "expert_pixels": 267655,
+          "intersection": 28302,
+          "false_positive": 0,
+          "false_negative": 239353,
+          "iou": 0.10574059890530721
+        }
+      },
+      "expert_present_macro_iou": 0.10574059890530721
+    },
+    {
+      "id": "case-071",
+      "dataset": "peso",
+      "scoring_shape_yx": [
+        1280,
+        1280
+      ],
+      "scored_expert_pixels": 723039,
+      "expert_present_class_ids": [
+        7
+      ],
+      "per_present_class_iou": {
+        "7": {
+          "expert_pixels": 723039,
+          "intersection": 344459,
+          "false_positive": 0,
+          "false_negative": 378580,
+          "iou": 0.4764044539782778
+        }
+      },
+      "expert_present_macro_iou": 0.4764044539782778
+    },
+    {
+      "id": "case-072",
+      "dataset": "peso",
+      "scoring_shape_yx": [
+        1280,
+        1280
+      ],
+      "scored_expert_pixels": 295254,
+      "expert_present_class_ids": [
+        7
+      ],
+      "per_present_class_iou": {
+        "7": {
+          "expert_pixels": 295254,
+          "intersection": 53969,
+          "false_positive": 0,
+          "false_negative": 241285,
+          "iou": 0.18278837881959262
+        }
+      },
+      "expert_present_macro_iou": 0.18278837881959262
+    },
+    {
+      "id": "case-073",
+      "dataset": "peso",
+      "scoring_shape_yx": [
+        1280,
+        1280
+      ],
+      "scored_expert_pixels": 626420,
+      "expert_present_class_ids": [
+        7
+      ],
+      "per_present_class_iou": {
+        "7": {
+          "expert_pixels": 626420,
+          "intersection": 76898,
+          "false_positive": 0,
+          "false_negative": 549522,
+          "iou": 0.12275789406468504
+        }
+      },
+      "expert_present_macro_iou": 0.12275789406468504
+    },
+    {
+      "id": "case-074",
+      "dataset": "peso",
+      "scoring_shape_yx": [
+        1280,
+        1280
+      ],
+      "scored_expert_pixels": 509763,
+      "expert_present_class_ids": [
+        7
+      ],
+      "per_present_class_iou": {
+        "7": {
+          "expert_pixels": 509763,
+          "intersection": 46984,
+          "false_positive": 0,
+          "false_negative": 462779,
+          "iou": 0.09216832135717971
+        }
+      },
+      "expert_present_macro_iou": 0.09216832135717971
+    },
+    {
+      "id": "case-075",
+      "dataset": "peso",
+      "scoring_shape_yx": [
+        1280,
+        1280
+      ],
+      "scored_expert_pixels": 230592,
+      "expert_present_class_ids": [
+        7
+      ],
+      "per_present_class_iou": {
+        "7": {
+          "expert_pixels": 230592,
+          "intersection": 55645,
+          "false_positive": 0,
+          "false_negative": 174947,
+          "iou": 0.24131366222592285
+        }
+      },
+      "expert_present_macro_iou": 0.24131366222592285
+    },
+    {
+      "id": "case-076",
+      "dataset": "peso",
+      "scoring_shape_yx": [
+        1280,
+        1280
+      ],
+      "scored_expert_pixels": 651809,
+      "expert_present_class_ids": [
+        7
+      ],
+      "per_present_class_iou": {
+        "7": {
+          "expert_pixels": 651809,
+          "intersection": 106169,
+          "false_positive": 0,
+          "false_negative": 545640,
+          "iou": 0.16288360547338254
+        }
+      },
+      "expert_present_macro_iou": 0.16288360547338254
+    },
+    {
+      "id": "case-077",
+      "dataset": "peso",
+      "scoring_shape_yx": [
+        1280,
+        1280
+      ],
+      "scored_expert_pixels": 359268,
+      "expert_present_class_ids": [
+        7
+      ],
+      "per_present_class_iou": {
+        "7": {
+          "expert_pixels": 359268,
+          "intersection": 78706,
+          "false_positive": 0,
+          "false_negative": 280562,
+          "iou": 0.21907322667201087
+        }
+      },
+      "expert_present_macro_iou": 0.21907322667201087
+    },
+    {
+      "id": "case-078",
+      "dataset": "peso",
+      "scoring_shape_yx": [
+        1280,
+        1280
+      ],
+      "scored_expert_pixels": 825908,
+      "expert_present_class_ids": [
+        7
+      ],
+      "per_present_class_iou": {
+        "7": {
+          "expert_pixels": 825908,
+          "intersection": 118346,
+          "false_positive": 0,
+          "false_negative": 707562,
+          "iou": 0.14329198893823525
+        }
+      },
+      "expert_present_macro_iou": 0.14329198893823525
+    },
+    {
+      "id": "case-079",
+      "dataset": "peso",
+      "scoring_shape_yx": [
+        1280,
+        1280
+      ],
+      "scored_expert_pixels": 727418,
+      "expert_present_class_ids": [
+        7
+      ],
+      "per_present_class_iou": {
+        "7": {
+          "expert_pixels": 727418,
+          "intersection": 301209,
+          "false_positive": 0,
+          "false_negative": 426209,
+          "iou": 0.41407966258739815
+        }
+      },
+      "expert_present_macro_iou": 0.41407966258739815
+    },
+    {
+      "id": "case-080",
+      "dataset": "peso",
+      "scoring_shape_yx": [
+        1280,
+        1280
+      ],
+      "scored_expert_pixels": 629832,
+      "expert_present_class_ids": [
+        7
+      ],
+      "per_present_class_iou": {
+        "7": {
+          "expert_pixels": 629832,
+          "intersection": 187425,
+          "false_positive": 0,
+          "false_negative": 442407,
+          "iou": 0.2975793544945319
+        }
+      },
+      "expert_present_macro_iou": 0.2975793544945319
+    },
+    {
+      "id": "case-081",
+      "dataset": "peso",
+      "scoring_shape_yx": [
+        1280,
+        1280
+      ],
+      "scored_expert_pixels": 205525,
+      "expert_present_class_ids": [
+        7
+      ],
+      "per_present_class_iou": {
+        "7": {
+          "expert_pixels": 205525,
+          "intersection": 33948,
+          "false_positive": 0,
+          "false_negative": 171577,
+          "iou": 0.16517698576815473
+        }
+      },
+      "expert_present_macro_iou": 0.16517698576815473
+    },
+    {
+      "id": "case-082",
+      "dataset": "peso",
+      "scoring_shape_yx": [
+        1280,
+        1280
+      ],
+      "scored_expert_pixels": 353999,
+      "expert_present_class_ids": [
+        7
+      ],
+      "per_present_class_iou": {
+        "7": {
+          "expert_pixels": 353999,
+          "intersection": 201859,
+          "false_positive": 0,
+          "false_negative": 152140,
+          "iou": 0.5702247746462561
+        }
+      },
+      "expert_present_macro_iou": 0.5702247746462561
+    },
+    {
+      "id": "case-083",
+      "dataset": "peso",
+      "scoring_shape_yx": [
+        1280,
+        1280
+      ],
+      "scored_expert_pixels": 687473,
+      "expert_present_class_ids": [
+        7
+      ],
+      "per_present_class_iou": {
+        "7": {
+          "expert_pixels": 687473,
+          "intersection": 242426,
+          "false_positive": 0,
+          "false_negative": 445047,
+          "iou": 0.3526334852423295
+        }
+      },
+      "expert_present_macro_iou": 0.3526334852423295
+    },
+    {
+      "id": "case-084",
+      "dataset": "peso",
+      "scoring_shape_yx": [
+        1280,
+        1280
+      ],
+      "scored_expert_pixels": 308431,
+      "expert_present_class_ids": [
+        7
+      ],
+      "per_present_class_iou": {
+        "7": {
+          "expert_pixels": 308431,
+          "intersection": 163746,
+          "false_positive": 0,
+          "false_negative": 144685,
+          "iou": 0.5308999419643291
+        }
+      },
+      "expert_present_macro_iou": 0.5308999419643291
+    },
+    {
+      "id": "case-085",
+      "dataset": "peso",
+      "scoring_shape_yx": [
+        1280,
+        1280
+      ],
+      "scored_expert_pixels": 568850,
+      "expert_present_class_ids": [
+        7
+      ],
+      "per_present_class_iou": {
+        "7": {
+          "expert_pixels": 568850,
+          "intersection": 398790,
+          "false_positive": 0,
+          "false_negative": 170060,
+          "iou": 0.7010459699393513
+        }
+      },
+      "expert_present_macro_iou": 0.7010459699393513
+    },
+    {
+      "id": "case-086",
+      "dataset": "peso",
+      "scoring_shape_yx": [
+        1280,
+        1280
+      ],
+      "scored_expert_pixels": 172393,
+      "expert_present_class_ids": [
+        7
+      ],
+      "per_present_class_iou": {
+        "7": {
+          "expert_pixels": 172393,
+          "intersection": 146629,
+          "false_positive": 0,
+          "false_negative": 25764,
+          "iou": 0.8505507764236367
+        }
+      },
+      "expert_present_macro_iou": 0.8505507764236367
+    },
+    {
+      "id": "case-087",
+      "dataset": "peso",
+      "scoring_shape_yx": [
+        1280,
+        1280
+      ],
+      "scored_expert_pixels": 389622,
+      "expert_present_class_ids": [
+        7
+      ],
+      "per_present_class_iou": {
+        "7": {
+          "expert_pixels": 389622,
+          "intersection": 137859,
+          "false_positive": 0,
+          "false_negative": 251763,
+          "iou": 0.353827555938833
+        }
+      },
+      "expert_present_macro_iou": 0.353827555938833
+    }
+  ]
+}
