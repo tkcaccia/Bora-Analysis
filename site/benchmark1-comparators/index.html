@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Benchmark 1 validation · Bora</title>
+<title>Benchmark 1 · eight broad tissue labels · Bora</title>
 <style>
   :root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#17343d;background:#f3f7f8}
   body{margin:0}header,main,footer{max-width:1320px;margin:auto;padding:18px 22px}header{padding-top:30px}
@@ -26,26 +26,26 @@
 <body>
 <header>
 <p><a href="../index.html">← Benchmark 1</a></p>
-<h1>Benchmark 1 · validation images</h1>
-<p>Browse 87 H&amp;E images with expert annotations, the selected KODAMA–Bora group route, and the training-selected supervised Virchow2 route. External methods remain in the aligned figure for context.</p>
+<h1>Benchmark 1 · broad tissue labels</h1>
+<p>Browse 87 H&amp;E development validation images with eight tissue labels selected from the 397 training images. The new supervised Bora mask and its black-and-white Virchow2 responses appear with the expert and external methods on each image.</p>
 <nav aria-label="Benchmark 1 result sets"><a href="../index.html#public-datasets">Training data · public expert masks</a><a aria-current="page" href="index.html">Validation data · 87 images</a></nav>
 </header>
 <main>
-<p class="notice"><strong>Development evaluation.</strong> The 87 images were inspected during earlier method development. The newest decision rule was selected on source-group-disjoint splits of the 397 training images, then evaluated on these 87 images. These results are not an untouched test. The expert class sets used by external methods differ, so their scores are not one ranking.</p>
+<p class="notice"><strong>Development evaluation.</strong> These 87 images were inspected during earlier method development and are not an untouched test. The eight-class label set and supervised model were selected on training images alone. Alveolar tissue, cartilage or bone, liver tissue, mucus/plasma/fluids, and muscle are unscored because they lacked enough independent training support; they are not treated as background. Broader labels change the scoring task, so compare scores only within this page.</p>
 <div class="cards" id="cohort-scores" aria-label="Validation cohort summary"></div>
-<p class="small">The 19 PEsO images have one scorable expert class, so the four multiclass datasets provide the more informative summary of tissue discrimination. These case-level averages include only expert-present classes.</p>
+<p class="small">The 19 PEsO images have one scorable expert class. The four other datasets give a more informative multiclass summary. Scores are mean IoU over expert-present broad classes; unscored expert pixels are excluded.</p>
 <div class="controls"><label for="dataset">Dataset</label><select id="dataset"><option value="">All</option></select><label for="case">Image</label><select id="case"></select><button id="previous">Previous</button><button id="next">Next</button><span aria-live="polite" id="position"></span></div>
 <p id="case-title"></p>
-<h2>Selected Bora results on the same H&amp;E image</h2>
-<a id="full-image" href="#"><img id="case-image" alt="Aligned H&E, expert, Bora and external method panels"></a>
-<p class="small">The color key beneath the figure includes the expert tissue classes and substantial predicted colors visible in this case. Every method overlay uses the same Bora H&amp;E tissue support for background; the expert annotation is shown unchanged. Select the image to open it full size.</p>
+<h2>Broad-label results on the same H&amp;E image</h2>
+<a id="full-image" href="#"><img id="case-image" alt="Aligned H&E, expert and broad-label method panels"></a>
+<p class="small">The legend names only classes in the expert mask or at least 1% of a displayed model panel. Model overlays use the same Bora H&amp;E tissue support. The KODAMA–Bora spatial mask is unavailable in the curated local cache, so that panel is deliberately unfilled; its score comes from exact frozen expert-by-prediction pixel counts.</p>
 <div class="cards" id="bora-scores"></div>
-<p class="small">Both Bora values are image-level mean IoU over expert-present harmonized tissue classes. The unsupervised route first clusters image features and then names groups with fastPLS. The supervised route uses Virchow2 features and expert-masked training images; the dataset ontology gate restricts only its final class decision. Its unmasked prediction is scored after contour polish and nearest-neighbor alignment to the expert frame. Tissue-support clipping is for display and does not change scores.</p>
-<details><summary>External comparator results</summary><div class="cards" id="external-scores"></div><p class="small">U-Net and DeepLabV3+ were fitted on the same 397 training images using RGB H&amp;E. VISTA-PATH uses external pretraining and a limited class map. MedSAM uses boxes from an earlier U-Net and predicts tumor, stroma, and necrosis only. Their score sets differ by method.</p></details>
-<details><summary>Inspect KODAMA groups and fastPLS names</summary><div id="kodama-details"></div></details>
-<details><summary>Inspect 24 black-and-white Virchow2 responses</summary><p class="small">These show the training-fitted class responses before the dataset ontology gate and contour polish. Black is low and white is high on a shared 0–1 display scale. Responses for classes unavailable in this dataset remain visible for inspection but cannot win the final supervised mask. Background is hidden using the shared H&amp;E tissue support.</p><div class="response-grid" id="response-grid"></div></details>
-<p class="small">Download <a href="per-case-87.csv">per-image scores</a>, <a href="supervised-virchow2-scores-87.json">supervised per-class scores</a>, or inspect the <a href="https://github.com/tkcaccia/Bora-Analysis/tree/main/methods/benchmark1">method code</a>.</p>
+<p class="small">The supervised Bora head was refitted on training-only eight-class Virchow2 data. KODAMA–Bora geometry and fastPLS naming were not refitted; their full confusion matrices were remapped to these broad labels. Their scores are therefore a reanalysis of the frozen output. The external predictions were similarly remapped and rescored without retraining, and MedSAM predicts only three prompted classes.</p>
+<details><summary>External method scores</summary><div class="cards" id="external-scores"></div><p class="small">U-Net and DeepLabV3+ use RGB H&amp;E. VISTA-PATH uses external pretraining. MedSAM uses U-Net-derived boxes for tumor, stroma and necrosis. These methods have different output tasks; the cards do not establish a method ranking.</p></details>
+<details><summary>KODAMA groups and original embedding</summary><div id="kodama-details"></div></details>
+<details><summary>Eight black-and-white supervised Virchow2 responses</summary><p class="small">White indicates a higher relative softmax response from the training-fitted eight-class head; black indicates lower response or non-tissue. The scores are not calibrated probabilities. A dataset-specific eligibility rule and 1.5 µm contour smoothing apply to the final colored supervised mask.</p><div class="response-grid" id="response-grid"></div></details>
+<p class="small">Download <a href="per-case-eight.csv">per-image eight-class scores</a> or inspect the <a href="https://github.com/tkcaccia/Bora-Analysis/tree/main/methods/benchmark1">method code</a>.</p>
 </main>
 <footer><a href="../attribution.html">Attribution and reuse terms</a></footer>
-<script defer src="gallery.js?v=ontology-gate-v1"></script>
+<script defer src="gallery.js?v=eight-class-v1"></script>
 </body></html>
