@@ -46,6 +46,10 @@ tissue-name predictions.
 
 The 24-role harmonization used during fitting is recorded in the project
 [`tissue_label_harmonization.json`](benchmark1/tissue_label_harmonization.json).
+The retained source mappings are unchanged from the fitted model's mapping;
+the public file omits a withdrawn source entry and therefore has a different
+whole-file SHA256 from the historical training receipt. A new run needs a
+fresh manifest and receipt bound to this current file.
 Provider images, annotations, weight tensors, and withdrawn datasets
 are not redistributed here. The source scripts retain project-specific
 manifest and output paths, which must be bound to the user's own authorized
