@@ -1,0 +1,390 @@
+{
+  "schema": "bora-observed-source-labels-v1",
+  "status": "Expanded provider-code audit for frozen 2026-10-27 rerun; roles remain prespecified before scoring",
+  "source_manifest_sha256": "fb023990c63f71542c54270ffa967402c6df866c5ff9b6b5751fe8599672a0a7",
+  "source_manifest_registry_sha256": "65d389247b0692c7e232e0caa011724466c531b81d42b95291db6ab192cbc8c2",
+  "coverage": "All source codes observed in 129 BCSS, 131 TIGER and 288 IGNITE frozen train/test images; BCSS codes from provider class list and IGNITE from provider he_label_map.json.",
+  "canonical_roles": [
+    "tumor",
+    "in_situ_tumor",
+    "stroma",
+    "inflamed_stroma",
+    "necrosis",
+    "normal_glandular_epithelium",
+    "epithelial_tissue",
+    "blood",
+    "blood_vessel",
+    "lymphatic_vessel",
+    "adipose",
+    "glandular_secretions",
+    "lymphocytic_infiltrate",
+    "other_immune_infiltrate",
+    "plasma_cells",
+    "metaplasia",
+    "mucoid_material",
+    "skin_adnexa",
+    "alveolar_tissue",
+    "bronchial_epithelium",
+    "cartilage_or_bone",
+    "inflammatory_infiltrate",
+    "liver_tissue",
+    "macrophages",
+    "mucus_plasma_or_fluids",
+    "muscle",
+    "epidermis",
+    "keratinized_tissue",
+    "nerve"
+  ],
+  "mapping": {
+    "bcss": {
+      "1": {
+        "source_label": "tumor",
+        "canonical_role": "tumor",
+        "use": "score"
+      },
+      "2": {
+        "source_label": "stroma",
+        "canonical_role": "stroma",
+        "use": "score"
+      },
+      "3": {
+        "source_label": "lymphocytic infiltrate",
+        "canonical_role": "lymphocytic_infiltrate",
+        "use": "score"
+      },
+      "4": {
+        "source_label": "necrosis/debris",
+        "canonical_role": "necrosis",
+        "use": "score"
+      },
+      "5": {
+        "source_label": "glandular secretions",
+        "canonical_role": "glandular_secretions",
+        "use": "score"
+      },
+      "6": {
+        "source_label": "blood",
+        "canonical_role": "blood",
+        "use": "score"
+      },
+      "8": {
+        "source_label": "metaplasia NOS",
+        "canonical_role": "metaplasia",
+        "use": "score"
+      },
+      "9": {
+        "source_label": "fat",
+        "canonical_role": "adipose",
+        "use": "score"
+      },
+      "10": {
+        "source_label": "plasma cells",
+        "canonical_role": "plasma_cells",
+        "use": "score"
+      },
+      "11": {
+        "source_label": "other immune infiltrate",
+        "canonical_role": "other_immune_infiltrate",
+        "use": "score"
+      },
+      "13": {
+        "source_label": "normal acinus/duct",
+        "canonical_role": "normal_glandular_epithelium",
+        "use": "score"
+      },
+      "14": {
+        "source_label": "lymphatics",
+        "canonical_role": "lymphatic_vessel",
+        "use": "score"
+      },
+      "17": {
+        "source_label": "skin adnexa",
+        "canonical_role": "skin_adnexa",
+        "use": "score"
+      },
+      "18": {
+        "source_label": "blood vessel",
+        "canonical_role": "blood_vessel",
+        "use": "score"
+      },
+      "19": {
+        "source_label": "angioinvasion",
+        "canonical_role": null,
+        "use": "ignore"
+      },
+      "7": {
+        "source_label": "exclude",
+        "canonical_role": null,
+        "use": "ignore"
+      },
+      "12": {
+        "source_label": "mucoid material",
+        "canonical_role": "mucoid_material",
+        "use": "score"
+      },
+      "15": {
+        "source_label": "undetermined",
+        "canonical_role": null,
+        "use": "ignore"
+      },
+      "16": {
+        "source_label": "nerve",
+        "canonical_role": "nerve",
+        "use": "score"
+      },
+      "20": {
+        "source_label": "ductal carcinoma in situ",
+        "canonical_role": "in_situ_tumor",
+        "use": "score"
+      },
+      "21": {
+        "source_label": "other",
+        "canonical_role": null,
+        "use": "ignore"
+      }
+    },
+    "camelyon16-subset": {
+      "1": {
+        "source_label": "automatically detected non-tumor tissue",
+        "canonical_role": null,
+        "use": "ignore"
+      },
+      "2": {
+        "source_label": "expert-derived tumor",
+        "canonical_role": "tumor",
+        "use": "score"
+      }
+    },
+    "gcss": {
+      "1": {
+        "source_label": "tumor",
+        "canonical_role": "tumor",
+        "use": "score"
+      },
+      "2": {
+        "source_label": "lymphoid stroma",
+        "canonical_role": "inflamed_stroma",
+        "use": "score"
+      },
+      "3": {
+        "source_label": "desmoplastic stroma",
+        "canonical_role": "stroma",
+        "use": "score"
+      },
+      "4": {
+        "source_label": "smooth muscle",
+        "canonical_role": "muscle",
+        "use": "score"
+      },
+      "5": {
+        "source_label": "necrosis",
+        "canonical_role": "necrosis",
+        "use": "score"
+      }
+    },
+    "gleasonxai": {
+      "3": {
+        "source_label": "Gleason pattern3 tissue region",
+        "canonical_role": "tumor",
+        "use": "score"
+      },
+      "4": {
+        "source_label": "Gleason pattern4 tissue region",
+        "canonical_role": "tumor",
+        "use": "score"
+      },
+      "5": {
+        "source_label": "Gleason pattern5 tissue region",
+        "canonical_role": "tumor",
+        "use": "score"
+      }
+    },
+    "ignite": {
+      "2": {
+        "source_label": "tumor epithelium",
+        "canonical_role": "tumor",
+        "use": "score"
+      },
+      "3": {
+        "source_label": "reactive epithelium",
+        "canonical_role": "epithelial_tissue",
+        "use": "score"
+      },
+      "4": {
+        "source_label": "stroma",
+        "canonical_role": "stroma",
+        "use": "score"
+      },
+      "5": {
+        "source_label": "inflammation",
+        "canonical_role": "inflammatory_infiltrate",
+        "use": "score"
+      },
+      "6": {
+        "source_label": "alveolar tissue",
+        "canonical_role": "alveolar_tissue",
+        "use": "score"
+      },
+      "7": {
+        "source_label": "fatty tissue",
+        "canonical_role": "adipose",
+        "use": "score"
+      },
+      "8": {
+        "source_label": "necrotic tissue",
+        "canonical_role": "necrosis",
+        "use": "score"
+      },
+      "9": {
+        "source_label": "erythrocytes",
+        "canonical_role": "blood",
+        "use": "score"
+      },
+      "10": {
+        "source_label": "bronchial epithelium",
+        "canonical_role": "bronchial_epithelium",
+        "use": "score"
+      },
+      "11": {
+        "source_label": "mucus/plasma/fluids",
+        "canonical_role": "mucus_plasma_or_fluids",
+        "use": "score"
+      },
+      "12": {
+        "source_label": "cartilage/bone",
+        "canonical_role": "cartilage_or_bone",
+        "use": "score"
+      },
+      "13": {
+        "source_label": "macrophages",
+        "canonical_role": "macrophages",
+        "use": "score"
+      },
+      "14": {
+        "source_label": "muscle",
+        "canonical_role": "muscle",
+        "use": "score"
+      },
+      "15": {
+        "source_label": "liver",
+        "canonical_role": "liver_tissue",
+        "use": "score"
+      },
+      "1": {
+        "source_label": "background",
+        "canonical_role": null,
+        "use": "ignore"
+      },
+      "16": {
+        "source_label": "keratinization",
+        "canonical_role": "keratinized_tissue",
+        "use": "score"
+      }
+    },
+    "ocelot": {
+      "1": {
+        "source_label": "non-cancer background (not expert stroma)",
+        "canonical_role": null,
+        "use": "ignore"
+      },
+      "2": {
+        "source_label": "cancer area",
+        "canonical_role": "tumor",
+        "use": "score"
+      },
+      "255": {
+        "source_label": "unannotated or void",
+        "canonical_role": null,
+        "use": "ignore"
+      }
+    },
+    "peso": {
+      "1": {
+        "source_label": "non-epithelial target (not expert stroma)",
+        "canonical_role": null,
+        "use": "ignore"
+      },
+      "2": {
+        "source_label": "epithelial tissue",
+        "canonical_role": "epithelial_tissue",
+        "use": "score"
+      }
+    },
+    "puma": {
+      "1": {
+        "source_label": "tumor tissue",
+        "canonical_role": "tumor",
+        "use": "score"
+      },
+      "2": {
+        "source_label": "stroma",
+        "canonical_role": "stroma",
+        "use": "score"
+      },
+      "3": {
+        "source_label": "blood vessel",
+        "canonical_role": "blood_vessel",
+        "use": "score"
+      },
+      "4": {
+        "source_label": "epidermis",
+        "canonical_role": "epidermis",
+        "use": "score"
+      },
+      "5": {
+        "source_label": "necrosis",
+        "canonical_role": "necrosis",
+        "use": "score"
+      }
+    },
+    "tiger": {
+      "1": {
+        "source_label": "invasive tumor",
+        "canonical_role": "tumor",
+        "use": "score"
+      },
+      "2": {
+        "source_label": "tumor-associated stroma",
+        "canonical_role": "stroma",
+        "use": "score"
+      },
+      "3": {
+        "source_label": "in-situ tumor",
+        "canonical_role": "in_situ_tumor",
+        "use": "score"
+      },
+      "4": {
+        "source_label": "healthy glands",
+        "canonical_role": "normal_glandular_epithelium",
+        "use": "score"
+      },
+      "5": {
+        "source_label": "necrosis",
+        "canonical_role": "necrosis",
+        "use": "score"
+      },
+      "6": {
+        "source_label": "inflamed stroma",
+        "canonical_role": "inflamed_stroma",
+        "use": "score"
+      },
+      "7": {
+        "source_label": "rest",
+        "canonical_role": null,
+        "use": "ignore"
+      }
+    }
+  },
+  "new_sources_pending": [
+    "sicapv2",
+    "wsss4luad",
+    "rings-tumor"
+  ],
+  "rules": [
+    "Preserve the original provider code and label for every pixel.",
+    "Map synonyms only when they refer to the same biological tissue role.",
+    "Do not turn other, rest, unlabeled or broad binary complements into stroma.",
+    "Retain Gleason grades and provider subtypes for task-specific analysis; tumor is a broad common role only.",
+    "Do not score a new source code until its provider semantics have been verified."
+  ]
+}

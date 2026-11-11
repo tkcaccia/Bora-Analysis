@@ -17,6 +17,11 @@ Bora tissue-group support to handle background consistently; this display
 step does not alter raw predictions. These exploratory views have no
 independent whole-slide expert masks or accuracy ranking.
 
+The [benchmark method implementations](methods/README.md) provide the
+Bora-specific training, prompting, Virchow2–PLS projection, and full-slide
+inference code and document the exact settings and external model sources.
+This repository was previously named Bora-extra.
+
 The [Benchmark 2 full-slide comparator gallery](https://tkcaccia.github.io/Bora-Analysis/visium-hd/comparators/)
 shows 11 verified public-source H&E slides with class-aware
 U-Net, DeepLabV3+, MedSAM and VISTA-PATH outputs. Those predictions cover
