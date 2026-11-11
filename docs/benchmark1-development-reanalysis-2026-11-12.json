@@ -1,0 +1,162 @@
+{
+  "status": "FROZEN_BENCHMARK1_CASE_RECEIPTS_REANALYZED",
+  "source_sha256": {
+    "supervised": "109b35e4458eb8e7956f9e398cf8ba7dc8ea2630328187c678084c097480d5cd",
+    "prior_24_head": "add4886774b27d5acc1a2081a3f4d526f6beb44bea597850cea6ccb899d202bf",
+    "kodama_bora": "9f2a1477ddf37309aa246118c4a74a042cf37f3ca69afd00cc103a15c637c8c5",
+    "external": "2bd755cc2dd31ea742794ba5245d1e4e3ced152434fc6a2b7f01e5045575d36e",
+    "ontology": "8fb3aeedc0a93d7eae87533ba67ce7e9431afbaf8cfc0e99af8058f9bb81102f",
+    "original_supervised": "381c6e4501a3033e0bca03cd2ed6faeb96f83efbec318ea70050a77c48a7077d"
+  },
+  "case_count": 87,
+  "dataset_counts": {
+    "bcss": 15,
+    "tiger": 17,
+    "ignite": 16,
+    "gcss": 20,
+    "peso": 19
+  },
+  "scored_pixels_total": 199866490,
+  "image_pixels_total": 272414130,
+  "scored_pixel_fraction_pooled": 0.7336862078336391,
+  "supervised_all_87_case_macro_iou": 0.6938802604179662,
+  "supervised_all_87_case_bootstrap_95pct": [
+    0.6464258944482741,
+    0.741662879187297
+  ],
+  "supervised_four_multiclass_equal_dataset_macro_iou": 0.6029064127815746,
+  "supervised_four_multiclass_stratified_case_bootstrap_95pct": [
+    0.5701657619326,
+    0.634484933146886
+  ],
+  "prior_24_head_remapped_all_87_case_macro_iou": 0.6915442821656482,
+  "supervised_minus_prior_24_head_paired_delta": 0.0023359782523179515,
+  "supervised_minus_prior_24_head_case_bootstrap_95pct": [
+    -0.014696817559287615,
+    0.0200354474056241
+  ],
+  "paired_improved_tied_worsened": [
+    28,
+    19,
+    40
+  ],
+  "single_class_peso": {
+    "case_count": 19,
+    "scores_equal_one": 19,
+    "mean_iou": 1.0
+  },
+  "per_class": {
+    "tumor": {
+      "class_id": 1,
+      "expert_present_cases": 66,
+      "expert_pixels": 70581621,
+      "mean_case_iou": 0.7153408743575252,
+      "case_bootstrap_95pct": [
+        0.6646050561273726,
+        0.7614192047453224
+      ]
+    },
+    "stroma": {
+      "class_id": 2,
+      "expert_present_cases": 67,
+      "expert_pixels": 100363532,
+      "mean_case_iou": 0.6878711364933997,
+      "case_bootstrap_95pct": [
+        0.6329461113525288,
+        0.7383302903681167
+      ]
+    },
+    "necrosis": {
+      "class_id": 3,
+      "expert_present_cases": 29,
+      "expert_pixels": 9035506,
+      "mean_case_iou": 0.5608651337419824,
+      "case_bootstrap_95pct": [
+        0.43328932346473054,
+        0.6763756949829499
+      ]
+    },
+    "epithelium": {
+      "class_id": 4,
+      "expert_present_cases": 29,
+      "expert_pixels": 9906195,
+      "mean_case_iou": 0.7553864854226108,
+      "case_bootstrap_95pct": [
+        0.6145188942342018,
+        0.8802939954001738
+      ]
+    },
+    "blood": {
+      "class_id": 5,
+      "expert_present_cases": 17,
+      "expert_pixels": 1214858,
+      "mean_case_iou": 0.17485207404971242,
+      "case_bootstrap_95pct": [
+        0.08521960451899294,
+        0.26801285927483587
+      ]
+    },
+    "vessel": {
+      "class_id": 6,
+      "expert_present_cases": 10,
+      "expert_pixels": 224580,
+      "mean_case_iou": 0.14107091398514027,
+      "case_bootstrap_95pct": [
+        0.09630370985796413,
+        0.1919965651418997
+      ]
+    },
+    "adipose": {
+      "class_id": 7,
+      "expert_present_cases": 6,
+      "expert_pixels": 511465,
+      "mean_case_iou": 0.6083521880164007,
+      "case_bootstrap_95pct": [
+        0.4802430134379092,
+        0.7410162033695568
+      ]
+    },
+    "immune_infiltrate": {
+      "class_id": 8,
+      "expert_present_cases": 20,
+      "expert_pixels": 8028733,
+      "mean_case_iou": 0.43930321073759876,
+      "case_bootstrap_95pct": [
+        0.33319470329185036,
+        0.5400160181447822
+      ]
+    }
+  },
+  "by_dataset": {
+    "bcss": {
+      "cases": 15,
+      "mean_iou": 0.5725391803933081
+    },
+    "tiger": {
+      "cases": 17,
+      "mean_iou": 0.7440968026840465
+    },
+    "ignite": {
+      "cases": 16,
+      "mean_iou": 0.4424860140360568
+    },
+    "gcss": {
+      "cases": 20,
+      "mean_iou": 0.6525036540128869
+    },
+    "peso": {
+      "cases": 19,
+      "mean_iou": 1.0
+    }
+  },
+  "method_case_means": {
+    "supervised": 0.6938802604179662,
+    "prior_24_head": 0.6915442821656482,
+    "kodama_bora": 0.26681997842071975,
+    "unet": 0.5781761156700298,
+    "deeplabv3plus": 0.2630793972937328,
+    "vista_path": 0.16617811509300323,
+    "medsam": 0.15465615877717181
+  },
+  "interpretation": "Development-only reanalysis. No method was refitted; method tasks differ. These intervals are case resampling summaries, not independent test confidence intervals."
+}
