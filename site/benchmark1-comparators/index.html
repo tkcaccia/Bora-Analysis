@@ -54,6 +54,7 @@
     #selected-kodama-image{display:block;max-width:760px;width:100%;height:auto}
     .response-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:14px;margin:16px 0}
     .response-grid figure{margin:0;background:#fff;border:1px solid #d5e0e3;padding:10px}
+    .response-grid a{display:block;background:#000}
     .response-grid img{display:block;width:100%;height:auto;background:#000}
     .response-grid figcaption{margin-top:8px;font-size:.92rem}
     .benchmark1-paths{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px;margin:18px 0}
@@ -75,7 +76,7 @@
 </header>
 <main>
 <p class="notice"><strong>Development evidence.</strong> These images were inspected during method development, so this gallery is not an untouched test. Scores below use different class sets for different tools and must not be read as one overall ranking. The older 116-image interactive display on the home page is a separate historical benchmark.</p>
-<p>Across the 87 development images, mean expert-present tissue macro IoU was 0.194 for classic Bora, 0.508 for class-aware U-Net, 0.189 for DeepLabV3+, and 0.370 for the supervised Virchow2 display mask. The supervised score evaluates the shown mask after nearest-neighbor alignment to the expert frame. These exploratory images were inspected during method development; comparator roles differ by method.</p>
+<p>Across the 87 development images, mean expert-present tissue macro IoU was 0.194 for classic Bora, 0.508 for class-aware U-Net, 0.189 for DeepLabV3+, and 0.370 for the original supervised Virchow2 mask. The supervised score evaluates that unmasked prediction after nearest-neighbor alignment to the expert frame. These exploratory images were inspected during method development; comparator roles differ by method.</p>
 <div class="controls">
 <label for="dataset">Dataset</label><select id="dataset"><option value="">All datasets</option></select>
 <label for="case">Image</label><select id="case"></select>
@@ -188,6 +189,6 @@
 </section>
 </main>
 <footer><a href="../attribution.html">Attribution and reuse terms</a></footer>
-<script defer="" src="gallery.js?v=shared-he-background-v1"></script>
+<script defer="" src="gallery.js?v=shared-he-background-v2"></script>
 </body>
 </html>

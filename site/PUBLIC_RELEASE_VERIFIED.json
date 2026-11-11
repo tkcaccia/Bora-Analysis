@@ -1,6 +1,6 @@
 {
   "format": "bora-public-site-v1",
-  "size_bytes": 140458576,
+  "size_bytes": 140458703,
   "file_count": 805,
   "public_wsi_count": 13,
   "file_sha256": {
@@ -97,7 +97,7 @@
     "benchmark1-comparators/combined-supported-v1/case-085.png": "c3d5c77a50488a23e0300c16f7d19dd24c026a2cc3da664a3eb88722df3c778b",
     "benchmark1-comparators/combined-supported-v1/case-086.png": "549867cb3d1fd1eeb2538158bbce6834a74c1d5289ece567e709d1b10d0fb2de",
     "benchmark1-comparators/combined-supported-v1/case-087.png": "e351a228a8517bd228ab22fce13e9a98ad3014e7c672effe7a51b73a6765e354",
-    "benchmark1-comparators/gallery.js": "bac3879f168d8a32851f61485401850836f69dd960e134c71acc8270076d83c9",
+    "benchmark1-comparators/gallery.js": "5293ad6aa5b341b6e8e2b6ebe758c4ddc1bc2a5bc994660b724193332c7592cf",
     "benchmark1-comparators/he-support-v1/case-001.png": "340ef8fcfd98e17780705029c66b8005ea71eafc3db04ab10a67b7c8e3e23967",
     "benchmark1-comparators/he-support-v1/case-002.png": "7d42427d203d61bb886fda54867e6dc6e94e9b42154782e467f73eca0e45319f",
     "benchmark1-comparators/he-support-v1/case-003.png": "d9b7a64399bfd8340b4a78ac199aacbb92a3a8b70fa0d3c20e4ae96659d0ca9b",
@@ -185,7 +185,7 @@
     "benchmark1-comparators/he-support-v1/case-085.png": "89dc77bb439581b166fe4cdc3b8b6c00d9579bb7b72615abfb4018eaeb12566a",
     "benchmark1-comparators/he-support-v1/case-086.png": "f0c106cb1544ac98106575ba44741931b3dc5ae7fb78dde0dd213ab8d2834aeb",
     "benchmark1-comparators/he-support-v1/case-087.png": "d0049cbb8e5a4143cd8bac5ed0a806c903303b934a80e87c002ed379160faad0",
-    "benchmark1-comparators/index.html": "39469dd3d0b3badb0a4899d075bbab5372770cae63d68b01662d1edf5bf8314b",
+    "benchmark1-comparators/index.html": "060dd9435a373122aadbda35ddc2f6a5f46a4517b9a47ad0bcdbb3cfa087767b",
     "benchmark1-comparators/per-case-87.csv": "a1cd225bedfbc877562879de697a79b57a155e191659a122e6f9a4c23bb91f48",
     "benchmark1-comparators/shared-he-background-v1/case-001.webp": "fef037b50f842c63d96ebdc5c445b6e25d6eb91753633d66093b3c34d865fe8f",
     "benchmark1-comparators/shared-he-background-v1/case-002.webp": "c836afda5852306fa2025131a521064a9155a1ecac67fee24643223adbe1fc49",

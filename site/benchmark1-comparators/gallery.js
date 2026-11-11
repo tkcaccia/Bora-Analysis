@@ -44,7 +44,7 @@ function show(id){
   document.getElementById("background-audit").textContent=`Shared H&E tissue support excludes ${bg.excluded_pixels.toLocaleString()} of ${counted.toLocaleString()} pixels from method color overlays. The source expert annotation is shown unchanged; ${labelled.toLocaleString()} expert-scored pixels fall outside this image-derived support${fat?`, including ${fat.toLocaleString()} marked adipose${fatAll?` (${(100*fat/fatAll).toFixed(1)}% of its adipose pixels)`:``}`:``}. Existing scores use the original expert labels and unmasked method predictions.`;
   scores.innerHTML=card("Bora",row.bora_same_unet_roles,roles,"Same expert-present roles as U-Net")+
     card("Class-aware U-Net",row.unet_score,roles,"Same expert-present roles as Bora and DeepLabV3+")+
-    card("Supervised Virchow2 overlay",row.supervised_virchow2_display_macro_iou,roles,"Displayed mask resized to the calibrated expert frame")+
+    card("Supervised Virchow2 overlay",row.supervised_virchow2_display_macro_iou,roles,"Original unmasked prediction resized to the calibrated expert frame")+
     card("DeepLabV3+",row.deeplab_score,roles,"Same expert-present roles as Bora and U-Net. Inference: "+row.deeplab_inference_seconds.toFixed(1)+" s")+
     card("VISTA-PATH",row.vista_score,row.vista_matched_roles.join(", ")||"No matched role","Bora on these roles: "+pct(row.bora_same_vista_roles))+
     card("MedSAM",row.medsam_score,row.medsam_reference_roles.join(", ")||"No eligible role",
@@ -113,7 +113,7 @@ function showResponses(row){
     const figure=document.createElement("figure");
     const link=document.createElement("a");link.href=path;
     const map=document.createElement("img");map.src=path;map.loading="lazy";map.style.maskImage=`url("${row.he_background_support.image}")`;map.style.maskMode="luminance";map.style.maskSize="100% 100%";map.style.maskRepeat="no-repeat";
-    map.alt=`Grayscale supervised Virchow2 response for ${classNames[cls]} on ${row.dataset} ${row.source_group}; black is 0, white is 1`;
+    map.alt=`Grayscale supervised Virchow2 response for ${classNames[cls]} on ${row.dataset} ${row.source_group}; black is low response or H&E-detected background, white is high response`;
     const caption=document.createElement("figcaption");caption.textContent=`${cls} · ${classNames[cls]}`;
     link.append(map);figure.append(link,caption);items.push(figure);
   }
