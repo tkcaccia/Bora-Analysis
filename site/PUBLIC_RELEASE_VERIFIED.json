@@ -1,6 +1,6 @@
 {
   "format": "bora-public-site-v1",
-  "size_bytes": 458447387,
+  "size_bytes": 458444273,
   "file_count": 3633,
   "public_wsi_count": 13,
   "file_sha256": {
@@ -3498,7 +3498,7 @@
     "visium-hd/public-10x-ovarian-ff.html": "ae2e7ac8ed53ed756c4df13e0216e215373c242472e2b93e8ced37a0eea31cb2",
     "visium-hd/public-10x-pancreatic-cancer-fresh-frozen.html": "4b0ddaf3602ce23619bcf9310b5048c709aad8d6bad45b9dcbc789dec8418975",
     "visium-hd/public-10x-prostate-ffpe.html": "bd3ff54118284e61103a44fc28ff6742ee6c58f98fff495c0a9cc9bae6922cd3",
-    "visium-hd/public-10x-tonsil-3prime.html": "5582c8a06cd216437121cf6e59adbd6d23f4c1eb90565af389a168b2a0779e06",
+    "visium-hd/public-10x-tonsil-3prime.html": "cd859a51c5d4825808b3476a09714265f1cd2db4ed52b1375b2f123ad272d782",
     "visium-hd/supervised-contour-v1/public-10x-brain-cancer-ffpe/field-01-supervised.webp": "cbca97d2dcb93e9cd584a5a756f41a6b468a740617556ffb084c2c00812504a3",
     "visium-hd/supervised-contour-v1/public-10x-brain-cancer-ffpe/field-02-supervised.webp": "63be8897cba220c962d518f9381402b570b1300a2cacfb4454197c9546426116",
     "visium-hd/supervised-contour-v1/public-10x-brain-cancer-ffpe/field-03-supervised.webp": "bdbfd707cd1e4044e8f572bf9a7bc545b07575a01e7bd464c4fd9a4a3aa7fd58",
@@ -3697,6 +3697,11 @@
       "page_sha256": "62fb77d48d8c7cec6d76a699d2e1d4cf3743635c943dc97f020b99537e2f4cfc",
       "final_receipt_sha256": "6d76a650f9a509266f7407ae20003a5ba4f1792216651aad43b80a1d6ac09bbe",
       "media_commit": "fb0e63ed43294281918688487590709dbda5a421"
+    },
+    "public-10x-tonsil-3prime": {
+      "page_sha256": "cd859a51c5d4825808b3476a09714265f1cd2db4ed52b1375b2f123ad272d782",
+      "final_receipt_sha256": "6b8358dc3fe5ccc513b033c525bc6fc3f46823f898e9828b9519bd53434a8683",
+      "media_commit": "224d7f0fbc56f281d0f76b209582e907bc840d03"
     }
   }
 }
