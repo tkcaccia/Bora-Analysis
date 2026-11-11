@@ -15,6 +15,10 @@
   .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px;margin:14px 0}
   .cards article{background:#fff;border:1px solid #cbd8dd;border-radius:6px;padding:14px;line-height:1.4}
   .cards strong{display:block}.value{font-size:1.65rem;font-weight:700;margin:5px 0}.small{font-size:.9rem;color:#415b62}
+  .table-wrap{overflow-x:auto;background:#fff;border:1px solid #cbd8dd;border-radius:6px;margin:14px 0}
+  table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}caption{text-align:left;font-weight:700;padding:14px 16px 8px}
+  th,td{padding:10px 14px;border-bottom:1px solid #e1e9eb;text-align:left;vertical-align:top}thead th{background:#e9f2f4}tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
+  td[data-score]{font-weight:650;white-space:nowrap}
   details{background:#fff;border:1px solid #cbd8dd;border-radius:6px;margin:16px 0;padding:12px 16px}
   summary{cursor:pointer;font-weight:700;font-size:1.05rem}details img{max-width:100%;height:auto}
   .response-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:12px;margin:16px 0}
@@ -32,8 +36,11 @@
 </header>
 <main>
 <p class="notice"><strong>Development evaluation.</strong> These 87 images were inspected during earlier method development and are not an untouched test. The eight-class label set and supervised model were selected on training images alone. Alveolar tissue, cartilage or bone, liver tissue, mucus/plasma/fluids, and muscle are unscored because they lacked enough independent training support; they are not treated as background. Broader labels change the scoring task, so compare scores only within this page.</p>
-<div class="cards" id="cohort-scores" aria-label="Validation cohort summary"></div>
-<p class="small">The 19 PEsO images have one scorable expert class. The four other datasets give a more informative multiclass summary. Scores are mean IoU over expert-present broad classes; unscored expert pixels are excluded.</p>
+<h2 id="validation-performance">Performance over the validation set</h2>
+<div class="table-wrap"><table id="cohort-scores"><caption>Mean expert-present case macro IoU for all six methods</caption><thead><tr><th scope="col">Method</th><th scope="col">All 87 images</th><th scope="col">Four multiclass datasets (68 images)</th></tr></thead><tbody></tbody></table></div>
+<p class="small">Each image contributes its mean intersection-over-union (IoU) across expert classes present in that image; the 87-image column weights images equally. The 68-image column averages each of BCSS, GCSS, IGNITE and TIGER separately, then weights those four datasets equally. The 19 PEsO images have only one scorable expert class. Unscored expert pixels are excluded.</p>
+<p class="small">The eight broad labels were chosen on the 397 training images. Supervised Bora was fitted to those labels; the existing KODAMA–Bora + fastPLS and external predictions were remapped and rescored without refitting. MedSAM predicts only three prompted classes. These are development validation results on images inspected during earlier method development, and the methods do not share an identical prediction task.</p>
+<details><summary>Performance by dataset</summary><div class="table-wrap"><table id="dataset-scores"><caption>Mean case macro IoU within each validation dataset</caption><thead><tr><th scope="col">Method</th><th scope="col">BCSS (15)</th><th scope="col">GCSS (20)</th><th scope="col">IGNITE (16)</th><th scope="col">TIGER (17)</th><th scope="col">PEsO (19)</th></tr></thead><tbody></tbody></table></div></details>
 <div class="controls"><label for="dataset">Dataset</label><select id="dataset"><option value="">All</option></select><label for="case">Image</label><select id="case"></select><button id="previous">Previous</button><button id="next">Next</button><span aria-live="polite" id="position"></span></div>
 <p id="case-title"></p>
 <h2>Broad-label results on the same H&amp;E image</h2>
@@ -47,5 +54,5 @@
 <p class="small">Download <a href="per-case-eight.csv">per-image eight-class scores</a> or inspect the <a href="https://github.com/tkcaccia/Bora-Analysis/tree/main/methods/benchmark1">method code</a>.</p>
 </main>
 <footer><a href="../attribution.html">Attribution and reuse terms</a></footer>
-<script defer src="gallery.js?v=eight-class-v1"></script>
+<script defer src="gallery.js?v=performance-v1"></script>
 </body></html>

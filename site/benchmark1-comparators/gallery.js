@@ -3,6 +3,28 @@ const dataset=document.getElementById("dataset"),picker=document.getElementById(
 const image=document.getElementById("case-image"),full=document.getElementById("full-image"),position=document.getElementById("position");
 let all=[],visible=[],names={};
 const percent=x=>x==null?"Not defined":(100*x).toFixed(1)+"%";
+const methods=[
+  ["supervised","Supervised Bora"],["kodama_bora","KODAMA–Bora + fastPLS"],
+  ["unet","Class-aware U-Net"],["deeplabv3plus","DeepLabV3+"],
+  ["vista_path","VISTA-PATH"],["medsam","MedSAM"]];
+const datasets=["bcss","gcss","ignite","tiger","peso"];
+const mean=values=>values.reduce((a,b)=>a+b,0)/values.length;
+function scoreCell(value){const cell=document.createElement("td");cell.dataset.score="";cell.textContent=percent(value);return cell}
+function renderPerformance(data){
+  const rows=data.cases;
+  const byDataset=Object.fromEntries(datasets.map(name=>[name,rows.filter(row=>row.dataset===name)]));
+  if(datasets.reduce((n,name)=>n+byDataset[name].length,0)!==87||byDataset.peso.length!==19)throw Error("Unexpected validation membership");
+  const overall=document.querySelector("#cohort-scores tbody"),breakdown=document.querySelector("#dataset-scores tbody");
+  for(const [key,label] of methods){
+    const datasetMeans=Object.fromEntries(datasets.map(name=>[name,mean(byDataset[name].map(row=>row.scores[key]))]));
+    const allMean=mean(rows.map(row=>row.scores[key]));
+    const fourMean=mean(datasets.slice(0,4).map(name=>datasetMeans[name]));
+    if(key==="supervised"&&(Math.abs(allMean-data.cohort_scores.supervised_all_87)>1e-10||Math.abs(fourMean-data.cohort_scores.supervised_four_multiclass_datasets)>1e-10))throw Error("Supervised score receipt mismatch");
+    if(key==="kodama_bora"&&(Math.abs(allMean-data.cohort_scores.kodama_bora_all_87)>1e-10||Math.abs(fourMean-data.cohort_scores.kodama_bora_four_multiclass_datasets)>1e-10))throw Error("KODAMA–Bora score receipt mismatch");
+    const tr=document.createElement("tr"),heading=document.createElement("th");heading.scope="row";heading.textContent=label;tr.append(heading,scoreCell(allMean),scoreCell(fourMean));overall.append(tr);
+    const detail=document.createElement("tr"),detailHeading=document.createElement("th");detailHeading.scope="row";detailHeading.textContent=label;detail.append(detailHeading,...datasets.map(name=>scoreCell(datasetMeans[name])));breakdown.append(detail);
+  }
+}
 function card(label,value,detail){const a=document.createElement("article"),b=document.createElement("strong"),c=document.createElement("div"),d=document.createElement("div");b.textContent=label;c.className="value";c.textContent=percent(value);d.className="small";d.textContent=detail;a.append(b,c,d);return a}
 function show(id){
   const row=visible.find(x=>x.id===id)||visible[0];if(!row)return;
@@ -26,10 +48,7 @@ function filter(){visible=all.filter(r=>!dataset.value||r.dataset===dataset.valu
 fetch("cases-eight.json?v=eight-class-v1").then(r=>{if(!r.ok)throw Error(`HTTP ${r.status}`);return r.json()}).then(data=>{
   if(data.status!=="EIGHT_CLASS_DEVELOPMENT_GALLERY_STAGED"||data.case_count!==87||data.cases.length!==87||data.kodama_spatial_mask_available!==false)throw Error("Incomplete audited gallery");
   names=data.class_names;
-  document.getElementById("cohort-scores").replaceChildren(
-    card("Supervised Bora · four multiclass datasets",data.cohort_scores.supervised_four_multiclass_datasets,"Equal-weight average of dataset-level case macro IoU"),
-    card("KODAMA–Bora · four multiclass datasets",data.cohort_scores.kodama_bora_four_multiclass_datasets,"Frozen result mapped to eight classes"),
-    card("Supervised Bora · all 87",data.cohort_scores.supervised_all_87,"Includes 19 single-class PEsO images"));
+  renderPerformance(data);
   all=data.cases;[...new Set(all.map(r=>r.dataset))].sort().forEach(x=>dataset.add(new Option(x.toUpperCase(),x)));
   const requested=all.find(r=>r.id===location.hash.slice(1));if(requested)dataset.value=requested.dataset;filter();
   dataset.addEventListener("change",filter);picker.addEventListener("change",()=>show(picker.value));
