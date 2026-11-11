@@ -1,0 +1,983 @@
+{
+  "status": "VERIFIED_PUBLIC_WSI_MEDIA_STAGED",
+  "pages": 4,
+  "views_per_page": 10,
+  "methods_per_view": [
+    "bora",
+    "supervised",
+    "unet",
+    "deeplabv3plus",
+    "medsam",
+    "vista_path"
+  ],
+  "file_count": 240,
+  "source_receipts": {
+    "visium_hd_3prime_human_ovarian_cancer_ff": "c531c5f1692b6ced1f0bcdbe6bb6d141ac901eca5698ee0d586d71a3232621cc",
+    "visium_hd_human_ovarian_cancer_ff": "0b5f3934e0e8171ca958416d55487cf02a5ca4b8c596b78db52fe7e874e5cf6d",
+    "visium_hd_ff_human_breast_cancer": "ff40305458ef65fe735732b627024bc8d8e23dca1e31f8ceb0ac2173093d1533",
+    "visium_hd_human_lymph_node_ffpe": "0de43873575d9c769748aa99595062de19ee321512e70bd5156d702db4308e08"
+  },
+  "files": {
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/overview-bora.webp": {
+      "sha256": "618eddc3ba2044d0c36c3d427c8f54410b3fd0451b0738015b03accc98021f59",
+      "bytes": 756770
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/overview-supervised.webp": {
+      "sha256": "7e57482fc8ba5369c6d9471e5570d055014a6ac71a2ed38958839b632e41b2e4",
+      "bytes": 603614
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/overview-unet.webp": {
+      "sha256": "dfe177da2238bcc35a25957061af5a28048eab1ac1528122b8b2f8645fc9cada",
+      "bytes": 556554
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/overview-deeplabv3plus.webp": {
+      "sha256": "bb257dc82f350a419ac90b65e09f0ef593ee2423e9b7f87dc90c288f31d74b87",
+      "bytes": 585642
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/overview-medsam.webp": {
+      "sha256": "bad0903d8cb38300ab93a6a8a09819d4a611afaf47fc804f9d250b92c24f63fc",
+      "bytes": 525076
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/overview-vista_path.webp": {
+      "sha256": "087a6baae84bc50d125482ed98fbf332f2b92d3edc786868550e6db3cdc4ddb0",
+      "bytes": 702674
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/wide-01-bora.webp": {
+      "sha256": "7730bd5e9ba96123626974492ec69cc82691234c47e3c3fb6a4f72100b70fdb3",
+      "bytes": 405650
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/wide-01-supervised.webp": {
+      "sha256": "5d48037a349df5b15bd3b3e96e227370e29bb1e54977e900490920142ead4f82",
+      "bytes": 322828
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/wide-01-unet.webp": {
+      "sha256": "728a84bfc21e5ed0d108609b19aa21fe8ae4e1561f285e57c887a717c2171c3f",
+      "bytes": 304982
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/wide-01-deeplabv3plus.webp": {
+      "sha256": "63740d29458cd24b528eb46affa4f0547ec40856886dac0925d370f7d51f3722",
+      "bytes": 324406
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/wide-01-medsam.webp": {
+      "sha256": "263a032b84064d39783fec07ab905de10e8149635d54a0de9472eb6e3366e418",
+      "bytes": 320140
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/wide-01-vista_path.webp": {
+      "sha256": "f4d889531db4384d9bf023b759b89cf65969b9c2500a8ec675972e2b48ad8d70",
+      "bytes": 430098
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/wide-02-bora.webp": {
+      "sha256": "8e46e0277bd795d5471131e6e5722f07747f0dea5866bb440d794a54247e36db",
+      "bytes": 404204
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/wide-02-supervised.webp": {
+      "sha256": "bd93c566bbf8acac639fa9753fc8b6a9d580740518dc58903c7d5d6a6ed555c6",
+      "bytes": 334260
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/wide-02-unet.webp": {
+      "sha256": "c0572f3f96241f537405e7e24a5a8743452f806b88315447cf3c55ea1f31de6b",
+      "bytes": 296320
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/wide-02-deeplabv3plus.webp": {
+      "sha256": "3095c031d9c0d7ea66cb7756c7a2172e049fb296cd15d5dafddbc950863c408f",
+      "bytes": 323722
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/wide-02-medsam.webp": {
+      "sha256": "14601e1d6132a1b735d05d0ba0b2276e4da23092b033fe7d7c9c844272cb029c",
+      "bytes": 309800
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/wide-02-vista_path.webp": {
+      "sha256": "2a487d480d6e91845c074b23d55bd71f83018c61a560867a0128584914cee09a",
+      "bytes": 425576
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/wide-03-bora.webp": {
+      "sha256": "6bd980b27b5c4bd5250de61038d601e02aafb20cf231989a57b07bdca870f86c",
+      "bytes": 385432
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/wide-03-supervised.webp": {
+      "sha256": "6265c6d794f6857b0fd12d175d4cc7374a27b60bad9c3028826703d16de15c27",
+      "bytes": 311262
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/wide-03-unet.webp": {
+      "sha256": "4fddb520ab41b66a3c98295f0a06b6708fe26202708cd00afccb1ccc0c63989c",
+      "bytes": 301348
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/wide-03-deeplabv3plus.webp": {
+      "sha256": "2ea9038713c7713dc8c86f9eea9c901b4366a8707c81316037729e6dd2ea58b5",
+      "bytes": 310926
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/wide-03-medsam.webp": {
+      "sha256": "59affde4cb5a33643f0b04c9629bd94f6fdcfd50eb2b157eb20003b785001edd",
+      "bytes": 287728
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/wide-03-vista_path.webp": {
+      "sha256": "803fef80ea670353a66075d5f5622db7200c7e590e2f28f531bb4bddeea371f2",
+      "bytes": 388888
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/large-01-bora.webp": {
+      "sha256": "85d8940ca3041c1a2ed7d4670a21ddb63875ce1c58d3e2cbd90ff1e6d66c6ae8",
+      "bytes": 251042
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/large-01-supervised.webp": {
+      "sha256": "581b8778ff2fee7df71a70789a4ad7bc2b7951943e8efae016f091627f686072",
+      "bytes": 200006
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/large-01-unet.webp": {
+      "sha256": "23e3fc322b9d1230cdf0d2e6ecaec0e4be4862f679ac95cb2a45d4a082f41d10",
+      "bytes": 173566
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/large-01-deeplabv3plus.webp": {
+      "sha256": "de1c28f2d54b2603d9fd49ce0479819b4ebb27ccac99c2294ebe46f12a3e5f1e",
+      "bytes": 192424
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/large-01-medsam.webp": {
+      "sha256": "ed96145f88164f84bb6046b54f0599b53a1b0dc69ad4e41ddcee89f5f758ccfb",
+      "bytes": 188250
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/large-01-vista_path.webp": {
+      "sha256": "cb79629a1737b0a14af40293f073077c30ddd9f0041642726ecfda8e6a3e591d",
+      "bytes": 260506
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/large-02-bora.webp": {
+      "sha256": "5c455d9982f50236f2c40dccc0ec1f8860d406c55f01d357d576c258d7466d68",
+      "bytes": 271696
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/large-02-supervised.webp": {
+      "sha256": "32d424905415b171e54b6b643522f5f22f936541554c2c129cc8888f00895cb4",
+      "bytes": 199874
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/large-02-unet.webp": {
+      "sha256": "7a3ff3e9b1bdf8fffa63354d1a35ac12b711b547a56cc5770fa075d12568e287",
+      "bytes": 190874
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/large-02-deeplabv3plus.webp": {
+      "sha256": "4f9d80b0b75bb0732a920bb90cc5e83c991b79d47cb6945b7c733b17232428d5",
+      "bytes": 205366
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/large-02-medsam.webp": {
+      "sha256": "78f75069d19290e92f67814060701bb30905604c7d1d7f274d871e8babf3666f",
+      "bytes": 199472
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/large-02-vista_path.webp": {
+      "sha256": "4db0a2f3fc693d85751cf1c0053689d2d7961b8890324bcb8a3a3ebd5616cec3",
+      "bytes": 281616
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/large-03-bora.webp": {
+      "sha256": "ae7959e6151c03a298d6f5502c17765b77e5005c4aca3065437fd7299b0dcdd9",
+      "bytes": 263328
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/large-03-supervised.webp": {
+      "sha256": "280bb7c28d6cd59e03cd01fd3bc8c048a404bd44e91c1ea93997f444e3bdeca2",
+      "bytes": 192318
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/large-03-unet.webp": {
+      "sha256": "2a78cef485788e12fee87cb3a92e98f0fe5292bcfd1e38a9ce475a02d0654514",
+      "bytes": 179396
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/large-03-deeplabv3plus.webp": {
+      "sha256": "16e4d161a79f02ee056cf7a95c6224fa1f68caafea7aed1bbe9f32db68f07e57",
+      "bytes": 191780
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/large-03-medsam.webp": {
+      "sha256": "ec3d0462ac5b1a32771b70b6302bd2d2c80d2d6eface8105b4757b1a75388f48",
+      "bytes": 188178
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/large-03-vista_path.webp": {
+      "sha256": "a0a0a654085200334a116ff5f159711310e957cfd5cf15538868f72914aebf62",
+      "bytes": 277574
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/field-01-bora.webp": {
+      "sha256": "533fc376a4cb83fd2e6da10607760772c597615365b7a449520cfbc26dd2117d",
+      "bytes": 138666
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/field-01-supervised.webp": {
+      "sha256": "e159f1e0f02d53754c9a64431e6089c26cc654304d933e3db845b22b2bd4c775",
+      "bytes": 109412
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/field-01-unet.webp": {
+      "sha256": "4be048868c2c189635729e9f81f8cc262fc68981071c3f93ca7fbe33e3f3e7a9",
+      "bytes": 95128
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/field-01-deeplabv3plus.webp": {
+      "sha256": "1c98e4f9b70708028f87dc2ed6b556fcdecd6e3ec3e4cb570ad9de164ded4352",
+      "bytes": 109050
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/field-01-medsam.webp": {
+      "sha256": "9986c147490c14e67a3d29aa164244b50199e28f257bf90f7c0100867a58ccef",
+      "bytes": 90482
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/field-01-vista_path.webp": {
+      "sha256": "291625e4f09e51bd30d4ec4b416b3c07d1bf08dbd89e18247a65487fa290452c",
+      "bytes": 139266
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/field-02-bora.webp": {
+      "sha256": "a910dc1b6d9de72137a2e996437153a594de7434aac0e784fe933d89048c3119",
+      "bytes": 155982
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/field-02-supervised.webp": {
+      "sha256": "da3036f1acfc7307030c19b691b0de0339b102f24916f65662906fbe365c43f3",
+      "bytes": 109358
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/field-02-unet.webp": {
+      "sha256": "f02cdc634234674021c36983bcdb864dbd6888d01349fadba4217d53e68ddd4f",
+      "bytes": 94002
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/field-02-deeplabv3plus.webp": {
+      "sha256": "d4f079a83b3a60eb7bd97d2d4b0c79d1bebe11e187c9f660cd39ad136315beb4",
+      "bytes": 110494
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/field-02-medsam.webp": {
+      "sha256": "cd9f2e833d437023cae6f4f3de36e0714aeb3526df3438a3dd4aef867fe98493",
+      "bytes": 101138
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/field-02-vista_path.webp": {
+      "sha256": "6a299074e7034acb5de15fffc7ff69d483640eeb485f2a4b37efc19f96ae8eaa",
+      "bytes": 169802
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/field-03-bora.webp": {
+      "sha256": "a8f9a2b213dc8f65f886739e39c229c80a6a0aee95d2d6c47b3881311bb75e95",
+      "bytes": 152734
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/field-03-supervised.webp": {
+      "sha256": "6fc9231d699c2016daa0f50aa995f8840c7da1205982f972105e195d17a0dac1",
+      "bytes": 107094
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/field-03-unet.webp": {
+      "sha256": "22dec9f74ed2c92d5c9c64e3c3fdad0d28aab9dd1d59143e14e699d33105c71f",
+      "bytes": 108316
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/field-03-deeplabv3plus.webp": {
+      "sha256": "3192fb960c2302d47c3821150d0529664ed6f2cbd1698080bf22969e6ea18c27",
+      "bytes": 114508
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/field-03-medsam.webp": {
+      "sha256": "f423f7267e34cc0fa46cf33335d2165358f48fb638ac00410ee36aae54fe0e64",
+      "bytes": 110498
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-3prime/field-03-vista_path.webp": {
+      "sha256": "ed27a7014fa273e5273ebd83756a1560843c1c9d18fb803ff3c22e89fc15f0da",
+      "bytes": 150172
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/overview-bora.webp": {
+      "sha256": "6ab1c20ce62de5077a784e72bb8d8c0814855d7b203610f40263ddf4edd7ef44",
+      "bytes": 645838
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/overview-supervised.webp": {
+      "sha256": "a43e3878b2f16b51737f74dc06e6a44452c10371c79349d7e0006a6db20accf7",
+      "bytes": 525694
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/overview-unet.webp": {
+      "sha256": "7eb9731cde1a38426f9593bcff4a53c7a371627f03c6fe5c057eab9eacadaa26",
+      "bytes": 481076
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/overview-deeplabv3plus.webp": {
+      "sha256": "c1ca2fc10ab95d6640e0c40252c7dacc3941ae9c30c9e3d1f19c9e53ba5c1099",
+      "bytes": 506650
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/overview-medsam.webp": {
+      "sha256": "e7d4e2901fdb86fe8095312a4440efeb4d956ab7e01f2ba377f84b19c0d23102",
+      "bytes": 467422
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/overview-vista_path.webp": {
+      "sha256": "1590af297e6e2f6c0d8a7cdc7825a00cc07f35af42c3ba5cc3147c5e329be3f6",
+      "bytes": 593510
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/wide-01-bora.webp": {
+      "sha256": "4c9322f001f4569e92cece94cdbdc60b967c12a2c4fd0a569c76313d2dbeebf1",
+      "bytes": 490600
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/wide-01-supervised.webp": {
+      "sha256": "cc0a1b057f2225325f573cd9200d1ebea87c762b8d6475f4da3097d02a4b11ad",
+      "bytes": 422022
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/wide-01-unet.webp": {
+      "sha256": "1680d8bfd72c60afd4ddd3890a89b6ff9c5e002116b0bf2d707d52f72037997b",
+      "bytes": 413404
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/wide-01-deeplabv3plus.webp": {
+      "sha256": "cf18ac662884db1e73bda46d69dbc38b4479473c28aa539769f87e45768befe8",
+      "bytes": 405224
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/wide-01-medsam.webp": {
+      "sha256": "8de46f932cb004fbf763584ae09a133a5b739d1f996eeb52ec29477fc166c49b",
+      "bytes": 413422
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/wide-01-vista_path.webp": {
+      "sha256": "c106a9e09396c05d6f0d253a16a2197ab5b56d905b5a23963f7352a0c413e0b0",
+      "bytes": 524240
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/wide-02-bora.webp": {
+      "sha256": "4b933113f2d85a85711676bf53ae2ade9f5775f53e4153ebd3dab5a86dab46f3",
+      "bytes": 495296
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/wide-02-supervised.webp": {
+      "sha256": "b853d7ed8ea5fa9de25ce6cd99cdc09fa7be4d632578115e5c777cc6dbc4dece",
+      "bytes": 415450
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/wide-02-unet.webp": {
+      "sha256": "f0c79a228e48f24dd6f37dfac914eb276efe5525ef8253a9df53226508857143",
+      "bytes": 388800
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/wide-02-deeplabv3plus.webp": {
+      "sha256": "60f53b6a4c92aa577cfd73d2da4205997a0305c0d5543e091fa6c08de9468c2f",
+      "bytes": 399638
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/wide-02-medsam.webp": {
+      "sha256": "fb2c890562a50d5bb79516f86de2950718188dcd9c2fe7f39f5a4d3fde37254d",
+      "bytes": 418620
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/wide-02-vista_path.webp": {
+      "sha256": "2a1c580a36064d9e31a6b916c1b395504556ba14fc2384bf61725eb245676bca",
+      "bytes": 514948
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/wide-03-bora.webp": {
+      "sha256": "3a0eccdb3c31e3b0fb4884422b68c8c2cc57e95d9b6f9291541395c597a64010",
+      "bytes": 448740
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/wide-03-supervised.webp": {
+      "sha256": "c203ac55a5bf66a824c4268e6895a6236d68b2e6e5af00805a99423d8b8e2586",
+      "bytes": 382192
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/wide-03-unet.webp": {
+      "sha256": "addeedbf678be9d937f93f2f5962212d03f0e13d1eb363dc7ca50fa7f5603a3b",
+      "bytes": 371884
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/wide-03-deeplabv3plus.webp": {
+      "sha256": "64d981756a33712fb081b18701fb5dad5654b5d7543e4ff47dc8c49a0cf2c05e",
+      "bytes": 377314
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/wide-03-medsam.webp": {
+      "sha256": "7b4da0c24cc5b474611bd13c0db031825dbc788f55b92f771b6fbe13dcbcc7aa",
+      "bytes": 365464
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/wide-03-vista_path.webp": {
+      "sha256": "da1bac356b0c373c0d73a34ef175995e4e4889949f796127d2434cf3d865b6d4",
+      "bytes": 452350
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/large-01-bora.webp": {
+      "sha256": "c3f93f0b891934fd85f84e712c358ce1b41f8d3fee0fcf78b56bac900d43ce56",
+      "bytes": 324050
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/large-01-supervised.webp": {
+      "sha256": "002a95617358cdce0fcc209a6e5523078555625c5ff4996bf35848d0787682a3",
+      "bytes": 275314
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/large-01-unet.webp": {
+      "sha256": "a686a2e34c89d9380822b9d194eec0ad41f2f33585e1298ebe78dc6ba245ec9e",
+      "bytes": 285334
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/large-01-deeplabv3plus.webp": {
+      "sha256": "accea566ecdc901130b3b3aa21edf97da132d61d388b270999a7c40533cfd045",
+      "bytes": 272564
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/large-01-medsam.webp": {
+      "sha256": "bf2d48c733ee4451ef54c5b4ddd865bb3128231c6a347e0c1d2afaea660da2a7",
+      "bytes": 251332
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/large-01-vista_path.webp": {
+      "sha256": "78c2ad18e2bdc8c3bd959940595755d10f61b6d10caa64f8bd1f7903e0d33f23",
+      "bytes": 352390
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/large-02-bora.webp": {
+      "sha256": "54a613146cc58592ef288b23844c6f01a54bc06437fe7b72598f894c8187fe7d",
+      "bytes": 350638
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/large-02-supervised.webp": {
+      "sha256": "39800ca67bf81ad330fc1832fc39654a5e6c853ddbdc2bbe0cb7a773301581e7",
+      "bytes": 277648
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/large-02-unet.webp": {
+      "sha256": "c3789c259193ab1fdfb264d77b9ce564264d0a0968bec329b7d5afbf1a7c1c63",
+      "bytes": 301688
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/large-02-deeplabv3plus.webp": {
+      "sha256": "8f8b47714ed10105b915e7da201dd06e1b8a496795dfdec03e0ec909626bfd9e",
+      "bytes": 277798
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/large-02-medsam.webp": {
+      "sha256": "4579c96633d3d4feb6d6847f9fcf2862d825380b7620a5a783cb6d8ad3dbeb51",
+      "bytes": 278162
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/large-02-vista_path.webp": {
+      "sha256": "0ed7fe9c1376a9e7726d9014d205e776122c54745c500e8b76db5f603605404c",
+      "bytes": 377622
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/large-03-bora.webp": {
+      "sha256": "63e6a71bb2bdc678c9c804384e5a0ff7c7a9f7bed4680e23ba592ba5ea5c72c4",
+      "bytes": 333970
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/large-03-supervised.webp": {
+      "sha256": "191cee348dcb9849be9c75a69d7c58ac03b57ffa276c3ee36ead168b7fb6e396",
+      "bytes": 272304
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/large-03-unet.webp": {
+      "sha256": "b6c244322e498ca54a12b979b3dde1bb807027e98592ce9672b8f595d3b2b4b3",
+      "bytes": 290318
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/large-03-deeplabv3plus.webp": {
+      "sha256": "c61de935afecdfa3ead684594a9f8080c27eb58526feb57e9df56894a05f40f3",
+      "bytes": 261746
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/large-03-medsam.webp": {
+      "sha256": "f1edb6b46dabf7baaa18f3652e2e0f95f68fe70a1089eee3b806ccacb786571d",
+      "bytes": 262228
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/large-03-vista_path.webp": {
+      "sha256": "8aea0ecd96606ee41203cf2abea168507b5e4031dc7f9cf9b8c2735a83ec1a15",
+      "bytes": 333612
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/field-01-bora.webp": {
+      "sha256": "6f20b5d782a4c5c76c168e99ad3e24b739764e786b6f650c1ec50578181bfdc1",
+      "bytes": 179986
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/field-01-supervised.webp": {
+      "sha256": "0967d1108d4ba0d410cf5dd775b0e32996d94beed135f35b5e93edad3c139174",
+      "bytes": 142358
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/field-01-unet.webp": {
+      "sha256": "d701d67ce1f3f9fef74711e149bd2fdb75812726d3df394de4c455fe29862aec",
+      "bytes": 140884
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/field-01-deeplabv3plus.webp": {
+      "sha256": "8aa3c10317800b9bf6d9cebcdcfa88d4df82263d1ab524d41be766a1125347e2",
+      "bytes": 141620
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/field-01-medsam.webp": {
+      "sha256": "acc98541bf4a0f84322f65c9d42bc65a6ba0c458f16aa2bbcc7f6424a62e9a3a",
+      "bytes": 153600
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/field-01-vista_path.webp": {
+      "sha256": "374ae781e27924e7af01727cfee57f7f7f252356a9affbe57c1340b37b7c82df",
+      "bytes": 188298
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/field-02-bora.webp": {
+      "sha256": "11e87d1a1c79be140359dd7c092a982fc160e49f7faa0bf56a1405b67ec17aa4",
+      "bytes": 195240
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/field-02-supervised.webp": {
+      "sha256": "5ad861037b20f3aa6c79c4065c99e438b62b50b706815e3c1922c65b6fbbd561",
+      "bytes": 155934
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/field-02-unet.webp": {
+      "sha256": "7e79cb0e32efceb9bf336bb3fd975c299ba44783397911569660dbddba2fb48e",
+      "bytes": 169222
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/field-02-deeplabv3plus.webp": {
+      "sha256": "f280f19c94bd6aaeb9dc38841c832cb9c7723b98214fa88278cb81036f02c997",
+      "bytes": 155390
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/field-02-medsam.webp": {
+      "sha256": "8d5dad28d5f88c166a6b58a50fd891ff14feb2d3b384eec522dce99f9381791c",
+      "bytes": 145662
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/field-02-vista_path.webp": {
+      "sha256": "a85ce8c9de09a01f2285167937b04af5aed35faadbd125394ce67256eb9dcb29",
+      "bytes": 197180
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/field-03-bora.webp": {
+      "sha256": "720a415383b823e05e7e2f50ceadb9f11d869777667a0240f3765838a14538cb",
+      "bytes": 208072
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/field-03-supervised.webp": {
+      "sha256": "abbbf572d329cb4a3aa632c9d328b41fbabfafa961e78039c757d16ea60f6e44",
+      "bytes": 158138
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/field-03-unet.webp": {
+      "sha256": "c42b0d5c3799faee43a7302b857cf5f779739e3c92d0a03f02da61f5ec3902bd",
+      "bytes": 169134
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/field-03-deeplabv3plus.webp": {
+      "sha256": "d2ec6ac4857ae856b53163cc9fbb590cd3e3fe1d6dab0fb3a0ffd636b631a998",
+      "bytes": 158324
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/field-03-medsam.webp": {
+      "sha256": "448f64a888cd6605481353d44061634cd257b387e8ba27367fe3ac70eaed0506",
+      "bytes": 154478
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-ovarian-ff/field-03-vista_path.webp": {
+      "sha256": "ccb1aa52e6f5a9f5f146ad5705024e8994ed5063e2daeed7f000fbf8dcea5461",
+      "bytes": 225696
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/overview-bora.webp": {
+      "sha256": "2f7b4cce75fb6790f0265bd04ae4c58b24760dd96a9d5ca9c46c92b138b65cc3",
+      "bytes": 807960
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/overview-supervised.webp": {
+      "sha256": "99b3596565149629d671c078ed7642c5b42dec8fdfc5b80da3c0defa2ec9e53a",
+      "bytes": 746096
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/overview-unet.webp": {
+      "sha256": "37e28913e3529741ceebf3156d68073f29a0d5ebeb45c379052ae49ae7a8606d",
+      "bytes": 700498
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/overview-deeplabv3plus.webp": {
+      "sha256": "b5540be2faa7bd0c573df6ba22557af2b6440f9328716a51e94eeef593fcbc4b",
+      "bytes": 725380
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/overview-medsam.webp": {
+      "sha256": "e62066e4cf62c2fd8c4e2950e56e8f1ed057877cd248e133333f1bac7d97a675",
+      "bytes": 617516
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/overview-vista_path.webp": {
+      "sha256": "43dad49568346ca247ec2f71bd58283dcad2970f6b7f2ffe03066e0c36bcf290",
+      "bytes": 812214
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/wide-01-bora.webp": {
+      "sha256": "5bb7383adc7ebfc6af916e8cd83b12b5ab32e753dce7b5a676c53910dec71e8d",
+      "bytes": 576792
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/wide-01-supervised.webp": {
+      "sha256": "9d918d510d294da05b11293f2c7fe9743bcec9a094fd4711dd4c2ff6ef380cd8",
+      "bytes": 535224
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/wide-01-unet.webp": {
+      "sha256": "6075081e9af33c341214f20ae20038bd36c1780a368dd0efd3d5a58a66923429",
+      "bytes": 514418
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/wide-01-deeplabv3plus.webp": {
+      "sha256": "cf658fd594d0fec53e331eb3c9ccddca035def06bacf936b1b07e660e38a2465",
+      "bytes": 540346
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/wide-01-medsam.webp": {
+      "sha256": "95d51b1287cec5e6482a12a31d40aa278206c87a190354fff48904f1cc526fac",
+      "bytes": 488296
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/wide-01-vista_path.webp": {
+      "sha256": "3ac77f279be3f5c546e0bd40872163be0e3ce3dedf585a5f6ce10961d936f4c2",
+      "bytes": 594026
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/wide-02-bora.webp": {
+      "sha256": "ee4065cd0b5d930cc297ca1273b0dbbdc41f21ec429e7f1e29242ec71d5e49fe",
+      "bytes": 644386
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/wide-02-supervised.webp": {
+      "sha256": "99d4369a4128d76ba96b081487eba04a9ccd38e8b537e4ddbd58e4b3e7a3b30b",
+      "bytes": 604794
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/wide-02-unet.webp": {
+      "sha256": "afc1be5744645e1ac617f1ad6fd73233de1db8b57250d212c08e1f9d88d9fd51",
+      "bytes": 615914
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/wide-02-deeplabv3plus.webp": {
+      "sha256": "db85d61a40ea1200613c0e085a6c958c72e334912ada628eb46a68acf60013c4",
+      "bytes": 586152
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/wide-02-medsam.webp": {
+      "sha256": "aa3fb739c955f5ab10f56b8e554706fc90818fcb39b0eb623d756df4b780de54",
+      "bytes": 538360
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/wide-02-vista_path.webp": {
+      "sha256": "516c2e32a97e4547ffe4ffb032589e2922d6ce874159eda559a39ac9676b4733",
+      "bytes": 665572
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/wide-03-bora.webp": {
+      "sha256": "5a61ed25f162afc12009bec45aa28026c6eabb085d3400a3cd0e881147ae4204",
+      "bytes": 665188
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/wide-03-supervised.webp": {
+      "sha256": "608a5e98fe265d8878cbb80151ca4518fe58ccd8c4ee726fb6084eab15d41a54",
+      "bytes": 618284
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/wide-03-unet.webp": {
+      "sha256": "18df6094f63736bdcb903ab8ca8fa040ae666df06ef7a42865c144279132a600",
+      "bytes": 637470
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/wide-03-deeplabv3plus.webp": {
+      "sha256": "f7cb026ddef049b1b1f571df1d309dd5b4e834ab9e5fb13d7dccb587b841957e",
+      "bytes": 636562
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/wide-03-medsam.webp": {
+      "sha256": "b0fe9e5020ba5046f2a3553ac0f713dd01a7bbca9b19201914ff0a03a38c8a35",
+      "bytes": 578948
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/wide-03-vista_path.webp": {
+      "sha256": "5a0f21f901dd307b7dba60da477ea36174712e79911605cc0cbe69f4d8745fa2",
+      "bytes": 757028
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/large-01-bora.webp": {
+      "sha256": "081684a3f41f7ebb91d218dc14bc9d1d7af1632184921e527eda01361d7f6f7a",
+      "bytes": 322356
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/large-01-supervised.webp": {
+      "sha256": "c927233ed4b0dc8fb194c3e17574d6247d0644de13828ee570c7fb72a2630b81",
+      "bytes": 295514
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/large-01-unet.webp": {
+      "sha256": "fa0ef3c609606548dbc2711fc59b0667723c76450c11c53b26bad715f320d849",
+      "bytes": 289420
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/large-01-deeplabv3plus.webp": {
+      "sha256": "a2b04bf3b01a4a9dca89d8d23b56ff8aac8f6754c869ed971ed823afdc2c66b9",
+      "bytes": 284666
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/large-01-medsam.webp": {
+      "sha256": "974e5f123ec2d4d33adb304f420b4fe806cbda27a2761fa5166b8d901f3cb302",
+      "bytes": 269562
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/large-01-vista_path.webp": {
+      "sha256": "5c9995c54019bc33903c104371bb2bcd70ec90ebdbabf176237d52a849b93a31",
+      "bytes": 334604
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/large-02-bora.webp": {
+      "sha256": "2b049c5626bddab27d45241e832f3ee516a08f64c58aba3eebce16f33cdd0a4e",
+      "bytes": 352880
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/large-02-supervised.webp": {
+      "sha256": "eaf80457245eba98da79ca38ce2348494376ff9abf08c0993707ed23c1384996",
+      "bytes": 320820
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/large-02-unet.webp": {
+      "sha256": "bf5e59447423f846fa3b0e89cb9413d1fb18350ef1cfc2c028e3b954b8f508d6",
+      "bytes": 311904
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/large-02-deeplabv3plus.webp": {
+      "sha256": "5ef73d1e75da7dbf9e700baceaa582f93aaad15f24a0bdd930b41705f9c9a601",
+      "bytes": 306272
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/large-02-medsam.webp": {
+      "sha256": "5bdffa2e9c2adff8d96ed0b42206c597b9b21de21a1d68258f52c612a2fa9119",
+      "bytes": 288028
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/large-02-vista_path.webp": {
+      "sha256": "5490883e0fca847d282dfb9cf6263ed9d427c42eb0dc3e74edb9f4280941f4d2",
+      "bytes": 363768
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/large-03-bora.webp": {
+      "sha256": "57aa67d6f9df30330eb8b5619e60b4522ff2a21003aa42d724843ece71932761",
+      "bytes": 297506
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/large-03-supervised.webp": {
+      "sha256": "b985af20f96ec9d0d66072248bbfaf49f17778f250d8c5e202a5444460728d0f",
+      "bytes": 286770
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/large-03-unet.webp": {
+      "sha256": "d2bf7b42a4425f5a2d8b3690c019ad112b08ab7eb254e94f0752963629aaa005",
+      "bytes": 287044
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/large-03-deeplabv3plus.webp": {
+      "sha256": "762492bb890129774e7a1aae6aaea3e17a75a18810e93227a155559782cfcae3",
+      "bytes": 298852
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/large-03-medsam.webp": {
+      "sha256": "6b3e0bdbb9e762a1202770f7f1ac05ee43d2028e91c58b64eab211d82df61303",
+      "bytes": 247376
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/large-03-vista_path.webp": {
+      "sha256": "084c50293609f9522608f2483be306637cc17421d37f21823eef3f89cbdb0ab1",
+      "bytes": 351974
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/field-01-bora.webp": {
+      "sha256": "7e170213daabdc50121e2818c3e649aae728af5d2db9ed5ab811d03da8e6a526",
+      "bytes": 169932
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/field-01-supervised.webp": {
+      "sha256": "9a4f2bf259b24ade2a615eeea238b354ff968ea49ca1f1fa7145cc9779ef9e34",
+      "bytes": 154528
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/field-01-unet.webp": {
+      "sha256": "94de0b434cb8b611ea530e2ee83d7c60dc7d469958113370439834b7b0957152",
+      "bytes": 153536
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/field-01-deeplabv3plus.webp": {
+      "sha256": "abb4bd009559dc75967ff1d6abbdaa5797722fbb27ca66a10f5635de4fb2cee4",
+      "bytes": 146516
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/field-01-medsam.webp": {
+      "sha256": "ca1c9d72fff402899398ef8d7988f1e05cfdecc2e1232cc844602b1dedbb108d",
+      "bytes": 136252
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/field-01-vista_path.webp": {
+      "sha256": "9fe60dea711f036a0a1bdb2d3819a84d243aaeb9d240eff2a3224267337084a1",
+      "bytes": 174678
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/field-02-bora.webp": {
+      "sha256": "61234800172630628e14eb3f56a71da798cc2dba819f1d2566aee0b27faacbf9",
+      "bytes": 177820
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/field-02-supervised.webp": {
+      "sha256": "94bf4a4dafe2fc06371d43c749296ac5faef12a86dc51dcad14b238574adac25",
+      "bytes": 155886
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/field-02-unet.webp": {
+      "sha256": "67f3bd7880c7581c0baab260b33258452172a5e78206178451133964920d7f4b",
+      "bytes": 145332
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/field-02-deeplabv3plus.webp": {
+      "sha256": "eb00c360b95445965f439195b1c77d324ad8a23f2c02e0b3daaac7b276c85fd7",
+      "bytes": 147724
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/field-02-medsam.webp": {
+      "sha256": "ca3c4dbdf796f550721e889a9b39a5d0a629c30fd28fe08b0872c7ab8626bacf",
+      "bytes": 133868
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/field-02-vista_path.webp": {
+      "sha256": "ac14635ed1eb1a32a5f75da3ab58355de706b4a6f756fb2de56a8a403f8fe4ba",
+      "bytes": 173002
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/field-03-bora.webp": {
+      "sha256": "47ea2af4689dbb1d9fba3f2f013a5647a264e9f79a7c7e0a58d6b7c336f01683",
+      "bytes": 144946
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/field-03-supervised.webp": {
+      "sha256": "4e7abcb0e505c3e24aa5a5b71c9b2b5d3370d1123107b393ed0ebc35ac5f49cc",
+      "bytes": 137266
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/field-03-unet.webp": {
+      "sha256": "ad694ead2f0eb600c6fea2a431b8869078137aa6e001649284e8b775583fe4df",
+      "bytes": 143092
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/field-03-deeplabv3plus.webp": {
+      "sha256": "ccef0fb458c490d2de56bb103f6a580665c3fca9e5ed5b5b738f0d53452c25ef",
+      "bytes": 137274
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/field-03-medsam.webp": {
+      "sha256": "9df5c2b9d497f7be6718a1b59727d856bfa164f93f5484067942dc03920693c9",
+      "bytes": 121326
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-breast-ff/field-03-vista_path.webp": {
+      "sha256": "8b4a12f7454dd63c3ed6c56d8aaab3ee999961e11c3d51fab09583707c24b856",
+      "bytes": 158622
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/overview-bora.webp": {
+      "sha256": "7e9e7d3e610041ec42c276c5bd1029edafc88de065d67547a92a007d2f458b1e",
+      "bytes": 520894
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/overview-supervised.webp": {
+      "sha256": "1a559d6361076a68b2cc8d158c126dd1436e44d0807e8e48d50028b049619a5c",
+      "bytes": 333288
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/overview-unet.webp": {
+      "sha256": "152097c9d5f006bcf5e31be4e3001a03cd8ff7f078fda12a74f74a3be53b4bf4",
+      "bytes": 465256
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/overview-deeplabv3plus.webp": {
+      "sha256": "57ce7afcfd9c1ca81d11ad730265f0d325e1a663655233d23f4bfd7b478098c2",
+      "bytes": 441688
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/overview-medsam.webp": {
+      "sha256": "a5e251171d470f65c373d2df5360260d5eb6e94ac0ed2f696584c20aef9e83ac",
+      "bytes": 339438
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/overview-vista_path.webp": {
+      "sha256": "5599bc97fa765f5622e805c22f92252f8d17fcdb50ab1813ff2bbfb43f2209c6",
+      "bytes": 445470
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/wide-01-bora.webp": {
+      "sha256": "e024b551dda58b22913ad2bc89b70c6d17dadc842017af5ad4e11f4d64588ef1",
+      "bytes": 464634
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/wide-01-supervised.webp": {
+      "sha256": "0ce990d32a85c8d42511596a44691e024ff56fd0336ef16b27bc03fb390d1248",
+      "bytes": 363782
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/wide-01-unet.webp": {
+      "sha256": "dc2acfdff996b491c56c9fac8b06cb23f3e97806a85e7ac6de1840e84fc340cf",
+      "bytes": 545810
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/wide-01-deeplabv3plus.webp": {
+      "sha256": "d0d972b0335ed120509b874cfba416e2713c7d0695af18839ff42a4b4bb48383",
+      "bytes": 382944
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/wide-01-medsam.webp": {
+      "sha256": "e81b79c8366e787530e7dc66eed82f4927cc91c794aca26aadad078d51b78952",
+      "bytes": 371166
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/wide-01-vista_path.webp": {
+      "sha256": "35f0cab8a8a3f522cc2612cf57c5731c1bf77015448249d06c38ec2457006bc3",
+      "bytes": 472418
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/wide-02-bora.webp": {
+      "sha256": "5f5ec6aa0cdcb236cab563a819fda61626bacb0d04be37a2e51ae5f9f492f24b",
+      "bytes": 351820
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/wide-02-supervised.webp": {
+      "sha256": "651bb2dc171fdb336fcd42443c8b7a1998e92d005b4c9c0d0420c273f3e2dd00",
+      "bytes": 236942
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/wide-02-unet.webp": {
+      "sha256": "9ae19d995ac3a27f1bff7944fbf43a3ad32cb87024226eee9c7c0d6cd5710d6b",
+      "bytes": 369586
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/wide-02-deeplabv3plus.webp": {
+      "sha256": "41e5e94e9f5147a7eaeac9e474d09a10f3e32793d80ecc87cb0b34d238facbfe",
+      "bytes": 325512
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/wide-02-medsam.webp": {
+      "sha256": "8423740e5564a6421c57a511ee54cb501097abbd9dcde000258df3bd4de4bf67",
+      "bytes": 236346
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/wide-02-vista_path.webp": {
+      "sha256": "07d54f51c2a115a8d6a28af2bed222e36cbc840901a6f7c14a7bdf7d8dbd64ae",
+      "bytes": 331902
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/wide-03-bora.webp": {
+      "sha256": "166d5f36e3ce7cf8596b35e60d5e871ae368ece6ff9f0bd5b81b282be944a51f",
+      "bytes": 563054
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/wide-03-supervised.webp": {
+      "sha256": "d659e0aee68ae236e77b99ec6622dc0d162abd9cb1027bb62d99b25191cf69ec",
+      "bytes": 495614
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/wide-03-unet.webp": {
+      "sha256": "1654c58d26b2013f253bd1fed0d8e3d3a7abca40f78acf4063d0fe4982f7391e",
+      "bytes": 658310
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/wide-03-deeplabv3plus.webp": {
+      "sha256": "8317cb9c24a0c849ec05376f7c9d926e78ebb69a3ca73e7c05e6a2f36af24add",
+      "bytes": 468532
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/wide-03-medsam.webp": {
+      "sha256": "09ffa8df4dd2c8039b1c59db4128455b2f35f654c0083a04e17bc002d38ac49a",
+      "bytes": 551086
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/wide-03-vista_path.webp": {
+      "sha256": "4350f95f26d1df0e8cfc46fbbdb701c18ea71f43e360d612d1ead5d5bc971760",
+      "bytes": 580268
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/large-01-bora.webp": {
+      "sha256": "57d46e49121a605332d38caed8fe21c600db74fe120a008be4b70835939357a3",
+      "bytes": 211086
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/large-01-supervised.webp": {
+      "sha256": "7cfee230d27099c6ad2fa546d2870d23462d0d87ba9c0dfc45aa2a980192dbb0",
+      "bytes": 134820
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/large-01-unet.webp": {
+      "sha256": "97b2bf0dfdf5ceaaab4fbd89568a488069cc016f4dce4858adb44656e1333364",
+      "bytes": 257524
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/large-01-deeplabv3plus.webp": {
+      "sha256": "c44b4843031f7dc2f094580dc252c5155b02edf5d5d876fe10e5fd7db7641159",
+      "bytes": 173770
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/large-01-medsam.webp": {
+      "sha256": "12bb54132e7cad33fbe468292076d5f64897b3da703c74c124a78b9108759a07",
+      "bytes": 164324
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/large-01-vista_path.webp": {
+      "sha256": "745a9b7c69b728569c1b20536389996dd3b3459f0abeb19e83ad9247692bffa9",
+      "bytes": 188420
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/large-02-bora.webp": {
+      "sha256": "3c7935e2faba61c8413a402d10a572f889534c23749e11405cf9dcfc70c89a30",
+      "bytes": 190994
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/large-02-supervised.webp": {
+      "sha256": "658d363978797bda913617515be7bff9bea04a0aca039c1bc79e247093e9e5b8",
+      "bytes": 125544
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/large-02-unet.webp": {
+      "sha256": "5fcf5f0850ad81f2e0250776929e9bd6c1324cd9bc90de505763deee5a0d883f",
+      "bytes": 257204
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/large-02-deeplabv3plus.webp": {
+      "sha256": "24d7b946bda09d4322da5d87d25cecd6814c75ca4444243e866886dff2d93158",
+      "bytes": 171934
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/large-02-medsam.webp": {
+      "sha256": "fb99bc25a86efc284da54a331f270de8aae781266b01ad01efa3d30aedf88e25",
+      "bytes": 126222
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/large-02-vista_path.webp": {
+      "sha256": "95ccbbefb3f1d607621b1f479f778a9fa335563fa45910b2016ddef60fa6c988",
+      "bytes": 179722
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/large-03-bora.webp": {
+      "sha256": "7abf5ab009aa56e6e5303cb59c649c4839e636df1483d8945b15056f00ef138b",
+      "bytes": 295018
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/large-03-supervised.webp": {
+      "sha256": "3cee06a1f57b274532df2b9e48e7274e31da3228db34d9ef159c9fe6870ffc61",
+      "bytes": 213930
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/large-03-unet.webp": {
+      "sha256": "8bedab69c53abc288fe437ccf61422b214cc4885251dd1a7cd84a4b796cb821e",
+      "bytes": 361026
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/large-03-deeplabv3plus.webp": {
+      "sha256": "8e4fe7c345baf33b7568659f170fe52f357e9b49c30ead9e697d923cc8e2589a",
+      "bytes": 223470
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/large-03-medsam.webp": {
+      "sha256": "ca9695a5db95a6b34e39388d72ac4cf7ecd7e3f15ecd538c37d1e06d57b00a41",
+      "bytes": 265044
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/large-03-vista_path.webp": {
+      "sha256": "3651a08ce55d816cec08bea9172c457515ace927426c1f940f9fde89c8e33edd",
+      "bytes": 276282
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/field-01-bora.webp": {
+      "sha256": "6088f01556d1f70370a5c08d80abd41c303885095020c384ccbd7c934f37e214",
+      "bytes": 79048
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/field-01-supervised.webp": {
+      "sha256": "3089e6918f7500f8bad04083cfdf1b47a0cfb8c6a3a03a9fb6b694add82577f1",
+      "bytes": 35864
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/field-01-unet.webp": {
+      "sha256": "3c99cee73f930109489849c9ee0e10025964cd84ccadf6248ad3c7f07c54deb4",
+      "bytes": 105116
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/field-01-deeplabv3plus.webp": {
+      "sha256": "a1a9b7da35a8d9285fd6e05d0006770c4feb6cd40195abc318fd5416b836bacd",
+      "bytes": 74214
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/field-01-medsam.webp": {
+      "sha256": "91874925ca2361435df90627760a10624534e68176934118478744d8452c2fde",
+      "bytes": 49422
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/field-01-vista_path.webp": {
+      "sha256": "0c0a53b7a4e341e502e4f6cf0b498160b7cc78005bbc907dbb09a48597fcdeff",
+      "bytes": 57890
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/field-02-bora.webp": {
+      "sha256": "a18a8577d68ae1e85b8a73a2fb120137bc829af80f8149c8ca9f815560fabf36",
+      "bytes": 88494
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/field-02-supervised.webp": {
+      "sha256": "3b578e5efecd3b5233269168f2c199cfb6d31dbe373a2c3a880d9019c8b3b8f1",
+      "bytes": 42476
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/field-02-unet.webp": {
+      "sha256": "c233309846e3ff1d0ee190e543d79a920acb7f7d470f6837cae5be22d1278d8a",
+      "bytes": 127970
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/field-02-deeplabv3plus.webp": {
+      "sha256": "ebe5cc1617b17aa1ab84251de826c1b95a03a4e9bbd523bb5575b55a83a238bb",
+      "bytes": 83198
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/field-02-medsam.webp": {
+      "sha256": "0865b8b05d9f4f5a2d212b5b66427430cd87549e4b76ddc812c4c66bec19602f",
+      "bytes": 50022
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/field-02-vista_path.webp": {
+      "sha256": "47e0187a4ec034d08af26427636c0e1fb8c70915e70d7df33ab7f352cba762a7",
+      "bytes": 73894
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/field-03-bora.webp": {
+      "sha256": "7de5846b614881a94d098a1fac4c3b610da705fd8777a0cecf08854bad61dd39",
+      "bytes": 141140
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/field-03-supervised.webp": {
+      "sha256": "5f332dfe340505597b9891e8864bad325ef68ee77068090472c41cac1aa16cdb",
+      "bytes": 91498
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/field-03-unet.webp": {
+      "sha256": "41b8331de475f9eff97eef1a75f72222babdc3b631abc0e0d10746885476a822",
+      "bytes": 168368
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/field-03-deeplabv3plus.webp": {
+      "sha256": "6d101732c5208c5f9797cd47c0e2997aa946925a4fa1c8850989d68cd6c97d5a",
+      "bytes": 102626
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/field-03-medsam.webp": {
+      "sha256": "78c00a815fe88f3d2a50381eaf6389fb478077762841838ae70c2b12ffd085cf",
+      "bytes": 118038
+    },
+    "archive/unified-wsi-panels-2026-11-11-v1/public-10x-lymph-node-ffpe/field-03-vista_path.webp": {
+      "sha256": "8d6ab2acc65c5c9cb26ccae8de72aac8a537ad7cfacebdcf3987fe48f546ab38",
+      "bytes": 107444
+    }
+  },
+  "pm016_included": false
+}
