@@ -1,6 +1,6 @@
 {
   "format": "bora-public-site-v1",
-  "size_bytes": 458452384,
+  "size_bytes": 458449838,
   "file_count": 3633,
   "public_wsi_count": 13,
   "file_sha256": {
@@ -3493,7 +3493,7 @@
     "visium-hd/public-10x-kidney-ffpe.html": "514dfd7a0fd8393ed993fbf44acb0b705973fbdb1923e0f74b226158e14c0a77",
     "visium-hd/public-10x-lung-cancer-fixed-frozen.html": "cd04d56aeac1cb312a139907e097dfa209edd2fc401ed8844161eb67669cd4a6",
     "visium-hd/public-10x-lymph-node-3prime.html": "920b3b4eace79b8ce83de55c7a71566c38d184eee308645d96591b55396b2cf6",
-    "visium-hd/public-10x-lymph-node-ffpe.html": "28e05a0a7c012bcdbd9a22f7565eedbd178ef01053346509454f76a2f36b377c",
+    "visium-hd/public-10x-lymph-node-ffpe.html": "0b3f234fd96e21ed0ff822305374fee8546c60cbd28100c9e0d8c5fe731ec0b6",
     "visium-hd/public-10x-ovarian-3prime.html": "8bf455499d741ef87e5dbd6d022a9ed4aa75a4e9d946bc9810e8981ca5e7550f",
     "visium-hd/public-10x-ovarian-ff.html": "ae2e7ac8ed53ed756c4df13e0216e215373c242472e2b93e8ced37a0eea31cb2",
     "visium-hd/public-10x-pancreatic-cancer-fresh-frozen.html": "4b0ddaf3602ce23619bcf9310b5048c709aad8d6bad45b9dcbc789dec8418975",
@@ -3682,6 +3682,11 @@
       "page_sha256": "a65701dd925987954141424d01e2a029dc3d43d96a0d4d3c97e52c5813684883",
       "final_receipt_sha256": "455a4cf7a29fadcbdd063e67b5d79cfc3444e98ecb4f8e3d0cc59c6bd68d239c",
       "media_commit": "87deaebdfb9916c2dd85039c527d25bce8229010"
+    },
+    "public-10x-lymph-node-ffpe": {
+      "page_sha256": "0b3f234fd96e21ed0ff822305374fee8546c60cbd28100c9e0d8c5fe731ec0b6",
+      "final_receipt_sha256": "dd973f10f08f2c453a4cad165ca6044fa95f3ffdab4633589609cc321a3762a8",
+      "media_commit": "c98c6395fea8905b5feedcef69b7f88a26441fce"
     }
   }
 }
