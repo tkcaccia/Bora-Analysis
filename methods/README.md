@@ -13,7 +13,8 @@ manifests are supplied separately under their respective access terms.
 | KODAMA–Bora | Calibrated H&E, reviewed tissue support, Virchow2 features; anonymous image-only tile groups | [Bora](https://github.com/tkcaccia/Bora), [KODAMA](https://github.com/tkcaccia/KODAMA), and the [whole-slide method record](../docs/benchmark2-full-slide-comparators-2026-11-10.md) |
 | Eight broad-label reanalysis | Training-only ontology; new 256-channel supervised Virchow2 head; exact remapping of existing Bora and comparator predictions | [`reduced-labels/`](reduced-labels/) contains the executed training, validation, support-audit and rescore sources plus frozen aggregate ontology receipts |
 | Supervised Virchow2 (Benchmark 1) | 1,280-channel Virchow2 token features; 397 expert-masked training images | [`classwise_joint_search.py`](benchmark1/classwise_joint_search.py), [`classwise_joint_fit.py`](benchmark1/classwise_joint_fit.py), [`blend_search.py`](benchmark1/blend_search.py), [`ontology_gate.py`](benchmark1/ontology_gate.py), [`blend_validate.py`](benchmark1/blend_validate.py), [`supervised_contour.py`](benchmark1/supervised_contour.py) |
-| Supervised Bora (Benchmark 2 frozen PLS) | The same 1,280-channel input and 397 training images; earlier frozen head | [`search.py`](benchmark1/search.py), [`final_fit.py`](benchmark1/final_fit.py), [`project_supervised.py`](benchmark2/project_supervised.py), [`supervised_contour.py`](benchmark2/supervised_contour.py) |
+| Supervised Bora (Benchmark 2 current broad-label head) | Full 1,280-channel input cache; 256 training-selected channels; 397 expert-masked training images | [`supervised_final/`](benchmark2/supervised_final/) contains training-only presence selection, whole-slide projection, contour, geometry, vector and audit code |
+| Historical supervised Virchow2–PLS | The same 1,280-channel input and 397 training images; earlier frozen head | [`search.py`](benchmark1/search.py), [`final_fit.py`](benchmark1/final_fit.py), [`project_supervised.py`](benchmark2/project_supervised.py) |
 | Class-aware U-Net | RGB H&E and expert masks on the same 397 training images | [`train_unet_balanced.py`](benchmark1/train_unet_balanced.py), [`run_four_methods.py`](benchmark2/run_four_methods.py) |
 | DeepLabV3+ | RGB H&E and expert masks on the same 397 training images | [`train_deeplabv3plus.py`](benchmark1/train_deeplabv3plus.py), [`run_four_methods.py`](benchmark2/run_four_methods.py) |
 | U-Net-guided MedSAM | RGB H&E and U-Net-derived boxes; external pretrained MedSAM ViT-B weights | [`prepare_medsam_prompts.py`](benchmark1/prepare_medsam_prompts.py), [`run_medsam_guided.py`](benchmark1/run_medsam_guided.py), [`run_four_methods.py`](benchmark2/run_four_methods.py); [upstream MedSAM](https://github.com/bowang-lab/MedSAM) |
@@ -55,17 +56,16 @@ all-image mean; the other 68 images have mean 0.486. Case 050 tumor IoU rises
 from 0.307 to 0.822, but muscle IoU remains 0. The code and versioned
 receipts preserve this limitation.
 
-The Benchmark 2 whole-slide pages still show the earlier frozen PLS head
-projected from the same training set. They have no independent whole-slide
-expert masks, and their supervised overlay is a different model version from
-the current Benchmark 1 gallery. Bora's anonymous KODAMA groups and fastPLS
-tissue names are a separate route.
-
-The 13 public WSI web overlays now apply the same 6 µm physical Gaussian
-class-contour smoothing used by Bora, with a halo around each registered view.
-They retain the final Bora tissue support and frozen supervised score grids.
-This display step does not produce a new full-resolution supervised vector
-mask, perform the global 2,000 µm² geometry repair, or provide accuracy scores.
+The Benchmark 2 public whole-slide pages use the current eight-class head,
+which was fitted on the same 397 training images as the Benchmark 1 gallery.
+KODAMA–Bora's anonymous groups and earlier fastPLS tissue names remain a
+separate route. A source-group-disjoint training search selected a 2%
+whole-slide class-presence rule, so trace predicted classes are reassigned
+using the remaining supervised scores. The final supervised mask is projected
+over the complete calibrated slide, smoothed over 6 µm, repaired at the
+2,000 µm² physical-area cutoff, and exported as a full-resolution raster and
+native-coordinate GeoJSON. The ten public views are crops of that one final
+mask. There are no independent whole-slide expert masks or accuracy scores.
 
 The 24-role harmonization used during fitting is recorded in the project
 [`tissue_label_harmonization.json`](benchmark1/tissue_label_harmonization.json).

@@ -35,11 +35,19 @@ to eight broad tissue classes. Five sparsely represented tissue categories are
 unscored. KODAMA–Bora geometry and the four external model predictions were
 mapped into these broader labels; those models were not retrained. All six
 displayed overlays use the final
-Bora tissue-group support to handle background consistently. Supervised Bora
-web views additionally receive 6 µm physical contour smoothing with a halo;
-the full-resolution source features and external predictions remain unchanged.
+Bora tissue-group support to handle background consistently. The supervised
+head also uses a training-selected 2% whole-slide class-presence rule to
+remove trace predictions. Its final class mask is smoothed over 6 µm,
+repaired to remove regions and enclosed holes below 2,000 µm², and exported
+as a full-resolution TIFF and native-coordinate GeoJSON. Each page's overview
+and nine zooms are rendered from that one final mask. The full-resolution
+source features and external predictions remain unchanged.
 These exploratory views have no
 independent whole-slide expert masks or accuracy ranking.
+
+The [supervised full-slide method and audit](docs/supervised-bora-fullslide-final-2026-11-12.md)
+describe the training-only class rule, physical contour and geometry cleanup,
+and native GeoJSON output.
 
 The [benchmark method implementations](methods/README.md) provide the
 Bora-specific training, prompting, Virchow2–PLS projection, and full-slide
