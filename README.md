@@ -9,18 +9,23 @@ during development and do not form an untouched confirmatory test.
 Tissue names on whole slides are provisional.
 
 The [Benchmark 1 development gallery](https://tkcaccia.github.io/Bora-Analysis/benchmark1-comparators/)
-now displays one training-selected supervised Virchow2 model for all 87
-retained images: a 444-channel joint classifier blended with the earlier
-classwise PLS head. The final ROI mask receives Bora's 1.5 µm contour smoothing
-and 400 µm² small-region repair. Mean expert-present case macro IoU is 0.593. This is
-development evidence, and case 050 still has poor muscle recognition. The
-six colored method panels in each figure and all 24 linked black-and-white
-response maps use one Bora H&E tissue/background support per image. Displayed
-figure pixels outside that support match H&E exactly. The Benchmark 1 supervised
-mask additionally receives Bora's ROI contour polish, with updated development
-scores; the other methods' predictions and scores are unchanged. The Benchmark 2 whole-slide pages retain the
-earlier frozen PLS-only model;
-those slide overlays were not rerun with the new Benchmark 1 blend.
+shows the canonical full-channel KODAMA–Bora + fastPLS route and one
+training-selected supervised Virchow2 route for all 87 retained images. The
+supervised route blends a 444-channel joint classifier with a classwise PLS
+head, then restricts its final decision to classes scorable in the known
+source dataset. Two source-group-disjoint training splits selected this gate:
+four-multiclass-dataset mean case macro IoU was 0.590, versus 0.580 without
+the gate. The final ROI mask receives 1.5 µm contour smoothing and 400 µm²
+small-region repair. On the 87 development images, mean expert-present case
+macro IoU is 0.604, versus 0.593 for the preceding rule. Across the 68 images
+from four multiclass datasets, it is 0.494 versus 0.486. Nineteen PEsO images
+have one scorable class and should not be interpreted as a multiclass test.
+Case 050 still has poor muscle recognition. The six colored method panels and
+all 24 linked black-and-white response maps use one Bora H&E tissue/background
+support per image; the response maps show scores before the final ontology
+gate. The other methods' predictions and scores are unchanged. Benchmark 2
+whole-slide pages retain the earlier frozen PLS-only model; those overlays
+were not rerun with the revised Benchmark 1 rule.
 
 The [13 public Benchmark 2 whole-slide pages](https://tkcaccia.github.io/Bora-Analysis/visium-hd/)
 show the same H&E frame with KODAMA–Bora, supervised Virchow2–PLS Bora,
