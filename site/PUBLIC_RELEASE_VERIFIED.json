@@ -1,6 +1,6 @@
 {
   "format": "bora-public-site-v1",
-  "size_bytes": 111558977,
+  "size_bytes": 111636312,
   "file_count": 544,
   "public_wsi_count": 13,
   "file_sha256": {
@@ -509,7 +509,7 @@
     "visium-hd/public-10x-lymph-node-ffpe.html": "75bf57118c3590f0edfc71bf6d7f955d57d6c02867fa66b9f669f49e64287c55",
     "visium-hd/public-10x-ovarian-3prime.html": "ebe089583c841a3830ccc5b27f8351395293facd5fc45a116d78287ddc85d9c9",
     "visium-hd/public-10x-ovarian-ff.html": "512d52c835783aff1245305bde203a168a941f1f318322e6e97d87627d74d48b",
-    "visium-hd/public-10x-pancreatic-cancer-fresh-frozen.html": "60fb9a9ba6151b6721a7526c38e9f2e1ad215396a6b7a27f1f31f0ce8834daf7",
+    "visium-hd/public-10x-pancreatic-cancer-fresh-frozen.html": "69c3b10198248dff9092d3134e509bea3d92dc5179a7b17a93b179d8ca035d84",
     "visium-hd/public-10x-prostate-ffpe.html": "bcbfd42c6c1f74bacc1b97f18928e00a07ba3e601e424a96aeaf2e8148ee4bc2",
     "visium-hd/public-10x-tonsil-3prime.html": "6d21c4b912d6b3a4bfd2eae5ab1be9f538d72830f86a968536b4e80fe1d6a738",
     "visium-hd/tcga-acc-or-a5jp-01z-00-dx1.html": "ce3e2c9fd4d1961ea1fcf4bc170557a535576f7df67b8211419c4ad35418a9a0",
