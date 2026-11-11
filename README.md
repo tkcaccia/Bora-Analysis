@@ -8,6 +8,15 @@ examples in Benchmark 3. The Benchmark 1 validation images were inspected
 during development and do not form an untouched confirmatory test.
 Tissue names on whole slides are provisional.
 
+The [13 public Benchmark 2 whole-slide pages](https://tkcaccia.github.io/Bora-Analysis/visium-hd/)
+show the same H&E frame with KODAMA–Bora, supervised Virchow2–PLS Bora,
+U-Net, DeepLabV3+, MedSAM and VISTA-PATH at full overview and nine matched
+zoom views. The supervised model was fitted on the frozen 397 Benchmark 1
+training images and expert masks. All six displayed overlays use the final
+Bora tissue-group support to handle background consistently; this display
+step does not alter raw predictions. These exploratory views have no
+independent whole-slide expert masks or accuracy ranking.
+
 The [Benchmark 2 full-slide comparator gallery](https://tkcaccia.github.io/Bora-Analysis/visium-hd/comparators/)
 shows 11 verified public-source H&E slides with class-aware
 U-Net, DeepLabV3+, MedSAM and VISTA-PATH outputs. Those predictions cover
