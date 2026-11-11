@@ -1,6 +1,6 @@
 {
   "format": "bora-public-site-v1",
-  "size_bytes": 458459958,
+  "size_bytes": 458457638,
   "file_count": 3633,
   "public_wsi_count": 13,
   "file_sha256": {
@@ -3497,7 +3497,7 @@
     "visium-hd/public-10x-ovarian-3prime.html": "5124ac066adf2d8e5b4f9e9417c460b6ec91a2581e15a0375ae6a4c3ac24e182",
     "visium-hd/public-10x-ovarian-ff.html": "ae2e7ac8ed53ed756c4df13e0216e215373c242472e2b93e8ced37a0eea31cb2",
     "visium-hd/public-10x-pancreatic-cancer-fresh-frozen.html": "4b0ddaf3602ce23619bcf9310b5048c709aad8d6bad45b9dcbc789dec8418975",
-    "visium-hd/public-10x-prostate-ffpe.html": "1a6d78f7019e63a19031323ce434ed3f596a8449c13cfd4943dbb1b76cf56c04",
+    "visium-hd/public-10x-prostate-ffpe.html": "bd3ff54118284e61103a44fc28ff6742ee6c58f98fff495c0a9cc9bae6922cd3",
     "visium-hd/public-10x-tonsil-3prime.html": "5582c8a06cd216437121cf6e59adbd6d23f4c1eb90565af389a168b2a0779e06",
     "visium-hd/supervised-contour-v1/public-10x-brain-cancer-ffpe/field-01-supervised.webp": "cbca97d2dcb93e9cd584a5a756f41a6b468a740617556ffb084c2c00812504a3",
     "visium-hd/supervised-contour-v1/public-10x-brain-cancer-ffpe/field-02-supervised.webp": "63be8897cba220c962d518f9381402b570b1300a2cacfb4454197c9546426116",
@@ -3666,5 +3666,12 @@
   "benchmark1_exact_background_figure_count": 87,
   "benchmark1_exact_background_stage_audit_sha256": "c0268d562e515eb7c4ff591365f3477a622abc869e23a64f940891dacdfb6350",
   "benchmark2_supervised_final_ovarian_page_sha256": "ae2e7ac8ed53ed756c4df13e0216e215373c242472e2b93e8ced37a0eea31cb2",
-  "benchmark2_supervised_final_ovarian_receipt_sha256": "fcf75fffa9fed891ec8d5300fdccca4632106124f0be113e3a35d2d92f5e4487"
+  "benchmark2_supervised_final_ovarian_receipt_sha256": "fcf75fffa9fed891ec8d5300fdccca4632106124f0be113e3a35d2d92f5e4487",
+  "benchmark2_supervised_final_pages": {
+    "public-10x-prostate-ffpe": {
+      "page_sha256": "bd3ff54118284e61103a44fc28ff6742ee6c58f98fff495c0a9cc9bae6922cd3",
+      "final_receipt_sha256": "855800b8bf432841e92423b818c20d248ca1257b4b4929a3f3a09f067099670f",
+      "media_commit": "5edee0afcf12d77552044b02d5e42a3225a7219d"
+    }
+  }
 }
