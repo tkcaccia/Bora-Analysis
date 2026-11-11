@@ -65,7 +65,7 @@ function select(i) {
   const panels = [['Original H&E', 'original'], ['Expert tissue annotation', 'expert'], ['Input tiles: anonymous expert-derived groups', 'tiles'], ['Fixed Virchow2 RGB conversion', 'converted'], ['Bora-AF anonymous tissue groups', 'bora']];
   el('context').innerHTML = panels.map(([label, file]) => `<figure><figcaption>${label}</figcaption><a target="_blank" rel="noopener" href="${c.asset}/${file}.jpg"><img loading="lazy" src="${c.asset}/${file}.jpg" alt="${esc(c.case + ': ' + label)}"></a>${file === 'expert' ? expertKey(c) : ''}</figure>`).join('');
   el('methods').innerHTML = c.models.map(m => `<figure><figcaption>${esc(m.name)}</figcaption><p><small>Final IoU ${m.iou.toFixed(3)} · raw IoU ${m.raw_iou.toFixed(3)}<br>Group accuracy ${pc(m.group_top1)} · ${m.seconds.toFixed(3)} cached s/image<br>Boundary segments ${m.boundary_segments_before.toLocaleString()} → ${m.boundary_segments_after.toLocaleString()}<br>Filled ${m.cleanup.filled_regions} small regions and ${m.cleanup.filled_holes} enclosed holes</small></p><a target="_blank" rel="noopener" href="${m.preview}"><img loading="lazy" src="${m.preview}" alt="${esc(c.case + ': ' + m.name + ' final classified mask')}"></a></figure>`).join('');
-  el('legend').innerHTML = data.roles.map((r, j) => `<span><i class="swatch" style="background:rgb(${data.colours[j + 1]})"></i>${esc(r.replaceAll('_', ' '))}</span>`).join(' ');
+  el('legend').textContent = 'Loading predicted classes…';
   draw().catch(fail);
 }
 async function draw() {
@@ -75,6 +75,14 @@ async function draw() {
   el('vector-info').textContent = 'Loading native ROI polygons…';
   const t = ++token, g = await json(m.vector);
   if (t !== token) return;
+  const predicted = new Map();
+  for (const f of g.features) {
+    const id = f.properties.predicted_tissue_id;
+    predicted.set(id, f.properties.classification.color);
+  }
+  el('legend').innerHTML = [...predicted].sort((a, b) => a[0] - b[0]).map(([id, color]) =>
+    `<span><i class="swatch" style="background:${color}"></i>${esc(data.roles[id - 1].replaceAll('_', ' '))}</span>`
+  ).join(' ') || 'No classified tissue groups in this image.';
   const svg = el('geo');
   svg.replaceChildren();
   const image = document.createElementNS(ns, 'image');

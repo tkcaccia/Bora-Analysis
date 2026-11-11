@@ -23,7 +23,7 @@
   <a href="#public-datasets" aria-current="page"><strong>Training data · Public histology datasets with expert masks</strong><span>Historical controlled test with expert-derived coarse input groups; browse the interactive results below.</span></a>
   <a href="benchmark1-comparators/"><strong>Validation data · 87 images</strong><span>Development evaluation with Bora, expert annotations, U-Net, DeepLabV3+, VISTA-PATH, MedSAM and black-and-white class responses.</span></a>
 </nav>
-<p class="notice"><strong>Interpretation.</strong> The 87 validation images were inspected during method development, so they are not an untouched test. The training-data display below is an older controlled benchmark. The 503-image full-channel rerun is complete. <a href="benchmark1-failures/">Review the 56 images without a scored result in the earlier image-only Bora run</a>.</p>
+<p class="notice"><strong>Interpretation.</strong> The retained full-channel cohort has 397 training images and 87 development validation images. The validation images were inspected during method development, so they are not an untouched test. The display below is an older controlled 116-image benchmark with a historical 28-role palette. Glandular secretions, mucoid material, skin adnexa, and epidermis appear in that palette but are not among the current 24 training targets. <a href="benchmark1-failures/">Review the 56 images without a scored result in the earlier image-only Bora run</a>.</p>
 </section>
 <section id="public-datasets" aria-labelledby="title">
 <h2 id="title">Public histology datasets with expert masks</h2>
@@ -50,7 +50,8 @@
 <div class="context" id="context"></div>
 <h2 id="mask-title">Final classified tissue mask</h2>
 <div class="methods" id="methods"></div>
-<p id="legend" class="legend"></p>
+<p><strong>Classes predicted in this image’s historical classified mask</strong></p>
+<p id="legend" class="legend" aria-live="polite"></p>
 <h2 id="inspect-geojson">Inspect the simplified GeoJSON</h2><!-- BEGIN INSPECTOR LINKS --><!-- END INSPECTOR LINKS -->
 <div id="controls">
   <label>Opacity <input id="opacity" type="range" min="0" max="90" value="40"></label>

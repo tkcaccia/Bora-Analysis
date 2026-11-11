@@ -1,6 +1,6 @@
 {
   "format": "bora-public-site-v1",
-  "size_bytes": 111636203,
+  "size_bytes": 111636852,
   "file_count": 544,
   "public_wsi_count": 13,
   "file_sha256": {
@@ -189,7 +189,7 @@
     "geojson-inspector.css": "32ce52334667c38ff20787166055472ad19cfa150eb8cb0a50341a907b4a3b72",
     "geojson-inspector.js": "77b87fd5139d59b6fa782e184428a03a820116378b50da5fec4d48d65b568adf",
     "geojson-inspectors.json": "a0168c1b66957f71d2acea12f4f6b4b9736006379d1c7a60ed57a77c692e0355",
-    "index.html": "10ccca14d0f8cde47f80054f11961d4220ca2ccb3fac88219bb132c02b64b147",
+    "index.html": "ea92ff00262b6dc9bc1cebab2398921bf402a2349b593e4fca75ff9233e323f0",
     "previews/bcss_05/neighbor-context.jpg": "86756ac578efbcb6a3b4e75505bdb18b35c21cf7315703c3636bb9b0edfebf96",
     "previews/bcss_06/neighbor-context.jpg": "3df0c6574d2977c81bee91c8b808d9fbf377fb6ab91990224acaf5684714894d",
     "previews/bcss_102/neighbor-context.jpg": "c6515302c5908c09cae9fda434d99532bed3f464aee8e917e4bd8e47df3d2375",
@@ -424,7 +424,7 @@
     "vectors/fd09d27906033c1d142b67e3efaa90985d3cdbcffb96cb8ccdc91ba9bf0bfd4a.geojson": "fd09d27906033c1d142b67e3efaa90985d3cdbcffb96cb8ccdc91ba9bf0bfd4a",
     "vectors/ff1c55931d154d5af4f393fc2b78b23775b92905effaedbe93546a446bbab7ee.geojson": "ff1c55931d154d5af4f393fc2b78b23775b92905effaedbe93546a446bbab7ee",
     "viewer.css": "6c53d6dc14758b2355fb2cf64551b0f1763e32384aa9225345b3f91cb6fd084c",
-    "viewer.js": "16ecdbf47e167e6150a6052446657cd704178b0c48fc389955d39c1dcf82ea86",
+    "viewer.js": "2c6e4eb59c4f90d24fcbd32fcc4b049289fc6a32c4ecdd8ec83b88f6a209b735",
     "visium/FULLSECTION_PROVENANCE.json": "29cccc464a37966db2df66b9f4ae192205da11fc176fa2251dc35a4e771a9226",
     "visium/breast.html": "fe1677f46fc173f8d63d70c925791c7368b9fca2440fb96e256bdb9f27cd7958",
     "visium/colorectal.html": "2d5cef3f7d5ade04277937e17d67bd4dd5d0fc849a29aa30deb55954f61285ad",
