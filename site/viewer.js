@@ -54,7 +54,12 @@ function filter(wanted) {
   select(Math.max(0, shown.findIndex(c => c.case === wanted)));
 }
 function expertKey(c) {
-  return '<p>' + c.expert_legend.map(g => `<span><i class="swatch" style="background:${g.role ? 'rgb(' + data.colours[g.role] + ')' : '#eee'}"></i>${esc(g.source_name)}${g.scored ? '' : ' (excluded)'}</span>`).join('<br>') + '</p><small>Unannotated and unmapped pixels do not enter quality scores.</small>';
+  return '<p>' + c.expert_legend.map(g => {
+    const mapped = g.role ? data.roles[g.role - 1].replaceAll('_', ' ') : null;
+    const source = g.source_name.replaceAll('_', ' ');
+    const label = esc(source) + (mapped && source.toLowerCase() !== mapped.toLowerCase() ? ` → ${esc(mapped)}` : '');
+    return `<span><i class="swatch" style="background:${g.role ? 'rgb(' + data.colours[g.role] + ')' : '#eee'}"></i>${label}${g.scored ? '' : ' (excluded)'}</span>`;
+  }).join('<br>') + '</p><small>Arrows show how original expert labels map to the broad comparison classes. Unannotated and unmapped pixels do not enter quality scores.</small>';
 }
 function select(i) {
   idx = i;

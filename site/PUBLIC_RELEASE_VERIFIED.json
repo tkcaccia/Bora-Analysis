@@ -1,6 +1,6 @@
 {
   "format": "bora-public-site-v1",
-  "size_bytes": 111636852,
+  "size_bytes": 111637188,
   "file_count": 544,
   "public_wsi_count": 13,
   "file_sha256": {
@@ -424,7 +424,7 @@
     "vectors/fd09d27906033c1d142b67e3efaa90985d3cdbcffb96cb8ccdc91ba9bf0bfd4a.geojson": "fd09d27906033c1d142b67e3efaa90985d3cdbcffb96cb8ccdc91ba9bf0bfd4a",
     "vectors/ff1c55931d154d5af4f393fc2b78b23775b92905effaedbe93546a446bbab7ee.geojson": "ff1c55931d154d5af4f393fc2b78b23775b92905effaedbe93546a446bbab7ee",
     "viewer.css": "6c53d6dc14758b2355fb2cf64551b0f1763e32384aa9225345b3f91cb6fd084c",
-    "viewer.js": "2c6e4eb59c4f90d24fcbd32fcc4b049289fc6a32c4ecdd8ec83b88f6a209b735",
+    "viewer.js": "0c8f60404a9d39f62108ec1121e613e0d458afbaa2d9d49e07172301a8392f06",
     "visium/FULLSECTION_PROVENANCE.json": "29cccc464a37966db2df66b9f4ae192205da11fc176fa2251dc35a4e771a9226",
     "visium/breast.html": "fe1677f46fc173f8d63d70c925791c7368b9fca2440fb96e256bdb9f27cd7958",
     "visium/colorectal.html": "2d5cef3f7d5ade04277937e17d67bd4dd5d0fc849a29aa30deb55954f61285ad",
