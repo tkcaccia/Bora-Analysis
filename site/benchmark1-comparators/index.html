@@ -97,13 +97,14 @@
 <article><strong>Supervised Virchow2</strong>Class-specific feature selection and fitting used the 397 training images and expert masks. The resulting 24-class mask is shown over H&amp;E; it is separate from U-Net.</article>
 </div>
 <a href="#" id="full-image"><img alt="Eight aligned image panels" id="case-image"/></a>
-<p class="small">Select the figure to open it at full size. The class-colored panels, including the supervised Virchow2 overlay, share one tissue-class color key; the figure legend lists every mapped class found in the expert annotation or any displayed method output for this case. Some entries are predictions without an expert annotation for that class. Uncolored regions in a model panel may be unmatched classes or absent predictions.</p>
+<p class="small">Select the figure to open it at full size. The class-colored panels, including the supervised Virchow2 overlay, share one tissue-class color key. The figure legend covers classes in this case's original expert annotation and method outputs; support clipping can hide a class found only on background. Model colors are clipped by one H&amp;E-only tissue support; the expert panel remains the original source annotation. Uncolored model regions may also be unmatched classes or absent predictions.</p>
+<p class="notice" id="background-audit"></p>
 <div class="meta" id="scores"></div>
-<p class="small">Scores are image-level mean intersection over union on the explicitly named expert-present or mapped roles. The supervised Virchow2 score uses the displayed mask resized with nearest-neighbor interpolation to the calibrated expert frame; it is a development score, not an untouched test. A missing score means the corresponding comparison was not defined for that image.</p>
+<p class="small">Scores are image-level mean intersection over union on the explicitly named expert-present or mapped roles. The supervised Virchow2 score uses the original unmasked display-resolution prediction resized with nearest-neighbor interpolation to the calibrated expert frame; it is a development score, not an untouched test. A missing score means the corresponding comparison was not defined for that image.</p>
 <p class="small">Download the <a href="per-case-87.csv">87-image score table</a> or <a href="supervised-virchow2-scores-87.json">supervised Virchow2 per-class scores</a>. The former 24-class aggregate table was withdrawn because it included removed cases.</p>
 <div id="combined-response-mask">
 <h3 id="combined-response-heading">Supervised Virchow2 tissue-class overlay · lower right</h3>
-<p>The lower-right panel combines 24 <strong>supervised Virchow2 feature responses</strong>. For each tissue class, 32 of the full 1,280 feature channels were selected using only the 397 training images and expert masks, and a regularized linear classifier was fitted on those channels. The 87 validation feature grids were projected through the frozen classifiers. Each pixel takes its strongest class response, and the mask is blended with the original H&amp;E in the lower-right panel. The U-Net panel is a separate H&amp;E-based method, not the source of this mask. Both panels use the same class-to-color key. The display mask has no background class and can assign a class on glass. <a href="#" id="combined-response-full">Open this mask alone</a>.</p>
+<p>The lower-right panel combines 24 <strong>supervised Virchow2 feature responses</strong>. For each tissue class, 32 of the full 1,280 feature channels were selected using only the 397 training images and expert masks, and a regularized linear classifier was fitted on those channels. The 87 validation feature grids were projected through the frozen classifiers. Each pixel takes its strongest class response, and the mask is blended with the original H&amp;E in the lower-right panel. The U-Net panel is a separate H&amp;E-based method, not the source of this mask. Both panels use the same class-to-color key. The original argmax mask has no background class. The displayed comparison and linked supported mask suppress class colors where the common H&amp;E support identifies glass or large white spaces. This display postprocessing does not change the original scores or expert labels. <a href="#" id="combined-response-full">Open this mask alone</a>.</p>
 <p class="small">The combined mask and U-Net are distinct fitted methods. The response maps are exploratory class responses, not expert annotations; the combined mask's score is reported above. Classes with fewer than 10 supporting training images require particular caution.</p>
 </div>
 </section>
@@ -171,7 +172,7 @@
 </section>
 <section aria-labelledby="response-heading" id="class-responses">
 <h2 id="response-heading">Black-and-white response maps for every tissue classification</h2>
-<p>For this image, each of the 24 black-and-white maps shows the response of a training-fitted classifier using only its 32 selected Virchow2 channels. Selection and fitting used the 397 training images and expert masks; validation expert masks and U-Net outputs were not used. Black is low and white is high on a shared 0–1 response scale. These values are not calibrated probabilities or accuracy scores. The feature grids were smoothed and interpolated to avoid visible token seams. Display copies are at most 640 pixels on the long edge. <a href="supervised-virchow2-feature-selection.json">View selected channels and training support for every class</a>.</p>
+<p>For this image, each of the 24 black-and-white maps shows the response of a training-fitted classifier using only its 32 selected Virchow2 channels. Selection and fitting used the 397 training images and expert masks; validation expert masks and U-Net outputs were not used. Black is low and white is high on a shared 0–1 response scale. These values are not calibrated probabilities or accuracy scores. The feature grids were smoothed and interpolated to avoid visible token seams. The displayed maps are clipped to the same H&amp;E tissue support; linked original files remain unmasked. Display copies are at most 640 pixels on the long edge. <a href="supervised-virchow2-feature-selection.json">View selected channels and training support for every class</a>.</p>
 <div aria-live="polite" class="response-grid" id="response-grid"></div>
 </section>
 <section aria-labelledby="pipeline-heading">
@@ -187,6 +188,6 @@
 </section>
 </main>
 <footer><a href="../attribution.html">Attribution and reuse terms</a></footer>
-<script defer="" src="gallery.js?v=all-method-legends-v1"></script>
+<script defer="" src="gallery.js?v=shared-he-background-v1"></script>
 </body>
 </html>

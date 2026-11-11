@@ -18,9 +18,9 @@
       "case": "bcss__datasets_bcss_pairs_TCGA-A2-A04P-DX1_xmin104246_ymin48517_MPP-0.2500.png__5173568b64",
       "dataset": "bcss",
       "source_group": "TCGA-A2-A04P",
-      "image": "all-method-legends-v1/case-001.webp",
-      "image_sha256": "5478a1ee6beba889c2b5003c1e792bdaa4a8846c04d8c697ad0a1192629810ae",
-      "preview_bytes": 407182,
+      "image": "shared-he-background-v1/case-001.webp",
+      "image_sha256": "fef037b50f842c63d96ebdc5c445b6e25d6eb91753633d66093b3c34d865fe8f",
+      "preview_bytes": 406120,
       "source_sha256": {
         "he": "b99739bd369bf3b7dd4eb5a593c583cf3d0796513e6772fc162632c0583c067b",
         "expert": "f64fed1cdce03dcf05bee002ec8999599869c88ef82cb10d725ffc4113af18bc",
@@ -329,6 +329,39 @@
         "selected_macro_dice": 0.43973890219319306,
         "selected_pixel_accuracy": 0.632815693127577,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-001.png",
+        "sha256": "340ef8fcfd98e17780705029c66b8005ea71eafc3db04ab10a67b7c8e3e23967",
+        "shape_yx": [
+          1460,
+          1897
+        ],
+        "excluded_pixels": 1765,
+        "tissue_pixels": 2767855,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1114147,
+          "stroma": 1073099,
+          "lymphocytic_infiltrate": 283650,
+          "necrosis": 288801,
+          "normal_glandular_epithelium": 1785,
+          "blood_vessel": 8138
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 262,
+          "stroma": 632,
+          "lymphocytic_infiltrate": 16,
+          "necrosis": 846,
+          "normal_glandular_epithelium": 9,
+          "blood_vessel": 0
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-001.png",
+        "sha256": "56de2fa61024440fd3f50ac11ed049b2e9b7ac220aa956b5042e567d9baf4fca",
+        "raw_source_sha256": "e7257cd3e770e8ed39db7e507732d948ce7d3d74e900d07cd779bc6cf3ba95d3"
       }
     },
     {
@@ -336,9 +369,9 @@
       "case": "bcss__datasets_bcss_pairs_TCGA-A2-A0D2-DX1_xmin96887_ymin22299_MPP-0.2500.png__7755708e58",
       "dataset": "bcss",
       "source_group": "TCGA-A2-A0D2",
-      "image": "all-method-legends-v1/case-002.webp",
-      "image_sha256": "038c7d92e168385a52c778c6305b7ccc3d1d8f834036c192e4ab2bc2852579e5",
-      "preview_bytes": 303248,
+      "image": "shared-he-background-v1/case-002.webp",
+      "image_sha256": "c836afda5852306fa2025131a521064a9155a1ecac67fee24643223adbe1fc49",
+      "preview_bytes": 302816,
       "source_sha256": {
         "he": "3233311ef9e86bbdf43c6bfa9d3a4e97b8b4b6e490a72ce95604a47ebf079dac",
         "expert": "7da1b51a2ff4dce56ac2b97cacabe2ab6902db3f00c74b04d530728d553f1f36",
@@ -595,6 +628,33 @@
         "selected_macro_dice": 0.79625569001854,
         "selected_pixel_accuracy": 0.8055769915562211,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-002.png",
+        "sha256": "7d42427d203d61bb886fda54867e6dc6e94e9b42154782e467f73eca0e45319f",
+        "shape_yx": [
+          1209,
+          1696
+        ],
+        "excluded_pixels": 397,
+        "tissue_pixels": 2050067,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1023390,
+          "stroma": 591595,
+          "necrosis": 435045
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 236,
+          "stroma": 94,
+          "necrosis": 67
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-002.png",
+        "sha256": "d7c2b3892675b84b2dbc9e31a968e322d3355d41db607689e0394a286e5e8323",
+        "raw_source_sha256": "443a9cc0d1466fa2d42ebda68c7afb57ae23d1e62766b8115fb56f7a9230d16b"
       }
     },
     {
@@ -602,9 +662,9 @@
       "case": "bcss__datasets_bcss_pairs_TCGA-A2-A0ST-DX1_xmin109446_ymin18274_MPP-0.2500.png__2ea720c2e5",
       "dataset": "bcss",
       "source_group": "TCGA-A2-A0ST",
-      "image": "all-method-legends-v1/case-003.webp",
-      "image_sha256": "11c6bdd286f21bffb5586a139f586296db324a417368b4ec028f80212ae67036",
-      "preview_bytes": 358142,
+      "image": "shared-he-background-v1/case-003.webp",
+      "image_sha256": "e7204e0d61e501a5e451c12a1f0f6c3d80b32b42ca3ad92723f922ce6568f6e2",
+      "preview_bytes": 357684,
       "source_sha256": {
         "he": "6a07dcf1d6070d65673b50a43e97be429924ca57ebf2a6bf6ccdf989eaa43552",
         "expert": "37994df9c21e6d760467e3f4b1cb58ac7c092831cc0cccee6f637ebf66867bbc",
@@ -971,6 +1031,35 @@
         "selected_macro_dice": 0.45629628744449924,
         "selected_pixel_accuracy": 0.43086717518954276,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-003.png",
+        "sha256": "d9b7a64399bfd8340b4a78ac199aacbb92a3a8b70fa0d3c20e4ae96659d0ca9b",
+        "shape_yx": [
+          2313,
+          2699
+        ],
+        "excluded_pixels": 4716,
+        "tissue_pixels": 6238071,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1908447,
+          "stroma": 2317839,
+          "lymphocytic_infiltrate": 1983689,
+          "blood_vessel": 32812
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 3,
+          "stroma": 4525,
+          "lymphocytic_infiltrate": 188,
+          "blood_vessel": 0
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-003.png",
+        "sha256": "7bcc0d5630232956455dcc46ec19df05a24bbc852705377039b9db6f639c99ac",
+        "raw_source_sha256": "e0d1ef0f4ab492c2af08056b49ed1ff761f6c67fc2fb5b814d0fb1f1b0b0b3eb"
       }
     },
     {
@@ -978,9 +1067,9 @@
       "case": "bcss__datasets_bcss_pairs_TCGA-AO-A0J2-DX1_xmin33561_ymin14515_MPP-0.2500.png__f774cd9ac0",
       "dataset": "bcss",
       "source_group": "TCGA-AO-A0J2",
-      "image": "all-method-legends-v1/case-004.webp",
-      "image_sha256": "427fc4f673f0f882f7c32471d45ff6a216187374822d511ee159c80d5b7a5b82",
-      "preview_bytes": 352694,
+      "image": "shared-he-background-v1/case-004.webp",
+      "image_sha256": "211d44e6658c3a24b370d88c9af2b93b90579c67bbe1d2c55221050bab293681",
+      "preview_bytes": 387348,
       "source_sha256": {
         "he": "9c8c4febceaa24500b380ff3831443b24cd0a99878e322715f2ee1b40fbefbf5",
         "expert": "c3e978b6698ec21829f92bbc70f84278e9add224478bf5ad69844f6c4fafa818",
@@ -1262,6 +1351,31 @@
         "selected_macro_dice": 0.8948208027053437,
         "selected_pixel_accuracy": 0.8867195768223225,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-004.png",
+        "sha256": "da55723231b99593617fdd6d08cb0e7c6e3a0660be177ff29cf72591e735b98a",
+        "shape_yx": [
+          1406,
+          2047
+        ],
+        "excluded_pixels": 395772,
+        "tissue_pixels": 2482310,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1367991,
+          "stroma": 1206814
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 47790,
+          "stroma": 76041
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-004.png",
+        "sha256": "cc8a983e2574e9797ba49b93efc8b97afae323d27120ff97ca833a091d58c070",
+        "raw_source_sha256": "83db872f4a58b9ff0d9573d6a91e18604b54efcef49f6100685f2b5653d7a4dd"
       }
     },
     {
@@ -1269,9 +1383,9 @@
       "case": "bcss__datasets_bcss_pairs_TCGA-AR-A1AY-DX1_xmin62652_ymin27061_MPP-0.2500.png__48ae1efb56",
       "dataset": "bcss",
       "source_group": "TCGA-AR-A1AY",
-      "image": "all-method-legends-v1/case-005.webp",
-      "image_sha256": "cd3d733a964c9a5abd654dbd4798b81d9c3867fa3f9da800706e7836c4f1fb6c",
-      "preview_bytes": 344678,
+      "image": "shared-he-background-v1/case-005.webp",
+      "image_sha256": "8a0ffcfef88385e912c778b34d83cb0536ddd5d7a78fde83f69701645777eca5",
+      "preview_bytes": 346354,
       "source_sha256": {
         "he": "1853397d711b9c3d94dd1be6f906a5aeef1db54f1a9ddc1e4dd29ad16578fec2",
         "expert": "04204f783fb60196121ebfd7e88ab79eea48e914691b3eeb8bcad98fff70ca0b",
@@ -1542,6 +1656,33 @@
         "selected_macro_dice": 0.8564135598772474,
         "selected_pixel_accuracy": 0.8670726701368408,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-005.png",
+        "sha256": "e5e306cc92031cc6599ac572205fd11f9ba98aa29b4a89742a14b77e00fb99d6",
+        "shape_yx": [
+          903,
+          1312
+        ],
+        "excluded_pixels": 12425,
+        "tissue_pixels": 1172311,
+        "expert_scored_pixels_by_class": {
+          "tumor": 607985,
+          "stroma": 426408,
+          "necrosis": 125203
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 515,
+          "stroma": 449,
+          "necrosis": 698
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-005.png",
+        "sha256": "cfc47c2c4b0e83c120b7928b10a301f32634edc20ffb5f83ec75ef98bdfc20d7",
+        "raw_source_sha256": "fca04583fd0ad3520a27927ab44a8965be6be5d3174764c03e88360d47c5dd75"
       }
     },
     {
@@ -1549,9 +1690,9 @@
       "case": "bcss__datasets_bcss_pairs_TCGA-C8-A1HJ-DX1_xmin46412_ymin17174_MPP-0.2500.png__9856d0cb59",
       "dataset": "bcss",
       "source_group": "TCGA-C8-A1HJ",
-      "image": "all-method-legends-v1/case-006.webp",
-      "image_sha256": "819def06157c5139dfaf7f216bb1b2d96f4d302797af64ea389a8432c348b80f",
-      "preview_bytes": 406798,
+      "image": "shared-he-background-v1/case-006.webp",
+      "image_sha256": "6f89b311d7e774448fa121e40b13249391077e8687b0d1e46fe1b43aaef41ef5",
+      "preview_bytes": 408542,
       "source_sha256": {
         "he": "0fadab2a9420ad7f53ea6e1fa405d3e24bddf59d4a04662aaa3761cb74598aae",
         "expert": "1f186da391937e6984b1c8afab510f7998399acd9fd22ca09ae27c9541a5af8e",
@@ -1902,6 +2043,39 @@
         "selected_macro_dice": 0.4845365221184557,
         "selected_pixel_accuracy": 0.6301826016101917,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-006.png",
+        "sha256": "77fc60ad90cd388c99a1eaaba92c24a07fae24d5f03458a24a3e39427ea2f2d5",
+        "shape_yx": [
+          1427,
+          2219
+        ],
+        "excluded_pixels": 21775,
+        "tissue_pixels": 3144738,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1236991,
+          "stroma": 565701,
+          "lymphocytic_infiltrate": 656787,
+          "necrosis": 643344,
+          "blood": 7372,
+          "blood_vessel": 34027
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 1264,
+          "stroma": 14765,
+          "lymphocytic_infiltrate": 1544,
+          "necrosis": 935,
+          "blood": 57,
+          "blood_vessel": 0
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-006.png",
+        "sha256": "f884ae4a14d3c580f20c6102fc37481c3c27cf32fa992bf64efecb4878ccd91d",
+        "raw_source_sha256": "4d85727836b46798fd8e4036b089adfc0f7daa8fe1bfcdff19d97f78aa01e741"
       }
     },
     {
@@ -1909,9 +2083,9 @@
       "case": "bcss__datasets_bcss_pairs_TCGA-E2-A14X-DX1_xmin88836_ymin66393_MPP-0.2500.png__021d87e7e7",
       "dataset": "bcss",
       "source_group": "TCGA-E2-A14X",
-      "image": "all-method-legends-v1/case-007.webp",
-      "image_sha256": "7eba934bdfb29e9a980f54806be6f358f76bef7c55cfed3689d1605635f7a452",
-      "preview_bytes": 241570,
+      "image": "shared-he-background-v1/case-007.webp",
+      "image_sha256": "e68957bd3045c25d0ac695228e3f2f5cf9e4d9332de8cc4cf6779b365afec3b2",
+      "preview_bytes": 243478,
       "source_sha256": {
         "he": "71eaa1c30dfda214d7488ba951902e78bf36266ed78a6af31b6c733821a2e3f2",
         "expert": "a69ecb81d165e03868a51192e96bf64316333fde9c253326402b1f60fda95703",
@@ -2271,6 +2445,43 @@
         "selected_macro_dice": 0.6586601896197265,
         "selected_pixel_accuracy": 0.7571713729560041,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-007.png",
+        "sha256": "d9e4c935596bbbdbf6281395f3303c542edcb8bd19322ba1db0ca32b661cd068",
+        "shape_yx": [
+          2370,
+          2051
+        ],
+        "excluded_pixels": 136517,
+        "tissue_pixels": 4724353,
+        "expert_scored_pixels_by_class": {
+          "tumor": 2086503,
+          "stroma": 1414514,
+          "lymphocytic_infiltrate": 728882,
+          "necrosis": 314174,
+          "blood": 94994,
+          "adipose": 171653,
+          "nerve": 5640,
+          "blood_vessel": 31205
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 58,
+          "stroma": 267,
+          "lymphocytic_infiltrate": 230,
+          "necrosis": 0,
+          "blood": 0,
+          "adipose": 135941,
+          "nerve": 0,
+          "blood_vessel": 0
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-007.png",
+        "sha256": "40cb67727fbf8ba16f339c4d5cc9ddc0614c9583dacb7edfdcfe9694d44e6f64",
+        "raw_source_sha256": "1c47774e5858d802a4ecebae059a5112e2494fa435aa97c20d201c09a757882a"
       }
     },
     {
@@ -2278,9 +2489,9 @@
       "case": "bcss__datasets_bcss_pairs_TCGA-E2-A1B6-DX1_xmin16266_ymin50634_MPP-0.2500.png__f74c2ce8d2",
       "dataset": "bcss",
       "source_group": "TCGA-E2-A1B6",
-      "image": "all-method-legends-v1/case-008.webp",
-      "image_sha256": "fa681c88bfd10c036ee6f13ce514577f417243238b80601138d94ca20301cdd6",
-      "preview_bytes": 287976,
+      "image": "shared-he-background-v1/case-008.webp",
+      "image_sha256": "b760b2287867e7eee7f8a5fa2b22911dd9b62882eeb2ece7f76d5089f91a756e",
+      "preview_bytes": 289060,
       "source_sha256": {
         "he": "1aae54e5c33f0888eb305ee8c89f4df42b900550cd9332d81a7e8ea386c72e29",
         "expert": "92e82391236f5819eb850ca6df34d1133a03e063a4da0f84601ba7b0b7cf93ae",
@@ -2612,6 +2823,43 @@
         "selected_macro_dice": 0.635650699907156,
         "selected_pixel_accuracy": 0.732723929807734,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-008.png",
+        "sha256": "156160b419f2edc5dae98a6f05102c6ddc53906252af773ee646c9e735345f96",
+        "shape_yx": [
+          2575,
+          2524
+        ],
+        "excluded_pixels": 33287,
+        "tissue_pixels": 6466013,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1580009,
+          "stroma": 736108,
+          "lymphocytic_infiltrate": 539427,
+          "necrosis": 262172,
+          "glandular_secretions": 360,
+          "adipose": 3095,
+          "normal_glandular_epithelium": 9879,
+          "blood_vessel": 5382
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 0,
+          "stroma": 6,
+          "lymphocytic_infiltrate": 21,
+          "necrosis": 0,
+          "glandular_secretions": 0,
+          "adipose": 1599,
+          "normal_glandular_epithelium": 0,
+          "blood_vessel": 0
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-008.png",
+        "sha256": "dfd3449fa01c4ca55f52daddcdc1823720c71f938e175e962b30a2a9e1ac45c7",
+        "raw_source_sha256": "f3fdaece7f9202b5b9b96572e7ee9eb44d1446e46eb33cb0db5713dbfe5e6f30"
       }
     },
     {
@@ -2619,9 +2867,9 @@
       "case": "bcss__datasets_bcss_pairs_TCGA-E2-A1LI-DX1_xmin44715_ymin18434_MPP-0.2500.png__00f7ef02a6",
       "dataset": "bcss",
       "source_group": "TCGA-E2-A1LI",
-      "image": "all-method-legends-v1/case-009.webp",
-      "image_sha256": "09af7e94a9eee67ffa3e90aed4f6078ddbab37a0330a5fbc3a8a886db5bd02ea",
-      "preview_bytes": 309148,
+      "image": "shared-he-background-v1/case-009.webp",
+      "image_sha256": "73f022a908ceaae86d509426c504a1eb78654d44b1c36c08217aa2884252db7b",
+      "preview_bytes": 314388,
       "source_sha256": {
         "he": "8608d1832361f58a5e72cbdc241b20aa16159be63d48aea5a9c1c485381a9e39",
         "expert": "1eddc2e82d363ca300a27aaaa0c69f926ceb281d1cdf1aadfa26a93977b0e39d",
@@ -3028,6 +3276,45 @@
         "selected_macro_dice": 0.39813428051322003,
         "selected_pixel_accuracy": 0.6362299981040542,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-009.png",
+        "sha256": "0ad15f079a2972b2317675cec5ca21996634587c34e1e7772f0e32f047fd24a4",
+        "shape_yx": [
+          2708,
+          3162
+        ],
+        "excluded_pixels": 477269,
+        "tissue_pixels": 8085427,
+        "expert_scored_pixels_by_class": {
+          "tumor": 2133977,
+          "stroma": 1897069,
+          "lymphocytic_infiltrate": 568363,
+          "necrosis": 935444,
+          "adipose": 255342,
+          "plasma_cells": 178008,
+          "other_immune_infiltrate": 3120,
+          "lymphatic_vessel": 1925,
+          "blood_vessel": 60680
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 2673,
+          "stroma": 10553,
+          "lymphocytic_infiltrate": 0,
+          "necrosis": 67135,
+          "adipose": 234156,
+          "plasma_cells": 0,
+          "other_immune_infiltrate": 0,
+          "lymphatic_vessel": 0,
+          "blood_vessel": 0
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-009.png",
+        "sha256": "818ca8218f54ca64841015c7d04358d3841e36c41c7ccae06c19b036d31b0b10",
+        "raw_source_sha256": "9e3e651b0bb0a2a12036266b3971c74e484a546d08cc890732434c79df7b1cd8"
       }
     },
     {
@@ -3035,9 +3322,9 @@
       "case": "bcss__datasets_bcss_pairs_TCGA-EW-A1P1-DX1_xmin50567_ymin38988_MPP-0.2500.png__ca57475c8e",
       "dataset": "bcss",
       "source_group": "TCGA-EW-A1P1",
-      "image": "all-method-legends-v1/case-010.webp",
-      "image_sha256": "a2a587d88f16d19d5fe88e8cd36f18a96fa521d89570c58ffe1499229399ba48",
-      "preview_bytes": 305732,
+      "image": "shared-he-background-v1/case-010.webp",
+      "image_sha256": "7c6645799a03458c7862d82319caf3a59e9256de2a24813d01f9ef976e2de957",
+      "preview_bytes": 306440,
       "source_sha256": {
         "he": "faaf0b5e7864a92b3cd196d63dbac79d17731d25fa2d3a0ac3434b48ca2a4b89",
         "expert": "72f344d86dacbfc78f6167723dda98dc61d7a488638729314d8cbcbdca2baf80",
@@ -3379,6 +3666,41 @@
         "selected_macro_dice": 0.4754178247129861,
         "selected_pixel_accuracy": 0.7063298091852024,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-010.png",
+        "sha256": "85075db513b6e766fa21b3867076d6ca1f40f224815a3a4b6f0c3681da5f62f1",
+        "shape_yx": [
+          1954,
+          2184
+        ],
+        "excluded_pixels": 28823,
+        "tissue_pixels": 4238713,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1154981,
+          "stroma": 2225868,
+          "lymphocytic_infiltrate": 428231,
+          "necrosis": 145500,
+          "blood": 86262,
+          "normal_glandular_epithelium": 2554,
+          "blood_vessel": 12998
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 357,
+          "stroma": 28,
+          "lymphocytic_infiltrate": 0,
+          "necrosis": 0,
+          "blood": 0,
+          "normal_glandular_epithelium": 0,
+          "blood_vessel": 0
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-010.png",
+        "sha256": "a3f01ebbb6e1d3fd68edd4973748d4b701c8d10e656032b242bdb6898a963cc8",
+        "raw_source_sha256": "685577fe50fdd8b25a0abdaaf451b6c8737eaed14fdc89a010fff04167e1ab70"
       }
     },
     {
@@ -3386,9 +3708,9 @@
       "case": "bcss__datasets_bcss_pairs_TCGA-EW-A1P8-DX1_xmin15520_ymin26381_MPP-0.2500.png__34f59148d1",
       "dataset": "bcss",
       "source_group": "TCGA-EW-A1P8",
-      "image": "all-method-legends-v1/case-011.webp",
-      "image_sha256": "d9c916f32ba3c0a5479f1384b4939c47f660bd1348b43c9328c9a6285c2433ef",
-      "preview_bytes": 287388,
+      "image": "shared-he-background-v1/case-011.webp",
+      "image_sha256": "b4af3714e20274d1fc06418c8d1c870e4ef71a4d7c1f5d4ac623ebab17fe7b97",
+      "preview_bytes": 291628,
       "source_sha256": {
         "he": "9b340f63f395a25b9c74ae903b59fdf9c9b11d94d48af30c361f16730e7cc6c2",
         "expert": "10ec4693ca7aee95e037cc599c4dae5c91f6a777ec3fcf24cfb1109e111ba7cb",
@@ -3672,6 +3994,37 @@
         "selected_macro_dice": 0.6415634545663396,
         "selected_pixel_accuracy": 0.7322459986719032,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-011.png",
+        "sha256": "ca68725e84f6d0a358b7f71385ffa6aa10491892e257ebab2a6e962fad9af35c",
+        "shape_yx": [
+          1961,
+          1914
+        ],
+        "excluded_pixels": 149915,
+        "tissue_pixels": 3603439,
+        "expert_scored_pixels_by_class": {
+          "tumor": 895052,
+          "stroma": 364652,
+          "lymphocytic_infiltrate": 164740,
+          "necrosis": 286611,
+          "adipose": 64418
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 0,
+          "stroma": 804,
+          "lymphocytic_infiltrate": 278,
+          "necrosis": 8,
+          "adipose": 27444
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-011.png",
+        "sha256": "582dcc142a0cc79add264d804b0b7445c32e9f1117064207ce6528acb0127ad2",
+        "raw_source_sha256": "4467154b3b00ea73838d84a676bfc914314678aca6dcafdf8bebe7b07a91c453"
       }
     },
     {
@@ -3679,9 +4032,9 @@
       "case": "bcss__datasets_bcss_pairs_TCGA-EW-A6SB-DX1_xmin34625_ymin56578_MPP-0.2500.png__3ecad800be",
       "dataset": "bcss",
       "source_group": "TCGA-EW-A6SB",
-      "image": "all-method-legends-v1/case-012.webp",
-      "image_sha256": "a1bf33f19a9c263e29d04cdedb3a3a7189fc3be086914a7687feac5d5119306f",
-      "preview_bytes": 252334,
+      "image": "shared-he-background-v1/case-012.webp",
+      "image_sha256": "9ad027d0295225219defdbbdf5f8e6ab039981b76fac48b6804fe47495f1b770",
+      "preview_bytes": 255306,
       "source_sha256": {
         "he": "83ba7b26281c4ba7cc8c15970051f29fbc3629d6da7ca43606c5f770648c2076",
         "expert": "7e8ba823c98eae0124f61bed9c306238cd30585d95cacb1282cea45e4b08c88f",
@@ -4071,6 +4424,43 @@
         "selected_macro_dice": 0.5346807155620826,
         "selected_pixel_accuracy": 0.6976737148957255,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-012.png",
+        "sha256": "3aa94755fa767d184d1523876460d78f821e086a52d01e782924a180185151d4",
+        "shape_yx": [
+          2821,
+          2476
+        ],
+        "excluded_pixels": 305219,
+        "tissue_pixels": 6679577,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1441586,
+          "stroma": 956237,
+          "blood": 1560,
+          "adipose": 11380,
+          "plasma_cells": 1005881,
+          "normal_glandular_epithelium": 10539,
+          "lymphatic_vessel": 6367,
+          "blood_vessel": 3389
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 0,
+          "stroma": 1967,
+          "blood": 0,
+          "adipose": 8045,
+          "plasma_cells": 71,
+          "normal_glandular_epithelium": 0,
+          "lymphatic_vessel": 0,
+          "blood_vessel": 0
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-012.png",
+        "sha256": "e78b8322a2b65fcca852be5b9e25a749b51e1af2342a1166398397b16961f22a",
+        "raw_source_sha256": "4662c7c796e81812595f693ea2887f898ace99ca4a57ad0f0e42ef684bbfba41"
       }
     },
     {
@@ -4078,9 +4468,9 @@
       "case": "bcss__datasets_bcss_pairs_TCGA-GM-A2DH-DX1_xmin50963_ymin56303_MPP-0.2500.png__09b319b6c5",
       "dataset": "bcss",
       "source_group": "TCGA-GM-A2DH",
-      "image": "all-method-legends-v1/case-013.webp",
-      "image_sha256": "ab2e21f971976e4d1590be8910130cbf53b2f053bd48e662094ecd026b51825e",
-      "preview_bytes": 463874,
+      "image": "shared-he-background-v1/case-013.webp",
+      "image_sha256": "481a6ec597ed930fcbae3f7931b9326bdfb2b0ee0843bb69b2e18d0f4faa5bd2",
+      "preview_bytes": 467750,
       "source_sha256": {
         "he": "85cc819876aa7ec43f668f8d2bee96cd095854a3f6515a800bd376072a7d4396",
         "expert": "1fc0fb335b98cdd5688f5c8f25a6f776af820ed5e4e23d9615efd76dcfc353fb",
@@ -4401,6 +4791,37 @@
         "selected_macro_dice": 0.45062356856994334,
         "selected_pixel_accuracy": 0.7140165665567284,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-013.png",
+        "sha256": "c4e504f8827529ccd18e4b7cbe7af1aa1a7a7d304db5bf15b4a1172fb737bb95",
+        "shape_yx": [
+          1778,
+          2319
+        ],
+        "excluded_pixels": 92420,
+        "tissue_pixels": 4030762,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1172329,
+          "stroma": 524664,
+          "lymphocytic_infiltrate": 149429,
+          "necrosis": 217286,
+          "blood_vessel": 6849
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 939,
+          "stroma": 53,
+          "lymphocytic_infiltrate": 0,
+          "necrosis": 15589,
+          "blood_vessel": 0
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-013.png",
+        "sha256": "3feb64c6a9da6a1a49bce8a19561fcd3f7bce9528ac3360fbc52ff591a86ad77",
+        "raw_source_sha256": "a1b9d02cd6f98f314acc34ed0add4c1e200163feabe6ae8689cd34e26f5d7eab"
       }
     },
     {
@@ -4408,9 +4829,9 @@
       "case": "bcss__datasets_bcss_pairs_TCGA-LL-A740-DX1_xmin39436_ymin24080_MPP-0.2500.png__98186249a0",
       "dataset": "bcss",
       "source_group": "TCGA-LL-A740",
-      "image": "all-method-legends-v1/case-014.webp",
-      "image_sha256": "d56412443d793f84675063be4f19aef3fb93fbc1d575c519b7916ca409b120b2",
-      "preview_bytes": 283628,
+      "image": "shared-he-background-v1/case-014.webp",
+      "image_sha256": "ddaed4c4ec8d6e4f74e1e6f440caf3d91cd52ecb2bacc6c3910f2f251813c731",
+      "preview_bytes": 285052,
       "source_sha256": {
         "he": "55b005c7173bf389f1d534044548345bfb198dbc46481a196281a174174a28f6",
         "expert": "6788ed8936e195030923f0f8a501f492957b98fd2cbfffba16790ac2bd773402",
@@ -4707,6 +5128,35 @@
         "selected_macro_dice": 0.6700535880497415,
         "selected_pixel_accuracy": 0.5837182406190821,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-014.png",
+        "sha256": "bf868e2f3762aea719f6049004e03af46b39e582b604f01770eca5c13ac50203",
+        "shape_yx": [
+          1409,
+          1413
+        ],
+        "excluded_pixels": 21142,
+        "tissue_pixels": 1969775,
+        "expert_scored_pixels_by_class": {
+          "tumor": 371541,
+          "stroma": 1420202,
+          "lymphocytic_infiltrate": 119083,
+          "blood_vessel": 20808
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 248,
+          "stroma": 2511,
+          "lymphocytic_infiltrate": 15,
+          "blood_vessel": 0
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-014.png",
+        "sha256": "019dea8b216f0215599df31488a739c56658b9ef194782048215e944918e227a",
+        "raw_source_sha256": "a9f33db3a504c9b798a78db51704a5c4f4af1bebfbc6b8cace6d6ffcdc434924"
       }
     },
     {
@@ -4714,9 +5164,9 @@
       "case": "bcss__datasets_bcss_pairs_TCGA-OL-A5D7-DX1_xmin114443_ymin22490_MPP-0.2500.png__5021a319f0",
       "dataset": "bcss",
       "source_group": "TCGA-OL-A5D7",
-      "image": "all-method-legends-v1/case-015.webp",
-      "image_sha256": "1fefa2cb76c8f9c58c5a9c8fd4df62ccb5944972e53b19942e940366eaa393ef",
-      "preview_bytes": 244036,
+      "image": "shared-he-background-v1/case-015.webp",
+      "image_sha256": "523c492c6f64fb3014c1cb27e1244423bb887241833aab0f868a280d152980ba",
+      "preview_bytes": 243588,
       "source_sha256": {
         "he": "084573cadb49f1c723b476f04c7bca40fd1c0042da1700e3468f7f3e5d667128",
         "expert": "09021003fde18fd912ea3b847f8dcfbca5586341051f571ecb221cc40ed4f756",
@@ -5068,6 +5518,37 @@
         "selected_macro_dice": 0.5697630029269151,
         "selected_pixel_accuracy": 0.7424023640995607,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-015.png",
+        "sha256": "ef1349f9d03b0497f9adc9fb319a946796f982790e3bf3a1fe911971e47d8fde",
+        "shape_yx": [
+          3143,
+          2785
+        ],
+        "excluded_pixels": 7474,
+        "tissue_pixels": 8745781,
+        "expert_scored_pixels_by_class": {
+          "tumor": 2693712,
+          "stroma": 428488,
+          "lymphocytic_infiltrate": 490541,
+          "necrosis": 221791,
+          "adipose": 5577
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 25,
+          "stroma": 11,
+          "lymphocytic_infiltrate": 0,
+          "necrosis": 5,
+          "adipose": 3627
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-015.png",
+        "sha256": "01c7d652e6518f22cac1c1123d1d9f8996ec1a28ee508c0cbff0cd19de7456e8",
+        "raw_source_sha256": "289b5e0d060c99c24b84289eb20f580fa392af694fc0cf9f4b33f0d8fefcf4b1"
       }
     },
     {
@@ -5075,9 +5556,9 @@
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-A2-A0T2-01Z-00__d7b4fd9877",
       "dataset": "tiger",
       "source_group": "TCGA-A2-A0T2",
-      "image": "all-method-legends-v1/case-016.webp",
-      "image_sha256": "83a8c4e50e87634df7ad24c466e7975344dcc71cb52f74b145abb75f9a00bf81",
-      "preview_bytes": 340328,
+      "image": "shared-he-background-v1/case-016.webp",
+      "image_sha256": "cfdaae54c4538a14c46570c1004f3ec9eb5f39c47d3ed5b35ae42dcd97bd416a",
+      "preview_bytes": 393960,
       "source_sha256": {
         "he": "a3ca01d5ae64f171e4c8bff23e026372f48962c35c2169dfb55934dc9dc884aa",
         "expert": "26c364b76c5eab424c09ca610d2ba71069967dc9134249d0eff9630344b7ed04",
@@ -5378,6 +5859,37 @@
         "selected_macro_dice": 0.5796641006241552,
         "selected_pixel_accuracy": 0.6748885141709617,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-016.png",
+        "sha256": "b67c6341bbab1893429a6945ef6e0b884ab77629f174d75b81f3806b6a9f23fa",
+        "shape_yx": [
+          1909,
+          3099
+        ],
+        "excluded_pixels": 1024514,
+        "tissue_pixels": 4891477,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1744635,
+          "stroma": 2969723,
+          "normal_glandular_epithelium": 32088,
+          "necrosis": 589323,
+          "inflamed_stroma": 491429
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 124767,
+          "stroma": 646714,
+          "normal_glandular_epithelium": 0,
+          "necrosis": 196149,
+          "inflamed_stroma": 48660
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-016.png",
+        "sha256": "278613faa17e48fe73a1536c256f61d49d66aa481599614eb97a660e40ed0a00",
+        "raw_source_sha256": "71bc070eb7c66151467796881cf1b905aec52bb3022f8559434d4ba55f4bcbc6"
       }
     },
     {
@@ -5385,9 +5897,9 @@
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-A7-A6VY-01Z-00__0656173d22",
       "dataset": "tiger",
       "source_group": "TCGA-A7-A6VY",
-      "image": "all-method-legends-v1/case-017.webp",
-      "image_sha256": "ec07da46d923ad13a9d8c057570e19a0d8079b95838c217f128ba1d6965e75ae",
-      "preview_bytes": 347316,
+      "image": "shared-he-background-v1/case-017.webp",
+      "image_sha256": "230505559d22c311839c5524c1cb46b82eba5ce1956b1d5b0993bc9c549291cb",
+      "preview_bytes": 346522,
       "source_sha256": {
         "he": "0f295666dec08437c9bdd464044923c844ba5f37f7720fd5b8db20422080c099",
         "expert": "96d6c9abc2738df1de3d3245c050fd5eebaceb27ca296f8ff167fbd4f3d9e450",
@@ -5655,6 +6167,33 @@
         "selected_macro_dice": 0.7589387707600509,
         "selected_pixel_accuracy": 0.7398759553992821,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-017.png",
+        "sha256": "ea28f8da5a23da4904d0cc8c377d86b790dd13b09593df79405ad359e2d88ec0",
+        "shape_yx": [
+          1362,
+          1762
+        ],
+        "excluded_pixels": 342,
+        "tissue_pixels": 2399502,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1113919,
+          "stroma": 869703,
+          "necrosis": 416160
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 199,
+          "stroma": 118,
+          "necrosis": 25
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-017.png",
+        "sha256": "d1752d86a44ff565fd41eb8cb65fab033c1fea18627ba0f0a1094dd641c94a99",
+        "raw_source_sha256": "42cb8b02558b25e61c945ad7df33983526980688225cbdd17e1db330e52b1cdf"
       }
     },
     {
@@ -5662,9 +6201,9 @@
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-AC-A2BK-01Z-00__149af3c8c3",
       "dataset": "tiger",
       "source_group": "TCGA-AC-A2BK",
-      "image": "all-method-legends-v1/case-018.webp",
-      "image_sha256": "00a5fc0271f6be5fa383c54e0fb0fd83660d60675c00d416ec0394c3a5654a6d",
-      "preview_bytes": 363494,
+      "image": "shared-he-background-v1/case-018.webp",
+      "image_sha256": "9ec7ce1284818d766c53d4d1eea288c184e91d28551636a17eb113adb4b74dff",
+      "preview_bytes": 364568,
       "source_sha256": {
         "he": "3ed9d4b660a7566ca03ab94d5b3bb2e70f535091342c42386664a52ce401e579",
         "expert": "3332219c9869982c4e9cffafdd66b12c71d52d3d9456e5605db627f888b46367",
@@ -5948,6 +6487,35 @@
         "selected_macro_dice": 0.4380816669181424,
         "selected_pixel_accuracy": 0.7595776712624303,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-018.png",
+        "sha256": "08b3a58999cdae39ad6514557994aa33cc296b2dd5719edf56c86a8438a12c52",
+        "shape_yx": [
+          1533,
+          1953
+        ],
+        "excluded_pixels": 22106,
+        "tissue_pixels": 2971843,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1937478,
+          "stroma": 914526,
+          "necrosis": 12594,
+          "inflamed_stroma": 120470
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 636,
+          "stroma": 21393,
+          "necrosis": 0,
+          "inflamed_stroma": 77
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-018.png",
+        "sha256": "88f09d7a6bba5fd197ffbe52f750d52cafa54bf5293184d122046725f2d325e9",
+        "raw_source_sha256": "24db5a9d7fa3b62959d4b250a97904c5dcfc4feb299eaf747aded2589b89375d"
       }
     },
     {
@@ -5955,9 +6523,9 @@
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-AR-A256-01Z-00__03dbfca59b",
       "dataset": "tiger",
       "source_group": "TCGA-AR-A256",
-      "image": "all-method-legends-v1/case-019.webp",
-      "image_sha256": "d05a9d6ba9f5579dbf2edd8181bd0f569e8a5ac7b141c8850870d835641b22c8",
-      "preview_bytes": 321240,
+      "image": "shared-he-background-v1/case-019.webp",
+      "image_sha256": "0b0562521d5c1819138a00c274deef7db7f0ac2b11158369336bb96968cdc18a",
+      "preview_bytes": 339476,
       "source_sha256": {
         "he": "ca0216133dcfbf1b5f3cf7cdfc60c2e610c8663cb91ab08a17788cd4998acea0",
         "expert": "22f37e5962284239cbdb42489f0b4bf03bf1b902918c8b3cfd6b9b21dd549c59",
@@ -6248,6 +6816,35 @@
         "selected_macro_dice": 0.505550447080003,
         "selected_pixel_accuracy": 0.6515727748643985,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-019.png",
+        "sha256": "71632743a197b1220b3a07f8efc5344ccbde2a01d7de0f8c97cca2af2df802af",
+        "shape_yx": [
+          1308,
+          1391
+        ],
+        "excluded_pixels": 124003,
+        "tissue_pixels": 1695425,
+        "expert_scored_pixels_by_class": {
+          "tumor": 622700,
+          "stroma": 706114,
+          "necrosis": 7969,
+          "inflamed_stroma": 441221
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 7971,
+          "stroma": 69251,
+          "necrosis": 1478,
+          "inflamed_stroma": 27982
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-019.png",
+        "sha256": "2a689ad43a09fcd47c54a4c5b7329daff59327bb5af4b23ed56b413b8cb637b6",
+        "raw_source_sha256": "92dee9be04d0fa18a2e53064bfe6c840f8aa3fc82fee06d83915e1897da738f5"
       }
     },
     {
@@ -6255,9 +6852,9 @@
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-BH-A18V-01Z-00__3d16a9c1ef",
       "dataset": "tiger",
       "source_group": "TCGA-BH-A18V",
-      "image": "all-method-legends-v1/case-020.webp",
-      "image_sha256": "9675c0f7613375726539cde2b6180eba72593e6b0891edfd0a12a346875f7cc5",
-      "preview_bytes": 317960,
+      "image": "shared-he-background-v1/case-020.webp",
+      "image_sha256": "c805383f8970a4c4d87d96b1dcd2561b8625a6ce3c04121b8dbc16a78db70149",
+      "preview_bytes": 318290,
       "source_sha256": {
         "he": "7804776e4a38783b1b3163121aa9c7a41bf21aa832aa15c95564d1ae82870112",
         "expert": "346f4e7524d1e92947d171ccacc6b471bdbdf9af925af762dbc1111b0a94e1b9",
@@ -6563,6 +7160,35 @@
         "selected_macro_dice": 0.6425927804060321,
         "selected_pixel_accuracy": 0.8029400148858986,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-020.png",
+        "sha256": "48934da2fa3c49191858fc042d70b71f1db75f4330a131c1a5f1fdb25da82e03",
+        "shape_yx": [
+          2817,
+          3491
+        ],
+        "excluded_pixels": 9502,
+        "tissue_pixels": 9824645,
+        "expert_scored_pixels_by_class": {
+          "tumor": 3729051,
+          "stroma": 1352747,
+          "necrosis": 719379,
+          "inflamed_stroma": 209881
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 0,
+          "stroma": 0,
+          "necrosis": 0,
+          "inflamed_stroma": 0
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-020.png",
+        "sha256": "d7c3b70ca4c335811c826d1c43edb2755541f05f7a1178abf3e5f10ff3eced6c",
+        "raw_source_sha256": "4e58e1045d7ebec5a0519a87d24af407421d64af00ef951444340be92330c74f"
       }
     },
     {
@@ -6570,9 +7196,9 @@
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-D8-A1JF-01Z-00__09f3898246",
       "dataset": "tiger",
       "source_group": "TCGA-D8-A1JF",
-      "image": "all-method-legends-v1/case-021.webp",
-      "image_sha256": "0bb45aa34289601d159c65a796342e6d1eea227dd837b176c3623b5773915963",
-      "preview_bytes": 292860,
+      "image": "shared-he-background-v1/case-021.webp",
+      "image_sha256": "43c52a87b4d86168f15fc332e933e0840818432354dc845f89763872bfc387fa",
+      "preview_bytes": 335278,
       "source_sha256": {
         "he": "7365e291b1e890355431175c068f109c7340b7d4af6015f79713770f63793528",
         "expert": "5030f6d21b7994abf3dea3c57873f1c30a63a62604733c2edcec7d0f98c76ef4",
@@ -6865,6 +7491,33 @@
         "selected_macro_dice": 0.5601479790357514,
         "selected_pixel_accuracy": 0.6357686072905628,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-021.png",
+        "sha256": "d1e500a87b5e3f618feab4bd2033da64ead18c912e91d1f333c65ed8a793ecda",
+        "shape_yx": [
+          2429,
+          2508
+        ],
+        "excluded_pixels": 1865395,
+        "tissue_pixels": 4226537,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1988580,
+          "stroma": 1604816,
+          "inflamed_stroma": 201071
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 160374,
+          "stroma": 679952,
+          "inflamed_stroma": 32768
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-021.png",
+        "sha256": "6068d66ed76ba9357d88aed14e8e92f0ab6e36e398ced9bba2bf663cc8b1f629",
+        "raw_source_sha256": "021c9890c3fe8968f0929e73365688145a8757e40eac092e4fe5bf83b74f763d"
       }
     },
     {
@@ -6872,9 +7525,9 @@
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-E2-A14R-01Z-00__4f3418f4c7",
       "dataset": "tiger",
       "source_group": "TCGA-E2-A14R",
-      "image": "all-method-legends-v1/case-022.webp",
-      "image_sha256": "42fbb6b8a46dab7eda78f62b5f27ad2df074e804d156412b4fb9ded8e5d0d77e",
-      "preview_bytes": 273434,
+      "image": "shared-he-background-v1/case-022.webp",
+      "image_sha256": "1f9d7226d731438cd5b21ea0526f84660574324916a2500acde2123587ddb741",
+      "preview_bytes": 275736,
       "source_sha256": {
         "he": "e374469f7fd220fff7d728b2063c38a2fcdeb8c2039982b2662f9bc4c88eb187",
         "expert": "f38f69eb3625787c4ed1746b13dc62b0993f5d031b771812c6f3ce70fa6dcd10",
@@ -7152,6 +7805,33 @@
         "selected_macro_dice": 0.44388110188912927,
         "selected_pixel_accuracy": 0.5393772862495432,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-022.png",
+        "sha256": "b64a355a1998ed6b00f091a641a9bdd75fcf7ea4a081939e2523b7557e0ded11",
+        "shape_yx": [
+          1327,
+          1349
+        ],
+        "excluded_pixels": 52451,
+        "tissue_pixels": 1737672,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1042591,
+          "stroma": 360075,
+          "inflamed_stroma": 354032
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 64,
+          "stroma": 30995,
+          "inflamed_stroma": 4
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-022.png",
+        "sha256": "dec084e1e281306411bbfda96b6391204bb914512ea5bbc91bcaaed9b330219e",
+        "raw_source_sha256": "983c1c6368ea1546e202022b15279d81e65d873876d66e1d1f9b2b9186e04d55"
       }
     },
     {
@@ -7159,9 +7839,9 @@
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-E2-A1LL-01Z-00__d855cae94d",
       "dataset": "tiger",
       "source_group": "TCGA-E2-A1LL",
-      "image": "all-method-legends-v1/case-023.webp",
-      "image_sha256": "a528b6b4bbb68cc95c0f25c7f665b3000881ad787918ccef4ec2a2cc80d5e38f",
-      "preview_bytes": 235400,
+      "image": "shared-he-background-v1/case-023.webp",
+      "image_sha256": "d4ef85f5d0981117db189f0d2e3c94e5c39e4bfe34d80709d3865582ccb807cd",
+      "preview_bytes": 245174,
       "source_sha256": {
         "he": "887b4f338616603e7162aaafea2de969853f06c297c5c0e03e53d88d48d1222f",
         "expert": "f192bff46f30b98c42f491f22e5d2892c8bd83817f201f0b04225cb7cff2193f",
@@ -7467,6 +8147,35 @@
         "selected_macro_dice": 0.40544048678760064,
         "selected_pixel_accuracy": 0.7500532513375026,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-023.png",
+        "sha256": "6bc35ca0707ca9fa6839cf5451a8c7eb2c3c1ff990c524a1d0c8bc9c84836717",
+        "shape_yx": [
+          1998,
+          1940
+        ],
+        "excluded_pixels": 87614,
+        "tissue_pixels": 3788506,
+        "expert_scored_pixels_by_class": {
+          "tumor": 558671,
+          "stroma": 3089090,
+          "necrosis": 1710,
+          "inflamed_stroma": 209587
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 1280,
+          "stroma": 81794,
+          "necrosis": 0,
+          "inflamed_stroma": 628
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-023.png",
+        "sha256": "d5ab6d223d9e0f33857d6ed44d2abf172d627150ccd8c08939d98b78e674cd05",
+        "raw_source_sha256": "b4336ca39c805169c70ba241f989b5267a0a5b0ca273a54f0712f60190ad465b"
       }
     },
     {
@@ -7474,9 +8183,9 @@
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-EW-A1OV-01Z-00__6ba90538ff",
       "dataset": "tiger",
       "source_group": "TCGA-EW-A1OV",
-      "image": "all-method-legends-v1/case-024.webp",
-      "image_sha256": "48e264060fdfd3a1667fb02c70c3727de77bd115e4cbe0570826bded4d923ad8",
-      "preview_bytes": 210046,
+      "image": "shared-he-background-v1/case-024.webp",
+      "image_sha256": "ad701491a48b3f1402ddc466eb6af7224b76fd9ecab9d98b9118662f52a7e491",
+      "preview_bytes": 225014,
       "source_sha256": {
         "he": "6eaaf27a392533493605e9c8659a9a1baf419f7f55c4294daa9a57e48c176fec",
         "expert": "f3c51b3529962a2055f6fd0a3cb57b880e5f2d18f4663f2bfbf3266eda427002",
@@ -7896,6 +8605,35 @@
         "selected_macro_dice": 0.4105727749734349,
         "selected_pixel_accuracy": 0.46567406404946354,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-024.png",
+        "sha256": "ca2f27920f17ddfc9998bfce4b3486e8bc89e98b20cfe16a1cb61432bd7685c7",
+        "shape_yx": [
+          5366,
+          3777
+        ],
+        "excluded_pixels": 4631638,
+        "tissue_pixels": 15635744,
+        "expert_scored_pixels_by_class": {
+          "tumor": 33297,
+          "stroma": 5751522,
+          "in_situ_tumor": 2005804,
+          "inflamed_stroma": 2640003
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 0,
+          "stroma": 112542,
+          "in_situ_tumor": 22548,
+          "inflamed_stroma": 7440
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-024.png",
+        "sha256": "48800f802ce82adb100be2a5f43ce67eba741ef77aba5f37088bd2bcb0892b0c",
+        "raw_source_sha256": "2688a3d6b6001291c226d07b42ea95575158fc2c535b7498c6c8578b7c0cabe7"
       }
     },
     {
@@ -7903,9 +8641,9 @@
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-EW-A1P7-01Z-00__8d9dc10178",
       "dataset": "tiger",
       "source_group": "TCGA-EW-A1P7",
-      "image": "all-method-legends-v1/case-025.webp",
-      "image_sha256": "7a78bf70e5c36f3e8addb4aa43f6db5fd2c26d94ca8f505d2dd8ea7faf0a15e2",
-      "preview_bytes": 251638,
+      "image": "shared-he-background-v1/case-025.webp",
+      "image_sha256": "bc5d5f01f868e6ff411eb630ff5a01571962fbf7bd1fa069c4193eda1db6595c",
+      "preview_bytes": 253702,
       "source_sha256": {
         "he": "edd3520148134af63b47f5e228b092686b31ee2fdc2938676d2da0f3af8481c3",
         "expert": "a46cb5fda74e334ccc117f4c9e4b5cdc68b313fcf45cd88c4979719be4627923",
@@ -8227,6 +8965,35 @@
         "selected_macro_dice": 0.3005260522295825,
         "selected_pixel_accuracy": 0.41271535720253943,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-025.png",
+        "sha256": "fda0d6ca8c2c6c6445f94d3094a37a67679b5cc38ff59ae03aa820d5fffe00aa",
+        "shape_yx": [
+          2490,
+          1786
+        ],
+        "excluded_pixels": 176708,
+        "tissue_pixels": 4270432,
+        "expert_scored_pixels_by_class": {
+          "tumor": 131032,
+          "stroma": 1945016,
+          "in_situ_tumor": 1330811,
+          "inflamed_stroma": 787974
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 64,
+          "stroma": 5220,
+          "in_situ_tumor": 668,
+          "inflamed_stroma": 1354
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-025.png",
+        "sha256": "3b56683070d8fa360acb82fdb1c5a0c83b77eda186625943420598f4a638f8ff",
+        "raw_source_sha256": "02d4776802ddf578f6b7152eb4c9694b5a947d61a03c511ca3251e10477454c9"
       }
     },
     {
@@ -8234,9 +9001,9 @@
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-GM-A2DD-01Z-00__86ce540475",
       "dataset": "tiger",
       "source_group": "TCGA-GM-A2DD",
-      "image": "all-method-legends-v1/case-026.webp",
-      "image_sha256": "d1d8098f3b1be84c928d59535dac2c18929bca2073c0051a1243d0b164dd3fa9",
-      "preview_bytes": 274382,
+      "image": "shared-he-background-v1/case-026.webp",
+      "image_sha256": "15e850716163704b7d58e86ecb5ce624aa77b9b8282606d34d49f07e8d55157c",
+      "preview_bytes": 279624,
       "source_sha256": {
         "he": "b528a742eb4bbf62c1fcfcc52b4ffded58bb5e2e53c356611d2357cc8c409ee0",
         "expert": "64d79133d5ef57f803072a70deb7a3eeea3c5634ef2f96ed6c730d1b0986f1e3",
@@ -8620,6 +9387,37 @@
         "selected_macro_dice": 0.7641572277836127,
         "selected_pixel_accuracy": 0.8470554620809948,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-026.png",
+        "sha256": "77fef28a2a695979924439b21325990fefcc0d3585cecab6a4ed71adfebccb6b",
+        "shape_yx": [
+          2193,
+          4207
+        ],
+        "excluded_pixels": 175009,
+        "tissue_pixels": 9050942,
+        "expert_scored_pixels_by_class": {
+          "tumor": 2211066,
+          "stroma": 6337354,
+          "normal_glandular_epithelium": 21761,
+          "necrosis": 219139,
+          "inflamed_stroma": 173903
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 14608,
+          "stroma": 14099,
+          "normal_glandular_epithelium": 0,
+          "necrosis": 4814,
+          "inflamed_stroma": 0
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-026.png",
+        "sha256": "8c949a5bb4f08d5e4f2c84636373cbb05298666f7bd48022bd068ecb70072d13",
+        "raw_source_sha256": "0e4a6220f421239f86f0e1b4ebc8e3fe2270369d3c2c184f1ef1c1df00042b1a"
       }
     },
     {
@@ -8627,9 +9425,9 @@
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-LL-A5YO-01Z-00__ae2a5dae53",
       "dataset": "tiger",
       "source_group": "TCGA-LL-A5YO",
-      "image": "all-method-legends-v1/case-027.webp",
-      "image_sha256": "5976cc0a9c8528b054646cd8a7aef7abbc9e0517d132a5aa2c407ec05e9edb08",
-      "preview_bytes": 467474,
+      "image": "shared-he-background-v1/case-027.webp",
+      "image_sha256": "a17ded850103f163f039e7d98ef6adeb948bd5fbd6f3c978bdb17d1a3b53931c",
+      "preview_bytes": 468764,
       "source_sha256": {
         "he": "fcdc2ef49909d81267782699def3cb47659bbd029606668679aedaba8ea6f236",
         "expert": "f2d0600c3736419a4e29706ea33d5c69309d02a7ea8e78776abd32f3b022803c",
@@ -8914,6 +9712,33 @@
         "selected_macro_dice": 0.44864529830132654,
         "selected_pixel_accuracy": 0.2910123395707117,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-027.png",
+        "sha256": "5df8cab8de68f7cb3127ece1d1235a362acdd177250f8a050f8a4d44bfd56947",
+        "shape_yx": [
+          1301,
+          1808
+        ],
+        "excluded_pixels": 5351,
+        "tissue_pixels": 2346857,
+        "expert_scored_pixels_by_class": {
+          "tumor": 370446,
+          "stroma": 871021,
+          "inflamed_stroma": 1078792
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 90,
+          "stroma": 2659,
+          "inflamed_stroma": 484
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-027.png",
+        "sha256": "a77a32b07cfd3f88c2e163eb4844520a2b00f5aa0fe2076dd1ddd358eeb83e4f",
+        "raw_source_sha256": "7f149b3c77cd1258f610593c98b8f0ebbf6f233a7361230bfd43a0c07b8ebe13"
       }
     },
     {
@@ -8921,9 +9746,9 @@
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-LL-A73Y-01Z-00__6c12d25eb7",
       "dataset": "tiger",
       "source_group": "TCGA-LL-A73Y",
-      "image": "all-method-legends-v1/case-028.webp",
-      "image_sha256": "5a52854f393c3aacd14f03638494a14f63253cdd23981d6b71e49e57e36f440e",
-      "preview_bytes": 374652,
+      "image": "shared-he-background-v1/case-028.webp",
+      "image_sha256": "4b0e53200b7d510200217d53e52f026eec0bb696dd7282ccc1211ecdbcb42214",
+      "preview_bytes": 375518,
       "source_sha256": {
         "he": "380171712c6edca21a8159b993222def19cf3ae9ede5319bb1f2b19a59b28c4d",
         "expert": "5d7100e3cc97dd84677bec9fdcd9d320046753c64d0c9a8f3b56efd6d36b9945",
@@ -9208,6 +10033,33 @@
         "selected_macro_dice": 0.4544777368679222,
         "selected_pixel_accuracy": 0.2731492501785289,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-028.png",
+        "sha256": "ef707239d1add12bd91c3e195df70c974aadee1233da2a8f9ce3ba450d2ae248",
+        "shape_yx": [
+          1060,
+          1218
+        ],
+        "excluded_pixels": 10008,
+        "tissue_pixels": 1281072,
+        "expert_scored_pixels_by_class": {
+          "tumor": 240391,
+          "stroma": 388111,
+          "inflamed_stroma": 614994
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 13,
+          "stroma": 957,
+          "inflamed_stroma": 728
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-028.png",
+        "sha256": "88a2f565dfdcb0ea1600a9ce10ada6430bbeb2531f6734cc66f5f910ec2275ca",
+        "raw_source_sha256": "6ab2e62d35b594281b8c69d2f04aa5183276725118bee2edab8fdeeb41d5330f"
       }
     },
     {
@@ -9215,9 +10067,9 @@
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-OL-A5RW-01Z-00__815369d21b",
       "dataset": "tiger",
       "source_group": "TCGA-OL-A5RW",
-      "image": "all-method-legends-v1/case-029.webp",
-      "image_sha256": "827e1d852e88fc83ade1ef04a28862c3a0ce62359226531f5a1bdb033d8c1f58",
-      "preview_bytes": 258952,
+      "image": "shared-he-background-v1/case-029.webp",
+      "image_sha256": "a602d53ea63bde5b52ba1afd92e0d080786463d26b8ffaaccf57e69279d9b295",
+      "preview_bytes": 258298,
       "source_sha256": {
         "he": "c9ea371a23536db0fd9f438843a31efa66de02adb71145e2af2cf56ae457067a",
         "expert": "1ccd2bff7145e5e291a478756ee7fd9f6db811ce1ac7e091500c71931ffefb57",
@@ -9496,6 +10348,33 @@
         "selected_macro_dice": 0.8921917880470868,
         "selected_pixel_accuracy": 0.8856013093034962,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-029.png",
+        "sha256": "4eeb48b583b9ef31e957fc14364f495e76c9ef1dc03ea3567db41bbd0b122a6a",
+        "shape_yx": [
+          1026,
+          1212
+        ],
+        "excluded_pixels": 123,
+        "tissue_pixels": 1243389,
+        "expert_scored_pixels_by_class": {
+          "tumor": 329057,
+          "stroma": 487554,
+          "necrosis": 417022
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 11,
+          "stroma": 0,
+          "necrosis": 112
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-029.png",
+        "sha256": "ac81aaa372874da6d5343276746ce46ab107b270ae8cd81f8b2148f9c2ac52b6",
+        "raw_source_sha256": "f9be08a6bbdd0d6bdb2c1db436520d86dfa7fa601f7d5bdcbad63e78f13e2a48"
       }
     },
     {
@@ -9503,9 +10382,9 @@
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-OL-A66I-01Z-00__89da35afd9",
       "dataset": "tiger",
       "source_group": "TCGA-OL-A66I",
-      "image": "all-method-legends-v1/case-030.webp",
-      "image_sha256": "acb4d9656aaf79051b3df1750de39366da0c8ddf84cc7fbd776010314a1f7b54",
-      "preview_bytes": 333862,
+      "image": "shared-he-background-v1/case-030.webp",
+      "image_sha256": "d494307fa18d26ad1501220951e3ce3954b5a5ebfc4c9e68f8534fcd2dc11ae2",
+      "preview_bytes": 333984,
       "source_sha256": {
         "he": "853ea67360c5a8bd2ba028ed2d1912a11409f656e52f6a4a6b12e009b853be3a",
         "expert": "aa96c2e60df0445814317a46b202fd272a7a58a2458996994725da7a38c10192",
@@ -9763,6 +10642,33 @@
         "selected_macro_dice": 0.5402496803501574,
         "selected_pixel_accuracy": 0.509929740305941,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-030.png",
+        "sha256": "960f309d97954273881a823b40b6e54e02ffd04de46aabc6b41c6238b9937926",
+        "shape_yx": [
+          1169,
+          1448
+        ],
+        "excluded_pixels": 58451,
+        "tissue_pixels": 1634261,
+        "expert_scored_pixels_by_class": {
+          "tumor": 207692,
+          "stroma": 455061,
+          "inflamed_stroma": 236767
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 0,
+          "stroma": 0,
+          "inflamed_stroma": 0
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-030.png",
+        "sha256": "34775337a685bd6a76de49b904b4e5f3470f660f418e7693365db3c0420ab48d",
+        "raw_source_sha256": "c4388dae1901ecd5020ede89b2300c72cae5ce6d30cbd79dda7952a827f376c0"
       }
     },
     {
@@ -9770,9 +10676,9 @@
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-OL-A66P-01Z-00__ddf9af6204",
       "dataset": "tiger",
       "source_group": "TCGA-OL-A66P",
-      "image": "all-method-legends-v1/case-031.webp",
-      "image_sha256": "4d083491fe0ca5c8b1f3b126d71c801c4ebef6676bc6ecd88f329aa0a5107a4e",
-      "preview_bytes": 379846,
+      "image": "shared-he-background-v1/case-031.webp",
+      "image_sha256": "647baea0662e13827f49ceebe1c6d28e2ab3c891aea0bfa8c710ee86f7fa2eec",
+      "preview_bytes": 381834,
       "source_sha256": {
         "he": "8b89ba5bc79a4a8cb6ead95e5bc9d697d71e49f704b3ffb1fbe73ed2e964aab6",
         "expert": "e49e6f3ffc31fb1b39db4becded03f0d1c91825601cd279d158d1a2e18a0d876",
@@ -10079,6 +10985,33 @@
         "selected_macro_dice": 0.5353295860900914,
         "selected_pixel_accuracy": 0.507661919339811,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-031.png",
+        "sha256": "996e6df0e988a57bf0b285bc9ebeb3681b4b73f55e9fb969e68c96899fde06f7",
+        "shape_yx": [
+          1964,
+          2464
+        ],
+        "excluded_pixels": 241554,
+        "tissue_pixels": 4597742,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1048210,
+          "stroma": 946413,
+          "inflamed_stroma": 822752
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 2153,
+          "stroma": 2938,
+          "inflamed_stroma": 0
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-031.png",
+        "sha256": "59371c277340c61a535031d91b51b353d4d71e0fefc6332a622cf04c17c5e364",
+        "raw_source_sha256": "a573e6786ed40e3327168e8f19c87cc034a73c62c6556ffd4395046a068edea0"
       }
     },
     {
@@ -10086,9 +11019,9 @@
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-S3-AA15-01Z-00__2cbda3ad25",
       "dataset": "tiger",
       "source_group": "TCGA-S3-AA15",
-      "image": "all-method-legends-v1/case-032.webp",
-      "image_sha256": "642e7d987c2d39ccad4ab4ecef450510ec8693cd148c1e63a0e55be46ad24d73",
-      "preview_bytes": 233872,
+      "image": "shared-he-background-v1/case-032.webp",
+      "image_sha256": "ea3ee1c73783afa4fb7dbd7c476b870c1e54ebc04a830e1f654c98b5ff5a1073",
+      "preview_bytes": 238938,
       "source_sha256": {
         "he": "4cbf004614562c6bf8fb879e4a1c827dbb102347c10597aa445ac71cf519cf4e",
         "expert": "26c5c627bf689dd807d542e99e32c2b8370e617aa86d8f5060f871af16904e5d",
@@ -10365,6 +11298,33 @@
         "selected_macro_dice": 0.5916130527289821,
         "selected_pixel_accuracy": 0.7282524552719539,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-032.png",
+        "sha256": "2fd2da4333616a11d6ff937afe58c6ed52768d859a2cc95baab253a6dcf459fc",
+        "shape_yx": [
+          1371,
+          1103
+        ],
+        "excluded_pixels": 112268,
+        "tissue_pixels": 1399945,
+        "expert_scored_pixels_by_class": {
+          "tumor": 494809,
+          "stroma": 761413,
+          "inflamed_stroma": 129877
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 196,
+          "stroma": 11747,
+          "inflamed_stroma": 460
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-032.png",
+        "sha256": "9f0affde33a35329976d4e682acca9f8cc0a7ae25ad1a693336eef0e45e6f75a",
+        "raw_source_sha256": "5b2438604b037bf42b3d82b28474cff00ca220b68021a37e678845e432793afe"
       }
     },
     {
@@ -10372,9 +11332,9 @@
       "case": "ignite__datasets_ignite_images_he_patient28_he_roi5.png__36ad26983d",
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-28",
-      "image": "all-method-legends-v1/case-033.webp",
-      "image_sha256": "61a80965d056cd30ea41154b4b8fe08798aeac983f76d702db86df859c9c521e",
-      "preview_bytes": 263386,
+      "image": "shared-he-background-v1/case-033.webp",
+      "image_sha256": "11508b9df008b76af5f4313f0a51c4c159f4b42ba1283396ebcc35868ef4268b",
+      "preview_bytes": 263368,
       "source_sha256": {
         "he": "5c1d77ba04fac8621357958d0f5595e8bd17425cb6e781a7d51efd6a948f28a3",
         "expert": "fe546d1ed5fb37345ba6d9f0a9b71582f7bd9f0561bcbf1b03d7909ba1fedd29",
@@ -10645,6 +11605,33 @@
         "selected_macro_dice": 0.3439841043345167,
         "selected_pixel_accuracy": 0.15185873171643535,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-033.png",
+        "sha256": "2ff4ac4522a3885785571c517ac4dc29cd83fa71512ff12f473fd38d4ad30126",
+        "shape_yx": [
+          1019,
+          1008
+        ],
+        "excluded_pixels": 795,
+        "tissue_pixels": 1026357,
+        "expert_scored_pixels_by_class": {
+          "stroma": 115039,
+          "inflammatory_infiltrate": 6837,
+          "blood": 905276
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "stroma": 662,
+          "inflammatory_infiltrate": 0,
+          "blood": 133
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-033.png",
+        "sha256": "a49f254fb21bd6035d8d3c9562290819354c27a9c7077f1613f86fe62c3cd449",
+        "raw_source_sha256": "ac022bc0c1c5db54119a6174c193d664ae1affc95510ffd450d6938a99b287aa"
       }
     },
     {
@@ -10652,9 +11639,9 @@
       "case": "ignite__datasets_ignite_images_he_patient32_he_roi2.png__a1ccdac136",
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-32",
-      "image": "all-method-legends-v1/case-034.webp",
-      "image_sha256": "df3d165beea43b762602a16e3ee25e52dbfe31538bba6837820560e3dd33c7cc",
-      "preview_bytes": 295638,
+      "image": "shared-he-background-v1/case-034.webp",
+      "image_sha256": "bf049498a910d251b62aef20757930da019e5cf6a3d84ed99a99ef7d9138c50a",
+      "preview_bytes": 296074,
       "source_sha256": {
         "he": "e9b2b55d05ffd58b1ae5ee833cca821cab95edf256b4fca5872178b8649b8a99",
         "expert": "f883a4b6bead188eaea68bb3069150bbb9881dc42c2ddd8ebdb71028c1184294",
@@ -10927,6 +11914,39 @@
         "selected_macro_dice": 0.49328196065422697,
         "selected_pixel_accuracy": 0.8027931749914842,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-034.png",
+        "sha256": "b457bbf3edf23bbfbe078c6c5d17254cdb47dddc81d8adeabfe6af7e4a300ed2",
+        "shape_yx": [
+          1046,
+          1085
+        ],
+        "excluded_pixels": 1087,
+        "tissue_pixels": 1133823,
+        "expert_scored_pixels_by_class": {
+          "tumor": 855199,
+          "stroma": 161371,
+          "inflammatory_infiltrate": 64194,
+          "necrosis": 7419,
+          "blood": 28908,
+          "macrophages": 13164
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 136,
+          "stroma": 838,
+          "inflammatory_infiltrate": 103,
+          "necrosis": 0,
+          "blood": 0,
+          "macrophages": 10
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-034.png",
+        "sha256": "57bd21a6f392459e0924c416fd6f87fa694f84b4a631ffe8a3889898837ed0c0",
+        "raw_source_sha256": "a98e10d23a47b4ac3d34f1d63a09bc3eb0bb89a89b147127a2b11671dd183321"
       }
     },
     {
@@ -10934,9 +11954,9 @@
       "case": "ignite__datasets_ignite_images_he_patient36_he_roi1.png__bdbef84bcb",
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-36",
-      "image": "all-method-legends-v1/case-035.webp",
-      "image_sha256": "7521ec80fef42b1071bc4f79704bdc587e5aa5e4c411438864574b429d90b9f3",
-      "preview_bytes": 246932,
+      "image": "shared-he-background-v1/case-035.webp",
+      "image_sha256": "dd8e352ee3eba77974b27b7b5f702634714e168a54f7d732434ef86ebfa33375",
+      "preview_bytes": 254682,
       "source_sha256": {
         "he": "941eb5d9a45e10b5340ad5d44164f0eb7fe00956261e1a95dbee4e2fb048179c",
         "expert": "69cace2c2c1f3bcab3ed53f00435692013fe7695ceb17193cf8cd899afb5210e",
@@ -11208,6 +12228,33 @@
         "selected_macro_dice": 0.5117345484173448,
         "selected_pixel_accuracy": 0.7465826313819718,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-035.png",
+        "sha256": "b559b5ab40b51c976a65d8f3b381d716408461e6fe11bdd7dacb0f20db46c98b",
+        "shape_yx": [
+          1030,
+          1031
+        ],
+        "excluded_pixels": 160953,
+        "tissue_pixels": 900977,
+        "expert_scored_pixels_by_class": {
+          "tumor": 352078,
+          "stroma": 569140,
+          "blood": 617
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 10389,
+          "stroma": 14840,
+          "blood": 0
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-035.png",
+        "sha256": "0e7f5c732978b2b87c14b5e80f31092e88eb57b856ecb9fc93f930dd7f8328f6",
+        "raw_source_sha256": "fa23d45e13d7da789c00f11940658bdc5dc688db0edc9e69532de431873d4940"
       }
     },
     {
@@ -11215,9 +12262,9 @@
       "case": "ignite__datasets_ignite_images_he_patient37_he_roi3.png__95aec1e547",
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-37",
-      "image": "all-method-legends-v1/case-036.webp",
-      "image_sha256": "2be0ce77f25c7641ce4c61729c15e62bcca27a4eefa1d8437a1efe00a1c265c9",
-      "preview_bytes": 247412,
+      "image": "shared-he-background-v1/case-036.webp",
+      "image_sha256": "10b89ef9ad3244ea2c1674af522c16783d75a8dd89a6909c4d0de558e23b4c49",
+      "preview_bytes": 264812,
       "source_sha256": {
         "he": "8fa5c8d6547f27b259b3ffecbee0455cad590874373d2e504dd42b3c72eed4a5",
         "expert": "259c149dbf1121688a3174cee904e2de9641d9655d0e0fe5b490bedd5fd8c001",
@@ -11485,6 +12532,35 @@
         "selected_macro_dice": 0.5694616787103396,
         "selected_pixel_accuracy": 0.787118159447885,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-036.png",
+        "sha256": "eced3d9c03c1d4861e9388a0b6e92940598623716b62d6c956ec0a1a5507ab71",
+        "shape_yx": [
+          1030,
+          1031
+        ],
+        "excluded_pixels": 180803,
+        "tissue_pixels": 881127,
+        "expert_scored_pixels_by_class": {
+          "tumor": 330427,
+          "stroma": 466405,
+          "necrosis": 151495,
+          "blood": 171
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 32150,
+          "stroma": 28763,
+          "necrosis": 8101,
+          "blood": 0
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-036.png",
+        "sha256": "cd5c5b162c4f0ad4c2e1b1ba15d21a0ea7796c55959024c6cb0a41e3e20780c4",
+        "raw_source_sha256": "3047f3b495812a5b03ce5c548be29de2aef41d54ffdf9ccaf5648afd3f676b97"
       }
     },
     {
@@ -11492,9 +12568,9 @@
       "case": "ignite__datasets_ignite_images_he_patient3_he_roi6.png__d5935ced63",
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-3",
-      "image": "all-method-legends-v1/case-037.webp",
-      "image_sha256": "96d97d7bf6f006c39583d12f16f857cccab125850d0e9fa7976611716eedd00c",
-      "preview_bytes": 240292,
+      "image": "shared-he-background-v1/case-037.webp",
+      "image_sha256": "241161c9e11c52a28dd878b8dcff5f8ffe56b772b48419f19901ae55745133b0",
+      "preview_bytes": 254390,
       "source_sha256": {
         "he": "2edc494b3ba4142442e063962946b1e86ce0d1359e42cd4508be8b4d9738883b",
         "expert": "33ace6ceffa88d46838985cbc77f4bb80aa9b9b6b7b86feea062a89656a3d965",
@@ -11785,6 +12861,39 @@
         "selected_macro_dice": 0.5220512816697488,
         "selected_pixel_accuracy": 0.8426560006982855,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-037.png",
+        "sha256": "10910e13422de7d2e5c43c17523b9cd1f130fe2b7721278f126a1c62728eb16d",
+        "shape_yx": [
+          930,
+          967
+        ],
+        "excluded_pixels": 126847,
+        "tissue_pixels": 772463,
+        "expert_scored_pixels_by_class": {
+          "tumor": 319143,
+          "epithelial_tissue": 10979,
+          "stroma": 384009,
+          "necrosis": 4563,
+          "blood": 317,
+          "macrophages": 60040
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 10508,
+          "epithelial_tissue": 647,
+          "stroma": 1154,
+          "necrosis": 551,
+          "blood": 243,
+          "macrophages": 5296
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-037.png",
+        "sha256": "8ad74c740cc2ca90e6e912ebe9f0a22c5b102420430e436079ff701e417b7b85",
+        "raw_source_sha256": "07eac27ce9a552864405f74b7d36db1b3aac27c1e2bd116515fa49d4096f9453"
       }
     },
     {
@@ -11792,9 +12901,9 @@
       "case": "ignite__datasets_ignite_images_he_patient40_he_roi1.png__0776ea30ca",
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-40",
-      "image": "all-method-legends-v1/case-038.webp",
-      "image_sha256": "d1d86e6a8ae8b3b81c11204ec27b4a7070d617b1a3f03b2ff921bee8e0b4d8b4",
-      "preview_bytes": 222702,
+      "image": "shared-he-background-v1/case-038.webp",
+      "image_sha256": "d1c1d61bdd77107d4dd819d9be6753cf7ddacf2516278aef8438e85909b2ead5",
+      "preview_bytes": 231276,
       "source_sha256": {
         "he": "f06c6a8cb440629f3846bd7e854889b44c08190603cc9b150384dab4810a892c",
         "expert": "2ff5d3ef9e851c2ead0f749ef9f037ff0976ac0684572c5881fb08af3cffd75f",
@@ -12071,6 +13180,33 @@
         "selected_macro_dice": 0.6176967110665821,
         "selected_pixel_accuracy": 0.8851997425194086,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-038.png",
+        "sha256": "108e45ddabad54a46054815678818f79c4734da87625825cf1fb53bae0c8976f",
+        "shape_yx": [
+          1030,
+          1031
+        ],
+        "excluded_pixels": 50273,
+        "tissue_pixels": 1011657,
+        "expert_scored_pixels_by_class": {
+          "tumor": 573269,
+          "epithelial_tissue": 8534,
+          "stroma": 443517
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 5762,
+          "epithelial_tissue": 72,
+          "stroma": 12984
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-038.png",
+        "sha256": "8af0725905e1c7dceed7e372f006dedb73999e9e4fa284d531de846780a67006",
+        "raw_source_sha256": "056ba22fa2a4ec7c37c06189c867c3e12989ed77a5c938326dfbdc02e8ebb138"
       }
     },
     {
@@ -12078,9 +13214,9 @@
       "case": "ignite__datasets_ignite_images_he_patient43_he_roi2.png__8c6c983b53",
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-43",
-      "image": "all-method-legends-v1/case-039.webp",
-      "image_sha256": "828eaff3b9e487346370932632cece228c909b0e14ef648ea3d7ae0a6f744597",
-      "preview_bytes": 240652,
+      "image": "shared-he-background-v1/case-039.webp",
+      "image_sha256": "aea7cfc848c2b672bb9aafe4bc79edb454e9b807f557044775f82e6f1640a27d",
+      "preview_bytes": 262056,
       "source_sha256": {
         "he": "72544439c39612a9adc4c5168e9eb992aeda8048e48b32ea85303b7efc161dfa",
         "expert": "c43137078e7ec48c993b15c4d987f1b836e3c702133b3c107cd9682686e00468",
@@ -12362,6 +13498,37 @@
         "selected_macro_dice": 0.5890886446202828,
         "selected_pixel_accuracy": 0.8953678906403544,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-039.png",
+        "sha256": "8ea8641bd33a5638a33eadfe7a22e6a454bbf646c7434ea5e754c9cef0221810",
+        "shape_yx": [
+          1030,
+          1030
+        ],
+        "excluded_pixels": 185038,
+        "tissue_pixels": 875862,
+        "expert_scored_pixels_by_class": {
+          "tumor": 613918,
+          "stroma": 215306,
+          "necrosis": 11976,
+          "blood": 588,
+          "mucus_plasma_or_fluids": 2838
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 9171,
+          "stroma": 2484,
+          "necrosis": 5581,
+          "blood": 28,
+          "mucus_plasma_or_fluids": 2838
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-039.png",
+        "sha256": "4647342c0d08ceb053bed5f574fa001f0cd67536b54926f95adf71455e889694",
+        "raw_source_sha256": "f6c3ff031b8d782b313174a4f9bc8e5f8539a0d1db86847a891b2869ea55a71a"
       }
     },
     {
@@ -12369,9 +13536,9 @@
       "case": "ignite__datasets_ignite_images_he_patient46_he_roi2.png__5ddcc3d805",
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-46",
-      "image": "all-method-legends-v1/case-040.webp",
-      "image_sha256": "5eed6c08ea88c04090a986c7b91f2426983a2ac768ce4b7acf7f8b312c111cd9",
-      "preview_bytes": 239600,
+      "image": "shared-he-background-v1/case-040.webp",
+      "image_sha256": "95b7903887b5b1a72e54a9911071f6dd2af1ef2c163f7fd372c1204557ad0e30",
+      "preview_bytes": 241034,
       "source_sha256": {
         "he": "e0d74a36f83933572ef91f81b1c72c3536fb3a019c14fec75ccdcca1bc3cd68e",
         "expert": "8f965ce3c5edf6630d143e99faa4deda6204a785995b67338f75b20d7b1e0f57",
@@ -12648,6 +13815,31 @@
         "selected_macro_dice": 0.5428640556095315,
         "selected_pixel_accuracy": 0.5533681877253576,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-040.png",
+        "sha256": "c79b981aefd9059a8872760fdbbd9dbe2a0635d1625476259593ceacd2ae7935",
+        "shape_yx": [
+          1262,
+          1563
+        ],
+        "excluded_pixels": 523668,
+        "tissue_pixels": 1448838,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1184780,
+          "stroma": 289544
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 22292,
+          "stroma": 3332
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-040.png",
+        "sha256": "deac61f9bb2688a2337596b847d7eb7e8865579b265581da8666896164f344ef",
+        "raw_source_sha256": "f690af5e37c65e81c3a4227f7b71397d0035eebf7af97e88df7dbd60ee77b494"
       }
     },
     {
@@ -12655,9 +13847,9 @@
       "case": "ignite__datasets_ignite_images_he_patient4_he_roi1.png__7a50d32e01",
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-4",
-      "image": "all-method-legends-v1/case-041.webp",
-      "image_sha256": "d56fcb2490ab44aaea57a0b580bd6f8ea3cdd951208f19b6a2011637a9f0c15f",
-      "preview_bytes": 231930,
+      "image": "shared-he-background-v1/case-041.webp",
+      "image_sha256": "f1a9f608997f1fdafab2dd3ac2ed6a4caaa9455c9d8d4e6a479ad662f7a9d188",
+      "preview_bytes": 231160,
       "source_sha256": {
         "he": "0be5284607f9a494d9d224dda68a4af96bee1757ee1048b8abcdb47620b52ef1",
         "expert": "9c0e76cddc163e28c928c6a38765b2a4d61adf44563a0bdbc3b8a3224d4da2bf",
@@ -12930,6 +14122,33 @@
         "selected_macro_dice": 0.8444973467083731,
         "selected_pixel_accuracy": 0.9119157223796034,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-041.png",
+        "sha256": "d47d3cd7188440113fddb752b3aaca751461165f699d6a06be73430925c16da3",
+        "shape_yx": [
+          1120,
+          1059
+        ],
+        "excluded_pixels": 471,
+        "tissue_pixels": 1185609,
+        "expert_scored_pixels_by_class": {
+          "tumor": 898162,
+          "stroma": 287018,
+          "blood": 900
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 471,
+          "stroma": 0,
+          "blood": 0
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-041.png",
+        "sha256": "2c9e912f1c4f6c90d59c7a26baa81c2f5632e987c11dd17bb877cd32fa3c0bd5",
+        "raw_source_sha256": "5b7880aff9fb60a590f00dc164b6cf26a5751ecb377c24d05281f7e594c00a1b"
       }
     },
     {
@@ -12937,9 +14156,9 @@
       "case": "ignite__datasets_ignite_images_he_patient57_he_roi2.png__b06b2b924e",
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-57",
-      "image": "all-method-legends-v1/case-042.webp",
-      "image_sha256": "4cce1a6a33089ae560f6029707fefa881f358cb5ece23b56b567b9d5b9626325",
-      "preview_bytes": 287854,
+      "image": "shared-he-background-v1/case-042.webp",
+      "image_sha256": "b123f75723a209d9d5817e6654592431a65bb28e27bb4fcb127015efb6c77877",
+      "preview_bytes": 299752,
       "source_sha256": {
         "he": "a4a31cca140ec22c79002cf904b4c03073ae9bf7e275a2e7227be0ee0acf5e28",
         "expert": "09a7adb2b2a98ec9e4763856b5b0800720004b2aa8cd7e0fc033b02379f7daea",
@@ -13200,6 +14419,31 @@
         "selected_macro_dice": 0.7571170287395655,
         "selected_pixel_accuracy": 0.7430569292171331,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-042.png",
+        "sha256": "3b2e3068e76772aa896600acb6be6774bd7851aea38b77c58a0b969c018371ad",
+        "shape_yx": [
+          1431,
+          1245
+        ],
+        "excluded_pixels": 453804,
+        "tissue_pixels": 1327791,
+        "expert_scored_pixels_by_class": {
+          "tumor": 954543,
+          "stroma": 445810
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 72028,
+          "stroma": 17343
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-042.png",
+        "sha256": "7e39938a51c4894dbc462bf48e0f29f13679839ea666d5b5572516b07eb3dd72",
+        "raw_source_sha256": "6b544f7fdbb7444df049a44ef18f341674c96fcd041b72a6c56997d6e37e0cf1"
       }
     },
     {
@@ -13207,9 +14451,9 @@
       "case": "ignite__datasets_ignite_images_he_patient60_he_roi2.png__511072a782",
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-60",
-      "image": "all-method-legends-v1/case-043.webp",
-      "image_sha256": "fdaf1480880689c12a001f0f6102e6c6f8631907271f93e52b45129bc371b22b",
-      "preview_bytes": 387426,
+      "image": "shared-he-background-v1/case-043.webp",
+      "image_sha256": "3d907afbce07d00c45e427b4be24a467bc88ad02da45f4eb1a1abf5c61b05a12",
+      "preview_bytes": 395170,
       "source_sha256": {
         "he": "439db13c568ab928601e77c1bfa48a03465b220533b55a751a899ad88fa536f0",
         "expert": "4a42b3909baacb75c739bbee4d2f51d7cf70fcbca05d31c41447561a564dc93f",
@@ -13543,6 +14787,39 @@
         "selected_macro_dice": 0.6198974253436697,
         "selected_pixel_accuracy": 0.8267981555024486,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-043.png",
+        "sha256": "5dffb666f6cb1f861a3a09a36c468dd61346bebaedd588e6614064e28b51ad91",
+        "shape_yx": [
+          2114,
+          2650
+        ],
+        "excluded_pixels": 351754,
+        "tissue_pixels": 5250346,
+        "expert_scored_pixels_by_class": {
+          "tumor": 2534833,
+          "stroma": 1373238,
+          "inflammatory_infiltrate": 164651,
+          "necrosis": 1270186,
+          "blood": 11777,
+          "mucus_plasma_or_fluids": 2221
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 8962,
+          "stroma": 2376,
+          "inflammatory_infiltrate": 0,
+          "necrosis": 100734,
+          "blood": 597,
+          "mucus_plasma_or_fluids": 5
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-043.png",
+        "sha256": "357275260b245830cb369305794d64bf45d89a3de7e58f14fd6ecfe8ff95ccae",
+        "raw_source_sha256": "e1c276bfb3f8ae25584f90e032cf3ec8a35c56293ad269af9c122945522cbc93"
       }
     },
     {
@@ -13550,9 +14827,9 @@
       "case": "ignite__datasets_ignite_images_he_patient64_he_roi3.png__aabad9c28e",
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-64",
-      "image": "all-method-legends-v1/case-044.webp",
-      "image_sha256": "478b00c69cb9ea3b6d068621c51d3b3c21ffbb6283a56e67eb3fac8c3b3718bf",
-      "preview_bytes": 261708,
+      "image": "shared-he-background-v1/case-044.webp",
+      "image_sha256": "a5044bbe6f841f4c872e0cc36052de2bd981af1a963f83705bfa4ca9aa5738fc",
+      "preview_bytes": 282186,
       "source_sha256": {
         "he": "0fa60215fefefa35952433de3a08c0b8c37ea0b2bf88f4901150ac653f46c8b3",
         "expert": "a8e3821032790eb6106212b6c1bab62c986b75b81e66e6ab81357b51a0d3ff86",
@@ -13838,6 +15115,37 @@
         "selected_macro_dice": 0.6974398224493688,
         "selected_pixel_accuracy": 0.5938029499783318,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-044.png",
+        "sha256": "3e76a0ace530f41fbc592a04f97a0564329b5e68eb7f73f9e3f8973a2760c94f",
+        "shape_yx": [
+          1185,
+          2098
+        ],
+        "excluded_pixels": 721804,
+        "tissue_pixels": 1764326,
+        "expert_scored_pixels_by_class": {
+          "epithelial_tissue": 196069,
+          "stroma": 1154985,
+          "alveolar_tissue": 152064,
+          "blood": 37539,
+          "macrophages": 72304
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "epithelial_tissue": 4660,
+          "stroma": 14401,
+          "alveolar_tissue": 3660,
+          "blood": 5556,
+          "macrophages": 7178
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-044.png",
+        "sha256": "66d4784ea1680c2d08a3daad47bc6f6e8413457a391657ae5ba4f46ce5f3ac05",
+        "raw_source_sha256": "f993acb24b95414dc4a832fe0bf8f11594f0967d6fe97cd854006f3c40f7931f"
       }
     },
     {
@@ -13845,9 +15153,9 @@
       "case": "ignite__datasets_ignite_images_he_patient73_he_roi3.png__c17190d498",
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-73",
-      "image": "all-method-legends-v1/case-045.webp",
-      "image_sha256": "ba01fd7cf6d271c7dd2755d2523391c7f66303d6d38c41f6790fa3522d00b917",
-      "preview_bytes": 213014,
+      "image": "shared-he-background-v1/case-045.webp",
+      "image_sha256": "0a3f543762b1f75fd968bc8efad69f80c01bcd8cf7f9bb5380b209a34eed3aea",
+      "preview_bytes": 231688,
       "source_sha256": {
         "he": "8ee0233182a0ab97d21f25da1794d2a15b50041ba2da4ec39239c3b6e531f49e",
         "expert": "61668f05c7d3b3881c318ceb7744c5c3a3980c24d102b83639b1e2edb7aacbd0",
@@ -14131,6 +15439,35 @@
         "selected_macro_dice": 0.7498500419423091,
         "selected_pixel_accuracy": 0.7002513084794831,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-045.png",
+        "sha256": "88170b4990f91b740746a6a9b7349b663a08848d01182b74dd49ef3ad3529545",
+        "shape_yx": [
+          1751,
+          1150
+        ],
+        "excluded_pixels": 437869,
+        "tissue_pixels": 1575781,
+        "expert_scored_pixels_by_class": {
+          "tumor": 199811,
+          "stroma": 1059881,
+          "blood": 8144,
+          "macrophages": 224354
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 18075,
+          "stroma": 9619,
+          "blood": 3682,
+          "macrophages": 29672
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-045.png",
+        "sha256": "32d1e7eb0c075519ffda43130417224805ac3b060ad8812432e5e6f0627be9b8",
+        "raw_source_sha256": "8b9dbf5ceb65826b10b660e72b22acbfc928e33ce03ec1b4c67f1ed446258cd8"
       }
     },
     {
@@ -14138,9 +15475,9 @@
       "case": "ignite__datasets_ignite_images_he_patient78_he_roi2.png__7801cb287c",
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-78",
-      "image": "all-method-legends-v1/case-046.webp",
-      "image_sha256": "f823e4c478655d01b5f30161f9e7d504c811ad7418b99fbf086a42f2e96073f6",
-      "preview_bytes": 250586,
+      "image": "shared-he-background-v1/case-046.webp",
+      "image_sha256": "5036f3d2472872cadf8d21910793a85b54e8fe64435c338c67f90bcf355386a2",
+      "preview_bytes": 256238,
       "source_sha256": {
         "he": "4cf79f0b3a81066aee803494ffdf190f7d86b697b60e45efca61d9147e1e6471",
         "expert": "1cdf9b0aa56f6d857ad50ce6c55f89549d590cb3f7b23e0fbe53aaf9cd4f3782",
@@ -14442,6 +15779,41 @@
         "selected_macro_dice": 0.6455621298282818,
         "selected_pixel_accuracy": 0.7518228585208142,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-046.png",
+        "sha256": "b079ffc48331b27807c20c18ec285e05d65c253cb4f00cf3df7efcac5c86868c",
+        "shape_yx": [
+          1655,
+          1414
+        ],
+        "excluded_pixels": 88602,
+        "tissue_pixels": 2251568,
+        "expert_scored_pixels_by_class": {
+          "tumor": 717531,
+          "stroma": 872626,
+          "inflammatory_infiltrate": 102321,
+          "necrosis": 272059,
+          "blood": 14046,
+          "macrophages": 18757,
+          "keratinized_tissue": 242000
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 2248,
+          "stroma": 10064,
+          "inflammatory_infiltrate": 1107,
+          "necrosis": 2932,
+          "blood": 0,
+          "macrophages": 125,
+          "keratinized_tissue": 1434
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-046.png",
+        "sha256": "c50aa9bdb9bb90a56df22796964fac557a270e002a1757e278de9d93076d6d39",
+        "raw_source_sha256": "e27c490819e0ba4ecba285a30eb94e20baff9a82b358717b8fca8f55f03cddbe"
       }
     },
     {
@@ -14449,9 +15821,9 @@
       "case": "ignite__datasets_ignite_images_he_patient7_he_roi1.png__f114823ea9",
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-7",
-      "image": "all-method-legends-v1/case-047.webp",
-      "image_sha256": "62e05485f4dcecc8f315cba14847802bbc1686d01e1fb7e7f7dabdb134261ced",
-      "preview_bytes": 275260,
+      "image": "shared-he-background-v1/case-047.webp",
+      "image_sha256": "69bca17f9523aa80667ecdb567a4b70590fe9ac886fcb7e2c6b0b9f9fe424792",
+      "preview_bytes": 286870,
       "source_sha256": {
         "he": "6d3cf1748437e99b2649103948e5ef46a40775430e9e95145d49cfed6beed5a1",
         "expert": "fcbe04f2560a1df3f2f194525ba2ee0c22306b3e400bfc1b50daa2b6ba9464af",
@@ -14728,6 +16100,33 @@
         "selected_macro_dice": 0.40821671437431917,
         "selected_pixel_accuracy": 0.6300386156251212,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-047.png",
+        "sha256": "7e18fe51f1a8e30502936c30f8174b9233080c7a6413b2f7feb8e231629901c9",
+        "shape_yx": [
+          1061,
+          1061
+        ],
+        "excluded_pixels": 144321,
+        "tissue_pixels": 981400,
+        "expert_scored_pixels_by_class": {
+          "tumor": 643592,
+          "necrosis": 306316,
+          "blood": 3851
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 3350,
+          "necrosis": 4852,
+          "blood": 1255
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-047.png",
+        "sha256": "41b4c7d6d34385561e5c573afc7332e684bd89d8854d207cbe14c66d1ee1ae76",
+        "raw_source_sha256": "1ce2ad905bd0132da86cd2103e51be6d39ca44a420cd3acfcd36a32e8c1a21fe"
       }
     },
     {
@@ -14735,9 +16134,9 @@
       "case": "ignite__datasets_ignite_images_he_patient8_he_roi1.png__d6caf8e04b",
       "dataset": "ignite",
       "source_group": "IGNITE:ignite-8",
-      "image": "all-method-legends-v1/case-048.webp",
-      "image_sha256": "7b5fd8f17ad88a54eeb7845ef676e6abc4d67aa38b22f67a8568f5d10cc23f4c",
-      "preview_bytes": 265958,
+      "image": "shared-he-background-v1/case-048.webp",
+      "image_sha256": "4d9237bb627ceba269dea1e3ba7a1e5b6460cae2348b2c562e823798b69ce628",
+      "preview_bytes": 266654,
       "source_sha256": {
         "he": "62fa490be4efe3e171140c6ca6edfa56682bea4306bfaeceff996aa6eaeb1b98",
         "expert": "8ee6b8ceb222a6fa312f56019bfc138fceb37a294b3db564ee9928f0e59e615a",
@@ -15014,6 +16413,37 @@
         "selected_macro_dice": 0.5637798967676038,
         "selected_pixel_accuracy": 0.838528509709056,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-048.png",
+        "sha256": "7cdb7ab4c3a25c64770f06a5b73ba616358baca8a92213ee823f100632f51b16",
+        "shape_yx": [
+          1055,
+          1082
+        ],
+        "excluded_pixels": 2873,
+        "tissue_pixels": 1138637,
+        "expert_scored_pixels_by_class": {
+          "tumor": 421011,
+          "stroma": 622172,
+          "necrosis": 25474,
+          "blood": 12536,
+          "macrophages": 2280
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 97,
+          "stroma": 64,
+          "necrosis": 130,
+          "blood": 0,
+          "macrophages": 0
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-048.png",
+        "sha256": "20fae8426e14c3d2ca2ab130f8bc6a0428c8cde8eb19b1c7f82761c4ad8ece69",
+        "raw_source_sha256": "cbaf932afd6884ff72e8dc2faa381e2f13a538acc5706e42923ab468bb016673"
       }
     },
     {
@@ -15021,9 +16451,9 @@
       "case": "gcss_01",
       "dataset": "gcss",
       "source_group": "TCGA-BR-8588",
-      "image": "all-method-legends-v1/case-049.webp",
-      "image_sha256": "d801879af23baab53e1a998736415ff4cf1374fd3492abb66818daf9f849f72f",
-      "preview_bytes": 293666,
+      "image": "shared-he-background-v1/case-049.webp",
+      "image_sha256": "6596766de0c58e786e7b1ad9bb021eaadbce746023067ee13366ea7ce0b31285",
+      "preview_bytes": 294244,
       "source_sha256": {
         "he": "3503967663a227bc476423c6073371138d45eeaf39e555f38fb8249d034e86b2",
         "expert": "8636e0491354488c938dd25634481b7a2d4f4eaf4a1cc5735b7a5f551a2c2478",
@@ -15327,6 +16757,33 @@
         "selected_macro_dice": 0.5192722905869499,
         "selected_pixel_accuracy": 0.4379497220178994,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-049.png",
+        "sha256": "8bc243070364993c82a8b407342971aa7dc33e36859296575ae01e89093c66da",
+        "shape_yx": [
+          1808,
+          1807
+        ],
+        "excluded_pixels": 11463,
+        "tissue_pixels": 3255593,
+        "expert_scored_pixels_by_class": {
+          "tumor": 528474,
+          "inflamed_stroma": 1503799,
+          "stroma": 1147608
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 1235,
+          "inflamed_stroma": 2314,
+          "stroma": 1544
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-049.png",
+        "sha256": "3205eb5b81037c5640b872f18074a15d60087ee650b8baf855859603e122ce93",
+        "raw_source_sha256": "03912af4030a25fe6b1199302c185242b46ef3d987c9242884abc3e14108794d"
       }
     },
     {
@@ -15334,9 +16791,9 @@
       "case": "gcss_04",
       "dataset": "gcss",
       "source_group": "TCGA-VQ-A8E2",
-      "image": "all-method-legends-v1/case-050.webp",
-      "image_sha256": "5ce057ea482214ce912e4a7af456f148bd91c825549049e2ecafadffcf09ce4f",
-      "preview_bytes": 324686,
+      "image": "shared-he-background-v1/case-050.webp",
+      "image_sha256": "08f7f4e39224d4f12ea041b2d10b5f13440409cbce57b62d45a8d3a26b2cdc0e",
+      "preview_bytes": 335334,
       "source_sha256": {
         "he": "6c87f90b64de27dcde37195f78e01c037007d0fe6719c7cae30c6fa67cd3c3ff",
         "expert": "2859b3b2400eb5422fbffe34be2a478d9669152ddb64fe4e26ed988f9a3cf69c",
@@ -15658,6 +17115,37 @@
         "selected_macro_dice": 0.4752204737246646,
         "selected_pixel_accuracy": 0.5582458132918032,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-050.png",
+        "sha256": "8a1e57c4159546f959dcd11b19c407bf894ba554612161d0237818f7dc3cf116",
+        "shape_yx": [
+          1810,
+          1810
+        ],
+        "excluded_pixels": 158274,
+        "tissue_pixels": 3117826,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1076314,
+          "inflamed_stroma": 224569,
+          "stroma": 62383,
+          "muscle": 1034884,
+          "necrosis": 685239
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 22808,
+          "inflamed_stroma": 9757,
+          "stroma": 2795,
+          "muscle": 3201,
+          "necrosis": 26882
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-050.png",
+        "sha256": "0d2c3294caaaac618fa5b430b88e5d0df48c6c996cbf0f9b039ab5775da48c53",
+        "raw_source_sha256": "e275578101c2692d621f4c059704bfa841e9010216f1505cb4cb98b5aabc003f"
       }
     },
     {
@@ -15665,9 +17153,9 @@
       "case": "gcss_05",
       "dataset": "gcss",
       "source_group": "TCGA-D7-A6EY",
-      "image": "all-method-legends-v1/case-051.webp",
-      "image_sha256": "79c11df91c329043e6c58a5efd268b1dae9184db7e4b2528aa7c632c466c9ec0",
-      "preview_bytes": 308270,
+      "image": "shared-he-background-v1/case-051.webp",
+      "image_sha256": "15c7413f8fd2cccc82c4496fc662681fffccf075f20339bccf81eef55b1ad606",
+      "preview_bytes": 309214,
       "source_sha256": {
         "he": "484b80a7d8faae08c04d9d87e9ccc9098c7a5b4d90f17f35697893e72bfa7a4d",
         "expert": "216ee120cde659c258288ad6ec3c8709cec81e540b6aa1ee658adec3444c8e00",
@@ -15984,6 +17472,35 @@
         "selected_macro_dice": 0.5821549521454672,
         "selected_pixel_accuracy": 0.5404798261248124,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-051.png",
+        "sha256": "648cc114dbedc8c1de2cf88531e52e5c40cdeec03467e90a12f1a4a64a207db4",
+        "shape_yx": [
+          1811,
+          1812
+        ],
+        "excluded_pixels": 22901,
+        "tissue_pixels": 3258631,
+        "expert_scored_pixels_by_class": {
+          "tumor": 696767,
+          "inflamed_stroma": 1067900,
+          "stroma": 283331,
+          "muscle": 1007067
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 1111,
+          "inflamed_stroma": 9896,
+          "stroma": 6134,
+          "muscle": 287
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-051.png",
+        "sha256": "dd53336af3d39b312c05130987d6c6ecfc4a4cc959033e743b23ffae13f612bb",
+        "raw_source_sha256": "c23aee3bd408244c748e9469e9f8c81d424e9679159aac1023aee4f7986edf2f"
       }
     },
     {
@@ -15991,9 +17508,9 @@
       "case": "gcss_07",
       "dataset": "gcss",
       "source_group": "TCGA-VQ-A8P2",
-      "image": "all-method-legends-v1/case-052.webp",
-      "image_sha256": "e650face695e298412468424e048848bff5c1e58185ae503acc068e35ed35158",
-      "preview_bytes": 308192,
+      "image": "shared-he-background-v1/case-052.webp",
+      "image_sha256": "cef6295968f5dba27527369d865737eb2c2f2c39ef96ee310812014680ebe757",
+      "preview_bytes": 312726,
       "source_sha256": {
         "he": "883734bce7bb56a71e661b38dbc7b7b41eb3e15d11e8f42bacbf825181df7b47",
         "expert": "6c8d681c64db8644c380b96bd3d97976f9bb49d72d1b5e5ced03da73600b9fe0",
@@ -16298,6 +17815,33 @@
         "selected_macro_dice": 0.2808445497587416,
         "selected_pixel_accuracy": 0.23160127801967959,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-052.png",
+        "sha256": "d9c055741e88d47d4a0affc7bf33149f0c7d5c03ea2c306a3b9ef66272988a1b",
+        "shape_yx": [
+          1811,
+          1810
+        ],
+        "excluded_pixels": 61039,
+        "tissue_pixels": 3216871,
+        "expert_scored_pixels_by_class": {
+          "tumor": 947236,
+          "inflamed_stroma": 555454,
+          "stroma": 1513226
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 7404,
+          "inflamed_stroma": 288,
+          "stroma": 1199
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-052.png",
+        "sha256": "66d06a5968909b5beab9792c375d0b12b672c6162872f2245e39b1506dff1004",
+        "raw_source_sha256": "9720ec5f0fd37c07efa4ec069ba39b5ec6749113a19b2e50b33dd7e677f641cc"
       }
     },
     {
@@ -16305,9 +17849,9 @@
       "case": "gcss_09",
       "dataset": "gcss",
       "source_group": "TCGA-VQ-A91Z",
-      "image": "all-method-legends-v1/case-053.webp",
-      "image_sha256": "1e5c8ebcea5222d8daa0b6c3abbe16e209c5e77e5b72d9953164181232f7892b",
-      "preview_bytes": 316640,
+      "image": "shared-he-background-v1/case-053.webp",
+      "image_sha256": "5b9b721fcb6b18fd598386466245e687a42e960a3a683f2fd94387410a002e60",
+      "preview_bytes": 321294,
       "source_sha256": {
         "he": "8a185901a926adf3dccb19edc80f90543732afa7269c483b4f939eb456450732",
         "expert": "034aabc61822009e855b538f9fed769b954c6a80db9cd6e1a0c68024c1f8aeb5",
@@ -16593,6 +18137,33 @@
         "selected_macro_dice": 0.27184132281259266,
         "selected_pixel_accuracy": 0.39347853772583696,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-053.png",
+        "sha256": "ee0e26674e521f45dbc57e91087522cbc8bcdb53a22179491a195682f9f90928",
+        "shape_yx": [
+          1811,
+          1810
+        ],
+        "excluded_pixels": 75902,
+        "tissue_pixels": 3202008,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1787547,
+          "inflamed_stroma": 415515,
+          "stroma": 977053
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 6672,
+          "inflamed_stroma": 84,
+          "stroma": 3723
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-053.png",
+        "sha256": "4f0857bcae8db96ac54919628cb3bafeeacccf6dcc5834d687e762fd5fc4bbf6",
+        "raw_source_sha256": "21c8fd910b80b76412280ac63d36280217b9baccb2b43bf6b2ccbf72ffa3623c"
       }
     },
     {
@@ -16600,9 +18171,9 @@
       "case": "gcss_10",
       "dataset": "gcss",
       "source_group": "TCGA-CD-A4MG",
-      "image": "all-method-legends-v1/case-054.webp",
-      "image_sha256": "38abb27a78d724cf625ee4a6051e6fa466b9139be11c89c353e54ccc14f8594c",
-      "preview_bytes": 327236,
+      "image": "shared-he-background-v1/case-054.webp",
+      "image_sha256": "64bb54a2b2fe101079190298950f1bfa0d7c6fca3321fb449a73b7d95973141a",
+      "preview_bytes": 332232,
       "source_sha256": {
         "he": "59b60b17c8c185e52a1d28d52724ad7429a3908fc60fd804a0523e1572c95f07",
         "expert": "466774bdc52ccf6fa49fbb72d50439758e31b131b39ee6ad57bc4cbe352d269d",
@@ -16902,6 +18473,35 @@
         "selected_macro_dice": 0.5328742154021036,
         "selected_pixel_accuracy": 0.4736865306578984,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-054.png",
+        "sha256": "be23e0d448d311754546ab76c7717c795d344a700232997ab101dcc00a6bbf30",
+        "shape_yx": [
+          1778,
+          1778
+        ],
+        "excluded_pixels": 71303,
+        "tissue_pixels": 3089981,
+        "expert_scored_pixels_by_class": {
+          "tumor": 844583,
+          "inflamed_stroma": 791490,
+          "stroma": 441521,
+          "muscle": 962161
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 25648,
+          "inflamed_stroma": 14159,
+          "stroma": 4593,
+          "muscle": 810
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-054.png",
+        "sha256": "fc4aabc1e350af1700b29383519b0eb35ee2cd5bc589cc1801651b0653758986",
+        "raw_source_sha256": "88e45df82198ff8b1c108affbc85f0024030213d9b892ad627e9e5467e46abf1"
       }
     },
     {
@@ -16909,9 +18509,9 @@
       "case": "gcss_13",
       "dataset": "gcss",
       "source_group": "TCGA-BR-8369",
-      "image": "all-method-legends-v1/case-055.webp",
-      "image_sha256": "4d4341c9495ed0661def061c682c76c93a8e90cd20e93e28da9c06cd842bf12e",
-      "preview_bytes": 237874,
+      "image": "shared-he-background-v1/case-055.webp",
+      "image_sha256": "392c677b4cdbc443df46f4660082ed1d7e2914cfb5e1daca51e3e6fa04171915",
+      "preview_bytes": 254868,
       "source_sha256": {
         "he": "e39882371566a807d982ce435cd641870b6c6cd0f85c5d5ad82b6d0c32ef3983",
         "expert": "844f08174d812c17c30859e933daa86404b4296f0540c3eb1c728d1105217ce8",
@@ -17207,6 +18807,35 @@
         "selected_macro_dice": 0.23316536768202284,
         "selected_pixel_accuracy": 0.26059521402196983,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-055.png",
+        "sha256": "95d0aad8bbf1937d546d6dc1bc8066a6ffecc60aa176847a467559f9f4fe7c03",
+        "shape_yx": [
+          1807,
+          1807
+        ],
+        "excluded_pixels": 668328,
+        "tissue_pixels": 2596921,
+        "expert_scored_pixels_by_class": {
+          "tumor": 301749,
+          "inflamed_stroma": 86092,
+          "stroma": 2006516,
+          "muscle": 117815
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 5299,
+          "inflamed_stroma": 440,
+          "stroma": 13930,
+          "muscle": 23837
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-055.png",
+        "sha256": "c7713d741f07a8ea5d1e1ca0c6a4bb9ed7b406b6640ea919b5ea735b2d3912b9",
+        "raw_source_sha256": "b9ef4c1012b0f2640619f9556ff353c5620ecbd3f3ace6bf5de73cf316457826"
       }
     },
     {
@@ -17214,9 +18843,9 @@
       "case": "gcss_14",
       "dataset": "gcss",
       "source_group": "TCGA-CD-8535",
-      "image": "all-method-legends-v1/case-056.webp",
-      "image_sha256": "ccfc54bbd14922ce9fa4c4a9376bb8ae2ecd40d5dc431f63ac38d491daa04aae",
-      "preview_bytes": 317202,
+      "image": "shared-he-background-v1/case-056.webp",
+      "image_sha256": "d43ea73b7ddcacf2772976220348af9b89371c410ef29ba4fc45091cfc0eb5f0",
+      "preview_bytes": 317550,
       "source_sha256": {
         "he": "13fec8836e4e691dc770c57125b7339cbc95a40265161d471052423fa3889d79",
         "expert": "57f834e87ecc37bb789599cf5f6a3fcac0084a75ba9e61172fe47dbbe5109dde",
@@ -17487,6 +19116,33 @@
         "selected_macro_dice": 0.30755223742759336,
         "selected_pixel_accuracy": 0.3005321301109744,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-056.png",
+        "sha256": "5788db77064b6f05b863d3b5413a29ba8e7e056ba59a0efa341c7f1269227316",
+        "shape_yx": [
+          1811,
+          1810
+        ],
+        "excluded_pixels": 7794,
+        "tissue_pixels": 3270116,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1065872,
+          "inflamed_stroma": 1277599,
+          "stroma": 881868
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 1753,
+          "inflamed_stroma": 302,
+          "stroma": 181
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-056.png",
+        "sha256": "dbe1021ed904df591a6fb3467ba827c1e50edb5ffeee5e64a17394d3720b1cf8",
+        "raw_source_sha256": "966b095e48e8c4d73f40415817d9eabf6549c1f8eadfcda1d12404edde5d161a"
       }
     },
     {
@@ -17494,9 +19150,9 @@
       "case": "gcss_15",
       "dataset": "gcss",
       "source_group": "TCGA-VQ-AA6I",
-      "image": "all-method-legends-v1/case-057.webp",
-      "image_sha256": "94c4e2d98e6d8b9cf2344bd7c08431861c85f432e2eb93cb2bebe50f5923308b",
-      "preview_bytes": 304610,
+      "image": "shared-he-background-v1/case-057.webp",
+      "image_sha256": "c162da1e9881c96a94ae11bb3d2f7376107813e546e7faa93ba54e10d935f721",
+      "preview_bytes": 317590,
       "source_sha256": {
         "he": "94bb7841cc58dbf39bd50455d646323728b3bf9e0879ffeffc9c19c97e3c391a",
         "expert": "52455d0640bfec224d22783f377a9fc1f85ad67c76dc093aeacefcd3e7f838b4",
@@ -17778,6 +19434,33 @@
         "selected_macro_dice": 0.4556823855920233,
         "selected_pixel_accuracy": 0.4514126429929194,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-057.png",
+        "sha256": "affcd1b3f250f7f32ceecab7507b36d16240bcbce361b663cc2b0b6da67cdf03",
+        "shape_yx": [
+          1810,
+          1811
+        ],
+        "excluded_pixels": 139403,
+        "tissue_pixels": 3138507,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1007138,
+          "inflamed_stroma": 1021100,
+          "stroma": 1246050
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 81448,
+          "inflamed_stroma": 53685,
+          "stroma": 3483
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-057.png",
+        "sha256": "d3bc39f90e0cef3a27406920f2f887838ddd169f052dfd9adaa2538b63b84e44",
+        "raw_source_sha256": "e0c75e106702b6788588ade1d0c71b77de4813761f931cf021c47c062f02ae2e"
       }
     },
     {
@@ -17785,9 +19468,9 @@
       "case": "gcss_17",
       "dataset": "gcss",
       "source_group": "TCGA-BR-6706",
-      "image": "all-method-legends-v1/case-058.webp",
-      "image_sha256": "8a92a1c6e676b40901a7d0252bd3aa41e0077a7390fea0216f45f183f62dd441",
-      "preview_bytes": 252498,
+      "image": "shared-he-background-v1/case-058.webp",
+      "image_sha256": "b78e3fbec270d2d27de60e3abf08ae0d9d87bd9ed805ea36db6ffcb0779f8bf3",
+      "preview_bytes": 256236,
       "source_sha256": {
         "he": "2a07b84b15aef82faa25dec67809122fe6ae1572713e3f6c320bc8c29ce896a4",
         "expert": "ff764818f77f06733a2ec7d55f9e47b731b1010a9ffc23791e38730feb1ce1c2",
@@ -18097,6 +19780,33 @@
         "selected_macro_dice": 0.271675264901542,
         "selected_pixel_accuracy": 0.2870845137863613,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-058.png",
+        "sha256": "858368332b173ed03b7cb537fe35d1954679a93359159bae738ff5361165fea2",
+        "shape_yx": [
+          1807,
+          1806
+        ],
+        "excluded_pixels": 67272,
+        "tissue_pixels": 3196170,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1210894,
+          "inflamed_stroma": 1551828,
+          "stroma": 445086
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 3669,
+          "inflamed_stroma": 257,
+          "stroma": 27364
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-058.png",
+        "sha256": "a1fe3685bfc2bb6110c3726c3e8b0154a9ca1239eb3eff901abb075c3a1f4be1",
+        "raw_source_sha256": "8df1eb0e9f1dce52e2d10600107b0ef8401e2ed753f9c9f9f9b90074afaa323d"
       }
     },
     {
@@ -18104,9 +19814,9 @@
       "case": "gcss_19",
       "dataset": "gcss",
       "source_group": "TCGA-D7-6520",
-      "image": "all-method-legends-v1/case-059.webp",
-      "image_sha256": "b6ea42c4821290d7d32e0797e2cebfcabfa1a5493830bff03640514f3703ce94",
-      "preview_bytes": 299062,
+      "image": "shared-he-background-v1/case-059.webp",
+      "image_sha256": "9a87113122de3516a62d7bb5516ac4d45687934ce0e7fad7b18d2bbdf97fa907",
+      "preview_bytes": 372284,
       "source_sha256": {
         "he": "e5cb90dc5803f099f2de2bed1116a118dd2f607dda4cf171ca96a8d3cdd8f73f",
         "expert": "49417bf5231a317d469bb6b303a66c1a920e10820dfa18827886dc820627d554",
@@ -18380,6 +20090,33 @@
         "selected_macro_dice": 0.5106140423861371,
         "selected_pixel_accuracy": 0.522636658605337,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-059.png",
+        "sha256": "4d1ae32db085d77d93518aa97bc1863cba07b35714e09115c330d8b843e36267",
+        "shape_yx": [
+          1807,
+          1807
+        ],
+        "excluded_pixels": 1098815,
+        "tissue_pixels": 2166434,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1722156,
+          "inflamed_stroma": 894701,
+          "stroma": 529853
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 275037,
+          "inflamed_stroma": 323320,
+          "stroma": 393648
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-059.png",
+        "sha256": "b53cb1473e488135cdecba92cdbbd6fe9152c84e9ef43c38a57dccccc58703b3",
+        "raw_source_sha256": "41e8087347c904655eeec5766d9554fb81dd22604705abe74f8006f6ae4ddec0"
       }
     },
     {
@@ -18387,9 +20124,9 @@
       "case": "gcss_21",
       "dataset": "gcss",
       "source_group": "TCGA-D7-6818",
-      "image": "all-method-legends-v1/case-060.webp",
-      "image_sha256": "3892e018ac3609a3abe9122738f37c9681ca4095625563ec68616b1b2e4e5223",
-      "preview_bytes": 346030,
+      "image": "shared-he-background-v1/case-060.webp",
+      "image_sha256": "237c54fe6574b3f338b3981d83b39f1bdd19de634c40570b49ac57e62d163c87",
+      "preview_bytes": 416350,
       "source_sha256": {
         "he": "2572708b691d7907e5d8c199516c7eea55e1876a967788e6c90d3b04a4bf90ee",
         "expert": "32bf3d3abd75ee40a653ff7cca4b97210806ced89dd51d8b461e14c8e588e0c7",
@@ -18654,6 +20391,33 @@
         "selected_macro_dice": 0.37048267204746615,
         "selected_pixel_accuracy": 0.4288088453468209,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-060.png",
+        "sha256": "0f24c5704feaaba87aa2b108f7efbcb428e2affeb43a410ece8f765390daa08d",
+        "shape_yx": [
+          1761,
+          1761
+        ],
+        "excluded_pixels": 977199,
+        "tissue_pixels": 2123922,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1407791,
+          "inflamed_stroma": 154,
+          "stroma": 1491116
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 468617,
+          "inflamed_stroma": 89,
+          "stroma": 343480
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-060.png",
+        "sha256": "bfd8fd4b37a27cfc910f63455e16c9d7e4d4448ba8d14405689afe073e231019",
+        "raw_source_sha256": "5cddc8e004e76692a172c7cf0d73ee81383b07ad8eee62cd1c16c152b761c904"
       }
     },
     {
@@ -18661,9 +20425,9 @@
       "case": "gcss_22",
       "dataset": "gcss",
       "source_group": "TCGA-D7-5578",
-      "image": "all-method-legends-v1/case-061.webp",
-      "image_sha256": "ce43c4dd3a73d25ca8a0746b2c05aa08c6830724485b4ed501ff0a73aaf2a0a7",
-      "preview_bytes": 321308,
+      "image": "shared-he-background-v1/case-061.webp",
+      "image_sha256": "47a18ec9c6b23d36f9c49babe90503eba419d71add8a4e3f0e8b488f576e080f",
+      "preview_bytes": 387802,
       "source_sha256": {
         "he": "e894853a44462d25859e001f18f150293c8ef6c0edd68dadb8d9d7d03852ec44",
         "expert": "d71c9fa8cbc485f591d1cabb69e24d0a92a6ca9f05288b9465948e2f0428c762",
@@ -18934,6 +20698,35 @@
         "selected_macro_dice": 0.5767145515333852,
         "selected_pixel_accuracy": 0.4881648131591359,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-061.png",
+        "sha256": "41d39875ff82225b0ef0091e28f2f29a8ac4d0231015e139f555aadbea358d12",
+        "shape_yx": [
+          1782,
+          1782
+        ],
+        "excluded_pixels": 1110512,
+        "tissue_pixels": 2065012,
+        "expert_scored_pixels_by_class": {
+          "tumor": 523450,
+          "inflamed_stroma": 1167519,
+          "stroma": 778275,
+          "muscle": 679291
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 47029,
+          "inflamed_stroma": 368717,
+          "stroma": 540532,
+          "muscle": 131410
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-061.png",
+        "sha256": "21f14f6ce9bb8da7e46dab695c03bbcb8f7d5f6a8d8fcc3198cdeb72c8edfb40",
+        "raw_source_sha256": "f78c04e16bab51b221c743a7fad84ffe6a8dd634767637f44db615bd658ca055"
       }
     },
     {
@@ -18941,9 +20734,9 @@
       "case": "gcss_24",
       "dataset": "gcss",
       "source_group": "TCGA-BR-A4PF",
-      "image": "all-method-legends-v1/case-062.webp",
-      "image_sha256": "eb291ae5d034659aed617d95b90709193bb55669ac92ec8aa3047d889514e8bf",
-      "preview_bytes": 288094,
+      "image": "shared-he-background-v1/case-062.webp",
+      "image_sha256": "5946e4f4fbfdf5e02ad6ad0fdbcc2867e735fa3d2ccae5bf36dc3db75cfd4e40",
+      "preview_bytes": 291432,
       "source_sha256": {
         "he": "35d7b7aef08b006c4507be5d85efbb14c37ff966c7e6bd0ca3e07d2015457257",
         "expert": "6a532745613cec2aae2bf184c78fa70a52dd66bbebcbad920c0c5e8ac997bc53",
@@ -19244,6 +21037,35 @@
         "selected_macro_dice": 0.28769731748414684,
         "selected_pixel_accuracy": 0.16370284283734943,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-062.png",
+        "sha256": "48c1d77bea8b56d0311c41bc20556985126368e246041bbec02eccde0904081a",
+        "shape_yx": [
+          1778,
+          1778
+        ],
+        "excluded_pixels": 77936,
+        "tissue_pixels": 3083348,
+        "expert_scored_pixels_by_class": {
+          "tumor": 296791,
+          "inflamed_stroma": 1325034,
+          "stroma": 1066852,
+          "muscle": 113840
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 1877,
+          "inflamed_stroma": 5869,
+          "stroma": 3584,
+          "muscle": 69
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-062.png",
+        "sha256": "f67197cc97ef2fbcd13a0f31113fb05221168e95edffb75b245687e309d40d96",
+        "raw_source_sha256": "2f1121fbd61b92cf48daf9822b7e419a4ca3ffc8acf7e5350d1cf0f18b9631cb"
       }
     },
     {
@@ -19251,9 +21073,9 @@
       "case": "gcss_25",
       "dataset": "gcss",
       "source_group": "TCGA-D7-8578",
-      "image": "all-method-legends-v1/case-063.webp",
-      "image_sha256": "def9e5882fc0b6a1bb6eb92eaf696245f4904c9571f96b54973bc67256dc1828",
-      "preview_bytes": 230332,
+      "image": "shared-he-background-v1/case-063.webp",
+      "image_sha256": "7b9c9bf3a5ca2ba3855575ab24fde0f2999d6a7489e7eb86ef41ae4fafc5fd68",
+      "preview_bytes": 242538,
       "source_sha256": {
         "he": "5c0f0bbf0c92155e2b0b5674c02a596defb125f0cdf4b401e9f327f1f66ecec4",
         "expert": "64cef9d018cd5a8a74a0f6b6e73e95c513f70fd4e45f49923f04df67311b3ece",
@@ -19532,6 +21354,33 @@
         "selected_macro_dice": 0.0003096405866991428,
         "selected_pixel_accuracy": 0.00032057778661176786,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-063.png",
+        "sha256": "0f3b92acc6797f397161b09a02bfa7cd1af9aa677e4dfcb8cddb11be4be3ee4a",
+        "shape_yx": [
+          1767,
+          1767
+        ],
+        "excluded_pixels": 184030,
+        "tissue_pixels": 2938259,
+        "expert_scored_pixels_by_class": {
+          "tumor": 244040,
+          "inflamed_stroma": 1974972,
+          "stroma": 834849
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 7344,
+          "inflamed_stroma": 114490,
+          "stroma": 8419
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-063.png",
+        "sha256": "62b8e04f79f40f4982d779af16306fd157388febf2795ea2c74f617cb5d0eb8a",
+        "raw_source_sha256": "aa45f565b38a50d4f16b3a5998cbf8197c1d8e441b708c9176a6b7b56fd67f65"
       }
     },
     {
@@ -19539,9 +21388,9 @@
       "case": "gcss_27",
       "dataset": "gcss",
       "source_group": "TCGA-BR-8483",
-      "image": "all-method-legends-v1/case-064.webp",
-      "image_sha256": "a6b1ba8e39bcfdf86931c23316283590fe24f33cbf04b83dce9cc9341cae6f51",
-      "preview_bytes": 269932,
+      "image": "shared-he-background-v1/case-064.webp",
+      "image_sha256": "5f9ca96ee26cd5a5928ebaa122a84f86409617f70506d65d1115bc08d820a712",
+      "preview_bytes": 290566,
       "source_sha256": {
         "he": "9c1cbac2cd892464e9ec3a6d37fece2b91c9b1aa341390de99169bf3a23110c9",
         "expert": "80d84d50c0f0b3fd9ab3b5a791390a16de7f91f7d4f123c7410a7693ff9d3845",
@@ -19829,6 +21678,33 @@
         "selected_macro_dice": 0.18730618762118267,
         "selected_pixel_accuracy": 0.0884928752848735,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-064.png",
+        "sha256": "77ca18115501753c922cba5eda9e5d1f4cb223069021c38e3e1760f63c25f04d",
+        "shape_yx": [
+          1807,
+          1807
+        ],
+        "excluded_pixels": 401087,
+        "tissue_pixels": 2864162,
+        "expert_scored_pixels_by_class": {
+          "tumor": 654516,
+          "inflamed_stroma": 1965463,
+          "stroma": 638046
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 291702,
+          "inflamed_stroma": 6974,
+          "stroma": 102325
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-064.png",
+        "sha256": "3242857a844fecf0e5a70730549569b234e9528a347d51e2c8df7892ecf9084e",
+        "raw_source_sha256": "d70669f4cbb927ec4cbc4a421684acc362dceaf7c5345e5f0dde343ec7461135"
       }
     },
     {
@@ -19836,9 +21712,9 @@
       "case": "gcss_30",
       "dataset": "gcss",
       "source_group": "TCGA-D7-8579",
-      "image": "all-method-legends-v1/case-065.webp",
-      "image_sha256": "08f19f3407e5df50f06c1e691ccf10f1422312b1f6cf8f23339f06e342426390",
-      "preview_bytes": 261906,
+      "image": "shared-he-background-v1/case-065.webp",
+      "image_sha256": "ebc8085a20226129a32aab2d85cfb3a7b027158b75c310e8ba2bc249d749a452",
+      "preview_bytes": 281692,
       "source_sha256": {
         "he": "dd31a3ab81670c7386bb4f94a769fb82e31cc4848aaf12ae1ecbb4b9a38f3a44",
         "expert": "854a6b107285193fc237d0c5ccc1f1798cf9ba724ca87c2b61316d87f7a610d2",
@@ -20125,6 +22001,33 @@
         "selected_macro_dice": 0.0071220254697536385,
         "selected_pixel_accuracy": 0.006424898171516371,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-065.png",
+        "sha256": "19c5dbfa8b3993b4dfd0871efbf82efa362ba7bdf62f9c5d0a87fa279c6b6404",
+        "shape_yx": [
+          1767,
+          1768
+        ],
+        "excluded_pixels": 454225,
+        "tissue_pixels": 2669831,
+        "expert_scored_pixels_by_class": {
+          "tumor": 120345,
+          "inflamed_stroma": 1435215,
+          "stroma": 1548925
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 0,
+          "inflamed_stroma": 428537,
+          "stroma": 17919
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-065.png",
+        "sha256": "fe853df1dfa92a487ff9e07552ce5f742959c57ef4a7f9f1f044e7cc0baba811",
+        "raw_source_sha256": "934349f23bdaf9ce72daa9c3601c8ba94d6f23bba23c358ef080b1c77d8453ef"
       }
     },
     {
@@ -20132,9 +22035,9 @@
       "case": "gcss_34",
       "dataset": "gcss",
       "source_group": "TCGA-D7-6518",
-      "image": "all-method-legends-v1/case-066.webp",
-      "image_sha256": "019886477ee2bace9366bcf00a49c65bd18ce96e20942ae456aea0fe1b220b25",
-      "preview_bytes": 202292,
+      "image": "shared-he-background-v1/case-066.webp",
+      "image_sha256": "2ba24e70aef4a5080241b854c9b19aae7353e5f5af31a10b5f6ceb69f4cabe72",
+      "preview_bytes": 209154,
       "source_sha256": {
         "he": "7ca6a7330ace0ff27da75dde78dbfde48d43b17a6e5d9c4702b17e911004aec7",
         "expert": "08bdcff587470e51b686b85eb92a2e425c37396d0a2f1f8f1cf7406fb7a7ac64",
@@ -20426,6 +22329,31 @@
         "selected_macro_dice": 0.02741991728467618,
         "selected_pixel_accuracy": 0.014873012722254613,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-066.png",
+        "sha256": "a2efbf70b8a79d55523d9e22f8d5b660918afed9467361cd3fd133120a24173b",
+        "shape_yx": [
+          1807,
+          1807
+        ],
+        "excluded_pixels": 101797,
+        "tissue_pixels": 3163452,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1691625,
+          "inflamed_stroma": 1517476
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 16124,
+          "inflamed_stroma": 37944
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-066.png",
+        "sha256": "3136f3e024be050b605f8cb7a5462e9fe5e1135b1e31ff848950f75668e83493",
+        "raw_source_sha256": "55402a2bb0a3aa02cf87b20f16d6e8d177808e87e2efea56e25125d61e3e2744"
       }
     },
     {
@@ -20433,9 +22361,9 @@
       "case": "gcss_35",
       "dataset": "gcss",
       "source_group": "TCGA-VQ-A91X",
-      "image": "all-method-legends-v1/case-067.webp",
-      "image_sha256": "a4724d56ad20d16e0fdceeecfd762fc786ae4035fca82ffeaf7786af5dcd0953",
-      "preview_bytes": 317940,
+      "image": "shared-he-background-v1/case-067.webp",
+      "image_sha256": "e0d22417b17838faa1f881ae179811208ec15a02691c57673bfd5d1d683444d7",
+      "preview_bytes": 319436,
       "source_sha256": {
         "he": "5ae716276dc330d5804b76be91020060b5ef6bac4e048fdedd1c4722d0795328",
         "expert": "9249fe1922ea77523dfdd1bb1725944b6916599a7e811ff56dcdc2c538142e9f",
@@ -20744,6 +22672,35 @@
         "selected_macro_dice": 0.47452356543674523,
         "selected_pixel_accuracy": 0.5377890336777996,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-067.png",
+        "sha256": "8225967917548d69244cca627639c66f1fb0bc2ef1dd5b7d24c1fa1849492e40",
+        "shape_yx": [
+          1810,
+          1811
+        ],
+        "excluded_pixels": 21330,
+        "tissue_pixels": 3256580,
+        "expert_scored_pixels_by_class": {
+          "tumor": 1222838,
+          "inflamed_stroma": 430157,
+          "stroma": 272409,
+          "muscle": 1285554
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 1213,
+          "inflamed_stroma": 521,
+          "stroma": 0,
+          "muscle": 12911
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-067.png",
+        "sha256": "451b09809a2a50e1d14b56a33d80d85779770c6d8c9028032b5bdb909c4202ae",
+        "raw_source_sha256": "5864d2546ffd7a7aee569d3437fc21d6b27174788ef570d9c19a567006ac707c"
       }
     },
     {
@@ -20751,9 +22708,9 @@
       "case": "gcss_40",
       "dataset": "gcss",
       "source_group": "TCGA-BR-8484",
-      "image": "all-method-legends-v1/case-068.webp",
-      "image_sha256": "8219c8b9196299a2b21430d89c5a95d0a78fe7324c4fbe28867df7b63c428478",
-      "preview_bytes": 322078,
+      "image": "shared-he-background-v1/case-068.webp",
+      "image_sha256": "85c02e700d332e8e29397a5b30a3e3e489332a540fd1d62e150321d38b68e317",
+      "preview_bytes": 322526,
       "source_sha256": {
         "he": "c5300d63e9009ad5787a6d39d6bc557fb27d017aed0dc1c6010bb894f70408fc",
         "expert": "011aa5380b90731394077d59f7b3082a0abba17e6003f8f6a87b44ea2daec385",
@@ -21054,6 +23011,37 @@
         "selected_macro_dice": 0.45164891832398835,
         "selected_pixel_accuracy": 0.4060617226620873,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-068.png",
+        "sha256": "3048a5991612943c09573496b216f244e26e0e285f69a28e9296baecd86cbd11",
+        "shape_yx": [
+          1806,
+          1806
+        ],
+        "excluded_pixels": 15033,
+        "tissue_pixels": 3246603,
+        "expert_scored_pixels_by_class": {
+          "tumor": 704317,
+          "inflamed_stroma": 1602777,
+          "stroma": 457420,
+          "muscle": 374021,
+          "necrosis": 42112
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "tumor": 136,
+          "inflamed_stroma": 253,
+          "stroma": 27,
+          "muscle": 0,
+          "necrosis": 687
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-068.png",
+        "sha256": "9531794b3ab44fe4929e41194f0b5d5da3d5e26fca001778b0bdf204e6bee2bb",
+        "raw_source_sha256": "c18b4fd3e77c0cc47ac2c69b67b9807eb01ff5d4daccbf071a824342597fc919"
       }
     },
     {
@@ -21061,9 +23049,9 @@
       "case": "peso_07",
       "dataset": "peso",
       "source_group": "peso-slide-16",
-      "image": "all-method-legends-v1/case-069.webp",
-      "image_sha256": "4a5f14d2fdc24f9911ef8dd9683d93f25a23424a0f180b2d0733b49a6905e48e",
-      "preview_bytes": 231074,
+      "image": "shared-he-background-v1/case-069.webp",
+      "image_sha256": "546cecc824c87adf1130f1605925f90d85c215121dfaffe22d24008d1cad36e8",
+      "preview_bytes": 250650,
       "source_sha256": {
         "he": "1092e038d16d0ab2e3d430737911e7bf5ddf41d693c29286783e63c8f3f0b94d",
         "expert": "1d595741763152ca9f1348c449915c99b21f259787149b4c139af0c574c12736",
@@ -21314,6 +23302,29 @@
         "selected_macro_dice": 0.945345531567879,
         "selected_pixel_accuracy": 0.8963556879185808,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-069.png",
+        "sha256": "6c6657171d2fb45daa52e20b2097d009aa4b5a166ee830a6bbe3ff57d229c7b2",
+        "shape_yx": [
+          1280,
+          1280
+        ],
+        "excluded_pixels": 448512,
+        "tissue_pixels": 1189888,
+        "expert_scored_pixels_by_class": {
+          "epithelial_tissue": 836756
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "epithelial_tissue": 27287
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-069.png",
+        "sha256": "41279293095054e8addd8bd3692a4bf635fea10b42a70b6bca48a4ec47dd15e1",
+        "raw_source_sha256": "11af2b5360580f9091e45e5d98a0c622fbc09025c42606a29eff954fa8bbd00a"
       }
     },
     {
@@ -21321,9 +23332,9 @@
       "case": "peso_08",
       "dataset": "peso",
       "source_group": "peso-slide-17",
-      "image": "all-method-legends-v1/case-070.webp",
-      "image_sha256": "a8a3dcad013e164674bb97c1f179878576f14ac63454d90cc3691eafc3bca469",
-      "preview_bytes": 259364,
+      "image": "shared-he-background-v1/case-070.webp",
+      "image_sha256": "eeaf1fc66b8faaea48dd0681ac4b6da61b12f46289a0c77876e67c24c41dd619",
+      "preview_bytes": 264334,
       "source_sha256": {
         "he": "7453d747b50562552c80dbf459c35f783928c7776e023a4b80e62b74bd6d0b42",
         "expert": "a5afee072d8929d6e8fb53f42f8a63c8be17b4f01cbe1f88d0399172ffa60aa0",
@@ -21592,6 +23603,29 @@
         "selected_macro_dice": 0.5652102826909109,
         "selected_pixel_accuracy": 0.3939324877173974,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-070.png",
+        "sha256": "fa9820c8e8ec61db984e804bfa091941536b64ada66dd07d4ec8df1018a92046",
+        "shape_yx": [
+          1280,
+          1280
+        ],
+        "excluded_pixels": 220533,
+        "tissue_pixels": 1417867,
+        "expert_scored_pixels_by_class": {
+          "epithelial_tissue": 267655
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "epithelial_tissue": 9711
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-070.png",
+        "sha256": "febbed0b1bf60216e122a6c898e68c9b744c5142858397d07911e65359d2b1a5",
+        "raw_source_sha256": "e0ff2c6bfd01333aa5f2c113e2ce865c2289f16bb8e31e3bd8ed23be63b17fd2"
       }
     },
     {
@@ -21599,9 +23633,9 @@
       "case": "peso_11",
       "dataset": "peso",
       "source_group": "peso-slide-20",
-      "image": "all-method-legends-v1/case-071.webp",
-      "image_sha256": "d2951c646b2b7367ddde924f6afdeb2e8fbeb2fd02edc79718227f94a44b323f",
-      "preview_bytes": 264176,
+      "image": "shared-he-background-v1/case-071.webp",
+      "image_sha256": "0b42561a78eb30ee4bffa95c526ea2036d1832e506703d2bdb00dbf9d253b14c",
+      "preview_bytes": 281584,
       "source_sha256": {
         "he": "73394ae7f8a148fd9a41fe9e09ba4048295ad7dfa347542932440589fe3bbced",
         "expert": "2baf3760c52d6e5402a79653a0526bec7ee24bc33468eb435603b458ef7a4261",
@@ -21855,6 +23889,29 @@
         "selected_macro_dice": 0.8521842248137083,
         "selected_pixel_accuracy": 0.7424398960498673,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-071.png",
+        "sha256": "e3cdf244b63cd3a2ffabced86d4e491b15ea62f4ce0a3633cb4fdf1f648bc137",
+        "shape_yx": [
+          1280,
+          1280
+        ],
+        "excluded_pixels": 396692,
+        "tissue_pixels": 1241708,
+        "expert_scored_pixels_by_class": {
+          "epithelial_tissue": 723039
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "epithelial_tissue": 19947
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-071.png",
+        "sha256": "6fc68c11ffc16e18b09be7feb7fb6ee8641c558f1e47798e04e1bb8627cc5e2b",
+        "raw_source_sha256": "fdd68afa4e0f26f23a73f86f5472cdbc5c3688279a1beee1397afcfbc9084973"
       }
     },
     {
@@ -21862,9 +23919,9 @@
       "case": "peso_12",
       "dataset": "peso",
       "source_group": "peso-slide-21",
-      "image": "all-method-legends-v1/case-072.webp",
-      "image_sha256": "a0fd068c11ef88988d2bee182036b64bc5148a33387185753c20a8a6f5ec21cf",
-      "preview_bytes": 212168,
+      "image": "shared-he-background-v1/case-072.webp",
+      "image_sha256": "ab315a187520696e2fc22f4f186fd8d023f247309ea67945d2ac19b354d86919",
+      "preview_bytes": 218346,
       "source_sha256": {
         "he": "7a9fb4a6ce725245e8eee06351cfc7d7fa76b955b69bbb63f1cfe87ead05158e",
         "expert": "9568960dcb43152d09caf13d75f0a55540cff0af818602305bc429dacd711ad2",
@@ -22125,6 +24182,29 @@
         "selected_macro_dice": 0.512866489707312,
         "selected_pixel_accuracy": 0.34486916349990177,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-072.png",
+        "sha256": "353c7f110e02d38a1c9ad0012eb2f6a152091cfbbadd743abb5757506aa537d1",
+        "shape_yx": [
+          1280,
+          1280
+        ],
+        "excluded_pixels": 665273,
+        "tissue_pixels": 973127,
+        "expert_scored_pixels_by_class": {
+          "epithelial_tissue": 295254
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "epithelial_tissue": 12833
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-072.png",
+        "sha256": "5430e006781c9d04e4fbcbeb541001a755b7df9032691f2d7974a2a4b9fc8416",
+        "raw_source_sha256": "8d8e5b98ef4dd949f90fb18cfec49090c8d9e4887f15402ae931dafed9edb0da"
       }
     },
     {
@@ -22132,9 +24212,9 @@
       "case": "peso_14",
       "dataset": "peso",
       "source_group": "peso-slide-25",
-      "image": "all-method-legends-v1/case-073.webp",
-      "image_sha256": "1b3397636cc8bdecca018f7dbf9e82a83825c01624d7649f931d579c94842d2d",
-      "preview_bytes": 255136,
+      "image": "shared-he-background-v1/case-073.webp",
+      "image_sha256": "05deac8fae3b3e3227b2aea94ce8b2eb5ed4b778f62c79077c94c966e3fac99d",
+      "preview_bytes": 270460,
       "source_sha256": {
         "he": "7975cbe2b9a7d126f7a552e3da6280e3fc043ca925466a0c3a668ffbca48c5c2",
         "expert": "ee8467ac30d2dded6c1e050ee8997e09a9230c711b08c14abda149554778fb6c",
@@ -22391,6 +24471,29 @@
         "selected_macro_dice": 0.5299532411454453,
         "selected_pixel_accuracy": 0.36050094186009385,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-073.png",
+        "sha256": "0c35fca85cfa041c7017cebe09b50e0c50a8a8511338e73e7f41f5e3a50b5ed7",
+        "shape_yx": [
+          1280,
+          1280
+        ],
+        "excluded_pixels": 315880,
+        "tissue_pixels": 1322520,
+        "expert_scored_pixels_by_class": {
+          "epithelial_tissue": 626420
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "epithelial_tissue": 25418
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-073.png",
+        "sha256": "28bcccfbcc321b3c92971fed18ac94516b82d71270a77d1aa021d49bb1c3fb1e",
+        "raw_source_sha256": "97e0a02613c7eb7fdfcd59ba5754fa139b8fba78e3700e87c7aefdc175793ed3"
       }
     },
     {
@@ -22398,9 +24501,9 @@
       "case": "peso_16",
       "dataset": "peso",
       "source_group": "peso-slide-47",
-      "image": "all-method-legends-v1/case-074.webp",
-      "image_sha256": "635b82bf84b3d907f8987f90e7c18f277de2e761f635f52e4c5caebaa183c595",
-      "preview_bytes": 288814,
+      "image": "shared-he-background-v1/case-074.webp",
+      "image_sha256": "c50b208f1fd49010d08f930a105fd8d85d05b1cbd0257730b9fa8cc4ae9f078c",
+      "preview_bytes": 301062,
       "source_sha256": {
         "he": "08f9e7a8797cd76ba4028d7f14452558526e537842b0325c113ebc5691043261",
         "expert": "966bc43c6a28f2b234ad670adc2cb2e9681b1b5b45a2d9735041a00220707a58",
@@ -22660,6 +24763,29 @@
         "selected_macro_dice": 0.42103600317798084,
         "selected_pixel_accuracy": 0.26665332713437423,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-074.png",
+        "sha256": "e362e98bb7179f33db980da73bbfd88853fc3f0a5534876e2a396dd6ed6da61a",
+        "shape_yx": [
+          1280,
+          1280
+        ],
+        "excluded_pixels": 228288,
+        "tissue_pixels": 1410112,
+        "expert_scored_pixels_by_class": {
+          "epithelial_tissue": 509763
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "epithelial_tissue": 17935
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-074.png",
+        "sha256": "8a3fbba78c5ed8fd1385bbea9749e3e292ea1fbe92455890e12c894b8e33081d",
+        "raw_source_sha256": "c33314b7db89fe1fd66ec4902bde7d255c3c6cc7c43ae745475324e4e9005816"
       }
     },
     {
@@ -22667,9 +24793,9 @@
       "case": "peso_18",
       "dataset": "peso",
       "source_group": "peso-slide-49",
-      "image": "all-method-legends-v1/case-075.webp",
-      "image_sha256": "17d865f3f602db80e807d4676f95d502f3f6309dbf402bdf779c470ba7f1fcbe",
-      "preview_bytes": 214662,
+      "image": "shared-he-background-v1/case-075.webp",
+      "image_sha256": "a65c1dd56bb8f14b75e5d4a57e8e8f15b49493fd6fffd0b852be57ed2b829917",
+      "preview_bytes": 220404,
       "source_sha256": {
         "he": "e36ee7ac233753a6195d856521c96d235e81b486129884230c6f38e4e2911da0",
         "expert": "a929c7623a1753d443472d1ecbc8eef47862a2475bb53cc873db5181b8db33b0",
@@ -22936,6 +25062,29 @@
         "selected_macro_dice": 0.7439667733369647,
         "selected_pixel_accuracy": 0.5923145642520122,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-075.png",
+        "sha256": "9d0d82341d881607120490eaff656ccbdac3b0bc212ebc0bd6d98d67526de273",
+        "shape_yx": [
+          1280,
+          1280
+        ],
+        "excluded_pixels": 288559,
+        "tissue_pixels": 1349841,
+        "expert_scored_pixels_by_class": {
+          "epithelial_tissue": 230592
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "epithelial_tissue": 18064
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-075.png",
+        "sha256": "df9e84ccef5de3cd061c06316929a0ff31861abf9084af008382b5b58c1e0bc5",
+        "raw_source_sha256": "5fe94e04c8fd8051cbe9a7e72fe74ece986303a2f4f17954557b78d65ea3f89a"
       }
     },
     {
@@ -22943,9 +25092,9 @@
       "case": "peso_20",
       "dataset": "peso",
       "source_group": "peso-slide-51",
-      "image": "all-method-legends-v1/case-076.webp",
-      "image_sha256": "89376220ebe83486a653a38c3f2645a05c07c09aa470e2c0b8b234525121d094",
-      "preview_bytes": 286112,
+      "image": "shared-he-background-v1/case-076.webp",
+      "image_sha256": "35d576202a0f83cea175cd703c9ce0f4380196e37a8d8c009f05126771a87a9c",
+      "preview_bytes": 291740,
       "source_sha256": {
         "he": "1476eef6ab973d8d2ab27d16d26e36ef8d90fd2dddd7cb25763ce9c001819264",
         "expert": "f649025256d187c4d4ab9166e8bc73bd22d5fcf632bf026f98683346dddc6bde",
@@ -23206,6 +25355,29 @@
         "selected_macro_dice": 0.5229296259786759,
         "selected_pixel_accuracy": 0.35403162582903885,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-076.png",
+        "sha256": "8f61310460cfaea2396b98e196babf2a5d1ea20803fdc4ad3060516eeebc9ddc",
+        "shape_yx": [
+          1280,
+          1280
+        ],
+        "excluded_pixels": 118981,
+        "tissue_pixels": 1519419,
+        "expert_scored_pixels_by_class": {
+          "epithelial_tissue": 651809
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "epithelial_tissue": 5392
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-076.png",
+        "sha256": "13a34093b23d402e9dc7d881063ac6e40634e94a11aa1a39b756a7c62395eb0c",
+        "raw_source_sha256": "f7749b6cc2582848495eaf8cc43533e7318526784dff2037049fb7fc6baee6a6"
       }
     },
     {
@@ -23213,9 +25385,9 @@
       "case": "peso_21",
       "dataset": "peso",
       "source_group": "peso-slide-52",
-      "image": "all-method-legends-v1/case-077.webp",
-      "image_sha256": "e66d440ae63d3c9b861bc23b7c7c53d4a007522fb8c0444fc4d56905f8a006c8",
-      "preview_bytes": 233692,
+      "image": "shared-he-background-v1/case-077.webp",
+      "image_sha256": "d614f608ef91586779cf54c7c5afcf31dc05c0bbe19aac553f2ebf697f3c159b",
+      "preview_bytes": 241238,
       "source_sha256": {
         "he": "43187982c478bfc09820bd3eabd2d1848326b327070ae7e15db184b06950772b",
         "expert": "0f1331bc824315619cfc8a264fa52023a11f3e5b29977ae6902ea08a6d43cda3",
@@ -23477,6 +25649,29 @@
         "selected_macro_dice": 0.8582052553296976,
         "selected_pixel_accuracy": 0.7516283108988276,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-077.png",
+        "sha256": "7c2184231c148daa481363e2f701eeddbcf57f56aa2de6da7a78ae97b0bbde92",
+        "shape_yx": [
+          1280,
+          1280
+        ],
+        "excluded_pixels": 383126,
+        "tissue_pixels": 1255274,
+        "expert_scored_pixels_by_class": {
+          "epithelial_tissue": 359268
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "epithelial_tissue": 14644
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-077.png",
+        "sha256": "bc1a344c59121421a662a0223aea7da970231e3c9a5868e66b2d37849412d836",
+        "raw_source_sha256": "0cdadf9ec40ff432fea993c1ab4023ce3ed463fad1462b0be6c59d6a5e5f64c8"
       }
     },
     {
@@ -23484,9 +25679,9 @@
       "case": "peso_22",
       "dataset": "peso",
       "source_group": "peso-slide-53",
-      "image": "all-method-legends-v1/case-078.webp",
-      "image_sha256": "6a7945d1a0862ea95ab8b38466462e59a72d770b4e2520581a913071aa682ae7",
-      "preview_bytes": 271974,
+      "image": "shared-he-background-v1/case-078.webp",
+      "image_sha256": "e78fdfe64f0f8338d78368a42b41cf2a19f0e8265069244d44fcfb2551a57972",
+      "preview_bytes": 287876,
       "source_sha256": {
         "he": "5611a7df5f441bcbe269ca484be2ba338b2d828db77203d03207cfb70fc0bfce",
         "expert": "370f95bf13b94eb6b4f5f5cfd90f606eb00f84baf5a57716c6ec62ae0e6c955b",
@@ -23761,6 +25956,29 @@
         "selected_macro_dice": 0.6560057280712104,
         "selected_pixel_accuracy": 0.48810158032129486,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-078.png",
+        "sha256": "910c62dc2ef348b2db73ae91caea8e075f17ab648fa0cb59b1382293d73ebcdd",
+        "shape_yx": [
+          1280,
+          1280
+        ],
+        "excluded_pixels": 119854,
+        "tissue_pixels": 1518546,
+        "expert_scored_pixels_by_class": {
+          "epithelial_tissue": 825908
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "epithelial_tissue": 22933
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-078.png",
+        "sha256": "475f822f7e1008a6a9e3e92edb635aa6cc7d903034aaefeb752dcc879fb8aa28",
+        "raw_source_sha256": "c0d459b25dd78ed0991552418c460d2c6831034ffe126f71997120cb04d11ea3"
       }
     },
     {
@@ -23768,9 +25986,9 @@
       "case": "peso_23",
       "dataset": "peso",
       "source_group": "peso-slide-61",
-      "image": "all-method-legends-v1/case-079.webp",
-      "image_sha256": "fca402cb051ab3a85700fa5e5ce5b97d60188e918f6ff18214783d0aa330e824",
-      "preview_bytes": 263814,
+      "image": "shared-he-background-v1/case-079.webp",
+      "image_sha256": "ba4977f0f36a6a02407c12c5a27bea198bf806bc4225938852c27c751be421be",
+      "preview_bytes": 283960,
       "source_sha256": {
         "he": "e752fe0dd561e783b2b20e47df31242c99ef485cd05a56e6f5b60d75c7b73074",
         "expert": "33b7438563bbab6f54274329ea419886ff5dfdf81aa2648e91ce24fed8faedc8",
@@ -24023,6 +26241,29 @@
         "selected_macro_dice": 0.9420597909041791,
         "selected_pixel_accuracy": 0.890466004415618,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-079.png",
+        "sha256": "d2d3a9b47af596d692804bd442fab96afcd721ea16e798ccee31d06c474dc2bd",
+        "shape_yx": [
+          1280,
+          1280
+        ],
+        "excluded_pixels": 251874,
+        "tissue_pixels": 1386526,
+        "expert_scored_pixels_by_class": {
+          "epithelial_tissue": 727418
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "epithelial_tissue": 11292
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-079.png",
+        "sha256": "32dfb8a1ab2ab29772d17acde0ff099def4a31f2100b3c2f6febe3fee3385088",
+        "raw_source_sha256": "ec2bac4c3e94cf96269ce53baf9c511f70af99b25950780eb897c5134e127739"
       }
     },
     {
@@ -24030,9 +26271,9 @@
       "case": "peso_25",
       "dataset": "peso",
       "source_group": "peso-slide-63",
-      "image": "all-method-legends-v1/case-080.webp",
-      "image_sha256": "f212f39f28ec76799226edb51bc5197a6f13f8159de7a39526ef7aab73c76a62",
-      "preview_bytes": 248648,
+      "image": "shared-he-background-v1/case-080.webp",
+      "image_sha256": "9957bf6494c8ee9f7a82636e84a7c149a13b92e5a89cf58095cad758422de2e8",
+      "preview_bytes": 274682,
       "source_sha256": {
         "he": "c0c6c224892301966b237bd24f0247908d023091ec341a6d1fa27f809f4621f5",
         "expert": "f15d8141063faed27053e503b54c4bb8ee0a6a66db788d3fada0444acf3615b4",
@@ -24287,6 +26528,29 @@
         "selected_macro_dice": 0.7452046061282225,
         "selected_pixel_accuracy": 0.5938853535545987,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-080.png",
+        "sha256": "3cffeadd7b468386fe5821482921cbc38cd8786225759f02206d1f0d6189b528",
+        "shape_yx": [
+          1280,
+          1280
+        ],
+        "excluded_pixels": 496554,
+        "tissue_pixels": 1141846,
+        "expert_scored_pixels_by_class": {
+          "epithelial_tissue": 629832
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "epithelial_tissue": 2041
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-080.png",
+        "sha256": "46cfe8431cffce28ed8d1453bc9774c5a19dd3722459a1beabd9f69285734f1c",
+        "raw_source_sha256": "6f4b2fa5649a6cf1bc68d2a77fa10ec531fa78c4078fd5f10a0333c1dc15a55c"
       }
     },
     {
@@ -24294,9 +26558,9 @@
       "case": "peso_26",
       "dataset": "peso",
       "source_group": "peso-slide-66",
-      "image": "all-method-legends-v1/case-081.webp",
-      "image_sha256": "ec9b74d5fff9cf17a33f38a777ee7c21278d9cecfb04414952712383ac008bf0",
-      "preview_bytes": 161590,
+      "image": "shared-he-background-v1/case-081.webp",
+      "image_sha256": "b9b562241e7078aa9db3d3456423f90be7bbaa1b3d1be2fde47306d09e70f5dc",
+      "preview_bytes": 173916,
       "source_sha256": {
         "he": "28d76cd6098bfec7c7ff1b983e30f6536314a566eb8972eb6cf4b5929e9bb52a",
         "expert": "d4aec134b87a04c7195589275bbb255d2d33cf07f6f7acdeef76f95cc20a4188",
@@ -24553,6 +26817,29 @@
         "selected_macro_dice": 0.8104815372149554,
         "selected_pixel_accuracy": 0.6813526334995743,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-081.png",
+        "sha256": "329ad18bb8863ebeddc463f4ded6e70d9f6138282fadefebb53e946c5a33bad2",
+        "shape_yx": [
+          1280,
+          1280
+        ],
+        "excluded_pixels": 1117393,
+        "tissue_pixels": 521007,
+        "expert_scored_pixels_by_class": {
+          "epithelial_tissue": 205525
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "epithelial_tissue": 5733
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-081.png",
+        "sha256": "938a7de3873d0d36fec2bc8aa9a4e5bb74c3ff3902fe450ff8303a48f950521f",
+        "raw_source_sha256": "92a23f65f14db7786d14586394577588674f46f418a3351716c313b0102bcd5b"
       }
     },
     {
@@ -24560,9 +26847,9 @@
       "case": "peso_29",
       "dataset": "peso",
       "source_group": "peso-slide-75",
-      "image": "all-method-legends-v1/case-082.webp",
-      "image_sha256": "266eef64a1482194ca03cb4342230ecbcd12199d0065420d6285923683b9183f",
-      "preview_bytes": 237772,
+      "image": "shared-he-background-v1/case-082.webp",
+      "image_sha256": "d2e93e5ad1c414199141c1ec3d9951192f4663e03bf49e299ab0ac250765b83a",
+      "preview_bytes": 252346,
       "source_sha256": {
         "he": "0e940a1a2d09f0d1254d4afc235af3d0a925de836d3a4b88f24354af7dc13d11",
         "expert": "a2055ea8e30808fa67500b19ba656731021afa9874f5a547acc505d853000f66",
@@ -24817,6 +27104,29 @@
         "selected_macro_dice": 0.8171388378857467,
         "selected_pixel_accuracy": 0.6908155107782791,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-082.png",
+        "sha256": "51f3a1a84c4c26e8e65ee4bfb3b6872df75a4e7d655d86dd8199a99d5b6fdf67",
+        "shape_yx": [
+          1280,
+          1280
+        ],
+        "excluded_pixels": 230692,
+        "tissue_pixels": 1407708,
+        "expert_scored_pixels_by_class": {
+          "epithelial_tissue": 353999
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "epithelial_tissue": 19741
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-082.png",
+        "sha256": "07e37ef53944393e97805b3404949ac434675d3ef5f7c4756396ef08e10c9117",
+        "raw_source_sha256": "6c27d435abfe4e7a43cb3df88de5362e67f7f76b9a6628fda4e49418638da94b"
       }
     },
     {
@@ -24824,9 +27134,9 @@
       "case": "peso_34",
       "dataset": "peso",
       "source_group": "peso-slide-86",
-      "image": "all-method-legends-v1/case-083.webp",
-      "image_sha256": "f6d94102ae791398b8c0dbc4582ea291bc00631b94b4300859d1fe036df325f4",
-      "preview_bytes": 242792,
+      "image": "shared-he-background-v1/case-083.webp",
+      "image_sha256": "85bebc00e9d4d2c4ab8377b7d3bb7f9cf3ec9047e2b2029581babb96d28c2f7d",
+      "preview_bytes": 262014,
       "source_sha256": {
         "he": "921841f2587856e0ad3fd79df93b0878f848668642bf9b5d61f6ad36fa34789e",
         "expert": "9aa56a9cb339fecc46e203ff5ad83ac9d479f730a040f0af317cc5ccff9d86e8",
@@ -25072,6 +27382,29 @@
         "selected_macro_dice": 0.8125387019631449,
         "selected_pixel_accuracy": 0.6842654184237054,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-083.png",
+        "sha256": "1e927d7a34aad23d02f0676e51cb1f1053be5405da7e4e73ab0e677324cc9cb3",
+        "shape_yx": [
+          1280,
+          1280
+        ],
+        "excluded_pixels": 323768,
+        "tissue_pixels": 1314632,
+        "expert_scored_pixels_by_class": {
+          "epithelial_tissue": 687473
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "epithelial_tissue": 33703
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-083.png",
+        "sha256": "470359fd34d34897247a009d108b2cc4ebc1e9fc283e263ba965e6968591bf1a",
+        "raw_source_sha256": "c5b65e2448443c0ad14c21b1cd33e1b33bfdce3f858751c5c9d8b1ae0bac05a5"
       }
     },
     {
@@ -25079,9 +27412,9 @@
       "case": "peso_35",
       "dataset": "peso",
       "source_group": "peso-slide-87",
-      "image": "all-method-legends-v1/case-084.webp",
-      "image_sha256": "1f68f8b46d5f4b46f102e2a8f5ba24f5184ac5ac75e0b1201471265acf5e7a17",
-      "preview_bytes": 198462,
+      "image": "shared-he-background-v1/case-084.webp",
+      "image_sha256": "d812ed0752e49f88fedb30a3f079c3a51d97500cbddd2e741ce02964a1e8e9af",
+      "preview_bytes": 208752,
       "source_sha256": {
         "he": "84a713386ea14a7d4c78d73efff5370534de7df4f4cf701a744a7a8432f029c1",
         "expert": "6d68a32a291843934c50034b69275476d6376076331c8045d95e37c9c8e55f12",
@@ -25335,6 +27668,29 @@
         "selected_macro_dice": 0.9484757157760519,
         "selected_pixel_accuracy": 0.9020007716474674,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-084.png",
+        "sha256": "c06f5b65992b3affe789fd636f4f707d5c03f6455623530b209520d5351d2ccc",
+        "shape_yx": [
+          1280,
+          1280
+        ],
+        "excluded_pixels": 742175,
+        "tissue_pixels": 896225,
+        "expert_scored_pixels_by_class": {
+          "epithelial_tissue": 308431
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "epithelial_tissue": 18169
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-084.png",
+        "sha256": "aa93c68b3ebd3e483724f3a1c3b533c2146d6ddaaee1b951ab9d50f14da7d4b8",
+        "raw_source_sha256": "51501bad4c97704d1554ec130b0fbc01b055a67ec9fcc5a9d942f9450f04c8a2"
       }
     },
     {
@@ -25342,9 +27698,9 @@
       "case": "peso_36",
       "dataset": "peso",
       "source_group": "peso-slide-89",
-      "image": "all-method-legends-v1/case-085.webp",
-      "image_sha256": "eae3e686be981d23c12ff46b31493fceec2ef0b81bf40f446459c1d1d9aac3be",
-      "preview_bytes": 229900,
+      "image": "shared-he-background-v1/case-085.webp",
+      "image_sha256": "a27ace04f664078b9a0f66e017b95ac12ef50f3b72e817701f06a04144dfcf64",
+      "preview_bytes": 254622,
       "source_sha256": {
         "he": "ef16d5cfe7f35f790cf217ca788bc00c998ab33c49accc6182d7b9e9bdd44d5d",
         "expert": "ece7c499507f6db522ea275fe97d692c479e94ad4b305248d38dca745a8d3e07",
@@ -25595,6 +27951,29 @@
         "selected_macro_dice": 0.9687796848600869,
         "selected_pixel_accuracy": 0.939449767073921,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-085.png",
+        "sha256": "89dc77bb439581b166fe4cdc3b8b6c00d9579bb7b72615abfb4018eaeb12566a",
+        "shape_yx": [
+          1280,
+          1280
+        ],
+        "excluded_pixels": 720073,
+        "tissue_pixels": 918327,
+        "expert_scored_pixels_by_class": {
+          "epithelial_tissue": 568850
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "epithelial_tissue": 32242
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-085.png",
+        "sha256": "c3d5c77a50488a23e0300c16f7d19dd24c026a2cc3da664a3eb88722df3c778b",
+        "raw_source_sha256": "cba9718f309f519e2481c263a576b3078e1989aa0d1cb321cdeae063f0513683"
       }
     },
     {
@@ -25602,9 +27981,9 @@
       "case": "peso_38",
       "dataset": "peso",
       "source_group": "peso-slide-92",
-      "image": "all-method-legends-v1/case-086.webp",
-      "image_sha256": "026da7f693f7d0657c2d3dff6523658e060f7f5d69d246541f8523158c4f76b6",
-      "preview_bytes": 183942,
+      "image": "shared-he-background-v1/case-086.webp",
+      "image_sha256": "2d75ea8e4121de51265c479efb7774bd62ce24f9c54504592943793bd9a1bae5",
+      "preview_bytes": 189408,
       "source_sha256": {
         "he": "cf62b322bfe0d1ff93730b289b4b54489f1fcc91a40f2e6789951e9059dc6807",
         "expert": "edac61945409fd0b67963e6f7bae12ad9f51acada498a38d52ab2d341c1bb1d6",
@@ -25866,6 +28245,29 @@
         "selected_macro_dice": 0.9545413197329242,
         "selected_pixel_accuracy": 0.913035912131003,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-086.png",
+        "sha256": "f0c106cb1544ac98106575ba44741931b3dc5ae7fb78dde0dd213ab8d2834aeb",
+        "shape_yx": [
+          1280,
+          1280
+        ],
+        "excluded_pixels": 1011065,
+        "tissue_pixels": 627335,
+        "expert_scored_pixels_by_class": {
+          "epithelial_tissue": 172393
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "epithelial_tissue": 17919
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-086.png",
+        "sha256": "549867cb3d1fd1eeb2538158bbce6834a74c1d5289ece567e709d1b10d0fb2de",
+        "raw_source_sha256": "4d0322084ba0d200d963c30ef2e0c882af64d0aef7f46cc26635c3febab2725c"
       }
     },
     {
@@ -25873,9 +28275,9 @@
       "case": "peso_39",
       "dataset": "peso",
       "source_group": "peso-slide-94",
-      "image": "all-method-legends-v1/case-087.webp",
-      "image_sha256": "03a0a764c495d8ddde514aa160a46d6234bdabe5dc6e6c98be7cbb537cd6cdb1",
-      "preview_bytes": 260220,
+      "image": "shared-he-background-v1/case-087.webp",
+      "image_sha256": "a1f0bc602050e20e846ab14717891267aac2d28b6d58d866d46a4446e3cae392",
+      "preview_bytes": 270240,
       "source_sha256": {
         "he": "723c7d963c775aa11b06f97524a820d13c18b1967d8dfbd07593e9062e744a7a",
         "expert": "475c5bb9da14192ff52d8e949bfcadeb1cd3b0803cc4ef5c6d0fd974fb895499",
@@ -26141,6 +28543,29 @@
         "selected_macro_dice": 0.9078447971385804,
         "selected_pixel_accuracy": 0.8312415623347758,
         "nearest_imputed_scored_pixels": 0
+      },
+      "he_background_support": {
+        "image": "he-support-v1/case-087.png",
+        "sha256": "d0049cbb8e5a4143cd8bac5ed0a806c903303b934a80e87c002ed379160faad0",
+        "shape_yx": [
+          1280,
+          1280
+        ],
+        "excluded_pixels": 123614,
+        "tissue_pixels": 1514786,
+        "expert_scored_pixels_by_class": {
+          "epithelial_tissue": 389622
+        },
+        "expert_scored_pixels_outside_support_by_class": {
+          "epithelial_tissue": 1598
+        },
+        "expert_source_unchanged": true,
+        "published_scores_unchanged": true
+      },
+      "background_supported_combined_response_mask": {
+        "image": "combined-supported-v1/case-087.png",
+        "sha256": "e351a228a8517bd228ab22fce13e9a98ad3014e7c672effe7a51b73a6765e354",
+        "raw_source_sha256": "c0db010b5a241209149ec55270d2759d04647e62256959bcb5a6670bb6d64fa7"
       }
     }
   ],

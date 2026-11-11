@@ -35,9 +35,13 @@ function show(id){
   caseSelect.value=row.id;history.replaceState(null,"","#"+row.id);
   position.textContent=`${visible.indexOf(row)+1} of ${visible.length}`;
   title.textContent=`${row.dataset.toUpperCase()} · ${row.source_group} · ${row.id}`;
-  image.src=row.image+"?v=all-method-legends-v1";image.alt=`Eight aligned H&E and model output panels, including a separate supervised Virchow2 mask, for ${row.dataset} ${row.source_group}`;
-  fullImage.href=row.image+"?v=all-method-legends-v1";
+  image.src=row.image+"?v=shared-he-background-v1";image.alt=`Eight aligned H&E and model output panels, including a separate supervised Virchow2 mask, for ${row.dataset} ${row.source_group}`;
+  fullImage.href=row.image+"?v=shared-he-background-v1";
   const roles=row.expert_present_roles.join(", ")||"No mapped expert role";
+  const bg=row.he_background_support, outside=bg.expert_scored_pixels_outside_support_by_class;
+  const labelled=Object.values(outside).reduce((a,b)=>a+b,0), counted=bg.tissue_pixels+bg.excluded_pixels;
+  const fat=outside.adipose||0, fatAll=bg.expert_scored_pixels_by_class.adipose||0;
+  document.getElementById("background-audit").textContent=`Shared H&E tissue support excludes ${bg.excluded_pixels.toLocaleString()} of ${counted.toLocaleString()} pixels from method color overlays. The source expert annotation is shown unchanged; ${labelled.toLocaleString()} expert-scored pixels fall outside this image-derived support${fat?`, including ${fat.toLocaleString()} marked adipose${fatAll?` (${(100*fat/fatAll).toFixed(1)}% of its adipose pixels)`:``}`:``}. Existing scores use the original expert labels and unmasked method predictions.`;
   scores.innerHTML=card("Bora",row.bora_same_unet_roles,roles,"Same expert-present roles as U-Net")+
     card("Class-aware U-Net",row.unet_score,roles,"Same expert-present roles as Bora and DeepLabV3+")+
     card("Supervised Virchow2 overlay",row.supervised_virchow2_display_macro_iou,roles,"Displayed mask resized to the calibrated expert frame")+
@@ -99,7 +103,7 @@ function show(id){
 function showCombinedResponseMask(row){
   const mask=row.combined_response_mask;
   if(!mask)throw Error(`Combined mask missing for ${row.id}`);
-  document.getElementById("combined-response-full").href=mask.image;
+  document.getElementById("combined-response-full").href=row.background_supported_combined_response_mask.image;
 }
 function showResponses(row){
   const grid=document.getElementById("response-grid");
@@ -108,7 +112,7 @@ function showResponses(row){
     const path=`https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/bw-responses-virchow2-supervised-v1/${row.id}/class-${String(cls).padStart(2,"0")}.webp`;
     const figure=document.createElement("figure");
     const link=document.createElement("a");link.href=path;
-    const map=document.createElement("img");map.src=path;map.loading="lazy";
+    const map=document.createElement("img");map.src=path;map.loading="lazy";map.style.maskImage=`url("${row.he_background_support.image}")`;map.style.maskMode="luminance";map.style.maskSize="100% 100%";map.style.maskRepeat="no-repeat";
     map.alt=`Grayscale supervised Virchow2 response for ${classNames[cls]} on ${row.dataset} ${row.source_group}; black is 0, white is 1`;
     const caption=document.createElement("figcaption");caption.textContent=`${cls} · ${classNames[cls]}`;
     link.append(map);figure.append(link,caption);items.push(figure);
@@ -165,7 +169,7 @@ function filter(){
   caseSelect.replaceChildren(...visible.map(x=>new Option(`${x.dataset.toUpperCase()} · ${x.source_group} · ${x.id}`,x.id)));
   show(location.hash.slice(1));
 }
-fetch("cases.json?v=all-method-legends-v1").then(r=>{if(!r.ok)throw Error(`Gallery manifest: HTTP ${r.status}`);return r.json()}).then(data=>{
+fetch("cases.json?v=shared-he-background-v1").then(r=>{if(!r.ok)throw Error(`Gallery manifest: HTTP ${r.status}`);return r.json()}).then(data=>{
   if(data.status!=="AUDITED_BENCHMARK1_FULL_VS_TRAINING_SELECTED_DEVELOPMENT_ONLY"||data.case_count!==87||data.cases.length!==87||data.cases.some(x=>!x.bora_training_selected_view))throw Error("Gallery audit is incomplete");
   document.getElementById("selected-summary").textContent=`Across 87 development images, training-selected Bora had ${data.training_selected_summary.one_group_cases} one-group outputs. Mean covered-pixel matched segmentation IoU: ${pct(data.training_selected_summary.mean_matched_segmentation_iou_covered)}; mean group-majority name agreement: ${pct(data.training_selected_summary.mean_group_name_accuracy)}; mean end-to-end tissue macro IoU: ${pct(data.training_selected_summary.mean_end_to_end_macro_iou)}. Compare these stage-specific values with classic Bora above; neither route was evaluated on an untouched test cohort.`;
   all=data.cases;
