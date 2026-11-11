@@ -33,7 +33,11 @@ This repository was previously named Bora-extra.
 The [Benchmark 2 full-slide comparator gallery](https://tkcaccia.github.io/Bora-Analysis/visium-hd/comparators/)
 shows 11 verified public-source H&E slides with class-aware
 U-Net, DeepLabV3+, MedSAM and VISTA-PATH outputs. Those predictions cover
-the complete calibrated slides; the website shows downsampled previews.
+the complete calibrated slides; the website shows downsampled previews with
+one Bora-derived tissue/background support shared by all four methods. Eight
+slides use final Bora tissue-group geometry; three TCGA slides without final
+Bora geometry use the same H&E-derived Bora support rule. Raw full-resolution
+predictions are unchanged.
 No independent whole-slide expert masks are available, so the gallery
 does not report accuracy scores or a method ranking. All 12 slides in the
 separate local comparator campaign have checksum-verified full-resolution
