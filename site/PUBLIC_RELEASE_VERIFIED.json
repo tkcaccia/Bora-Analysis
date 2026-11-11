@@ -1,6 +1,6 @@
 {
   "format": "bora-public-site-v1",
-  "size_bytes": 111170954,
+  "size_bytes": 111249112,
   "file_count": 544,
   "public_wsi_count": 13,
   "file_sha256": {
@@ -512,7 +512,7 @@
     "visium-hd/public-10x-pancreatic-cancer-fresh-frozen.html": "60fb9a9ba6151b6721a7526c38e9f2e1ad215396a6b7a27f1f31f0ce8834daf7",
     "visium-hd/public-10x-prostate-ffpe.html": "9d7a3c308a5cea9cc1d49faad7ab1e2bca937433a0eea9aeb52056cb6d5c44c4",
     "visium-hd/public-10x-tonsil-3prime.html": "6d21c4b912d6b3a4bfd2eae5ab1be9f538d72830f86a968536b4e80fe1d6a738",
-    "visium-hd/tcga-acc-or-a5jp-01z-00-dx1.html": "3594e09a26639392bd93684d50cd3b2d005fa508fc4b56a1e9867c83e7b08d7b",
+    "visium-hd/tcga-acc-or-a5jp-01z-00-dx1.html": "ce3e2c9fd4d1961ea1fcf4bc170557a535576f7df67b8211419c4ad35418a9a0",
     "visium-hd/unified-panels.css": "cf2244b697fea2eae7186105407e1fc6476513270a4a00312addbaf4d97bd251",
     "visium-hd-colon/carcinoma-stroma-bora.jpg": "45ac43c402295656281124a5be4112ff57776a24cc0b5c5635ba7d445cba426a",
     "visium-hd-colon/carcinoma-stroma-expert.jpg": "45b6913ab972b98480e6f3040190b40f15b84019cfef68467d133bdec36da8a4",
