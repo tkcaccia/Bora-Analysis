@@ -1,0 +1,12 @@
+/* Unified seven-panel views for verified public WSI pages. */
+.benchmark-page .unified-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:start}
+.benchmark-page .unified-grid figure{height:100%;box-sizing:border-box}
+.benchmark-page .unified-grid figcaption{font-size:16px;padding:9px 0 3px}
+.benchmark-page .unified-grid .panel-note{font-size:12px;color:#526b75;margin:0 0 8px}
+.benchmark-page .panel-classes{font-size:12px;margin:4px 0 0}.benchmark-page .panel-classes summary{cursor:pointer;color:#006d80;font-weight:650}
+.benchmark-page .class-swatches{list-style:none;padding:8px 0 0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px 8px}
+.benchmark-page .class-swatches li{display:flex;gap:6px;align-items:center;min-width:0}.benchmark-page .swatch{display:inline-block;flex:none;width:12px;height:12px;border:1px solid #65767c}
+.benchmark-page .unified-method-note{max-width:none;margin:12px 0 18px;padding:12px 16px;background:#fff;border-left:4px solid #006d80;font-size:14px}
+.benchmark-page .unified-zoom{border-top:2px solid #cbd8dd;padding:18px 0}.benchmark-page .unified-zoom h3{margin:0 0 12px}
+@media(max-width:1000px){.benchmark-page .unified-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.benchmark-page .unified-grid{grid-template-columns:1fr}}
