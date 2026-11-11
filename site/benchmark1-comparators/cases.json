@@ -331,8 +331,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-001.png",
-        "sha256": "340ef8fcfd98e17780705029c66b8005ea71eafc3db04ab10a67b7c8e3e23967",
+        "image": "he-support-alpha-v1/case-001.png",
+        "sha256": "069ebbb039b9cd8cf1c70d5f1688d7f1ad54088620bf6ad182ffbf2b3f7e330e",
         "shape_yx": [
           1460,
           1897
@@ -356,7 +356,8 @@
           "blood_vessel": 0
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "340ef8fcfd98e17780705029c66b8005ea71eafc3db04ab10a67b7c8e3e23967"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-001.png",
@@ -630,8 +631,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-002.png",
-        "sha256": "7d42427d203d61bb886fda54867e6dc6e94e9b42154782e467f73eca0e45319f",
+        "image": "he-support-alpha-v1/case-002.png",
+        "sha256": "b4071f7e87817a6ca74c805d6d3ddfe1829ced18be5bef70e505649cf536724f",
         "shape_yx": [
           1209,
           1696
@@ -649,7 +650,8 @@
           "necrosis": 67
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "7d42427d203d61bb886fda54867e6dc6e94e9b42154782e467f73eca0e45319f"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-002.png",
@@ -1033,8 +1035,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-003.png",
-        "sha256": "d9b7a64399bfd8340b4a78ac199aacbb92a3a8b70fa0d3c20e4ae96659d0ca9b",
+        "image": "he-support-alpha-v1/case-003.png",
+        "sha256": "788e240db6bfc4fadb3ed43288d1472b74207ba438c464bb91a4f28fc6d8aa58",
         "shape_yx": [
           2313,
           2699
@@ -1054,7 +1056,8 @@
           "blood_vessel": 0
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "d9b7a64399bfd8340b4a78ac199aacbb92a3a8b70fa0d3c20e4ae96659d0ca9b"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-003.png",
@@ -1353,8 +1356,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-004.png",
-        "sha256": "da55723231b99593617fdd6d08cb0e7c6e3a0660be177ff29cf72591e735b98a",
+        "image": "he-support-alpha-v1/case-004.png",
+        "sha256": "4177cc0d3b70d3741584e0500280b825d649a82a9c86c53d346099f2c304fefd",
         "shape_yx": [
           1406,
           2047
@@ -1370,7 +1373,8 @@
           "stroma": 76041
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "da55723231b99593617fdd6d08cb0e7c6e3a0660be177ff29cf72591e735b98a"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-004.png",
@@ -1658,8 +1662,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-005.png",
-        "sha256": "e5e306cc92031cc6599ac572205fd11f9ba98aa29b4a89742a14b77e00fb99d6",
+        "image": "he-support-alpha-v1/case-005.png",
+        "sha256": "d2a828b19ceeaf5048e5513362524d573fcc25e60965d73cf90b8c51f000c0a5",
         "shape_yx": [
           903,
           1312
@@ -1677,7 +1681,8 @@
           "necrosis": 698
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "e5e306cc92031cc6599ac572205fd11f9ba98aa29b4a89742a14b77e00fb99d6"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-005.png",
@@ -2045,8 +2050,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-006.png",
-        "sha256": "77fc60ad90cd388c99a1eaaba92c24a07fae24d5f03458a24a3e39427ea2f2d5",
+        "image": "he-support-alpha-v1/case-006.png",
+        "sha256": "c1785fa9f3f0f52e2d461409885904f3eb7fe624620327aab4ca57fa5293e731",
         "shape_yx": [
           1427,
           2219
@@ -2070,7 +2075,8 @@
           "blood_vessel": 0
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "77fc60ad90cd388c99a1eaaba92c24a07fae24d5f03458a24a3e39427ea2f2d5"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-006.png",
@@ -2447,8 +2453,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-007.png",
-        "sha256": "d9e4c935596bbbdbf6281395f3303c542edcb8bd19322ba1db0ca32b661cd068",
+        "image": "he-support-alpha-v1/case-007.png",
+        "sha256": "8cb495b79869c8f9f66a231fb09fd19cdedfadb19b06c4c87d0ee1c7114e794f",
         "shape_yx": [
           2370,
           2051
@@ -2476,7 +2482,8 @@
           "blood_vessel": 0
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "d9e4c935596bbbdbf6281395f3303c542edcb8bd19322ba1db0ca32b661cd068"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-007.png",
@@ -2825,8 +2832,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-008.png",
-        "sha256": "156160b419f2edc5dae98a6f05102c6ddc53906252af773ee646c9e735345f96",
+        "image": "he-support-alpha-v1/case-008.png",
+        "sha256": "769948f5b435658a95dbae3b74070bfb1c6cde878acd99017c69926ef8d1d559",
         "shape_yx": [
           2575,
           2524
@@ -2854,7 +2861,8 @@
           "blood_vessel": 0
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "156160b419f2edc5dae98a6f05102c6ddc53906252af773ee646c9e735345f96"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-008.png",
@@ -3278,8 +3286,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-009.png",
-        "sha256": "0ad15f079a2972b2317675cec5ca21996634587c34e1e7772f0e32f047fd24a4",
+        "image": "he-support-alpha-v1/case-009.png",
+        "sha256": "dd0ee05cdb4c05646f25cc5a4b93cf9a2774c71e54da52f22b598acd7d584372",
         "shape_yx": [
           2708,
           3162
@@ -3309,7 +3317,8 @@
           "blood_vessel": 0
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "0ad15f079a2972b2317675cec5ca21996634587c34e1e7772f0e32f047fd24a4"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-009.png",
@@ -3668,8 +3677,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-010.png",
-        "sha256": "85075db513b6e766fa21b3867076d6ca1f40f224815a3a4b6f0c3681da5f62f1",
+        "image": "he-support-alpha-v1/case-010.png",
+        "sha256": "9225b6d57d598580772fda9f0fbe123586b3fbbc35ffeaa1f486266171aa35d5",
         "shape_yx": [
           1954,
           2184
@@ -3695,7 +3704,8 @@
           "blood_vessel": 0
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "85075db513b6e766fa21b3867076d6ca1f40f224815a3a4b6f0c3681da5f62f1"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-010.png",
@@ -3996,8 +4006,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-011.png",
-        "sha256": "ca68725e84f6d0a358b7f71385ffa6aa10491892e257ebab2a6e962fad9af35c",
+        "image": "he-support-alpha-v1/case-011.png",
+        "sha256": "fd8cb245d057a3b1235719232ea60267b8e91c60bbce9549ac740096958b7b1c",
         "shape_yx": [
           1961,
           1914
@@ -4019,7 +4029,8 @@
           "adipose": 27444
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "ca68725e84f6d0a358b7f71385ffa6aa10491892e257ebab2a6e962fad9af35c"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-011.png",
@@ -4426,8 +4437,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-012.png",
-        "sha256": "3aa94755fa767d184d1523876460d78f821e086a52d01e782924a180185151d4",
+        "image": "he-support-alpha-v1/case-012.png",
+        "sha256": "15c3da5c28d7a7f2897b088a7ea943ef1e5c9d1e3f75158ac841f7f95b1a6ef6",
         "shape_yx": [
           2821,
           2476
@@ -4455,7 +4466,8 @@
           "blood_vessel": 0
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "3aa94755fa767d184d1523876460d78f821e086a52d01e782924a180185151d4"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-012.png",
@@ -4793,8 +4805,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-013.png",
-        "sha256": "c4e504f8827529ccd18e4b7cbe7af1aa1a7a7d304db5bf15b4a1172fb737bb95",
+        "image": "he-support-alpha-v1/case-013.png",
+        "sha256": "dd6cef4575be2fd669e40736582154e2b0d2307e5ddf07218ed183365e1523e4",
         "shape_yx": [
           1778,
           2319
@@ -4816,7 +4828,8 @@
           "blood_vessel": 0
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "c4e504f8827529ccd18e4b7cbe7af1aa1a7a7d304db5bf15b4a1172fb737bb95"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-013.png",
@@ -5130,8 +5143,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-014.png",
-        "sha256": "bf868e2f3762aea719f6049004e03af46b39e582b604f01770eca5c13ac50203",
+        "image": "he-support-alpha-v1/case-014.png",
+        "sha256": "ffb2fcbc1b3a012dbb55d6ef7bdbd199c855ce29be4597f9200d06ab9e41c896",
         "shape_yx": [
           1409,
           1413
@@ -5151,7 +5164,8 @@
           "blood_vessel": 0
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "bf868e2f3762aea719f6049004e03af46b39e582b604f01770eca5c13ac50203"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-014.png",
@@ -5520,8 +5534,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-015.png",
-        "sha256": "ef1349f9d03b0497f9adc9fb319a946796f982790e3bf3a1fe911971e47d8fde",
+        "image": "he-support-alpha-v1/case-015.png",
+        "sha256": "c4e426275d2de356a04fdeb442d2e29e1d1e22c0885f53df8b43506e022da9ce",
         "shape_yx": [
           3143,
           2785
@@ -5543,7 +5557,8 @@
           "adipose": 3627
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "ef1349f9d03b0497f9adc9fb319a946796f982790e3bf3a1fe911971e47d8fde"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-015.png",
@@ -5861,8 +5876,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-016.png",
-        "sha256": "b67c6341bbab1893429a6945ef6e0b884ab77629f174d75b81f3806b6a9f23fa",
+        "image": "he-support-alpha-v1/case-016.png",
+        "sha256": "629f835e856a480bb25b5b4662d0f7005a8060919f12820cbe8928467f6ca933",
         "shape_yx": [
           1909,
           3099
@@ -5884,7 +5899,8 @@
           "inflamed_stroma": 48660
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "b67c6341bbab1893429a6945ef6e0b884ab77629f174d75b81f3806b6a9f23fa"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-016.png",
@@ -6169,8 +6185,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-017.png",
-        "sha256": "ea28f8da5a23da4904d0cc8c377d86b790dd13b09593df79405ad359e2d88ec0",
+        "image": "he-support-alpha-v1/case-017.png",
+        "sha256": "8e34e40173791b1abca7733e5832804a547db23e60971dd41eeb21de72174878",
         "shape_yx": [
           1362,
           1762
@@ -6188,7 +6204,8 @@
           "necrosis": 25
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "ea28f8da5a23da4904d0cc8c377d86b790dd13b09593df79405ad359e2d88ec0"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-017.png",
@@ -6489,8 +6506,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-018.png",
-        "sha256": "08b3a58999cdae39ad6514557994aa33cc296b2dd5719edf56c86a8438a12c52",
+        "image": "he-support-alpha-v1/case-018.png",
+        "sha256": "4f98a3195f8e73eb9d2c2afcf463dfcbb07b9a8c8bceceb738d04f806926642e",
         "shape_yx": [
           1533,
           1953
@@ -6510,7 +6527,8 @@
           "inflamed_stroma": 77
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "08b3a58999cdae39ad6514557994aa33cc296b2dd5719edf56c86a8438a12c52"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-018.png",
@@ -6818,8 +6836,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-019.png",
-        "sha256": "71632743a197b1220b3a07f8efc5344ccbde2a01d7de0f8c97cca2af2df802af",
+        "image": "he-support-alpha-v1/case-019.png",
+        "sha256": "7b3fe99c7f7a769a7d81ec006ddbcba4e68dcfa695220ea3c26d801e98fe87ef",
         "shape_yx": [
           1308,
           1391
@@ -6839,7 +6857,8 @@
           "inflamed_stroma": 27982
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "71632743a197b1220b3a07f8efc5344ccbde2a01d7de0f8c97cca2af2df802af"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-019.png",
@@ -7162,8 +7181,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-020.png",
-        "sha256": "48934da2fa3c49191858fc042d70b71f1db75f4330a131c1a5f1fdb25da82e03",
+        "image": "he-support-alpha-v1/case-020.png",
+        "sha256": "9d655b5434f7a9964c60963224815fa75c8e55d1285ae5e6d879ac7c03963e63",
         "shape_yx": [
           2817,
           3491
@@ -7183,7 +7202,8 @@
           "inflamed_stroma": 0
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "48934da2fa3c49191858fc042d70b71f1db75f4330a131c1a5f1fdb25da82e03"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-020.png",
@@ -7493,8 +7513,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-021.png",
-        "sha256": "d1e500a87b5e3f618feab4bd2033da64ead18c912e91d1f333c65ed8a793ecda",
+        "image": "he-support-alpha-v1/case-021.png",
+        "sha256": "017a57471a8c05b76de77ab4227d0abda08bc2b13cb9737b19e6f2f9b75eba6f",
         "shape_yx": [
           2429,
           2508
@@ -7512,7 +7532,8 @@
           "inflamed_stroma": 32768
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "d1e500a87b5e3f618feab4bd2033da64ead18c912e91d1f333c65ed8a793ecda"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-021.png",
@@ -7807,8 +7828,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-022.png",
-        "sha256": "b64a355a1998ed6b00f091a641a9bdd75fcf7ea4a081939e2523b7557e0ded11",
+        "image": "he-support-alpha-v1/case-022.png",
+        "sha256": "646d6a0a3cb89106a087e7b24110c076f5cc969147b552b77bc8f3d4d6f2e87a",
         "shape_yx": [
           1327,
           1349
@@ -7826,7 +7847,8 @@
           "inflamed_stroma": 4
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "b64a355a1998ed6b00f091a641a9bdd75fcf7ea4a081939e2523b7557e0ded11"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-022.png",
@@ -8149,8 +8171,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-023.png",
-        "sha256": "6bc35ca0707ca9fa6839cf5451a8c7eb2c3c1ff990c524a1d0c8bc9c84836717",
+        "image": "he-support-alpha-v1/case-023.png",
+        "sha256": "997cbd20e4df0fd556c5168a3e86c0fb40e852e09371fa6087df5356d296188b",
         "shape_yx": [
           1998,
           1940
@@ -8170,7 +8192,8 @@
           "inflamed_stroma": 628
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "6bc35ca0707ca9fa6839cf5451a8c7eb2c3c1ff990c524a1d0c8bc9c84836717"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-023.png",
@@ -8607,8 +8630,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-024.png",
-        "sha256": "ca2f27920f17ddfc9998bfce4b3486e8bc89e98b20cfe16a1cb61432bd7685c7",
+        "image": "he-support-alpha-v1/case-024.png",
+        "sha256": "de7fe116d1ea0b045acc6aee98df045db9a83186825431a342e1e4db3d8367e6",
         "shape_yx": [
           5366,
           3777
@@ -8628,7 +8651,8 @@
           "inflamed_stroma": 7440
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "ca2f27920f17ddfc9998bfce4b3486e8bc89e98b20cfe16a1cb61432bd7685c7"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-024.png",
@@ -8967,8 +8991,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-025.png",
-        "sha256": "fda0d6ca8c2c6c6445f94d3094a37a67679b5cc38ff59ae03aa820d5fffe00aa",
+        "image": "he-support-alpha-v1/case-025.png",
+        "sha256": "68aa1fd7481dc33f313d769be6e3e29bd1f5ec5ddf55752ef9581416536c748d",
         "shape_yx": [
           2490,
           1786
@@ -8988,7 +9012,8 @@
           "inflamed_stroma": 1354
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "fda0d6ca8c2c6c6445f94d3094a37a67679b5cc38ff59ae03aa820d5fffe00aa"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-025.png",
@@ -9389,8 +9414,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-026.png",
-        "sha256": "77fef28a2a695979924439b21325990fefcc0d3585cecab6a4ed71adfebccb6b",
+        "image": "he-support-alpha-v1/case-026.png",
+        "sha256": "6b609fe5994cb0bfdcd2dc49351b2906076402ff8926f627fa160128a92a2b3c",
         "shape_yx": [
           2193,
           4207
@@ -9412,7 +9437,8 @@
           "inflamed_stroma": 0
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "77fef28a2a695979924439b21325990fefcc0d3585cecab6a4ed71adfebccb6b"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-026.png",
@@ -9714,8 +9740,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-027.png",
-        "sha256": "5df8cab8de68f7cb3127ece1d1235a362acdd177250f8a050f8a4d44bfd56947",
+        "image": "he-support-alpha-v1/case-027.png",
+        "sha256": "3ad586f1b0279b80da132fc249c85d369a036a5c40f226a9f114ca0d2adb84a5",
         "shape_yx": [
           1301,
           1808
@@ -9733,7 +9759,8 @@
           "inflamed_stroma": 484
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "5df8cab8de68f7cb3127ece1d1235a362acdd177250f8a050f8a4d44bfd56947"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-027.png",
@@ -10035,8 +10062,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-028.png",
-        "sha256": "ef707239d1add12bd91c3e195df70c974aadee1233da2a8f9ce3ba450d2ae248",
+        "image": "he-support-alpha-v1/case-028.png",
+        "sha256": "91842eb8a35f02dc80ba5893b5adeb4b3fd85df53baeaf49ca95cc80ee2258dd",
         "shape_yx": [
           1060,
           1218
@@ -10054,7 +10081,8 @@
           "inflamed_stroma": 728
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "ef707239d1add12bd91c3e195df70c974aadee1233da2a8f9ce3ba450d2ae248"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-028.png",
@@ -10350,8 +10378,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-029.png",
-        "sha256": "4eeb48b583b9ef31e957fc14364f495e76c9ef1dc03ea3567db41bbd0b122a6a",
+        "image": "he-support-alpha-v1/case-029.png",
+        "sha256": "6880e1983189d339583bb01b40ca0099c46b565dd137f1fba5bd0f3930094c11",
         "shape_yx": [
           1026,
           1212
@@ -10369,7 +10397,8 @@
           "necrosis": 112
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "4eeb48b583b9ef31e957fc14364f495e76c9ef1dc03ea3567db41bbd0b122a6a"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-029.png",
@@ -10644,8 +10673,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-030.png",
-        "sha256": "960f309d97954273881a823b40b6e54e02ffd04de46aabc6b41c6238b9937926",
+        "image": "he-support-alpha-v1/case-030.png",
+        "sha256": "8bf197df836e4e86eb9230b17b47c715a112525ccec74cc2f58d14c68f20b629",
         "shape_yx": [
           1169,
           1448
@@ -10663,7 +10692,8 @@
           "inflamed_stroma": 0
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "960f309d97954273881a823b40b6e54e02ffd04de46aabc6b41c6238b9937926"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-030.png",
@@ -10987,8 +11017,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-031.png",
-        "sha256": "996e6df0e988a57bf0b285bc9ebeb3681b4b73f55e9fb969e68c96899fde06f7",
+        "image": "he-support-alpha-v1/case-031.png",
+        "sha256": "e13a71883e079f91cd0eee6fe02a6e253efff91f08747aca7ea6fd3e20ddb879",
         "shape_yx": [
           1964,
           2464
@@ -11006,7 +11036,8 @@
           "inflamed_stroma": 0
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "996e6df0e988a57bf0b285bc9ebeb3681b4b73f55e9fb969e68c96899fde06f7"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-031.png",
@@ -11300,8 +11331,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-032.png",
-        "sha256": "2fd2da4333616a11d6ff937afe58c6ed52768d859a2cc95baab253a6dcf459fc",
+        "image": "he-support-alpha-v1/case-032.png",
+        "sha256": "8811caa645af97a900138e61c78b288f481db2e185c7726db882effa22dbe943",
         "shape_yx": [
           1371,
           1103
@@ -11319,7 +11350,8 @@
           "inflamed_stroma": 460
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "2fd2da4333616a11d6ff937afe58c6ed52768d859a2cc95baab253a6dcf459fc"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-032.png",
@@ -11607,8 +11639,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-033.png",
-        "sha256": "2ff4ac4522a3885785571c517ac4dc29cd83fa71512ff12f473fd38d4ad30126",
+        "image": "he-support-alpha-v1/case-033.png",
+        "sha256": "a4589cd9234442d96bfb5d19092f0f4bed313cf7d74064b8b7583ce7febd6ce1",
         "shape_yx": [
           1019,
           1008
@@ -11626,7 +11658,8 @@
           "blood": 133
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "2ff4ac4522a3885785571c517ac4dc29cd83fa71512ff12f473fd38d4ad30126"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-033.png",
@@ -11916,8 +11949,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-034.png",
-        "sha256": "b457bbf3edf23bbfbe078c6c5d17254cdb47dddc81d8adeabfe6af7e4a300ed2",
+        "image": "he-support-alpha-v1/case-034.png",
+        "sha256": "a3affe9dee67806203d347fb01bffd3c71b5d80c356d92c0dcbf462a09f808c5",
         "shape_yx": [
           1046,
           1085
@@ -11941,7 +11974,8 @@
           "macrophages": 10
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "b457bbf3edf23bbfbe078c6c5d17254cdb47dddc81d8adeabfe6af7e4a300ed2"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-034.png",
@@ -12230,8 +12264,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-035.png",
-        "sha256": "b559b5ab40b51c976a65d8f3b381d716408461e6fe11bdd7dacb0f20db46c98b",
+        "image": "he-support-alpha-v1/case-035.png",
+        "sha256": "2e8fee524e5c3dadfaee08bec7e5a9a072a33aaf2402aacb9b974f5a2b0bb008",
         "shape_yx": [
           1030,
           1031
@@ -12249,7 +12283,8 @@
           "blood": 0
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "b559b5ab40b51c976a65d8f3b381d716408461e6fe11bdd7dacb0f20db46c98b"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-035.png",
@@ -12534,8 +12569,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-036.png",
-        "sha256": "eced3d9c03c1d4861e9388a0b6e92940598623716b62d6c956ec0a1a5507ab71",
+        "image": "he-support-alpha-v1/case-036.png",
+        "sha256": "0a8dbaf9922245c1a29f64616f623de6659462ff3eaa548ef3c60e9c7b066088",
         "shape_yx": [
           1030,
           1031
@@ -12555,7 +12590,8 @@
           "blood": 0
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "eced3d9c03c1d4861e9388a0b6e92940598623716b62d6c956ec0a1a5507ab71"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-036.png",
@@ -12863,8 +12899,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-037.png",
-        "sha256": "10910e13422de7d2e5c43c17523b9cd1f130fe2b7721278f126a1c62728eb16d",
+        "image": "he-support-alpha-v1/case-037.png",
+        "sha256": "697550c0e7fe8e44b54f31fb5ff0851f3414382fab4513398b5b357e70c76917",
         "shape_yx": [
           930,
           967
@@ -12888,7 +12924,8 @@
           "macrophages": 5296
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "10910e13422de7d2e5c43c17523b9cd1f130fe2b7721278f126a1c62728eb16d"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-037.png",
@@ -13182,8 +13219,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-038.png",
-        "sha256": "108e45ddabad54a46054815678818f79c4734da87625825cf1fb53bae0c8976f",
+        "image": "he-support-alpha-v1/case-038.png",
+        "sha256": "e70148f5b349494d1cf6e68bd66572d2f720b15a59f40455a8d264c547d95b4c",
         "shape_yx": [
           1030,
           1031
@@ -13201,7 +13238,8 @@
           "stroma": 12984
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "108e45ddabad54a46054815678818f79c4734da87625825cf1fb53bae0c8976f"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-038.png",
@@ -13500,8 +13538,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-039.png",
-        "sha256": "8ea8641bd33a5638a33eadfe7a22e6a454bbf646c7434ea5e754c9cef0221810",
+        "image": "he-support-alpha-v1/case-039.png",
+        "sha256": "6eb3a673d3fc5467df32c268d2e5257582fa4a4b72f0b7fc9811219fd1db3f2c",
         "shape_yx": [
           1030,
           1030
@@ -13523,7 +13561,8 @@
           "mucus_plasma_or_fluids": 2838
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "8ea8641bd33a5638a33eadfe7a22e6a454bbf646c7434ea5e754c9cef0221810"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-039.png",
@@ -13817,8 +13856,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-040.png",
-        "sha256": "c79b981aefd9059a8872760fdbbd9dbe2a0635d1625476259593ceacd2ae7935",
+        "image": "he-support-alpha-v1/case-040.png",
+        "sha256": "df1cb17bd178660a0acaea054eab9a962dd1250b0b74d3e5cff69252f0d23cc7",
         "shape_yx": [
           1262,
           1563
@@ -13834,7 +13873,8 @@
           "stroma": 3332
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "c79b981aefd9059a8872760fdbbd9dbe2a0635d1625476259593ceacd2ae7935"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-040.png",
@@ -14124,8 +14164,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-041.png",
-        "sha256": "d47d3cd7188440113fddb752b3aaca751461165f699d6a06be73430925c16da3",
+        "image": "he-support-alpha-v1/case-041.png",
+        "sha256": "307e7ce06d3ef48a52996d62f2cb049a394bc5b4c24bbbe773642a272eedd70e",
         "shape_yx": [
           1120,
           1059
@@ -14143,7 +14183,8 @@
           "blood": 0
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "d47d3cd7188440113fddb752b3aaca751461165f699d6a06be73430925c16da3"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-041.png",
@@ -14421,8 +14462,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-042.png",
-        "sha256": "3b2e3068e76772aa896600acb6be6774bd7851aea38b77c58a0b969c018371ad",
+        "image": "he-support-alpha-v1/case-042.png",
+        "sha256": "9cd42982cfd26764284db04685dc227a961f25aa725bfb20bf27d6e639fea2a1",
         "shape_yx": [
           1431,
           1245
@@ -14438,7 +14479,8 @@
           "stroma": 17343
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "3b2e3068e76772aa896600acb6be6774bd7851aea38b77c58a0b969c018371ad"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-042.png",
@@ -14789,8 +14831,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-043.png",
-        "sha256": "5dffb666f6cb1f861a3a09a36c468dd61346bebaedd588e6614064e28b51ad91",
+        "image": "he-support-alpha-v1/case-043.png",
+        "sha256": "f7dc7d8c09a0deb1cefa56438f39c60075fa76e8be34706756e614d4af4479a8",
         "shape_yx": [
           2114,
           2650
@@ -14814,7 +14856,8 @@
           "mucus_plasma_or_fluids": 5
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "5dffb666f6cb1f861a3a09a36c468dd61346bebaedd588e6614064e28b51ad91"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-043.png",
@@ -15117,8 +15160,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-044.png",
-        "sha256": "3e76a0ace530f41fbc592a04f97a0564329b5e68eb7f73f9e3f8973a2760c94f",
+        "image": "he-support-alpha-v1/case-044.png",
+        "sha256": "9e5cc6e7f18807cb228e654c147321b9b68e716a8a499239a08232222ae13f17",
         "shape_yx": [
           1185,
           2098
@@ -15140,7 +15183,8 @@
           "macrophages": 7178
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "3e76a0ace530f41fbc592a04f97a0564329b5e68eb7f73f9e3f8973a2760c94f"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-044.png",
@@ -15441,8 +15485,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-045.png",
-        "sha256": "88170b4990f91b740746a6a9b7349b663a08848d01182b74dd49ef3ad3529545",
+        "image": "he-support-alpha-v1/case-045.png",
+        "sha256": "9cfd91fa4392d1ea5bd990511df525f17b06818fab0e36b92403682dafcae8b0",
         "shape_yx": [
           1751,
           1150
@@ -15462,7 +15506,8 @@
           "macrophages": 29672
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "88170b4990f91b740746a6a9b7349b663a08848d01182b74dd49ef3ad3529545"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-045.png",
@@ -15781,8 +15826,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-046.png",
-        "sha256": "b079ffc48331b27807c20c18ec285e05d65c253cb4f00cf3df7efcac5c86868c",
+        "image": "he-support-alpha-v1/case-046.png",
+        "sha256": "7755618f269b4bec29f24e4d9ccf3fd7515b801b40ca184068715f140e6faca2",
         "shape_yx": [
           1655,
           1414
@@ -15808,7 +15853,8 @@
           "keratinized_tissue": 1434
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "b079ffc48331b27807c20c18ec285e05d65c253cb4f00cf3df7efcac5c86868c"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-046.png",
@@ -16102,8 +16148,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-047.png",
-        "sha256": "7e18fe51f1a8e30502936c30f8174b9233080c7a6413b2f7feb8e231629901c9",
+        "image": "he-support-alpha-v1/case-047.png",
+        "sha256": "c9e4ede3d3fb88359208147148f0d143ceace781efd429df85df1141a8c3fc54",
         "shape_yx": [
           1061,
           1061
@@ -16121,7 +16167,8 @@
           "blood": 1255
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "7e18fe51f1a8e30502936c30f8174b9233080c7a6413b2f7feb8e231629901c9"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-047.png",
@@ -16415,8 +16462,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-048.png",
-        "sha256": "7cdb7ab4c3a25c64770f06a5b73ba616358baca8a92213ee823f100632f51b16",
+        "image": "he-support-alpha-v1/case-048.png",
+        "sha256": "84f48b7e9ff7d8473ac290410cd84c1c591686317c17ad8d4edc4d86e709cd8d",
         "shape_yx": [
           1055,
           1082
@@ -16438,7 +16485,8 @@
           "macrophages": 0
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "7cdb7ab4c3a25c64770f06a5b73ba616358baca8a92213ee823f100632f51b16"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-048.png",
@@ -16759,8 +16807,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-049.png",
-        "sha256": "8bc243070364993c82a8b407342971aa7dc33e36859296575ae01e89093c66da",
+        "image": "he-support-alpha-v1/case-049.png",
+        "sha256": "1733ed13eb9b47b99b33465ba04d3c7734da622afa0f63aaaebc9a32283531aa",
         "shape_yx": [
           1808,
           1807
@@ -16778,7 +16826,8 @@
           "stroma": 1544
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "8bc243070364993c82a8b407342971aa7dc33e36859296575ae01e89093c66da"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-049.png",
@@ -17117,8 +17166,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-050.png",
-        "sha256": "8a1e57c4159546f959dcd11b19c407bf894ba554612161d0237818f7dc3cf116",
+        "image": "he-support-alpha-v1/case-050.png",
+        "sha256": "6c08d72a6c2ae81bfd40ea65da3f0e6ead3938141c005a12bc51d1f91003943a",
         "shape_yx": [
           1810,
           1810
@@ -17140,7 +17189,8 @@
           "necrosis": 26882
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "8a1e57c4159546f959dcd11b19c407bf894ba554612161d0237818f7dc3cf116"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-050.png",
@@ -17474,8 +17524,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-051.png",
-        "sha256": "648cc114dbedc8c1de2cf88531e52e5c40cdeec03467e90a12f1a4a64a207db4",
+        "image": "he-support-alpha-v1/case-051.png",
+        "sha256": "fbe511f472cb5743ad8b0b0966882313ce9e86779ca081163de3feae4d5d619c",
         "shape_yx": [
           1811,
           1812
@@ -17495,7 +17545,8 @@
           "muscle": 287
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "648cc114dbedc8c1de2cf88531e52e5c40cdeec03467e90a12f1a4a64a207db4"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-051.png",
@@ -17817,8 +17868,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-052.png",
-        "sha256": "d9c055741e88d47d4a0affc7bf33149f0c7d5c03ea2c306a3b9ef66272988a1b",
+        "image": "he-support-alpha-v1/case-052.png",
+        "sha256": "19adc1dabc330ddc7892cedc434777c7af1274d5cb2c814502d641b6fb92f758",
         "shape_yx": [
           1811,
           1810
@@ -17836,7 +17887,8 @@
           "stroma": 1199
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "d9c055741e88d47d4a0affc7bf33149f0c7d5c03ea2c306a3b9ef66272988a1b"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-052.png",
@@ -18139,8 +18191,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-053.png",
-        "sha256": "ee0e26674e521f45dbc57e91087522cbc8bcdb53a22179491a195682f9f90928",
+        "image": "he-support-alpha-v1/case-053.png",
+        "sha256": "36605897177f306c1fb6f429fd387bc71ef8a85a355b760dad7c8d6be49d058a",
         "shape_yx": [
           1811,
           1810
@@ -18158,7 +18210,8 @@
           "stroma": 3723
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "ee0e26674e521f45dbc57e91087522cbc8bcdb53a22179491a195682f9f90928"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-053.png",
@@ -18475,8 +18528,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-054.png",
-        "sha256": "be23e0d448d311754546ab76c7717c795d344a700232997ab101dcc00a6bbf30",
+        "image": "he-support-alpha-v1/case-054.png",
+        "sha256": "a9ae3ea770c04ca9a74145bebf71828862a58177720a81984f80de87ca2f61c7",
         "shape_yx": [
           1778,
           1778
@@ -18496,7 +18549,8 @@
           "muscle": 810
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "be23e0d448d311754546ab76c7717c795d344a700232997ab101dcc00a6bbf30"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-054.png",
@@ -18809,8 +18863,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-055.png",
-        "sha256": "95d0aad8bbf1937d546d6dc1bc8066a6ffecc60aa176847a467559f9f4fe7c03",
+        "image": "he-support-alpha-v1/case-055.png",
+        "sha256": "7fe67ee1822650058ccf1f3b4e70f1c8f9fdbe3d417572a57efafe7a8e6fd022",
         "shape_yx": [
           1807,
           1807
@@ -18830,7 +18884,8 @@
           "muscle": 23837
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "95d0aad8bbf1937d546d6dc1bc8066a6ffecc60aa176847a467559f9f4fe7c03"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-055.png",
@@ -19118,8 +19173,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-056.png",
-        "sha256": "5788db77064b6f05b863d3b5413a29ba8e7e056ba59a0efa341c7f1269227316",
+        "image": "he-support-alpha-v1/case-056.png",
+        "sha256": "4e65887e514003d61a3b0714fc30b2529c56db3326dd37fbfa6ad91663f1fb39",
         "shape_yx": [
           1811,
           1810
@@ -19137,7 +19192,8 @@
           "stroma": 181
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "5788db77064b6f05b863d3b5413a29ba8e7e056ba59a0efa341c7f1269227316"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-056.png",
@@ -19436,8 +19492,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-057.png",
-        "sha256": "affcd1b3f250f7f32ceecab7507b36d16240bcbce361b663cc2b0b6da67cdf03",
+        "image": "he-support-alpha-v1/case-057.png",
+        "sha256": "e3cc6f107756e17b1a4d1dbff02b6ba0c1a386b24936caac19516c04fcd00afd",
         "shape_yx": [
           1810,
           1811
@@ -19455,7 +19511,8 @@
           "stroma": 3483
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "affcd1b3f250f7f32ceecab7507b36d16240bcbce361b663cc2b0b6da67cdf03"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-057.png",
@@ -19782,8 +19839,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-058.png",
-        "sha256": "858368332b173ed03b7cb537fe35d1954679a93359159bae738ff5361165fea2",
+        "image": "he-support-alpha-v1/case-058.png",
+        "sha256": "0e5409503d0664ff9026808a5a789b336cd0170f597f27eb7fcb1d72295143f0",
         "shape_yx": [
           1807,
           1806
@@ -19801,7 +19858,8 @@
           "stroma": 27364
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "858368332b173ed03b7cb537fe35d1954679a93359159bae738ff5361165fea2"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-058.png",
@@ -20092,8 +20150,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-059.png",
-        "sha256": "4d1ae32db085d77d93518aa97bc1863cba07b35714e09115c330d8b843e36267",
+        "image": "he-support-alpha-v1/case-059.png",
+        "sha256": "3b4a917404f32e3613f9803f0fb6c6889b368914ee4e40ad3191f0821fe7d246",
         "shape_yx": [
           1807,
           1807
@@ -20111,7 +20169,8 @@
           "stroma": 393648
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "4d1ae32db085d77d93518aa97bc1863cba07b35714e09115c330d8b843e36267"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-059.png",
@@ -20393,8 +20452,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-060.png",
-        "sha256": "0f24c5704feaaba87aa2b108f7efbcb428e2affeb43a410ece8f765390daa08d",
+        "image": "he-support-alpha-v1/case-060.png",
+        "sha256": "d31ac6d0632bc5a662d6828b24124cfd1ebd6bcb66886854ed451760b725bb3d",
         "shape_yx": [
           1761,
           1761
@@ -20412,7 +20471,8 @@
           "stroma": 343480
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "0f24c5704feaaba87aa2b108f7efbcb428e2affeb43a410ece8f765390daa08d"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-060.png",
@@ -20700,8 +20760,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-061.png",
-        "sha256": "41d39875ff82225b0ef0091e28f2f29a8ac4d0231015e139f555aadbea358d12",
+        "image": "he-support-alpha-v1/case-061.png",
+        "sha256": "7a91196b7c54e9773675e732cd63fa2ac0e0b3d5da10ad9648326662ad0e3a42",
         "shape_yx": [
           1782,
           1782
@@ -20721,7 +20781,8 @@
           "muscle": 131410
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "41d39875ff82225b0ef0091e28f2f29a8ac4d0231015e139f555aadbea358d12"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-061.png",
@@ -21039,8 +21100,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-062.png",
-        "sha256": "48c1d77bea8b56d0311c41bc20556985126368e246041bbec02eccde0904081a",
+        "image": "he-support-alpha-v1/case-062.png",
+        "sha256": "4f041d697063241dffd7706fa54715d03af40ecfc812ed432e4b8cdf114c4f0e",
         "shape_yx": [
           1778,
           1778
@@ -21060,7 +21121,8 @@
           "muscle": 69
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "48c1d77bea8b56d0311c41bc20556985126368e246041bbec02eccde0904081a"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-062.png",
@@ -21356,8 +21418,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-063.png",
-        "sha256": "0f3b92acc6797f397161b09a02bfa7cd1af9aa677e4dfcb8cddb11be4be3ee4a",
+        "image": "he-support-alpha-v1/case-063.png",
+        "sha256": "60ffe3ad74a4a93d074e5c489395b2e568323821c7df15d17816d1b1d1af5530",
         "shape_yx": [
           1767,
           1767
@@ -21375,7 +21437,8 @@
           "stroma": 8419
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "0f3b92acc6797f397161b09a02bfa7cd1af9aa677e4dfcb8cddb11be4be3ee4a"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-063.png",
@@ -21680,8 +21743,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-064.png",
-        "sha256": "77ca18115501753c922cba5eda9e5d1f4cb223069021c38e3e1760f63c25f04d",
+        "image": "he-support-alpha-v1/case-064.png",
+        "sha256": "059a044c259a6ad7d842eb47988928e81e034bcbe975535795d1c82559682dac",
         "shape_yx": [
           1807,
           1807
@@ -21699,7 +21762,8 @@
           "stroma": 102325
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "77ca18115501753c922cba5eda9e5d1f4cb223069021c38e3e1760f63c25f04d"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-064.png",
@@ -22003,8 +22067,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-065.png",
-        "sha256": "19c5dbfa8b3993b4dfd0871efbf82efa362ba7bdf62f9c5d0a87fa279c6b6404",
+        "image": "he-support-alpha-v1/case-065.png",
+        "sha256": "88bada42c5abc0c1f2a6e508d28cf0196f187643db9857e7265624722de4d73c",
         "shape_yx": [
           1767,
           1768
@@ -22022,7 +22086,8 @@
           "stroma": 17919
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "19c5dbfa8b3993b4dfd0871efbf82efa362ba7bdf62f9c5d0a87fa279c6b6404"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-065.png",
@@ -22331,8 +22396,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-066.png",
-        "sha256": "a2efbf70b8a79d55523d9e22f8d5b660918afed9467361cd3fd133120a24173b",
+        "image": "he-support-alpha-v1/case-066.png",
+        "sha256": "e539dfb2afc3234b9511ebecb0028e8354df8dbf9c5cf7f33b37e200ba09156f",
         "shape_yx": [
           1807,
           1807
@@ -22348,7 +22413,8 @@
           "inflamed_stroma": 37944
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "a2efbf70b8a79d55523d9e22f8d5b660918afed9467361cd3fd133120a24173b"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-066.png",
@@ -22674,8 +22740,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-067.png",
-        "sha256": "8225967917548d69244cca627639c66f1fb0bc2ef1dd5b7d24c1fa1849492e40",
+        "image": "he-support-alpha-v1/case-067.png",
+        "sha256": "d41d0bd16289634e731f550b2428f4653656fab47323f74db5d28229b8f29d0c",
         "shape_yx": [
           1810,
           1811
@@ -22695,7 +22761,8 @@
           "muscle": 12911
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "8225967917548d69244cca627639c66f1fb0bc2ef1dd5b7d24c1fa1849492e40"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-067.png",
@@ -23013,8 +23080,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-068.png",
-        "sha256": "3048a5991612943c09573496b216f244e26e0e285f69a28e9296baecd86cbd11",
+        "image": "he-support-alpha-v1/case-068.png",
+        "sha256": "8a8b73c85d756858f91dc680f6a1bb8f03bb240be75a378ed38efb43c7b68543",
         "shape_yx": [
           1806,
           1806
@@ -23036,7 +23103,8 @@
           "necrosis": 687
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "3048a5991612943c09573496b216f244e26e0e285f69a28e9296baecd86cbd11"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-068.png",
@@ -23304,8 +23372,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-069.png",
-        "sha256": "6c6657171d2fb45daa52e20b2097d009aa4b5a166ee830a6bbe3ff57d229c7b2",
+        "image": "he-support-alpha-v1/case-069.png",
+        "sha256": "bca30d4c152db2d542b63f19ea0802911f29ac74043f6f021979da83fd00de3d",
         "shape_yx": [
           1280,
           1280
@@ -23319,7 +23387,8 @@
           "epithelial_tissue": 27287
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "6c6657171d2fb45daa52e20b2097d009aa4b5a166ee830a6bbe3ff57d229c7b2"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-069.png",
@@ -23605,8 +23674,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-070.png",
-        "sha256": "fa9820c8e8ec61db984e804bfa091941536b64ada66dd07d4ec8df1018a92046",
+        "image": "he-support-alpha-v1/case-070.png",
+        "sha256": "d69fdcd5f3dcb25e392d3910acdbd6b5715208c0fa7a85d82392d15bb4767f28",
         "shape_yx": [
           1280,
           1280
@@ -23620,7 +23689,8 @@
           "epithelial_tissue": 9711
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "fa9820c8e8ec61db984e804bfa091941536b64ada66dd07d4ec8df1018a92046"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-070.png",
@@ -23891,8 +23961,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-071.png",
-        "sha256": "e3cdf244b63cd3a2ffabced86d4e491b15ea62f4ce0a3633cb4fdf1f648bc137",
+        "image": "he-support-alpha-v1/case-071.png",
+        "sha256": "1c1b5a1b04c4e4ab10e27747557c5553b30a938ad4d2294bd4924a6f34dbf176",
         "shape_yx": [
           1280,
           1280
@@ -23906,7 +23976,8 @@
           "epithelial_tissue": 19947
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "e3cdf244b63cd3a2ffabced86d4e491b15ea62f4ce0a3633cb4fdf1f648bc137"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-071.png",
@@ -24184,8 +24255,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-072.png",
-        "sha256": "353c7f110e02d38a1c9ad0012eb2f6a152091cfbbadd743abb5757506aa537d1",
+        "image": "he-support-alpha-v1/case-072.png",
+        "sha256": "dc8e6ec5c85bf956b1638bfeb33ae80b20d45c9156eaab0161ef264f4bcb4281",
         "shape_yx": [
           1280,
           1280
@@ -24199,7 +24270,8 @@
           "epithelial_tissue": 12833
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "353c7f110e02d38a1c9ad0012eb2f6a152091cfbbadd743abb5757506aa537d1"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-072.png",
@@ -24473,8 +24545,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-073.png",
-        "sha256": "0c35fca85cfa041c7017cebe09b50e0c50a8a8511338e73e7f41f5e3a50b5ed7",
+        "image": "he-support-alpha-v1/case-073.png",
+        "sha256": "cb3227d131a8b9f31e994c7bfb9fefaee5508ba02a214a54fb3d7aa3772cf2fa",
         "shape_yx": [
           1280,
           1280
@@ -24488,7 +24560,8 @@
           "epithelial_tissue": 25418
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "0c35fca85cfa041c7017cebe09b50e0c50a8a8511338e73e7f41f5e3a50b5ed7"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-073.png",
@@ -24765,8 +24838,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-074.png",
-        "sha256": "e362e98bb7179f33db980da73bbfd88853fc3f0a5534876e2a396dd6ed6da61a",
+        "image": "he-support-alpha-v1/case-074.png",
+        "sha256": "767e3afd2bda920e546a0378096e5d540a3fd2faf78f8c0eef85c86b81344c1f",
         "shape_yx": [
           1280,
           1280
@@ -24780,7 +24853,8 @@
           "epithelial_tissue": 17935
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "e362e98bb7179f33db980da73bbfd88853fc3f0a5534876e2a396dd6ed6da61a"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-074.png",
@@ -25064,8 +25138,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-075.png",
-        "sha256": "9d0d82341d881607120490eaff656ccbdac3b0bc212ebc0bd6d98d67526de273",
+        "image": "he-support-alpha-v1/case-075.png",
+        "sha256": "1378e91f6602647f04e2c11165549335b36f2cc96de89ae1a6cdc8fec4884baa",
         "shape_yx": [
           1280,
           1280
@@ -25079,7 +25153,8 @@
           "epithelial_tissue": 18064
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "9d0d82341d881607120490eaff656ccbdac3b0bc212ebc0bd6d98d67526de273"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-075.png",
@@ -25357,8 +25432,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-076.png",
-        "sha256": "8f61310460cfaea2396b98e196babf2a5d1ea20803fdc4ad3060516eeebc9ddc",
+        "image": "he-support-alpha-v1/case-076.png",
+        "sha256": "9922b0776bf2a2a2e47c24e9eb59dc959b770221495532353b44415c1c9eac70",
         "shape_yx": [
           1280,
           1280
@@ -25372,7 +25447,8 @@
           "epithelial_tissue": 5392
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "8f61310460cfaea2396b98e196babf2a5d1ea20803fdc4ad3060516eeebc9ddc"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-076.png",
@@ -25651,8 +25727,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-077.png",
-        "sha256": "7c2184231c148daa481363e2f701eeddbcf57f56aa2de6da7a78ae97b0bbde92",
+        "image": "he-support-alpha-v1/case-077.png",
+        "sha256": "35a4c4259dfcbc57be5ca1a61bf94af069f513eeca965e014c37f941f802cf89",
         "shape_yx": [
           1280,
           1280
@@ -25666,7 +25742,8 @@
           "epithelial_tissue": 14644
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "7c2184231c148daa481363e2f701eeddbcf57f56aa2de6da7a78ae97b0bbde92"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-077.png",
@@ -25958,8 +26035,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-078.png",
-        "sha256": "910c62dc2ef348b2db73ae91caea8e075f17ab648fa0cb59b1382293d73ebcdd",
+        "image": "he-support-alpha-v1/case-078.png",
+        "sha256": "ee0741ce9a2cd8bfe195a1855748f260942998686122b4ccad9615422ac58c56",
         "shape_yx": [
           1280,
           1280
@@ -25973,7 +26050,8 @@
           "epithelial_tissue": 22933
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "910c62dc2ef348b2db73ae91caea8e075f17ab648fa0cb59b1382293d73ebcdd"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-078.png",
@@ -26243,8 +26321,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-079.png",
-        "sha256": "d2d3a9b47af596d692804bd442fab96afcd721ea16e798ccee31d06c474dc2bd",
+        "image": "he-support-alpha-v1/case-079.png",
+        "sha256": "4f8400c3eb3e94d4d7673533c3d6f83772ac6eb17f42a5447d28691f28d35ffa",
         "shape_yx": [
           1280,
           1280
@@ -26258,7 +26336,8 @@
           "epithelial_tissue": 11292
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "d2d3a9b47af596d692804bd442fab96afcd721ea16e798ccee31d06c474dc2bd"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-079.png",
@@ -26530,8 +26609,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-080.png",
-        "sha256": "3cffeadd7b468386fe5821482921cbc38cd8786225759f02206d1f0d6189b528",
+        "image": "he-support-alpha-v1/case-080.png",
+        "sha256": "d36983044d61242b2132f4d91038d1d3b7cca164854be1e2c99c70ce47f1b959",
         "shape_yx": [
           1280,
           1280
@@ -26545,7 +26624,8 @@
           "epithelial_tissue": 2041
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "3cffeadd7b468386fe5821482921cbc38cd8786225759f02206d1f0d6189b528"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-080.png",
@@ -26819,8 +26899,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-081.png",
-        "sha256": "329ad18bb8863ebeddc463f4ded6e70d9f6138282fadefebb53e946c5a33bad2",
+        "image": "he-support-alpha-v1/case-081.png",
+        "sha256": "627abfb4d45c618360b098d7503f3ea75f4035f58a7641dd3790f369c6132fc3",
         "shape_yx": [
           1280,
           1280
@@ -26834,7 +26914,8 @@
           "epithelial_tissue": 5733
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "329ad18bb8863ebeddc463f4ded6e70d9f6138282fadefebb53e946c5a33bad2"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-081.png",
@@ -27106,8 +27187,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-082.png",
-        "sha256": "51f3a1a84c4c26e8e65ee4bfb3b6872df75a4e7d655d86dd8199a99d5b6fdf67",
+        "image": "he-support-alpha-v1/case-082.png",
+        "sha256": "03274773df80c4b48cf07cf3af92d831e7b2015b52e092f8efecbeab959d6c30",
         "shape_yx": [
           1280,
           1280
@@ -27121,7 +27202,8 @@
           "epithelial_tissue": 19741
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "51f3a1a84c4c26e8e65ee4bfb3b6872df75a4e7d655d86dd8199a99d5b6fdf67"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-082.png",
@@ -27384,8 +27466,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-083.png",
-        "sha256": "1e927d7a34aad23d02f0676e51cb1f1053be5405da7e4e73ab0e677324cc9cb3",
+        "image": "he-support-alpha-v1/case-083.png",
+        "sha256": "208b7519c09d397841a9bd8493f99ab6ff83321c9c69949f85372cf89a5aed38",
         "shape_yx": [
           1280,
           1280
@@ -27399,7 +27481,8 @@
           "epithelial_tissue": 33703
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "1e927d7a34aad23d02f0676e51cb1f1053be5405da7e4e73ab0e677324cc9cb3"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-083.png",
@@ -27670,8 +27753,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-084.png",
-        "sha256": "c06f5b65992b3affe789fd636f4f707d5c03f6455623530b209520d5351d2ccc",
+        "image": "he-support-alpha-v1/case-084.png",
+        "sha256": "c00517115f9695e3e16d69ba35fdedcead69e759fc7d6829f97729d16534078c",
         "shape_yx": [
           1280,
           1280
@@ -27685,7 +27768,8 @@
           "epithelial_tissue": 18169
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "c06f5b65992b3affe789fd636f4f707d5c03f6455623530b209520d5351d2ccc"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-084.png",
@@ -27953,8 +28037,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-085.png",
-        "sha256": "89dc77bb439581b166fe4cdc3b8b6c00d9579bb7b72615abfb4018eaeb12566a",
+        "image": "he-support-alpha-v1/case-085.png",
+        "sha256": "fa7634cfd2ee0658954381508e1618fb6be2d99b7784b17759b53d653e9079f1",
         "shape_yx": [
           1280,
           1280
@@ -27968,7 +28052,8 @@
           "epithelial_tissue": 32242
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "89dc77bb439581b166fe4cdc3b8b6c00d9579bb7b72615abfb4018eaeb12566a"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-085.png",
@@ -28247,8 +28332,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-086.png",
-        "sha256": "f0c106cb1544ac98106575ba44741931b3dc5ae7fb78dde0dd213ab8d2834aeb",
+        "image": "he-support-alpha-v1/case-086.png",
+        "sha256": "d5c58b3dd987f8a232c91480b93b2751a5d0aaa054c587fc23157b856c7dd04e",
         "shape_yx": [
           1280,
           1280
@@ -28262,7 +28347,8 @@
           "epithelial_tissue": 17919
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "f0c106cb1544ac98106575ba44741931b3dc5ae7fb78dde0dd213ab8d2834aeb"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-086.png",
@@ -28545,8 +28631,8 @@
         "nearest_imputed_scored_pixels": 0
       },
       "he_background_support": {
-        "image": "he-support-v1/case-087.png",
-        "sha256": "d0049cbb8e5a4143cd8bac5ed0a806c903303b934a80e87c002ed379160faad0",
+        "image": "he-support-alpha-v1/case-087.png",
+        "sha256": "d3da2c8f4d871dc521fc9fdd944e39f83f596194e23e29b1def3c2f97367be30",
         "shape_yx": [
           1280,
           1280
@@ -28560,7 +28646,8 @@
           "epithelial_tissue": 1598
         },
         "expert_source_unchanged": true,
-        "published_scores_unchanged": true
+        "published_scores_unchanged": true,
+        "source_binary_sha256": "d0049cbb8e5a4143cd8bac5ed0a806c903303b934a80e87c002ed379160faad0"
       },
       "background_supported_combined_response_mask": {
         "image": "combined-supported-v1/case-087.png",
