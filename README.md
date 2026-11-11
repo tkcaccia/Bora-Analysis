@@ -28,13 +28,17 @@ whole-slide pages retain the earlier frozen PLS-only model; those overlays
 were not rerun with the revised Benchmark 1 rule.
 
 The [13 public Benchmark 2 whole-slide pages](https://tkcaccia.github.io/Bora-Analysis/visium-hd/)
-show the same H&E frame with KODAMA–Bora, supervised Virchow2–PLS Bora,
+show the same H&E frame with KODAMA–Bora, supervised Virchow2 Bora,
 U-Net, DeepLabV3+, MedSAM and VISTA-PATH at full overview and nine matched
-zoom views. The supervised model was fitted on the frozen 397 Benchmark 1
-training images and expert masks. All six displayed overlays use the final
+zoom views. The current supervised head was fitted on the frozen 397 Benchmark 1
+training images and expert masks after a training-only reduction from 24 labels
+to eight broad tissue classes. Five sparsely represented tissue categories are
+unscored. KODAMA–Bora geometry and the four external model predictions were
+mapped into these broader labels; those models were not retrained. All six
+displayed overlays use the final
 Bora tissue-group support to handle background consistently. Supervised Bora
 web views additionally receive 6 µm physical contour smoothing with a halo;
-the frozen score grids and other methods' predictions remain unchanged.
+the full-resolution source features and external predictions remain unchanged.
 These exploratory views have no
 independent whole-slide expert masks or accuracy ranking.
 
