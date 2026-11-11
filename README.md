@@ -13,7 +13,11 @@ now displays one training-selected supervised Virchow2 model for all 87
 retained images: a 444-channel joint classifier blended with the earlier
 classwise PLS head. Mean expert-present case macro IoU is 0.592. This is
 development evidence, and case 050 still has poor muscle recognition. The
-Benchmark 2 whole-slide pages retain the earlier frozen PLS-only model;
+six colored method panels in each figure and all 24 linked black-and-white
+response maps use one Bora H&E tissue/background support per image. Displayed
+figure pixels outside that support match H&E exactly; raw predictions and
+reported scores are unchanged. The Benchmark 2 whole-slide pages retain the
+earlier frozen PLS-only model;
 those slide overlays were not rerun with the new Benchmark 1 blend.
 
 The [13 public Benchmark 2 whole-slide pages](https://tkcaccia.github.io/Bora-Analysis/visium-hd/)
