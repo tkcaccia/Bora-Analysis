@@ -1,6 +1,6 @@
 {
   "format": "bora-public-site-v1",
-  "size_bytes": 458455363,
+  "size_bytes": 458452384,
   "file_count": 3633,
   "public_wsi_count": 13,
   "file_sha256": {
@@ -3488,7 +3488,7 @@
     "visium-hd/comparators/visium_hd_human_ovarian_cancer_ff/he.webp": "bdc8e40a73ff1e396c9ac0eced2fd5f98be61eae4eb926cdcdd7041a1eb8dc35",
     "visium-hd/index.html": "d77c01e8ae273ae8397e21ed0b25b55d88db2d7ebe61116d85cf22eaae667e49",
     "visium-hd/public-10x-brain-cancer-ffpe.html": "66dad444ad53a6686bde85dfda3733d0eaf198f4baefe2f1a67d7ff54cd2ff5d",
-    "visium-hd/public-10x-breast-ff.html": "0bdd7739a1ae1ccdceeeae6fc27ec7f13b3b9e4a4b292a333a1232f0026f5546",
+    "visium-hd/public-10x-breast-ff.html": "a65701dd925987954141424d01e2a029dc3d43d96a0d4d3c97e52c5813684883",
     "visium-hd/public-10x-colon-cancer.html": "2abf2da1d034d4279aba27f2494a5817cebc4171326485e89c062ba73a658722",
     "visium-hd/public-10x-kidney-ffpe.html": "514dfd7a0fd8393ed993fbf44acb0b705973fbdb1923e0f74b226158e14c0a77",
     "visium-hd/public-10x-lung-cancer-fixed-frozen.html": "cd04d56aeac1cb312a139907e097dfa209edd2fc401ed8844161eb67669cd4a6",
@@ -3677,6 +3677,11 @@
       "page_sha256": "8bf455499d741ef87e5dbd6d022a9ed4aa75a4e9d946bc9810e8981ca5e7550f",
       "final_receipt_sha256": "2cf2a9bb5f4111e4135310ba70bc3f78c129360756df38e5830fdd3fc296de17",
       "media_commit": "7f8da255c521abc507dbf606f1afae4ab0fe6663"
+    },
+    "public-10x-breast-ff": {
+      "page_sha256": "a65701dd925987954141424d01e2a029dc3d43d96a0d4d3c97e52c5813684883",
+      "final_receipt_sha256": "455a4cf7a29fadcbdd063e67b5d79cfc3444e98ecb4f8e3d0cc59c6bd68d239c",
+      "media_commit": "87deaebdfb9916c2dd85039c527d25bce8229010"
     }
   }
 }
