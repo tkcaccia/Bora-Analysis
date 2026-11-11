@@ -16,8 +16,9 @@ and 400 µm² small-region repair. Mean expert-present case macro IoU is 0.593. 
 development evidence, and case 050 still has poor muscle recognition. The
 six colored method panels in each figure and all 24 linked black-and-white
 response maps use one Bora H&E tissue/background support per image. Displayed
-figure pixels outside that support match H&E exactly; raw predictions and
-reported scores are unchanged. The Benchmark 2 whole-slide pages retain the
+figure pixels outside that support match H&E exactly. The Benchmark 1 supervised
+mask additionally receives Bora's ROI contour polish, with updated development
+scores; the other methods' predictions and scores are unchanged. The Benchmark 2 whole-slide pages retain the
 earlier frozen PLS-only model;
 those slide overlays were not rerun with the new Benchmark 1 blend.
 
@@ -26,8 +27,10 @@ show the same H&E frame with KODAMA–Bora, supervised Virchow2–PLS Bora,
 U-Net, DeepLabV3+, MedSAM and VISTA-PATH at full overview and nine matched
 zoom views. The supervised model was fitted on the frozen 397 Benchmark 1
 training images and expert masks. All six displayed overlays use the final
-Bora tissue-group support to handle background consistently; this display
-step does not alter raw predictions. These exploratory views have no
+Bora tissue-group support to handle background consistently. Supervised Bora
+web views additionally receive 6 µm physical contour smoothing with a halo;
+the frozen score grids and other methods' predictions remain unchanged.
+These exploratory views have no
 independent whole-slide expert masks or accuracy ranking.
 
 The [benchmark method implementations](methods/README.md) provide the
