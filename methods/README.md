@@ -11,7 +11,8 @@ manifests are supplied separately under their respective access terms.
 | Displayed method | Input and training | Public implementation |
 | --- | --- | --- |
 | KODAMA–Bora | Calibrated H&E, reviewed tissue support, Virchow2 features; anonymous image-only tile groups | [Bora](https://github.com/tkcaccia/Bora), [KODAMA](https://github.com/tkcaccia/KODAMA), and the [whole-slide method record](../docs/benchmark2-full-slide-comparators-2026-11-10.md) |
-| Supervised Bora (Virchow2–PLS) | 1,280-channel Virchow2 token features; 397 expert-masked training images | [`search.py`](benchmark1/search.py), [`final_fit.py`](benchmark1/final_fit.py), [`project_supervised.py`](benchmark2/project_supervised.py) |
+| Supervised Virchow2 (Benchmark 1) | 1,280-channel Virchow2 token features; 397 expert-masked training images | [`classwise_joint_search.py`](benchmark1/classwise_joint_search.py), [`classwise_joint_fit.py`](benchmark1/classwise_joint_fit.py), [`blend_search.py`](benchmark1/blend_search.py), [`blend_validate.py`](benchmark1/blend_validate.py) |
+| Supervised Bora (Benchmark 2 frozen PLS) | The same 1,280-channel input and 397 training images; earlier frozen head | [`search.py`](benchmark1/search.py), [`final_fit.py`](benchmark1/final_fit.py), [`project_supervised.py`](benchmark2/project_supervised.py) |
 | Class-aware U-Net | RGB H&E and expert masks on the same 397 training images | [`train_unet_balanced.py`](benchmark1/train_unet_balanced.py), [`run_four_methods.py`](benchmark2/run_four_methods.py) |
 | DeepLabV3+ | RGB H&E and expert masks on the same 397 training images | [`train_deeplabv3plus.py`](benchmark1/train_deeplabv3plus.py), [`run_four_methods.py`](benchmark2/run_four_methods.py) |
 | U-Net-guided MedSAM | RGB H&E and U-Net-derived boxes; external pretrained MedSAM ViT-B weights | [`prepare_medsam_prompts.py`](benchmark1/prepare_medsam_prompts.py), [`run_medsam_guided.py`](benchmark1/run_medsam_guided.py), [`run_four_methods.py`](benchmark2/run_four_methods.py); [upstream MedSAM](https://github.com/bowang-lab/MedSAM) |
@@ -35,14 +36,24 @@ for U-Net and two for DeepLabV3+. Neither uses Virchow2 or black-and-white
 response maps as input. The retained development gallery has 87 images;
 those expert masks are not opened by the training scripts.
 
-The supervised Virchow2 route compares classwise feature-selection and head
-families on training-only source-group splits. The selected family ranks
-standardized class contrasts, retains 64 original channels per class, fits up
-to eight PLS components, and uses balanced logistic heads with a frozen prior
-adjustment. It refits on all 397 training images before projecting the
-24-class score to the validation fields and public whole slides. This is
-different from Bora's anonymous KODAMA groups and their separate fastPLS
-tissue-name predictions.
+The current Benchmark 1 supervised mask uses the classwise union of 32
+standardized contrast channels per class (444 unique original channels), a
+joint 24-class multinomial logistic head, and a 25% blend with the older
+64-channel-per-class, eight-component PLS logistic head. The 75%/25% blend
+was chosen on two source-group-disjoint splits of the 397 training images;
+both heads were fitted on all 397 images before the 87 development images
+were scored. The selected mask has mean expert-present case macro IoU 0.592
+on that gallery. Those images were inspected during development, so this is
+not an untouched test estimate. The 19 one-class PEsO images raise the
+all-image mean; the other 68 images have mean 0.484. Case 050 tumor IoU rises
+from 0.307 to 0.812, but muscle IoU remains 0.00048. The code and versioned
+receipts preserve this limitation.
+
+The Benchmark 2 whole-slide pages still show the earlier frozen PLS head
+projected from the same training set. They have no independent whole-slide
+expert masks, and their supervised overlay is a different model version from
+the current Benchmark 1 gallery. Bora's anonymous KODAMA groups and fastPLS
+tissue names are a separate route.
 
 The 24-role harmonization used during fitting is recorded in the project
 [`tissue_label_harmonization.json`](benchmark1/tissue_label_harmonization.json).
@@ -118,8 +129,11 @@ and `ba20a83c49b0034c361bbdf5eeb2cddc53d32932e0be6971ac6054666c871bfc`.
 The fitted checkpoint SHA256 values are
 `b3c304486ec2cb1c4d7b3aba49001029d2df961aa30159abd9ce1ce894691b9e`
 and `3d57ae554643354e2b856127191623260df0e4d82a2d68100b129bbd66b2510c`.
-The supervised model SHA256 is
+The earlier Benchmark 2 supervised PLS model SHA256 is
 `52557adeecf45508de760c067d62cc20ce0b2e9cbeac0a5001ef84a05b8e8dc0`.
+The Benchmark 1 joint model SHA256 is
+`11797d16043952a859931855c451b345acd988d2407c936681c5ee9335126335`;
+its PLS component uses the earlier model SHA256 above.
 These hashes identify local research outputs; the checkpoint bytes are not
 included in this repository.
 

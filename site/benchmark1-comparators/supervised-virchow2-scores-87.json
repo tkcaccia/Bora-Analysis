@@ -1,3603 +1,1177 @@
 {
-  "status": "87_SUPERVISED_VIRCHOW2_DISPLAY_MASK_DEVELOPMENT_SCORES",
+  "status": "87_CASE_TRAINING_SELECTED_JOINT_PLS_DEVELOPMENT_SCORES",
   "case_count": 87,
-  "mean_case_macro_iou": 0.36979475289986885,
-  "score_rule": "Mean IoU over expert-present harmonized classes, restricted to scored expert pixels. The existing display-resolution argmax mask is resized to the calibrated expert content frame with nearest-neighbor interpolation.",
-  "source_receipt_sha256": "35fe6333a11cc1d5d2de1c9c432c8f52e3ad272a640a70f4669d5ef02885d705",
+  "mean_case_macro_iou": 0.5917787425644266,
+  "mean_case_macro_dice": 0.6773972179711638,
+  "score_rule": "Mean IoU over expert-present harmonized classes at scored expert pixels. Display-resolution argmax resized by nearest-neighbor to calibrated expert frame. Raw predictions scored before H&E support display clipping.",
+  "source_receipt_sha256": "477c3cf6a86c899664a9a902fb2d9920cf1509a60d278b463afbb866fc8d56c4",
   "cases": [
     {
       "id": "case-001",
+      "case": "bcss__datasets_bcss_pairs_TCGA-A2-A04P-DX1_xmin104246_ymin48517_MPP-0.2500.png__5173568b64",
       "dataset": "bcss",
-      "scoring_shape_yx": [
-        1460,
-        1897
-      ],
-      "scored_expert_pixels": 2769620,
-      "expert_present_class_ids": [
-        1,
-        3,
-        5,
-        6,
-        9,
-        12
-      ],
+      "expert_present_macro_iou": 0.39238603553318857,
+      "expert_present_macro_dice": 0.5125319433914934,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1114147,
-          "intersection": 890118,
-          "false_positive": 164874,
-          "false_negative": 224029,
-          "iou": 0.6959369705423132
-        },
-        "3": {
-          "expert_pixels": 1073099,
-          "intersection": 488860,
-          "false_positive": 28742,
-          "false_negative": 584239,
-          "iou": 0.4436756301499037
-        },
-        "5": {
-          "expert_pixels": 288801,
-          "intersection": 166739,
-          "false_positive": 113550,
-          "false_negative": 122062,
-          "iou": 0.4144117946767872
-        },
-        "6": {
-          "expert_pixels": 1785,
-          "intersection": 0,
-          "false_positive": 67053,
-          "false_negative": 1785,
-          "iou": 0.0
-        },
-        "9": {
-          "expert_pixels": 8138,
-          "intersection": 5444,
-          "false_positive": 51229,
-          "false_negative": 2694,
-          "iou": 0.09170077652567925
-        },
-        "12": {
-          "expert_pixels": 283650,
-          "intersection": 138214,
-          "false_positive": 157288,
-          "false_negative": 145436,
-          "iou": 0.31345449927200647
-        }
+        "1": 0.7178234726683043,
+        "3": 0.5860531998955796,
+        "5": 0.45019469389276,
+        "6": 0.0,
+        "9": 0.14609963696268952,
+        "12": 0.4541452097797981
       },
-      "expert_present_macro_iou": 0.3265299451944483
+      "scored_expert_pixels": 2769620
     },
     {
       "id": "case-002",
+      "case": "bcss__datasets_bcss_pairs_TCGA-A2-A0D2-DX1_xmin96887_ymin22299_MPP-0.2500.png__7755708e58",
       "dataset": "bcss",
-      "scoring_shape_yx": [
-        1209,
-        1696
-      ],
-      "scored_expert_pixels": 2050030,
-      "expert_present_class_ids": [
-        1,
-        3,
-        5
-      ],
+      "expert_present_macro_iou": 0.6670902732531335,
+      "expert_present_macro_dice": 0.7923529639005277,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1023390,
-          "intersection": 898116,
-          "false_positive": 193919,
-          "false_negative": 125274,
-          "iou": 0.7377880225973849
-        },
-        "3": {
-          "expert_pixels": 591595,
-          "intersection": 387385,
-          "false_positive": 157276,
-          "false_negative": 204210,
-          "iou": 0.5172920302695658
-        },
-        "5": {
-          "expert_pixels": 435045,
-          "intersection": 360625,
-          "false_positive": 45910,
-          "false_negative": 74420,
-          "iou": 0.7498102733103928
-        }
+        "1": 0.7285654715876082,
+        "3": 0.48373072303697046,
+        "5": 0.7889746251348217
       },
-      "expert_present_macro_iou": 0.6682967753924478
+      "scored_expert_pixels": 2050030
     },
     {
       "id": "case-003",
+      "case": "bcss__datasets_bcss_pairs_TCGA-A2-A0ST-DX1_xmin109446_ymin18274_MPP-0.2500.png__2ea720c2e5",
       "dataset": "bcss",
-      "scoring_shape_yx": [
-        2313,
-        2699
-      ],
-      "scored_expert_pixels": 6242787,
-      "expert_present_class_ids": [
-        1,
-        3,
-        9,
-        12
-      ],
+      "expert_present_macro_iou": 0.5623297192661892,
+      "expert_present_macro_dice": 0.6820358558410489,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1908447,
-          "intersection": 1293185,
-          "false_positive": 4743,
-          "false_negative": 615262,
-          "iou": 0.6759312979892221
-        },
-        "3": {
-          "expert_pixels": 2317839,
-          "intersection": 660015,
-          "false_positive": 18270,
-          "false_negative": 1657824,
-          "iou": 0.2825274848048614
-        },
-        "9": {
-          "expert_pixels": 32812,
-          "intersection": 25970,
-          "false_positive": 30311,
-          "false_negative": 6842,
-          "iou": 0.41141897565071367
-        },
-        "12": {
-          "expert_pixels": 1983689,
-          "intersection": 9399,
-          "false_positive": 963,
-          "false_negative": 1974290,
-          "iou": 0.004735842858093006
-        }
+        "1": 0.7707309139643418,
+        "3": 0.6597193661801025,
+        "9": 0.15024017670618606,
+        "12": 0.6686284202141267
       },
-      "expert_present_macro_iou": 0.34365340032572256
+      "scored_expert_pixels": 6242787
     },
     {
       "id": "case-004",
+      "case": "bcss__datasets_bcss_pairs_TCGA-AO-A0J2-DX1_xmin33561_ymin14515_MPP-0.2500.png__f774cd9ac0",
       "dataset": "bcss",
-      "scoring_shape_yx": [
-        1406,
-        2047
-      ],
-      "scored_expert_pixels": 2574805,
-      "expert_present_class_ids": [
-        1,
-        3
-      ],
+      "expert_present_macro_iou": 0.8009996904067811,
+      "expert_present_macro_dice": 0.8887693399024483,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1367991,
-          "intersection": 1306233,
-          "false_positive": 160551,
-          "false_negative": 61758,
-          "iou": 0.8545614055747242
-        },
-        "3": {
-          "expert_pixels": 1206814,
-          "intersection": 972773,
-          "false_positive": 39391,
-          "false_negative": 234041,
-          "iou": 0.7805882659755016
-        }
+        "1": 0.8473591882724965,
+        "3": 0.7546401925410657
       },
-      "expert_present_macro_iou": 0.8175748357751129
+      "scored_expert_pixels": 2574805
     },
     {
       "id": "case-005",
+      "case": "bcss__datasets_bcss_pairs_TCGA-AR-A1AY-DX1_xmin62652_ymin27061_MPP-0.2500.png__48ae1efb56",
       "dataset": "bcss",
-      "scoring_shape_yx": [
-        903,
-        1312
-      ],
-      "scored_expert_pixels": 1159596,
-      "expert_present_class_ids": [
-        1,
-        3,
-        5
-      ],
+      "expert_present_macro_iou": 0.7586016135380111,
+      "expert_present_macro_dice": 0.862383433326944,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 607985,
-          "intersection": 524376,
-          "false_positive": 56480,
-          "false_negative": 83609,
-          "iou": 0.7891702347000971
-        },
-        "3": {
-          "expert_pixels": 426408,
-          "intersection": 371469,
-          "false_positive": 73396,
-          "false_negative": 54939,
-          "iou": 0.7432293459035942
-        },
-        "5": {
-          "expert_pixels": 125203,
-          "intersection": 102170,
-          "false_positive": 29786,
-          "false_negative": 23033,
-          "iou": 0.6592080728309752
-        }
+        "1": 0.7987789788681523,
+        "3": 0.7236834220753651,
+        "5": 0.7533424396705162
       },
-      "expert_present_macro_iou": 0.730535884478222
+      "scored_expert_pixels": 1159596
     },
     {
       "id": "case-006",
+      "case": "bcss__datasets_bcss_pairs_TCGA-C8-A1HJ-DX1_xmin46412_ymin17174_MPP-0.2500.png__9856d0cb59",
       "dataset": "bcss",
-      "scoring_shape_yx": [
-        1427,
-        2219
-      ],
-      "scored_expert_pixels": 3144222,
-      "expert_present_class_ids": [
-        1,
-        3,
-        5,
-        8,
-        9,
-        12
-      ],
+      "expert_present_macro_iou": 0.49295204682078037,
+      "expert_present_macro_dice": 0.5740050354814198,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1236991,
-          "intersection": 1099563,
-          "false_positive": 27089,
-          "false_negative": 137428,
-          "iou": 0.8698523827605847
-        },
-        "3": {
-          "expert_pixels": 565701,
-          "intersection": 109591,
-          "false_positive": 47082,
-          "false_negative": 456110,
-          "iou": 0.17884144958329456
-        },
-        "5": {
-          "expert_pixels": 643344,
-          "intersection": 577040,
-          "false_positive": 149893,
-          "false_negative": 66304,
-          "iou": 0.727449677712966
-        },
-        "8": {
-          "expert_pixels": 7372,
-          "intersection": 6130,
-          "false_positive": 22342,
-          "false_negative": 1242,
-          "iou": 0.20630006057750555
-        },
-        "9": {
-          "expert_pixels": 34027,
-          "intersection": 30275,
-          "false_positive": 173201,
-          "false_negative": 3752,
-          "iou": 0.14609512228077287
-        },
-        "12": {
-          "expert_pixels": 656787,
-          "intersection": 170480,
-          "false_positive": 16147,
-          "false_negative": 486307,
-          "iou": 0.25333836602103627
-        }
+        "1": 0.9147977138798704,
+        "3": 0.31837764185889744,
+        "5": 0.8710983620187911,
+        "8": 0.007029015120555783,
+        "9": 0.12509978332763144,
+        "12": 0.721309764718936
       },
-      "expert_present_macro_iou": 0.39697950982269337
+      "scored_expert_pixels": 3144222
     },
     {
       "id": "case-007",
+      "case": "bcss__datasets_bcss_pairs_TCGA-E2-A14X-DX1_xmin88836_ymin66393_MPP-0.2500.png__021d87e7e7",
       "dataset": "bcss",
-      "scoring_shape_yx": [
-        2370,
-        2051
-      ],
-      "scored_expert_pixels": 4841925,
-      "expert_present_class_ids": [
-        1,
-        3,
-        5,
-        8,
-        9,
-        11,
-        12
-      ],
+      "expert_present_macro_iou": 0.681219312458521,
+      "expert_present_macro_dice": 0.7687210298244903,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 2086503,
-          "intersection": 1957079,
-          "false_positive": 11717,
-          "false_negative": 129424,
-          "iou": 0.9327329831952799
-        },
-        "3": {
-          "expert_pixels": 1414514,
-          "intersection": 970033,
-          "false_positive": 128729,
-          "false_negative": 444481,
-          "iou": 0.6285678924187571
-        },
-        "5": {
-          "expert_pixels": 314174,
-          "intersection": 306515,
-          "false_positive": 55794,
-          "false_negative": 7659,
-          "iou": 0.828490572157592
-        },
-        "8": {
-          "expert_pixels": 94994,
-          "intersection": 45866,
-          "false_positive": 25442,
-          "false_negative": 49128,
-          "iou": 0.38083297352950946
-        },
-        "9": {
-          "expert_pixels": 31205,
-          "intersection": 15792,
-          "false_positive": 122245,
-          "false_negative": 15413,
-          "iou": 0.10291300097751711
-        },
-        "11": {
-          "expert_pixels": 171653,
-          "intersection": 169148,
-          "false_positive": 15413,
-          "false_negative": 2505,
-          "iou": 0.9042156244320186
-        },
-        "12": {
-          "expert_pixels": 728882,
-          "intersection": 32354,
-          "false_positive": 333,
-          "false_negative": 696528,
-          "iou": 0.04436825901825936
-        }
+        "1": 0.9488102924420813,
+        "3": 0.74846366683104,
+        "5": 0.9199015569885279,
+        "8": 0.47432214216694013,
+        "9": 0.10485936907383872,
+        "11": 0.8205395979841723,
+        "12": 0.7516385617230468
       },
-      "expert_present_macro_iou": 0.5460173293898476
+      "scored_expert_pixels": 4841925
     },
     {
       "id": "case-008",
+      "case": "bcss__datasets_bcss_pairs_TCGA-E2-A1B6-DX1_xmin16266_ymin50634_MPP-0.2500.png__f74c2ce8d2",
       "dataset": "bcss",
-      "scoring_shape_yx": [
-        2575,
-        2524
-      ],
-      "scored_expert_pixels": 3136072,
-      "expert_present_class_ids": [
-        1,
-        3,
-        5,
-        6,
-        9,
-        11,
-        12
-      ],
+      "expert_present_macro_iou": 0.5547411012990703,
+      "expert_present_macro_dice": 0.6827702604545387,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1580009,
-          "intersection": 1512077,
-          "false_positive": 141081,
-          "false_negative": 67932,
-          "iou": 0.8785577744336438
-        },
-        "3": {
-          "expert_pixels": 736108,
-          "intersection": 466674,
-          "false_positive": 79850,
-          "false_negative": 269434,
-          "iou": 0.5719338495363732
-        },
-        "5": {
-          "expert_pixels": 262172,
-          "intersection": 235602,
-          "false_positive": 17474,
-          "false_negative": 26570,
-          "iou": 0.8425008761076503
-        },
-        "6": {
-          "expert_pixels": 9879,
-          "intersection": 5744,
-          "false_positive": 9959,
-          "false_negative": 4135,
-          "iou": 0.28954531706825287
-        },
-        "9": {
-          "expert_pixels": 5382,
-          "intersection": 4946,
-          "false_positive": 15789,
-          "false_negative": 436,
-          "iou": 0.2336214633224694
-        },
-        "11": {
-          "expert_pixels": 3095,
-          "intersection": 3014,
-          "false_positive": 253,
-          "false_negative": 81,
-          "iou": 0.9002389486260454
-        },
-        "12": {
-          "expert_pixels": 539427,
-          "intersection": 4416,
-          "false_positive": 0,
-          "false_negative": 535011,
-          "iou": 0.008186464526247295
-        }
+        "1": 0.8864408453314994,
+        "3": 0.5762485187279384,
+        "5": 0.7868642689318633,
+        "6": 0.3612158341187559,
+        "9": 0.15659398975043212,
+        "11": 0.4810367829235754,
+        "12": 0.6347874693094276
       },
-      "expert_present_macro_iou": 0.5320835276600975
+      "scored_expert_pixels": 3136072
     },
     {
       "id": "case-009",
+      "case": "bcss__datasets_bcss_pairs_TCGA-E2-A1LI-DX1_xmin44715_ymin18434_MPP-0.2500.png__00f7ef02a6",
       "dataset": "bcss",
-      "scoring_shape_yx": [
-        2708,
-        3162
-      ],
-      "scored_expert_pixels": 6033928,
-      "expert_present_class_ids": [
-        1,
-        3,
-        5,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14
-      ],
+      "expert_present_macro_iou": 0.34126386182953794,
+      "expert_present_macro_dice": 0.4430092716739808,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 2133977,
-          "intersection": 1591472,
-          "false_positive": 23257,
-          "false_negative": 542505,
-          "iou": 0.7377373061985858
-        },
-        "3": {
-          "expert_pixels": 1897069,
-          "intersection": 1094641,
-          "false_positive": 354836,
-          "false_negative": 802428,
-          "iou": 0.4860955502119317
-        },
-        "5": {
-          "expert_pixels": 935444,
-          "intersection": 692792,
-          "false_positive": 158571,
-          "false_negative": 242652,
-          "iou": 0.6332563995923274
-        },
-        "9": {
-          "expert_pixels": 60680,
-          "intersection": 38815,
-          "false_positive": 124040,
-          "false_negative": 21865,
-          "iou": 0.21012884365526202
-        },
-        "10": {
-          "expert_pixels": 1925,
-          "intersection": 0,
-          "false_positive": 11591,
-          "false_negative": 1925,
-          "iou": 0.0
-        },
-        "11": {
-          "expert_pixels": 255342,
-          "intersection": 124243,
-          "false_positive": 9629,
-          "false_negative": 131099,
-          "iou": 0.46889282223337647
-        },
-        "12": {
-          "expert_pixels": 568363,
-          "intersection": 123,
-          "false_positive": 1427,
-          "false_negative": 568240,
-          "iou": 0.00021586900437003107
-        },
-        "13": {
-          "expert_pixels": 3120,
-          "intersection": 0,
-          "false_positive": 21392,
-          "false_negative": 3120,
-          "iou": 0.0
-        },
-        "14": {
-          "expert_pixels": 178008,
-          "intersection": 6355,
-          "false_positive": 175781,
-          "false_negative": 171653,
-          "iou": 0.017962683972650367
-        }
+        "1": 0.7648707153473082,
+        "3": 0.6024672446744282,
+        "5": 0.7809341105290342,
+        "9": 0.22155106665795035,
+        "10": 0.0,
+        "11": 0.30542216773187725,
+        "12": 0.18261147702571268,
+        "13": 0.0,
+        "14": 0.21351797449953058
       },
-      "expert_present_macro_iou": 0.283809941652056
+      "scored_expert_pixels": 6033928
     },
     {
       "id": "case-010",
+      "case": "bcss__datasets_bcss_pairs_TCGA-EW-A1P1-DX1_xmin50567_ymin38988_MPP-0.2500.png__ca57475c8e",
       "dataset": "bcss",
-      "scoring_shape_yx": [
-        1954,
-        2184
-      ],
-      "scored_expert_pixels": 4056394,
-      "expert_present_class_ids": [
-        1,
-        3,
-        5,
-        6,
-        8,
-        9,
-        12
-      ],
+      "expert_present_macro_iou": 0.4671337912749514,
+      "expert_present_macro_dice": 0.5836880201834788,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1154981,
-          "intersection": 672728,
-          "false_positive": 48745,
-          "false_negative": 482253,
-          "iou": 0.5588713710595269
-        },
-        "3": {
-          "expert_pixels": 2225868,
-          "intersection": 1962273,
-          "false_positive": 386370,
-          "false_negative": 263595,
-          "iou": 0.7511846164093777
-        },
-        "5": {
-          "expert_pixels": 145500,
-          "intersection": 57978,
-          "false_positive": 9464,
-          "false_negative": 87522,
-          "iou": 0.374138509589324
-        },
-        "6": {
-          "expert_pixels": 2554,
-          "intersection": 2554,
-          "false_positive": 23421,
-          "false_negative": 0,
-          "iou": 0.09832531280076998
-        },
-        "8": {
-          "expert_pixels": 86262,
-          "intersection": 48592,
-          "false_positive": 14300,
-          "false_negative": 37670,
-          "iou": 0.48320439132077725
-        },
-        "9": {
-          "expert_pixels": 12998,
-          "intersection": 7223,
-          "false_positive": 65196,
-          "false_negative": 5775,
-          "iou": 0.09237281632861856
-        },
-        "12": {
-          "expert_pixels": 428231,
-          "intersection": 27030,
-          "false_positive": 2117,
-          "false_negative": 401201,
-          "iou": 0.06280963313411472
-        }
+        "1": 0.5722282260517307,
+        "3": 0.780964736860287,
+        "5": 0.8962073707717736,
+        "6": 0.13846558066211245,
+        "8": 0.41914150328472766,
+        "9": 0.07959802690033396,
+        "12": 0.38333109439369517
       },
-      "expert_present_macro_iou": 0.3458438072346441
+      "scored_expert_pixels": 4056394
     },
     {
       "id": "case-011",
+      "case": "bcss__datasets_bcss_pairs_TCGA-EW-A1P8-DX1_xmin15520_ymin26381_MPP-0.2500.png__34f59148d1",
       "dataset": "bcss",
-      "scoring_shape_yx": [
-        1961,
-        1914
-      ],
-      "scored_expert_pixels": 1775473,
-      "expert_present_class_ids": [
-        1,
-        3,
-        5,
-        11,
-        12
-      ],
+      "expert_present_macro_iou": 0.5964374783348858,
+      "expert_present_macro_dice": 0.7251219638612025,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 895052,
-          "intersection": 772663,
-          "false_positive": 30800,
-          "false_negative": 122389,
-          "iou": 0.8345426698867637
-        },
-        "3": {
-          "expert_pixels": 364652,
-          "intersection": 160446,
-          "false_positive": 78859,
-          "false_negative": 204206,
-          "iou": 0.3617632933568728
-        },
-        "5": {
-          "expert_pixels": 286611,
-          "intersection": 241079,
-          "false_positive": 37838,
-          "false_negative": 45532,
-          "iou": 0.7430412792149151
-        },
-        "11": {
-          "expert_pixels": 64418,
-          "intersection": 56867,
-          "false_positive": 15708,
-          "false_negative": 7551,
-          "iou": 0.7097196914859097
-        },
-        "12": {
-          "expert_pixels": 164740,
-          "intersection": 9903,
-          "false_positive": 4575,
-          "false_negative": 154837,
-          "iou": 0.058488615893453035
-        }
+        "1": 0.8614254881515686,
+        "3": 0.5244883162494928,
+        "5": 0.814218082536144,
+        "11": 0.4731366858906072,
+        "12": 0.3089188188466167
       },
-      "expert_present_macro_iou": 0.5415111099675829
+      "scored_expert_pixels": 1775473
     },
     {
       "id": "case-012",
+      "case": "bcss__datasets_bcss_pairs_TCGA-EW-A6SB-DX1_xmin34625_ymin56578_MPP-0.2500.png__3ecad800be",
       "dataset": "bcss",
-      "scoring_shape_yx": [
-        2821,
-        2476
-      ],
-      "scored_expert_pixels": 3436939,
-      "expert_present_class_ids": [
-        1,
-        3,
-        6,
-        8,
-        9,
-        10,
-        11,
-        14
-      ],
+      "expert_present_macro_iou": 0.3841338592686073,
+      "expert_present_macro_dice": 0.5168736515021494,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1441586,
-          "intersection": 1425910,
-          "false_positive": 435672,
-          "false_negative": 15676,
-          "iou": 0.7595706077694169
-        },
-        "3": {
-          "expert_pixels": 956237,
-          "intersection": 223003,
-          "false_positive": 20665,
-          "false_negative": 733234,
-          "iou": 0.22827571240513378
-        },
-        "6": {
-          "expert_pixels": 10539,
-          "intersection": 10269,
-          "false_positive": 11083,
-          "false_negative": 270,
-          "iou": 0.4749329386735732
-        },
-        "8": {
-          "expert_pixels": 1560,
-          "intersection": 1121,
-          "false_positive": 150,
-          "false_negative": 439,
-          "iou": 0.6555555555555556
-        },
-        "9": {
-          "expert_pixels": 3389,
-          "intersection": 2742,
-          "false_positive": 13517,
-          "false_negative": 647,
-          "iou": 0.1621909381284751
-        },
-        "10": {
-          "expert_pixels": 6367,
-          "intersection": 0,
-          "false_positive": 0,
-          "false_negative": 6367,
-          "iou": 0.0
-        },
-        "11": {
-          "expert_pixels": 11380,
-          "intersection": 8875,
-          "false_positive": 3350,
-          "false_negative": 2505,
-          "iou": 0.6025118805159538
-        },
-        "14": {
-          "expert_pixels": 1005881,
-          "intersection": 348629,
-          "false_positive": 52457,
-          "false_negative": 657252,
-          "iou": 0.32941177582209086
-        }
+        "1": 0.7853007756276317,
+        "3": 0.4796742836061712,
+        "6": 0.4876457523598001,
+        "8": 0.2943951688997924,
+        "9": 0.22894124785114775,
+        "10": 0.0,
+        "11": 0.2940331844288449,
+        "14": 0.5030804613754708
       },
-      "expert_present_macro_iou": 0.4015561761087749
+      "scored_expert_pixels": 3436939
     },
     {
       "id": "case-013",
+      "case": "bcss__datasets_bcss_pairs_TCGA-GM-A2DH-DX1_xmin50963_ymin56303_MPP-0.2500.png__09b319b6c5",
       "dataset": "bcss",
-      "scoring_shape_yx": [
-        1778,
-        2319
-      ],
-      "scored_expert_pixels": 2070557,
-      "expert_present_class_ids": [
-        1,
-        3,
-        5,
-        9,
-        12
-      ],
+      "expert_present_macro_iou": 0.41220451690812443,
+      "expert_present_macro_dice": 0.5403072339210778,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1172329,
-          "intersection": 1140326,
-          "false_positive": 203032,
-          "false_negative": 32003,
-          "iou": 0.8291103208539431
-        },
-        "3": {
-          "expert_pixels": 524664,
-          "intersection": 252971,
-          "false_positive": 18438,
-          "false_negative": 271693,
-          "iou": 0.46578911512018
-        },
-        "5": {
-          "expert_pixels": 217286,
-          "intersection": 23631,
-          "false_positive": 6327,
-          "false_negative": 193655,
-          "iou": 0.10567811352649444
-        },
-        "9": {
-          "expert_pixels": 6849,
-          "intersection": 5008,
-          "false_positive": 10749,
-          "false_negative": 1841,
-          "iou": 0.2845777929310149
-        },
-        "12": {
-          "expert_pixels": 149429,
-          "intersection": 34798,
-          "false_positive": 39171,
-          "false_negative": 114631,
-          "iou": 0.1845068928950159
-        }
+        "1": 0.8113227615343924,
+        "3": 0.48946663441368776,
+        "5": 0.07256503730537078,
+        "9": 0.2649611281865847,
+        "12": 0.4227070231005864
       },
-      "expert_present_macro_iou": 0.3739324470653297
+      "scored_expert_pixels": 2070557
     },
     {
       "id": "case-014",
+      "case": "bcss__datasets_bcss_pairs_TCGA-LL-A740-DX1_xmin39436_ymin24080_MPP-0.2500.png__98186249a0",
       "dataset": "bcss",
-      "scoring_shape_yx": [
-        1409,
-        1413
-      ],
-      "scored_expert_pixels": 1931634,
-      "expert_present_class_ids": [
-        1,
-        3,
-        9,
-        12
-      ],
+      "expert_present_macro_iou": 0.6488630930075419,
+      "expert_present_macro_dice": 0.7604021857181644,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 371541,
-          "intersection": 318877,
-          "false_positive": 14851,
-          "false_negative": 52664,
-          "iou": 0.8252681214931986
-        },
-        "3": {
-          "expert_pixels": 1420202,
-          "intersection": 735033,
-          "false_positive": 40598,
-          "false_negative": 685169,
-          "iou": 0.5031715498357064
-        },
-        "9": {
-          "expert_pixels": 20808,
-          "intersection": 16006,
-          "false_positive": 16175,
-          "false_negative": 4802,
-          "iou": 0.43279344563718464
-        },
-        "12": {
-          "expert_pixels": 119083,
-          "intersection": 12998,
-          "false_positive": 0,
-          "false_negative": 106085,
-          "iou": 0.1091507603940109
-        }
+        "1": 0.8219788768213505,
+        "3": 0.7114555205908258,
+        "9": 0.2680246821797636,
+        "12": 0.7939932924382274
       },
-      "expert_present_macro_iou": 0.4675959693400252
+      "scored_expert_pixels": 1931634
     },
     {
       "id": "case-015",
+      "case": "bcss__datasets_bcss_pairs_TCGA-OL-A5D7-DX1_xmin114443_ymin22490_MPP-0.2500.png__5021a319f0",
       "dataset": "bcss",
-      "scoring_shape_yx": [
-        3143,
-        2785
-      ],
-      "scored_expert_pixels": 3840109,
-      "expert_present_class_ids": [
-        1,
-        3,
-        5,
-        11,
-        12
-      ],
+      "expert_present_macro_iou": 0.6141161809639698,
+      "expert_present_macro_dice": 0.7415852968442762,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 2693712,
-          "intersection": 2530572,
-          "false_positive": 141982,
-          "false_negative": 163140,
-          "iou": 0.892399532530661
-        },
-        "3": {
-          "expert_pixels": 428488,
-          "intersection": 123092,
-          "false_positive": 64543,
-          "false_negative": 305396,
-          "iou": 0.24966381424291778
-        },
-        "5": {
-          "expert_pixels": 221791,
-          "intersection": 167065,
-          "false_positive": 28619,
-          "false_negative": 54726,
-          "iou": 0.6671658480092648
-        },
-        "11": {
-          "expert_pixels": 5577,
-          "intersection": 3360,
-          "false_positive": 1178,
-          "false_negative": 2217,
-          "iou": 0.49740932642487046
-        },
-        "12": {
-          "expert_pixels": 490541,
-          "intersection": 0,
-          "false_positive": 80,
-          "false_negative": 490541,
-          "iou": 0.0
-        }
+        "1": 0.8941506065316811,
+        "3": 0.39925850572063115,
+        "5": 0.8263675187478289,
+        "11": 0.4522508741258741,
+        "12": 0.49855339969383344
       },
-      "expert_present_macro_iou": 0.4613277042415428
+      "scored_expert_pixels": 3840109
     },
     {
       "id": "case-016",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-A2-A0T2-01Z-00__d7b4fd9877",
       "dataset": "tiger",
-      "scoring_shape_yx": [
-        1909,
-        3099
-      ],
-      "scored_expert_pixels": 5827198,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4,
-        5,
-        6
-      ],
+      "expert_present_macro_iou": 0.5271282417789863,
+      "expert_present_macro_dice": 0.67110991841834,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1744635,
-          "intersection": 1367822,
-          "false_positive": 743409,
-          "false_negative": 376813,
-          "iou": 0.5497579624797633
-        },
-        "3": {
-          "expert_pixels": 2969723,
-          "intersection": 1952493,
-          "false_positive": 643385,
-          "false_negative": 1017230,
-          "iou": 0.5403915410222999
-        },
-        "4": {
-          "expert_pixels": 491429,
-          "intersection": 17171,
-          "false_positive": 7184,
-          "false_negative": 474258,
-          "iou": 0.03443752970740835
-        },
-        "5": {
-          "expert_pixels": 589323,
-          "intersection": 373919,
-          "false_positive": 41933,
-          "false_negative": 215404,
-          "iou": 0.5923413005183317
-        },
-        "6": {
-          "expert_pixels": 32088,
-          "intersection": 31828,
-          "false_positive": 103395,
-          "false_negative": 260,
-          "iou": 0.23492246259678337
-        }
+        "1": 0.5527252810626072,
+        "3": 0.524813453772696,
+        "4": 0.5593137383890745,
+        "5": 0.776581420319615,
+        "6": 0.22220731535093913
       },
-      "expert_present_macro_iou": 0.39037015926491736
+      "scored_expert_pixels": 5827198
     },
     {
       "id": "case-017",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-A7-A6VY-01Z-00__0656173d22",
       "dataset": "tiger",
-      "scoring_shape_yx": [
-        1362,
-        1762
-      ],
-      "scored_expert_pixels": 2399782,
-      "expert_present_class_ids": [
-        1,
-        3,
-        5
-      ],
+      "expert_present_macro_iou": 0.6271969208435023,
+      "expert_present_macro_dice": 0.765162266923208,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1113919,
-          "intersection": 928679,
-          "false_positive": 333695,
-          "false_negative": 185240,
-          "iou": 0.6415239145241757
-        },
-        "3": {
-          "expert_pixels": 869703,
-          "intersection": 491831,
-          "false_positive": 149442,
-          "false_negative": 377872,
-          "iou": 0.48259178036491374
-        },
-        "5": {
-          "expert_pixels": 416160,
-          "intersection": 336651,
-          "false_positive": 50096,
-          "false_negative": 79509,
-          "iou": 0.7220303867403315
-        }
+        "1": 0.6503612986182575,
+        "3": 0.4829016196191551,
+        "5": 0.7483278442930944
       },
-      "expert_present_macro_iou": 0.615382027209807
+      "scored_expert_pixels": 2399782
     },
     {
       "id": "case-018",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-AC-A2BK-01Z-00__149af3c8c3",
       "dataset": "tiger",
-      "scoring_shape_yx": [
-        1533,
-        1953
-      ],
-      "scored_expert_pixels": 2985068,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4,
-        5
-      ],
+      "expert_present_macro_iou": 0.4737253214223167,
+      "expert_present_macro_dice": 0.5714963349195212,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1937478,
-          "intersection": 1609488,
-          "false_positive": 82697,
-          "false_negative": 327990,
-          "iou": 0.7967072159590135
-        },
-        "3": {
-          "expert_pixels": 914526,
-          "intersection": 560161,
-          "false_positive": 164456,
-          "false_negative": 354365,
-          "iou": 0.5191569460843647
-        },
-        "4": {
-          "expert_pixels": 120470,
-          "intersection": 25478,
-          "false_positive": 26181,
-          "false_negative": 94992,
-          "iou": 0.17373219412073562
-        },
-        "5": {
-          "expert_pixels": 12594,
-          "intersection": 441,
-          "false_positive": 2552,
-          "false_negative": 12153,
-          "iou": 0.029116598441832828
-        }
+        "1": 0.8350487724141135,
+        "3": 0.6225605727933665,
+        "4": 0.4372919404817867,
+        "5": 0.0
       },
-      "expert_present_macro_iou": 0.3796782386514867
+      "scored_expert_pixels": 2985068
     },
     {
       "id": "case-019",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-AR-A256-01Z-00__03dbfca59b",
       "dataset": "tiger",
-      "scoring_shape_yx": [
-        1308,
-        1391
-      ],
-      "scored_expert_pixels": 1778004,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4,
-        5
-      ],
+      "expert_present_macro_iou": 0.5221614818885205,
+      "expert_present_macro_dice": 0.6161777597700651,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 622700,
-          "intersection": 490660,
-          "false_positive": 61797,
-          "false_negative": 132040,
-          "iou": 0.716818335215494
-        },
-        "3": {
-          "expert_pixels": 706114,
-          "intersection": 551723,
-          "false_positive": 157389,
-          "false_negative": 154391,
-          "iou": 0.6389358230370943
-        },
-        "4": {
-          "expert_pixels": 441221,
-          "intersection": 181476,
-          "false_positive": 16860,
-          "false_negative": 259745,
-          "iou": 0.39616574361302914
-        },
-        "5": {
-          "expert_pixels": 7969,
-          "intersection": 0,
-          "false_positive": 1012,
-          "false_negative": 7969,
-          "iou": 0.0
-        }
+        "1": 0.6859454616958355,
+        "3": 0.6705490227199522,
+        "4": 0.7300181767309663,
+        "5": 0.0021332664073283976
       },
-      "expert_present_macro_iou": 0.4379799754664043
+      "scored_expert_pixels": 1778004
     },
     {
       "id": "case-020",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-BH-A18V-01Z-00__3d16a9c1ef",
       "dataset": "tiger",
-      "scoring_shape_yx": [
-        2817,
-        3491
-      ],
-      "scored_expert_pixels": 6011058,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4,
-        5
-      ],
+      "expert_present_macro_iou": 0.6062855084236197,
+      "expert_present_macro_dice": 0.7463620597293961,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 3729051,
-          "intersection": 3489258,
-          "false_positive": 315458,
-          "false_negative": 239793,
-          "iou": 0.8627148561172692
-        },
-        "3": {
-          "expert_pixels": 1352747,
-          "intersection": 680712,
-          "false_positive": 159423,
-          "false_negative": 672035,
-          "iou": 0.45015573645820245
-        },
-        "4": {
-          "expert_pixels": 209881,
-          "intersection": 24083,
-          "false_positive": 31189,
-          "false_negative": 185798,
-          "iou": 0.0999004438544821
-        },
-        "5": {
-          "expert_pixels": 719379,
-          "intersection": 488606,
-          "false_positive": 47254,
-          "false_negative": 230773,
-          "iou": 0.6373401614592641
-        }
+        "1": 0.7541493169771896,
+        "3": 0.5605939630883878,
+        "4": 0.41584865543306204,
+        "5": 0.6945500981958396
       },
-      "expert_present_macro_iou": 0.5125277994723044
+      "scored_expert_pixels": 6011058
     },
     {
       "id": "case-021",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-D8-A1JF-01Z-00__09f3898246",
       "dataset": "tiger",
-      "scoring_shape_yx": [
-        2429,
-        2508
-      ],
-      "scored_expert_pixels": 3794467,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4
-      ],
+      "expert_present_macro_iou": 0.586808292420956,
+      "expert_present_macro_dice": 0.727306324066541,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1988580,
-          "intersection": 1201623,
-          "false_positive": 101604,
-          "false_negative": 786957,
-          "iou": 0.574888622245697
-        },
-        "3": {
-          "expert_pixels": 1604816,
-          "intersection": 1053860,
-          "false_positive": 376040,
-          "false_negative": 550956,
-          "iou": 0.5320225195572015
-        },
-        "4": {
-          "expert_pixels": 201071,
-          "intersection": 147241,
-          "false_positive": 185601,
-          "false_negative": 53830,
-          "iou": 0.3807904373732776
-        }
+        "1": 0.7625411754528006,
+        "3": 0.6102875785903376,
+        "4": 0.3875961232197297
       },
-      "expert_present_macro_iou": 0.49590052639205867
+      "scored_expert_pixels": 3794467
     },
     {
       "id": "case-022",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-E2-A14R-01Z-00__4f3418f4c7",
       "dataset": "tiger",
-      "scoring_shape_yx": [
-        1327,
-        1349
-      ],
-      "scored_expert_pixels": 1756698,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4
-      ],
+      "expert_present_macro_iou": 0.5324828917873564,
+      "expert_present_macro_dice": 0.676577018457806,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1042591,
-          "intersection": 797330,
-          "false_positive": 11987,
-          "false_negative": 245261,
-          "iou": 0.7560654593590991
-        },
-        "3": {
-          "expert_pixels": 360075,
-          "intersection": 46774,
-          "false_positive": 36942,
-          "false_negative": 313301,
-          "iou": 0.11781359488384628
-        },
-        "4": {
-          "expert_pixels": 354032,
-          "intersection": 889,
-          "false_positive": 3935,
-          "false_negative": 353143,
-          "iou": 0.002483469146597312
-        }
+        "1": 0.78542987523986,
+        "3": 0.3461880778614284,
+        "4": 0.4658307222607809
       },
-      "expert_present_macro_iou": 0.29212084112984754
+      "scored_expert_pixels": 1756698
     },
     {
       "id": "case-023",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-E2-A1LL-01Z-00__d855cae94d",
       "dataset": "tiger",
-      "scoring_shape_yx": [
-        1998,
-        1940
-      ],
-      "scored_expert_pixels": 3859058,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4,
-        5
-      ],
+      "expert_present_macro_iou": 0.3780644266581906,
+      "expert_present_macro_dice": 0.491965091777344,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 558671,
-          "intersection": 488967,
-          "false_positive": 540624,
-          "false_negative": 69704,
-          "iou": 0.4448005312495736
-        },
-        "3": {
-          "expert_pixels": 3089090,
-          "intersection": 2354728,
-          "false_positive": 164067,
-          "false_negative": 734362,
-          "iou": 0.7238285763644361
-        },
-        "4": {
-          "expert_pixels": 209587,
-          "intersection": 1494,
-          "false_positive": 687,
-          "false_negative": 208093,
-          "iou": 0.007105015360910051
-        },
-        "5": {
-          "expert_pixels": 1710,
-          "intersection": 103,
-          "false_positive": 9078,
-          "false_negative": 1607,
-          "iou": 0.009547645532072673
-        }
+        "1": 0.45059204365406197,
+        "3": 0.7624931097463779,
+        "4": 0.2708057910546722,
+        "5": 0.02836676217765043
       },
-      "expert_present_macro_iou": 0.2963204421267481
+      "scored_expert_pixels": 3859058
     },
     {
       "id": "case-024",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-EW-A1OV-01Z-00__6ba90538ff",
       "dataset": "tiger",
-      "scoring_shape_yx": [
-        5366,
-        3777
-      ],
-      "scored_expert_pixels": 10430626,
-      "expert_present_class_ids": [
-        1,
-        2,
-        3,
-        4
-      ],
+      "expert_present_macro_iou": 0.5655787749574768,
+      "expert_present_macro_dice": 0.659056221769095,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 33297,
-          "intersection": 0,
-          "false_positive": 418806,
-          "false_negative": 33297,
-          "iou": 0.0
-        },
-        "2": {
-          "expert_pixels": 2005804,
-          "intersection": 1103270,
-          "false_positive": 91586,
-          "false_negative": 902534,
-          "iou": 0.5260204349214976
-        },
-        "3": {
-          "expert_pixels": 5751522,
-          "intersection": 2164694,
-          "false_positive": 81106,
-          "false_negative": 3586828,
-          "iou": 0.3711352755567473
-        },
-        "4": {
-          "expert_pixels": 2640003,
-          "intersection": 343917,
-          "false_positive": 47599,
-          "false_negative": 2296086,
-          "iou": 0.1279642595890314
-        }
+        "1": 0.04517549605705604,
+        "2": 0.7293685884732781,
+        "3": 0.7428215812027695,
+        "4": 0.7449494340968035
       },
-      "expert_present_macro_iou": 0.2562799925168191
+      "scored_expert_pixels": 10430626
     },
     {
       "id": "case-025",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-EW-A1P7-01Z-00__8d9dc10178",
       "dataset": "tiger",
-      "scoring_shape_yx": [
-        2490,
-        1786
-      ],
-      "scored_expert_pixels": 4194833,
-      "expert_present_class_ids": [
-        1,
-        2,
-        3,
-        4
-      ],
+      "expert_present_macro_iou": 0.4895540842822106,
+      "expert_present_macro_dice": 0.6118274753679502,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 131032,
-          "intersection": 76484,
-          "false_positive": 951007,
-          "false_negative": 54548,
-          "iou": 0.07068506772861237
-        },
-        "2": {
-          "expert_pixels": 1330811,
-          "intersection": 15303,
-          "false_positive": 2792,
-          "false_negative": 1315508,
-          "iou": 0.011474929195570195
-        },
-        "3": {
-          "expert_pixels": 1945016,
-          "intersection": 1371105,
-          "false_positive": 20259,
-          "false_negative": 573911,
-          "iou": 0.6976657210822913
-        },
-        "4": {
-          "expert_pixels": 787974,
-          "intersection": 288190,
-          "false_positive": 87793,
-          "false_negative": 499784,
-          "iou": 0.3290715452854469
-        }
+        "1": 0.1390384455659838,
+        "2": 0.33031504076532514,
+        "3": 0.7677295168431613,
+        "4": 0.7211333339543723
       },
-      "expert_present_macro_iou": 0.2772243158229802
+      "scored_expert_pixels": 4194833
     },
     {
       "id": "case-026",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-GM-A2DD-01Z-00__86ce540475",
       "dataset": "tiger",
-      "scoring_shape_yx": [
-        2193,
-        4207
-      ],
-      "scored_expert_pixels": 8963223,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4,
-        5,
-        6
-      ],
+      "expert_present_macro_iou": 0.7041820844989095,
+      "expert_present_macro_dice": 0.8134873761429657,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 2211066,
-          "intersection": 1890139,
-          "false_positive": 128794,
-          "false_negative": 320927,
-          "iou": 0.8078000393185917
-        },
-        "3": {
-          "expert_pixels": 6337354,
-          "intersection": 5423656,
-          "false_positive": 273186,
-          "false_negative": 913698,
-          "iou": 0.8204558175277663
-        },
-        "4": {
-          "expert_pixels": 173903,
-          "intersection": 12366,
-          "false_positive": 20351,
-          "false_negative": 161537,
-          "iou": 0.0636589207944238
-        },
-        "5": {
-          "expert_pixels": 219139,
-          "intersection": 190216,
-          "false_positive": 46306,
-          "false_negative": 28923,
-          "iou": 0.7165928911827308
-        },
-        "6": {
-          "expert_pixels": 21761,
-          "intersection": 20194,
-          "false_positive": 12153,
-          "false_negative": 1567,
-          "iou": 0.595447307896444
-        }
+        "1": 0.7310130608854449,
+        "3": 0.9016960701917591,
+        "4": 0.3924119690531141,
+        "5": 0.7183590268085757,
+        "6": 0.7774302955556535
       },
-      "expert_present_macro_iou": 0.6007909953439914
+      "scored_expert_pixels": 8963223
     },
     {
       "id": "case-027",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-LL-A5YO-01Z-00__ae2a5dae53",
       "dataset": "tiger",
-      "scoring_shape_yx": [
-        1301,
-        1808
-      ],
-      "scored_expert_pixels": 2320259,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4
-      ],
+      "expert_present_macro_iou": 0.4916632164946922,
+      "expert_present_macro_dice": 0.6352277473455222,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 370446,
-          "intersection": 302150,
-          "false_positive": 105848,
-          "false_negative": 68296,
-          "iou": 0.634377086421412
-        },
-        "3": {
-          "expert_pixels": 871021,
-          "intersection": 121378,
-          "false_positive": 33611,
-          "false_negative": 749643,
-          "iou": 0.13417389612571742
-        },
-        "4": {
-          "expert_pixels": 1078792,
-          "intersection": 36101,
-          "false_positive": 24786,
-          "false_negative": 1042691,
-          "iou": 0.03271268546491503
-        }
+        "1": 0.640140202055904,
+        "3": 0.22517199104547717,
+        "4": 0.6096774563826953
       },
-      "expert_present_macro_iou": 0.2670878893373481
+      "scored_expert_pixels": 2320259
     },
     {
       "id": "case-028",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-LL-A73Y-01Z-00__6c12d25eb7",
       "dataset": "tiger",
-      "scoring_shape_yx": [
-        1060,
-        1218
-      ],
-      "scored_expert_pixels": 1243496,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4
-      ],
+      "expert_present_macro_iou": 0.5596663150014438,
+      "expert_present_macro_dice": 0.7054371049129778,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 240391,
-          "intersection": 173186,
-          "false_positive": 39078,
-          "false_negative": 67205,
-          "iou": 0.6196966389832146
-        },
-        "3": {
-          "expert_pixels": 388111,
-          "intersection": 91848,
-          "false_positive": 2231,
-          "false_negative": 296263,
-          "iou": 0.2353013511228615
-        },
-        "4": {
-          "expert_pixels": 614994,
-          "intersection": 201970,
-          "false_positive": 31614,
-          "false_negative": 413024,
-          "iou": 0.3123530794546309
-        }
+        "1": 0.6268447567552788,
+        "3": 0.3553624490970646,
+        "4": 0.696791739151988
       },
-      "expert_present_macro_iou": 0.38911702318690233
+      "scored_expert_pixels": 1243496
     },
     {
       "id": "case-029",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-OL-A5RW-01Z-00__815369d21b",
       "dataset": "tiger",
-      "scoring_shape_yx": [
-        1026,
-        1212
-      ],
-      "scored_expert_pixels": 1233633,
-      "expert_present_class_ids": [
-        1,
-        3,
-        5
-      ],
+      "expert_present_macro_iou": 0.8018968652573761,
+      "expert_present_macro_dice": 0.8891749053145328,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 329057,
-          "intersection": 284595,
-          "false_positive": 41327,
-          "false_negative": 44462,
-          "iou": 0.7683782236813685
-        },
-        "3": {
-          "expert_pixels": 487554,
-          "intersection": 421540,
-          "false_positive": 46265,
-          "false_negative": 66014,
-          "iou": 0.7896684082057777
-        },
-        "5": {
-          "expert_pixels": 417022,
-          "intersection": 401596,
-          "false_positive": 35152,
-          "false_negative": 15426,
-          "iou": 0.8881448292029175
-        }
+        "1": 0.7724397113782759,
+        "3": 0.7592021650796336,
+        "5": 0.874048719314219
       },
-      "expert_present_macro_iou": 0.8153971536966879
+      "scored_expert_pixels": 1233633
     },
     {
       "id": "case-030",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-OL-A66I-01Z-00__89da35afd9",
       "dataset": "tiger",
-      "scoring_shape_yx": [
-        1169,
-        1448
-      ],
-      "scored_expert_pixels": 899520,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4
-      ],
+      "expert_present_macro_iou": 0.6719159053072422,
+      "expert_present_macro_dice": 0.8021030732532076,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 207692,
-          "intersection": 172362,
-          "false_positive": 24352,
-          "false_negative": 35330,
-          "iou": 0.7427987795418111
-        },
-        "3": {
-          "expert_pixels": 455061,
-          "intersection": 207263,
-          "false_positive": 4428,
-          "false_negative": 247798,
-          "iou": 0.4510728222003138
-        },
-        "4": {
-          "expert_pixels": 236767,
-          "intersection": 63797,
-          "false_positive": 37343,
-          "false_negative": 172970,
-          "iou": 0.2327423297216446
-        }
+        "1": 0.7535327247219568,
+        "3": 0.6608299092612382,
+        "4": 0.6013850819385316
       },
-      "expert_present_macro_iou": 0.47553797715458984
+      "scored_expert_pixels": 899520
     },
     {
       "id": "case-031",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-OL-A66P-01Z-00__ddf9af6204",
       "dataset": "tiger",
-      "scoring_shape_yx": [
-        1964,
-        2464
-      ],
-      "scored_expert_pixels": 2817375,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4
-      ],
+      "expert_present_macro_iou": 0.6392929239981874,
+      "expert_present_macro_dice": 0.7741625719028634,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1048210,
-          "intersection": 843903,
-          "false_positive": 64777,
-          "false_negative": 204307,
-          "iou": 0.7582325759420371
-        },
-        "3": {
-          "expert_pixels": 946413,
-          "intersection": 521822,
-          "false_positive": 78348,
-          "false_negative": 424591,
-          "iou": 0.5092133677999066
-        },
-        "4": {
-          "expert_pixels": 822752,
-          "intersection": 28190,
-          "false_positive": 59025,
-          "false_negative": 794562,
-          "iou": 0.03196953424732103
-        }
+        "1": 0.7915836538016031,
+        "3": 0.6093961894894376,
+        "4": 0.5168989287035215
       },
-      "expert_present_macro_iou": 0.4331384926630882
+      "scored_expert_pixels": 2817375
     },
     {
       "id": "case-032",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-S3-AA15-01Z-00__2cbda3ad25",
       "dataset": "tiger",
-      "scoring_shape_yx": [
-        1371,
-        1103
-      ],
-      "scored_expert_pixels": 1386099,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4
-      ],
+      "expert_present_macro_iou": 0.6813353621084586,
+      "expert_present_macro_dice": 0.8054393368373983,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 494809,
-          "intersection": 450630,
-          "false_positive": 84096,
-          "false_negative": 44179,
-          "iou": 0.7784178751263161
-        },
-        "3": {
-          "expert_pixels": 761413,
-          "intersection": 492838,
-          "false_positive": 30251,
-          "false_negative": 268575,
-          "iou": 0.6225343074839831
-        },
-        "4": {
-          "expert_pixels": 129877,
-          "intersection": 3060,
-          "false_positive": 3469,
-          "false_negative": 126817,
-          "iou": 0.022947819957104074
-        }
+        "1": 0.7828740167841934,
+        "3": 0.7278412258945223,
+        "4": 0.5332908436466599
       },
-      "expert_present_macro_iou": 0.4746333341891344
+      "scored_expert_pixels": 1386099
     },
     {
       "id": "case-033",
+      "case": "ignite__datasets_ignite_images_he_patient28_he_roi5.png__36ad26983d",
       "dataset": "ignite",
-      "scoring_shape_yx": [
-        1019,
-        1008
-      ],
-      "scored_expert_pixels": 1027152,
-      "expert_present_class_ids": [
-        3,
-        8,
-        19
-      ],
+      "expert_present_macro_iou": 0.45680778438255887,
+      "expert_present_macro_dice": 0.5408332694500909,
       "per_present_class_iou": {
-        "3": {
-          "expert_pixels": 115039,
-          "intersection": 12169,
-          "false_positive": 20896,
-          "false_negative": 102870,
-          "iou": 0.08952072681796447
-        },
-        "8": {
-          "expert_pixels": 905276,
-          "intersection": 90301,
-          "false_positive": 1,
-          "false_negative": 814975,
-          "iou": 0.09974957941050087
-        },
-        "19": {
-          "expert_pixels": 6837,
-          "intersection": 271,
-          "false_positive": 51838,
-          "false_negative": 6566,
-          "iou": 0.0046186621218576905
-        }
+        "3": 0.6168605977640885,
+        "8": 0.7535627553835881,
+        "19": 0.0
       },
-      "expert_present_macro_iou": 0.06462965611677435
+      "scored_expert_pixels": 1027152
     },
     {
       "id": "case-034",
+      "case": "ignite__datasets_ignite_images_he_patient32_he_roi2.png__a1ccdac136",
       "dataset": "ignite",
-      "scoring_shape_yx": [
-        1046,
-        1085
-      ],
-      "scored_expert_pixels": 1130255,
-      "expert_present_class_ids": [
-        1,
-        3,
-        5,
-        8,
-        19,
-        21
-      ],
+      "expert_present_macro_iou": 0.18922230295495876,
+      "expert_present_macro_dice": 0.24641491552152392,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 855199,
-          "intersection": 772869,
-          "false_positive": 24570,
-          "false_negative": 82330,
-          "iou": 0.8784908311158952
-        },
-        "3": {
-          "expert_pixels": 161371,
-          "intersection": 69658,
-          "false_positive": 3601,
-          "false_negative": 91713,
-          "iou": 0.42224135004728075
-        },
-        "5": {
-          "expert_pixels": 7419,
-          "intersection": 47,
-          "false_positive": 9539,
-          "false_negative": 7372,
-          "iou": 0.0027715532492039157
-        },
-        "8": {
-          "expert_pixels": 28908,
-          "intersection": 0,
-          "false_positive": 0,
-          "false_negative": 28908,
-          "iou": 0.0
-        },
-        "19": {
-          "expert_pixels": 64194,
-          "intersection": 56994,
-          "false_positive": 23454,
-          "false_negative": 7200,
-          "iou": 0.6502601314348302
-        },
-        "21": {
-          "expert_pixels": 13164,
-          "intersection": 7249,
-          "false_positive": 4876,
-          "false_negative": 5915,
-          "iou": 0.40182926829268295
-        }
+        "1": 0.547311339581871,
+        "3": 0.5615999248530819,
+        "5": 0.0,
+        "8": 0.0034811980836176887,
+        "19": 0.0,
+        "21": 0.022941355211182013
       },
-      "expert_present_macro_iou": 0.39259885568998215
+      "scored_expert_pixels": 1130255
     },
     {
       "id": "case-035",
+      "case": "ignite__datasets_ignite_images_he_patient36_he_roi1.png__bdbef84bcb",
       "dataset": "ignite",
-      "scoring_shape_yx": [
-        1030,
-        1031
-      ],
-      "scored_expert_pixels": 921835,
-      "expert_present_class_ids": [
-        1,
-        3,
-        8
-      ],
+      "expert_present_macro_iou": 0.4571173863150233,
+      "expert_present_macro_dice": 0.5378077069310626,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 352078,
-          "intersection": 121790,
-          "false_positive": 13169,
-          "false_negative": 230288,
-          "iou": 0.33344558613760006
-        },
-        "3": {
-          "expert_pixels": 569140,
-          "intersection": 491029,
-          "false_positive": 40006,
-          "false_negative": 78111,
-          "iou": 0.8060941055182173
-        },
-        "8": {
-          "expert_pixels": 617,
-          "intersection": 0,
-          "false_positive": 0,
-          "false_negative": 617,
-          "iou": 0.0
-        }
+        "1": 0.5582315156484898,
+        "3": 0.8131206432965801,
+        "8": 0.0
       },
-      "expert_present_macro_iou": 0.37984656388527244
+      "scored_expert_pixels": 921835
     },
     {
       "id": "case-036",
+      "case": "ignite__datasets_ignite_images_he_patient37_he_roi3.png__95aec1e547",
       "dataset": "ignite",
-      "scoring_shape_yx": [
-        1030,
-        1031
-      ],
-      "scored_expert_pixels": 948498,
-      "expert_present_class_ids": [
-        1,
-        3,
-        5,
-        8
-      ],
+      "expert_present_macro_iou": 0.5413393958137365,
+      "expert_present_macro_dice": 0.6278222184988256,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 330427,
-          "intersection": 231320,
-          "false_positive": 71214,
-          "false_negative": 99107,
-          "iou": 0.5759372175649399
-        },
-        "3": {
-          "expert_pixels": 466405,
-          "intersection": 357465,
-          "false_positive": 31842,
-          "false_negative": 108940,
-          "iou": 0.7174453634442355
-        },
-        "5": {
-          "expert_pixels": 151495,
-          "intersection": 120970,
-          "false_positive": 121144,
-          "false_negative": 30525,
-          "iou": 0.44370027765653486
-        },
-        "8": {
-          "expert_pixels": 171,
-          "intersection": 0,
-          "false_positive": 0,
-          "false_negative": 171,
-          "iou": 0.0
-        }
+        "1": 0.7385786612781758,
+        "3": 0.7823898892077795,
+        "5": 0.6443890327689904,
+        "8": 0.0
       },
-      "expert_present_macro_iou": 0.4342707146664275
+      "scored_expert_pixels": 948498
     },
     {
       "id": "case-037",
+      "case": "ignite__datasets_ignite_images_he_patient3_he_roi6.png__d5935ced63",
       "dataset": "ignite",
-      "scoring_shape_yx": [
-        930,
-        967
-      ],
-      "scored_expert_pixels": 779051,
-      "expert_present_class_ids": [
-        1,
-        3,
-        5,
-        7,
-        8,
-        21
-      ],
+      "expert_present_macro_iou": 0.3627411740173668,
+      "expert_present_macro_dice": 0.42486615252513754,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 319143,
-          "intersection": 195485,
-          "false_positive": 2742,
-          "false_negative": 123658,
-          "iou": 0.6073131708529443
-        },
-        "3": {
-          "expert_pixels": 384009,
-          "intersection": 363757,
-          "false_positive": 38078,
-          "false_negative": 20252,
-          "iou": 0.8618057414703604
-        },
-        "5": {
-          "expert_pixels": 4563,
-          "intersection": 353,
-          "false_positive": 8943,
-          "false_negative": 4210,
-          "iou": 0.02613653191174293
-        },
-        "7": {
-          "expert_pixels": 10979,
-          "intersection": 5250,
-          "false_positive": 14825,
-          "false_negative": 5729,
-          "iou": 0.2034568283986979
-        },
-        "8": {
-          "expert_pixels": 317,
-          "intersection": 26,
-          "false_positive": 374,
-          "false_negative": 291,
-          "iou": 0.03762662807525326
-        },
-        "21": {
-          "expert_pixels": 60040,
-          "intersection": 50753,
-          "false_positive": 8978,
-          "false_negative": 9287,
-          "iou": 0.7353588918832769
-        }
+        "1": 0.7672383533713644,
+        "3": 0.830889193349233,
+        "5": 0.024495058014611087,
+        "7": 0.0007552394738498332,
+        "8": 0.010231781165170182,
+        "21": 0.5428374187299723
       },
-      "expert_present_macro_iou": 0.41194963209871266
+      "scored_expert_pixels": 779051
     },
     {
       "id": "case-038",
+      "case": "ignite__datasets_ignite_images_he_patient40_he_roi1.png__0776ea30ca",
       "dataset": "ignite",
-      "scoring_shape_yx": [
-        1030,
-        1031
-      ],
-      "scored_expert_pixels": 1025320,
-      "expert_present_class_ids": [
-        1,
-        3,
-        7
-      ],
+      "expert_present_macro_iou": 0.6247899155980798,
+      "expert_present_macro_dice": 0.6447555289070417,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 573269,
-          "intersection": 548857,
-          "false_positive": 1136,
-          "false_negative": 24412,
-          "iou": 0.9555226712859394
-        },
-        "3": {
-          "expert_pixels": 443517,
-          "intersection": 331581,
-          "false_positive": 10508,
-          "false_negative": 111936,
-          "iou": 0.7303144099994494
-        },
-        "7": {
-          "expert_pixels": 8534,
-          "intersection": 0,
-          "false_positive": 384,
-          "false_negative": 8534,
-          "iou": 0.0
-        }
+        "1": 0.9772006622573962,
+        "3": 0.8971690845368432,
+        "7": 0.0
       },
-      "expert_present_macro_iou": 0.5619456937617963
+      "scored_expert_pixels": 1025320
     },
     {
       "id": "case-039",
+      "case": "ignite__datasets_ignite_images_he_patient43_he_roi2.png__8c6c983b53",
       "dataset": "ignite",
-      "scoring_shape_yx": [
-        1030,
-        1030
-      ],
-      "scored_expert_pixels": 844626,
-      "expert_present_class_ids": [
-        1,
-        3,
-        5,
-        8,
-        22
-      ],
+      "expert_present_macro_iou": 0.4790814919163461,
+      "expert_present_macro_dice": 0.5800717321030886,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 613918,
-          "intersection": 476079,
-          "false_positive": 8519,
-          "false_negative": 137839,
-          "iou": 0.7648629499852997
-        },
-        "3": {
-          "expert_pixels": 215306,
-          "intersection": 181564,
-          "false_positive": 42690,
-          "false_negative": 33742,
-          "iou": 0.7037473449200763
-        },
-        "5": {
-          "expert_pixels": 11976,
-          "intersection": 8498,
-          "false_positive": 57308,
-          "false_negative": 3478,
-          "iou": 0.12265458114427573
-        },
-        "8": {
-          "expert_pixels": 588,
-          "intersection": 0,
-          "false_positive": 0,
-          "false_negative": 588,
-          "iou": 0.0
-        },
-        "22": {
-          "expert_pixels": 2838,
-          "intersection": 821,
-          "false_positive": 15257,
-          "false_negative": 2017,
-          "iou": 0.045371649626968776
-        }
+        "1": 0.8877385801273268,
+        "3": 0.7460518275964717,
+        "5": 0.1846011743748763,
+        "8": 0.058655221745350504,
+        "22": 0.518360655737705
       },
-      "expert_present_macro_iou": 0.3273273051353241
+      "scored_expert_pixels": 844626
     },
     {
       "id": "case-040",
+      "case": "ignite__datasets_ignite_images_he_patient46_he_roi2.png__5ddcc3d805",
       "dataset": "ignite",
-      "scoring_shape_yx": [
-        1262,
-        1563
-      ],
-      "scored_expert_pixels": 1474324,
-      "expert_present_class_ids": [
-        1,
-        3
-      ],
+      "expert_present_macro_iou": 0.40254174334143566,
+      "expert_present_macro_dice": 0.5694129346832426,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1184780,
-          "intersection": 659765,
-          "false_positive": 2,
-          "false_negative": 525015,
-          "iou": 0.5568661576560076
-        },
-        "3": {
-          "expert_pixels": 289544,
-          "intersection": 287360,
-          "false_positive": 515126,
-          "false_negative": 2184,
-          "iou": 0.3571153392073769
-        }
+        "1": 0.48211229088944785,
+        "3": 0.32297119579342354
       },
-      "expert_present_macro_iou": 0.45699074843169224
+      "scored_expert_pixels": 1474324
     },
     {
       "id": "case-041",
+      "case": "ignite__datasets_ignite_images_he_patient4_he_roi1.png__7a50d32e01",
       "dataset": "ignite",
-      "scoring_shape_yx": [
-        1120,
-        1059
-      ],
-      "scored_expert_pixels": 1186080,
-      "expert_present_class_ids": [
-        1,
-        3,
-        8
-      ],
+      "expert_present_macro_iou": 0.6132560205432883,
+      "expert_present_macro_dice": 0.7097952978589892,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 898162,
-          "intersection": 839533,
-          "false_positive": 31260,
-          "false_negative": 58629,
-          "iou": 0.9032850524304352
-        },
-        "3": {
-          "expert_pixels": 287018,
-          "intersection": 245271,
-          "false_positive": 49544,
-          "false_negative": 41747,
-          "iou": 0.7287542859859402
-        },
-        "8": {
-          "expert_pixels": 900,
-          "intersection": 599,
-          "false_positive": 129,
-          "false_negative": 301,
-          "iou": 0.5821185617103984
-        }
+        "1": 0.892893966308676,
+        "3": 0.7502074286545223,
+        "8": 0.19666666666666666
       },
-      "expert_present_macro_iou": 0.7380526333755912
+      "scored_expert_pixels": 1186080
     },
     {
       "id": "case-042",
+      "case": "ignite__datasets_ignite_images_he_patient57_he_roi2.png__b06b2b924e",
       "dataset": "ignite",
-      "scoring_shape_yx": [
-        1431,
-        1245
-      ],
-      "scored_expert_pixels": 1400353,
-      "expert_present_class_ids": [
-        1,
-        3
-      ],
+      "expert_present_macro_iou": 0.6986068201974773,
+      "expert_present_macro_dice": 0.8174755877500882,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 954543,
-          "intersection": 780456,
-          "false_positive": 171366,
-          "false_negative": 174087,
-          "iou": 0.6931785783753394
-        },
-        "3": {
-          "expert_pixels": 445810,
-          "intersection": 132006,
-          "false_positive": 2802,
-          "false_negative": 313804,
-          "iou": 0.29425427763858303
-        }
+        "1": 0.8100361579868232,
+        "3": 0.5871774824081314
       },
-      "expert_present_macro_iou": 0.4937164280069612
+      "scored_expert_pixels": 1400353
     },
     {
       "id": "case-043",
+      "case": "ignite__datasets_ignite_images_he_patient60_he_roi2.png__511072a782",
       "dataset": "ignite",
-      "scoring_shape_yx": [
-        2114,
-        2650
-      ],
-      "scored_expert_pixels": 5356906,
-      "expert_present_class_ids": [
-        1,
-        3,
-        5,
-        8,
-        19,
-        22
-      ],
+      "expert_present_macro_iou": 0.5400372464000662,
+      "expert_present_macro_dice": 0.6347736822506892,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 2534833,
-          "intersection": 2383451,
-          "false_positive": 47987,
-          "false_negative": 151382,
-          "iou": 0.922809564739316
-        },
-        "3": {
-          "expert_pixels": 1373238,
-          "intersection": 478860,
-          "false_positive": 8301,
-          "false_negative": 894378,
-          "iou": 0.3466134506517731
-        },
-        "5": {
-          "expert_pixels": 1270186,
-          "intersection": 1190405,
-          "false_positive": 91115,
-          "false_negative": 79781,
-          "iou": 0.8744612690360177
-        },
-        "8": {
-          "expert_pixels": 11777,
-          "intersection": 9591,
-          "false_positive": 18954,
-          "false_negative": 2186,
-          "iou": 0.31209527838339135
-        },
-        "19": {
-          "expert_pixels": 164651,
-          "intersection": 156556,
-          "false_positive": 412495,
-          "false_negative": 8095,
-          "iou": 0.2712589188870754
-        },
-        "22": {
-          "expert_pixels": 2221,
-          "intersection": 0,
-          "false_positive": 9439,
-          "false_negative": 2221,
-          "iou": 0.0
-        }
+        "1": 0.9408314108407204,
+        "3": 0.5095223285860148,
+        "5": 0.8878145350874239,
+        "8": 0.5737353349312476,
+        "19": 0.3283198689549905,
+        "22": 0.0
       },
-      "expert_present_macro_iou": 0.45453974694959554
+      "scored_expert_pixels": 5356906
     },
     {
       "id": "case-044",
+      "case": "ignite__datasets_ignite_images_he_patient64_he_roi3.png__aabad9c28e",
       "dataset": "ignite",
-      "scoring_shape_yx": [
-        1185,
-        2098
-      ],
-      "scored_expert_pixels": 1612961,
-      "expert_present_class_ids": [
-        3,
-        7,
-        8,
-        16,
-        21
-      ],
+      "expert_present_macro_iou": 0.5493848485147511,
+      "expert_present_macro_dice": 0.6976702646222905,
       "per_present_class_iou": {
-        "3": {
-          "expert_pixels": 1154985,
-          "intersection": 396466,
-          "false_positive": 8,
-          "false_negative": 758519,
-          "iou": 0.3432626864405239
-        },
-        "7": {
-          "expert_pixels": 196069,
-          "intersection": 49999,
-          "false_positive": 36678,
-          "false_negative": 146070,
-          "iou": 0.2148212436680172
-        },
-        "8": {
-          "expert_pixels": 37539,
-          "intersection": 18469,
-          "false_positive": 11774,
-          "false_negative": 19070,
-          "iou": 0.3745259870622351
-        },
-        "16": {
-          "expert_pixels": 152064,
-          "intersection": 147653,
-          "false_positive": 225516,
-          "false_negative": 4411,
-          "iou": 0.3910509031198686
-        },
-        "21": {
-          "expert_pixels": 72304,
-          "intersection": 45728,
-          "false_positive": 1274,
-          "false_negative": 26576,
-          "iou": 0.6214901193291473
-        }
+        "3": 0.7165549925341771,
+        "7": 0.5208844027877914,
+        "8": 0.4041384097054528,
+        "16": 0.3835370962236634,
+        "21": 0.721809341322671
       },
-      "expert_present_macro_iou": 0.38903018792395844
+      "scored_expert_pixels": 1612961
     },
     {
       "id": "case-045",
+      "case": "ignite__datasets_ignite_images_he_patient73_he_roi3.png__c17190d498",
       "dataset": "ignite",
-      "scoring_shape_yx": [
-        1751,
-        1150
-      ],
-      "scored_expert_pixels": 1492190,
-      "expert_present_class_ids": [
-        1,
-        3,
-        8,
-        21
-      ],
+      "expert_present_macro_iou": 0.5661626719039732,
+      "expert_present_macro_dice": 0.7020581404882575,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 199811,
-          "intersection": 140093,
-          "false_positive": 46747,
-          "false_negative": 59718,
-          "iou": 0.568194907486271
-        },
-        "3": {
-          "expert_pixels": 1059881,
-          "intersection": 509816,
-          "false_positive": 6647,
-          "false_negative": 550065,
-          "iou": 0.47801464190344745
-        },
-        "8": {
-          "expert_pixels": 8144,
-          "intersection": 5863,
-          "false_positive": 10347,
-          "false_negative": 2281,
-          "iou": 0.3170731707317073
-        },
-        "21": {
-          "expert_pixels": 224354,
-          "intersection": 196934,
-          "false_positive": 15597,
-          "false_negative": 27420,
-          "iou": 0.8207258982042167
-        }
+        "1": 0.6713788911193418,
+        "3": 0.6111029186670749,
+        "8": 0.25140122173940427,
+        "21": 0.7307676560900717
       },
-      "expert_present_macro_iou": 0.5460021545814107
+      "scored_expert_pixels": 1492190
     },
     {
       "id": "case-046",
+      "case": "ignite__datasets_ignite_images_he_patient78_he_roi2.png__7801cb287c",
       "dataset": "ignite",
-      "scoring_shape_yx": [
-        1655,
-        1414
-      ],
-      "scored_expert_pixels": 2239340,
-      "expert_present_class_ids": [
-        1,
-        3,
-        5,
-        8,
-        19,
-        21,
-        24
-      ],
+      "expert_present_macro_iou": 0.523854159241009,
+      "expert_present_macro_dice": 0.6467173749035211,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 717531,
-          "intersection": 641084,
-          "false_positive": 89005,
-          "false_negative": 76447,
-          "iou": 0.7948609857464515
-        },
-        "3": {
-          "expert_pixels": 872626,
-          "intersection": 479380,
-          "false_positive": 25583,
-          "false_negative": 393246,
-          "iou": 0.5337065204200804
-        },
-        "5": {
-          "expert_pixels": 272059,
-          "intersection": 173028,
-          "false_positive": 9170,
-          "false_negative": 99031,
-          "iou": 0.6152566058265684
-        },
-        "8": {
-          "expert_pixels": 14046,
-          "intersection": 13076,
-          "false_positive": 12916,
-          "false_negative": 970,
-          "iou": 0.484978859135079
-        },
-        "19": {
-          "expert_pixels": 102321,
-          "intersection": 44815,
-          "false_positive": 104568,
-          "false_negative": 57506,
-          "iou": 0.21661373973483367
-        },
-        "21": {
-          "expert_pixels": 18757,
-          "intersection": 7642,
-          "false_positive": 19108,
-          "false_negative": 11115,
-          "iou": 0.2018222633038426
-        },
-        "24": {
-          "expert_pixels": 242000,
-          "intersection": 233581,
-          "false_positive": 197185,
-          "false_negative": 8419,
-          "iou": 0.5318510422714802
-        }
+        "1": 0.8511387264259919,
+        "3": 0.556633554919343,
+        "5": 0.701785856770918,
+        "8": 0.49865160349854226,
+        "19": 0.3319143654073631,
+        "21": 0.05099894847528917,
+        "24": 0.6758560591896151
       },
-      "expert_present_macro_iou": 0.48272714520547655
+      "scored_expert_pixels": 2239340
     },
     {
       "id": "case-047",
+      "case": "ignite__datasets_ignite_images_he_patient7_he_roi1.png__f114823ea9",
       "dataset": "ignite",
-      "scoring_shape_yx": [
-        1061,
-        1061
-      ],
-      "scored_expert_pixels": 953759,
-      "expert_present_class_ids": [
-        1,
-        5,
-        8
-      ],
+      "expert_present_macro_iou": 0.35583182290489695,
+      "expert_present_macro_dice": 0.41782984483472485,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 643592,
-          "intersection": 559410,
-          "false_positive": 4010,
-          "false_negative": 84182,
-          "iou": 0.8638175916689572
-        },
-        "5": {
-          "expert_pixels": 306316,
-          "intersection": 3167,
-          "false_positive": 363,
-          "false_negative": 303149,
-          "iou": 0.010326758597752048
-        },
-        "8": {
-          "expert_pixels": 3851,
-          "intersection": 1236,
-          "false_positive": 12368,
-          "false_negative": 2615,
-          "iou": 0.0762069178124422
-        }
+        "1": 0.8995790386892312,
+        "5": 0.05075129331634908,
+        "8": 0.11716513670911065
       },
-      "expert_present_macro_iou": 0.3167837560263838
+      "scored_expert_pixels": 953759
     },
     {
       "id": "case-048",
+      "case": "ignite__datasets_ignite_images_he_patient8_he_roi1.png__d6caf8e04b",
       "dataset": "ignite",
-      "scoring_shape_yx": [
-        1055,
-        1082
-      ],
-      "scored_expert_pixels": 1083473,
-      "expert_present_class_ids": [
-        1,
-        3,
-        5,
-        8,
-        21
-      ],
+      "expert_present_macro_iou": 0.35277938033955103,
+      "expert_present_macro_dice": 0.4335133847245444,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 421011,
-          "intersection": 380147,
-          "false_positive": 106670,
-          "false_negative": 40864,
-          "iou": 0.7204106268749491
-        },
-        "3": {
-          "expert_pixels": 622172,
-          "intersection": 493383,
-          "false_positive": 28303,
-          "false_negative": 128789,
-          "iou": 0.7584964833390984
-        },
-        "5": {
-          "expert_pixels": 25474,
-          "intersection": 1883,
-          "false_positive": 8812,
-          "false_negative": 23591,
-          "iou": 0.054920375663536136
-        },
-        "8": {
-          "expert_pixels": 12536,
-          "intersection": 5603,
-          "false_positive": 1627,
-          "false_negative": 6933,
-          "iou": 0.39560827508296265
-        },
-        "21": {
-          "expert_pixels": 2280,
-          "intersection": 1088,
-          "false_positive": 5960,
-          "false_negative": 1192,
-          "iou": 0.13203883495145632
-        }
+        "1": 0.7017426991482258,
+        "3": 0.8256436896804308,
+        "5": 0.07649109815174797,
+        "8": 0.08575303126994256,
+        "21": 0.07426638344740775
       },
-      "expert_present_macro_iou": 0.41229491918240047
+      "scored_expert_pixels": 1083473
     },
     {
       "id": "case-049",
+      "case": "gcss_01",
       "dataset": "gcss",
-      "scoring_shape_yx": [
-        1808,
-        1807
-      ],
-      "scored_expert_pixels": 3179881,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4
-      ],
+      "expert_present_macro_iou": 0.583293849434049,
+      "expert_present_macro_dice": 0.734036428256216,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 528474,
-          "intersection": 333104,
-          "false_positive": 64147,
-          "false_negative": 195370,
-          "iou": 0.5620860549997384
-        },
-        "3": {
-          "expert_pixels": 1147608,
-          "intersection": 792422,
-          "false_positive": 317432,
-          "false_negative": 355186,
-          "iou": 0.5408876208158139
-        },
-        "4": {
-          "expert_pixels": 1503799,
-          "intersection": 140325,
-          "false_positive": 5690,
-          "false_negative": 1363474,
-          "iou": 0.09296192287588714
-        }
+        "1": 0.6485840076873334,
+        "3": 0.4813453709778655,
+        "4": 0.619952169636948
       },
-      "expert_present_macro_iou": 0.39864519956381317
+      "scored_expert_pixels": 3179881
     },
     {
       "id": "case-050",
+      "case": "gcss_04",
       "dataset": "gcss",
-      "scoring_shape_yx": [
-        1810,
-        1810
-      ],
-      "scored_expert_pixels": 3083389,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4,
-        5,
-        23
-      ],
+      "expert_present_macro_iou": 0.31484610743156344,
+      "expert_present_macro_dice": 0.398718566712679,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1076314,
-          "intersection": 333222,
-          "false_positive": 8270,
-          "false_negative": 743092,
-          "iou": 0.3072348476466553
-        },
-        "3": {
-          "expert_pixels": 62383,
-          "intersection": 13860,
-          "false_positive": 860545,
-          "false_negative": 48523,
-          "iou": 0.015017422810880155
-        },
-        "4": {
-          "expert_pixels": 224569,
-          "intersection": 15885,
-          "false_positive": 1702,
-          "false_negative": 208684,
-          "iou": 0.07020342863203857
-        },
-        "5": {
-          "expert_pixels": 685239,
-          "intersection": 433292,
-          "false_positive": 46359,
-          "false_negative": 251947,
-          "iou": 0.5922542161132206
-        },
-        "23": {
-          "expert_pixels": 1034884,
-          "intersection": 214034,
-          "false_positive": 23663,
-          "false_negative": 820850,
-          "iou": 0.20219602908515164
-        }
+        "1": 0.8123378353047956,
+        "3": 0.0567800283163339,
+        "4": 0.17224205814759838,
+        "5": 0.5323868922204801,
+        "23": 0.00048372316860925056
       },
-      "expert_present_macro_iou": 0.23738118885758924
+      "scored_expert_pixels": 3083389
     },
     {
       "id": "case-051",
+      "case": "gcss_05",
       "dataset": "gcss",
-      "scoring_shape_yx": [
-        1811,
-        1812
-      ],
-      "scored_expert_pixels": 3055065,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4,
-        23
-      ],
+      "expert_present_macro_iou": 0.5583115808551776,
+      "expert_present_macro_dice": 0.6927662794977965,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 696767,
-          "intersection": 448616,
-          "false_positive": 39402,
-          "false_negative": 248151,
-          "iou": 0.6093926802133749
-        },
-        "3": {
-          "expert_pixels": 283331,
-          "intersection": 224000,
-          "false_positive": 392396,
-          "false_negative": 59331,
-          "iou": 0.33149481965349914
-        },
-        "4": {
-          "expert_pixels": 1067900,
-          "intersection": 234670,
-          "false_positive": 6534,
-          "false_negative": 833230,
-          "iou": 0.2184126712296893
-        },
-        "23": {
-          "expert_pixels": 1007067,
-          "intersection": 893064,
-          "false_positive": 133631,
-          "false_negative": 114003,
-          "iou": 0.7829101129308547
-        }
+        "1": 0.7808241282135334,
+        "3": 0.23616493789708426,
+        "4": 0.6328731658612075,
+        "23": 0.5833840914488856
       },
-      "expert_present_macro_iou": 0.4855525710068545
+      "scored_expert_pixels": 3055065
     },
     {
       "id": "case-052",
+      "case": "gcss_07",
       "dataset": "gcss",
-      "scoring_shape_yx": [
-        1811,
-        1810
-      ],
-      "scored_expert_pixels": 3015916,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4
-      ],
+      "expert_present_macro_iou": 0.2834821409015033,
+      "expert_present_macro_dice": 0.33755962451520327,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 947236,
-          "intersection": 566336,
-          "false_positive": 9262,
-          "false_negative": 380900,
-          "iou": 0.5920932401322324
-        },
-        "3": {
-          "expert_pixels": 1513226,
-          "intersection": 610,
-          "false_positive": 121303,
-          "false_negative": 1512616,
-          "iou": 0.0003731961929093947
-        },
-        "4": {
-          "expert_pixels": 555454,
-          "intersection": 0,
-          "false_positive": 76,
-          "false_negative": 555454,
-          "iou": 0.0
-        }
+        "1": 0.7757931400249983,
+        "3": 5.750299015548809e-06,
+        "4": 0.0746475323804961
       },
-      "expert_present_macro_iou": 0.19748881210838062
+      "scored_expert_pixels": 3015916
     },
     {
       "id": "case-053",
+      "case": "gcss_09",
       "dataset": "gcss",
-      "scoring_shape_yx": [
-        1811,
-        1810
-      ],
-      "scored_expert_pixels": 3180115,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4
-      ],
+      "expert_present_macro_iou": 0.43632642453032827,
+      "expert_present_macro_dice": 0.5183607480810645,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1787547,
-          "intersection": 676741,
-          "false_positive": 22416,
-          "false_negative": 1110806,
-          "iou": 0.37389769846123927
-        },
-        "3": {
-          "expert_pixels": 977053,
-          "intersection": 0,
-          "false_positive": 233246,
-          "false_negative": 977053,
-          "iou": 0.0
-        },
-        "4": {
-          "expert_pixels": 415515,
-          "intersection": 3468,
-          "false_positive": 484,
-          "false_negative": 412047,
-          "iou": 0.008336558501342552
-        }
+        "1": 0.829170473651273,
+        "3": 0.0,
+        "4": 0.4798087999397117
       },
-      "expert_present_macro_iou": 0.12741141898752728
+      "scored_expert_pixels": 3180115
     },
     {
       "id": "case-054",
+      "case": "gcss_10",
       "dataset": "gcss",
-      "scoring_shape_yx": [
-        1778,
-        1778
-      ],
-      "scored_expert_pixels": 3039755,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4,
-        23
-      ],
+      "expert_present_macro_iou": 0.4030967113149665,
+      "expert_present_macro_dice": 0.5309916782264017,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 844583,
-          "intersection": 538469,
-          "false_positive": 11229,
-          "false_negative": 306114,
-          "iou": 0.6291907568484667
-        },
-        "3": {
-          "expert_pixels": 441521,
-          "intersection": 216338,
-          "false_positive": 502604,
-          "false_negative": 225183,
-          "iou": 0.22914126837018403
-        },
-        "4": {
-          "expert_pixels": 791490,
-          "intersection": 186044,
-          "false_positive": 122200,
-          "false_negative": 605446,
-          "iou": 0.2036182950453655
-        },
-        "23": {
-          "expert_pixels": 962161,
-          "intersection": 342838,
-          "false_positive": 14445,
-          "false_negative": 619323,
-          "iou": 0.35105047480765017
-        }
+        "1": 0.721022588568939,
+        "3": 0.15699560017384206,
+        "4": 0.560356828213467,
+        "23": 0.17401182830361792
       },
-      "expert_present_macro_iou": 0.3532501987679166
+      "scored_expert_pixels": 3039755
     },
     {
       "id": "case-055",
+      "case": "gcss_13",
       "dataset": "gcss",
-      "scoring_shape_yx": [
-        1807,
-        1807
-      ],
-      "scored_expert_pixels": 2512172,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4,
-        23
-      ],
+      "expert_present_macro_iou": 0.3913119368781803,
+      "expert_present_macro_dice": 0.5135680716380713,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 301749,
-          "intersection": 16706,
-          "false_positive": 7586,
-          "false_negative": 285043,
-          "iou": 0.054006174535697546
-        },
-        "3": {
-          "expert_pixels": 2006516,
-          "intersection": 512325,
-          "false_positive": 87971,
-          "false_negative": 1494191,
-          "iou": 0.24460643584801434
-        },
-        "4": {
-          "expert_pixels": 86092,
-          "intersection": 24563,
-          "false_positive": 3064,
-          "false_negative": 61529,
-          "iou": 0.27550585490600743
-        },
-        "23": {
-          "expert_pixels": 117815,
-          "intersection": 0,
-          "false_positive": 1349045,
-          "false_negative": 117815,
-          "iou": 0.0
-        }
+        "1": 0.5210584520272341,
+        "3": 0.5725981169225275,
+        "4": 0.47159117856295946,
+        "23": 0.0
       },
-      "expert_present_macro_iou": 0.14352961632242983
+      "scored_expert_pixels": 2512172
     },
     {
       "id": "case-056",
+      "case": "gcss_14",
       "dataset": "gcss",
-      "scoring_shape_yx": [
-        1811,
-        1810
-      ],
-      "scored_expert_pixels": 3225339,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4
-      ],
+      "expert_present_macro_iou": 0.31164973183854405,
+      "expert_present_macro_dice": 0.36984830492117876,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1065872,
-          "intersection": 823706,
-          "false_positive": 95806,
-          "false_negative": 242166,
-          "iou": 0.7090656791296728
-        },
-        "3": {
-          "expert_pixels": 881868,
-          "intersection": 8114,
-          "false_positive": 1060291,
-          "false_negative": 873754,
-          "iou": 0.004177824781596152
-        },
-        "4": {
-          "expert_pixels": 1277599,
-          "intersection": 6606,
-          "false_positive": 548,
-          "false_negative": 1270993,
-          "iou": 0.005168419594929222
-        }
+        "1": 0.8197002995663245,
+        "3": 0.00520908287117619,
+        "4": 0.11003981307813145
       },
-      "expert_present_macro_iou": 0.2394706411687327
+      "scored_expert_pixels": 3225339
     },
     {
       "id": "case-057",
+      "case": "gcss_15",
       "dataset": "gcss",
-      "scoring_shape_yx": [
-        1810,
-        1811
-      ],
-      "scored_expert_pixels": 3274288,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4
-      ],
+      "expert_present_macro_iou": 0.5769258630976231,
+      "expert_present_macro_dice": 0.7156056113918448,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1007138,
-          "intersection": 740081,
-          "false_positive": 10865,
-          "false_negative": 267057,
-          "iou": 0.7269929459932829
-        },
-        "3": {
-          "expert_pixels": 1246050,
-          "intersection": 416681,
-          "false_positive": 998880,
-          "false_negative": 829369,
-          "iou": 0.18560979629654376
-        },
-        "4": {
-          "expert_pixels": 1021100,
-          "intersection": 24020,
-          "false_positive": 2536,
-          "false_negative": 997080,
-          "iou": 0.023465372456615438
-        }
+        "1": 0.7979158984575159,
+        "3": 0.5677071927694054,
+        "4": 0.36515449806594774
       },
-      "expert_present_macro_iou": 0.3120227049154807
+      "scored_expert_pixels": 3274288
     },
     {
       "id": "case-058",
+      "case": "gcss_17",
       "dataset": "gcss",
-      "scoring_shape_yx": [
-        1807,
-        1806
-      ],
-      "scored_expert_pixels": 3207808,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4
-      ],
+      "expert_present_macro_iou": 0.24491611166534447,
+      "expert_present_macro_dice": 0.30209401033854094,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1210894,
-          "intersection": 775184,
-          "false_positive": 122150,
-          "false_negative": 435710,
-          "iou": 0.5815141885789217
-        },
-        "3": {
-          "expert_pixels": 445086,
-          "intersection": 0,
-          "false_positive": 1447258,
-          "false_negative": 445086,
-          "iou": 0.0
-        },
-        "4": {
-          "expert_pixels": 1551828,
-          "intersection": 0,
-          "false_positive": 11686,
-          "false_negative": 1551828,
-          "iou": 0.0
-        }
+        "1": 0.6863971982177649,
+        "3": 0.0,
+        "4": 0.04835113677826847
       },
-      "expert_present_macro_iou": 0.19383806285964056
+      "scored_expert_pixels": 3207808
     },
     {
       "id": "case-059",
+      "case": "gcss_19",
       "dataset": "gcss",
-      "scoring_shape_yx": [
-        1807,
-        1807
-      ],
-      "scored_expert_pixels": 3146710,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4
-      ],
+      "expert_present_macro_iou": 0.5613207022153445,
+      "expert_present_macro_dice": 0.7133639067483554,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1722156,
-          "intersection": 858783,
-          "false_positive": 1987,
-          "false_negative": 863373,
-          "iou": 0.49809267560753373
-        },
-        "3": {
-          "expert_pixels": 529853,
-          "intersection": 448568,
-          "false_positive": 772349,
-          "false_negative": 81285,
-          "iou": 0.3444688304886646
-        },
-        "4": {
-          "expert_pixels": 894701,
-          "intersection": 207672,
-          "false_positive": 14530,
-          "false_negative": 687029,
-          "iou": 0.22840400294314647
-        }
+        "1": 0.6920450727072591,
+        "3": 0.4378843365380612,
+        "4": 0.554032697400713
       },
-      "expert_present_macro_iou": 0.35698850301311497
+      "scored_expert_pixels": 3146710
     },
     {
       "id": "case-060",
+      "case": "gcss_21",
       "dataset": "gcss",
-      "scoring_shape_yx": [
-        1761,
-        1761
-      ],
-      "scored_expert_pixels": 2899061,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4
-      ],
+      "expert_present_macro_iou": 0.31964743611732854,
+      "expert_present_macro_dice": 0.41339173167835236,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1407791,
-          "intersection": 207782,
-          "false_positive": 4,
-          "false_negative": 1200009,
-          "iou": 0.14759393235520796
-        },
-        "3": {
-          "expert_pixels": 1491116,
-          "intersection": 202377,
-          "false_positive": 147028,
-          "false_negative": 1288739,
-          "iou": 0.1235404213548992
-        },
-        "4": {
-          "expert_pixels": 154,
-          "intersection": 0,
-          "false_positive": 57,
-          "false_negative": 154,
-          "iou": 0.0
-        }
+        "1": 0.6905107017260483,
+        "3": 0.2684316066259373,
+        "4": 0.0
       },
-      "expert_present_macro_iou": 0.09037811790336907
+      "scored_expert_pixels": 2899061
     },
     {
       "id": "case-061",
+      "case": "gcss_22",
       "dataset": "gcss",
-      "scoring_shape_yx": [
-        1782,
-        1782
-      ],
-      "scored_expert_pixels": 3148535,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4,
-        23
-      ],
+      "expert_present_macro_iou": 0.5122880350756468,
+      "expert_present_macro_dice": 0.6637194902806571,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 523450,
-          "intersection": 335306,
-          "false_positive": 25166,
-          "false_negative": 188144,
-          "iou": 0.6111852370328245
-        },
-        "3": {
-          "expert_pixels": 778275,
-          "intersection": 399277,
-          "false_positive": 350949,
-          "false_negative": 378998,
-          "iou": 0.35358529397178945
-        },
-        "4": {
-          "expert_pixels": 1167519,
-          "intersection": 12016,
-          "false_positive": 6709,
-          "false_negative": 1155503,
-          "iou": 0.01023310634731926
-        },
-        "23": {
-          "expert_pixels": 679291,
-          "intersection": 662978,
-          "false_positive": 436789,
-          "false_negative": 16313,
-          "iou": 0.5940237258977851
-        }
+        "1": 0.5721765104527307,
+        "3": 0.2623248625813502,
+        "4": 0.6113739384955315,
+        "23": 0.603276828772975
       },
-      "expert_present_macro_iou": 0.39225684081242956
+      "scored_expert_pixels": 3148535
     },
     {
       "id": "case-062",
+      "case": "gcss_24",
       "dataset": "gcss",
-      "scoring_shape_yx": [
-        1778,
-        1778
-      ],
-      "scored_expert_pixels": 2802517,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4,
-        23
-      ],
+      "expert_present_macro_iou": 0.41376433858281547,
+      "expert_present_macro_dice": 0.5203795415457568,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 296791,
-          "intersection": 176988,
-          "false_positive": 3106,
-          "false_negative": 119803,
-          "iou": 0.5901626225003918
-        },
-        "3": {
-          "expert_pixels": 1066852,
-          "intersection": 422475,
-          "false_positive": 141616,
-          "false_negative": 644377,
-          "iou": 0.3495955209405628
-        },
-        "4": {
-          "expert_pixels": 1325034,
-          "intersection": 57897,
-          "false_positive": 31066,
-          "false_negative": 1267137,
-          "iou": 0.042693754147924194
-        },
-        "23": {
-          "expert_pixels": 113840,
-          "intersection": 0,
-          "false_positive": 433695,
-          "false_negative": 113840,
-          "iou": 0.0
-        }
+        "1": 0.6752430450210397,
+        "3": 0.2520050494864132,
+        "4": 0.7039916101363688,
+        "23": 0.023817649687440153
       },
-      "expert_present_macro_iou": 0.24561297439721969
+      "scored_expert_pixels": 2802517
     },
     {
       "id": "case-063",
+      "case": "gcss_25",
       "dataset": "gcss",
-      "scoring_shape_yx": [
-        1767,
-        1767
-      ],
-      "scored_expert_pixels": 3053861,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4
-      ],
+      "expert_present_macro_iou": 0.0009509178298787147,
+      "expert_present_macro_dice": 0.0018980418446451176,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 244040,
-          "intersection": 0,
-          "false_positive": 2592,
-          "false_negative": 244040,
-          "iou": 0.0
-        },
-        "3": {
-          "expert_pixels": 834849,
-          "intersection": 2,
-          "false_positive": 1675381,
-          "false_negative": 834847,
-          "iou": 7.967397409799102e-07
-        },
-        "4": {
-          "expert_pixels": 1974972,
-          "intersection": 0,
-          "false_positive": 13854,
-          "false_negative": 1974972,
-          "iou": 0.0
-        }
+        "1": 0.0,
+        "3": 0.0005223884227349728,
+        "4": 0.0023303650669011713
       },
-      "expert_present_macro_iou": 2.6557991365997004e-07
+      "scored_expert_pixels": 3053861
     },
     {
       "id": "case-064",
+      "case": "gcss_27",
       "dataset": "gcss",
-      "scoring_shape_yx": [
-        1807,
-        1807
-      ],
-      "scored_expert_pixels": 3258025,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4
-      ],
+      "expert_present_macro_iou": 0.19187004630773505,
+      "expert_present_macro_dice": 0.28868259257125956,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 654516,
-          "intersection": 31672,
-          "false_positive": 35915,
-          "false_negative": 622844,
-          "iou": 0.0458727953988161
-        },
-        "3": {
-          "expert_pixels": 638046,
-          "intersection": 0,
-          "false_positive": 1691237,
-          "false_negative": 638046,
-          "iou": 0.0
-        },
-        "4": {
-          "expert_pixels": 1965463,
-          "intersection": 29962,
-          "false_positive": 20,
-          "false_negative": 1935501,
-          "iou": 0.015244090129499975
-        }
+        "1": 0.4092961457317789,
+        "3": 0.0,
+        "4": 0.16631399319142615
       },
-      "expert_present_macro_iou": 0.020372295176105358
+      "scored_expert_pixels": 3258025
     },
     {
       "id": "case-065",
+      "case": "gcss_30",
       "dataset": "gcss",
-      "scoring_shape_yx": [
-        1767,
-        1768
-      ],
-      "scored_expert_pixels": 3104485,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4
-      ],
+      "expert_present_macro_iou": 0.09796317629259803,
+      "expert_present_macro_dice": 0.16015598692532698,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 120345,
-          "intersection": 0,
-          "false_positive": 10225,
-          "false_negative": 120345,
-          "iou": 0.0
-        },
-        "3": {
-          "expert_pixels": 1548925,
-          "intersection": 14003,
-          "false_positive": 516843,
-          "false_negative": 1534922,
-          "iou": 0.006778592755817691
-        },
-        "4": {
-          "expert_pixels": 1435215,
-          "intersection": 17917,
-          "false_positive": 40736,
-          "false_negative": 1417298,
-          "iou": 0.01213929188706129
-        }
+        "1": 0.0,
+        "3": 0.2563187792454187,
+        "4": 0.037570749632375416
       },
-      "expert_present_macro_iou": 0.006305961547626328
+      "scored_expert_pixels": 3104485
     },
     {
       "id": "case-066",
+      "case": "gcss_34",
       "dataset": "gcss",
-      "scoring_shape_yx": [
-        1807,
-        1807
-      ],
-      "scored_expert_pixels": 3209101,
-      "expert_present_class_ids": [
-        1,
-        4
-      ],
+      "expert_present_macro_iou": 0.03161780435619574,
+      "expert_present_macro_dice": 0.05951019306145284,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1691625,
-          "intersection": 10548,
-          "false_positive": 604,
-          "false_negative": 1681077,
-          "iou": 0.006233198934659553
-        },
-        "4": {
-          "expert_pixels": 1517476,
-          "intersection": 0,
-          "false_positive": 15,
-          "false_negative": 1517476,
-          "iou": 0.0
-        }
+        "1": 0.06292647602157689,
+        "4": 0.00030913269081459395
       },
-      "expert_present_macro_iou": 0.0031165994673297763
+      "scored_expert_pixels": 3209101
     },
     {
       "id": "case-067",
+      "case": "gcss_35",
       "dataset": "gcss",
-      "scoring_shape_yx": [
-        1810,
-        1811
-      ],
-      "scored_expert_pixels": 3210958,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4,
-        23
-      ],
+      "expert_present_macro_iou": 0.3074077552786092,
+      "expert_present_macro_dice": 0.4129937853248429,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 1222838,
-          "intersection": 388628,
-          "false_positive": 2011,
-          "false_negative": 834210,
-          "iou": 0.3172864573510694
-        },
-        "3": {
-          "expert_pixels": 272409,
-          "intersection": 214466,
-          "false_positive": 576153,
-          "false_negative": 57943,
-          "iou": 0.25274051866569563
-        },
-        "4": {
-          "expert_pixels": 430157,
-          "intersection": 52798,
-          "false_positive": 26658,
-          "false_negative": 377359,
-          "iou": 0.11557851646727887
-        },
-        "23": {
-          "expert_pixels": 1285554,
-          "intersection": 1170341,
-          "false_positive": 203726,
-          "false_negative": 115213,
-          "iou": 0.7858434948431456
-        }
+        "1": 0.2907817715838075,
+        "3": 0.0028647176603049415,
+        "4": 0.220854293096065,
+        "23": 0.7151302387742592
       },
-      "expert_present_macro_iou": 0.3678622468317974
+      "scored_expert_pixels": 3210958
     },
     {
       "id": "case-068",
+      "case": "gcss_40",
       "dataset": "gcss",
-      "scoring_shape_yx": [
-        1806,
-        1806
-      ],
-      "scored_expert_pixels": 3180647,
-      "expert_present_class_ids": [
-        1,
-        3,
-        4,
-        5,
-        23
-      ],
+      "expert_present_macro_iou": 0.4394583275913281,
+      "expert_present_macro_dice": 0.5570107203313701,
       "per_present_class_iou": {
-        "1": {
-          "expert_pixels": 704317,
-          "intersection": 470776,
-          "false_positive": 48772,
-          "false_negative": 233541,
-          "iou": 0.6251266450578883
-        },
-        "3": {
-          "expert_pixels": 457420,
-          "intersection": 394150,
-          "false_positive": 944248,
-          "false_negative": 63270,
-          "iou": 0.2812006837567812
-        },
-        "4": {
-          "expert_pixels": 1602777,
-          "intersection": 167122,
-          "false_positive": 8316,
-          "false_negative": 1435655,
-          "iou": 0.10373206264318695
-        },
-        "5": {
-          "expert_pixels": 42112,
-          "intersection": 20745,
-          "false_positive": 13135,
-          "false_negative": 21367,
-          "iou": 0.37549550201820914
-        },
-        "23": {
-          "expert_pixels": 374021,
-          "intersection": 56860,
-          "false_positive": 3224,
-          "false_negative": 317161,
-          "iou": 0.15072433034235047
-        }
+        "1": 0.7020606757715075,
+        "3": 0.284835222262142,
+        "4": 0.47931255765930697,
+        "5": 0.7124245868671855,
+        "23": 0.018658595396498483
       },
-      "expert_present_macro_iou": 0.3072558447636832
+      "scored_expert_pixels": 3180647
     },
     {
       "id": "case-069",
+      "case": "peso_07",
       "dataset": "peso",
-      "scoring_shape_yx": [
-        1280,
-        1280
-      ],
-      "scored_expert_pixels": 836756,
-      "expert_present_class_ids": [
-        7
-      ],
+      "expert_present_macro_iou": 0.978960413788488,
+      "expert_present_macro_dice": 0.9893683642861586,
       "per_present_class_iou": {
-        "7": {
-          "expert_pixels": 836756,
-          "intersection": 168624,
-          "false_positive": 0,
-          "false_negative": 668132,
-          "iou": 0.20152111248679425
-        }
+        "7": 0.978960413788488
       },
-      "expert_present_macro_iou": 0.20152111248679425
+      "scored_expert_pixels": 836756
     },
     {
       "id": "case-070",
+      "case": "peso_08",
       "dataset": "peso",
-      "scoring_shape_yx": [
-        1280,
-        1280
-      ],
-      "scored_expert_pixels": 267655,
-      "expert_present_class_ids": [
-        7
-      ],
+      "expert_present_macro_iou": 0.9925015411630644,
+      "expert_present_macro_dice": 0.9962366609600921,
       "per_present_class_iou": {
-        "7": {
-          "expert_pixels": 267655,
-          "intersection": 28302,
-          "false_positive": 0,
-          "false_negative": 239353,
-          "iou": 0.10574059890530721
-        }
+        "7": 0.9925015411630644
       },
-      "expert_present_macro_iou": 0.10574059890530721
+      "scored_expert_pixels": 267655
     },
     {
       "id": "case-071",
+      "case": "peso_11",
       "dataset": "peso",
-      "scoring_shape_yx": [
-        1280,
-        1280
-      ],
-      "scored_expert_pixels": 723039,
-      "expert_present_class_ids": [
-        7
-      ],
+      "expert_present_macro_iou": 0.9908317531972688,
+      "expert_present_macro_dice": 0.9953947656360177,
       "per_present_class_iou": {
-        "7": {
-          "expert_pixels": 723039,
-          "intersection": 344459,
-          "false_positive": 0,
-          "false_negative": 378580,
-          "iou": 0.4764044539782778
-        }
+        "7": 0.9908317531972688
       },
-      "expert_present_macro_iou": 0.4764044539782778
+      "scored_expert_pixels": 723039
     },
     {
       "id": "case-072",
+      "case": "peso_12",
       "dataset": "peso",
-      "scoring_shape_yx": [
-        1280,
-        1280
-      ],
-      "scored_expert_pixels": 295254,
-      "expert_present_class_ids": [
-        7
-      ],
+      "expert_present_macro_iou": 0.905647340933569,
+      "expert_present_macro_dice": 0.9504878699013596,
       "per_present_class_iou": {
-        "7": {
-          "expert_pixels": 295254,
-          "intersection": 53969,
-          "false_positive": 0,
-          "false_negative": 241285,
-          "iou": 0.18278837881959262
-        }
+        "7": 0.905647340933569
       },
-      "expert_present_macro_iou": 0.18278837881959262
+      "scored_expert_pixels": 295254
     },
     {
       "id": "case-073",
+      "case": "peso_14",
       "dataset": "peso",
-      "scoring_shape_yx": [
-        1280,
-        1280
-      ],
-      "scored_expert_pixels": 626420,
-      "expert_present_class_ids": [
-        7
-      ],
+      "expert_present_macro_iou": 0.7655885827400147,
+      "expert_present_macro_dice": 0.8672332730560579,
       "per_present_class_iou": {
-        "7": {
-          "expert_pixels": 626420,
-          "intersection": 76898,
-          "false_positive": 0,
-          "false_negative": 549522,
-          "iou": 0.12275789406468504
-        }
+        "7": 0.7655885827400147
       },
-      "expert_present_macro_iou": 0.12275789406468504
+      "scored_expert_pixels": 626420
     },
     {
       "id": "case-074",
+      "case": "peso_16",
       "dataset": "peso",
-      "scoring_shape_yx": [
-        1280,
-        1280
-      ],
-      "scored_expert_pixels": 509763,
-      "expert_present_class_ids": [
-        7
-      ],
+      "expert_present_macro_iou": 0.9936794157284856,
+      "expert_present_macro_dice": 0.9968296887545459,
       "per_present_class_iou": {
-        "7": {
-          "expert_pixels": 509763,
-          "intersection": 46984,
-          "false_positive": 0,
-          "false_negative": 462779,
-          "iou": 0.09216832135717971
-        }
+        "7": 0.9936794157284856
       },
-      "expert_present_macro_iou": 0.09216832135717971
+      "scored_expert_pixels": 509763
     },
     {
       "id": "case-075",
+      "case": "peso_18",
       "dataset": "peso",
-      "scoring_shape_yx": [
-        1280,
-        1280
-      ],
-      "scored_expert_pixels": 230592,
-      "expert_present_class_ids": [
-        7
-      ],
+      "expert_present_macro_iou": 0.997679884818207,
+      "expert_present_macro_dice": 0.9988385951125477,
       "per_present_class_iou": {
-        "7": {
-          "expert_pixels": 230592,
-          "intersection": 55645,
-          "false_positive": 0,
-          "false_negative": 174947,
-          "iou": 0.24131366222592285
-        }
+        "7": 0.997679884818207
       },
-      "expert_present_macro_iou": 0.24131366222592285
+      "scored_expert_pixels": 230592
     },
     {
       "id": "case-076",
+      "case": "peso_20",
       "dataset": "peso",
-      "scoring_shape_yx": [
-        1280,
-        1280
-      ],
-      "scored_expert_pixels": 651809,
-      "expert_present_class_ids": [
-        7
-      ],
+      "expert_present_macro_iou": 0.9963455552163287,
+      "expert_present_macro_dice": 0.998169432754704,
       "per_present_class_iou": {
-        "7": {
-          "expert_pixels": 651809,
-          "intersection": 106169,
-          "false_positive": 0,
-          "false_negative": 545640,
-          "iou": 0.16288360547338254
-        }
+        "7": 0.9963455552163287
       },
-      "expert_present_macro_iou": 0.16288360547338254
+      "scored_expert_pixels": 651809
     },
     {
       "id": "case-077",
+      "case": "peso_21",
       "dataset": "peso",
-      "scoring_shape_yx": [
-        1280,
-        1280
-      ],
-      "scored_expert_pixels": 359268,
-      "expert_present_class_ids": [
-        7
-      ],
+      "expert_present_macro_iou": 0.984885934733959,
+      "expert_present_macro_dice": 0.9923854237658918,
       "per_present_class_iou": {
-        "7": {
-          "expert_pixels": 359268,
-          "intersection": 78706,
-          "false_positive": 0,
-          "false_negative": 280562,
-          "iou": 0.21907322667201087
-        }
+        "7": 0.984885934733959
       },
-      "expert_present_macro_iou": 0.21907322667201087
+      "scored_expert_pixels": 359268
     },
     {
       "id": "case-078",
+      "case": "peso_22",
       "dataset": "peso",
-      "scoring_shape_yx": [
-        1280,
-        1280
-      ],
-      "scored_expert_pixels": 825908,
-      "expert_present_class_ids": [
-        7
-      ],
+      "expert_present_macro_iou": 0.9859245823990082,
+      "expert_present_macro_dice": 0.9929124108106921,
       "per_present_class_iou": {
-        "7": {
-          "expert_pixels": 825908,
-          "intersection": 118346,
-          "false_positive": 0,
-          "false_negative": 707562,
-          "iou": 0.14329198893823525
-        }
+        "7": 0.9859245823990082
       },
-      "expert_present_macro_iou": 0.14329198893823525
+      "scored_expert_pixels": 825908
     },
     {
       "id": "case-079",
+      "case": "peso_23",
       "dataset": "peso",
-      "scoring_shape_yx": [
-        1280,
-        1280
-      ],
-      "scored_expert_pixels": 727418,
-      "expert_present_class_ids": [
-        7
-      ],
+      "expert_present_macro_iou": 0.9959720545820973,
+      "expert_present_macro_dice": 0.9979819630196445,
       "per_present_class_iou": {
-        "7": {
-          "expert_pixels": 727418,
-          "intersection": 301209,
-          "false_positive": 0,
-          "false_negative": 426209,
-          "iou": 0.41407966258739815
-        }
+        "7": 0.9959720545820973
       },
-      "expert_present_macro_iou": 0.41407966258739815
+      "scored_expert_pixels": 727418
     },
     {
       "id": "case-080",
+      "case": "peso_25",
       "dataset": "peso",
-      "scoring_shape_yx": [
-        1280,
-        1280
-      ],
-      "scored_expert_pixels": 629832,
-      "expert_present_class_ids": [
-        7
-      ],
+      "expert_present_macro_iou": 0.9937141968016868,
+      "expert_present_macro_dice": 0.9968471894274531,
       "per_present_class_iou": {
-        "7": {
-          "expert_pixels": 629832,
-          "intersection": 187425,
-          "false_positive": 0,
-          "false_negative": 442407,
-          "iou": 0.2975793544945319
-        }
+        "7": 0.9937141968016868
       },
-      "expert_present_macro_iou": 0.2975793544945319
+      "scored_expert_pixels": 629832
     },
     {
       "id": "case-081",
+      "case": "peso_26",
       "dataset": "peso",
-      "scoring_shape_yx": [
-        1280,
-        1280
-      ],
-      "scored_expert_pixels": 205525,
-      "expert_present_class_ids": [
-        7
-      ],
+      "expert_present_macro_iou": 0.9933730689697117,
+      "expert_present_macro_dice": 0.9966755189314795,
       "per_present_class_iou": {
-        "7": {
-          "expert_pixels": 205525,
-          "intersection": 33948,
-          "false_positive": 0,
-          "false_negative": 171577,
-          "iou": 0.16517698576815473
-        }
+        "7": 0.9933730689697117
       },
-      "expert_present_macro_iou": 0.16517698576815473
+      "scored_expert_pixels": 205525
     },
     {
       "id": "case-082",
+      "case": "peso_29",
       "dataset": "peso",
-      "scoring_shape_yx": [
-        1280,
-        1280
-      ],
-      "scored_expert_pixels": 353999,
-      "expert_present_class_ids": [
-        7
-      ],
+      "expert_present_macro_iou": 0.9968163751875005,
+      "expert_present_macro_dice": 0.9984056496871424,
       "per_present_class_iou": {
-        "7": {
-          "expert_pixels": 353999,
-          "intersection": 201859,
-          "false_positive": 0,
-          "false_negative": 152140,
-          "iou": 0.5702247746462561
-        }
+        "7": 0.9968163751875005
       },
-      "expert_present_macro_iou": 0.5702247746462561
+      "scored_expert_pixels": 353999
     },
     {
       "id": "case-083",
+      "case": "peso_34",
       "dataset": "peso",
-      "scoring_shape_yx": [
-        1280,
-        1280
-      ],
-      "scored_expert_pixels": 687473,
-      "expert_present_class_ids": [
-        7
-      ],
+      "expert_present_macro_iou": 0.9998821771909587,
+      "expert_present_macro_dice": 0.9999410851247214,
       "per_present_class_iou": {
-        "7": {
-          "expert_pixels": 687473,
-          "intersection": 242426,
-          "false_positive": 0,
-          "false_negative": 445047,
-          "iou": 0.3526334852423295
-        }
+        "7": 0.9998821771909587
       },
-      "expert_present_macro_iou": 0.3526334852423295
+      "scored_expert_pixels": 687473
     },
     {
       "id": "case-084",
+      "case": "peso_35",
       "dataset": "peso",
-      "scoring_shape_yx": [
-        1280,
-        1280
-      ],
-      "scored_expert_pixels": 308431,
-      "expert_present_class_ids": [
-        7
-      ],
+      "expert_present_macro_iou": 0.9973381404592924,
+      "expert_present_macro_dice": 0.9986672964948762,
       "per_present_class_iou": {
-        "7": {
-          "expert_pixels": 308431,
-          "intersection": 163746,
-          "false_positive": 0,
-          "false_negative": 144685,
-          "iou": 0.5308999419643291
-        }
+        "7": 0.9973381404592924
       },
-      "expert_present_macro_iou": 0.5308999419643291
+      "scored_expert_pixels": 308431
     },
     {
       "id": "case-085",
+      "case": "peso_36",
       "dataset": "peso",
-      "scoring_shape_yx": [
-        1280,
-        1280
-      ],
-      "scored_expert_pixels": 568850,
-      "expert_present_class_ids": [
-        7
-      ],
+      "expert_present_macro_iou": 0.9980152940142393,
+      "expert_present_macro_dice": 0.9990066612644525,
       "per_present_class_iou": {
-        "7": {
-          "expert_pixels": 568850,
-          "intersection": 398790,
-          "false_positive": 0,
-          "false_negative": 170060,
-          "iou": 0.7010459699393513
-        }
+        "7": 0.9980152940142393
       },
-      "expert_present_macro_iou": 0.7010459699393513
+      "scored_expert_pixels": 568850
     },
     {
       "id": "case-086",
+      "case": "peso_38",
       "dataset": "peso",
-      "scoring_shape_yx": [
-        1280,
-        1280
-      ],
-      "scored_expert_pixels": 172393,
-      "expert_present_class_ids": [
-        7
-      ],
+      "expert_present_macro_iou": 0.9918790206098855,
+      "expert_present_macro_dice": 0.9959229555077959,
       "per_present_class_iou": {
-        "7": {
-          "expert_pixels": 172393,
-          "intersection": 146629,
-          "false_positive": 0,
-          "false_negative": 25764,
-          "iou": 0.8505507764236367
-        }
+        "7": 0.9918790206098855
       },
-      "expert_present_macro_iou": 0.8505507764236367
+      "scored_expert_pixels": 172393
     },
     {
       "id": "case-087",
+      "case": "peso_39",
       "dataset": "peso",
-      "scoring_shape_yx": [
-        1280,
-        1280
-      ],
-      "scored_expert_pixels": 389622,
-      "expert_present_class_ids": [
-        7
-      ],
+      "expert_present_macro_iou": 0.9983009172993311,
+      "expert_present_macro_dice": 0.9991497363155069,
       "per_present_class_iou": {
-        "7": {
-          "expert_pixels": 389622,
-          "intersection": 137859,
-          "false_positive": 0,
-          "false_negative": 251763,
-          "iou": 0.353827555938833
-        }
+        "7": 0.9983009172993311
       },
-      "expert_present_macro_iou": 0.353827555938833
+      "scored_expert_pixels": 389622
     }
   ]
 }

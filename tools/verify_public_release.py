@@ -75,7 +75,8 @@ if receipt.get("public_media_archived_file_count"):
     assert len(archived["wsi_pages_rewritten"]) >= 14
     assert archived["raw_prefix"] in (site / "data.json").read_text()
     assert archived["raw_prefix"] in (site / "benchmark1-comparators/cases.json").read_text()
-    assert archived["raw_prefix"] in (site / "benchmark1-comparators/gallery.js").read_text()
+    # The current supervised BW maps are local Pages assets; older archived
+    # cluster assets still use the immutable pinned URLs in cases.json.
 else:
     assert len(list((site / "visium-hd").glob("*/group-*.webp"))) == 143
 if receipt.get("visium_pinned_raw_asset_count"):

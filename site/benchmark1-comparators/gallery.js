@@ -35,8 +35,8 @@ function show(id){
   caseSelect.value=row.id;history.replaceState(null,"","#"+row.id);
   position.textContent=`${visible.indexOf(row)+1} of ${visible.length}`;
   title.textContent=`${row.dataset.toUpperCase()} · ${row.source_group} · ${row.id}`;
-  image.src=row.image+"?v=shared-he-background-v1";image.alt=`Eight aligned H&E and model output panels, including a separate supervised Virchow2 mask, for ${row.dataset} ${row.source_group}`;
-  fullImage.href=row.image+"?v=shared-he-background-v1";
+  image.src=row.image+"?v=supervised-final-v1";image.alt=`Eight aligned H&E and model output panels, including a separate supervised Virchow2 mask, for ${row.dataset} ${row.source_group}`;
+  fullImage.href=row.image+"?v=supervised-final-v1";
   const roles=row.expert_present_roles.join(", ")||"No mapped expert role";
   const bg=row.he_background_support, outside=bg.expert_scored_pixels_outside_support_by_class;
   const labelled=Object.values(outside).reduce((a,b)=>a+b,0), counted=bg.tissue_pixels+bg.excluded_pixels;
@@ -44,7 +44,7 @@ function show(id){
   document.getElementById("background-audit").textContent=`Shared H&E tissue support excludes ${bg.excluded_pixels.toLocaleString()} of ${counted.toLocaleString()} pixels from method color overlays. The source expert annotation is shown unchanged; ${labelled.toLocaleString()} expert-scored pixels fall outside this image-derived support${fat?`, including ${fat.toLocaleString()} marked adipose${fatAll?` (${(100*fat/fatAll).toFixed(1)}% of its adipose pixels)`:``}`:``}. Existing scores use the original expert labels and unmasked method predictions.`;
   scores.innerHTML=card("Bora",row.bora_same_unet_roles,roles,"Same expert-present roles as U-Net")+
     card("Class-aware U-Net",row.unet_score,roles,"Same expert-present roles as Bora and DeepLabV3+")+
-    card("Supervised Virchow2 overlay",row.supervised_virchow2_display_macro_iou,roles,"Original unmasked prediction resized to the calibrated expert frame")+
+    card("Supervised Virchow2 · joint + PLS",row.supervised_virchow2_display_macro_iou,roles,"Original unmasked prediction resized to the calibrated expert frame")+
     card("DeepLabV3+",row.deeplab_score,roles,"Same expert-present roles as Bora and U-Net. Inference: "+row.deeplab_inference_seconds.toFixed(1)+" s")+
     card("VISTA-PATH",row.vista_score,row.vista_matched_roles.join(", ")||"No matched role","Bora on these roles: "+pct(row.bora_same_vista_roles))+
     card("MedSAM",row.medsam_score,row.medsam_reference_roles.join(", ")||"No eligible role",
@@ -91,11 +91,9 @@ function show(id){
     document.querySelector("#kodama-legend ul").replaceChildren();
     kodamaUnavailable.textContent=`KODAMA plot omitted: ${p.eligible_tiles} eligible tiles, below the 30-tile display threshold. ${p.grouping_route==="small_roi_coverage"?"This image used the small-image coverage route instead of KODAMA.":"The saved clustering remains included in the counts above."}`;
   }
-  const strategy=row.supervised_strategy_pls8;
-  if(!strategy)throw Error(`Training-selected PLS comparison missing for ${row.id}`);
-  document.getElementById("strategy-comparison-image").src=strategy.comparison_image;
-  document.getElementById("strategy-comparison-full").href=strategy.comparison_image;
-  document.getElementById("strategy-comparison-caption").textContent=`Same H&E and class colors: original ${pct(strategy.baseline_macro_iou)}, training-selected PLS ${pct(strategy.selected_macro_iou)}; ${strategy.nearest_imputed_scored_pixels} scored pixels needed missing-feature fill.`;
+  const caseNote=document.getElementById("supervised-case-note");
+  caseNote.hidden=row.id!=="case-050";
+  if(row.id==="case-050")caseNote.textContent="Case 050: the selected model improves tumor IoU from 30.7% to 81.2%, but muscle IoU is 0.05%; much expert muscle is still called inflamed stroma. The displayed result has not solved that class confusion.";
   showSelected(row);
   showResponses(row);
   showCombinedResponseMask(row);
@@ -109,7 +107,7 @@ function showResponses(row){
   const grid=document.getElementById("response-grid");
   const items=[];
   for(let cls=1;cls<=24;cls++){
-    const path=`https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/bw-responses-virchow2-supervised-v1/${row.id}/class-${String(cls).padStart(2,"0")}.webp`;
+    const path=`supervised-final-v1/bw/${row.id}/class-${String(cls).padStart(2,"0")}.webp`;
     const figure=document.createElement("figure");
     const link=document.createElement("a");link.href=path;
     const map=document.createElement("img");map.src=path;map.loading="lazy";map.style.maskImage=`url("${row.he_background_support.image}")`;map.style.maskSize="100% 100%";map.style.maskRepeat="no-repeat";
@@ -169,7 +167,7 @@ function filter(){
   caseSelect.replaceChildren(...visible.map(x=>new Option(`${x.dataset.toUpperCase()} · ${x.source_group} · ${x.id}`,x.id)));
   show(location.hash.slice(1));
 }
-fetch("cases.json?v=shared-he-background-v1").then(r=>{if(!r.ok)throw Error(`Gallery manifest: HTTP ${r.status}`);return r.json()}).then(data=>{
+fetch("cases.json?v=supervised-final-v1").then(r=>{if(!r.ok)throw Error(`Gallery manifest: HTTP ${r.status}`);return r.json()}).then(data=>{
   if(data.status!=="AUDITED_BENCHMARK1_FULL_VS_TRAINING_SELECTED_DEVELOPMENT_ONLY"||data.case_count!==87||data.cases.length!==87||data.cases.some(x=>!x.bora_training_selected_view))throw Error("Gallery audit is incomplete");
   document.getElementById("selected-summary").textContent=`Across 87 development images, training-selected Bora had ${data.training_selected_summary.one_group_cases} one-group outputs. Mean covered-pixel matched segmentation IoU: ${pct(data.training_selected_summary.mean_matched_segmentation_iou_covered)}; mean group-majority name agreement: ${pct(data.training_selected_summary.mean_group_name_accuracy)}; mean end-to-end tissue macro IoU: ${pct(data.training_selected_summary.mean_end_to_end_macro_iou)}. Compare these stage-specific values with classic Bora above; neither route was evaluated on an untouched test cohort.`;
   all=data.cases;

@@ -8,6 +8,14 @@ examples in Benchmark 3. The Benchmark 1 validation images were inspected
 during development and do not form an untouched confirmatory test.
 Tissue names on whole slides are provisional.
 
+The [Benchmark 1 development gallery](https://tkcaccia.github.io/Bora-Analysis/benchmark1-comparators/)
+now displays one training-selected supervised Virchow2 model for all 87
+retained images: a 444-channel joint classifier blended with the earlier
+classwise PLS head. Mean expert-present case macro IoU is 0.592. This is
+development evidence, and case 050 still has poor muscle recognition. The
+Benchmark 2 whole-slide pages retain the earlier frozen PLS-only model;
+those slide overlays were not rerun with the new Benchmark 1 blend.
+
 The [13 public Benchmark 2 whole-slide pages](https://tkcaccia.github.io/Bora-Analysis/visium-hd/)
 show the same H&E frame with KODAMA–Bora, supervised Virchow2–PLS Bora,
 U-Net, DeepLabV3+, MedSAM and VISTA-PATH at full overview and nine matched
