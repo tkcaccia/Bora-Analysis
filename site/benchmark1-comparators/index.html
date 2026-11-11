@@ -97,7 +97,7 @@
 <article><strong>Supervised Virchow2</strong>Class-specific feature selection and fitting used the 397 training images and expert masks. The resulting 24-class mask is shown over H&amp;E; it is separate from U-Net.</article>
 </div>
 <a href="#" id="full-image"><img alt="Eight aligned image panels" id="case-image"/></a>
-<p class="small">Select the figure to open it at full size. The class-colored panels, including the supervised Virchow2 overlay, share one tissue-class color key; the figure legend lists only the classes present in this case’s expert annotation. Model panels may predict additional classes. Uncolored regions in a model panel may be unmatched classes or absent predictions.</p>
+<p class="small">Select the figure to open it at full size. The class-colored panels, including the supervised Virchow2 overlay, share one tissue-class color key; the figure legend lists every mapped class found in the expert annotation or any displayed method output for this case. Some entries are predictions without an expert annotation for that class. Uncolored regions in a model panel may be unmatched classes or absent predictions.</p>
 <div class="meta" id="scores"></div>
 <p class="small">Scores are image-level mean intersection over union on the explicitly named expert-present or mapped roles. The supervised Virchow2 score uses the displayed mask resized with nearest-neighbor interpolation to the calibrated expert frame; it is a development score, not an untouched test. A missing score means the corresponding comparison was not defined for that image.</p>
 <p class="small">Download the <a href="per-case-87.csv">87-image score table</a> or <a href="supervised-virchow2-scores-87.json">supervised Virchow2 per-class scores</a>. The former 24-class aggregate table was withdrawn because it included removed cases.</p>
@@ -187,6 +187,6 @@
 </section>
 </main>
 <footer><a href="../attribution.html">Attribution and reuse terms</a></footer>
-<script defer="" src="gallery.js?v=kodama-group-inspection-v1"></script>
+<script defer="" src="gallery.js?v=all-method-legends-v1"></script>
 </body>
 </html>
