@@ -1,24 +1,24 @@
 {
-  "status": "87_CASE_TRAINING_SELECTED_JOINT_PLS_DEVELOPMENT_SCORES",
+  "status": "87_CASE_SUPERVISED_BORA_CONTOUR_DEVELOPMENT_SCORES",
   "case_count": 87,
-  "mean_case_macro_iou": 0.5917787425644266,
-  "mean_case_macro_dice": 0.6773972179711638,
-  "score_rule": "Mean IoU over expert-present harmonized classes at scored expert pixels. Display-resolution argmax resized by nearest-neighbor to calibrated expert frame. Raw predictions scored before H&E support display clipping.",
-  "source_receipt_sha256": "477c3cf6a86c899664a9a902fb2d9920cf1509a60d278b463afbb866fc8d56c4",
+  "mean_case_macro_iou": 0.5933463602991634,
+  "mean_case_macro_dice": 0.6771259186939347,
+  "score_rule": "Mean IoU over expert-present harmonized classes at scored expert pixels. The display-resolution mask receives Bora ROI 1.5 µm one-hot contour smoothing and 400 µm² component repair, then is nearest-neighbor aligned to the expert frame; raw prediction is scored before H&E support display clipping.",
+  "source_receipt_sha256": "3ef30bfc8c77092e10d7093f28762e23b76d325538215662166504d801b09bf6",
   "cases": [
     {
       "id": "case-001",
       "case": "bcss__datasets_bcss_pairs_TCGA-A2-A04P-DX1_xmin104246_ymin48517_MPP-0.2500.png__5173568b64",
       "dataset": "bcss",
-      "expert_present_macro_iou": 0.39238603553318857,
-      "expert_present_macro_dice": 0.5125319433914934,
+      "expert_present_macro_iou": 0.3973438038107698,
+      "expert_present_macro_dice": 0.5188693523363848,
       "per_present_class_iou": {
-        "1": 0.7178234726683043,
-        "3": 0.5860531998955796,
-        "5": 0.45019469389276,
+        "1": 0.7172385941249353,
+        "3": 0.5949871036793992,
+        "5": 0.4492888353947818,
         "6": 0.0,
-        "9": 0.14609963696268952,
-        "12": 0.4541452097797981
+        "9": 0.16631758922846762,
+        "12": 0.4562307004370349
       },
       "scored_expert_pixels": 2769620
     },
@@ -26,12 +26,12 @@
       "id": "case-002",
       "case": "bcss__datasets_bcss_pairs_TCGA-A2-A0D2-DX1_xmin96887_ymin22299_MPP-0.2500.png__7755708e58",
       "dataset": "bcss",
-      "expert_present_macro_iou": 0.6670902732531335,
-      "expert_present_macro_dice": 0.7923529639005277,
+      "expert_present_macro_iou": 0.6554029232987384,
+      "expert_present_macro_dice": 0.7822135836431596,
       "per_present_class_iou": {
-        "1": 0.7285654715876082,
-        "3": 0.48373072303697046,
-        "5": 0.7889746251348217
+        "1": 0.7151679839982014,
+        "3": 0.4576020680136991,
+        "5": 0.7934387178843146
       },
       "scored_expert_pixels": 2050030
     },
@@ -39,13 +39,13 @@
       "id": "case-003",
       "case": "bcss__datasets_bcss_pairs_TCGA-A2-A0ST-DX1_xmin109446_ymin18274_MPP-0.2500.png__2ea720c2e5",
       "dataset": "bcss",
-      "expert_present_macro_iou": 0.5623297192661892,
-      "expert_present_macro_dice": 0.6820358558410489,
+      "expert_present_macro_iou": 0.5618450764720235,
+      "expert_present_macro_dice": 0.6807272702158367,
       "per_present_class_iou": {
-        "1": 0.7707309139643418,
-        "3": 0.6597193661801025,
-        "9": 0.15024017670618606,
-        "12": 0.6686284202141267
+        "1": 0.7778039645498311,
+        "3": 0.6569907617992339,
+        "9": 0.14619805285940107,
+        "12": 0.6663875266796281
       },
       "scored_expert_pixels": 6242787
     },
@@ -53,11 +53,11 @@
       "id": "case-004",
       "case": "bcss__datasets_bcss_pairs_TCGA-AO-A0J2-DX1_xmin33561_ymin14515_MPP-0.2500.png__f774cd9ac0",
       "dataset": "bcss",
-      "expert_present_macro_iou": 0.8009996904067811,
-      "expert_present_macro_dice": 0.8887693399024483,
+      "expert_present_macro_iou": 0.8015733029420314,
+      "expert_present_macro_dice": 0.8891494148461638,
       "per_present_class_iou": {
-        "1": 0.8473591882724965,
-        "3": 0.7546401925410657
+        "1": 0.8471132254849735,
+        "3": 0.7560333803990894
       },
       "scored_expert_pixels": 2574805
     },
@@ -65,12 +65,12 @@
       "id": "case-005",
       "case": "bcss__datasets_bcss_pairs_TCGA-AR-A1AY-DX1_xmin62652_ymin27061_MPP-0.2500.png__48ae1efb56",
       "dataset": "bcss",
-      "expert_present_macro_iou": 0.7586016135380111,
-      "expert_present_macro_dice": 0.862383433326944,
+      "expert_present_macro_iou": 0.7571587821904004,
+      "expert_present_macro_dice": 0.8614699429225063,
       "per_present_class_iou": {
-        "1": 0.7987789788681523,
-        "3": 0.7236834220753651,
-        "5": 0.7533424396705162
+        "1": 0.7965358026944708,
+        "3": 0.723975890429771,
+        "5": 0.7509646534469595
       },
       "scored_expert_pixels": 1159596
     },
@@ -78,15 +78,15 @@
       "id": "case-006",
       "case": "bcss__datasets_bcss_pairs_TCGA-C8-A1HJ-DX1_xmin46412_ymin17174_MPP-0.2500.png__9856d0cb59",
       "dataset": "bcss",
-      "expert_present_macro_iou": 0.49295204682078037,
-      "expert_present_macro_dice": 0.5740050354814198,
+      "expert_present_macro_iou": 0.4917344711076248,
+      "expert_present_macro_dice": 0.571023521596853,
       "per_present_class_iou": {
-        "1": 0.9147977138798704,
-        "3": 0.31837764185889744,
-        "5": 0.8710983620187911,
-        "8": 0.007029015120555783,
-        "9": 0.12509978332763144,
-        "12": 0.721309764718936
+        "1": 0.9164162758915954,
+        "3": 0.3066329466104452,
+        "5": 0.8814166741241218,
+        "8": 0.0,
+        "9": 0.1287506777166757,
+        "12": 0.7171902523029104
       },
       "scored_expert_pixels": 3144222
     },
@@ -94,16 +94,16 @@
       "id": "case-007",
       "case": "bcss__datasets_bcss_pairs_TCGA-E2-A14X-DX1_xmin88836_ymin66393_MPP-0.2500.png__021d87e7e7",
       "dataset": "bcss",
-      "expert_present_macro_iou": 0.681219312458521,
-      "expert_present_macro_dice": 0.7687210298244903,
+      "expert_present_macro_iou": 0.6824830290494504,
+      "expert_present_macro_dice": 0.769637339726294,
       "per_present_class_iou": {
-        "1": 0.9488102924420813,
-        "3": 0.74846366683104,
-        "5": 0.9199015569885279,
-        "8": 0.47432214216694013,
-        "9": 0.10485936907383872,
-        "11": 0.8205395979841723,
-        "12": 0.7516385617230468
+        "1": 0.9491937983539427,
+        "3": 0.7662853605671106,
+        "5": 0.9230589405918636,
+        "8": 0.44620704617023094,
+        "9": 0.11427156597787588,
+        "11": 0.8199920541086481,
+        "12": 0.7583724375764809
       },
       "scored_expert_pixels": 4841925
     },
@@ -111,16 +111,16 @@
       "id": "case-008",
       "case": "bcss__datasets_bcss_pairs_TCGA-E2-A1B6-DX1_xmin16266_ymin50634_MPP-0.2500.png__f74c2ce8d2",
       "dataset": "bcss",
-      "expert_present_macro_iou": 0.5547411012990703,
-      "expert_present_macro_dice": 0.6827702604545387,
+      "expert_present_macro_iou": 0.6076665091159816,
+      "expert_present_macro_dice": 0.724981320146137,
       "per_present_class_iou": {
-        "1": 0.8864408453314994,
-        "3": 0.5762485187279384,
-        "5": 0.7868642689318633,
+        "1": 0.8871216369329891,
+        "3": 0.5780879572337632,
+        "5": 0.7827105506709856,
         "6": 0.3612158341187559,
-        "9": 0.15659398975043212,
-        "11": 0.4810367829235754,
-        "12": 0.6347874693094276
+        "9": 0.18366113027705658,
+        "11": 0.8152454780361758,
+        "12": 0.6456229765421457
       },
       "scored_expert_pixels": 3136072
     },
@@ -128,18 +128,18 @@
       "id": "case-009",
       "case": "bcss__datasets_bcss_pairs_TCGA-E2-A1LI-DX1_xmin44715_ymin18434_MPP-0.2500.png__00f7ef02a6",
       "dataset": "bcss",
-      "expert_present_macro_iou": 0.34126386182953794,
-      "expert_present_macro_dice": 0.4430092716739808,
+      "expert_present_macro_iou": 0.34195503275418015,
+      "expert_present_macro_dice": 0.4437980439540856,
       "per_present_class_iou": {
-        "1": 0.7648707153473082,
-        "3": 0.6024672446744282,
-        "5": 0.7809341105290342,
-        "9": 0.22155106665795035,
+        "1": 0.7665995226335177,
+        "3": 0.6034132903764431,
+        "5": 0.7811785205783633,
+        "9": 0.24289504811227264,
         "10": 0.0,
-        "11": 0.30542216773187725,
-        "12": 0.18261147702571268,
+        "11": 0.29268978943125906,
+        "12": 0.17407097139928815,
         "13": 0.0,
-        "14": 0.21351797449953058
+        "14": 0.21674815225647764
       },
       "scored_expert_pixels": 6033928
     },
@@ -147,16 +147,16 @@
       "id": "case-010",
       "case": "bcss__datasets_bcss_pairs_TCGA-EW-A1P1-DX1_xmin50567_ymin38988_MPP-0.2500.png__ca57475c8e",
       "dataset": "bcss",
-      "expert_present_macro_iou": 0.4671337912749514,
-      "expert_present_macro_dice": 0.5836880201834788,
+      "expert_present_macro_iou": 0.4792227715369998,
+      "expert_present_macro_dice": 0.6006883533748428,
       "per_present_class_iou": {
-        "1": 0.5722282260517307,
-        "3": 0.780964736860287,
-        "5": 0.8962073707717736,
-        "6": 0.13846558066211245,
-        "8": 0.41914150328472766,
-        "9": 0.07959802690033396,
-        "12": 0.38333109439369517
+        "1": 0.5686100096625851,
+        "3": 0.7810324845900954,
+        "5": 0.8993277119416591,
+        "6": 0.22172063547182916,
+        "8": 0.4356335087818286,
+        "9": 0.07925725625313475,
+        "12": 0.3689777940578668
       },
       "scored_expert_pixels": 4056394
     },
@@ -164,14 +164,14 @@
       "id": "case-011",
       "case": "bcss__datasets_bcss_pairs_TCGA-EW-A1P8-DX1_xmin15520_ymin26381_MPP-0.2500.png__34f59148d1",
       "dataset": "bcss",
-      "expert_present_macro_iou": 0.5964374783348858,
-      "expert_present_macro_dice": 0.7251219638612025,
+      "expert_present_macro_iou": 0.5930587479431939,
+      "expert_present_macro_dice": 0.7210099623899235,
       "per_present_class_iou": {
-        "1": 0.8614254881515686,
-        "3": 0.5244883162494928,
-        "5": 0.814218082536144,
-        "11": 0.4731366858906072,
-        "12": 0.3089188188466167
+        "1": 0.8628999424095587,
+        "3": 0.520021112205161,
+        "5": 0.8115371902777614,
+        "11": 0.4827914508257555,
+        "12": 0.28804404399773303
       },
       "scored_expert_pixels": 1775473
     },
@@ -179,17 +179,17 @@
       "id": "case-012",
       "case": "bcss__datasets_bcss_pairs_TCGA-EW-A6SB-DX1_xmin34625_ymin56578_MPP-0.2500.png__3ecad800be",
       "dataset": "bcss",
-      "expert_present_macro_iou": 0.3841338592686073,
-      "expert_present_macro_dice": 0.5168736515021494,
+      "expert_present_macro_iou": 0.44913228529182603,
+      "expert_present_macro_dice": 0.5857997764647039,
       "per_present_class_iou": {
-        "1": 0.7853007756276317,
-        "3": 0.4796742836061712,
-        "6": 0.4876457523598001,
-        "8": 0.2943951688997924,
-        "9": 0.22894124785114775,
+        "1": 0.7772980079988118,
+        "3": 0.48279521936759784,
+        "6": 0.48690228690228693,
+        "8": 0.5862457722660653,
+        "9": 0.35401997707548716,
         "10": 0.0,
-        "11": 0.2940331844288449,
-        "14": 0.5030804613754708
+        "11": 0.4020459370777842,
+        "14": 0.5037510816465751
       },
       "scored_expert_pixels": 3436939
     },
@@ -197,14 +197,14 @@
       "id": "case-013",
       "case": "bcss__datasets_bcss_pairs_TCGA-GM-A2DH-DX1_xmin50963_ymin56303_MPP-0.2500.png__09b319b6c5",
       "dataset": "bcss",
-      "expert_present_macro_iou": 0.41220451690812443,
-      "expert_present_macro_dice": 0.5403072339210778,
+      "expert_present_macro_iou": 0.41623942873966746,
+      "expert_present_macro_dice": 0.5448229695770878,
       "per_present_class_iou": {
-        "1": 0.8113227615343924,
-        "3": 0.48946663441368776,
-        "5": 0.07256503730537078,
-        "9": 0.2649611281865847,
-        "12": 0.4227070231005864
+        "1": 0.8091934937142913,
+        "3": 0.4924180224560494,
+        "5": 0.06621268064796465,
+        "9": 0.2947645702996378,
+        "12": 0.4186083765803942
       },
       "scored_expert_pixels": 2070557
     },
@@ -212,13 +212,13 @@
       "id": "case-014",
       "case": "bcss__datasets_bcss_pairs_TCGA-LL-A740-DX1_xmin39436_ymin24080_MPP-0.2500.png__98186249a0",
       "dataset": "bcss",
-      "expert_present_macro_iou": 0.6488630930075419,
-      "expert_present_macro_dice": 0.7604021857181644,
+      "expert_present_macro_iou": 0.6574874961368542,
+      "expert_present_macro_dice": 0.7707811646485769,
       "per_present_class_iou": {
-        "1": 0.8219788768213505,
-        "3": 0.7114555205908258,
-        "9": 0.2680246821797636,
-        "12": 0.7939932924382274
+        "1": 0.8219390515416624,
+        "3": 0.7164046321938019,
+        "9": 0.3015415949713804,
+        "12": 0.7900647058405722
       },
       "scored_expert_pixels": 1931634
     },
@@ -226,14 +226,14 @@
       "id": "case-015",
       "case": "bcss__datasets_bcss_pairs_TCGA-OL-A5D7-DX1_xmin114443_ymin22490_MPP-0.2500.png__5021a319f0",
       "dataset": "bcss",
-      "expert_present_macro_iou": 0.6141161809639698,
-      "expert_present_macro_dice": 0.7415852968442762,
+      "expert_present_macro_iou": 0.6368255763743751,
+      "expert_present_macro_dice": 0.7611832182710019,
       "per_present_class_iou": {
-        "1": 0.8941506065316811,
-        "3": 0.39925850572063115,
-        "5": 0.8263675187478289,
-        "11": 0.4522508741258741,
-        "12": 0.49855339969383344
+        "1": 0.8940990267071334,
+        "3": 0.4042376606995386,
+        "5": 0.8413852525309999,
+        "11": 0.5204979879275654,
+        "12": 0.5239079540066383
       },
       "scored_expert_pixels": 3840109
     },
@@ -241,14 +241,14 @@
       "id": "case-016",
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-A2-A0T2-01Z-00__d7b4fd9877",
       "dataset": "tiger",
-      "expert_present_macro_iou": 0.5271282417789863,
-      "expert_present_macro_dice": 0.67110991841834,
+      "expert_present_macro_iou": 0.5264464675047312,
+      "expert_present_macro_dice": 0.669968591726722,
       "per_present_class_iou": {
-        "1": 0.5527252810626072,
-        "3": 0.524813453772696,
-        "4": 0.5593137383890745,
-        "5": 0.776581420319615,
-        "6": 0.22220731535093913
+        "1": 0.5509825982482576,
+        "3": 0.5239776577693024,
+        "4": 0.5623937710803183,
+        "5": 0.7777221007213561,
+        "6": 0.21715620970442193
       },
       "scored_expert_pixels": 5827198
     },
@@ -256,12 +256,12 @@
       "id": "case-017",
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-A7-A6VY-01Z-00__0656173d22",
       "dataset": "tiger",
-      "expert_present_macro_iou": 0.6271969208435023,
-      "expert_present_macro_dice": 0.765162266923208,
+      "expert_present_macro_iou": 0.6280268972125841,
+      "expert_present_macro_dice": 0.7655500403603236,
       "per_present_class_iou": {
-        "1": 0.6503612986182575,
-        "3": 0.4829016196191551,
-        "5": 0.7483278442930944
+        "1": 0.6500622308193853,
+        "3": 0.4812063031413401,
+        "5": 0.7528121576770269
       },
       "scored_expert_pixels": 2399782
     },
@@ -269,12 +269,12 @@
       "id": "case-018",
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-AC-A2BK-01Z-00__149af3c8c3",
       "dataset": "tiger",
-      "expert_present_macro_iou": 0.4737253214223167,
-      "expert_present_macro_dice": 0.5714963349195212,
+      "expert_present_macro_iou": 0.47338452184761415,
+      "expert_present_macro_dice": 0.5710594616049736,
       "per_present_class_iou": {
-        "1": 0.8350487724141135,
-        "3": 0.6225605727933665,
-        "4": 0.4372919404817867,
+        "1": 0.8361186719185726,
+        "3": 0.6226690495906751,
+        "4": 0.4347503658812089,
         "5": 0.0
       },
       "scored_expert_pixels": 2985068
@@ -283,13 +283,13 @@
       "id": "case-019",
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-AR-A256-01Z-00__03dbfca59b",
       "dataset": "tiger",
-      "expert_present_macro_iou": 0.5221614818885205,
-      "expert_present_macro_dice": 0.6161777597700651,
+      "expert_present_macro_iou": 0.5170900798518774,
+      "expert_present_macro_dice": 0.6119926656871804,
       "per_present_class_iou": {
-        "1": 0.6859454616958355,
-        "3": 0.6705490227199522,
-        "4": 0.7300181767309663,
-        "5": 0.0021332664073283976
+        "1": 0.6838401191981882,
+        "3": 0.6660933823350339,
+        "4": 0.7184268178742872,
+        "5": 0.0
       },
       "scored_expert_pixels": 1778004
     },
@@ -297,13 +297,13 @@
       "id": "case-020",
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-BH-A18V-01Z-00__3d16a9c1ef",
       "dataset": "tiger",
-      "expert_present_macro_iou": 0.6062855084236197,
-      "expert_present_macro_dice": 0.7463620597293961,
+      "expert_present_macro_iou": 0.6084386728163428,
+      "expert_present_macro_dice": 0.7476588667427638,
       "per_present_class_iou": {
-        "1": 0.7541493169771896,
-        "3": 0.5605939630883878,
-        "4": 0.41584865543306204,
-        "5": 0.6945500981958396
+        "1": 0.7615424642409439,
+        "3": 0.5620685940811238,
+        "4": 0.41377125973576684,
+        "5": 0.6963723732075368
       },
       "scored_expert_pixels": 6011058
     },
@@ -311,12 +311,12 @@
       "id": "case-021",
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-D8-A1JF-01Z-00__09f3898246",
       "dataset": "tiger",
-      "expert_present_macro_iou": 0.586808292420956,
-      "expert_present_macro_dice": 0.727306324066541,
+      "expert_present_macro_iou": 0.5910239772953517,
+      "expert_present_macro_dice": 0.7307221743820326,
       "per_present_class_iou": {
-        "1": 0.7625411754528006,
-        "3": 0.6102875785903376,
-        "4": 0.3875961232197297
+        "1": 0.7664446386648075,
+        "3": 0.6152224363357577,
+        "4": 0.39140485688549
       },
       "scored_expert_pixels": 3794467
     },
@@ -324,12 +324,12 @@
       "id": "case-022",
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-E2-A14R-01Z-00__4f3418f4c7",
       "dataset": "tiger",
-      "expert_present_macro_iou": 0.5324828917873564,
-      "expert_present_macro_dice": 0.676577018457806,
+      "expert_present_macro_iou": 0.5362332909051065,
+      "expert_present_macro_dice": 0.679321901110178,
       "per_present_class_iou": {
-        "1": 0.78542987523986,
-        "3": 0.3461880778614284,
-        "4": 0.4658307222607809
+        "1": 0.7906615466983826,
+        "3": 0.3428504221008338,
+        "4": 0.47518790391610316
       },
       "scored_expert_pixels": 1756698
     },
@@ -337,13 +337,13 @@
       "id": "case-023",
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-E2-A1LL-01Z-00__d855cae94d",
       "dataset": "tiger",
-      "expert_present_macro_iou": 0.3780644266581906,
-      "expert_present_macro_dice": 0.491965091777344,
+      "expert_present_macro_iou": 0.360024295596612,
+      "expert_present_macro_dice": 0.4648994768599911,
       "per_present_class_iou": {
-        "1": 0.45059204365406197,
-        "3": 0.7624931097463779,
-        "4": 0.2708057910546722,
-        "5": 0.02836676217765043
+        "1": 0.4458518928432111,
+        "3": 0.7605201860298396,
+        "4": 0.2337251035133972,
+        "5": 0.0
       },
       "scored_expert_pixels": 3859058
     },
@@ -351,13 +351,13 @@
       "id": "case-024",
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-EW-A1OV-01Z-00__6ba90538ff",
       "dataset": "tiger",
-      "expert_present_macro_iou": 0.5655787749574768,
-      "expert_present_macro_dice": 0.659056221769095,
+      "expert_present_macro_iou": 0.5679957746843832,
+      "expert_present_macro_dice": 0.6619685560114941,
       "per_present_class_iou": {
-        "1": 0.04517549605705604,
-        "2": 0.7293685884732781,
-        "3": 0.7428215812027695,
-        "4": 0.7449494340968035
+        "1": 0.04971226926009806,
+        "2": 0.7302175900119487,
+        "3": 0.7476466877272326,
+        "4": 0.7444065517382533
       },
       "scored_expert_pixels": 10430626
     },
@@ -365,13 +365,13 @@
       "id": "case-025",
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-EW-A1P7-01Z-00__8d9dc10178",
       "dataset": "tiger",
-      "expert_present_macro_iou": 0.4895540842822106,
-      "expert_present_macro_dice": 0.6118274753679502,
+      "expert_present_macro_iou": 0.49069916785651135,
+      "expert_present_macro_dice": 0.6123827653355208,
       "per_present_class_iou": {
-        "1": 0.1390384455659838,
-        "2": 0.33031504076532514,
-        "3": 0.7677295168431613,
-        "4": 0.7211333339543723
+        "1": 0.13896758540207677,
+        "2": 0.32884317017704195,
+        "3": 0.7714620853332604,
+        "4": 0.7235238305136663
       },
       "scored_expert_pixels": 4194833
     },
@@ -379,13 +379,13 @@
       "id": "case-026",
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-GM-A2DD-01Z-00__86ce540475",
       "dataset": "tiger",
-      "expert_present_macro_iou": 0.7041820844989095,
-      "expert_present_macro_dice": 0.8134873761429657,
+      "expert_present_macro_iou": 0.7073070866931417,
+      "expert_present_macro_dice": 0.8162431861099613,
       "per_present_class_iou": {
-        "1": 0.7310130608854449,
-        "3": 0.9016960701917591,
-        "4": 0.3924119690531141,
-        "5": 0.7183590268085757,
+        "1": 0.7338948490896384,
+        "3": 0.9044660455018291,
+        "4": 0.4027220480955544,
+        "5": 0.7180221952230326,
         "6": 0.7774302955556535
       },
       "scored_expert_pixels": 8963223
@@ -394,12 +394,12 @@
       "id": "case-027",
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-LL-A5YO-01Z-00__ae2a5dae53",
       "dataset": "tiger",
-      "expert_present_macro_iou": 0.4916632164946922,
-      "expert_present_macro_dice": 0.6352277473455222,
+      "expert_present_macro_iou": 0.4891494364097077,
+      "expert_present_macro_dice": 0.6328173298832064,
       "per_present_class_iou": {
-        "1": 0.640140202055904,
-        "3": 0.22517199104547717,
-        "4": 0.6096774563826953
+        "1": 0.6355997584211655,
+        "3": 0.22245710936705904,
+        "4": 0.6093914414408985
       },
       "scored_expert_pixels": 2320259
     },
@@ -407,12 +407,12 @@
       "id": "case-028",
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-LL-A73Y-01Z-00__6c12d25eb7",
       "dataset": "tiger",
-      "expert_present_macro_iou": 0.5596663150014438,
-      "expert_present_macro_dice": 0.7054371049129778,
+      "expert_present_macro_iou": 0.5553997344596235,
+      "expert_present_macro_dice": 0.7014748394802309,
       "per_present_class_iou": {
-        "1": 0.6268447567552788,
-        "3": 0.3553624490970646,
-        "4": 0.696791739151988
+        "1": 0.6198508941631671,
+        "3": 0.34898588168280575,
+        "4": 0.6973624275328978
       },
       "scored_expert_pixels": 1243496
     },
@@ -420,12 +420,12 @@
       "id": "case-029",
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-OL-A5RW-01Z-00__815369d21b",
       "dataset": "tiger",
-      "expert_present_macro_iou": 0.8018968652573761,
-      "expert_present_macro_dice": 0.8891749053145328,
+      "expert_present_macro_iou": 0.8018328738234398,
+      "expert_present_macro_dice": 0.8890893061886151,
       "per_present_class_iou": {
-        "1": 0.7724397113782759,
-        "3": 0.7592021650796336,
-        "5": 0.874048719314219
+        "1": 0.7701948366329509,
+        "3": 0.7592841249136807,
+        "5": 0.8760196599236879
       },
       "scored_expert_pixels": 1233633
     },
@@ -433,12 +433,12 @@
       "id": "case-030",
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-OL-A66I-01Z-00__89da35afd9",
       "dataset": "tiger",
-      "expert_present_macro_iou": 0.6719159053072422,
-      "expert_present_macro_dice": 0.8021030732532076,
+      "expert_present_macro_iou": 0.6747462549729021,
+      "expert_present_macro_dice": 0.8038089471891262,
       "per_present_class_iou": {
-        "1": 0.7535327247219568,
-        "3": 0.6608299092612382,
-        "4": 0.6013850819385316
+        "1": 0.7642360142442194,
+        "3": 0.6621054693557734,
+        "4": 0.5978972813187133
       },
       "scored_expert_pixels": 899520
     },
@@ -446,12 +446,12 @@
       "id": "case-031",
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-OL-A66P-01Z-00__ddf9af6204",
       "dataset": "tiger",
-      "expert_present_macro_iou": 0.6392929239981874,
-      "expert_present_macro_dice": 0.7741625719028634,
+      "expert_present_macro_iou": 0.6430717938695295,
+      "expert_present_macro_dice": 0.7772107301953008,
       "per_present_class_iou": {
-        "1": 0.7915836538016031,
-        "3": 0.6093961894894376,
-        "4": 0.5168989287035215
+        "1": 0.7940829393855127,
+        "3": 0.6099387613986698,
+        "4": 0.5251936808244062
       },
       "scored_expert_pixels": 2817375
     },
@@ -459,12 +459,12 @@
       "id": "case-032",
       "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-S3-AA15-01Z-00__2cbda3ad25",
       "dataset": "tiger",
-      "expert_present_macro_iou": 0.6813353621084586,
-      "expert_present_macro_dice": 0.8054393368373983,
+      "expert_present_macro_iou": 0.6798244060682755,
+      "expert_present_macro_dice": 0.8044261487726163,
       "per_present_class_iou": {
-        "1": 0.7828740167841934,
-        "3": 0.7278412258945223,
-        "4": 0.5332908436466599
+        "1": 0.7799461065383856,
+        "3": 0.72689179611009,
+        "4": 0.5326353155563515
       },
       "scored_expert_pixels": 1386099
     },
@@ -472,11 +472,11 @@
       "id": "case-033",
       "case": "ignite__datasets_ignite_images_he_patient28_he_roi5.png__36ad26983d",
       "dataset": "ignite",
-      "expert_present_macro_iou": 0.45680778438255887,
-      "expert_present_macro_dice": 0.5408332694500909,
+      "expert_present_macro_iou": 0.467333090619736,
+      "expert_present_macro_dice": 0.548302554803031,
       "per_present_class_iou": {
-        "3": 0.6168605977640885,
-        "8": 0.7535627553835881,
+        "3": 0.6351082070531535,
+        "8": 0.7668910648060544,
         "19": 0.0
       },
       "scored_expert_pixels": 1027152
@@ -485,15 +485,15 @@
       "id": "case-034",
       "case": "ignite__datasets_ignite_images_he_patient32_he_roi2.png__a1ccdac136",
       "dataset": "ignite",
-      "expert_present_macro_iou": 0.18922230295495876,
-      "expert_present_macro_dice": 0.24641491552152392,
+      "expert_present_macro_iou": 0.18435399080868495,
+      "expert_present_macro_dice": 0.23740406421432925,
       "per_present_class_iou": {
-        "1": 0.547311339581871,
-        "3": 0.5615999248530819,
+        "1": 0.5489132240732698,
+        "3": 0.5572107207788399,
         "5": 0.0,
-        "8": 0.0034811980836176887,
+        "8": 0.0,
         "19": 0.0,
-        "21": 0.022941355211182013
+        "21": 0.0
       },
       "scored_expert_pixels": 1130255
     },
@@ -501,11 +501,11 @@
       "id": "case-035",
       "case": "ignite__datasets_ignite_images_he_patient36_he_roi1.png__bdbef84bcb",
       "dataset": "ignite",
-      "expert_present_macro_iou": 0.4571173863150233,
-      "expert_present_macro_dice": 0.5378077069310626,
+      "expert_present_macro_iou": 0.4674294143843201,
+      "expert_present_macro_dice": 0.5461144175884804,
       "per_present_class_iou": {
-        "1": 0.5582315156484898,
-        "3": 0.8131206432965801,
+        "1": 0.5888102996105857,
+        "3": 0.8134779435423746,
         "8": 0.0
       },
       "scored_expert_pixels": 921835
@@ -514,12 +514,12 @@
       "id": "case-036",
       "case": "ignite__datasets_ignite_images_he_patient37_he_roi3.png__95aec1e547",
       "dataset": "ignite",
-      "expert_present_macro_iou": 0.5413393958137365,
-      "expert_present_macro_dice": 0.6278222184988256,
+      "expert_present_macro_iou": 0.548429111065909,
+      "expert_present_macro_dice": 0.6328139254642284,
       "per_present_class_iou": {
-        "1": 0.7385786612781758,
-        "3": 0.7823898892077795,
-        "5": 0.6443890327689904,
+        "1": 0.744123852924652,
+        "3": 0.7859842109481446,
+        "5": 0.6636083803908392,
         "8": 0.0
       },
       "scored_expert_pixels": 948498
@@ -528,15 +528,15 @@
       "id": "case-037",
       "case": "ignite__datasets_ignite_images_he_patient3_he_roi6.png__d5935ced63",
       "dataset": "ignite",
-      "expert_present_macro_iou": 0.3627411740173668,
-      "expert_present_macro_dice": 0.42486615252513754,
+      "expert_present_macro_iou": 0.3660135099237269,
+      "expert_present_macro_dice": 0.42498275974742766,
       "per_present_class_iou": {
-        "1": 0.7672383533713644,
-        "3": 0.830889193349233,
-        "5": 0.024495058014611087,
-        "7": 0.0007552394738498332,
-        "8": 0.010231781165170182,
-        "21": 0.5428374187299723
+        "1": 0.7761608924637345,
+        "3": 0.8318962519157754,
+        "5": 0.02359969243508606,
+        "7": 0.0,
+        "8": 0.0,
+        "21": 0.5644242227277652
       },
       "scored_expert_pixels": 779051
     },
@@ -544,11 +544,11 @@
       "id": "case-038",
       "case": "ignite__datasets_ignite_images_he_patient40_he_roi1.png__0776ea30ca",
       "dataset": "ignite",
-      "expert_present_macro_iou": 0.6247899155980798,
-      "expert_present_macro_dice": 0.6447555289070417,
+      "expert_present_macro_iou": 0.6284871440623424,
+      "expert_present_macro_dice": 0.6467733281057577,
       "per_present_class_iou": {
-        "1": 0.9772006622573962,
-        "3": 0.8971690845368432,
+        "1": 0.9791166078963701,
+        "3": 0.9063448242906573,
         "7": 0.0
       },
       "scored_expert_pixels": 1025320
@@ -557,14 +557,14 @@
       "id": "case-039",
       "case": "ignite__datasets_ignite_images_he_patient43_he_roi2.png__8c6c983b53",
       "dataset": "ignite",
-      "expert_present_macro_iou": 0.4790814919163461,
-      "expert_present_macro_dice": 0.5800717321030886,
+      "expert_present_macro_iou": 0.4498579782601736,
+      "expert_present_macro_dice": 0.5312062854997744,
       "per_present_class_iou": {
-        "1": 0.8877385801273268,
-        "3": 0.7460518275964717,
-        "5": 0.1846011743748763,
-        "8": 0.058655221745350504,
-        "22": 0.518360655737705
+        "1": 0.8871579766366062,
+        "3": 0.743985985547596,
+        "5": 0.09772432173853618,
+        "8": 0.0,
+        "22": 0.5204216073781291
       },
       "scored_expert_pixels": 844626
     },
@@ -572,11 +572,11 @@
       "id": "case-040",
       "case": "ignite__datasets_ignite_images_he_patient46_he_roi2.png__5ddcc3d805",
       "dataset": "ignite",
-      "expert_present_macro_iou": 0.40254174334143566,
-      "expert_present_macro_dice": 0.5694129346832426,
+      "expert_present_macro_iou": 0.40237622074468715,
+      "expert_present_macro_dice": 0.5692321908756777,
       "per_present_class_iou": {
-        "1": 0.48211229088944785,
-        "3": 0.32297119579342354
+        "1": 0.4820397035736592,
+        "3": 0.32271273791571514
       },
       "scored_expert_pixels": 1474324
     },
@@ -584,12 +584,12 @@
       "id": "case-041",
       "case": "ignite__datasets_ignite_images_he_patient4_he_roi1.png__7a50d32e01",
       "dataset": "ignite",
-      "expert_present_macro_iou": 0.6132560205432883,
-      "expert_present_macro_dice": 0.7097952978589892,
+      "expert_present_macro_iou": 0.5478270118063655,
+      "expert_present_macro_dice": 0.6002966023320696,
       "per_present_class_iou": {
-        "1": 0.892893966308676,
-        "3": 0.7502074286545223,
-        "8": 0.19666666666666666
+        "1": 0.8934539595553764,
+        "3": 0.7500270758637201,
+        "8": 0.0
       },
       "scored_expert_pixels": 1186080
     },
@@ -597,11 +597,11 @@
       "id": "case-042",
       "case": "ignite__datasets_ignite_images_he_patient57_he_roi2.png__b06b2b924e",
       "dataset": "ignite",
-      "expert_present_macro_iou": 0.6986068201974773,
-      "expert_present_macro_dice": 0.8174755877500882,
+      "expert_present_macro_iou": 0.696468497839356,
+      "expert_present_macro_dice": 0.815754263994994,
       "per_present_class_iou": {
-        "1": 0.8100361579868232,
-        "3": 0.5871774824081314
+        "1": 0.8102391162653362,
+        "3": 0.5826978794133759
       },
       "scored_expert_pixels": 1400353
     },
@@ -609,14 +609,14 @@
       "id": "case-043",
       "case": "ignite__datasets_ignite_images_he_patient60_he_roi2.png__511072a782",
       "dataset": "ignite",
-      "expert_present_macro_iou": 0.5400372464000662,
-      "expert_present_macro_dice": 0.6347736822506892,
+      "expert_present_macro_iou": 0.5339400112932516,
+      "expert_present_macro_dice": 0.6296004709256483,
       "per_present_class_iou": {
-        "1": 0.9408314108407204,
-        "3": 0.5095223285860148,
-        "5": 0.8878145350874239,
-        "8": 0.5737353349312476,
-        "19": 0.3283198689549905,
+        "1": 0.9427970959558241,
+        "3": 0.5140344592568747,
+        "5": 0.8928857528977224,
+        "8": 0.5210209145693017,
+        "19": 0.3329018450797872,
         "22": 0.0
       },
       "scored_expert_pixels": 5356906
@@ -625,14 +625,14 @@
       "id": "case-044",
       "case": "ignite__datasets_ignite_images_he_patient64_he_roi3.png__aabad9c28e",
       "dataset": "ignite",
-      "expert_present_macro_iou": 0.5493848485147511,
-      "expert_present_macro_dice": 0.6976702646222905,
+      "expert_present_macro_iou": 0.5391008169785625,
+      "expert_present_macro_dice": 0.6891858807766016,
       "per_present_class_iou": {
-        "3": 0.7165549925341771,
-        "7": 0.5208844027877914,
-        "8": 0.4041384097054528,
-        "16": 0.3835370962236634,
-        "21": 0.721809341322671
+        "3": 0.722583477916132,
+        "7": 0.5093077264685969,
+        "8": 0.38827622528288036,
+        "16": 0.3848893483303247,
+        "21": 0.6904473068948784
       },
       "scored_expert_pixels": 1612961
     },
@@ -640,13 +640,13 @@
       "id": "case-045",
       "case": "ignite__datasets_ignite_images_he_patient73_he_roi3.png__c17190d498",
       "dataset": "ignite",
-      "expert_present_macro_iou": 0.5661626719039732,
-      "expert_present_macro_dice": 0.7020581404882575,
+      "expert_present_macro_iou": 0.5666959046293669,
+      "expert_present_macro_dice": 0.7014334500087158,
       "per_present_class_iou": {
-        "1": 0.6713788911193418,
-        "3": 0.6111029186670749,
-        "8": 0.25140122173940427,
-        "21": 0.7307676560900717
+        "1": 0.6694031311545483,
+        "3": 0.6209031692112434,
+        "8": 0.24364899754566027,
+        "21": 0.7328283206060153
       },
       "scored_expert_pixels": 1492190
     },
@@ -654,16 +654,16 @@
       "id": "case-046",
       "case": "ignite__datasets_ignite_images_he_patient78_he_roi2.png__7801cb287c",
       "dataset": "ignite",
-      "expert_present_macro_iou": 0.523854159241009,
-      "expert_present_macro_dice": 0.6467173749035211,
+      "expert_present_macro_iou": 0.5297343589181488,
+      "expert_present_macro_dice": 0.650471680677185,
       "per_present_class_iou": {
-        "1": 0.8511387264259919,
-        "3": 0.556633554919343,
-        "5": 0.701785856770918,
-        "8": 0.49865160349854226,
-        "19": 0.3319143654073631,
-        "21": 0.05099894847528917,
-        "24": 0.6758560591896151
+        "1": 0.8517822203317738,
+        "3": 0.562784284549622,
+        "5": 0.7112385737545355,
+        "8": 0.5252292697901079,
+        "19": 0.3366296978656161,
+        "21": 0.042331640351063606,
+        "24": 0.6781448257843222
       },
       "scored_expert_pixels": 2239340
     },
@@ -671,12 +671,12 @@
       "id": "case-047",
       "case": "ignite__datasets_ignite_images_he_patient7_he_roi1.png__f114823ea9",
       "dataset": "ignite",
-      "expert_present_macro_iou": 0.35583182290489695,
-      "expert_present_macro_dice": 0.41782984483472485,
+      "expert_present_macro_iou": 0.35087901773848085,
+      "expert_present_macro_dice": 0.4091467027734608,
       "per_present_class_iou": {
-        "1": 0.8995790386892312,
-        "5": 0.05075129331634908,
-        "8": 0.11716513670911065
+        "1": 0.90224257957528,
+        "5": 0.058276316003315405,
+        "8": 0.09211815763684726
       },
       "scored_expert_pixels": 953759
     },
@@ -684,14 +684,14 @@
       "id": "case-048",
       "case": "ignite__datasets_ignite_images_he_patient8_he_roi1.png__d6caf8e04b",
       "dataset": "ignite",
-      "expert_present_macro_iou": 0.35277938033955103,
-      "expert_present_macro_dice": 0.4335133847245444,
+      "expert_present_macro_iou": 0.33821849544732147,
+      "expert_present_macro_dice": 0.4061847038598084,
       "per_present_class_iou": {
-        "1": 0.7017426991482258,
-        "3": 0.8256436896804308,
-        "5": 0.07649109815174797,
-        "8": 0.08575303126994256,
-        "21": 0.07426638344740775
+        "1": 0.6991689374618167,
+        "3": 0.828351289905051,
+        "5": 0.06847138531642534,
+        "8": 0.0,
+        "21": 0.09510086455331412
       },
       "scored_expert_pixels": 1083473
     },
@@ -699,12 +699,12 @@
       "id": "case-049",
       "case": "gcss_01",
       "dataset": "gcss",
-      "expert_present_macro_iou": 0.583293849434049,
-      "expert_present_macro_dice": 0.734036428256216,
+      "expert_present_macro_iou": 0.5984471796875472,
+      "expert_present_macro_dice": 0.7461404666694205,
       "per_present_class_iou": {
-        "1": 0.6485840076873334,
-        "3": 0.4813453709778655,
-        "4": 0.619952169636948
+        "1": 0.6574091132863584,
+        "3": 0.4966577583455165,
+        "4": 0.6412746674307667
       },
       "scored_expert_pixels": 3179881
     },
@@ -712,14 +712,14 @@
       "id": "case-050",
       "case": "gcss_04",
       "dataset": "gcss",
-      "expert_present_macro_iou": 0.31484610743156344,
-      "expert_present_macro_dice": 0.398718566712679,
+      "expert_present_macro_iou": 0.31795776601747994,
+      "expert_present_macro_dice": 0.4012790045237953,
       "per_present_class_iou": {
-        "1": 0.8123378353047956,
-        "3": 0.0567800283163339,
-        "4": 0.17224205814759838,
-        "5": 0.5323868922204801,
-        "23": 0.00048372316860925056
+        "1": 0.822132036275233,
+        "3": 0.05907457255888909,
+        "4": 0.1728660758719469,
+        "5": 0.5357161453813309,
+        "23": 0.0
       },
       "scored_expert_pixels": 3083389
     },
@@ -727,13 +727,13 @@
       "id": "case-051",
       "case": "gcss_05",
       "dataset": "gcss",
-      "expert_present_macro_iou": 0.5583115808551776,
-      "expert_present_macro_dice": 0.6927662794977965,
+      "expert_present_macro_iou": 0.5649232208743776,
+      "expert_present_macro_dice": 0.6968629576780587,
       "per_present_class_iou": {
-        "1": 0.7808241282135334,
-        "3": 0.23616493789708426,
-        "4": 0.6328731658612075,
-        "23": 0.5833840914488856
+        "1": 0.8014218468462728,
+        "3": 0.23487310621683302,
+        "4": 0.6417195534349377,
+        "23": 0.5816783769994669
       },
       "scored_expert_pixels": 3055065
     },
@@ -741,12 +741,12 @@
       "id": "case-052",
       "case": "gcss_07",
       "dataset": "gcss",
-      "expert_present_macro_iou": 0.2834821409015033,
-      "expert_present_macro_dice": 0.33755962451520327,
+      "expert_present_macro_iou": 0.28613048883651665,
+      "expert_present_macro_dice": 0.3374766378276028,
       "per_present_class_iou": {
-        "1": 0.7757931400249983,
-        "3": 5.750299015548809e-06,
-        "4": 0.0746475323804961
+        "1": 0.7884697597092141,
+        "3": 0.0,
+        "4": 0.0699217068003359
       },
       "scored_expert_pixels": 3015916
     },
@@ -754,12 +754,12 @@
       "id": "case-053",
       "case": "gcss_09",
       "dataset": "gcss",
-      "expert_present_macro_iou": 0.43632642453032827,
-      "expert_present_macro_dice": 0.5183607480810645,
+      "expert_present_macro_iou": 0.4404274823900342,
+      "expert_present_macro_dice": 0.5210307069712254,
       "per_present_class_iou": {
-        "1": 0.829170473651273,
+        "1": 0.8392813247456657,
         "3": 0.0,
-        "4": 0.4798087999397117
+        "4": 0.48200112242443677
       },
       "scored_expert_pixels": 3180115
     },
@@ -767,13 +767,13 @@
       "id": "case-054",
       "case": "gcss_10",
       "dataset": "gcss",
-      "expert_present_macro_iou": 0.4030967113149665,
-      "expert_present_macro_dice": 0.5309916782264017,
+      "expert_present_macro_iou": 0.4049020764126338,
+      "expert_present_macro_dice": 0.5312699347545575,
       "per_present_class_iou": {
-        "1": 0.721022588568939,
-        "3": 0.15699560017384206,
-        "4": 0.560356828213467,
-        "23": 0.17401182830361792
+        "1": 0.7286644130553228,
+        "3": 0.15583647681191445,
+        "4": 0.5656339275266508,
+        "23": 0.16947348825664732
       },
       "scored_expert_pixels": 3039755
     },
@@ -781,12 +781,12 @@
       "id": "case-055",
       "case": "gcss_13",
       "dataset": "gcss",
-      "expert_present_macro_iou": 0.3913119368781803,
-      "expert_present_macro_dice": 0.5135680716380713,
+      "expert_present_macro_iou": 0.4065682367786847,
+      "expert_present_macro_dice": 0.5268272741369988,
       "per_present_class_iou": {
-        "1": 0.5210584520272341,
-        "3": 0.5725981169225275,
-        "4": 0.47159117856295946,
+        "1": 0.5466810385022572,
+        "3": 0.5809024129334943,
+        "4": 0.4986894956789873,
         "23": 0.0
       },
       "scored_expert_pixels": 2512172
@@ -795,12 +795,12 @@
       "id": "case-056",
       "case": "gcss_14",
       "dataset": "gcss",
-      "expert_present_macro_iou": 0.31164973183854405,
-      "expert_present_macro_dice": 0.36984830492117876,
+      "expert_present_macro_iou": 0.31017878899451373,
+      "expert_present_macro_dice": 0.365920000758132,
       "per_present_class_iou": {
-        "1": 0.8197002995663245,
-        "3": 0.00520908287117619,
-        "4": 0.11003981307813145
+        "1": 0.8239020935975999,
+        "3": 0.004533779215192377,
+        "4": 0.10210049417074896
       },
       "scored_expert_pixels": 3225339
     },
@@ -808,12 +808,12 @@
       "id": "case-057",
       "case": "gcss_15",
       "dataset": "gcss",
-      "expert_present_macro_iou": 0.5769258630976231,
-      "expert_present_macro_dice": 0.7156056113918448,
+      "expert_present_macro_iou": 0.5858965713892584,
+      "expert_present_macro_dice": 0.72220715966057,
       "per_present_class_iou": {
-        "1": 0.7979158984575159,
-        "3": 0.5677071927694054,
-        "4": 0.36515449806594774
+        "1": 0.80872640237844,
+        "3": 0.5831315692497236,
+        "4": 0.36583174253961154
       },
       "scored_expert_pixels": 3274288
     },
@@ -821,12 +821,12 @@
       "id": "case-058",
       "case": "gcss_17",
       "dataset": "gcss",
-      "expert_present_macro_iou": 0.24491611166534447,
-      "expert_present_macro_dice": 0.30209401033854094,
+      "expert_present_macro_iou": 0.24444246662832078,
+      "expert_present_macro_dice": 0.2992885252181177,
       "per_present_class_iou": {
-        "1": 0.6863971982177649,
+        "1": 0.691542092323065,
         "3": 0.0,
-        "4": 0.04835113677826847
+        "4": 0.04178530756189734
       },
       "scored_expert_pixels": 3207808
     },
@@ -834,12 +834,12 @@
       "id": "case-059",
       "case": "gcss_19",
       "dataset": "gcss",
-      "expert_present_macro_iou": 0.5613207022153445,
-      "expert_present_macro_dice": 0.7133639067483554,
+      "expert_present_macro_iou": 0.5713266735594277,
+      "expert_present_macro_dice": 0.7215342949870992,
       "per_present_class_iou": {
-        "1": 0.6920450727072591,
-        "3": 0.4378843365380612,
-        "4": 0.554032697400713
+        "1": 0.7010409153840267,
+        "3": 0.44497467152992687,
+        "4": 0.5679644337643293
       },
       "scored_expert_pixels": 3146710
     },
@@ -847,11 +847,11 @@
       "id": "case-060",
       "case": "gcss_21",
       "dataset": "gcss",
-      "expert_present_macro_iou": 0.31964743611732854,
-      "expert_present_macro_dice": 0.41339173167835236,
+      "expert_present_macro_iou": 0.321246876492171,
+      "expert_present_macro_dice": 0.4136252335232651,
       "per_present_class_iou": {
-        "1": 0.6905107017260483,
-        "3": 0.2684316066259373,
+        "1": 0.7000900834546722,
+        "3": 0.26365054602184085,
         "4": 0.0
       },
       "scored_expert_pixels": 2899061
@@ -860,13 +860,13 @@
       "id": "case-061",
       "case": "gcss_22",
       "dataset": "gcss",
-      "expert_present_macro_iou": 0.5122880350756468,
-      "expert_present_macro_dice": 0.6637194902806571,
+      "expert_present_macro_iou": 0.5134915863447883,
+      "expert_present_macro_dice": 0.6649511744344915,
       "per_present_class_iou": {
-        "1": 0.5721765104527307,
-        "3": 0.2623248625813502,
-        "4": 0.6113739384955315,
-        "23": 0.603276828772975
+        "1": 0.5712386398485374,
+        "3": 0.2649216386208229,
+        "4": 0.6137519326770922,
+        "23": 0.6040541342327009
       },
       "scored_expert_pixels": 3148535
     },
@@ -874,13 +874,13 @@
       "id": "case-062",
       "case": "gcss_24",
       "dataset": "gcss",
-      "expert_present_macro_iou": 0.41376433858281547,
-      "expert_present_macro_dice": 0.5203795415457568,
+      "expert_present_macro_iou": 0.4182468635902975,
+      "expert_present_macro_dice": 0.5228389642202048,
       "per_present_class_iou": {
-        "1": 0.6752430450210397,
-        "3": 0.2520050494864132,
-        "4": 0.7039916101363688,
-        "23": 0.023817649687440153
+        "1": 0.6832438234916411,
+        "3": 0.2521055009400064,
+        "4": 0.7160090300216121,
+        "23": 0.02162909990793018
       },
       "scored_expert_pixels": 2802517
     },
@@ -888,12 +888,12 @@
       "id": "case-063",
       "case": "gcss_25",
       "dataset": "gcss",
-      "expert_present_macro_iou": 0.0009509178298787147,
-      "expert_present_macro_dice": 0.0018980418446451176,
+      "expert_present_macro_iou": 0.0005908412246945624,
+      "expert_present_macro_dice": 0.0011804505844747843,
       "per_present_class_iou": {
         "1": 0.0,
-        "3": 0.0005223884227349728,
-        "4": 0.0023303650669011713
+        "3": 0.0005127589786854738,
+        "4": 0.0012597646953982132
       },
       "scored_expert_pixels": 3053861
     },
@@ -901,12 +901,12 @@
       "id": "case-064",
       "case": "gcss_27",
       "dataset": "gcss",
-      "expert_present_macro_iou": 0.19187004630773505,
-      "expert_present_macro_dice": 0.28868259257125956,
+      "expert_present_macro_iou": 0.19574900848513602,
+      "expert_present_macro_dice": 0.2925716461699366,
       "per_present_class_iou": {
-        "1": 0.4092961457317789,
+        "1": 0.42083941564540406,
         "3": 0.0,
-        "4": 0.16631399319142615
+        "4": 0.16640760981000405
       },
       "scored_expert_pixels": 3258025
     },
@@ -914,12 +914,12 @@
       "id": "case-065",
       "case": "gcss_30",
       "dataset": "gcss",
-      "expert_present_macro_iou": 0.09796317629259803,
-      "expert_present_macro_dice": 0.16015598692532698,
+      "expert_present_macro_iou": 0.09566303617114225,
+      "expert_present_macro_dice": 0.15692583176986338,
       "per_present_class_iou": {
         "1": 0.0,
-        "3": 0.2563187792454187,
-        "4": 0.037570749632375416
+        "3": 0.2509645635824955,
+        "4": 0.036024544930931185
       },
       "scored_expert_pixels": 3104485
     },
@@ -927,11 +927,11 @@
       "id": "case-066",
       "case": "gcss_34",
       "dataset": "gcss",
-      "expert_present_macro_iou": 0.03161780435619574,
-      "expert_present_macro_dice": 0.05951019306145284,
+      "expert_present_macro_iou": 0.022136979485767386,
+      "expert_present_macro_dice": 0.04244327820017317,
       "per_present_class_iou": {
-        "1": 0.06292647602157689,
-        "4": 0.00030913269081459395
+        "1": 0.043707677529003175,
+        "4": 0.0005662814425315988
       },
       "scored_expert_pixels": 3209101
     },
@@ -939,13 +939,13 @@
       "id": "case-067",
       "case": "gcss_35",
       "dataset": "gcss",
-      "expert_present_macro_iou": 0.3074077552786092,
-      "expert_present_macro_dice": 0.4129937853248429,
+      "expert_present_macro_iou": 0.30888753110897715,
+      "expert_present_macro_dice": 0.4129001645104425,
       "per_present_class_iou": {
-        "1": 0.2907817715838075,
-        "3": 0.0028647176603049415,
-        "4": 0.220854293096065,
-        "23": 0.7151302387742592
+        "1": 0.29016680868602385,
+        "3": 0.0,
+        "4": 0.22043914761035305,
+        "23": 0.7249441681395317
       },
       "scored_expert_pixels": 3210958
     },
@@ -953,14 +953,14 @@
       "id": "case-068",
       "case": "gcss_40",
       "dataset": "gcss",
-      "expert_present_macro_iou": 0.4394583275913281,
-      "expert_present_macro_dice": 0.5570107203313701,
+      "expert_present_macro_iou": 0.4308636611443081,
+      "expert_present_macro_dice": 0.5513864844822278,
       "per_present_class_iou": {
-        "1": 0.7020606757715075,
-        "3": 0.284835222262142,
-        "4": 0.47931255765930697,
-        "5": 0.7124245868671855,
-        "23": 0.018658595396498483
+        "1": 0.6926660289399909,
+        "3": 0.2921302513295008,
+        "4": 0.482735537937949,
+        "5": 0.6701837085334156,
+        "23": 0.016602778980683998
       },
       "scored_expert_pixels": 3180647
     },
@@ -968,10 +968,10 @@
       "id": "case-069",
       "case": "peso_07",
       "dataset": "peso",
-      "expert_present_macro_iou": 0.978960413788488,
-      "expert_present_macro_dice": 0.9893683642861586,
+      "expert_present_macro_iou": 0.9804937162087872,
+      "expert_present_macro_dice": 0.990150797434211,
       "per_present_class_iou": {
-        "7": 0.978960413788488
+        "7": 0.9804937162087872
       },
       "scored_expert_pixels": 836756
     },
@@ -979,10 +979,10 @@
       "id": "case-070",
       "case": "peso_08",
       "dataset": "peso",
-      "expert_present_macro_iou": 0.9925015411630644,
-      "expert_present_macro_dice": 0.9962366609600921,
+      "expert_present_macro_iou": 0.9927593357120174,
+      "expert_present_macro_dice": 0.9963665134277765,
       "per_present_class_iou": {
-        "7": 0.9925015411630644
+        "7": 0.9927593357120174
       },
       "scored_expert_pixels": 267655
     },
@@ -990,10 +990,10 @@
       "id": "case-071",
       "case": "peso_11",
       "dataset": "peso",
-      "expert_present_macro_iou": 0.9908317531972688,
-      "expert_present_macro_dice": 0.9953947656360177,
+      "expert_present_macro_iou": 0.9914444449054616,
+      "expert_present_macro_dice": 0.9957038444550008,
       "per_present_class_iou": {
-        "7": 0.9908317531972688
+        "7": 0.9914444449054616
       },
       "scored_expert_pixels": 723039
     },
@@ -1001,10 +1001,10 @@
       "id": "case-072",
       "case": "peso_12",
       "dataset": "peso",
-      "expert_present_macro_iou": 0.905647340933569,
-      "expert_present_macro_dice": 0.9504878699013596,
+      "expert_present_macro_iou": 0.9131256477473633,
+      "expert_present_macro_dice": 0.9545903572225232,
       "per_present_class_iou": {
-        "7": 0.905647340933569
+        "7": 0.9131256477473633
       },
       "scored_expert_pixels": 295254
     },
@@ -1012,10 +1012,10 @@
       "id": "case-073",
       "case": "peso_14",
       "dataset": "peso",
-      "expert_present_macro_iou": 0.7655885827400147,
-      "expert_present_macro_dice": 0.8672332730560579,
+      "expert_present_macro_iou": 0.7683072060279046,
+      "expert_present_macro_dice": 0.8689748064237436,
       "per_present_class_iou": {
-        "7": 0.7655885827400147
+        "7": 0.7683072060279046
       },
       "scored_expert_pixels": 626420
     },
@@ -1023,10 +1023,10 @@
       "id": "case-074",
       "case": "peso_16",
       "dataset": "peso",
-      "expert_present_macro_iou": 0.9936794157284856,
-      "expert_present_macro_dice": 0.9968296887545459,
+      "expert_present_macro_iou": 0.9962158885599779,
+      "expert_present_macro_dice": 0.9981043576189789,
       "per_present_class_iou": {
-        "7": 0.9936794157284856
+        "7": 0.9962158885599779
       },
       "scored_expert_pixels": 509763
     },
@@ -1034,10 +1034,10 @@
       "id": "case-075",
       "case": "peso_18",
       "dataset": "peso",
-      "expert_present_macro_iou": 0.997679884818207,
-      "expert_present_macro_dice": 0.9988385951125477,
+      "expert_present_macro_iou": 0.9987206841520955,
+      "expert_present_macro_dice": 0.9993599326518967,
       "per_present_class_iou": {
-        "7": 0.997679884818207
+        "7": 0.9987206841520955
       },
       "scored_expert_pixels": 230592
     },
@@ -1045,10 +1045,10 @@
       "id": "case-076",
       "case": "peso_20",
       "dataset": "peso",
-      "expert_present_macro_iou": 0.9963455552163287,
-      "expert_present_macro_dice": 0.998169432754704,
+      "expert_present_macro_iou": 0.9969346848539986,
+      "expert_present_macro_dice": 0.998464989781964,
       "per_present_class_iou": {
-        "7": 0.9963455552163287
+        "7": 0.9969346848539986
       },
       "scored_expert_pixels": 651809
     },
@@ -1056,10 +1056,10 @@
       "id": "case-077",
       "case": "peso_21",
       "dataset": "peso",
-      "expert_present_macro_iou": 0.984885934733959,
-      "expert_present_macro_dice": 0.9923854237658918,
+      "expert_present_macro_iou": 0.9858851887727268,
+      "expert_present_macro_dice": 0.9928924334059834,
       "per_present_class_iou": {
-        "7": 0.984885934733959
+        "7": 0.9858851887727268
       },
       "scored_expert_pixels": 359268
     },
@@ -1067,10 +1067,10 @@
       "id": "case-078",
       "case": "peso_22",
       "dataset": "peso",
-      "expert_present_macro_iou": 0.9859245823990082,
-      "expert_present_macro_dice": 0.9929124108106921,
+      "expert_present_macro_iou": 0.9872661361798166,
+      "expert_present_macro_dice": 0.9935922705125635,
       "per_present_class_iou": {
-        "7": 0.9859245823990082
+        "7": 0.9872661361798166
       },
       "scored_expert_pixels": 825908
     },
@@ -1078,10 +1078,10 @@
       "id": "case-079",
       "case": "peso_23",
       "dataset": "peso",
-      "expert_present_macro_iou": 0.9959720545820973,
-      "expert_present_macro_dice": 0.9979819630196445,
+      "expert_present_macro_iou": 0.9960614117330063,
+      "expert_present_macro_dice": 0.9980268200948917,
       "per_present_class_iou": {
-        "7": 0.9959720545820973
+        "7": 0.9960614117330063
       },
       "scored_expert_pixels": 727418
     },
@@ -1089,10 +1089,10 @@
       "id": "case-080",
       "case": "peso_25",
       "dataset": "peso",
-      "expert_present_macro_iou": 0.9937141968016868,
-      "expert_present_macro_dice": 0.9968471894274531,
+      "expert_present_macro_iou": 0.9958401605507501,
+      "expert_present_macro_dice": 0.9979157451926901,
       "per_present_class_iou": {
-        "7": 0.9937141968016868
+        "7": 0.9958401605507501
       },
       "scored_expert_pixels": 629832
     },
@@ -1100,10 +1100,10 @@
       "id": "case-081",
       "case": "peso_26",
       "dataset": "peso",
-      "expert_present_macro_iou": 0.9933730689697117,
-      "expert_present_macro_dice": 0.9966755189314795,
+      "expert_present_macro_iou": 0.9973433888821311,
+      "expert_present_macro_dice": 0.9986699276986338,
       "per_present_class_iou": {
-        "7": 0.9933730689697117
+        "7": 0.9973433888821311
       },
       "scored_expert_pixels": 205525
     },
@@ -1111,10 +1111,10 @@
       "id": "case-082",
       "case": "peso_29",
       "dataset": "peso",
-      "expert_present_macro_iou": 0.9968163751875005,
-      "expert_present_macro_dice": 0.9984056496871424,
+      "expert_present_macro_iou": 0.996898296322871,
+      "expert_present_macro_dice": 0.9984467392841986,
       "per_present_class_iou": {
-        "7": 0.9968163751875005
+        "7": 0.996898296322871
       },
       "scored_expert_pixels": 353999
     },
@@ -1122,10 +1122,10 @@
       "id": "case-083",
       "case": "peso_34",
       "dataset": "peso",
-      "expert_present_macro_iou": 0.9998821771909587,
-      "expert_present_macro_dice": 0.9999410851247214,
+      "expert_present_macro_iou": 1.0,
+      "expert_present_macro_dice": 1.0,
       "per_present_class_iou": {
-        "7": 0.9998821771909587
+        "7": 1.0
       },
       "scored_expert_pixels": 687473
     },
@@ -1133,10 +1133,10 @@
       "id": "case-084",
       "case": "peso_35",
       "dataset": "peso",
-      "expert_present_macro_iou": 0.9973381404592924,
-      "expert_present_macro_dice": 0.9986672964948762,
+      "expert_present_macro_iou": 0.9990208506926995,
+      "expert_present_macro_dice": 0.9995101855456079,
       "per_present_class_iou": {
-        "7": 0.9973381404592924
+        "7": 0.9990208506926995
       },
       "scored_expert_pixels": 308431
     },
@@ -1144,10 +1144,10 @@
       "id": "case-085",
       "case": "peso_36",
       "dataset": "peso",
-      "expert_present_macro_iou": 0.9980152940142393,
-      "expert_present_macro_dice": 0.9990066612644525,
+      "expert_present_macro_iou": 0.9985057572294981,
+      "expert_present_macro_dice": 0.999252320007037,
       "per_present_class_iou": {
-        "7": 0.9980152940142393
+        "7": 0.9985057572294981
       },
       "scored_expert_pixels": 568850
     },
@@ -1155,10 +1155,10 @@
       "id": "case-086",
       "case": "peso_38",
       "dataset": "peso",
-      "expert_present_macro_iou": 0.9918790206098855,
-      "expert_present_macro_dice": 0.9959229555077959,
+      "expert_present_macro_iou": 0.9929637514284223,
+      "expert_present_macro_dice": 0.9964694548174624,
       "per_present_class_iou": {
-        "7": 0.9918790206098855
+        "7": 0.9929637514284223
       },
       "scored_expert_pixels": 172393
     },

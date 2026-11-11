@@ -11,7 +11,8 @@ Tissue names on whole slides are provisional.
 The [Benchmark 1 development gallery](https://tkcaccia.github.io/Bora-Analysis/benchmark1-comparators/)
 now displays one training-selected supervised Virchow2 model for all 87
 retained images: a 444-channel joint classifier blended with the earlier
-classwise PLS head. Mean expert-present case macro IoU is 0.592. This is
+classwise PLS head. The final ROI mask receives Bora's 1.5 µm contour smoothing
+and 400 µm² small-region repair. Mean expert-present case macro IoU is 0.593. This is
 development evidence, and case 050 still has poor muscle recognition. The
 six colored method panels in each figure and all 24 linked black-and-white
 response maps use one Bora H&E tissue/background support per image. Displayed

@@ -11,7 +11,7 @@ manifests are supplied separately under their respective access terms.
 | Displayed method | Input and training | Public implementation |
 | --- | --- | --- |
 | KODAMA–Bora | Calibrated H&E, reviewed tissue support, Virchow2 features; anonymous image-only tile groups | [Bora](https://github.com/tkcaccia/Bora), [KODAMA](https://github.com/tkcaccia/KODAMA), and the [whole-slide method record](../docs/benchmark2-full-slide-comparators-2026-11-10.md) |
-| Supervised Virchow2 (Benchmark 1) | 1,280-channel Virchow2 token features; 397 expert-masked training images | [`classwise_joint_search.py`](benchmark1/classwise_joint_search.py), [`classwise_joint_fit.py`](benchmark1/classwise_joint_fit.py), [`blend_search.py`](benchmark1/blend_search.py), [`blend_validate.py`](benchmark1/blend_validate.py) |
+| Supervised Virchow2 (Benchmark 1) | 1,280-channel Virchow2 token features; 397 expert-masked training images | [`classwise_joint_search.py`](benchmark1/classwise_joint_search.py), [`classwise_joint_fit.py`](benchmark1/classwise_joint_fit.py), [`blend_search.py`](benchmark1/blend_search.py), [`blend_validate.py`](benchmark1/blend_validate.py), [`supervised_contour.py`](benchmark1/supervised_contour.py) |
 | Supervised Bora (Benchmark 2 frozen PLS) | The same 1,280-channel input and 397 training images; earlier frozen head | [`search.py`](benchmark1/search.py), [`final_fit.py`](benchmark1/final_fit.py), [`project_supervised.py`](benchmark2/project_supervised.py) |
 | Class-aware U-Net | RGB H&E and expert masks on the same 397 training images | [`train_unet_balanced.py`](benchmark1/train_unet_balanced.py), [`run_four_methods.py`](benchmark2/run_four_methods.py) |
 | DeepLabV3+ | RGB H&E and expert masks on the same 397 training images | [`train_deeplabv3plus.py`](benchmark1/train_deeplabv3plus.py), [`run_four_methods.py`](benchmark2/run_four_methods.py) |
@@ -42,11 +42,12 @@ joint 24-class multinomial logistic head, and a 25% blend with the older
 64-channel-per-class, eight-component PLS logistic head. The 75%/25% blend
 was chosen on two source-group-disjoint splits of the 397 training images;
 both heads were fitted on all 397 images before the 87 development images
-were scored. The selected mask has mean expert-present case macro IoU 0.592
+were scored. The final ROI mask uses Bora's 1.5 µm one-hot contour smoothing
+and 400 µm² small-region repair. The selected mask has mean expert-present case macro IoU 0.593
 on that gallery. Those images were inspected during development, so this is
 not an untouched test estimate. The 19 one-class PEsO images raise the
-all-image mean; the other 68 images have mean 0.484. Case 050 tumor IoU rises
-from 0.307 to 0.812, but muscle IoU remains 0.00048. The code and versioned
+all-image mean; the other 68 images have mean 0.486. Case 050 tumor IoU rises
+from 0.307 to 0.822, but muscle IoU remains 0. The code and versioned
 receipts preserve this limitation.
 
 The Benchmark 2 whole-slide pages still show the earlier frozen PLS head

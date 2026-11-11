@@ -35,8 +35,8 @@ function show(id){
   caseSelect.value=row.id;history.replaceState(null,"","#"+row.id);
   position.textContent=`${visible.indexOf(row)+1} of ${visible.length}`;
   title.textContent=`${row.dataset.toUpperCase()} · ${row.source_group} · ${row.id}`;
-  image.src=row.image+"?v=supervised-final-v2";image.alt=`Eight aligned H&E and model output panels, including a separate supervised Virchow2 mask, for ${row.dataset} ${row.source_group}`;
-  fullImage.href=row.image+"?v=supervised-final-v2";
+  image.src=row.image+"?v=supervised-contour-v1";image.alt=`Eight aligned H&E and model output panels, including a separate supervised Virchow2 mask, for ${row.dataset} ${row.source_group}`;
+  fullImage.href=row.image+"?v=supervised-contour-v1";
   const roles=row.expert_present_roles.join(", ")||"No mapped expert role";
   const bg=row.he_background_support, outside=bg.expert_scored_pixels_outside_support_by_class;
   const labelled=Object.values(outside).reduce((a,b)=>a+b,0), counted=bg.tissue_pixels+bg.excluded_pixels;
@@ -44,7 +44,7 @@ function show(id){
   document.getElementById("background-audit").textContent=`Shared H&E tissue support excludes ${bg.excluded_pixels.toLocaleString()} of ${counted.toLocaleString()} pixels from method color overlays. The source expert annotation is shown unchanged; ${labelled.toLocaleString()} expert-scored pixels fall outside this image-derived support${fat?`, including ${fat.toLocaleString()} marked adipose${fatAll?` (${(100*fat/fatAll).toFixed(1)}% of its adipose pixels)`:``}`:``}. Existing scores use the original expert labels and unmasked method predictions.`;
   scores.innerHTML=card("Bora",row.bora_same_unet_roles,roles,"Same expert-present roles as U-Net")+
     card("Class-aware U-Net",row.unet_score,roles,"Same expert-present roles as Bora and DeepLabV3+")+
-    card("Supervised Virchow2 · joint + PLS",row.supervised_virchow2_display_macro_iou,roles,"Original unmasked prediction resized to the calibrated expert frame")+
+    card("Supervised Bora · joint + PLS, polished contour",row.supervised_virchow2_display_macro_iou,roles,"Bora ROI contour polish; unmasked result aligned to expert frame")+
     card("DeepLabV3+",row.deeplab_score,roles,"Same expert-present roles as Bora and U-Net. Inference: "+row.deeplab_inference_seconds.toFixed(1)+" s")+
     card("VISTA-PATH",row.vista_score,row.vista_matched_roles.join(", ")||"No matched role","Bora on these roles: "+pct(row.bora_same_vista_roles))+
     card("MedSAM",row.medsam_score,row.medsam_reference_roles.join(", ")||"No eligible role",
@@ -93,7 +93,7 @@ function show(id){
   }
   const caseNote=document.getElementById("supervised-case-note");
   caseNote.hidden=row.id!=="case-050";
-  if(row.id==="case-050")caseNote.textContent="Case 050: the selected model improves tumor IoU from 30.7% to 81.2%, but muscle IoU is 0.05%; much expert muscle is still called inflamed stroma. The displayed result has not solved that class confusion.";
+  if(row.id==="case-050")caseNote.textContent="Case 050: muscle remains difficult for the supervised model; contour polishing changes boundaries but does not resolve tissue-class confusion.";
   showSelected(row);
   showResponses(row);
   showCombinedResponseMask(row);
