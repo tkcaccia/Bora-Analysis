@@ -80,6 +80,14 @@ The frozen whole-slide runner processes each field as follows:
   exact ordered class names below. Its foreground gate is an inference
   setting; the final displayed background is handled separately.
 
+The later five-public-slide recovery used the same four inference methods
+with a locally staged complete PLIP tokenizer/model bundle. Its exact
+[runner](benchmark2/public_five_recovery/run_gpu.py) and
+[full-slide stitch audit](benchmark2/public_five_recovery/audit_stitch.py)
+are included. The licensed VISTA adapter and PLIP model files must be
+obtained and staged locally; only their paths and SHA256 identities changed
+in that recovery, not its class vocabulary or model architecture.
+
 The ordered VISTA names are `tumor`, `stroma`,
 `lymphocytic_infiltrate`, `necrosis_or_debris`, `blood`,
 `metaplasia_NOS`, `fat`, `plasma_cells`, `other_immune_infiltrate`,
