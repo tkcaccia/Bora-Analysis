@@ -11,6 +11,7 @@ manifests are supplied separately under their respective access terms.
 | Displayed method | Input and training | Public implementation |
 | --- | --- | --- |
 | KODAMA–Bora | Calibrated H&E, reviewed tissue support, Virchow2 features; anonymous image-only tile groups | [Bora](https://github.com/tkcaccia/Bora), [KODAMA](https://github.com/tkcaccia/KODAMA), and the [whole-slide method record](../docs/benchmark2-full-slide-comparators-2026-11-10.md) |
+| Eight broad-label reanalysis | Training-only ontology; new 256-channel supervised Virchow2 head; exact remapping of existing Bora and comparator predictions | [`reduced-labels/`](reduced-labels/) contains the executed training, validation, support-audit and rescore sources plus frozen aggregate ontology receipts |
 | Supervised Virchow2 (Benchmark 1) | 1,280-channel Virchow2 token features; 397 expert-masked training images | [`classwise_joint_search.py`](benchmark1/classwise_joint_search.py), [`classwise_joint_fit.py`](benchmark1/classwise_joint_fit.py), [`blend_search.py`](benchmark1/blend_search.py), [`ontology_gate.py`](benchmark1/ontology_gate.py), [`blend_validate.py`](benchmark1/blend_validate.py), [`supervised_contour.py`](benchmark1/supervised_contour.py) |
 | Supervised Bora (Benchmark 2 frozen PLS) | The same 1,280-channel input and 397 training images; earlier frozen head | [`search.py`](benchmark1/search.py), [`final_fit.py`](benchmark1/final_fit.py), [`project_supervised.py`](benchmark2/project_supervised.py), [`supervised_contour.py`](benchmark2/supervised_contour.py) |
 | Class-aware U-Net | RGB H&E and expert masks on the same 397 training images | [`train_unet_balanced.py`](benchmark1/train_unet_balanced.py), [`run_four_methods.py`](benchmark2/run_four_methods.py) |
@@ -21,6 +22,10 @@ manifests are supplied separately under their respective access terms.
 The common visualization step is implemented in
 [`shared_display.py`](benchmark2/shared_display.py). It takes an already
 aligned final Bora support raster and the existing 24-role palette.
+The later eight-role release maps the original class outputs to the frozen
+broad ontology before display. Its newly fitted supervised head is distinct
+from the older Benchmark 1 blend and Benchmark 2 PLS projection below.
+KODAMA geometry and external models were not refitted under the eight roles.
 
 ## Benchmark 1 model fitting
 

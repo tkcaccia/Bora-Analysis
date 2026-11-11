@@ -1,0 +1,174 @@
+{
+  "status": "TRAINING_ONLY_EIGHT_CLASS_ONTOLOGY_FROZEN",
+  "selection_basis": "semantic parent merges followed by >=20 independent training source groups and >=500000 full-resolution expert pixels per reported class; no validation data inspected",
+  "training_images": 397,
+  "validation_masks_opened": 0,
+  "minimum_source_groups": 20,
+  "minimum_expert_pixels": 500000,
+  "classes": {
+    "1": {
+      "name": "tumor",
+      "original_ids": [
+        1,
+        2
+      ],
+      "training_full_mask_pixels": 414884161,
+      "training_source_groups_at_least": 261
+    },
+    "2": {
+      "name": "stroma",
+      "original_ids": [
+        3,
+        4
+      ],
+      "training_full_mask_pixels": 486555325,
+      "training_source_groups_at_least": 266
+    },
+    "3": {
+      "name": "necrosis",
+      "original_ids": [
+        5
+      ],
+      "training_full_mask_pixels": 65082153,
+      "training_source_groups_at_least": 143
+    },
+    "4": {
+      "name": "epithelium",
+      "original_ids": [
+        6,
+        7,
+        15,
+        17,
+        24
+      ],
+      "training_full_mask_pixels": 24190351,
+      "training_source_groups_at_least": 77
+    },
+    "5": {
+      "name": "blood",
+      "original_ids": [
+        8
+      ],
+      "training_full_mask_pixels": 3570659,
+      "training_source_groups_at_least": 83
+    },
+    "6": {
+      "name": "vessel",
+      "original_ids": [
+        9,
+        10
+      ],
+      "training_full_mask_pixels": 1760193,
+      "training_source_groups_at_least": 60
+    },
+    "7": {
+      "name": "adipose",
+      "original_ids": [
+        11
+      ],
+      "training_full_mask_pixels": 10034911,
+      "training_source_groups_at_least": 39
+    },
+    "8": {
+      "name": "immune_infiltrate",
+      "original_ids": [
+        12,
+        13,
+        14,
+        19,
+        21
+      ],
+      "training_full_mask_pixels": 56414949,
+      "training_source_groups_at_least": 124
+    }
+  },
+  "old_to_new": {
+    "1": 1,
+    "2": 1,
+    "3": 2,
+    "4": 2,
+    "5": 3,
+    "6": 4,
+    "7": 4,
+    "8": 5,
+    "9": 6,
+    "10": 6,
+    "11": 7,
+    "12": 8,
+    "13": 8,
+    "14": 8,
+    "15": 4,
+    "16": null,
+    "17": 4,
+    "18": null,
+    "19": 8,
+    "20": null,
+    "21": 8,
+    "22": null,
+    "23": null,
+    "24": 4
+  },
+  "excluded_original_classes": [
+    {
+      "name": "alveolar_tissue",
+      "pixels": 5319099,
+      "images": 26,
+      "source_groups": 18,
+      "datasets": {
+        "ignite": 5319099
+      },
+      "original_id": 16
+    },
+    {
+      "name": "cartilage_or_bone",
+      "pixels": 8394285,
+      "images": 13,
+      "source_groups": 9,
+      "datasets": {
+        "ignite": 8394285
+      },
+      "original_id": 18
+    },
+    {
+      "name": "liver_tissue",
+      "pixels": 11773245,
+      "images": 7,
+      "source_groups": 4,
+      "datasets": {
+        "ignite": 11773245
+      },
+      "original_id": 20
+    },
+    {
+      "name": "mucus_plasma_or_fluids",
+      "pixels": 3539380,
+      "images": 28,
+      "source_groups": 16,
+      "datasets": {
+        "ignite": 3539380
+      },
+      "original_id": 22
+    },
+    {
+      "name": "muscle",
+      "pixels": 11428898,
+      "images": 18,
+      "source_groups": 15,
+      "datasets": {
+        "gcss": 3949965,
+        "ignite": 7478933
+      },
+      "original_id": 23
+    }
+  ],
+  "retained_annotated_pixel_fraction": 0.9633210982372237,
+  "retained_annotated_pixels": 1062492702,
+  "all_original_annotated_pixels": 1102947609,
+  "evaluation_rule": "Map source expert codes to original canonical roles, then to eight classes; pixels from five unrepresented leaf roles and unlabeled/background provider codes are unscored. Apply identical mapping to every method prediction. Report scored coverage with every metric. Never count excluded pixels as background.",
+  "no_whole_slide_expert_accuracy": true,
+  "pm016_excluded": true,
+  "beetle_excluded": true,
+  "training_support_sha256": "8f872711573a6d236ac8b1ede33930202cca8381a96b7cb2c9612508713fb9d0",
+  "sample_receipt_sha256": "9012de29ee26bacd5b20d149ad121bc046e710ce4d3748ade69084c944907faf",
+  "source_sha256": "9bd2d4823a75fccfb4b29e59daaac4c4d5ec835bc0598e607a54808c98fa03e2"
+}

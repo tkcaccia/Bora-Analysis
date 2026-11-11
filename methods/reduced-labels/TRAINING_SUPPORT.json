@@ -1,0 +1,257 @@
+{
+  "status": "TRAINING_SUPPORT_AUDITED",
+  "training_images": 397,
+  "validation_masks_opened": 0,
+  "manifest_sha256": "8e5d07cf64ffc111966680eca741dda9328cfb7b1c34b1cf4742a704b2157849",
+  "sample_receipt_sha256": "9012de29ee26bacd5b20d149ad121bc046e710ce4d3748ade69084c944907faf",
+  "harmonization_sha256": "01c86708574059cb98dc53441b59988778c1aed34b2b0ab5b4b88cfab0b54821",
+  "classes": {
+    "1": {
+      "name": "tumor",
+      "pixels": 398743727,
+      "images": 335,
+      "source_groups": 260,
+      "datasets": {
+        "bcss": 122410356,
+        "gcss": 21986023,
+        "ignite": 78406605,
+        "tiger": 175940743
+      }
+    },
+    "2": {
+      "name": "in_situ_tumor",
+      "pixels": 16140434,
+      "images": 12,
+      "source_groups": 12,
+      "datasets": {
+        "tiger": 16140434
+      }
+    },
+    "3": {
+      "name": "stroma",
+      "pixels": 409628412,
+      "images": 368,
+      "source_groups": 262,
+      "datasets": {
+        "bcss": 110529173,
+        "gcss": 16665922,
+        "ignite": 106527806,
+        "tiger": 175905511
+      }
+    },
+    "4": {
+      "name": "inflamed_stroma",
+      "pixels": 76926913,
+      "images": 107,
+      "source_groups": 107,
+      "datasets": {
+        "gcss": 17518681,
+        "tiger": 59408232
+      }
+    },
+    "5": {
+      "name": "necrosis",
+      "pixels": 65082153,
+      "images": 206,
+      "source_groups": 144,
+      "datasets": {
+        "bcss": 20281274,
+        "gcss": 11706,
+        "ignite": 12405049,
+        "tiger": 32384124
+      }
+    },
+    "6": {
+      "name": "normal_glandular_epithelium",
+      "pixels": 725586,
+      "images": 29,
+      "source_groups": 29,
+      "datasets": {
+        "bcss": 237488,
+        "tiger": 488098
+      }
+    },
+    "7": {
+      "name": "epithelial_tissue",
+      "pixels": 12222051,
+      "images": 43,
+      "source_groups": 38,
+      "datasets": {
+        "ignite": 3448760,
+        "peso": 8773291
+      }
+    },
+    "8": {
+      "name": "blood",
+      "pixels": 3570659,
+      "images": 154,
+      "source_groups": 85,
+      "datasets": {
+        "bcss": 714305,
+        "ignite": 2856354
+      }
+    },
+    "9": {
+      "name": "blood_vessel",
+      "pixels": 1714573,
+      "images": 61,
+      "source_groups": 61,
+      "datasets": {
+        "bcss": 1714573
+      }
+    },
+    "10": {
+      "name": "lymphatic_vessel",
+      "pixels": 45620,
+      "images": 2,
+      "source_groups": 2,
+      "datasets": {
+        "bcss": 45620
+      }
+    },
+    "11": {
+      "name": "adipose",
+      "pixels": 10034911,
+      "images": 41,
+      "source_groups": 39,
+      "datasets": {
+        "bcss": 6093343,
+        "ignite": 3941568
+      }
+    },
+    "12": {
+      "name": "lymphocytic_infiltrate",
+      "pixels": 30853106,
+      "images": 72,
+      "source_groups": 72,
+      "datasets": {
+        "bcss": 30853106
+      }
+    },
+    "13": {
+      "name": "other_immune_infiltrate",
+      "pixels": 869808,
+      "images": 8,
+      "source_groups": 8,
+      "datasets": {
+        "bcss": 869808
+      }
+    },
+    "14": {
+      "name": "plasma_cells",
+      "pixels": 6047922,
+      "images": 12,
+      "source_groups": 12,
+      "datasets": {
+        "bcss": 6047922
+      }
+    },
+    "15": {
+      "name": "metaplasia",
+      "pixels": 329561,
+      "images": 1,
+      "source_groups": 1,
+      "datasets": {
+        "bcss": 329561
+      }
+    },
+    "16": {
+      "name": "alveolar_tissue",
+      "pixels": 5319099,
+      "images": 26,
+      "source_groups": 18,
+      "datasets": {
+        "ignite": 5319099
+      }
+    },
+    "17": {
+      "name": "bronchial_epithelium",
+      "pixels": 2815820,
+      "images": 24,
+      "source_groups": 15,
+      "datasets": {
+        "ignite": 2815820
+      }
+    },
+    "18": {
+      "name": "cartilage_or_bone",
+      "pixels": 8394285,
+      "images": 13,
+      "source_groups": 9,
+      "datasets": {
+        "ignite": 8394285
+      }
+    },
+    "19": {
+      "name": "inflammatory_infiltrate",
+      "pixels": 9104207,
+      "images": 43,
+      "source_groups": 30,
+      "datasets": {
+        "ignite": 9104207
+      }
+    },
+    "20": {
+      "name": "liver_tissue",
+      "pixels": 11773245,
+      "images": 7,
+      "source_groups": 4,
+      "datasets": {
+        "ignite": 11773245
+      }
+    },
+    "21": {
+      "name": "macrophages",
+      "pixels": 9539906,
+      "images": 77,
+      "source_groups": 44,
+      "datasets": {
+        "ignite": 9539906
+      }
+    },
+    "22": {
+      "name": "mucus_plasma_or_fluids",
+      "pixels": 3539380,
+      "images": 28,
+      "source_groups": 16,
+      "datasets": {
+        "ignite": 3539380
+      }
+    },
+    "23": {
+      "name": "muscle",
+      "pixels": 11428898,
+      "images": 18,
+      "source_groups": 15,
+      "datasets": {
+        "gcss": 3949965,
+        "ignite": 7478933
+      }
+    },
+    "24": {
+      "name": "keratinized_tissue",
+      "pixels": 8097333,
+      "images": 9,
+      "source_groups": 2,
+      "datasets": {
+        "ignite": 8097333
+      }
+    }
+  },
+  "ignored_source_codes": {
+    "('bcss', 5, 'glandular_secretions')": 93649,
+    "('bcss', 7, None)": 10156946,
+    "('bcss', 0, None)": 102119457,
+    "('bcss', 19, None)": 116172,
+    "('bcss', 15, None)": 364685,
+    "('bcss', 12, 'mucoid_material')": 24,
+    "('gcss', 0, None)": 4480825,
+    "('ignite', 1, None)": 36717743,
+    "('ignite', 0, None)": 4137413,
+    "('ignite', 255, None)": 1,
+    "('peso', 1, None)": 20707669,
+    "('peso', 0, None)": 10240,
+    "('tiger', 0, None)": 150758911,
+    "('tiger', 7, None)": 17853522
+  }
+}
