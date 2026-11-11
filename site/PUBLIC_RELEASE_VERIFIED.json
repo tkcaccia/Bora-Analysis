@@ -1,6 +1,6 @@
 {
   "format": "bora-public-site-v1",
-  "size_bytes": 110933057,
+  "size_bytes": 111012062,
   "file_count": 544,
   "public_wsi_count": 13,
   "file_sha256": {
@@ -502,7 +502,7 @@
     "visium-hd/index.html": "aa574e530ce0946b926ae475890e38cc8003713ebc0a41dee3f0fa441e3a257e",
     "visium-hd/public-10x-brain-cancer-ffpe.html": "eaf1c5eb3dab8ea025b8f9f5e9f2a66ce49e12f0e01e75b93bea1fb56cf38e69",
     "visium-hd/public-10x-breast-ff.html": "080943cf198c507817af60c88fd7ce14c5c27b6bcd26acdb1d65be017af71bb2",
-    "visium-hd/public-10x-colon-cancer.html": "2271b4aab489dabe6d9d6ac54092c2408284a47094be6a009ae80de2fcc02256",
+    "visium-hd/public-10x-colon-cancer.html": "03da2e37c1becb34a7b9ec43f417879d0f547e0b3e684265840e8bd65ec8f5a3",
     "visium-hd/public-10x-kidney-ffpe.html": "3b7b5c72a0dc502a05bf28eec33bd22cb40c940c2a17e1fe8c3714b72fcca1c1",
     "visium-hd/public-10x-lung-cancer-fixed-frozen.html": "c19c5fe7fc86342849fea252582ef7c741b78d669d5b5336125c2e1aebb911ff",
     "visium-hd/public-10x-lymph-node-3prime.html": "89ec6021942e7acfd0d50a19dbd7b3e6c0c91277043d680ae59ebe03dcc733f8",
