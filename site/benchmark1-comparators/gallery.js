@@ -107,10 +107,10 @@ function showResponses(row){
   const grid=document.getElementById("response-grid");
   const items=[];
   for(let cls=1;cls<=24;cls++){
-    const path=`supervised-final-v2/bw/${row.id}/class-${String(cls).padStart(2,"0")}.webp`;
+    const path=`bora-supported-bw-v1/${row.id}/class-${String(cls).padStart(2,"0")}.webp`;
     const figure=document.createElement("figure");
     const link=document.createElement("a");link.href=path;
-    const map=document.createElement("img");map.src=path;map.loading="lazy";map.style.maskImage=`url("${row.he_background_support.image}")`;map.style.maskSize="100% 100%";map.style.maskRepeat="no-repeat";
+    const map=document.createElement("img");map.src=path;map.loading="lazy";
     map.alt=`Grayscale supervised Virchow2 response for ${classNames[cls]} on ${row.dataset} ${row.source_group}; black is low response or H&E-detected background, white is high response`;
     const caption=document.createElement("figcaption");caption.textContent=`${cls} · ${classNames[cls]}`;
     link.append(map);figure.append(link,caption);items.push(figure);

@@ -98,7 +98,7 @@
 <article><strong>Supervised Virchow2</strong>From 1,280 channels, classwise training contrasts select 32 per class (444 unique). A joint 24-class head is blended with a classwise PLS head using training-selected weights. Fitting uses 397 expert-masked training images; this panel is separate from U-Net.</article>
 </div>
 <a href="#" id="full-image"><img alt="Eight aligned image panels" id="case-image"/></a>
-<p class="small">Select the figure to open it at full size. The class-colored panels, including the supervised Virchow2 overlay, share one tissue-class color key. The figure legend lists the expert classes and model colors covering at least 1% of this panel’s H&amp;E-supported tissue; tiny model predictions are omitted from the key. Model colors are clipped by one H&amp;E-only tissue support; the expert panel remains the original source annotation. Uncolored model regions may also be unmatched classes or absent predictions.</p>
+<p class="small">Select the figure to open it at full size. The class-colored panels, including the supervised Virchow2 overlay, share one tissue-class color key. The figure legend lists the expert classes and model colors covering at least 1% of this panel’s H&amp;E-supported tissue; tiny model predictions are omitted from the key. Every method overlay uses the same Bora H&amp;E tissue-support rule for background; the expert panel remains the original source annotation. Uncolored model regions may also be unmatched classes or absent predictions.</p>
 <p class="notice" id="background-audit"></p>
 <div class="meta" id="scores"></div>
 <p class="small">Scores are image-level mean intersection over union on the explicitly named expert-present or mapped roles. The supervised Virchow2 score uses the original unmasked display-resolution prediction resized with nearest-neighbor interpolation to the calibrated expert frame; it is a development score, not an untouched test. A missing score means the corresponding comparison was not defined for that image.</p>
@@ -160,7 +160,7 @@
 </section>
 <section aria-labelledby="response-heading" id="class-responses">
 <h2 id="response-heading">Black-and-white response maps for every tissue classification</h2>
-<p>For this image, each of the 24 black-and-white maps shows a blended class response from the training-selected Virchow2 model. Feature selection, fitting and blend selection used the 397 training images and expert masks; validation expert masks and U-Net outputs were not used. Black is low and white is high on a shared 0–1 response scale. These values are exploratory and not independently calibrated probabilities or accuracy scores. The feature grids were smoothed and interpolated to avoid visible token seams. The displayed maps are clipped to the same H&amp;E tissue support; linked original files remain unmasked. Display copies are at most 640 pixels on the long edge. <a href="supervised-virchow2-feature-selection.json">View selected channels and training support for every class</a>.</p>
+<p>For this image, each of the 24 black-and-white maps shows a blended class response from the training-selected Virchow2 model. Feature selection, fitting and blend selection used the 397 training images and expert masks; validation expert masks and U-Net outputs were not used. Black is low and white is high on a shared 0–1 response scale. These values are exploratory and not independently calibrated probabilities or accuracy scores. The feature grids were smoothed and interpolated to avoid visible token seams. The displayed and linked maps use the same Bora H&amp;E tissue-support rule as all method overlays; raw responses remain in the local research record. Display copies are at most 640 pixels on the long edge. <a href="supervised-virchow2-feature-selection.json">View selected channels and training support for every class</a>.</p>
 <div aria-live="polite" class="response-grid" id="response-grid"></div>
 </section>
 <section aria-labelledby="pipeline-heading">
@@ -176,6 +176,6 @@
 </section>
 </main>
 <footer><a href="../attribution.html">Attribution and reuse terms</a></footer>
-<script defer="" src="gallery.js?v=shared-he-background-v3"></script>
+<script defer="" src="gallery.js?v=bora-background-all-methods-v1"></script>
 </body>
 </html>
