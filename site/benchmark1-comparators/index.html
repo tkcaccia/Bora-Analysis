@@ -47,7 +47,7 @@
 <p id="case-note" class="notice" hidden></p>
 <h2>Broad-label results on the same H&amp;E image</h2>
 <a id="full-image" href="#"><img id="case-image" alt="Aligned H&E, expert and broad-label method panels"></a>
-<p class="small">The legend names only classes in the reference mask or at least 1% of a displayed model panel. Model overlays use the same Bora H&amp;E tissue support. The KODAMA–Bora spatial mask is unavailable in the curated local cache, so that panel is deliberately unfilled. Its frozen score remains available for the four original-reference datasets; PEsO's changed reference cannot be rescored from the old counts.</p>
+<p class="small">The legend names every tissue class present in the reference or any displayed model panel. Uncolored areas retain their original H&amp;E appearance. Model overlays use the same Bora H&amp;E tissue support. The KODAMA–Bora spatial mask is unavailable in the curated local cache, so that panel is deliberately unfilled. Its frozen score remains available for the four original-reference datasets; PEsO's changed reference cannot be rescored from the old counts.</p>
 <div class="cards" id="bora-scores"></div>
 <p class="small">For BCSS, GCSS, IGNITE and TIGER, supervised Bora selects 32 discriminative channels per class from the full 1,280-channel Virchow2 cache (203 unique channels), then fits a multiclass ridge classifier on 397 training images. For PEsO, a separate 64-channel binary ridge head uses the same full-channel cache and training-only source-disjoint model selection. No development image was used for feature, model or threshold selection. KODAMA–Bora geometry and fastPLS naming were not refitted; their original-reference scores remain a reanalysis of frozen counts for the other four datasets. External predictions were rescored on the PEsO reference without retraining.</p>
 <details><summary>External method scores</summary><div class="cards" id="external-scores"></div><p class="small">U-Net and DeepLabV3+ use RGB H&amp;E. VISTA-PATH uses external pretraining. MedSAM uses U-Net-derived boxes for tumor, stroma and necrosis. These methods have different output tasks; the cards do not establish a method ranking.</p></details>
@@ -56,5 +56,5 @@
 <p class="small">Download <a href="per-case-eight-v4.csv">per-image scores</a> or inspect the <a href="https://github.com/tkcaccia/Bora-Analysis/tree/main/methods/benchmark1">method code</a>.</p>
 </main>
 <footer><a href="../attribution.html">Attribution and reuse terms</a></footer>
-<script defer src="gallery.js?v=peso-selected-v1"></script>
+<script defer src="gallery.js?v=complete-legends-v1"></script>
 </body></html>

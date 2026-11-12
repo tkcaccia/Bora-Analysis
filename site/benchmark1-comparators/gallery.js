@@ -50,7 +50,7 @@ function show(id){
   const grid=document.getElementById("response-grid"),ids=row.bw_class_ids||Array.from({length:8},(_,i)=>i+1);grid.replaceChildren(...ids.map(k=>{const path=row.bw_root+`class-${String(k).padStart(2,"0")}.webp`,fig=document.createElement("figure"),link=document.createElement("a"),img=document.createElement("img"),caption=document.createElement("figcaption");link.href=path;img.src=path;img.loading="lazy";img.alt=`Black-and-white supervised response for ${names[k]}`;caption.textContent=`${k} · ${names[k]}`;link.append(img);fig.append(link,caption);return fig}));
 }
 function filter(){visible=all.filter(r=>!dataset.value||r.dataset===dataset.value);picker.replaceChildren(...visible.map(r=>new Option(`${r.dataset.toUpperCase()} · ${r.source_group} · ${r.id}`,r.id)));show(location.hash.slice(1))}
-fetch("cases-eight-v4.json?v=peso-selected-v1").then(r=>{if(!r.ok)throw Error(`HTTP ${r.status}`);return r.json()}).then(data=>{
+fetch("cases-eight-v5.json?v=complete-legends-v1").then(r=>{if(!r.ok)throw Error(`HTTP ${r.status}`);return r.json()}).then(data=>{
   if(data.status!=="EIGHT_CLASS_DEVELOPMENT_GALLERY_PESO_SELECTED_RIDGE64"||data.case_count!==87||data.cases.length!==87||data.kodama_spatial_mask_available!==false||!data.peso_proxy_is_not_expert_stroma||data.peso_corrected_supervised_model_pending)throw Error("Incomplete audited gallery");
   names=data.class_names;
   renderPerformance(data);
