@@ -1,6 +1,6 @@
 {
   "format": "bora-public-site-v1",
-  "size_bytes": 458550040,
+  "size_bytes": 458556150,
   "file_count": 3635,
   "public_wsi_count": 13,
   "file_sha256": {
@@ -3489,18 +3489,18 @@
     "visium-hd/comparators/visium_hd_human_ovarian_cancer_ff.html": "76c22525290e3c0ec0e6a4eb82e84e2f1a2ac069eef40c0197e4211b427adc87",
     "visium-hd/comparators/visium_hd_human_ovarian_cancer_ff/he.webp": "bdc8e40a73ff1e396c9ac0eced2fd5f98be61eae4eb926cdcdd7041a1eb8dc35",
     "visium-hd/index.html": "d77c01e8ae273ae8397e21ed0b25b55d88db2d7ebe61116d85cf22eaae667e49",
-    "visium-hd/public-10x-brain-cancer-ffpe.html": "9f2ebd0cfb2d1344c53253ef3a3d230f0b15abdd42dde003966152be644fe55d",
-    "visium-hd/public-10x-breast-ff.html": "a65701dd925987954141424d01e2a029dc3d43d96a0d4d3c97e52c5813684883",
-    "visium-hd/public-10x-colon-cancer.html": "28da55adadab78047be2924138b282ae62901366bebe04213b66f30cfa18a789",
-    "visium-hd/public-10x-kidney-ffpe.html": "235b49dc02a54e1f686d4d01117cbed805f2e34afb5c213bd2d9e47f67aaa76a",
-    "visium-hd/public-10x-lung-cancer-fixed-frozen.html": "9c539a180f4fae729219799e7b210590d35453a8e31a50451e5c8c530f008783",
-    "visium-hd/public-10x-lymph-node-3prime.html": "62fb77d48d8c7cec6d76a699d2e1d4cf3743635c943dc97f020b99537e2f4cfc",
-    "visium-hd/public-10x-lymph-node-ffpe.html": "0b3f234fd96e21ed0ff822305374fee8546c60cbd28100c9e0d8c5fe731ec0b6",
-    "visium-hd/public-10x-ovarian-3prime.html": "8bf455499d741ef87e5dbd6d022a9ed4aa75a4e9d946bc9810e8981ca5e7550f",
-    "visium-hd/public-10x-ovarian-ff.html": "ae2e7ac8ed53ed756c4df13e0216e215373c242472e2b93e8ced37a0eea31cb2",
-    "visium-hd/public-10x-pancreatic-cancer-fresh-frozen.html": "4e9315876f0dc720f42be603f537a54b9fc99e3a11520d390aed9749e8e8944a",
-    "visium-hd/public-10x-prostate-ffpe.html": "bd3ff54118284e61103a44fc28ff6742ee6c58f98fff495c0a9cc9bae6922cd3",
-    "visium-hd/public-10x-tonsil-3prime.html": "cd859a51c5d4825808b3476a09714265f1cd2db4ed52b1375b2f123ad272d782",
+    "visium-hd/public-10x-brain-cancer-ffpe.html": "786c6fe3a3d6201ca2bc02a2f0ce4109aad4f52adfd2df713e088d73221e6c91",
+    "visium-hd/public-10x-breast-ff.html": "2b6bdf01279a86bd97a9cd7e21af6e9745156586bef9a6d413718d9af9417514",
+    "visium-hd/public-10x-colon-cancer.html": "a9e8a8494d30e132d242287b1b74a4a9fcf4d47e4358241987004ad411c06c47",
+    "visium-hd/public-10x-kidney-ffpe.html": "763d643b7db3e41647ead05daab73213c123d5e0ed58d6b5eb58b213e1b191b4",
+    "visium-hd/public-10x-lung-cancer-fixed-frozen.html": "c6d91bc884fba0a639a0feb6e091ccf368d4c8d172f5244ee1a9401534e11f4a",
+    "visium-hd/public-10x-lymph-node-3prime.html": "389a2d538bd6e30bde4e8c1cee309ac2c63757b27fe04865740fcc88790b8f1d",
+    "visium-hd/public-10x-lymph-node-ffpe.html": "11e03f895f88fbc296983ea639da046dee0ca60d80cad1cf5434086146a0fce4",
+    "visium-hd/public-10x-ovarian-3prime.html": "556d01d518f3af6f25936b191ebf8172b08019684d0af53166b598bfecc54947",
+    "visium-hd/public-10x-ovarian-ff.html": "9b84b9c8cf51b9abdd7d485c7b7a8cd9cfe92e9c4a8e7ebb057c572f2c01c144",
+    "visium-hd/public-10x-pancreatic-cancer-fresh-frozen.html": "5500b7b5a7dc835720e02ca58d8de5ee2feaff73e0100d1e83e70d56271b88b9",
+    "visium-hd/public-10x-prostate-ffpe.html": "e7ec69ae4d1cda205eaa94000ccc738db7d31723b247ed80c80d834fc813253e",
+    "visium-hd/public-10x-tonsil-3prime.html": "8170b3225c80ca86a5944c24aafa84cd26ab24ff85a52a61c284039d616bf4e0",
     "visium-hd/supervised-contour-v1/public-10x-brain-cancer-ffpe/field-01-supervised.webp": "cbca97d2dcb93e9cd584a5a756f41a6b468a740617556ffb084c2c00812504a3",
     "visium-hd/supervised-contour-v1/public-10x-brain-cancer-ffpe/field-02-supervised.webp": "63be8897cba220c962d518f9381402b570b1300a2cacfb4454197c9546426116",
     "visium-hd/supervised-contour-v1/public-10x-brain-cancer-ffpe/field-03-supervised.webp": "bdbfd707cd1e4044e8f572bf9a7bc545b07575a01e7bd464c4fd9a4a3aa7fd58",
@@ -3631,7 +3631,7 @@
     "visium-hd/supervised-contour-v1/tcga-acc-or-a5jp-01z-00-dx1/wide-01-supervised.webp": "80159006058c2dc9b0db163b9f7ec40388ceac592bc302bd78f8d9bb6c6c05c8",
     "visium-hd/supervised-contour-v1/tcga-acc-or-a5jp-01z-00-dx1/wide-02-supervised.webp": "0afc9712cf2d51a05aa391607c2e18f01d0e63dae9cdbd9be8a584cf7c247b11",
     "visium-hd/supervised-contour-v1/tcga-acc-or-a5jp-01z-00-dx1/wide-03-supervised.webp": "8045414d9a2c18b705f2c03a1a7a7b3770c208473309bf7a9690e23410e10a1d",
-    "visium-hd/tcga-acc-or-a5jp-01z-00-dx1.html": "19aa4b64b750749428801842ea8113a29995e19a849daeee49b0b5ba870be39e",
+    "visium-hd/tcga-acc-or-a5jp-01z-00-dx1.html": "0d4fb14af0e9af29bcba24dfffc64f552f2faee1dab9a4bcba5fe063aef603d3",
     "visium-hd/unified-panels.css": "cf2244b697fea2eae7186105407e1fc6476513270a4a00312addbaf4d97bd251",
     "visium/FULLSECTION_PROVENANCE.json": "29cccc464a37966db2df66b9f4ae192205da11fc176fa2251dc35a4e771a9226",
     "visium/breast.html": "fe1677f46fc173f8d63d70c925791c7368b9fca2440fb96e256bdb9f27cd7958",
@@ -3737,5 +3737,72 @@
     "media_commit": "62a23af41a3fcceca57d2ec30a19749421f8e3e6",
     "page_stage_sha256": "e0dae203a793719d4617022819ddcf4886942cd1d34a16237e840e7e41a6bf4b",
     "model_receipt_sha256": "e33d4263d2d64cbf97284c31370fa160f1bf69157bed8be084fedd24a136c62f"
+  },
+  "benchmark2_supervised_ridge_pages": {
+    "public-10x-ovarian-3prime": {
+      "page_sha256": "556d01d518f3af6f25936b191ebf8172b08019684d0af53166b598bfecc54947",
+      "final_receipt_sha256": "cf77ec8602b5dcca6daa5b7896be9df1c383234cbb89f7ff8ef951913277fae0",
+      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe"
+    },
+    "public-10x-ovarian-ff": {
+      "page_sha256": "9b84b9c8cf51b9abdd7d485c7b7a8cd9cfe92e9c4a8e7ebb057c572f2c01c144",
+      "final_receipt_sha256": "3a858ad9652d6a9445888c58fa4426e65608fc271c49c4a5ffc6c3b3e61a4381",
+      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe"
+    },
+    "public-10x-breast-ff": {
+      "page_sha256": "2b6bdf01279a86bd97a9cd7e21af6e9745156586bef9a6d413718d9af9417514",
+      "final_receipt_sha256": "4331889719dd55f5a09c1c141d256cbb37f56494d470aa82c642dbe28cae6e45",
+      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe"
+    },
+    "public-10x-lymph-node-ffpe": {
+      "page_sha256": "11e03f895f88fbc296983ea639da046dee0ca60d80cad1cf5434086146a0fce4",
+      "final_receipt_sha256": "de590a2a235433ea51ea47a80629c51fd97354eae8617494dc7954a3b6945c08",
+      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe"
+    },
+    "public-10x-colon-cancer": {
+      "page_sha256": "a9e8a8494d30e132d242287b1b74a4a9fcf4d47e4358241987004ad411c06c47",
+      "final_receipt_sha256": "daff938dcfea782508d259238b246d6b48d9d7159b6d257bf76c5f2632b52701",
+      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe"
+    },
+    "public-10x-lymph-node-3prime": {
+      "page_sha256": "389a2d538bd6e30bde4e8c1cee309ac2c63757b27fe04865740fcc88790b8f1d",
+      "final_receipt_sha256": "bfbdaf2bc33216b4ac309c32e0cff7faeb78b00cde4f2a16e868f837a29c7cde",
+      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe"
+    },
+    "public-10x-tonsil-3prime": {
+      "page_sha256": "8170b3225c80ca86a5944c24aafa84cd26ab24ff85a52a61c284039d616bf4e0",
+      "final_receipt_sha256": "e547730ebcebfdff82d98a09b8358f579340d658738060e175ac2841c87cadc8",
+      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe"
+    },
+    "tcga-acc-or-a5jp-01z-00-dx1": {
+      "page_sha256": "0d4fb14af0e9af29bcba24dfffc64f552f2faee1dab9a4bcba5fe063aef603d3",
+      "final_receipt_sha256": "b92cc89ef7367e3a47b7686e231334dd72bf5787bab61717209af131b0551eca",
+      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe"
+    },
+    "public-10x-prostate-ffpe": {
+      "page_sha256": "e7ec69ae4d1cda205eaa94000ccc738db7d31723b247ed80c80d834fc813253e",
+      "final_receipt_sha256": "fb81948220948d25f83b63791907380b2893d9f9bf0a65c407109519f3255e20",
+      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe"
+    },
+    "public-10x-kidney-ffpe": {
+      "page_sha256": "763d643b7db3e41647ead05daab73213c123d5e0ed58d6b5eb58b213e1b191b4",
+      "final_receipt_sha256": "0b5c5119e724886fc58a0ae903b9970464dc243bbb1d536f54f68d6028de4330",
+      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe"
+    },
+    "public-10x-brain-cancer-ffpe": {
+      "page_sha256": "786c6fe3a3d6201ca2bc02a2f0ce4109aad4f52adfd2df713e088d73221e6c91",
+      "final_receipt_sha256": "3d238623d907961ce8dc4a14183322adce77504c76e93c9639b04f065c6ad54d",
+      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe"
+    },
+    "public-10x-lung-cancer-fixed-frozen": {
+      "page_sha256": "c6d91bc884fba0a639a0feb6e091ccf368d4c8d172f5244ee1a9401534e11f4a",
+      "final_receipt_sha256": "96e9c426aa5ef1328a758010c0d2eb7c78470f11b29db2d06419af491f2c817b",
+      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe"
+    },
+    "public-10x-pancreatic-cancer-fresh-frozen": {
+      "page_sha256": "5500b7b5a7dc835720e02ca58d8de5ee2feaff73e0100d1e83e70d56271b88b9",
+      "final_receipt_sha256": "f396ce5de81dda5bfa52d6a5d38828f7ef942631a8726f43e8a168903e119cdf",
+      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe"
+    }
   }
 }

@@ -12,8 +12,9 @@ manifests are supplied separately under their respective access terms.
 | --- | --- | --- |
 | KODAMA–Bora | Calibrated H&E, reviewed tissue support, Virchow2 features; anonymous image-only tile groups | [Bora](https://github.com/tkcaccia/Bora), [KODAMA](https://github.com/tkcaccia/KODAMA), and the [whole-slide method record](../docs/benchmark2-full-slide-comparators-2026-11-10.md) |
 | Eight broad-label reanalysis | Training-only ontology; new 256-channel supervised Virchow2 head; exact remapping of existing Bora and comparator predictions | [`reduced-labels/`](reduced-labels/) contains the executed training, validation, support-audit and rescore sources plus frozen aggregate ontology receipts |
+| Selected eight-class ridge head | Full 1,280-channel Virchow2 input; 203 training-selected channels; 397 expert-masked training images | [`benchmark1/ridge/`](benchmark1/ridge/) contains the executed search, fit, 87-image development evaluation and response-map sources |
 | Supervised Virchow2 (Benchmark 1) | 1,280-channel Virchow2 token features; 397 expert-masked training images | [`classwise_joint_search.py`](benchmark1/classwise_joint_search.py), [`classwise_joint_fit.py`](benchmark1/classwise_joint_fit.py), [`blend_search.py`](benchmark1/blend_search.py), [`ontology_gate.py`](benchmark1/ontology_gate.py), [`blend_validate.py`](benchmark1/blend_validate.py), [`supervised_contour.py`](benchmark1/supervised_contour.py) |
-| Supervised Bora (Benchmark 2 current broad-label head) | Full 1,280-channel input cache; 256 training-selected channels; 397 expert-masked training images | [`supervised_final/`](benchmark2/supervised_final/) contains training-only presence selection, whole-slide projection, contour, geometry, vector and audit code |
+| Supervised Bora (Benchmark 2 ridge head) | Full 1,280-channel input cache; 203 training-selected channels; 397 expert-masked training images | [`supervised_ridge/`](benchmark2/supervised_ridge/) contains the executed training-only presence selection, whole-slide projection, contour, geometry, vector and rendering code; [`supervised_final/`](benchmark2/supervised_final/) preserves the earlier logistic route |
 | Historical supervised Virchow2–PLS | The same 1,280-channel input and 397 training images; earlier frozen head | [`search.py`](benchmark1/search.py), [`final_fit.py`](benchmark1/final_fit.py), [`project_supervised.py`](benchmark2/project_supervised.py) |
 | Class-aware U-Net | RGB H&E and expert masks on the same 397 training images | [`train_unet_balanced.py`](benchmark1/train_unet_balanced.py), [`run_four_methods.py`](benchmark2/run_four_methods.py) |
 | DeepLabV3+ | RGB H&E and expert masks on the same 397 training images | [`train_deeplabv3plus.py`](benchmark1/train_deeplabv3plus.py), [`run_four_methods.py`](benchmark2/run_four_methods.py) |
@@ -42,7 +43,7 @@ for U-Net and two for DeepLabV3+. Neither uses Virchow2 or black-and-white
 response maps as input. The retained development gallery has 87 images;
 those expert masks are not opened by the training scripts.
 
-The current Benchmark 1 supervised mask uses the classwise union of 32
+The earlier 24-class Benchmark 1 supervised mask uses the classwise union of 32
 standardized contrast channels per class (444 unique original channels), a
 joint 24-class multinomial logistic head, and a 25% blend with the older
 64-channel-per-class, eight-component PLS logistic head. The 75%/25% blend
@@ -56,8 +57,7 @@ all-image mean; the other 68 images have mean 0.486. Case 050 tumor IoU rises
 from 0.307 to 0.822, but muscle IoU remains 0. The code and versioned
 receipts preserve this limitation.
 
-The Benchmark 2 public whole-slide pages use the current eight-class head,
-which was fitted on the same 397 training images as the Benchmark 1 gallery.
+The Benchmark 1 eight-class development gallery and Benchmark 2 public whole-slide pages use the training-selected 203-channel classwise ridge head, fitted on the same 397 training images.
 KODAMA–Bora's anonymous groups and earlier fastPLS tissue names remain a
 separate route. A source-group-disjoint training search selected a 2%
 whole-slide class-presence rule, so trace predicted classes are reassigned

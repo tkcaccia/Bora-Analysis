@@ -31,7 +31,7 @@ and the 19 single-class PEsO cases are not a multiclass test.
 The [13 public Benchmark 2 whole-slide pages](https://tkcaccia.github.io/Bora-Analysis/visium-hd/)
 show the same H&E frame with KODAMA–Bora, supervised Virchow2 Bora,
 U-Net, DeepLabV3+, MedSAM and VISTA-PATH at full overview and nine matched
-zoom views. The current supervised head was fitted on the frozen 397 Benchmark 1
+zoom views. The current 203-channel classwise ridge head was fitted on the frozen 397 Benchmark 1
 training images and expert masks after a training-only reduction from 24 labels
 to eight broad tissue classes. Five sparsely represented tissue categories are
 unscored. KODAMA–Bora geometry and the four external model predictions were
@@ -47,7 +47,7 @@ source features and external predictions remain unchanged.
 These exploratory views have no
 independent whole-slide expert masks or accuracy ranking.
 
-The [supervised full-slide method and audit](docs/supervised-bora-fullslide-final-2026-11-12.md)
+The [supervised ridge full-slide method and audit](docs/supervised-bora-fullslide-ridge-2026-11-12.md)
 describe the training-only class rule, physical contour and geometry cleanup,
 and native GeoJSON output.
 
