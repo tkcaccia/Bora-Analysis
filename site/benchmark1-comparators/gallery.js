@@ -32,7 +32,7 @@ function show(id){
   title.textContent=`${row.dataset.toUpperCase()} · ${row.source_group} · ${row.id}`;
   image.src=row.figure;full.href=row.figure;image.alt=`Eight-class H&E, expert, supervised Bora and four external method panels for ${row.id}`;
   document.getElementById("bora-scores").replaceChildren(
-    card("Supervised Bora",row.scores.supervised,"New eight-class Virchow2 head, fitted on training images"),
+    card("Supervised Bora",row.scores.supervised,"Training-selected 203-channel ridge head, fitted on 397 training images"),
     card("KODAMA–Bora + fastPLS",row.scores.kodama_bora,"Frozen group route, exactly rescored; spatial mask unavailable locally"));
   document.getElementById("external-scores").replaceChildren(
     card("Class-aware U-Net",row.scores.unet,"Prior RGB prediction mapped to eight classes"),
@@ -45,7 +45,7 @@ function show(id){
   const grid=document.getElementById("response-grid");grid.replaceChildren(...Array.from({length:8},(_,i)=>{const k=i+1,path=row.bw_root+`class-${String(k).padStart(2,"0")}.webp`,fig=document.createElement("figure"),link=document.createElement("a"),img=document.createElement("img"),caption=document.createElement("figcaption");link.href=path;img.src=path;img.loading="lazy";img.alt=`Black-and-white supervised response for ${names[k]}`;caption.textContent=`${k} · ${names[k]}`;link.append(img);fig.append(link,caption);return fig}));
 }
 function filter(){visible=all.filter(r=>!dataset.value||r.dataset===dataset.value);picker.replaceChildren(...visible.map(r=>new Option(`${r.dataset.toUpperCase()} · ${r.source_group} · ${r.id}`,r.id)));show(location.hash.slice(1))}
-fetch("cases-eight.json?v=eight-class-v1").then(r=>{if(!r.ok)throw Error(`HTTP ${r.status}`);return r.json()}).then(data=>{
+fetch("cases-eight-v2.json?v=ridge-v1").then(r=>{if(!r.ok)throw Error(`HTTP ${r.status}`);return r.json()}).then(data=>{
   if(data.status!=="EIGHT_CLASS_DEVELOPMENT_GALLERY_STAGED"||data.case_count!==87||data.cases.length!==87||data.kodama_spatial_mask_available!==false)throw Error("Incomplete audited gallery");
   names=data.class_names;
   renderPerformance(data);

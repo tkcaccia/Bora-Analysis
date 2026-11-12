@@ -10,13 +10,15 @@ Tissue names on whole slides are provisional.
 
 The [Benchmark 1 development gallery](https://tkcaccia.github.io/Bora-Analysis/benchmark1-comparators/)
 uses eight broad tissue labels selected from the 397 retained training images.
-An eight-class supervised Virchow2 head was fitted on training only, then
-applied to the 87 development validation images. Its 256-channel regularized
-multinomial head and ROI contour rule yielded mean expert-present case macro
-IoU 0.694; the mean across the four multiclass datasets was 0.603. The older
-24-class head mapped to the same broad labels was essentially tied (0.692
-overall; 0.604 across the four multiclass datasets). The score task changed,
-so these values must not be compared directly with prior 24-class scores.
+An eight-class supervised Virchow2 head was selected and fitted on training
+images only, then applied to the 87 development validation images. The
+training-only search chose 32 classwise contrast channels per class (203
+unique channels in the final model) and multiclass ridge based on case macro
+IoU and CPU time. With the same ROI contour rule, it yielded mean
+expert-present case macro IoU 0.702; the equal-dataset mean across the four
+multiclass datasets was 0.615. The preceding 256-channel logistic head scored
+0.694 and 0.603 respectively. The score task changed from the older 24-class
+gallery, so these eight-class values should not be compared with its scores.
 The gallery shows eight new black-and-white supervised response maps per case.
 The former KODAMA–Bora + fastPLS output and four external predictions were
 mapped and rescored under the broad ontology without refitting those models.

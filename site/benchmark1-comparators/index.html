@@ -31,7 +31,7 @@
 <header>
 <p><a href="../index.html">← Benchmark 1</a></p>
 <h1>Benchmark 1 · broad tissue labels</h1>
-<p>Browse 87 H&amp;E development validation images with eight tissue labels selected from the 397 training images. The new supervised Bora mask and its black-and-white Virchow2 responses appear with the expert and external methods on each image.</p>
+<p>Browse 87 H&amp;E development validation images with eight tissue labels selected from the 397 training images. The training-selected supervised Bora mask and its eight black-and-white Virchow2 responses appear with the expert and external methods on each image.</p>
 <nav aria-label="Benchmark 1 result sets"><a href="../index.html#public-datasets">Training data · public expert masks</a><a aria-current="page" href="index.html">Validation data · 87 images</a></nav>
 </header>
 <main>
@@ -47,12 +47,12 @@
 <a id="full-image" href="#"><img id="case-image" alt="Aligned H&E, expert and broad-label method panels"></a>
 <p class="small">The legend names only classes in the expert mask or at least 1% of a displayed model panel. Model overlays use the same Bora H&amp;E tissue support. The KODAMA–Bora spatial mask is unavailable in the curated local cache, so that panel is deliberately unfilled; its score comes from exact frozen expert-by-prediction pixel counts.</p>
 <div class="cards" id="bora-scores"></div>
-<p class="small">The supervised Bora head was refitted on training-only eight-class Virchow2 data. KODAMA–Bora geometry and fastPLS naming were not refitted; their full confusion matrices were remapped to these broad labels. Their scores are therefore a reanalysis of the frozen output. The external predictions were similarly remapped and rescored without retraining, and MedSAM predicts only three prompted classes.</p>
+<p class="small">The supervised Bora head selects 32 discriminative channels per class from the full 1,280-channel Virchow2 cache (203 unique channels), then fits a multiclass ridge classifier on the 397 training images. Four prespecified heads were compared on source-group-disjoint training folds using case macro IoU and CPU time; no development image was used for selection. KODAMA–Bora geometry and fastPLS naming were not refitted; their full confusion matrices were remapped to these broad labels. Their scores are therefore a reanalysis of the frozen output. The external predictions were similarly remapped and rescored without retraining, and MedSAM predicts only three prompted classes.</p>
 <details><summary>External method scores</summary><div class="cards" id="external-scores"></div><p class="small">U-Net and DeepLabV3+ use RGB H&amp;E. VISTA-PATH uses external pretraining. MedSAM uses U-Net-derived boxes for tumor, stroma and necrosis. These methods have different output tasks; the cards do not establish a method ranking.</p></details>
 <details><summary>KODAMA groups and original embedding</summary><div id="kodama-details"></div></details>
-<details><summary>Eight black-and-white supervised Virchow2 responses</summary><p class="small">White indicates a higher relative softmax response from the training-fitted eight-class head; black indicates lower response or non-tissue. The scores are not calibrated probabilities. A dataset-specific eligibility rule and 1.5 µm contour smoothing apply to the final colored supervised mask.</p><div class="response-grid" id="response-grid"></div></details>
-<p class="small">Download <a href="per-case-eight.csv">per-image eight-class scores</a> or inspect the <a href="https://github.com/tkcaccia/Bora-Analysis/tree/main/methods/benchmark1">method code</a>.</p>
+<details><summary>Eight black-and-white supervised Virchow2 responses</summary><p class="small">White indicates a higher relative softmax display of the eight ridge decision scores; black indicates lower response or non-tissue. The scores are not calibrated probabilities. A dataset-specific eligibility rule and 1.5 µm contour smoothing apply to the final colored supervised mask.</p><div class="response-grid" id="response-grid"></div></details>
+<p class="small">Download <a href="per-case-eight-v2.csv">per-image eight-class scores</a> or inspect the <a href="https://github.com/tkcaccia/Bora-Analysis/tree/main/methods/benchmark1">method code</a>.</p>
 </main>
 <footer><a href="../attribution.html">Attribution and reuse terms</a></footer>
-<script defer src="gallery.js?v=performance-v1"></script>
+<script defer src="gallery.js?v=ridge-v1"></script>
 </body></html>

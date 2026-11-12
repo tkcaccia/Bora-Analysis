@@ -1,7 +1,7 @@
 {
   "format": "bora-public-site-v1",
-  "size_bytes": 458435203,
-  "file_count": 3633,
+  "size_bytes": 458550040,
+  "file_count": 3635,
   "public_wsi_count": 13,
   "file_sha256": {
     "BUILD_PROVENANCE.json": "7353c2f089fe41ad934780d7df8f54f0ea336e8b147968e3875ed73d9fe06d97",
@@ -2184,6 +2184,7 @@
     "benchmark1-comparators/bora-supported-figures-v1/case-086.webp": "11dda8bed1057b6b6f5e0a21a7afd38108670db4c2c68706d091ecea81ae7e04",
     "benchmark1-comparators/bora-supported-figures-v1/case-087.webp": "a9cdcd12b5c9794376a4e15ad0028180416fe73aaba5ff682439df23b9a6b151",
     "benchmark1-comparators/bora-two-stage-per-case-87.csv": "b70ec2bdcdc149c12748623268ff2f529fa6f56d1ca101758858d0164565b6ca",
+    "benchmark1-comparators/cases-eight-v2.json": "df99ca5ab4c3f5eb5b50c12ed96dd5811f014fd399713de1eed59ecfdaf071e5",
     "benchmark1-comparators/cases-eight.json": "f0bbcd64c512a2c58bc1bb118befcbe1b36ad718ef75e79b6eea959b03201455",
     "benchmark1-comparators/cases.json": "9444df96db588c98039ea7d738a7d734f93c65151f122c95ef1729ff90f6088b",
     "benchmark1-comparators/combined-supported-v1/case-001.png": "56de2fa61024440fd3f50ac11ed049b2e9b7ac220aa956b5042e567d9baf4fca",
@@ -2273,7 +2274,7 @@
     "benchmark1-comparators/combined-supported-v1/case-085.png": "c3d5c77a50488a23e0300c16f7d19dd24c026a2cc3da664a3eb88722df3c778b",
     "benchmark1-comparators/combined-supported-v1/case-086.png": "549867cb3d1fd1eeb2538158bbce6834a74c1d5289ece567e709d1b10d0fb2de",
     "benchmark1-comparators/combined-supported-v1/case-087.png": "e351a228a8517bd228ab22fce13e9a98ad3014e7c672effe7a51b73a6765e354",
-    "benchmark1-comparators/gallery.js": "75672f0263e4d8289d03fe1f9767808c898e9abd345c6e4dfa4fe937894dec97",
+    "benchmark1-comparators/gallery.js": "158631aa34991f512387328c43a008f6a29057db56aec746965d5363d5ec8081",
     "benchmark1-comparators/he-support-alpha-v1/case-001.png": "069ebbb039b9cd8cf1c70d5f1688d7f1ad54088620bf6ad182ffbf2b3f7e330e",
     "benchmark1-comparators/he-support-alpha-v1/case-002.png": "b4071f7e87817a6ca74c805d6d3ddfe1829ced18be5bef70e505649cf536724f",
     "benchmark1-comparators/he-support-alpha-v1/case-003.png": "788e240db6bfc4fadb3ed43288d1472b74207ba438c464bb91a4f28fc6d8aa58",
@@ -2361,8 +2362,9 @@
     "benchmark1-comparators/he-support-alpha-v1/case-085.png": "fa7634cfd2ee0658954381508e1618fb6be2d99b7784b17759b53d653e9079f1",
     "benchmark1-comparators/he-support-alpha-v1/case-086.png": "d5c58b3dd987f8a232c91480b93b2751a5d0aaa054c587fc23157b856c7dd04e",
     "benchmark1-comparators/he-support-alpha-v1/case-087.png": "d3da2c8f4d871dc521fc9fdd944e39f83f596194e23e29b1def3c2f97367be30",
-    "benchmark1-comparators/index.html": "d62dda1315bbe4b03c5cac1389e231b52f1c420dc6db4d9f05077e1c3e1db23a",
+    "benchmark1-comparators/index.html": "a195be0f0014594ddb496b9ecb5eab08d460eac9cc6afcba729c33270791f0ec",
     "benchmark1-comparators/per-case-87.csv": "3f03cfb347e3436e302754b49f456351ad2a0ebc4d24e45c7922d17675946fab",
+    "benchmark1-comparators/per-case-eight-v2.csv": "bbef377aab16b7b65c224af5efd5e0ba55776e747393b32286266bcbb4e7b345",
     "benchmark1-comparators/per-case-eight.csv": "1034f50618044f3f8e5cda4d81d293dd868269e25d66ebe6e751dbbb37d2bbb8",
     "benchmark1-comparators/shared-he-background-v1/case-001.webp": "fef037b50f842c63d96ebdc5c445b6e25d6eb91753633d66093b3c34d865fe8f",
     "benchmark1-comparators/shared-he-background-v1/case-002.webp": "c836afda5852306fa2025131a521064a9155a1ecac67fee24643223adbe1fc49",
@@ -3728,5 +3730,12 @@
       "final_receipt_sha256": "47384c3f30567b010b258d1c0ffd3a4f6f050b78116207ad742a25d96c80ee1b",
       "media_commit": "7815a83fd967c8c1abfbfe79495246acb20cabcc"
     }
+  },
+  "benchmark1_supervised_ridge": {
+    "cases": 87,
+    "response_maps": 696,
+    "media_commit": "62a23af41a3fcceca57d2ec30a19749421f8e3e6",
+    "page_stage_sha256": "e0dae203a793719d4617022819ddcf4886942cd1d34a16237e840e7e41a6bf4b",
+    "model_receipt_sha256": "e33d4263d2d64cbf97284c31370fa160f1bf69157bed8be084fedd24a136c62f"
   }
 }

@@ -1,0 +1,2940 @@
+{
+  "status": "EIGHT_CLASS_DEVELOPMENT_GALLERY_STAGED",
+  "case_count": 87,
+  "ontology_sha256": "8fb3aeedc0a93d7eae87533ba67ce7e9431afbaf8cfc0e99af8058f9bb81102f",
+  "media_commit": "62a23af41a3fcceca57d2ec30a19749421f8e3e6",
+  "validation_previously_inspected": true,
+  "method_model_refit": {
+    "supervised": true,
+    "kodama_bora": false,
+    "unet": false,
+    "deeplabv3plus": false,
+    "vista_path": false,
+    "medsam": false
+  },
+  "kodama_spatial_mask_available": false,
+  "cohort_scores": {
+    "supervised_all_87": 0.7016181649209304,
+    "supervised_four_multiclass_datasets": 0.6153245403527883,
+    "kodama_bora_all_87": 0.2668199784207197,
+    "kodama_bora_four_multiclass_datasets": 0.3012620560712032
+  },
+  "class_names": {
+    "1": "Tumor",
+    "2": "Stroma",
+    "3": "Necrosis",
+    "4": "Epithelium",
+    "5": "Blood",
+    "6": "Vessel",
+    "7": "Adipose",
+    "8": "Immune infiltrate"
+  },
+  "cases": [
+    {
+      "id": "case-001",
+      "case": "bcss__datasets_bcss_pairs_TCGA-A2-A04P-DX1_xmin104246_ymin48517_MPP-0.2500.png__5173568b64",
+      "dataset": "bcss",
+      "source_group": "TCGA-A2-A04P",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-001.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-001/",
+      "expert_present_ids": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        8
+      ],
+      "scored_expert_pixels": 2769620,
+      "scores": {
+        "supervised": 0.4258837331815967,
+        "kodama_bora": 0.21566810341791584,
+        "unet": 0.3693348884596106,
+        "deeplabv3plus": 0.2041635556132552,
+        "vista_path": 0.10822748582539453,
+        "medsam": 0.0729284816031804
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-001.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-002",
+      "case": "bcss__datasets_bcss_pairs_TCGA-A2-A0D2-DX1_xmin96887_ymin22299_MPP-0.2500.png__7755708e58",
+      "dataset": "bcss",
+      "source_group": "TCGA-A2-A0D2",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-002.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-002/",
+      "expert_present_ids": [
+        1,
+        2,
+        3
+      ],
+      "scored_expert_pixels": 2050030,
+      "scores": {
+        "supervised": 0.6623893174948099,
+        "kodama_bora": 0.1663746127765446,
+        "unet": 0.5586687226193381,
+        "deeplabv3plus": 0.3169174928297776,
+        "vista_path": 0.293525693925683,
+        "medsam": 0.10430428557256664
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-002.webp",
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-003",
+      "case": "bcss__datasets_bcss_pairs_TCGA-A2-A0ST-DX1_xmin109446_ymin18274_MPP-0.2500.png__2ea720c2e5",
+      "dataset": "bcss",
+      "source_group": "TCGA-A2-A0ST",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-003.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-003/",
+      "expert_present_ids": [
+        1,
+        2,
+        6,
+        8
+      ],
+      "scored_expert_pixels": 6242787,
+      "scores": {
+        "supervised": 0.6178607028479542,
+        "kodama_bora": 0.2987163324370689,
+        "unet": 0.40563189155962887,
+        "deeplabv3plus": 0.3199290076329739,
+        "vista_path": 0.16570692049396088,
+        "medsam": 0.08099759421954861
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-003.webp",
+      "kodama_groups": 4,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "case-004",
+      "case": "bcss__datasets_bcss_pairs_TCGA-AO-A0J2-DX1_xmin33561_ymin14515_MPP-0.2500.png__f774cd9ac0",
+      "dataset": "bcss",
+      "source_group": "TCGA-AO-A0J2",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-004.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-004/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 2574805,
+      "scores": {
+        "supervised": 0.7905326614795072,
+        "kodama_bora": 0.5690597176902291,
+        "unet": 0.786825280564559,
+        "deeplabv3plus": 0.3423261085456867,
+        "vista_path": 0.3818231765324458,
+        "medsam": 0.10728211139226408
+      },
+      "kodama_plot": null,
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-005",
+      "case": "bcss__datasets_bcss_pairs_TCGA-AR-A1AY-DX1_xmin62652_ymin27061_MPP-0.2500.png__48ae1efb56",
+      "dataset": "bcss",
+      "source_group": "TCGA-AR-A1AY",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-005.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-005/",
+      "expert_present_ids": [
+        1,
+        2,
+        3
+      ],
+      "scored_expert_pixels": 1159596,
+      "scores": {
+        "supervised": 0.7518911322736107,
+        "kodama_bora": 0.3805135169001439,
+        "unet": 0.4654340955183276,
+        "deeplabv3plus": 0.321119774962194,
+        "vista_path": 0.42503552857427523,
+        "medsam": 0.14868164903719
+      },
+      "kodama_plot": null,
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "case-006",
+      "case": "bcss__datasets_bcss_pairs_TCGA-C8-A1HJ-DX1_xmin46412_ymin17174_MPP-0.2500.png__9856d0cb59",
+      "dataset": "bcss",
+      "source_group": "TCGA-C8-A1HJ",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-006.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-006/",
+      "expert_present_ids": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        8
+      ],
+      "scored_expert_pixels": 3144222,
+      "scores": {
+        "supervised": 0.5024062223296814,
+        "kodama_bora": 0.36183360773459383,
+        "unet": 0.46754015252945935,
+        "deeplabv3plus": 0.21604860353324007,
+        "vista_path": 0.1844696761029949,
+        "medsam": 0.03319343226989452
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-006.webp",
+      "kodama_groups": 3,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "case-007",
+      "case": "bcss__datasets_bcss_pairs_TCGA-E2-A14X-DX1_xmin88836_ymin66393_MPP-0.2500.png__021d87e7e7",
+      "dataset": "bcss",
+      "source_group": "TCGA-E2-A14X",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-007.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-007/",
+      "expert_present_ids": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8
+      ],
+      "scored_expert_pixels": 4841925,
+      "scores": {
+        "supervised": 0.6763222377850938,
+        "kodama_bora": 0.19154012775228924,
+        "unet": 0.5423428973813736,
+        "deeplabv3plus": 0.2956889549541276,
+        "vista_path": 0.17661564954270553,
+        "medsam": 0.029972020430189462
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-007.webp",
+      "kodama_groups": 3,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-008",
+      "case": "bcss__datasets_bcss_pairs_TCGA-E2-A1B6-DX1_xmin16266_ymin50634_MPP-0.2500.png__f74c2ce8d2",
+      "dataset": "bcss",
+      "source_group": "TCGA-E2-A1B6",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-008.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-008/",
+      "expert_present_ids": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8
+      ],
+      "scored_expert_pixels": 3136072,
+      "scores": {
+        "supervised": 0.6190533881430635,
+        "kodama_bora": 0.14779639582332108,
+        "unet": 0.4916579229743719,
+        "deeplabv3plus": 0.20789880577483855,
+        "vista_path": 0.20131100446052028,
+        "medsam": 0.03392425611453432
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-008.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-009",
+      "case": "bcss__datasets_bcss_pairs_TCGA-E2-A1LI-DX1_xmin44715_ymin18434_MPP-0.2500.png__00f7ef02a6",
+      "dataset": "bcss",
+      "source_group": "TCGA-E2-A1LI",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-009.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-009/",
+      "expert_present_ids": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "scored_expert_pixels": 6033928,
+      "scores": {
+        "supervised": 0.5749745206566517,
+        "kodama_bora": 0.23061579635596527,
+        "unet": 0.4426752539561882,
+        "deeplabv3plus": 0.16002150780717497,
+        "vista_path": 0.18832689381991422,
+        "medsam": 0.07254208058309643
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-009.webp",
+      "kodama_groups": 3,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-010",
+      "case": "bcss__datasets_bcss_pairs_TCGA-EW-A1P1-DX1_xmin50567_ymin38988_MPP-0.2500.png__ca57475c8e",
+      "dataset": "bcss",
+      "source_group": "TCGA-EW-A1P1",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-010.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-010/",
+      "expert_present_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ],
+      "scored_expert_pixels": 4056394,
+      "scores": {
+        "supervised": 0.46371925157009225,
+        "kodama_bora": 0.17753368472992032,
+        "unet": 0.4051664977215606,
+        "deeplabv3plus": 0.18311111051923737,
+        "vista_path": 0.15894553370054582,
+        "medsam": 0.08214245256705655
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-010.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "case-011",
+      "case": "bcss__datasets_bcss_pairs_TCGA-EW-A1P8-DX1_xmin15520_ymin26381_MPP-0.2500.png__34f59148d1",
+      "dataset": "bcss",
+      "source_group": "TCGA-EW-A1P8",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-011.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-011/",
+      "expert_present_ids": [
+        1,
+        2,
+        3,
+        7,
+        8
+      ],
+      "scored_expert_pixels": 1775473,
+      "scores": {
+        "supervised": 0.6717130777744895,
+        "kodama_bora": 0.10204837381967105,
+        "unet": 0.5281487340484741,
+        "deeplabv3plus": 0.13978958816358072,
+        "vista_path": 0.229082481674567,
+        "medsam": 0.10564856984010329
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-011.webp",
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-012",
+      "case": "bcss__datasets_bcss_pairs_TCGA-EW-A6SB-DX1_xmin34625_ymin56578_MPP-0.2500.png__3ecad800be",
+      "dataset": "bcss",
+      "source_group": "TCGA-EW-A6SB",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-012.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-012/",
+      "expert_present_ids": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "scored_expert_pixels": 3436939,
+      "scores": {
+        "supervised": 0.43778688808037497,
+        "kodama_bora": 0.2614785584217829,
+        "unet": 0.2671515990109867,
+        "deeplabv3plus": 0.13517367619415857,
+        "vista_path": 0.11826430984677909,
+        "medsam": 0.041709400813092636
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-012.webp",
+      "kodama_groups": 3,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-013",
+      "case": "bcss__datasets_bcss_pairs_TCGA-GM-A2DH-DX1_xmin50963_ymin56303_MPP-0.2500.png__09b319b6c5",
+      "dataset": "bcss",
+      "source_group": "TCGA-GM-A2DH",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-013.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-013/",
+      "expert_present_ids": [
+        1,
+        2,
+        3,
+        6,
+        8
+      ],
+      "scored_expert_pixels": 2070557,
+      "scores": {
+        "supervised": 0.46102011950749133,
+        "kodama_bora": 0.28608854341354634,
+        "unet": 0.3572540905534944,
+        "deeplabv3plus": 0.3314419790959815,
+        "vista_path": 0.1918289824728225,
+        "medsam": 0.10962115779961112
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-013.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "case-014",
+      "case": "bcss__datasets_bcss_pairs_TCGA-LL-A740-DX1_xmin39436_ymin24080_MPP-0.2500.png__98186249a0",
+      "dataset": "bcss",
+      "source_group": "TCGA-LL-A740",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-014.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-014/",
+      "expert_present_ids": [
+        1,
+        2,
+        6,
+        8
+      ],
+      "scored_expert_pixels": 1931634,
+      "scores": {
+        "supervised": 0.7602000322990721,
+        "kodama_bora": 0.24728023910739272,
+        "unet": 0.5398729730973493,
+        "deeplabv3plus": 0.24389649346130166,
+        "vista_path": 0.18612638219991176,
+        "medsam": 0.1976740803940199
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-014.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "case-015",
+      "case": "bcss__datasets_bcss_pairs_TCGA-OL-A5D7-DX1_xmin114443_ymin22490_MPP-0.2500.png__5021a319f0",
+      "dataset": "bcss",
+      "source_group": "TCGA-OL-A5D7",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-015.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-015/",
+      "expert_present_ids": [
+        1,
+        2,
+        3,
+        7,
+        8
+      ],
+      "scored_expert_pixels": 3840109,
+      "scores": {
+        "supervised": 0.7112166222369073,
+        "kodama_bora": 0.21753763666165513,
+        "unet": 0.4554483024779391,
+        "deeplabv3plus": 0.1948904717006034,
+        "vista_path": 0.19030707054462942,
+        "medsam": 0.10145446658327753
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-015.webp",
+      "kodama_groups": 3,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-016",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-A2-A0T2-01Z-00__d7b4fd9877",
+      "dataset": "tiger",
+      "source_group": "TCGA-A2-A0T2",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-016.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-016/",
+      "expert_present_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "scored_expert_pixels": 5827198,
+      "scores": {
+        "supervised": 0.5571207682402004,
+        "kodama_bora": 0.21775892049633427,
+        "unet": 0.2658684542935946,
+        "deeplabv3plus": 0.15827177875504725,
+        "vista_path": 0.014827187768146573,
+        "medsam": 0.11933935282450478
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-016.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-017",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-A7-A6VY-01Z-00__0656173d22",
+      "dataset": "tiger",
+      "source_group": "TCGA-A7-A6VY",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-017.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-017/",
+      "expert_present_ids": [
+        1,
+        2,
+        3
+      ],
+      "scored_expert_pixels": 2399782,
+      "scores": {
+        "supervised": 0.6125741738532154,
+        "kodama_bora": 0.15470132450634708,
+        "unet": 0.4585846843060309,
+        "deeplabv3plus": 0.2161250858634197,
+        "vista_path": 0.3784024645863981,
+        "medsam": 0.14141686862003136
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-017.webp",
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "case-018",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-AC-A2BK-01Z-00__149af3c8c3",
+      "dataset": "tiger",
+      "source_group": "TCGA-AC-A2BK",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-018.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-018/",
+      "expert_present_ids": [
+        1,
+        2,
+        3
+      ],
+      "scored_expert_pixels": 2985068,
+      "scores": {
+        "supervised": 0.5170319372055282,
+        "kodama_bora": 0.40422170140698627,
+        "unet": 0.4814816928330658,
+        "deeplabv3plus": 0.28832247767970126,
+        "vista_path": 0.259991019635388,
+        "medsam": 0.141647630334135
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-018.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "case-019",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-AR-A256-01Z-00__03dbfca59b",
+      "dataset": "tiger",
+      "source_group": "TCGA-AR-A256",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-019.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-019/",
+      "expert_present_ids": [
+        1,
+        2,
+        3
+      ],
+      "scored_expert_pixels": 1778004,
+      "scores": {
+        "supervised": 0.8290990388812944,
+        "kodama_bora": 0.4212430782978447,
+        "unet": 0.5871930817532482,
+        "deeplabv3plus": 0.30124715223128357,
+        "vista_path": 0.2785534432124395,
+        "medsam": 0.18613772458108435
+      },
+      "kodama_plot": null,
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "case-020",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-BH-A18V-01Z-00__3d16a9c1ef",
+      "dataset": "tiger",
+      "source_group": "TCGA-BH-A18V",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-020.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-020/",
+      "expert_present_ids": [
+        1,
+        2,
+        3
+      ],
+      "scored_expert_pixels": 6011058,
+      "scores": {
+        "supervised": 0.7414273422717425,
+        "kodama_bora": 0.45585921253709377,
+        "unet": 0.5363450550491796,
+        "deeplabv3plus": 0.30048897499860855,
+        "vista_path": 0.3252576403879272,
+        "medsam": 0.1434722988510376
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-020.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "case-021",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-D8-A1JF-01Z-00__09f3898246",
+      "dataset": "tiger",
+      "source_group": "TCGA-D8-A1JF",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-021.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-021/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 3794467,
+      "scores": {
+        "supervised": 0.7467129810611691,
+        "kodama_bora": 0.47634752116819806,
+        "unet": 0.5036877451741204,
+        "deeplabv3plus": 0.3524928219354265,
+        "vista_path": 0.16498688404452697,
+        "medsam": 0.1602025873238015
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-021.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "case-022",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-E2-A14R-01Z-00__4f3418f4c7",
+      "dataset": "tiger",
+      "source_group": "TCGA-E2-A14R",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-022.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-022/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 1756698,
+      "scores": {
+        "supervised": 0.7640354595666421,
+        "kodama_bora": 0.6351737270575679,
+        "unet": 0.7015901430379413,
+        "deeplabv3plus": 0.3401870225349903,
+        "vista_path": 0.4297032258039497,
+        "medsam": 0.14385389507431873
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-022.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "case-023",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-E2-A1LL-01Z-00__d855cae94d",
+      "dataset": "tiger",
+      "source_group": "TCGA-E2-A1LL",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-023.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-023/",
+      "expert_present_ids": [
+        1,
+        2,
+        3
+      ],
+      "scored_expert_pixels": 3859058,
+      "scores": {
+        "supervised": 0.4079154281502966,
+        "kodama_bora": 0.3152320851360291,
+        "unet": 0.3542300273036015,
+        "deeplabv3plus": 0.3921805371915497,
+        "vista_path": 0.16498855471543417,
+        "medsam": 0.18993613602194867
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-023.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "case-024",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-EW-A1OV-01Z-00__6ba90538ff",
+      "dataset": "tiger",
+      "source_group": "TCGA-EW-A1OV",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-024.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-024/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 10430626,
+      "scores": {
+        "supervised": 0.8963708846941061,
+        "kodama_bora": 0.6807935813144533,
+        "unet": 0.8577214923808778,
+        "deeplabv3plus": 0.5761004815379088,
+        "vista_path": 0.46064759189976434,
+        "medsam": 0.416429387849228
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-024.webp",
+      "kodama_groups": 5,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-025",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-EW-A1P7-01Z-00__8d9dc10178",
+      "dataset": "tiger",
+      "source_group": "TCGA-EW-A1P7",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-025.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-025/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 4194833,
+      "scores": {
+        "supervised": 0.8616175971448439,
+        "kodama_bora": 0.7507485513336303,
+        "unet": 0.7705504920952635,
+        "deeplabv3plus": 0.3273649571359518,
+        "vista_path": 0.3639795077383516,
+        "medsam": 0.33268709211297953
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-025.webp",
+      "kodama_groups": 3,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "case-026",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-GM-A2DD-01Z-00__86ce540475",
+      "dataset": "tiger",
+      "source_group": "TCGA-GM-A2DD",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-026.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-026/",
+      "expert_present_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "scored_expert_pixels": 8963223,
+      "scores": {
+        "supervised": 0.8369909054969646,
+        "kodama_bora": 0.4098770204739436,
+        "unet": 0.6032440443262863,
+        "deeplabv3plus": 0.3023789338827987,
+        "vista_path": 0.27297644597755866,
+        "medsam": 0.20216628010673968
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-026.webp",
+      "kodama_groups": 4,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-027",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-LL-A5YO-01Z-00__ae2a5dae53",
+      "dataset": "tiger",
+      "source_group": "TCGA-LL-A5YO",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-027.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-027/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 2320259,
+      "scores": {
+        "supervised": 0.7717546514036422,
+        "kodama_bora": 0.41920915083104937,
+        "unet": 0.5533248253541945,
+        "deeplabv3plus": 0.13447133724311028,
+        "vista_path": 0.32994790561985415,
+        "medsam": 0.30430181803622863
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-027.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "case-028",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-LL-A73Y-01Z-00__6c12d25eb7",
+      "dataset": "tiger",
+      "source_group": "TCGA-LL-A73Y",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-028.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-028/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 1243496,
+      "scores": {
+        "supervised": 0.7883945289839167,
+        "kodama_bora": 0.40235347572940455,
+        "unet": 0.657783542806096,
+        "deeplabv3plus": 0.09920587252823156,
+        "vista_path": 0.265268780051114,
+        "medsam": 0.16369599907064586
+      },
+      "kodama_plot": null,
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-029",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-OL-A5RW-01Z-00__815369d21b",
+      "dataset": "tiger",
+      "source_group": "TCGA-OL-A5RW",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-029.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-029/",
+      "expert_present_ids": [
+        1,
+        2,
+        3
+      ],
+      "scored_expert_pixels": 1233633,
+      "scores": {
+        "supervised": 0.8160930916434356,
+        "kodama_bora": 0.4056415160708313,
+        "unet": 0.5746115793078149,
+        "deeplabv3plus": 0.1915776111148981,
+        "vista_path": 0.2394359529703889,
+        "medsam": 0.10357215777105362
+      },
+      "kodama_plot": null,
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-030",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-OL-A66I-01Z-00__89da35afd9",
+      "dataset": "tiger",
+      "source_group": "TCGA-OL-A66I",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-030.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-030/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 899520,
+      "scores": {
+        "supervised": 0.8061354414703465,
+        "kodama_bora": 0.3845539843472074,
+        "unet": 0.4813908514826619,
+        "deeplabv3plus": 0.23128777327562283,
+        "vista_path": 0.4000125334415878,
+        "medsam": 0.4167183612528377
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-031",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-OL-A66P-01Z-00__ddf9af6204",
+      "dataset": "tiger",
+      "source_group": "TCGA-OL-A66P",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-031.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-031/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 2817375,
+      "scores": {
+        "supervised": 0.8376348572329467,
+        "kodama_bora": 0.8270904157565474,
+        "unet": 0.3310600595165148,
+        "deeplabv3plus": 0.32516737386193906,
+        "vista_path": 0.382520787793855,
+        "medsam": 0.3021648778966625
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-031.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "case-032",
+      "case": "tiger__datasets_tiger_roi-level-annotations_tissue-bcss_images_TCGA-S3-AA15-01Z-00__2cbda3ad25",
+      "dataset": "tiger",
+      "source_group": "TCGA-S3-AA15",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-032.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-032/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 1386099,
+      "scores": {
+        "supervised": 0.8059963522334175,
+        "kodama_bora": 0.6818517447162269,
+        "unet": 0.7957205858499012,
+        "deeplabv3plus": 0.5598281526737292,
+        "vista_path": 0.37572038130277596,
+        "medsam": 0.4487778326372535
+      },
+      "kodama_plot": null,
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-033",
+      "case": "ignite__datasets_ignite_images_he_patient28_he_roi5.png__36ad26983d",
+      "dataset": "ignite",
+      "source_group": "IGNITE:ignite-28",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-033.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-033/",
+      "expert_present_ids": [
+        2,
+        5,
+        8
+      ],
+      "scored_expert_pixels": 1027152,
+      "scores": {
+        "supervised": 0.2959343914079385,
+        "kodama_bora": 0.037099389558358065,
+        "unet": 0.583263561746885,
+        "deeplabv3plus": 0.5241042616500601,
+        "vista_path": 0.027743562815671554,
+        "medsam": 0.018014082938069078
+      },
+      "kodama_plot": null,
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-034",
+      "case": "ignite__datasets_ignite_images_he_patient32_he_roi2.png__a1ccdac136",
+      "dataset": "ignite",
+      "source_group": "IGNITE:ignite-32",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-034.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-034/",
+      "expert_present_ids": [
+        1,
+        2,
+        3,
+        5,
+        8
+      ],
+      "scored_expert_pixels": 1130255,
+      "scores": {
+        "supervised": 0.43856133649979734,
+        "kodama_bora": 0.15142815901867698,
+        "unet": 0.29907408382852874,
+        "deeplabv3plus": 0.15726518956091887,
+        "vista_path": 0.22508859215382646,
+        "medsam": 0.15213908275885296
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-035",
+      "case": "ignite__datasets_ignite_images_he_patient36_he_roi1.png__bdbef84bcb",
+      "dataset": "ignite",
+      "source_group": "IGNITE:ignite-36",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-035.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-035/",
+      "expert_present_ids": [
+        1,
+        2,
+        5
+      ],
+      "scored_expert_pixels": 921835,
+      "scores": {
+        "supervised": 0.41191851111602257,
+        "kodama_bora": 0.20140311528680419,
+        "unet": 0.4517895757135002,
+        "deeplabv3plus": 0.503066776303664,
+        "vista_path": 0.08896414805677934,
+        "medsam": 0.1549341136490427
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-036",
+      "case": "ignite__datasets_ignite_images_he_patient37_he_roi3.png__95aec1e547",
+      "dataset": "ignite",
+      "source_group": "IGNITE:ignite-37",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-036.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-036/",
+      "expert_present_ids": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "scored_expert_pixels": 948498,
+      "scores": {
+        "supervised": 0.4582523956985557,
+        "kodama_bora": 0.11937576283839013,
+        "unet": 0.2885149952019122,
+        "deeplabv3plus": 0.2997209982629456,
+        "vista_path": 0.17705259651405175,
+        "medsam": 0.10973082330716877
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-037",
+      "case": "ignite__datasets_ignite_images_he_patient3_he_roi6.png__d5935ced63",
+      "dataset": "ignite",
+      "source_group": "IGNITE:ignite-3",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-037.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-037/",
+      "expert_present_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8
+      ],
+      "scored_expert_pixels": 779051,
+      "scores": {
+        "supervised": 0.4093976838055711,
+        "kodama_bora": 0.0844874740616478,
+        "unet": 0.3873897438361777,
+        "deeplabv3plus": 0.23108228574976078,
+        "vista_path": 0.06685195496210615,
+        "medsam": 0.048027556592385286
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-038",
+      "case": "ignite__datasets_ignite_images_he_patient40_he_roi1.png__0776ea30ca",
+      "dataset": "ignite",
+      "source_group": "IGNITE:ignite-40",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-038.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-038/",
+      "expert_present_ids": [
+        1,
+        2,
+        4
+      ],
+      "scored_expert_pixels": 1025320,
+      "scores": {
+        "supervised": 0.6230645879471844,
+        "kodama_bora": 0.13947023212189189,
+        "unet": 0.5209654187745705,
+        "deeplabv3plus": 0.26164022618582083,
+        "vista_path": 0.267670747212468,
+        "medsam": 0.12734180665577802
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-039",
+      "case": "ignite__datasets_ignite_images_he_patient43_he_roi2.png__8c6c983b53",
+      "dataset": "ignite",
+      "source_group": "IGNITE:ignite-43",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-039.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-039/",
+      "expert_present_ids": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "scored_expert_pixels": 841788,
+      "scores": {
+        "supervised": 0.4505417646352559,
+        "kodama_bora": 0.06444168755753148,
+        "unet": 0.32533580795866934,
+        "deeplabv3plus": 0.1285344974722536,
+        "vista_path": 0.1796239386365675,
+        "medsam": 0.039601880518727414
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-040",
+      "case": "ignite__datasets_ignite_images_he_patient46_he_roi2.png__5ddcc3d805",
+      "dataset": "ignite",
+      "source_group": "IGNITE:ignite-46",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-040.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-040/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 1474324,
+      "scores": {
+        "supervised": 0.4250617982552686,
+        "kodama_bora": 0.409132802375136,
+        "unet": 0.35402091776600664,
+        "deeplabv3plus": 0.25901482703795564,
+        "vista_path": 0.022715003067399604,
+        "medsam": 0.1389626884802722
+      },
+      "kodama_plot": null,
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-041",
+      "case": "ignite__datasets_ignite_images_he_patient4_he_roi1.png__7a50d32e01",
+      "dataset": "ignite",
+      "source_group": "IGNITE:ignite-4",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-041.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-041/",
+      "expert_present_ids": [
+        1,
+        2,
+        5
+      ],
+      "scored_expert_pixels": 1186080,
+      "scores": {
+        "supervised": 0.557704218652847,
+        "kodama_bora": 0.46145435056777667,
+        "unet": 0.7137950074715582,
+        "deeplabv3plus": 0.4525089282823361,
+        "vista_path": 0.268299424116273,
+        "medsam": 0.2606619777344738
+      },
+      "kodama_plot": null,
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-042",
+      "case": "ignite__datasets_ignite_images_he_patient57_he_roi2.png__b06b2b924e",
+      "dataset": "ignite",
+      "source_group": "IGNITE:ignite-57",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-042.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-042/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 1400353,
+      "scores": {
+        "supervised": 0.7265847845316175,
+        "kodama_bora": 0.3122444898201701,
+        "unet": 0.5663835339290936,
+        "deeplabv3plus": 0.5721244445328643,
+        "vista_path": 0.06713181759140792,
+        "medsam": 0.025242782882736296
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-043",
+      "case": "ignite__datasets_ignite_images_he_patient60_he_roi2.png__511072a782",
+      "dataset": "ignite",
+      "source_group": "IGNITE:ignite-60",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-043.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-043/",
+      "expert_present_ids": [
+        1,
+        2,
+        3,
+        5,
+        8
+      ],
+      "scored_expert_pixels": 5354685,
+      "scores": {
+        "supervised": 0.6354968207184021,
+        "kodama_bora": 0.16208779483739216,
+        "unet": 0.5459337027612753,
+        "deeplabv3plus": 0.28726709819033674,
+        "vista_path": 0.12602219317958144,
+        "medsam": 0.17048475543746605
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-043.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-044",
+      "case": "ignite__datasets_ignite_images_he_patient64_he_roi3.png__aabad9c28e",
+      "dataset": "ignite",
+      "source_group": "IGNITE:ignite-64",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-044.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-044/",
+      "expert_present_ids": [
+        2,
+        4,
+        5,
+        8
+      ],
+      "scored_expert_pixels": 1460897,
+      "scores": {
+        "supervised": 0.5754310821948202,
+        "kodama_bora": 0.20004044695645445,
+        "unet": 0.4818768706098569,
+        "deeplabv3plus": 0.27773686104429446,
+        "vista_path": 0.04513091254351359,
+        "medsam": 0.20036864300775525
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-045",
+      "case": "ignite__datasets_ignite_images_he_patient73_he_roi3.png__c17190d498",
+      "dataset": "ignite",
+      "source_group": "IGNITE:ignite-73",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-045.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-045/",
+      "expert_present_ids": [
+        1,
+        2,
+        5,
+        8
+      ],
+      "scored_expert_pixels": 1492190,
+      "scores": {
+        "supervised": 0.48920540912368093,
+        "kodama_bora": 0.18702084664810206,
+        "unet": 0.4255095681428641,
+        "deeplabv3plus": 0.3192070142317644,
+        "vista_path": 0.11525043226400256,
+        "medsam": 0.1332677156204244
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-046",
+      "case": "ignite__datasets_ignite_images_he_patient78_he_roi2.png__7801cb287c",
+      "dataset": "ignite",
+      "source_group": "IGNITE:ignite-78",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-046.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-046/",
+      "expert_present_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8
+      ],
+      "scored_expert_pixels": 2239340,
+      "scores": {
+        "supervised": 0.462624281710837,
+        "kodama_bora": 0.05371712735443813,
+        "unet": 0.45316217387770513,
+        "deeplabv3plus": 0.1548559780085195,
+        "vista_path": 0.16521084293133856,
+        "medsam": 0.010099756766338544
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-046.webp",
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-047",
+      "case": "ignite__datasets_ignite_images_he_patient7_he_roi1.png__f114823ea9",
+      "dataset": "ignite",
+      "source_group": "IGNITE:ignite-7",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-047.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-047/",
+      "expert_present_ids": [
+        1,
+        3,
+        5
+      ],
+      "scored_expert_pixels": 953759,
+      "scores": {
+        "supervised": 0.3192065565963738,
+        "kodama_bora": 0.2256948982298738,
+        "unet": 0.23604439903186825,
+        "deeplabv3plus": 0.2356281031950976,
+        "vista_path": 0.10779914642167959,
+        "medsam": 0.00011083505930452554
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-048",
+      "case": "ignite__datasets_ignite_images_he_patient8_he_roi1.png__d6caf8e04b",
+      "dataset": "ignite",
+      "source_group": "IGNITE:ignite-8",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-048.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-048/",
+      "expert_present_ids": [
+        1,
+        2,
+        3,
+        5,
+        8
+      ],
+      "scored_expert_pixels": 1083473,
+      "scores": {
+        "supervised": 0.40051943586485744,
+        "kodama_bora": 0.11482057755365682,
+        "unet": 0.3776589260677571,
+        "deeplabv3plus": 0.2556951445728575,
+        "vista_path": 0.21784653416469885,
+        "medsam": 0.09045052202223361
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-049",
+      "case": "gcss_01",
+      "dataset": "gcss",
+      "source_group": "TCGA-BR-8588",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-049.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-049/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 3179881,
+      "scores": {
+        "supervised": 0.6882798600422121,
+        "kodama_bora": 0.5247107630478388,
+        "unet": 0.5029608197578064,
+        "deeplabv3plus": 0.48793143448396814,
+        "vista_path": 0.19908878307645192,
+        "medsam": 0.4224058285309248
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-049.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-050",
+      "case": "gcss_04",
+      "dataset": "gcss",
+      "source_group": "TCGA-VQ-A8E2",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-050.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-050/",
+      "expert_present_ids": [
+        1,
+        2,
+        3
+      ],
+      "scored_expert_pixels": 2048505,
+      "scores": {
+        "supervised": 0.8615122967291976,
+        "kodama_bora": 0.6554018313643644,
+        "unet": 0.5355455471985805,
+        "deeplabv3plus": 0.16272583713192365,
+        "vista_path": 0.34588449142268374,
+        "medsam": 0.1503358335342387
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-050.webp",
+      "kodama_groups": 3,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-051",
+      "case": "gcss_05",
+      "dataset": "gcss",
+      "source_group": "TCGA-D7-A6EY",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-051.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-051/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 2047998,
+      "scores": {
+        "supervised": 0.770532063265565,
+        "kodama_bora": 0.4801094101198077,
+        "unet": 0.5880463881648443,
+        "deeplabv3plus": 0.5605065345038214,
+        "vista_path": 0.3481543082539772,
+        "medsam": 0.32302194489149016
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-051.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-052",
+      "case": "gcss_07",
+      "dataset": "gcss",
+      "source_group": "TCGA-VQ-A8P2",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-052.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-052/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 3015916,
+      "scores": {
+        "supervised": 0.36433913531010403,
+        "kodama_bora": 0.28241390403823763,
+        "unet": 0.2737124352581471,
+        "deeplabv3plus": 0.38284928879507024,
+        "vista_path": 0.1466610113442915,
+        "medsam": 0.3632216023736369
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-052.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-053",
+      "case": "gcss_09",
+      "dataset": "gcss",
+      "source_group": "TCGA-VQ-A91Z",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-053.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-053/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 3180115,
+      "scores": {
+        "supervised": 0.5496401057326032,
+        "kodama_bora": 0.38228197766294725,
+        "unet": 0.48644665150629346,
+        "deeplabv3plus": 0.28164457706498985,
+        "vista_path": 0.4858968108371881,
+        "medsam": 0.2995925932143413
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-053.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-054",
+      "case": "gcss_10",
+      "dataset": "gcss",
+      "source_group": "TCGA-CD-A4MG",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-054.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-054/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 2077594,
+      "scores": {
+        "supervised": 0.669264339773429,
+        "kodama_bora": 0.29797772560233665,
+        "unet": 0.6600776544438074,
+        "deeplabv3plus": 0.4027135171741428,
+        "vista_path": 0.2532065789843755,
+        "medsam": 0.4073225290428993
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-054.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-055",
+      "case": "gcss_13",
+      "dataset": "gcss",
+      "source_group": "TCGA-BR-8369",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-055.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-055/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 2394357,
+      "scores": {
+        "supervised": 0.6221340418272425,
+        "kodama_bora": 0.17704989502858917,
+        "unet": 0.5173526797567022,
+        "deeplabv3plus": 0.698237653237999,
+        "vista_path": 0.2872987987411693,
+        "medsam": 0.5227012816791993
+      },
+      "kodama_plot": null,
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-056",
+      "case": "gcss_14",
+      "dataset": "gcss",
+      "source_group": "TCGA-CD-8535",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-056.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-056/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 3225339,
+      "scores": {
+        "supervised": 0.6874173538847582,
+        "kodama_bora": 0.16495369168745092,
+        "unet": 0.5300139529413082,
+        "deeplabv3plus": 0.6050403345387692,
+        "vista_path": 0.3406290440141122,
+        "medsam": 0.23741718138868387
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-056.webp",
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-057",
+      "case": "gcss_15",
+      "dataset": "gcss",
+      "source_group": "TCGA-VQ-AA6I",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-057.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-057/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 3274288,
+      "scores": {
+        "supervised": 0.8553242190568539,
+        "kodama_bora": 0.5689338577973362,
+        "unet": 0.8133036519955376,
+        "deeplabv3plus": 0.42665360652942386,
+        "vista_path": 0.004144416822919952,
+        "medsam": 0.43930463261317415
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-057.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-058",
+      "case": "gcss_17",
+      "dataset": "gcss",
+      "source_group": "TCGA-BR-6706",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-058.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-058/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 3207808,
+      "scores": {
+        "supervised": 0.663700116070737,
+        "kodama_bora": 0.2519482274472,
+        "unet": 0.6113188384189057,
+        "deeplabv3plus": 0.6593085345549885,
+        "vista_path": 0.25423251932597646,
+        "medsam": 0.22771349288152937
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-058.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-059",
+      "case": "gcss_19",
+      "dataset": "gcss",
+      "source_group": "TCGA-D7-6520",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-059.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-059/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 3146710,
+      "scores": {
+        "supervised": 0.6951091593132919,
+        "kodama_bora": 0.30584045467257326,
+        "unet": 0.48638235287227594,
+        "deeplabv3plus": 0.30576295458907654,
+        "vista_path": 0.20901370652428078,
+        "medsam": 0.2090263637655851
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-060",
+      "case": "gcss_21",
+      "dataset": "gcss",
+      "source_group": "TCGA-D7-6818",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-060.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-060/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 2899061,
+      "scores": {
+        "supervised": 0.8141285474250679,
+        "kodama_bora": 0.23722915336142,
+        "unet": 0.5222600140768093,
+        "deeplabv3plus": 0.3708379263165277,
+        "vista_path": 0.18073769504399562,
+        "medsam": 0.2415130207521945
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-061",
+      "case": "gcss_22",
+      "dataset": "gcss",
+      "source_group": "TCGA-D7-5578",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-061.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-061/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 2469244,
+      "scores": {
+        "supervised": 0.793444193364115,
+        "kodama_bora": 0.13756166279039217,
+        "unet": 0.4667564564813348,
+        "deeplabv3plus": 0.3193360880640489,
+        "vista_path": 0.26928037375588487,
+        "medsam": 0.1961763370804518
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-062",
+      "case": "gcss_24",
+      "dataset": "gcss",
+      "source_group": "TCGA-BR-A4PF",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-062.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-062/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 2688677,
+      "scores": {
+        "supervised": 0.8296133595317698,
+        "kodama_bora": 0.44285975436993585,
+        "unet": 0.6417213580978705,
+        "deeplabv3plus": 0.5610214896635255,
+        "vista_path": 0.002555982251731983,
+        "medsam": 0.6830164032273598
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-062.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-063",
+      "case": "gcss_25",
+      "dataset": "gcss",
+      "source_group": "TCGA-D7-8578",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-063.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-063/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 3053861,
+      "scores": {
+        "supervised": 0.4614314664659528,
+        "kodama_bora": 0.0,
+        "unet": 0.35372258307885035,
+        "deeplabv3plus": 0.5460606770040115,
+        "vista_path": 0.003631999406220263,
+        "medsam": 0.4361384496658621
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-063.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-064",
+      "case": "gcss_27",
+      "dataset": "gcss",
+      "source_group": "TCGA-BR-8483",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-064.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-064/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 3258025,
+      "scores": {
+        "supervised": 0.5639691752047569,
+        "kodama_bora": 0.35086588787458206,
+        "unet": 0.4914112662132753,
+        "deeplabv3plus": 0.5426048149669153,
+        "vista_path": 0.004753295659226784,
+        "medsam": 0.28484783050666085
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-064.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-065",
+      "case": "gcss_30",
+      "dataset": "gcss",
+      "source_group": "TCGA-D7-8579",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-065.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-065/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 3104485,
+      "scores": {
+        "supervised": 0.4333399903687729,
+        "kodama_bora": 0.09777966393781899,
+        "unet": 0.23234020216079784,
+        "deeplabv3plus": 0.4682582533930074,
+        "vista_path": 0.0020154543849782492,
+        "medsam": 0.38701996017371015
+      },
+      "kodama_plot": null,
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-066",
+      "case": "gcss_34",
+      "dataset": "gcss",
+      "source_group": "TCGA-D7-6518",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-066.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-066/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 3209101,
+      "scores": {
+        "supervised": 0.22317476143281584,
+        "kodama_bora": 0.007362026895361723,
+        "unet": 0.19873233597158452,
+        "deeplabv3plus": 0.24005114274963926,
+        "vista_path": 0.13484824272035406,
+        "medsam": 0.23675797781449381
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-066.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-067",
+      "case": "gcss_35",
+      "dataset": "gcss",
+      "source_group": "TCGA-VQ-A91X",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-067.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-067/",
+      "expert_present_ids": [
+        1,
+        2
+      ],
+      "scored_expert_pixels": 1925404,
+      "scores": {
+        "supervised": 0.3678315146533811,
+        "kodama_bora": 0.1662889145749912,
+        "unet": 0.3746194256358053,
+        "deeplabv3plus": 0.4491429486679428,
+        "vista_path": 0.19853354289961875,
+        "medsam": 0.2186306165223676
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-067.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-068",
+      "case": "gcss_40",
+      "dataset": "gcss",
+      "source_group": "TCGA-BR-8484",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-068.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-068/",
+      "expert_present_ids": [
+        1,
+        2,
+        3
+      ],
+      "scored_expert_pixels": 2806626,
+      "scores": {
+        "supervised": 0.7232142427151912,
+        "kodama_bora": 0.3137669856335196,
+        "unet": 0.44086086498351956,
+        "deeplabv3plus": 0.4158332952425186,
+        "vista_path": 0.1743114554480358,
+        "medsam": 0.2508865709399997
+      },
+      "kodama_plot": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/benchmark1-comparators/kodama-068.webp",
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-069",
+      "case": "peso_07",
+      "dataset": "peso",
+      "source_group": "peso-slide-16",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-069.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-069/",
+      "expert_present_ids": [
+        4
+      ],
+      "scored_expert_pixels": 836756,
+      "scores": {
+        "supervised": 1.0,
+        "kodama_bora": 0.950627184029753,
+        "unet": 0.9136092241943888,
+        "deeplabv3plus": 0.0013134055805993623,
+        "vista_path": 0.0,
+        "medsam": 0.0
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-070",
+      "case": "peso_08",
+      "dataset": "peso",
+      "source_group": "peso-slide-17",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-070.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-070/",
+      "expert_present_ids": [
+        4
+      ],
+      "scored_expert_pixels": 267655,
+      "scores": {
+        "supervised": 1.0,
+        "kodama_bora": 0.0,
+        "unet": 0.9277054417066747,
+        "deeplabv3plus": 0.004416132708150417,
+        "vista_path": 0.0008705236218266052,
+        "medsam": 0.0
+      },
+      "kodama_plot": null,
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-071",
+      "case": "peso_11",
+      "dataset": "peso",
+      "source_group": "peso-slide-20",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-071.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-071/",
+      "expert_present_ids": [
+        4
+      ],
+      "scored_expert_pixels": 723039,
+      "scores": {
+        "supervised": 1.0,
+        "kodama_bora": 0.0,
+        "unet": 0.9237841942135901,
+        "deeplabv3plus": 0.00901057895908796,
+        "vista_path": 0.00021022379152438526,
+        "medsam": 0.0
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-072",
+      "case": "peso_12",
+      "dataset": "peso",
+      "source_group": "peso-slide-21",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-072.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-072/",
+      "expert_present_ids": [
+        4
+      ],
+      "scored_expert_pixels": 295254,
+      "scores": {
+        "supervised": 1.0,
+        "kodama_bora": 0.0,
+        "unet": 0.8661051162727685,
+        "deeplabv3plus": 0.01372038990157627,
+        "vista_path": 0.0,
+        "medsam": 0.0
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-073",
+      "case": "peso_14",
+      "dataset": "peso",
+      "source_group": "peso-slide-25",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-073.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-073/",
+      "expert_present_ids": [
+        4
+      ],
+      "scored_expert_pixels": 626420,
+      "scores": {
+        "supervised": 1.0,
+        "kodama_bora": 0.0,
+        "unet": 0.889650713578749,
+        "deeplabv3plus": 0.007250726349733405,
+        "vista_path": 0.003954216021199834,
+        "medsam": 0.0
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-074",
+      "case": "peso_16",
+      "dataset": "peso",
+      "source_group": "peso-slide-47",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-074.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-074/",
+      "expert_present_ids": [
+        4
+      ],
+      "scored_expert_pixels": 509763,
+      "scores": {
+        "supervised": 1.0,
+        "kodama_bora": 0.0,
+        "unet": 0.9261186080590392,
+        "deeplabv3plus": 0.019010795212677265,
+        "vista_path": 0.00013535701884993614,
+        "medsam": 0.0
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-075",
+      "case": "peso_18",
+      "dataset": "peso",
+      "source_group": "peso-slide-49",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-075.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-075/",
+      "expert_present_ids": [
+        4
+      ],
+      "scored_expert_pixels": 230592,
+      "scores": {
+        "supervised": 1.0,
+        "kodama_bora": 0.0,
+        "unet": 0.8660317790729948,
+        "deeplabv3plus": 0.014389050791007494,
+        "vista_path": 0.0014961490424646128,
+        "medsam": 0.0
+      },
+      "kodama_plot": null,
+      "kodama_groups": 3,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-076",
+      "case": "peso_20",
+      "dataset": "peso",
+      "source_group": "peso-slide-51",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-076.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-076/",
+      "expert_present_ids": [
+        4
+      ],
+      "scored_expert_pixels": 651809,
+      "scores": {
+        "supervised": 1.0,
+        "kodama_bora": 0.7549542887563688,
+        "unet": 0.9169802810332475,
+        "deeplabv3plus": 0.05608237996100084,
+        "vista_path": 0.024266311143295045,
+        "medsam": 0.0
+      },
+      "kodama_plot": null,
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-077",
+      "case": "peso_21",
+      "dataset": "peso",
+      "source_group": "peso-slide-52",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-077.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-077/",
+      "expert_present_ids": [
+        4
+      ],
+      "scored_expert_pixels": 359268,
+      "scores": {
+        "supervised": 1.0,
+        "kodama_bora": 0.0,
+        "unet": 0.8238139773094181,
+        "deeplabv3plus": 0.00300611242860483,
+        "vista_path": 0.005029671443045303,
+        "medsam": 0.0
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-078",
+      "case": "peso_22",
+      "dataset": "peso",
+      "source_group": "peso-slide-53",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-078.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-078/",
+      "expert_present_ids": [
+        4
+      ],
+      "scored_expert_pixels": 825908,
+      "scores": {
+        "supervised": 1.0,
+        "kodama_bora": 0.0,
+        "unet": 0.9063890893416701,
+        "deeplabv3plus": 0.020792872813921164,
+        "vista_path": 0.0010424889939315274,
+        "medsam": 0.0
+      },
+      "kodama_plot": null,
+      "kodama_groups": 2,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-079",
+      "case": "peso_23",
+      "dataset": "peso",
+      "source_group": "peso-slide-61",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-079.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-079/",
+      "expert_present_ids": [
+        4
+      ],
+      "scored_expert_pixels": 727418,
+      "scores": {
+        "supervised": 1.0,
+        "kodama_bora": 0.0,
+        "unet": 0.950052102092607,
+        "deeplabv3plus": 0.010658246015358433,
+        "vista_path": 0.002491002422266152,
+        "medsam": 0.0
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-080",
+      "case": "peso_25",
+      "dataset": "peso",
+      "source_group": "peso-slide-63",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-080.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-080/",
+      "expert_present_ids": [
+        4
+      ],
+      "scored_expert_pixels": 629832,
+      "scores": {
+        "supervised": 1.0,
+        "kodama_bora": 0.0,
+        "unet": 0.9808234576839538,
+        "deeplabv3plus": 0.004975930089293653,
+        "vista_path": 0.00011114074864408287,
+        "medsam": 0.0
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-081",
+      "case": "peso_26",
+      "dataset": "peso",
+      "source_group": "peso-slide-66",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-081.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-081/",
+      "expert_present_ids": [
+        4
+      ],
+      "scored_expert_pixels": 205525,
+      "scores": {
+        "supervised": 1.0,
+        "kodama_bora": 0.0,
+        "unet": 0.9465515144143049,
+        "deeplabv3plus": 0.0039459919717795885,
+        "vista_path": 0.0006568543972752706,
+        "medsam": 0.0
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "case-082",
+      "case": "peso_29",
+      "dataset": "peso",
+      "source_group": "peso-slide-75",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-082.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-082/",
+      "expert_present_ids": [
+        4
+      ],
+      "scored_expert_pixels": 353999,
+      "scores": {
+        "supervised": 1.0,
+        "kodama_bora": 0.0,
+        "unet": 0.9177653044217639,
+        "deeplabv3plus": 0.04705663010347487,
+        "vista_path": 0.0012175175636089369,
+        "medsam": 0.0
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-083",
+      "case": "peso_34",
+      "dataset": "peso",
+      "source_group": "peso-slide-86",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-083.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-083/",
+      "expert_present_ids": [
+        4
+      ],
+      "scored_expert_pixels": 687473,
+      "scores": {
+        "supervised": 1.0,
+        "kodama_bora": 0.0,
+        "unet": 0.9227911496160577,
+        "deeplabv3plus": 0.07610044321740636,
+        "vista_path": 0.0,
+        "medsam": 0.0
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-084",
+      "case": "peso_35",
+      "dataset": "peso",
+      "source_group": "peso-slide-87",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-084.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-084/",
+      "expert_present_ids": [
+        4
+      ],
+      "scored_expert_pixels": 308431,
+      "scores": {
+        "supervised": 1.0,
+        "kodama_bora": 0.0,
+        "unet": 0.9067408918040015,
+        "deeplabv3plus": 0.012151826502524065,
+        "vista_path": 0.015432949346855537,
+        "medsam": 0.0
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-085",
+      "case": "peso_36",
+      "dataset": "peso",
+      "source_group": "peso-slide-89",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-085.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-085/",
+      "expert_present_ids": [
+        4
+      ],
+      "scored_expert_pixels": 568850,
+      "scores": {
+        "supervised": 1.0,
+        "kodama_bora": 0.0,
+        "unet": 0.910950162608772,
+        "deeplabv3plus": 0.061033664410653075,
+        "vista_path": 0.0,
+        "medsam": 0.0
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "case-086",
+      "case": "peso_38",
+      "dataset": "peso",
+      "source_group": "peso-slide-92",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-086.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-086/",
+      "expert_present_ids": [
+        4
+      ],
+      "scored_expert_pixels": 172393,
+      "scores": {
+        "supervised": 1.0,
+        "kodama_bora": 0.0,
+        "unet": 0.4921893580365792,
+        "deeplabv3plus": 0.00047565736427813195,
+        "vista_path": 0.07791499654858376,
+        "medsam": 0.0
+      },
+      "kodama_plot": null,
+      "kodama_groups": 1,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "case-087",
+      "case": "peso_39",
+      "dataset": "peso",
+      "source_group": "peso-slide-94",
+      "figure": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/figures/case-087.webp",
+      "bw_root": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/62a23af41a3fcceca57d2ec30a19749421f8e3e6/archive/benchmark1-supervised-ridge-2026-11-12-v1/bw/case-087/",
+      "expert_present_ids": [
+        4
+      ],
+      "scored_expert_pixels": 389622,
+      "scores": {
+        "supervised": 1.0,
+        "kodama_bora": 0.841759448901756,
+        "unet": 0.9774242727566719,
+        "deeplabv3plus": 0.007427711987516105,
+        "vista_path": 0.002569156772461514,
+        "medsam": 0.0
+      },
+      "kodama_plot": null,
+      "kodama_groups": 3,
+      "figure_legend_class_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "supervised_model": {
+    "name": "classwise 32 + ridge",
+    "selected_channels": 203,
+    "full_encoder_channels": 1280,
+    "model_sha256": "3027497160b131b4a8ca5c2fcd89ce5a3bad13d41abb667ce6c3b9a97ae26053",
+    "training_images": 397,
+    "training_selection_receipt_sha256": "a05fb29352635e28f156ea07168818607b2cb91080d51aa5414a71b94b7dedb1",
+    "development_evaluation_is_independent_test": false
+  }
+}
