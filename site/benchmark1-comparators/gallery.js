@@ -27,17 +27,17 @@ function renderPerformance(data){
   }
 }
 function card(label,value,detail){const a=document.createElement("article"),b=document.createElement("strong"),c=document.createElement("div"),d=document.createElement("div");b.textContent=label;c.className="value";c.textContent=percent(value);d.className="small";d.textContent=detail;a.append(b,c,d);return a}
-function caseDetail(row,key,base){if(row.dataset!=="peso")return base;const metric=row.peso_classwise_scores[key==="supervised"?"supervised_bora_prior_ridge":key];return `${base}. Expert epithelium IoU ${percent(metric.expert_epithelium_iou)}; proxy stroma IoU ${percent(metric.proxy_stroma_iou)}`}
+function caseDetail(row,key,base){if(row.dataset!=="peso")return base;const metric=row.peso_classwise_scores[key==="supervised"?"supervised_bora_selected_ridge64":key];return `${base}. Expert epithelium IoU ${percent(metric.expert_epithelium_iou)}; proxy stroma IoU ${percent(metric.proxy_stroma_iou)}`}
 function show(id){
   const row=visible.find(x=>x.id===id)||visible[0];if(!row)return;
   picker.value=row.id;history.replaceState(null,"","#"+row.id);position.textContent=`${visible.indexOf(row)+1} of ${visible.length}`;
   title.textContent=`${row.dataset.toUpperCase()} · ${row.source_group} · ${row.id}`;
   const caseNote=document.getElementById("case-note");
   caseNote.hidden=row.dataset!=="peso";
-  caseNote.textContent=row.dataset==="peso"?"PEsO: purple is original expert epithelium; green is a conservative weak stroma proxy derived from non-epithelial pixels and H&E tissue support, not a pathologist annotation. Scores below are recomputed against both reference classes using prior saved predictions. The new supervised Bora retrain is pending; the KODAMA–Bora spatial prediction is unavailable for rescoring.":"";
-  image.src=row.figure;full.href=row.figure;image.alt=`Eight-class H&E, expert, supervised Bora and four external method panels for ${row.id}`;
+  caseNote.textContent=row.dataset==="peso"?"PEsO: purple is original expert epithelium; green is a conservative weak stroma proxy derived from non-epithelial pixels and H&E tissue support, not a pathologist annotation. The PEsO-specific supervised head was selected on disjoint training slides, then scored on these inspected development images. External methods retain their prior saved predictions. The KODAMA–Bora spatial prediction is unavailable for rescoring.":"";
+  image.src=row.figure;full.href=row.figure;image.alt=`H&E, reference, supervised Bora and four external method panels for ${row.id}`;
   document.getElementById("bora-scores").replaceChildren(
-    card(row.dataset==="peso"?"Supervised Bora · prior ridge":"Supervised Bora",row.scores.supervised,caseDetail(row,"supervised",row.dataset==="peso"?"Prior 203-channel head; corrected retrain pending":"Training-selected 203-channel ridge head, fitted on 397 training images")),
+    card(row.dataset==="peso"?"Supervised Bora · PEsO ridge64":"Supervised Bora",row.scores.supervised,caseDetail(row,"supervised",row.dataset==="peso"?"64-channel binary head selected on 18 PEsO training slides":"Training-selected 203-channel ridge head, fitted on 397 training images")),
     card("KODAMA–Bora + fastPLS",row.scores.kodama_bora,row.dataset==="peso"?"Corrected-reference score unavailable: exact spatial mask missing":"Frozen group route, exactly rescored; spatial mask unavailable locally"));
   document.getElementById("external-scores").replaceChildren(
     card("Class-aware U-Net",row.scores.unet,caseDetail(row,"unet","Prior RGB prediction mapped to eight classes")),
@@ -47,11 +47,11 @@ function show(id){
   const box=document.getElementById("kodama-details");box.replaceChildren();
   const note=document.createElement("p");note.textContent=row.dataset==="peso"?`The frozen route produced ${row.kodama_groups} anonymous groups. Its old epithelium-only counts cannot be rescored against the new reference without its spatial prediction mask.`:`The frozen route produced ${row.kodama_groups} anonymous groups. Its broad-label score uses the recorded full pixel confusion counts. No new spatial group mask is claimed.`;box.append(note);
   if(row.kodama_plot){const plot=document.createElement("img");plot.src=row.kodama_plot;plot.alt=`Original KODAMA embedding with ${row.kodama_groups} anonymous groups`;box.append(plot)}
-  const grid=document.getElementById("response-grid");grid.replaceChildren(...Array.from({length:8},(_,i)=>{const k=i+1,path=row.bw_root+`class-${String(k).padStart(2,"0")}.webp`,fig=document.createElement("figure"),link=document.createElement("a"),img=document.createElement("img"),caption=document.createElement("figcaption");link.href=path;img.src=path;img.loading="lazy";img.alt=`Black-and-white supervised response for ${names[k]}`;caption.textContent=`${k} · ${names[k]}`;link.append(img);fig.append(link,caption);return fig}));
+  const grid=document.getElementById("response-grid"),ids=row.bw_class_ids||Array.from({length:8},(_,i)=>i+1);grid.replaceChildren(...ids.map(k=>{const path=row.bw_root+`class-${String(k).padStart(2,"0")}.webp`,fig=document.createElement("figure"),link=document.createElement("a"),img=document.createElement("img"),caption=document.createElement("figcaption");link.href=path;img.src=path;img.loading="lazy";img.alt=`Black-and-white supervised response for ${names[k]}`;caption.textContent=`${k} · ${names[k]}`;link.append(img);fig.append(link,caption);return fig}));
 }
 function filter(){visible=all.filter(r=>!dataset.value||r.dataset===dataset.value);picker.replaceChildren(...visible.map(r=>new Option(`${r.dataset.toUpperCase()} · ${r.source_group} · ${r.id}`,r.id)));show(location.hash.slice(1))}
-fetch("cases-eight-v3.json?v=peso-proxy-v1").then(r=>{if(!r.ok)throw Error(`HTTP ${r.status}`);return r.json()}).then(data=>{
-  if(data.status!=="EIGHT_CLASS_DEVELOPMENT_GALLERY_PESO_PROXY_PRIOR_SCORES"||data.case_count!==87||data.cases.length!==87||data.kodama_spatial_mask_available!==false||!data.peso_proxy_is_not_expert_stroma)throw Error("Incomplete audited gallery");
+fetch("cases-eight-v4.json?v=peso-selected-v1").then(r=>{if(!r.ok)throw Error(`HTTP ${r.status}`);return r.json()}).then(data=>{
+  if(data.status!=="EIGHT_CLASS_DEVELOPMENT_GALLERY_PESO_SELECTED_RIDGE64"||data.case_count!==87||data.cases.length!==87||data.kodama_spatial_mask_available!==false||!data.peso_proxy_is_not_expert_stroma||data.peso_corrected_supervised_model_pending)throw Error("Incomplete audited gallery");
   names=data.class_names;
   renderPerformance(data);
   all=data.cases;[...new Set(all.map(r=>r.dataset))].sort().forEach(x=>dataset.add(new Option(x.toUpperCase(),x)));
