@@ -1,6 +1,6 @@
 {
   "format": "bora-public-site-v1",
-  "size_bytes": 458685954,
+  "size_bytes": 458686819,
   "file_count": 3635,
   "public_wsi_count": 13,
   "file_sha256": {
@@ -2274,7 +2274,7 @@
     "benchmark1-comparators/combined-supported-v1/case-085.png": "c3d5c77a50488a23e0300c16f7d19dd24c026a2cc3da664a3eb88722df3c778b",
     "benchmark1-comparators/combined-supported-v1/case-086.png": "549867cb3d1fd1eeb2538158bbce6834a74c1d5289ece567e709d1b10d0fb2de",
     "benchmark1-comparators/combined-supported-v1/case-087.png": "e351a228a8517bd228ab22fce13e9a98ad3014e7c672effe7a51b73a6765e354",
-    "benchmark1-comparators/gallery.js": "158631aa34991f512387328c43a008f6a29057db56aec746965d5363d5ec8081",
+    "benchmark1-comparators/gallery.js": "bf6b4771e470e70c90db643aef1e723be9f7f29aa41947944567f93af973bd7d",
     "benchmark1-comparators/he-support-alpha-v1/case-001.png": "069ebbb039b9cd8cf1c70d5f1688d7f1ad54088620bf6ad182ffbf2b3f7e330e",
     "benchmark1-comparators/he-support-alpha-v1/case-002.png": "b4071f7e87817a6ca74c805d6d3ddfe1829ced18be5bef70e505649cf536724f",
     "benchmark1-comparators/he-support-alpha-v1/case-003.png": "788e240db6bfc4fadb3ed43288d1472b74207ba438c464bb91a4f28fc6d8aa58",
@@ -2362,7 +2362,7 @@
     "benchmark1-comparators/he-support-alpha-v1/case-085.png": "fa7634cfd2ee0658954381508e1618fb6be2d99b7784b17759b53d653e9079f1",
     "benchmark1-comparators/he-support-alpha-v1/case-086.png": "d5c58b3dd987f8a232c91480b93b2751a5d0aaa054c587fc23157b856c7dd04e",
     "benchmark1-comparators/he-support-alpha-v1/case-087.png": "d3da2c8f4d871dc521fc9fdd944e39f83f596194e23e29b1def3c2f97367be30",
-    "benchmark1-comparators/index.html": "a195be0f0014594ddb496b9ecb5eab08d460eac9cc6afcba729c33270791f0ec",
+    "benchmark1-comparators/index.html": "e3da1d0bb3aa7f3d8a665e6f730f9c894e8a89d2f658a4e00220bcb08de17cbe",
     "benchmark1-comparators/per-case-87.csv": "3f03cfb347e3436e302754b49f456351ad2a0ebc4d24e45c7922d17675946fab",
     "benchmark1-comparators/per-case-eight-v2.csv": "bbef377aab16b7b65c224af5efd5e0ba55776e747393b32286266bcbb4e7b345",
     "benchmark1-comparators/per-case-eight.csv": "1034f50618044f3f8e5cda4d81d293dd868269e25d66ebe6e751dbbb37d2bbb8",
@@ -3819,5 +3819,14 @@
     "bora_view_count": 130,
     "group_count": 143,
     "interpretation": "Bora overlay color is keyed to original KODAMA group ID; parenthesized tissue type remains a separate fastPLS prediction."
+  },
+  "benchmark1_peso_annotation_note": {
+    "version": 1,
+    "current_peso_reference": "expert epithelium only",
+    "weak_stroma_rerun": "pending independent audit",
+    "changed_sha256": {
+      "benchmark1-comparators/index.html": "e3da1d0bb3aa7f3d8a665e6f730f9c894e8a89d2f658a4e00220bcb08de17cbe",
+      "benchmark1-comparators/gallery.js": "bf6b4771e470e70c90db643aef1e723be9f7f29aa41947944567f93af973bd7d"
+    }
   }
 }

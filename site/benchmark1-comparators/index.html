@@ -36,6 +36,7 @@
 </header>
 <main>
 <p class="notice"><strong>Development evaluation.</strong> These 87 images were inspected during earlier method development and are not an untouched test. The eight-class label set and supervised model were selected on training images alone. Alveolar tissue, cartilage or bone, liver tissue, mucus/plasma/fluids, and muscle are unscored because they lacked enough independent training support; they are not treated as background. Broader labels change the scoring task, so compare scores only within this page.</p>
+<p class="notice"><strong>PEsO annotation limitation.</strong> The 19 PEsO reference masks label epithelium but do not provide expert stroma labels. The PEsO figures and scores below still use those original masks and the earlier supervised Bora model. A conservative, H&amp;E-supported weak-stroma reference has been prepared for a new training and development rerun; it is not an expert stroma annotation. Corrected results will replace these panels only after the rerun and its audit are complete.</p>
 <h2 id="validation-performance">Performance over the validation set</h2>
 <div class="table-wrap"><table id="cohort-scores"><caption>Mean expert-present case macro IoU for all six methods</caption><thead><tr><th scope="col">Method</th><th scope="col">All 87 images</th><th scope="col">Four multiclass datasets (68 images)</th></tr></thead><tbody></tbody></table></div>
 <p class="small">Each image contributes its mean intersection-over-union (IoU) across expert classes present in that image; the 87-image column weights images equally. The 68-image column averages each of BCSS, GCSS, IGNITE and TIGER separately, then weights those four datasets equally. The 19 PEsO images have only one scorable expert class. Unscored expert pixels are excluded.</p>
@@ -43,6 +44,7 @@
 <details><summary>Performance by dataset</summary><div class="table-wrap"><table id="dataset-scores"><caption>Mean case macro IoU within each validation dataset</caption><thead><tr><th scope="col">Method</th><th scope="col">BCSS (15)</th><th scope="col">GCSS (20)</th><th scope="col">IGNITE (16)</th><th scope="col">TIGER (17)</th><th scope="col">PEsO (19)</th></tr></thead><tbody></tbody></table></div></details>
 <div class="controls"><label for="dataset">Dataset</label><select id="dataset"><option value="">All</option></select><label for="case">Image</label><select id="case"></select><button id="previous">Previous</button><button id="next">Next</button><span aria-live="polite" id="position"></span></div>
 <p id="case-title"></p>
+<p id="case-note" class="notice" hidden></p>
 <h2>Broad-label results on the same H&amp;E image</h2>
 <a id="full-image" href="#"><img id="case-image" alt="Aligned H&E, expert and broad-label method panels"></a>
 <p class="small">The legend names only classes in the expert mask or at least 1% of a displayed model panel. Model overlays use the same Bora H&amp;E tissue support. The KODAMA–Bora spatial mask is unavailable in the curated local cache, so that panel is deliberately unfilled; its score comes from exact frozen expert-by-prediction pixel counts.</p>
@@ -54,5 +56,5 @@
 <p class="small">Download <a href="per-case-eight-v2.csv">per-image eight-class scores</a> or inspect the <a href="https://github.com/tkcaccia/Bora-Analysis/tree/main/methods/benchmark1">method code</a>.</p>
 </main>
 <footer><a href="../attribution.html">Attribution and reuse terms</a></footer>
-<script defer src="gallery.js?v=ridge-v1"></script>
+<script defer src="gallery.js?v=peso-label-note-v1"></script>
 </body></html>

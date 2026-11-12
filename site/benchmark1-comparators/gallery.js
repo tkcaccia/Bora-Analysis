@@ -30,6 +30,9 @@ function show(id){
   const row=visible.find(x=>x.id===id)||visible[0];if(!row)return;
   picker.value=row.id;history.replaceState(null,"","#"+row.id);position.textContent=`${visible.indexOf(row)+1} of ${visible.length}`;
   title.textContent=`${row.dataset.toUpperCase()} · ${row.source_group} · ${row.id}`;
+  const caseNote=document.getElementById("case-note");
+  caseNote.hidden=row.dataset!=="peso";
+  caseNote.textContent=row.dataset==="peso"?"PEsO: this reference labels epithelium only. Its current score does not measure stroma, and the displayed supervised Bora panel predates the weak-stroma rerun.":"";
   image.src=row.figure;full.href=row.figure;image.alt=`Eight-class H&E, expert, supervised Bora and four external method panels for ${row.id}`;
   document.getElementById("bora-scores").replaceChildren(
     card("Supervised Bora",row.scores.supervised,"Training-selected 203-channel ridge head, fitted on 397 training images"),
