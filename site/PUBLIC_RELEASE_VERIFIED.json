@@ -1,6 +1,6 @@
 {
   "format": "bora-public-site-v1",
-  "size_bytes": 463705387,
+  "size_bytes": 463706355,
   "file_count": 3656,
   "public_wsi_count": 13,
   "file_sha256": {
@@ -2363,7 +2363,7 @@
     "benchmark1-comparators/he-support-alpha-v1/case-085.png": "fa7634cfd2ee0658954381508e1618fb6be2d99b7784b17759b53d653e9079f1",
     "benchmark1-comparators/he-support-alpha-v1/case-086.png": "d5c58b3dd987f8a232c91480b93b2751a5d0aaa054c587fc23157b856c7dd04e",
     "benchmark1-comparators/he-support-alpha-v1/case-087.png": "d3da2c8f4d871dc521fc9fdd944e39f83f596194e23e29b1def3c2f97367be30",
-    "benchmark1-comparators/index.html": "020707b84e44c2f10a454186066bc867386827eaed2d57a0a9d749a0cdea0efb",
+    "benchmark1-comparators/index.html": "5c8e0d2d1ce58c9a84985c75561c06cdbfa5c9349334d652b68da3ea2d4ceefe",
     "benchmark1-comparators/per-case-87.csv": "3f03cfb347e3436e302754b49f456351ad2a0ebc4d24e45c7922d17675946fab",
     "benchmark1-comparators/per-case-eight-v2.csv": "bbef377aab16b7b65c224af5efd5e0ba55776e747393b32286266bcbb4e7b345",
     "benchmark1-comparators/per-case-eight-v3.csv": "fad5c01e968474b561a1e229e28d9e87272254199aceaebd2f07e028d38a90f8",
@@ -3110,7 +3110,7 @@
     "benchmark1-failures/expert-overlays/case-054.jpg": "890233328e816e63d7e9f15f098982beede6d516760cd0428945d2e45fd4b103",
     "benchmark1-failures/expert-overlays/case-055.jpg": "b9431836ad6268a21991152937278d0e2118f1c0af34884cb643b47c87e0b8cf",
     "benchmark1-failures/expert-overlays/case-056.jpg": "0baeef0823936be2dbb5943a5728626b8144aff8fe2cfcb8a4edc29e5ad2e079",
-    "benchmark1-failures/index.html": "1f6fd2719f901a252bc7f1baf23e5141a9621f27dd567644694cddaeefaf4254",
+    "benchmark1-failures/index.html": "803fabf764dabae83b498de0e5c0b2a6057314f5fd861b24ae60be5a79974181",
     "benchmark1-failures/thumbs/case-001.jpg": "68e04538f4963e6e11ff3226460a11047fa58593396f63a0be6d239b87bd744b",
     "benchmark1-failures/thumbs/case-002.jpg": "84f9a63673235983ce920f29acd1fcdaf540a1bf284169604a45f3b5fd4b982f",
     "benchmark1-failures/thumbs/case-003.jpg": "ab772babeac362c0214e49339b64276461a65498a9bd99b136969973ff0e3443",
@@ -3171,7 +3171,7 @@
     "geojson-inspector.css": "32ce52334667c38ff20787166055472ad19cfa150eb8cb0a50341a907b4a3b72",
     "geojson-inspector.js": "77b87fd5139d59b6fa782e184428a03a820116378b50da5fec4d48d65b568adf",
     "geojson-inspectors.json": "a0168c1b66957f71d2acea12f4f6b4b9736006379d1c7a60ed57a77c692e0355",
-    "index.html": "ea92ff00262b6dc9bc1cebab2398921bf402a2349b593e4fca75ff9233e323f0",
+    "index.html": "46025dd63cd8534fe036231974adec48df2fc745200a72e8ba62258f05a49342",
     "previews/bcss_05/neighbor-context.jpg": "86756ac578efbcb6a3b4e75505bdb18b35c21cf7315703c3636bb9b0edfebf96",
     "previews/bcss_06/neighbor-context.jpg": "3df0c6574d2977c81bee91c8b808d9fbf377fb6ab91990224acaf5684714894d",
     "previews/bcss_102/neighbor-context.jpg": "c6515302c5908c09cae9fda434d99532bed3f464aee8e917e4bd8e47df3d2375",
@@ -3854,6 +3854,18 @@
       "gallery.js": "bc4f6839129a5f4b1026f9c09c6e79d9a68115f1d67cee4c523eb57775c9d377",
       "cases-eight-v3.json": "d83f636b46554eb4265a87cd982f5e434cade2ed14721b7433ae8c07b449e494",
       "per-case-eight-v3.csv": "fad5c01e968474b561a1e229e28d9e87272254199aceaebd2f07e028d38a90f8"
+    }
+  },
+  "benchmark1_peso_clarification": {
+    "cases": 19,
+    "original_peso_mask_has_no_expert_stroma": true,
+    "derived_stroma_is_weak_proxy": true,
+    "prior_supervised_score_withdrawn": true,
+    "new_supervised_model_pending": true,
+    "changed_sha256": {
+      "index.html": "46025dd63cd8534fe036231974adec48df2fc745200a72e8ba62258f05a49342",
+      "benchmark1-failures/index.html": "803fabf764dabae83b498de0e5c0b2a6057314f5fd861b24ae60be5a79974181",
+      "benchmark1-comparators/index.html": "5c8e0d2d1ce58c9a84985c75561c06cdbfa5c9349334d652b68da3ea2d4ceefe"
     }
   }
 }
