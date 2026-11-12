@@ -1,6 +1,6 @@
 {
   "format": "bora-public-site-v1",
-  "size_bytes": 458556150,
+  "size_bytes": 458636572,
   "file_count": 3635,
   "public_wsi_count": 13,
   "file_sha256": {
@@ -3489,18 +3489,18 @@
     "visium-hd/comparators/visium_hd_human_ovarian_cancer_ff.html": "76c22525290e3c0ec0e6a4eb82e84e2f1a2ac069eef40c0197e4211b427adc87",
     "visium-hd/comparators/visium_hd_human_ovarian_cancer_ff/he.webp": "bdc8e40a73ff1e396c9ac0eced2fd5f98be61eae4eb926cdcdd7041a1eb8dc35",
     "visium-hd/index.html": "d77c01e8ae273ae8397e21ed0b25b55d88db2d7ebe61116d85cf22eaae667e49",
-    "visium-hd/public-10x-brain-cancer-ffpe.html": "786c6fe3a3d6201ca2bc02a2f0ce4109aad4f52adfd2df713e088d73221e6c91",
-    "visium-hd/public-10x-breast-ff.html": "2b6bdf01279a86bd97a9cd7e21af6e9745156586bef9a6d413718d9af9417514",
-    "visium-hd/public-10x-colon-cancer.html": "a9e8a8494d30e132d242287b1b74a4a9fcf4d47e4358241987004ad411c06c47",
-    "visium-hd/public-10x-kidney-ffpe.html": "763d643b7db3e41647ead05daab73213c123d5e0ed58d6b5eb58b213e1b191b4",
-    "visium-hd/public-10x-lung-cancer-fixed-frozen.html": "c6d91bc884fba0a639a0feb6e091ccf368d4c8d172f5244ee1a9401534e11f4a",
-    "visium-hd/public-10x-lymph-node-3prime.html": "389a2d538bd6e30bde4e8c1cee309ac2c63757b27fe04865740fcc88790b8f1d",
-    "visium-hd/public-10x-lymph-node-ffpe.html": "11e03f895f88fbc296983ea639da046dee0ca60d80cad1cf5434086146a0fce4",
-    "visium-hd/public-10x-ovarian-3prime.html": "556d01d518f3af6f25936b191ebf8172b08019684d0af53166b598bfecc54947",
-    "visium-hd/public-10x-ovarian-ff.html": "9b84b9c8cf51b9abdd7d485c7b7a8cd9cfe92e9c4a8e7ebb057c572f2c01c144",
-    "visium-hd/public-10x-pancreatic-cancer-fresh-frozen.html": "5500b7b5a7dc835720e02ca58d8de5ee2feaff73e0100d1e83e70d56271b88b9",
-    "visium-hd/public-10x-prostate-ffpe.html": "e7ec69ae4d1cda205eaa94000ccc738db7d31723b247ed80c80d834fc813253e",
-    "visium-hd/public-10x-tonsil-3prime.html": "8170b3225c80ca86a5944c24aafa84cd26ab24ff85a52a61c284039d616bf4e0",
+    "visium-hd/public-10x-brain-cancer-ffpe.html": "1b3a409cbe49f245e66779aa9e500e84a04b0de708dabb95ba66fa2a3be2a585",
+    "visium-hd/public-10x-breast-ff.html": "43769dcdd99f17b5ac6f0af046723b49dee55425ac3467f934530d9b55c98c04",
+    "visium-hd/public-10x-colon-cancer.html": "23dd6ea9c9b8711fc84dc8672acd50054d7ea844536a0e945cd2ccc7e8e51378",
+    "visium-hd/public-10x-kidney-ffpe.html": "b95dcbb861d81dd54eed14405d938993cda538c932a24a327711cbd23c43c83a",
+    "visium-hd/public-10x-lung-cancer-fixed-frozen.html": "79d592a1db035de9b77618c7df702e791c5517f71c38986fbd4aa64d3d4e3266",
+    "visium-hd/public-10x-lymph-node-3prime.html": "8f6418ef1087214e9dab5a4163024aa7c42c6ea61008806fd86fb036b719d147",
+    "visium-hd/public-10x-lymph-node-ffpe.html": "2ee3635f8d7cde320c6bd159c695b9c0f25c2231ba931a65441ac8a7424c98cc",
+    "visium-hd/public-10x-ovarian-3prime.html": "fa577d6d5bc50c67bbf18a22448c9b39c9532bc2b4392d233a193e52fef67514",
+    "visium-hd/public-10x-ovarian-ff.html": "074d1d89d0b05594c584095d20d7e00024a1296dcae492e86f2498291f505a1b",
+    "visium-hd/public-10x-pancreatic-cancer-fresh-frozen.html": "e6b10b229b409d31f1518aecb419cbe8a8d17b33eb7a58a0f86835b98dc726bb",
+    "visium-hd/public-10x-prostate-ffpe.html": "14d847b6f2a0f85ac11aaaa08800f6be677e78f0346a21ff113d29b4244a3a14",
+    "visium-hd/public-10x-tonsil-3prime.html": "0382ba7dacabed763f694d72da84ad3ebdf94aa42f1d1c9154545fa02a2b90b4",
     "visium-hd/supervised-contour-v1/public-10x-brain-cancer-ffpe/field-01-supervised.webp": "cbca97d2dcb93e9cd584a5a756f41a6b468a740617556ffb084c2c00812504a3",
     "visium-hd/supervised-contour-v1/public-10x-brain-cancer-ffpe/field-02-supervised.webp": "63be8897cba220c962d518f9381402b570b1300a2cacfb4454197c9546426116",
     "visium-hd/supervised-contour-v1/public-10x-brain-cancer-ffpe/field-03-supervised.webp": "bdbfd707cd1e4044e8f572bf9a7bc545b07575a01e7bd464c4fd9a4a3aa7fd58",
@@ -3631,8 +3631,8 @@
     "visium-hd/supervised-contour-v1/tcga-acc-or-a5jp-01z-00-dx1/wide-01-supervised.webp": "80159006058c2dc9b0db163b9f7ec40388ceac592bc302bd78f8d9bb6c6c05c8",
     "visium-hd/supervised-contour-v1/tcga-acc-or-a5jp-01z-00-dx1/wide-02-supervised.webp": "0afc9712cf2d51a05aa391607c2e18f01d0e63dae9cdbd9be8a584cf7c247b11",
     "visium-hd/supervised-contour-v1/tcga-acc-or-a5jp-01z-00-dx1/wide-03-supervised.webp": "8045414d9a2c18b705f2c03a1a7a7b3770c208473309bf7a9690e23410e10a1d",
-    "visium-hd/tcga-acc-or-a5jp-01z-00-dx1.html": "0d4fb14af0e9af29bcba24dfffc64f552f2faee1dab9a4bcba5fe063aef603d3",
-    "visium-hd/unified-panels.css": "cf2244b697fea2eae7186105407e1fc6476513270a4a00312addbaf4d97bd251",
+    "visium-hd/tcga-acc-or-a5jp-01z-00-dx1.html": "96ac94465d7ec9ef77be1a0a481789b97acd7b2c8a1e8925440eb99b5df2852c",
+    "visium-hd/unified-panels.css": "5205ec43dbedfec00cf508e1f2384f36cffed9525ba6ccc15e97307070d49be2",
     "visium/FULLSECTION_PROVENANCE.json": "29cccc464a37966db2df66b9f4ae192205da11fc176fa2251dc35a4e771a9226",
     "visium/breast.html": "fe1677f46fc173f8d63d70c925791c7368b9fca2440fb96e256bdb9f27cd7958",
     "visium/colorectal.html": "2d5cef3f7d5ade04277937e17d67bd4dd5d0fc849a29aa30deb55954f61285ad",
@@ -3804,5 +3804,12 @@
       "final_receipt_sha256": "f396ce5de81dda5bfa52d6a5d38828f7ef942631a8726f43e8a168903e119cdf",
       "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe"
     }
+  },
+  "benchmark2_bora_group_labels": {
+    "stage_receipt_sha256": "d8d4952b82290f11a0a57877234ae83c01602e5cd63ac775c131a0dc013f5f9c",
+    "page_count": 13,
+    "group_count": 143,
+    "pinned_fastpls_model_sha256": "a8a70b18c6c1b9325509ac9b3eebc23856aa767c8bb60252ebe8679385fee53a",
+    "interpretation": "Frozen fastPLS predictions for original Bora groups; no whole-slide expert validation."
   }
 }
