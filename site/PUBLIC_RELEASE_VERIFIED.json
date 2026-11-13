@@ -1,6 +1,6 @@
 {
   "format": "bora-public-site-v1",
-  "size_bytes": 492307221,
+  "size_bytes": 492312488,
   "file_count": 3795,
   "public_wsi_count": 13,
   "file_sha256": {
@@ -3648,7 +3648,7 @@
     "visium-hd/comparators/visium_hd_human_lymph_node_ffpe/he.webp": "ab4f0196f10b3351eeb05f3a3708e9bc12192284839ad2b63cf05bba861380ba",
     "visium-hd/comparators/visium_hd_human_ovarian_cancer_ff.html": "76c22525290e3c0ec0e6a4eb82e84e2f1a2ac069eef40c0197e4211b427adc87",
     "visium-hd/comparators/visium_hd_human_ovarian_cancer_ff/he.webp": "bdc8e40a73ff1e396c9ac0eced2fd5f98be61eae4eb926cdcdd7041a1eb8dc35",
-    "visium-hd/index.html": "d77c01e8ae273ae8397e21ed0b25b55d88db2d7ebe61116d85cf22eaae667e49",
+    "visium-hd/index.html": "db73ceca8536100a133cbfa80cd7794f1b0cfc96c7ca013e8f75ba6a88ba986c",
     "visium-hd/public-10x-brain-cancer-ffpe.html": "b15fcba89001d0842094af342eaf32ccab47590a84bab73518236f16617292b5",
     "visium-hd/public-10x-breast-ff.html": "c663181f4ba6740a9f296beb6f48c20f89ab6faec618137e6f2b67b3f84f4868",
     "visium-hd/public-10x-colon-cancer.html": "af69535b2d9f1205767908d07fad069d3459039dbb8dfb9638ea7a4678dfdb59",
@@ -4059,5 +4059,11 @@
     "gallery_scores_sha256": "b6497f3f332863556a411b5f616ec90294e62ad68d0c5eab3d96e199f4a47454",
     "gallery_index_sha256": "ca7ad4cb1f35de4c66a5341160acfa3d7b21c179ff71ad7aa09f425c8e048ac3",
     "attribution_sha256": "120194f88208242c416f22962d97d809d5e96c9530d2455b8e67b51cb8001703"
+  },
+  "benchmark2_supervised_geojson_index": {
+    "downloads": 13,
+    "index_sha256": "db73ceca8536100a133cbfa80cd7794f1b0cfc96c7ca013e8f75ba6a88ba986c",
+    "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe",
+    "staging_receipt_sha256": "f477005ecb9e08efbe8d2b395c06abbcf77dbebded59ef270dc9d1c5c32c8d15"
   }
 }
