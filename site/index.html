@@ -20,14 +20,26 @@
 <main id="main-content">
 <section aria-labelledby="benchmark1-choose"><h2 id="benchmark1-choose">Choose a Benchmark 1 result set</h2>
 <nav class="benchmark1-paths" aria-label="Benchmark 1 result sets">
-  <a href="#public-datasets" aria-current="page"><strong>Training data · Public histology datasets with expert masks</strong><span>Historical controlled test with expert-derived coarse input groups; browse the interactive results below.</span></a>
+  <a href="#public-datasets" aria-current="page"><strong>Training data · 397 images across five datasets</strong><span>Includes 18 PEsO images. The historical controlled viewer below shows a separate 116-image set.</span></a>
   <a href="benchmark1-comparators/"><strong>Validation data · 87 images</strong><span>Development evaluation with Bora, expert annotations, U-Net, DeepLabV3+, VISTA-PATH, MedSAM and black-and-white class responses.</span></a>
 </nav>
 <p class="notice"><strong>Interpretation.</strong> The retained full-channel cohort has 397 training images and 87 development validation images. The validation images were inspected during method development, so they are not an untouched test. The display below is an older controlled 116-image benchmark with a historical 28-role palette. Glandular secretions, mucoid material, skin adnexa, and epidermis appear in that palette but are not among the current 24 training targets. <a href="benchmark1-failures/">Review the 56 images without a scored result in the earlier image-only Bora run</a>.</p>
 <p class="notice"><strong>PEsO reference update.</strong> The <a href="benchmark1-comparators/#case-069">87-image validation gallery</a> shows original expert epithelium together with a clearly labeled weak stroma proxy for all 19 PEsO cases. It now includes a PEsO-specific supervised Bora result selected on disjoint training slides and recalculated scores for the available external predictions. The previous epithelium-only supervised Bora 100% score is withdrawn. The weak stroma proxy is not an expert annotation.</p>
 </section>
 <section id="public-datasets" aria-labelledby="title">
-<h2 id="title">Public histology datasets with expert masks</h2>
+<h2 id="title">Current Benchmark 1 training set · 397 images</h2>
+<p>The frozen training set includes all five sources below. These counts describe images used for training; they are separate from the older controlled viewer farther down this page.</p>
+<div class="scroll"><table aria-label="Current Benchmark 1 training images by dataset"><thead><tr><th scope="col">Dataset</th><th scope="col">Training images</th></tr></thead><tbody>
+  <tr><th scope="row">BCSS</th><td>89</td></tr>
+  <tr><th scope="row">GCSS</th><td>20</td></tr>
+  <tr><th scope="row">IGNITE</th><td>169</td></tr>
+  <tr><th scope="row">PEsO</th><td>18</td></tr>
+  <tr><th scope="row">TIGER</th><td>101</td></tr>
+  <tr><th scope="row">Total</th><td>397</td></tr>
+</tbody></table></div>
+<p><strong>PEsO labels.</strong> The original reference identifies epithelium. A separate conservative, H&amp;E-supported weak stroma proxy was derived from non-epithelial pixels for the PEsO-specific two-class fit; it is not a pathologist annotation. The <a href="benchmark1-comparators/#case-069">19 PEsO development images and their results</a> appear in the validation gallery.</p>
+<h3>Historical controlled viewer · 116 images</h3>
+<p>This earlier four-dataset experiment contains BCSS, GCSS, IGNITE and TIGER, but no PEsO images. Its expert-derived anonymous input groups and scores are distinct from the current 397-image supervised training set.</p>
 <p id="intro">Inspect the original H&amp;E image, expert tissue annotation, coarse input tile groups, Virchow2 projection, and Bora’s refined tissue mask for each image.</p>
 <p id="status" role="status">Loading benchmark…</p>
 <div id="metrics" class="metrics"></div>

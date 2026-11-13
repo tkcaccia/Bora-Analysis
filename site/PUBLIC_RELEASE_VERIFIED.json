@@ -1,12 +1,12 @@
 {
   "format": "bora-public-site-v1",
-  "size_bytes": 481509217,
+  "size_bytes": 481511086,
   "file_count": 3752,
   "public_wsi_count": 13,
   "file_sha256": {
     "BUILD_PROVENANCE.json": "7353c2f089fe41ad934780d7df8f54f0ea336e8b147968e3875ed73d9fe06d97",
     "DATA_LICENSES.md": "a6431f4bab58cda69ca590ce336c509e60df900c98604b3cc455d1985fd8c570",
-    "attribution.html": "1d8b92694df54d906ac47e781019eb3f677927d33406e7214d4ac20c7abb8c0a",
+    "attribution.html": "284aec9ae748c1e5b608d2f3143ca84088d85d8151c287b17f04554f40bc6e6e",
     "benchmark-template.css": "c115a89dc6497d45be1173258fd16b519d51ff52b84ca17b630c85cc08b1a0e2",
     "benchmark1-comparators/bora-supported-bw-v1/case-001/class-01.webp": "edfed25ed68f996312523d75de1e4b46b29941c9620afb139b58625dda94875b",
     "benchmark1-comparators/bora-supported-bw-v1/case-001/class-02.webp": "81d46045b28ded12fbc7e6cd415b4c70709f9d658d4110393fa6fa9b3c2a6d70",
@@ -3267,7 +3267,7 @@
     "geojson-inspector.css": "32ce52334667c38ff20787166055472ad19cfa150eb8cb0a50341a907b4a3b72",
     "geojson-inspector.js": "77b87fd5139d59b6fa782e184428a03a820116378b50da5fec4d48d65b568adf",
     "geojson-inspectors.json": "a0168c1b66957f71d2acea12f4f6b4b9736006379d1c7a60ed57a77c692e0355",
-    "index.html": "3ddb25cc95493dfb97507aaaf5980e636a190ab541b4357641d2a21b35af5a4d",
+    "index.html": "c7a94555277102583560482d094aba07f5f923904ad9d3ca7fcb30eccf323046",
     "previews/bcss_05/neighbor-context.jpg": "86756ac578efbcb6a3b4e75505bdb18b35c21cf7315703c3636bb9b0edfebf96",
     "previews/bcss_06/neighbor-context.jpg": "3df0c6574d2977c81bee91c8b808d9fbf377fb6ab91990224acaf5684714894d",
     "previews/bcss_102/neighbor-context.jpg": "c6515302c5908c09cae9fda434d99532bed3f464aee8e917e4bd8e47df3d2375",
@@ -3992,5 +3992,19 @@
       "benchmark1-comparators/gallery.js": "18d8057daf7db8817e3139d498ff90a89bb0116a6bf8c66ae733799b0deee538",
       "benchmark1-comparators/cases-eight-v5.json": "8beb8391b42d4f46c9dbe659c9269ff1d2ccaadda669dbcf025aad9a07fdfa5e"
     }
+  },
+  "benchmark1_training_cohort_display": {
+    "manifest_sha256": "0ef43c841b26a5cbb939aa16d96df5f1b9c1f04557983829bf6c052a2be41fb6",
+    "counts": {
+      "bcss": 89,
+      "gcss": 20,
+      "ignite": 169,
+      "peso": 18,
+      "tiger": 101
+    },
+    "current_training_count": 397,
+    "separate_historical_viewer_count": 116,
+    "index_sha256": "c7a94555277102583560482d094aba07f5f923904ad9d3ca7fcb30eccf323046",
+    "attribution_sha256": "284aec9ae748c1e5b608d2f3143ca84088d85d8151c287b17f04554f40bc6e6e"
   }
 }
