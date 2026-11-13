@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WSSS4LUAD · Benchmark 1 ROI evaluation · Bora</title>
+  <meta name="description" content="Audited Bora, U-Net, DeepLabV3+, MedSAM, VISTA-PATH and KODAMA–Bora results on 40 WSSS4LUAD validation ROIs.">
+  <style>
+    :root{color-scheme:light;--ink:#183342;--muted:#526874;--line:#d4e0e6;--paper:#f6f9fa;--card:#fff;--blue:#0d6687}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:var(--blue)}a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid #eea949;outline-offset:3px}
+    header{background:#163c50;color:white;padding:2rem max(1.2rem,calc((100vw - 1320px)/2)) 2.3rem}
+    header p{max-width:980px;color:#d8e8ef}header a{color:#bfe7f8}h1{font-size:clamp(1.8rem,4vw,3rem);line-height:1.15;margin:.3rem 0 .8rem}
+    main{max-width:1360px;margin:auto;padding:1.5rem 1.2rem 4rem}.eyebrow{font-size:.77rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+    nav{display:flex;gap:1.4rem;flex-wrap:wrap;margin-top:1.2rem}.notice{background:#e9f4f7;border-left:5px solid #2483a4;padding:1rem 1.2rem;margin:1.4rem 0}
+    section{margin:1.6rem 0}h2{font-size:1.4rem;margin:0 0 .7rem}p{margin:.55rem 0 1rem}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.2rem;box-shadow:0 2px 8px #1534490b}
+    .scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:720px;font-variant-numeric:tabular-nums}th,td{text-align:left;padding:.65rem .7rem;border-bottom:1px solid var(--line)}th{background:#eaf1f4;font-size:.85rem}td:first-child{font-weight:600}
+    .controls{display:flex;align-items:center;gap:.65rem;flex-wrap:wrap;margin:.7rem 0 1rem}button,select{font:inherit;color:var(--ink);border:1px solid #9bb8c5;border-radius:7px;background:#fff;padding:.45rem .7rem}button{cursor:pointer}button:hover{background:#e8f2f5}
+    figure{margin:0}figure img{width:100%;height:auto;display:block;background:white;border:1px solid var(--line);border-radius:8px}figcaption{font-size:.92rem;color:var(--muted);margin:.55rem 0 0}
+    .legend{display:flex;flex-wrap:wrap;gap:.65rem 1.2rem;margin:.8rem 0}.chip{display:inline-flex;align-items:center;gap:.4rem;font-size:.92rem}.swatch{width:1rem;height:1rem;display:inline-block;border:1px solid #647b86;border-radius:2px}
+    .small{font-size:.9rem;color:var(--muted)}.metrics{font-variant-numeric:tabular-nums}footer{font-size:.88rem;color:var(--muted);border-top:1px solid var(--line);padding-top:1rem;margin-top:3rem}
+  </style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">Bora · Benchmark 1 · ROI domain evaluation</div>
+  <h1>WSSS4LUAD tissue segmentation</h1>
+  <p>All 40 selected validation ROIs are shown with the same H&amp;E field. This dataset was inspected during development, so these scores describe domain transfer and are not a blind external test.</p>
+  <nav aria-label="Related pages"><a href="../../index.html">Benchmark 1</a><a href="../../benchmark1-comparators/">87-image development gallery</a><a href="../../visium-hd/">Benchmark 2 whole slides</a><a href="https://wsss4luad.grand-challenge.org/WSSS4LUAD/">WSSS4LUAD source</a></nav>
+</header>
+<main>
+  <div class="notice"><strong>What is evaluated:</strong> WSSS reference codes are tumor epithelium, tumor-associated stroma, normal tissue and white background. Tumor IoU scores tumor against all annotated tissue; stroma IoU uses only tumor/stroma reference pixels. Normal tissue has no unique Bora eight-class equivalent. The saved images show native predictions; the table also reports a separate common H&amp;E-support-clipped score.</div>
+  <section class="card" aria-labelledby="summary-title">
+    <h2 id="summary-title">All selected ROIs</h2>
+    <div class="scroll"><table id="summary-table"><thead><tr><th>Method</th><th>Complete</th><th>Native tumor IoU</th><th>Shared-support tumor IoU</th><th>Native stroma IoU</th><th>Native boundary F1</th></tr></thead><tbody><tr><td colspan="6">Loading audited results…</td></tr></tbody></table></div>
+    <p class="small">Tumor and stroma IoU are pooled over their stated reference pixels. Boundary F1 is the mean of evaluable case window means at a nominal 5 µm tolerance; see <a href="scores.json">full audited summary and denominators</a> or <a href="scores.csv">case score CSV</a>. Scores are descriptive: patient identifiers are unavailable for a patient-clustered interval.</p>
+  </section>
+  <section class="card" aria-labelledby="case-title">
+    <h2 id="case-title">Paired result on one H&amp;E ROI</h2>
+    <div class="controls"><button id="prev" type="button">Previous</button><label for="case">ROI</label><select id="case" aria-label="Choose WSSS4LUAD ROI"></select><button id="next" type="button">Next</button><span id="dimensions" class="small"></span></div>
+    <div class="legend" aria-label="Display legend"><span class="chip"><span class="swatch" style="background:#e1434c"></span>Tumor</span><span class="chip"><span class="swatch" style="background:#4fb26f"></span>Stroma</span><span class="chip"><span class="swatch" style="background:#4892d1"></span>Reference normal tissue</span><span class="chip"><span class="swatch" style="background:#7d818f"></span>Other predicted class</span><span class="chip"><span class="swatch" style="background:#9756b7"></span>MedSAM overlap</span><span class="chip">KODAMA group colors identify anonymous groups</span></div>
+    <figure><img id="figure" alt="Paired H&E, WSSS reference and method overlays" loading="eager"><figcaption id="caption"></figcaption></figure>
+    <div class="scroll"><table id="case-table" class="metrics"><thead><tr><th>Method</th><th>Native tumor IoU</th><th>Shared-support tumor IoU</th><th>Native stroma IoU</th><th>Native boundary F1</th><th>Native region covering</th></tr></thead><tbody></tbody></table></div>
+  </section>
+  <section class="card" aria-labelledby="interpretation-title">
+    <h2 id="interpretation-title">Interpretation and limits</h2>
+    <p>Supervised Bora, U-Net and DeepLabV3+ use eight-class models fitted on Bora’s frozen 397-image training set. VISTA-PATH uses its fixed text vocabulary. MedSAM receives U-Net-derived boxes and returns overlapping binary prompt masks; its tumor and stroma values measure this guided combination, not an independent eight-class classifier. Gray in the overlays denotes a predicted class without a direct WSSS tumor/stroma mapping.</p>
+    <p>KODAMA–Bora produced anonymous pixel groups for 9 of 40 ROIs. The other 31 failed the frozen minimum of 40 tiles with strictly less than 10% background; their panels say “Not run.” Group colors have no tissue-name meaning. A fresh eight-class fastPLS group-naming refit failed its training-only rare-class viability gate, so no semantic KODAMA tumor score is shown.</p>
+    <p>The WSSS source reports 10× magnification. The displayed 1.0 µm/native-pixel spacing and the 5 µm boundary tolerance use that assumption; measured physical spacing was unavailable. U-Net, DeepLabV3+, MedSAM, VISTA-PATH and KODAMA outputs were projected from the registered doubled image grid to the native reference grid once by nearest neighbor. The common support is derived only from H&amp;E, before reference scoring. The reference uses its own background code. These different model and prompt contracts do not support a single architecture ranking.</p>
+  </section>
+  <footer>Source: <a href="https://wsss4luad.grand-challenge.org/">WSSS4LUAD</a>, released under <a href="https://wsss4luad.grand-challenge.org/License/">CC BY 4.0</a>. Images here are resized, overlaid adaptations for research review. Original dataset authors retain attribution. The underlying full 1,280-channel Virchow2 caches and full-resolution method outputs remain in the checksum-audited local study record.</footer>
+</main>
+<script>
+const names={supervised_bora:'Supervised Bora',unet:'Class-aware U-Net',deeplabv3plus:'DeepLabV3+',medsam:'MedSAM · U-Net boxes',vista_path:'VISTA-PATH',kodama_bora:'KODAMA–Bora groups'};
+const order=['supervised_bora','unet','deeplabv3plus','medsam','vista_path','kodama_bora'];
+const fmt=x=>x===null||x===undefined?'—':Number(x).toFixed(3);
+let data=null,index=0;
+function show(i){
+  index=(i+data.cases.length)%data.cases.length;const row=data.cases[index];
+  document.getElementById('case').value=String(index);
+  const fig=document.getElementById('figure');fig.src=row.figure;fig.alt=`WSSS4LUAD ${row.case}: original H&E, expert reference, supervised Bora, U-Net, DeepLabV3+, MedSAM, VISTA-PATH and KODAMA–Bora panels`;
+  document.getElementById('dimensions').textContent=`Native ${row.native_shape_yx[1]} × ${row.native_shape_yx[0]} pixels`;
+  document.getElementById('caption').textContent=`${row.case}. Red and green represent direct tumor and stroma assignments. Other model classes are gray. MedSAM purple marks overlapping prompts. KODAMA group colors are anonymous.`;
+  document.querySelector('#case-table tbody').innerHTML=order.map(m=>{const v=row.methods[m];if(!v)return `<tr><td>${names[m]}</td><td colspan="5">Incomplete under frozen tile admission</td></tr>`;
+    return `<tr><td>${names[m]}</td><td>${fmt(v.native.tumor_iou)}</td><td>${fmt(v.shared_support.tumor_iou)}</td><td>${fmt(v.native.stroma_iou)}</td><td>${fmt(v.native.boundary_f1)}</td><td>${fmt(v.native.region_covering)}</td></tr>`}).join('');
+  history.replaceState(null,'',`#${row.case}`);
+}
+fetch('scores.json').then(r=>{if(!r.ok)throw Error('score file unavailable');return r.json()}).then(x=>{
+  if(x.selected_cases!==40||x.cases.length!==40)throw Error('case inventory differs');data=x;
+  document.querySelector('#summary-table tbody').innerHTML=order.map(m=>{const v=x.summary[m],s=v.native.semantic||{},b=v.native.geometry||{};
+    return `<tr><td>${names[m]}</td><td>${v.completed}/${v.selected}</td><td>${fmt(s.tumor_vs_nontumor?.iou)}</td><td>${fmt(v.shared_support.semantic?.tumor_vs_nontumor?.iou)}</td><td>${fmt(s.stroma_on_tumor_stroma?.iou)}</td><td>${fmt(b.boundary_f1?.mean_case_window_mean)}</td></tr>`}).join('');
+  const select=document.getElementById('case');select.innerHTML=x.cases.map((r,i)=>`<option value="${i}">${r.case}</option>`).join('');
+  const target=x.cases.findIndex(r=>`#${r.case}`===location.hash);show(target<0?0:target);
+  select.addEventListener('change',()=>show(Number(select.value)));
+  document.getElementById('prev').addEventListener('click',()=>show(index-1));
+  document.getElementById('next').addEventListener('click',()=>show(index+1));
+}).catch(e=>{document.querySelector('#summary-table tbody').innerHTML=`<tr><td colspan="6">Could not load scores: ${e.message}</td></tr>`});
+</script>
+</body>
+</html>
