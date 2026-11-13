@@ -1,7 +1,7 @@
 {
   "format": "bora-public-site-v1",
-  "size_bytes": 492312488,
-  "file_count": 3795,
+  "size_bytes": 493445580,
+  "file_count": 3799,
   "public_wsi_count": 13,
   "file_sha256": {
     "BUILD_PROVENANCE.json": "7353c2f089fe41ad934780d7df8f54f0ea336e8b147968e3875ed73d9fe06d97",
@@ -2365,7 +2365,7 @@
     "benchmark1-comparators/he-support-alpha-v1/case-085.png": "fa7634cfd2ee0658954381508e1618fb6be2d99b7784b17759b53d653e9079f1",
     "benchmark1-comparators/he-support-alpha-v1/case-086.png": "d5c58b3dd987f8a232c91480b93b2751a5d0aaa054c587fc23157b856c7dd04e",
     "benchmark1-comparators/he-support-alpha-v1/case-087.png": "d3da2c8f4d871dc521fc9fdd944e39f83f596194e23e29b1def3c2f97367be30",
-    "benchmark1-comparators/index.html": "9676ab806d6ca738430b0f31c10bc3776397b578ce2dd17804a762587d70649a",
+    "benchmark1-comparators/index.html": "6c51d1848e60ab1b9d4d1d203eee33306d9fb40a05e1fd31d5fb978be71f6ed3",
     "benchmark1-comparators/legends-complete-v5/case-003.webp": "3fe59fd78a518909766975709cd5ec5b72b1aa4f041de3122a29ad181556e535",
     "benchmark1-comparators/legends-complete-v5/case-005.webp": "a188f1857e452db8769da8ddf1ff0037bcccb468444f3241aaa6d9ee1421ee0a",
     "benchmark1-comparators/legends-complete-v5/case-006.webp": "b1f173c040890bf94275c32738dffc2c76bf189cc7a95041d9088db41bec66ab",
@@ -3798,7 +3798,11 @@
     "visium/colorectal.html": "2d5cef3f7d5ade04277937e17d67bd4dd5d0fc849a29aa30deb55954f61285ad",
     "visium/geojson-download.js": "b913397b5d6aa5019ef0fbbc63f612934b284050c0cc93ac2152e896dcaf5133",
     "visium/index.html": "4e0166f63caf61dd436a61c4f737e6293c36657e252ca4c7820ea71a98638393",
-    "visium/tonsil.html": "526b5e5897534468999fa4dc5adbdbbf5b68b76da22e29fff57d09ed6a765aa7"
+    "visium/tonsil.html": "526b5e5897534468999fa4dc5adbdbbf5b68b76da22e29fff57d09ed6a765aa7",
+    "benchmark1-comparators/quality-87-v1.csv": "ee6bed070b1a6112b83514d8235f2092669eba7ac9cb5087e76666bcd64dc58b",
+    "benchmark1-comparators/quality-class-v1.csv": "5f1df285bbc9f643860955e586b5e074bd8f1a3ecac749d77ed6ff82f6ccfb1a",
+    "benchmark1-comparators/quality-v1.json": "4ea87160410e7b164a5eab431085d29034062569746f6fd4eee7019d9c2e2441",
+    "benchmark1-comparators/quality.js": "50038c88b258f891d0f73151effd8e34169f584c014d194b3ad30110caede00c"
   },
   "grayscale_group_map_count": 143,
   "grayscale_asset_manifest_sha256": "1433daee8dc159c5944b610f671ed84ced400d1cb438b22964d68eecd2530618",
@@ -4065,5 +4069,11 @@
     "index_sha256": "db73ceca8536100a133cbfa80cd7794f1b0cfc96c7ca013e8f75ba6a88ba986c",
     "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe",
     "staging_receipt_sha256": "f477005ecb9e08efbe8d2b395c06abbcf77dbebded59ef270dc9d1c5c32c8d15"
+  },
+  "benchmark1_matched_quality": {
+    "expert_reference_cases": 68,
+    "weak_peso_cases": 19,
+    "method_count": 3,
+    "staging_receipt_sha256": "0f35f24cb37bb9b76ae87e58ff5ec85d666429bea51deafa4650e37beaba334d"
   }
 }
