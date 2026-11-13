@@ -1,9 +1,9 @@
 {
-  "status": "PINNED_PUBLIC_MEDIA_ARCHIVED_OUTSIDE_PAGES",
+  "status": "RETAINED_PINNED_PUBLIC_MEDIA_AFTER_TCGA_ACC_RETIREMENT",
   "pinned_commit": "b0f5ec6741a47acbbb8559ed80e7b89c3ba15973",
   "raw_prefix": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/",
-  "file_count": 4086,
-  "bytes": 573335037,
+  "file_count": 4049,
+  "bytes": 515812306,
   "case_paths_rewritten": 889,
   "training_assets_rewritten": 116,
   "wsi_pages_rewritten": {
@@ -13,7 +13,6 @@
     "public-10x-ovarian-3prime.html": 29,
     "public-10x-ovarian-ff.html": 29,
     "public-10x-tonsil-3prime.html": 28,
-    "tcga-acc-or-a5jp-01z-00-dx1.html": 36,
     "public-10x-colon-cancer.html": 38,
     "index.html": 13,
     "public-10x-lung-cancer-fixed-frozen.html": 36,
@@ -20267,191 +20266,8 @@
       "sha256": "7205ba054dea4fd822dd112a0a7ec55653644fbf26ab1d0c49e6a325ae28a54c",
       "bytes": 524464,
       "git_blob": "3b920cd04b48d0dbb00eb3038a31f9fd5d4702cc"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/Bora-GeoJSON.gz": {
-      "sha256": "7551b3fefc8439f992bfe12be3c094ef2b70d4c1e0d2f9e60e1f1ec9f9a7c219",
-      "bytes": 41427487,
-      "git_blob": "6657c994b0f0dd88024a27205bbc43f0afeae221"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/SOURCE.json": {
-      "sha256": "b501d6c767b9e059c4fee95d71b6a55253a8e3f5616354e08e377ab5bb7465ec",
-      "bytes": 226,
-      "git_blob": "170720b4c9189a3445f3778c0656d74ef140e9c0"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/field-01-he.jpg": {
-      "sha256": "cb7d0b44b4dd9616f5060e59cd353e181f7c46d244672747f0eea4e1cec045a6",
-      "bytes": 331528,
-      "git_blob": "4aa86a1c092ccb398b735f60d7025375465cf457"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/field-01-mask.jpg": {
-      "sha256": "2ce457bd518c800cdf4793c8ccf41ed05e72038483784cb2ad1c0ccdd164f10c",
-      "bytes": 281104,
-      "git_blob": "149aaa17f5401943392517084a6c3be191329ac9"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/field-02-he.jpg": {
-      "sha256": "39ecc57784bdb7922d789e04bd1888630d4a0da7398b2a1cafda020ecb87e7b0",
-      "bytes": 328316,
-      "git_blob": "22b733ec4cc966e750c41c7d5bb299865b4e395a"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/field-02-mask.jpg": {
-      "sha256": "16b5be18dc8d12e4fa2a1eecc57882914b0b541fc365609bbc54764f22ee72f1",
-      "bytes": 261130,
-      "git_blob": "6254c2bd1a41b1704e830c96abaff4f3c9c3e185"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/field-03-he.jpg": {
-      "sha256": "3326c4b179f69eb1deebf6f14af8163b678519f88dd61d8b189bb127b809d772",
-      "bytes": 376461,
-      "git_blob": "701e5f382d9afabe36233021f12c7e988e636367"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/field-03-mask.jpg": {
-      "sha256": "357a9efd248f973ace02a835b2ad72c2852710834065ccc441473fd9cba41096",
-      "bytes": 300123,
-      "git_blob": "e11da8e38b452d81d92aea6429f807b30516b32b"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/group-01.webp": {
-      "sha256": "0396d3e9e350dd8777b018a284f793568c99681ebdfa79625ead09702f27fd4b",
-      "bytes": 424934,
-      "git_blob": "ec108c3eae42defa8ff77e26e820220e4696bcc5"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/group-02.webp": {
-      "sha256": "48616cd04e1d0f19fcbe31cbed5aa4ff44ba81e0273ee058ac3e3b7c60131415",
-      "bytes": 441698,
-      "git_blob": "fd2ba143ac9e4af5e0f2cf45fe416c10e752a1be"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/group-03.webp": {
-      "sha256": "65124423d640e8162ca01f403bf315f23eb983cff627d5e8e316569d2bacc321",
-      "bytes": 414858,
-      "git_blob": "c30373daf272dfb9d04344c6e1dc09a82b86ca56"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/group-04.webp": {
-      "sha256": "4e1292bb320760a5a217c9e546fef4ee1700abbadaa49ff94f02411d90cc48f9",
-      "bytes": 398360,
-      "git_blob": "f0f9257904a3ca97c17681a552da6d71620a24d8"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/group-05.webp": {
-      "sha256": "b5b258daa3a8777df6be32b27cbea72940193703ec40fcb570af7be231a36f97",
-      "bytes": 391620,
-      "git_blob": "c3318b1a5d05b7d93363683426616a3e66c0f5b7"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/group-06.webp": {
-      "sha256": "28b3a26274c3d8108342c6a0f6403cc7bb380395a6d41c2ec1bb7abc0545d1ff",
-      "bytes": 411426,
-      "git_blob": "de82e010ea40382d7469422d9049ff84770f039c"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/group-07.webp": {
-      "sha256": "4581b7fbb416e1724f7b84b3dc10a38a7f99ffa2d55d40ec7f487e780afb1d2f",
-      "bytes": 370960,
-      "git_blob": "d0c4e6a881ba4b7367c4cb1f246c8fd0fa5d3e9d"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/group-08.webp": {
-      "sha256": "32043fdf41191aad771e06dd9c593a6b3a59e2ca2817c740015ca8a4d2f6d2e2",
-      "bytes": 412910,
-      "git_blob": "fb3630e88c7f6dd4f92e877ca1a9d9c662f394da"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/group-09.webp": {
-      "sha256": "194097693bb149c9e281fb53a4296af404363246378fb5ac1b1c893b82c8588b",
-      "bytes": 447786,
-      "git_blob": "2891c5181b013bb1854b86dd5123e46ee35fe7ab"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/group-10.webp": {
-      "sha256": "951690bbe3c9dfcafc5cc8ffe59617407cba0de6f2b105472c30d6b770e29abf",
-      "bytes": 412486,
-      "git_blob": "b08c41a7b876443298ecc0063fcf4704505c558f"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/group-11.webp": {
-      "sha256": "3dd4cfd0cd047751fd72eb511a9dacbaea9024bf0ce14a29a9bb8e90bb39ed55",
-      "bytes": 369914,
-      "git_blob": "5c41c2df43c03a98ab3e4e433ac8cf8741a5bf74"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/group-12.webp": {
-      "sha256": "737f4026b60cb121089257d4ce3734d253d46ab0a77c6840a74d8054319490fb",
-      "bytes": 385852,
-      "git_blob": "ba8ffff21b27b515ebd750bedefe4dd408f8067c"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/group-13.webp": {
-      "sha256": "24c87e73003ab64ed7d28492670f54ef1783ee2c8d5dfdc0330868e06ec89ca8",
-      "bytes": 359464,
-      "git_blob": "4ca0cddf93f938ba6562b79b22816cd531e4ff62"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/group-14.webp": {
-      "sha256": "4ecc3e5c12aa3d8f43c42d40027bd7006aba25fabed945cdc72ff70d21c2a9f8",
-      "bytes": 367516,
-      "git_blob": "0880c24997f5f3bd9caeea72319e6442a571941f"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/he-overview.jpg": {
-      "sha256": "3da5d4fe5bd83e24a8a02d91905eda32182377e075f39e94806df3d2e608939f",
-      "bytes": 658819,
-      "git_blob": "0565b1fd6574c00dbdf313c4414fe0755978687d"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/kodama-groups.png": {
-      "sha256": "32feed44ff0e7f63299eeee464f14898c2978b0b1626bc57880ca07bba934b3a",
-      "bytes": 81697,
-      "git_blob": "242c9f082050fae6506026fab7a69a623689fa9d"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/large-01-he.jpg": {
-      "sha256": "254b62fbdca95691f50461834f4847c77c43196841d564ced88bd2c4a6c8d5f5",
-      "bytes": 545991,
-      "git_blob": "feb7c338a7e994538b8e226d1e0614d50eb08334"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/large-01-mask.jpg": {
-      "sha256": "e61c9eb80f1273ebac8a16904ac69a122bbb90ba47759f741077389d779b4d28",
-      "bytes": 435875,
-      "git_blob": "dd31c8d9807aadf65022141d9421e0ae9ec126e9"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/large-02-he.jpg": {
-      "sha256": "d91317ca0d60943fd686cdafb0a382558e14ac9cf1329929c445ab63dbc2e354",
-      "bytes": 572073,
-      "git_blob": "c828fe6398598927bf764ea444c351a6971a68be"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/large-02-mask.jpg": {
-      "sha256": "c8d89d37e1b0cb453b0b16c1f18d6d134e34784783c633763c8f4ecf67b6990c",
-      "bytes": 470786,
-      "git_blob": "9fee27d215dd55e005aa7abc459ee0d3dbaa0fe1"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/large-03-he.jpg": {
-      "sha256": "b094ba82fcb1dfcc37563cd0abf54e6c899578a493cef13004a0adfabdae77b7",
-      "bytes": 543735,
-      "git_blob": "2e6e6e4870240ccd0b4b0305b7ed70ccb63d0a97"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/large-03-mask.jpg": {
-      "sha256": "bd6dccbe65e22a7f3396e4769f7a1f68506a627cf3c8fd83d83ced722ad3f774",
-      "bytes": 460247,
-      "git_blob": "f3c60dbc738ef32f83030064f15f6244d0c3b199"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/mask-overview.jpg": {
-      "sha256": "fc9d61f5fc5f29c30d45d6228dd4be3a2e1f7e3a05cdfc854b9e8be3051168c9",
-      "bytes": 880658,
-      "git_blob": "6356f95b1f7638f2cb5a3960ae6793d601969643"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/wide-01-he.jpg": {
-      "sha256": "1ae0a89caa56332933ce2076f3114d3c3b55690274d6dea3a55d50560af46603",
-      "bytes": 701396,
-      "git_blob": "079ade5aa07d943730c8a3ee94f8bad6207f579a"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/wide-01-mask.jpg": {
-      "sha256": "3cc73f20432fc15e1680172342ff6041c420f619f9dedd914c23af44174bc475",
-      "bytes": 588008,
-      "git_blob": "eba7fa97167f137f26357e4416da225916eec94f"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/wide-02-he.jpg": {
-      "sha256": "bd71446f79a71a9953021998ed627584d51b756416da3c0dd8b41f0fd179cb73",
-      "bytes": 731674,
-      "git_blob": "4eb8d8171fb38ecf27efc58bbc4e7d9be6882b54"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/wide-02-mask.jpg": {
-      "sha256": "683aac8babcaec53a5850ad917d610328bb6e99144d031c5033f24dca35dbecf",
-      "bytes": 574403,
-      "git_blob": "cb6ec0c55c45cbf4e88f98a0aa012b3601a81b14"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/wide-03-he.jpg": {
-      "sha256": "e942c6a6e595c20332d18b1229d48d386511b3b70ab3cabef1c03bb065f1e3b1",
-      "bytes": 758514,
-      "git_blob": "bace79215a7b5a045b0199418effbf0c8288f997"
-    },
-    "site/visium-hd/tcga-acc-or-a5jp-01z-00-dx1/wide-03-mask.jpg": {
-      "sha256": "de75d3cb6866a2f2fd3e47a5311d55e324fe1fd85f543a767466797199298b03",
-      "bytes": 602696,
-      "git_blob": "06428a2bb07c1c01f4a60d35e5a80e7eae95eb93"
     }
-  }
+  },
+  "retired_file_count": 37,
+  "retired_file_bytes": 57522731
 }

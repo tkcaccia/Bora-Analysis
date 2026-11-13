@@ -2,7 +2,7 @@
 
 This repository contains the verified, public-data-only static website.
 It includes a historical controlled Benchmark 1 gallery, an 87-image
-development validation gallery, 13 exploratory public-source Bora H&E
+development validation gallery, 12 exploratory public-source Bora H&E
 whole-slide pages in Benchmark 2, and historical Visium gene-cluster
 examples in Benchmark 3. The Benchmark 1 validation images were inspected
 during development and do not form an untouched confirmatory test.
@@ -28,7 +28,7 @@ than reconstructing it from a lossy WebP. The exact frozen pixel confusion
 counts still support its broad-label score. These are development results,
 and the 19 single-class PEsO cases are not a multiclass test.
 
-The [13 public Benchmark 2 whole-slide pages](https://tkcaccia.github.io/Bora-Analysis/visium-hd/)
+The [12 public Benchmark 2 whole-slide pages](https://tkcaccia.github.io/Bora-Analysis/visium-hd/)
 show the same H&E frame with KODAMA–Bora, supervised Virchow2 Bora,
 U-Net, DeepLabV3+, MedSAM and VISTA-PATH at full overview and nine matched
 zoom views. The current 203-channel classwise ridge head was fitted on the frozen 397 Benchmark 1
@@ -59,17 +59,15 @@ This repository was previously named Bora-extra.
 The [Benchmark 3 reproduction tutorial](site/visium/tutorial.html) explains the three expression-guided Visium examples and provides a working checksum and GeoJSON verification command. It distinguishes verification of saved results from a full historical model rerun, for which all original caches are not presently public.
 
 The [Benchmark 2 full-slide comparator gallery](https://tkcaccia.github.io/Bora-Analysis/visium-hd/comparators/)
-shows 11 verified public-source H&E slides with class-aware
+shows 7 verified public-source H&E slides with class-aware
 U-Net, DeepLabV3+, MedSAM and VISTA-PATH outputs. Those predictions cover
 the complete calibrated slides; the website shows downsampled previews with
-one Bora-derived tissue/background support shared by all four methods. Eight
-slides use final Bora tissue-group geometry; three TCGA slides without final
-Bora geometry use the same H&E-derived Bora support rule. Raw full-resolution
+one Bora-derived tissue/background support shared by all four methods. All seven retained comparator slides use final Bora tissue-group geometry. Raw full-resolution
 predictions are unchanged.
 No independent whole-slide expert masks are available, so the gallery
-does not report accuracy scores or a method ranking. All 12 slides in the
-separate local comparator campaign have checksum-verified full-resolution
-outputs; the user-supplied PM016 slide remains local and unpublished. See the
+does not report accuracy scores or a method ranking. The seven retained public comparator slides have checksum-verified full-resolution outputs.
+The retired TCGA-ACC slides remain only in historical project receipts; the
+user-supplied PM016 slide remains local and unpublished. See the
 [comparator methods and publication record](docs/benchmark2-full-slide-comparators-2026-11-10.md).
 
 No user-supplied Brendon, PM, F-series or Scanned Image slide is included.

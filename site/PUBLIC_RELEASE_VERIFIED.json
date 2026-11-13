@@ -1,259 +1,11 @@
 {
-  "benchmark1_bora_supported_bw_receipt_sha256": "40420fa5a9509412e7dceabe7c61840ce3c067dc0337d5ad909ccaf0638fabf0",
-  "benchmark1_bora_supported_bw_stage_audit_sha256": "c584362c44ebf145d411d78260ec7e44557d3715764e99642ce2c436d8fcf477",
-  "benchmark1_bw_manifest_sha256": "b64fcb8edd5dd45712c117d802c7f2d7d749c5d79eb79e8459e323a2c73d6443",
-  "benchmark1_bw_response_map_count": 2088,
-  "benchmark1_combined_response_mask_count": 87,
-  "benchmark1_combined_response_mask_source_audit_sha256": "3fa8d215dc3f9b35adcce5f55faf0de7504376f83550169cd6ac4aaa82fde349",
-  "benchmark1_complete_case_legends": {
-    "audit_sha256": "014567f8202134a3b1eea8400174533aa9afa6b560d50e1f8a7d5889c727f4c8",
-    "case_count": 87,
-    "changed_sha256": {
-      "benchmark1-comparators/cases-eight-v5.json": "8beb8391b42d4f46c9dbe659c9269ff1d2ccaadda669dbcf025aad9a07fdfa5e",
-      "benchmark1-comparators/gallery.js": "18d8057daf7db8817e3139d498ff90a89bb0116a6bf8c66ae733799b0deee538",
-      "benchmark1-comparators/index.html": "9676ab806d6ca738430b0f31c10bc3776397b578ce2dd17804a762587d70649a"
-    },
-    "corrected_figure_count": 36,
-    "stage_sha256": "80c0ea7bd3b832c517074da35ceb5bd6cd1f47d5bb129ab5ef8a3ce81447fd30"
-  },
-  "benchmark1_exact_background_figure_count": 87,
-  "benchmark1_exact_background_stage_audit_sha256": "c0268d562e515eb7c4ff591365f3477a622abc869e23a64f940891dacdfb6350",
-  "benchmark1_kodama_legend_audit_sha256": "232cb610bf1482e976b43ead1986ef3c1311c40d10027fbf3bcbaed95cfbaf77",
-  "benchmark1_matched_quality": {
-    "expert_reference_cases": 68,
-    "method_count": 3,
-    "staging_receipt_sha256": "0f35f24cb37bb9b76ae87e58ff5ec85d666429bea51deafa4650e37beaba334d",
-    "weak_peso_cases": 19
-  },
-  "benchmark1_peso_clarification": {
-    "cases": 19,
-    "changed_sha256": {
-      "benchmark1-comparators/index.html": "5c8e0d2d1ce58c9a84985c75561c06cdbfa5c9349334d652b68da3ea2d4ceefe",
-      "benchmark1-failures/index.html": "803fabf764dabae83b498de0e5c0b2a6057314f5fd861b24ae60be5a79974181",
-      "index.html": "46025dd63cd8534fe036231974adec48df2fc745200a72e8ba62258f05a49342"
-    },
-    "derived_stroma_is_weak_proxy": true,
-    "new_supervised_model_pending": false,
-    "original_peso_mask_has_no_expert_stroma": true,
-    "prior_supervised_score_withdrawn": true
-  },
-  "benchmark1_peso_derived_reference": {
-    "cases": 19,
-    "changed_sha256": {
-      "cases-eight-v4.json": "067918cfa580faeff8729e18d13bb6a44d14f2091fa585bb23d96c9804388dcd",
-      "gallery.js": "4acc77e08b6723b5125e53c8ff92bc2fad566f0e70a6643becb53f039a6937ac",
-      "index.html": "798c8e905d1881d3a7fd7ac42ef74aee051e36b1cb4a8bb9c1e9b157504b4335",
-      "per-case-eight-v4.csv": "6313b74d3f2c47b0c12b4b82036942237853b073a235bfbc03aa06bca8f9d66c"
-    },
-    "corrected_supervised_model_pending": false,
-    "expert_epithelium": true,
-    "kodama_bora_corrected_score_available": false,
-    "score_audit_sha256": "33a424faeaf9b9ea89615cd8d7c6f1329967aab7adf0eec3eab547b2b1cb3de3",
-    "stage_sha256": "cd68120fd4e2b1db2af7d2618bfb27d302eeddab8090c73b6c68f4fe747d298e",
-    "stroma_is_weak_proxy": true
-  },
-  "benchmark1_peso_selected_supervised": {
-    "bw_map_count": 38,
-    "changed_sha256": {
-      "benchmark1-comparators/cases-eight-v4.json": "067918cfa580faeff8729e18d13bb6a44d14f2091fa585bb23d96c9804388dcd",
-      "benchmark1-comparators/gallery.js": "4acc77e08b6723b5125e53c8ff92bc2fad566f0e70a6643becb53f039a6937ac",
-      "benchmark1-comparators/index.html": "798c8e905d1881d3a7fd7ac42ef74aee051e36b1cb4a8bb9c1e9b157504b4335",
-      "benchmark1-comparators/per-case-eight-v4.csv": "6313b74d3f2c47b0c12b4b82036942237853b073a235bfbc03aa06bca8f9d66c",
-      "index.html": "3ddb25cc95493dfb97507aaaf5980e636a190ab541b4357641d2a21b35af5a4d"
-    },
-    "development_cases": 19,
-    "expert_epithelium_and_weak_proxy_stroma": true,
-    "figure_count": 19,
-    "independent_test": false,
-    "mean_two_class_case_iou": 0.8681685237167053,
-    "model_audit_sha256": "6bc83c789fa49bbf70f3335e9ecb65b65d8e87290f29cd58197d7de25b036799",
-    "stage_sha256": "c8d9c9cdb4917dbb1028edc3fbc3655c07568b7955b3ddb01b43f2ec36691df1",
-    "training_cases": 18
-  },
-  "benchmark1_shared_he_background_receipt_sha256": "1f9e7d06d165bfc5b5c90c082c5fca01e96a5fb8d198269f1797cc4904083f63",
-  "benchmark1_supervised_final_figure_count": 87,
-  "benchmark1_supervised_final_model_sha256": "48573a59e794c820361233c64d95967c498cb68747e4d18c2f481b1397c0981d",
-  "benchmark1_supervised_ridge": {
-    "cases": 87,
-    "media_commit": "62a23af41a3fcceca57d2ec30a19749421f8e3e6",
-    "model_receipt_sha256": "e33d4263d2d64cbf97284c31370fa160f1bf69157bed8be084fedd24a136c62f",
-    "page_stage_sha256": "e0dae203a793719d4617022819ddcf4886942cd1d34a16237e840e7e41a6bf4b",
-    "response_maps": 696
-  },
-  "benchmark1_supervised_virchow2_score_sha256": "477c3cf6a86c899664a9a902fb2d9920cf1509a60d278b463afbb866fc8d56c4",
-  "benchmark1_supported_mask_stage_audit_sha256": "d1920669e7dae46fef0859bd71087c490a8e46991d3516b03aed777cc658905d",
-  "benchmark1_training_cohort_display": {
-    "attribution_sha256": "284aec9ae748c1e5b608d2f3143ca84088d85d8151c287b17f04554f40bc6e6e",
-    "counts": {
-      "bcss": 89,
-      "gcss": 20,
-      "ignite": 169,
-      "peso": 18,
-      "tiger": 101
-    },
-    "current_training_count": 397,
-    "index_sha256": "c7a94555277102583560482d094aba07f5f923904ad9d3ca7fcb30eccf323046",
-    "manifest_sha256": "0ef43c841b26a5cbb939aa16d96df5f1b9c1f04557983829bf6c052a2be41fb6",
-    "separate_historical_viewer_count": 116
-  },
-  "benchmark1_visible_class_legend_receipt_sha256": "a58a04c83507b556a743df379b1fbf01e560f2645fe5876e79e4946e7c61aed6",
-  "benchmark2_bora_group_colors": {
-    "bora_view_count": 130,
-    "group_count": 143,
-    "independent_audit_sha256": "c039de93729cce08f0358573fa3e3c61748fb9cd6b0a7a0573817f3266f06c64",
-    "interpretation": "Bora overlay color is keyed to original KODAMA group ID; parenthesized tissue type remains a separate fastPLS prediction.",
-    "page_count": 13,
-    "stage_receipt_sha256": "322da606691be93f6f38ce5aec9d5593e063177270fd9b7030328e3d3cc54274"
-  },
-  "benchmark2_bora_group_labels": {
-    "group_count": 143,
-    "interpretation": "Frozen fastPLS predictions for original Bora groups; no whole-slide expert validation.",
-    "page_count": 13,
-    "pinned_fastpls_model_sha256": "a8a70b18c6c1b9325509ac9b3eebc23856aa767c8bb60252ebe8679385fee53a",
-    "stage_receipt_sha256": "d8d4952b82290f11a0a57877234ae83c01602e5cd63ac775c131a0dc013f5f9c"
-  },
-  "benchmark2_full_slide_comparator_count": 8,
-  "benchmark2_full_slide_comparator_stage_sha256": "eb51a89d0583bb52002e5600e68e4c84c073cc46f7599ae93d4855a80851c304",
-  "benchmark2_legacy_shared_background_page_count": 11,
-  "benchmark2_legacy_shared_background_stage_audit_sha256": "ff8d408bd866b4a66de955a3580a28b1f58b3d35ffa0211ef2fc921cfadd99db",
-  "benchmark2_supervised_final_ovarian_page_sha256": "ae2e7ac8ed53ed756c4df13e0216e215373c242472e2b93e8ced37a0eea31cb2",
-  "benchmark2_supervised_final_ovarian_receipt_sha256": "fcf75fffa9fed891ec8d5300fdccca4632106124f0be113e3a35d2d92f5e4487",
-  "benchmark2_supervised_final_pages": {
-    "public-10x-brain-cancer-ffpe": {
-      "final_receipt_sha256": "123ed45a9232b1bc5d4bab99ddd3a45dacfceebb9cc45d6796b32d9de102e057",
-      "media_commit": "7815a83fd967c8c1abfbfe79495246acb20cabcc",
-      "page_sha256": "9f2ebd0cfb2d1344c53253ef3a3d230f0b15abdd42dde003966152be644fe55d"
-    },
-    "public-10x-breast-ff": {
-      "final_receipt_sha256": "455a4cf7a29fadcbdd063e67b5d79cfc3444e98ecb4f8e3d0cc59c6bd68d239c",
-      "media_commit": "87deaebdfb9916c2dd85039c527d25bce8229010",
-      "page_sha256": "a65701dd925987954141424d01e2a029dc3d43d96a0d4d3c97e52c5813684883"
-    },
-    "public-10x-colon-cancer": {
-      "final_receipt_sha256": "577f906459ab382184d62492393a22d130d90b55de6390dc75f2dcf662d83ecb",
-      "media_commit": "bf40e9907a54dd9602425f28743bc281bc076af8",
-      "page_sha256": "28da55adadab78047be2924138b282ae62901366bebe04213b66f30cfa18a789"
-    },
-    "public-10x-kidney-ffpe": {
-      "final_receipt_sha256": "854d5a2ac8b223fafdae853f24497e87e989f6a77a913d49c8514191ba1696b4",
-      "media_commit": "7815a83fd967c8c1abfbfe79495246acb20cabcc",
-      "page_sha256": "235b49dc02a54e1f686d4d01117cbed805f2e34afb5c213bd2d9e47f67aaa76a"
-    },
-    "public-10x-lung-cancer-fixed-frozen": {
-      "final_receipt_sha256": "ef449a49cad401d731c52c4e98fa7239997fe8ba7e2f04451acc046a8a97dacb",
-      "media_commit": "7815a83fd967c8c1abfbfe79495246acb20cabcc",
-      "page_sha256": "9c539a180f4fae729219799e7b210590d35453a8e31a50451e5c8c530f008783"
-    },
-    "public-10x-lymph-node-3prime": {
-      "final_receipt_sha256": "6d76a650f9a509266f7407ae20003a5ba4f1792216651aad43b80a1d6ac09bbe",
-      "media_commit": "fb0e63ed43294281918688487590709dbda5a421",
-      "page_sha256": "62fb77d48d8c7cec6d76a699d2e1d4cf3743635c943dc97f020b99537e2f4cfc"
-    },
-    "public-10x-lymph-node-ffpe": {
-      "final_receipt_sha256": "dd973f10f08f2c453a4cad165ca6044fa95f3ffdab4633589609cc321a3762a8",
-      "media_commit": "c98c6395fea8905b5feedcef69b7f88a26441fce",
-      "page_sha256": "0b3f234fd96e21ed0ff822305374fee8546c60cbd28100c9e0d8c5fe731ec0b6"
-    },
-    "public-10x-ovarian-3prime": {
-      "final_receipt_sha256": "2cf2a9bb5f4111e4135310ba70bc3f78c129360756df38e5830fdd3fc296de17",
-      "media_commit": "7f8da255c521abc507dbf606f1afae4ab0fe6663",
-      "page_sha256": "8bf455499d741ef87e5dbd6d022a9ed4aa75a4e9d946bc9810e8981ca5e7550f"
-    },
-    "public-10x-pancreatic-cancer-fresh-frozen": {
-      "final_receipt_sha256": "47384c3f30567b010b258d1c0ffd3a4f6f050b78116207ad742a25d96c80ee1b",
-      "media_commit": "7815a83fd967c8c1abfbfe79495246acb20cabcc",
-      "page_sha256": "4e9315876f0dc720f42be603f537a54b9fc99e3a11520d390aed9749e8e8944a"
-    },
-    "public-10x-prostate-ffpe": {
-      "final_receipt_sha256": "855800b8bf432841e92423b818c20d248ca1257b4b4929a3f3a09f067099670f",
-      "media_commit": "5edee0afcf12d77552044b02d5e42a3225a7219d",
-      "page_sha256": "bd3ff54118284e61103a44fc28ff6742ee6c58f98fff495c0a9cc9bae6922cd3"
-    },
-    "public-10x-tonsil-3prime": {
-      "final_receipt_sha256": "6b8358dc3fe5ccc513b033c525bc6fc3f46823f898e9828b9519bd53434a8683",
-      "media_commit": "224d7f0fbc56f281d0f76b209582e907bc840d03",
-      "page_sha256": "cd859a51c5d4825808b3476a09714265f1cd2db4ed52b1375b2f123ad272d782"
-    },
-    "tcga-acc-or-a5jp-01z-00-dx1": {
-      "final_receipt_sha256": "97f90ec4fe9e2f43ae137b8e7d7cf005db6b9965b4a1a403cd082a9998a0835c",
-      "media_commit": "7815a83fd967c8c1abfbfe79495246acb20cabcc",
-      "page_sha256": "19aa4b64b750749428801842ea8113a29995e19a849daeee49b0b5ba870be39e"
-    }
-  },
-  "benchmark2_supervised_geojson_index": {
-    "downloads": 13,
-    "index_sha256": "db73ceca8536100a133cbfa80cd7794f1b0cfc96c7ca013e8f75ba6a88ba986c",
-    "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe",
-    "staging_receipt_sha256": "f477005ecb9e08efbe8d2b395c06abbcf77dbebded59ef270dc9d1c5c32c8d15"
-  },
-  "benchmark2_supervised_ridge_pages": {
-    "public-10x-brain-cancer-ffpe": {
-      "final_receipt_sha256": "3d238623d907961ce8dc4a14183322adce77504c76e93c9639b04f065c6ad54d",
-      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe",
-      "page_sha256": "786c6fe3a3d6201ca2bc02a2f0ce4109aad4f52adfd2df713e088d73221e6c91"
-    },
-    "public-10x-breast-ff": {
-      "final_receipt_sha256": "4331889719dd55f5a09c1c141d256cbb37f56494d470aa82c642dbe28cae6e45",
-      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe",
-      "page_sha256": "2b6bdf01279a86bd97a9cd7e21af6e9745156586bef9a6d413718d9af9417514"
-    },
-    "public-10x-colon-cancer": {
-      "final_receipt_sha256": "daff938dcfea782508d259238b246d6b48d9d7159b6d257bf76c5f2632b52701",
-      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe",
-      "page_sha256": "a9e8a8494d30e132d242287b1b74a4a9fcf4d47e4358241987004ad411c06c47"
-    },
-    "public-10x-kidney-ffpe": {
-      "final_receipt_sha256": "0b5c5119e724886fc58a0ae903b9970464dc243bbb1d536f54f68d6028de4330",
-      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe",
-      "page_sha256": "763d643b7db3e41647ead05daab73213c123d5e0ed58d6b5eb58b213e1b191b4"
-    },
-    "public-10x-lung-cancer-fixed-frozen": {
-      "final_receipt_sha256": "96e9c426aa5ef1328a758010c0d2eb7c78470f11b29db2d06419af491f2c817b",
-      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe",
-      "page_sha256": "c6d91bc884fba0a639a0feb6e091ccf368d4c8d172f5244ee1a9401534e11f4a"
-    },
-    "public-10x-lymph-node-3prime": {
-      "final_receipt_sha256": "bfbdaf2bc33216b4ac309c32e0cff7faeb78b00cde4f2a16e868f837a29c7cde",
-      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe",
-      "page_sha256": "389a2d538bd6e30bde4e8c1cee309ac2c63757b27fe04865740fcc88790b8f1d"
-    },
-    "public-10x-lymph-node-ffpe": {
-      "final_receipt_sha256": "de590a2a235433ea51ea47a80629c51fd97354eae8617494dc7954a3b6945c08",
-      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe",
-      "page_sha256": "11e03f895f88fbc296983ea639da046dee0ca60d80cad1cf5434086146a0fce4"
-    },
-    "public-10x-ovarian-3prime": {
-      "final_receipt_sha256": "cf77ec8602b5dcca6daa5b7896be9df1c383234cbb89f7ff8ef951913277fae0",
-      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe",
-      "page_sha256": "556d01d518f3af6f25936b191ebf8172b08019684d0af53166b598bfecc54947"
-    },
-    "public-10x-ovarian-ff": {
-      "final_receipt_sha256": "3a858ad9652d6a9445888c58fa4426e65608fc271c49c4a5ffc6c3b3e61a4381",
-      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe",
-      "page_sha256": "9b84b9c8cf51b9abdd7d485c7b7a8cd9cfe92e9c4a8e7ebb057c572f2c01c144"
-    },
-    "public-10x-pancreatic-cancer-fresh-frozen": {
-      "final_receipt_sha256": "f396ce5de81dda5bfa52d6a5d38828f7ef942631a8726f43e8a168903e119cdf",
-      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe",
-      "page_sha256": "5500b7b5a7dc835720e02ca58d8de5ee2feaff73e0100d1e83e70d56271b88b9"
-    },
-    "public-10x-prostate-ffpe": {
-      "final_receipt_sha256": "fb81948220948d25f83b63791907380b2893d9f9bf0a65c407109519f3255e20",
-      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe",
-      "page_sha256": "e7ec69ae4d1cda205eaa94000ccc738db7d31723b247ed80c80d834fc813253e"
-    },
-    "public-10x-tonsil-3prime": {
-      "final_receipt_sha256": "e547730ebcebfdff82d98a09b8358f579340d658738060e175ac2841c87cadc8",
-      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe",
-      "page_sha256": "8170b3225c80ca86a5944c24aafa84cd26ab24ff85a52a61c284039d616bf4e0"
-    },
-    "tcga-acc-or-a5jp-01z-00-dx1": {
-      "final_receipt_sha256": "b92cc89ef7367e3a47b7686e231334dd72bf5787bab61717209af131b0551eca",
-      "media_commit": "c2695818ab3805995f87ca19d9966c4bff9067fe",
-      "page_sha256": "0d4fb14af0e9af29bcba24dfffc64f552f2faee1dab9a4bcba5fe063aef603d3"
-    }
-  },
-  "file_count": 3801,
+  "format": "bora-public-site-v2",
+  "status": "TCGA_ACC_RETIRED_FROM_CURRENT_PUBLIC_RELEASE",
+  "public_wsi_count": 12,
+  "comparator_wsi_count": 7,
+  "grayscale_group_map_count": 129,
+  "file_count": 3766,
+  "size_bytes": 458801155,
   "file_sha256": {
     "BUILD_PROVENANCE.json": "7353c2f089fe41ad934780d7df8f54f0ea336e8b147968e3875ed73d9fe06d97",
     "DATA_LICENSES.md": "a6431f4bab58cda69ca590ce336c509e60df900c98604b3cc455d1985fd8c570",
@@ -3844,22 +3596,6 @@
     "visium-hd/comparators/bora-background-v1/lymph/medsam.webp": "dae3b8a3bc7ce9cb86e10da5396c955b3f872cdaa9c6067ab85f4c1fcd799386",
     "visium-hd/comparators/bora-background-v1/lymph/unet.webp": "fc2c879e44454f697766f5da68bef18b61c1dab761f27304a1f8e4d0ec20583d",
     "visium-hd/comparators/bora-background-v1/lymph/vista_path.webp": "77edaeb185b31c76163a1e5830e07bc4f2e101bddb52382cfe7934de513602c5",
-    "visium-hd/comparators/bora-background-v1/tcga-acc-or-a5jp-01z-00-dx1/deeplabv3plus.webp": "ee3792791e89babbdfeddf932d8f6da0a42d2333a14cd423cba78ec70a4e2896",
-    "visium-hd/comparators/bora-background-v1/tcga-acc-or-a5jp-01z-00-dx1/medsam.webp": "8f402c6978b10238b1cc3a79686cbaed684d96b16dc80586784a7969b55300ce",
-    "visium-hd/comparators/bora-background-v1/tcga-acc-or-a5jp-01z-00-dx1/unet.webp": "b57c4b4bf5aa5b53b82b9da3d9ba8bb23e41c2942091fd54559f131ed3ae758c",
-    "visium-hd/comparators/bora-background-v1/tcga-acc-or-a5jp-01z-00-dx1/vista_path.webp": "8a2104d67bd5ec24779cdd8006c88f9eaffdffa0757c22183b358e5987c4062a",
-    "visium-hd/comparators/bora-background-v1/tcga-acc-or-a5jy-01z-00-dx1/deeplabv3plus.webp": "d2add5f774e1f8dc5a3be2add767c6b18b4d790e45c74d324058c6437e7db6ad",
-    "visium-hd/comparators/bora-background-v1/tcga-acc-or-a5jy-01z-00-dx1/medsam.webp": "a57000bad0e1c86bcc0cc069ad427ce1b42c0229a5641974f82c20546ca8dd23",
-    "visium-hd/comparators/bora-background-v1/tcga-acc-or-a5jy-01z-00-dx1/unet.webp": "c760eb161ae5053ca5be04a49fb88cb5b726396a235a7e7cd4d95e32b3ef23fa",
-    "visium-hd/comparators/bora-background-v1/tcga-acc-or-a5jy-01z-00-dx1/vista_path.webp": "69be09550a514cfc7f64f934ab278a0a3815b0d278276324f5f76a131e9069cf",
-    "visium-hd/comparators/bora-background-v1/tcga-acc-or-a5k8-01z-00-dx1/deeplabv3plus.webp": "3f587b1659f715d101a2d6cf43d118d1fce5465bdc8e64bede68dc7bdb416999",
-    "visium-hd/comparators/bora-background-v1/tcga-acc-or-a5k8-01z-00-dx1/medsam.webp": "75d595e21752f9cdf62cc73e5e02e662f7e7de87dd79f42f975ccee13f39cd39",
-    "visium-hd/comparators/bora-background-v1/tcga-acc-or-a5k8-01z-00-dx1/unet.webp": "6112fb3f2724968f4e0c49afd4085192a9ced14426c136abd51b968a5dee290e",
-    "visium-hd/comparators/bora-background-v1/tcga-acc-or-a5k8-01z-00-dx1/vista_path.webp": "1a04682ba402246b0b7c92a7ef935311d55c2a3fb686f7cf7805f72c329a44f1",
-    "visium-hd/comparators/bora-background-v1/tcga-acc-or-a5k9-01z-00-dx1/deeplabv3plus.webp": "8894f5c467b7a51c45f4ec8866e0864a79c59eda536e757a6e1c9e8309935575",
-    "visium-hd/comparators/bora-background-v1/tcga-acc-or-a5k9-01z-00-dx1/medsam.webp": "e747dc4f625899f780991293c0c310ee3253381e1ab42ae819f5f141d872e126",
-    "visium-hd/comparators/bora-background-v1/tcga-acc-or-a5k9-01z-00-dx1/unet.webp": "f8b17e2925bea819da14f2aad0608e0bfe973efd6fcfa27b5894439b65249d07",
-    "visium-hd/comparators/bora-background-v1/tcga-acc-or-a5k9-01z-00-dx1/vista_path.webp": "8a36054fe2da0ce44603f204b868a7ea4cc6bf4e623a0fc58b6866da97ef08a5",
     "visium-hd/comparators/bora-background-v1/tonsil/deeplabv3plus.webp": "370f0400d22736d5a5888625a52fa846559d28f5e42c04f7b3c46e159b783a23",
     "visium-hd/comparators/bora-background-v1/tonsil/medsam.webp": "d82ed1e52838b7dc2b66bf4dbb99df2f16b92f79a09cca0d022717f1bfdd56d0",
     "visium-hd/comparators/bora-background-v1/tonsil/unet.webp": "71077ea7c99549702e66c2603920dc19b85c9b5345b5eff8d13f548ba2514e62",
@@ -3883,17 +3619,9 @@
     "visium-hd/comparators/colon.html": "b8bb6aba8f16276c19248b47d697101316abdbaaedeaf51be696445258518b2b",
     "visium-hd/comparators/colon/he.webp": "9cc94721bc3ea3de365d455c28469b190b6e9e2b28b3efed9bff1f37854a0223",
     "visium-hd/comparators/comparators.css": "371d8a1ec4ee64aa20ddb99f488341a4ff6ecb98606d014249e77f020125f9a3",
-    "visium-hd/comparators/index.html": "f27d758e1792833fcbd06ba829b885084ef931705b9d74a0187c0c23ea848523",
+    "visium-hd/comparators/index.html": "cc981b795005f3554fba00db1d7ef6763e9e116fed085083a0661467d3f12cb9",
     "visium-hd/comparators/lymph.html": "5a116ceaf6342aa622b3437a776cec21ee6756a672097d800fed263f0e4cfb0c",
     "visium-hd/comparators/lymph/he.webp": "8cf0526909a6abdb37e01b9fce8c3ec76a9db6fb19e75e87153d64d2e66420ae",
-    "visium-hd/comparators/tcga-acc-or-a5jp-01z-00-dx1.html": "835d52f37aca08f3ff3a63eaddee101f19bd57039c1a82b163f758127ed2159d",
-    "visium-hd/comparators/tcga-acc-or-a5jp-01z-00-dx1/he.webp": "dea9cc220159cd68c2078e0a489977b979790e005a7928849e24c3f180c12b97",
-    "visium-hd/comparators/tcga-acc-or-a5jy-01z-00-dx1.html": "4965f8f09a54ed6a3b9520a533c3beb35d97ccb8dc8fe2f268ca1f198ecf782c",
-    "visium-hd/comparators/tcga-acc-or-a5jy-01z-00-dx1/he.webp": "d9baa7690ce64a0b8bbeb5dbbfaa9e2649e4f7ab17d938b9ec73975bdcd679f4",
-    "visium-hd/comparators/tcga-acc-or-a5k8-01z-00-dx1.html": "df02bad19f61c5b32dd795a2c55708b45249dfec01ee671bcba829efb928bcc5",
-    "visium-hd/comparators/tcga-acc-or-a5k8-01z-00-dx1/he.webp": "d51ed13be22dbd66957a19c1223c2d2ff506a7e23e8e31ff4a390aea87c2467b",
-    "visium-hd/comparators/tcga-acc-or-a5k9-01z-00-dx1.html": "5b34731f15d726e4bd8ac867b64b9b0c14f025f944c188c3ed5b2bc9a5b0b450",
-    "visium-hd/comparators/tcga-acc-or-a5k9-01z-00-dx1/he.webp": "ada3e6c8fab3592649b0b994972ae2d83295ae7d2ad62b141186c54e197a030c",
     "visium-hd/comparators/tonsil.html": "f9f548d9a4c4da5d9c69fc123b2b0ba951cdb2044b638ff358010ffdd087d9f4",
     "visium-hd/comparators/tonsil/he.webp": "96d115d83df7549e316cf6b69f8c536714dae004b83a29d0aaac4d135551288f",
     "visium-hd/comparators/visium_hd_3prime_human_ovarian_cancer_ff.html": "f38672a305ad3808bc42caddaa6597f864d70a723782d18bda99c6e978218a0f",
@@ -3904,7 +3632,7 @@
     "visium-hd/comparators/visium_hd_human_lymph_node_ffpe/he.webp": "ab4f0196f10b3351eeb05f3a3708e9bc12192284839ad2b63cf05bba861380ba",
     "visium-hd/comparators/visium_hd_human_ovarian_cancer_ff.html": "76c22525290e3c0ec0e6a4eb82e84e2f1a2ac069eef40c0197e4211b427adc87",
     "visium-hd/comparators/visium_hd_human_ovarian_cancer_ff/he.webp": "bdc8e40a73ff1e396c9ac0eced2fd5f98be61eae4eb926cdcdd7041a1eb8dc35",
-    "visium-hd/index.html": "30bcf5401d9cd801b1125d507171e71bed08ec599ef2d7f963a1f4afeb5b6d76",
+    "visium-hd/index.html": "7d70a7c0d38ce764b4b3d6d17018791e2dba9663c14607b6485de409a2a2d455",
     "visium-hd/public-10x-brain-cancer-ffpe.html": "c1766deaa6abbfa8554848c2ea7d03048b37833e6e51029cc6ef50542084e38a",
     "visium-hd/public-10x-breast-ff.html": "0eb5a178757aadbd8277cadb402a947fbdb1d2be6f2ed7138bfb714ec4473d39",
     "visium-hd/public-10x-colon-cancer.html": "52f7c06be488357d9a4ceb51aa6f0775b7efd879ad07b78fddbca233ed23287a",
@@ -4037,17 +3765,6 @@
     "visium-hd/supervised-contour-v1/public-10x-tonsil-3prime/wide-01-supervised.webp": "17aa7cf6741115242928f0eb46403bd0ceff6d87b03b47744397835bcce2f0e3",
     "visium-hd/supervised-contour-v1/public-10x-tonsil-3prime/wide-02-supervised.webp": "1561e6a4e5704beca5c98650aac8be1360b324a130379ffbb8304d0f425f5123",
     "visium-hd/supervised-contour-v1/public-10x-tonsil-3prime/wide-03-supervised.webp": "7159df0538cf7ebebca05f0de4c17d46f7a6971da7551225eb7398c6a964d82e",
-    "visium-hd/supervised-contour-v1/tcga-acc-or-a5jp-01z-00-dx1/field-01-supervised.webp": "c06f4b441a80a0929021b6e54a0a0c91d53efc61c297352fb68b1ac95e35d4b5",
-    "visium-hd/supervised-contour-v1/tcga-acc-or-a5jp-01z-00-dx1/field-02-supervised.webp": "438dd53fa6d918d3900b9bba77ab6fcc82b38773b125b3ff86b0211962a2a89a",
-    "visium-hd/supervised-contour-v1/tcga-acc-or-a5jp-01z-00-dx1/field-03-supervised.webp": "7bc05980042cd7799fba58459293166c53c47352508522ffd2bbb1cf0a986066",
-    "visium-hd/supervised-contour-v1/tcga-acc-or-a5jp-01z-00-dx1/large-01-supervised.webp": "56a67e67067d98fab9ead3020776ec815850153e5ecb833740a4a9f4bb556f30",
-    "visium-hd/supervised-contour-v1/tcga-acc-or-a5jp-01z-00-dx1/large-02-supervised.webp": "1b98360116f95968e6c7b7b9379ae9215de385112014aef5dee7e041fc2ed354",
-    "visium-hd/supervised-contour-v1/tcga-acc-or-a5jp-01z-00-dx1/large-03-supervised.webp": "33ae50859fa09c5b45345454945b0a7a0521802885de6cf0fc59ec4ead043a54",
-    "visium-hd/supervised-contour-v1/tcga-acc-or-a5jp-01z-00-dx1/overview-supervised.webp": "c9c7cc16133c3cd18cf2b8a9b6720f5654a7bce25b6ca354a518f637f7d357f7",
-    "visium-hd/supervised-contour-v1/tcga-acc-or-a5jp-01z-00-dx1/wide-01-supervised.webp": "80159006058c2dc9b0db163b9f7ec40388ceac592bc302bd78f8d9bb6c6c05c8",
-    "visium-hd/supervised-contour-v1/tcga-acc-or-a5jp-01z-00-dx1/wide-02-supervised.webp": "0afc9712cf2d51a05aa391607c2e18f01d0e63dae9cdbd9be8a584cf7c247b11",
-    "visium-hd/supervised-contour-v1/tcga-acc-or-a5jp-01z-00-dx1/wide-03-supervised.webp": "8045414d9a2c18b705f2c03a1a7a7b3770c208473309bf7a9690e23410e10a1d",
-    "visium-hd/tcga-acc-or-a5jp-01z-00-dx1.html": "f3096f911e160aabbbfed819ec8456593d3f1ee6ea98aab6d3616a23e37b893a",
     "visium-hd/unified-panels.css": "abe0c69a94479cf70239d90d3438ed7aac7687ae6b011be9360273cd8099bf2c",
     "visium/FULLSECTION_PROVENANCE.json": "29cccc464a37966db2df66b9f4ae192205da11fc176fa2251dc35a4e771a9226",
     "visium/breast.html": "cb51a4b3fb4bf3d29ea8bde58e661c09983a4700ffbb8e23702fca5d6eb35e4c",
@@ -4057,32 +3774,5 @@
     "visium/tonsil.html": "f2e253b6e321cdb93f68fa90c56aff9309482f9e03cf6130413be32593b44048",
     "visium/tutorial.html": "282b5794d9af4aff7281ec83e2e3128110446abc773c5321309efd0582b1013f"
   },
-  "format": "bora-public-site-v1",
-  "grayscale_asset_manifest_sha256": "1433daee8dc159c5944b610f671ed84ced400d1cb438b22964d68eecd2530618",
-  "grayscale_group_map_count": 143,
-  "public_media_archive_sha256": "10087c39351c6e0116ab3545a01d2ab5d9c4c0e4479c7976d8748c4afabde72e",
-  "public_media_archived_bytes": 573335037,
-  "public_media_archived_file_count": 4086,
-  "public_wsi_count": 13,
-  "size_bytes": 493595786,
-  "visium_compact_release_sha256": "b71638c72bcd06b61084168430bead916c556cd8cf764f6b3b37f075a3659470",
-  "visium_pinned_raw_asset_count": 192,
-  "visium_pinned_raw_audit_sha256": "c63fec7b5cc9465f496fd8d2beddf65fde5fbc553ddda22d1e2c0c0c1ab26cd9",
-  "wsss4luad_roi_domain_evaluation": {
-    "cases": 40,
-    "semantic_methods_complete": 5,
-    "kodama_groups_complete": 9,
-    "independent_external_test": false,
-    "one_he_background_for_all_methods": true,
-    "shared_background_iou": 0.2986421984147474,
-    "audit_sha256": "2283cc2577822d798ba4e71d5f542c3f8c645b3197482ffc957f5e4cc3f237ba",
-    "gallery_scores_sha256": "4a12fbcd948c7df60beaacf41e17d6cf315de6fc1b7d081deba6b18030421a99",
-    "gallery_index_sha256": "667812d423bb86fa3d4b0a6f37a68568560a03364cb82920b27d0d9fe464d0f6",
-    "attribution_sha256": "120194f88208242c416f22962d97d809d5e96c9530d2455b8e67b51cb8001703"
-  },
-  "benchmark2_source_download_links": {
-    "count": 13,
-    "source_manifest_sha256": "dc5408c6f1a346691696e0c7785539226bdb62b9e4a64f82777053f77afcd698",
-    "index_sha256": "30bcf5401d9cd801b1125d507171e71bed08ec599ef2d7f963a1f4afeb5b6d76"
-  }
+  "retired_case_count": 4
 }

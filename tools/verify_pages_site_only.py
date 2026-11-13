@@ -10,7 +10,8 @@ from pathlib import Path
 import sys
 from urllib.parse import unquote, urlsplit
 
-FORBIDDEN = ('brendon', 'pm016', 'pm049', 'f0065', 'f0085', 'scanned-image-2', '/media/user/')
+FORBIDDEN = ('brendon', 'pm016', 'pm049', 'f0065', 'f0085', 'scanned-image-2', '/media/user/',
+             'tcga-acc', 'a5jp', 'a5jy', 'a5k8', 'a5k9')
 
 
 class Links(HTMLParser):
@@ -33,7 +34,8 @@ def sha(path):
 def main(site):
     site = site.resolve()
     receipt = json.loads((site / 'PUBLIC_RELEASE_VERIFIED.json').read_text())
-    assert receipt['format'] == 'bora-public-site-v1' and receipt['public_wsi_count'] == 13
+    assert receipt['format'] == 'bora-public-site-v2' and receipt['public_wsi_count'] == 12
+    assert receipt['comparator_wsi_count'] == 7
     files = {str(p.relative_to(site)): p for p in site.rglob('*')
              if p.is_file() and p.name != 'PUBLIC_RELEASE_VERIFIED.json'}
     assert set(files) == set(receipt['file_sha256'])
@@ -58,7 +60,8 @@ def main(site):
             if local:
                 target = (path.parent / local).resolve()
                 assert target.is_relative_to(site) and target.exists(), (rel, link)
-    assert len(list((site / 'visium-hd').glob('*.html'))) == 14
+    assert len(list((site / 'visium-hd').glob('*.html'))) == 13
+    assert len(list((site / 'visium-hd/comparators').glob('*.html'))) == 8
     assert (site / 'benchmark1-comparators/index.html').is_file()
     print(f"Verified Pages tree: {len(files)} files, {receipt['size_bytes']} bytes")
 

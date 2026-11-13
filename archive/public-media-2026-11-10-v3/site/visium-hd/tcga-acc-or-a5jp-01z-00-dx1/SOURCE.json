@@ -1,7 +1,0 @@
-{
-  "title": "TCGA-ACC OR-A5JP",
-  "source_directory": "tcga-acc-or-a5jp-01z-00-dx1-reduced256-v1",
-  "source_credits": "NCI GDC open-access TCGA-ACC H&E",
-  "visuals_are_downsampled": true,
-  "result_status": "exploratory"
-}
