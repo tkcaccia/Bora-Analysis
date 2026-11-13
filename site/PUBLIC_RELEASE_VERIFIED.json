@@ -253,7 +253,7 @@
       "page_sha256": "0d4fb14af0e9af29bcba24dfffc64f552f2faee1dab9a4bcba5fe063aef603d3"
     }
   },
-  "file_count": 3799,
+  "file_count": 3800,
   "file_sha256": {
     "BUILD_PROVENANCE.json": "7353c2f089fe41ad934780d7df8f54f0ea336e8b147968e3875ed73d9fe06d97",
     "DATA_LICENSES.md": "a6431f4bab58cda69ca590ce336c509e60df900c98604b3cc455d1985fd8c570",
@@ -3565,7 +3565,7 @@
     "geojson-inspector.css": "32ce52334667c38ff20787166055472ad19cfa150eb8cb0a50341a907b4a3b72",
     "geojson-inspector.js": "77b87fd5139d59b6fa782e184428a03a820116378b50da5fec4d48d65b568adf",
     "geojson-inspectors.json": "a0168c1b66957f71d2acea12f4f6b4b9736006379d1c7a60ed57a77c692e0355",
-    "index.html": "5f1642b567f18dc917a299303355def1b19aa5ace78a3725c991d4d4b3c9b2be",
+    "index.html": "7754a335c8ed335f090a97c6bbea7c9038eb489c038d3e4938d3fc2eb3e51ebe",
     "previews/bcss_05/neighbor-context.jpg": "86756ac578efbcb6a3b4e75505bdb18b35c21cf7315703c3636bb9b0edfebf96",
     "previews/bcss_06/neighbor-context.jpg": "3df0c6574d2977c81bee91c8b808d9fbf377fb6ab91990224acaf5684714894d",
     "previews/bcss_102/neighbor-context.jpg": "c6515302c5908c09cae9fda434d99532bed3f464aee8e917e4bd8e47df3d2375",
@@ -4049,11 +4049,12 @@
     "visium-hd/tcga-acc-or-a5jp-01z-00-dx1.html": "bda75da5a2fc404d419e64cc50ec36a23ae9452f3fd6c53623d38382efef31f0",
     "visium-hd/unified-panels.css": "abe0c69a94479cf70239d90d3438ed7aac7687ae6b011be9360273cd8099bf2c",
     "visium/FULLSECTION_PROVENANCE.json": "29cccc464a37966db2df66b9f4ae192205da11fc176fa2251dc35a4e771a9226",
-    "visium/breast.html": "fe1677f46fc173f8d63d70c925791c7368b9fca2440fb96e256bdb9f27cd7958",
-    "visium/colorectal.html": "2d5cef3f7d5ade04277937e17d67bd4dd5d0fc849a29aa30deb55954f61285ad",
+    "visium/breast.html": "cb51a4b3fb4bf3d29ea8bde58e661c09983a4700ffbb8e23702fca5d6eb35e4c",
+    "visium/colorectal.html": "7ea92b0cbe6dac0d2241ea2b394a48925e198b7422d965f245bf21eaf598505c",
     "visium/geojson-download.js": "b913397b5d6aa5019ef0fbbc63f612934b284050c0cc93ac2152e896dcaf5133",
-    "visium/index.html": "4e0166f63caf61dd436a61c4f737e6293c36657e252ca4c7820ea71a98638393",
-    "visium/tonsil.html": "526b5e5897534468999fa4dc5adbdbbf5b68b76da22e29fff57d09ed6a765aa7"
+    "visium/index.html": "1fa0da004939994a338d247647e00fb370f05f3bd10e67049571d2c7737cc0fe",
+    "visium/tonsil.html": "f2e253b6e321cdb93f68fa90c56aff9309482f9e03cf6130413be32593b44048",
+    "visium/tutorial.html": "282b5794d9af4aff7281ec83e2e3128110446abc773c5321309efd0582b1013f"
   },
   "format": "bora-public-site-v1",
   "grayscale_asset_manifest_sha256": "1433daee8dc159c5944b610f671ed84ced400d1cb438b22964d68eecd2530618",
@@ -4062,7 +4063,7 @@
   "public_media_archived_bytes": 573335037,
   "public_media_archived_file_count": 4086,
   "public_wsi_count": 13,
-  "size_bytes": 493447686,
+  "size_bytes": 493457788,
   "visium_compact_release_sha256": "b71638c72bcd06b61084168430bead916c556cd8cf764f6b3b37f075a3659470",
   "visium_pinned_raw_asset_count": 192,
   "visium_pinned_raw_audit_sha256": "c63fec7b5cc9465f496fd8d2beddf65fde5fbc553ddda22d1e2c0c0c1ab26cd9",

@@ -163,3 +163,7 @@ The implementations here explain the reported results; a fresh checkout
 alone cannot reconstruct provider data or restricted weights. For the exact
 public result identities and limitations, see the
 [whole-slide publication record](../docs/benchmark2-full-slide-comparators-2026-11-10.md).
+
+## Benchmark 3
+
+See [the Visium tutorial](../site/visium/tutorial.html) and [historical clustering sources](benchmark3/README.md). The public verifier checks all three frozen final GeoJSON outputs; it does not rerun the historical field model.

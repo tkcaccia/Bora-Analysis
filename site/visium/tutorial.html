@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Benchmark 3 tutorial · Bora</title>
+  <link rel="stylesheet" href="../viewer.css">
+  <link rel="stylesheet" href="../benchmark-template.css">
+  <style>
+    .tutorial{max-width:1000px;margin:2rem auto;padding:0 1.25rem 4rem;color:#1e3038;line-height:1.65}
+    .tutorial h2{margin-top:2.5rem}.tutorial h3{margin-top:1.8rem}
+    .tutorial .lead{font-size:1.16rem;max-width:75ch}
+    .tutorial .callout{border-left:5px solid #317b80;background:#edf5f4;padding:1rem 1.25rem;margin:1.4rem 0}
+    .tutorial .limit{border-left-color:#a06922;background:#fff5e8}
+    .tutorial pre{overflow:auto;background:#172c35;color:#f3f9f9;padding:1rem 1.2rem;border-radius:8px;font-size:.92rem}
+    .tutorial code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+    .tutorial table{border-collapse:collapse;width:100%;margin:1rem 0;display:block;overflow-x:auto}
+    .tutorial th,.tutorial td{border:1px solid #c4d4d7;text-align:left;padding:.65rem .8rem;vertical-align:top}
+    .tutorial th{background:#eaf1f2}.tutorial ol li{margin:.8rem 0}
+    .tutorial .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.7rem;margin:1.5rem 0}
+    .tutorial .steps div{background:#eaf1f2;border-radius:8px;padding:.8rem;font-weight:600}
+  </style>
+</head>
+<body class="benchmark-page" data-collection="visium">
+  <a class="skip-link" href="#main-content">Skip to tutorial</a>
+  <header class="site-header">
+    <p class="eyebrow">BORA · TUTORIAL</p>
+    <h1>Reproduce and verify Benchmark 3</h1>
+    <p class="site-intro">A practical guide to the breast, colorectal and tonsil Visium examples.</p>
+    <nav class="benchmark-sections" aria-label="Benchmark collections">
+      <a href="../index.html">1 · Public datasets and masks</a>
+      <a href="../visium-hd/">2 · Whole Slide Images</a>
+      <a href="index.html">3 · Visium gene clusters</a>
+    </nav>
+  </header>
+  <main class="tutorial" id="main-content">
+    <p><a href="index.html">← Benchmark 3 results</a></p>
+    <p class="lead">Benchmark 3 asks whether image-guided refinement can turn spatial gene-expression spot groups into a registered tissue-region map. The published examples use expression groups as input. They do not demonstrate cell-level gene-expression localization or accuracy against independent anatomical masks.</p>
+    <div class="steps" aria-label="Analysis stages">
+      <div>1. Register 10x spots to H&amp;E</div><div>2. Group expression profiles</div><div>3. Extract calibrated Virchow2 features</div><div>4. Refine group fields with Bora</div><div>5. Inspect mask and GeoJSON</div>
+    </div>
+    <div class="callout"><strong>What you can reproduce now:</strong> download and independently check all three final published GeoJSON outputs with a working standard-library script. You can inspect the same full-section views and nine crops on the result pages. The check takes Python 3, a network connection and at least 1 GB of free RAM for the largest GeoJSON; it needs no GPU.</div>
+    <div class="callout limit"><strong>Full inference rerun status:</strong> the public archive does not contain every historical full-resolution Virchow2 grid, frozen spot-group table and fitted field-model input needed to regenerate the three masks bit for bit. The clustering front ends are released, but their historical R and <code>wsiTools</code> environment is also needed. The commands below verify saved results; they must not be described as an end-to-end rerun.</div>
+
+    <h2 id="cases">1 · Choose a case</h2>
+    <table>
+      <thead><tr><th>H&amp;E section</th><th>Expression-group front end</th><th>Groups in final GeoJSON</th><th>Result</th><th>10x source</th></tr></thead>
+      <tbody>
+        <tr><td>Breast cancer</td><td>Giotto + KODAMA + Louvain</td><td>13</td><td><a href="breast.html">Breast result</a></td><td><a href="https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Breast_Cancer/CytAssist_FFPE_Human_Breast_Cancer_web_summary.html">Sample</a></td></tr>
+        <tr><td>Colorectal cancer</td><td>Seurat + KODAMA + Louvain</td><td>19</td><td><a href="colorectal.html">Colorectal result</a></td><td><a href="https://www.10xgenomics.com/datasets/human-colorectal-cancer-11-mm-capture-area-ffpe-2-standard">Sample</a></td></tr>
+        <tr><td>Tonsil</td><td>SpatialExperiment + KODAMA + Louvain</td><td>7</td><td><a href="tonsil.html">Tonsil result</a></td><td><a href="https://www.10xgenomics.com/datasets/visium-cytassist-gene-and-protein-expression-library-of-human-tonsil-with-add-on-antibodies-h-e-6-5-mm-ffpe-2-standard">Sample</a></td></tr>
+      </tbody>
+    </table>
+    <p>The group numbers are anonymous expression-derived identities, not tissue diagnoses. Coordinates in the published GeoJSON are pixels of the original full-resolution 10x H&amp;E image.</p>
+
+    <h2 id="verify">2 · Verify the published outputs</h2>
+    <ol>
+      <li>Install Python 3.10 or newer. No Python packages, R installation or model weights are needed for this saved-output check.</li>
+      <li>Clone <a href="https://github.com/tkcaccia/Bora-Analysis">Bora-Analysis</a> and run the verifier from its repository root. It downloads the three GeoJSON archives from their pinned Git revision, checks compressed and uncompressed SHA256 values and sizes, and inspects group IDs and geometry types.</li>
+    </ol>
+<pre><code>git clone https://github.com/tkcaccia/Bora-Analysis.git
+cd Bora-Analysis
+python3 methods/benchmark3/verify_published.py \
+  --provenance site/visium/FULLSECTION_PROVENANCE.json</code></pre>
+    <p>Expected final line: <code>VERIFIED 3/3 published GeoJSON outputs</code>. Expected uncompressed SHA256 values:</p>
+    <table><thead><tr><th>Case</th><th>SHA256</th></tr></thead><tbody>
+      <tr><td>Breast</td><td><code>a37050fd93ca96452e1bbe7e19590d1559418b7cc9a870dd67988343be28ff41</code></td></tr>
+      <tr><td>Colorectal</td><td><code>98b328015362c3f06e3de8f2ef90e78c887ab3c59a49be8e9601b680170f1e0b</code></td></tr>
+      <tr><td>Tonsil</td><td><code>c8e893c619930a82226a19a9a1719d64e03ae0384f59e8f0ac3e573277a909b1</code></td></tr>
+    </table>
+    <p>If you cloned the complete repository, add <code>--archive archive/visium-fullsection-2026-11-10-v1</code> to verify local files without downloading. You can also inspect a <a href="https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium/fullsection/breast/breast-Visium-Bora-final.geojson.gz">commit-pinned compressed output</a> directly. The per-case <a href="FULLSECTION_PROVENANCE.json">provenance record</a> gives image spacing, original coordinate system, preview hashes and compressed-file hashes.</p>
+
+    <h2 id="inspect">3 · Inspect what the output means</h2>
+    <ol>
+      <li>Open the <a href="breast.html">breast</a>, <a href="colorectal.html">colorectal</a> or <a href="tonsil.html">tonsil</a> page.</li>
+      <li>Compare the original H&amp;E, coarse expression groups, Virchow2 response view and final mask at the full-section overview. Then inspect a matched zoom. Each zoom is a crop of the same final section mask.</li>
+      <li>Use the GeoJSON inspector or download the full native-coordinate GeoJSON. Its <code>properties.value</code> is the anonymous group ID. Do not interpret it as a cell type or an expert tissue class.</li>
+    </ol>
+    <p>The GeoJSON check establishes output integrity and format. It does not recompute the reported spot-centre agreement or test tissue-boundary accuracy. In breast, the published tissue support visibly omits some pale tissue; an uncolored region there is a limitation of the output.</p>
+
+    <h2 id="rerun">4 · Inputs required for a new full run</h2>
+    <p>A researcher extending this analysis must retain, for each section, the original H&amp;E image and physical X/Y spacing, the 10x spatial position file with barcodes, expression counts, a frozen spot-to-group CSV, the image registration transform, the full 1,280-channel Virchow2 feature grid with encoder revision and coordinate mapping, and the Bora field-model/configuration version. The spatial cluster table must have one unique row per in-tissue barcode and its native full-resolution spot center.</p>
+    <p>The <a href="https://github.com/tkcaccia/Bora-Analysis/tree/main/methods/benchmark3">historical source-download manifest and expression-clustering front ends</a> show the original 10x samples and Giotto, Seurat and SpatialExperiment steps. They need their original R dependencies and historical tile-planning integration. A newly generated cluster table may differ from the frozen input even with the same random seed; do not compare a new mask hash with the published hash unless every upstream input and software version matches. The current <a href="https://github.com/tkcaccia/Bora/tree/validation-freeze-2026-11-13-v3">Bora package freeze</a> documents the installable software, but it does not restore absent historical Benchmark 3 caches.</p>
+    <p>For a new validation study, freeze the sections and spot clusters before mask generation, record complete-case counts, and compare boundaries with independent anatomical references. Agreement with the input spot groups measures input preservation only.</p>
+  </main>
+  <footer class="site-footer">Bora Benchmark 3 · <a href="index.html">Results</a> · <a href="../attribution.html">Data attribution</a></footer>
+</body>
+</html>
