@@ -1,0 +1,4548 @@
+{
+  "status": "WSSS_40_INSPECTED_VALIDATION_ROI_RESULTS",
+  "selected_cases": 40,
+  "score_audit_sha256": "33af2e07b2b2b42e12f6c453d2e8c3e39c7700f3aab6753093fdf7e8840ef755",
+  "reference_type": "official validation mask; previously inspected",
+  "spacing_assumption": "1.0 \u00b5m/native pixel from reported 10\u00d7 magnification",
+  "summary": {
+    "supervised_bora": {
+      "completed": 40,
+      "selected": 40,
+      "completion_fraction": 1.0,
+      "native": {
+        "semantic": {
+          "tumor_vs_nontumor": {
+            "tp": 19968684,
+            "fp": 2106092,
+            "fn": 7842611,
+            "tn": 18453777,
+            "precision": 0.904592825766386,
+            "recall": 0.718006263282598,
+            "dice": 0.8005715262683245,
+            "iou": 0.6674608313887841,
+            "valid_pixels": 48371164,
+            "cases_with_reference_positive": 36,
+            "cases_with_metric_defined": 36,
+            "mean_case_iou": 0.5002752028765505
+          },
+          "tumor_on_tumor_stroma": {
+            "tp": 19968684,
+            "fp": 2104933,
+            "fn": 7842611,
+            "tn": 16215815,
+            "precision": 0.904640322426542,
+            "recall": 0.718006263282598,
+            "dice": 0.8005901263291795,
+            "iou": 0.6674866898326888,
+            "valid_pixels": 46132043,
+            "cases_with_reference_positive": 36,
+            "cases_with_metric_defined": 36,
+            "mean_case_iou": 0.5002980865408253
+          },
+          "stroma_on_tumor_stroma": {
+            "tp": 10756130,
+            "fp": 2151523,
+            "fn": 7564618,
+            "tn": 25659772,
+            "precision": 0.8333141586623067,
+            "recall": 0.5871010288444555,
+            "dice": 0.6888684438245813,
+            "iou": 0.5253999421949817,
+            "valid_pixels": 46132043,
+            "cases_with_reference_positive": 37,
+            "cases_with_metric_defined": 37,
+            "mean_case_iou": 0.5971251222195267
+          },
+          "background_vs_tissue": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 17558436,
+            "tn": 48371164,
+            "precision": null,
+            "recall": 0.0,
+            "dice": 0.0,
+            "iou": 0.0,
+            "valid_pixels": 65929600,
+            "cases_with_reference_positive": 40,
+            "cases_with_metric_defined": 40,
+            "mean_case_iou": 0.0
+          }
+        },
+        "geometry": {
+          "boundary_f1": {
+            "mean_case_window_mean": 0.34146833747783406,
+            "cases_evaluable": 40,
+            "eligible_windows": 116,
+            "evaluable_windows": 115
+          },
+          "symmetric_hd95_um": {
+            "mean_case_window_mean": 139.26788422699462,
+            "cases_evaluable": 36,
+            "eligible_windows": 116,
+            "evaluable_windows": 106
+          },
+          "symmetric_region_covering": {
+            "mean_case_window_mean": 0.5172255113289858,
+            "cases_evaluable": 40,
+            "eligible_windows": 116,
+            "evaluable_windows": 116
+          }
+        }
+      },
+      "shared_support": {
+        "semantic": {
+          "tumor_vs_nontumor": {
+            "tp": 19952909,
+            "fp": 2105499,
+            "fn": 7858386,
+            "tn": 18454370,
+            "precision": 0.9045489139560752,
+            "recall": 0.7174390476962688,
+            "dice": 0.8002016374551097,
+            "iou": 0.6669467657530416,
+            "valid_pixels": 48371164,
+            "cases_with_reference_positive": 36,
+            "cases_with_metric_defined": 36,
+            "mean_case_iou": 0.49740501322784997
+          },
+          "tumor_on_tumor_stroma": {
+            "tp": 19952909,
+            "fp": 2104340,
+            "fn": 7858386,
+            "tn": 16216408,
+            "precision": 0.904596443554679,
+            "recall": 0.7174390476962688,
+            "dice": 0.8002202350243071,
+            "iou": 0.6669726047934467,
+            "valid_pixels": 46132043,
+            "cases_with_reference_positive": 36,
+            "cases_with_metric_defined": 36,
+            "mean_case_iou": 0.4974278880410353
+          },
+          "stroma_on_tumor_stroma": {
+            "tp": 10745383,
+            "fp": 2150567,
+            "fn": 7575365,
+            "tn": 25660728,
+            "precision": 0.8332370240269232,
+            "recall": 0.5865144261577093,
+            "dice": 0.6884381557588186,
+            "iou": 0.524899499616903,
+            "valid_pixels": 46132043,
+            "cases_with_reference_positive": 37,
+            "cases_with_metric_defined": 37,
+            "mean_case_iou": 0.5958164984296064
+          },
+          "background_vs_tissue": {
+            "tp": 5268000,
+            "fp": 81402,
+            "fn": 12290436,
+            "tn": 48289762,
+            "precision": 0.9847829720032257,
+            "recall": 0.3000267221978085,
+            "dice": 0.4599299156908653,
+            "iou": 0.2986421984147474,
+            "valid_pixels": 65929600,
+            "cases_with_reference_positive": 40,
+            "cases_with_metric_defined": 40,
+            "mean_case_iou": 0.3298016051143367
+          }
+        },
+        "geometry": {
+          "boundary_f1": {
+            "mean_case_window_mean": 0.3166490269324903,
+            "cases_evaluable": 40,
+            "eligible_windows": 116,
+            "evaluable_windows": 116
+          },
+          "symmetric_hd95_um": {
+            "mean_case_window_mean": 147.7611619368534,
+            "cases_evaluable": 36,
+            "eligible_windows": 116,
+            "evaluable_windows": 106
+          },
+          "symmetric_region_covering": {
+            "mean_case_window_mean": 0.5129972151232443,
+            "cases_evaluable": 40,
+            "eligible_windows": 116,
+            "evaluable_windows": 116
+          }
+        }
+      }
+    },
+    "unet": {
+      "completed": 40,
+      "selected": 40,
+      "completion_fraction": 1.0,
+      "native": {
+        "semantic": {
+          "tumor_vs_nontumor": {
+            "tp": 21690639,
+            "fp": 3512182,
+            "fn": 6120656,
+            "tn": 17047687,
+            "precision": 0.8606432986212139,
+            "recall": 0.7799219345952787,
+            "dice": 0.8182967344018337,
+            "iou": 0.6924722628972512,
+            "valid_pixels": 48371164,
+            "cases_with_reference_positive": 36,
+            "cases_with_metric_defined": 39,
+            "mean_case_iou": 0.5259275129002632
+          },
+          "tumor_on_tumor_stroma": {
+            "tp": 21690639,
+            "fp": 3489664,
+            "fn": 6120656,
+            "tn": 14831084,
+            "precision": 0.8614129464605728,
+            "recall": 0.7799219345952787,
+            "dice": 0.8186444575609892,
+            "iou": 0.6929704294363632,
+            "valid_pixels": 46132043,
+            "cases_with_reference_positive": 36,
+            "cases_with_metric_defined": 38,
+            "mean_case_iou": 0.5412742071782596
+          },
+          "stroma_on_tumor_stroma": {
+            "tp": 8140012,
+            "fp": 898740,
+            "fn": 10180736,
+            "tn": 26912555,
+            "precision": 0.9005681315296625,
+            "recall": 0.44430565826242463,
+            "dice": 0.595040991246185,
+            "iou": 0.42352907632086767,
+            "valid_pixels": 46132043,
+            "cases_with_reference_positive": 37,
+            "cases_with_metric_defined": 37,
+            "mean_case_iou": 0.48170086463159384
+          },
+          "background_vs_tissue": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 17558436,
+            "tn": 48371164,
+            "precision": null,
+            "recall": 0.0,
+            "dice": 0.0,
+            "iou": 0.0,
+            "valid_pixels": 65929600,
+            "cases_with_reference_positive": 40,
+            "cases_with_metric_defined": 40,
+            "mean_case_iou": 0.0
+          }
+        },
+        "geometry": {
+          "boundary_f1": {
+            "mean_case_window_mean": 0.24054225528361978,
+            "cases_evaluable": 40,
+            "eligible_windows": 116,
+            "evaluable_windows": 116
+          },
+          "symmetric_hd95_um": {
+            "mean_case_window_mean": 140.55037970233553,
+            "cases_evaluable": 36,
+            "eligible_windows": 116,
+            "evaluable_windows": 106
+          },
+          "symmetric_region_covering": {
+            "mean_case_window_mean": 0.4791590719646736,
+            "cases_evaluable": 40,
+            "eligible_windows": 116,
+            "evaluable_windows": 116
+          }
+        }
+      },
+      "shared_support": {
+        "semantic": {
+          "tumor_vs_nontumor": {
+            "tp": 21672051,
+            "fp": 3510736,
+            "fn": 6139244,
+            "tn": 17049133,
+            "precision": 0.8605898544906884,
+            "recall": 0.7792535730536819,
+            "dice": 0.8179045728162627,
+            "iou": 0.6919107831800563,
+            "valid_pixels": 48371164,
+            "cases_with_reference_positive": 36,
+            "cases_with_metric_defined": 39,
+            "mean_case_iou": 0.5227653317602214
+          },
+          "tumor_on_tumor_stroma": {
+            "tp": 21672051,
+            "fp": 3488345,
+            "fn": 6139244,
+            "tn": 14832403,
+            "precision": 0.8613557195204717,
+            "recall": 0.7792535730536819,
+            "dice": 0.8182502990134862,
+            "iou": 0.692405759299468,
+            "valid_pixels": 46132043,
+            "cases_with_reference_positive": 36,
+            "cases_with_metric_defined": 38,
+            "mean_case_iou": 0.5379977803005014
+          },
+          "stroma_on_tumor_stroma": {
+            "tp": 8127823,
+            "fp": 895944,
+            "fn": 10192925,
+            "tn": 26915351,
+            "precision": 0.9007128619344892,
+            "recall": 0.44364034699893257,
+            "dice": 0.5944755648436258,
+            "iou": 0.42295640685712194,
+            "valid_pixels": 46132043,
+            "cases_with_reference_positive": 37,
+            "cases_with_metric_defined": 37,
+            "mean_case_iou": 0.4805963293893268
+          },
+          "background_vs_tissue": {
+            "tp": 5268000,
+            "fp": 81402,
+            "fn": 12290436,
+            "tn": 48289762,
+            "precision": 0.9847829720032257,
+            "recall": 0.3000267221978085,
+            "dice": 0.4599299156908653,
+            "iou": 0.2986421984147474,
+            "valid_pixels": 65929600,
+            "cases_with_reference_positive": 40,
+            "cases_with_metric_defined": 40,
+            "mean_case_iou": 0.3298016051143367
+          }
+        },
+        "geometry": {
+          "boundary_f1": {
+            "mean_case_window_mean": 0.23403768746265383,
+            "cases_evaluable": 40,
+            "eligible_windows": 116,
+            "evaluable_windows": 116
+          },
+          "symmetric_hd95_um": {
+            "mean_case_window_mean": 145.16487211518904,
+            "cases_evaluable": 36,
+            "eligible_windows": 116,
+            "evaluable_windows": 106
+          },
+          "symmetric_region_covering": {
+            "mean_case_window_mean": 0.47830784237096163,
+            "cases_evaluable": 40,
+            "eligible_windows": 116,
+            "evaluable_windows": 116
+          }
+        }
+      }
+    },
+    "deeplabv3plus": {
+      "completed": 40,
+      "selected": 40,
+      "completion_fraction": 1.0,
+      "native": {
+        "semantic": {
+          "tumor_vs_nontumor": {
+            "tp": 17853780,
+            "fp": 1844812,
+            "fn": 9957515,
+            "tn": 18715057,
+            "precision": 0.9063480273107845,
+            "recall": 0.641961476443294,
+            "dice": 0.751581665517327,
+            "iou": 0.6020270968134827,
+            "valid_pixels": 48371164,
+            "cases_with_reference_positive": 36,
+            "cases_with_metric_defined": 37,
+            "mean_case_iou": 0.4637810265895224
+          },
+          "tumor_on_tumor_stroma": {
+            "tp": 17853780,
+            "fp": 1843926,
+            "fn": 9957515,
+            "tn": 16476822,
+            "precision": 0.9063887947154862,
+            "recall": 0.641961476443294,
+            "dice": 0.7515956818372165,
+            "iou": 0.6020450833935785,
+            "valid_pixels": 46132043,
+            "cases_with_reference_positive": 36,
+            "cases_with_metric_defined": 37,
+            "mean_case_iou": 0.46379493390311705
+          },
+          "stroma_on_tumor_stroma": {
+            "tp": 11353592,
+            "fp": 5465445,
+            "fn": 6967156,
+            "tn": 22345850,
+            "precision": 0.6750441181620565,
+            "recall": 0.6197122519233385,
+            "dice": 0.6461958717163466,
+            "iou": 0.47731858561813567,
+            "valid_pixels": 46132043,
+            "cases_with_reference_positive": 37,
+            "cases_with_metric_defined": 38,
+            "mean_case_iou": 0.5552615463870678
+          },
+          "background_vs_tissue": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 17558436,
+            "tn": 48371164,
+            "precision": null,
+            "recall": 0.0,
+            "dice": 0.0,
+            "iou": 0.0,
+            "valid_pixels": 65929600,
+            "cases_with_reference_positive": 40,
+            "cases_with_metric_defined": 40,
+            "mean_case_iou": 0.0
+          }
+        },
+        "geometry": {
+          "boundary_f1": {
+            "mean_case_window_mean": 0.2844693620106401,
+            "cases_evaluable": 40,
+            "eligible_windows": 116,
+            "evaluable_windows": 116
+          },
+          "symmetric_hd95_um": {
+            "mean_case_window_mean": 144.2636221509154,
+            "cases_evaluable": 36,
+            "eligible_windows": 116,
+            "evaluable_windows": 106
+          },
+          "symmetric_region_covering": {
+            "mean_case_window_mean": 0.4645772165556412,
+            "cases_evaluable": 40,
+            "eligible_windows": 116,
+            "evaluable_windows": 116
+          }
+        }
+      },
+      "shared_support": {
+        "semantic": {
+          "tumor_vs_nontumor": {
+            "tp": 17843400,
+            "fp": 1843883,
+            "fn": 9967895,
+            "tn": 18715986,
+            "precision": 0.9063414184679521,
+            "recall": 0.6415882467896586,
+            "dice": 0.7513235448859121,
+            "iou": 0.6016959331689056,
+            "valid_pixels": 48371164,
+            "cases_with_reference_positive": 36,
+            "cases_with_metric_defined": 37,
+            "mean_case_iou": 0.46195301398862626
+          },
+          "tumor_on_tumor_stroma": {
+            "tp": 17843400,
+            "fp": 1843004,
+            "fn": 9967895,
+            "tn": 16477744,
+            "precision": 0.9063818867071914,
+            "recall": 0.6415882467896586,
+            "dice": 0.7513374489993715,
+            "iou": 0.6017137683814411,
+            "valid_pixels": 46132043,
+            "cases_with_reference_positive": 36,
+            "cases_with_metric_defined": 37,
+            "mean_case_iou": 0.46196635909427297
+          },
+          "stroma_on_tumor_stroma": {
+            "tp": 11342013,
+            "fp": 5460842,
+            "fn": 6978735,
+            "tn": 22350453,
+            "precision": 0.6750051107386215,
+            "recall": 0.6190802362436294,
+            "dice": 0.6458342556713217,
+            "iou": 0.4769240828725077,
+            "valid_pixels": 46132043,
+            "cases_with_reference_positive": 37,
+            "cases_with_metric_defined": 38,
+            "mean_case_iou": 0.5543965043650451
+          },
+          "background_vs_tissue": {
+            "tp": 5268000,
+            "fp": 81402,
+            "fn": 12290436,
+            "tn": 48289762,
+            "precision": 0.9847829720032257,
+            "recall": 0.3000267221978085,
+            "dice": 0.4599299156908653,
+            "iou": 0.2986421984147474,
+            "valid_pixels": 65929600,
+            "cases_with_reference_positive": 40,
+            "cases_with_metric_defined": 40,
+            "mean_case_iou": 0.3298016051143367
+          }
+        },
+        "geometry": {
+          "boundary_f1": {
+            "mean_case_window_mean": 0.27785604174050454,
+            "cases_evaluable": 40,
+            "eligible_windows": 116,
+            "evaluable_windows": 116
+          },
+          "symmetric_hd95_um": {
+            "mean_case_window_mean": 146.54867288717938,
+            "cases_evaluable": 36,
+            "eligible_windows": 116,
+            "evaluable_windows": 106
+          },
+          "symmetric_region_covering": {
+            "mean_case_window_mean": 0.460852681988592,
+            "cases_evaluable": 40,
+            "eligible_windows": 116,
+            "evaluable_windows": 116
+          }
+        }
+      }
+    },
+    "medsam": {
+      "completed": 40,
+      "selected": 40,
+      "completion_fraction": 1.0,
+      "native": {
+        "semantic": {
+          "tumor_vs_nontumor": {
+            "tp": 24507042,
+            "fp": 9442468,
+            "fn": 3304253,
+            "tn": 11117401,
+            "precision": 0.7218673259201679,
+            "recall": 0.8811902502202792,
+            "dice": 0.7936114822337565,
+            "iou": 0.6578407126281445,
+            "valid_pixels": 48371164,
+            "cases_with_reference_positive": 36,
+            "cases_with_metric_defined": 38,
+            "mean_case_iou": 0.5257694752045948
+          },
+          "tumor_on_tumor_stroma": {
+            "tp": 24507042,
+            "fp": 9317793,
+            "fn": 3304253,
+            "tn": 9002955,
+            "precision": 0.7245280575648041,
+            "recall": 0.8811902502202792,
+            "dice": 0.7952167665296312,
+            "iou": 0.6600496624102375,
+            "valid_pixels": 46132043,
+            "cases_with_reference_positive": 36,
+            "cases_with_metric_defined": 37,
+            "mean_case_iou": 0.5422521325207758
+          },
+          "stroma_on_tumor_stroma": {
+            "tp": 8518346,
+            "fp": 4276674,
+            "fn": 9802402,
+            "tn": 23534621,
+            "precision": 0.6657548014774498,
+            "recall": 0.46495623431969046,
+            "dice": 0.5475260003224088,
+            "iou": 0.3769609648392635,
+            "valid_pixels": 46132043,
+            "cases_with_reference_positive": 37,
+            "cases_with_metric_defined": 38,
+            "mean_case_iou": 0.45514506163097745
+          }
+        }
+      },
+      "shared_support": {
+        "semantic": {
+          "tumor_vs_nontumor": {
+            "tp": 24481634,
+            "fp": 9436670,
+            "fn": 3329661,
+            "tn": 11123199,
+            "precision": 0.7217823744960833,
+            "recall": 0.8802766645709953,
+            "dice": 0.7931894713911879,
+            "iou": 0.6572609805663209,
+            "valid_pixels": 48371164,
+            "cases_with_reference_positive": 36,
+            "cases_with_metric_defined": 38,
+            "mean_case_iou": 0.5222256770629872
+          },
+          "tumor_on_tumor_stroma": {
+            "tp": 24481634,
+            "fp": 9312689,
+            "fn": 3329661,
+            "tn": 9008059,
+            "precision": 0.7244303725214439,
+            "recall": 0.8802766645709953,
+            "dice": 0.7947857612596306,
+            "iou": 0.6594560001965306,
+            "valid_pixels": 46132043,
+            "cases_with_reference_positive": 36,
+            "cases_with_metric_defined": 37,
+            "mean_case_iou": 0.5385903172484763
+          },
+          "stroma_on_tumor_stroma": {
+            "tp": 8507377,
+            "fp": 4268188,
+            "fn": 9813371,
+            "tn": 23543107,
+            "precision": 0.6659100399864898,
+            "recall": 0.4643575142237642,
+            "dice": 0.5471630672099294,
+            "iou": 0.3766169862980709,
+            "valid_pixels": 46132043,
+            "cases_with_reference_positive": 37,
+            "cases_with_metric_defined": 38,
+            "mean_case_iou": 0.45418576426837626
+          }
+        }
+      }
+    },
+    "vista_path": {
+      "completed": 40,
+      "selected": 40,
+      "completion_fraction": 1.0,
+      "native": {
+        "semantic": {
+          "tumor_vs_nontumor": {
+            "tp": 18688420,
+            "fp": 1391782,
+            "fn": 9122875,
+            "tn": 19168087,
+            "precision": 0.9306888446640128,
+            "recall": 0.6719723047776093,
+            "dice": 0.7804483539113426,
+            "iou": 0.6399469480561929,
+            "valid_pixels": 48371164,
+            "cases_with_reference_positive": 36,
+            "cases_with_metric_defined": 40,
+            "mean_case_iou": 0.42955618237298127
+          },
+          "tumor_on_tumor_stroma": {
+            "tp": 18688420,
+            "fp": 1380589,
+            "fn": 9122875,
+            "tn": 16940159,
+            "precision": 0.9312079136543314,
+            "recall": 0.6719723047776093,
+            "dice": 0.7806307996707791,
+            "iou": 0.640192321948114,
+            "valid_pixels": 46132043,
+            "cases_with_reference_positive": 36,
+            "cases_with_metric_defined": 38,
+            "mean_case_iou": 0.46592835682851425
+          },
+          "stroma_on_tumor_stroma": {
+            "tp": 1404568,
+            "fp": 601256,
+            "fn": 16916180,
+            "tn": 27210039,
+            "precision": 0.7002448868893781,
+            "recall": 0.07666542872594503,
+            "dice": 0.1382001844678975,
+            "iou": 0.0742293469550054,
+            "valid_pixels": 46132043,
+            "cases_with_reference_positive": 37,
+            "cases_with_metric_defined": 37,
+            "mean_case_iou": 0.10474921394995927
+          },
+          "background_vs_tissue": {
+            "tp": 15256261,
+            "fp": 3502326,
+            "fn": 2302175,
+            "tn": 44868838,
+            "precision": 0.8132947860092021,
+            "recall": 0.8688849621913933,
+            "dice": 0.8401713433394582,
+            "iou": 0.724392640684131,
+            "valid_pixels": 65929600,
+            "cases_with_reference_positive": 40,
+            "cases_with_metric_defined": 40,
+            "mean_case_iou": 0.7079567631388094
+          }
+        },
+        "geometry": {
+          "boundary_f1": {
+            "mean_case_window_mean": 0.2734585163455011,
+            "cases_evaluable": 40,
+            "eligible_windows": 116,
+            "evaluable_windows": 116
+          },
+          "symmetric_hd95_um": {
+            "mean_case_window_mean": 145.74309905169983,
+            "cases_evaluable": 36,
+            "eligible_windows": 116,
+            "evaluable_windows": 106
+          },
+          "symmetric_region_covering": {
+            "mean_case_window_mean": 0.303386129462905,
+            "cases_evaluable": 40,
+            "eligible_windows": 116,
+            "evaluable_windows": 116
+          }
+        }
+      },
+      "shared_support": {
+        "semantic": {
+          "tumor_vs_nontumor": {
+            "tp": 18684059,
+            "fp": 1391587,
+            "fn": 9127236,
+            "tn": 19168282,
+            "precision": 0.9306828283383758,
+            "recall": 0.6718154979838228,
+            "dice": 0.7803404690226506,
+            "iou": 0.6398018866768013,
+            "valid_pixels": 48371164,
+            "cases_with_reference_positive": 36,
+            "cases_with_metric_defined": 40,
+            "mean_case_iou": 0.4285353073875077
+          },
+          "tumor_on_tumor_stroma": {
+            "tp": 18684059,
+            "fp": 1380450,
+            "fn": 9127236,
+            "tn": 16940298,
+            "precision": 0.9311994128538107,
+            "recall": 0.6718154979838228,
+            "dice": 0.7805219939491773,
+            "iou": 0.6400459787518697,
+            "valid_pixels": 46132043,
+            "cases_with_reference_positive": 36,
+            "cases_with_metric_defined": 38,
+            "mean_case_iou": 0.46476637122772857
+          },
+          "stroma_on_tumor_stroma": {
+            "tp": 1404106,
+            "fp": 601187,
+            "fn": 16916642,
+            "tn": 27210108,
+            "precision": 0.7001999209093135,
+            "recall": 0.07664021141494878,
+            "dice": 0.13815833590023754,
+            "iou": 0.07420520152933618,
+            "valid_pixels": 46132043,
+            "cases_with_reference_positive": 37,
+            "cases_with_metric_defined": 37,
+            "mean_case_iou": 0.10466647559349088
+          },
+          "background_vs_tissue": {
+            "tp": 15299295,
+            "fp": 3532639,
+            "fn": 2259141,
+            "tn": 44838525,
+            "precision": 0.8124123098562261,
+            "recall": 0.8713358638548445,
+            "dice": 0.8408430582046844,
+            "iou": 0.7253919015507745,
+            "valid_pixels": 65929600,
+            "cases_with_reference_positive": 40,
+            "cases_with_metric_defined": 40,
+            "mean_case_iou": 0.7072344659675988
+          }
+        },
+        "geometry": {
+          "boundary_f1": {
+            "mean_case_window_mean": 0.27241071577162235,
+            "cases_evaluable": 40,
+            "eligible_windows": 116,
+            "evaluable_windows": 116
+          },
+          "symmetric_hd95_um": {
+            "mean_case_window_mean": 146.31358893999223,
+            "cases_evaluable": 36,
+            "eligible_windows": 116,
+            "evaluable_windows": 106
+          },
+          "symmetric_region_covering": {
+            "mean_case_window_mean": 0.3026061298866143,
+            "cases_evaluable": 40,
+            "eligible_windows": 116,
+            "evaluable_windows": 116
+          }
+        }
+      }
+    },
+    "kodama_bora": {
+      "completed": 9,
+      "selected": 40,
+      "completion_fraction": 0.225,
+      "native": {
+        "geometry": {
+          "boundary_f1": {
+            "mean_case_window_mean": 0.19088857243643453,
+            "cases_evaluable": 9,
+            "eligible_windows": 85,
+            "evaluable_windows": 85
+          },
+          "symmetric_hd95_um": {
+            "mean_case_window_mean": 202.15927648848998,
+            "cases_evaluable": 9,
+            "eligible_windows": 85,
+            "evaluable_windows": 79
+          },
+          "symmetric_region_covering": {
+            "mean_case_window_mean": 0.37340077112538494,
+            "cases_evaluable": 9,
+            "eligible_windows": 85,
+            "evaluable_windows": 85
+          }
+        }
+      },
+      "shared_support": {
+        "geometry": {
+          "boundary_f1": {
+            "mean_case_window_mean": 0.19088857243643453,
+            "cases_evaluable": 9,
+            "eligible_windows": 85,
+            "evaluable_windows": 85
+          },
+          "symmetric_hd95_um": {
+            "mean_case_window_mean": 202.15927648848998,
+            "cases_evaluable": 9,
+            "eligible_windows": 85,
+            "evaluable_windows": 79
+          },
+          "symmetric_region_covering": {
+            "mean_case_window_mean": 0.37340077112538494,
+            "cases_evaluable": 9,
+            "eligible_windows": 85,
+            "evaluable_windows": 85
+          }
+        }
+      }
+    }
+  },
+  "cases": [
+    {
+      "case": "validation--00",
+      "image_id": "00",
+      "figure": "case-00.webp",
+      "figure_sha256": "8b96f4f3542fbf2922c20dba6390314f3f17dcca2581c36c64bb2e671fd4f51d",
+      "native_shape_yx": [
+        273,
+        266
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.7429624543779135,
+            "stroma_iou": 0.8160639141306336,
+            "background_iou": 0.0,
+            "boundary_f1": 0.7577243119469317,
+            "region_covering": 0.7854265949536883
+          },
+          "shared_support": {
+            "tumor_iou": 0.7334176757636002,
+            "stroma_iou": 0.8119624229854207,
+            "background_iou": 0.5443387196666855,
+            "boundary_f1": 0.6663129529048744,
+            "region_covering": 0.7840867042762506
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.5083690762632075,
+            "stroma_iou": 0.4857116827112879,
+            "background_iou": 0.0,
+            "boundary_f1": 0.20820644134793473,
+            "region_covering": 0.4083663574905618
+          },
+          "shared_support": {
+            "tumor_iou": 0.5025654450261781,
+            "stroma_iou": 0.48238581146744414,
+            "background_iou": 0.5443387196666855,
+            "boundary_f1": 0.2141752394014248,
+            "region_covering": 0.4021478137785717
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.6071586389748121,
+            "stroma_iou": 0.8340908441242889,
+            "background_iou": 0.0,
+            "boundary_f1": 0.6284463023788196,
+            "region_covering": 0.6216691533493304
+          },
+          "shared_support": {
+            "tumor_iou": 0.6004822182037372,
+            "stroma_iou": 0.8308062024374893,
+            "background_iou": 0.5443387196666855,
+            "boundary_f1": 0.5983092318808279,
+            "region_covering": 0.6154623515034814
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.6980349954163179,
+            "stroma_iou": 0.5968320717689936
+          },
+          "shared_support": {
+            "tumor_iou": 0.6876345371920594,
+            "stroma_iou": 0.5943875403395538
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.6147050441721288,
+            "stroma_iou": 0.07914952818775707,
+            "background_iou": 0.7716792382175146,
+            "boundary_f1": 0.4926919077017149,
+            "region_covering": 0.37175810788717245
+          },
+          "shared_support": {
+            "tumor_iou": 0.6113192182410423,
+            "stroma_iou": 0.07866561819501573,
+            "background_iou": 0.7682843472317157,
+            "boundary_f1": 0.48892116222620347,
+            "region_covering": 0.3697082379765153
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 22686,
+        "1": 32641,
+        "3": 17291
+      }
+    },
+    {
+      "case": "validation--01",
+      "image_id": "01",
+      "figure": "case-01.webp",
+      "figure_sha256": "2a9b5f4e1e2047a24ba370eb8927e003e43ab78458c68e7a656a96b5d0d4010f",
+      "native_shape_yx": [
+        269,
+        242
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": null,
+            "stroma_iou": 0.9552366753633992,
+            "background_iou": 0.0,
+            "boundary_f1": 0.0,
+            "region_covering": 0.92548316872565
+          },
+          "shared_support": {
+            "tumor_iou": null,
+            "stroma_iou": 0.9497950055907566,
+            "background_iou": 0.044692261854090407,
+            "boundary_f1": 0.0,
+            "region_covering": 0.9161867026517649
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.8535408125232948,
+            "background_iou": 0.0,
+            "boundary_f1": 0.0,
+            "region_covering": 0.7862671003546305
+          },
+          "shared_support": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.8489377562430116,
+            "background_iou": 0.044692261854090407,
+            "boundary_f1": 0.0,
+            "region_covering": 0.7802798861144953
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.9655236675363399,
+            "background_iou": 0.0,
+            "boundary_f1": 0.0,
+            "region_covering": 0.9459391783099392
+          },
+          "shared_support": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.9611069698099143,
+            "background_iou": 0.044692261854090407,
+            "boundary_f1": 0.0,
+            "region_covering": 0.939701959432047
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.9999068207230712
+          },
+          "shared_support": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.9941483414088707
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.24543421543048827,
+            "background_iou": 0.49158553098201047,
+            "boundary_f1": 0.0,
+            "region_covering": 0.1071063612555769
+          },
+          "shared_support": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.2453596720089452,
+            "background_iou": 0.4868763902129012,
+            "boundary_f1": 0.0,
+            "region_covering": 0.1070015385670981
+          }
+        }
+      },
+      "reference_counts": {
+        "1": 53660,
+        "3": 11438
+      }
+    },
+    {
+      "case": "validation--02",
+      "image_id": "02",
+      "figure": "case-02.webp",
+      "figure_sha256": "9daf9b8a17a4592aac6a0e3d65a932094187c34e611c0a1f0973f91a9f61e847",
+      "native_shape_yx": [
+        485,
+        276
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": null,
+            "stroma_iou": null,
+            "background_iou": 0.0,
+            "boundary_f1": 0.0,
+            "region_covering": 0.17962796630134228
+          },
+          "shared_support": {
+            "tumor_iou": null,
+            "stroma_iou": null,
+            "background_iou": 0.7786838632144811,
+            "boundary_f1": 0.0,
+            "region_covering": 0.1688094455300818
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.0,
+            "stroma_iou": null,
+            "background_iou": 0.0,
+            "boundary_f1": 0.0,
+            "region_covering": 0.2296979448309724
+          },
+          "shared_support": {
+            "tumor_iou": 0.0,
+            "stroma_iou": null,
+            "background_iou": 0.7786838632144811,
+            "boundary_f1": 0.0,
+            "region_covering": 0.2218465159080135
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": null,
+            "stroma_iou": null,
+            "background_iou": 0.0,
+            "boundary_f1": 0.0,
+            "region_covering": 0.4850559670801361
+          },
+          "shared_support": {
+            "tumor_iou": null,
+            "stroma_iou": null,
+            "background_iou": 0.7786838632144811,
+            "boundary_f1": 0.0,
+            "region_covering": 0.4568153490616429
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.0,
+            "stroma_iou": null
+          },
+          "shared_support": {
+            "tumor_iou": 0.0,
+            "stroma_iou": null
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.0,
+            "stroma_iou": null,
+            "background_iou": 0.8857052995754049,
+            "boundary_f1": 0.0,
+            "region_covering": 0.20620860541985986
+          },
+          "shared_support": {
+            "tumor_iou": 0.0,
+            "stroma_iou": null,
+            "background_iou": 0.890269712355474,
+            "boundary_f1": 0.0,
+            "region_covering": 0.20321522164108247
+          }
+        }
+      },
+      "reference_counts": {
+        "2": 41824,
+        "3": 92036
+      }
+    },
+    {
+      "case": "validation--03",
+      "image_id": "03",
+      "figure": "case-03.webp",
+      "figure_sha256": "2a85247a6996ef1f929e07dc43a2544e909dcbedc38da76e2ad31643c13d7dd0",
+      "native_shape_yx": [
+        291,
+        352
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.7906804411315984,
+            "stroma_iou": 0.21956917716005386,
+            "background_iou": 0.0,
+            "boundary_f1": 0.1863825569140952,
+            "region_covering": 0.3658284303604511
+          },
+          "shared_support": {
+            "tumor_iou": 0.7900156924284033,
+            "stroma_iou": 0.21956917716005386,
+            "background_iou": 0.015161221439248345,
+            "boundary_f1": 0.1871698071854778,
+            "region_covering": 0.365756530914264
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.7680899556054829,
+            "stroma_iou": 0.18976833976833976,
+            "background_iou": 0.0,
+            "boundary_f1": 0.2399254407022662,
+            "region_covering": 0.3534478677940529
+          },
+          "shared_support": {
+            "tumor_iou": 0.7674310588794435,
+            "stroma_iou": 0.18976833976833976,
+            "background_iou": 0.015161221439248345,
+            "boundary_f1": 0.2405421794325411,
+            "region_covering": 0.3533718482891503
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.6895521374486435,
+            "stroma_iou": 0.22144586267605634,
+            "background_iou": 0.0,
+            "boundary_f1": 0.4629802697694743,
+            "region_covering": 0.31175079640906855
+          },
+          "shared_support": {
+            "tumor_iou": 0.6888617251253495,
+            "stroma_iou": 0.22144586267605634,
+            "background_iou": 0.015161221439248345,
+            "boundary_f1": 0.462065672785219,
+            "region_covering": 0.3116664412741694
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.7576375371375884,
+            "stroma_iou": 0.20612691466083152
+          },
+          "shared_support": {
+            "tumor_iou": 0.7570126011679131,
+            "stroma_iou": 0.20612691466083152
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.5873278103058721,
+            "stroma_iou": 0.05733674671868016,
+            "background_iou": 0.16183149504124572,
+            "boundary_f1": 0.47607228424103964,
+            "region_covering": 0.22230253928073887
+          },
+          "shared_support": {
+            "tumor_iou": 0.587157746410437,
+            "stroma_iou": 0.05733674671868016,
+            "background_iou": 0.1617265653945906,
+            "boundary_f1": 0.4763068870070243,
+            "region_covering": 0.22230283982852478
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 74379,
+        "1": 23431,
+        "3": 4622
+      }
+    },
+    {
+      "case": "validation--04",
+      "image_id": "04",
+      "figure": "case-04.webp",
+      "figure_sha256": "f8ddf934b8aca0d1f90e060a7124493c18276ae201bf728fa99bf09946ff61cd",
+      "native_shape_yx": [
+        452,
+        398
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.06416508392792977,
+            "stroma_iou": 0.8354482376789334,
+            "background_iou": 0.0,
+            "boundary_f1": 0.4573137574768896,
+            "region_covering": 0.7294533909908328
+          },
+          "shared_support": {
+            "tumor_iou": 0.06416508392792977,
+            "stroma_iou": 0.8342248376985792,
+            "background_iou": 0.49762307630327934,
+            "boundary_f1": 0.4175505209099685,
+            "region_covering": 0.7261761274995979
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.4522910892256885,
+            "stroma_iou": 0.742245903538238,
+            "background_iou": 0.0,
+            "boundary_f1": 0.20142682362579986,
+            "region_covering": 0.4534847510112236
+          },
+          "shared_support": {
+            "tumor_iou": 0.4495204367714328,
+            "stroma_iou": 0.7420194510559017,
+            "background_iou": 0.49762307630327934,
+            "boundary_f1": 0.19809254085218528,
+            "region_covering": 0.45235165102530733
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.3506986027944112,
+            "stroma_iou": 0.7024033970276008,
+            "background_iou": 0.0,
+            "boundary_f1": 0.26752856676607994,
+            "region_covering": 0.3673836614327024
+          },
+          "shared_support": {
+            "tumor_iou": 0.3489520958083832,
+            "stroma_iou": 0.7015914555913366,
+            "background_iou": 0.49762307630327934,
+            "boundary_f1": 0.2627109869982533,
+            "region_covering": 0.3663480126137023
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.6596681464231133,
+            "stroma_iou": 0.796918903993893
+          },
+          "shared_support": {
+            "tumor_iou": 0.6523797385382907,
+            "stroma_iou": 0.7956239382929783
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.743680437653273,
+            "stroma_iou": 0.026178384312605434,
+            "background_iou": 0.8197372099524741,
+            "boundary_f1": 0.19148348865423423,
+            "region_covering": 0.17325405878511602
+          },
+          "shared_support": {
+            "tumor_iou": 0.741095438033684,
+            "stroma_iou": 0.02616053338569605,
+            "background_iou": 0.8194532149622971,
+            "boundary_f1": 0.19138440636178092,
+            "region_covering": 0.1727997101544808
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 19081,
+        "1": 111675,
+        "3": 49140
+      }
+    },
+    {
+      "case": "validation--05",
+      "image_id": "05",
+      "figure": "case-05.webp",
+      "figure_sha256": "06485a6be32aaeab8844d359b213a0003521fcd341305caefd1ea02bc98c5db7",
+      "native_shape_yx": [
+        341,
+        223
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": null,
+            "stroma_iou": null,
+            "background_iou": 0.0,
+            "boundary_f1": 0.0,
+            "region_covering": 0.17910844746597937
+          },
+          "shared_support": {
+            "tumor_iou": null,
+            "stroma_iou": null,
+            "background_iou": 0.30911779511704,
+            "boundary_f1": 0.0,
+            "region_covering": 0.177156412777616
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": null,
+            "stroma_iou": null,
+            "background_iou": 0.0,
+            "boundary_f1": 0.0,
+            "region_covering": 0.10793490239096304
+          },
+          "shared_support": {
+            "tumor_iou": null,
+            "stroma_iou": null,
+            "background_iou": 0.30911779511704,
+            "boundary_f1": 0.0,
+            "region_covering": 0.10715302886364164
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": null,
+            "stroma_iou": null,
+            "background_iou": 0.0,
+            "boundary_f1": 0.0,
+            "region_covering": 0.10906534601609758
+          },
+          "shared_support": {
+            "tumor_iou": null,
+            "stroma_iou": null,
+            "background_iou": 0.30911779511704,
+            "boundary_f1": 0.0,
+            "region_covering": 0.10809984200075407
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": null,
+            "stroma_iou": null
+          },
+          "shared_support": {
+            "tumor_iou": null,
+            "stroma_iou": null
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.0,
+            "stroma_iou": null,
+            "background_iou": 0.8294181423924828,
+            "boundary_f1": 0.0,
+            "region_covering": 0.050178032700541136
+          },
+          "shared_support": {
+            "tumor_iou": 0.0,
+            "stroma_iou": null,
+            "background_iou": 0.8271192507307761,
+            "boundary_f1": 0.0,
+            "region_covering": 0.05012092164850756
+          }
+        }
+      },
+      "reference_counts": {
+        "2": 44705,
+        "3": 31338
+      }
+    },
+    {
+      "case": "validation--06",
+      "image_id": "06",
+      "figure": "case-06.webp",
+      "figure_sha256": "6accf049f87970ac25bc8d03ef90282ab9ede650dbd9272343d5274b44cd8f3e",
+      "native_shape_yx": [
+        485,
+        475
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.6909290096406661,
+            "stroma_iou": 0.6489779700675467,
+            "background_iou": 0.0,
+            "boundary_f1": 0.5105604146570323,
+            "region_covering": 0.5318237038432425
+          },
+          "shared_support": {
+            "tumor_iou": 0.68806967572305,
+            "stroma_iou": 0.645272731286285,
+            "background_iou": 0.21437901844029383,
+            "boundary_f1": 0.4679641092762838,
+            "region_covering": 0.527307841507495
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.6879103505998326,
+            "stroma_iou": 0.6102275920202304,
+            "background_iou": 0.0,
+            "boundary_f1": 0.17421639952943613,
+            "region_covering": 0.5512960963859654
+          },
+          "shared_support": {
+            "tumor_iou": 0.6853139044747788,
+            "stroma_iou": 0.6078133783024171,
+            "background_iou": 0.21437901844029383,
+            "boundary_f1": 0.16672424302562938,
+            "region_covering": 0.5474258667398935
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.7418240736792734,
+            "stroma_iou": 0.749812734082397,
+            "background_iou": 0.0,
+            "boundary_f1": 0.428152101931489,
+            "region_covering": 0.5688215840435035
+          },
+          "shared_support": {
+            "tumor_iou": 0.7387642844959919,
+            "stroma_iou": 0.7464698262480061,
+            "background_iou": 0.21437901844029383,
+            "boundary_f1": 0.4064850411358305,
+            "region_covering": 0.5651424328244242
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.5296136684336982,
+            "stroma_iou": 0.6147889525794685
+          },
+          "shared_support": {
+            "tumor_iou": 0.5267975936594838,
+            "stroma_iou": 0.614706189333055
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.47230694090193737,
+            "stroma_iou": 0.05898898527244293,
+            "background_iou": 0.7178843554591768,
+            "boundary_f1": 0.33115065204836214,
+            "region_covering": 0.19712931836013972
+          },
+          "shared_support": {
+            "tumor_iou": 0.4715363325554892,
+            "stroma_iou": 0.05891089108910891,
+            "background_iou": 0.7147952716446069,
+            "boundary_f1": 0.3284219388827792,
+            "region_covering": 0.19651475764721138
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 83823,
+        "1": 88539,
+        "3": 58013
+      }
+    },
+    {
+      "case": "validation--07",
+      "image_id": "07",
+      "figure": "case-07.webp",
+      "figure_sha256": "d06429e5d710b3457516257a0e12882ccb8652dbd245be9d611d86cd6a8232e7",
+      "native_shape_yx": [
+        349,
+        251
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.8125112062954477,
+            "stroma_iou": 0.5892958326894349,
+            "background_iou": 0.0,
+            "boundary_f1": 0.6598126639549912,
+            "region_covering": 0.6917650660987215
+          },
+          "shared_support": {
+            "tumor_iou": 0.8028808798039567,
+            "stroma_iou": 0.5892958326894349,
+            "background_iou": 0.3586515028432169,
+            "boundary_f1": 0.5694624792604159,
+            "region_covering": 0.670795849441753
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.7427796084512502,
+            "stroma_iou": 0.16566582385166456,
+            "background_iou": 0.0,
+            "boundary_f1": 0.24469836785945423,
+            "region_covering": 0.2421261139640865
+          },
+          "shared_support": {
+            "tumor_iou": 0.7339465708042574,
+            "stroma_iou": 0.16571820002107704,
+            "background_iou": 0.3586515028432169,
+            "boundary_f1": 0.22167721789773137,
+            "region_covering": 0.34773958466146526
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.8157794638745971,
+            "stroma_iou": 0.5748056994818653,
+            "background_iou": 0.0,
+            "boundary_f1": 0.5494365617461556,
+            "region_covering": 0.5935507106251381
+          },
+          "shared_support": {
+            "tumor_iou": 0.806848903574647,
+            "stroma_iou": 0.5767480731729966,
+            "background_iou": 0.3586515028432169,
+            "boundary_f1": 0.5063022731974344,
+            "region_covering": 0.587916833302436
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.7118011626603462,
+            "stroma_iou": 0.21929560505719445
+          },
+          "shared_support": {
+            "tumor_iou": 0.7023100089709087,
+            "stroma_iou": 0.21995772946859904
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.6702470229733526,
+            "stroma_iou": 0.03381692395064278,
+            "background_iou": 0.6994207251662733,
+            "boundary_f1": 0.5212063518331562,
+            "region_covering": 0.3960680141783267
+          },
+          "shared_support": {
+            "tumor_iou": 0.666270450173975,
+            "stroma_iou": 0.03381692395064278,
+            "background_iou": 0.6970973451327434,
+            "boundary_f1": 0.5148607771954317,
+            "region_covering": 0.39411125316413764
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 44681,
+        "1": 18923,
+        "3": 23995
+      }
+    },
+    {
+      "case": "validation--08",
+      "image_id": "08",
+      "figure": "case-08.webp",
+      "figure_sha256": "2f927704f68c407c259f67d3d816ba3339133232673e163621fffa7a7dfb44c9",
+      "native_shape_yx": [
+        458,
+        255
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.0,
+            "stroma_iou": null,
+            "background_iou": 0.0,
+            "boundary_f1": 0.02574628091031493,
+            "region_covering": 0.2156331671652174
+          },
+          "shared_support": {
+            "tumor_iou": 0.0,
+            "stroma_iou": null,
+            "background_iou": 0.6132689987937274,
+            "boundary_f1": 0.03689562238531326,
+            "region_covering": 0.21279710198059876
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.0,
+            "stroma_iou": null,
+            "background_iou": 0.0,
+            "boundary_f1": 0.04927555396036798,
+            "region_covering": 0.6119803095945058
+          },
+          "shared_support": {
+            "tumor_iou": 0.0,
+            "stroma_iou": null,
+            "background_iou": 0.6132689987937274,
+            "boundary_f1": 0.053074991583737,
+            "region_covering": 0.6053040730218407
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.0,
+            "background_iou": 0.0,
+            "boundary_f1": 0.0021501472990519805,
+            "region_covering": 0.44396932277738266
+          },
+          "shared_support": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.0,
+            "background_iou": 0.6132689987937274,
+            "boundary_f1": 0.013736647497294576,
+            "region_covering": 0.4375694734519858
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.0
+          },
+          "shared_support": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.0
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.22113502935420742,
+            "stroma_iou": null,
+            "background_iou": 0.8252834316780482,
+            "boundary_f1": 0.013709679452116947,
+            "region_covering": 0.29974196540347964
+          },
+          "shared_support": {
+            "tumor_iou": 0.2216393442622951,
+            "stroma_iou": null,
+            "background_iou": 0.8308054221227874,
+            "boundary_f1": 0.014736274460823592,
+            "region_covering": 0.29894018825024676
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 655,
+        "2": 58875,
+        "3": 57260
+      }
+    },
+    {
+      "case": "validation--09",
+      "image_id": "09",
+      "figure": "case-09.webp",
+      "figure_sha256": "15af4b890000a493af2b67447c9b5ce83559dea512e5744a3e1b0d4c80e016a5",
+      "native_shape_yx": [
+        428,
+        274
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.40541170438390006,
+            "background_iou": 0.0,
+            "boundary_f1": 0.03480922596272428,
+            "region_covering": 0.3200758756342933
+          },
+          "shared_support": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.40492227375486517,
+            "background_iou": 0.487221131939275,
+            "boundary_f1": 0.03873276108689032,
+            "region_covering": 0.316039236994775
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.37063803427627506,
+            "stroma_iou": 0.8810852280652811,
+            "background_iou": 0.0,
+            "boundary_f1": 0.14715074368838088,
+            "region_covering": 0.5247518720276672
+          },
+          "shared_support": {
+            "tumor_iou": 0.3661767749948251,
+            "stroma_iou": 0.879568492513717,
+            "background_iou": 0.487221131939275,
+            "boundary_f1": 0.13571072486960725,
+            "region_covering": 0.5197218705408231
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.013957676722197209,
+            "stroma_iou": 0.895154686078253,
+            "background_iou": 0.0,
+            "boundary_f1": 0.12661341183746894,
+            "region_covering": 0.5850133157166411
+          },
+          "shared_support": {
+            "tumor_iou": 0.013525698827772768,
+            "stroma_iou": 0.8938614852566437,
+            "background_iou": 0.487221131939275,
+            "boundary_f1": 0.11716840897542494,
+            "region_covering": 0.5816779872603832
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.25822650984538126,
+            "stroma_iou": 0.8935736294916983
+          },
+          "shared_support": {
+            "tumor_iou": 0.25496952027564274,
+            "stroma_iou": 0.8921005346170057
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.5700877989706328,
+            "stroma_iou": 0.09719438877755511,
+            "background_iou": 0.7607811228641171,
+            "boundary_f1": 0.08281296957959063,
+            "region_covering": 0.15914656461266657
+          },
+          "shared_support": {
+            "tumor_iou": 0.5680096940321114,
+            "stroma_iou": 0.09719438877755511,
+            "background_iou": 0.7680344564202665,
+            "boundary_f1": 0.08198397256208158,
+            "region_covering": 0.15809124044297138
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 2204,
+        "1": 42907,
+        "2": 28503,
+        "3": 43658
+      }
+    },
+    {
+      "case": "validation--10",
+      "image_id": "10",
+      "figure": "case-10.webp",
+      "figure_sha256": "59807e3c25ff8468dd8ea33f1ecf438b39b9b75661292de7c0811eaeab3cee78",
+      "native_shape_yx": [
+        293,
+        228
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.6945829179129279,
+            "stroma_iou": 0.9165279892362709,
+            "background_iou": 0.0,
+            "boundary_f1": 0.49794711168853834,
+            "region_covering": 0.8712427064546358
+          },
+          "shared_support": {
+            "tumor_iou": 0.6674426338543399,
+            "stroma_iou": 0.9134807784250881,
+            "background_iou": 0.4611866501854141,
+            "boundary_f1": 0.4299993941964016,
+            "region_covering": 0.8655532740668614
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.6855435401252135,
+            "stroma_iou": 0.8592508713883826,
+            "background_iou": 0.0,
+            "boundary_f1": 0.14638262347381445,
+            "region_covering": 0.796195305943515
+          },
+          "shared_support": {
+            "tumor_iou": 0.6609540131391031,
+            "stroma_iou": 0.8559521492151693,
+            "background_iou": 0.4611866501854141,
+            "boundary_f1": 0.15723730138102998,
+            "region_covering": 0.7906350256263095
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.3470175438596491,
+            "stroma_iou": 0.882306834808054,
+            "background_iou": 0.0,
+            "boundary_f1": 0.12227389442579316,
+            "region_covering": 0.8193580451663101
+          },
+          "shared_support": {
+            "tumor_iou": 0.3411099328384588,
+            "stroma_iou": 0.8796054236815504,
+            "background_iou": 0.4611866501854141,
+            "boundary_f1": 0.13612283444456116,
+            "region_covering": 0.8149071563656639
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.7622607655502392,
+            "stroma_iou": 0.8784644575455716
+          },
+          "shared_support": {
+            "tumor_iou": 0.7351092487279258,
+            "stroma_iou": 0.8785492439028529
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.0003728560775540641,
+            "stroma_iou": 0.21640790402258292,
+            "background_iou": 0.5943036116276793,
+            "boundary_f1": 0.06258957074797505,
+            "region_covering": 0.31707586374288377
+          },
+          "shared_support": {
+            "tumor_iou": 0.0003728560775540641,
+            "stroma_iou": 0.21587038246350976,
+            "background_iou": 0.5888101168806285,
+            "boundary_f1": 0.06624801361514092,
+            "region_covering": 0.31594622497886565
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 2681,
+        "1": 56354,
+        "3": 7769
+      }
+    },
+    {
+      "case": "validation--11",
+      "image_id": "11",
+      "figure": "case-11.webp",
+      "figure_sha256": "5739514ac4fbb710a536c7fc614fb0f7959c35ee50e7c3b177cfe180ce3800e9",
+      "native_shape_yx": [
+        500,
+        365
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.4604225088801645,
+            "stroma_iou": 0.6003192948530569,
+            "background_iou": 0.0,
+            "boundary_f1": 0.5158133105425209,
+            "region_covering": 0.5186186883644159
+          },
+          "shared_support": {
+            "tumor_iou": 0.45481398392222844,
+            "stroma_iou": 0.6001101841649614,
+            "background_iou": 0.7087235865219874,
+            "boundary_f1": 0.4731665231782135,
+            "region_covering": 0.5148843258432404
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.35313256658595643,
+            "stroma_iou": 0.448225035161744,
+            "background_iou": 0.0,
+            "boundary_f1": 0.24246751392260463,
+            "region_covering": 0.37642851727692905
+          },
+          "shared_support": {
+            "tumor_iou": 0.34872092729614385,
+            "stroma_iou": 0.4481283903932293,
+            "background_iou": 0.7087235865219874,
+            "boundary_f1": 0.24073558961351202,
+            "region_covering": 0.37323885357394676
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.18878078443295834,
+            "stroma_iou": 0.6888100312441805,
+            "background_iou": 0.0,
+            "boundary_f1": 0.3435748768831421,
+            "region_covering": 0.5467171545351062
+          },
+          "shared_support": {
+            "tumor_iou": 0.18584286061785454,
+            "stroma_iou": 0.6889323847101833,
+            "background_iou": 0.7087235865219874,
+            "boundary_f1": 0.33599759650086103,
+            "region_covering": 0.5449399754229242
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.3971924248443915,
+            "stroma_iou": 0.2682504222742876
+          },
+          "shared_support": {
+            "tumor_iou": 0.39193847785733227,
+            "stroma_iou": 0.2675303714366726
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.2534804691782073,
+            "stroma_iou": 0.020594862040465112,
+            "background_iou": 0.8556827701759285,
+            "boundary_f1": 0.3596358857075334,
+            "region_covering": 0.2598748542813668
+          },
+          "shared_support": {
+            "tumor_iou": 0.25068518180157134,
+            "stroma_iou": 0.020594862040465112,
+            "background_iou": 0.8590833333333333,
+            "boundary_f1": 0.3586998959379529,
+            "region_covering": 0.2586222333632181
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 24990,
+        "1": 88075,
+        "3": 69435
+      }
+    },
+    {
+      "case": "validation--12",
+      "image_id": "12",
+      "figure": "case-12.webp",
+      "figure_sha256": "8e4ff5ea5c80b536dbc1659d11847b375c533e9f5e263374214e39ca3a8018c7",
+      "native_shape_yx": [
+        454,
+        313
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.08851431980906921,
+            "stroma_iou": 0.7618296529968455,
+            "background_iou": 0.0,
+            "boundary_f1": 0.6037727598307758,
+            "region_covering": 0.626905366227557
+          },
+          "shared_support": {
+            "tumor_iou": 0.08824582338902148,
+            "stroma_iou": 0.7560214022020199,
+            "background_iou": 0.746983953461133,
+            "boundary_f1": 0.5199755068059577,
+            "region_covering": 0.6146906387686477
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.598565043519172,
+            "stroma_iou": 0.7066290550070522,
+            "background_iou": 0.0,
+            "boundary_f1": 0.48471544848396136,
+            "region_covering": 0.30409661231415785
+          },
+          "shared_support": {
+            "tumor_iou": 0.5861476143375253,
+            "stroma_iou": 0.7026740544447121,
+            "background_iou": 0.746983953461133,
+            "boundary_f1": 0.4529624235085656,
+            "region_covering": 0.29831373868015054
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.2666261503733287,
+            "stroma_iou": 0.726080813789206,
+            "background_iou": 0.0,
+            "boundary_f1": 0.39419374737525853,
+            "region_covering": 0.4379228447571378
+          },
+          "shared_support": {
+            "tumor_iou": 0.26401760889712694,
+            "stroma_iou": 0.7227931600702112,
+            "background_iou": 0.746983953461133,
+            "boundary_f1": 0.37479100414938904,
+            "region_covering": 0.43513959792323986
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.5231585506315969,
+            "stroma_iou": 0.18687749441134818
+          },
+          "shared_support": {
+            "tumor_iou": 0.5102453593436921,
+            "stroma_iou": 0.1873058616494821
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.0019530653971741585,
+            "stroma_iou": 0.054998672331386084,
+            "background_iou": 0.8341191352345906,
+            "boundary_f1": 0.4650307237199011,
+            "region_covering": 0.28040255270268305
+          },
+          "shared_support": {
+            "tumor_iou": 0.0019530653971741585,
+            "stroma_iou": 0.054982076473712164,
+            "background_iou": 0.8360835046297169,
+            "boundary_f1": 0.4603030172435591,
+            "region_covering": 0.27884648343015295
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 32674,
+        "1": 59583,
+        "3": 49845
+      }
+    },
+    {
+      "case": "validation--13",
+      "image_id": "13",
+      "figure": "case-13.webp",
+      "figure_sha256": "b8b3a377340150aef4ef13d292abb947a5489e6c85b75fed89c843514f2764f7",
+      "native_shape_yx": [
+        370,
+        419
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.6820402647354378,
+            "stroma_iou": 0.4881321668816005,
+            "background_iou": 0.0,
+            "boundary_f1": 0.551710382734686,
+            "region_covering": 0.30775672026259493
+          },
+          "shared_support": {
+            "tumor_iou": 0.6788165160932554,
+            "stroma_iou": 0.4876004252278629,
+            "background_iou": 0.21482334189320818,
+            "boundary_f1": 0.5373893248044617,
+            "region_covering": 0.3062686976354802
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.5409744476302918,
+            "stroma_iou": 0.3700589162156607,
+            "background_iou": 0.0,
+            "boundary_f1": 0.41153390705612986,
+            "region_covering": 0.24485078801530963
+          },
+          "shared_support": {
+            "tumor_iou": 0.5390860589190443,
+            "stroma_iou": 0.3698120964012264,
+            "background_iou": 0.21482334189320818,
+            "boundary_f1": 0.4086998739435983,
+            "region_covering": 0.2444420635409284
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.546684034032647,
+            "stroma_iou": 0.6328758483993032,
+            "background_iou": 0.0,
+            "boundary_f1": 0.6133141998780642,
+            "region_covering": 0.29613786477853443
+          },
+          "shared_support": {
+            "tumor_iou": 0.5447793251576248,
+            "stroma_iou": 0.6328499511608686,
+            "background_iou": 0.21482334189320818,
+            "boundary_f1": 0.6089878187782765,
+            "region_covering": 0.2955927569286289
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.5780178487552842,
+            "stroma_iou": 0.3939317990829881
+          },
+          "shared_support": {
+            "tumor_iou": 0.5752421938866599,
+            "stroma_iou": 0.39367303296217093
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.2652946151677474,
+            "stroma_iou": 0.040990054012480556,
+            "background_iou": 0.759002240314737,
+            "boundary_f1": 0.589459548188347,
+            "region_covering": 0.1745439201847177
+          },
+          "shared_support": {
+            "tumor_iou": 0.2649681717685813,
+            "stroma_iou": 0.040990054012480556,
+            "background_iou": 0.7610054347826087,
+            "boundary_f1": 0.5890555180973205,
+            "region_covering": 0.1744902240972339
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 65076,
+        "1": 56447,
+        "3": 33507
+      }
+    },
+    {
+      "case": "validation--14",
+      "image_id": "14",
+      "figure": "case-14.webp",
+      "figure_sha256": "35dd2219083a0772dfbe8cbf0b543e4acb7b45bcb05b173efa454658ad6a031c",
+      "native_shape_yx": [
+        287,
+        350
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.4401935310456052,
+            "stroma_iou": 0.7524273031866762,
+            "background_iou": 0.0,
+            "boundary_f1": 0.5221823514745911,
+            "region_covering": 0.5153019487255273
+          },
+          "shared_support": {
+            "tumor_iou": 0.43598243884956545,
+            "stroma_iou": 0.7521827386338624,
+            "background_iou": 0.5025107418336181,
+            "boundary_f1": 0.48239412137512905,
+            "region_covering": 0.5114302645263865
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.6541010241150806,
+            "stroma_iou": 0.5782749963077832,
+            "background_iou": 0.0,
+            "boundary_f1": 0.18802945450545988,
+            "region_covering": 0.6177543528024279
+          },
+          "shared_support": {
+            "tumor_iou": 0.6487201957132946,
+            "stroma_iou": 0.5769211834785605,
+            "background_iou": 0.5025107418336181,
+            "boundary_f1": 0.17749119962362114,
+            "region_covering": 0.6124164249408555
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.6334022286125089,
+            "stroma_iou": 0.6640560593569662,
+            "background_iou": 0.0,
+            "boundary_f1": 0.42052802324203364,
+            "region_covering": 0.43505036747932735
+          },
+          "shared_support": {
+            "tumor_iou": 0.6291561826024443,
+            "stroma_iou": 0.6631999478906573,
+            "background_iou": 0.5025107418336181,
+            "boundary_f1": 0.40912491071082,
+            "region_covering": 0.4316284574971524
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.7756706486932178,
+            "stroma_iou": 0.6639306330223835
+          },
+          "shared_support": {
+            "tumor_iou": 0.7689475299171525,
+            "stroma_iou": 0.661982122415179
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.3212785388127854,
+            "stroma_iou": 0.1287795029563044,
+            "background_iou": 0.7868331229251414,
+            "boundary_f1": 0.3508089510143848,
+            "region_covering": 0.2559549067793248
+          },
+          "shared_support": {
+            "tumor_iou": 0.3206392694063927,
+            "stroma_iou": 0.1287795029563044,
+            "background_iou": 0.7855787476280834,
+            "boundary_f1": 0.35014197114547496,
+            "region_covering": 0.2563823198197141
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 40991,
+        "1": 40579,
+        "3": 18880
+      }
+    },
+    {
+      "case": "validation--15",
+      "image_id": "15",
+      "figure": "case-15.webp",
+      "figure_sha256": "c8ffbb4c138db097f6bfa49ee5ae9959fd8c9e276c2e7b34cf5d9ca733f297cd",
+      "native_shape_yx": [
+        400,
+        310
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": null,
+            "stroma_iou": 0.44859771146511107,
+            "background_iou": 0.0,
+            "boundary_f1": 0.0,
+            "region_covering": 0.24310900750613273
+          },
+          "shared_support": {
+            "tumor_iou": null,
+            "stroma_iou": 0.4483733452995288,
+            "background_iou": 0.0929068070617185,
+            "boundary_f1": 0.0,
+            "region_covering": 0.24300634922595438
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.20416199237155036,
+            "background_iou": 0.0,
+            "boundary_f1": 0.0,
+            "region_covering": 0.21021637351510922
+          },
+          "shared_support": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.2037020417321068,
+            "background_iou": 0.0929068070617185,
+            "boundary_f1": 0.0,
+            "region_covering": 0.2100736341712824
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": null,
+            "stroma_iou": 0.46000673098496747,
+            "background_iou": 0.0,
+            "boundary_f1": 0.0,
+            "region_covering": 0.13162867015637308
+          },
+          "shared_support": {
+            "tumor_iou": null,
+            "stroma_iou": 0.4592775409468252,
+            "background_iou": 0.0929068070617185,
+            "boundary_f1": 0.0,
+            "region_covering": 0.13122349583535597
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": null,
+            "stroma_iou": 0.2912048463091766
+          },
+          "shared_support": {
+            "tumor_iou": null,
+            "stroma_iou": 0.2911150998429437
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.030872784384114876,
+            "background_iou": 0.8847364062931272,
+            "boundary_f1": 0.0,
+            "region_covering": 0.186776992526665
+          },
+          "shared_support": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.03083912945927754,
+            "background_iou": 0.883978052882627,
+            "boundary_f1": 0.0,
+            "region_covering": 0.18675005839498385
+          }
+        }
+      },
+      "reference_counts": {
+        "1": 89140,
+        "3": 34860
+      }
+    },
+    {
+      "case": "validation--16",
+      "image_id": "16",
+      "figure": "case-16.webp",
+      "figure_sha256": "8ae1b9b7759d916a6f854afc6352e95ca6448b3508232aa41f3334aa2a0f046e",
+      "native_shape_yx": [
+        236,
+        353
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.7299271292953603,
+            "background_iou": 0.0,
+            "boundary_f1": 0.07698893664016332,
+            "region_covering": 0.7178791818196966
+          },
+          "shared_support": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.7290914560770156,
+            "background_iou": 0.5309098824553766,
+            "boundary_f1": 0.07588818270169057,
+            "region_covering": 0.7151980842473464
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.31374606505771246,
+            "stroma_iou": 0.4063375116682224,
+            "background_iou": 0.0,
+            "boundary_f1": 0.10124072320465106,
+            "region_covering": 0.23407745749717399
+          },
+          "shared_support": {
+            "tumor_iou": 0.3115270246632849,
+            "stroma_iou": 0.40441102924015604,
+            "background_iou": 0.5309098824553766,
+            "boundary_f1": 0.10055361726648855,
+            "region_covering": 0.23176584527850363
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.08541114058355438,
+            "stroma_iou": 0.5744267264101213,
+            "background_iou": 0.0,
+            "boundary_f1": 0.17485254179655813,
+            "region_covering": 0.41501258871191726
+          },
+          "shared_support": {
+            "tumor_iou": 0.08471878316236293,
+            "stroma_iou": 0.57259127454857,
+            "background_iou": 0.5309098824553766,
+            "boundary_f1": 0.17170640770635806,
+            "region_covering": 0.41050768797659787
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.3526753434562545,
+            "stroma_iou": 0.7433411688416958
+          },
+          "shared_support": {
+            "tumor_iou": 0.35201591032363044,
+            "stroma_iou": 0.7410097603683647
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.7374310010443085,
+            "stroma_iou": 0.292916826498107,
+            "background_iou": 0.8077282795963574,
+            "boundary_f1": 0.12358043900435317,
+            "region_covering": 0.249661804681107
+          },
+          "shared_support": {
+            "tumor_iou": 0.7359701492537314,
+            "stroma_iou": 0.29281675811804736,
+            "background_iou": 0.804594330400782,
+            "boundary_f1": 0.12309367503273767,
+            "region_covering": 0.24925833544439738
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 5356,
+        "1": 59832,
+        "3": 18120
+      }
+    },
+    {
+      "case": "validation--17",
+      "image_id": "17",
+      "figure": "case-17.webp",
+      "figure_sha256": "11f420b31e04be56775f62e8d52873cc00b263624bf957e03fcfd1fef24698e5",
+      "native_shape_yx": [
+        389,
+        233
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.3287457513790606,
+            "background_iou": 0.0,
+            "boundary_f1": 0.33720074296684566,
+            "region_covering": 0.3862716068793628
+          },
+          "shared_support": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.3282999944280381,
+            "background_iou": 0.04665263157894737,
+            "boundary_f1": 0.32786593158058547,
+            "region_covering": 0.385536116406888
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.029510837727006443,
+            "stroma_iou": 0.10711188204683435,
+            "background_iou": 0.0,
+            "boundary_f1": 0.43217401028852603,
+            "region_covering": 0.592586660951117
+          },
+          "shared_support": {
+            "tumor_iou": 0.029510837727006443,
+            "stroma_iou": 0.10678664353859497,
+            "background_iou": 0.04665263157894737,
+            "boundary_f1": 0.42667335005652907,
+            "region_covering": 0.5909721449781611
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.20410263005594495,
+            "stroma_iou": 0.4592660973921071,
+            "background_iou": 0.0,
+            "boundary_f1": 0.3864662687361393,
+            "region_covering": 0.39930533970726545
+          },
+          "shared_support": {
+            "tumor_iou": 0.20384541187061925,
+            "stroma_iou": 0.45849680744672666,
+            "background_iou": 0.04665263157894737,
+            "boundary_f1": 0.38177343932775637,
+            "region_covering": 0.39903536375815607
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.03485647334504979,
+            "stroma_iou": 0.6156618906010634
+          },
+          "shared_support": {
+            "tumor_iou": 0.03485647334504979,
+            "stroma_iou": 0.6137899954934656
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.006975730271762825,
+            "stroma_iou": 0.13471760797342192,
+            "background_iou": 0.7753706376279191,
+            "boundary_f1": 0.46498920730228716,
+            "region_covering": 0.2284394785914873
+          },
+          "shared_support": {
+            "tumor_iou": 0.006975730271762825,
+            "stroma_iou": 0.13471760797342192,
+            "background_iou": 0.7761333464450781,
+            "boundary_f1": 0.46358296659093207,
+            "region_covering": 0.22802184512802437
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 13656,
+        "1": 17669,
+        "3": 59312
+      }
+    },
+    {
+      "case": "validation--18",
+      "image_id": "18",
+      "figure": "case-18.webp",
+      "figure_sha256": "8b2a1ff109d378b9c863e37d992b1037f888b10764aedf1fd7ad54d3aa6f60d1",
+      "native_shape_yx": [
+        465,
+        397
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.2580382475720249,
+            "background_iou": 0.0,
+            "boundary_f1": 0.023482033504245117,
+            "region_covering": 0.15393750042051424
+          },
+          "shared_support": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.2548238057277068,
+            "background_iou": 0.23682850858416615,
+            "boundary_f1": 0.02316362369469214,
+            "region_covering": 0.15152402926993838
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.12338425381903642,
+            "stroma_iou": 0.5130113753169327,
+            "background_iou": 0.0,
+            "boundary_f1": 0.03197202246698984,
+            "region_covering": 0.19497730276793146
+          },
+          "shared_support": {
+            "tumor_iou": 0.12439903846153846,
+            "stroma_iou": 0.507191625333025,
+            "background_iou": 0.23682850858416615,
+            "boundary_f1": 0.03157331787715196,
+            "region_covering": 0.19215485590682851
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.11418181818181818,
+            "stroma_iou": 0.7498102620515575,
+            "background_iou": 0.0,
+            "boundary_f1": 0.051844000651769924,
+            "region_covering": 0.31579604652473126
+          },
+          "shared_support": {
+            "tumor_iou": 0.11426491994177583,
+            "stroma_iou": 0.7434948359530247,
+            "background_iou": 0.23682850858416615,
+            "boundary_f1": 0.04866359001933004,
+            "region_covering": 0.3120217636288117
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.12861356932153392,
+            "stroma_iou": 0.9341156534632493
+          },
+          "shared_support": {
+            "tumor_iou": 0.1253731343283582,
+            "stroma_iou": 0.9257781054308497
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.38801261829652994,
+            "stroma_iou": 0.0047316583948363205,
+            "background_iou": 0.6557796237681239,
+            "boundary_f1": 0.026591127957479546,
+            "region_covering": 0.08017025865690673
+          },
+          "shared_support": {
+            "tumor_iou": 0.38801261829652994,
+            "stroma_iou": 0.004628796255818139,
+            "background_iou": 0.6555257979886314,
+            "boundary_f1": 0.02639480405109706,
+            "region_covering": 0.07939395364533605
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 1373,
+        "1": 116661,
+        "3": 66571
+      }
+    },
+    {
+      "case": "validation--19",
+      "image_id": "19",
+      "figure": "case-19.webp",
+      "figure_sha256": "8276a2effd66cb41115647f1d13aead51e2c9af3704c7dc77bda47b2646aa617",
+      "native_shape_yx": [
+        337,
+        227
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.8150143875662103,
+            "stroma_iou": 0.5713474371716598,
+            "background_iou": 0.0,
+            "boundary_f1": 0.3825170909726352,
+            "region_covering": 0.6323810358297263
+          },
+          "shared_support": {
+            "tumor_iou": 0.8118252964571764,
+            "stroma_iou": 0.5717201442946649,
+            "background_iou": 0.06488980010251154,
+            "boundary_f1": 0.3664829786667463,
+            "region_covering": 0.6295432482158299
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.789838983199007,
+            "stroma_iou": 0.5035346507097134,
+            "background_iou": 0.0,
+            "boundary_f1": 0.3343536487158208,
+            "region_covering": 0.6987996550589282
+          },
+          "shared_support": {
+            "tumor_iou": 0.7863424185737513,
+            "stroma_iou": 0.5039356891642941,
+            "background_iou": 0.06488980010251154,
+            "boundary_f1": 0.3280041977070042,
+            "region_covering": 0.6949120401563676
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.6259029724075317,
+            "stroma_iou": 0.49661121380160195,
+            "background_iou": 0.0,
+            "boundary_f1": 0.28925258202261545,
+            "region_covering": 0.3299493081683565
+          },
+          "shared_support": {
+            "tumor_iou": 0.6238108396163108,
+            "stroma_iou": 0.4973168113962338,
+            "background_iou": 0.06488980010251154,
+            "boundary_f1": 0.2894506310002602,
+            "region_covering": 0.32900478947811934
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.8018955002472392,
+            "stroma_iou": 0.4536615442989945
+          },
+          "shared_support": {
+            "tumor_iou": 0.7987473215757376,
+            "stroma_iou": 0.45405688195567395
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.8020506382088303,
+            "stroma_iou": 0.12155078627237662,
+            "background_iou": 0.6439234281700035,
+            "boundary_f1": 0.40362740680787124,
+            "region_covering": 0.5737261595221359
+          },
+          "shared_support": {
+            "tumor_iou": 0.8002244668911336,
+            "stroma_iou": 0.12155078627237662,
+            "background_iou": 0.6393824391926859,
+            "boundary_f1": 0.4030489642721114,
+            "region_covering": 0.5718231972264503
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 49969,
+        "1": 17073,
+        "3": 9457
+      }
+    },
+    {
+      "case": "validation--20",
+      "image_id": "20",
+      "figure": "case-20.webp",
+      "figure_sha256": "60d1962f586d713721743b70c02822d83423a01412b690173d5ac7d879da8ace",
+      "native_shape_yx": [
+        493,
+        243
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.7307495494693751,
+            "background_iou": 0.0,
+            "boundary_f1": 0.09445988098524945,
+            "region_covering": 0.6215520633440954
+          },
+          "shared_support": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.7243873667341806,
+            "background_iou": 0.23850583561728206,
+            "boundary_f1": 0.11816134587362566,
+            "region_covering": 0.6160324229868741
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.47973170020414113,
+            "stroma_iou": 0.8024152162994345,
+            "background_iou": 0.0,
+            "boundary_f1": 0.47157243895798184,
+            "region_covering": 0.6387670614431776
+          },
+          "shared_support": {
+            "tumor_iou": 0.4801430865819828,
+            "stroma_iou": 0.7958363370251437,
+            "background_iou": 0.23850583561728206,
+            "boundary_f1": 0.45545628267780885,
+            "region_covering": 0.6335315220386389
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.3735627061235404,
+            "stroma_iou": 0.6648151539197136,
+            "background_iou": 0.0,
+            "boundary_f1": 0.3674550660663774,
+            "region_covering": 0.5005006609389143
+          },
+          "shared_support": {
+            "tumor_iou": 0.37350686396862187,
+            "stroma_iou": 0.6610842049570632,
+            "background_iou": 0.23850583561728206,
+            "boundary_f1": 0.3541803442037785,
+            "region_covering": 0.4963677488609524
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.5509715819571687,
+            "stroma_iou": 0.8077117755522615
+          },
+          "shared_support": {
+            "tumor_iou": 0.5520491803278689,
+            "stroma_iou": 0.8005860858869072
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.700174641983933,
+            "stroma_iou": 0.34905470860025445,
+            "background_iou": 0.5810081272188481,
+            "boundary_f1": 0.1365590799160906,
+            "region_covering": 0.2589932244733754
+          },
+          "shared_support": {
+            "tumor_iou": 0.7002377954958735,
+            "stroma_iou": 0.3480502667351175,
+            "background_iou": 0.5835222535870471,
+            "boundary_f1": 0.13804772279136934,
+            "region_covering": 0.2578219947953939
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 10611,
+        "1": 44707,
+        "3": 64481
+      }
+    },
+    {
+      "case": "validation--21",
+      "image_id": "21",
+      "figure": "case-21.webp",
+      "figure_sha256": "e56620007c602cfb734dbe18d3fe7ad9d73fed74fab0697caae4a3f72fc10bfd",
+      "native_shape_yx": [
+        237,
+        280
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.3929888625159759,
+            "stroma_iou": 0.4071246819338422,
+            "background_iou": 0.0,
+            "boundary_f1": 0.5167263072711912,
+            "region_covering": 0.2796162911947602
+          },
+          "shared_support": {
+            "tumor_iou": 0.3887448416900997,
+            "stroma_iou": 0.40472884363187533,
+            "background_iou": 0.4523656498739309,
+            "boundary_f1": 0.49437520406695207,
+            "region_covering": 0.2740792751498706
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.4644202668920108,
+            "stroma_iou": 0.4508270468544536,
+            "background_iou": 0.0,
+            "boundary_f1": 0.5358897993253221,
+            "region_covering": 0.4049310330021684
+          },
+          "shared_support": {
+            "tumor_iou": 0.4595879556259905,
+            "stroma_iou": 0.45112729795352063,
+            "background_iou": 0.4523656498739309,
+            "boundary_f1": 0.5265184513222635,
+            "region_covering": 0.3992479998707314
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.05963302752293578,
+            "stroma_iou": 0.5282693938109368,
+            "background_iou": 0.0,
+            "boundary_f1": 0.45571072386095945,
+            "region_covering": 0.2959370150474214
+          },
+          "shared_support": {
+            "tumor_iou": 0.05907700861829302,
+            "stroma_iou": 0.5278087649402391,
+            "background_iou": 0.4523656498739309,
+            "boundary_f1": 0.4466272681314861,
+            "region_covering": 0.29323496538867955
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.459996112982638,
+            "stroma_iou": 0.3417616149003694
+          },
+          "shared_support": {
+            "tumor_iou": 0.45427709475459827,
+            "stroma_iou": 0.3419939419260497
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.655536028119508,
+            "stroma_iou": 0.02390079799718354,
+            "background_iou": 0.765726579673542,
+            "boundary_f1": 0.5232010102483906,
+            "region_covering": 0.3121495086974989
+          },
+          "shared_support": {
+            "tumor_iou": 0.6490369917456436,
+            "stroma_iou": 0.02390079799718354,
+            "background_iou": 0.7609834558823529,
+            "boundary_f1": 0.5192419250328683,
+            "region_covering": 0.3079779596906552
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 21518,
+        "1": 25177,
+        "3": 19665
+      }
+    },
+    {
+      "case": "validation--22",
+      "image_id": "22",
+      "figure": "case-22.webp",
+      "figure_sha256": "16459d81ec96ab2e967df15f84d5de571120d9c9537e889e56430084257213a7",
+      "native_shape_yx": [
+        341,
+        245
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.6908399098083428,
+            "stroma_iou": 0.7455296788511083,
+            "background_iou": 0.0,
+            "boundary_f1": 0.628346319750547,
+            "region_covering": 0.5115497520037364
+          },
+          "shared_support": {
+            "tumor_iou": 0.6805164054572105,
+            "stroma_iou": 0.7455962667623907,
+            "background_iou": 0.309613620144765,
+            "boundary_f1": 0.5774112609903648,
+            "region_covering": 0.5067775643700994
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.649860143175461,
+            "stroma_iou": 0.5889177054574862,
+            "background_iou": 0.0,
+            "boundary_f1": 0.4559867872436027,
+            "region_covering": 0.4916451232685359
+          },
+          "shared_support": {
+            "tumor_iou": 0.6410049583639771,
+            "stroma_iou": 0.5893924512417567,
+            "background_iou": 0.309613620144765,
+            "boundary_f1": 0.44059644425810657,
+            "region_covering": 0.48703344577672686
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.3000609198903442,
+            "stroma_iou": 0.6253729513221891,
+            "background_iou": 0.0,
+            "boundary_f1": 0.31442965403271955,
+            "region_covering": 0.4047510325066998
+          },
+          "shared_support": {
+            "tumor_iou": 0.29597928723728295,
+            "stroma_iou": 0.6273718872195925,
+            "background_iou": 0.309613620144765,
+            "boundary_f1": 0.31712168402769514,
+            "region_covering": 0.40350628961328083
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.5384176002358491,
+            "stroma_iou": 0.41345809017702867
+          },
+          "shared_support": {
+            "tumor_iou": 0.5343704441860895,
+            "stroma_iou": 0.41467058495181497
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.4569985656227588,
+            "stroma_iou": 0.08084733382030679,
+            "background_iou": 0.645560099656842,
+            "boundary_f1": 0.48405580495306055,
+            "region_covering": 0.18833132380718148
+          },
+          "shared_support": {
+            "tumor_iou": 0.45511594549366485,
+            "stroma_iou": 0.08078889700511323,
+            "background_iou": 0.6306784390868749,
+            "boundary_f1": 0.48120492889188127,
+            "region_covering": 0.18940750135388093
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 32688,
+        "1": 32022,
+        "3": 18835
+      }
+    },
+    {
+      "case": "validation--23",
+      "image_id": "23",
+      "figure": "case-23.webp",
+      "figure_sha256": "f576a57065aeec616be0ee26558e331963f54d88f8169dc9bc3159c600099659",
+      "native_shape_yx": [
+        474,
+        217
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.1307378666315928,
+            "stroma_iou": 0.25856586516131336,
+            "background_iou": 0.0,
+            "boundary_f1": 0.17366533579688495,
+            "region_covering": 0.34708755927899987
+          },
+          "shared_support": {
+            "tumor_iou": 0.1307378666315928,
+            "stroma_iou": 0.25856586516131336,
+            "background_iou": 0.09379525878496836,
+            "boundary_f1": 0.1602724005196171,
+            "region_covering": 0.34420380436362086
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.4890262261310514,
+            "stroma_iou": 0.7811904844350566,
+            "background_iou": 0.0,
+            "boundary_f1": 0.3005747793308529,
+            "region_covering": 0.5380849409852599
+          },
+          "shared_support": {
+            "tumor_iou": 0.48591577195832175,
+            "stroma_iou": 0.7810833275611276,
+            "background_iou": 0.09379525878496836,
+            "boundary_f1": 0.2903456452521953,
+            "region_covering": 0.536997464181659
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.4382705624049992,
+            "stroma_iou": 0.6084808446966489,
+            "background_iou": 0.0,
+            "boundary_f1": 0.2610368199303902,
+            "region_covering": 0.543345969244392
+          },
+          "shared_support": {
+            "tumor_iou": 0.437806113832123,
+            "stroma_iou": 0.6084022699680962,
+            "background_iou": 0.09379525878496836,
+            "boundary_f1": 0.25247183881405744,
+            "region_covering": 0.5426541298306642
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.6262438042708605,
+            "stroma_iou": 0.6309228135323479
+          },
+          "shared_support": {
+            "tumor_iou": 0.6242910447761194,
+            "stroma_iou": 0.6307269174165843
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.7120814182534472,
+            "stroma_iou": 0.3237321081463156,
+            "background_iou": 0.6606318903877989,
+            "boundary_f1": 0.25031489532143814,
+            "region_covering": 0.4203462271760945
+          },
+          "shared_support": {
+            "tumor_iou": 0.7094550229809586,
+            "stroma_iou": 0.3233433468810744,
+            "background_iou": 0.65986083778465,
+            "boundary_f1": 0.24633538811722602,
+            "region_covering": 0.4190972718866216
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 22589,
+        "1": 27989,
+        "3": 52280
+      }
+    },
+    {
+      "case": "validation--24",
+      "image_id": "24",
+      "figure": "case-24.webp",
+      "figure_sha256": "24113414a95d2ee080a9a0e7c2c9a56eb0b34d75b690c39240e54aedc728b860",
+      "native_shape_yx": [
+        498,
+        327
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.7688193585477605,
+            "stroma_iou": 0.8503408418846429,
+            "background_iou": 0.0,
+            "boundary_f1": 0.6194652452603993,
+            "region_covering": 0.7015134754640977
+          },
+          "shared_support": {
+            "tumor_iou": 0.7685456320156173,
+            "stroma_iou": 0.8500560305470242,
+            "background_iou": 0.14885343397952766,
+            "boundary_f1": 0.6196313169162886,
+            "region_covering": 0.7011529706427775
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.7925466442083441,
+            "stroma_iou": 0.7565459787847514,
+            "background_iou": 0.0,
+            "boundary_f1": 0.2809344341513522,
+            "region_covering": 0.7261643636974242
+          },
+          "shared_support": {
+            "tumor_iou": 0.7923317506360499,
+            "stroma_iou": 0.7562374320399196,
+            "background_iou": 0.14885343397952766,
+            "boundary_f1": 0.28511873959746037,
+            "region_covering": 0.7257188626004805
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.6958000228881587,
+            "stroma_iou": 0.5783842010771992,
+            "background_iou": 0.0,
+            "boundary_f1": 0.33350754420082224,
+            "region_covering": 0.5076916177298392
+          },
+          "shared_support": {
+            "tumor_iou": 0.695931022070974,
+            "stroma_iou": 0.5781585021800462,
+            "background_iou": 0.14885343397952766,
+            "boundary_f1": 0.3358817320205118,
+            "region_covering": 0.5075698311557979
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.6711435259191596,
+            "stroma_iou": 0.6125056957044033
+          },
+          "shared_support": {
+            "tumor_iou": 0.6706636403865645,
+            "stroma_iou": 0.612174993957391
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.0015047619047619048,
+            "stroma_iou": 0.10009520202278706,
+            "background_iou": 0.7751666899799505,
+            "boundary_f1": 0.2798156414712816,
+            "region_covering": 0.2997448973663365
+          },
+          "shared_support": {
+            "tumor_iou": 0.0015047619047619048,
+            "stroma_iou": 0.10009520202278706,
+            "background_iou": 0.7750174784432533,
+            "boundary_f1": 0.27964828743689457,
+            "region_covering": 0.29973985577371254
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 52476,
+        "1": 93000,
+        "3": 17370
+      }
+    },
+    {
+      "case": "validation--25",
+      "image_id": "25",
+      "figure": "case-25.webp",
+      "figure_sha256": "b16bc17c4597ca8d0acd585dcd86bdb21dbfa6f787795baa21652fcfe978a3d4",
+      "native_shape_yx": [
+        206,
+        248
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.842682425812976,
+            "stroma_iou": 0.7491243789199316,
+            "background_iou": 0.0,
+            "boundary_f1": 0.38176542395895213,
+            "region_covering": 0.8218908581823663
+          },
+          "shared_support": {
+            "tumor_iou": 0.8404702461839901,
+            "stroma_iou": 0.7465178789606581,
+            "background_iou": 0.5405639495717448,
+            "boundary_f1": 0.34486117876278616,
+            "region_covering": 0.8182886013346822
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.9286217781727911,
+            "stroma_iou": 0.5382371327359866,
+            "background_iou": 0.0,
+            "boundary_f1": 0.27114428070589924,
+            "region_covering": 0.8205712040966536
+          },
+          "shared_support": {
+            "tumor_iou": 0.9265278586979854,
+            "stroma_iou": 0.537612002500521,
+            "background_iou": 0.5405639495717448,
+            "boundary_f1": 0.2591558442553022,
+            "region_covering": 0.8175481222407714
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.7340395346637661,
+            "stroma_iou": 0.5572856908703491,
+            "background_iou": 0.0,
+            "boundary_f1": 0.21586502215339134,
+            "region_covering": 0.623247968589178
+          },
+          "shared_support": {
+            "tumor_iou": 0.732999148775182,
+            "stroma_iou": 0.55720373709228,
+            "background_iou": 0.5405639495717448,
+            "boundary_f1": 0.21314323490802384,
+            "region_covering": 0.6219466639393731
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.76743388834476,
+            "stroma_iou": 0.7312928454185575
+          },
+          "shared_support": {
+            "tumor_iou": 0.7654626543814939,
+            "stroma_iou": 0.7282031476296225
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.43437767288624196,
+            "stroma_iou": 0.0901178464145421,
+            "background_iou": 0.8266824484274603,
+            "boundary_f1": 0.13850180432304615,
+            "region_covering": 0.3668941106725775
+          },
+          "shared_support": {
+            "tumor_iou": 0.43428263693097224,
+            "stroma_iou": 0.0901178464145421,
+            "background_iou": 0.8261932872322483,
+            "boundary_f1": 0.14013125829737202,
+            "region_covering": 0.3668066641067518
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 31567,
+        "1": 9273,
+        "3": 10248
+      }
+    },
+    {
+      "case": "validation--26",
+      "image_id": "26",
+      "figure": "case-26.webp",
+      "figure_sha256": "561c5b6fa235cb9f8f4c2dd1c05ebfac1886e4295a314e84b17206bb1beb1345",
+      "native_shape_yx": [
+        419,
+        472
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.8856338237617689,
+            "stroma_iou": 0.7659850290636893,
+            "background_iou": 0.0,
+            "boundary_f1": 0.654771464381861,
+            "region_covering": 0.8484440400219757
+          },
+          "shared_support": {
+            "tumor_iou": 0.8802245499242516,
+            "stroma_iou": 0.7659850290636893,
+            "background_iou": 0.5883590074716355,
+            "boundary_f1": 0.5752435457961808,
+            "region_covering": 0.842662783439408
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.8236656115154508,
+            "stroma_iou": 0.454325772801225,
+            "background_iou": 0.0,
+            "boundary_f1": 0.3147609703964222,
+            "region_covering": 0.7166958084879
+          },
+          "shared_support": {
+            "tumor_iou": 0.8186138389423661,
+            "stroma_iou": 0.45435838537554135,
+            "background_iou": 0.5883590074716355,
+            "boundary_f1": 0.2816382238491089,
+            "region_covering": 0.7109870855901019
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.7893571403465608,
+            "stroma_iou": 0.4315068493150685,
+            "background_iou": 0.0,
+            "boundary_f1": 0.3903584073623526,
+            "region_covering": 0.6372525106204454
+          },
+          "shared_support": {
+            "tumor_iou": 0.7859565568872798,
+            "stroma_iou": 0.4316131198925333,
+            "background_iou": 0.5883590074716355,
+            "boundary_f1": 0.37350175511207906,
+            "region_covering": 0.6337153665816844
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.8386210719955649,
+            "stroma_iou": 0.43445732912948215
+          },
+          "shared_support": {
+            "tumor_iou": 0.8331527354282691,
+            "stroma_iou": 0.435917141784776
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 1.9384728710721694e-05,
+            "stroma_iou": 0.1561730974601848,
+            "background_iou": 0.8598019329435628,
+            "boundary_f1": 0.47339413594846047,
+            "region_covering": 0.4474670683065133
+          },
+          "shared_support": {
+            "tumor_iou": 1.9384728710721694e-05,
+            "stroma_iou": 0.1561730974601848,
+            "background_iou": 0.8596124070576625,
+            "boundary_f1": 0.47244916136460896,
+            "region_covering": 0.4471253934447621
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 103174,
+        "1": 41053,
+        "3": 53541
+      }
+    },
+    {
+      "case": "validation--27",
+      "image_id": "27",
+      "figure": "case-27.webp",
+      "figure_sha256": "6f55e35decb00b2f8b247b4a1d01a76d48e517febb30358704cb309d92bef2aa",
+      "native_shape_yx": [
+        242,
+        299
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.8839220589767636,
+            "stroma_iou": 0.7993679942761746,
+            "background_iou": 0.0,
+            "boundary_f1": 0.6934625492378985,
+            "region_covering": 0.8603045374203186
+          },
+          "shared_support": {
+            "tumor_iou": 0.8766020631447328,
+            "stroma_iou": 0.7954924874791319,
+            "background_iou": 0.6612801475226865,
+            "boundary_f1": 0.5689885307129994,
+            "region_covering": 0.8500210996816118
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.8661542994647154,
+            "stroma_iou": 0.48505091121343796,
+            "background_iou": 0.0,
+            "boundary_f1": 0.34030173441648254,
+            "region_covering": 0.7040845243999541
+          },
+          "shared_support": {
+            "tumor_iou": 0.8595211786372008,
+            "stroma_iou": 0.48433750567481676,
+            "background_iou": 0.6612801475226865,
+            "boundary_f1": 0.3045166797069493,
+            "region_covering": 0.6964501274573416
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.7960966782990824,
+            "stroma_iou": 0.45995819647656017,
+            "background_iou": 0.0,
+            "boundary_f1": 0.4378652230328318,
+            "region_covering": 0.3749115327336307
+          },
+          "shared_support": {
+            "tumor_iou": 0.7922192064107535,
+            "stroma_iou": 0.45962250627165213,
+            "background_iou": 0.6612801475226865,
+            "boundary_f1": 0.4133148704239705,
+            "region_covering": 0.37155353867291996
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.8804858058266896,
+            "stroma_iou": 0.4535136333407227
+          },
+          "shared_support": {
+            "tumor_iou": 0.8726491267297707,
+            "stroma_iou": 0.45159142362498333
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.6780532205386304,
+            "stroma_iou": 0.04892535668360786,
+            "background_iou": 0.8476460427831171,
+            "boundary_f1": 0.46512767053956855,
+            "region_covering": 0.30834370422523716
+          },
+          "shared_support": {
+            "tumor_iou": 0.6774642608555977,
+            "stroma_iou": 0.04892535668360786,
+            "background_iou": 0.8449020991356501,
+            "boundary_f1": 0.46218512290067043,
+            "region_covering": 0.30796726850695805
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 36880,
+        "1": 15262,
+        "3": 20216
+      }
+    },
+    {
+      "case": "validation--28",
+      "image_id": "28",
+      "figure": "case-28.webp",
+      "figure_sha256": "8a04591e3c838decd25e056f11e9dc0d5c57585dac92d6c2485be2d9eb34ad37",
+      "native_shape_yx": [
+        341,
+        339
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.8624506607173502,
+            "background_iou": 0.0,
+            "boundary_f1": 0.21920983524786172,
+            "region_covering": 0.7960883255844591
+          },
+          "shared_support": {
+            "tumor_iou": 0.0,
+            "stroma_iou": 0.8624506607173502,
+            "background_iou": 0.4746756578465147,
+            "boundary_f1": 0.19006880601329865,
+            "region_covering": 0.7934328753048436
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.04325943678849611,
+            "stroma_iou": 0.2154603997229135,
+            "background_iou": 0.0,
+            "boundary_f1": 0.1620109164136514,
+            "region_covering": 0.4027712311949556
+          },
+          "shared_support": {
+            "tumor_iou": 0.03674855202716197,
+            "stroma_iou": 0.21552952046093238,
+            "background_iou": 0.4746756578465147,
+            "boundary_f1": 0.16076791514689603,
+            "region_covering": 0.4027595197772916
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.6095534085534761,
+            "stroma_iou": 0.41077160417029535,
+            "background_iou": 0.0,
+            "boundary_f1": 0.3284382320169719,
+            "region_covering": 0.3213500761593197
+          },
+          "shared_support": {
+            "tumor_iou": 0.6020539152759948,
+            "stroma_iou": 0.41077160417029535,
+            "background_iou": 0.4746756578465147,
+            "boundary_f1": 0.31976574273090214,
+            "region_covering": 0.3191881931558095
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.06892275691027641,
+            "stroma_iou": 0.22884504145510637
+          },
+          "shared_support": {
+            "tumor_iou": 0.06392255690227609,
+            "stroma_iou": 0.22884504145510637
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.6146688766669178,
+            "stroma_iou": 0.017508321936366218,
+            "background_iou": 0.5520926852208115,
+            "boundary_f1": 0.22039695436221216,
+            "region_covering": 0.25843914294557896
+          },
+          "shared_support": {
+            "tumor_iou": 0.6070217735252016,
+            "stroma_iou": 0.017508321936366218,
+            "background_iou": 0.5474696956853438,
+            "boundary_f1": 0.21708613164673582,
+            "region_covering": 0.25627129326992953
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 24990,
+        "1": 77201,
+        "3": 13408
+      }
+    },
+    {
+      "case": "validation--29",
+      "image_id": "29",
+      "figure": "case-29.webp",
+      "figure_sha256": "1b88b342efe45fbdbb86d7940597086fff1fab54bebf66f6ca42e1e14abf1073",
+      "native_shape_yx": [
+        239,
+        474
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.7589616810877626,
+            "stroma_iou": 0.3815710172102056,
+            "background_iou": 0.0,
+            "boundary_f1": 0.09660987177235202,
+            "region_covering": 0.46276071603927593
+          },
+          "shared_support": {
+            "tumor_iou": 0.7587081233558366,
+            "stroma_iou": 0.3815710172102056,
+            "background_iou": 0.05096763430096764,
+            "boundary_f1": 0.0954364046503557,
+            "region_covering": 0.46269480587541423
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.8034232255612105,
+            "stroma_iou": 0.010649770827716365,
+            "background_iou": 0.0,
+            "boundary_f1": 0.13680251725328793,
+            "region_covering": 0.7007934178437127
+          },
+          "shared_support": {
+            "tumor_iou": 0.8028741579203007,
+            "stroma_iou": 0.010649770827716365,
+            "background_iou": 0.05096763430096764,
+            "boundary_f1": 0.1357678241388178,
+            "region_covering": 0.7001276957664864
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.8695445669956198,
+            "stroma_iou": 0.10755043227665706,
+            "background_iou": 0.0,
+            "boundary_f1": 0.15304573276585606,
+            "region_covering": 0.7954367401838738
+          },
+          "shared_support": {
+            "tumor_iou": 0.8690379439548261,
+            "stroma_iou": 0.10755043227665706,
+            "background_iou": 0.05096763430096764,
+            "boundary_f1": 0.15154566103635192,
+            "region_covering": 0.7947917710429607
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.8365895856190396,
+            "stroma_iou": 0.0
+          },
+          "shared_support": {
+            "tumor_iou": 0.8363469491096295,
+            "stroma_iou": 0.0
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.7245346404952566,
+            "stroma_iou": 0.003972602739726027,
+            "background_iou": 0.5667151162790698,
+            "boundary_f1": 0.09348619445460231,
+            "region_covering": 0.42964233615158587
+          },
+          "shared_support": {
+            "tumor_iou": 0.7245346404952566,
+            "stroma_iou": 0.003972602739726027,
+            "background_iou": 0.5664406779661016,
+            "boundary_f1": 0.09350793998062241,
+            "region_covering": 0.42964222536987906
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 94653,
+        "1": 6702,
+        "3": 11931
+      }
+    },
+    {
+      "case": "validation--30",
+      "image_id": "30",
+      "figure": "case-30.webp",
+      "figure_sha256": "681c1ac67fc8b034fba64d42128966dfbb81da5ca6a0fe34e508c9b84250256d",
+      "native_shape_yx": [
+        322,
+        486
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.6220072051675966,
+            "stroma_iou": 0.29527995565059,
+            "background_iou": 0.0,
+            "boundary_f1": 0.4307924856223936,
+            "region_covering": 0.39572441496746724
+          },
+          "shared_support": {
+            "tumor_iou": 0.6203811012586583,
+            "stroma_iou": 0.29527995565059,
+            "background_iou": 0.2251969060149048,
+            "boundary_f1": 0.41575097360352614,
+            "region_covering": 0.3943391561690589
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.851751905369521,
+            "stroma_iou": 0.05113826982985861,
+            "background_iou": 0.0,
+            "boundary_f1": 0.3544485636316643,
+            "region_covering": 0.7711369996925777
+          },
+          "shared_support": {
+            "tumor_iou": 0.8500879401317377,
+            "stroma_iou": 0.050819829322082656,
+            "background_iou": 0.2251969060149048,
+            "boundary_f1": 0.3450569716932177,
+            "region_covering": 0.769162821151968
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.8249265916754525,
+            "stroma_iou": 0.2880046969560112,
+            "background_iou": 0.0,
+            "boundary_f1": 0.3798582614604978,
+            "region_covering": 0.7132076181072216
+          },
+          "shared_support": {
+            "tumor_iou": 0.8235309493935592,
+            "stroma_iou": 0.28796024395753334,
+            "background_iou": 0.2251969060149048,
+            "boundary_f1": 0.37328769248651983,
+            "region_covering": 0.711762101458329
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.8741687481753009,
+            "stroma_iou": 0.07182633317602642
+          },
+          "shared_support": {
+            "tumor_iou": 0.8721602660286305,
+            "stroma_iou": 0.07146228641555745
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.7924728498314817,
+            "stroma_iou": 0.09860080758756691,
+            "background_iou": 0.7334265887709482,
+            "boundary_f1": 0.3776375450921135,
+            "region_covering": 0.6471401417732346
+          },
+          "shared_support": {
+            "tumor_iou": 0.7922588583554755,
+            "stroma_iou": 0.09860080758756691,
+            "background_iou": 0.7324078637533541,
+            "boundary_f1": 0.3769082834221619,
+            "region_covering": 0.6469225479015666
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 108303,
+        "1": 20152,
+        "3": 28037
+      }
+    },
+    {
+      "case": "validation--31",
+      "image_id": "31",
+      "figure": "case-31.webp",
+      "figure_sha256": "65e54a8e67fa9e0bc6eae7d41f7d684f4aa06544abe18e87c2a1ba9d957f391e",
+      "native_shape_yx": [
+        3612,
+        2427
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.6684100159319565,
+            "stroma_iou": 0.6475901786682708,
+            "background_iou": 0.0,
+            "boundary_f1": 0.395721987076647,
+            "region_covering": 0.3681373110379853
+          },
+          "shared_support": {
+            "tumor_iou": 0.667211593078511,
+            "stroma_iou": 0.6473994211751282,
+            "background_iou": 0.4626468200169924,
+            "boundary_f1": 0.38078663381774963,
+            "region_covering": 0.36262374021895954
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.514927718356235,
+            "stroma_iou": 0.47438258926215976,
+            "background_iou": 0.0,
+            "boundary_f1": 0.2986685975748066,
+            "region_covering": 0.2569265047168242
+          },
+          "shared_support": {
+            "tumor_iou": 0.5138472884242589,
+            "stroma_iou": 0.4742182556751875,
+            "background_iou": 0.4626468200169924,
+            "boundary_f1": 0.29425657912957615,
+            "region_covering": 0.25463115204898323
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.32493887064408655,
+            "stroma_iou": 0.631124936991669,
+            "background_iou": 0.0,
+            "boundary_f1": 0.37101462800248247,
+            "region_covering": 0.3663399452314737
+          },
+          "shared_support": {
+            "tumor_iou": 0.3247533832350171,
+            "stroma_iou": 0.6310268080527542,
+            "background_iou": 0.4626468200169924,
+            "boundary_f1": 0.36240512227621524,
+            "region_covering": 0.35577292515888576
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.463858433290592,
+            "stroma_iou": 0.3728756255263031
+          },
+          "shared_support": {
+            "tumor_iou": 0.4624643486918936,
+            "stroma_iou": 0.37281754967332564
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.33928329971140225,
+            "stroma_iou": 0.031695335387920985,
+            "background_iou": 0.868676403957818,
+            "boundary_f1": 0.33916384294465646,
+            "region_covering": 0.34673351485597076
+          },
+          "shared_support": {
+            "tumor_iou": 0.33907402837810646,
+            "stroma_iou": 0.03168515456190694,
+            "background_iou": 0.8721330299426201,
+            "boundary_f1": 0.3384845623339153,
+            "region_covering": 0.3462072775408907
+          }
+        },
+        "kodama_bora": {
+          "native": {
+            "boundary_f1": 0.2542181586003965,
+            "region_covering": 0.4414418376565996
+          },
+          "shared_support": {
+            "boundary_f1": 0.2542181586003965,
+            "region_covering": 0.4414418376565996
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 2002750,
+        "1": 2055711,
+        "2": 425279,
+        "3": 4282584
+      }
+    },
+    {
+      "case": "validation--32",
+      "image_id": "32",
+      "figure": "case-32.webp",
+      "figure_sha256": "c3a35b53d95703a6cfbdf6427b157f37079c547df6f31595d5c55be583230d48",
+      "native_shape_yx": [
+        3326,
+        3198
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.8681663353026354,
+            "stroma_iou": 0.5015211269097968,
+            "background_iou": 0.0,
+            "boundary_f1": 0.31655288664932857,
+            "region_covering": 0.6929998441777734
+          },
+          "shared_support": {
+            "tumor_iou": 0.86781962543081,
+            "stroma_iou": 0.5014947145251991,
+            "background_iou": 0.005112868434403089,
+            "boundary_f1": 0.2921424738821955,
+            "region_covering": 0.6916992590743816
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.8576893689835657,
+            "stroma_iou": 0.3969215195409222,
+            "background_iou": 0.0,
+            "boundary_f1": 0.22354817669258095,
+            "region_covering": 0.6908932430734367
+          },
+          "shared_support": {
+            "tumor_iou": 0.8573659688670743,
+            "stroma_iou": 0.3968990060866878,
+            "background_iou": 0.005112868434403089,
+            "boundary_f1": 0.22119597645144434,
+            "region_covering": 0.6895935353052403
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.5607678775522291,
+            "stroma_iou": 0.3045310032603728,
+            "background_iou": 0.0,
+            "boundary_f1": 0.21351853280276684,
+            "region_covering": 0.27225237852376344
+          },
+          "shared_support": {
+            "tumor_iou": 0.560552537618353,
+            "stroma_iou": 0.30457735674937536,
+            "background_iou": 0.005112868434403089,
+            "boundary_f1": 0.21280686383395137,
+            "region_covering": 0.2716683889532864
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.8084462058714217,
+            "stroma_iou": 0.2318915058320672
+          },
+          "shared_support": {
+            "tumor_iou": 0.808162708865517,
+            "stroma_iou": 0.23188001840949202
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.7657063465387425,
+            "stroma_iou": 0.07077956823546536,
+            "background_iou": 0.34196229623751734,
+            "boundary_f1": 0.29515878898181214,
+            "region_covering": 0.5183882743665167
+          },
+          "shared_support": {
+            "tumor_iou": 0.7655917724657806,
+            "stroma_iou": 0.07077956823546536,
+            "background_iou": 0.34222481796221355,
+            "boundary_f1": 0.2946976287595906,
+            "region_covering": 0.5179515136372832
+          }
+        },
+        "kodama_bora": {
+          "native": {
+            "boundary_f1": 0.12640756266872266,
+            "region_covering": 0.3783128616062902
+          },
+          "shared_support": {
+            "boundary_f1": 0.12640756266872266,
+            "region_covering": 0.3783128616062902
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 7774790,
+        "1": 1832389,
+        "3": 1029369
+      }
+    },
+    {
+      "case": "validation--33",
+      "image_id": "33",
+      "figure": "case-33.webp",
+      "figure_sha256": "5c7a1dd69de0b853f665a5a3b74a6f118fc8aa8146539b4c3117d93a91d9e4e5",
+      "native_shape_yx": [
+        1264,
+        2801
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.6013903564212179,
+            "stroma_iou": 0.6426268216948186,
+            "background_iou": 0.0,
+            "boundary_f1": 0.30448840235610836,
+            "region_covering": 0.29866069594747424
+          },
+          "shared_support": {
+            "tumor_iou": 0.6012118440413843,
+            "stroma_iou": 0.6426277572030838,
+            "background_iou": 0.19362155299578565,
+            "boundary_f1": 0.3024463771633869,
+            "region_covering": 0.2978514316386779
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.724336668581619,
+            "stroma_iou": 0.26032373916822166,
+            "background_iou": 0.0,
+            "boundary_f1": 0.15160083359969712,
+            "region_covering": 0.21064756290000633
+          },
+          "shared_support": {
+            "tumor_iou": 0.7242233173717741,
+            "stroma_iou": 0.26032457096115563,
+            "background_iou": 0.19362155299578565,
+            "boundary_f1": 0.1510543423800498,
+            "region_covering": 0.20985249650616056
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.6456836994090609,
+            "stroma_iou": 0.3049417325876004,
+            "background_iou": 0.0,
+            "boundary_f1": 0.17662931340963092,
+            "region_covering": 0.22410443541874472
+          },
+          "shared_support": {
+            "tumor_iou": 0.6455862224761804,
+            "stroma_iou": 0.3049440148374093,
+            "background_iou": 0.19362155299578565,
+            "boundary_f1": 0.1758409238991789,
+            "region_covering": 0.21895797123899055
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.6262368809570396,
+            "stroma_iou": 0.08985638017896082
+          },
+          "shared_support": {
+            "tumor_iou": 0.6260785142911571,
+            "stroma_iou": 0.08985877321469135
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.0027060987283284085,
+            "stroma_iou": 0.036557183092362056,
+            "background_iou": 0.7690764724323054,
+            "boundary_f1": 0.2793042288446765,
+            "region_covering": 0.3278923931054166
+          },
+          "shared_support": {
+            "tumor_iou": 0.0027034422177966725,
+            "stroma_iou": 0.036557183092362056,
+            "background_iou": 0.770937063416138,
+            "boundary_f1": 0.2791189260744982,
+            "region_covering": 0.3276037228832723
+          }
+        },
+        "kodama_bora": {
+          "native": {
+            "boundary_f1": 0.16371280763825016,
+            "region_covering": 0.39888624980460713
+          },
+          "shared_support": {
+            "boundary_f1": 0.16371280763825016,
+            "region_covering": 0.39888624980460713
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 1125991,
+        "1": 621465,
+        "2": 697440,
+        "3": 1095568
+      }
+    },
+    {
+      "case": "validation--34",
+      "image_id": "34",
+      "figure": "case-34.webp",
+      "figure_sha256": "1017f3491c9eafc43e4fb8270ce0abef332563fc15edeba8c7ef9f7cf52be878",
+      "native_shape_yx": [
+        1582,
+        1336
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.7481693006487538,
+            "stroma_iou": 0.21845801119143213,
+            "background_iou": 0.0,
+            "boundary_f1": 0.16319593752640504,
+            "region_covering": 0.2553235352340564
+          },
+          "shared_support": {
+            "tumor_iou": 0.7480122149502852,
+            "stroma_iou": 0.21845801119143213,
+            "background_iou": 0.2685884556057079,
+            "boundary_f1": 0.15870256978306524,
+            "region_covering": 0.25469764728115146
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.7183791529029823,
+            "stroma_iou": 0.3709943317695666,
+            "background_iou": 0.0,
+            "boundary_f1": 0.16048374722227254,
+            "region_covering": 0.24499644764685072
+          },
+          "shared_support": {
+            "tumor_iou": 0.7182843829072962,
+            "stroma_iou": 0.3709907622480989,
+            "background_iou": 0.2685884556057079,
+            "boundary_f1": 0.15904673592687427,
+            "region_covering": 0.2445605860860866
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.3653181945281332,
+            "stroma_iou": 0.49025995611993883,
+            "background_iou": 0.0,
+            "boundary_f1": 0.13951450411677893,
+            "region_covering": 0.19649709401296206
+          },
+          "shared_support": {
+            "tumor_iou": 0.36524086705839726,
+            "stroma_iou": 0.4902101526616041,
+            "background_iou": 0.2685884556057079,
+            "boundary_f1": 0.1381648870638169,
+            "region_covering": 0.19584959150179948
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.5068252553412522,
+            "stroma_iou": 0.2573032736516719
+          },
+          "shared_support": {
+            "tumor_iou": 0.5070422238224215,
+            "stroma_iou": 0.2573032736516719
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.8089338085502337,
+            "stroma_iou": 0.05881317133298116,
+            "background_iou": 0.8194751025916254,
+            "boundary_f1": 0.1619005987973581,
+            "region_covering": 0.22959275173785218
+          },
+          "shared_support": {
+            "tumor_iou": 0.8088328677822763,
+            "stroma_iou": 0.05881038801294165,
+            "background_iou": 0.8207773764151172,
+            "boundary_f1": 0.16163989253013905,
+            "region_covering": 0.2294443431930576
+          }
+        },
+        "kodama_bora": {
+          "native": {
+            "boundary_f1": 0.09943194733212159,
+            "region_covering": 0.309301003567174
+          },
+          "shared_support": {
+            "boundary_f1": 0.09943194733212159,
+            "region_covering": 0.309301003567174
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 484517,
+        "1": 372058,
+        "2": 557479,
+        "3": 699498
+      }
+    },
+    {
+      "case": "validation--35",
+      "image_id": "35",
+      "figure": "case-35.webp",
+      "figure_sha256": "d09fff4b4bc778b244d3fdd7a5dae9b2dfea24659eee67400d43d49184ba2ef0",
+      "native_shape_yx": [
+        2123,
+        2123
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.5100118058288386,
+            "stroma_iou": 0.5974950733337708,
+            "background_iou": 0.0,
+            "boundary_f1": 0.28010791768160004,
+            "region_covering": 0.5204150367233974
+          },
+          "shared_support": {
+            "tumor_iou": 0.5090199871133855,
+            "stroma_iou": 0.59740471427513,
+            "background_iou": 0.6489802189360476,
+            "boundary_f1": 0.25304529689271366,
+            "region_covering": 0.5039703640464361
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.538737668508858,
+            "stroma_iou": 0.4381927680652194,
+            "background_iou": 0.0,
+            "boundary_f1": 0.20435708809933065,
+            "region_covering": 0.3528268919140478
+          },
+          "shared_support": {
+            "tumor_iou": 0.5373009465181853,
+            "stroma_iou": 0.4381560692675425,
+            "background_iou": 0.6489802189360476,
+            "boundary_f1": 0.19602570127939783,
+            "region_covering": 0.34362543957217545
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.3001416537026163,
+            "stroma_iou": 0.5688709372129328,
+            "background_iou": 0.0,
+            "boundary_f1": 0.23536685941602753,
+            "region_covering": 0.4923509204178844
+          },
+          "shared_support": {
+            "tumor_iou": 0.29985222374049264,
+            "stroma_iou": 0.5688053635321499,
+            "background_iou": 0.6489802189360476,
+            "boundary_f1": 0.22346089170583458,
+            "region_covering": 0.4730528520841804
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.5449582131244095,
+            "stroma_iou": 0.1479908271225309
+          },
+          "shared_support": {
+            "tumor_iou": 0.5427545810425095,
+            "stroma_iou": 0.14826698188879978
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.5020061409109314,
+            "stroma_iou": 0.47586490226604394,
+            "background_iou": 0.9211343790900105,
+            "boundary_f1": 0.21079906554773198,
+            "region_covering": 0.43920562270472285
+          },
+          "shared_support": {
+            "tumor_iou": 0.5012286914689718,
+            "stroma_iou": 0.4757974536836825,
+            "background_iou": 0.9217292090407646,
+            "boundary_f1": 0.20903670008055514,
+            "region_covering": 0.4344678446538058
+          }
+        },
+        "kodama_bora": {
+          "native": {
+            "boundary_f1": 0.16718652618255653,
+            "region_covering": 0.6501421330863822
+          },
+          "shared_support": {
+            "boundary_f1": 0.16718652618255653,
+            "region_covering": 0.6501421330863822
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 698540,
+        "1": 445358,
+        "2": 385016,
+        "3": 2978215
+      }
+    },
+    {
+      "case": "validation--36",
+      "image_id": "36",
+      "figure": "case-36.webp",
+      "figure_sha256": "0835d5d8f36654f2961598e8c0cec531f984cd2e1f64bf2880e6f7e5bb771eb8",
+      "native_shape_yx": [
+        2209,
+        2209
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.40877648912687103,
+            "stroma_iou": 0.7326607986008645,
+            "background_iou": 0.0,
+            "boundary_f1": 0.33016467024203355,
+            "region_covering": 0.4483396385313927
+          },
+          "shared_support": {
+            "tumor_iou": 0.4085857302274493,
+            "stroma_iou": 0.7321853780129081,
+            "background_iou": 0.056845863614494445,
+            "boundary_f1": 0.31825059057909205,
+            "region_covering": 0.4459709340098429
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.27333029314481644,
+            "stroma_iou": 0.6648437139642128,
+            "background_iou": 0.0,
+            "boundary_f1": 0.3160992957530306,
+            "region_covering": 0.43045402327218935
+          },
+          "shared_support": {
+            "tumor_iou": 0.27286500399816416,
+            "stroma_iou": 0.6642076346654587,
+            "background_iou": 0.056845863614494445,
+            "boundary_f1": 0.3120750569659651,
+            "region_covering": 0.41599400301356315
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.14676022727532972,
+            "stroma_iou": 0.7823764877369253,
+            "background_iou": 0.0,
+            "boundary_f1": 0.3034377521178131,
+            "region_covering": 0.6085671029189768
+          },
+          "shared_support": {
+            "tumor_iou": 0.14646803023066976,
+            "stroma_iou": 0.7818190358389829,
+            "background_iou": 0.056845863614494445,
+            "boundary_f1": 0.29618485605235256,
+            "region_covering": 0.6047436445481407
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.0726133985205068,
+            "stroma_iou": 0.8131889145613892
+          },
+          "shared_support": {
+            "tumor_iou": 0.07257761259058752,
+            "stroma_iou": 0.8127451279820816
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.49932068261721535,
+            "stroma_iou": 0.03656835389874539,
+            "background_iou": 0.5469483292660033,
+            "boundary_f1": 0.32847503437818965,
+            "region_covering": 0.31443260211673707
+          },
+          "shared_support": {
+            "tumor_iou": 0.4989142833862951,
+            "stroma_iou": 0.03651681646787079,
+            "background_iou": 0.5437926648087549,
+            "boundary_f1": 0.3247906995090965,
+            "region_covering": 0.31314928134074527
+          }
+        },
+        "kodama_bora": {
+          "native": {
+            "boundary_f1": 0.19086166385974523,
+            "region_covering": 0.3577096052264971
+          },
+          "shared_support": {
+            "boundary_f1": 0.19086166385974523,
+            "region_covering": 0.3577096052264971
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 840171,
+        "1": 3648852,
+        "3": 390658
+      }
+    },
+    {
+      "case": "validation--37",
+      "image_id": "37",
+      "figure": "case-37.webp",
+      "figure_sha256": "7981091d8e79fa621d28ede2b2179278cb7026df24525cb85324f9d45a7fc941",
+      "native_shape_yx": [
+        1725,
+        1725
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.7450287181468715,
+            "stroma_iou": 0.7098085817349912,
+            "background_iou": 0.0,
+            "boundary_f1": 0.5345400313587805,
+            "region_covering": 0.5836222429710586
+          },
+          "shared_support": {
+            "tumor_iou": 0.7432393877890053,
+            "stroma_iou": 0.706865127068899,
+            "background_iou": 0.13481206252697556,
+            "boundary_f1": 0.5077430348091871,
+            "region_covering": 0.5801322290810401
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.7063233623077214,
+            "stroma_iou": 0.7146529532380417,
+            "background_iou": 0.0,
+            "boundary_f1": 0.35263818044832074,
+            "region_covering": 0.4492018706599876
+          },
+          "shared_support": {
+            "tumor_iou": 0.7046527329109941,
+            "stroma_iou": 0.7117086759355563,
+            "background_iou": 0.13481206252697556,
+            "boundary_f1": 0.3424305397093192,
+            "region_covering": 0.44658637547678764
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.6349459924288232,
+            "stroma_iou": 0.7250763089665266,
+            "background_iou": 0.0,
+            "boundary_f1": 0.368189288617805,
+            "region_covering": 0.5134026701258898
+          },
+          "shared_support": {
+            "tumor_iou": 0.63378470615002,
+            "stroma_iou": 0.7227148370911376,
+            "background_iou": 0.13481206252697556,
+            "boundary_f1": 0.36157391844032194,
+            "region_covering": 0.511172870412044
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.43305147450801307,
+            "stroma_iou": 0.5525765763319905
+          },
+          "shared_support": {
+            "tumor_iou": 0.4324045861300612,
+            "stroma_iou": 0.5515789815362445
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.3775206038416001,
+            "stroma_iou": 0.04561420255042737,
+            "background_iou": 0.18785786094878912,
+            "boundary_f1": 0.31285941011174795,
+            "region_covering": 0.20470739339337823
+          },
+          "shared_support": {
+            "tumor_iou": 0.3773774887488248,
+            "stroma_iou": 0.045598632711613435,
+            "background_iou": 0.18772660539778424,
+            "boundary_f1": 0.3121996641141455,
+            "region_covering": 0.20689572616290228
+          }
+        },
+        "kodama_bora": {
+          "native": {
+            "boundary_f1": 0.2495959514560382,
+            "region_covering": 0.23796162651717173
+          },
+          "shared_support": {
+            "boundary_f1": 0.2495959514560382,
+            "region_covering": 0.23796162651717173
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 1039175,
+        "1": 1625801,
+        "3": 310649
+      }
+    },
+    {
+      "case": "validation--38",
+      "image_id": "38",
+      "figure": "case-38.webp",
+      "figure_sha256": "c31fb68ac0351e908221e3b885b81c52eac30effaca1e4f83fbadfea51a11991",
+      "native_shape_yx": [
+        2878,
+        2878
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.8245148992358091,
+            "stroma_iou": 0.6010491542612298,
+            "background_iou": 0.0,
+            "boundary_f1": 0.32207633865012586,
+            "region_covering": 0.7060908214691627
+          },
+          "shared_support": {
+            "tumor_iou": 0.8240721022329875,
+            "stroma_iou": 0.6009783290344757,
+            "background_iou": 0.10688576280884582,
+            "boundary_f1": 0.3137177076925613,
+            "region_covering": 0.7053713372674956
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.8759409788879938,
+            "stroma_iou": 0.6256812386972564,
+            "background_iou": 0.0,
+            "boundary_f1": 0.2130908164095665,
+            "region_covering": 0.7972529568948318
+          },
+          "shared_support": {
+            "tumor_iou": 0.8754873514303523,
+            "stroma_iou": 0.625653399433801,
+            "background_iou": 0.10688576280884582,
+            "boundary_f1": 0.20778251282458438,
+            "region_covering": 0.7935763127081267
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.8477597547572958,
+            "stroma_iou": 0.521588786596081,
+            "background_iou": 0.0,
+            "boundary_f1": 0.20893953305531043,
+            "region_covering": 0.7377983635458059
+          },
+          "shared_support": {
+            "tumor_iou": 0.8473580087434855,
+            "stroma_iou": 0.521613599903829,
+            "background_iou": 0.10688576280884582,
+            "boundary_f1": 0.2068238168563683,
+            "region_covering": 0.7372101478068056
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.8512803858421448,
+            "stroma_iou": 0.3224554584844059
+          },
+          "shared_support": {
+            "tumor_iou": 0.8505848643151231,
+            "stroma_iou": 0.32242037415163377
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.8378087429461202,
+            "stroma_iou": 0.0951685061873528,
+            "background_iou": 0.7670460349390998,
+            "boundary_f1": 0.194400476384996,
+            "region_covering": 0.6827338972053
+          },
+          "shared_support": {
+            "tumor_iou": 0.8377517865642725,
+            "stroma_iou": 0.09515687504413603,
+            "background_iou": 0.7672129838197649,
+            "boundary_f1": 0.19420666220698457,
+            "region_covering": 0.6826770199869073
+          }
+        },
+        "kodama_bora": {
+          "native": {
+            "boundary_f1": 0.11271397571589688,
+            "region_covering": 0.3160322018783113
+          },
+          "shared_support": {
+            "boundary_f1": 0.11271397571589688,
+            "region_covering": 0.3160322018783113
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 5576505,
+        "1": 1068420,
+        "3": 1637959
+      }
+    },
+    {
+      "case": "validation--39",
+      "image_id": "39",
+      "figure": "case-39.webp",
+      "figure_sha256": "7e904953ef44ca43aec38e631b3f81945b98f28d72e7bacaa79b614361208373",
+      "native_shape_yx": [
+        4074,
+        4074
+      ],
+      "methods": {
+        "supervised_bora": {
+          "native": {
+            "tumor_iou": 0.3768300652793544,
+            "stroma_iou": 0.27043392707751807,
+            "background_iou": 0.0,
+            "boundary_f1": 0.3586466761087617,
+            "region_covering": 0.2712697195359914
+          },
+          "shared_support": {
+            "tumor_iou": 0.37680146146425925,
+            "stroma_iou": 0.27041903184462956,
+            "background_iou": 0.06084000521586793,
+            "boundary_f1": 0.3585115847605629,
+            "region_covering": 0.27113932121275086
+          }
+        },
+        "unet": {
+          "native": {
+            "tumor_iou": 0.49017167775306686,
+            "stroma_iou": 0.11733878002883859,
+            "background_iou": 0.0,
+            "boundary_f1": 0.43900713088706933,
+            "region_covering": 0.278181327409223
+          },
+          "shared_support": {
+            "tumor_iou": 0.4901015769158593,
+            "stroma_iou": 0.1171956208355375,
+            "background_iou": 0.06084000521586793,
+            "boundary_f1": 0.4387730239004583,
+            "region_covering": 0.27806236187260713
+          }
+        },
+        "deeplabv3plus": {
+          "native": {
+            "tumor_iou": 0.611656658116941,
+            "stroma_iou": 0.23328108910004014,
+            "background_iou": 0.0,
+            "boundary_f1": 0.4629858852639043,
+            "region_covering": 0.2950457444242147
+          },
+          "shared_support": {
+            "tumor_iou": 0.6115867311612065,
+            "stroma_iou": 0.2332207112811919,
+            "background_iou": 0.06084000521586793,
+            "boundary_f1": 0.4627420704888682,
+            "region_covering": 0.2949865605994174
+          }
+        },
+        "medsam": {
+          "native": {
+            "tumor_iou": 0.5896521833206669,
+            "stroma_iou": 0.02419579977560878
+          },
+          "shared_support": {
+            "tumor_iou": 0.5895809465230958,
+            "stroma_iou": 0.02417473306301327
+          }
+        },
+        "vista_path": {
+          "native": {
+            "tumor_iou": 0.6221998932567233,
+            "stroma_iou": 0.08707167825210502,
+            "background_iou": 0.7208296376848998,
+            "boundary_f1": 0.41834827723826273,
+            "region_covering": 0.3447466838821953
+          },
+          "shared_support": {
+            "tumor_iou": 0.6221761291024016,
+            "stroma_iou": 0.08706625153485653,
+            "background_iou": 0.7211193119139193,
+            "boundary_f1": 0.418323500691108,
+            "region_covering": 0.3447277051164431
+          }
+        },
+        "kodama_bora": {
+          "native": {
+            "boundary_f1": 0.3538685584741832,
+            "region_covering": 0.2708194207854312
+          },
+          "shared_support": {
+            "boundary_f1": 0.3538685584741832,
+            "region_covering": 0.2708194207854312
+          }
+        }
+      },
+      "reference_counts": {
+        "0": 7245132,
+        "1": 5284967,
+        "3": 4067377
+      }
+    }
+  ]
+}
