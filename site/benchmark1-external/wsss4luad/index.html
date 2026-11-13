@@ -25,11 +25,11 @@
 <header>
   <div class="eyebrow">Bora · Benchmark 1 · ROI domain evaluation</div>
   <h1>WSSS4LUAD tissue segmentation</h1>
-  <p>All 40 selected validation ROIs are shown with the same H&amp;E field. This dataset was inspected during development, so these scores describe domain transfer and are not a blind external test.</p>
+  <p>These 40 lung ROIs form a separate post-fit domain evaluation. No WSSS4LUAD image was included in Bora’s 397-ROI training set or its 87-ROI development gallery. The source validation images were previously inspected, so this is not a blind external test.</p>
   <nav aria-label="Related pages"><a href="../../index.html">Benchmark 1</a><a href="../../benchmark1-comparators/">87-image development gallery</a><a href="../../visium-hd/">Benchmark 2 whole slides</a><a href="https://wsss4luad.grand-challenge.org/WSSS4LUAD/">WSSS4LUAD source</a></nav>
 </header>
 <main>
-  <div class="notice"><strong>What is evaluated:</strong> WSSS reference codes are tumor epithelium, tumor-associated stroma, normal tissue and white background. Tumor IoU scores tumor against all annotated tissue; stroma IoU uses only tumor/stroma reference pixels. Normal tissue has no unique Bora eight-class equivalent. The saved images show native predictions; the table also reports a separate common H&amp;E-support-clipped score.</div>
+  <div class="notice"><strong>What is evaluated:</strong> WSSS reference codes are tumor epithelium, tumor-associated stroma, normal tissue and white background. Tumor IoU scores tumor against all annotated tissue; stroma IoU uses only tumor/stroma reference pixels. Normal tissue has no unique Bora eight-class equivalent. These binary domain scores cannot be combined with the five-source eight-class endpoint. The saved images show native predictions; the table also reports a separate common H&amp;E-support-clipped score.</div>
   <section class="card" aria-labelledby="summary-title">
     <h2 id="summary-title">All selected ROIs</h2>
     <div class="scroll"><table id="summary-table"><thead><tr><th>Method</th><th>Complete</th><th>Native tumor IoU</th><th>Shared-support tumor IoU</th><th>Native stroma IoU</th><th>Native boundary F1</th></tr></thead><tbody><tr><td colspan="6">Loading audited results…</td></tr></tbody></table></div>
