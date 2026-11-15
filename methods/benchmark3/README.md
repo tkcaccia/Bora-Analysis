@@ -2,6 +2,14 @@
 
 Start with the [step-by-step public tutorial](../../site/visium/tutorial.html).
 
+`legacy_clustering/run_benchmark4.R` is a new, complete R pipeline for a
+**new** expression-guided mask. It runs a historical Seurat, Giotto or
+SpatialExperiment spot-clustering front end, then calls Bora R 0.1.5
+`Bora.spatial()` with its clustered object, a registered H&E image, a
+precomputed tissue mask and measured pixel spacing. It writes TIFF and
+source-pixel GeoJSON. This same-section fit does not recreate the three
+published historical masks or validate anatomical boundary accuracy.
+
 The three published examples are breast/Giotto, colorectal/Seurat, and
 tonsil/SpatialExperiment. The files in `legacy_clustering/` are copies of the
 historical front ends that generated expression spot groups. Their SHA256
