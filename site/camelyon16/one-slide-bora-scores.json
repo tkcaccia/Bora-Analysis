@@ -1,0 +1,102 @@
+{
+  "format": "bora-camelyon16-one-slide-score-release-v1",
+  "model": "Bora binary ridge head fitted on tumor_093 only; Virchow2 pretrained separately",
+  "cohort": "six previously inspected score slides; retrospective technical reanalysis",
+  "audit_sha256": "3cf56134baf67d3f258e92156cac473855fa96e41467920ba02f2e19f0ee9926",
+  "completion": "6/6",
+  "rows": [
+    {
+      "slide": "tumor_084",
+      "score_sha256": "a73567d15ab31db09d7207917d31f9b6487448d43c3126ca1c7f9260c81284fc",
+      "known_pixels": 6729265,
+      "reference_positive_pixels": 104761,
+      "native_iou": 0.10850599781897492,
+      "shared_iou": 0.11678570388490885,
+      "native_fp_tissue_mm2": 7.567136,
+      "shared_fp_tissue_mm2": 7.114351999999999,
+      "native_boundary_f1": 0.029208418993577925,
+      "reference_lesions": 54,
+      "native_matched_lesions": 13,
+      "historical_two_slide_native_iou": 0.20639775726864606,
+      "historical_two_slide_native_fp_tissue_mm2": 1.645376
+    },
+    {
+      "slide": "tumor_091",
+      "score_sha256": "1dba60e171c911128414e040c35f460b59565c98bb47ff18f1813c4d7eae83ba",
+      "known_pixels": 4244288,
+      "reference_positive_pixels": 153274,
+      "native_iou": 0.34316659541114436,
+      "shared_iou": 0.37392883855112724,
+      "native_fp_tissue_mm2": 1.431408,
+      "shared_fp_tissue_mm2": 1.291216,
+      "native_boundary_f1": 0.052234195605096054,
+      "reference_lesions": 9,
+      "native_matched_lesions": 4,
+      "historical_two_slide_native_iou": 0.3980813322070713,
+      "historical_two_slide_native_fp_tissue_mm2": 1.3988
+    },
+    {
+      "slide": "tumor_075",
+      "score_sha256": "166135a73881a428792b3865e4908dcb167cda98ff52e957c4c956019f006ab6",
+      "known_pixels": 9081680,
+      "reference_positive_pixels": 155007,
+      "native_iou": 0.2509530509420466,
+      "shared_iou": 0.2979620127740537,
+      "native_fp_tissue_mm2": 5.067568,
+      "shared_fp_tissue_mm2": 4.398832,
+      "native_boundary_f1": 0.05967396499042043,
+      "reference_lesions": 37,
+      "native_matched_lesions": 11,
+      "historical_two_slide_native_iou": 0.3368462455375506,
+      "historical_two_slide_native_fp_tissue_mm2": 2.724048
+    },
+    {
+      "slide": "normal_019",
+      "score_sha256": "4660b777bd4cebbe62852ee010cb212753ee6c347c62b23e17d6bca71c742cb8",
+      "known_pixels": 620363,
+      "reference_positive_pixels": 0,
+      "native_iou": null,
+      "shared_iou": null,
+      "native_fp_tissue_mm2": 0.21752,
+      "shared_fp_tissue_mm2": 0.15408,
+      "historical_two_slide_native_iou": null,
+      "historical_two_slide_native_fp_tissue_mm2": 0.031439999999999996,
+      "post_hoc_corrected_tissue_denominator": true
+    },
+    {
+      "slide": "normal_108",
+      "score_sha256": "8ca8c2386f179e50af70c43bd88373306247118c61cada3dfc95de06f9d80f2a",
+      "known_pixels": 3443110,
+      "reference_positive_pixels": 0,
+      "native_iou": null,
+      "shared_iou": null,
+      "native_fp_tissue_mm2": 0.918464,
+      "shared_fp_tissue_mm2": 0.7753599999999999,
+      "native_boundary_f1": null,
+      "reference_lesions": 0,
+      "native_matched_lesions": 0,
+      "historical_two_slide_native_iou": null,
+      "historical_two_slide_native_fp_tissue_mm2": 0.60544
+    },
+    {
+      "slide": "normal_150",
+      "score_sha256": "a802fb151b39925033104b98d7e401cc7b64d7281ceea3e3db0194016f605e4a",
+      "known_pixels": 4161559,
+      "reference_positive_pixels": 0,
+      "native_iou": null,
+      "shared_iou": null,
+      "native_fp_tissue_mm2": 7.019584,
+      "shared_fp_tissue_mm2": 6.685072,
+      "native_boundary_f1": null,
+      "reference_lesions": 0,
+      "native_matched_lesions": 0,
+      "historical_two_slide_native_iou": null,
+      "historical_two_slide_native_fp_tissue_mm2": 2.73536
+    }
+  ],
+  "notes": [
+    "Native predictions are primary; shared H&E support is secondary.",
+    "Benign IoU and boundary F1 are undefined without reference metastasis.",
+    "Comparators on the historical public pages used a different fitting or prompt protocol."
+  ]
+}

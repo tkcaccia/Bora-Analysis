@@ -56,7 +56,11 @@ Bora-specific training, prompting, Virchow2–PLS projection, and full-slide
 inference code and document the exact settings and external model sources.
 This repository was previously named Bora-extra.
 
-The [Benchmark 3 reproduction tutorial](site/visium/tutorial.html) explains the three expression-guided Visium examples and provides a working checksum and GeoJSON verification command. It distinguishes verification of saved results from a full historical model rerun, for which all original caches are not presently public.
+The [Benchmark 4 reproduction tutorial](site/visium/tutorial.html) explains the three expression-guided Visium examples and provides a working checksum and GeoJSON verification command. It distinguishes verification of saved results from a full historical model rerun, for which all original caches are not presently public.
+
+Each qualified slide is [published individually](docs/PER_SLIDE_PUBLICATION.md)
+after source, model, geometry, scoring, visual and lifecycle audits. The local
+and public page and asset hashes are checked against the same release receipt.
 
 The [Benchmark 2 full-slide comparator gallery](https://tkcaccia.github.io/Bora-Analysis/visium-hd/comparators/)
 shows 7 verified public-source H&E slides with class-aware
