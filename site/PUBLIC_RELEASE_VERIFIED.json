@@ -3383,7 +3383,7 @@
     "camelyon16/aggregate-six.json": "14fcfb79cca058919d714d61c2c38a5aa4a4fa9c20a4d183c33d5ec81e4dd6cf",
     "camelyon16/aggregate.json": "41aae3a5fcb4904a47ce75a106f0b8f9b513e52a8af461f16ae6289ef2e67b27",
     "camelyon16/benign-error-burden.json": "329742803a82ab7d78bd0dbaeccca7e41db3940ebc1bba4895f5c5210318ccb8",
-    "camelyon16/index.html": "f58433d5482e729f16d5ef5a03b45687a88b0b5abd4db5db648901d0bf5866b8",
+    "camelyon16/index.html": "81a50804f3f8c1b8b02712ac78e80bb6af9eabfa9484911fa0d9c9404e085d3d",
     "camelyon16/local-assets/normal_019/field-01-bora.webp": "25a12f0312c98b17cb5d088ceb4dbbb5028c0cf093fdf4d7ff973f4b20dd78e3",
     "camelyon16/local-assets/normal_019/field-01-deeplabv3plus.webp": "0c95372a28f9d6713893afceb2eae2b106f09aeb103cd62eecea3c337697a427",
     "camelyon16/local-assets/normal_019/field-01-expert.webp": "9ae3498e80009b53f93b3cb797c8037b488c591ac30256f2999910bbc2ded271",
@@ -4406,6 +4406,6 @@
   "grayscale_group_map_count": 129,
   "public_wsi_count": 12,
   "retired_case_count": 4,
-  "size_bytes": 511148617,
-  "status": "CAMELYON16_FIXED_AREA_FOCUS_TABLES_INCLUDED"
+  "size_bytes": 511146969,
+  "status": "CAMELYON16_SIX_SCORE_SLIDES_ONLY"
 }
