@@ -1,0 +1,1106 @@
+{
+  "status": "CAM16_BALANCED_KNOWN_TISSUE_ACCURACY_COMPLETE",
+  "formula": "0.5 * (TP/(TP+FN) + TN/(TN+FP))",
+  "scope": "six previously inspected score slides; no model or mask changed",
+  "positive_slide_rule": "BA defined only when reference has both metastasis and nonmetastatic tissue",
+  "benign_slide_rule": "BA undefined without reference metastasis; report nonmetastatic recall = TN/(TN+FP)",
+  "pooled_rule": "Pool known-tissue TP/FP/FN/TN across all six slides, then average class recalls",
+  "normal_019_domain_note": "Post hoc reviewed-tissue correction retained from published benign-burden analysis",
+  "prior_descriptive_sha256": "ffcb96197919c405a4dd6944c8e27d271cb2df847d9b1424a9db8f0634d02884",
+  "benign_burden_sha256": "329742803a82ab7d78bd0dbaeccca7e41db3940ebc1bba4895f5c5210318ccb8",
+  "benign_independent_audit_sha256": "fb43a58df2f2fa06ae132c05c13ab9a138abdbfc88406ed54cd43990fcda0772",
+  "rows": [
+    {
+      "slide": "tumor_084",
+      "method": "bora",
+      "score_receipt_sha256": "cf64113717622c837ba0552ce0a8a6417994776f5d6d8adc2573f131f99dc031",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 6725146,
+      "reference_metastasis_pixels": 104761,
+      "native": {
+        "tp": 42849,
+        "fp": 102836,
+        "fn": 61912,
+        "tn": 6517549,
+        "metastatic_recall": 0.4090167142352593,
+        "nonmetastatic_recall": 0.984466764395122,
+        "balanced_accuracy": 0.6967417393151907,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 7
+      },
+      "shared_support": {
+        "tp": 38297,
+        "fp": 74247,
+        "fn": 66464,
+        "tn": 6546138,
+        "metastatic_recall": 0.3655654298832581,
+        "nonmetastatic_recall": 0.9887850933140595,
+        "balanced_accuracy": 0.6771752615986588,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      }
+    },
+    {
+      "slide": "tumor_084",
+      "method": "unet",
+      "score_receipt_sha256": "c3ad79255eb4d70b4d336b5ea5a6de8b159006d2ee01f675b85304f8b6dca11c",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 6725146,
+      "reference_metastasis_pixels": 104761,
+      "native": {
+        "tp": 622,
+        "fp": 12281,
+        "fn": 104139,
+        "tn": 6608104,
+        "metastatic_recall": 0.005937324004161854,
+        "nonmetastatic_recall": 0.9981449719313907,
+        "balanced_accuracy": 0.5020411479677763,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 5
+      },
+      "shared_support": {
+        "tp": 622,
+        "fp": 12281,
+        "fn": 104139,
+        "tn": 6608104,
+        "metastatic_recall": 0.005937324004161854,
+        "nonmetastatic_recall": 0.9981449719313907,
+        "balanced_accuracy": 0.5020411479677763,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      }
+    },
+    {
+      "slide": "tumor_084",
+      "method": "deeplabv3plus",
+      "score_receipt_sha256": "b9d7831536a37565dc71b344b6e9739bcde864b89be0afda1be195408ea38b1c",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 6725146,
+      "reference_metastasis_pixels": 104761,
+      "native": {
+        "tp": 5,
+        "fp": 2343,
+        "fn": 104756,
+        "tn": 6618042,
+        "metastatic_recall": 4.772768492091522e-05,
+        "nonmetastatic_recall": 0.9996460930897524,
+        "balanced_accuracy": 0.49984691038733664,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      },
+      "shared_support": {
+        "tp": 5,
+        "fp": 2343,
+        "fn": 104756,
+        "tn": 6618042,
+        "metastatic_recall": 4.772768492091522e-05,
+        "nonmetastatic_recall": 0.9996460930897524,
+        "balanced_accuracy": 0.49984691038733664,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      }
+    },
+    {
+      "slide": "tumor_084",
+      "method": "medsam",
+      "score_receipt_sha256": "d7d9747785b159397848b4ec34e96f18852a58fd63eac7a1a0bb1f4d43e17462",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 6725146,
+      "reference_metastasis_pixels": 104761,
+      "native": {
+        "tp": 924,
+        "fp": 15008,
+        "fn": 103837,
+        "tn": 6605377,
+        "metastatic_recall": 0.008820076173385134,
+        "nonmetastatic_recall": 0.997733062352114,
+        "balanced_accuracy": 0.5032765692627496,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      },
+      "shared_support": {
+        "tp": 924,
+        "fp": 15008,
+        "fn": 103837,
+        "tn": 6605377,
+        "metastatic_recall": 0.008820076173385134,
+        "nonmetastatic_recall": 0.997733062352114,
+        "balanced_accuracy": 0.5032765692627496,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      }
+    },
+    {
+      "slide": "tumor_084",
+      "method": "vista_path",
+      "score_receipt_sha256": "b012c53a14c5ba3f04b02916ecf08f568203eb24701b3497f5465478e28a8f3a",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 6725146,
+      "reference_metastasis_pixels": 104761,
+      "native": {
+        "tp": 59550,
+        "fp": 55729,
+        "fn": 45211,
+        "tn": 6564656,
+        "metastatic_recall": 0.5684367274081004,
+        "nonmetastatic_recall": 0.9915822116085394,
+        "balanced_accuracy": 0.78000946950832,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      },
+      "shared_support": {
+        "tp": 59550,
+        "fp": 55729,
+        "fn": 45211,
+        "tn": 6564656,
+        "metastatic_recall": 0.5684367274081004,
+        "nonmetastatic_recall": 0.9915822116085394,
+        "balanced_accuracy": 0.78000946950832,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      }
+    },
+    {
+      "slide": "tumor_091",
+      "method": "bora",
+      "score_receipt_sha256": "cdf7babf936b7b9ca5f918009e6aa2e627e1ae4e989a2839af2f5eb61e724462",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 4162443,
+      "reference_metastasis_pixels": 153274,
+      "native": {
+        "tp": 98967,
+        "fp": 87425,
+        "fn": 54307,
+        "tn": 3921744,
+        "metastatic_recall": 0.6456868092435769,
+        "nonmetastatic_recall": 0.9781937354100064,
+        "balanced_accuracy": 0.8119402723267917,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 7911
+      },
+      "shared_support": {
+        "tp": 101951,
+        "fp": 77062,
+        "fn": 51323,
+        "tn": 3932107,
+        "metastatic_recall": 0.6651552122342994,
+        "nonmetastatic_recall": 0.9807785603450491,
+        "balanced_accuracy": 0.8229668862896742,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      }
+    },
+    {
+      "slide": "tumor_091",
+      "method": "unet",
+      "score_receipt_sha256": "fc6f9f63cc90460ccbe06f7eb7fcd4f2caeaee8e6710fa766c6de2bb6fe61ada",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 4162443,
+      "reference_metastasis_pixels": 153274,
+      "native": {
+        "tp": 23562,
+        "fp": 16576,
+        "fn": 129712,
+        "tn": 3992593,
+        "metastatic_recall": 0.15372470216736042,
+        "nonmetastatic_recall": 0.9958654773595227,
+        "balanced_accuracy": 0.5747950897634415,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      },
+      "shared_support": {
+        "tp": 23562,
+        "fp": 16576,
+        "fn": 129712,
+        "tn": 3992593,
+        "metastatic_recall": 0.15372470216736042,
+        "nonmetastatic_recall": 0.9958654773595227,
+        "balanced_accuracy": 0.5747950897634415,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      }
+    },
+    {
+      "slide": "tumor_091",
+      "method": "deeplabv3plus",
+      "score_receipt_sha256": "3c71430aed0542b492c0fb7aa20f45185b6cfe8520d03976559baa16228361ad",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 4162443,
+      "reference_metastasis_pixels": 153274,
+      "native": {
+        "tp": 33558,
+        "fp": 15138,
+        "fn": 119716,
+        "tn": 3994031,
+        "metastatic_recall": 0.21894124248078603,
+        "nonmetastatic_recall": 0.996224155180288,
+        "balanced_accuracy": 0.607582698830537,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      },
+      "shared_support": {
+        "tp": 33558,
+        "fp": 15138,
+        "fn": 119716,
+        "tn": 3994031,
+        "metastatic_recall": 0.21894124248078603,
+        "nonmetastatic_recall": 0.996224155180288,
+        "balanced_accuracy": 0.607582698830537,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      }
+    },
+    {
+      "slide": "tumor_091",
+      "method": "medsam",
+      "score_receipt_sha256": "9cef48a2f72fbbc2c4b079b2cfad39c408ca2975c46528647a1648a5e4b307bd",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 4162443,
+      "reference_metastasis_pixels": 153274,
+      "native": {
+        "tp": 42050,
+        "fp": 22533,
+        "fn": 111224,
+        "tn": 3986636,
+        "metastatic_recall": 0.2743452901340084,
+        "nonmetastatic_recall": 0.9943796332856011,
+        "balanced_accuracy": 0.6343624617098047,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      },
+      "shared_support": {
+        "tp": 42050,
+        "fp": 22533,
+        "fn": 111224,
+        "tn": 3986636,
+        "metastatic_recall": 0.2743452901340084,
+        "nonmetastatic_recall": 0.9943796332856011,
+        "balanced_accuracy": 0.6343624617098047,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      }
+    },
+    {
+      "slide": "tumor_091",
+      "method": "vista_path",
+      "score_receipt_sha256": "6f3b8790048a41e03b97bf6f278c64c444fbe467c495a906e2cbf91c3757c331",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 4162443,
+      "reference_metastasis_pixels": 153274,
+      "native": {
+        "tp": 128931,
+        "fp": 443134,
+        "fn": 24343,
+        "tn": 3566035,
+        "metastatic_recall": 0.8411798478541697,
+        "nonmetastatic_recall": 0.8894698627072094,
+        "balanced_accuracy": 0.8653248552806896,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      },
+      "shared_support": {
+        "tp": 128931,
+        "fp": 443134,
+        "fn": 24343,
+        "tn": 3566035,
+        "metastatic_recall": 0.8411798478541697,
+        "nonmetastatic_recall": 0.8894698627072094,
+        "balanced_accuracy": 0.8653248552806896,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      }
+    },
+    {
+      "slide": "normal_019",
+      "method": "bora",
+      "score_receipt_sha256": "0388514c16e0975af710af069e86799a25e5ba8e2193ddf1a0745409711216b8",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": true,
+      "known_tissue_pixels": 620363,
+      "reference_metastasis_pixels": 0,
+      "native": {
+        "tp": 0,
+        "fp": 1965,
+        "fn": 0,
+        "tn": 618398,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.996832499681638,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      },
+      "shared_support": {
+        "tp": 0,
+        "fp": 1283,
+        "fn": 0,
+        "tn": 619080,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9979318560262298,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      }
+    },
+    {
+      "slide": "normal_019",
+      "method": "unet",
+      "score_receipt_sha256": "43ec8f6d1f24a9d7a2b9a6236698f81e17c61258610210337ca3f318443f7bc1",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": true,
+      "known_tissue_pixels": 620363,
+      "reference_metastasis_pixels": 0,
+      "native": {
+        "tp": 0,
+        "fp": 107,
+        "fn": 0,
+        "tn": 620256,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9998275203388983,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      },
+      "shared_support": {
+        "tp": 0,
+        "fp": 107,
+        "fn": 0,
+        "tn": 620256,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9998275203388983,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      }
+    },
+    {
+      "slide": "normal_019",
+      "method": "deeplabv3plus",
+      "score_receipt_sha256": "757ed2c90b79b7af9705033c73af54c2cd008cb7721d40e923cc9804f4dbd36c",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": true,
+      "known_tissue_pixels": 620363,
+      "reference_metastasis_pixels": 0,
+      "native": {
+        "tp": 0,
+        "fp": 485,
+        "fn": 0,
+        "tn": 619878,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9992181996669692,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      },
+      "shared_support": {
+        "tp": 0,
+        "fp": 485,
+        "fn": 0,
+        "tn": 619878,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9992181996669692,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      }
+    },
+    {
+      "slide": "normal_019",
+      "method": "medsam",
+      "score_receipt_sha256": "835a2161180258d288dfe9d561fbc595eae6cad221ca6c186e2ee716e3c8be09",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": true,
+      "known_tissue_pixels": 620363,
+      "reference_metastasis_pixels": 0,
+      "native": {
+        "tp": 0,
+        "fp": 136,
+        "fn": 0,
+        "tn": 620227,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9997807735148615,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      },
+      "shared_support": {
+        "tp": 0,
+        "fp": 136,
+        "fn": 0,
+        "tn": 620227,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9997807735148615,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      }
+    },
+    {
+      "slide": "normal_019",
+      "method": "vista_path",
+      "score_receipt_sha256": "60660d489868bfc66c65bde8415206b213f4de074d02034842a73d3a299637b0",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": true,
+      "known_tissue_pixels": 620363,
+      "reference_metastasis_pixels": 0,
+      "native": {
+        "tp": 0,
+        "fp": 35897,
+        "fn": 0,
+        "tn": 584466,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9421354916395723,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      },
+      "shared_support": {
+        "tp": 0,
+        "fp": 35897,
+        "fn": 0,
+        "tn": 584466,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9421354916395723,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      }
+    },
+    {
+      "slide": "tumor_075",
+      "method": "bora",
+      "score_receipt_sha256": "83ef146f20965b04d31b63475fe13da3e7055ac5f920581dae7f1d02b403518b",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 6768872,
+      "reference_metastasis_pixels": 155007,
+      "native": {
+        "tp": 112189,
+        "fp": 170253,
+        "fn": 42818,
+        "tn": 6443612,
+        "metastatic_recall": 0.7237673137342184,
+        "nonmetastatic_recall": 0.9742581682571386,
+        "balanced_accuracy": 0.8490127409956785,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 7797
+      },
+      "shared_support": {
+        "tp": 111691,
+        "fp": 145033,
+        "fn": 43316,
+        "tn": 6468832,
+        "metastatic_recall": 0.7205545556007148,
+        "nonmetastatic_recall": 0.9780713697663923,
+        "balanced_accuracy": 0.8493129626835536,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      }
+    },
+    {
+      "slide": "tumor_075",
+      "method": "unet",
+      "score_receipt_sha256": "72307da80b9df7427df181e019e0ef40086eafe773bd337002ca918ae717524e",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 6768872,
+      "reference_metastasis_pixels": 155007,
+      "native": {
+        "tp": 24587,
+        "fp": 28693,
+        "fn": 130420,
+        "tn": 6585172,
+        "metastatic_recall": 0.1586186430290245,
+        "nonmetastatic_recall": 0.9956616894962326,
+        "balanced_accuracy": 0.5771401662626285,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      },
+      "shared_support": {
+        "tp": 24587,
+        "fp": 28693,
+        "fn": 130420,
+        "tn": 6585172,
+        "metastatic_recall": 0.1586186430290245,
+        "nonmetastatic_recall": 0.9956616894962326,
+        "balanced_accuracy": 0.5771401662626285,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      }
+    },
+    {
+      "slide": "tumor_075",
+      "method": "deeplabv3plus",
+      "score_receipt_sha256": "4689e589ac1017891e697bd88aa1e4af5c174aa8c14549c83ca5e16bf88733fd",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 6768872,
+      "reference_metastasis_pixels": 155007,
+      "native": {
+        "tp": 10695,
+        "fp": 6214,
+        "fn": 144312,
+        "tn": 6607651,
+        "metastatic_recall": 0.0689968840116898,
+        "nonmetastatic_recall": 0.9990604585972045,
+        "balanced_accuracy": 0.5340286713044471,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      },
+      "shared_support": {
+        "tp": 10695,
+        "fp": 6214,
+        "fn": 144312,
+        "tn": 6607651,
+        "metastatic_recall": 0.0689968840116898,
+        "nonmetastatic_recall": 0.9990604585972045,
+        "balanced_accuracy": 0.5340286713044471,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      }
+    },
+    {
+      "slide": "tumor_075",
+      "method": "medsam",
+      "score_receipt_sha256": "fd3ba1064171f3a5fa8106c4dc933ff4982b94da761e115646e1ad0f7f47c922",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 6768872,
+      "reference_metastasis_pixels": 155007,
+      "native": {
+        "tp": 33115,
+        "fp": 35910,
+        "fn": 121892,
+        "tn": 6577955,
+        "metastatic_recall": 0.21363551323488617,
+        "nonmetastatic_recall": 0.9945704969786955,
+        "balanced_accuracy": 0.6041030051067908,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      },
+      "shared_support": {
+        "tp": 33115,
+        "fp": 35910,
+        "fn": 121892,
+        "tn": 6577955,
+        "metastatic_recall": 0.21363551323488617,
+        "nonmetastatic_recall": 0.9945704969786955,
+        "balanced_accuracy": 0.6041030051067908,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      }
+    },
+    {
+      "slide": "tumor_075",
+      "method": "vista_path",
+      "score_receipt_sha256": "387a97b13ad1734aa66d579a87dce2a2a3c22dfeba95a3a3a4a5d3d461a06a04",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 6768872,
+      "reference_metastasis_pixels": 155007,
+      "native": {
+        "tp": 92770,
+        "fp": 528169,
+        "fn": 62237,
+        "tn": 6085696,
+        "metastatic_recall": 0.5984891004922358,
+        "nonmetastatic_recall": 0.920142155910349,
+        "balanced_accuracy": 0.7593156282012924,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      },
+      "shared_support": {
+        "tp": 92770,
+        "fp": 528169,
+        "fn": 62237,
+        "tn": 6085696,
+        "metastatic_recall": 0.5984891004922358,
+        "nonmetastatic_recall": 0.920142155910349,
+        "balanced_accuracy": 0.7593156282012924,
+        "balanced_accuracy_undefined_reason": null,
+        "known_positive_predictions_outside_support": 0
+      }
+    },
+    {
+      "slide": "normal_108",
+      "method": "bora",
+      "score_receipt_sha256": "fe0e8105bda419d67a39de65a7a4693b78ca00c8d4cb38bc75f61ccc03d115ef",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 3236361,
+      "reference_metastasis_pixels": 0,
+      "native": {
+        "tp": 0,
+        "fp": 37840,
+        "fn": 0,
+        "tn": 3198521,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9883078556440397,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      },
+      "shared_support": {
+        "tp": 0,
+        "fp": 27968,
+        "fn": 0,
+        "tn": 3208393,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9913581952075186,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      }
+    },
+    {
+      "slide": "normal_108",
+      "method": "unet",
+      "score_receipt_sha256": "e0f83444a94944899220a9460e5ac6f5fdfbd5c1b47159240cfcdc55caea1f7d",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 3236361,
+      "reference_metastasis_pixels": 0,
+      "native": {
+        "tp": 0,
+        "fp": 446,
+        "fn": 0,
+        "tn": 3235915,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9998621908989758,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      },
+      "shared_support": {
+        "tp": 0,
+        "fp": 446,
+        "fn": 0,
+        "tn": 3235915,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9998621908989758,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      }
+    },
+    {
+      "slide": "normal_108",
+      "method": "deeplabv3plus",
+      "score_receipt_sha256": "aa5f8c562adc7f2faa485e733794f3da429430abc330f5b7921de72d49a410de",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 3236361,
+      "reference_metastasis_pixels": 0,
+      "native": {
+        "tp": 0,
+        "fp": 1454,
+        "fn": 0,
+        "tn": 3234907,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9995507299711003,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      },
+      "shared_support": {
+        "tp": 0,
+        "fp": 1454,
+        "fn": 0,
+        "tn": 3234907,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9995507299711003,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      }
+    },
+    {
+      "slide": "normal_108",
+      "method": "medsam",
+      "score_receipt_sha256": "23a62abf37b7dc01fa1c503f1a2e2cf8b92ca76834c6ed7a27008a01e3d332c5",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 3236361,
+      "reference_metastasis_pixels": 0,
+      "native": {
+        "tp": 0,
+        "fp": 401,
+        "fn": 0,
+        "tn": 3235960,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9998760954046845,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      },
+      "shared_support": {
+        "tp": 0,
+        "fp": 401,
+        "fn": 0,
+        "tn": 3235960,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9998760954046845,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      }
+    },
+    {
+      "slide": "normal_108",
+      "method": "vista_path",
+      "score_receipt_sha256": "9be283d04fe7f52e9858e649d0a057ba53bac03a4469c13d2ce7bee9d66a756a",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 3236361,
+      "reference_metastasis_pixels": 0,
+      "native": {
+        "tp": 0,
+        "fp": 92776,
+        "fn": 0,
+        "tn": 3143585,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9713332350748263,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      },
+      "shared_support": {
+        "tp": 0,
+        "fp": 92776,
+        "fn": 0,
+        "tn": 3143585,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9713332350748263,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      }
+    },
+    {
+      "slide": "normal_150",
+      "method": "bora",
+      "score_receipt_sha256": "100efc9302c4a854165ea83d60c3f7bcd94e9327346cd13be8a288f0ce74f8b0",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 4155849,
+      "reference_metastasis_pixels": 0,
+      "native": {
+        "tp": 0,
+        "fp": 170960,
+        "fn": 0,
+        "tn": 3984889,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9588627979505512,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      },
+      "shared_support": {
+        "tp": 0,
+        "fp": 145437,
+        "fn": 0,
+        "tn": 4010412,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9650042626669063,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      }
+    },
+    {
+      "slide": "normal_150",
+      "method": "unet",
+      "score_receipt_sha256": "5370618681aab4931d8b99ee886ac186e602f217720d9cc120996c5e519a2c55",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 4155849,
+      "reference_metastasis_pixels": 0,
+      "native": {
+        "tp": 0,
+        "fp": 13096,
+        "fn": 0,
+        "tn": 4142753,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9968487786731424,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      },
+      "shared_support": {
+        "tp": 0,
+        "fp": 13096,
+        "fn": 0,
+        "tn": 4142753,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9968487786731424,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      }
+    },
+    {
+      "slide": "normal_150",
+      "method": "deeplabv3plus",
+      "score_receipt_sha256": "996a0de2538ebc32f94f83c411e888ae916c325849e02133ac33f3b7e6dbaa6b",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 4155849,
+      "reference_metastasis_pixels": 0,
+      "native": {
+        "tp": 0,
+        "fp": 4839,
+        "fn": 0,
+        "tn": 4151010,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.998835616982234,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      },
+      "shared_support": {
+        "tp": 0,
+        "fp": 4839,
+        "fn": 0,
+        "tn": 4151010,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.998835616982234,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      }
+    },
+    {
+      "slide": "normal_150",
+      "method": "medsam",
+      "score_receipt_sha256": "913ea2a80cc51aacf95585596a9aa79d56854d931f4b4b71cdb77c6cd7d44407",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 4155849,
+      "reference_metastasis_pixels": 0,
+      "native": {
+        "tp": 0,
+        "fp": 16756,
+        "fn": 0,
+        "tn": 4139093,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9959680921996925,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      },
+      "shared_support": {
+        "tp": 0,
+        "fp": 16756,
+        "fn": 0,
+        "tn": 4139093,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.9959680921996925,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      }
+    },
+    {
+      "slide": "normal_150",
+      "method": "vista_path",
+      "score_receipt_sha256": "190f4b38ed537d4c521f65546cd06d48a25d9fa17f6afe30616cec43143b9e74",
+      "domain": "official code-1/2 pixels inside reviewed H&E tissue support",
+      "post_hoc_tissue_support": false,
+      "known_tissue_pixels": 4155849,
+      "reference_metastasis_pixels": 0,
+      "native": {
+        "tp": 0,
+        "fp": 741215,
+        "fn": 0,
+        "tn": 3414634,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.8216453485196407,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      },
+      "shared_support": {
+        "tp": 0,
+        "fp": 741215,
+        "fn": 0,
+        "tn": 3414634,
+        "metastatic_recall": null,
+        "nonmetastatic_recall": 0.8216453485196407,
+        "balanced_accuracy": null,
+        "balanced_accuracy_undefined_reason": "no_reference_metastasis"
+      }
+    }
+  ],
+  "aggregates": [
+    {
+      "method": "bora",
+      "completed_slides": 6,
+      "metastasis_positive_slides": 3,
+      "benign_slides": 3,
+      "variants": {
+        "native": {
+          "tp": 254005,
+          "fp": 571279,
+          "fn": 159037,
+          "tn": 24684713,
+          "metastatic_recall": 0.6149616745996775,
+          "nonmetastatic_recall": 0.9773804568832616,
+          "balanced_accuracy": 0.7961710657414696,
+          "balanced_accuracy_undefined_reason": null,
+          "mean_positive_slide_balanced_accuracy": 0.7858982508792204,
+          "known_tissue_pixels": 25669034,
+          "metastasis_pixels": 413042,
+          "metastatic_recall_slide_denominator": 3,
+          "nonmetastatic_recall_slide_denominator": 6
+        },
+        "shared_support": {
+          "tp": 251939,
+          "fp": 471030,
+          "fn": 161103,
+          "tn": 24784962,
+          "metastatic_recall": 0.6099597619612533,
+          "nonmetastatic_recall": 0.9813497723629308,
+          "balanced_accuracy": 0.795654767162092,
+          "balanced_accuracy_undefined_reason": null,
+          "mean_positive_slide_balanced_accuracy": 0.7831517035239622,
+          "known_tissue_pixels": 25669034,
+          "metastasis_pixels": 413042,
+          "metastatic_recall_slide_denominator": 3,
+          "nonmetastatic_recall_slide_denominator": 6
+        }
+      }
+    },
+    {
+      "method": "unet",
+      "completed_slides": 6,
+      "metastasis_positive_slides": 3,
+      "benign_slides": 3,
+      "variants": {
+        "native": {
+          "tp": 48771,
+          "fp": 71199,
+          "fn": 364271,
+          "tn": 25184793,
+          "metastatic_recall": 0.1180775804881828,
+          "nonmetastatic_recall": 0.9971809066141611,
+          "balanced_accuracy": 0.5576292435511719,
+          "balanced_accuracy_undefined_reason": null,
+          "mean_positive_slide_balanced_accuracy": 0.5513254679979488,
+          "known_tissue_pixels": 25669034,
+          "metastasis_pixels": 413042,
+          "metastatic_recall_slide_denominator": 3,
+          "nonmetastatic_recall_slide_denominator": 6
+        },
+        "shared_support": {
+          "tp": 48771,
+          "fp": 71199,
+          "fn": 364271,
+          "tn": 25184793,
+          "metastatic_recall": 0.1180775804881828,
+          "nonmetastatic_recall": 0.9971809066141611,
+          "balanced_accuracy": 0.5576292435511719,
+          "balanced_accuracy_undefined_reason": null,
+          "mean_positive_slide_balanced_accuracy": 0.5513254679979488,
+          "known_tissue_pixels": 25669034,
+          "metastasis_pixels": 413042,
+          "metastatic_recall_slide_denominator": 3,
+          "nonmetastatic_recall_slide_denominator": 6
+        }
+      }
+    },
+    {
+      "method": "deeplabv3plus",
+      "completed_slides": 6,
+      "metastasis_positive_slides": 3,
+      "benign_slides": 3,
+      "variants": {
+        "native": {
+          "tp": 44258,
+          "fp": 30473,
+          "fn": 368784,
+          "tn": 25225519,
+          "metastatic_recall": 0.10715133085739464,
+          "nonmetastatic_recall": 0.998793434841126,
+          "balanced_accuracy": 0.5529723828492603,
+          "balanced_accuracy_undefined_reason": null,
+          "mean_positive_slide_balanced_accuracy": 0.547152760174107,
+          "known_tissue_pixels": 25669034,
+          "metastasis_pixels": 413042,
+          "metastatic_recall_slide_denominator": 3,
+          "nonmetastatic_recall_slide_denominator": 6
+        },
+        "shared_support": {
+          "tp": 44258,
+          "fp": 30473,
+          "fn": 368784,
+          "tn": 25225519,
+          "metastatic_recall": 0.10715133085739464,
+          "nonmetastatic_recall": 0.998793434841126,
+          "balanced_accuracy": 0.5529723828492603,
+          "balanced_accuracy_undefined_reason": null,
+          "mean_positive_slide_balanced_accuracy": 0.547152760174107,
+          "known_tissue_pixels": 25669034,
+          "metastasis_pixels": 413042,
+          "metastatic_recall_slide_denominator": 3,
+          "nonmetastatic_recall_slide_denominator": 6
+        }
+      }
+    },
+    {
+      "method": "medsam",
+      "completed_slides": 6,
+      "metastasis_positive_slides": 3,
+      "benign_slides": 3,
+      "variants": {
+        "native": {
+          "tp": 76089,
+          "fp": 90744,
+          "fn": 336953,
+          "tn": 25165248,
+          "metastatic_recall": 0.1842161329840549,
+          "nonmetastatic_recall": 0.9964070308543018,
+          "balanced_accuracy": 0.5903115819191783,
+          "balanced_accuracy_undefined_reason": null,
+          "mean_positive_slide_balanced_accuracy": 0.580580678693115,
+          "known_tissue_pixels": 25669034,
+          "metastasis_pixels": 413042,
+          "metastatic_recall_slide_denominator": 3,
+          "nonmetastatic_recall_slide_denominator": 6
+        },
+        "shared_support": {
+          "tp": 76089,
+          "fp": 90744,
+          "fn": 336953,
+          "tn": 25165248,
+          "metastatic_recall": 0.1842161329840549,
+          "nonmetastatic_recall": 0.9964070308543018,
+          "balanced_accuracy": 0.5903115819191783,
+          "balanced_accuracy_undefined_reason": null,
+          "mean_positive_slide_balanced_accuracy": 0.580580678693115,
+          "known_tissue_pixels": 25669034,
+          "metastasis_pixels": 413042,
+          "metastatic_recall_slide_denominator": 3,
+          "nonmetastatic_recall_slide_denominator": 6
+        }
+      }
+    },
+    {
+      "method": "vista_path",
+      "completed_slides": 6,
+      "metastasis_positive_slides": 3,
+      "benign_slides": 3,
+      "variants": {
+        "native": {
+          "tp": 281251,
+          "fp": 1896920,
+          "fn": 131791,
+          "tn": 23359072,
+          "metastatic_recall": 0.6809259106822066,
+          "nonmetastatic_recall": 0.9248922790282798,
+          "balanced_accuracy": 0.8029090948552432,
+          "balanced_accuracy_undefined_reason": null,
+          "mean_positive_slide_balanced_accuracy": 0.8015499843301006,
+          "known_tissue_pixels": 25669034,
+          "metastasis_pixels": 413042,
+          "metastatic_recall_slide_denominator": 3,
+          "nonmetastatic_recall_slide_denominator": 6
+        },
+        "shared_support": {
+          "tp": 281251,
+          "fp": 1896920,
+          "fn": 131791,
+          "tn": 23359072,
+          "metastatic_recall": 0.6809259106822066,
+          "nonmetastatic_recall": 0.9248922790282798,
+          "balanced_accuracy": 0.8029090948552432,
+          "balanced_accuracy_undefined_reason": null,
+          "mean_positive_slide_balanced_accuracy": 0.8015499843301006,
+          "known_tissue_pixels": 25669034,
+          "metastasis_pixels": 413042,
+          "metastatic_recall_slide_denominator": 3,
+          "nonmetastatic_recall_slide_denominator": 6
+        }
+      }
+    }
+  ]
+}
