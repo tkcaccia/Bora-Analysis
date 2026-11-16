@@ -333,6 +333,1472 @@
           "area_um2": 4874403.449337734
         }
       ]
+    },
+    {
+      "id": "benchmark2-public-10x-brain-cancer-ffpe",
+      "title": "10x brain cancer FFPE",
+      "section": "visium-hd",
+      "page": "visium-hd/public-10x-brain-cancer-ffpe.html#inspect-geojson",
+      "geometry": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-brain-cancer-ffpe/Bora-GeoJSON.gz",
+      "stored_geojson_sha256": "7563e326becc59bf2241c19aca1d6b1c6b4313c29fe4178ac1cfc96aa3dda3a0",
+      "geojson_bytes": 756164,
+      "image": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-brain-cancer-ffpe/he-overview.jpg",
+      "image_sha256": "24308f0102a370b74bf27468ec99898734c00c6b37fb2281989d402bd225efc9",
+      "image_bounds_xywh": [
+        0,
+        0,
+        31080,
+        30023
+      ],
+      "native_shape_yx": [
+        30023,
+        31080
+      ],
+      "native_mpp_xy": [
+        0.273814109710746,
+        0.27381292333469226
+      ],
+      "source_feature_count": 12,
+      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "groups": [
+        {
+          "value": 1,
+          "name": "Group 01 (stroma)",
+          "color": "#e64949",
+          "area_um2": 5882394.555361562
+        },
+        {
+          "value": 2,
+          "name": "Group 02 (stroma)",
+          "color": "#4977e6",
+          "area_um2": 4646156.454095907
+        },
+        {
+          "value": 3,
+          "name": "Group 03 (tumor)",
+          "color": "#a5e649",
+          "area_um2": 6178988.168783619
+        },
+        {
+          "value": 4,
+          "name": "Group 04 (other immune infiltrate)",
+          "color": "#e649d2",
+          "area_um2": 3785096.2891122936
+        },
+        {
+          "value": 5,
+          "name": "Group 05 (tumor)",
+          "color": "#49e6cb",
+          "area_um2": 3374620.5360039966
+        },
+        {
+          "value": 6,
+          "name": "Group 06 (stroma)",
+          "color": "#e69e49",
+          "area_um2": 3837006.8697728617
+        },
+        {
+          "value": 7,
+          "name": "Group 07 (stroma)",
+          "color": "#7049e6",
+          "area_um2": 4340075.932393231
+        },
+        {
+          "value": 8,
+          "name": "Group 08 (stroma)",
+          "color": "#50e649",
+          "area_um2": 2726180.12249912
+        },
+        {
+          "value": 9,
+          "name": "Group 09 (tumor)",
+          "color": "#e6497e",
+          "area_um2": 2534226.0291605582
+        },
+        {
+          "value": 10,
+          "name": "Group 10 (blood vessel)",
+          "color": "#49abe6",
+          "area_um2": 2273760.01284659
+        },
+        {
+          "value": 11,
+          "name": "Group 11 (necrosis)",
+          "color": "#d9e649",
+          "area_um2": 1419833.0542477022
+        },
+        {
+          "value": 12,
+          "name": "Group 12 (other immune infiltrate)",
+          "color": "#c549e6",
+          "area_um2": 1481237.8685774386
+        }
+      ]
+    },
+    {
+      "id": "benchmark2-public-10x-breast-ff",
+      "title": "10x breast cancer",
+      "section": "visium-hd",
+      "page": "visium-hd/public-10x-breast-ff.html#inspect-geojson",
+      "geometry": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-breast-ff/Bora-GeoJSON.gz",
+      "stored_geojson_sha256": "31722788ffec9589d0b219f1fccd94c1a6c5c364e67004c4f175d524b53940cd",
+      "geojson_bytes": 945944,
+      "image": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-breast-ff/he-overview.jpg",
+      "image_sha256": "8b79526f32452b4e1049997a904f02b526d96168aa296672b59231e07457faed",
+      "image_bounds_xywh": [
+        0,
+        0,
+        16016,
+        14625
+      ],
+      "native_shape_yx": [
+        14625,
+        16016
+      ],
+      "native_mpp_xy": [
+        0.5473040325288683,
+        0.5473002328593483
+      ],
+      "source_feature_count": 9,
+      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "groups": [
+        {
+          "value": 1,
+          "name": "Group 01 (stroma)",
+          "color": "#e64949",
+          "area_um2": 18265942.46562996
+        },
+        {
+          "value": 2,
+          "name": "Group 02 (stroma)",
+          "color": "#4977e6",
+          "area_um2": 5188256.509328093
+        },
+        {
+          "value": 3,
+          "name": "Group 03 (stroma)",
+          "color": "#a5e649",
+          "area_um2": 6137769.324940643
+        },
+        {
+          "value": 4,
+          "name": "Group 04 (stroma)",
+          "color": "#e649d2",
+          "area_um2": 3783734.3317391
+        },
+        {
+          "value": 5,
+          "name": "Group 05 (tumor)",
+          "color": "#49e6cb",
+          "area_um2": 4660487.742422886
+        },
+        {
+          "value": 6,
+          "name": "Group 06 (tumor)",
+          "color": "#e69e49",
+          "area_um2": 3922139.7320611514
+        },
+        {
+          "value": 7,
+          "name": "Group 07 (stroma)",
+          "color": "#7049e6",
+          "area_um2": 4694340.232223442
+        },
+        {
+          "value": 8,
+          "name": "Group 08 (stroma)",
+          "color": "#50e649",
+          "area_um2": 3554195.6775364215
+        },
+        {
+          "value": 9,
+          "name": "Group 09 (other immune infiltrate)",
+          "color": "#e6497e",
+          "area_um2": 2640664.3391641174
+        }
+      ]
+    },
+    {
+      "id": "benchmark2-public-10x-colon-cancer",
+      "title": "10x colorectal cancer",
+      "section": "visium-hd",
+      "page": "visium-hd/public-10x-colon-cancer.html#inspect-geojson",
+      "geometry": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-colon-cancer/Bora-GeoJSON.gz",
+      "stored_geojson_sha256": "3a29e5e29d3ce8468234ff68da74ce0fc86ad3936579201bbf19b7a4bf736ea7",
+      "geojson_bytes": 1704032,
+      "image": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-colon-cancer/he-overview.jpg",
+      "image_sha256": "d0632fc5cee0633b05512769e1f027b72e6505dd247e1cfecc56cc1d0dc17a0b",
+      "image_bounds_xywh": [
+        0,
+        0,
+        75250,
+        40900
+      ],
+      "native_shape_yx": [
+        48740,
+        75250
+      ],
+      "native_mpp_xy": [
+        0.2738121503969019,
+        0.2738132569747595
+      ],
+      "source_feature_count": 16,
+      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "groups": [
+        {
+          "value": 1,
+          "name": "Group 01 (tumor)",
+          "color": "#e64949",
+          "area_um2": 44090427.82915563
+        },
+        {
+          "value": 2,
+          "name": "Group 02 (stroma)",
+          "color": "#4977e6",
+          "area_um2": 18433554.71809219
+        },
+        {
+          "value": 3,
+          "name": "Group 03 (stroma)",
+          "color": "#a5e649",
+          "area_um2": 12456644.56183859
+        },
+        {
+          "value": 4,
+          "name": "Group 04 (tumor)",
+          "color": "#e649d2",
+          "area_um2": 12909562.050687226
+        },
+        {
+          "value": 5,
+          "name": "Group 05 (liver tissue)",
+          "color": "#49e6cb",
+          "area_um2": 6414396.94102813
+        },
+        {
+          "value": 6,
+          "name": "Group 06 (adipose)",
+          "color": "#e69e49",
+          "area_um2": 5877844.323060231
+        },
+        {
+          "value": 7,
+          "name": "Group 07 (stroma)",
+          "color": "#7049e6",
+          "area_um2": 4818168.782288751
+        },
+        {
+          "value": 8,
+          "name": "Group 08 (stroma)",
+          "color": "#50e649",
+          "area_um2": 4899195.670771797
+        },
+        {
+          "value": 9,
+          "name": "Group 09 (inflamed stroma)",
+          "color": "#e6497e",
+          "area_um2": 4845071.898401244
+        },
+        {
+          "value": 10,
+          "name": "Group 10 (muscle)",
+          "color": "#49abe6",
+          "area_um2": 3794382.6804595687
+        },
+        {
+          "value": 11,
+          "name": "Group 11 (muscle)",
+          "color": "#d9e649",
+          "area_um2": 2322884.929434712
+        },
+        {
+          "value": 12,
+          "name": "Group 12 (stroma)",
+          "color": "#c549e6",
+          "area_um2": 2774493.596231889
+        },
+        {
+          "value": 13,
+          "name": "Group 13 (stroma)",
+          "color": "#49e697",
+          "area_um2": 3473715.712648175
+        },
+        {
+          "value": 14,
+          "name": "Group 14 (blood vessel)",
+          "color": "#e66a49",
+          "area_um2": 1171061.0032764499
+        },
+        {
+          "value": 15,
+          "name": "Group 15 (stroma)",
+          "color": "#4957e6",
+          "area_um2": 582595.6921900427
+        },
+        {
+          "value": 16,
+          "name": "Group 16 (mucus plasma or fluids)",
+          "color": "#84e649",
+          "area_um2": 617706.3590785739
+        }
+      ]
+    },
+    {
+      "id": "benchmark2-public-10x-kidney-ffpe",
+      "title": "10x kidney FFPE",
+      "section": "visium-hd",
+      "page": "visium-hd/public-10x-kidney-ffpe.html#inspect-geojson",
+      "geometry": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-kidney-ffpe/Bora-GeoJSON.gz",
+      "stored_geojson_sha256": "03d3867d586dc1a16e5fd9356a8fe10823facf6bfa2611a70a072f894e11101d",
+      "geojson_bytes": 2827406,
+      "image": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-kidney-ffpe/he-overview.jpg",
+      "image_sha256": "fdd6ed04af95433c2685b84d58dd0a8533cdfa7f1acf0a52cbe4cff2d6d2ce13",
+      "image_bounds_xywh": [
+        0,
+        0,
+        32674,
+        43999
+      ],
+      "native_shape_yx": [
+        43999,
+        32674
+      ],
+      "native_mpp_xy": [
+        0.2738128204517741,
+        0.2738100430057021
+      ],
+      "source_feature_count": 8,
+      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "groups": [
+        {
+          "value": 1,
+          "name": "Group 01 (stroma)",
+          "color": "#e64949",
+          "area_um2": 9939101.106614916
+        },
+        {
+          "value": 2,
+          "name": "Group 02 (stroma)",
+          "color": "#4977e6",
+          "area_um2": 33506743.255589757
+        },
+        {
+          "value": 3,
+          "name": "Group 03 (stroma)",
+          "color": "#a5e649",
+          "area_um2": 13247631.194074675
+        },
+        {
+          "value": 4,
+          "name": "Group 04 (stroma)",
+          "color": "#e649d2",
+          "area_um2": 7961241.629438462
+        },
+        {
+          "value": 5,
+          "name": "Group 05 (stroma)",
+          "color": "#49e6cb",
+          "area_um2": 4071799.1230973825
+        },
+        {
+          "value": 6,
+          "name": "Group 06 (stroma)",
+          "color": "#e69e49",
+          "area_um2": 40374.45410718759
+        },
+        {
+          "value": 7,
+          "name": "Group 07 (keratinized tissue)",
+          "color": "#7049e6",
+          "area_um2": 3174656.0337982182
+        },
+        {
+          "value": 8,
+          "name": "Group 08 (normal glandular epithelium)",
+          "color": "#50e649",
+          "area_um2": 2248094.9844961264
+        }
+      ]
+    },
+    {
+      "id": "benchmark2-public-10x-lung-cancer-fixed-frozen",
+      "title": "10x lung cancer",
+      "section": "visium-hd",
+      "page": "visium-hd/public-10x-lung-cancer-fixed-frozen.html#inspect-geojson",
+      "geometry": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-lung-cancer-fixed-frozen/Bora-GeoJSON.gz",
+      "stored_geojson_sha256": "126f8b8f1912564e5fe1a0bd343a3625a5e313ba43649cb8dcf022bd5485dc21",
+      "geojson_bytes": 1980499,
+      "image": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-lung-cancer-fixed-frozen/he-overview.jpg",
+      "image_sha256": "36e8f8d74d47c3c399c5e91a2f623eee5345d5054ed2e23bd78417eafaad3e6d",
+      "image_bounds_xywh": [
+        0,
+        0,
+        54639,
+        29814
+      ],
+      "native_shape_yx": [
+        29814,
+        54639
+      ],
+      "native_mpp_xy": [
+        0.27381430245424265,
+        0.27381122608537745
+      ],
+      "source_feature_count": 14,
+      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "groups": [
+        {
+          "value": 1,
+          "name": "Group 01 (stroma)",
+          "color": "#e64949",
+          "area_um2": 20297114.33159564
+        },
+        {
+          "value": 2,
+          "name": "Group 02 (stroma)",
+          "color": "#4977e6",
+          "area_um2": 7659721.646757548
+        },
+        {
+          "value": 3,
+          "name": "Group 03 (stroma)",
+          "color": "#a5e649",
+          "area_um2": 9017399.138881907
+        },
+        {
+          "value": 4,
+          "name": "Group 04 (stroma)",
+          "color": "#e649d2",
+          "area_um2": 8834471.808191918
+        },
+        {
+          "value": 5,
+          "name": "Group 05 (tumor)",
+          "color": "#49e6cb",
+          "area_um2": 6471543.131520143
+        },
+        {
+          "value": 6,
+          "name": "Group 06 (inflammatory infiltrate)",
+          "color": "#e69e49",
+          "area_um2": 7021008.858328889
+        },
+        {
+          "value": 7,
+          "name": "Group 07 (stroma)",
+          "color": "#7049e6",
+          "area_um2": 5517809.605159841
+        },
+        {
+          "value": 8,
+          "name": "Group 08 (stroma)",
+          "color": "#50e649",
+          "area_um2": 4614537.038888884
+        },
+        {
+          "value": 9,
+          "name": "Group 09 (metaplasia)",
+          "color": "#e6497e",
+          "area_um2": 2050787.5518916466
+        },
+        {
+          "value": 10,
+          "name": "Group 10 (blood vessel)",
+          "color": "#49abe6",
+          "area_um2": 1932642.7591707632
+        },
+        {
+          "value": 11,
+          "name": "Group 11 (cartilage or bone)",
+          "color": "#d9e649",
+          "area_um2": 1438556.5007652086
+        },
+        {
+          "value": 12,
+          "name": "Group 12 (stroma)",
+          "color": "#c549e6",
+          "area_um2": 1238509.5656795138
+        },
+        {
+          "value": 13,
+          "name": "Group 13 (stroma)",
+          "color": "#49e697",
+          "area_um2": 1160708.9735661116
+        },
+        {
+          "value": 14,
+          "name": "Group 14 (stroma)",
+          "color": "#e66a49",
+          "area_um2": 777104.3385764818
+        }
+      ]
+    },
+    {
+      "id": "benchmark2-public-10x-lymph-node-3prime",
+      "title": "10x lymph node, 3\u2032",
+      "section": "visium-hd",
+      "page": "visium-hd/public-10x-lymph-node-3prime.html#inspect-geojson",
+      "geometry": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-lymph-node-3prime/Bora-GeoJSON.gz",
+      "stored_geojson_sha256": "ed692857a3c2e9b30e30f154eeda20d0b69ef8bce3420a5e2b4139eebe8856e8",
+      "geojson_bytes": 803866,
+      "image": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-lymph-node-3prime/he-overview.jpg",
+      "image_sha256": "3f8c0a0d051d7961e4744f246a8a7ab0c980208587f204ad4df073739cca39e6",
+      "image_bounds_xywh": [
+        0,
+        0,
+        30966,
+        39421
+      ],
+      "native_shape_yx": [
+        39421,
+        30966
+      ],
+      "native_mpp_xy": [
+        0.27377381382151356,
+        0.273773729659084
+      ],
+      "source_feature_count": 9,
+      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "groups": [
+        {
+          "value": 1,
+          "name": "Group 01 (inflammatory infiltrate)",
+          "color": "#e64949",
+          "area_um2": 4081965.609186753
+        },
+        {
+          "value": 2,
+          "name": "Group 02 (plasma cells)",
+          "color": "#4977e6",
+          "area_um2": 8163607.028791243
+        },
+        {
+          "value": 3,
+          "name": "Group 03 (stroma)",
+          "color": "#a5e649",
+          "area_um2": 6485437.83764161
+        },
+        {
+          "value": 4,
+          "name": "Group 04 (inflammatory infiltrate)",
+          "color": "#e649d2",
+          "area_um2": 4949272.675240723
+        },
+        {
+          "value": 5,
+          "name": "Group 05 (inflammatory infiltrate)",
+          "color": "#49e6cb",
+          "area_um2": 4320843.665685123
+        },
+        {
+          "value": 6,
+          "name": "Group 06 (inflammatory infiltrate)",
+          "color": "#e69e49",
+          "area_um2": 2819933.5150453923
+        },
+        {
+          "value": 7,
+          "name": "Group 07 (inflammatory infiltrate)",
+          "color": "#7049e6",
+          "area_um2": 1813154.8410914706
+        },
+        {
+          "value": 8,
+          "name": "Group 08 (stroma)",
+          "color": "#50e649",
+          "area_um2": 1347590.0844741343
+        },
+        {
+          "value": 9,
+          "name": "Group 09 (inflammatory infiltrate)",
+          "color": "#e6497e",
+          "area_um2": 802526.9952540331
+        }
+      ]
+    },
+    {
+      "id": "benchmark2-public-10x-lymph-node-ffpe",
+      "title": "10x lymph node FFPE",
+      "section": "visium-hd",
+      "page": "visium-hd/public-10x-lymph-node-ffpe.html#inspect-geojson",
+      "geometry": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-lymph-node-ffpe/Bora-GeoJSON.gz",
+      "stored_geojson_sha256": "cdc09e2fc99ff67582d6121585f336bd3a25bd954ea493099f98bb65ab2da951",
+      "geojson_bytes": 622170,
+      "image": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-lymph-node-ffpe/he-overview.jpg",
+      "image_sha256": "a5afc0a2a1b023e57e9f34aa352aaf8fdc6110e0443ad78bfe7c50fc215aba0d",
+      "image_bounds_xywh": [
+        0,
+        0,
+        28248,
+        26128
+      ],
+      "native_shape_yx": [
+        26128,
+        28248
+      ],
+      "native_mpp_xy": [
+        0.27377151396800464,
+        0.27377360261883377
+      ],
+      "source_feature_count": 17,
+      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "groups": [
+        {
+          "value": 1,
+          "name": "Group 01 (lymphatic vessel)",
+          "color": "#e64949",
+          "area_um2": 2648047.0065985443
+        },
+        {
+          "value": 2,
+          "name": "Group 02 (adipose)",
+          "color": "#4977e6",
+          "area_um2": 2896094.586422941
+        },
+        {
+          "value": 3,
+          "name": "Group 03 (stroma)",
+          "color": "#a5e649",
+          "area_um2": 2868975.1104201893
+        },
+        {
+          "value": 4,
+          "name": "Group 04 (stroma)",
+          "color": "#e649d2",
+          "area_um2": 2683828.250052461
+        },
+        {
+          "value": 5,
+          "name": "Group 05 (stroma)",
+          "color": "#49e6cb",
+          "area_um2": 2981491.325461877
+        },
+        {
+          "value": 6,
+          "name": "Group 06 (stroma)",
+          "color": "#e69e49",
+          "area_um2": 1649657.87006559
+        },
+        {
+          "value": 7,
+          "name": "Group 07 (lymphatic vessel)",
+          "color": "#7049e6",
+          "area_um2": 2462492.325615825
+        },
+        {
+          "value": 8,
+          "name": "Group 08 (lymphatic vessel)",
+          "color": "#50e649",
+          "area_um2": 2093523.4465078234
+        },
+        {
+          "value": 9,
+          "name": "Group 09 (inflammatory infiltrate)",
+          "color": "#e6497e",
+          "area_um2": 1282291.3988383943
+        },
+        {
+          "value": 10,
+          "name": "Group 10 (stroma)",
+          "color": "#49abe6",
+          "area_um2": 1622843.7736198632
+        },
+        {
+          "value": 11,
+          "name": "Group 11 (inflammatory infiltrate)",
+          "color": "#d9e649",
+          "area_um2": 829437.1749173856
+        },
+        {
+          "value": 12,
+          "name": "Group 12 (lymphatic vessel)",
+          "color": "#c549e6",
+          "area_um2": 1477343.7360016878
+        },
+        {
+          "value": 13,
+          "name": "Group 13 (lymphatic vessel)",
+          "color": "#49e697",
+          "area_um2": 1068475.3773484076
+        },
+        {
+          "value": 14,
+          "name": "Group 14 (tumor)",
+          "color": "#e66a49",
+          "area_um2": 694278.129003294
+        },
+        {
+          "value": 15,
+          "name": "Group 15 (normal glandular epithelium)",
+          "color": "#4957e6",
+          "area_um2": 525001.424884119
+        },
+        {
+          "value": 16,
+          "name": "Group 16 (inflamed stroma)",
+          "color": "#84e649",
+          "area_um2": 450422.60905617644
+        },
+        {
+          "value": 17,
+          "name": "Group 17 (stroma)",
+          "color": "#e649b2",
+          "area_um2": 595154.4223678169
+        }
+      ]
+    },
+    {
+      "id": "benchmark2-public-10x-ovarian-3prime",
+      "title": "10x ovarian cancer, 3\u2032",
+      "section": "visium-hd",
+      "page": "visium-hd/public-10x-ovarian-3prime.html#inspect-geojson",
+      "geometry": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-ovarian-3prime/Bora-GeoJSON.gz",
+      "stored_geojson_sha256": "8fa467565e5da2a8970e6368f18d7ee37281f0ec28aba61a1150662a3a250cc6",
+      "geojson_bytes": 988538,
+      "image": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-ovarian-3prime/he-overview.jpg",
+      "image_sha256": "b6a2e609f48e6e36416dcc0fc175d33fd67e9fb5c034552fbcf2d6a181d427ac",
+      "image_bounds_xywh": [
+        0,
+        0,
+        25811,
+        26686
+      ],
+      "native_shape_yx": [
+        26686,
+        25811
+      ],
+      "native_mpp_xy": [
+        0.2738071734315431,
+        0.27381296759052987
+      ],
+      "source_feature_count": 7,
+      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "groups": [
+        {
+          "value": 1,
+          "name": "Group 01 (tumor)",
+          "color": "#e64949",
+          "area_um2": 3896309.585417498
+        },
+        {
+          "value": 2,
+          "name": "Group 02 (tumor)",
+          "color": "#4977e6",
+          "area_um2": 8744524.0166266
+        },
+        {
+          "value": 3,
+          "name": "Group 03 (tumor)",
+          "color": "#a5e649",
+          "area_um2": 9942324.256972993
+        },
+        {
+          "value": 4,
+          "name": "Group 04 (stroma)",
+          "color": "#e649d2",
+          "area_um2": 3608414.605182558
+        },
+        {
+          "value": 5,
+          "name": "Group 05 (stroma)",
+          "color": "#49e6cb",
+          "area_um2": 2045383.3153650903
+        },
+        {
+          "value": 6,
+          "name": "Group 06 (stroma)",
+          "color": "#e69e49",
+          "area_um2": 3050257.085844316
+        },
+        {
+          "value": 7,
+          "name": "Group 07 (stroma)",
+          "color": "#7049e6",
+          "area_um2": 2262637.035752088
+        }
+      ]
+    },
+    {
+      "id": "benchmark2-public-10x-ovarian-ff",
+      "title": "10x ovarian cancer, fresh frozen",
+      "section": "visium-hd",
+      "page": "visium-hd/public-10x-ovarian-ff.html#inspect-geojson",
+      "geometry": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-ovarian-ff/Bora-GeoJSON.gz",
+      "stored_geojson_sha256": "b2f9f8a40772b205ef1d646c7a24cd2580c008ab6fe242fc6c9993cb42f89f9b",
+      "geojson_bytes": 1587218,
+      "image": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-ovarian-ff/he-overview.jpg",
+      "image_sha256": "e1d6bebdca487f714bbb3bddeead2b76fb8c96ff74c3c948377fabb0c361361b",
+      "image_bounds_xywh": [
+        0,
+        0,
+        24882,
+        30496
+      ],
+      "native_shape_yx": [
+        30496,
+        24882
+      ],
+      "native_mpp_xy": [
+        0.27381546181109173,
+        0.2738167812497657
+      ],
+      "source_feature_count": 7,
+      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "groups": [
+        {
+          "value": 1,
+          "name": "Group 01 (tumor)",
+          "color": "#e64949",
+          "area_um2": 7658829.356324123
+        },
+        {
+          "value": 2,
+          "name": "Group 02 (tumor)",
+          "color": "#4977e6",
+          "area_um2": 5183428.998366509
+        },
+        {
+          "value": 3,
+          "name": "Group 03 (other immune infiltrate)",
+          "color": "#a5e649",
+          "area_um2": 6070470.829299352
+        },
+        {
+          "value": 4,
+          "name": "Group 04 (stroma)",
+          "color": "#e649d2",
+          "area_um2": 4791555.019304965
+        },
+        {
+          "value": 5,
+          "name": "Group 05 (stroma)",
+          "color": "#49e6cb",
+          "area_um2": 2318999.59236546
+        },
+        {
+          "value": 6,
+          "name": "Group 06 (tumor)",
+          "color": "#e69e49",
+          "area_um2": 5269096.448143343
+        },
+        {
+          "value": 7,
+          "name": "Group 07 (stroma)",
+          "color": "#7049e6",
+          "area_um2": 1884909.8390150915
+        }
+      ]
+    },
+    {
+      "id": "benchmark2-public-10x-pancreatic-cancer-fresh-frozen",
+      "title": "10x pancreatic cancer",
+      "section": "visium-hd",
+      "page": "visium-hd/public-10x-pancreatic-cancer-fresh-frozen.html#inspect-geojson",
+      "geometry": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-pancreatic-cancer-fresh-frozen/Bora-GeoJSON.gz",
+      "stored_geojson_sha256": "472ebd717d3c05da2b926ad7ec832cbf1d05b4348360f715b6ab1e9edc626334",
+      "geojson_bytes": 2105455,
+      "image": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-pancreatic-cancer-fresh-frozen/he-overview.jpg",
+      "image_sha256": "1f57af42b96db45bcd66c019ef6240b1e5c850b371ad62206294daedf2e82773",
+      "image_bounds_xywh": [
+        0,
+        0,
+        45702,
+        48733
+      ],
+      "native_shape_yx": [
+        48733,
+        45702
+      ],
+      "native_mpp_xy": [
+        0.27381175518990597,
+        0.2738133037144553
+      ],
+      "source_feature_count": 11,
+      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "groups": [
+        {
+          "value": 1,
+          "name": "Group 01 (tumor)",
+          "color": "#e64949",
+          "area_um2": 20090120.68083427
+        },
+        {
+          "value": 2,
+          "name": "Group 02 (stroma)",
+          "color": "#4977e6",
+          "area_um2": 16883954.471451543
+        },
+        {
+          "value": 3,
+          "name": "Group 03 (stroma)",
+          "color": "#a5e649",
+          "area_um2": 19854573.140226223
+        },
+        {
+          "value": 4,
+          "name": "Group 04 (stroma)",
+          "color": "#e649d2",
+          "area_um2": 7127934.621440983
+        },
+        {
+          "value": 5,
+          "name": "Group 05 (stroma)",
+          "color": "#49e6cb",
+          "area_um2": 7456645.502953282
+        },
+        {
+          "value": 6,
+          "name": "Group 06 (stroma)",
+          "color": "#e69e49",
+          "area_um2": 6125565.138667523
+        },
+        {
+          "value": 7,
+          "name": "Group 07 (stroma)",
+          "color": "#7049e6",
+          "area_um2": 4473434.012851603
+        },
+        {
+          "value": 8,
+          "name": "Group 08 (stroma)",
+          "color": "#50e649",
+          "area_um2": 7245609.77820518
+        },
+        {
+          "value": 9,
+          "name": "Group 09 (other immune infiltrate)",
+          "color": "#e6497e",
+          "area_um2": 3205024.887260563
+        },
+        {
+          "value": 10,
+          "name": "Group 10 (stroma)",
+          "color": "#49abe6",
+          "area_um2": 2963238.19602557
+        },
+        {
+          "value": 11,
+          "name": "Group 11 (blood vessel)",
+          "color": "#d9e649",
+          "area_um2": 993569.3896175241
+        }
+      ]
+    },
+    {
+      "id": "benchmark2-public-10x-prostate-ffpe",
+      "title": "10x prostate cancer FFPE",
+      "section": "visium-hd",
+      "page": "visium-hd/public-10x-prostate-ffpe.html#inspect-geojson",
+      "geometry": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-prostate-ffpe/Bora-GeoJSON.gz",
+      "stored_geojson_sha256": "90245fe186c978a01c76ac95b549030c3d6fd1ada634493aee1fcf2ed2f92056",
+      "geojson_bytes": 652942,
+      "image": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-prostate-ffpe/he-overview.jpg",
+      "image_sha256": "ed164b1bde95c802e456bf9957441af8729996d573e6be530c7a8deed928ae6d",
+      "image_bounds_xywh": [
+        0,
+        0,
+        28288,
+        24794
+      ],
+      "native_shape_yx": [
+        24794,
+        28288
+      ],
+      "native_mpp_xy": [
+        0.27376984922767583,
+        0.27377050549223736
+      ],
+      "source_feature_count": 13,
+      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "groups": [
+        {
+          "value": 1,
+          "name": "Group 01 (blood vessel)",
+          "color": "#e64949",
+          "area_um2": 4225743.407289117
+        },
+        {
+          "value": 2,
+          "name": "Group 02 (stroma)",
+          "color": "#4977e6",
+          "area_um2": 4329480.36566495
+        },
+        {
+          "value": 3,
+          "name": "Group 03 (tumor)",
+          "color": "#a5e649",
+          "area_um2": 4039222.7588299583
+        },
+        {
+          "value": 4,
+          "name": "Group 04 (stroma)",
+          "color": "#e649d2",
+          "area_um2": 4272699.522644607
+        },
+        {
+          "value": 5,
+          "name": "Group 05 (stroma)",
+          "color": "#49e6cb",
+          "area_um2": 3794746.4270426813
+        },
+        {
+          "value": 6,
+          "name": "Group 06 (stroma)",
+          "color": "#e69e49",
+          "area_um2": 2030118.8621734723
+        },
+        {
+          "value": 7,
+          "name": "Group 07 (tumor)",
+          "color": "#7049e6",
+          "area_um2": 3134874.3794304174
+        },
+        {
+          "value": 8,
+          "name": "Group 08 (stroma)",
+          "color": "#50e649",
+          "area_um2": 2702075.1534300116
+        },
+        {
+          "value": 9,
+          "name": "Group 09 (blood vessel)",
+          "color": "#e6497e",
+          "area_um2": 2498521.89780228
+        },
+        {
+          "value": 10,
+          "name": "Group 10 (stroma)",
+          "color": "#49abe6",
+          "area_um2": 1980183.7693706276
+        },
+        {
+          "value": 11,
+          "name": "Group 11 (tumor)",
+          "color": "#d9e649",
+          "area_um2": 1814604.5867459774
+        },
+        {
+          "value": 12,
+          "name": "Group 12 (stroma)",
+          "color": "#c549e6",
+          "area_um2": 1629749.9368175825
+        },
+        {
+          "value": 13,
+          "name": "Group 13 (tumor)",
+          "color": "#49e697",
+          "area_um2": 1212668.999095368
+        }
+      ]
+    },
+    {
+      "id": "benchmark2-public-10x-tonsil-3prime",
+      "title": "10x tonsil, 3\u2032",
+      "section": "visium-hd",
+      "page": "visium-hd/public-10x-tonsil-3prime.html#inspect-geojson",
+      "geometry": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-tonsil-3prime/Bora-GeoJSON.gz",
+      "stored_geojson_sha256": "0c21254bafe8e930bf8364c17ccaea50ffbcf8c2944896a036b0858f0ed848dc",
+      "geojson_bytes": 364210,
+      "image": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-tonsil-3prime/he-overview.jpg",
+      "image_sha256": "a368a9ce51c15d4c5317d3d82616dbfc9f1ce042df1cd1b470149318894adacb",
+      "image_bounds_xywh": [
+        0,
+        0,
+        29473,
+        41910
+      ],
+      "native_shape_yx": [
+        41910,
+        29473
+      ],
+      "native_mpp_xy": [
+        0.27376882585368173,
+        0.2737758730321103
+      ],
+      "source_feature_count": 6,
+      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "groups": [
+        {
+          "value": 1,
+          "name": "Group 01 (inflammatory infiltrate)",
+          "color": "#e64949",
+          "area_um2": 20346680.0085924
+        },
+        {
+          "value": 2,
+          "name": "Group 02 (stroma)",
+          "color": "#4977e6",
+          "area_um2": 7297266.25612854
+        },
+        {
+          "value": 3,
+          "name": "Group 03 (stroma)",
+          "color": "#a5e649",
+          "area_um2": 6037235.498590448
+        },
+        {
+          "value": 4,
+          "name": "Group 04 (inflammatory infiltrate)",
+          "color": "#e649d2",
+          "area_um2": 5447238.053360057
+        },
+        {
+          "value": 5,
+          "name": "Group 05 (stroma)",
+          "color": "#49e6cb",
+          "area_um2": 4969405.951040074
+        },
+        {
+          "value": 6,
+          "name": "Group 06 (inflammatory infiltrate)",
+          "color": "#e69e49",
+          "area_um2": 3740761.882208533
+        }
+      ]
+    },
+    {
+      "id": "benchmark3-tumor_084",
+      "title": "CAMELYON16 tumor_084",
+      "section": "camelyon16",
+      "page": "camelyon16/tumor_084.html#inspect-geojson",
+      "geometry": "camelyon16/inspector-vectors/tumor_084-bora.geojson.gz",
+      "stored_geojson_sha256": "472d1ad69860ad652a800a2776d26e762961b9057842242d75e5c4213a7fecfe",
+      "source_geojson_sha256": "7a5694bac2db4dbc979d2500e8bbd1a596492517ced73f8708d4379daa3110f1",
+      "geojson_bytes": 116897,
+      "image": "camelyon16/inspector-previews/tumor_084-he.jpg",
+      "image_sha256": "5464d689ffaf63379e9859a06eddc68038a243412a210cdd38cc07ff9190bf9e",
+      "image_bounds_xywh": [
+        0,
+        0,
+        29664,
+        38934
+      ],
+      "native_shape_yx": [
+        39424,
+        30464
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "source_feature_count": 179,
+      "label_source": "Pair-trained Bora binary prediction, not expert annotation",
+      "label_description": "These are Bora\u2019s saved binary prediction contours. Red denotes metastasis-like tissue; green denotes non-metastatic tissue. These are model outputs, not the official reference. The display uses existing spatial cleanup and does not change the saved coordinates or scores.",
+      "groups": [
+        {
+          "value": 1,
+          "name": "Non-metastatic tissue",
+          "color": "#52c870",
+          "area_um2": 118625680.0
+        },
+        {
+          "value": 2,
+          "name": "Metastasis-like tissue",
+          "color": "#f4474e",
+          "area_um2": 1817440.0
+        }
+      ]
+    },
+    {
+      "id": "benchmark3-tumor_091",
+      "title": "CAMELYON16 tumor_091",
+      "section": "camelyon16",
+      "page": "camelyon16/tumor_091.html#inspect-geojson",
+      "geometry": "camelyon16/inspector-vectors/tumor_091-bora.geojson.gz",
+      "stored_geojson_sha256": "6b96bdf39646d3bf550f85cd1661efb8f0c21157a93f84aa438e46f7082073dd",
+      "source_geojson_sha256": "84e7fec3f31bc4adeda571da2f23068ecd942a4c26f850a61e128b2db8d32777",
+      "geojson_bytes": 95597,
+      "image": "camelyon16/inspector-previews/tumor_091-he.jpg",
+      "image_sha256": "acda3e6de60a70ab30307f21adfc1e8ec136111438d46a20967b1f544c7a0798",
+      "image_bounds_xywh": [
+        0,
+        0,
+        27810,
+        24333
+      ],
+      "native_shape_yx": [
+        25088,
+        28672
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "source_feature_count": 99,
+      "label_source": "Pair-trained Bora binary prediction, not expert annotation",
+      "label_description": "These are Bora\u2019s saved binary prediction contours. Red denotes metastasis-like tissue; green denotes non-metastatic tissue. These are model outputs, not the official reference. The display uses existing spatial cleanup and does not change the saved coordinates or scores.",
+      "groups": [
+        {
+          "value": 1,
+          "name": "Non-metastatic tissue",
+          "color": "#52c870",
+          "area_um2": 66795152.0
+        },
+        {
+          "value": 2,
+          "name": "Metastasis-like tissue",
+          "color": "#f4474e",
+          "area_um2": 2871392.0
+        }
+      ]
+    },
+    {
+      "id": "benchmark3-normal_019",
+      "title": "CAMELYON16 normal_019",
+      "section": "camelyon16",
+      "page": "camelyon16/normal_019.html#inspect-geojson",
+      "geometry": "camelyon16/inspector-vectors/normal_019-bora.geojson.gz",
+      "stored_geojson_sha256": "b4ed2777bce08385a594cfd844e8a689d9565acc8c143035422b0e51f8210d17",
+      "source_geojson_sha256": "19b6fa9ee243971f9ff606109afd3458911f919df10302dea53b7ee3a7107aa7",
+      "geojson_bytes": 19597,
+      "image": "camelyon16/local-assets/normal_019/overview-he.webp",
+      "image_sha256": "7dba053409a5a1cb41a7b169bcf18daf8f7a5edf3f14f4db58e3622b1f55e09c",
+      "image_bounds_xywh": [
+        23368,
+        50816,
+        16216,
+        10496
+      ],
+      "native_shape_yx": [
+        108416,
+        48384
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "source_feature_count": 8,
+      "label_source": "Pair-trained Bora binary prediction, not expert annotation",
+      "label_description": "These are Bora\u2019s saved binary prediction contours. Red denotes metastasis-like tissue; green denotes non-metastatic tissue. These are model outputs, not the official reference. The display uses existing spatial cleanup and does not change the saved coordinates or scores.",
+      "groups": [
+        {
+          "value": 1,
+          "name": "Non-metastatic tissue",
+          "color": "#52c870",
+          "area_um2": 12753808.0
+        },
+        {
+          "value": 2,
+          "name": "Metastasis-like tissue",
+          "color": "#f4474e",
+          "area_um2": 22368.0
+        }
+      ]
+    },
+    {
+      "id": "benchmark3-tumor_075",
+      "title": "CAMELYON16 tumor_075",
+      "section": "camelyon16",
+      "page": "camelyon16/tumor_075.html#inspect-geojson",
+      "geometry": "camelyon16/inspector-vectors/tumor_075-bora.geojson.gz",
+      "stored_geojson_sha256": "41f0f14894a99a7ac2d9877f64f7e00eb77651471b6a19582b471765dc0e940a",
+      "source_geojson_sha256": "60464e4cc33723e9249cb89451ec2b872e51880c68d15cd072e9dd413369e457",
+      "geojson_bytes": 170054,
+      "image": "camelyon16/inspector-previews/tumor_075-he.jpg",
+      "image_sha256": "5f047ec0533140aef99b2197cb68396ce4b9f6ef8825ea82b654db74e4e028ba",
+      "image_bounds_xywh": [
+        0,
+        0,
+        40788,
+        35689
+      ],
+      "native_shape_yx": [
+        35840,
+        41216
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "source_feature_count": 212,
+      "label_source": "Pair-trained Bora binary prediction, not expert annotation",
+      "label_description": "These are Bora\u2019s saved binary prediction contours. Red denotes metastasis-like tissue; green denotes non-metastatic tissue. These are model outputs, not the official reference. The display uses existing spatial cleanup and does not change the saved coordinates or scores.",
+      "groups": [
+        {
+          "value": 1,
+          "name": "Non-metastatic tissue",
+          "color": "#52c870",
+          "area_um2": 117503584.0
+        },
+        {
+          "value": 2,
+          "name": "Metastasis-like tissue",
+          "color": "#f4474e",
+          "area_um2": 4277376.0
+        }
+      ]
+    },
+    {
+      "id": "benchmark3-normal_108",
+      "title": "CAMELYON16 normal_108",
+      "section": "camelyon16",
+      "page": "camelyon16/normal_108.html#inspect-geojson",
+      "geometry": "camelyon16/inspector-vectors/normal_108-bora.geojson.gz",
+      "stored_geojson_sha256": "7490536a30a53dc7ba401bfe6bc4a8bb58190a9077471b0e3361076b7ff3617d",
+      "source_geojson_sha256": "0f7f9719b1c982efe75730c5e55de6363aa388f1f4a2223f7f336cd7cf700b20",
+      "geojson_bytes": 47037,
+      "image": "camelyon16/inspector-previews/normal_108-he.jpg",
+      "image_sha256": "33b98f3ea127c6e7f2163c489dce6518df943c2da19c5b7f88f69a75e79303d5",
+      "image_bounds_xywh": [
+        0,
+        0,
+        20447,
+        16264
+      ],
+      "native_shape_yx": [
+        17024,
+        20608
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "source_feature_count": 59,
+      "label_source": "Pair-trained Bora binary prediction, not expert annotation",
+      "label_description": "These are Bora\u2019s saved binary prediction contours. Red denotes metastasis-like tissue; green denotes non-metastatic tissue. These are model outputs, not the official reference. The display uses existing spatial cleanup and does not change the saved coordinates or scores.",
+      "groups": [
+        {
+          "value": 1,
+          "name": "Non-metastatic tissue",
+          "color": "#52c870",
+          "area_um2": 53562336.0
+        },
+        {
+          "value": 2,
+          "name": "Metastasis-like tissue",
+          "color": "#f4474e",
+          "area_um2": 478144.0
+        }
+      ]
+    },
+    {
+      "id": "benchmark3-normal_150",
+      "title": "CAMELYON16 normal_150",
+      "section": "camelyon16",
+      "page": "camelyon16/normal_150.html#inspect-geojson",
+      "geometry": "camelyon16/inspector-vectors/normal_150-bora.geojson.gz",
+      "stored_geojson_sha256": "a62d1f196f0a62aa0df8fe45d491c88fe829d01b4c746e3f88def021b05e7b12",
+      "source_geojson_sha256": "dd44ac35c5a28f1e65a3a9601c6c097bf91871dd14b66f4e9af7d0d42ec22da2",
+      "geojson_bytes": 142045,
+      "image": "camelyon16/inspector-previews/normal_150-he.jpg",
+      "image_sha256": "31299f441d6aac1c9126cddfac0c2c17634dae54aace60c0a58b7c83a11743a6",
+      "image_bounds_xywh": [
+        0,
+        0,
+        29741,
+        27648
+      ],
+      "native_shape_yx": [
+        27776,
+        30464
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "source_feature_count": 185,
+      "label_source": "Pair-trained Bora binary prediction, not expert annotation",
+      "label_description": "These are Bora\u2019s saved binary prediction contours. Red denotes metastasis-like tissue; green denotes non-metastatic tissue. These are model outputs, not the official reference. The display uses existing spatial cleanup and does not change the saved coordinates or scores.",
+      "groups": [
+        {
+          "value": 1,
+          "name": "Non-metastatic tissue",
+          "color": "#52c870",
+          "area_um2": 70434496.0
+        },
+        {
+          "value": 2,
+          "name": "Metastasis-like tissue",
+          "color": "#f4474e",
+          "area_um2": 2358912.0
+        }
+      ]
+    },
+    {
+      "id": "benchmark3-tumor_093-support",
+      "title": "CAMELYON16 tumor_093 fitting tissue area",
+      "section": "camelyon16",
+      "page": "camelyon16/tumor_093.html#inspect-geojson",
+      "geometry": "camelyon16/inspector-vectors/tumor_093-tissue-support.geojson.gz",
+      "stored_geojson_sha256": "1672a218a426b577b8a06ebdb512717bd80e33dedefe6a3a5ed6e02315c43609",
+      "source_geojson_sha256": "fe6a0ce4bd71e86560ab6af2128282d140ccf86ffd81dbce2abe538f7f441a62",
+      "geojson_bytes": 23263,
+      "image": "camelyon16/inspector-previews/tumor_093-tissue.webp",
+      "image_sha256": "945bfafa70cd57bdae95a1c3ba33ae8b372d0d18a8fcb19206d8a63702afec0d",
+      "image_bounds_xywh": [
+        3408,
+        0,
+        41392,
+        41216
+      ],
+      "native_shape_yx": [
+        41216,
+        44800
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "source_feature_count": 9,
+      "label_source": "Reviewed H&E tissue support, not a metastasis prediction",
+      "label_description": "This fitting slide has no held-out score or published Bora prediction. The polygons show only its reviewed H&E tissue area used for feature extraction. They are not metastasis labels or output from the fitted classifier.",
+      "groups": [
+        {
+          "value": 1,
+          "name": "Reviewed H&E tissue area",
+          "color": "#52c870",
+          "area_um2": null
+        }
+      ]
+    },
+    {
+      "id": "benchmark3-normal_093-support",
+      "title": "CAMELYON16 normal_093 fitting tissue area",
+      "section": "camelyon16",
+      "page": "camelyon16/normal_093.html#inspect-geojson",
+      "geometry": "camelyon16/inspector-vectors/normal_093-tissue-support.geojson.gz",
+      "stored_geojson_sha256": "3ad6ef201897f2957f62f657352c0a3205168ad64ee2b8503e8afff8da920012",
+      "source_geojson_sha256": "5050149bd1b8130123255b2a6f9370181b57407770e59bf4aa1e3cb326d8f678",
+      "geojson_bytes": 12066,
+      "image": "camelyon16/inspector-previews/normal_093-tissue.webp",
+      "image_sha256": "18719c16e6f8d73e7437f5fb88827462136c210b167290e8bc6e177e5575c4bf",
+      "image_bounds_xywh": [
+        6416,
+        38392,
+        38160,
+        48584
+      ],
+      "native_shape_yx": [
+        103936,
+        47488
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "source_feature_count": 8,
+      "label_source": "Reviewed H&E tissue support, not a metastasis prediction",
+      "label_description": "This fitting slide has no held-out score or published Bora prediction. The polygons show only its reviewed H&E tissue area used for feature extraction. They are not metastasis labels or output from the fitted classifier.",
+      "groups": [
+        {
+          "value": 1,
+          "name": "Reviewed H&E tissue area",
+          "color": "#52c870",
+          "area_um2": null
+        }
+      ]
     }
   ]
 }

@@ -77,7 +77,8 @@
     const heading = make('h2', 'Inspect the simplified GeoJSON');
     const note = make('p', record.label_description, {class: 'gi-note'});
     const controls = make('div', '', {class: 'gi-controls'});
-    const load = make('button', `Load interactive polygons (${(record.geojson_bytes / 1e6).toFixed(1)} MB)`, {type: 'button', class: 'gi-load'});
+    const size = record.geojson_bytes < 100000 ? `${Math.ceil(record.geojson_bytes / 1000)} kB` : `${(record.geojson_bytes / 1e6).toFixed(1)} MB`;
+    const load = make('button', `Load interactive polygons (${size})`, {type: 'button', class: 'gi-load'});
     const select = make('select', '', {'aria-label': 'Show assigned group', disabled: ''});
     select.append(make('option', 'All groups', {value: ''}));
     const groupLabel = make('label', 'Assigned group ');
@@ -150,7 +151,7 @@
       style();
       const group = record.groups.find(row => String(row.value) === select.value);
       if (group) describe(group);
-      else info.textContent = `${record.source_feature_count} assigned groups · ${record.label_source}. Hover or click a polygon to inspect it.`;
+      else info.textContent = `${record.groups.length} assigned groups across ${record.source_feature_count} polygons · ${record.label_source}. Hover or click a polygon to inspect it.`;
     };
     select.onchange = () => choose(select.value);
     opacity.oninput = style; outlines.onchange = style;
