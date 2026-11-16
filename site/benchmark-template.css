@@ -40,3 +40,7 @@
 @media(max-width:1000px){.benchmark-page .tissue-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.benchmark-page .group-grid,.benchmark-page .gray{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:800px){.benchmark-page .benchmark-sections{grid-template-columns:1fr}.benchmark-page .benchmark-sections a{min-height:82px}.benchmark-page .site-intro{min-height:0}}
 @media(max-width:600px){.benchmark-page header,.benchmark-page main,.benchmark-page footer{padding:18px 12px}.benchmark-page .site-header{padding-top:24px}.benchmark-page .tissue-cards,.benchmark-page .panels,.benchmark-page .overview{grid-template-columns:1fr}.benchmark-page .tissue-nav{gap:7px}.benchmark-page .tissue-nav a{font-size:14px;padding:7px 9px}.benchmark-page .card-body{padding:16px}.benchmark-page .card-actions{gap:10px}.benchmark-page .geojson-inspector{padding:12px}}
+
+/* Two fitting slides are displayed separately from scored CAMELYON16 cases. */
+.benchmark-page #training-slides .tissue-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:600px){.benchmark-page #training-slides .tissue-cards{grid-template-columns:1fr}}

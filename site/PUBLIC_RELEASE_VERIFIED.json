@@ -1,11 +1,11 @@
 {
   "comparator_wsi_count": 7,
-  "file_count": 4395,
+  "file_count": 4397,
   "file_sha256": {
     "BUILD_PROVENANCE.json": "7353c2f089fe41ad934780d7df8f54f0ea336e8b147968e3875ed73d9fe06d97",
     "DATA_LICENSES.md": "da566fde847ff32be11d44c141e8a508e1a324fab6ea41019478f5ab91ec8184",
     "attribution.html": "97b23488ff4dd0e12a70a7cb2ea8ffcea91ea85d4406739d16a332ac15cf081a",
-    "benchmark-template.css": "c115a89dc6497d45be1173258fd16b519d51ff52b84ca17b630c85cc08b1a0e2",
+    "benchmark-template.css": "810b63bfd5bc48529e97975982f0112be63e2b8754b2cb1ef43ec45fed7ff677",
     "benchmark1-comparators/bora-supported-bw-v1/case-001/class-01.webp": "edfed25ed68f996312523d75de1e4b46b29941c9620afb139b58625dda94875b",
     "benchmark1-comparators/bora-supported-bw-v1/case-001/class-02.webp": "81d46045b28ded12fbc7e6cd415b4c70709f9d658d4110393fa6fa9b3c2a6d70",
     "benchmark1-comparators/bora-supported-bw-v1/case-001/class-03.webp": "855f7352eadccc2216fa7f3039d474fec8100d34bb0e03c5d2e9ab7ccd9fed1b",
@@ -3382,7 +3382,7 @@
     "benchmark1-failures/thumbs/case-056.jpg": "9982b924bfa59d838169fd7c83d6f630f806e8083bfe0317e9cd58d6d4387663",
     "camelyon16/aggregate-six.json": "14fcfb79cca058919d714d61c2c38a5aa4a4fa9c20a4d183c33d5ec81e4dd6cf",
     "camelyon16/aggregate.json": "41aae3a5fcb4904a47ce75a106f0b8f9b513e52a8af461f16ae6289ef2e67b27",
-    "camelyon16/index.html": "88227d2d38f0e0818011ac87a31cdcb9435bdf093ed5855e6759f8c9d0780a9c",
+    "camelyon16/index.html": "424bcbabd50865df254e6f53ef3d41054413bd9588ad0a0f1d07fb4e4d71e930",
     "camelyon16/local-assets/normal_019/field-01-bora.webp": "25a12f0312c98b17cb5d088ceb4dbbb5028c0cf093fdf4d7ff973f4b20dd78e3",
     "camelyon16/local-assets/normal_019/field-01-deeplabv3plus.webp": "0c95372a28f9d6713893afceb2eae2b106f09aeb103cd62eecea3c337697a427",
     "camelyon16/local-assets/normal_019/field-01-expert.webp": "9ae3498e80009b53f93b3cb797c8037b488c591ac30256f2999910bbc2ded271",
@@ -3813,6 +3813,8 @@
     "camelyon16/normal_019.html": "e7dfe3a5fc2d693af42ccfd6b057983927482dfe8e562fe6fd7505159dc61796",
     "camelyon16/normal_108.html": "23b06eae9ca09f49ed60ac5fe302e7880232ca819fc101c2d88a6b0d19b0be8d",
     "camelyon16/normal_150.html": "afe4281d6660157b0fe616b972946f36e866fadd2acbeb7810e2337802875213",
+    "camelyon16/training-previews/normal_093-he-tissue.webp": "5ad8199db4dc69b542a055703f9363e8035e3dfe78ca0bebd72226405741cd69",
+    "camelyon16/training-previews/tumor_093-he-tissue.webp": "427619948ea3b03c6d96a9000b92c64bd72ba3631078d3ac98e59073f5db02e3",
     "camelyon16/tumor_075.html": "849591d559eb8eb1509cef715219601cd8b30da854aeb4fe0dff1397447e92ad",
     "camelyon16/tumor_084.html": "25ae76fc9dc08ec5d1e7942730b15f7019e087bd9f25e5509468f17bcf97d5a1",
     "camelyon16/tumor_091.html": "a96da37df06cd27d9ee6e3566434da10602f53af638681ba840fe52295d933f6",
@@ -4402,6 +4404,6 @@
   "grayscale_group_map_count": 129,
   "public_wsi_count": 12,
   "retired_case_count": 4,
-  "size_bytes": 510450429,
+  "size_bytes": 511099357,
   "status": "CAMELYON16_RAW_SLIDE_SIGNAL_PANELS_INCLUDED"
 }
