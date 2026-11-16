@@ -8,11 +8,36 @@ preview and receipt. The source image must be the original registered H&E.
 Supply a reviewed tissue mask/GeoJSON in that image's full-resolution pixel
 coordinates, so Virchow2 does not encode exterior glass.
 
-| Section | Entry script | Expression front end |
-| --- | --- | --- |
-| Breast cancer | [`breast.R`](breast.R) | Giotto + KODAMA/Louvain |
-| Colorectal cancer | [`colorectal.R`](colorectal.R) | Seurat + KODAMA/Louvain |
-| Tonsil | [`tonsil.R`](tonsil.R) | SpatialExperiment + KODAMA/Louvain |
+| Section | RDS-only clustering script | One-command Bora script | Expression front end |
+| --- | --- | --- | --- |
+| Breast cancer | [`cluster_breast.R`](cluster_breast.R) | [`breast.R`](breast.R) | Giotto + KODAMA/Louvain |
+| Colorectal cancer | [`cluster_colorectal.R`](cluster_colorectal.R) | [`colorectal.R`](colorectal.R) | Seurat + KODAMA/Louvain |
+| Tonsil | [`cluster_tonsil.R`](cluster_tonsil.R) | [`tonsil.R`](tonsil.R) | SpatialExperiment + KODAMA/Louvain |
+
+To create the R object used by the tutorial's `readRDS()` call, run the
+matching `cluster_*.R` script after downloading the 10x data and generating
+`image_metadata.json` with `inspect_ome.py`. The second argument is a **new**
+output directory:
+
+```bash
+Rscript methods/benchmark4/cluster_breast.R \
+  /data/visium/breast_giotto /data/clustered/breast-v1
+Rscript methods/benchmark4/cluster_colorectal.R \
+  /data/visium/colorectal_seurat /data/clustered/colorectal-v1
+Rscript methods/benchmark4/cluster_tonsil.R \
+  /data/visium/tonsil_spatialexperiment /data/clustered/tonsil-v1
+```
+
+Each command writes `NEW_OUTPUT_DIR/clustered-object.rds` and its
+`expression-groups/` companion files. The RDS contains the clustered Giotto,
+Seurat or SpatialExperiment object with full-resolution H&E spot coordinates
+and `KODAMA_Louvain` labels. The shared
+[`driver.R`](driver.R) attaches and checks Giotto labels against Space Ranger
+positions before saving. Keep the original 10x input and companion files at
+their paths; a SpatialExperiment may retain HDF5-backed assays. Clustering
+uses R/CPU. The subsequent `Bora.spatial()` call uses the Virchow2 model to
+create the mask and GeoJSON. The one-command scripts also save this RDS in
+their own result directory before Bora inference.
 
 From the Bora-Analysis repository root, for one section:
 
@@ -54,7 +79,8 @@ The published outputs can be integrity-checked with
 ## Checks performed
 
 `Rscript methods/benchmark4/tests/test_driver.R` passes synthetic Visium
-front-end handoffs for all three routes through the `Bora.spatial()` call and
+front-end handoffs for all three routes, reloads each saved RDS and checks its
+cluster labels and spot coordinates, then checks the `Bora.spatial()` call and
 GeoJSON result. The Bora R package's `test-spatial.R` passes its 13 assertions
 for registered data frame, Seurat, Giotto and SpatialExperiment objects.
 `inspect_ome.py` was checked against a generated OME TIFF. A full real-image

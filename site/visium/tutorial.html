@@ -76,18 +76,59 @@ python3 methods/benchmark3/verify_published.py \
 
     <h2 id="rerun">4 · Run Bora from a clustered R object</h2>
     <p>Install the <a href="https://github.com/tkcaccia/Bora/tree/bora-r-v0.1.7">Bora R package with <code>Bora.spatial()</code></a> and its matching Python backend. Set <code>RETICULATE_PYTHON</code> and obtain the separately licensed Virchow2 weights. The input object must be a Seurat, Giotto or SpatialExperiment object with expression-group labels and spot positions. The positions must correspond to the <em>full-resolution pixels of the supplied H&amp;E</em>, with upper-left origin. A known low-resolution coordinate system needs its measured X/Y scale factors.</p>
+    <h3 id="cluster-rds">Create the clustered-object.rds file for each image</h3>
+    <p>Start with the downloaded 10x counts, Space Ranger positions and registered full-resolution H&amp;E described in Section 5. Run <code>inspect_ome.py</code> on that image and review its measured spacing and spot registration. Each R script below reads the expression data through the specified front end, computes KODAMA/Louvain groups, attaches those groups to the registered spots, and writes a reloadable <code>clustered-object.rds</code> into a <em>new</em> output directory. This clustering stage uses R and CPU; Virchow2 extraction begins when <code>Bora.spatial()</code> is called. Keep the 10x input and the script's <code>expression-groups/</code> companion files in place, especially for an HDF5-backed SpatialExperiment.</p>
+    <table><thead><tr><th>Image and object</th><th>R script to create the RDS</th><th>Run from the Bora-Analysis repository root</th></tr></thead><tbody>
+      <tr><td>Breast cancer · Giotto</td><td><a href="https://github.com/tkcaccia/Bora-Analysis/blob/main/methods/benchmark4/cluster_breast.R">cluster_breast.R</a></td><td><code>Rscript methods/benchmark4/cluster_breast.R /data/visium/breast_giotto /data/clustered/breast-v1</code></td></tr>
+      <tr><td>Colorectal cancer · Seurat</td><td><a href="https://github.com/tkcaccia/Bora-Analysis/blob/main/methods/benchmark4/cluster_colorectal.R">cluster_colorectal.R</a></td><td><code>Rscript methods/benchmark4/cluster_colorectal.R /data/visium/colorectal_seurat /data/clustered/colorectal-v1</code></td></tr>
+      <tr><td>Tonsil · SpatialExperiment</td><td><a href="https://github.com/tkcaccia/Bora-Analysis/blob/main/methods/benchmark4/cluster_tonsil.R">cluster_tonsil.R</a></td><td><code>Rscript methods/benchmark4/cluster_tonsil.R /data/visium/tonsil_spatialexperiment /data/clustered/tonsil-v1</code></td></tr>
+    </tbody></table>
+    <p>The complete per-image entry scripts are shown here. Their shared <code>driver.R</code> performs the expression grouping, spot-coordinate checks and RDS save.</p>
+    <details open><summary>Breast cancer · Giotto · R script</summary>
+<pre><code>#!/usr/bin/env Rscript
+# Generate the registered Giotto/KODAMA breast object for Bora.spatial().
+script &lt;- sub(&quot;^--file=&quot;, &quot;&quot;, grep(&quot;^--file=&quot;, commandArgs(), value = TRUE)[1L])
+here &lt;- dirname(normalizePath(script))
+source(file.path(here, &quot;driver.R&quot;), local = TRUE)
+path &lt;- bora_benchmark4_prepare_case(
+  &quot;giotto&quot;, &quot;CytAssist_FFPE_Human_Breast_Cancer&quot;, &quot;tif&quot;,
+  commandArgs(trailingOnly = TRUE), here)
+cat(&quot;Clustered Giotto object:&quot;, path, &quot;\n&quot;)</code></pre></details>
+    <details open><summary>Colorectal cancer · Seurat · R script</summary>
+<pre><code>#!/usr/bin/env Rscript
+# Generate the registered Seurat/KODAMA colorectal object for Bora.spatial().
+script &lt;- sub(&quot;^--file=&quot;, &quot;&quot;, grep(&quot;^--file=&quot;, commandArgs(), value = TRUE)[1L])
+here &lt;- dirname(normalizePath(script))
+source(file.path(here, &quot;driver.R&quot;), local = TRUE)
+path &lt;- bora_benchmark4_prepare_case(
+  &quot;seurat&quot;, &quot;CytAssist_11mm_FFPE_Human_Colorectal_Cancer&quot;, &quot;tif&quot;,
+  commandArgs(trailingOnly = TRUE), here)
+cat(&quot;Clustered Seurat object:&quot;, path, &quot;\n&quot;)</code></pre></details>
+    <details open><summary>Tonsil · SpatialExperiment · R script</summary>
+<pre><code>#!/usr/bin/env Rscript
+# Generate the registered SpatialExperiment/KODAMA tonsil object for Bora.spatial().
+script &lt;- sub(&quot;^--file=&quot;, &quot;&quot;, grep(&quot;^--file=&quot;, commandArgs(), value = TRUE)[1L])
+here &lt;- dirname(normalizePath(script))
+source(file.path(here, &quot;driver.R&quot;), local = TRUE)
+path &lt;- bora_benchmark4_prepare_case(
+  &quot;spatialexperiment&quot;, &quot;CytAssist_FFPE_Protein_Expression_Human_Tonsil_AddOns&quot;,
+  &quot;btf&quot;, commandArgs(trailingOnly = TRUE), here)
+cat(&quot;Clustered SpatialExperiment object:&quot;, path, &quot;\n&quot;)</code></pre></details>
+    <p>Each command creates <code>NEW_OUTPUT_DIR/clustered-object.rds</code>. For example, the breast command supplies <code>/data/clustered/breast-v1/clustered-object.rds</code> to <code>readRDS()</code> below. Replace the image, tissue support, object path, measured spacing and output directory together when using the colorectal or tonsil object. <a href="https://github.com/tkcaccia/Bora-Analysis/blob/main/methods/benchmark4/driver.R">The shared R driver</a> contains the input and registration checks. The one-command scripts in Section 5 also save the same RDS while producing the new mask and GeoJSON.</p>
 <pre><code>library(Bora)
-he &lt;- "/data/section/registered-fullres-he.tif"
-support &lt;- "/data/section/reviewed-tissue.geojson" # precomputed H&amp;E support
-obj &lt;- readRDS("/data/section/clustered-object.rds")
+he &lt;- "/data/visium/breast_giotto/CytAssist_FFPE_Human_Breast_Cancer_tissue_image.tif"
+support &lt;- "/data/support/breast-tissue.geojson" # reviewed H&amp;E support
+obj &lt;- readRDS("/data/clustered/breast-v1/clustered-object.rds")
+meta &lt;- jsonlite::fromJSON("/data/visium/breast_giotto/image_metadata.json")
+stopifnot(identical(normalizePath(meta$image), normalizePath(he)))
 
 result &lt;- Bora.spatial(
   image = he, object = obj,
   cluster_column = "KODAMA_Louvain",
   tissue_mask = support,
   model_dir = "/models/virchow2",
-  source_mpp_xy = c(0.50, 0.50),
-  output_dir = "/results/section-bora-v1")
+  source_mpp_xy = c(meta$mpp_x, meta$mpp_y),
+  output_dir = "/results/breast-bora-v1")
 result$mask      # cleaned categorical TIFF, at output_mpp_xy
 result$geojson   # polygons in full-resolution H&amp;E pixel coordinates
 result$bw_images # one binary TIFF for each expression group

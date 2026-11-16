@@ -4418,12 +4418,12 @@
     "visium/geojson-download.js": "b913397b5d6aa5019ef0fbbc63f612934b284050c0cc93ac2152e896dcaf5133",
     "visium/index.html": "d10422feaf3ddc37da560eada76920a104bbeda9c5f9485277a77cb1d9181a0b",
     "visium/tonsil.html": "9b63ba555e0efb6a0377a6facb5a3b39c1c1ea06597aca6809d633278ee37ac6",
-    "visium/tutorial.html": "b22874efc7109e453b161e2a57d79465609f50ab86212d0bff8b0a8bcb81833e"
+    "visium/tutorial.html": "286bd1189a0e12d1b85e0d7eb79f3bedb975da1d0ae3e64773290fd30f8614d9"
   },
   "format": "bora-public-site-v2",
   "grayscale_group_map_count": 129,
   "public_wsi_count": 12,
   "retired_case_count": 4,
-  "size_bytes": 514666033,
-  "status": "BENCHMARK2_BENCHMARK3_GEOJSON_INSPECTORS"
+  "size_bytes": 514670974,
+  "status": "BENCHMARK4_CLUSTERED_RDS_TUTORIAL"
 }

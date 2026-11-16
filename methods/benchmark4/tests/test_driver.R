@@ -45,12 +45,19 @@ for (route in c("giotto", "seurat", "spatialexperiment")) {
     giotto_attach=function(object, work, data_dir) object)
   stopifnot(file.exists(result$geojson),
             file.exists(file.path(out,"expression-groups")))
+  saved <- readRDS(file.path(out, "clustered-object.rds"))
+  stopifnot(identical(saved$KODAMA_Louvain, c("1", "2")),
+            identical(saved$x, c(10, 30)))
+  prepared <- bora_benchmark4_prepare(
+    route, data_dir, file.path(root, paste0("prepared-", route)),
+    front_dir, giotto_attach=function(object, work, data_dir) object,
+    check_packages=FALSE)
+  stopifnot(identical(readRDS(prepared), saved))
 }
-cat("PASS: 3/3 Visium front-end handoffs reach Bora.spatial and GeoJSON\n")
+cat("PASS: 3/3 Visium front ends create reloadable clustered RDS and reach Bora.spatial\n")
 
 # Exercise the real Giotto metadata attachment and pixel-coordinate check.
-if (requireNamespace("Giotto", quietly = TRUE) &&
-    requireNamespace("Bora", quietly = TRUE)) {
+if (requireNamespace("Giotto", quietly = TRUE)) {
   writeLines(c(
     'visium_args <- function() { a <- commandArgs(TRUE); dir.create(a[[2L]]); list(data=a[[1L]], out=a[[2L]]) }',
     'visium_positions <- function(data_dir) data.frame(barcode=c("a","b","c"), pxl_col_in_fullres=c(10,20,30), pxl_row_in_fullres=c(11,21,31))'),
@@ -64,6 +71,17 @@ if (requireNamespace("Giotto", quietly = TRUE) &&
     'pca <- matrix(1,3,2,dimnames=list(c("a","b","c"),NULL))',
     'cluster <- list(labels=c("1","2","1"))'),
     file.path(front_dir, "run_giotto.R"))
+  prepared <- bora_benchmark4_prepare(
+    "giotto", data_dir, file.path(root, "giotto-prepared-real"), front_dir,
+    check_packages = FALSE)
+  restored <- readRDS(prepared)
+  metadata <- as.data.frame(Giotto::pDataDT(restored))
+  locations <- as.data.frame(Giotto::getSpatialLocations(
+    restored, output = "data.table"))
+  stopifnot(identical(as.character(metadata$KODAMA_Louvain), c("1", "2", "1")),
+            identical(as.numeric(locations$sdimx), c(10, 20, 30)))
+  cat("PASS: real Giotto groups and spot positions survive RDS reload\n")
+  if (requireNamespace("Bora", quietly = TRUE)) {
   verified <- FALSE
   actual_giotto <- function(image, object, cluster_column, tissue_mask,
                             model_dir, source_mpp_xy, output_dir) {
@@ -82,5 +100,6 @@ if (requireNamespace("Giotto", quietly = TRUE) &&
     spatial_fun=actual_giotto)
   stopifnot(verified)
   cat("PASS: Giotto group attachment and full-resolution spot registration\n")
+  }
 }
 unlink(root, recursive = TRUE)
