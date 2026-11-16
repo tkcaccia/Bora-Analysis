@@ -1,6 +1,6 @@
 {
   "comparator_wsi_count": 7,
-  "file_count": 4388,
+  "file_count": 4389,
   "file_sha256": {
     "BUILD_PROVENANCE.json": "7353c2f089fe41ad934780d7df8f54f0ea336e8b147968e3875ed73d9fe06d97",
     "DATA_LICENSES.md": "da566fde847ff32be11d44c141e8a508e1a324fab6ea41019478f5ab91ec8184",
@@ -3803,9 +3803,10 @@
     "camelyon16/local-assets/tumor_091/overview-medsam.webp": "91304f75917538e9864237c238eb949010dc52e6be5e0fa8f0fb3f8277608386",
     "camelyon16/local-assets/tumor_091/overview-unet.webp": "25c469fc20bc966b5c1bdba66733c2343f47fc1dc67a0e846dd9ed3752fae2b9",
     "camelyon16/local-assets/tumor_091/overview-vista_path.webp": "98a02e6a43e1ae5ec9fd4b457557812906f6266bada3b579487c58375e201f6d",
-    "camelyon16/normal_019.html": "e78cbb33458ce74f807fe45947fde7a0a3abe22eccc469b4d5d8bf359ff7acad",
-    "camelyon16/normal_108.html": "7d76187e7caa83ff3414f725352f5bc2ee8516ca93c49edfe23670f81fb9cf71",
-    "camelyon16/normal_150.html": "37bad2a554ceb725c0b07a9d6ca2603385860c9262fcab118aeb22a03c53c6bd",
+    "camelyon16/normal-specificity.json": "699b36a49af96489bb907777840672c7c7b24e5ca5d9f07178dd254df3dbb9fc",
+    "camelyon16/normal_019.html": "802d66dcf017c28003305bdfa0770e6c687a149dea6e8075e4b615911adb02fd",
+    "camelyon16/normal_108.html": "7dcbec2824d7e80da68d3d623028be7fc44427146ba0f387a4bca328a9e98d5f",
+    "camelyon16/normal_150.html": "17115fc1606923d698950bef2b8ef1fc06d853d408abde7cfccb6405170c9908",
     "camelyon16/tumor_075.html": "eadcd859402a91aa2e1777793d8a11ec5c6187be66b463240396aaef541bf37c",
     "camelyon16/tumor_084.html": "3d6e694d63a47288129eb723ebbee4c0941e1471e333cbcfb7a5ea344df111b9",
     "camelyon16/tumor_091.html": "25e911f0e0c9cfc5d552dec163c947d5aae5161650240b2574f6efd8572891c3",
@@ -4395,6 +4396,6 @@
   "grayscale_group_map_count": 129,
   "public_wsi_count": 12,
   "retired_case_count": 4,
-  "size_bytes": 504857228,
+  "size_bytes": 504871550,
   "status": "CAMELYON16_SIX_TEST_BENCHMARK3_INCLUDED"
 }
