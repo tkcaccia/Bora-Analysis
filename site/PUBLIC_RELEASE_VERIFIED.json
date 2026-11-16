@@ -3812,7 +3812,7 @@
     "camelyon16/normal-019-tissue-only-method-scope.json": "d5bd3e0b832559909138a36c578b680e4d30a1f03f1bb515ac688fa5e64cb6fa",
     "camelyon16/normal-019-tissue-only-scores.json": "4e8e13fa831ac0158e6bb1b30c0570fca08b53207a76f9a46ada5a78d3c48b6c",
     "camelyon16/normal-specificity.json": "e7e16688160f0efb6a25299c06899cad252c8fb3f1911b59aba8648fffbb76f8",
-    "camelyon16/normal_019.html": "2520be92f7b13648aadfb2259ba69d5d1f8d792646652478b069c5ef4a711ad9",
+    "camelyon16/normal_019.html": "2c79ea313ac9762c9b8d788acbd4b1c6efe90f10fed4150831fd85e33152d1ac",
     "camelyon16/normal_108.html": "2a5f52980ef98d1ef6603270715473af43016f9e3a2c3685e17f6c0d494ea78d",
     "camelyon16/normal_150.html": "ebdf139c88032496f58acc208150a4c26719d32e8bd65f3758dc600299c3db9c",
     "camelyon16/training-previews/normal_093-he-tissue.webp": "5ad8199db4dc69b542a055703f9363e8035e3dfe78ca0bebd72226405741cd69",
@@ -4406,6 +4406,6 @@
   "grayscale_group_map_count": 129,
   "public_wsi_count": 12,
   "retired_case_count": 4,
-  "size_bytes": 511146969,
-  "status": "CAMELYON16_SIX_SCORE_SLIDES_ONLY"
+  "size_bytes": 511147647,
+  "status": "CAMELYON16_NORMAL019_MATCHED_CONTEXT_LAYOUT"
 }
