@@ -1,0 +1,826 @@
+{
+  "description": "Exploratory qualifying region signals on six selected test slides; not a diagnostic threshold.",
+  "grid_um_xy": [
+    4,
+    4
+  ],
+  "connectivity": 8,
+  "minimum_focus_pixels": 625,
+  "minimum_focus_area_mm2": 0.01,
+  "source_receipt_sha256": "f09bef1fa3098dfbd4b3ebe9df1a3bd24ae13a5a47432e48438f8f0f956c0318",
+  "audit_receipt_sha256": "148f8f19d782ec3dbf3d70e81b4cd53c7c1d2edc26ab911f2a5f7f9010a0b322",
+  "pixel_level_scores_changed": false,
+  "normal_019_uses_post_hoc_tissue_correction": true,
+  "rows": [
+    {
+      "slide": "tumor_084",
+      "method": "bora",
+      "reference_slide_label": "positive",
+      "shape_yx": [
+        4928,
+        3808
+      ],
+      "tissue_pixels": 7527695,
+      "support_sha256": "02bc7a10e222daee6f23b198104c994cc39f69e067b51d97495648123d7bacc5",
+      "mask_sha256": "1027d139bea989476bc10991e6016b66ee39614508c1985d2b65555f88fb6287",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 170,
+        "largest_component_pixels": 17428,
+        "qualifying_components": 37,
+        "positive_pixels": 113590
+      },
+      "tumor_total_area_mm2": 1.81744,
+      "tumor_largest_focus_mm2": 0.278848,
+      "metastasis_signal": "present",
+      "explicit_nonmetastatic": {
+        "component_count": 2,
+        "largest_component_pixels": 7413933,
+        "qualifying_components": 1,
+        "positive_pixels": 7414105
+      },
+      "nonmetastatic_signal": "present"
+    },
+    {
+      "slide": "tumor_084",
+      "method": "unet",
+      "reference_slide_label": "positive",
+      "shape_yx": [
+        4928,
+        3808
+      ],
+      "tissue_pixels": 7527695,
+      "support_sha256": "02bc7a10e222daee6f23b198104c994cc39f69e067b51d97495648123d7bacc5",
+      "mask_sha256": "052138e9772908b17c5db4362c5cbf56aae133636f05e3f19ca498c6624039d9",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 592,
+        "largest_component_pixels": 635,
+        "qualifying_components": 1,
+        "positive_pixels": 12909
+      },
+      "tumor_total_area_mm2": 0.20654399999999998,
+      "tumor_largest_focus_mm2": 0.010159999999999999,
+      "metastasis_signal": "present",
+      "explicit_nonmetastatic": {
+        "component_count": 15,
+        "largest_component_pixels": 7514767,
+        "qualifying_components": 1,
+        "positive_pixels": 7514786
+      },
+      "nonmetastatic_signal": "present"
+    },
+    {
+      "slide": "tumor_084",
+      "method": "deeplabv3plus",
+      "reference_slide_label": "positive",
+      "shape_yx": [
+        4928,
+        3808
+      ],
+      "tissue_pixels": 7527695,
+      "support_sha256": "02bc7a10e222daee6f23b198104c994cc39f69e067b51d97495648123d7bacc5",
+      "mask_sha256": "23ef612083fd948def5dba8aae6defb7b5614d34a36bc0ee831201dbe6c054ae",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 129,
+        "largest_component_pixels": 527,
+        "qualifying_components": 0,
+        "positive_pixels": 2349
+      },
+      "tumor_total_area_mm2": 0.037584,
+      "tumor_largest_focus_mm2": 0.008432,
+      "metastasis_signal": "none_qualifying",
+      "explicit_nonmetastatic": {
+        "component_count": 6,
+        "largest_component_pixels": 7525327,
+        "qualifying_components": 1,
+        "positive_pixels": 7525346
+      },
+      "nonmetastatic_signal": "present"
+    },
+    {
+      "slide": "tumor_084",
+      "method": "medsam",
+      "reference_slide_label": "positive",
+      "shape_yx": [
+        4928,
+        3808
+      ],
+      "tissue_pixels": 7527695,
+      "support_sha256": "02bc7a10e222daee6f23b198104c994cc39f69e067b51d97495648123d7bacc5",
+      "mask_sha256": "67f1f749767ef96c96b7314a951971e8f8fca53a4b5cde6cadac64886e76e233",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 263,
+        "largest_component_pixels": 1429,
+        "qualifying_components": 2,
+        "positive_pixels": 15932
+      },
+      "tumor_total_area_mm2": 0.25491199999999997,
+      "tumor_largest_focus_mm2": 0.022864,
+      "metastasis_signal": "present",
+      "explicit_nonmetastatic": null,
+      "nonmetastatic_signal": null
+    },
+    {
+      "slide": "tumor_084",
+      "method": "vista_path",
+      "reference_slide_label": "positive",
+      "shape_yx": [
+        4928,
+        3808
+      ],
+      "tissue_pixels": 7527695,
+      "support_sha256": "02bc7a10e222daee6f23b198104c994cc39f69e067b51d97495648123d7bacc5",
+      "mask_sha256": "da17044f7607fe6c4908158bf730995154ce0efceb3bb1b859b4b333a0718b41",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 1833,
+        "largest_component_pixels": 20868,
+        "qualifying_components": 24,
+        "positive_pixels": 115289
+      },
+      "tumor_total_area_mm2": 1.8446239999999998,
+      "tumor_largest_focus_mm2": 0.33388799999999996,
+      "metastasis_signal": "present",
+      "explicit_nonmetastatic": null,
+      "nonmetastatic_signal": null
+    },
+    {
+      "slide": "tumor_091",
+      "method": "bora",
+      "reference_slide_label": "positive",
+      "shape_yx": [
+        3136,
+        3584
+      ],
+      "tissue_pixels": 4354159,
+      "support_sha256": "9f83fafd3be8ba687814eb11875d92f691c3661b79af0a8d97f54ec3ea6b1125",
+      "mask_sha256": "923f195486fe48d49173f8d8e8fa3f0b2dfa88171f9110ea15dd1049c4d5c174",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 76,
+        "largest_component_pixels": 45124,
+        "qualifying_components": 30,
+        "positive_pixels": 179462
+      },
+      "tumor_total_area_mm2": 2.8713919999999997,
+      "tumor_largest_focus_mm2": 0.721984,
+      "metastasis_signal": "present",
+      "explicit_nonmetastatic": {
+        "component_count": 20,
+        "largest_component_pixels": 3924696,
+        "qualifying_components": 6,
+        "positive_pixels": 4174697
+      },
+      "nonmetastatic_signal": "present"
+    },
+    {
+      "slide": "tumor_091",
+      "method": "unet",
+      "reference_slide_label": "positive",
+      "shape_yx": [
+        3136,
+        3584
+      ],
+      "tissue_pixels": 4354159,
+      "support_sha256": "9f83fafd3be8ba687814eb11875d92f691c3661b79af0a8d97f54ec3ea6b1125",
+      "mask_sha256": "0b88e2b26695c1b9a58cd60e8f7f3eae7a8628f029c7c7bac106541291760fbf",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 832,
+        "largest_component_pixels": 12711,
+        "qualifying_components": 6,
+        "positive_pixels": 40195
+      },
+      "tumor_total_area_mm2": 0.64312,
+      "tumor_largest_focus_mm2": 0.203376,
+      "metastasis_signal": "present",
+      "explicit_nonmetastatic": {
+        "component_count": 139,
+        "largest_component_pixels": 4072151,
+        "qualifying_components": 2,
+        "positive_pixels": 4313964
+      },
+      "nonmetastatic_signal": "present"
+    },
+    {
+      "slide": "tumor_091",
+      "method": "deeplabv3plus",
+      "reference_slide_label": "positive",
+      "shape_yx": [
+        3136,
+        3584
+      ],
+      "tissue_pixels": 4354159,
+      "support_sha256": "9f83fafd3be8ba687814eb11875d92f691c3661b79af0a8d97f54ec3ea6b1125",
+      "mask_sha256": "985429c1639298476adb7e0b095b8fc1a07901a86e4f6572307d656b3b1d946c",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 917,
+        "largest_component_pixels": 17430,
+        "qualifying_components": 10,
+        "positive_pixels": 48696
+      },
+      "tumor_total_area_mm2": 0.7791359999999999,
+      "tumor_largest_focus_mm2": 0.27887999999999996,
+      "metastasis_signal": "present",
+      "explicit_nonmetastatic": {
+        "component_count": 383,
+        "largest_component_pixels": 4064133,
+        "qualifying_components": 3,
+        "positive_pixels": 4305463
+      },
+      "nonmetastatic_signal": "present"
+    },
+    {
+      "slide": "tumor_091",
+      "method": "medsam",
+      "reference_slide_label": "positive",
+      "shape_yx": [
+        3136,
+        3584
+      ],
+      "tissue_pixels": 4354159,
+      "support_sha256": "9f83fafd3be8ba687814eb11875d92f691c3661b79af0a8d97f54ec3ea6b1125",
+      "mask_sha256": "a41f12514e1e210ba57d26076d8092eb6ee66a4a593d472176ba3d153c312c5d",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 240,
+        "largest_component_pixels": 25513,
+        "qualifying_components": 10,
+        "positive_pixels": 64703
+      },
+      "tumor_total_area_mm2": 1.035248,
+      "tumor_largest_focus_mm2": 0.40820799999999996,
+      "metastasis_signal": "present",
+      "explicit_nonmetastatic": null,
+      "nonmetastatic_signal": null
+    },
+    {
+      "slide": "tumor_091",
+      "method": "vista_path",
+      "reference_slide_label": "positive",
+      "shape_yx": [
+        3136,
+        3584
+      ],
+      "tissue_pixels": 4354159,
+      "support_sha256": "9f83fafd3be8ba687814eb11875d92f691c3661b79af0a8d97f54ec3ea6b1125",
+      "mask_sha256": "d51b303eb284c63f2643d70b83c10e4f5283fd372f4c585ab6c9fed2bee5deba",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 865,
+        "largest_component_pixels": 92379,
+        "qualifying_components": 25,
+        "positive_pixels": 572065
+      },
+      "tumor_total_area_mm2": 9.153039999999999,
+      "tumor_largest_focus_mm2": 1.4780639999999998,
+      "metastasis_signal": "present",
+      "explicit_nonmetastatic": null,
+      "nonmetastatic_signal": null
+    },
+    {
+      "slide": "normal_019",
+      "method": "bora",
+      "reference_slide_label": "negative",
+      "shape_yx": [
+        13552,
+        6048
+      ],
+      "tissue_pixels": 798511,
+      "support_sha256": "3b848235350fed24448d422ddb90ebd4fe9ded05ff86f7833acdb4cc0bed5436",
+      "mask_sha256": "4a8adcb82f6e4db81fb10fa85443898cf3f6ef0291ecce7f3b225fa645ebac43",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 5,
+        "largest_component_pixels": 405,
+        "qualifying_components": 0,
+        "positive_pixels": 1398
+      },
+      "tumor_total_area_mm2": 0.022368,
+      "tumor_largest_focus_mm2": 0.00648,
+      "metastasis_signal": "none_qualifying",
+      "explicit_nonmetastatic": {
+        "component_count": 2,
+        "largest_component_pixels": 401292,
+        "qualifying_components": 2,
+        "positive_pixels": 797113
+      },
+      "nonmetastatic_signal": "present"
+    },
+    {
+      "slide": "normal_019",
+      "method": "unet",
+      "reference_slide_label": "negative",
+      "shape_yx": [
+        13552,
+        6048
+      ],
+      "tissue_pixels": 798511,
+      "support_sha256": "3b848235350fed24448d422ddb90ebd4fe9ded05ff86f7833acdb4cc0bed5436",
+      "mask_sha256": "ac7529a09580cc32dc24f1371f0051da1fd7b4c110f9d23e35021a1f219dfe42",
+      "mask_source": "native_intersect_support",
+      "tumor": {
+        "component_count": 17,
+        "largest_component_pixels": 29,
+        "qualifying_components": 0,
+        "positive_pixels": 107
+      },
+      "tumor_total_area_mm2": 0.001712,
+      "tumor_largest_focus_mm2": 0.000464,
+      "metastasis_signal": "none_qualifying",
+      "explicit_nonmetastatic": {
+        "component_count": 2,
+        "largest_component_pixels": 402119,
+        "qualifying_components": 2,
+        "positive_pixels": 798404
+      },
+      "nonmetastatic_signal": "present"
+    },
+    {
+      "slide": "normal_019",
+      "method": "deeplabv3plus",
+      "reference_slide_label": "negative",
+      "shape_yx": [
+        13552,
+        6048
+      ],
+      "tissue_pixels": 798511,
+      "support_sha256": "3b848235350fed24448d422ddb90ebd4fe9ded05ff86f7833acdb4cc0bed5436",
+      "mask_sha256": "5177a9e1d3e30b86c093cdb814032d1b1d421c763da119eda46bbe7635b8b3bf",
+      "mask_source": "native_intersect_support",
+      "tumor": {
+        "component_count": 64,
+        "largest_component_pixels": 56,
+        "qualifying_components": 0,
+        "positive_pixels": 485
+      },
+      "tumor_total_area_mm2": 0.0077599999999999995,
+      "tumor_largest_focus_mm2": 0.000896,
+      "metastasis_signal": "none_qualifying",
+      "explicit_nonmetastatic": {
+        "component_count": 2,
+        "largest_component_pixels": 401771,
+        "qualifying_components": 2,
+        "positive_pixels": 798026
+      },
+      "nonmetastatic_signal": "present"
+    },
+    {
+      "slide": "normal_019",
+      "method": "medsam",
+      "reference_slide_label": "negative",
+      "shape_yx": [
+        13552,
+        6048
+      ],
+      "tissue_pixels": 798511,
+      "support_sha256": "3b848235350fed24448d422ddb90ebd4fe9ded05ff86f7833acdb4cc0bed5436",
+      "mask_sha256": "9e8f346548384c8759d1d4113327898545a727dee37b57bd40cb7abb7da3ac13",
+      "mask_source": "native_intersect_support",
+      "tumor": {
+        "component_count": 6,
+        "largest_component_pixels": 43,
+        "qualifying_components": 0,
+        "positive_pixels": 136
+      },
+      "tumor_total_area_mm2": 0.002176,
+      "tumor_largest_focus_mm2": 0.0006879999999999999,
+      "metastasis_signal": "none_qualifying",
+      "explicit_nonmetastatic": null,
+      "nonmetastatic_signal": null
+    },
+    {
+      "slide": "normal_019",
+      "method": "vista_path",
+      "reference_slide_label": "negative",
+      "shape_yx": [
+        13552,
+        6048
+      ],
+      "tissue_pixels": 798511,
+      "support_sha256": "3b848235350fed24448d422ddb90ebd4fe9ded05ff86f7833acdb4cc0bed5436",
+      "mask_sha256": "7391855d8c3ddf2b78a1e53a994259e66607b3228dc77bbf30c5bc7fbd9956e0",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 108,
+        "largest_component_pixels": 15043,
+        "qualifying_components": 4,
+        "positive_pixels": 35897
+      },
+      "tumor_total_area_mm2": 0.574352,
+      "tumor_largest_focus_mm2": 0.24068799999999999,
+      "metastasis_signal": "present",
+      "explicit_nonmetastatic": null,
+      "nonmetastatic_signal": null
+    },
+    {
+      "slide": "tumor_075",
+      "method": "bora",
+      "reference_slide_label": "positive",
+      "shape_yx": [
+        4480,
+        5152
+      ],
+      "tissue_pixels": 7611310,
+      "support_sha256": "ea01c40f725f37960efaf98f1c67b392acba71f2ab8e634ee1271e2ba39bd7c5",
+      "mask_sha256": "20c58d8a4d1ec1637a12ef9d06a3ae44ab16f1b8c7f670f4a9b6ea3ef336ca14",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 188,
+        "largest_component_pixels": 127884,
+        "qualifying_components": 55,
+        "positive_pixels": 267336
+      },
+      "tumor_total_area_mm2": 4.277375999999999,
+      "tumor_largest_focus_mm2": 2.046144,
+      "metastasis_signal": "present",
+      "explicit_nonmetastatic": {
+        "component_count": 19,
+        "largest_component_pixels": 3230487,
+        "qualifying_components": 14,
+        "positive_pixels": 7343974
+      },
+      "nonmetastatic_signal": "present"
+    },
+    {
+      "slide": "tumor_075",
+      "method": "unet",
+      "reference_slide_label": "positive",
+      "shape_yx": [
+        4480,
+        5152
+      ],
+      "tissue_pixels": 7611310,
+      "support_sha256": "ea01c40f725f37960efaf98f1c67b392acba71f2ab8e634ee1271e2ba39bd7c5",
+      "mask_sha256": "99baf7d5937ebdde8c6ab3e49dbe5dd5dd53a027a788756fae88d835fd66e40a",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 1266,
+        "largest_component_pixels": 2997,
+        "qualifying_components": 15,
+        "positive_pixels": 53717
+      },
+      "tumor_total_area_mm2": 0.859472,
+      "tumor_largest_focus_mm2": 0.047951999999999995,
+      "metastasis_signal": "present",
+      "explicit_nonmetastatic": {
+        "component_count": 92,
+        "largest_component_pixels": 3303670,
+        "qualifying_components": 12,
+        "positive_pixels": 7557593
+      },
+      "nonmetastatic_signal": "present"
+    },
+    {
+      "slide": "tumor_075",
+      "method": "deeplabv3plus",
+      "reference_slide_label": "positive",
+      "shape_yx": [
+        4480,
+        5152
+      ],
+      "tissue_pixels": 7611310,
+      "support_sha256": "ea01c40f725f37960efaf98f1c67b392acba71f2ab8e634ee1271e2ba39bd7c5",
+      "mask_sha256": "be1313cd337c197246016c4b8cb578a9ef39671d1d716d5c10be79c9359b021d",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 584,
+        "largest_component_pixels": 2483,
+        "qualifying_components": 4,
+        "positive_pixels": 17037
+      },
+      "tumor_total_area_mm2": 0.272592,
+      "tumor_largest_focus_mm2": 0.039728,
+      "metastasis_signal": "present",
+      "explicit_nonmetastatic": {
+        "component_count": 53,
+        "largest_component_pixels": 3319234,
+        "qualifying_components": 12,
+        "positive_pixels": 7594273
+      },
+      "nonmetastatic_signal": "present"
+    },
+    {
+      "slide": "tumor_075",
+      "method": "medsam",
+      "reference_slide_label": "positive",
+      "shape_yx": [
+        4480,
+        5152
+      ],
+      "tissue_pixels": 7611310,
+      "support_sha256": "ea01c40f725f37960efaf98f1c67b392acba71f2ab8e634ee1271e2ba39bd7c5",
+      "mask_sha256": "ee70398b996312a67d8fc7abb39213c3aa8e1ab4aa8d71ea951312035f86f3f7",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 411,
+        "largest_component_pixels": 7859,
+        "qualifying_components": 19,
+        "positive_pixels": 69374
+      },
+      "tumor_total_area_mm2": 1.1099839999999999,
+      "tumor_largest_focus_mm2": 0.125744,
+      "metastasis_signal": "present",
+      "explicit_nonmetastatic": null,
+      "nonmetastatic_signal": null
+    },
+    {
+      "slide": "tumor_075",
+      "method": "vista_path",
+      "reference_slide_label": "positive",
+      "shape_yx": [
+        4480,
+        5152
+      ],
+      "tissue_pixels": 7611310,
+      "support_sha256": "ea01c40f725f37960efaf98f1c67b392acba71f2ab8e634ee1271e2ba39bd7c5",
+      "mask_sha256": "a1b5d646352845c93074bbfcd7092c867e488876b9e78846857823d1300ab6dd",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 1938,
+        "largest_component_pixels": 173418,
+        "qualifying_components": 52,
+        "positive_pixels": 620978
+      },
+      "tumor_total_area_mm2": 9.935647999999999,
+      "tumor_largest_focus_mm2": 2.774688,
+      "metastasis_signal": "present",
+      "explicit_nonmetastatic": null,
+      "nonmetastatic_signal": null
+    },
+    {
+      "slide": "normal_108",
+      "method": "bora",
+      "reference_slide_label": "negative",
+      "shape_yx": [
+        2128,
+        2576
+      ],
+      "tissue_pixels": 3377530,
+      "support_sha256": "fe0ba9f8b7229b0aa298c12b532d931d88e722fef6c6f475cf6606dbb4b82dc0",
+      "mask_sha256": "016f7f4bad1ca9afd53f651253bef0bc871cb6ef34c967479a56010200c13156",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 49,
+        "largest_component_pixels": 2940,
+        "qualifying_components": 13,
+        "positive_pixels": 29884
+      },
+      "tumor_total_area_mm2": 0.47814399999999996,
+      "tumor_largest_focus_mm2": 0.04704,
+      "metastasis_signal": "present",
+      "explicit_nonmetastatic": {
+        "component_count": 6,
+        "largest_component_pixels": 3323783,
+        "qualifying_components": 5,
+        "positive_pixels": 3347646
+      },
+      "nonmetastatic_signal": "present"
+    },
+    {
+      "slide": "normal_108",
+      "method": "unet",
+      "reference_slide_label": "negative",
+      "shape_yx": [
+        2128,
+        2576
+      ],
+      "tissue_pixels": 3377530,
+      "support_sha256": "fe0ba9f8b7229b0aa298c12b532d931d88e722fef6c6f475cf6606dbb4b82dc0",
+      "mask_sha256": "ac0c84baf301c731aa029c06e0262a7aec1c38075c01e3972a428ca2da03b606",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 29,
+        "largest_component_pixels": 80,
+        "qualifying_components": 0,
+        "positive_pixels": 446
+      },
+      "tumor_total_area_mm2": 0.007136,
+      "tumor_largest_focus_mm2": 0.0012799999999999999,
+      "metastasis_signal": "none_qualifying",
+      "explicit_nonmetastatic": {
+        "component_count": 4,
+        "largest_component_pixels": 3354261,
+        "qualifying_components": 4,
+        "positive_pixels": 3377084
+      },
+      "nonmetastatic_signal": "present"
+    },
+    {
+      "slide": "normal_108",
+      "method": "deeplabv3plus",
+      "reference_slide_label": "negative",
+      "shape_yx": [
+        2128,
+        2576
+      ],
+      "tissue_pixels": 3377530,
+      "support_sha256": "fe0ba9f8b7229b0aa298c12b532d931d88e722fef6c6f475cf6606dbb4b82dc0",
+      "mask_sha256": "2fa79827f489cbd9a44145be63dfd702338be590d90487ec230259a772c3d3ea",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 14,
+        "largest_component_pixels": 604,
+        "qualifying_components": 0,
+        "positive_pixels": 1454
+      },
+      "tumor_total_area_mm2": 0.023264,
+      "tumor_largest_focus_mm2": 0.009663999999999999,
+      "metastasis_signal": "none_qualifying",
+      "explicit_nonmetastatic": {
+        "component_count": 8,
+        "largest_component_pixels": 3353234,
+        "qualifying_components": 4,
+        "positive_pixels": 3376076
+      },
+      "nonmetastatic_signal": "present"
+    },
+    {
+      "slide": "normal_108",
+      "method": "medsam",
+      "reference_slide_label": "negative",
+      "shape_yx": [
+        2128,
+        2576
+      ],
+      "tissue_pixels": 3377530,
+      "support_sha256": "fe0ba9f8b7229b0aa298c12b532d931d88e722fef6c6f475cf6606dbb4b82dc0",
+      "mask_sha256": "caf94ab3fc0e95d2eaf0852cce9fa142be365f8bd552f1dbfe35a3fc75f9ef3e",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 19,
+        "largest_component_pixels": 50,
+        "qualifying_components": 0,
+        "positive_pixels": 401
+      },
+      "tumor_total_area_mm2": 0.006416,
+      "tumor_largest_focus_mm2": 0.0007999999999999999,
+      "metastasis_signal": "none_qualifying",
+      "explicit_nonmetastatic": null,
+      "nonmetastatic_signal": null
+    },
+    {
+      "slide": "normal_108",
+      "method": "vista_path",
+      "reference_slide_label": "negative",
+      "shape_yx": [
+        2128,
+        2576
+      ],
+      "tissue_pixels": 3377530,
+      "support_sha256": "fe0ba9f8b7229b0aa298c12b532d931d88e722fef6c6f475cf6606dbb4b82dc0",
+      "mask_sha256": "bdcecc3a8d5775bb1000244ec919e98147f42c98c0db270477e395c92315f33a",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 411,
+        "largest_component_pixels": 39812,
+        "qualifying_components": 13,
+        "positive_pixels": 92776
+      },
+      "tumor_total_area_mm2": 1.484416,
+      "tumor_largest_focus_mm2": 0.636992,
+      "metastasis_signal": "present",
+      "explicit_nonmetastatic": null,
+      "nonmetastatic_signal": null
+    },
+    {
+      "slide": "normal_150",
+      "method": "bora",
+      "reference_slide_label": "negative",
+      "shape_yx": [
+        3472,
+        3808
+      ],
+      "tissue_pixels": 4549588,
+      "support_sha256": "e8b00a089fcd52b4b2b735887d076821d64f4a9a712807e2e21383fa1e2b603f",
+      "mask_sha256": "8d3d343b1461e500c78eab52ecd3476729121a2c7cc6460c1413cea34e85c894",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 167,
+        "largest_component_pixels": 9070,
+        "qualifying_components": 62,
+        "positive_pixels": 147432
+      },
+      "tumor_total_area_mm2": 2.3589119999999997,
+      "tumor_largest_focus_mm2": 0.14512,
+      "metastasis_signal": "present",
+      "explicit_nonmetastatic": {
+        "component_count": 9,
+        "largest_component_pixels": 4349776,
+        "qualifying_components": 4,
+        "positive_pixels": 4402156
+      },
+      "nonmetastatic_signal": "present"
+    },
+    {
+      "slide": "normal_150",
+      "method": "unet",
+      "reference_slide_label": "negative",
+      "shape_yx": [
+        3472,
+        3808
+      ],
+      "tissue_pixels": 4549588,
+      "support_sha256": "e8b00a089fcd52b4b2b735887d076821d64f4a9a712807e2e21383fa1e2b603f",
+      "mask_sha256": "e4965912f54aa931163a8740c5c04c052cde992300e69abef34c17c79095b5b5",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 546,
+        "largest_component_pixels": 681,
+        "qualifying_components": 1,
+        "positive_pixels": 13110
+      },
+      "tumor_total_area_mm2": 0.20976,
+      "tumor_largest_focus_mm2": 0.010896,
+      "metastasis_signal": "present",
+      "explicit_nonmetastatic": {
+        "component_count": 30,
+        "largest_component_pixels": 4485047,
+        "qualifying_components": 4,
+        "positive_pixels": 4536478
+      },
+      "nonmetastatic_signal": "present"
+    },
+    {
+      "slide": "normal_150",
+      "method": "deeplabv3plus",
+      "reference_slide_label": "negative",
+      "shape_yx": [
+        3472,
+        3808
+      ],
+      "tissue_pixels": 4549588,
+      "support_sha256": "e8b00a089fcd52b4b2b735887d076821d64f4a9a712807e2e21383fa1e2b603f",
+      "mask_sha256": "0741f2d694f4410bf2c6cfcba540f72d6b6338a5c2c176f2d18be4a3fcaa48c6",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 114,
+        "largest_component_pixels": 870,
+        "qualifying_components": 3,
+        "positive_pixels": 4849
+      },
+      "tumor_total_area_mm2": 0.077584,
+      "tumor_largest_focus_mm2": 0.01392,
+      "metastasis_signal": "present",
+      "explicit_nonmetastatic": {
+        "component_count": 8,
+        "largest_component_pixels": 4493358,
+        "qualifying_components": 4,
+        "positive_pixels": 4544739
+      },
+      "nonmetastatic_signal": "present"
+    },
+    {
+      "slide": "normal_150",
+      "method": "medsam",
+      "reference_slide_label": "negative",
+      "shape_yx": [
+        3472,
+        3808
+      ],
+      "tissue_pixels": 4549588,
+      "support_sha256": "e8b00a089fcd52b4b2b735887d076821d64f4a9a712807e2e21383fa1e2b603f",
+      "mask_sha256": "0c0df405ec382a500deedc4229625dcf188ca7220009012015e9574795653820",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 192,
+        "largest_component_pixels": 1670,
+        "qualifying_components": 7,
+        "positive_pixels": 16803
+      },
+      "tumor_total_area_mm2": 0.268848,
+      "tumor_largest_focus_mm2": 0.026719999999999997,
+      "metastasis_signal": "present",
+      "explicit_nonmetastatic": null,
+      "nonmetastatic_signal": null
+    },
+    {
+      "slide": "normal_150",
+      "method": "vista_path",
+      "reference_slide_label": "negative",
+      "shape_yx": [
+        3472,
+        3808
+      ],
+      "tissue_pixels": 4549588,
+      "support_sha256": "e8b00a089fcd52b4b2b735887d076821d64f4a9a712807e2e21383fa1e2b603f",
+      "mask_sha256": "ab3291be92421c0f7cd5b6e9b8fe0403f1f8631003bab73346aa910b17ed0176",
+      "mask_source": "shared",
+      "tumor": {
+        "component_count": 1881,
+        "largest_component_pixels": 337347,
+        "qualifying_components": 20,
+        "positive_pixels": 741215
+      },
+      "tumor_total_area_mm2": 11.85944,
+      "tumor_largest_focus_mm2": 5.397552,
+      "metastasis_signal": "present",
+      "explicit_nonmetastatic": null,
+      "nonmetastatic_signal": null
+    }
+  ]
+}
