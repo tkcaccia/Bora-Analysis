@@ -3812,8 +3812,8 @@
     "camelyon16/normal-019-tissue-only-scores.json": "4e8e13fa831ac0158e6bb1b30c0570fca08b53207a76f9a46ada5a78d3c48b6c",
     "camelyon16/normal-specificity.json": "e7e16688160f0efb6a25299c06899cad252c8fb3f1911b59aba8648fffbb76f8",
     "camelyon16/normal_019.html": "c35258eb1da2019365b456e1aa22561ac6a7d29bae2f172e1f2f961123856713",
-    "camelyon16/normal_108.html": "aa6c5ee3bf5a359bf054b19f212a0a3d4eabcfe3c4954783a6fbbbe3998a5ed2",
-    "camelyon16/normal_150.html": "3e3a654bbd04d504de20be43fa8dd1f276ba745d6ada337fb53895ed1fe5a8cc",
+    "camelyon16/normal_108.html": "f67bc1b8ba1a25bbe2395e2e816796d0bd541699d20192d616983e159d6bed0b",
+    "camelyon16/normal_150.html": "8c1cb2224e78066540c67c87793b068de52d4144b1f3f1e85ec05afed462e208",
     "camelyon16/training-previews/normal_093-he-tissue.webp": "5ad8199db4dc69b542a055703f9363e8035e3dfe78ca0bebd72226405741cd69",
     "camelyon16/training-previews/tumor_093-he-tissue.webp": "427619948ea3b03c6d96a9000b92c64bd72ba3631078d3ac98e59073f5db02e3",
     "camelyon16/tumor_075.html": "849591d559eb8eb1509cef715219601cd8b30da854aeb4fe0dff1397447e92ad",
@@ -4405,6 +4405,6 @@
   "grayscale_group_map_count": 129,
   "public_wsi_count": 12,
   "retired_case_count": 4,
-  "size_bytes": 511118037,
+  "size_bytes": 511118123,
   "status": "CAMELYON16_RAW_SLIDE_SIGNAL_PANELS_INCLUDED"
 }
