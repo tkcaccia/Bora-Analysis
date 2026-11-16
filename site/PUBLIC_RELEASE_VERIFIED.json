@@ -1,6 +1,6 @@
 {
   "comparator_wsi_count": 7,
-  "file_count": 4399,
+  "file_count": 4400,
   "file_sha256": {
     "BUILD_PROVENANCE.json": "7353c2f089fe41ad934780d7df8f54f0ea336e8b147968e3875ed73d9fe06d97",
     "DATA_LICENSES.md": "da566fde847ff32be11d44c141e8a508e1a324fab6ea41019478f5ab91ec8184",
@@ -3383,7 +3383,7 @@
     "camelyon16/aggregate-six.json": "14fcfb79cca058919d714d61c2c38a5aa4a4fa9c20a4d183c33d5ec81e4dd6cf",
     "camelyon16/aggregate.json": "41aae3a5fcb4904a47ce75a106f0b8f9b513e52a8af461f16ae6289ef2e67b27",
     "camelyon16/benign-error-burden.json": "329742803a82ab7d78bd0dbaeccca7e41db3940ebc1bba4895f5c5210318ccb8",
-    "camelyon16/index.html": "81a50804f3f8c1b8b02712ac78e80bb6af9eabfa9484911fa0d9c9404e085d3d",
+    "camelyon16/index.html": "5e90bbda60f403807ad5527f0c27015f1b8d9fb0ecd6e953fc43fde4525d5a4a",
     "camelyon16/local-assets/normal_019/field-01-bora.webp": "25a12f0312c98b17cb5d088ceb4dbbb5028c0cf093fdf4d7ff973f4b20dd78e3",
     "camelyon16/local-assets/normal_019/field-01-deeplabv3plus.webp": "0c95372a28f9d6713893afceb2eae2b106f09aeb103cd62eecea3c337697a427",
     "camelyon16/local-assets/normal_019/field-01-expert.webp": "9ae3498e80009b53f93b3cb797c8037b488c591ac30256f2999910bbc2ded271",
@@ -3812,14 +3812,14 @@
     "camelyon16/normal-019-tissue-only-method-scope.json": "d5bd3e0b832559909138a36c578b680e4d30a1f03f1bb515ac688fa5e64cb6fa",
     "camelyon16/normal-019-tissue-only-scores.json": "4e8e13fa831ac0158e6bb1b30c0570fca08b53207a76f9a46ada5a78d3c48b6c",
     "camelyon16/normal-specificity.json": "e7e16688160f0efb6a25299c06899cad252c8fb3f1911b59aba8648fffbb76f8",
-    "camelyon16/normal_019.html": "2c79ea313ac9762c9b8d788acbd4b1c6efe90f10fed4150831fd85e33152d1ac",
-    "camelyon16/normal_108.html": "2a5f52980ef98d1ef6603270715473af43016f9e3a2c3685e17f6c0d494ea78d",
-    "camelyon16/normal_150.html": "ebdf139c88032496f58acc208150a4c26719d32e8bd65f3758dc600299c3db9c",
+    "camelyon16/normal_019.html": "2ce35ab3e11f54466e99e4d5138b279ac43a7b4fa2d0c6de48949f070dcbdf70",
+    "camelyon16/normal_108.html": "d18b4efd7d550e3b4a6f8688f7d5cf511d33af037fb6f7b877729c752e3e3030",
+    "camelyon16/normal_150.html": "1dae21ff207447107e0a60cc227b35eef64f7710600e2f5fe19618559548d854",
     "camelyon16/training-previews/normal_093-he-tissue.webp": "5ad8199db4dc69b542a055703f9363e8035e3dfe78ca0bebd72226405741cd69",
     "camelyon16/training-previews/tumor_093-he-tissue.webp": "427619948ea3b03c6d96a9000b92c64bd72ba3631078d3ac98e59073f5db02e3",
-    "camelyon16/tumor_075.html": "f01462474b08eda98008c4b4cec30478d74a12109c2af84df68a1364ab7c881d",
-    "camelyon16/tumor_084.html": "3d37e0c6fa18f3729fa4a706f25d69c0b2f2e5032d553930fa834017419f9e65",
-    "camelyon16/tumor_091.html": "09b409dd30e71b746809684a00a83ddba34343c96c4b0f43466424003b008097",
+    "camelyon16/tumor_075.html": "9524f176cb5360ac4102588a43b0224fb5fc9b887491d0b4dff9e89929f7ae35",
+    "camelyon16/tumor_084.html": "c326f135910e54bae1b94eca1d6bf6e157ba61eda53d5332f38022e22065e201",
+    "camelyon16/tumor_091.html": "ffecd74d15316d9b957dc7055c321c58f49462b57d7b436b23d866ca68eecb99",
     "data.json": "219fa7fba67dcb565fbfc40b23e2d1474990c26783f27113297e3985e7ae4617",
     "downloads/camelyon16-pilot-reproduction-v1.html": "68da75da7480aa7961f3ba9d025b24d8fe8d75c90cbc3d4a7ac9912651b09ff5",
     "downloads/camelyon16-pilot-reproduction-v1.md": "06912e00352dcb9613187ffb4ff8b501a52313f7a76a192c4df0db5bcdcc683a",
@@ -4400,12 +4400,13 @@
     "visium/geojson-download.js": "b913397b5d6aa5019ef0fbbc63f612934b284050c0cc93ac2152e896dcaf5133",
     "visium/index.html": "d10422feaf3ddc37da560eada76920a104bbeda9c5f9485277a77cb1d9181a0b",
     "visium/tonsil.html": "9b63ba555e0efb6a0377a6facb5a3b39c1c1ea06597aca6809d633278ee37ac6",
-    "visium/tutorial.html": "b22874efc7109e453b161e2a57d79465609f50ab86212d0bff8b0a8bcb81833e"
+    "visium/tutorial.html": "b22874efc7109e453b161e2a57d79465609f50ab86212d0bff8b0a8bcb81833e",
+    "camelyon16/balanced-accuracy.json": "aab2c938a55ee61aa2cbf2ba945d5717151e2e7b6f69a6e75f1b3b1a462a3ed3"
   },
   "format": "bora-public-site-v2",
   "grayscale_group_map_count": 129,
   "public_wsi_count": 12,
   "retired_case_count": 4,
-  "size_bytes": 511147647,
-  "status": "CAMELYON16_NORMAL019_MATCHED_CONTEXT_LAYOUT"
+  "size_bytes": 511202142,
+  "status": "CAMELYON16_BALANCED_ACCURACY"
 }
