@@ -1,0 +1,370 @@
+{
+  "status": "INDEPENDENT_BENIGN_ERROR_BURDEN_COMPLETE",
+  "description": "Descriptive false-positive burden on official known benign pixels within the reviewed H&E tissue area",
+  "spatial_grid_um_xy": [
+    4,
+    4
+  ],
+  "pixel_area_mm2": 1.6e-05,
+  "focus_connectivity": 8,
+  "focus_count_minimum_area_mm2": 0.01,
+  "positive_reference_metrics": "undefined on these benign slides",
+  "unknown_reference_pixels": "excluded; predicted tumor there is not called a false positive",
+  "normal_019": "post hoc tissue-support correction, reported separately from the original cohort score",
+  "model_outputs_unchanged": true,
+  "extension_scoring_contract_sha256": "46c29ea387150c639e009c902987daa16889316cfcfb435c4bc818f93804450b",
+  "normal019_scoring_contract_sha256": "2ea8ee0827abca333ce17e644c6ba5e44b245c37fb1998437209677c2910ce8e",
+  "slides": [
+    {
+      "slide": "normal_019",
+      "known_reference_pixels": 652254,
+      "known_tissue_pixels": 620363,
+      "excluded_known_pixels_outside_tissue": 31891,
+      "known_tissue_area_mm2": 9.925808,
+      "reference_sha256": "0caef8033c7b44dea522ed5f996eec8d647720a53e3069a56c7323b82a561180",
+      "support_sha256": "3b848235350fed24448d422ddb90ebd4fe9ded05ff86f7833acdb4cc0bed5436",
+      "post_hoc_tissue_correction": true,
+      "methods": [
+        {
+          "method": "bora",
+          "native": {
+            "false_positive_pixels": 1965,
+            "false_positive_area_mm2": 0.031439999999999996,
+            "false_positive_fraction_of_known_tissue": 0.0031675003183619915,
+            "false_positive_foci_ge_0_01_mm2": 0,
+            "largest_false_positive_focus_mm2": 0.0066879999999999995,
+            "largest_false_positive_focus_pixels": 418,
+            "mask_sha256": "abf88dc6c90a0ca44f857df1ebbd2a8545f8d8df39e45d5580251dab16eccc98"
+          },
+          "shared_support": {
+            "false_positive_pixels": 1283,
+            "false_positive_area_mm2": 0.020527999999999998,
+            "false_positive_fraction_of_known_tissue": 0.0020681439737701957,
+            "false_positive_foci_ge_0_01_mm2": 0,
+            "largest_false_positive_focus_mm2": 0.00648,
+            "largest_false_positive_focus_pixels": 405,
+            "mask_sha256": "4a8adcb82f6e4db81fb10fa85443898cf3f6ef0291ecce7f3b225fa645ebac43"
+          }
+        },
+        {
+          "method": "unet",
+          "native": {
+            "false_positive_pixels": 107,
+            "false_positive_area_mm2": 0.001712,
+            "false_positive_fraction_of_known_tissue": 0.00017247966110164534,
+            "false_positive_foci_ge_0_01_mm2": 0,
+            "largest_false_positive_focus_mm2": 0.000464,
+            "largest_false_positive_focus_pixels": 29,
+            "mask_sha256": "ac7529a09580cc32dc24f1371f0051da1fd7b4c110f9d23e35021a1f219dfe42"
+          },
+          "shared_support": {
+            "false_positive_pixels": 107,
+            "false_positive_area_mm2": 0.001712,
+            "false_positive_fraction_of_known_tissue": 0.00017247966110164534,
+            "false_positive_foci_ge_0_01_mm2": 0,
+            "largest_false_positive_focus_mm2": 0.000464,
+            "largest_false_positive_focus_pixels": 29,
+            "mask_sha256": null
+          }
+        },
+        {
+          "method": "deeplabv3plus",
+          "native": {
+            "false_positive_pixels": 485,
+            "false_positive_area_mm2": 0.0077599999999999995,
+            "false_positive_fraction_of_known_tissue": 0.0007818003330308222,
+            "false_positive_foci_ge_0_01_mm2": 0,
+            "largest_false_positive_focus_mm2": 0.000896,
+            "largest_false_positive_focus_pixels": 56,
+            "mask_sha256": "5177a9e1d3e30b86c093cdb814032d1b1d421c763da119eda46bbe7635b8b3bf"
+          },
+          "shared_support": {
+            "false_positive_pixels": 485,
+            "false_positive_area_mm2": 0.0077599999999999995,
+            "false_positive_fraction_of_known_tissue": 0.0007818003330308222,
+            "false_positive_foci_ge_0_01_mm2": 0,
+            "largest_false_positive_focus_mm2": 0.000896,
+            "largest_false_positive_focus_pixels": 56,
+            "mask_sha256": null
+          }
+        },
+        {
+          "method": "medsam",
+          "native": {
+            "false_positive_pixels": 136,
+            "false_positive_area_mm2": 0.002176,
+            "false_positive_fraction_of_known_tissue": 0.00021922648513853985,
+            "false_positive_foci_ge_0_01_mm2": 0,
+            "largest_false_positive_focus_mm2": 0.0006879999999999999,
+            "largest_false_positive_focus_pixels": 43,
+            "mask_sha256": "9e8f346548384c8759d1d4113327898545a727dee37b57bd40cb7abb7da3ac13"
+          },
+          "shared_support": {
+            "false_positive_pixels": 136,
+            "false_positive_area_mm2": 0.002176,
+            "false_positive_fraction_of_known_tissue": 0.00021922648513853985,
+            "false_positive_foci_ge_0_01_mm2": 0,
+            "largest_false_positive_focus_mm2": 0.0006879999999999999,
+            "largest_false_positive_focus_pixels": 43,
+            "mask_sha256": null
+          }
+        },
+        {
+          "method": "vista_path",
+          "native": {
+            "false_positive_pixels": 35897,
+            "false_positive_area_mm2": 0.574352,
+            "false_positive_fraction_of_known_tissue": 0.05786450836042768,
+            "false_positive_foci_ge_0_01_mm2": 4,
+            "largest_false_positive_focus_mm2": 0.24068799999999999,
+            "largest_false_positive_focus_pixels": 15043,
+            "mask_sha256": "dbc15ac59be20eba5b980b0728a6a42f7a6a1cd5f29cf3ea07ab805be6f2fbb8"
+          },
+          "shared_support": {
+            "false_positive_pixels": 35897,
+            "false_positive_area_mm2": 0.574352,
+            "false_positive_fraction_of_known_tissue": 0.05786450836042768,
+            "false_positive_foci_ge_0_01_mm2": 4,
+            "largest_false_positive_focus_mm2": 0.24068799999999999,
+            "largest_false_positive_focus_pixels": 15043,
+            "mask_sha256": "7391855d8c3ddf2b78a1e53a994259e66607b3228dc77bbf30c5bc7fbd9956e0"
+          }
+        }
+      ]
+    },
+    {
+      "slide": "normal_108",
+      "known_reference_pixels": 3443110,
+      "known_tissue_pixels": 3236361,
+      "excluded_known_pixels_outside_tissue": 206749,
+      "known_tissue_area_mm2": 51.781776,
+      "reference_sha256": "3214f2aeacead15fde0c19b7d937d5c56c7343c87567d47471a2b497f8b32377",
+      "support_sha256": "fe0ba9f8b7229b0aa298c12b532d931d88e722fef6c6f475cf6606dbb4b82dc0",
+      "post_hoc_tissue_correction": false,
+      "methods": [
+        {
+          "method": "bora",
+          "native": {
+            "false_positive_pixels": 37840,
+            "false_positive_area_mm2": 0.60544,
+            "false_positive_fraction_of_known_tissue": 0.01169214435596029,
+            "false_positive_foci_ge_0_01_mm2": 13,
+            "largest_false_positive_focus_mm2": 0.045696,
+            "largest_false_positive_focus_pixels": 2856,
+            "mask_sha256": "a91a447b120115bd4c35a26f004f42ddf0e81af31fde97bfaee8ed495bd90b16"
+          },
+          "shared_support": {
+            "false_positive_pixels": 27968,
+            "false_positive_area_mm2": 0.447488,
+            "false_positive_fraction_of_known_tissue": 0.008641804792481432,
+            "false_positive_foci_ge_0_01_mm2": 13,
+            "largest_false_positive_focus_mm2": 0.04704,
+            "largest_false_positive_focus_pixels": 2940,
+            "mask_sha256": "016f7f4bad1ca9afd53f651253bef0bc871cb6ef34c967479a56010200c13156"
+          }
+        },
+        {
+          "method": "unet",
+          "native": {
+            "false_positive_pixels": 446,
+            "false_positive_area_mm2": 0.007136,
+            "false_positive_fraction_of_known_tissue": 0.0001378091010242677,
+            "false_positive_foci_ge_0_01_mm2": 0,
+            "largest_false_positive_focus_mm2": 0.0012799999999999999,
+            "largest_false_positive_focus_pixels": 80,
+            "mask_sha256": "ee16bc4e84cb594bbd22065412511d9c5aae3b518daf7591eebaa1b11094be30"
+          },
+          "shared_support": {
+            "false_positive_pixels": 446,
+            "false_positive_area_mm2": 0.007136,
+            "false_positive_fraction_of_known_tissue": 0.0001378091010242677,
+            "false_positive_foci_ge_0_01_mm2": 0,
+            "largest_false_positive_focus_mm2": 0.0012799999999999999,
+            "largest_false_positive_focus_pixels": 80,
+            "mask_sha256": "ac0c84baf301c731aa029c06e0262a7aec1c38075c01e3972a428ca2da03b606"
+          }
+        },
+        {
+          "method": "deeplabv3plus",
+          "native": {
+            "false_positive_pixels": 1454,
+            "false_positive_area_mm2": 0.023264,
+            "false_positive_fraction_of_known_tissue": 0.00044927002889974267,
+            "false_positive_foci_ge_0_01_mm2": 0,
+            "largest_false_positive_focus_mm2": 0.009663999999999999,
+            "largest_false_positive_focus_pixels": 604,
+            "mask_sha256": "1bea50e82b6288761312fc7bf1f20f6e7ebaf11c60037b7ffea627d2105c83e0"
+          },
+          "shared_support": {
+            "false_positive_pixels": 1454,
+            "false_positive_area_mm2": 0.023264,
+            "false_positive_fraction_of_known_tissue": 0.00044927002889974267,
+            "false_positive_foci_ge_0_01_mm2": 0,
+            "largest_false_positive_focus_mm2": 0.009663999999999999,
+            "largest_false_positive_focus_pixels": 604,
+            "mask_sha256": "2fa79827f489cbd9a44145be63dfd702338be590d90487ec230259a772c3d3ea"
+          }
+        },
+        {
+          "method": "medsam",
+          "native": {
+            "false_positive_pixels": 401,
+            "false_positive_area_mm2": 0.006416,
+            "false_positive_fraction_of_known_tissue": 0.00012390459531554112,
+            "false_positive_foci_ge_0_01_mm2": 0,
+            "largest_false_positive_focus_mm2": 0.0007999999999999999,
+            "largest_false_positive_focus_pixels": 50,
+            "mask_sha256": "caf94ab3fc0e95d2eaf0852cce9fa142be365f8bd552f1dbfe35a3fc75f9ef3e"
+          },
+          "shared_support": {
+            "false_positive_pixels": 401,
+            "false_positive_area_mm2": 0.006416,
+            "false_positive_fraction_of_known_tissue": 0.00012390459531554112,
+            "false_positive_foci_ge_0_01_mm2": 0,
+            "largest_false_positive_focus_mm2": 0.0007999999999999999,
+            "largest_false_positive_focus_pixels": 50,
+            "mask_sha256": "caf94ab3fc0e95d2eaf0852cce9fa142be365f8bd552f1dbfe35a3fc75f9ef3e"
+          }
+        },
+        {
+          "method": "vista_path",
+          "native": {
+            "false_positive_pixels": 92776,
+            "false_positive_area_mm2": 1.484416,
+            "false_positive_fraction_of_known_tissue": 0.028666764925173675,
+            "false_positive_foci_ge_0_01_mm2": 13,
+            "largest_false_positive_focus_mm2": 0.636992,
+            "largest_false_positive_focus_pixels": 39812,
+            "mask_sha256": "b42e2030ecd89414fbec449d7c9b1fc9ba4d0afd345786e191d6bb30b2af63a8"
+          },
+          "shared_support": {
+            "false_positive_pixels": 92776,
+            "false_positive_area_mm2": 1.484416,
+            "false_positive_fraction_of_known_tissue": 0.028666764925173675,
+            "false_positive_foci_ge_0_01_mm2": 13,
+            "largest_false_positive_focus_mm2": 0.636992,
+            "largest_false_positive_focus_pixels": 39812,
+            "mask_sha256": "bdcecc3a8d5775bb1000244ec919e98147f42c98c0db270477e395c92315f33a"
+          }
+        }
+      ]
+    },
+    {
+      "slide": "normal_150",
+      "known_reference_pixels": 4161559,
+      "known_tissue_pixels": 4155849,
+      "excluded_known_pixels_outside_tissue": 5710,
+      "known_tissue_area_mm2": 66.493584,
+      "reference_sha256": "2f6f66edd2c811300d3a820bc358241543cf71df2eede103f3bb2b48c1e28997",
+      "support_sha256": "e8b00a089fcd52b4b2b735887d076821d64f4a9a712807e2e21383fa1e2b603f",
+      "post_hoc_tissue_correction": false,
+      "methods": [
+        {
+          "method": "bora",
+          "native": {
+            "false_positive_pixels": 170960,
+            "false_positive_area_mm2": 2.73536,
+            "false_positive_fraction_of_known_tissue": 0.04113720204944886,
+            "false_positive_foci_ge_0_01_mm2": 63,
+            "largest_false_positive_focus_mm2": 0.142624,
+            "largest_false_positive_focus_pixels": 8914,
+            "mask_sha256": "b25b6392140a77be22dd3b628f916ce84bfd6b951dfad3d7a40fc9f4c2789506"
+          },
+          "shared_support": {
+            "false_positive_pixels": 145437,
+            "false_positive_area_mm2": 2.3269919999999997,
+            "false_positive_fraction_of_known_tissue": 0.03499573733309367,
+            "false_positive_foci_ge_0_01_mm2": 62,
+            "largest_false_positive_focus_mm2": 0.14512,
+            "largest_false_positive_focus_pixels": 9070,
+            "mask_sha256": "8d3d343b1461e500c78eab52ecd3476729121a2c7cc6460c1413cea34e85c894"
+          }
+        },
+        {
+          "method": "unet",
+          "native": {
+            "false_positive_pixels": 13096,
+            "false_positive_area_mm2": 0.209536,
+            "false_positive_fraction_of_known_tissue": 0.003151221326857641,
+            "false_positive_foci_ge_0_01_mm2": 1,
+            "largest_false_positive_focus_mm2": 0.010896,
+            "largest_false_positive_focus_pixels": 681,
+            "mask_sha256": "a03363bcd150cd2e184720480c7fd22a707c2571c5b2e319d47e86e92d889021"
+          },
+          "shared_support": {
+            "false_positive_pixels": 13096,
+            "false_positive_area_mm2": 0.209536,
+            "false_positive_fraction_of_known_tissue": 0.003151221326857641,
+            "false_positive_foci_ge_0_01_mm2": 1,
+            "largest_false_positive_focus_mm2": 0.010896,
+            "largest_false_positive_focus_pixels": 681,
+            "mask_sha256": "e4965912f54aa931163a8740c5c04c052cde992300e69abef34c17c79095b5b5"
+          }
+        },
+        {
+          "method": "deeplabv3plus",
+          "native": {
+            "false_positive_pixels": 4839,
+            "false_positive_area_mm2": 0.07742399999999999,
+            "false_positive_fraction_of_known_tissue": 0.0011643830177660449,
+            "false_positive_foci_ge_0_01_mm2": 3,
+            "largest_false_positive_focus_mm2": 0.01392,
+            "largest_false_positive_focus_pixels": 870,
+            "mask_sha256": "e3331197808171f893e7924ac21d1946d211a012e198ddb838ab618fd453c52c"
+          },
+          "shared_support": {
+            "false_positive_pixels": 4839,
+            "false_positive_area_mm2": 0.07742399999999999,
+            "false_positive_fraction_of_known_tissue": 0.0011643830177660449,
+            "false_positive_foci_ge_0_01_mm2": 3,
+            "largest_false_positive_focus_mm2": 0.01392,
+            "largest_false_positive_focus_pixels": 870,
+            "mask_sha256": "0741f2d694f4410bf2c6cfcba540f72d6b6338a5c2c176f2d18be4a3fcaa48c6"
+          }
+        },
+        {
+          "method": "medsam",
+          "native": {
+            "false_positive_pixels": 16756,
+            "false_positive_area_mm2": 0.268096,
+            "false_positive_fraction_of_known_tissue": 0.00403190780030747,
+            "false_positive_foci_ge_0_01_mm2": 7,
+            "largest_false_positive_focus_mm2": 0.026719999999999997,
+            "largest_false_positive_focus_pixels": 1670,
+            "mask_sha256": "0c0df405ec382a500deedc4229625dcf188ca7220009012015e9574795653820"
+          },
+          "shared_support": {
+            "false_positive_pixels": 16756,
+            "false_positive_area_mm2": 0.268096,
+            "false_positive_fraction_of_known_tissue": 0.00403190780030747,
+            "false_positive_foci_ge_0_01_mm2": 7,
+            "largest_false_positive_focus_mm2": 0.026719999999999997,
+            "largest_false_positive_focus_pixels": 1670,
+            "mask_sha256": "0c0df405ec382a500deedc4229625dcf188ca7220009012015e9574795653820"
+          }
+        },
+        {
+          "method": "vista_path",
+          "native": {
+            "false_positive_pixels": 741215,
+            "false_positive_area_mm2": 11.85944,
+            "false_positive_fraction_of_known_tissue": 0.17835465148035937,
+            "false_positive_foci_ge_0_01_mm2": 20,
+            "largest_false_positive_focus_mm2": 5.397552,
+            "largest_false_positive_focus_pixels": 337347,
+            "mask_sha256": "44dca66b74ae7e2a4916b86ffaadeb02c30b4ecce146f4292c1e99a5e0ec0f41"
+          },
+          "shared_support": {
+            "false_positive_pixels": 741215,
+            "false_positive_area_mm2": 11.85944,
+            "false_positive_fraction_of_known_tissue": 0.17835465148035937,
+            "false_positive_foci_ge_0_01_mm2": 20,
+            "largest_false_positive_focus_mm2": 5.397552,
+            "largest_false_positive_focus_pixels": 337347,
+            "mask_sha256": "ab3291be92421c0f7cd5b6e9b8fe0403f1f8631003bab73346aa910b17ed0176"
+          }
+        }
+      ]
+    }
+  ]
+}
