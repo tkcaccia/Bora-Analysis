@@ -1,115 +1,125 @@
 {
-  "domain": "official known code 1/2 pixels at 4 micrometres per pixel",
+  "domain": "per-slide domains specified in slides; normal_019 is a post hoc H&E tissue-only correction",
   "false_positive_rate_formula": "FP / (TN + FP)",
-  "format": "camelyon16-negative-control-scores-v1",
+  "format": "camelyon16-negative-control-scores-v2",
   "positive_reference_metrics": "undefined: no metastasis in normal-slide references",
   "slides": {
     "normal_019": {
       "completed_methods": 5,
-      "known_pixels": 652254,
+      "corrected_score_sha256": "4e8e13fa831ac0158e6bb1b30c0570fca08b53207a76f9a46ada5a78d3c48b6c",
+      "historical_full_known_denominator_pixels": 652254,
+      "known_pixels": 620363,
+      "known_pixels_excluded_outside_corrected_tissue": 31891,
       "methods": [
         {
+          "corrected_score_sha256": "4e8e13fa831ac0158e6bb1b30c0570fca08b53207a76f9a46ada5a78d3c48b6c",
+          "historical_full_known_score_receipt_sha256": "0388514c16e0975af710af069e86799a25e5ba8e2193ddf1a0745409711216b8",
           "method": "bora",
           "native": {
             "false_positive_known_outside_support_area_mm2": 0.0,
-            "false_positive_rate": 0.003012630049029979,
-            "false_positive_tissue_area_mm2": 0.031439999999999996,
+            "false_positive_rate": 0.0031675003183619915,
+            "false_positive_tissue_area_mm2": 0.03144,
             "fp": 1965,
-            "specificity": 0.99698736995097,
-            "tn": 650289
+            "specificity": 0.996832499681638,
+            "tn": 618398
           },
-          "score_receipt_sha256": "0388514c16e0975af710af069e86799a25e5ba8e2193ddf1a0745409711216b8",
           "shared_support": {
             "false_positive_known_outside_support_area_mm2": 0.0,
-            "false_positive_rate": 0.001967025115982424,
-            "false_positive_tissue_area_mm2": 0.020527999999999998,
+            "false_positive_rate": 0.0020681439737701957,
+            "false_positive_tissue_area_mm2": 0.020528,
             "fp": 1283,
-            "specificity": 0.9980329748840175,
-            "tn": 650971
+            "specificity": 0.9979318560262298,
+            "tn": 619080
           }
         },
         {
+          "corrected_score_sha256": "4e8e13fa831ac0158e6bb1b30c0570fca08b53207a76f9a46ada5a78d3c48b6c",
+          "historical_full_known_score_receipt_sha256": "43ec8f6d1f24a9d7a2b9a6236698f81e17c61258610210337ca3f318443f7bc1",
           "method": "unet",
           "native": {
             "false_positive_known_outside_support_area_mm2": 0.0,
-            "false_positive_rate": 0.0001640465217537953,
+            "false_positive_rate": 0.00017247966110164534,
             "false_positive_tissue_area_mm2": 0.001712,
             "fp": 107,
-            "specificity": 0.9998359534782462,
-            "tn": 652147
+            "specificity": 0.9998275203388983,
+            "tn": 620256
           },
-          "score_receipt_sha256": "43ec8f6d1f24a9d7a2b9a6236698f81e17c61258610210337ca3f318443f7bc1",
           "shared_support": {
             "false_positive_known_outside_support_area_mm2": 0.0,
-            "false_positive_rate": 0.0001640465217537953,
+            "false_positive_rate": 0.00017247966110164534,
             "false_positive_tissue_area_mm2": 0.001712,
             "fp": 107,
-            "specificity": 0.9998359534782462,
-            "tn": 652147
+            "specificity": 0.9998275203388983,
+            "tn": 620256
           }
         },
         {
+          "corrected_score_sha256": "4e8e13fa831ac0158e6bb1b30c0570fca08b53207a76f9a46ada5a78d3c48b6c",
+          "historical_full_known_score_receipt_sha256": "757ed2c90b79b7af9705033c73af54c2cd008cb7721d40e923cc9804f4dbd36c",
           "method": "deeplabv3plus",
           "native": {
             "false_positive_known_outside_support_area_mm2": 0.0,
-            "false_positive_rate": 0.0007435753556129974,
-            "false_positive_tissue_area_mm2": 0.0077599999999999995,
+            "false_positive_rate": 0.0007818003330308222,
+            "false_positive_tissue_area_mm2": 0.00776,
             "fp": 485,
-            "specificity": 0.999256424644387,
-            "tn": 651769
+            "specificity": 0.9992181996669692,
+            "tn": 619878
           },
-          "score_receipt_sha256": "757ed2c90b79b7af9705033c73af54c2cd008cb7721d40e923cc9804f4dbd36c",
           "shared_support": {
             "false_positive_known_outside_support_area_mm2": 0.0,
-            "false_positive_rate": 0.0007435753556129974,
-            "false_positive_tissue_area_mm2": 0.0077599999999999995,
+            "false_positive_rate": 0.0007818003330308222,
+            "false_positive_tissue_area_mm2": 0.00776,
             "fp": 485,
-            "specificity": 0.999256424644387,
-            "tn": 651769
+            "specificity": 0.9992181996669692,
+            "tn": 619878
           }
         },
         {
+          "corrected_score_sha256": "4e8e13fa831ac0158e6bb1b30c0570fca08b53207a76f9a46ada5a78d3c48b6c",
+          "historical_full_known_score_receipt_sha256": "835a2161180258d288dfe9d561fbc595eae6cad221ca6c186e2ee716e3c8be09",
           "method": "medsam",
           "native": {
             "false_positive_known_outside_support_area_mm2": 0.0,
-            "false_positive_rate": 0.00020850772858426318,
+            "false_positive_rate": 0.00021922648513853985,
             "false_positive_tissue_area_mm2": 0.002176,
             "fp": 136,
-            "specificity": 0.9997914922714157,
-            "tn": 652118
+            "specificity": 0.9997807735148615,
+            "tn": 620227
           },
-          "score_receipt_sha256": "835a2161180258d288dfe9d561fbc595eae6cad221ca6c186e2ee716e3c8be09",
           "shared_support": {
             "false_positive_known_outside_support_area_mm2": 0.0,
-            "false_positive_rate": 0.00020850772858426318,
+            "false_positive_rate": 0.00021922648513853985,
             "false_positive_tissue_area_mm2": 0.002176,
             "fp": 136,
-            "specificity": 0.9997914922714157,
-            "tn": 652118
+            "specificity": 0.9997807735148615,
+            "tn": 620227
           }
         },
         {
+          "corrected_score_sha256": "4e8e13fa831ac0158e6bb1b30c0570fca08b53207a76f9a46ada5a78d3c48b6c",
+          "historical_full_known_score_receipt_sha256": "60660d489868bfc66c65bde8415206b213f4de074d02034842a73d3a299637b0",
           "method": "vista_path",
           "native": {
             "false_positive_known_outside_support_area_mm2": 0.0,
-            "false_positive_rate": 0.055035308330803646,
+            "false_positive_rate": 0.05786450836042768,
             "false_positive_tissue_area_mm2": 0.574352,
             "fp": 35897,
-            "specificity": 0.9449646916691964,
-            "tn": 616357
+            "specificity": 0.9421354916395723,
+            "tn": 584466
           },
-          "score_receipt_sha256": "60660d489868bfc66c65bde8415206b213f4de074d02034842a73d3a299637b0",
           "shared_support": {
             "false_positive_known_outside_support_area_mm2": 0.0,
-            "false_positive_rate": 0.055035308330803646,
+            "false_positive_rate": 0.05786450836042768,
             "false_positive_tissue_area_mm2": 0.574352,
             "fp": 35897,
-            "specificity": 0.9449646916691964,
-            "tn": 616357
+            "specificity": 0.9421354916395723,
+            "tn": 584466
           }
         }
       ],
-      "reference_positive_pixels": 0
+      "post_hoc_tissue_only_correction": true,
+      "reference_positive_pixels": 0,
+      "score_domain": "official code-1 known pixels intersected with corrected H&E-only tissue support"
     },
     "normal_108": {
       "completed_methods": 5,
@@ -216,7 +226,8 @@
           }
         }
       ],
-      "reference_positive_pixels": 0
+      "reference_positive_pixels": 0,
+      "score_domain": "all official known code-1/2 pixels; historical unchanged result"
     },
     "normal_150": {
       "completed_methods": 5,
@@ -323,7 +334,8 @@
           }
         }
       ],
-      "reference_positive_pixels": 0
+      "reference_positive_pixels": 0,
+      "score_domain": "all official known code-1/2 pixels; historical unchanged result"
     }
   },
   "source_aggregate_sha256": "ffcb96197919c405a4dd6944c8e27d271cb2df847d9b1424a9db8f0634d02884",

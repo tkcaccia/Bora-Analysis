@@ -1,0 +1,178 @@
+{
+  "status": "POST_HOC_NORMAL019_TISSUE_ONLY_SCORES_COMPLETE",
+  "slide_id": "normal_019",
+  "correction_type": "H&E-only tissue support and denominator",
+  "reference_positive_pixels": 0,
+  "scored_known_tissue_pixels": 620363,
+  "all_official_known_pixels": 652254,
+  "official_known_outside_corrected_tissue_pixels": 31891,
+  "corrected_tissue_pixels": 798511,
+  "known_tissue_fraction_of_support": 0.7768997546683765,
+  "method_completion": "5/5",
+  "rows": [
+    {
+      "method": "bora",
+      "role": "CAM-pair-trained 203-channel Virchow2 ridge; binary metastasis model",
+      "native_mask_sha256": "abf88dc6c90a0ca44f857df1ebbd2a8545f8d8df39e45d5580251dab16eccc98",
+      "shared_mask_sha256": "4a8adcb82f6e4db81fb10fa85443898cf3f6ef0291ecce7f3b225fa645ebac43",
+      "native": {
+        "tp": 0,
+        "fn": 0,
+        "fp": 1965,
+        "tn": 618398,
+        "specificity": 0.996832499681638,
+        "false_positive_rate": 0.0031675003183619915,
+        "false_positive_tissue_area_mm2": 0.03144,
+        "predicted_positive_known_outside_tissue_pixels": 0,
+        "metastasis_iou": null,
+        "metastasis_dice": null,
+        "undefined_reason": "no_reference_metastasis"
+      },
+      "shared_support": {
+        "tp": 0,
+        "fn": 0,
+        "fp": 1283,
+        "tn": 619080,
+        "specificity": 0.9979318560262298,
+        "false_positive_rate": 0.0020681439737701957,
+        "false_positive_tissue_area_mm2": 0.020528,
+        "predicted_positive_known_outside_tissue_pixels": 0,
+        "metastasis_iou": null,
+        "metastasis_dice": null,
+        "undefined_reason": "no_reference_metastasis"
+      }
+    },
+    {
+      "method": "unet",
+      "role": "CAM-pair-adapted eight-class-pretrained binary network",
+      "native_mask_sha256": "ac7529a09580cc32dc24f1371f0051da1fd7b4c110f9d23e35021a1f219dfe42",
+      "shared_mask_sha256": null,
+      "native": {
+        "tp": 0,
+        "fn": 0,
+        "fp": 107,
+        "tn": 620256,
+        "specificity": 0.9998275203388983,
+        "false_positive_rate": 0.00017247966110164534,
+        "false_positive_tissue_area_mm2": 0.001712,
+        "predicted_positive_known_outside_tissue_pixels": 0,
+        "metastasis_iou": null,
+        "metastasis_dice": null,
+        "undefined_reason": "no_reference_metastasis"
+      },
+      "shared_support": {
+        "tp": 0,
+        "fn": 0,
+        "fp": 107,
+        "tn": 620256,
+        "specificity": 0.9998275203388983,
+        "false_positive_rate": 0.00017247966110164534,
+        "false_positive_tissue_area_mm2": 0.001712,
+        "predicted_positive_known_outside_tissue_pixels": 0,
+        "metastasis_iou": null,
+        "metastasis_dice": null,
+        "undefined_reason": "no_reference_metastasis"
+      }
+    },
+    {
+      "method": "deeplabv3plus",
+      "role": "CAM-pair-adapted eight-class-pretrained binary network",
+      "native_mask_sha256": "5177a9e1d3e30b86c093cdb814032d1b1d421c763da119eda46bbe7635b8b3bf",
+      "shared_mask_sha256": null,
+      "native": {
+        "tp": 0,
+        "fn": 0,
+        "fp": 485,
+        "tn": 619878,
+        "specificity": 0.9992181996669692,
+        "false_positive_rate": 0.0007818003330308222,
+        "false_positive_tissue_area_mm2": 0.00776,
+        "predicted_positive_known_outside_tissue_pixels": 0,
+        "metastasis_iou": null,
+        "metastasis_dice": null,
+        "undefined_reason": "no_reference_metastasis"
+      },
+      "shared_support": {
+        "tp": 0,
+        "fn": 0,
+        "fp": 485,
+        "tn": 619878,
+        "specificity": 0.9992181996669692,
+        "false_positive_rate": 0.0007818003330308222,
+        "false_positive_tissue_area_mm2": 0.00776,
+        "predicted_positive_known_outside_tissue_pixels": 0,
+        "metastasis_iou": null,
+        "metastasis_dice": null,
+        "undefined_reason": "no_reference_metastasis"
+      }
+    },
+    {
+      "method": "medsam",
+      "role": "U-Net-box-prompted MedSAM boundary refinement; not an independent semantic classifier",
+      "native_mask_sha256": "9e8f346548384c8759d1d4113327898545a727dee37b57bd40cb7abb7da3ac13",
+      "shared_mask_sha256": null,
+      "native": {
+        "tp": 0,
+        "fn": 0,
+        "fp": 136,
+        "tn": 620227,
+        "specificity": 0.9997807735148615,
+        "false_positive_rate": 0.00021922648513853985,
+        "false_positive_tissue_area_mm2": 0.002176,
+        "predicted_positive_known_outside_tissue_pixels": 0,
+        "metastasis_iou": null,
+        "metastasis_dice": null,
+        "undefined_reason": "no_reference_metastasis"
+      },
+      "shared_support": {
+        "tp": 0,
+        "fn": 0,
+        "fp": 136,
+        "tn": 620227,
+        "specificity": 0.9997807735148615,
+        "false_positive_rate": 0.00021922648513853985,
+        "false_positive_tissue_area_mm2": 0.002176,
+        "predicted_positive_known_outside_tissue_pixels": 0,
+        "metastasis_iou": null,
+        "metastasis_dice": null,
+        "undefined_reason": "no_reference_metastasis"
+      }
+    },
+    {
+      "method": "vista_path",
+      "role": "released fixed 13-class VISTA; generic tumor prompt only, not metastasis-specific",
+      "native_mask_sha256": "dbc15ac59be20eba5b980b0728a6a42f7a6a1cd5f29cf3ea07ab805be6f2fbb8",
+      "shared_mask_sha256": "7391855d8c3ddf2b78a1e53a994259e66607b3228dc77bbf30c5bc7fbd9956e0",
+      "native": {
+        "tp": 0,
+        "fn": 0,
+        "fp": 35897,
+        "tn": 584466,
+        "specificity": 0.9421354916395723,
+        "false_positive_rate": 0.05786450836042768,
+        "false_positive_tissue_area_mm2": 0.574352,
+        "predicted_positive_known_outside_tissue_pixels": 0,
+        "metastasis_iou": null,
+        "metastasis_dice": null,
+        "undefined_reason": "no_reference_metastasis"
+      },
+      "shared_support": {
+        "tp": 0,
+        "fn": 0,
+        "fp": 35897,
+        "tn": 584466,
+        "specificity": 0.9421354916395723,
+        "false_positive_rate": 0.05786450836042768,
+        "false_positive_tissue_area_mm2": 0.574352,
+        "predicted_positive_known_outside_tissue_pixels": 0,
+        "metastasis_iou": null,
+        "metastasis_dice": null,
+        "undefined_reason": "no_reference_metastasis"
+      }
+    }
+  ],
+  "scoring_contract_sha256": "2ea8ee0827abca333ce17e644c6ba5e44b245c37fb1998437209677c2910ce8e",
+  "post_hoc": true,
+  "not_patient_disjoint_validation": true,
+  "positive_metrics_undefined": true
+}

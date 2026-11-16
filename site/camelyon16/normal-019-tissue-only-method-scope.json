@@ -1,0 +1,47 @@
+{
+  "status": "VERIFIED_NORMAL019_TISSUE_ONLY_METHOD_SCOPE",
+  "post_hoc": true,
+  "support_sha256": "3b848235350fed24448d422ddb90ebd4fe9ded05ff86f7833acdb4cc0bed5436",
+  "tissue_pixels": 798511,
+  "known_tissue_score_pixels": 620363,
+  "excluded_known_outside_tissue_pixels": 31891,
+  "virchow2_admitted_tiles": {
+    "factor1": 1168,
+    "factor2": 329,
+    "factor4": 98
+  },
+  "bora_prediction": "re-extracted on revised tissue support; final mask audited",
+  "networks": {
+    "unet": {
+      "audit_sha256": "c5779991fb771514b6c86cc7968a91e972306602460ae21156f39eb4dd9cd6ab",
+      "mask_sha256": "5fc20208a9f555bdb03ab876d775eecef23cf547b70d8775c1bec4b83792848f",
+      "admitted_patches": 458,
+      "fullslide_grid_patches": 35532,
+      "tissue_pixels": 798511,
+      "full_pixel_equivalence_on_tissue": true
+    },
+    "deeplabv3plus": {
+      "audit_sha256": "9d9b72c18ae5f77a725ffc3bfb6b149248a365f1e7a72bca4ce087eb9c8130f0",
+      "mask_sha256": "bee33087a80554cd5b125e049a8405f5348da3c719240d56bb58c164bef9a1c0",
+      "admitted_patches": 458,
+      "fullslide_grid_patches": 35532,
+      "tissue_pixels": 798511,
+      "full_pixel_equivalence_on_tissue": true
+    }
+  },
+  "medsam": {
+    "prompted_tiles": 4,
+    "prompt_boxes": 6,
+    "all_prompted_tiles_entirely_inside_corrected_tissue": true,
+    "prompt_manifest_sha256": "8e3defda24b801871cdfba31e59ddfa426b0c44cb4c2f8d771f3f153b1a82c5b",
+    "native_mask_reused_and_clipped_to_corrected_tissue": true
+  },
+  "vista_path": {
+    "rerun_tiles": 91,
+    "fixed_13_prompt_vocabulary": true,
+    "mask_audit_sha256": "def463c86ec84f449b58fee71ac2c2079b16ee26ca212febb5db311a51101876"
+  },
+  "score_sha256": "4e8e13fa831ac0158e6bb1b30c0570fca08b53207a76f9a46ada5a78d3c48b6c",
+  "no_full_slide_inference_in_corrected_analysis": true,
+  "full_slide_h_and_e_overview_for_orientation_only": true
+}
