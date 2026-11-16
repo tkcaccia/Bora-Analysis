@@ -1,10 +1,11 @@
-# Benchmark 3: Visium expression-guided examples
+# Benchmark 4: Visium expression-guided examples
 
 Start with the [step-by-step public tutorial](../../site/visium/tutorial.html).
 
-`legacy_clustering/run_benchmark4.R` is a new, complete R pipeline for a
-**new** expression-guided mask. It runs a historical Seurat, Giotto or
-SpatialExperiment spot-clustering front end, then calls Bora R 0.1.5
+The [per-image R scripts](../benchmark4/README.md) and the generic
+`legacy_clustering/run_benchmark4.R` form a complete pipeline for a **new**
+expression-guided mask. They run a historical Seurat, Giotto or
+SpatialExperiment spot-clustering front end, then call Bora R 0.1.7
 `Bora.spatial()` with its clustered object, a registered H&E image, a
 precomputed tissue mask and measured pixel spacing. It writes TIFF and
 source-pixel GeoJSON. This same-section fit does not recreate the three

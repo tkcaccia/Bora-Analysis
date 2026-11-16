@@ -4391,17 +4391,17 @@
     "visium-hd/supervised-contour-v1/public-10x-tonsil-3prime/wide-03-supervised.webp": "7159df0538cf7ebebca05f0de4c17d46f7a6971da7551225eb7398c6a964d82e",
     "visium-hd/unified-panels.css": "abe0c69a94479cf70239d90d3438ed7aac7687ae6b011be9360273cd8099bf2c",
     "visium/FULLSECTION_PROVENANCE.json": "29cccc464a37966db2df66b9f4ae192205da11fc176fa2251dc35a4e771a9226",
-    "visium/breast.html": "f52ba447c72546b7eecd1086341da3a285191fb98b59ea4424ae8a0618b6afe6",
-    "visium/colorectal.html": "6f779a37342b3042ff6372e6d3e147e102084d25e9bd348f8c288556effc08d9",
+    "visium/breast.html": "cdfbc69eb8100f8e4e5250b6eed1ad97efd8144cdf577d556d7dc3758875c59b",
+    "visium/colorectal.html": "f37c6b19367a99e808deddfc4e74dd94daefcd61014c2b1396ef2003c4b9a72a",
     "visium/geojson-download.js": "b913397b5d6aa5019ef0fbbc63f612934b284050c0cc93ac2152e896dcaf5133",
-    "visium/index.html": "4d4863af616b56b8420b5574ef0c331b108801773f5e0ae1561195e6df737dba",
-    "visium/tonsil.html": "19cc3eed1727027b0ad14f182e53a8c345d96e31fc0d7f158fa912fa80bdb539",
-    "visium/tutorial.html": "d33081890d87f78ae6bfcf079a6d11bb7d2d40b674c9c72f1246beff7b560d18"
+    "visium/index.html": "d10422feaf3ddc37da560eada76920a104bbeda9c5f9485277a77cb1d9181a0b",
+    "visium/tonsil.html": "9b63ba555e0efb6a0377a6facb5a3b39c1c1ea06597aca6809d633278ee37ac6",
+    "visium/tutorial.html": "b22874efc7109e453b161e2a57d79465609f50ab86212d0bff8b0a8bcb81833e"
   },
   "format": "bora-public-site-v2",
   "grayscale_group_map_count": 129,
   "public_wsi_count": 12,
   "retired_case_count": 4,
-  "size_bytes": 506521541,
+  "size_bytes": 506524282,
   "status": "CAMELYON16_RAW_SLIDE_SIGNAL_PANELS_INCLUDED"
 }

@@ -75,7 +75,7 @@ python3 methods/benchmark3/verify_published.py \
     <p>The GeoJSON check establishes output integrity and format. It does not recompute the reported spot-centre agreement or test tissue-boundary accuracy. In breast, the published tissue support visibly omits some pale tissue; an uncolored region there is a limitation of the output.</p>
 
     <h2 id="rerun">4 · Run Bora from a clustered R object</h2>
-    <p>Install the <a href="https://github.com/tkcaccia/Bora/tree/bora-r-v0.1.6">Bora R package with <code>Bora.spatial()</code></a> and its matching Python backend. Set <code>RETICULATE_PYTHON</code> and obtain the separately licensed Virchow2 weights. The input object must be a Seurat, Giotto or SpatialExperiment object with expression-group labels and spot positions. The positions must correspond to the <em>full-resolution pixels of the supplied H&amp;E</em>, with upper-left origin. A known low-resolution coordinate system needs its measured X/Y scale factors.</p>
+    <p>Install the <a href="https://github.com/tkcaccia/Bora/tree/bora-r-v0.1.7">Bora R package with <code>Bora.spatial()</code></a> and its matching Python backend. Set <code>RETICULATE_PYTHON</code> and obtain the separately licensed Virchow2 weights. The input object must be a Seurat, Giotto or SpatialExperiment object with expression-group labels and spot positions. The positions must correspond to the <em>full-resolution pixels of the supplied H&amp;E</em>, with upper-left origin. A known low-resolution coordinate system needs its measured X/Y scale factors.</p>
 <pre><code>library(Bora)
 he &lt;- "/data/section/registered-fullres-he.tif"
 support &lt;- "/data/section/reviewed-tissue.geojson" # precomputed H&amp;E support
@@ -94,17 +94,22 @@ result$bw_images # one binary TIFF for each expression group
 result$preview</code></pre>
     <p>For Seurat, the function reads active identities by default or a named metadata column and uses unscaled image coordinates. For Giotto it joins spatial locations to cell metadata; for SpatialExperiment it uses <code>spatialCoords()</code> and <code>colData()</code>. Spot IDs are checked before fitting, out-of-tissue positions are excluded, and contradictory groups in one Virchow2 token cause an error. The receipt records the spot-to-group mapping and output paths. This route fits a ridge head to spot labels <em>on the same section</em>; image-only extrapolation between and beyond spots is not an independently validated tissue classification.</p>
 
-    <h2 id="full-r">5 · Start from expression counts: full R pipeline</h2>
-    <p>The <a href="https://github.com/tkcaccia/Bora-Analysis/blob/main/methods/benchmark3/legacy_clustering/run_benchmark4.R">R pipeline script</a> sources the released expression front end for breast/Giotto, colorectal/Seurat or tonsil/SpatialExperiment, then passes its clustered object directly to <code>Bora.spatial()</code>. It uses a registered image, a precomputed tissue mask, measured microscopy spacing, the licensed encoder weights and a new output directory. The historical front ends also require their documented R dependencies and <code>wsiTools</code>.</p>
-<pre><code>export RETICULATE_PYTHON=/path/to/bora-python/bin/python
-Rscript methods/benchmark3/legacy_clustering/run_benchmark4.R \
-  seurat /data/colorectal /data/colorectal/fullres-he.tif \
-  /data/colorectal/tissue.geojson /models/virchow2 \
-  /results/colorectal-v1 0.50 0.50
-
-# Replace seurat with giotto or spatialexperiment for the other examples.
-# The script performs normalization, PCA, KODAMA/Louvain spot grouping,
-# full-channel Virchow2 preparation, spot-guided fitting and vector export.</code></pre>
+    <h2 id="full-r">5 · Read each Visium dataset and produce GeoJSON</h2>
+    <p>Each result page now links its own R entry script. The scripts read the original 10x expression counts and Space Ranger spot positions through the indicated expression front end, calculate KODAMA/Louvain spot groups, and call <code>Bora.spatial()</code> to extract full-channel Virchow2 features from a registered H&amp;E image and export a mask and GeoJSON. Supply a reviewed tissue support mask so empty slide background is excluded. <a href="https://github.com/tkcaccia/Bora-Analysis/blob/main/methods/benchmark4/README.md">Inputs, dependencies and tested commands</a> are documented with the scripts.</p>
+    <table><thead><tr><th>Image</th><th>R entry script</th><th>Expression front end</th></tr></thead><tbody>
+      <tr><td><a href="breast.html">Breast cancer</a></td><td><a href="https://github.com/tkcaccia/Bora-Analysis/blob/main/methods/benchmark4/breast.R">breast.R</a></td><td>Giotto</td></tr>
+      <tr><td><a href="colorectal.html">Colorectal cancer</a></td><td><a href="https://github.com/tkcaccia/Bora-Analysis/blob/main/methods/benchmark4/colorectal.R">colorectal.R</a></td><td>Seurat</td></tr>
+      <tr><td><a href="tonsil.html">Tonsil</a></td><td><a href="https://github.com/tkcaccia/Bora-Analysis/blob/main/methods/benchmark4/tonsil.R">tonsil.R</a></td><td>SpatialExperiment</td></tr>
+    </tbody></table>
+<pre><code>python3 methods/benchmark3/download_visium.py \
+  --root /data/visium --dataset colorectal_seurat
+python3 methods/benchmark4/inspect_ome.py \
+  /data/visium/colorectal_seurat/CytAssist_11mm_FFPE_Human_Colorectal_Cancer_tissue_image.tif
+export RETICULATE_PYTHON=/path/to/bora-python/bin/python
+Rscript methods/benchmark4/colorectal.R \
+  /data/visium/colorectal_seurat /data/support/colorectal-tissue.geojson \
+  /models/virchow2 /results/colorectal-new-run-v1</code></pre>
+    <p>The Bora handoff was exercised with synthetic inputs for all three image routes, its registered Seurat/Giotto/SpatialExperiment spot tests passed, and OME-spacing extraction was tested on a generated image. A full rerun on the original three Visium sections was not performed because their raw Visium count datasets are not present in this workspace. The new code generates new results; it does not reproduce the archived GeoJSON hashes bit for bit.</p>
     <p>Retain the original image, measured X/Y spacing, 10x barcode-position file, expression counts, tissue support, encoder revision, 1,280-channel feature grids, generated spot table, model receipt and mask/GeoJSON checksums. A new expression clustering result can change the final mask even if the random seed is the same. The script's outputs are a new analysis, not the three pinned published GeoJSONs.</p>
     <p>For a new validation study, freeze the sections and spot clusters before mask generation, record complete-case counts, and compare boundaries with independent anatomical references. Agreement with the input spot groups measures input preservation only.</p>
   </main>
