@@ -1,0 +1,252 @@
+{
+  "description": "Raw, uncalibrated positive-region signal on six selected CAMELYON16 test slides.",
+  "rule": "positive if at least one method-positive pixel lies inside the displayed shared H&E-only tissue-support mask; otherwise negative",
+  "grid_um_xy": [
+    4,
+    4
+  ],
+  "source_receipt_sha256": "5b6b471c617b252db71000b5c6771ecc9c8abd444410f5c439cbac392af4220c",
+  "normal_019_uses_post_hoc_tissue_correction": true,
+  "rows": [
+    {
+      "slide": "tumor_084",
+      "method": "bora",
+      "reference_slide_label": "positive",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 113590,
+      "predicted_positive_area_mm2": 1.81744
+    },
+    {
+      "slide": "tumor_084",
+      "method": "unet",
+      "reference_slide_label": "positive",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 12909,
+      "predicted_positive_area_mm2": 0.20654399999999998
+    },
+    {
+      "slide": "tumor_084",
+      "method": "deeplabv3plus",
+      "reference_slide_label": "positive",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 2349,
+      "predicted_positive_area_mm2": 0.037584
+    },
+    {
+      "slide": "tumor_084",
+      "method": "medsam",
+      "reference_slide_label": "positive",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 15932,
+      "predicted_positive_area_mm2": 0.25491199999999997
+    },
+    {
+      "slide": "tumor_084",
+      "method": "vista_path",
+      "reference_slide_label": "positive",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 115289,
+      "predicted_positive_area_mm2": 1.8446239999999998
+    },
+    {
+      "slide": "tumor_091",
+      "method": "bora",
+      "reference_slide_label": "positive",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 179462,
+      "predicted_positive_area_mm2": 2.8713919999999997
+    },
+    {
+      "slide": "tumor_091",
+      "method": "unet",
+      "reference_slide_label": "positive",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 40195,
+      "predicted_positive_area_mm2": 0.64312
+    },
+    {
+      "slide": "tumor_091",
+      "method": "deeplabv3plus",
+      "reference_slide_label": "positive",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 48696,
+      "predicted_positive_area_mm2": 0.7791359999999999
+    },
+    {
+      "slide": "tumor_091",
+      "method": "medsam",
+      "reference_slide_label": "positive",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 64703,
+      "predicted_positive_area_mm2": 1.035248
+    },
+    {
+      "slide": "tumor_091",
+      "method": "vista_path",
+      "reference_slide_label": "positive",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 572065,
+      "predicted_positive_area_mm2": 9.153039999999999
+    },
+    {
+      "slide": "normal_019",
+      "method": "bora",
+      "reference_slide_label": "negative",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 1398,
+      "predicted_positive_area_mm2": 0.022368
+    },
+    {
+      "slide": "normal_019",
+      "method": "unet",
+      "reference_slide_label": "negative",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 107,
+      "predicted_positive_area_mm2": 0.001712
+    },
+    {
+      "slide": "normal_019",
+      "method": "deeplabv3plus",
+      "reference_slide_label": "negative",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 485,
+      "predicted_positive_area_mm2": 0.0077599999999999995
+    },
+    {
+      "slide": "normal_019",
+      "method": "medsam",
+      "reference_slide_label": "negative",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 136,
+      "predicted_positive_area_mm2": 0.002176
+    },
+    {
+      "slide": "normal_019",
+      "method": "vista_path",
+      "reference_slide_label": "negative",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 35897,
+      "predicted_positive_area_mm2": 0.574352
+    },
+    {
+      "slide": "tumor_075",
+      "method": "bora",
+      "reference_slide_label": "positive",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 267336,
+      "predicted_positive_area_mm2": 4.277375999999999
+    },
+    {
+      "slide": "tumor_075",
+      "method": "unet",
+      "reference_slide_label": "positive",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 53717,
+      "predicted_positive_area_mm2": 0.859472
+    },
+    {
+      "slide": "tumor_075",
+      "method": "deeplabv3plus",
+      "reference_slide_label": "positive",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 17037,
+      "predicted_positive_area_mm2": 0.272592
+    },
+    {
+      "slide": "tumor_075",
+      "method": "medsam",
+      "reference_slide_label": "positive",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 69374,
+      "predicted_positive_area_mm2": 1.1099839999999999
+    },
+    {
+      "slide": "tumor_075",
+      "method": "vista_path",
+      "reference_slide_label": "positive",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 620978,
+      "predicted_positive_area_mm2": 9.935647999999999
+    },
+    {
+      "slide": "normal_108",
+      "method": "bora",
+      "reference_slide_label": "negative",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 29884,
+      "predicted_positive_area_mm2": 0.47814399999999996
+    },
+    {
+      "slide": "normal_108",
+      "method": "unet",
+      "reference_slide_label": "negative",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 446,
+      "predicted_positive_area_mm2": 0.007136
+    },
+    {
+      "slide": "normal_108",
+      "method": "deeplabv3plus",
+      "reference_slide_label": "negative",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 1454,
+      "predicted_positive_area_mm2": 0.023264
+    },
+    {
+      "slide": "normal_108",
+      "method": "medsam",
+      "reference_slide_label": "negative",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 401,
+      "predicted_positive_area_mm2": 0.006416
+    },
+    {
+      "slide": "normal_108",
+      "method": "vista_path",
+      "reference_slide_label": "negative",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 92776,
+      "predicted_positive_area_mm2": 1.484416
+    },
+    {
+      "slide": "normal_150",
+      "method": "bora",
+      "reference_slide_label": "negative",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 147432,
+      "predicted_positive_area_mm2": 2.3589119999999997
+    },
+    {
+      "slide": "normal_150",
+      "method": "unet",
+      "reference_slide_label": "negative",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 13110,
+      "predicted_positive_area_mm2": 0.20976
+    },
+    {
+      "slide": "normal_150",
+      "method": "deeplabv3plus",
+      "reference_slide_label": "negative",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 4849,
+      "predicted_positive_area_mm2": 0.077584
+    },
+    {
+      "slide": "normal_150",
+      "method": "medsam",
+      "reference_slide_label": "negative",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 16803,
+      "predicted_positive_area_mm2": 0.268848
+    },
+    {
+      "slide": "normal_150",
+      "method": "vista_path",
+      "reference_slide_label": "negative",
+      "raw_signal_call": "positive",
+      "predicted_positive_pixels_in_shared_tissue": 741215,
+      "predicted_positive_area_mm2": 11.85944
+    }
+  ]
+}
