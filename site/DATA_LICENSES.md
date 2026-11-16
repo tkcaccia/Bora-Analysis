@@ -22,8 +22,12 @@ credits, original publications, source links and modifications.
   overlays, converted RGB images and masks here are adaptations under these
   same CC BY-NC-SA 4.0 terms. Changes include resizing, color mapping,
   anonymous tiling, prediction and polygon simplification.
-
-There is no implied endorsement. Previews are for research inspection.
-Downloaded GeoJSONs use native ROI pixel coordinates; images are resized for
-browser display. Dataset assignment for every asset is recorded in data.json.
-BUILD_PROVENANCE.json records exact copied-asset SHA256 values.
+* CAMELYON16 (Benchmark 3): the eight-slide technical study used the AWS Open
+  Data release, listed as CC0 at https://registry.opendata.aws/camelyon/ .
+  The historical challenge rules at https://camelyon16.grand-challenge.org/Rules/
+  use narrower language for challenge-site downloads. This site does not copy
+  full original slides; it links directly to the AWS source and shows compact
+  derived previews, masks and qualified scores. Cite the CAMELYON16 challenge
+  report in JAMA: https://jamanetwork.com/journals/jama/article-abstract/2665774 .
+  The selected six-slide results are not representative or patient-disjoint
+  validation.

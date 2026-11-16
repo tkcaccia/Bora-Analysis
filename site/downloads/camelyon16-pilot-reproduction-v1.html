@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>CAMELYON16 pilot reproduction · Bora</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="../viewer.css" />
+  <link rel="stylesheet" href="../benchmark-template.css" />
+</head>
+<body>
+<h1 id="reproducing-the-local-camelyon16-technical-pilot">Reproducing
+the local CAMELYON16 technical pilot</h1>
+<p><strong>Release state:</strong> the initial five-slide pilot was conducted locally
+on 15 November 2026. Its compact derived previews and selected technical
+scores are now available in <a href="../camelyon16/index.html">Benchmark 3</a>,
+alongside a separate three-slide extension. This guide describes the original
+pilot; it is not a population estimate or a claim of eight-class whole-slide
+accuracy. The original slides and model weights are not distributed with
+Bora.</p>
+<h2 id="source-cohort-and-target">Source, cohort and target</h2>
+<p>The exact source was the <a
+href="https://registry.opendata.aws/camelyon/">CAMELYON AWS Open Data
+release</a>, listed there as CC0. The older <a
+href="https://camelyon16.grand-challenge.org/Rules/">challenge rules</a>
+use narrower language. The study used the AWS CC0 source. The public viewer displays compact
+derived masks and H&amp;E crops and links to the original full-resolution
+slides at AWS; it does not host those slides. Cite the <a
+href="https://jamanetwork.com/journals/jama/article-abstract/2665774">CAMELYON16
+JAMA challenge report</a>.</p>
+<p>Only <code>tumor_093</code> and <code>normal_093</code> were used for
+CAMELYON16-specific fitting. The three test IDs were selected and frozen
+before looking at their pixels or reference masks. Original scanner
+metadata and the published scanner–centre mapping place
+<code>tumor_093</code> (fit), <code>tumor_084</code> and
+<code>tumor_091</code> (test) at UMCU, and <code>normal_093</code> (fit)
+and <code>normal_019</code> (test) at RUMC. Both centers therefore occur
+on both sides of this selected split; it is not center-disjoint. The
+five source filenames are distinct, but patient identities remain
+unverified, so no patient-disjoint claim is made. See the <a
+href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6007545/">original
+CAMELYON data paper</a> and local source-hash/metadata audit
+<code>v169/CENTER_PROVENANCE_AUDIT_VERIFIED.json</code>. All five slides
+use a precomputed H&amp;E-only tissue support. The official reference
+codes are 1 (nonmetastatic tissue), 2 (metastasis), and 0 (unscored). No
+additional semantic class was introduced on the test slides. Score only
+official code 1/2 pixels, including known pixels outside the display
+support.</p>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Slide</th>
+<th>Original AWS TIFF SHA256</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CAM-specific fit</td>
+<td><code>tumor_093</code></td>
+<td><code>aba3ae5a6739e0fb20de5b870ae160a7b32f523c6ffd7b3eafbda3a56cabc041</code></td>
+</tr>
+<tr>
+<td>CAM-specific fit</td>
+<td><code>normal_093</code></td>
+<td><code>51273349947c2554065d4d606b6f040c98088b674135bff9cf3923d18df2ea05</code></td>
+</tr>
+<tr>
+<td>Frozen test</td>
+<td><code>tumor_084</code></td>
+<td><code>73c9766616c40aff2bd6315eb44cd39e7b3d6bb7292cb52e25d3872256baee30</code></td>
+</tr>
+<tr>
+<td>Frozen test</td>
+<td><code>tumor_091</code></td>
+<td><code>29f5ca4caf206a2197a134fd61fd79032cf9f8364495aba5840a842a6967d4a4</code></td>
+</tr>
+<tr>
+<td>Frozen test</td>
+<td><code>normal_019</code></td>
+<td><code>2d477f93014b9934094d349993c8e3ee2519a968951a408a38dda73d2b5e349c</code></td>
+</tr>
+</tbody>
+</table>
+<p>The source checks were recorded before inference. The frozen test-ID
+selection is
+<code>Bora/migration/bora-camelyon-five-slide-protocol-2026-11-14-v19/TEST_IDS_FROZEN.json</code>;
+the three test source-byte audit is v22
+<code>SOURCE_BYTES_AUDIT_VERIFIED.json</code>. Training-slide source
+hashes above were independently rechecked from retained AWS TIFF bytes.
+These paths identify local evidence, not files bundled here.</p>
+<h2 id="software-and-inputs">Software and inputs</h2>
+<p>Install the MIT <a
+href="https://github.com/tkcaccia/Bora/releases/tag/bora-r-v0.1.4">Bora
+R release <code>bora-r-v0.1.4</code></a> with its matching Python
+backend 0.3.4. The package's <a
+href="https://github.com/tkcaccia/Bora/blob/bora-r-v0.1.4/r/REPRODUCE_ONE_RESULT.md">one-result
+guide</a> gives exact installation and CPU/GPU requirements. Virchow2,
+U-Net, DeepLabV3+, MedSAM and VISTA-PATH checkpoints are separately
+obtained under their upstream terms. The Virchow2 checkpoint SHA256 was
+<code>8d6cea947eb2418c3b0dff48cfb9b238e47744ab0dfca21b2b0637b140769b4b</code>;
+its config SHA256 was
+<code>7db445b996bb165e88fe70e826c2ebb530539a2b1d136aa16eeb847df5f1e3db</code>.</p>
+<p>Calibrate each source to the recorded 0.5 µm/pixel RGB grid. Every
+slide had a precomputed, independently reviewed H&amp;E-only tissue
+mask; the <a href="../preprocessing.html">preprocessing guide</a>
+explains its source-bound TIFF and GeoJSON procedure. The <strong>two
+training-slide caches</strong> were historically encoded over the full
+field, including glass; their reviewed support was then used to restrict
+training tokens and predictions. The <strong>three test-slide
+caches</strong> used sparse, support-admitted extraction at factors
+1/2/4; the v41 <code>TEST_FEATURES_FROZEN.json</code> binds each source,
+support, tile count and 1,280-channel scale receipt. Do not describe all
+five caches as masked or all five as full-field. A new extraction using
+<code>Bora.preparation(tissue_masks = ...)</code> can skip glass tiles
+in the training pair, but it would have different cache provenance and
+must not be called byte-identical to this pilot. The study froze
+<strong>no additional stain normalization</strong>: all slides used the
+same calibrated RGB path, and this choice was made before opening the
+three test references. Retain all 1,280 float16 Virchow2 channels at
+factors 1, 2 and 4 with source-to-token registration and SHA256
+receipts. The training feature contract is in local v61
+<code>source-proofs-v1/PRECOMPUTED_FEATURES_FROZEN.json</code>; the test
+feature freeze precedes scoring. Run one Chiamaka GPU bundle at a time,
+preserve a 100 GiB free-space reserve and a 200 GiB new-campaign peak
+cap, and verify terminal owned-process/GPU cleanup before the next
+bundle.</p>
+<h2 id="code-model-roles-and-order-of-operations">Code, model roles and
+order of operations</h2>
+<p>The <a href="camelyon16-pilot-source-v1.zip">code-only ZIP</a>,
+SHA256
+<code>898f1be66ca7a808a00025c511a5d5f057d4426a2a968a15d44610e562151f48</code>,
+contains 115 Python source snapshots and <code>MANIFEST.json</code>.
+Each snapshot is byte-identical to the versioned local source. It
+contains no images, masks, features, checkpoints or scores. These
+scripts preserve Chiamaka-specific paths, so adapt paths and verify each
+frozen SHA before any independent rerun; do not treat the archive as a
+one-command installer. The general Bora API and tissue-support
+rasterizer live in the released package. The same 115 files are <a
+href="camelyon16-source/index.html">browsable individually</a> with
+their SHA256 values in a local source index.</p>
+<ol type="1">
+<li>Freeze slide identities, original-source checksums, calibrated
+H&amp;E grids, reviewed support, complete Virchow2 caches and the
+official binary target. The snapshot includes the acquisition,
+calibration, support and feature scripts in v19–v66. Use their source
+and exact-pixel receipts as acceptance checks; do not silently relax the
+strict less-than-10% KODAMA tile rule.</li>
+<li>Freeze the training-only settings in v67
+<code>METHOD_SETTINGS_FROZEN.json</code>. The CAM-pair Bora ridge
+selected <strong>32</strong> channels from the full 1,280-channel cache;
+its independent fit audit is v70. The earlier eight-class Bora
+checkpoint has 203 channels and is a different model.</li>
+<li>Train the binary U-Net and DeepLabV3+ heads on the same two CAM
+slides using v81 <code>train_network.py</code>. Their backbones inherit
+weights fitted earlier on 397 non-CAM ROIs; the binary heads were
+initialized for this study. The independent completed-fit audits are v88
+(U-Net) and v90 (DeepLabV3+).</li>
+<li>Generate source-only test predictions before opening expert masks.
+Bora projection uses v91/v97/v102; bounded network bands use v103/v106
+and v114 assembly. MedSAM uses boxes from the CAM-adapted U-Net, frozen
+in v120, then v122/v125/v129. VISTA-PATH uses its released generic
+“tumor” prompt, frozen in v132, then v136/v141. MedSAM and VISTA-PATH
+are prompted descriptive comparators, not identically trained metastasis
+classifiers.</li>
+<li>Freeze v144 <code>SCORING_FROZEN.json</code> and
+<code>score_test_case.py</code> <strong>before</strong> opening the
+three test references. The scorer source SHA256 is
+<code>02c7b3639cfeda13fdc11fcc48a6ad1480b4c84aa04a7ed5fec0d8e4a60b7972</code>.
+Align the official references with v143, run the frozen score cases with
+v151, and audit exact full-pixel arithmetic with v152. Score native and
+common-support-clipped predictions separately at 4 µm/pixel; a 5 µm
+boundary tolerance and lesion-match IoU 0.1 were frozen in v144.</li>
+</ol>
+<p>The anonymous KODAMA route admitted 40,411 five-slide tiles, above
+the package's 10,000-tile cap. It was recorded as capacity
+noncompletion, not silently subsampled. It has no validated CAM
+metastasis naming head, so no semantic tumor IoU was fabricated.</p>
+<h2 id="expected-result-and-verification">Expected result and
+verification</h2>
+<p>The <a href="../camelyon16/aggregate.json">historical pilot score aggregate</a>
+has SHA256
+<code>41aae3a5fcb4904a47ce75a106f0b8f9b513e52a8af461f16ae6289ef2e67b27</code>.
+Its <code>online_publication: false</code> field records the local state when
+this pilot receipt was frozen; the separate <a href="../camelyon16/aggregate-six.json">six-slide public aggregate</a>
+is the current Benchmark 3 summary.
+It corrects one descriptive typo in an earlier aggregate: the CAM Bora
+model has 32 selected channels. The underlying numerical scores are
+unchanged. All five rendered methods completed all three selected test
+slides (15/15 method-slide outputs). Shared-support mean metastasis IoU
+across the two positive slides was 0.328 Bora, 0.072 U-Net, 0.100
+DeepLabV3+, 0.123 U-Net-box-prompted MedSAM and 0.294
+generic-tumor-prompt VISTA-PATH. On the benign slide, positive-class IoU
+is undefined; false-positive tissue area was 0.0205, 0.0017, 0.0078,
+0.0022 and 0.5744 mm² in that order. Per-slide precision, recall, Dice,
+boundary and lesion results are in the aggregate and local slide pages.
+These numbers are a technical pilot and do not rank model
+architectures.</p>
+<p>Verify downloaded code and numeric metadata before use:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sha256sum</span> camelyon16-pilot-source-v1.zip ../camelyon16/aggregate.json</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-m</span> zipfile <span class="at">-t</span> camelyon16-pilot-source-v1.zip</span></code></pre></div>
+<p>The two expected hashes are listed above. The independent local v162
+audit checked every ZIP member against its historical source and all
+site links. The historical manuscript and portrait supplement were rendered and visually
+checked as local v58 drafts. The public Benchmark 3 viewer includes the later
+six-test-slide aggregate, which is separate from this pilot guide.</p>
+</body>
+</html>

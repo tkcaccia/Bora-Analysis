@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prepare reviewed H&amp;E tissue support · Bora</title>
+<meta name="description" content="Source-bound, pixel-verified tissue-mask preparation for Bora benchmark images.">
+<link rel="stylesheet" href="viewer.css"><link rel="stylesheet" href="benchmark-template.css"></head>
+<body class="benchmark-page"><a class="skip-link" href="#main-content">Skip to procedure</a>
+<header class="site-header"><p class="eyebrow">BORA · LOCAL DRAFT</p><h1>Prepare tissue support</h1>
+<p class="site-intro">The current protocol prepares reviewed H&amp;E tissue support before a new Virchow2 extraction.</p>
+<nav class="benchmark-sections" aria-label="Benchmark collections"><a href="index.html">Benchmark 1 · ROIs</a><a href="visium-hd/index.html">Benchmark 2 · WSIs</a><a href="camelyon16/index.html">Benchmark 3 · CAMELYON16</a><a href="visium/index.html">Benchmark 4 · Spatial transcriptomics</a></nav></header>
+<main id="main-content"><section><h2>Review the H&amp;E tissue area</h2>
+<p>Trace the tissue boundary on the calibrated H&amp;E image and export pixel-edge GeoJSON. Exclude exterior glass, large enclosed white voids and scanner regions; retain small enclosed adipose spaces. This is an image-only support mask, not an expert tissue-class reference. Review the overlay before admitting the image to a benchmark.</p>
+<p>The GeoJSON must state the calibrated image dimensions, its SHA256, <code>coordinate_space: calibrated_image_pixel_edges</code>, and <code>review_status: human_reviewed</code>. The origin is the upper-left pixel edge, with X rightward and Y downward. An unrelated image hash, invalid polygon or out-of-frame geometry is rejected.</p>
+<h2>Make and verify the reusable mask</h2>
+<p>Use the <a href="downloads/prepare_reviewed_tissue_support.py" download>benchmark command wrapper</a> with an installed Bora Python package. The reusable rasterization and exact-pixel audit live in <a href="https://github.com/tkcaccia/Bora/blob/bora-r-v0.1.4/src/bora/r_tissue_support.py"><code>bora.r_tissue_support.materialize_reviewed_tissue_support</code></a>. The wrapper creates a tiled TIFF and <code>SUPPORT_VERIFIED.json</code> in a fresh output folder.</p>
+<pre><code>python prepare_reviewed_tissue_support.py \
+  calibrated-he.tif reviewed-tissue.geojson new-support-output \
+  --minimum-free-gib 100</code></pre>
+<p>The receipt binds the image, reviewed vector, raster and pixel counts by SHA256. The program re-rasterizes the GeoJSON in bounded strips and checks every mask pixel and Virchow2 tile count. Pass the resulting TIFF or reviewed GeoJSON to <code>Bora.preparation(tissue_masks = ...)</code>. For ordinary use without a mask, Bora encodes the full image including glass; benchmark images always receive precomputed support.</p>
+<p>The retained CAMELYON16 pilot has mixed feature provenance: its two training slides reused full-field Virchow2 caches, including glass, with reviewed support applied downstream; its three test slides used support-admitted sparse extraction. A new masked extraction of the training pair would have different cache provenance and must be recorded separately; see the <a href="downloads/camelyon16-pilot-reproduction-v1.html">local pilot reproduction guide</a>.</p>
+<p>The <a href="https://github.com/tkcaccia/Bora/releases/tag/bora-r-v0.1.4">Bora R package 0.1.4</a> has installation, API and one-result reproduction instructions. This page and its wrapper remain a local website draft; no new CAMELYON16 study or website publication follows from preparing a mask.</p>
+</section></main><footer class="site-footer">Local preprocessing draft · reviewed source-only geometry</footer></body></html>

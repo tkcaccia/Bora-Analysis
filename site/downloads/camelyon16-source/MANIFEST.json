@@ -1,0 +1,698 @@
+{
+  "format": "bora-camelyon16-source-snapshot-v1",
+  "status": "LOCAL_ONLY_NOT_PUBLICATION_APPROVAL",
+  "script_count": 115,
+  "total_bytes": 678047,
+  "scripts": [
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v102/run_remaining_bora_masks.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v102/run_remaining_bora_masks.py",
+      "sha256": "64cac73349d6cc6aac1c1e2a57f88384acc2274e485ce6c0ea948a4cf46f85e0",
+      "bytes": 2232
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v103/binary_grid.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v103/binary_grid.py",
+      "sha256": "cf9c93e6de4c32d14d15eb48c517e9a5502c359228c2051ee84c7da8f452d286",
+      "bytes": 1915
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v103/infer_binary_band.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v103/infer_binary_band.py",
+      "sha256": "39931ff1bbf4010857d2519f26756faee6303c549022cbd2168cb29e0b48f365",
+      "bytes": 8411
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v104/test_binary_grid.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v104/test_binary_grid.py",
+      "sha256": "fb6eb7ec4102120e017d1e8fe5f238173ed48beac140b25880c02c75c0b105df",
+      "bytes": 1741
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v106/run_binary_bands.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v106/run_binary_bands.py",
+      "sha256": "0823591c44f6d76727af3a7ab61d19bffb5d8ea60ae0ceae42c2614877f3611f",
+      "bytes": 12847
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v107/audit_remaining_bora_masks.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v107/audit_remaining_bora_masks.py",
+      "sha256": "50d10a4e93faa0e0618a3390c5d20a8cda3b3c2ab456b2d08be018171b502edc",
+      "bytes": 7035
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v108/audit_band_pilot.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v108/audit_band_pilot.py",
+      "sha256": "ddc8eb61fb2692bccddd9783f8231fa3ec021b4968f4886e020e618e09e8ef60",
+      "bytes": 5561
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v110/audit_binary_bands.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v110/audit_binary_bands.py",
+      "sha256": "fc416019853e56467d634014b18911ab9ed1f565eccafcf98197788dcd6793e2",
+      "bytes": 6681
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v111/prepare_bundle.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v111/prepare_bundle.py",
+      "sha256": "8df0c59485effd01529b015a3ced87afcc9e9b228563cd9d9e6adf196e7148aa",
+      "bytes": 4143
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v114/assemble_binary_masks.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v114/assemble_binary_masks.py",
+      "sha256": "b11770d2b4862033513660fa1ce99e7c64211af420006a3364761753b7293be5",
+      "bytes": 6499
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v118/audit_binary_masks.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v118/audit_binary_masks.py",
+      "sha256": "b6673a980bcc48488ffd08c49bef3252c2953a9a2101f55e79409076fbcf5468",
+      "bytes": 5661
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v119/render_source_only_review.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v119/render_source_only_review.py",
+      "sha256": "67a67673b9258a7970116ca4a7b1286dc76ead4827a3553629336595e1bca451",
+      "bytes": 3554
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v120/freeze_medsam_prompts.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v120/freeze_medsam_prompts.py",
+      "sha256": "f69b1d88606c8e0777e98e565b11fb236bb5976cb1fe0bd6fe658c602d328299",
+      "bytes": 4978
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v121/audit_medsam_prompts.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v121/audit_medsam_prompts.py",
+      "sha256": "f0ab0d32e13189b3a740f535fc15f6e1a6fdbf33c3493fb661cea32f452cadfc",
+      "bytes": 3335
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v122/infer_medsam_test.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v122/infer_medsam_test.py",
+      "sha256": "8ee9050f7be43a8416f878f981eb52a3ad32a7224f0373106183d51211ee4c83",
+      "bytes": 7537
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v124/audit_medsam_pilot.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v124/audit_medsam_pilot.py",
+      "sha256": "ab17e59b85009e2a882946c20ebf66f8bb2db4f016b6a699193c635016df3b9b",
+      "bytes": 4373
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v13/screen_kodama_capacity.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v13/screen_kodama_capacity.py",
+      "sha256": "88b894a22e09eb4df810c2f92dd98f95ee689168181482160ec64bd4f637283a",
+      "bytes": 3349
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v14/exact_kodama_admission.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v14/exact_kodama_admission.py",
+      "sha256": "366e5bbc2c5f4544c3164a6996e3e5f166ebb093d49971e693c73124c8817588",
+      "bytes": 5652
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v15/audit_exact_admission.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v15/audit_exact_admission.py",
+      "sha256": "5ba953d9477abb55c48d050f43ccd599c3163317ea4b819c2a996de95e1769e2",
+      "bytes": 4815
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v16/audit_against_released_package.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v16/audit_against_released_package.py",
+      "sha256": "a585ce6dc203893b79e4a950db840233c33a5bbf4f14b08651d977726182bc89",
+      "bytes": 2420
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v19/freeze_test_ids.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v19/freeze_test_ids.py",
+      "sha256": "aaed6cfbd20d3bb5c5c39c625a2d9528e13e014beb29ae2d53dbcff62afd7814",
+      "bytes": 6630
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v2/binary_score.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v2/binary_score.py",
+      "sha256": "94c105db7dafddb8dc3058972294e66549c265e6faed62fb2193be0bb7507297",
+      "bytes": 13142
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v2/test_binary_score.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v2/test_binary_score.py",
+      "sha256": "28447dabbf6fa61d95d797e5ce44256eabb986edc9916d2ba07324299fcf60b7",
+      "bytes": 5167
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v20/download_selected_sources.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v20/download_selected_sources.py",
+      "sha256": "dfc956738095a45071e96908a0264dc567f93c9d36a51d1af2785a5bb1212c57",
+      "bytes": 5187
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v21/audit_id_freeze.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v21/audit_id_freeze.py",
+      "sha256": "1e80dfe2e44e911a1aca8bd295f2b8bbf3bb7f8c5106436613dd2d261d703c03",
+      "bytes": 5373
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v22/audit_selected_sources.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v22/audit_selected_sources.py",
+      "sha256": "2bd0560388461e3d4ade2897eeb001f25e8ad374e41b008a3e20c5aaef5353be",
+      "bytes": 3173
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v23/screen_headers.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v23/screen_headers.py",
+      "sha256": "399edb606ef32b263361cefb7ca1233b234c1d17294659abdb1ec5de2b0f33b4",
+      "bytes": 4734
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v24/prepare_test_calibrated.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v24/prepare_test_calibrated.py",
+      "sha256": "448b38759af4855654f79c259bcdf2bb4e77efb9efe6024ab22e4b887791e322",
+      "bytes": 6280
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v25/build_he_support.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v25/build_he_support.py",
+      "sha256": "578c0ab1508058e78c7f02384c29ebbf195ca8924491d66b9391ee086adf5347",
+      "bytes": 5568
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v25/run_all.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v25/run_all.py",
+      "sha256": "59052dbb2bd071856b788771c0eb0606b7ea75028e2a0c348d4422bd9d65a541",
+      "bytes": 3307
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v26/sparse_feature_worker.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v26/sparse_feature_worker.py",
+      "sha256": "c1be6e709ff001794a7ef622d34ad0f27589ca221b3a5d3f2329d51869069c26",
+      "bytes": 12132
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v26/test_sparse_layout.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v26/test_sparse_layout.py",
+      "sha256": "2008bdb4a0fafe69721102bf21bbbda8570a7190afb144bc03aa64bf25d6cab2",
+      "bytes": 933
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v27/audit_calibrated.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v27/audit_calibrated.py",
+      "sha256": "bc3df88d58e41e9eefcb7751c3f065d5d626ca34a4c0ca5f8ec49fa4ab4bb578",
+      "bytes": 3727
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v28/freeze_sparse_inputs.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v28/freeze_sparse_inputs.py",
+      "sha256": "0d50226001a5b1ef551ad8399fab529a75f63e05d4613a8079d001c0549e17fd",
+      "bytes": 7688
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v29/audit_support.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v29/audit_support.py",
+      "sha256": "4985c25df5e9f791ef07716e5a7c8f3d699a0f60d0d672c88298f3a084f15853",
+      "bytes": 3878
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v3/profile_synthetic.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v3/profile_synthetic.py",
+      "sha256": "0eafff36ff19064d2c3cfce777014db7f1499794540053d54444bf5ee532e80b",
+      "bytes": 1633
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v3/select_metadata_only.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v3/select_metadata_only.py",
+      "sha256": "4a842e168887b811a41609b09914953626f512e0d9ed1e28b82866903f5ca683",
+      "bytes": 8014
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v3/test_select_metadata_only.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v3/test_select_metadata_only.py",
+      "sha256": "e19b3d67e686ed71cd696fcc351151c9ca343a1d47211ff6aa6008d069b60425",
+      "bytes": 3953
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v31/acquire_training_masks.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v31/acquire_training_masks.py",
+      "sha256": "936f9e0d98a0ac1b6e45a2e935fd47a42df1e37e8b43bac38c2779ce5c7d3aaa",
+      "bytes": 4219
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v32/build_he_support.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v32/build_he_support.py",
+      "sha256": "7103a591e2ff4ee3fb4ea8bcf79b601d10341670d2ea3061317ef061a99a704c",
+      "bytes": 5568
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v32/run_all.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v32/run_all.py",
+      "sha256": "85d36b5c4dd4ac2e0e5250719d04f56d0ca326d9662be0c4ee00abacbead5ec7",
+      "bytes": 3808
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v33/correct_reviewed_support.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v33/correct_reviewed_support.py",
+      "sha256": "5f671b4dfe79ad21ea2f0b34b79095bf73105a9b17406794055dae03c0239c49",
+      "bytes": 7053
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v34/audit_support.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v34/audit_support.py",
+      "sha256": "fa54dd701d4f2a90006916bf3dfad60d32e278b8a28224551b46757257b08161",
+      "bytes": 4048
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v35/audit_sparse_admission.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v35/audit_sparse_admission.py",
+      "sha256": "c9bbae7b6dd89905dacbeaac02a8cc1ac499f54202c9348d64fdd046321f7b6f",
+      "bytes": 3784
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v37/audit_sparse_pilot.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v37/audit_sparse_pilot.py",
+      "sha256": "8f882cce608868f8bdcf56616384faf5746363a7f0a4ff06100f1d5a968f28e8",
+      "bytes": 5029
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v38/freeze_launch.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v38/freeze_launch.py",
+      "sha256": "7ee9a63978b58d66f1dfd5df92441ab2cf7bf944ffc08cffea223e9771c45431",
+      "bytes": 3960
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v39/audit_sparse_scale.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v39/audit_sparse_scale.py",
+      "sha256": "814faff5bb85af84e1cff3b4ecd1c1d4fc4c3bfcb9f2bc4c3311f69716fd0eb2",
+      "bytes": 7263
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v4/audit_v2_v4.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v4/audit_v2_v4.py",
+      "sha256": "47eca6089c0f1719fd9c843cd33b6ad6e936365e3fb3da412c20d6550845051e",
+      "bytes": 2101
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v4/binary_score.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v4/binary_score.py",
+      "sha256": "c4759f3dd659166a30a24988ed0c921b2cb33b6f3a6e2b488c5033bbc57346a5",
+      "bytes": 13758
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v4/profile_synthetic.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v4/profile_synthetic.py",
+      "sha256": "8d9579361f4dc189fdecba80a909e24c6289ed32b9b58af88beba3dfff40397f",
+      "bytes": 1170
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v4/test_binary_score.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v4/test_binary_score.py",
+      "sha256": "fed7461037ca3417ab0e962ab8e233564604fc24f91e758b9b607795776c27a7",
+      "bytes": 5560
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v40/freeze_scale.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v40/freeze_scale.py",
+      "sha256": "3c8bfd52cf30b79b6aa16546c62fc8eed351666d692f656fd4b9f93328dc5f39",
+      "bytes": 4877
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v41/aggregate_sparse.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v41/aggregate_sparse.py",
+      "sha256": "2b2ff94676d7a6c99b718f9537da37ac315af1c77770fc7d98f15fc969a1cd9d",
+      "bytes": 6265
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v42/align_training_masks.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v42/align_training_masks.py",
+      "sha256": "26e23e0d38c8400b3f1ef83030669a5cc3aeec9eb23a0f26ea9a95543a53e8f5",
+      "bytes": 6097
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v44/audit_test_features.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v44/audit_test_features.py",
+      "sha256": "01c117219489acb198668d77642923dfbfef336801adadd490312e62f0d7f51c",
+      "bytes": 4118
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v45/freeze_training_mask_source.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v45/freeze_training_mask_source.py",
+      "sha256": "04f9f6a311e7c263a396a90ac499c187e3dc0cec1e718c83e6a1f6e01e4e15ca",
+      "bytes": 3278
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v46/audit_training_mask_sources.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v46/audit_training_mask_sources.py",
+      "sha256": "63dcb807b7f4f7ce97e988088abeac3799660b4fe6b5ba01b1a136c0fd8104e3",
+      "bytes": 3349
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v47/freeze_mask_alignment.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v47/freeze_mask_alignment.py",
+      "sha256": "ca635064d7c2caa6700654ac1c9b0ec2d639129c8b3e46d36cfadf5c7ff1de75",
+      "bytes": 2617
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v48/align_mask_rasterio.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v48/align_mask_rasterio.py",
+      "sha256": "16b649049721de03f8f3a17fd78385ee3700dc31eec9b38e94275b3f5befd2ed",
+      "bytes": 8762
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v49/audit_failure.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v49/audit_failure.py",
+      "sha256": "f87f23400e4f9a56589e7615e93efcb9ad740fd99411d73dee66fc1b31b26d7a",
+      "bytes": 3105
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v5/audit_software.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v5/audit_software.py",
+      "sha256": "05516263386ee15705177d6d3bc06aa7efc4f6d9594d728d782444fd2773d8f6",
+      "bytes": 2241
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v5/study_aggregate.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v5/study_aggregate.py",
+      "sha256": "e8f0a2cd76c16820b715d9e6a29411185df94ff61a7edf5369c3ef12c4a4af1d",
+      "bytes": 14117
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v5/test_study_aggregate.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v5/test_study_aggregate.py",
+      "sha256": "b4131c2ac645ad7b1cf965b26cf37da3783b088be0e508b59d1a19a2f53d64bb",
+      "bytes": 8430
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v50/freeze_recovery.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v50/freeze_recovery.py",
+      "sha256": "acdb4251f98bc2cfb140f0d85bd56d8a2a2fc2114e603a182612327848b5679d",
+      "bytes": 2985
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v51/align_mask_rasterio.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v51/align_mask_rasterio.py",
+      "sha256": "f818cb9a0247f64c01e4bd5206b63481474c4dc07f3c9cb03239b1f79b0340e3",
+      "bytes": 9088
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v53/freeze_recovery.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v53/freeze_recovery.py",
+      "sha256": "62e55320ddf1104773dd686aa0631809ca7048d63e0781f78793bad8132c35e7",
+      "bytes": 3010
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v54/audit_training_mask_alignment.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v54/audit_training_mask_alignment.py",
+      "sha256": "20a87d46ae29ac7ea8e54fde975388ea028b2d8bb3dc419bcfe3b1b1f9d84add",
+      "bytes": 5318
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v56/audit_training_token_domain.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v56/audit_training_token_domain.py",
+      "sha256": "1e1896c42e8fb23dd0d8f66ced6ddff0f0ad179b061e1a93e4e8db50b1b815a7",
+      "bytes": 3575
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v57/render_training_domain_qa.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v57/render_training_domain_qa.py",
+      "sha256": "9216eb4eaae71e9175dc4be4046a1bb877e8e0fea59476563ae27d41242f1289",
+      "bytes": 3433
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v58/clip_training_labels.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v58/clip_training_labels.py",
+      "sha256": "9f852d16d50d15f57f7c93af94b2f186fa8f007e66c1065405784a9a07d7091c",
+      "bytes": 6122
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v59/audit_training_labels.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v59/audit_training_labels.py",
+      "sha256": "cd72f88840dee8f8f0a64b93d9d1912eae6c5b14b3311e6bc628b001ad71e38e",
+      "bytes": 5639
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v6/binary_score.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v6/binary_score.py",
+      "sha256": "eadbd9dff06127ecffa51ba44f56b7d6420aed05b6a4e35c76f04c119b7d143d",
+      "bytes": 14157
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v6/test_binary_score.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v6/test_binary_score.py",
+      "sha256": "4ef32807602e34f112942c6b0e2227d9d4557270db211963e72e7a38843057f1",
+      "bytes": 11150
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v60/audit_training_labels.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v60/audit_training_labels.py",
+      "sha256": "99c159988b5ce3bd751c0b0648b6e0ab674d3a7ba0ff214985097ee0bbe171f4",
+      "bytes": 6747
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v61/freeze_pair_adoption.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v61/freeze_pair_adoption.py",
+      "sha256": "f549086e7e4a1d68cecc0704683efae7a5268a76ee3e4817bb468e7a326ff7d9",
+      "bytes": 5584
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v62/adopt_pair.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v62/adopt_pair.py",
+      "sha256": "a2a83cea3e898f9546ef682f389812438f43a86784f54a25f2f473ab8e91a4a1",
+      "bytes": 1443
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v63/audit_pair_adoption.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v63/audit_pair_adoption.py",
+      "sha256": "d2f71bed0fd1a854e84486a6ba248a0b4beec1cedeb202bf112e1a476c46bed0",
+      "bytes": 5112
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v65/adopt_pair.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v65/adopt_pair.py",
+      "sha256": "918ce02cb7388f743f7b777200b3196c4e1619b8198d2b8adceebec63aa8ea07",
+      "bytes": 1586
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v66/audit_pair_adoption.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v66/audit_pair_adoption.py",
+      "sha256": "72bf0180412bdf0fa7a5ee52c2d7a8cf8baca84fca86332527ae8517d7f5839e",
+      "bytes": 5112
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v7/binary_score.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v7/binary_score.py",
+      "sha256": "f01878ed91fd9d7d6e2f3afbc90194d3d313b9496934e1accbfc4ecd56dc3cde",
+      "bytes": 15333
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v7/test_binary_score.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v7/test_binary_score.py",
+      "sha256": "4a5a159878764ba331f71fc0702fabdaff486263a5e71c16aa01f7fd4194f844",
+      "bytes": 12488
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v70/audit_bora_pair_fit.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v70/audit_bora_pair_fit.py",
+      "sha256": "bfec92579f7f3d70ecfdbf750763a66e29a1b9288c6f5057329609bfa4eb1e62",
+      "bytes": 7488
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v72/freeze_network_patches.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v72/freeze_network_patches.py",
+      "sha256": "485a0a86948c14a666adca9b57f5215e35ae42aaeae263f9456c17094ebe5299",
+      "bytes": 5189
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v73/audit_patch_index.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v73/audit_patch_index.py",
+      "sha256": "cfb8ecc5f9fc77888f3cc1a686cac1186f682b73df71d9682da6b43d02b38115",
+      "bytes": 3432
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v74/render_patch_qa.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v74/render_patch_qa.py",
+      "sha256": "fd5d78448abd6e8ad593a52a35166b4558d05d8e52d58f997b34c862f6c73781",
+      "bytes": 2882
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v75/pilot_network.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v75/pilot_network.py",
+      "sha256": "f36ce8af48cca494d7d7e4835581bad2871f026c87e42f21a662754b03cee7f4",
+      "bytes": 8570
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v8/study_aggregate.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v8/study_aggregate.py",
+      "sha256": "d9960b9f12009d5c221e205d0859dad45b8dd47fb1d2a5bc09bea956ac138fff",
+      "bytes": 15132
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v8/test_study_aggregate.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v8/test_study_aggregate.py",
+      "sha256": "50644e397f1fd4660998041f61790effd862c90396f5e487a85ceb8d5573d2ed",
+      "bytes": 9570
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v81/train_network.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v81/train_network.py",
+      "sha256": "6ec76a38b56483ac07153ddd97a31828033c91e4fe3a7be0dcf957d0dd272356",
+      "bytes": 10397
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v88/audit_full_network.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v88/audit_full_network.py",
+      "sha256": "50ac7ebb2d2e1095706df25a130c5f17d3d04f5fad753052d1d131eba235d338",
+      "bytes": 5796
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v9/select_metadata_only.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v9/select_metadata_only.py",
+      "sha256": "abbe292662e50feab7f147fb90b99ec3841097c705b73524f8592ad1c53ef1bd",
+      "bytes": 8590
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v9/test_select_metadata_only.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v9/test_select_metadata_only.py",
+      "sha256": "4c080201929dec385d708356b6522547051b5963fff6da78a3b76230eebbf4b4",
+      "bytes": 4725
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v91/sparse_bora_scores.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v91/sparse_bora_scores.py",
+      "sha256": "dfd757b3f53cf25b225ec88d26ce5191e71eb737d2e4c0ebb1d45844903b3907",
+      "bytes": 8772
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v95/run_remaining_bora_scores.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v95/run_remaining_bora_scores.py",
+      "sha256": "24e6d528b6e36aeee923bb7910f93d9e04b99a5661dd7b277471a742d2f48524",
+      "bytes": 2233
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-14-v97/project_bora_mask.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-14-v97/project_bora_mask.py",
+      "sha256": "32f0e5236192f55ee84e9103b375a8ef36e25b95c5374c8fa710b1f78073c0d9",
+      "bytes": 7271
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-15-v125/run_medsam_ranges.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-15-v125/run_medsam_ranges.py",
+      "sha256": "c1c045ac11f829177b19659f1f518df3ea7ed2aecdd793a34711373ae627b345",
+      "bytes": 10695
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-15-v127/audit_medsam_ranges.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-15-v127/audit_medsam_ranges.py",
+      "sha256": "b0d6c5de6e80ee707df7fcbbcaf05d6b8a0cff6bdb0be0e3a47c44fac7b7dcdf",
+      "bytes": 4580
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-15-v129/assemble_medsam_test.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-15-v129/assemble_medsam_test.py",
+      "sha256": "b04375d2bfba7c7b377a34d562cf440da0c02e9ddec73fa6ffd7cb55bf98da7f",
+      "bytes": 5500
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-15-v131/audit_medsam_masks.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-15-v131/audit_medsam_masks.py",
+      "sha256": "73d42fc12f4eb7f8289bb1bf968159ce9bddf61f29cdd619f8345d6bf8f11278",
+      "bytes": 4611
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-15-v132/freeze_vista_test.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-15-v132/freeze_vista_test.py",
+      "sha256": "36326159c4d024ae8eb3b51de5f6ec98d0cde2aee72caaefec623ee2e6b6f614",
+      "bytes": 4411
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-15-v132/vista_test_tiles.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-15-v132/vista_test_tiles.py",
+      "sha256": "a32df0a741f1fd90e362cadd3e6c7ab44e3053542b8a47a99cc9ea8041420b01",
+      "bytes": 7164
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-15-v133/audit_vista_scope.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-15-v133/audit_vista_scope.py",
+      "sha256": "267789ab75d63aecfb7ebc3a6b2168d7e329c9c8fccf44ed24f554361e8a2098",
+      "bytes": 2610
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-15-v135/audit_vista_pilot.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-15-v135/audit_vista_pilot.py",
+      "sha256": "a264b69463d8693643dc3940e7ac821bec39bfa0722b7975628bb2dca3f4df6b",
+      "bytes": 4363
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-15-v136/run_vista_ranges.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-15-v136/run_vista_ranges.py",
+      "sha256": "93f9b62af29eed54f747e1e521132187f15e210b708db3b4a7c56df1778ecb62",
+      "bytes": 8003
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-15-v138/audit_vista_ranges.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-15-v138/audit_vista_ranges.py",
+      "sha256": "64a72b2e9b2047e803dfed08dad85760c43d647615859491ed45190cb422ba89",
+      "bytes": 5103
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-15-v141/assemble_vista.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-15-v141/assemble_vista.py",
+      "sha256": "13637b7dd6679a14d0718ff1186f14a89e5a142ee5a42a027cd9984902224c5a",
+      "bytes": 10059
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-15-v142/audit_vista_masks.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-15-v142/audit_vista_masks.py",
+      "sha256": "4c54284280a3f7aa896698590c80e4eb730c42bee010d63efea621045eec49e4",
+      "bytes": 6637
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-15-v143/align_test_reference.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-15-v143/align_test_reference.py",
+      "sha256": "3f47db2498653cd05ed05448d2c86a25ff8a4a2985cb5f63fcf0c56eda7e9a00",
+      "bytes": 6346
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-15-v144/score_test_case.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-15-v144/score_test_case.py",
+      "sha256": "02c7b3639cfeda13fdc11fcc48a6ad1480b4c84aa04a7ed5fec0d8e4a60b7972",
+      "bytes": 5714
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-15-v145/exact_kodama_admission.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-15-v145/exact_kodama_admission.py",
+      "sha256": "7e689527b333d1265d663cab5e6966b60e338228dc9e8af5958b061e88d3614f",
+      "bytes": 5922
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-15-v146/render_vista_review.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-15-v146/render_vista_review.py",
+      "sha256": "59d68b0cc792718b4618c6fbf07b53cd575a9f7cc1a7809983fd3ed7080d0a79",
+      "bytes": 2932
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-15-v147/audit_exact_admission.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-15-v147/audit_exact_admission.py",
+      "sha256": "e26316188b40f13fa800d276c9a4130ed519632fe7c562dfb414d5264a0af9ee",
+      "bytes": 4719
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-15-v151/run_scores.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-15-v151/run_scores.py",
+      "sha256": "6f5343ae7ff05802d863755c2f5789e2d633690301b3c3f840c0a31980e99756",
+      "bytes": 5522
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-15-v152/audit_scores.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-15-v152/audit_scores.py",
+      "sha256": "0e53a2bceb1d392fa2104bd5f709e87f9dae7446fd7f831ba4119c11f0f73e40",
+      "bytes": 6558
+    },
+    {
+      "source": "migration/bora-camelyon-five-slide-protocol-2026-11-15-v155/render_local_site.py",
+      "snapshot": "methods/camelyon16/provenance-scripts/bora-camelyon-five-slide-protocol-2026-11-15-v155/render_local_site.py",
+      "sha256": "d818fb74b2b8d571afb6fd79fe2c1102f6b169b0ac8d9e42c7b3ae806c03b545",
+      "bytes": 10834
+    }
+  ]
+}
