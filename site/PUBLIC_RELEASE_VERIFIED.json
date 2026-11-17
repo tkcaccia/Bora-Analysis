@@ -3384,7 +3384,7 @@
     "camelyon16/aggregate.json": "41aae3a5fcb4904a47ce75a106f0b8f9b513e52a8af461f16ae6289ef2e67b27",
     "camelyon16/balanced-accuracy.json": "aab2c938a55ee61aa2cbf2ba945d5717151e2e7b6f69a6e75f1b3b1a462a3ed3",
     "camelyon16/benign-error-burden.json": "329742803a82ab7d78bd0dbaeccca7e41db3940ebc1bba4895f5c5210318ccb8",
-    "camelyon16/index.html": "a28d5a2c8e99d3b30281c0cec89596a17a8ee015416f23b26450a68105c954b7",
+    "camelyon16/index.html": "8aac63bdf80c28c5fbe97c81da46e4d725144f0553c09b514a4b0e8819fabfc3",
     "camelyon16/inspector-previews/normal_093-tissue.webp": "18719c16e6f8d73e7437f5fb88827462136c210b167290e8bc6e177e5575c4bf",
     "camelyon16/inspector-previews/normal_108-he.jpg": "33b98f3ea127c6e7f2163c489dce6518df943c2da19c5b7f88f69a75e79303d5",
     "camelyon16/inspector-previews/normal_150-he.jpg": "31299f441d6aac1c9126cddfac0c2c17634dae54aace60c0a58b7c83a11743a6",
@@ -4508,6 +4508,6 @@
   "grayscale_group_map_count": 129,
   "public_wsi_count": 12,
   "retired_case_count": 4,
-  "size_bytes": 520171523,
+  "size_bytes": 520171369,
   "status": "CAMELYON16_TUMOR093_ONLY_TWENTY_SIX_TEST_STATUS"
 }
