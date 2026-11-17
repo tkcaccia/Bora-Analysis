@@ -1,0 +1,549 @@
+{
+  "status": "INDEPENDENTLY_AUDITED_SOURCE_SELECTED_TEST",
+  "slide": "tumor_087",
+  "training_slides_bora": [
+    "tumor_093"
+  ],
+  "comparator_training_note": "U-Net and DeepLabV3+ used tumor_093 and normal_093; MedSAM used U-Net boxes; VISTA used a fixed generic tumor prompt",
+  "official_known_pixels": 10141104,
+  "official_positive_pixels": 11151,
+  "known_pixels_outside_reviewed_support": 266043,
+  "score_audit_sha256": "d222b181958675edf3039f62f77722393eaaf61f5fbdfed1e41cebb872a98253",
+  "methods": {
+    "bora": {
+      "metrics": {
+        "format": "bora-camelyon-binary-score-prototype-v7",
+        "shape_yx": [
+          5712,
+          6048
+        ],
+        "spacing_xy_um": [
+          4.0,
+          4.0
+        ],
+        "score_domain": "official_annotated_known_pixels_including_outside_tissue_support",
+        "annotated_known_pixels": 10141104,
+        "scored_known_pixels": 10141104,
+        "known_pixels_inside_reviewed_support": 9875061,
+        "annotated_pixels_outside_reviewed_support": 266043,
+        "reference_positive_pixels_outside_reviewed_support": 0,
+        "excluded_pixels": 0,
+        "tolerance_um": 5.0,
+        "lesion_match_iou": 0.1,
+        "native": {
+          "tp": 10578,
+          "fp": 431312,
+          "fn": 573,
+          "tn": 9698641,
+          "reference_positive_pixels": 11151,
+          "predicted_positive_pixels_in_known_domain": 441890,
+          "precision": 0.023938084138586526,
+          "recall": 0.9486144740382029,
+          "dice": 0.046697760246865075,
+          "iou": 0.023907083756155884,
+          "positive_metrics_undefined_reason": null,
+          "false_positive_tissue_area_mm2": 6.900192,
+          "false_positive_known_outside_support_area_mm2": 0.0007999999999999999,
+          "positive_outside_reviewed_support_pixels": 50,
+          "boundary": {
+            "reference_interface_pixels": 2245,
+            "predicted_interface_pixels": 233721,
+            "precision": 0.0019039795311503887,
+            "recall": 0.2026726057906459,
+            "f1": 0.0037725186618332717,
+            "hd95_um": 10902.489990823196,
+            "reason": null
+          },
+          "lesions": {
+            "reference_components": 11,
+            "predicted_components": 2555,
+            "matched_components": 4,
+            "missed_reference_components": 7,
+            "unmatched_predicted_components": 2551,
+            "connectivity": 8,
+            "match_iou_threshold": 0.1
+          },
+          "balanced_accuracy": 0.9530182932303197,
+          "known_pixel_false_positive_rate": 0.04257788757756329
+        },
+        "shared_support": {
+          "tp": 10568,
+          "fp": 389509,
+          "fn": 583,
+          "tn": 9740444,
+          "reference_positive_pixels": 11151,
+          "predicted_positive_pixels_in_known_domain": 400077,
+          "precision": 0.026414915128837698,
+          "recall": 0.9477176934804054,
+          "dice": 0.05139727839544,
+          "iou": 0.02637647880996356,
+          "positive_metrics_undefined_reason": null,
+          "false_positive_tissue_area_mm2": 6.232144,
+          "false_positive_known_outside_support_area_mm2": 0.0,
+          "positive_outside_reviewed_support_pixels": 0,
+          "boundary": {
+            "reference_interface_pixels": 2245,
+            "predicted_interface_pixels": 135201,
+            "precision": 0.002928972418843056,
+            "recall": 0.18262806236080179,
+            "f1": 0.005765478610894646,
+            "hd95_um": 11218.170973915489,
+            "reason": null
+          },
+          "lesions": {
+            "reference_components": 11,
+            "predicted_components": 431,
+            "matched_components": 4,
+            "missed_reference_components": 7,
+            "unmatched_predicted_components": 427,
+            "connectivity": 8,
+            "match_iou_threshold": 0.1
+          },
+          "balanced_accuracy": 0.9546332392768709,
+          "known_pixel_false_positive_rate": 0.03845121492666353
+        }
+      },
+      "slide_signals": {
+        "positive": {
+          "largest_component_pixels": 10749,
+          "qualifying_components": 145,
+          "total_positive_pixels": 433836,
+          "signal_present": true
+        },
+        "nonmetastatic": {
+          "largest_component_pixels": 3145482,
+          "qualifying_components": 9,
+          "total_positive_pixels": 10761429,
+          "signal_present": true
+        }
+      },
+      "score_receipt_sha256": "063f36a98ac538c18ea1e8843570561cdcd6b99817e3309dc3c8a8034668e2b5"
+    },
+    "unet": {
+      "metrics": {
+        "format": "bora-camelyon-binary-score-prototype-v7",
+        "shape_yx": [
+          5712,
+          6048
+        ],
+        "spacing_xy_um": [
+          4.0,
+          4.0
+        ],
+        "score_domain": "official_annotated_known_pixels_including_outside_tissue_support",
+        "annotated_known_pixels": 10141104,
+        "scored_known_pixels": 10141104,
+        "known_pixels_inside_reviewed_support": 9875061,
+        "annotated_pixels_outside_reviewed_support": 266043,
+        "reference_positive_pixels_outside_reviewed_support": 0,
+        "excluded_pixels": 0,
+        "tolerance_um": 5.0,
+        "lesion_match_iou": 0.1,
+        "native": {
+          "tp": 2492,
+          "fp": 31317,
+          "fn": 8659,
+          "tn": 10098636,
+          "reference_positive_pixels": 11151,
+          "predicted_positive_pixels_in_known_domain": 33809,
+          "precision": 0.07370818421130468,
+          "recall": 0.22347771500313873,
+          "dice": 0.11085409252669039,
+          "iou": 0.05867947631157577,
+          "positive_metrics_undefined_reason": null,
+          "false_positive_tissue_area_mm2": 0.501072,
+          "false_positive_known_outside_support_area_mm2": 0.0,
+          "positive_outside_reviewed_support_pixels": 0,
+          "boundary": {
+            "reference_interface_pixels": 2245,
+            "predicted_interface_pixels": 23984,
+            "precision": 0.0009172781854569713,
+            "recall": 0.008908685968819599,
+            "f1": 0.0016632959721775947,
+            "hd95_um": 9853.975725096581,
+            "reason": null
+          },
+          "lesions": {
+            "reference_components": 11,
+            "predicted_components": 716,
+            "matched_components": 1,
+            "missed_reference_components": 10,
+            "unmatched_predicted_components": 715,
+            "connectivity": 8,
+            "match_iou_threshold": 0.1
+          },
+          "balanced_accuracy": 0.6101930951470944,
+          "known_pixel_false_positive_rate": 0.0030915247089497847
+        },
+        "shared_support": {
+          "tp": 2492,
+          "fp": 31317,
+          "fn": 8659,
+          "tn": 10098636,
+          "reference_positive_pixels": 11151,
+          "predicted_positive_pixels_in_known_domain": 33809,
+          "precision": 0.07370818421130468,
+          "recall": 0.22347771500313873,
+          "dice": 0.11085409252669039,
+          "iou": 0.05867947631157577,
+          "positive_metrics_undefined_reason": null,
+          "false_positive_tissue_area_mm2": 0.501072,
+          "false_positive_known_outside_support_area_mm2": 0.0,
+          "positive_outside_reviewed_support_pixels": 0,
+          "boundary": {
+            "reference_interface_pixels": 2245,
+            "predicted_interface_pixels": 23984,
+            "precision": 0.0009172781854569713,
+            "recall": 0.008908685968819599,
+            "f1": 0.0016632959721775947,
+            "hd95_um": 9853.975725096581,
+            "reason": null
+          },
+          "lesions": {
+            "reference_components": 11,
+            "predicted_components": 716,
+            "matched_components": 1,
+            "missed_reference_components": 10,
+            "unmatched_predicted_components": 715,
+            "connectivity": 8,
+            "match_iou_threshold": 0.1
+          },
+          "balanced_accuracy": 0.6101930951470944,
+          "known_pixel_false_positive_rate": 0.0030915247089497847
+        }
+      },
+      "slide_signals": {
+        "positive": {
+          "largest_component_pixels": 6435,
+          "qualifying_components": 7,
+          "total_positive_pixels": 33820,
+          "signal_present": true
+        },
+        "nonmetastatic": {
+          "largest_component_pixels": 3300764,
+          "qualifying_components": 9,
+          "total_positive_pixels": 11161445,
+          "signal_present": true
+        }
+      },
+      "score_receipt_sha256": "7b907387d02e19fc3a9b035e2676c7b35d534d4d5a03e1ba34e1f9d2c5ed7582"
+    },
+    "deeplabv3plus": {
+      "metrics": {
+        "format": "bora-camelyon-binary-score-prototype-v7",
+        "shape_yx": [
+          5712,
+          6048
+        ],
+        "spacing_xy_um": [
+          4.0,
+          4.0
+        ],
+        "score_domain": "official_annotated_known_pixels_including_outside_tissue_support",
+        "annotated_known_pixels": 10141104,
+        "scored_known_pixels": 10141104,
+        "known_pixels_inside_reviewed_support": 9875061,
+        "annotated_pixels_outside_reviewed_support": 266043,
+        "reference_positive_pixels_outside_reviewed_support": 0,
+        "excluded_pixels": 0,
+        "tolerance_um": 5.0,
+        "lesion_match_iou": 0.1,
+        "native": {
+          "tp": 1317,
+          "fp": 69586,
+          "fn": 9834,
+          "tn": 10060367,
+          "reference_positive_pixels": 11151,
+          "predicted_positive_pixels_in_known_domain": 70903,
+          "precision": 0.01857467243981214,
+          "recall": 0.11810599946193166,
+          "dice": 0.032100811660613744,
+          "iou": 0.016312223639719087,
+          "positive_metrics_undefined_reason": null,
+          "false_positive_tissue_area_mm2": 1.113376,
+          "false_positive_known_outside_support_area_mm2": 0.0,
+          "positive_outside_reviewed_support_pixels": 0,
+          "boundary": {
+            "reference_interface_pixels": 2245,
+            "predicted_interface_pixels": 25161,
+            "precision": 0.0023448988513970035,
+            "recall": 0.028953229398663696,
+            "f1": 0.004338431603239966,
+            "hd95_um": 8917.858935865715,
+            "reason": null
+          },
+          "lesions": {
+            "reference_components": 11,
+            "predicted_components": 213,
+            "matched_components": 1,
+            "missed_reference_components": 10,
+            "unmatched_predicted_components": 212,
+            "connectivity": 8,
+            "match_iou_threshold": 0.1
+          },
+          "balanced_accuracy": 0.555618334239428,
+          "known_pixel_false_positive_rate": 0.006869330983075637
+        },
+        "shared_support": {
+          "tp": 1317,
+          "fp": 69586,
+          "fn": 9834,
+          "tn": 10060367,
+          "reference_positive_pixels": 11151,
+          "predicted_positive_pixels_in_known_domain": 70903,
+          "precision": 0.01857467243981214,
+          "recall": 0.11810599946193166,
+          "dice": 0.032100811660613744,
+          "iou": 0.016312223639719087,
+          "positive_metrics_undefined_reason": null,
+          "false_positive_tissue_area_mm2": 1.113376,
+          "false_positive_known_outside_support_area_mm2": 0.0,
+          "positive_outside_reviewed_support_pixels": 0,
+          "boundary": {
+            "reference_interface_pixels": 2245,
+            "predicted_interface_pixels": 25161,
+            "precision": 0.0023448988513970035,
+            "recall": 0.028953229398663696,
+            "f1": 0.004338431603239966,
+            "hd95_um": 8917.858935865715,
+            "reason": null
+          },
+          "lesions": {
+            "reference_components": 11,
+            "predicted_components": 213,
+            "matched_components": 1,
+            "missed_reference_components": 10,
+            "unmatched_predicted_components": 212,
+            "connectivity": 8,
+            "match_iou_threshold": 0.1
+          },
+          "balanced_accuracy": 0.555618334239428,
+          "known_pixel_false_positive_rate": 0.006869330983075637
+        }
+      },
+      "slide_signals": {
+        "positive": {
+          "largest_component_pixels": 25078,
+          "qualifying_components": 12,
+          "total_positive_pixels": 71340,
+          "signal_present": true
+        },
+        "nonmetastatic": {
+          "largest_component_pixels": 3268491,
+          "qualifying_components": 13,
+          "total_positive_pixels": 11123925,
+          "signal_present": true
+        }
+      },
+      "score_receipt_sha256": "7b32c1fc2c5e78e2f1d7fc95ae1ba3502ea4628743e259548a03687dfd66d713"
+    },
+    "medsam": {
+      "metrics": {
+        "format": "bora-camelyon-binary-score-prototype-v7",
+        "shape_yx": [
+          5712,
+          6048
+        ],
+        "spacing_xy_um": [
+          4.0,
+          4.0
+        ],
+        "score_domain": "official_annotated_known_pixels_including_outside_tissue_support",
+        "annotated_known_pixels": 10141104,
+        "scored_known_pixels": 10141104,
+        "known_pixels_inside_reviewed_support": 9875061,
+        "annotated_pixels_outside_reviewed_support": 266043,
+        "reference_positive_pixels_outside_reviewed_support": 0,
+        "excluded_pixels": 0,
+        "tolerance_um": 5.0,
+        "lesion_match_iou": 0.1,
+        "native": {
+          "tp": 4327,
+          "fp": 52510,
+          "fn": 6824,
+          "tn": 10077443,
+          "reference_positive_pixels": 11151,
+          "predicted_positive_pixels_in_known_domain": 56837,
+          "precision": 0.07612998574872003,
+          "recall": 0.38803694735898125,
+          "dice": 0.12728716832382186,
+          "iou": 0.06796940041783824,
+          "positive_metrics_undefined_reason": null,
+          "false_positive_tissue_area_mm2": 0.8401599999999999,
+          "false_positive_known_outside_support_area_mm2": 0.0,
+          "positive_outside_reviewed_support_pixels": 0,
+          "boundary": {
+            "reference_interface_pixels": 2245,
+            "predicted_interface_pixels": 19044,
+            "precision": 0.007036336904011762,
+            "recall": 0.058797327394209356,
+            "f1": 0.012568578978895333,
+            "hd95_um": 9928.317714406432,
+            "reason": null
+          },
+          "lesions": {
+            "reference_components": 11,
+            "predicted_components": 344,
+            "matched_components": 2,
+            "missed_reference_components": 9,
+            "unmatched_predicted_components": 342,
+            "connectivity": 8,
+            "match_iou_threshold": 0.1
+          },
+          "balanced_accuracy": 0.6914266551389703,
+          "known_pixel_false_positive_rate": 0.005183637081040751
+        },
+        "shared_support": {
+          "tp": 4327,
+          "fp": 52510,
+          "fn": 6824,
+          "tn": 10077443,
+          "reference_positive_pixels": 11151,
+          "predicted_positive_pixels_in_known_domain": 56837,
+          "precision": 0.07612998574872003,
+          "recall": 0.38803694735898125,
+          "dice": 0.12728716832382186,
+          "iou": 0.06796940041783824,
+          "positive_metrics_undefined_reason": null,
+          "false_positive_tissue_area_mm2": 0.8401599999999999,
+          "false_positive_known_outside_support_area_mm2": 0.0,
+          "positive_outside_reviewed_support_pixels": 0,
+          "boundary": {
+            "reference_interface_pixels": 2245,
+            "predicted_interface_pixels": 19044,
+            "precision": 0.007036336904011762,
+            "recall": 0.058797327394209356,
+            "f1": 0.012568578978895333,
+            "hd95_um": 9928.317714406432,
+            "reason": null
+          },
+          "lesions": {
+            "reference_components": 11,
+            "predicted_components": 344,
+            "matched_components": 2,
+            "missed_reference_components": 9,
+            "unmatched_predicted_components": 342,
+            "connectivity": 8,
+            "match_iou_threshold": 0.1
+          },
+          "balanced_accuracy": 0.6914266551389703,
+          "known_pixel_false_positive_rate": 0.005183637081040751
+        }
+      },
+      "slide_signals": {
+        "positive": {
+          "largest_component_pixels": 12916,
+          "qualifying_components": 9,
+          "total_positive_pixels": 56863,
+          "signal_present": true
+        },
+        "nonmetastatic": null
+      },
+      "score_receipt_sha256": "6074bcbdd4d10eb9cc1dcbc0a07b49ebd663f3e99583d12b871342d935c8eedf"
+    },
+    "vista_path": {
+      "metrics": {
+        "format": "bora-camelyon-binary-score-prototype-v7",
+        "shape_yx": [
+          5712,
+          6048
+        ],
+        "spacing_xy_um": [
+          4.0,
+          4.0
+        ],
+        "score_domain": "official_annotated_known_pixels_including_outside_tissue_support",
+        "annotated_known_pixels": 10141104,
+        "scored_known_pixels": 10141104,
+        "known_pixels_inside_reviewed_support": 9875061,
+        "annotated_pixels_outside_reviewed_support": 266043,
+        "reference_positive_pixels_outside_reviewed_support": 0,
+        "excluded_pixels": 0,
+        "tolerance_um": 5.0,
+        "lesion_match_iou": 0.1,
+        "native": {
+          "tp": 9313,
+          "fp": 715039,
+          "fn": 1838,
+          "tn": 9414914,
+          "reference_positive_pixels": 11151,
+          "predicted_positive_pixels_in_known_domain": 724352,
+          "precision": 0.012857008747128468,
+          "recall": 0.8351717334768182,
+          "dice": 0.025324165910948018,
+          "iou": 0.01282446742588028,
+          "positive_metrics_undefined_reason": null,
+          "false_positive_tissue_area_mm2": 11.440624,
+          "false_positive_known_outside_support_area_mm2": 0.0,
+          "positive_outside_reviewed_support_pixels": 0,
+          "boundary": {
+            "reference_interface_pixels": 2245,
+            "predicted_interface_pixels": 116023,
+            "precision": 0.008618980719340131,
+            "recall": 0.4641425389755011,
+            "f1": 0.016923693777097702,
+            "hd95_um": 10255.315109735931,
+            "reason": null
+          },
+          "lesions": {
+            "reference_components": 11,
+            "predicted_components": 1558,
+            "matched_components": 4,
+            "missed_reference_components": 7,
+            "unmatched_predicted_components": 1554,
+            "connectivity": 8,
+            "match_iou_threshold": 0.1
+          },
+          "balanced_accuracy": 0.8822925637981092,
+          "known_pixel_false_positive_rate": 0.07058660588059984
+        },
+        "shared_support": {
+          "tp": 9313,
+          "fp": 715039,
+          "fn": 1838,
+          "tn": 9414914,
+          "reference_positive_pixels": 11151,
+          "predicted_positive_pixels_in_known_domain": 724352,
+          "precision": 0.012857008747128468,
+          "recall": 0.8351717334768182,
+          "dice": 0.025324165910948018,
+          "iou": 0.01282446742588028,
+          "positive_metrics_undefined_reason": null,
+          "false_positive_tissue_area_mm2": 11.440624,
+          "false_positive_known_outside_support_area_mm2": 0.0,
+          "positive_outside_reviewed_support_pixels": 0,
+          "boundary": {
+            "reference_interface_pixels": 2245,
+            "predicted_interface_pixels": 116023,
+            "precision": 0.008618980719340131,
+            "recall": 0.4641425389755011,
+            "f1": 0.016923693777097702,
+            "hd95_um": 10255.315109735931,
+            "reason": null
+          },
+          "lesions": {
+            "reference_components": 11,
+            "predicted_components": 1558,
+            "matched_components": 4,
+            "missed_reference_components": 7,
+            "unmatched_predicted_components": 1554,
+            "connectivity": 8,
+            "match_iou_threshold": 0.1
+          },
+          "balanced_accuracy": 0.8822925637981092,
+          "known_pixel_false_positive_rate": 0.07058660588059984
+        }
+      },
+      "slide_signals": {
+        "positive": {
+          "largest_component_pixels": 125696,
+          "qualifying_components": 40,
+          "total_positive_pixels": 724352,
+          "signal_present": true
+        },
+        "nonmetastatic": null
+      },
+      "score_receipt_sha256": "bbae390a0e8d27b517b0bf3214a4641abd2e2b7034d55cc1d078bd10d58b9dd9"
+    }
+  }
+}
