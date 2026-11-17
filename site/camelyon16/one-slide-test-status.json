@@ -1,5 +1,5 @@
 {
-  "format": "camelyon16-one-slide-status-v1",
+  "format": "camelyon16-one-slide-status-v2",
   "training_slides": [
     "tumor_093"
   ],
@@ -130,6 +130,54 @@
       "status": "Source verified; analysis pending",
       "detail": "Official source identity verified; no scored method result is available.",
       "source_audit_sha256": "a6ebbda94bc85c9249aa52d135beea334b34e7e0e1a12a893b47bc18f13febb1"
+    },
+    {
+      "slide_id": "tumor_084",
+      "status": "One-slide Bora scored; other one-slide methods pending",
+      "detail": "Previously inspected development slide; separate retrospective score.",
+      "stratum": "previously_inspected_development",
+      "feature_cache_handoff": "/mnt/sata_ssd/ChatGPT/Bora/migration/bora-camelyon-five-slide-protocol-2026-11-14-v41/TEST_FEATURES_FROZEN.json"
+    },
+    {
+      "slide_id": "tumor_091",
+      "status": "One-slide Bora scored; other one-slide methods pending",
+      "detail": "Previously inspected development slide; separate retrospective score.",
+      "stratum": "previously_inspected_development",
+      "feature_cache_handoff": "/mnt/sata_ssd/ChatGPT/Bora/migration/bora-camelyon-five-slide-protocol-2026-11-14-v41/TEST_FEATURES_FROZEN.json"
+    },
+    {
+      "slide_id": "normal_019",
+      "status": "One-slide Bora scored; other one-slide methods pending",
+      "detail": "Previously inspected development slide; separate retrospective score.",
+      "stratum": "previously_inspected_development",
+      "feature_cache_handoff": "/mnt/sata_ssd/ChatGPT/Bora/migration/bora-camelyon-five-slide-protocol-2026-11-14-v41/TEST_FEATURES_FROZEN.json"
+    },
+    {
+      "slide_id": "tumor_075",
+      "status": "One-slide Bora scored; other one-slide methods pending",
+      "detail": "Previously inspected development slide; separate retrospective score.",
+      "stratum": "previously_inspected_development",
+      "feature_cache_handoff": "/mnt/sata_ssd/ChatGPT/Bora/migration/bora-camelyon-eight-slide-extension-2026-11-15-v23/FEATURE_HANDOFF_FROZEN.json"
+    },
+    {
+      "slide_id": "normal_108",
+      "status": "One-slide Bora scored; other one-slide methods pending",
+      "detail": "Previously inspected development slide; separate retrospective score.",
+      "stratum": "previously_inspected_development",
+      "feature_cache_handoff": "/mnt/sata_ssd/ChatGPT/Bora/migration/bora-camelyon-eight-slide-extension-2026-11-15-v23/FEATURE_HANDOFF_FROZEN.json"
+    },
+    {
+      "slide_id": "normal_150",
+      "status": "One-slide Bora scored; other one-slide methods pending",
+      "detail": "Previously inspected development slide; separate retrospective score.",
+      "stratum": "previously_inspected_development",
+      "feature_cache_handoff": "/mnt/sata_ssd/ChatGPT/Bora/migration/bora-camelyon-eight-slide-extension-2026-11-15-v23/FEATURE_HANDOFF_FROZEN.json"
     }
-  ]
+  ],
+  "previously_inspected_count": 6,
+  "gallery_total": 26,
+  "inspected_bora_scores_audited": 6,
+  "combined_aggregate_status": "not_permitted_as_untouched_test",
+  "cohort_26_sha256": "e721004927fe2e093f93182c56722d974596ee58fa9706df1558f559ef782a54",
+  "inspected_score_audit_sha256": "3cf56134baf67d3f258e92156cac473855fa96e41467920ba02f2e19f0ee9926"
 }
