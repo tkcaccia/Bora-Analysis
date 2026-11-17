@@ -1,6 +1,6 @@
 {
   "comparator_wsi_count": 7,
-  "file_count": 4607,
+  "file_count": 4609,
   "file_sha256": {
     "geojson-inspector.css": "32ce52334667c38ff20787166055472ad19cfa150eb8cb0a50341a907b4a3b72",
     "attribution.html": "97b23488ff4dd0e12a70a7cb2ea8ffcea91ea85d4406739d16a332ac15cf081a",
@@ -3840,6 +3840,7 @@
     "visium/FULLSECTION_PROVENANCE.json": "29cccc464a37966db2df66b9f4ae192205da11fc176fa2251dc35a4e771a9226",
     "visium/tonsil.html": "9b63ba555e0efb6a0377a6facb5a3b39c1c1ea06597aca6809d633278ee37ac6",
     "visium/index.html": "d10422feaf3ddc37da560eada76920a104bbeda9c5f9485277a77cb1d9181a0b",
+    "camelyon16/normal_116.html": "8464819410c0d30e1928de363548395231a6a3154640d6e379388787948e9244",
     "camelyon16/tumor_093.html": "92959368a7cd5e1342d62ef0f75595092ad330711c8f1e2161ee53fe666382dc",
     "camelyon16/normal-019-bora-mask.geojson": "19b6fa9ee243971f9ff606109afd3458911f919df10302dea53b7ee3a7107aa7",
     "camelyon16/normal-019-tissue-area.geojson": "3d20e3c5835acb1c12aac5a564c96d58f955af4113c56e8df8e42dd3f2b9e0a5",
@@ -3869,7 +3870,7 @@
     "camelyon16/aggregate-six.json": "14fcfb79cca058919d714d61c2c38a5aa4a4fa9c20a4d183c33d5ec81e4dd6cf",
     "camelyon16/benign-error-burden.json": "329742803a82ab7d78bd0dbaeccca7e41db3940ebc1bba4895f5c5210318ccb8",
     "camelyon16/metastasis-presence.json": "61bfc179ad01ab539392810a68b4453b72c891b811367f903b9fe9836b84e0f9",
-    "camelyon16/index.html": "67795c7865e705ce2c0384917822db9e941c2157f5394f50f391427b2244311f",
+    "camelyon16/index.html": "467e746796ebea275c78f2a592244a451f2add789196aeb4a4df4a221d8d76b0",
     "camelyon16/one-slide-bora-scores.json": "04009ccd73d2546b2685c81846d9c36a50924b861e636ae56b85be99ce27c072",
     "camelyon16/normal_108.html": "c1581179832f440121b115a51b598ac0ad926fd9e520857e4a92585215900e76",
     "camelyon16/tumor_038-source-only-preview.png": "53ae153f813cd76c511b346de1912fb9982c247b26cc3cc43d5c21bb36a57f93",
@@ -4364,6 +4365,7 @@
     "camelyon16/local-assets/tumor_038/field-07-bora.webp": "d910aa0538cc3f92ab63c96f91a6ed1e57867c07b0cf883cef55d9d99cb81600",
     "camelyon16/local-assets/tumor_038/overview-deeplabv3plus.webp": "42a514a66418c9d67ea24ba381c5bcbdc6576155dcb964dc3533f6635519213e",
     "camelyon16/local-assets/tumor_038/field-06-vista_path.webp": "cb7e0bf097ec1e29912dbcc8796dba2133f3a575b284a3187c66c860fd848161",
+    "camelyon16/local-assets/normal_116/reviewed-tissue.jpg": "8925025b20f93243cca91070c7f5520027d825c947b34521727726e4961936cf",
     "camelyon16/local-assets/normal_150/field-01-unet.webp": "4c79d24c5ecda5e88f6961082696ce44f12cde15fb2a0ace6289b448fb6f240c",
     "camelyon16/local-assets/normal_150/field-04-medsam.webp": "815226d03c1ddd459899d7d95848cd889cd469d99a157edb8f00a2ea31cedd1e",
     "camelyon16/local-assets/normal_150/overview-unet.webp": "16d146987e292cbdf5d0f2e51b966dc6b3b399fe053791c8d2a89f4c343151c5",
@@ -4614,6 +4616,6 @@
   "grayscale_group_map_count": 129,
   "public_wsi_count": 12,
   "retired_case_count": 4,
-  "size_bytes": 530274625,
+  "size_bytes": 530477935,
   "status": "CAMELYON16_TUMOR038_ONE_SLIDE_FIVE_METHOD_VERIFIED"
 }
