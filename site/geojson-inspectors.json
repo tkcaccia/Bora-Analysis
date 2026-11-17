@@ -1727,14 +1727,14 @@
       ]
     },
     {
-      "id": "benchmark3-tumor_093-support",
-      "title": "CAMELYON16 tumor_093 fitting tissue area",
+      "id": "benchmark3-tumor_093-expert",
+      "title": "CAMELYON16 tumor_093 official expert annotation",
       "section": "camelyon16",
       "page": "camelyon16/tumor_093.html#inspect-geojson",
-      "geometry": "camelyon16/inspector-vectors/tumor_093-tissue-support.geojson.gz",
-      "stored_geojson_sha256": "1672a218a426b577b8a06ebdb512717bd80e33dedefe6a3a5ed6e02315c43609",
-      "source_geojson_sha256": "fe6a0ce4bd71e86560ab6af2128282d140ccf86ffd81dbce2abe538f7f441a62",
-      "geojson_bytes": 23263,
+      "geometry": "camelyon16/inspector-vectors/tumor_093-expert-annotation.geojson.gz",
+      "stored_geojson_sha256": "8e3816d3e8d017049c5582565aea551bf2ad9eb157cfaaea57af41773097954e",
+      "source_geojson_sha256": "25eee33aad16bb0c4ebf378016f52db8493ec500a125dc51083ccda51a350010",
+      "geojson_bytes": 80024,
       "image": "camelyon16/inspector-previews/tumor_093-tissue.webp",
       "image_sha256": "945bfafa70cd57bdae95a1c3ba33ae8b372d0d18a8fcb19206d8a63702afec0d",
       "image_bounds_xywh": [
@@ -1751,15 +1751,21 @@
         0.5,
         0.5
       ],
-      "source_feature_count": 9,
-      "label_source": "Reviewed H&E tissue support, not a metastasis prediction",
-      "label_description": "This fitting slide has no held-out score or published Bora prediction. The polygons show only its reviewed H&E tissue area used for feature extraction. They are not metastasis labels or output from the fitted classifier.",
+      "source_feature_count": 102,
+      "label_source": "CAMELYON16 official expert annotation; overview display only",
+      "label_description": "Expert-annotated known pixels on the sole fitting slide: blue is nonmetastatic tissue (official code 1), red is metastatic tissue (code 2). Uncolored code 0 pixels are outside the official known-label domain; they are not expert-labeled nonmetastatic tissue. The 8 \u00b5m sampled polygons are for inspection, while training used the verified 0.5 \u00b5m aligned mask clipped to reviewed H&E tissue. This is a training annotation, not a Bora prediction or a held-out score.",
       "groups": [
         {
           "value": 1,
-          "name": "Reviewed H&E tissue area",
-          "color": "#52c870",
-          "area_um2": null
+          "name": "Expert nonmetastatic tissue",
+          "color": "#1f88b5",
+          "area_um2": 167023358.25
+        },
+        {
+          "value": 2,
+          "name": "Expert metastatic tissue",
+          "color": "#d64055",
+          "area_um2": 193710.75
         }
       ]
     },

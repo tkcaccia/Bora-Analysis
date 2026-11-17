@@ -1,6 +1,6 @@
 {
   "comparator_wsi_count": 7,
-  "file_count": 4521,
+  "file_count": 4522,
   "file_sha256": {
     "BUILD_PROVENANCE.json": "7353c2f089fe41ad934780d7df8f54f0ea336e8b147968e3875ed73d9fe06d97",
     "DATA_LICENSES.md": "da566fde847ff32be11d44c141e8a508e1a324fab6ea41019478f5ab91ec8184",
@@ -3401,6 +3401,7 @@
     "camelyon16/inspector-vectors/tumor_084-bora.geojson.gz": "472d1ad69860ad652a800a2776d26e762961b9057842242d75e5c4213a7fecfe",
     "camelyon16/inspector-vectors/tumor_087-bora.geojson.gz": "6ff670d5b2c22048a056a31a8b7e7287cb9647ba0d92ee8a25e209bc8e525bff",
     "camelyon16/inspector-vectors/tumor_091-bora.geojson.gz": "6b96bdf39646d3bf550f85cd1661efb8f0c21157a93f84aa438e46f7082073dd",
+    "camelyon16/inspector-vectors/tumor_093-expert-annotation.geojson.gz": "8e3816d3e8d017049c5582565aea551bf2ad9eb157cfaaea57af41773097954e",
     "camelyon16/inspector-vectors/tumor_093-tissue-support.geojson.gz": "1672a218a426b577b8a06ebdb512717bd80e33dedefe6a3a5ed6e02315c43609",
     "camelyon16/local-assets/normal_019/field-01-bora.webp": "25a12f0312c98b17cb5d088ceb4dbbb5028c0cf093fdf4d7ff973f4b20dd78e3",
     "camelyon16/local-assets/normal_019/field-01-deeplabv3plus.webp": "0c95372a28f9d6713893afceb2eae2b106f09aeb103cd62eecea3c337697a427",
@@ -3941,7 +3942,7 @@
     "camelyon16/tumor_087.html": "d086af0016dc3e5a86b52f47cf524e0115f4234c45d4aae36982e9c61719c88f",
     "camelyon16/tumor_091-one-slide.html": "67e243c2a7eff0c3d2d600299407742937a347a6211bfe5cd7961246ae6574cf",
     "camelyon16/tumor_091.html": "38e80b78691a0e5d857360828e61f072cbf8cebef320d77745ece2e9a70a432b",
-    "camelyon16/tumor_093.html": "39ee3feaaad1bf76aa220783b4e5bee18d5b8e56cd8bca584518edef6e4f20cc",
+    "camelyon16/tumor_093.html": "38fc30a7897a250f2015294bfde2375255dad1a222479594720d7efcc494d16d",
     "data.json": "219fa7fba67dcb565fbfc40b23e2d1474990c26783f27113297e3985e7ae4617",
     "downloads/camelyon16-pilot-reproduction-v1.html": "68da75da7480aa7961f3ba9d025b24d8fe8d75c90cbc3d4a7ac9912651b09ff5",
     "downloads/camelyon16-pilot-reproduction-v1.md": "06912e00352dcb9613187ffb4ff8b501a52313f7a76a192c4df0db5bcdcc683a",
@@ -4065,8 +4066,8 @@
     "downloads/camelyon16-source/index.html": "856227f95484da1534e2ac7398b25459099e22ef45541007fe285712886ef616",
     "downloads/prepare_reviewed_tissue_support.py": "f6587af7903dc7e9a2ad8e47ca363ee392219ceb85e25555ce90e70847b1ddcd",
     "geojson-inspector.css": "32ce52334667c38ff20787166055472ad19cfa150eb8cb0a50341a907b4a3b72",
-    "geojson-inspector.js": "df773f8b4cf54d908c916775b89d4a47dd455eff1b4a81a6914ea0baf0ebd869",
-    "geojson-inspectors.json": "2b1ad48a1f0483377748642427e722fc0539801560c774931d70629a526c21d1",
+    "geojson-inspector.js": "a1b7cf929d9987e77d7874040112ac394df3383466adf1fc04216888b3222fa8",
+    "geojson-inspectors.json": "e79744f50d630192573db23b165a680a4e534813b00ee41b96504202c2ca0ab1",
     "index.html": "ce097184e38373d5affc8f4c06e8194ad80f20122804c3360e1c5b79bdd97963",
     "preprocessing.html": "cfdbb08145695d29c6c1b1f2aa9c07a91ea2686a5b0b28aec4fbaa4111320342",
     "previews/bcss_05/neighbor-context.jpg": "86756ac578efbcb6a3b4e75505bdb18b35c21cf7315703c3636bb9b0edfebf96",
@@ -4528,6 +4529,6 @@
   "grayscale_group_map_count": 129,
   "public_wsi_count": 12,
   "retired_case_count": 4,
-  "size_bytes": 521011624,
-  "status": "CAMELYON16_TWENTY_SIX_TEST_H_AND_E_PREVIEWS"
+  "size_bytes": 521093065,
+  "status": "CAMELYON16_TUMOR093_EXPERT_TRAINING_ANNOTATION"
 }

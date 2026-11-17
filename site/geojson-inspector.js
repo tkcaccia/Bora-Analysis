@@ -150,7 +150,26 @@
       select.value = String(value);
       style();
       const group = record.groups.find(row => String(row.value) === select.value);
-      if (group) describe(group);
+      if (group) {
+        describe(group);
+        if (host.dataset.focusGroup === 'true') {
+          const matching = paths.filter(row => row.group.value === group.value);
+          const bounds = matching.flatMap(row => row.components.map(part => part.bounds));
+          if (bounds.length) {
+            const left = Math.min(...bounds.map(row => row[0]));
+            const top = Math.min(...bounds.map(row => row[1]));
+            const right = Math.max(...bounds.map(row => row[2]));
+            const bottom = Math.max(...bounds.map(row => row[3]));
+            const width = Math.max(1, right - left) * 1.25;
+            const height = Math.max(1, bottom - top) * 1.25;
+            const fittedWidth = Math.max(width, height * w / h);
+            const fittedHeight = fittedWidth * h / w;
+            box = [(left + right - fittedWidth) / 2, (top + bottom - fittedHeight) / 2,
+                   fittedWidth, fittedHeight];
+            apply();
+          }
+        }
+      }
       else info.textContent = `${record.groups.length} assigned groups across ${record.source_feature_count} polygons · ${record.label_source}. Hover or click a polygon to inspect it.`;
     };
     select.onchange = () => choose(select.value);
@@ -200,7 +219,7 @@
       if (drag && !drag.moved && loaded) {
         const picked = paths.find(row => row.path === drag.target);
         if (picked) describe(picked.group, componentAt(picked, drag.clientX, drag.clientY));
-        else info.textContent = 'No exported Bora polygon at this location. This does not establish that the image contains background here.';
+        else info.textContent = 'No exported polygon at this location. This does not establish that the image contains background here.';
       }
       drag = null;
       if (svg.hasPointerCapture(event.pointerId)) svg.releasePointerCapture(event.pointerId);
@@ -208,7 +227,7 @@
     svg.onpointercancel = svg.onlostpointercapture = () => { drag = null; };
     load.onclick = async () => {
       load.disabled = true; host.setAttribute('aria-busy', 'true');
-      info.textContent = 'Loading saved native polygons… Large whole slides may take a few seconds.';
+      info.textContent = 'Loading saved polygons… Large whole slides may take a few seconds.';
       try {
         const vector = await fetchJSON(url(record.geometry));
         if (vector.type !== 'FeatureCollection' || vector.features.length !== record.source_feature_count) throw new Error('Unexpected polygon file.');
