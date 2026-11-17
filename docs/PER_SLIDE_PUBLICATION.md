@@ -4,6 +4,15 @@ Each newly completed slide is released as its own small site change. A batch
 need not finish before its first qualified slide appears. The local site and
 GitHub Pages must show the same result.
 
+The 17 November one-slide Benchmark 3 index also lists the 20 source-selected
+test slide IDs before analysis is complete. A status-only row may be published
+after source identity audit, and an independently audited source-only preview
+may be shown with its score explicitly pending. This is a progress record, not
+a completed method result. Never display a pending method's score, infer one
+from an old model version, or count the status row in a completed denominator.
+The primary Benchmark 3 fit uses tumor_093 only. Older pair-trained CAM
+comparators remain historical and are excluded from one-slide tables.
+
 For each slide:
 
 1. Wait for the method controller to finish and verify owned-process and GPU

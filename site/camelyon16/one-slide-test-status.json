@@ -1,0 +1,135 @@
+{
+  "format": "camelyon16-one-slide-status-v1",
+  "training_slides": [
+    "tumor_093"
+  ],
+  "selected_test_count": 20,
+  "source_verified": 20,
+  "bora_masks_verified": 2,
+  "bora_official_scores_audited": 1,
+  "complete_one_slide_five_method_comparisons": 0,
+  "public_training_release_not_hidden_test": true,
+  "patient_center_disjointness": "unverified",
+  "slides": [
+    {
+      "slide_id": "tumor_038",
+      "status": "Bora mask verified; score pending",
+      "detail": "Source, tissue support, full-channel features, Bora mask and visual preview audited; official reference not yet scored.",
+      "source_audit_sha256": "a6ebbda94bc85c9249aa52d135beea334b34e7e0e1a12a893b47bc18f13febb1"
+    },
+    {
+      "slide_id": "tumor_087",
+      "status": "Bora scored; comparison pending",
+      "detail": "Bora mask and score independently audited. One-slide U-Net/DeepLab and dependent MedSAM comparison pending.",
+      "source_audit_sha256": "a6ebbda94bc85c9249aa52d135beea334b34e7e0e1a12a893b47bc18f13febb1"
+    },
+    {
+      "slide_id": "normal_004",
+      "status": "Source verified; analysis pending",
+      "detail": "Official source identity verified; no scored method result is available.",
+      "source_audit_sha256": "a6ebbda94bc85c9249aa52d135beea334b34e7e0e1a12a893b47bc18f13febb1"
+    },
+    {
+      "slide_id": "normal_116",
+      "status": "Source verified; analysis pending",
+      "detail": "Official source identity verified; no scored method result is available.",
+      "source_audit_sha256": "a6ebbda94bc85c9249aa52d135beea334b34e7e0e1a12a893b47bc18f13febb1"
+    },
+    {
+      "slide_id": "tumor_005",
+      "status": "Source verified; analysis pending",
+      "detail": "Official source identity verified; no scored method result is available.",
+      "source_audit_sha256": "a6ebbda94bc85c9249aa52d135beea334b34e7e0e1a12a893b47bc18f13febb1"
+    },
+    {
+      "slide_id": "tumor_096",
+      "status": "Source verified; analysis pending",
+      "detail": "Official source identity verified; no scored method result is available.",
+      "source_audit_sha256": "a6ebbda94bc85c9249aa52d135beea334b34e7e0e1a12a893b47bc18f13febb1"
+    },
+    {
+      "slide_id": "tumor_101",
+      "status": "Source verified; analysis pending",
+      "detail": "Official source identity verified; no scored method result is available.",
+      "source_audit_sha256": "a6ebbda94bc85c9249aa52d135beea334b34e7e0e1a12a893b47bc18f13febb1"
+    },
+    {
+      "slide_id": "normal_021",
+      "status": "Source verified; analysis pending",
+      "detail": "Official source identity verified; no scored method result is available.",
+      "source_audit_sha256": "a6ebbda94bc85c9249aa52d135beea334b34e7e0e1a12a893b47bc18f13febb1"
+    },
+    {
+      "slide_id": "normal_103",
+      "status": "Source verified; analysis pending",
+      "detail": "Official source identity verified; no scored method result is available.",
+      "source_audit_sha256": "a6ebbda94bc85c9249aa52d135beea334b34e7e0e1a12a893b47bc18f13febb1"
+    },
+    {
+      "slide_id": "normal_123",
+      "status": "Source verified; analysis pending",
+      "detail": "Official source identity verified; no scored method result is available.",
+      "source_audit_sha256": "a6ebbda94bc85c9249aa52d135beea334b34e7e0e1a12a893b47bc18f13febb1"
+    },
+    {
+      "slide_id": "tumor_031",
+      "status": "Source verified; analysis pending",
+      "detail": "Official source identity verified; no scored method result is available.",
+      "source_audit_sha256": "a6ebbda94bc85c9249aa52d135beea334b34e7e0e1a12a893b47bc18f13febb1"
+    },
+    {
+      "slide_id": "tumor_016",
+      "status": "Source verified; analysis pending",
+      "detail": "Official source identity verified; no scored method result is available.",
+      "source_audit_sha256": "a6ebbda94bc85c9249aa52d135beea334b34e7e0e1a12a893b47bc18f13febb1"
+    },
+    {
+      "slide_id": "tumor_019",
+      "status": "Source verified; analysis pending",
+      "detail": "Official source identity verified; no scored method result is available.",
+      "source_audit_sha256": "a6ebbda94bc85c9249aa52d135beea334b34e7e0e1a12a893b47bc18f13febb1"
+    },
+    {
+      "slide_id": "tumor_078",
+      "status": "Source verified; analysis pending",
+      "detail": "Official source identity verified; no scored method result is available.",
+      "source_audit_sha256": "a6ebbda94bc85c9249aa52d135beea334b34e7e0e1a12a893b47bc18f13febb1"
+    },
+    {
+      "slide_id": "tumor_073",
+      "status": "Source verified; analysis pending",
+      "detail": "Official source identity verified; no scored method result is available.",
+      "source_audit_sha256": "a6ebbda94bc85c9249aa52d135beea334b34e7e0e1a12a893b47bc18f13febb1"
+    },
+    {
+      "slide_id": "normal_016",
+      "status": "Source verified; analysis pending",
+      "detail": "Official source identity verified; no scored method result is available.",
+      "source_audit_sha256": "a6ebbda94bc85c9249aa52d135beea334b34e7e0e1a12a893b47bc18f13febb1"
+    },
+    {
+      "slide_id": "normal_054",
+      "status": "Source verified; analysis pending",
+      "detail": "Official source identity verified; no scored method result is available.",
+      "source_audit_sha256": "a6ebbda94bc85c9249aa52d135beea334b34e7e0e1a12a893b47bc18f13febb1"
+    },
+    {
+      "slide_id": "normal_045",
+      "status": "Source verified; analysis pending",
+      "detail": "Official source identity verified; no scored method result is available.",
+      "source_audit_sha256": "a6ebbda94bc85c9249aa52d135beea334b34e7e0e1a12a893b47bc18f13febb1"
+    },
+    {
+      "slide_id": "normal_148",
+      "status": "Source verified; analysis pending",
+      "detail": "Official source identity verified; no scored method result is available.",
+      "source_audit_sha256": "a6ebbda94bc85c9249aa52d135beea334b34e7e0e1a12a893b47bc18f13febb1"
+    },
+    {
+      "slide_id": "normal_156",
+      "status": "Source verified; analysis pending",
+      "detail": "Official source identity verified; no scored method result is available.",
+      "source_audit_sha256": "a6ebbda94bc85c9249aa52d135beea334b34e7e0e1a12a893b47bc18f13febb1"
+    }
+  ]
+}
