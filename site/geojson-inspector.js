@@ -102,7 +102,21 @@
     svg.append(image);
     const legend = make('div', '', {class: 'gi-legend', 'aria-label': 'Assigned group legend'});
     const help = make('p', 'Hover or click a colored region to see the selected geometry area and its full group area. Choose a group to isolate it. Drag to pan; use Zoom or the mouse wheel to magnify. Keyboard: arrows pan, +/− zoom, 0 fits.', {class: 'gi-help'});
-    host.replaceChildren(heading, note, controls, info, svg, legend, help);
+    const content = [heading, note, controls, info, svg, legend, help];
+    if (record.section === 'camelyon16') {
+      const slide = /^benchmark3-((?:tumor|normal)_\d{3})(?:-|$)/.exec(record.id)?.[1];
+      const original = make('div', '', {class: 'gi-original'});
+      original.append(make('h3', 'Original H&E source and overlay-free preview'));
+      const frame = make('figure');
+      const openPreview = make('a', '', {href: url(record.image), 'aria-label': `Open the H&E image for ${slide || record.title} at its saved preview resolution`});
+      openPreview.append(make('img', '', {src: url(record.image), alt: `${slide || record.title} H&E image without GeoJSON polygons`, loading: 'lazy'}));
+      frame.append(openPreview, make('figcaption', 'H&E without prediction overlays. This sampled preview uses the GeoJSON viewer’s registered frame; its crop or exterior background can reflect the reviewed tissue display. Open the dataset-hosted TIFF below for the unchanged full-resolution source slide.'));
+      original.append(frame);
+      if (slide) original.append(make('p', '', {class: 'gi-original-source'}));
+      if (slide) original.lastChild.append(make('a', 'Open the original full-resolution H&E slide at CAMELYON16 AWS (large TIFF)', {href: `https://camelyon-dataset.s3.amazonaws.com/CAMELYON16/images/${slide}.tif`}));
+      content.push(original);
+    }
+    host.replaceChildren(...content);
     let box = [x, y, w, h], paths = [], drag = null, loaded = false;
     const apply = () => svg.setAttribute('viewBox', box.join(' '));
     const reset = () => { box = [x, y, w, h]; apply(); };
