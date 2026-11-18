@@ -1,5 +1,5 @@
 'use strict';
-// Reuse saved native polygons; no classification or geometry changes in the browser.
+// Keep scored polygons intact; CAMELYON16 can omit small red components in a display-only view.
 (() => {
   const ns = 'http://www.w3.org/2000/svg';
   const manifests = new Map();
@@ -74,8 +74,13 @@
     const record = manifest.records.find(row => row.id === host.dataset.record);
     if (!record) throw new Error('Missing tissue entry.');
     const url = path => new URL(path, manifestURL).href;
-    const heading = make('h2', record.section === 'camelyon16' && record.geometry.endsWith('-bora.geojson.gz') ? 'Inspect the exact Bora GeoJSON' : 'Inspect the simplified GeoJSON');
-    const note = make('p', record.label_description, {class: 'gi-note'});
+    const displayFilter = record.section === 'camelyon16' && record.geometry.endsWith('-bora.geojson.gz');
+    const minDisplayRedAreaUm2 = 20000;
+    const heading = make('h2', displayFilter ? 'Inspect the display-filtered Bora GeoJSON' : 'Inspect the simplified GeoJSON');
+    const description = displayFilter
+      ? `${record.label_description} For readability, this view omits metastasis-like polygons smaller than 0.02 mm² (20,000 µm²). This is a display filter only: the scored mask, metrics and exact Bora GeoJSON are unchanged.`
+      : record.label_description;
+    const note = make('p', description, {class: 'gi-note'});
     const controls = make('div', '', {class: 'gi-controls'});
     const size = record.geojson_bytes < 100000 ? `${Math.ceil(record.geojson_bytes / 1000)} kB` : `${(record.geojson_bytes / 1e6).toFixed(1)} MB`;
     const load = make('button', `Load interactive polygons (${size})`, {type: 'button', class: 'gi-load'});
@@ -96,8 +101,11 @@
     const boundedImage = record.section === 'camelyon16';
     const maxZoom = 8;
     const zoomInfo = make('span', '', {class: 'gi-zoom-info', role: 'status', 'aria-live': 'polite'});
-    const download = make('a', 'Download saved GeoJSON' + (record.geometry.endsWith('.gz') ? ' (.gz)' : ''), {href: url(record.geometry), download: ''});
-    controls.append(load, groupLabel, opacityLabel, outlineLabel, heLabel, zoomIn, zoomOut, fit, download);
+    const download = make('a', displayFilter ? 'Download exact scored GeoJSON (.gz)' : 'Download saved GeoJSON' + (record.geometry.endsWith('.gz') ? ' (.gz)' : ''), {href: url(record.geometry), download: ''});
+    const displayDownload = displayFilter ? make('a', 'Download displayed GeoJSON', {href: '#', download: `${record.id}-display-filtered.geojson`, hidden: ''}) : null;
+    controls.append(load, groupLabel, opacityLabel, outlineLabel, heLabel, zoomIn, zoomOut, fit);
+    if (displayDownload) controls.append(displayDownload);
+    controls.append(download);
     if (boundedImage) controls.append(zoomInfo);
     const info = make('p', 'Load the polygons to inspect their assigned groups. The H&E preview is shown below.', {class: 'gi-status', role: 'status', 'aria-live': 'polite'});
     const svg = svgNode('svg', {class: 'gi-map', tabindex: '0', role: 'img', 'aria-label': `${record.title}: interactive assigned groups over H&E. Drag or use arrow keys to pan; plus and minus zoom; zero fits the image.`});
@@ -265,8 +273,32 @@
       try {
         const vector = await fetchJSON(url(record.geometry));
         if (vector.type !== 'FeatureCollection' || vector.features.length !== record.source_feature_count) throw new Error('Unexpected polygon file.');
+        const visible = displayFilter ? vector.features.filter(feature => {
+          if (feature.properties.value !== 2) return true;
+          const area = Number(feature.properties.area_um2);
+          if (!Number.isFinite(area)) throw new Error('Missing physical area for a Bora polygon.');
+          return area >= minDisplayRedAreaUm2;
+        }) : vector.features;
+        if (displayDownload) {
+          const omitted = vector.features.length - visible.length;
+          const omittedArea = vector.features.reduce((sum, feature) =>
+            sum + (feature.properties.value === 2 && Number(feature.properties.area_um2) < minDisplayRedAreaUm2
+              ? Number(feature.properties.area_um2) : 0), 0);
+          const displayed = {
+            type: 'FeatureCollection',
+            coordinate_space: vector.coordinate_space,
+            native_shape_yx: vector.native_shape_yx,
+            native_mpp_xy: vector.native_mpp_xy,
+            display_only: true,
+            source_scored_geojson_sha256: record.stored_geojson_sha256,
+            display_filter: {class_value: 2, minimum_area_um2: minDisplayRedAreaUm2, omitted_polygons: omitted, omitted_area_um2: omittedArea},
+            features: visible
+          };
+          displayDownload.href = URL.createObjectURL(new Blob([JSON.stringify(displayed)], {type: 'application/geo+json'}));
+          displayDownload.hidden = false;
+        }
         const staged = [];
-        for (const feature of vector.features) {
+        for (const feature of visible) {
           const group = record.groups.find(row => row.value === feature.properties.value);
           if (!group) throw new Error('Unrecognized saved group.');
           const path = svgNode('path', {d: polygonPath(feature.geometry), fill: group.color, 'fill-rule': 'evenodd', 'vector-effect': 'non-scaling-stroke', 'stroke-width': '.7'});
@@ -291,6 +323,7 @@
         select.disabled = opacity.disabled = outlines.disabled = false;
         load.hidden = true;
         choose('');
+        if (displayFilter) info.textContent = `${visible.length} displayed polygons · ${vector.features.length - visible.length} small metastasis-like polygons omitted below 0.02 mm². Exact scored GeoJSON and metrics are unchanged.`;
       } catch (error) {
         info.textContent = `The interactive polygons could not load. ${error.message} You can retry or use the saved GeoJSON download.`;
         load.disabled = false;
