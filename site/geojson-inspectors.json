@@ -1769,9 +1769,9 @@
       "section": "camelyon16",
       "page": "camelyon16/tumor_087.html#inspect-geojson",
       "geometry": "camelyon16/inspector-vectors/tumor_087-bora.geojson.gz",
-      "stored_geojson_sha256": "6ff670d5b2c22048a056a31a8b7e7287cb9647ba0d92ee8a25e209bc8e525bff",
-      "source_geojson_sha256": "4fc5eb0e25fb302bcc48a38ab63513c3fe172295659dbcacf30571b5085c558a",
-      "geojson_bytes": 2440688,
+      "stored_geojson_sha256": "635805e71adae2c473f19352ab572a855554023ed687b4e0e3db06935ecd75a4",
+      "source_geojson_sha256": "c2df8302c9255cae88957daf7631f1ff2e0c8da9c0faa1c905eb70f689a9ad55",
+      "geojson_bytes": 2021810,
       "image": "camelyon16/inspector-previews/tumor_087-he.jpg",
       "image_sha256": "a0c423bcdebd41c66d6a3acb9d3a5498d17b8bac43d671a1df1ce3105d30563e",
       "image_bounds_xywh": [
@@ -1788,21 +1788,21 @@
         0.5,
         0.5
       ],
-      "source_feature_count": 492,
-      "label_source": "tumor_093-only Bora binary prediction, not expert annotation",
-      "label_description": "These are Bora model contours. Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The separate official reference is used only for scores. Contour fidelity: these polygons follow the exact 4 \u00b5m scored mask. A 6 \u00b5m class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
+      "source_feature_count": 521,
+      "label_source": "tumor_093-only Bora fit with training-selected threshold; not expert annotation",
+      "label_description": "Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The score threshold was selected on tumor_093 training labels only. The 4 \u00b5m scored raster received a 6 \u00b5m contour pass and 2,000 \u00b5m\u00b2 area cleanup. This downloadable review GeoJSON has globally fitted 3 \u00b5m contour simplification with checked raster agreement; the exact score raster is separate.",
       "groups": [
         {
           "value": 1,
           "name": "Non-metastatic tissue",
           "color": "#52c870",
-          "area_um2": 172182864
+          "area_um2": 169944064
         },
         {
           "value": 2,
           "name": "Metastasis-like tissue",
           "color": "#f4474e",
-          "area_um2": 6941376
+          "area_um2": 9180176
         }
       ]
     },
