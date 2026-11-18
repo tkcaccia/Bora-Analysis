@@ -93,15 +93,19 @@
     const zoomIn = make('button', 'Zoom +', {type: 'button'});
     const zoomOut = make('button', 'Zoom −', {type: 'button'});
     const fit = make('button', 'Fit', {type: 'button'});
+    const boundedImage = record.section === 'camelyon16';
+    const maxZoom = 8;
+    const zoomInfo = make('span', '', {class: 'gi-zoom-info', role: 'status', 'aria-live': 'polite'});
     const download = make('a', 'Download saved GeoJSON' + (record.geometry.endsWith('.gz') ? ' (.gz)' : ''), {href: url(record.geometry), download: ''});
     controls.append(load, groupLabel, opacityLabel, outlineLabel, heLabel, zoomIn, zoomOut, fit, download);
+    if (boundedImage) controls.append(zoomInfo);
     const info = make('p', 'Load the polygons to inspect their assigned groups. The H&E preview is shown below.', {class: 'gi-status', role: 'status', 'aria-live': 'polite'});
     const svg = svgNode('svg', {class: 'gi-map', tabindex: '0', role: 'img', 'aria-label': `${record.title}: interactive assigned groups over H&E. Drag or use arrow keys to pan; plus and minus zoom; zero fits the image.`});
     const [x, y, w, h] = record.image_bounds_xywh;
     const image = svgNode('image', {href: url(record.image), x, y, width: w, height: h, preserveAspectRatio: 'none'});
     svg.append(image);
     const legend = make('div', '', {class: 'gi-legend', 'aria-label': 'Assigned group legend'});
-    const help = make('p', 'Hover or click a colored region to see the selected geometry area and its full group area. Choose a group to isolate it. Drag to pan; use Zoom or the mouse wheel to magnify. Keyboard: arrows pan, +/− zoom, 0 fits.', {class: 'gi-help'});
+    const help = make('p', 'Hover or click a colored region to see the selected geometry area and its full group area. Choose a group to isolate it. Drag to pan; use Zoom or the mouse wheel to magnify. Keyboard: arrows pan, +/− zoom, 0 fits.' + (boundedImage ? ' CAMELYON16 zoom stops at 8× and panning remains inside the H&E frame.' : ''), {class: 'gi-help'});
     const content = [heading, note, controls, info, svg, legend, help];
     if (record.section === 'camelyon16') {
       const slide = /^benchmark3-((?:tumor|normal)_\d{3})(?:-|$)/.exec(record.id)?.[1];
@@ -118,12 +122,28 @@
     }
     host.replaceChildren(...content);
     let box = [x, y, w, h], paths = [], drag = null, loaded = false;
-    const apply = () => svg.setAttribute('viewBox', box.join(' '));
+    const apply = () => {
+      if (boundedImage) {
+        box[2] = Math.max(w / maxZoom, Math.min(w, box[2]));
+        box[3] = box[2] * h / w;
+        box[0] = Math.max(x, Math.min(x + w - box[2], box[0]));
+        box[1] = Math.max(y, Math.min(y + h - box[3], box[1]));
+        const level = w / box[2];
+        zoomInfo.textContent = `${level.toFixed(1)}× zoom · 8× limit`;
+        zoomIn.disabled = level >= maxZoom - 1e-8;
+        zoomOut.disabled = level <= 1 + 1e-8;
+      }
+      svg.setAttribute('viewBox', box.join(' '));
+    };
     const reset = () => { box = [x, y, w, h]; apply(); };
     const zoom = (factor, fx = .5, fy = .5) => {
-      const width = Math.min(w * 4, Math.max(w / 500, box[2] * factor));
+      const width = boundedImage
+        ? Math.min(w, Math.max(w / maxZoom, box[2] * factor))
+        : Math.min(w * 4, Math.max(w / 500, box[2] * factor));
       const ratio = width / box[2];
-      box = [box[0] + box[2] * fx * (1 - ratio), box[1] + box[3] * fy * (1 - ratio), width, box[3] * ratio];
+      const focusX = boundedImage ? Math.max(0, Math.min(1, fx)) : fx;
+      const focusY = boundedImage ? Math.max(0, Math.min(1, fy)) : fy;
+      box = [box[0] + box[2] * focusX * (1 - ratio), box[1] + box[3] * focusY * (1 - ratio), width, box[3] * ratio];
       apply();
     };
     const describe = (group, component) => {
