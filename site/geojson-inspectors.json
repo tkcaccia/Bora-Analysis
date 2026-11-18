@@ -1469,49 +1469,6 @@
       ]
     },
     {
-      "id": "benchmark3-normal_150",
-      "title": "CAMELYON16 normal_150",
-      "section": "camelyon16",
-      "page": "camelyon16/normal_150.html#inspect-geojson",
-      "geometry": "camelyon16/inspector-vectors/normal_150-bora.geojson.gz",
-      "stored_geojson_sha256": "a62d1f196f0a62aa0df8fe45d491c88fe829d01b4c746e3f88def021b05e7b12",
-      "source_geojson_sha256": "dd44ac35c5a28f1e65a3a9601c6c097bf91871dd14b66f4e9af7d0d42ec22da2",
-      "geojson_bytes": 142045,
-      "image": "camelyon16/inspector-previews/normal_150-he.jpg",
-      "image_sha256": "31299f441d6aac1c9126cddfac0c2c17634dae54aace60c0a58b7c83a11743a6",
-      "image_bounds_xywh": [
-        0,
-        0,
-        29741,
-        27648
-      ],
-      "native_shape_yx": [
-        27776,
-        30464
-      ],
-      "native_mpp_xy": [
-        0.5,
-        0.5
-      ],
-      "source_feature_count": 185,
-      "label_source": "Pair-trained Bora binary prediction, not expert annotation",
-      "label_description": "These are Bora\u2019s saved binary prediction contours. Red denotes metastasis-like tissue; green denotes non-metastatic tissue. These are model outputs, not the official reference. The display uses existing spatial cleanup and does not change the saved coordinates or scores.",
-      "groups": [
-        {
-          "value": 1,
-          "name": "Non-metastatic tissue",
-          "color": "#52c870",
-          "area_um2": 70434496.0
-        },
-        {
-          "value": 2,
-          "name": "Metastasis-like tissue",
-          "color": "#f4474e",
-          "area_um2": 2358912.0
-        }
-      ]
-    },
-    {
       "id": "benchmark3-tumor_093-expert",
       "title": "CAMELYON16 tumor_093 official expert annotation",
       "section": "camelyon16",
@@ -1932,6 +1889,49 @@
           "name": "Metastasis-like tissue",
           "color": "#f4474e",
           "area_um2": 822352
+        }
+      ]
+    },
+    {
+      "id": "benchmark3-normal_150",
+      "title": "CAMELYON16 normal_150",
+      "section": "camelyon16",
+      "page": "camelyon16/normal_150.html#inspect-geojson",
+      "geometry": "camelyon16/inspector-vectors/normal_150-bora.geojson.gz",
+      "stored_geojson_sha256": "37aec16515e5fca60ffe5925c1c6c5f2c30658cb7850d96e92234b0fbb442d7e",
+      "source_geojson_sha256": "d096f1fbbdf864c6dd0712fb740a5e061232995da4bbda6975f367c6b7dab33d",
+      "geojson_bytes": 1698906,
+      "image": "camelyon16/inspector-previews/normal_150-he.jpg",
+      "image_sha256": "31299f441d6aac1c9126cddfac0c2c17634dae54aace60c0a58b7c83a11743a6",
+      "image_bounds_xywh": [
+        0,
+        0,
+        29741,
+        27648
+      ],
+      "native_shape_yx": [
+        27776,
+        30464
+      ],
+      "native_mpp_xy": [
+        0.5,
+        0.5
+      ],
+      "source_feature_count": 199,
+      "label_source": "tumor_093-only Bora binary prediction, not expert annotation",
+      "label_description": "Green denotes non-metastatic tissue and red denotes metastasis-like tissue. Official expert annotation is linked separately.",
+      "groups": [
+        {
+          "value": 1,
+          "name": "Non-metastatic tissue",
+          "color": "#52c870",
+          "area_um2": 65984688
+        },
+        {
+          "value": 2,
+          "name": "Metastasis-like tissue",
+          "color": "#f4474e",
+          "area_um2": 6808720
         }
       ]
     }
