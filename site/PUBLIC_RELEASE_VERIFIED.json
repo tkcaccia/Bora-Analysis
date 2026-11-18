@@ -5161,15 +5161,15 @@
     "visium-hd/displayed-he-overviews/public-10x-pancreatic-cancer-fresh-frozen.jpg": "1f57af42b96db45bcd66c019ef6240b1e5c850b371ad62206294daedf2e82773",
     "visium-hd/displayed-he-overviews/public-10x-prostate-ffpe.jpg": "ed164b1bde95c802e456bf9957441af8729996d573e6be530c7a8deed928ae6d",
     "visium-hd/displayed-he-overviews/public-10x-tonsil-3prime.jpg": "a368a9ce51c15d4c5317d3d82616dbfc9f1ce042df1cd1b470149318894adacb",
-    "visium-hd/index.html": "30fda9a1a24680e94d536b868bb8727f2923744ddcc71984d7609ce2ef9467c8",
+    "visium-hd/index.html": "1eee9d7daca5e7677a85dbfaf4798a420bf2da5836669480043162b2d2482227",
     "visium-hd/public-10x-brain-cancer-ffpe.html": "16f4c66500143886dc525d94cb7e15a04da7272a02cbea0e541db3fede9efe66",
-    "visium-hd/public-10x-breast-ff.html": "a83900c51cacf74985ac895d5f3c9cc58e05e9fa85c958b46c4c7ceb9cc95dc7",
+    "visium-hd/public-10x-breast-ff.html": "2bb97c472ac592edfa8658a03c294cb239f93d42e377c31215b4a6c9a2938311",
     "visium-hd/public-10x-colon-cancer.html": "79639b6ef54ba65178fa292687eea8b369dbe16e12ae324564262308b925b6a2",
     "visium-hd/public-10x-kidney-ffpe.html": "12bacaecfc8029ef0e0df84ce288ad19173d652f478af3e5bbc062074201ab40",
     "visium-hd/public-10x-lung-cancer-fixed-frozen.html": "4c78577cb4df2c0d8dfdb66e6e4e067f99f15bacdbd095c96c2ec878748bc29b",
     "visium-hd/public-10x-lymph-node-3prime.html": "c18d3c3c2785c6879a4ec5ffa34aae01bbce2aca1d72534385d223e16680b124",
     "visium-hd/public-10x-lymph-node-ffpe.html": "6a4c5856e710100bbbc53bb1ec20cc28486fb7b1ddeb510e427e08a185c807bb",
-    "visium-hd/public-10x-ovarian-3prime.html": "e1a39cea720849d90bc833b0c91a2f80049fc8ad37c6da7853f7bda919a7809f",
+    "visium-hd/public-10x-ovarian-3prime.html": "e8c52ac237d81b791f39fb61b4a9094a6500a65c3948af7e18a6a55f4e3e0095",
     "visium-hd/public-10x-ovarian-ff.html": "462dec079a3f1d7776cc86dfbe9eb8e009f12ee9159a72fcd1ea95cee361f29b",
     "visium-hd/public-10x-pancreatic-cancer-fresh-frozen.html": "3adecbf48f2bd2ae0f295a36c0ee7fc8647e44fd70b31c322f247f9dc8449fa2",
     "visium-hd/public-10x-prostate-ffpe.html": "19709b538c335b71c46b941858fe9abe8ead66592bd8940e204ec6bb2948aa06",
@@ -5307,6 +5307,6 @@
   "grayscale_group_map_count": 129,
   "public_wsi_count": 12,
   "retired_case_count": 4,
-  "size_bytes": 573686640,
-  "status": "BENCHMARK2_EXACT_DISPLAYED_HE_DOWNLOADS_VERIFIED"
+  "size_bytes": 573687554,
+  "status": "BENCHMARK2_MATCHING_FULL_SOURCE_LINKS_AND_EXACT_DISPLAYED_OVERVIEWS_VERIFIED"
 }
