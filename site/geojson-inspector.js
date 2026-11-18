@@ -74,7 +74,7 @@
     const record = manifest.records.find(row => row.id === host.dataset.record);
     if (!record) throw new Error('Missing tissue entry.');
     const url = path => new URL(path, manifestURL).href;
-    const heading = make('h2', 'Inspect the simplified GeoJSON');
+    const heading = make('h2', record.section === 'camelyon16' && record.geometry.endsWith('-bora.geojson.gz') ? 'Inspect the exact Bora GeoJSON' : 'Inspect the simplified GeoJSON');
     const note = make('p', record.label_description, {class: 'gi-note'});
     const controls = make('div', '', {class: 'gi-controls'});
     const size = record.geojson_bytes < 100000 ? `${Math.ceil(record.geojson_bytes / 1000)} kB` : `${(record.geojson_bytes / 1e6).toFixed(1)} MB`;

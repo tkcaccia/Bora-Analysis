@@ -1575,7 +1575,7 @@
       ],
       "source_feature_count": 129,
       "label_source": "tumor_093-only Bora binary prediction, not expert annotation",
-      "label_description": "These are Bora model contours. Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The separate official reference is used only for scores.",
+      "label_description": "These are Bora model contours. Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The separate official reference is used only for scores. Contour fidelity: these polygons follow the exact 4 \u00b5m scored mask. A 6 \u00b5m class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
       "groups": [
         {
           "value": 1,
@@ -1618,7 +1618,7 @@
       ],
       "source_feature_count": 160,
       "label_source": "tumor_093-only Bora binary prediction, not expert annotation",
-      "label_description": "These are Bora model contours. Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The separate official reference is used only for scores.",
+      "label_description": "These are Bora model contours. Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The separate official reference is used only for scores. Contour fidelity: these polygons follow the exact 4 \u00b5m scored mask. A 6 \u00b5m class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
       "groups": [
         {
           "value": 1,
@@ -1661,7 +1661,7 @@
       ],
       "source_feature_count": 399,
       "label_source": "tumor_093-only Bora binary prediction, not expert annotation",
-      "label_description": "These are Bora model contours. Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The separate official reference is used only for scores.",
+      "label_description": "These are Bora model contours. Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The separate official reference is used only for scores. Contour fidelity: these polygons follow the exact 4 \u00b5m scored mask. A 6 \u00b5m class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
       "groups": [
         {
           "value": 1,
@@ -1704,7 +1704,7 @@
       ],
       "source_feature_count": 96,
       "label_source": "tumor_093-only Bora binary prediction, not expert annotation",
-      "label_description": "These are Bora model contours. Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The separate official reference is used only for scores.",
+      "label_description": "These are Bora model contours. Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The separate official reference is used only for scores. Contour fidelity: these polygons follow the exact 4 \u00b5m scored mask. A 6 \u00b5m class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
       "groups": [
         {
           "value": 1,
@@ -1747,7 +1747,7 @@
       ],
       "source_feature_count": 329,
       "label_source": "tumor_093-only Bora binary prediction, not expert annotation",
-      "label_description": "These are Bora model contours. Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The separate official reference is used only for scores.",
+      "label_description": "These are Bora model contours. Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The separate official reference is used only for scores. Contour fidelity: these polygons follow the exact 4 \u00b5m scored mask. A 6 \u00b5m class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
       "groups": [
         {
           "value": 1,
@@ -1790,7 +1790,7 @@
       ],
       "source_feature_count": 492,
       "label_source": "tumor_093-only Bora binary prediction, not expert annotation",
-      "label_description": "These are Bora model contours. Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The separate official reference is used only for scores.",
+      "label_description": "These are Bora model contours. Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The separate official reference is used only for scores. Contour fidelity: these polygons follow the exact 4 \u00b5m scored mask. A 6 \u00b5m class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
       "groups": [
         {
           "value": 1,
@@ -1833,7 +1833,7 @@
       ],
       "source_feature_count": 25,
       "label_source": "tumor_093-only Bora binary prediction, not expert annotation",
-      "label_description": "Green denotes non-metastatic tissue and red denotes metastasis-like tissue. Official expert annotation is linked separately.",
+      "label_description": "Green denotes non-metastatic tissue and red denotes metastasis-like tissue. Official expert annotation is linked separately. Contour fidelity: these polygons follow the exact 4 \u00b5m scored mask. A 6 \u00b5m class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
       "groups": [
         {
           "value": 1,
@@ -1876,7 +1876,7 @@
       ],
       "source_feature_count": 68,
       "label_source": "tumor_093-only Bora binary prediction, not expert annotation",
-      "label_description": "Green denotes non-metastatic tissue and red denotes metastasis-like tissue. Official expert annotation is linked separately.",
+      "label_description": "Green denotes non-metastatic tissue and red denotes metastasis-like tissue. Official expert annotation is linked separately. Contour fidelity: these polygons follow the exact 4 \u00b5m scored mask. A 6 \u00b5m class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
       "groups": [
         {
           "value": 1,
@@ -1919,7 +1919,7 @@
       ],
       "source_feature_count": 199,
       "label_source": "tumor_093-only Bora binary prediction, not expert annotation",
-      "label_description": "Green denotes non-metastatic tissue and red denotes metastasis-like tissue. Official expert annotation is linked separately.",
+      "label_description": "Green denotes non-metastatic tissue and red denotes metastasis-like tissue. Official expert annotation is linked separately. Contour fidelity: these polygons follow the exact 4 \u00b5m scored mask. A 6 \u00b5m class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
       "groups": [
         {
           "value": 1,
