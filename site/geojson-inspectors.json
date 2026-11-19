@@ -1774,6 +1774,13 @@
       "geojson_bytes": 2021810,
       "image": "camelyon16/inspector-previews/tumor_087-he.jpg",
       "image_sha256": "a0c423bcdebd41c66d6a3acb9d3a5498d17b8bac43d671a1df1ce3105d30563e",
+      "high_resolution": {
+        "url": "https://camelyon-dataset.s3.amazonaws.com/CAMELYON16/images/tumor_087.tif",
+        "source_sha256": "93ed29fcfdd723e296165fc37951810f40eba1f0fd1abc70e73ef9cb1c056ae9",
+        "width": 106496,
+        "height": 100352,
+        "maximum_zoom": 64
+      },
       "image_bounds_xywh": [
         0,
         0,

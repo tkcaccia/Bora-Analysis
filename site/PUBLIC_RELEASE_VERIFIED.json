@@ -1,6 +1,6 @@
 {
   "comparator_wsi_count": 7,
-  "file_count": 5301,
+  "file_count": 5303,
   "file_sha256": {
     "BUILD_PROVENANCE.json": "7353c2f089fe41ad934780d7df8f54f0ea336e8b147968e3875ed73d9fe06d97",
     "DATA_LICENSES.md": "da566fde847ff32be11d44c141e8a508e1a324fab6ea41019478f5ab91ec8184",
@@ -4702,7 +4702,7 @@
     "camelyon16/tumor_087-expert.html": "2d98add59c95f3e908d64ae901b739b32616077cb625b5bbeec7b9870f171360",
     "camelyon16/tumor_087-scores-zero-threshold-archive.json": "8dbb70b5137469a7ddfa876fb909f527496780a56f1d8d58579a6db253b0303f",
     "camelyon16/tumor_087-scores.json": "af1c06e645d3ee488492d0124eef447d30eb6915ba12b104044a1f9644e34bdb",
-    "camelyon16/tumor_087.html": "4764636f5dd79e15d1c1b65710a33905f032c278f50f1ee33ddbc80e842633b9",
+    "camelyon16/tumor_087.html": "ee93f2235930ea255b705ad21647b237e794285cf6b48f75b8679d9789ea917d",
     "camelyon16/tumor_091-expert.html": "76cce16a6acdfe4f2ebcb2308c272aeb3f2bc3c99abc565c35878ca9a1459c33",
     "camelyon16/tumor_091-one-slide.html": "e5d6def2f905a97b9416cb66369c6f483817e96e05c47e725f3c81ca051c8095",
     "camelyon16/tumor_091-scores.json": "a13928d6bc59cbde891ef81a185955b1deaa951b0058d8c61e784767a362e470",
@@ -4832,9 +4832,9 @@
     "downloads/camelyon16-source/bora-camelyon-five-slide-protocol-2026-11-15-v155/render_local_site.py": "d818fb74b2b8d571afb6fd79fe2c1102f6b169b0ac8d9e42c7b3ae806c03b545",
     "downloads/camelyon16-source/index.html": "856227f95484da1534e2ac7398b25459099e22ef45541007fe285712886ef616",
     "downloads/prepare_reviewed_tissue_support.py": "f6587af7903dc7e9a2ad8e47ca363ee392219ceb85e25555ce90e70847b1ddcd",
-    "geojson-inspector.css": "570c28817c9a5c4f09d7c86be00d8536c4b850b50ae5a1152b93cf12c4bdbeec",
-    "geojson-inspector.js": "57e51a5aa2f95aecfe7d819b445b2e3699db4d0aa3ce02192318eb788423bf8a",
-    "geojson-inspectors.json": "4db216f1a651e77e88a1f49bae96ece7f5917f35d1cd9eeea81b940b9b72d06a",
+    "geojson-inspector.css": "557e6a205734284fdc13b7626a7ab113db563271bbee7d1164b2724b134bd662",
+    "geojson-inspector.js": "fa122e382f82ef1afb9a83c1e53749b404ee2dbfc4719120a3d135002f6e8b09",
+    "geojson-inspectors.json": "bc6c19ff3daae43b5651bb8688c2ed0e21df16339ab97c76ecac8093846027a9",
     "index.html": "ce097184e38373d5affc8f4c06e8194ad80f20122804c3360e1c5b79bdd97963",
     "preprocessing.html": "cfdbb08145695d29c6c1b1f2aa9c07a91ea2686a5b0b28aec4fbaa4111320342",
     "previews/bcss_05/neighbor-context.jpg": "86756ac578efbcb6a3b4e75505bdb18b35c21cf7315703c3636bb9b0edfebf96",
@@ -5070,6 +5070,8 @@
     "vectors/fb4de0d827daf0cca9dd9979707cb3228525505bfb5659f365a6d01b901aa9b9.geojson": "fb4de0d827daf0cca9dd9979707cb3228525505bfb5659f365a6d01b901aa9b9",
     "vectors/fd09d27906033c1d142b67e3efaa90985d3cdbcffb96cb8ccdc91ba9bf0bfd4a.geojson": "fd09d27906033c1d142b67e3efaa90985d3cdbcffb96cb8ccdc91ba9bf0bfd4a",
     "vectors/ff1c55931d154d5af4f393fc2b78b23775b92905effaedbe93546a446bbab7ee.geojson": "ff1c55931d154d5af4f393fc2b78b23775b92905effaedbe93546a446bbab7ee",
+    "vendor/geotiffjs-3.0.5/LICENSE": "da0811089f254e909f69f75fa496ca97e5167a8eaa945d9a6bffdd8499b47a49",
+    "vendor/geotiffjs-3.0.5/geotiff.js": "8cfc01ffc945904766d8fb89f19da7afb799e342834454f5592fbcf0bcfe2db5",
     "viewer.css": "6c53d6dc14758b2355fb2cf64551b0f1763e32384aa9225345b3f91cb6fd084c",
     "viewer.js": "0c8f60404a9d39f62108ec1121e613e0d458afbaa2d9d49e07172301a8392f06",
     "visium-hd-colon/carcinoma-stroma-bora.jpg": "45ac43c402295656281124a5be4112ff57776a24cc0b5c5635ba7d445cba426a",
@@ -5308,6 +5310,6 @@
   "grayscale_group_map_count": 129,
   "public_wsi_count": 12,
   "retired_case_count": 4,
-  "size_bytes": 571645781,
+  "size_bytes": 572203312,
   "status": "CAM_TUMOR087_TRAINING_THRESHOLD_AUDITED"
 }

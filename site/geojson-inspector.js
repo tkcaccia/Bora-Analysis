@@ -99,7 +99,12 @@
     const zoomOut = make('button', 'Zoom −', {type: 'button'});
     const fit = make('button', 'Fit', {type: 'button'});
     const boundedImage = record.section === 'camelyon16';
-    const maxZoom = 8;
+    // Only tumor_087 has a source-TIFF range reader. Other slides retain the
+    // existing 8× sampled-preview limit until their own source mapping is checked.
+    const sourceDetail = record.id === 'benchmark3-tumor_087' && window.GeoTIFF
+      ? record.high_resolution : null;
+    if (sourceDetail) host.classList.add('gi-source-detail');
+    const maxZoom = sourceDetail ? sourceDetail.maximum_zoom : 8;
     const zoomInfo = make('span', '', {class: 'gi-zoom-info', role: 'status', 'aria-live': 'polite'});
     const download = make('a', displayFilter ? 'Download exact scored GeoJSON (.gz)' : 'Download saved GeoJSON' + (record.geometry.endsWith('.gz') ? ' (.gz)' : ''), {href: url(record.geometry), download: ''});
     const displayDownload = displayFilter ? make('a', 'Download displayed GeoJSON', {href: '#', download: `${record.id}-display-filtered.geojson`, hidden: ''}) : null;
@@ -112,8 +117,16 @@
     const [x, y, w, h] = record.image_bounds_xywh;
     const image = svgNode('image', {href: url(record.image), x, y, width: w, height: h, preserveAspectRatio: 'none'});
     svg.append(image);
+    const detailImage = sourceDetail ? svgNode('image', {x, y, width: w, height: h, preserveAspectRatio: 'none'}) : null;
+    if (detailImage) {
+      detailImage.style.display = 'none';
+      svg.append(detailImage);
+    }
     const legend = make('div', '', {class: 'gi-legend', 'aria-label': 'Assigned group legend'});
-    const help = make('p', 'Hover or click a colored region to see the selected geometry area and its full group area. Choose a group to isolate it. Drag to pan; use Zoom or the mouse wheel to magnify. Keyboard: arrows pan, +/− zoom, 0 fits.' + (boundedImage ? ' CAMELYON16 zoom stops at 8× and panning remains inside the H&E frame.' : ''), {class: 'gi-help'});
+    const zoomHelp = sourceDetail
+      ? ' This slide zooms to 64×. At 2× and above, the visible H&E window is read at its needed resolution from the official source TIFF; the site does not host the full slide.'
+      : boundedImage ? ' CAMELYON16 zoom stops at 8× and panning remains inside the H&E frame.' : '';
+    const help = make('p', 'Hover or click a colored region to see the selected geometry area and its full group area. Choose a group to isolate it. Drag to pan; use Zoom or the mouse wheel to magnify. Keyboard: arrows pan, +/− zoom, 0 fits.' + zoomHelp, {class: 'gi-help'});
     const content = [heading, note, controls, info, svg, legend, help];
     if (record.section === 'camelyon16') {
       const slide = /^benchmark3-((?:tumor|normal)_\d{3})(?:-|$)/.exec(record.id)?.[1];
@@ -130,6 +143,75 @@
     }
     host.replaceChildren(...content);
     let box = [x, y, w, h], paths = [], drag = null, loaded = false;
+    let detailTimer = null, detailRequest = 0, detailObjectURL = null, sourceTiff = null;
+    const sourceTiffForDetail = async () => {
+      if (!sourceTiff) sourceTiff = window.GeoTIFF.fromUrl(sourceDetail.url);
+      return sourceTiff;
+    };
+    const renderSourceWindow = async (request, view) => {
+      try {
+        const tiff = await sourceTiffForDetail();
+        const scaleX = sourceDetail.width / w;
+        const scaleY = sourceDetail.height / h;
+        const sourceBox = [
+          Math.max(0, Math.floor((view[0] - x) * scaleX)),
+          Math.max(0, Math.floor((view[1] - y) * scaleY)),
+          Math.min(sourceDetail.width, Math.ceil((view[0] + view[2] - x) * scaleX)),
+          Math.min(sourceDetail.height, Math.ceil((view[1] + view[3] - y) * scaleY))
+        ];
+        // Keep every source pixel in the narrowest 64× window. Wider windows
+        // are sampled only to the viewport's display resolution.
+        const wantedWidth = Math.max(2048, Math.min(3072, Math.round(svg.clientWidth * (window.devicePixelRatio || 1))));
+        const overviewScale = 2 ** Math.min(4, Math.max(0, Math.floor(Math.log2((sourceBox[2] - sourceBox[0]) / wantedWidth))));
+        const overview = await tiff.getImage(Math.log2(overviewScale));
+        const sampleWindow = [
+          Math.max(0, Math.floor(sourceBox[0] / overviewScale)),
+          Math.max(0, Math.floor(sourceBox[1] / overviewScale)),
+          Math.min(overview.getWidth(), Math.ceil(sourceBox[2] / overviewScale)),
+          Math.min(overview.getHeight(), Math.ceil(sourceBox[3] / overviewScale))
+        ];
+        const outputWidth = Math.max(1, Math.min(wantedWidth, sampleWindow[2] - sampleWindow[0]));
+        const outputHeight = Math.max(1, Math.round(outputWidth * (sampleWindow[3] - sampleWindow[1]) / (sampleWindow[2] - sampleWindow[0])));
+        const rgb = await overview.readRGB({window: sampleWindow, width: outputWidth, height: outputHeight, interleave: true});
+        if (request !== detailRequest) return;
+        const rgba = new Uint8ClampedArray(rgb.width * rgb.height * 4);
+        for (let i = 0, j = 0; i < rgb.length; i += 3, j += 4) {
+          rgba[j] = rgb[i]; rgba[j + 1] = rgb[i + 1]; rgba[j + 2] = rgb[i + 2]; rgba[j + 3] = 255;
+        }
+        const canvas = document.createElement('canvas');
+        canvas.width = rgb.width; canvas.height = rgb.height;
+        canvas.getContext('2d').putImageData(new ImageData(rgba, rgb.width, rgb.height), 0, 0);
+        const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/jpeg', .92));
+        if (!blob) throw new Error('The source window could not be drawn.');
+        if (request !== detailRequest) return;
+        const nextURL = URL.createObjectURL(blob);
+        const oldURL = detailObjectURL;
+        detailObjectURL = nextURL;
+        detailImage.setAttribute('href', nextURL);
+        detailImage.setAttribute('x', x + sampleWindow[0] * overviewScale / scaleX);
+        detailImage.setAttribute('y', y + sampleWindow[1] * overviewScale / scaleY);
+        detailImage.setAttribute('width', (sampleWindow[2] - sampleWindow[0]) * overviewScale / scaleX);
+        detailImage.setAttribute('height', (sampleWindow[3] - sampleWindow[1]) * overviewScale / scaleY);
+        detailImage.style.display = '';
+        if (oldURL) URL.revokeObjectURL(oldURL);
+        zoomInfo.textContent = `${(w / view[2]).toFixed(1)}× zoom · source H&E detail · ${maxZoom}× limit`;
+      } catch (error) {
+        if (request !== detailRequest) return;
+        console.warn('Source H&E window unavailable:', error);
+        zoomInfo.textContent = `${(w / view[2]).toFixed(1)}× zoom · source detail unavailable; preview shown`;
+      }
+    };
+    const scheduleSourceWindow = () => {
+      if (!sourceDetail) return;
+      clearTimeout(detailTimer);
+      const request = ++detailRequest;
+      detailImage.style.display = 'none';
+      const level = w / box[2];
+      if (level < 2 || !he.checked) return;
+      const view = box.slice();
+      zoomInfo.textContent = `${level.toFixed(1)}× zoom · loading source H&E detail`;
+      detailTimer = setTimeout(() => renderSourceWindow(request, view), 160);
+    };
     const apply = () => {
       if (boundedImage) {
         box[2] = Math.max(w / maxZoom, Math.min(w, box[2]));
@@ -137,11 +219,12 @@
         box[0] = Math.max(x, Math.min(x + w - box[2], box[0]));
         box[1] = Math.max(y, Math.min(y + h - box[3], box[1]));
         const level = w / box[2];
-        zoomInfo.textContent = `${level.toFixed(1)}× zoom · 8× limit`;
+        zoomInfo.textContent = `${level.toFixed(1)}× zoom · ${maxZoom}× limit`;
         zoomIn.disabled = level >= maxZoom - 1e-8;
         zoomOut.disabled = level <= 1 + 1e-8;
       }
       svg.setAttribute('viewBox', box.join(' '));
+      scheduleSourceWindow();
     };
     const reset = () => { box = [x, y, w, h]; apply(); };
     const zoom = (factor, fx = .5, fy = .5) => {
@@ -216,7 +299,10 @@
     };
     select.onchange = () => choose(select.value);
     opacity.oninput = style; outlines.onchange = style;
-    he.onchange = () => image.style.display = he.checked ? '' : 'none';
+    he.onchange = () => {
+      image.style.display = he.checked ? '' : 'none';
+      if (detailImage) scheduleSourceWindow();
+    };
     fit.onclick = reset;
     zoomIn.onclick = () => zoom(.7); zoomOut.onclick = () => zoom(1 / .7);
     // The fixed viewport matches the exact saved overview frame, including cropped WSIs.
