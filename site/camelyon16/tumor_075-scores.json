@@ -9,7 +9,7 @@
   "official_positive_pixels": 155007,
   "previously_inspected_reference": true,
   "known_pixels_outside_reviewed_support": 2312808,
-  "score_audit_sha256": "7bab89f31d3600e12e45f95b7ba013cbb40b569dd1dadac294fb64bd176bc359",
+  "score_audit_sha256": "2a21dca1a0fcc0e2c476422d539b2a18fb319f194eb1408063391e89fe112422",
   "methods": {
     "bora": {
       "metrics": {
@@ -32,93 +32,93 @@
         "tolerance_um": 5.0,
         "lesion_match_iou": 0.1,
         "native": {
-          "tp": 127708,
-          "fp": 353885,
-          "fn": 27299,
-          "tn": 8572788,
+          "tp": 119059,
+          "fp": 229830,
+          "fn": 35948,
+          "tn": 8696843,
           "reference_positive_pixels": 155007,
-          "predicted_positive_pixels_in_known_domain": 481593,
-          "precision": 0.26517827294001367,
-          "recall": 0.8238853729186424,
-          "dice": 0.40121897580898525,
-          "iou": 0.2509530509420466,
+          "predicted_positive_pixels_in_known_domain": 348889,
+          "precision": 0.3412518021491076,
+          "recall": 0.768087892804841,
+          "dice": 0.47255386032038355,
+          "iou": 0.3093751380454582,
           "positive_metrics_undefined_reason": null,
-          "false_positive_tissue_area_mm2": 5.067568,
-          "false_positive_known_outside_support_area_mm2": 0.594592,
-          "positive_outside_reviewed_support_pixels": 37162,
+          "false_positive_tissue_area_mm2": 3.397424,
+          "false_positive_known_outside_support_area_mm2": 0.279856,
+          "positive_outside_reviewed_support_pixels": 17491,
           "boundary": {
             "reference_interface_pixels": 27466,
-            "predicted_interface_pixels": 203155,
-            "precision": 0.03392483571657109,
-            "recall": 0.24761523337945096,
-            "f1": 0.05967396499042043,
-            "hd95_um": 7477.349583902975,
+            "predicted_interface_pixels": 150806,
+            "precision": 0.051795021418245955,
+            "recall": 0.2821306342386951,
+            "f1": 0.08752224931257857,
+            "hd95_um": 7066.058023353672,
             "reason": null
           },
           "lesions": {
             "reference_components": 37,
-            "predicted_components": 2980,
-            "matched_components": 11,
-            "missed_reference_components": 26,
-            "unmatched_predicted_components": 2969,
+            "predicted_components": 2183,
+            "matched_components": 10,
+            "missed_reference_components": 27,
+            "unmatched_predicted_components": 2173,
             "connectivity": 8,
             "match_iou_threshold": 0.1
           },
-          "balanced_accuracy": 0.8921209118743219,
-          "known_pixel_false_positive_rate": 0.039643549169998724
+          "balanced_accuracy": 0.8711707292474962,
+          "known_pixel_false_positive_rate": 0.025746434309848697
         },
         "shared_support": {
-          "tp": 128104,
-          "fp": 274927,
-          "fn": 26903,
-          "tn": 8651746,
+          "tp": 119474,
+          "fp": 180544,
+          "fn": 35533,
+          "tn": 8746129,
           "reference_positive_pixels": 155007,
-          "predicted_positive_pixels_in_known_domain": 403031,
-          "precision": 0.31785148040721434,
-          "recall": 0.8264400962537176,
-          "dice": 0.45912285543278414,
-          "iou": 0.2979620127740537,
+          "predicted_positive_pixels_in_known_domain": 300018,
+          "precision": 0.3982227733002687,
+          "recall": 0.7707651912494274,
+          "dice": 0.5251315861765837,
+          "iou": 0.3560531782053995,
           "positive_metrics_undefined_reason": null,
-          "false_positive_tissue_area_mm2": 4.398832,
+          "false_positive_tissue_area_mm2": 2.8887039999999997,
           "false_positive_known_outside_support_area_mm2": 0.0,
           "positive_outside_reviewed_support_pixels": 0,
           "boundary": {
             "reference_interface_pixels": 27466,
-            "predicted_interface_pixels": 94335,
-            "precision": 0.04687549689934807,
-            "recall": 0.1648947789994903,
-            "f1": 0.07299914654124216,
-            "hd95_um": 6555.632075069133,
+            "predicted_interface_pixels": 70700,
+            "precision": 0.06998585572842998,
+            "recall": 0.18561130124517586,
+            "f1": 0.10164562003991662,
+            "hd95_um": 6347.239777990477,
             "reason": null
           },
           "lesions": {
             "reference_components": 37,
-            "predicted_components": 316,
+            "predicted_components": 224,
             "matched_components": 8,
             "missed_reference_components": 29,
-            "unmatched_predicted_components": 308,
+            "unmatched_predicted_components": 216,
             "connectivity": 8,
             "match_iou_threshold": 0.1
           },
-          "balanced_accuracy": 0.8978208618902844,
-          "known_pixel_false_positive_rate": 0.03079837247314873
+          "balanced_accuracy": 0.8752699814402354,
+          "known_pixel_false_positive_rate": 0.02022522836895672
         }
       },
       "slide_signals": {
         "positive": {
-          "largest_component_pixels": 153495,
-          "qualifying_components": 73,
-          "total_positive_pixels": 432180,
+          "total_positive_pixels": 314518,
+          "largest_component_pixels": 131994,
+          "qualifying_components": 59,
           "signal_present": true
         },
         "nonmetastatic": {
-          "largest_component_pixels": 3141088,
-          "qualifying_components": 18,
-          "total_positive_pixels": 7179130,
+          "total_positive_pixels": 7296792,
+          "largest_component_pixels": 3206292,
+          "qualifying_components": 14,
           "signal_present": true
         }
       },
-      "score_receipt_sha256": "6fd76a517c69efb07638764db2e86b502fd8ec80fbb2c2f2917ee4c263725203"
+      "score_receipt_sha256": "c357bf6acc16eee4515b84f8f89d02f3524d70cfa5c10e4ddd754bd11e0c12f7"
     },
     "unet": {
       "metrics": {
@@ -546,5 +546,13 @@
       },
       "score_receipt_sha256": "6cd4a266d121b59848d6be2b7b9f534531f3b19606b18e069ad43365a0403219"
     }
+  },
+  "bora_calibration": {
+    "threshold": 0.19960027933120728,
+    "fit_slide": "tumor_093",
+    "objective": "max specificity subject to >=95% tumor-token training sensitivity",
+    "exact_mask_sha256": "78ed5be59616f62c4945d69c5e16f4f50bb22dee8bd3e4ec50614e7b2c2e9b18",
+    "geometry_audit_sha256": "7e7df33d266e950c84c8117efcbd5806631af56b67b4b9394fbaefa837ee8c8e",
+    "test_reference_used_for_threshold_selection": false
   }
 }
