@@ -17,7 +17,7 @@
       <button id="zoom-out" type="button" aria-label="Zoom out">Zoom −</button>
       <button id="fit" type="button">Fit tissue</button>
       <label>Class <select id="class"><option value="">All classes</option></select></label>
-      <label>Opacity <input id="opacity" type="range" min="0" max="0.75" step="0.01" value="0.4"><output id="opacity-value">40%</output></label>
+      <label>Opacity <input id="opacity" type="range" min="0" max="0.75" step="0.01" value="0.24"><output id="opacity-value">24%</output></label>
       <label><input id="outlines" type="checkbox" checked> Outlines</label>
       <label><input id="he" type="checkbox" checked> H&amp;E</label>
       <a id="download-saved" download>Saved review GeoJSON</a>
@@ -33,7 +33,7 @@
       <p id="status" role="status">Preparing read-only viewer…</p>
       <p id="legend" aria-label="Prediction classes"></p>
     </div>
-    <p class="help">Scroll or pinch to zoom; drag to pan. The official TIFF supplies image detail on demand. The overlay is a display-filtered Bora prediction, not the expert annotation. The exact scored raster and saved review GeoJSON are unchanged.</p>
+    <p class="help">Scroll or pinch to zoom; drag to pan. The official TIFF supplies image detail on demand. The H&amp;E display mask removes obvious exterior glass inside the reviewed support; the contours receive a display-only visual fit. Download the saved review GeoJSON for exact geometry. Predictions, scored raster, and metrics are unchanged.</p>
   </main>
 </body>
 </html>

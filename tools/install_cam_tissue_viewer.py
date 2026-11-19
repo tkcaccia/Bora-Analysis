@@ -30,16 +30,25 @@ def main() -> None:
         page = CAM / f"{slide}.html"
         if not page.is_file():
             raise SystemExit(f"Missing completed slide page: {page}")
+        for suffix in ("tissue.webp", "mask.png", "display-support.geojson.gz"):
+            preview = CAM / "tissue-viewer-previews" / f"{slide}-{suffix}"
+            if not preview.is_file():
+                raise SystemExit(f"Build the source-verified tissue viewer preview first: {preview}")
         html = page.read_text()
+        html = html.replace(
+            'The interactive GeoJSON view uses the reviewed H&amp;E support, including at source-detail zoom.',
+            'The interactive GeoJSON view uses a display-only H&amp;E color refinement inside the reviewed support, including at source-detail zoom.'
+        )
         block = (
             '<section class="cam-tissue-viewer" id="inspect-geojson">'
             '<h2>Inspect the display-filtered Bora GeoJSON</h2>'
-            '<p>Pan and zoom the reviewed H&amp;E tissue with Bora contours. '
+            '<p>Pan and zoom source-derived H&amp;E tissue with Bora contours. The image and contours use display-only refinement; '
+            'the reviewed support, exact prediction and scoring remain unchanged. '
             'The viewer hides metastasis-like polygons smaller than 0.02 mm² for display only. '
             'The saved review vector and exact scored raster are unchanged.</p>'
             f'<iframe title="Bora tissue and GeoJSON viewer for {slide}" '
             f'src="tissue-viewer.html?slide={slide}" loading="lazy" '
-            'style="display:block;width:100%;height:clamp(620px,calc(70vw + 160px),1020px);border:0" '
+            'style="display:block;width:100%;height:960px;border:0" '
             'referrerpolicy="no-referrer"></iframe>'
             f'<p><a href="tissue-viewer.html?slide={slide}">Open the tissue viewer in a full window</a> · '
             f'<a download href="inspector-vectors/{slide}-bora.geojson.gz">Download the saved Bora GeoJSON</a>.</p>'

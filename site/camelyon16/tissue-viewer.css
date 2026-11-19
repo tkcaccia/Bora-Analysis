@@ -13,4 +13,5 @@
 .footer{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.footer p{margin:8px 0;font-size:13px}.help{font-size:13px;color:#526b75;margin:8px 0}
 #legend{display:flex;gap:12px}.key{display:inline-flex;align-items:center;gap:5px}.swatch{width:12px;height:12px;border:1px solid #0003;display:inline-block}
 button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #0086a0;outline-offset:2px}
-@media(max-width:650px){.stage{height:60vh;min-height:300px}.toolbar strong{width:100%}.footer p{width:100%}}
+@media(max-width:650px){.stage{height:68vw;min-height:300px}.toolbar strong{width:100%}.footer p{width:100%}}
+html.embedded,html.embedded body{overflow:hidden}
