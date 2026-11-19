@@ -55,7 +55,12 @@ fetch("cases-eight-v5.json?v=complete-legends-v1").then(r=>{if(!r.ok)throw Error
   names=data.class_names;
   renderPerformance(data);
   all=data.cases;[...new Set(all.map(r=>r.dataset))].sort().forEach(x=>dataset.add(new Option(x.toUpperCase(),x)));
-  const requested=all.find(r=>r.id===location.hash.slice(1));if(requested)dataset.value=requested.dataset;filter();
+  const initialAnchor=location.hash.slice(1);
+  const requested=all.find(r=>r.id===initialAnchor);if(requested)dataset.value=requested.dataset;filter();
+  if(initialAnchor==="download-source-images"){
+    history.replaceState(null,"","#"+initialAnchor);
+    document.getElementById(initialAnchor).scrollIntoView();
+  }
   dataset.addEventListener("change",filter);picker.addEventListener("change",()=>show(picker.value));
   document.getElementById("previous").addEventListener("click",()=>show(visible[Math.max(0,visible.findIndex(r=>r.id===picker.value)-1)].id));
   document.getElementById("next").addEventListener("click",()=>show(visible[Math.min(visible.length-1,visible.findIndex(r=>r.id===picker.value)+1)].id));

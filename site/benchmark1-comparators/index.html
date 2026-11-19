@@ -25,6 +25,7 @@
   .response-grid figure{margin:0;border:1px solid #d8e3e6;padding:7px;background:#fff}
   .response-grid img{display:block;width:100%;height:auto;background:#000}.response-grid figcaption{margin:7px 0 2px;font-size:.9rem}
   .error{color:#9b2727}footer{font-size:.9rem;padding-bottom:35px}
+  pre{overflow-x:auto;padding:14px 16px;background:#102d38;color:#f5fbfc;border-radius:6px;line-height:1.5}
 </style>
 </head>
 <body>
@@ -37,6 +38,21 @@
 <main>
 <p class="notice"><strong>Development evaluation.</strong> These 87 images were inspected during earlier method development and are not an untouched test. The eight-class label set and supervised model were selected on training images alone. Alveolar tissue, cartilage or bone, liver tissue, mucus/plasma/fluids, and muscle are unscored because they lacked enough independent training support; they are not treated as background. WSSS4LUAD contributes no training images and is reported separately under its own tumor/stroma/normal/background crosswalk. Do not pool its binary scores with these multiclass scores.</p>
 <p class="notice"><strong>PEsO corrected reference and supervised result.</strong> The 19 PEsO figures show original expert epithelium and a conservative, H&amp;E-supported <em>weak stroma proxy</em> for some non-epithelial pixels. This proxy is not a pathologist annotation. A 64-channel supervised Bora head was selected using only 18 source-disjoint PEsO training slides and scored on these 19 inspected development images. The external predictions were rescored on the same two-class reference without retraining. The former epithelium-only 100% score is withdrawn. KODAMA–Bora cannot be rescored on PEsO because its exact spatial mask is absent.</p>
+<h2 id="download-source-images">Download the Benchmark 1 source images</h2>
+<p>These links lead to the <strong>original provider files used for this benchmark</strong>, rather than the resized comparison figures on this site. The local 397 training and 87 development ROIs are selected subsets of the provider files; downloading an archive does not itself reproduce that allocation. Check each provider's attribution and reuse terms before using the images.</p>
+<div class="table-wrap"><table><caption>Provider image files</caption><thead><tr><th scope="col">Source</th><th scope="col">Image download</th><th scope="col">What the file contains</th></tr></thead><tbody>
+<tr><th scope="row">BCSS</th><td><a href="https://github.com/PathologyDataScience/BCSS">Official project</a> · <a href="https://huggingface.co/datasets/MedOtter/BCSS/tree/502d4a3fbc77dbaca6f4664c19e2379ff077d418/data">Pinned Parquet mirror used here</a></td><td>Ten Parquet shards with H&amp;E ROIs. The mirror reports color normalization, so its RGB pixels are not raw upstream TCGA pixels.</td></tr>
+<tr><th scope="row">TIGER</th><td><a href="https://zenodo.org/records/6014422/files/roi-level-annotations.zip?download=1">ROI images and annotations ZIP</a> · <a href="https://zenodo.org/records/6014422">provider record</a></td><td>H&amp;E ROI PNGs and tissue annotations.</td></tr>
+<tr><th scope="row">GCSS</th><td><a href="https://zenodo.org/records/8176354/files/GCSS.zip?download=1">GCSS.zip</a> · <a href="https://zenodo.org/records/8176354">provider record</a></td><td>Gastric H&amp;E ROIs and segmentation labels.</td></tr>
+<tr><th scope="row">IGNITE</th><td><a href="https://zenodo.org/records/17735903/files/images.zip?download=1">images.zip</a> · <a href="https://zenodo.org/records/17735903">provider record</a></td><td>ROI PNGs; use the H&amp;E entries under <code>images/he/</code>. The separate <a href="https://zenodo.org/records/17735903/files/annotations.zip?download=1">annotations.zip</a> contains the H&amp;E masks.</td></tr>
+<tr><th scope="row">PEsO</th><td><a href="https://zenodo.org/records/5137717/files/peso_testset_png.zip?download=1">Test-region PNGs</a> · <a href="https://zenodo.org/records/5137717">provider record</a></td><td>The 2,500 × 2,500 H&amp;E regions used for this ROI cohort. <a href="https://zenodo.org/records/5137717/files/peso_testset_mapping.csv?download=1">Mapping CSV</a> identifies region numbers; the provider also offers whole-slide archives separately.</td></tr>
+</tbody></table></div>
+<p>The following Python 3 code downloads <em>one selected provider file</em> and checks it against the pinned source checksum. It leaves an incomplete <code>.part</code> file for inspection if a transfer fails. <a href="download-source-images.py" download>Download the complete script</a>; run <code>--list</code> to see every supported file and its checksum.</p>
+<pre><code>python3 download-source-images.py --list
+python3 download-source-images.py --dataset gcss --file GCSS.zip \
+  --output-dir benchmark1-sources
+python3 -m zipfile -l benchmark1-sources/gcss/GCSS.zip</code></pre>
+<p class="small">For a different source, replace <code>gcss</code> and <code>GCSS.zip</code> with a pair shown by <code>--list</code>. The script transfers archives only when you run the download command. For BCSS, the pinned mirror stores images inside Parquet shards. The <a href="../attribution.html">attribution and reuse page</a> explains source-specific terms; source identifiers for the displayed development ROIs are in <a href="cases.json">the case manifest</a>.</p>
 <h2 id="validation-performance">Matched Benchmark 1 quality scores</h2>
 <p>The primary analysis scores native masks from Bora, a newly fitted eight-output U-Net, and a newly fitted eight-output DeepLabV3+ on the same 68 expert-reference ROIs. All 68 completed. The 19 PEsO ROIs are shown separately: epithelium is expert annotated, whereas stroma is an H&amp;E-derived weak proxy. These are previously inspected development images, not an independent test. The numerical definitions and source receipts match the Medical Image Analysis manuscript Table 3 and supplement.</p>
 <div class="table-wrap"><table id="quality-cohorts"><caption>Native outputs: classification and class-independent segmentation</caption><thead><tr><th scope="col">Reference</th><th scope="col">Method</th><th scope="col">Complete</th><th scope="col">Annotated pixels</th><th scope="col">Union-present IoU</th><th scope="col">Boundary F1 (5 µm)</th><th scope="col">Region covering</th><th scope="col">HD95 (µm) ↓</th></tr></thead><tbody></tbody></table></div>
@@ -65,6 +81,6 @@
 <p class="small">Download <a href="per-case-eight-v4.csv">per-image scores</a> or inspect the <a href="https://github.com/tkcaccia/Bora-Analysis/tree/main/methods/benchmark1">method code</a>.</p>
 </main>
 <footer><a href="../attribution.html">Attribution and reuse terms</a></footer>
-<script defer src="gallery.js?v=complete-legends-v1"></script>
+<script defer src="gallery.js?v=source-download-v1"></script>
 <script defer src="quality.js?v=matched-v1"></script>
 </body></html>
