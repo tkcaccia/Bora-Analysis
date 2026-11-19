@@ -152,16 +152,16 @@
           const tiff=await source();
           if (!imagePromises.has(index)) imagePromises.set(index,tiff.getImage(index));
           const image=await imagePromises.get(index);
-          const ratioX=record.high_resolution.width/image.getWidth();
-          const ratioY=record.high_resolution.height/image.getHeight();
-          if (!(ratioX>=1 && ratioY>=1 && Number.isFinite(ratioX) && Number.isFinite(ratioY)))
-            throw new Error(`Invalid official TIFF pyramid level ${index}.`);
-          // CAMELYON16's later TIFF overviews have padded rows. Their raw
-          // height ratio is not a physical downsample and would vertically
-          // stretch source tiles against the prediction contours. Use only
-          // levels with matching measured X/Y scales; level 0 always qualifies.
-          const isotropic=Math.abs(ratioX-ratioY)/ratioX<.001;
-          return {index,ratioX,ratioY,downsample:Math.max(ratioX,ratioY),isotropic};
+          // TIFF IFDs are padded to tile boundaries; their raw width/height
+          // are not the physical image dimensions. OpenSlide crops that padding
+          // from the bottom/right. The CAM pyramid is 2x per level, so map
+          // source pixels with that scale and never read the padded margins.
+          const downsample=2**index;
+          const validWidth=Math.ceil(record.high_resolution.width/downsample);
+          const validHeight=Math.ceil(record.high_resolution.height/downsample);
+          const valid=image.getWidth()>=validWidth && image.getHeight()>=validHeight &&
+            image.getWidth()<validWidth+512 && image.getHeight()<validHeight+512;
+          return {index,downsample,validWidth,validHeight,valid};
         })().catch(error=>{levelInfos.delete(index);imagePromises.delete(index);throw error;});
         levelInfos.set(index,info);
       }
@@ -176,12 +176,12 @@
       // needs only nearby IFDs even when the TIFF has an irregular pyramid.
       let index=Math.min(count-1,Math.max(0,Math.floor(Math.log2(factor))));
       let info=await levelAt(index);
-      while ((!info.isotropic || info.downsample>factor*1.01) && index>0)
+      while ((!info.valid || info.downsample>factor*1.01) && index>0)
         info=await levelAt(--index);
-      if (!info.isotropic) throw new Error('No geometrically valid TIFF level.');
+      if (!info.valid) throw new Error('No geometrically valid TIFF level.');
       while (index+1<count) {
         const next=await levelAt(index+1);
-        if (!next.isotropic || next.downsample<=info.downsample || next.downsample>factor*1.01) break;
+        if (!next.valid || next.downsample<=info.downsample || next.downsample>factor*1.01) break;
         info=next; index++;
       }
       return info;
@@ -209,10 +209,10 @@
         try {
           const levelInfo=await chooseLevel(factor);
           const image=await imagePromises.get(levelInfo.index);
-          const ratioX=levelInfo.ratioX, ratioY=levelInfo.ratioY;
-          const window=[Math.floor((crop.x+box.x)/ratioX),Math.floor((crop.y+box.y)/ratioY),
-            Math.min(image.getWidth(),Math.ceil((crop.x+box.x+box.w)/ratioX)),
-            Math.min(image.getHeight(),Math.ceil((crop.y+box.y+box.h)/ratioY))];
+          const downsample=levelInfo.downsample;
+          const window=[Math.floor((crop.x+box.x)/downsample),Math.floor((crop.y+box.y)/downsample),
+            Math.min(levelInfo.validWidth,Math.ceil((crop.x+box.x+box.w)/downsample)),
+            Math.min(levelInfo.validHeight,Math.ceil((crop.y+box.y+box.h)/downsample))];
           const rgb=await image.readRGB({window,width:outW,height:outH,
             interleave:true,resampleMethod:'bilinear'});
           const tile=document.createElement('canvas'); tile.width=outW; tile.height=outH;

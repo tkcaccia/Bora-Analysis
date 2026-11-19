@@ -4912,7 +4912,7 @@
     "camelyon16/tissue-viewer-previews/tumor_091-tissue.webp": "c2432b478e1c9b856b3f63a98c58961f9c85f650ca1cf9c88f68ca7f19fd92ae",
     "camelyon16/tissue-viewer.css": "e1c675063a0806fc33feb9c509a7d0c4afc627364502c9c1a1bf176e2e184495",
     "camelyon16/tissue-viewer.html": "c65f2b701318de2a85fdb7a07cd0c0e1ada703b60b3f10a2594c34309046502a",
-    "camelyon16/tissue-viewer.js": "c529464ad409f68ee83e41e70e55bee906b32a9ca8cac698b3e2fc6bc025aff4",
+    "camelyon16/tissue-viewer.js": "ed37efacfbbd87cc99ec914f71f170e5629b02d26d58114076acaa7c388a41aa",
     "camelyon16/training-method-display/tumor_093-expert-focus-deeplabv3plus.webp": "23f353d35f7beca5a4249ca500ac8411462d36f4d608744d1a766f8dd249ba8e",
     "camelyon16/training-method-display/tumor_093-expert-focus-expert.webp": "a5d20cd28b63824911a5045e948b12d152153581cc5120d4884d259eab038f6d",
     "camelyon16/training-method-display/tumor_093-expert-focus-he.webp": "1af8deeebe44cc0c37042ed639ba3130baa5527a81b280aaac87eab9f1912f61",
@@ -5568,6 +5568,6 @@
   "grayscale_group_map_count": 129,
   "public_wsi_count": 12,
   "retired_case_count": 4,
-  "size_bytes": 646399179,
+  "size_bytes": 646399148,
   "status": "CAM_TUMOR084_ONLY_FIRST_AUDITED_BORA_RESULT"
 }
