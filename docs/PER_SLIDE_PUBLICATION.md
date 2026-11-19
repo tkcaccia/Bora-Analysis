@@ -39,6 +39,10 @@ For each slide:
    support hashes, and no visible exterior glass. Run
    `python tools/verify_cam_bw_projections.py site`; the Pages workflow enforces
    this for every currently scored one-slide test page, including future pages.
+   Attach the tissue viewer with `python3 tools/install_cam_tissue_viewer.py`
+   and verify completed page links, support, vectors and source registration
+   metadata with `python3 tools/verify_cam_tissue_viewer.py`. See
+   `docs/CAM_TISSUE_VIEWER.md` for the display-only filter and tile behavior.
 4. Run site link and asset checks, then publish the same files from `main`.
    Wait for successful Pages deployment and stream-hash the live page and
    assets against the local release. Save a per-slide publication receipt.

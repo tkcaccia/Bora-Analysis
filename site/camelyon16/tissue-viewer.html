@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CAMELYON16 tissue viewer</title>
+  <link rel="stylesheet" href="tissue-viewer.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/openseadragon@5.0.1/build/openseadragon/openseadragon.min.js"></script>
+  <script defer src="../vendor/geotiffjs-3.0.5/geotiff.js"></script>
+  <script defer src="tissue-viewer.js"></script>
+</head>
+<body>
+  <main class="shell">
+    <div class="toolbar" role="toolbar" aria-label="Tissue viewer controls">
+      <strong id="title">CAMELYON16 tissue</strong>
+      <button id="zoom-in" type="button" aria-label="Zoom in">Zoom +</button>
+      <button id="zoom-out" type="button" aria-label="Zoom out">Zoom −</button>
+      <button id="fit" type="button">Fit tissue</button>
+      <label>Class <select id="class"><option value="">All classes</option></select></label>
+      <label>Opacity <input id="opacity" type="range" min="0" max="0.75" step="0.01" value="0.4"><output id="opacity-value">40%</output></label>
+      <label><input id="outlines" type="checkbox" checked> Outlines</label>
+      <label><input id="he" type="checkbox" checked> H&amp;E</label>
+      <a id="download-saved" download>Saved review GeoJSON</a>
+      <a id="download-displayed" download hidden>Displayed GeoJSON</a>
+    </div>
+    <div class="stage">
+      <div id="osd" aria-label="Pan and zoom the reviewed H&E tissue"></div>
+      <canvas id="overlay" aria-hidden="true"></canvas>
+      <div id="scale" class="scale" hidden><span id="scale-line"></span><span id="scale-label"></span></div>
+      <div id="loading" class="loading" role="status">Loading reviewed tissue…</div>
+    </div>
+    <div class="footer">
+      <p id="status" role="status">Preparing read-only viewer…</p>
+      <p id="legend" aria-label="Prediction classes"></p>
+    </div>
+    <p class="help">Scroll or pinch to zoom; drag to pan. The official TIFF supplies image detail on demand. The overlay is a display-filtered Bora prediction, not the expert annotation. The exact scored raster and saved review GeoJSON are unchanged.</p>
+  </main>
+</body>
+</html>
