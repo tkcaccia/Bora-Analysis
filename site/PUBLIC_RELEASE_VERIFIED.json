@@ -1,6 +1,6 @@
 {
   "comparator_wsi_count": 7,
-  "file_count": 5306,
+  "file_count": 5309,
   "file_sha256": {
     "BUILD_PROVENANCE.json": "7353c2f089fe41ad934780d7df8f54f0ea336e8b147968e3875ed73d9fe06d97",
     "DATA_LICENSES.md": "da566fde847ff32be11d44c141e8a508e1a324fab6ea41019478f5ab91ec8184",
@@ -4710,7 +4710,7 @@
     "camelyon16/tumor_091-one-slide.html": "e5d6def2f905a97b9416cb66369c6f483817e96e05c47e725f3c81ca051c8095",
     "camelyon16/tumor_091-scores.json": "a13928d6bc59cbde891ef81a185955b1deaa951b0058d8c61e784767a362e470",
     "camelyon16/tumor_091.html": "0565712e3bb7b8a401001cedfd3384b0f69e4ea5e451add09f55f7deb6c4c641",
-    "camelyon16/tumor_093.html": "51d430004defb9959ab91bbcaf368896c5c6029bfb43c79b29f22a356579c3a6",
+    "camelyon16/tumor_093.html": "994c42a362d2491eaac855a9f93062b5cf3f8ba86747772efc6ef0553f27984d",
     "camelyon16/tumor_096-expert.html": "84a5532211e304c017ffac6e6ab30e438a447917b27d21e5baafcf700068e654",
     "camelyon16/tumor_101-expert.html": "6268fbb0fefe24e6eb02dd70bf194af2e8e86f2d1a95bdf476887b655cb9daeb",
     "data.json": "219fa7fba67dcb565fbfc40b23e2d1474990c26783f27113297e3985e7ae4617",
@@ -4834,6 +4834,9 @@
     "downloads/camelyon16-source/bora-camelyon-five-slide-protocol-2026-11-15-v152/audit_scores.py": "0e53a2bceb1d392fa2104bd5f709e87f9dae7446fd7f831ba4119c11f0f73e40",
     "downloads/camelyon16-source/bora-camelyon-five-slide-protocol-2026-11-15-v155/render_local_site.py": "d818fb74b2b8d571afb6fd79fe2c1102f6b169b0ac8d9e42c7b3ae806c03b545",
     "downloads/camelyon16-source/index.html": "856227f95484da1534e2ac7398b25459099e22ef45541007fe285712886ef616",
+    "downloads/camelyon16-source/training-kodama-tumor093-v2/PLOT_AUDIT_VERIFIED.json": "f4030406457659f322b681a2b438527c31c18ddca5273a5410b3563740c49c5b",
+    "downloads/camelyon16-source/training-kodama-tumor093-v2/plot_kodama.R": "b7b6daf43639daf45f0ade6c26b48e02918b5bfdf4cca67210b05bb38fbb1df3",
+    "downloads/camelyon16-source/training-kodama-tumor093-v2/prepare_tiles.py": "0cb65a9de6a6457ab536755f169949aa7fc027f7fb6c1820b6de240702628f0e",
     "downloads/prepare_reviewed_tissue_support.py": "f6587af7903dc7e9a2ad8e47ca363ee392219ceb85e25555ce90e70847b1ddcd",
     "geojson-inspector.css": "557e6a205734284fdc13b7626a7ab113db563271bbee7d1164b2724b134bd662",
     "geojson-inspector.js": "3628b6e012f95001a232d968332746ea9d7184c9e9a80c6de79cfcc160fca8c2",
@@ -5313,6 +5316,6 @@
   "grayscale_group_map_count": 129,
   "public_wsi_count": 12,
   "retired_case_count": 4,
-  "size_bytes": 573314608,
+  "size_bytes": 573325744,
   "status": "BENCHMARK1_SOURCE_DOWNLOADS_ADDED"
 }

@@ -1,0 +1,20 @@
+{
+  "status": "VERIFIED",
+  "plot": "tumor_093 KODAMA training tissue",
+  "sampled_tiles": 900,
+  "metastatic_center_tiles": 16,
+  "nonmetastatic_center_tiles": 884,
+  "feature_receipt_sha256": "4766e1eb67555870f2bb5cd1957e5a3576ad7f4eee110f811fda52004d363b8b",
+  "annotation_sha256": "6aa5d1e4fbad835cca2638f3d2db97e891506f6ce19cb225a8e78bcf789990dd",
+  "input_sha256": "11e60f1b81c08e3d74b82f7de1d3e1e8e873b4f02e00f262b0e7b236eecf2646",
+  "layout_sha256": "5cb86fecbeb9e64bec8f4e968c10da3a33cc95c2ac5281121b51474199bcf526",
+  "plot_sha256": "a2d947897f0cdf6334192cccdf2237c6f1edee2fb00c9a8372a7d4afa1063caa",
+  "plot_size_px": [
+    1700,
+    1150
+  ],
+  "kodama_version": "0.99.7",
+  "fastEmbedR_version": "0.99.5",
+  "cpu_only": true,
+  "test_scores_changed": false
+}
