@@ -1,6 +1,6 @@
 {
   "comparator_wsi_count": 7,
-  "file_count": 5304,
+  "file_count": 5305,
   "file_sha256": {
     "BUILD_PROVENANCE.json": "7353c2f089fe41ad934780d7df8f54f0ea336e8b147968e3875ed73d9fe06d97",
     "DATA_LICENSES.md": "da566fde847ff32be11d44c141e8a508e1a324fab6ea41019478f5ab91ec8184",
@@ -2275,7 +2275,8 @@
     "benchmark1-comparators/combined-supported-v1/case-085.png": "c3d5c77a50488a23e0300c16f7d19dd24c026a2cc3da664a3eb88722df3c778b",
     "benchmark1-comparators/combined-supported-v1/case-086.png": "549867cb3d1fd1eeb2538158bbce6834a74c1d5289ece567e709d1b10d0fb2de",
     "benchmark1-comparators/combined-supported-v1/case-087.png": "e351a228a8517bd228ab22fce13e9a98ad3014e7c672effe7a51b73a6765e354",
-    "benchmark1-comparators/gallery.js": "18d8057daf7db8817e3139d498ff90a89bb0116a6bf8c66ae733799b0deee538",
+    "benchmark1-comparators/download-source-images.py": "c1dbb160d1048bd3991aaaf4cb54a299886f3c89526ada251a17262a8f10c37d",
+    "benchmark1-comparators/gallery.js": "30abcff28dcabafc0725da5a8b299af8fdd3ad6501da898ab885c27e8136198d",
     "benchmark1-comparators/he-support-alpha-v1/case-001.png": "069ebbb039b9cd8cf1c70d5f1688d7f1ad54088620bf6ad182ffbf2b3f7e330e",
     "benchmark1-comparators/he-support-alpha-v1/case-002.png": "b4071f7e87817a6ca74c805d6d3ddfe1829ced18be5bef70e505649cf536724f",
     "benchmark1-comparators/he-support-alpha-v1/case-003.png": "788e240db6bfc4fadb3ed43288d1472b74207ba438c464bb91a4f28fc6d8aa58",
@@ -2363,7 +2364,7 @@
     "benchmark1-comparators/he-support-alpha-v1/case-085.png": "fa7634cfd2ee0658954381508e1618fb6be2d99b7784b17759b53d653e9079f1",
     "benchmark1-comparators/he-support-alpha-v1/case-086.png": "d5c58b3dd987f8a232c91480b93b2751a5d0aaa054c587fc23157b856c7dd04e",
     "benchmark1-comparators/he-support-alpha-v1/case-087.png": "d3da2c8f4d871dc521fc9fdd944e39f83f596194e23e29b1def3c2f97367be30",
-    "benchmark1-comparators/index.html": "52dbb342635328c1e9a4d1589f401bf08a2ecd35b696c6135934940d51375be2",
+    "benchmark1-comparators/index.html": "763de47f1f8cd14ccdecee459ea59b25d5790632793682fb74a6f9d61b5ef6ef",
     "benchmark1-comparators/legends-complete-v5/case-003.webp": "3fe59fd78a518909766975709cd5ec5b72b1aa4f041de3122a29ad181556e535",
     "benchmark1-comparators/legends-complete-v5/case-005.webp": "a188f1857e452db8769da8ddf1ff0037bcccb468444f3241aaa6d9ee1421ee0a",
     "benchmark1-comparators/legends-complete-v5/case-006.webp": "b1f173c040890bf94275c32738dffc2c76bf189cc7a95041d9088db41bec66ab",
@@ -4836,7 +4837,7 @@
     "geojson-inspector.css": "557e6a205734284fdc13b7626a7ab113db563271bbee7d1164b2724b134bd662",
     "geojson-inspector.js": "3628b6e012f95001a232d968332746ea9d7184c9e9a80c6de79cfcc160fca8c2",
     "geojson-inspectors.json": "b2d69d868e1b66574deb402d607c93b7e1237754cb51886749c00e44d1b8b1bb",
-    "index.html": "ce097184e38373d5affc8f4c06e8194ad80f20122804c3360e1c5b79bdd97963",
+    "index.html": "3b46b573738cec9fae6bf2e0654962c6613ad0d14fafcbb7606e56cb01a9e4df",
     "preprocessing.html": "cfdbb08145695d29c6c1b1f2aa9c07a91ea2686a5b0b28aec4fbaa4111320342",
     "previews/bcss_05/neighbor-context.jpg": "86756ac578efbcb6a3b4e75505bdb18b35c21cf7315703c3636bb9b0edfebf96",
     "previews/bcss_06/neighbor-context.jpg": "3df0c6574d2977c81bee91c8b808d9fbf377fb6ab91990224acaf5684714894d",
@@ -5311,6 +5312,6 @@
   "grayscale_group_map_count": 129,
   "public_wsi_count": 12,
   "retired_case_count": 4,
-  "size_bytes": 573237875,
-  "status": "CAM_FIELD_ZOOMS_REMOVED"
+  "size_bytes": 573246678,
+  "status": "BENCHMARK1_SOURCE_DOWNLOADS_ADDED"
 }
