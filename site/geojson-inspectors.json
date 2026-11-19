@@ -1509,7 +1509,16 @@
           "color": "#d64055",
           "area_um2": 193710.75
         }
-      ]
+      ],
+      "high_resolution": {
+        "url": "https://camelyon-dataset.s3.amazonaws.com/CAMELYON16/images/tumor_093.tif",
+        "source_sha256": "aba3ae5a6739e0fb20de5b870ae160a7b32f523c6ffd7b3eafbda3a56cabc041",
+        "width": 98304,
+        "height": 89600,
+        "calibrated_width": 44497,
+        "calibrated_height": 40556,
+        "maximum_zoom": 128
+      }
     },
     {
       "id": "benchmark3-normal_093-support",
@@ -1546,7 +1555,16 @@
           "color": "#52c870",
           "area_um2": null
         }
-      ]
+      ],
+      "high_resolution": {
+        "url": "https://camelyon-dataset.s3.amazonaws.com/CAMELYON16/images/normal_093.tif",
+        "source_sha256": "51273349947c2554065d4d606b6f040c98088b674135bff9cf3923d18df2ea05",
+        "width": 96768,
+        "height": 212992,
+        "calibrated_width": 47047,
+        "calibrated_height": 103554,
+        "maximum_zoom": 128
+      }
     },
     {
       "id": "benchmark3-tumor_038",
@@ -1589,7 +1607,16 @@
           "color": "#f4474e",
           "area_um2": 4696384
         }
-      ]
+      ],
+      "high_resolution": {
+        "url": "https://camelyon-dataset.s3.amazonaws.com/CAMELYON16/images/tumor_038.tif",
+        "source_sha256": "c6e6daa48b0b499255df8ae5956957f675d12ee14657450d282f1f60ca3d6311",
+        "width": 97792,
+        "height": 221184,
+        "calibrated_width": 47545,
+        "calibrated_height": 107537,
+        "maximum_zoom": 128
+      }
     },
     {
       "id": "benchmark3-normal_116",
@@ -1632,7 +1659,16 @@
           "color": "#f4474e",
           "area_um2": 4876832
         }
-      ]
+      ],
+      "high_resolution": {
+        "url": "https://camelyon-dataset.s3.amazonaws.com/CAMELYON16/images/normal_116.tif",
+        "source_sha256": "7d0de2a46752774c9bd57669f94438a770cbce7ec2a475184e0bfdcaa3318a31",
+        "width": 131072,
+        "height": 39424,
+        "calibrated_width": 59482,
+        "calibrated_height": 17890,
+        "maximum_zoom": 128
+      }
     },
     {
       "id": "benchmark3-tumor_084",
@@ -1675,7 +1711,16 @@
           "color": "#f4474e",
           "area_um2": 8903344
         }
-      ]
+      ],
+      "high_resolution": {
+        "url": "https://camelyon-dataset.s3.amazonaws.com/CAMELYON16/images/tumor_084.tif",
+        "source_sha256": "73c9766616c40aff2bd6315eb44cd39e7b3d6bb7292cb52e25d3872256baee30",
+        "width": 65536,
+        "height": 86016,
+        "calibrated_width": 29664,
+        "calibrated_height": 38934,
+        "maximum_zoom": 128
+      }
     },
     {
       "id": "benchmark3-tumor_091",
@@ -1718,7 +1763,16 @@
           "color": "#f4474e",
           "area_um2": 2735184
         }
-      ]
+      ],
+      "high_resolution": {
+        "url": "https://camelyon-dataset.s3.amazonaws.com/CAMELYON16/images/tumor_091.tif",
+        "source_sha256": "29f5ca4caf206a2197a134fd61fd79032cf9f8364495aba5840a842a6967d4a4",
+        "width": 61440,
+        "height": 53760,
+        "calibrated_width": 27810,
+        "calibrated_height": 24333,
+        "maximum_zoom": 128
+      }
     },
     {
       "id": "benchmark3-tumor_075",
@@ -1761,7 +1815,16 @@
           "color": "#f4474e",
           "area_um2": 6914880
         }
-      ]
+      ],
+      "high_resolution": {
+        "url": "https://camelyon-dataset.s3.amazonaws.com/CAMELYON16/images/tumor_075.tif",
+        "source_sha256": "88514b4040ce9b9ff9861b6467ade9e8c9a8cc128935a59a315c5f5329ddf688",
+        "width": 90112,
+        "height": 78848,
+        "calibrated_width": 40788,
+        "calibrated_height": 35689,
+        "maximum_zoom": 128
+      }
     },
     {
       "id": "benchmark3-tumor_087",
@@ -1779,7 +1842,9 @@
         "source_sha256": "93ed29fcfdd723e296165fc37951810f40eba1f0fd1abc70e73ef9cb1c056ae9",
         "width": 106496,
         "height": 100352,
-        "maximum_zoom": 64
+        "calibrated_width": 48205,
+        "calibrated_height": 45423,
+        "maximum_zoom": 128
       },
       "image_bounds_xywh": [
         0,
@@ -1859,7 +1924,16 @@
           "color": "#f4474e",
           "area_um2": 167408
         }
-      ]
+      ],
+      "high_resolution": {
+        "url": "https://camelyon-dataset.s3.amazonaws.com/CAMELYON16/images/normal_019.tif",
+        "source_sha256": "2d477f93014b9934094d349993c8e3ee2519a968951a408a38dda73d2b5e349c",
+        "width": 97792,
+        "height": 221696,
+        "calibrated_width": 47545,
+        "calibrated_height": 107786,
+        "maximum_zoom": 128
+      }
     },
     {
       "id": "benchmark3-normal_108",
@@ -1902,7 +1976,16 @@
           "color": "#f4474e",
           "area_um2": 822352
         }
-      ]
+      ],
+      "high_resolution": {
+        "url": "https://camelyon-dataset.s3.amazonaws.com/CAMELYON16/images/normal_108.tif",
+        "source_sha256": "f606e8ef726a42840a2e0d33d3ffcd1afe9ea52ff98ef0880502958c2a07fe3c",
+        "width": 45056,
+        "height": 35840,
+        "calibrated_width": 20447,
+        "calibrated_height": 16264,
+        "maximum_zoom": 128
+      }
     },
     {
       "id": "benchmark3-normal_150",
@@ -1945,7 +2028,16 @@
           "color": "#f4474e",
           "area_um2": 6808720
         }
-      ]
+      ],
+      "high_resolution": {
+        "url": "https://camelyon-dataset.s3.amazonaws.com/CAMELYON16/images/normal_150.tif",
+        "source_sha256": "a96672eec9e173ff1ce5283e884fced3e57ccff7bc7c9d6f51a675fbfc5dd1bc",
+        "width": 65536,
+        "height": 60928,
+        "calibrated_width": 29741,
+        "calibrated_height": 27648,
+        "maximum_zoom": 128
+      }
     }
   ]
 }

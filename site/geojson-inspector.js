@@ -3,6 +3,7 @@
 (() => {
   const ns = 'http://www.w3.org/2000/svg';
   const manifests = new Map();
+  let sourceReaderPromise;
   const make = (tag, text, attrs = {}) => {
     const node = document.createElement(tag);
     if (text) node.textContent = text;
@@ -20,6 +21,20 @@
       return new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).json();
     }
     return JSON.parse(new TextDecoder().decode(bytes));
+  }
+  function sourceReader(manifestURL) {
+    if (window.GeoTIFF) return Promise.resolve(window.GeoTIFF);
+    if (!sourceReaderPromise) sourceReaderPromise = new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = new URL('vendor/geotiffjs-3.0.5/geotiff.js', manifestURL).href;
+      script.onload = () => window.GeoTIFF ? resolve(window.GeoTIFF) : reject(new Error('The source TIFF reader did not initialize.'));
+      script.onerror = () => reject(new Error('The source TIFF reader could not be loaded.'));
+      document.head.append(script);
+    }).catch(error => {
+      sourceReaderPromise = null;
+      throw error;
+    });
+    return sourceReaderPromise;
   }
   function svgNode(tag, attrs) {
     const node = document.createElementNS(ns, tag);
@@ -104,10 +119,9 @@
     const zoomOut = make('button', 'Zoom −', {type: 'button'});
     const fit = make('button', 'Fit', {type: 'button'});
     const boundedImage = record.section === 'camelyon16';
-    // Only tumor_087 has a source-TIFF range reader. Other slides retain the
-    // existing 8× sampled-preview limit until their own source mapping is checked.
-    const sourceDetail = record.id === 'benchmark3-tumor_087' && window.GeoTIFF
-      ? record.high_resolution : null;
+    // Every CAM image has an audited native-source to calibrated-image mapping.
+    // Read just the visible source TIFF window after zoom; never host a full WSI.
+    const sourceDetail = boundedImage ? record.high_resolution : null;
     if (sourceDetail) host.classList.add('gi-source-detail');
     const maxZoom = sourceDetail ? sourceDetail.maximum_zoom : 8;
     const zoomInfo = make('span', '', {class: 'gi-zoom-info', role: 'status', 'aria-live': 'polite'});
@@ -131,8 +145,8 @@
     }
     const legend = make('div', '', {class: 'gi-legend', 'aria-label': 'Assigned group legend'});
     const zoomHelp = sourceDetail
-      ? ' This slide zooms to 64×. At 2× and above, the visible H&E window is read at its needed resolution from the official source TIFF; the site does not host the full slide.'
-      : boundedImage ? ' CAMELYON16 zoom stops at 8× and panning remains inside the H&E frame.' : '';
+      ? ` This slide zooms to ${maxZoom}×. At 2× and above, the visible H&E window is read at its needed resolution from the official source TIFF; the site does not host the full slide.`
+      : boundedImage ? ' Panning remains inside the H&E frame.' : '';
     const help = make('p', 'Hover or click a colored region to see the selected geometry area and its full group area. Choose a group to isolate it. Drag to pan; use Zoom or the mouse wheel to magnify. Keyboard: arrows pan, +/− zoom, 0 fits.' + zoomHelp, {class: 'gi-help'});
     const content = [heading, note, controls, info, svg, legend, help];
     if (record.section === 'camelyon16') {
@@ -152,23 +166,30 @@
     let box = [x, y, w, h], paths = [], drag = null, loaded = false;
     let detailTimer = null, detailRequest = 0, detailObjectURL = null, sourceTiff = null;
     const sourceTiffForDetail = async () => {
-      if (!sourceTiff) sourceTiff = window.GeoTIFF.fromUrl(sourceDetail.url);
+      if (!sourceTiff) sourceTiff = sourceReader(manifestURL)
+        .then(reader => reader.fromUrl(sourceDetail.url))
+        .catch(error => {
+          sourceTiff = null;
+          throw error;
+        });
       return sourceTiff;
     };
     const renderSourceWindow = async (request, view) => {
       try {
         const tiff = await sourceTiffForDetail();
-        const scaleX = sourceDetail.width / w;
-        const scaleY = sourceDetail.height / h;
+        // Bounds may be a crop of the calibrated image (e.g. normal_019).
+        // Their offsets are in full calibrated coordinates, not crop pixels.
+        const scaleX = sourceDetail.width / sourceDetail.calibrated_width;
+        const scaleY = sourceDetail.height / sourceDetail.calibrated_height;
         const sourceBox = [
           Math.max(0, Math.floor((view[0] - x) * scaleX)),
           Math.max(0, Math.floor((view[1] - y) * scaleY)),
           Math.min(sourceDetail.width, Math.ceil((view[0] + view[2] - x) * scaleX)),
           Math.min(sourceDetail.height, Math.ceil((view[1] + view[3] - y) * scaleY))
         ];
-        // Keep every source pixel in the narrowest 64× window. Wider windows
-        // are sampled only to the viewport's display resolution.
-        const wantedWidth = Math.max(1200, Math.min(2048, Math.round(svg.clientWidth * (window.devicePixelRatio || 1))));
+        // Keep every native source pixel in narrow high-zoom windows. Wider
+        // windows are sampled only when they exceed the display's useful detail.
+        const wantedWidth = Math.max(1600, Math.min(4096, Math.round(svg.clientWidth * (window.devicePixelRatio || 1) * 2)));
         const overviewScale = 2 ** Math.min(4, Math.max(0, Math.floor(Math.log2((sourceBox[2] - sourceBox[0]) / wantedWidth))));
         const overview = await tiff.getImage(Math.log2(overviewScale));
         const sampleWindow = [
@@ -212,9 +233,11 @@
       if (!sourceDetail) return;
       clearTimeout(detailTimer);
       const request = ++detailRequest;
-      detailImage.style.display = 'none';
       const level = w / box[2];
-      if (level < 2 || !he.checked) return;
+      if (level < 2 || !he.checked) {
+        detailImage.style.display = 'none';
+        return;
+      }
       const view = box.slice();
       zoomInfo.textContent = `${level.toFixed(1)}× zoom · loading source H&E detail`;
       detailTimer = setTimeout(() => renderSourceWindow(request, view), 160);
