@@ -1884,11 +1884,6 @@
           "area_um2": 4173896.0
         }
       ],
-      "review_geometry": "camelyon16/inspector-vectors/tumor_087-bora-review.geojson.gz",
-      "review_geojson_sha256": "745cdbbd1e3f042141355e8d4c5855d101992ff0b251ba772360e7b5cb86df55",
-      "review_geojson_bytes": 2748880,
-      "review_feature_count": 115,
-      "review_omitted_count": 406,
       "tissue_support": "camelyon16/tissue-only-display/support/tumor_087.geojson.gz"
     },
     {

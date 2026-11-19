@@ -90,18 +90,14 @@
     if (!record) throw new Error('Missing tissue entry.');
     const url = path => new URL(path, manifestURL).href;
     const displayFilter = record.section === 'camelyon16' && record.geometry.endsWith('-bora.geojson.gz');
-    const refinedReview = record.id === 'benchmark3-tumor_087' && record.review_geometry;
     const minDisplayRedAreaUm2 = 20000;
-    const heading = make('h2', refinedReview ? 'Inspect the smoothed review Bora GeoJSON' :
-      displayFilter ? 'Inspect the display-filtered Bora GeoJSON' : 'Inspect the simplified GeoJSON');
+    const heading = make('h2', displayFilter ? 'Inspect the smoothed Bora GeoJSON' : 'Inspect the simplified GeoJSON');
     const description = displayFilter
-      ? refinedReview
-        ? `${record.label_description} This review view smooths vector borders over 12 µm and omits polygons smaller than 0.02 mm² in both classes. It is display-only: the original saved Bora vector, scored mask and metrics are unchanged. The 4 µm prediction grid cannot resolve a histological boundary more finely.`
-        : `${record.label_description} For readability, this view omits metastasis-like polygons smaller than 0.02 mm² (20,000 µm²). This is a display filter only: the scored mask, metrics and original saved Bora vector are unchanged.`
+      ? `${record.label_description} The viewer omits metastasis-like polygons smaller than 0.02 mm² (20,000 µm²). This display filter leaves the downloaded smoothed review vector, exact scored raster and metrics unchanged. The 4 µm prediction grid cannot resolve a histological boundary more finely.`
       : record.label_description;
     const note = make('p', description, {class: 'gi-note'});
     const controls = make('div', '', {class: 'gi-controls'});
-    const viewBytes = refinedReview ? record.review_geojson_bytes : record.geojson_bytes;
+    const viewBytes = record.geojson_bytes;
     const size = viewBytes < 100000 ? `${Math.ceil(viewBytes / 1000)} kB` : `${(viewBytes / 1e6).toFixed(1)} MB`;
     const load = make('button', `Load interactive polygons (${size})`, {type: 'button', class: 'gi-load'});
     const select = make('select', '', {'aria-label': 'Show assigned group', disabled: ''});
@@ -125,10 +121,8 @@
     if (sourceDetail) host.classList.add('gi-source-detail');
     const maxZoom = sourceDetail ? sourceDetail.maximum_zoom : 8;
     const zoomInfo = make('span', '', {class: 'gi-zoom-info', role: 'status', 'aria-live': 'polite'});
-    const download = make('a', displayFilter ? 'Download original saved Bora GeoJSON (.gz)' : 'Download saved GeoJSON' + (record.geometry.endsWith('.gz') ? ' (.gz)' : ''), {href: url(record.geometry), download: ''});
-    const displayDownload = displayFilter ? refinedReview
-      ? make('a', 'Download smoothed review GeoJSON (.gz)', {href: url(record.review_geometry), download: ''})
-      : make('a', 'Download displayed GeoJSON', {href: '#', download: `${record.id}-display-filtered.geojson`, hidden: ''}) : null;
+    const download = make('a', displayFilter ? 'Download saved smoothed Bora GeoJSON (.gz)' : 'Download saved GeoJSON' + (record.geometry.endsWith('.gz') ? ' (.gz)' : ''), {href: url(record.geometry), download: ''});
+    const displayDownload = displayFilter ? make('a', 'Download displayed GeoJSON', {href: '#', download: `${record.id}-display-filtered.geojson`, hidden: ''}) : null;
     controls.append(load, groupLabel, opacityLabel, outlineLabel, heLabel, zoomIn, zoomOut, fit);
     if (displayDownload) controls.append(displayDownload);
     controls.append(download);
@@ -409,18 +403,16 @@
       load.disabled = true; host.setAttribute('aria-busy', 'true');
       info.textContent = 'Loading saved polygons… Large whole slides may take a few seconds.';
       try {
-        const vector = await fetchJSON(url(refinedReview ? record.review_geometry : record.geometry));
+        const vector = await fetchJSON(url(record.geometry));
         if (vector.type !== 'FeatureCollection' || vector.features.length !==
-            (refinedReview ? record.review_feature_count : record.source_feature_count)) throw new Error('Unexpected polygon file.');
-        if (refinedReview && (!vector.display_only || vector.source_saved_geojson_sha256 !== record.stored_geojson_sha256))
-          throw new Error('Review vector does not match the saved Bora geometry.');
-        const visible = refinedReview ? vector.features : displayFilter ? vector.features.filter(feature => {
+            record.source_feature_count) throw new Error('Unexpected polygon file.');
+        const visible = displayFilter ? vector.features.filter(feature => {
           if (feature.properties.value !== 2) return true;
           const area = Number(feature.properties.area_um2);
           if (!Number.isFinite(area)) throw new Error('Missing physical area for a Bora polygon.');
           return area >= minDisplayRedAreaUm2;
         }) : vector.features;
-        if (displayDownload && !refinedReview) {
+        if (displayDownload) {
           const omitted = vector.features.length - visible.length;
           const omittedArea = vector.features.reduce((sum, feature) =>
             sum + (feature.properties.value === 2 && Number(feature.properties.area_um2) < minDisplayRedAreaUm2
@@ -431,7 +423,7 @@
             native_shape_yx: vector.native_shape_yx,
             native_mpp_xy: vector.native_mpp_xy,
             display_only: true,
-            source_scored_geojson_sha256: record.stored_geojson_sha256,
+            source_review_geojson_sha256: record.stored_geojson_sha256,
             display_filter: {class_value: 2, minimum_area_um2: minDisplayRedAreaUm2, omitted_polygons: omitted, omitted_area_um2: omittedArea},
             features: visible
           };
@@ -464,8 +456,7 @@
         select.disabled = opacity.disabled = outlines.disabled = false;
         load.hidden = true;
         choose('');
-        if (refinedReview) info.textContent = `${visible.length} smoothed review polygons · ${record.review_omitted_count} small polygons omitted across both classes below 0.02 mm². Original vector and scores are unchanged.`;
-        else if (displayFilter) info.textContent = `${visible.length} displayed polygons · ${vector.features.length - visible.length} small metastasis-like polygons omitted below 0.02 mm². Original saved vector and scores are unchanged.`;
+        if (displayFilter) info.textContent = `${visible.length} displayed polygons · ${vector.features.length - visible.length} small metastasis-like polygons omitted below 0.02 mm². The saved smoothed review vector and exact raster scores are unchanged by this display filter.`;
       } catch (error) {
         info.textContent = `The interactive polygons could not load. ${error.message} You can retry or use the saved GeoJSON download.`;
         load.disabled = false;
