@@ -1,0 +1,114 @@
+{
+  "status": "COMPLETE_REFERENCE_VISIBLE_CAM_TEST",
+  "fit_slide": "tumor_084",
+  "slide": "tumor_075",
+  "method": "Bora",
+  "metrics": {
+    "format": "bora-camelyon-binary-score-prototype-v7",
+    "shape_yx": [
+      4480,
+      5152
+    ],
+    "spacing_xy_um": [
+      4.0,
+      4.0
+    ],
+    "score_domain": "official_annotated_known_pixels_including_outside_tissue_support",
+    "annotated_known_pixels": 9081680,
+    "scored_known_pixels": 9081680,
+    "known_pixels_inside_reviewed_support": 6768872,
+    "annotated_pixels_outside_reviewed_support": 2312808,
+    "reference_positive_pixels_outside_reviewed_support": 0,
+    "excluded_pixels": 0,
+    "tolerance_um": 5.0,
+    "lesion_match_iou": 0.1,
+    "native": {
+      "tp": 3587,
+      "fp": 3791,
+      "fn": 151420,
+      "tn": 8922882,
+      "reference_positive_pixels": 155007,
+      "predicted_positive_pixels_in_known_domain": 7378,
+      "precision": 0.4861751152073733,
+      "recall": 0.023140890411400775,
+      "dice": 0.04417895741601749,
+      "iou": 0.02258844569830854,
+      "positive_metrics_undefined_reason": null,
+      "false_positive_tissue_area_mm2": 0.060655999999999995,
+      "false_positive_known_outside_support_area_mm2": 0.0,
+      "positive_outside_reviewed_support_pixels": 0,
+      "boundary": {
+        "reference_interface_pixels": 27466,
+        "predicted_interface_pixels": 7617,
+        "precision": 0.06078508599186031,
+        "recall": 0.016893613922668027,
+        "f1": 0.026439159670091392,
+        "hd95_um": 1893.0415698521713,
+        "reason": null
+      },
+      "lesions": {
+        "reference_components": 37,
+        "predicted_components": 232,
+        "matched_components": 2,
+        "missed_reference_components": 35,
+        "unmatched_predicted_components": 230,
+        "connectivity": 8,
+        "match_iou_threshold": 0.1
+      },
+      "balanced_accuracy": 0.511358104056876,
+      "known_pixel_false_positive_rate": 0.0004246822976488553
+    },
+    "shared_support": {
+      "tp": 1151,
+      "fp": 2510,
+      "fn": 153856,
+      "tn": 8924163,
+      "reference_positive_pixels": 155007,
+      "predicted_positive_pixels_in_known_domain": 3661,
+      "precision": 0.3143949740508058,
+      "recall": 0.007425471107756424,
+      "dice": 0.014508281443013084,
+      "iou": 0.007307147799920009,
+      "positive_metrics_undefined_reason": null,
+      "false_positive_tissue_area_mm2": 0.04016,
+      "false_positive_known_outside_support_area_mm2": 0.0,
+      "positive_outside_reviewed_support_pixels": 0,
+      "boundary": {
+        "reference_interface_pixels": 27466,
+        "predicted_interface_pixels": 1946,
+        "precision": 0.0986639260020555,
+        "recall": 0.0072817301390810454,
+        "f1": 0.01356250194254585,
+        "hd95_um": 3689.6704456270236,
+        "reason": null
+      },
+      "lesions": {
+        "reference_components": 37,
+        "predicted_components": 14,
+        "matched_components": 1,
+        "missed_reference_components": 36,
+        "unmatched_predicted_components": 13,
+        "connectivity": 8,
+        "match_iou_threshold": 0.1
+      },
+      "balanced_accuracy": 0.5035721456610929,
+      "known_pixel_false_positive_rate": 0.0002811797855707272
+    }
+  },
+  "metastasis_presence_rule": {
+    "minimum_component_pixels": 625,
+    "qualifying_components": 1,
+    "largest_component_pixels": 782,
+    "signal_present": true
+  },
+  "mask_receipt_sha256": "694a44c42770cb91333ff431e69704f286686034922473eb3f38b86f6518454f",
+  "mask_audit_sha256": "838839e6c9deaeb037d9c1458cb76a03576d165034aa5018c3d607ee1463c966",
+  "reference_receipt_sha256": "31f47dfc923c18d283787d12a734954c6412a8a53a602f7a60b225c043117d13",
+  "scoring_freeze_sha256": "1247d329e57db0fd1c75dc6a8ef8303b1d3f7ef99dde5b7e4b47fcd56d7976da",
+  "score_seconds": 3.889339273002406,
+  "peak_rss_kib": 1221636,
+  "reference_visible_before_prediction": true,
+  "reference_not_used_for_tuning": true,
+  "official_known_pixels_only": true,
+  "public_training_release_not_hidden_test": true
+}
