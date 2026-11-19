@@ -135,12 +135,12 @@
     const tileSize=512, maxLevel=Math.ceil(Math.log2(Math.max(crop.w,crop.h)));
     let tiffPromise=null, imageCountPromise=null;
     const imagePromises=new Map(), levelInfos=new Map();
-    const finishCanvas=(context,tile)=>{
+    const finishCanvas=(context,tile)=>new Promise(resolve=>{
       const image=new Image();
-      image.onload=()=>{if (!context.userData?.aborted) context.finish(image,null,'image');};
-      image.onerror=()=>{if (!context.userData?.aborted) context.finish(null,'Could not render a tissue tile.');};
+      image.onload=()=>{if (!context.userData?.aborted) context.finish(image,null,'image');resolve();};
+      image.onerror=()=>{if (!context.userData?.aborted) context.finish(null,'Could not render a tissue tile.');resolve();};
       image.src=tile.toDataURL('image/png');
-    };
+    });
     const source=async()=>{
       if (!tiffPromise) tiffPromise=GeoTIFF.fromUrl(record.high_resolution.url)
         .catch(error=>{tiffPromise=null;throw error;});
@@ -156,7 +156,12 @@
           const ratioY=record.high_resolution.height/image.getHeight();
           if (!(ratioX>=1 && ratioY>=1 && Number.isFinite(ratioX) && Number.isFinite(ratioY)))
             throw new Error(`Invalid official TIFF pyramid level ${index}.`);
-          return {index,ratioX,ratioY,downsample:Math.max(ratioX,ratioY)};
+          // CAMELYON16's later TIFF overviews have padded rows. Their raw
+          // height ratio is not a physical downsample and would vertically
+          // stretch source tiles against the prediction contours. Use only
+          // levels with matching measured X/Y scales; level 0 always qualifies.
+          const isotropic=Math.abs(ratioX-ratioY)/ratioX<.001;
+          return {index,ratioX,ratioY,downsample:Math.max(ratioX,ratioY),isotropic};
         })().catch(error=>{levelInfos.delete(index);imagePromises.delete(index);throw error;});
         levelInfos.set(index,info);
       }
@@ -171,10 +176,12 @@
       // needs only nearby IFDs even when the TIFF has an irregular pyramid.
       let index=Math.min(count-1,Math.max(0,Math.floor(Math.log2(factor))));
       let info=await levelAt(index);
-      while (info.downsample>factor*1.01 && index>0) info=await levelAt(--index);
+      while ((!info.isotropic || info.downsample>factor*1.01) && index>0)
+        info=await levelAt(--index);
+      if (!info.isotropic) throw new Error('No geometrically valid TIFF level.');
       while (index+1<count) {
         const next=await levelAt(index+1);
-        if (next.downsample<=info.downsample || next.downsample>factor*1.01) break;
+        if (!next.isotropic || next.downsample<=info.downsample || next.downsample>factor*1.01) break;
         info=next; index++;
       }
       return info;
@@ -185,7 +192,7 @@
       c.imageSmoothingEnabled=true; c.imageSmoothingQuality='high';
       c.drawImage(preview,box.x/crop.w*preview.naturalWidth,box.y/crop.h*preview.naturalHeight,
         box.w/crop.w*preview.naturalWidth,box.h/crop.h*preview.naturalHeight,0,0,outW,outH);
-      finishCanvas(context,tile);
+      return finishCanvas(context,tile);
     };
     return {
       width:crop.w,height:crop.h,tileSize,tileOverlap:0,minLevel:0,maxLevel,
@@ -197,7 +204,7 @@
         const factor=2**(maxLevel-level), left=x*tileSize*factor, top=y*tileSize*factor;
         const box={x:left,y:top,w:Math.max(0,Math.min(crop.w-left,tileSize*factor)),h:Math.max(0,Math.min(crop.h-top,tileSize*factor))};
         const outW=Math.max(1,Math.ceil(box.w/factor)),outH=Math.max(1,Math.ceil(box.h/factor));
-        if (factor>32) {previewTile(context,box,outW,outH); return;}
+        if (factor>32) {await previewTile(context,box,outW,outH); return;}
         state.detailRequests++; detailStatus();
         try {
           const levelInfo=await chooseLevel(factor);
@@ -218,7 +225,7 @@
           c.fillStyle='#fff'; c.fill(displayPath,'evenodd');
           c.setTransform(1,0,0,1,0,0);
           c.globalCompositeOperation='source-over';
-          finishCanvas(context,tile);
+          await finishCanvas(context,tile);
         } catch(error) {
           // A transient range failure must not disable source detail for every
           // later tile in this session. Only the affected tile uses the preview.
@@ -226,7 +233,7 @@
             state.sourceWarning=true;
             status('One source-detail tile fell back to the tissue preview; reload to retry. '+error.message);
           }
-          previewTile(context,box,outW,outH);
+          await previewTile(context,box,outW,outH);
         } finally {
           state.detailRequests=Math.max(0,state.detailRequests-1); detailStatus();
         }
@@ -319,7 +326,7 @@
     $('download-displayed').download=`${slide}-bora-display.geojson`;$('download-displayed').hidden=false;
     const viewer=OpenSeadragon({element:$('osd'),tileSources:tileSource(record,crop,preview,displayPath),
       showNavigationControl:false,showNavigator:false,minZoomImageRatio:.8,maxZoomPixelRatio:1.5,
-      animationTime:.25,blendTime:.35,alwaysBlend:true,imageLoaderLimit:8,
+      animationTime:.25,blendTime:0,alwaysBlend:false,imageLoaderLimit:8,
       gestureSettingsMouse:{clickToZoom:false,dblClickToZoom:true,scrollToZoom:true,dragToPan:true},
       gestureSettingsTouch:{pinchToZoom:true,dragToPan:true}});
     state.viewer=viewer;
