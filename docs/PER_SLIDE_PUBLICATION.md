@@ -29,6 +29,16 @@ For each slide:
    tables from current tumor_093-only scores. Run
    `python3 tools/refresh_cam_method_tables.py --check` as a release gate. A
    pending method remains pending; do not fill it from an older comparator fit.
+   For every completed Benchmark 3 Bora result, render both black-and-white
+   class-response maps from that slide's audited, smoothed tumor_093-only score
+   grid and reviewed H&E tissue support using
+   `python tools/render_cam_bw_projections.py --manifest <frozen-local-manifest.json> --site site --receipt <versioned-receipt.json>`.
+   Add the two panels to the slide page and a gallery link. These are relative
+   softmax displays, not calibrated probabilities or the final thresholded
+   mask. Confirm the same tissue crop as the H&E overview, exact source/model/
+   support hashes, and no visible exterior glass. Run
+   `python tools/verify_cam_bw_projections.py site`; the Pages workflow enforces
+   this for every currently scored one-slide test page, including future pages.
 4. Run site link and asset checks, then publish the same files from `main`.
    Wait for successful Pages deployment and stream-hash the live page and
    assets against the local release. Save a per-slide publication receipt.

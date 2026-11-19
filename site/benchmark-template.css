@@ -62,3 +62,7 @@ body[data-collection="camelyon16"] .method-score-table thead th:first-child,body
 /* Two fitting slides are displayed separately from scored CAMELYON16 cases. */
 .benchmark-page #training-slides .tissue-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(max-width:600px){.benchmark-page #training-slides .tissue-cards{grid-template-columns:1fr}}
+body[data-collection="camelyon16"] .bw-projection-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0 28px}
+body[data-collection="camelyon16"] .bw-projection-grid figure{background:#d7e9f2}
+body[data-collection="camelyon16"] .bw-projection-grid img{width:100%;height:auto;object-fit:contain}
+@media(max-width:700px){body[data-collection="camelyon16"] .bw-projection-grid{grid-template-columns:1fr}}

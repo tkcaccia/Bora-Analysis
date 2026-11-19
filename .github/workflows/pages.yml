@@ -26,6 +26,7 @@ jobs:
             site
             tools/verify_pages_site_only.py
             tools/refresh_cam_method_tables.py
+            tools/verify_cam_bw_projections.py
           sparse-checkout-cone-mode: false
       - uses: actions/setup-python@v5
         with:
@@ -34,6 +35,8 @@ jobs:
         run: python tools/verify_pages_site_only.py site
       - name: Verify Benchmark 3 method table matches audited scores
         run: python tools/refresh_cam_method_tables.py --check
+      - name: Verify Benchmark 3 BW projections for scored slides
+        run: python tools/verify_cam_bw_projections.py site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
