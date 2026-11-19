@@ -6,7 +6,7 @@
   "records": [
     {
       "id": "visium-breast",
-      "title": "Breast cancer \u00b7 Giotto",
+      "title": "Breast cancer · Giotto",
       "section": "visium",
       "page": "visium/breast.html#inspect-geojson",
       "geometry": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium/fullsection/breast/breast-Visium-Bora-final.geojson.gz",
@@ -116,7 +116,7 @@
     },
     {
       "id": "visium-colorectal",
-      "title": "Colorectal cancer \u00b7 Seurat",
+      "title": "Colorectal cancer · Seurat",
       "section": "visium",
       "page": "visium/colorectal.html#inspect-geojson",
       "geometry": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium/fullsection/colorectal/colorectal-Visium-Bora-final.geojson.gz",
@@ -262,7 +262,7 @@
     },
     {
       "id": "visium-tonsil",
-      "title": "Tonsil \u00b7 SpatialExperiment",
+      "title": "Tonsil · SpatialExperiment",
       "section": "visium",
       "page": "visium/tonsil.html#inspect-geojson",
       "geometry": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium/fullsection/tonsil/tonsil-Visium-Bora-final.geojson.gz",
@@ -359,8 +359,8 @@
         0.27381292333469226
       ],
       "source_feature_count": 12,
-      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
-      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "label_source": "Anonymous KODAMA–Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA–Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
       "groups": [
         {
           "value": 1,
@@ -461,8 +461,8 @@
         0.5473002328593483
       ],
       "source_feature_count": 9,
-      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
-      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "label_source": "Anonymous KODAMA–Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA–Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
       "groups": [
         {
           "value": 1,
@@ -545,8 +545,8 @@
         0.2738132569747595
       ],
       "source_feature_count": 16,
-      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
-      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "label_source": "Anonymous KODAMA–Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA–Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
       "groups": [
         {
           "value": 1,
@@ -671,8 +671,8 @@
         0.2738100430057021
       ],
       "source_feature_count": 8,
-      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
-      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "label_source": "Anonymous KODAMA–Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA–Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
       "groups": [
         {
           "value": 1,
@@ -749,8 +749,8 @@
         0.27381122608537745
       ],
       "source_feature_count": 14,
-      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
-      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "label_source": "Anonymous KODAMA–Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA–Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
       "groups": [
         {
           "value": 1,
@@ -840,7 +840,7 @@
     },
     {
       "id": "benchmark2-public-10x-lymph-node-3prime",
-      "title": "10x lymph node, 3\u2032",
+      "title": "10x lymph node, 3′",
       "section": "visium-hd",
       "page": "visium-hd/public-10x-lymph-node-3prime.html#inspect-geojson",
       "geometry": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-lymph-node-3prime/Bora-GeoJSON.gz",
@@ -863,8 +863,8 @@
         0.273773729659084
       ],
       "source_feature_count": 9,
-      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
-      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "label_source": "Anonymous KODAMA–Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA–Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
       "groups": [
         {
           "value": 1,
@@ -947,8 +947,8 @@
         0.27377360261883377
       ],
       "source_feature_count": 17,
-      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
-      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "label_source": "Anonymous KODAMA–Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA–Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
       "groups": [
         {
           "value": 1,
@@ -1056,7 +1056,7 @@
     },
     {
       "id": "benchmark2-public-10x-ovarian-3prime",
-      "title": "10x ovarian cancer, 3\u2032",
+      "title": "10x ovarian cancer, 3′",
       "section": "visium-hd",
       "page": "visium-hd/public-10x-ovarian-3prime.html#inspect-geojson",
       "geometry": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-ovarian-3prime/Bora-GeoJSON.gz",
@@ -1079,8 +1079,8 @@
         0.27381296759052987
       ],
       "source_feature_count": 7,
-      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
-      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "label_source": "Anonymous KODAMA–Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA–Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
       "groups": [
         {
           "value": 1,
@@ -1151,8 +1151,8 @@
         0.2738167812497657
       ],
       "source_feature_count": 7,
-      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
-      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "label_source": "Anonymous KODAMA–Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA–Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
       "groups": [
         {
           "value": 1,
@@ -1223,8 +1223,8 @@
         0.2738133037144553
       ],
       "source_feature_count": 11,
-      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
-      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "label_source": "Anonymous KODAMA–Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA–Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
       "groups": [
         {
           "value": 1,
@@ -1319,8 +1319,8 @@
         0.27377050549223736
       ],
       "source_feature_count": 13,
-      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
-      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "label_source": "Anonymous KODAMA–Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA–Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
       "groups": [
         {
           "value": 1,
@@ -1404,7 +1404,7 @@
     },
     {
       "id": "benchmark2-public-10x-tonsil-3prime",
-      "title": "10x tonsil, 3\u2032",
+      "title": "10x tonsil, 3′",
       "section": "visium-hd",
       "page": "visium-hd/public-10x-tonsil-3prime.html#inspect-geojson",
       "geometry": "https://raw.githubusercontent.com/tkcaccia/Bora-Analysis/b0f5ec6741a47acbbb8559ed80e7b89c3ba15973/site/visium-hd/public-10x-tonsil-3prime/Bora-GeoJSON.gz",
@@ -1427,8 +1427,8 @@
         0.2737758730321103
       ],
       "source_feature_count": 6,
-      "label_source": "Anonymous KODAMA\u2013Bora group; tissue name is an unvalidated transfer prediction",
-      "label_description": "These are the saved KODAMA\u2013Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
+      "label_source": "Anonymous KODAMA–Bora group; tissue name is an unvalidated transfer prediction",
+      "label_description": "These are the saved KODAMA–Bora group contours. Parenthetical tissue names are model predictions, not expert-verified slide labels. The supervised Bora GeoJSON is separately downloadable above. The displayed contours use the existing spatial cleanup; the original saved coordinates are unchanged.",
       "groups": [
         {
           "value": 1,
@@ -1495,7 +1495,7 @@
       ],
       "source_feature_count": 102,
       "label_source": "CAMELYON16 official expert annotation; overview display only",
-      "label_description": "Expert-annotated known pixels on the sole fitting slide: blue is nonmetastatic tissue (official code 1), red is metastatic tissue (code 2). Uncolored code 0 pixels are outside the official known-label domain; they are not expert-labeled nonmetastatic tissue. The 8 \u00b5m sampled polygons are for inspection, while training used the verified 0.5 \u00b5m aligned mask clipped to reviewed H&E tissue. This is a training annotation, not a Bora prediction or a held-out score.",
+      "label_description": "Expert-annotated known pixels on the sole fitting slide: blue is nonmetastatic tissue (official code 1), red is metastatic tissue (code 2). Uncolored code 0 pixels are outside the official known-label domain; they are not expert-labeled nonmetastatic tissue. The 8 µm sampled polygons are for inspection, while training used the verified 0.5 µm aligned mask clipped to reviewed H&E tissue. This is a training annotation, not a Bora prediction or a held-out score.",
       "groups": [
         {
           "value": 1,
@@ -1575,7 +1575,7 @@
       ],
       "source_feature_count": 129,
       "label_source": "tumor_093-only Bora binary prediction, not expert annotation",
-      "label_description": "These are Bora model contours. Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The separate official reference is used only for scores. Contour fidelity: these polygons follow the exact 4 \u00b5m scored mask. A 6 \u00b5m class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
+      "label_description": "These are Bora model contours. Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The separate official reference is used only for scores. Contour fidelity: these polygons follow the exact 4 µm scored mask. A 6 µm class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
       "groups": [
         {
           "value": 1,
@@ -1618,7 +1618,7 @@
       ],
       "source_feature_count": 160,
       "label_source": "tumor_093-only Bora binary prediction, not expert annotation",
-      "label_description": "These are Bora model contours. Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The separate official reference is used only for scores. Contour fidelity: these polygons follow the exact 4 \u00b5m scored mask. A 6 \u00b5m class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
+      "label_description": "These are Bora model contours. Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The separate official reference is used only for scores. Contour fidelity: these polygons follow the exact 4 µm scored mask. A 6 µm class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
       "groups": [
         {
           "value": 1,
@@ -1661,7 +1661,7 @@
       ],
       "source_feature_count": 399,
       "label_source": "tumor_093-only Bora binary prediction, not expert annotation",
-      "label_description": "These are Bora model contours. Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The separate official reference is used only for scores. Contour fidelity: these polygons follow the exact 4 \u00b5m scored mask. A 6 \u00b5m class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
+      "label_description": "These are Bora model contours. Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The separate official reference is used only for scores. Contour fidelity: these polygons follow the exact 4 µm scored mask. A 6 µm class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
       "groups": [
         {
           "value": 1,
@@ -1704,7 +1704,7 @@
       ],
       "source_feature_count": 96,
       "label_source": "tumor_093-only Bora binary prediction, not expert annotation",
-      "label_description": "These are Bora model contours. Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The separate official reference is used only for scores. Contour fidelity: these polygons follow the exact 4 \u00b5m scored mask. A 6 \u00b5m class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
+      "label_description": "These are Bora model contours. Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The separate official reference is used only for scores. Contour fidelity: these polygons follow the exact 4 µm scored mask. A 6 µm class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
       "groups": [
         {
           "value": 1,
@@ -1747,7 +1747,7 @@
       ],
       "source_feature_count": 329,
       "label_source": "tumor_093-only Bora binary prediction, not expert annotation",
-      "label_description": "These are Bora model contours. Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The separate official reference is used only for scores. Contour fidelity: these polygons follow the exact 4 \u00b5m scored mask. A 6 \u00b5m class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
+      "label_description": "These are Bora model contours. Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The separate official reference is used only for scores. Contour fidelity: these polygons follow the exact 4 µm scored mask. A 6 µm class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
       "groups": [
         {
           "value": 1,
@@ -1797,7 +1797,7 @@
       ],
       "source_feature_count": 521,
       "label_source": "tumor_093-only Bora fit with training-selected threshold; not expert annotation",
-      "label_description": "Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The score threshold was selected on tumor_093 training labels only. The 4 \u00b5m scored raster received a 6 \u00b5m contour pass and 2,000 \u00b5m\u00b2 area cleanup. This downloadable review GeoJSON has globally fitted 3 \u00b5m contour simplification with checked raster agreement; the exact score raster is separate.",
+      "label_description": "Red denotes metastasis-like tissue and green denotes non-metastatic tissue. The score threshold was selected on tumor_093 training labels only. The 4 µm scored raster received a 6 µm contour pass and 2,000 µm² area cleanup. This downloadable review GeoJSON has globally fitted 3 µm contour simplification with checked raster agreement; the exact score raster is separate.",
       "groups": [
         {
           "value": 1,
@@ -1811,7 +1811,12 @@
           "color": "#f4474e",
           "area_um2": 9180176
         }
-      ]
+      ],
+      "review_geometry": "camelyon16/inspector-vectors/tumor_087-bora-review.geojson.gz",
+      "review_geojson_sha256": "745cdbbd1e3f042141355e8d4c5855d101992ff0b251ba772360e7b5cb86df55",
+      "review_geojson_bytes": 2748880,
+      "review_feature_count": 115,
+      "review_omitted_count": 406
     },
     {
       "id": "benchmark3-normal_019",
@@ -1840,7 +1845,7 @@
       ],
       "source_feature_count": 25,
       "label_source": "tumor_093-only Bora binary prediction, not expert annotation",
-      "label_description": "Green denotes non-metastatic tissue and red denotes metastasis-like tissue. Official expert annotation is linked separately. Contour fidelity: these polygons follow the exact 4 \u00b5m scored mask. A 6 \u00b5m class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
+      "label_description": "Green denotes non-metastatic tissue and red denotes metastasis-like tissue. Official expert annotation is linked separately. Contour fidelity: these polygons follow the exact 4 µm scored mask. A 6 µm class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
       "groups": [
         {
           "value": 1,
@@ -1883,7 +1888,7 @@
       ],
       "source_feature_count": 68,
       "label_source": "tumor_093-only Bora binary prediction, not expert annotation",
-      "label_description": "Green denotes non-metastatic tissue and red denotes metastasis-like tissue. Official expert annotation is linked separately. Contour fidelity: these polygons follow the exact 4 \u00b5m scored mask. A 6 \u00b5m class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
+      "label_description": "Green denotes non-metastatic tissue and red denotes metastasis-like tissue. Official expert annotation is linked separately. Contour fidelity: these polygons follow the exact 4 µm scored mask. A 6 µm class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
       "groups": [
         {
           "value": 1,
@@ -1926,7 +1931,7 @@
       ],
       "source_feature_count": 199,
       "label_source": "tumor_093-only Bora binary prediction, not expert annotation",
-      "label_description": "Green denotes non-metastatic tissue and red denotes metastasis-like tissue. Official expert annotation is linked separately. Contour fidelity: these polygons follow the exact 4 \u00b5m scored mask. A 6 \u00b5m class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
+      "label_description": "Green denotes non-metastatic tissue and red denotes metastasis-like tissue. Official expert annotation is linked separately. Contour fidelity: these polygons follow the exact 4 µm scored mask. A 6 µm class-contour smoothing step preceded export, while reviewed tissue support stayed fixed. The vector export used no additional smoothing, so grid steps can be visible at high zoom.",
       "groups": [
         {
           "value": 1,
