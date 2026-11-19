@@ -20,6 +20,17 @@
 .benchmark-page .tissue-card{min-width:0;border:1px solid var(--line);border-radius:9px;background:#fff;overflow:hidden}
 .benchmark-page .card-preview{display:flex;align-items:center;justify-content:center;aspect-ratio:4/3;background:#edf3f5;border-bottom:1px solid var(--line)}
 .benchmark-page .card-preview img{display:block;width:100%;height:100%;max-height:100%;object-fit:contain;margin:0}
+
+/* Benchmark 3 display assets have transparent pixels outside tissue. Make the
+   omitted area visibly distinct from pale glass without changing any scores. */
+body[data-collection="camelyon16"] .card-preview img,
+body[data-collection="camelyon16"] .unified-panel img,
+body[data-collection="camelyon16"] .training-comparison-card img,
+body[data-collection="camelyon16"] .expert-pair img,
+body[data-collection="camelyon16"] .expert-full img,
+body[data-collection="camelyon16"] .preview,
+body[data-collection="camelyon16"] .gi-map,
+body[data-collection="camelyon16"] .gi-original img {background:#d7e9f2!important;}
 .benchmark-page .card-body{padding:20px}.benchmark-page .card-body h2{margin:0 0 12px}.benchmark-page .card-meta{color:#526b75;font-size:14px;margin:0 0 8px}.benchmark-page .card-dimensions{display:block;color:#526b75;font-size:14px;font-variant-numeric:tabular-nums}
 .benchmark-page .card-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin:18px 0 0}.benchmark-page .card-actions .primary-link{padding:8px 12px;background:var(--accent);color:#fff;border-radius:5px;text-decoration:none}
 .benchmark-page .card-body details{margin-top:16px}.benchmark-page .card-body .note{font-size:14px;margin-bottom:0}

@@ -1477,7 +1477,7 @@
       "stored_geojson_sha256": "8e3816d3e8d017049c5582565aea551bf2ad9eb157cfaaea57af41773097954e",
       "source_geojson_sha256": "25eee33aad16bb0c4ebf378016f52db8493ec500a125dc51083ccda51a350010",
       "geojson_bytes": 80024,
-      "image": "camelyon16/inspector-previews/tumor_093-tissue.webp",
+      "image": "camelyon16/tissue-only-display/inspector-previews/tumor_093-tissue-tissue.webp",
       "image_sha256": "945bfafa70cd57bdae95a1c3ba33ae8b372d0d18a8fcb19206d8a63702afec0d",
       "image_bounds_xywh": [
         3408,
@@ -1518,7 +1518,8 @@
         "calibrated_width": 44497,
         "calibrated_height": 40556,
         "maximum_zoom": 128
-      }
+      },
+      "tissue_support": "camelyon16/tissue-only-display/support/tumor_093.geojson.gz"
     },
     {
       "id": "benchmark3-normal_093-support",
@@ -1529,7 +1530,7 @@
       "stored_geojson_sha256": "3ad6ef201897f2957f62f657352c0a3205168ad64ee2b8503e8afff8da920012",
       "source_geojson_sha256": "5050149bd1b8130123255b2a6f9370181b57407770e59bf4aa1e3cb326d8f678",
       "geojson_bytes": 12066,
-      "image": "camelyon16/inspector-previews/normal_093-tissue.webp",
+      "image": "camelyon16/tissue-only-display/inspector-previews/normal_093-tissue-tissue.webp",
       "image_sha256": "18719c16e6f8d73e7437f5fb88827462136c210b167290e8bc6e177e5575c4bf",
       "image_bounds_xywh": [
         6416,
@@ -1564,7 +1565,8 @@
         "calibrated_width": 47047,
         "calibrated_height": 103554,
         "maximum_zoom": 128
-      }
+      },
+      "tissue_support": "camelyon16/tissue-only-display/support/normal_093.geojson.gz"
     },
     {
       "id": "benchmark3-tumor_038",
@@ -1575,7 +1577,7 @@
       "stored_geojson_sha256": "0afa66b1f9c6566d33dc844eb4ba29c3ebb984ac93b9d0901b46fba4d39e2abc",
       "source_geojson_sha256": "3fcf6874b64db44c4e7d6860642989020126f7754b65f2eee4bd4092b63b7087",
       "geojson_bytes": 837035,
-      "image": "camelyon16/inspector-previews/tumor_038-he.jpg",
+      "image": "camelyon16/tissue-only-display/inspector-previews/tumor_038-he-tissue.webp",
       "image_sha256": "5e6e4117ae8ac62510255fa34fd77ca5ebf69848d3b85c9c416b3686b612e55d",
       "image_bounds_xywh": [
         0,
@@ -1616,7 +1618,8 @@
         "calibrated_width": 47545,
         "calibrated_height": 107537,
         "maximum_zoom": 128
-      }
+      },
+      "tissue_support": "camelyon16/tissue-only-display/support/tumor_038.geojson.gz"
     },
     {
       "id": "benchmark3-normal_116",
@@ -1627,7 +1630,7 @@
       "stored_geojson_sha256": "d59231907414470cab7c19335efb46428bc3d14e980abd5eb405234c943a9c3d",
       "source_geojson_sha256": "84b97121e9837d2028aa0dc0b430b5fc72beb6e188c18ffb16897372ad23a439",
       "geojson_bytes": 855271,
-      "image": "camelyon16/inspector-previews/normal_116-he.jpg",
+      "image": "camelyon16/tissue-only-display/inspector-previews/normal_116-he-tissue.webp",
       "image_sha256": "8925025b20f93243cca91070c7f5520027d825c947b34521727726e4961936cf",
       "image_bounds_xywh": [
         0,
@@ -1668,7 +1671,8 @@
         "calibrated_width": 59482,
         "calibrated_height": 17890,
         "maximum_zoom": 128
-      }
+      },
+      "tissue_support": "camelyon16/tissue-only-display/support/normal_116.geojson.gz"
     },
     {
       "id": "benchmark3-tumor_084",
@@ -1679,7 +1683,7 @@
       "stored_geojson_sha256": "c69be94a5635ca8ae0aac3883b303ea8c68727d7a763a24133b16a53eca452db",
       "source_geojson_sha256": "f2baa438d9fb494317cecd3d326d1afae93045804eaa438b8da5c64038bd633e",
       "geojson_bytes": 2120900,
-      "image": "camelyon16/inspector-previews/tumor_084-he.jpg",
+      "image": "camelyon16/tissue-only-display/inspector-previews/tumor_084-he-tissue.webp",
       "image_sha256": "5464d689ffaf63379e9859a06eddc68038a243412a210cdd38cc07ff9190bf9e",
       "image_bounds_xywh": [
         0,
@@ -1720,7 +1724,8 @@
         "calibrated_width": 29664,
         "calibrated_height": 38934,
         "maximum_zoom": 128
-      }
+      },
+      "tissue_support": "camelyon16/tissue-only-display/support/tumor_084.geojson.gz"
     },
     {
       "id": "benchmark3-tumor_091",
@@ -1731,7 +1736,7 @@
       "stored_geojson_sha256": "cfd9c26bfbe15edf3c2e59b2362786d8434432bdf200d1dd9007967cca998ceb",
       "source_geojson_sha256": "968420326827f37813ebfbcaf58a88b77a59a656ecb225ee92327ea42d3df662",
       "geojson_bytes": 637242,
-      "image": "camelyon16/inspector-previews/tumor_091-he.jpg",
+      "image": "camelyon16/tissue-only-display/inspector-previews/tumor_091-he-tissue.webp",
       "image_sha256": "acda3e6de60a70ab30307f21adfc1e8ec136111438d46a20967b1f544c7a0798",
       "image_bounds_xywh": [
         0,
@@ -1772,7 +1777,8 @@
         "calibrated_width": 27810,
         "calibrated_height": 24333,
         "maximum_zoom": 128
-      }
+      },
+      "tissue_support": "camelyon16/tissue-only-display/support/tumor_091.geojson.gz"
     },
     {
       "id": "benchmark3-tumor_075",
@@ -1783,7 +1789,7 @@
       "stored_geojson_sha256": "957ea6fa9fc6ffbaa4d6261b5f433437249e0e147235e5980cd6ad5f3cd0ff6b",
       "source_geojson_sha256": "529b55d48a646d895575d9d48447f4b351c64efecabd04ef21b82db7ec660da3",
       "geojson_bytes": 1717273,
-      "image": "camelyon16/inspector-previews/tumor_075-he.jpg",
+      "image": "camelyon16/tissue-only-display/inspector-previews/tumor_075-he-tissue.webp",
       "image_sha256": "5f047ec0533140aef99b2197cb68396ce4b9f6ef8825ea82b654db74e4e028ba",
       "image_bounds_xywh": [
         0,
@@ -1824,7 +1830,8 @@
         "calibrated_width": 40788,
         "calibrated_height": 35689,
         "maximum_zoom": 128
-      }
+      },
+      "tissue_support": "camelyon16/tissue-only-display/support/tumor_075.geojson.gz"
     },
     {
       "id": "benchmark3-tumor_087",
@@ -1835,7 +1842,7 @@
       "stored_geojson_sha256": "635805e71adae2c473f19352ab572a855554023ed687b4e0e3db06935ecd75a4",
       "source_geojson_sha256": "c2df8302c9255cae88957daf7631f1ff2e0c8da9c0faa1c905eb70f689a9ad55",
       "geojson_bytes": 2021810,
-      "image": "camelyon16/inspector-previews/tumor_087-he.jpg",
+      "image": "camelyon16/tissue-only-display/inspector-previews/tumor_087-he-tissue.webp",
       "image_sha256": "a0c423bcdebd41c66d6a3acb9d3a5498d17b8bac43d671a1df1ce3105d30563e",
       "high_resolution": {
         "url": "https://camelyon-dataset.s3.amazonaws.com/CAMELYON16/images/tumor_087.tif",
@@ -1881,7 +1888,8 @@
       "review_geojson_sha256": "745cdbbd1e3f042141355e8d4c5855d101992ff0b251ba772360e7b5cb86df55",
       "review_geojson_bytes": 2748880,
       "review_feature_count": 115,
-      "review_omitted_count": 406
+      "review_omitted_count": 406,
+      "tissue_support": "camelyon16/tissue-only-display/support/tumor_087.geojson.gz"
     },
     {
       "id": "benchmark3-normal_019",
@@ -1892,7 +1900,7 @@
       "stored_geojson_sha256": "9636c2ba379007586140cb5f26d2bfacef180920955c2b082a5d3f8608f1e4db",
       "source_geojson_sha256": "1e307d9a23930670f999567539da5ed2d5f705a04c0e50f872b7167817884253",
       "geojson_bytes": 194484,
-      "image": "camelyon16/local-assets/normal_019/overview-he.webp",
+      "image": "camelyon16/tissue-only-display/local-assets/normal_019/overview-he-tissue.webp",
       "image_sha256": "7dba053409a5a1cb41a7b169bcf18daf8f7a5edf3f14f4db58e3622b1f55e09c",
       "image_bounds_xywh": [
         23368,
@@ -1933,7 +1941,8 @@
         "calibrated_width": 47545,
         "calibrated_height": 107786,
         "maximum_zoom": 128
-      }
+      },
+      "tissue_support": "camelyon16/tissue-only-display/support/normal_019.geojson.gz"
     },
     {
       "id": "benchmark3-normal_108",
@@ -1944,7 +1953,7 @@
       "stored_geojson_sha256": "58704973b71ac50713f8ee91d2e10e72af61dea429d34d87ab99cfd312e0bcbc",
       "source_geojson_sha256": "d433348d212029a356034e760f450a19ffc33f8f6a1912f7394c9c97e2f45db3",
       "geojson_bytes": 373405,
-      "image": "camelyon16/inspector-previews/normal_108-he.jpg",
+      "image": "camelyon16/tissue-only-display/inspector-previews/normal_108-he-tissue.webp",
       "image_sha256": "33b98f3ea127c6e7f2163c489dce6518df943c2da19c5b7f88f69a75e79303d5",
       "image_bounds_xywh": [
         0,
@@ -1985,7 +1994,8 @@
         "calibrated_width": 20447,
         "calibrated_height": 16264,
         "maximum_zoom": 128
-      }
+      },
+      "tissue_support": "camelyon16/tissue-only-display/support/normal_108.geojson.gz"
     },
     {
       "id": "benchmark3-normal_150",
@@ -1996,7 +2006,7 @@
       "stored_geojson_sha256": "37aec16515e5fca60ffe5925c1c6c5f2c30658cb7850d96e92234b0fbb442d7e",
       "source_geojson_sha256": "d096f1fbbdf864c6dd0712fb740a5e061232995da4bbda6975f367c6b7dab33d",
       "geojson_bytes": 1698906,
-      "image": "camelyon16/inspector-previews/normal_150-he.jpg",
+      "image": "camelyon16/tissue-only-display/inspector-previews/normal_150-he-tissue.webp",
       "image_sha256": "31299f441d6aac1c9126cddfac0c2c17634dae54aace60c0a58b7c83a11743a6",
       "image_bounds_xywh": [
         0,
@@ -2037,7 +2047,8 @@
         "calibrated_width": 29741,
         "calibrated_height": 27648,
         "maximum_zoom": 128
-      }
+      },
+      "tissue_support": "camelyon16/tissue-only-display/support/normal_150.geojson.gz"
     }
   ]
 }

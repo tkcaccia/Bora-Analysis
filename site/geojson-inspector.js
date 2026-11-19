@@ -136,13 +136,35 @@
     const info = make('p', 'Load the polygons to inspect their assigned groups. The H&E preview is shown below.', {class: 'gi-status', role: 'status', 'aria-live': 'polite'});
     const svg = svgNode('svg', {class: 'gi-map', tabindex: '0', role: 'img', 'aria-label': `${record.title}: interactive assigned groups over H&E. Drag or use arrow keys to pan; plus and minus zoom; zero fits the image.`});
     const [x, y, w, h] = record.image_bounds_xywh;
+    // The reviewed H&E support clips every CAM layer, including source TIFF
+    // detail read at high zoom. This is display-only; exported vectors and
+    // the scoring domain retain their original audited identities.
+    const tissue = record.tissue_support ? await fetchJSON(url(record.tissue_support)) : null;
+    if (boundedImage && (!tissue || tissue.type !== 'FeatureCollection' ||
+        tissue.coordinate_system !== 'calibrated_image_pixel_xy' || !tissue.features.length)) {
+      throw new Error('The reviewed tissue support is unavailable; the unmasked image will not be shown.');
+    }
+    const clipId = `gi-tissue-${record.id.replace(/[^a-zA-Z0-9_-]/g, '-')}`;
+    const imageLayer = svgNode('g', tissue ? {'clip-path': `url(#${clipId})`} : {});
+    const polygonLayer = svgNode('g', tissue ? {'clip-path': `url(#${clipId})`} : {});
+    if (tissue) {
+      const defs = svgNode('defs', {});
+      const clip = svgNode('clipPath', {id: clipId, clipPathUnits: 'userSpaceOnUse'});
+      for (const feature of tissue.features) {
+        const path = svgNode('path', {d: polygonPath(feature.geometry), 'clip-rule': 'evenodd', 'fill-rule': 'evenodd'});
+        clip.append(path);
+      }
+      defs.append(clip);
+      svg.append(defs);
+    }
     const image = svgNode('image', {href: url(record.image), x, y, width: w, height: h, preserveAspectRatio: 'none'});
-    svg.append(image);
+    imageLayer.append(image);
     const detailImage = sourceDetail ? svgNode('image', {x, y, width: w, height: h, preserveAspectRatio: 'none'}) : null;
     if (detailImage) {
       detailImage.style.display = 'none';
-      svg.append(detailImage);
+      imageLayer.append(detailImage);
     }
+    svg.append(imageLayer, polygonLayer);
     const legend = make('div', '', {class: 'gi-legend', 'aria-label': 'Assigned group legend'});
     const zoomHelp = sourceDetail
       ? ` This slide zooms to ${maxZoom}×. At 2× and above, the visible H&E window is read at its needed resolution from the official source TIFF; the site does not host the full slide.`
@@ -156,7 +178,7 @@
       const frame = make('figure');
       const openPreview = make('a', '', {href: url(record.image), 'aria-label': `Open the H&E image for ${slide || record.title} at its saved preview resolution`});
       openPreview.append(make('img', '', {src: url(record.image), alt: `${slide || record.title} H&E image without GeoJSON polygons`, loading: 'lazy'}));
-      frame.append(openPreview, make('figcaption', 'H&E without prediction overlays. This sampled preview uses the GeoJSON viewer’s registered frame; its crop or exterior background can reflect the reviewed tissue display. Open the dataset-hosted TIFF below for the unchanged full-resolution source slide.'));
+      frame.append(openPreview, make('figcaption', 'H&E without prediction overlays, clipped to the reviewed tissue support in the registered viewer frame. Exterior glass is transparent in this display. Open the dataset-hosted TIFF below for the unchanged full-resolution source slide.'));
       original.append(frame);
       if (slide) original.append(make('p', '', {class: 'gi-original-source'}));
       if (slide) original.lastChild.append(make('a', 'Open the original full-resolution H&E slide at CAMELYON16 AWS (large TIFF)', {href: `https://camelyon-dataset.s3.amazonaws.com/CAMELYON16/images/${slide}.tif`}));
@@ -430,7 +452,7 @@
           await new Promise(resolve => requestAnimationFrame(resolve));
         }
         paths = staged;
-        svg.append(...paths.map(row => row.path));
+        polygonLayer.append(...paths.map(row => row.path));
         for (const group of record.groups) {
           select.append(make('option', group.name, {value: group.value}));
           const button = make('button', '', {type: 'button', 'data-value': group.value, 'aria-pressed': 'false'});
