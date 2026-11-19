@@ -34,7 +34,7 @@ for score in sorted(cam.glob('*-scores.json')):
             raise ValueError(f'{slide}: invalid WebP')
         if len(re.findall(re.escape(relative.removeprefix('camelyon16/')), page)) != 1:
             raise ValueError(f'{slide}: image is not shown exactly once')
-    index = (cam / 'index.html').read_text()
+    index = (cam / 'index-tumor093-archive.html').read_text()
     if index.count(f'href="{slide}.html#bora-bw-projections"') != 1:
         raise ValueError(f'{slide}: gallery BW link missing')
     count += 1

@@ -17,7 +17,8 @@ from pathlib import Path
 
 SITE = Path(__file__).resolve().parents[1]
 CAM = SITE / "site" / "camelyon16"
-INDEX = CAM / "index.html"
+# The tumor_093-only cohort remains a distinct, immutable model-version archive.
+INDEX = CAM / "index-tumor093-archive.html"
 SECTION_ID = "one-slide-bora-results"
 METHODS = (
     ("bora", "Bora"),
