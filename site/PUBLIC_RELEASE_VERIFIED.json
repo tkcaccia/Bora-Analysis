@@ -5,7 +5,7 @@
     "BUILD_PROVENANCE.json": "7353c2f089fe41ad934780d7df8f54f0ea336e8b147968e3875ed73d9fe06d97",
     "DATA_LICENSES.md": "da566fde847ff32be11d44c141e8a508e1a324fab6ea41019478f5ab91ec8184",
     "attribution.html": "97b23488ff4dd0e12a70a7cb2ea8ffcea91ea85d4406739d16a332ac15cf081a",
-    "benchmark-template.css": "8ce9e6c84a75bdd4bc2776365276d5d4c69a980ab7a4bc56b06a46fd238f2bdb",
+    "benchmark-template.css": "715c94587f0e44bb7a9994d693b0b130cb89139b76ca76c50ce58585b2ed1075",
     "benchmark1-comparators/bora-supported-bw-v1/case-001/class-01.webp": "edfed25ed68f996312523d75de1e4b46b29941c9620afb139b58625dda94875b",
     "benchmark1-comparators/bora-supported-bw-v1/case-001/class-02.webp": "81d46045b28ded12fbc7e6cd415b4c70709f9d658d4110393fa6fa9b3c2a6d70",
     "benchmark1-comparators/bora-supported-bw-v1/case-001/class-03.webp": "855f7352eadccc2216fa7f3039d474fec8100d34bb0e03c5d2e9ab7ccd9fed1b",
@@ -3463,7 +3463,7 @@
     "camelyon16/expert-annotations/tumor_101-aligned.png": "29329994adba1b926bfa32dc8909b0c29e3c25420d4d889bf89b37ab961816d1",
     "camelyon16/expert-annotations/tumor_101-full.png": "ffcdc304ab331b4aa433539b992f69a68d0d9d443c190879140725f7071b2976",
     "camelyon16/expert-annotations/tumor_101-he.webp": "419259e0ec9c4a44d3676a8b671c6c8cf38910fb722eb942f8ace49d252b7ab3",
-    "camelyon16/index.html": "37c5d9396144ba0c7f27076513c77afbb656cb35fbf297c8bf5f373d29b3ba48",
+    "camelyon16/index.html": "de20458ba6ab97fb01e5664571706786a4ca039ee3f9679d735822b0278a35e3",
     "camelyon16/inspector-previews/normal_093-tissue.webp": "18719c16e6f8d73e7437f5fb88827462136c210b167290e8bc6e177e5575c4bf",
     "camelyon16/inspector-previews/normal_108-he.jpg": "33b98f3ea127c6e7f2163c489dce6518df943c2da19c5b7f88f69a75e79303d5",
     "camelyon16/inspector-previews/normal_116-he.jpg": "8925025b20f93243cca91070c7f5520027d825c947b34521727726e4961936cf",
@@ -5511,6 +5511,6 @@
   "grayscale_group_map_count": 129,
   "public_wsi_count": 12,
   "retired_case_count": 4,
-  "size_bytes": 612925188,
+  "size_bytes": 612933558,
   "status": "BENCHMARK1_SOURCE_DOWNLOADS_ADDED"
 }

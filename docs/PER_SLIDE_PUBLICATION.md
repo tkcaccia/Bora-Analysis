@@ -23,7 +23,12 @@ For each slide:
 3. Add that slide's page, scores, figure and downloads to the local site. Link
    it from the correct benchmark index with its training and reference scope.
    Label historical and new model versions separately; never replace old
-   numbers without a new versioned receipt.
+   numbers without a new versioned receipt. For Benchmark 3, run
+   `python3 tools/refresh_cam_method_tables.py` after staging the independently
+   audited `<slide>-scores.json`. This updates the positive and benign method
+   tables from current tumor_093-only scores. Run
+   `python3 tools/refresh_cam_method_tables.py --check` as a release gate. A
+   pending method remains pending; do not fill it from an older comparator fit.
 4. Run site link and asset checks, then publish the same files from `main`.
    Wait for successful Pages deployment and stream-hash the live page and
    assets against the local release. Save a per-slide publication receipt.
@@ -33,8 +38,8 @@ IoU is undefined; show false-positive tissue area instead. Do not publish a
 population or independent-test claim from selected or previously inspected
 slides. No full CAMELYON16 source slide is redistributed.
 
-The one-slide Bora reanalysis added on 16 November 2026 has one frozen
-source-only fit and six already inspected score slides. Its per-slide score
-blocks and JSON are separate from the historical two-slide five-method gallery.
-Future newly verified CAMELYON16 slides should be added individually by this
-same process, using a new versioned result and receipt.
+The one-slide CAM study uses tumor_093 as its sole CAM fitting slide. The
+current index tables include every independently audited method score and
+distinguish source-selected slides from previously inspected ones. The six
+earlier inspected score slides remain descriptive. Future newly verified
+CAMELYON16 method results must update the table in the same per-slide release.

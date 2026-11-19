@@ -25,12 +25,15 @@ jobs:
           sparse-checkout: |
             site
             tools/verify_pages_site_only.py
+            tools/refresh_cam_method_tables.py
           sparse-checkout-cone-mode: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - name: Verify exact public-only artifact
         run: python tools/verify_pages_site_only.py site
+      - name: Verify Benchmark 3 method table matches audited scores
+        run: python tools/refresh_cam_method_tables.py --check
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

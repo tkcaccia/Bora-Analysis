@@ -34,6 +34,13 @@ body[data-collection="camelyon16"] .gi-original img {background:#d7e9f2!importan
 .benchmark-page .card-body{padding:20px}.benchmark-page .card-body h2{margin:0 0 12px}.benchmark-page .card-meta{color:#526b75;font-size:14px;margin:0 0 8px}.benchmark-page .card-dimensions{display:block;color:#526b75;font-size:14px;font-variant-numeric:tabular-nums}
 .benchmark-page .card-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin:18px 0 0}.benchmark-page .card-actions .primary-link{padding:8px 12px;background:var(--accent);color:#fff;border-radius:5px;text-decoration:none}
 .benchmark-page .card-body details{margin-top:16px}.benchmark-page .card-body .note{font-size:14px;margin-bottom:0}
+/* Keep the CAM method matrix legible when five audited methods are shown. */
+body[data-collection="camelyon16"] .method-score-table{min-width:1080px}
+body[data-collection="camelyon16"] .method-score-table th,body[data-collection="camelyon16"] .method-score-table td{vertical-align:top}
+body[data-collection="camelyon16"] .method-score-table td{min-width:160px;font-variant-numeric:tabular-nums}
+body[data-collection="camelyon16"] .method-score-table small{display:block;margin-top:3px;color:#526b75;font-size:12px;line-height:1.35}
+body[data-collection="camelyon16"] .method-score-table .score-pending{color:#526b75;font-style:italic}
+body[data-collection="camelyon16"] .method-score-table thead th:first-child,body[data-collection="camelyon16"] .method-score-table tbody th:first-child{position:sticky;left:0;background:#fff;box-shadow:2px 0 3px #1935451c}
 .benchmark-page figure{min-width:0;margin:0;padding:12px;border:1px solid var(--line);border-radius:7px;background:white;overflow:hidden;align-self:start}
 .benchmark-page figure img{display:block;width:100%;height:auto;margin:0}.benchmark-page figcaption{padding:10px 0;font-weight:700}.benchmark-page figcaption span{display:block;font-size:13px;font-weight:400;color:#526b75}
 .benchmark-page .panels,.benchmark-page .overview{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
