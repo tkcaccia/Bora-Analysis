@@ -35,7 +35,7 @@ def main():
     parser.add_argument("--site", type=Path, required=True)
     parser.add_argument("--slide", required=True)
     parser.add_argument("--source", type=Path, required=True)
-    parser.add_argument("--width", type=int, default=1600)
+    parser.add_argument("--width", type=int, default=2400)
     args = parser.parse_args()
     if not 500 <= args.width <= 2400:
         parser.error("width must be 500–2400 pixels")

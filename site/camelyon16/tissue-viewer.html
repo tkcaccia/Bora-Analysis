@@ -17,9 +17,10 @@
       <button id="zoom-out" type="button" aria-label="Zoom out">Zoom −</button>
       <button id="fit" type="button">Fit tissue</button>
       <label>Class <select id="class"><option value="">All classes</option></select></label>
-      <label>Opacity <input id="opacity" type="range" min="0" max="0.75" step="0.01" value="0.24"><output id="opacity-value">24%</output></label>
+      <label>Opacity <input id="opacity" type="range" min="0" max="0.75" step="0.01" value="0.16"><output id="opacity-value">16%</output></label>
       <label><input id="outlines" type="checkbox" checked> Outlines</label>
       <label><input id="he" type="checkbox" checked> H&amp;E</label>
+      <button id="toggle-overlay" type="button" aria-pressed="false">Inspect H&amp;E only</button>
       <a id="download-saved" download>Saved review GeoJSON</a>
       <a id="download-displayed" download hidden>Displayed GeoJSON</a>
     </div>
@@ -28,6 +29,7 @@
       <canvas id="overlay" aria-hidden="true"></canvas>
       <div id="scale" class="scale" hidden><span id="scale-line"></span><span id="scale-label"></span></div>
       <div id="loading" class="loading" role="status">Loading reviewed tissue…</div>
+      <div id="detail-loading" class="detail-loading" role="status" hidden>Loading source detail…</div>
     </div>
     <div class="footer">
       <p id="status" role="status">Preparing read-only viewer…</p>

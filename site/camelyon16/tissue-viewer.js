@@ -9,8 +9,15 @@
   const validSlide = /^(?:tumor|normal)_\d{3}$/.test(slide || '');
   const manifestURL = new URL('../geojson-inspectors.json', location.href);
   const canvas = $('overlay'), ctx = canvas.getContext('2d');
-  const state = {viewer:null, features:[], opacity:.24, outlines:true, selected:'', queued:false,
-    preview:null, displayPath:null, tissuePoints:[], source:null, sourceFailed:false, sourceWarning:false};
+  const state = {viewer:null, features:[], opacity:.16, outlines:true, selected:'', queued:false,
+    preview:null, displayPath:null, tissuePoints:[], sourceWarning:false, detailRequests:0,
+    overlayHidden:false};
+
+  function detailStatus() {
+    const node=$('detail-loading');
+    node.hidden=state.detailRequests===0;
+    if (!node.hidden) node.textContent=`Loading source detail… ${state.detailRequests} tile${state.detailRequests===1?'':'s'}`;
+  }
 
   // A separate visual contour fit softens the 4 µm raster stair steps. The
   // saved review GeoJSON and all measured areas remain byte-for-byte intact.
@@ -109,6 +116,7 @@
     $('scale-line').style.width = `${nice/state.mppX*sx}px`;
     $('scale-label').textContent = nice>=1000 ? `${+(nice/1000).toPrecision(2)} mm` : `${+nice.toPrecision(2)} µm`;
     $('scale').hidden=false;
+    if (state.overlayHidden) return;
     ctx.setTransform(dpr*sx,0,0,dpr*sy,dpr*p0.x,dpr*p0.y);
     ctx.save(); ctx.clip(state.displayPath,'evenodd');
     ctx.lineJoin='round'; ctx.lineCap='round'; ctx.lineWidth=1.3/sx;
@@ -125,8 +133,8 @@
 
   function tileSource(record, crop, preview, displayPath) {
     const tileSize=512, maxLevel=Math.ceil(Math.log2(Math.max(crop.w,crop.h)));
-    let tiffPromise=null;
-    const imagePromises=new Map();
+    let tiffPromise=null, imageCountPromise=null;
+    const imagePromises=new Map(), levelInfos=new Map();
     const finishCanvas=(context,tile)=>{
       const image=new Image();
       image.onload=()=>{if (!context.userData?.aborted) context.finish(image,null,'image');};
@@ -134,12 +142,47 @@
       image.src=tile.toDataURL('image/png');
     };
     const source=async()=>{
-      if (!tiffPromise) tiffPromise=GeoTIFF.fromUrl(record.high_resolution.url);
+      if (!tiffPromise) tiffPromise=GeoTIFF.fromUrl(record.high_resolution.url)
+        .catch(error=>{tiffPromise=null;throw error;});
       return tiffPromise;
+    };
+    const levelAt=async index=>{
+      if (!levelInfos.has(index)) {
+        const info=(async()=>{
+          const tiff=await source();
+          if (!imagePromises.has(index)) imagePromises.set(index,tiff.getImage(index));
+          const image=await imagePromises.get(index);
+          const ratioX=record.high_resolution.width/image.getWidth();
+          const ratioY=record.high_resolution.height/image.getHeight();
+          if (!(ratioX>=1 && ratioY>=1 && Number.isFinite(ratioX) && Number.isFinite(ratioY)))
+            throw new Error(`Invalid official TIFF pyramid level ${index}.`);
+          return {index,ratioX,ratioY,downsample:Math.max(ratioX,ratioY)};
+        })().catch(error=>{levelInfos.delete(index);imagePromises.delete(index);throw error;});
+        levelInfos.set(index,info);
+      }
+      return levelInfos.get(index);
+    };
+    const chooseLevel=async factor=>{
+      if (!imageCountPromise) imageCountPromise=source().then(tiff=>tiff.getImageCount())
+        .catch(error=>{imageCountPromise=null;throw error;});
+      const count=await imageCountPromise;
+      if (!count) throw new Error('The official TIFF has no image levels.');
+      // Start near the usual 2x overview, then check actual dimensions. This
+      // needs only nearby IFDs even when the TIFF has an irregular pyramid.
+      let index=Math.min(count-1,Math.max(0,Math.floor(Math.log2(factor))));
+      let info=await levelAt(index);
+      while (info.downsample>factor*1.01 && index>0) info=await levelAt(--index);
+      while (index+1<count) {
+        const next=await levelAt(index+1);
+        if (next.downsample<=info.downsample || next.downsample>factor*1.01) break;
+        info=next; index++;
+      }
+      return info;
     };
     const previewTile=(context, box, outW, outH)=>{
       const tile=document.createElement('canvas'); tile.width=outW; tile.height=outH;
       const c=tile.getContext('2d');
+      c.imageSmoothingEnabled=true; c.imageSmoothingQuality='high';
       c.drawImage(preview,box.x/crop.w*preview.naturalWidth,box.y/crop.h*preview.naturalHeight,
         box.w/crop.w*preview.naturalWidth,box.h/crop.h*preview.naturalHeight,0,0,outW,outH);
       finishCanvas(context,tile);
@@ -154,19 +197,17 @@
         const factor=2**(maxLevel-level), left=x*tileSize*factor, top=y*tileSize*factor;
         const box={x:left,y:top,w:Math.max(0,Math.min(crop.w-left,tileSize*factor)),h:Math.max(0,Math.min(crop.h-top,tileSize*factor))};
         const outW=Math.max(1,Math.ceil(box.w/factor)),outH=Math.max(1,Math.ceil(box.h/factor));
-        if (factor>32 || state.sourceFailed) {previewTile(context,box,outW,outH); return;}
+        if (factor>32) {previewTile(context,box,outW,outH); return;}
+        state.detailRequests++; detailStatus();
         try {
-          const tiff=await source();
-          const count=await tiff.getImageCount();
-          const imageLevel=Math.min(count-1,Math.max(0,Math.floor(Math.log2(factor))));
-          if (!imagePromises.has(imageLevel)) imagePromises.set(imageLevel,tiff.getImage(imageLevel));
-          const image=await imagePromises.get(imageLevel);
-          const ratioX=record.high_resolution.width/image.getWidth();
-          const ratioY=record.high_resolution.height/image.getHeight();
+          const levelInfo=await chooseLevel(factor);
+          const image=await imagePromises.get(levelInfo.index);
+          const ratioX=levelInfo.ratioX, ratioY=levelInfo.ratioY;
           const window=[Math.floor((crop.x+box.x)/ratioX),Math.floor((crop.y+box.y)/ratioY),
             Math.min(image.getWidth(),Math.ceil((crop.x+box.x+box.w)/ratioX)),
             Math.min(image.getHeight(),Math.ceil((crop.y+box.y+box.h)/ratioY))];
-          const rgb=await image.readRGB({window,width:outW,height:outH,interleave:true});
+          const rgb=await image.readRGB({window,width:outW,height:outH,
+            interleave:true,resampleMethod:'bilinear'});
           const tile=document.createElement('canvas'); tile.width=outW; tile.height=outH;
           const c=tile.getContext('2d');
           const rgba=new Uint8ClampedArray(outW*outH*4);
@@ -179,9 +220,15 @@
           c.globalCompositeOperation='source-over';
           finishCanvas(context,tile);
         } catch(error) {
-          state.sourceFailed=true;
-          if (!state.sourceWarning) {state.sourceWarning=true; status('Official TIFF detail unavailable; the tissue overview remains visible. '+error.message,true);}
+          // A transient range failure must not disable source detail for every
+          // later tile in this session. Only the affected tile uses the preview.
+          if (!state.sourceWarning) {
+            state.sourceWarning=true;
+            status('One source-detail tile fell back to the tissue preview; reload to retry. '+error.message);
+          }
           previewTile(context,box,outW,outH);
+        } finally {
+          state.detailRequests=Math.max(0,state.detailRequests-1); detailStatus();
         }
       },
       downloadTileAbort(context){if (context.userData) context.userData.aborted=true;}
@@ -317,6 +364,16 @@
     $('opacity').oninput=event=>{state.opacity=Number(event.target.value);$('opacity-value').textContent=`${Math.round(state.opacity*100)}%`;schedule();};
     $('outlines').onchange=event=>{state.outlines=event.target.checked;schedule();};
     $('he').onchange=event=>{viewer.world.getItemAt(0).setOpacity(event.target.checked?1:0);};
+    $('toggle-overlay').onclick=()=>{
+      state.overlayHidden=!state.overlayHidden;
+      if (state.overlayHidden && !$('he').checked) {
+        $('he').checked=true;
+        viewer.world.getItemAt(0).setOpacity(1);
+      }
+      $('toggle-overlay').setAttribute('aria-pressed',String(state.overlayHidden));
+      $('toggle-overlay').textContent=state.overlayHidden?'Show Bora contours':'Inspect H&E only';
+      schedule();
+    };
   }
   init().catch(error=>status(error.message||String(error),true));
 })();

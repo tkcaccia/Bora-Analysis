@@ -10,7 +10,7 @@ The skill's builder generates a complete Deep Zoom bundle. Benchmark 3 cannot
 publish that bundle because it would redistribute full source-slide pixels.
 This site therefore uses the skill's read-only OpenSeadragon interaction and
 fidelity checks with a public official TIFF range source at detail zoom. A
-separate source-verified 1,600-pixel H&E overview supplies fit zoom and an
+separate source-verified 2,400-pixel H&E overview supplies fit zoom and an
 offline fallback. The previous overview contained visible green and gray
 blocks; it is no longer used by this viewer.
 
@@ -32,6 +32,17 @@ requests. If unavailable, the tissue-only overview remains usable and the
 viewer shows a warning. The viewer uses OpenSeadragon 5.0.1 from jsDelivr and
 the site's already vendored geotiff.js 3.0.5.
 
+For detail tiles, the viewer reads the TIFF's actual pyramid dimensions and
+chooses the highest-resolution level no coarser than the requested screen
+scale. It uses bilinear resampling for H&E RGB when a tile must be resized;
+nearest-neighbor sampling had made the tissue look pixelated. The label masks
+and saved GeoJSON are not resampled by this choice. A failed range request
+falls back only for its own tile, instead of disabling detail for the rest of
+the session. A visible loading badge identifies the interval when remote
+tiles are still replacing the overview. Remote tiles can still appear
+progressively while loading. The default contour fill is lighter, and the
+“Inspect H&E only” button gives a one-click unobstructed tissue view.
+
 After rendering a new completed test page, first run
 `python3 tools/build_cam_tissue_viewer_preview.py --site site --slide SLIDE --source /absolute/path/to/SLIDE.tif`,
 then `python3 tools/install_cam_tissue_viewer.py` and
@@ -43,3 +54,16 @@ If the H&E color refinement omits tissue or includes glass, do not publish the
 new viewer until its display mask is reviewed and corrected. The wsiTools skill
 itself remains suitable for locally built or publishable full Deep Zoom bundles;
 this source-only tile mode is a Benchmark 3 publication constraint.
+
+## Proposed upstream skill options
+
+The generic wsiTools skill could optionally accept a remote range-readable
+TIFF/COG URL and a source SHA256, instead of requiring publication of a full
+Deep Zoom tile pyramid. That mode should check CORS/range access, choose
+measured pyramid levels, and use bilinear RGB resampling while leaving label
+rasters nearest-neighbor. A separately named, source-bound display mask and
+display-only contour layer would let users hide exterior glass or soften
+vector appearance without changing scored geometry. An automated browser QA
+mode should capture fit, medium, close and narrow views, check two landmarks,
+loading failures and controls, and refuse publication when those checks fail.
+These are proposals for the skill; they are not options in its current builder.
