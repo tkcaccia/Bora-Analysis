@@ -1,6 +1,6 @@
 {
   "comparator_wsi_count": 7,
-  "file_count": 5305,
+  "file_count": 5306,
   "file_sha256": {
     "BUILD_PROVENANCE.json": "7353c2f089fe41ad934780d7df8f54f0ea336e8b147968e3875ed73d9fe06d97",
     "DATA_LICENSES.md": "da566fde847ff32be11d44c141e8a508e1a324fab6ea41019478f5ab91ec8184",
@@ -3463,7 +3463,7 @@
     "camelyon16/expert-annotations/tumor_101-aligned.png": "29329994adba1b926bfa32dc8909b0c29e3c25420d4d889bf89b37ab961816d1",
     "camelyon16/expert-annotations/tumor_101-full.png": "ffcdc304ab331b4aa433539b992f69a68d0d9d443c190879140725f7071b2976",
     "camelyon16/expert-annotations/tumor_101-he.webp": "419259e0ec9c4a44d3676a8b671c6c8cf38910fb722eb942f8ace49d252b7ab3",
-    "camelyon16/index.html": "e4b911d4cf8d05f866b38ad119809003c00f6e2abea89ab6809b9e48d3c959cb",
+    "camelyon16/index.html": "7dbb7f9f87a826377eb710ae1a11facec1f4c8dbd7ba9297bb00c5e798d8bb94",
     "camelyon16/inspector-previews/normal_093-tissue.webp": "18719c16e6f8d73e7437f5fb88827462136c210b167290e8bc6e177e5575c4bf",
     "camelyon16/inspector-previews/normal_108-he.jpg": "33b98f3ea127c6e7f2163c489dce6518df943c2da19c5b7f88f69a75e79303d5",
     "camelyon16/inspector-previews/normal_116-he.jpg": "8925025b20f93243cca91070c7f5520027d825c947b34521727726e4961936cf",
@@ -4683,6 +4683,7 @@
     "camelyon16/training-method-display/tumor_093-overview-vista.webp": "bb4a7f9cc07823c6bd3b95a679facd37476e90e3c9e29d87ecb9cbbb93ab79de",
     "camelyon16/training-previews/normal_093-he-tissue.webp": "5ad8199db4dc69b542a055703f9363e8035e3dfe78ca0bebd72226405741cd69",
     "camelyon16/training-previews/tumor_093-he-tissue.webp": "427619948ea3b03c6d96a9000b92c64bd72ba3631078d3ac98e59073f5db02e3",
+    "camelyon16/training-previews/tumor_093-kodama.png": "a2d947897f0cdf6334192cccdf2237c6f1edee2fb00c9a8372a7d4afa1063caa",
     "camelyon16/tumor_005-expert.html": "1d9e147f9e7498dc9f92af5a16f0f3e272e5b17eadb8e7bf47e333f142b6dd69",
     "camelyon16/tumor_016-expert.html": "926214e694e679b94afcd4c2f3e34d7a24e9e13747c8d1f2b24ce0035afce0ea",
     "camelyon16/tumor_019-expert.html": "5487c08ca233b30324b2e8189e0a62a52d4adebe691608e73de0c9c915bd1bb1",
@@ -4709,7 +4710,7 @@
     "camelyon16/tumor_091-one-slide.html": "e5d6def2f905a97b9416cb66369c6f483817e96e05c47e725f3c81ca051c8095",
     "camelyon16/tumor_091-scores.json": "a13928d6bc59cbde891ef81a185955b1deaa951b0058d8c61e784767a362e470",
     "camelyon16/tumor_091.html": "0565712e3bb7b8a401001cedfd3384b0f69e4ea5e451add09f55f7deb6c4c641",
-    "camelyon16/tumor_093.html": "4bc205dd647e32c7fc158fc30f561b301d3874359a60a90ef6488881e0b78cc5",
+    "camelyon16/tumor_093.html": "51d430004defb9959ab91bbcaf368896c5c6029bfb43c79b29f22a356579c3a6",
     "camelyon16/tumor_096-expert.html": "84a5532211e304c017ffac6e6ab30e438a447917b27d21e5baafcf700068e654",
     "camelyon16/tumor_101-expert.html": "6268fbb0fefe24e6eb02dd70bf194af2e8e86f2d1a95bdf476887b655cb9daeb",
     "data.json": "219fa7fba67dcb565fbfc40b23e2d1474990c26783f27113297e3985e7ae4617",
@@ -5312,6 +5313,6 @@
   "grayscale_group_map_count": 129,
   "public_wsi_count": 12,
   "retired_case_count": 4,
-  "size_bytes": 573246678,
+  "size_bytes": 573314608,
   "status": "BENCHMARK1_SOURCE_DOWNLOADS_ADDED"
 }
