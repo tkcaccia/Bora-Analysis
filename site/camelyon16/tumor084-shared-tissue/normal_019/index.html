@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>normal_019 · Revised CAMELYON16 result</title><link rel="stylesheet" href="../../../viewer.css">
+<link rel="stylesheet" href="../../../benchmark-template.css"></head>
+<body class="benchmark-page"><header class="site-header"><p class="eyebrow">BORA · BENCHMARK 3</p><h1>normal_019</h1>
+<p>Bora trained on tumor_084. The cutoff of −0.30 was selected by spatial validation within that slide.</p>
+<nav class="benchmark-sections"><a href="../../index.html#revised-method-scores">Benchmark 3 results</a>
+<a href="../../normal_019-expert.html">Official expert annotation</a></nav></header>
+<main><section><h2>Binary agreement on reviewed tissue</h2>
+<p>Metrics use 620,363 official known pixels within the shared H&amp;E tissue mask. The mask excludes 31,891 official known pixels, including 0 annotated metastatic pixels. The official annotation was already visible when this rerun began.</p>
+<table><thead><tr><th scope="col">Measure</th><th scope="col">Final mask</th><th scope="col">Before contour cleanup</th></tr></thead>
+<tbody><tr><th scope="row">Metastasis recall</th><td>Undefined</td><td>Undefined</td></tr><tr><th scope="row">Metastasis IoU</th><td>Undefined</td><td>Undefined</td></tr><tr><th scope="row">Balanced accuracy</th><td>Undefined</td><td>Undefined</td></tr><tr><th scope="row">False-positive tissue, mm²</th><td>0.016608</td><td>0.054192</td></tr></tbody></table>
+<p><strong>Negative slide call.</strong> The final mask qualifies as positive when a positive component reaches 0.01 mm².</p></section>
+<section><h2>Tissue and Bora prediction</h2><div class="bw-projection-grid">
+<figure><img src="he.webp" alt="Reviewed H&amp;E tissue"><figcaption>H&amp;E</figcaption></figure>
+<figure><img src="prediction.webp" alt="Bora mask over reviewed H&amp;E tissue"><figcaption>Bora prediction · red metastasis-like tissue, green non-metastatic tissue</figcaption></figure>
+</div></section>
+<section><h2>Black-and-white class masks</h2><div class="bw-projection-grid">
+<figure><img src="bw-class-1.webp" alt="Bora non-metastatic class mask"><figcaption>Non-metastatic tissue</figcaption></figure>
+<figure><img src="bw-class-2.webp" alt="Bora metastasis-like class mask"><figcaption>Metastasis-like tissue</figcaption></figure>
+</div><p>White marks the selected class. The mask uses 6 µm contour smoothing and 2,000 µm² component cleanup.</p></section>
+<section><h2>Downloads</h2><p><a href="bora-exact.geojson.gz" download>Bora GeoJSON</a> · <a href="scores.json">Audited score data</a></p>
+<p>U-Net, DeepLabV3+, MedSAM and VISTA-PATH are pending under the revised protocol.</p></section></main></body></html>
